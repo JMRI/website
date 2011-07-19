@@ -87,6 +87,24 @@ None at the time of this release.
 	Print Options, Manifest Comments, select Show Timetable.</LI>
 </ul>
 
+<p>Kevin Dickerson made the following enhancements.</p>
+<ul>
+	<li>Ensured that the order that items are saved in the panel XML files is consistent</li>
+    <li>Updated a number of files relating to the validation of the XML files (Bug 3370027)</li>
+    <li>Allowed layout block routing to be enable from the Signal Mast Logic 
+    table when performing a "discover all pairs"</li>
+    <li>Introduced a manager to help control the way in which changes to user names are handled</li>
+    <li>Changed the way in which UserNames are edited in the tables, so that 
+    renames are performed via a mouse pop-up menu</li>
+    <li>Did some work on the LocoNet Over TCP so that it appears correctly in the connection preferences</li>
+    <li>Caught an issue when clearing a connection from the preferences that could
+    prevent an new connection from being created</li>
+    <li>Fixed an issue with the sensor icon that prevented icon from being changed once placed on the panel (Bug 3361033)</li>
+    <li>Add the option in the layout editor to change sensor and signalhead 
+    icons for an item already on the panel</li>
+    <li>Fixed an issue with the Sensor Debounce on LocoNet connected Sensors (Bug 3368304)</li>
+</ul>
+
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
