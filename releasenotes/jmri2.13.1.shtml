@@ -101,6 +101,8 @@ None at the time of this release.
 	<LI>The loco consist name is now printed on the roster when sort by consist is selected in the locomotives window</LI>
 	<LI>Custom loads can now be defined as a "load" or an "Empty".</LI> 
 	<LI>Manifest and switch list font size can now be increased to 14 points.</LI>
+	<LI>Fixed a problem where a car would be set out to a track that wasn't to be serviced as determined by the train's direction.
+	This only occurred when a train visited a location more than once.</LI>
 	
 </ul>
 
