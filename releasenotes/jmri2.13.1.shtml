@@ -134,6 +134,9 @@ None at the time of this release.
 <ul>
     <li>Fixed the RXTX version warning message seen in the System Log</li>
     <li>Updated the NetBeans project files and usage instructions after the change of source code repository to Subversion</li>
+    <li>Updated the documentation for logging procedures</li>
+    <li>Deprecated doppler factor for AudioSources</li>
+    <li>Added support to retrieve length and frequency information from AudioBuffer objects</li>
 </ul>
 
 <p>david zuhn made the following changes:</p>
