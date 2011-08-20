@@ -56,7 +56,7 @@ see our
 
 <h3>New warnings for this version:</h3>
 
-(None yet)
+The way in which UserNames are edited has now changed in the tables, renames are now performed via a mouse pop-up menu and can not be directly edited.
 
 <h3>Older warnings</h3>
 
@@ -113,13 +113,13 @@ None at the time of this release.
 
 <p>Kevin Dickerson made the following enhancements.</p>
 <ul>
-	<li>Ensured that the order that items are saved in the panel XML files is consistent</li>
+	<li>Ensured that the order that items are saved and loaded in the panel XML files is consistent</li>
     <li>Updated a number of files relating to the validation of the XML files (Bug 3370027)</li>
     <li>Allowed layout block routing to be enable from the Signal Mast Logic 
     table when performing a "discover all pairs"</li>
     <li>Introduced a manager to help control the way in which changes to user names are handled</li>
     <li>Changed the way in which UserNames are edited in the tables, so that 
-    renames are performed via a mouse pop-up menu</li>
+    renames are performed via a mouse pop-up menu and not directly editable</li>
     <li>Did some work on the LocoNet Over TCP so that it appears correctly in the connection preferences</li>
     <li>Caught an issue when clearing a connection from the preferences that could
     prevent an new connection from being created</li>
@@ -128,6 +128,9 @@ None at the time of this release.
     icons for an item already on the panel</li>
     <li>Fixed an issue with the Sensor Debounce on LocoNet connected Sensors (Bug 3368304)</li>
     <li>Fixed an issue in the layout editor, where undashed track segments would become dashed</li>
+    <li>Updated the way in which Signal Heads are created, by using drop down boxes to select existing turnouts
+    or a seperate method to create turnouts on the fly using a drop down box to select the connection and a text
+    field to enter in the hardware address.</li>
 </ul>
 
 <p>Matthew Harris made the following enhancements.</p>
