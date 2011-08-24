@@ -108,6 +108,8 @@ None at the time of this release.
 	you Frank Wyatt for bringing this bug to our attention.</LI> 	
 	<LI>You can now use a text editor to preview and edit your train manifest. Requires Java 1.6 and jar file from
 	my <A HREF=http://home.comcast.net/~daboudreau/JMRI_JAVA1.6/jmri.jar>site</A>. See Print Options under Settings-&gt;Tools.</LI>
+	<LI>Improved how the program selects the departure track from staging, now if the train requires a caboose or car with FRED,
+	all tracks in staging are checked.</LI>
 	
 </ul>
 
