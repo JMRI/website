@@ -108,7 +108,7 @@ None at the time of this release.
 	<LI>Fixed a problem when generating a car load from staging and the spur would not service the default load empty.  Thank
 	you Frank Wyatt for bringing this bug to our attention.</LI> 	
 	<LI>You can now use a text editor to preview and edit your train manifest and switch lists. Requires Java 1.6 and jar file from
-	my <A HREF=http://home.comcast.net/~daboudreau/JMRI_JAVA1.6/jmri.jar>site</A>. See Print Options under Settings-&gt;Tools.</LI>
+	my <A HREF="http://home.comcast.net/~daboudreau/JMRI_JAVA1.6/jmri.jar">site</A>. See Print Options under Settings-&gt;Tools.</LI>
 	<LI>Improved how the program selects the departure track from staging, now if the train requires a caboose or car with FRED,
 	all tracks in staging are checked.</LI>
 	
@@ -143,6 +143,10 @@ None at the time of this release.
     <li>Updated the documentation for logging procedures</li>
     <li>Deprecated doppler factor for AudioSources</li>
     <li>Added support to retrieve length and frequency information from AudioBuffer objects</li>
+    <li>Fixed a problem that caused the configuration help not to be displayed when no valid connections were detected</li>
+    <li>Fixed a problem that stopped JMRI being compiled using JDK 1.7</li>
+    <li>Updated LaunchJMRI on Windows to support the new automated restart mechanism</li>
+    <li>Modified the ant build script to support the new automated restart mechanism in development environments</li>
 </ul>
 
 <p>david zuhn made the following changes:</p>
