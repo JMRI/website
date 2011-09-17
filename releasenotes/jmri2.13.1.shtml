@@ -154,6 +154,8 @@ None at the time of this release.
     <li>Fixed a problem that stopped JMRI being compiled using JDK 1.7</li>
     <li>Updated LaunchJMRI on Windows to support the new automated restart mechanism</li>
     <li>Modified the ant build script to support the new automated restart mechanism in development environments</li>
+    <li>Added a new FontCombo class that can provide a preview of the font being selected</li>
+    <li>Updated the System Console to allow the displayed font to be customised and added a right-click menu</li>
 </ul>
 
 <p>david zuhn made the following changes:</p>
