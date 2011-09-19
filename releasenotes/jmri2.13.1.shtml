@@ -123,6 +123,8 @@ None at the time of this release.
 
 <p>Kevin Dickerson made the following enhancements.</p>
 <ul>
+    <li>Developed Decoder Pro 3 with Nigel Cliffe into a format that is ready for Beta testing, additional
+    enhancements to the Roster Groups in DP3 have been made by Randall Wood</li>
 	<li>Ensured that the order that items are saved and loaded in the panel XML files is consistent</li>
     <li>Updated a number of files relating to the validation of the XML files (Bug 3370027)</li>
     <li>Allowed layout block routing to be enable from the Signal Mast Logic 
@@ -132,7 +134,7 @@ None at the time of this release.
     renames are performed via a mouse pop-up menu and not directly editable</li>
     <li>Did some work on the LocoNet Over TCP so that it appears correctly in the connection preferences</li>
     <li>Caught an issue when clearing a connection from the preferences that could
-    prevent an new connection from being created</li>
+    prevent a new connection from being created</li>
     <li>Fixed an issue with the sensor icon that prevented icon from being changed once placed on the panel (Bug 3361033)</li>
     <li>Add the option in the layout editor to change sensor and signalhead 
     icons for an item already on the panel</li>
