@@ -45,6 +45,27 @@ to end in a JMRI 2.14 or 3.0 production release.</p>
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.  
 Therefore, this test version should be considered experimental.</p>
+<b>Decoder Pro 3</b>
+<p>"DecoderPro 3" is a new presentation of locomotives/decoders in the roster,
+making it easier to organise and access decoder programming features.  It has a
+new menu structure, locomotives are listed in a table which can be sorted on any
+column. "DecoderPro 3" has two programmer types; Basic and Comprehensive, plus
+setup of features such as throttle function keys and roster media (pictures of
+locomotives).   We have tried with the design of "DecoderPro 3" to focus on the
+needs of those who use JMRI primarily for adjusting CV settings in their
+locomotives.</p>
+
+<p>This release of "DecoderPro 3" is a test.  There are a few more features we'd
+like to add, but before doing that we need feedback from users; does it work for
+you, what do you want to see changed, etc..  We'll look at all the information
+which comes back and incorporate it in future developments.</p>
+
+<p>We have tested "DecoderPro 3" and are not expecting major file-damaging faults.
+But with any test-release of software there is always a small risk that
+something has been overlooked.  So, please check that you have a backup of your
+Roster files just incase something unexpected happens.  If you install with the
+Windows installer, a backup copy of your old files (including the roster) is
+created by default.</p>
 
 <p><b>
 JMRI is now only available under the 
@@ -81,7 +102,7 @@ None at the time of this release.
 
 <p>Linux: <A
 	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.tgz/download</a></p>
-
+    
 <h3>Changes since production release 2.12</h3>
 
 <p>Dan Boudreau made the following enhancements to operations.</p>
