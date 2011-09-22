@@ -84,7 +84,13 @@ None at the time of this release.
 
 <h3>Changes since test release 2.13.1</h3>
 
-
+<p>Dan Boudreau made the following enhancements to operations.</p>
+<ul>
+<LI>Now when the program fails to find destinations for cars
+departing out of staging, the program will list all of the cars and
+provide the option of removing the cars without destinations from the
+staging track.</LI>
+</ul>
 
 
 
