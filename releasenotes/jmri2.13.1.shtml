@@ -88,7 +88,9 @@ with installation or unpacking.
 
 <h3>Known problems with this release</h3>
 
-None at the time of this release.
+After the release, a problem opening certain QSI decoder definitions was found.  Most
+decoder definitions do work, but QSI V6 (and perhaps a few other QSI decoders) do not.
+This will be fixed in the next test release.
 
 <h3>Download links:</h3>
 
