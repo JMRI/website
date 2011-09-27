@@ -102,7 +102,16 @@ Conductor.</LI>
 a kernel have the same departure location and track.</LI>.
 </ul>
 
+<p>Kevin Dickerson made the following enhancements.</p>
+<ul>
+<li>Updated the Ecos Sensor code to recognise the new ESU Detectors</li>
+<li>Updated the Ecos messaging code to handle information from the Ecos better and improve performace</li>
+<li>Made some improvements to the performance of displaying the Preferences for the first time</li>
+<li>Made some improvements to the performance of opening the create loco for the first time</li>
+<li>Provide Friendly Names for the serial ports, this is only available for Windows Systems</li>
+</ul>
 
+<p>Randall Wood Resolved the issue that prevented DP3 from loading on a MAC PPC machine</p>
 
 
 <!--#include virtual="/Footer" -->
