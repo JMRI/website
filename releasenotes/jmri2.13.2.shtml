@@ -123,6 +123,9 @@ But then you might have to move all of them again to the place wanted.
 It would be really nice to be able to select (Ctrl-Left Click in Windows and Linux at least) 
 the piece of track that does not need to move first, then select the rest of the components and 
 choose "Align Horizontally to first selected" (or Vertically of course).
+<li>It is quite helpful to be able to write a script to execute and then be able to save it to a file, 
+and similarly to be able to load one to perhaps edit and then execute it. 
+The attached patch implements both Load and Store.
 </ul>
 
 <p>Mark Dance
@@ -134,6 +137,12 @@ choose "Align Horizontally to first selected" (or Vertically of course).
 <ul>
 <li>Provided decoder XML files for Zimo MX644 & MX645
 <li>Updated the QSI Version 7 decoder definitions
+</ul>
+
+<p>Nigel Cliffe
+<ul>
+<li>Provided decoder files for the Fleischmann FMZ DCC and and Twin DCC decoders.
+<li>New file for version 100 and above of CT SL51 and SL75 sound decoders. Thanks to John Clutterbuck for work on this file.
 </ul>
 
 
