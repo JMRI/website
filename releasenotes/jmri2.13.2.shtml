@@ -115,6 +115,27 @@ a kernel have the same departure location and track.</LI>
 
 <p>Randall Wood Resolved the issue that prevented DP3 from loading on a MAC PPC machine</p>
 
+<p>Gert Muller
+<ul>
+<li>The current implementation for Align Horizontally or Vertically computes the average of the X or Y, 
+and then move the components to that in the Panel Editor. 
+But then you might have to move all of them again to the place wanted. 
+It would be really nice to be able to select (Ctrl-Left Click in Windows and Linux at least) 
+the piece of track that does not need to move first, then select the rest of the components and 
+choose "Align Horizontally to first selected" (or Vertically of course).
+</ul>
+
+<p>Mark Dance
+<ul>
+<li>Provided a set of train order signal icons in resources/icons/smallschematics/trainorder
+</ul>
+
+<p>Michael Mosher
+<ul>
+<li>Provided decoder XML files for Zimo MX644 & MX645
+<li>Updated the QSI Version 7 decoder definitions
+</ul>
+
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
