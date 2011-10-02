@@ -64,6 +64,24 @@ The way in which UserNames are edited in the tables changed in JMRI 2.13.1, rena
 The method we use for building release files was extensively changed with JMRI 2.13.1. Please let us know of any problems
 with installation or unpacking.
 
+<p>This release of "DecoderPro 3" is a test.  There are a few more features we'd
+like to add, but before doing that we need feedback from users; does it work for
+you, what do you want to see changed, etc. We'll look at all the information
+which comes back and incorporate it in future developments.
+We have tested "DecoderPro 3" and are not expecting major file-damaging faults.
+But with any test-release of software there is always a small risk that
+something has been overlooked.  So, please check that you have a backup of your
+Roster files just in case something unexpected happens.  If you install with the
+Windows installer, a backup copy of your old files (including the roster) is
+created by default.</p>
+
+<p>
+JMRI 2.12 is the last release which is completely supported by Java 1.5.
+Starting with this release, there will be minor interface features, such as 
+drag-and-drop of some items, that require your computer to have Java 1.6 installed.
+Computers with only Java 1.5 will still be able to use JMRI, including PanelPro and DecoderPro,
+through the end of this 2.13.* release cycle.  Releases in the next cycle
+will require Java 1.6.
 
 <h3>Known problems with this release</h3>
 
@@ -113,7 +131,7 @@ a kernel have the same departure location and track.</LI>
 <li>Provide Friendly Names for the serial ports, this is only available for Windows Systems</li>
 </ul>
 
-<p>Randall Wood Resolved the issue that prevented DP3 from loading on a MAC PPC machine</p>
+<p>Randall Wood Resolved the issue that prevented DP3 from loading on a PowerMac (PPC Macintosh) computer.</p>
 
 <p>Gert Muller
 <ul>
@@ -128,10 +146,10 @@ and similarly to be able to load one to perhaps edit and then execute it.
 The attached patch implements both Load and Store.
 </ul>
 
-<p>Mark Dance
-<ul>
-<li>Provided a set of train order signal icons in resources/icons/smallschematics/trainorder
-</ul>
+<p>Mark Dance provided a set of train order signal icons in 
+<a href="http://jmri.org/resources/icons/smallschematics/trainorder">resources/icons/smallschematics/trainorder</a>.
+
+<p>Bob Jacobsen fix the problem that was preventing some QSI decoders from properly loading.
 
 <p>Michael Mosher
 <ul>

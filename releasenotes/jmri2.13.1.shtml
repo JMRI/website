@@ -75,12 +75,20 @@ see our
 
 <h3>New warnings for this version:</h3>
 
-The way in which UserNames are edited has now changed in the tables, renames are now performed via a mouse pop-up menu and can not be directly edited.
+The way in which UserNames are edited has now changed in the tables, 
+renames are now performed via a mouse pop-up menu and can not be directly edited.
 
 <p>
 The method we use for building release files has been extensively changed. Please let us know of any problems
 with installation or unpacking.
 
+<p>
+JMRI 2.12 is the last release which is completely supported by Java 1.5.
+Starting with this release, there will be minor interface features, such as 
+drag-and-drop of some items, that require your computer to have Java 1.6 installed.
+Computers with only Java 1.5 will still be able to use JMRI, including PanelPro and DecoderPro,
+through the end of this 2.13.* release cycle.  Releases in the next cycle
+will require Java 1.6.
 
 <h3>Older warnings</h3>
 
