@@ -131,7 +131,7 @@ a kernel have the same departure location and track.</LI>
 <li>Provide Friendly Names for the serial ports, this is only available for Windows Systems</li>
 </ul>
 
-<p>Randall Wood Resolved the issue that prevented DP3 from loading on a PowerMac (PPC Macintosh) computer.</p>
+<p>Randall Wood resolved the issue that prevented DP3 from loading on a PowerMac (PPC Macintosh) computer.</p>
 
 <p>Gert Muller
 <ul>
@@ -163,6 +163,7 @@ The attached patch implements both Load and Store.
 <li>New file for version 100 and above of CT SL51 and SL75 sound decoders. Thanks to John Clutterbuck for work on this file.
 </ul>
 
+<p>Dick Bronson provided a decoder definition for the RR-CirKits LNCP Control Point board.
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
