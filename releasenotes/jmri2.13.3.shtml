@@ -117,6 +117,12 @@ None at the time of this release.
 <li>Removed the requirement to select a valid serial port for the CMRI Simulator</li>
 </ul>
 
+<p>Steve Todd made the following enhancement to the mini web server.</p>
+<ul>
+<LI>Added (optional) server-side image resizing.  Include MaxWidth=xx and/or MaxHeight=yy in querystring to use.</LI>
+</ul>
+
+
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
