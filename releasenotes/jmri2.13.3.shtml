@@ -119,9 +119,11 @@ None at the time of this release.
 <ul>
 <li>Fixed a Bug in the XPressNet Simulator where if either the system prefix or system name had been updated, the details would not be saved</li>
 <li>Fixed a Bug in the CAN Simulator, where the port selected wasn't saved or reloaded correctly</li>
+<li>Removed the requirement to select a valid serial port for the CMRI Simulator</li>
+<li>Updated the code so that the status screen is correctly updated when a network connection fails</li>
 <li>Updated the DP3 interface so that roster entries can be printed out from the front screen</li>
 <li>Fixed a Bug in the DP3 interface whereby the Roster Groups pane would not be displayed when a group was created</li>
-<li>Removed the requirement to select a valid serial port for the CMRI Simulator</li>
+<li>Fixed a Bug in the SignalHead code for the panel editor, where the held SignalHead would not be displayed</li>
 </ul>
 
 <p>Steve Todd made the following enhancement to the mini web server.</p>
