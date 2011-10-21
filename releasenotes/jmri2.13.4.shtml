@@ -110,7 +110,11 @@ None at the time of this release.
 		delivered to the last location in the route.  See under Edit Train-&gt;Tools "Train Build Options"</LI>
 </ul>
 
-
+<p>Randall Wood made the following enhancements to the mini web server:</p>
+<ul>
+	<li>The mini web server now displays Open Windows from /frame as well as /panel. In a future release, /panel will no longer be usable to remotely display Open Windows.</li>
+	<li>The XMLIO protocol recognizes the <em>frame</em> type as well as the <em>panel</em> type to list Open Windows. In a future release, <em>panel</em> will no longer be usable to list Open Windows.</li>
+</ul>
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
