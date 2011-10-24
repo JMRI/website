@@ -117,6 +117,21 @@ None at the time of this release.
 	<li>The XMLIO protocol recognizes the <em>frame</em> type as well as the <em>panel</em> type to list Open Windows. In a future release, <em>panel</em> will no longer be usable to list Open Windows.</li>
 </ul>
 
+<p>Kevin Dickerson made the following enhancements:</p>
+<ul>
+	<li><b>DecoderPro3</b></li>
+    <ul>
+        <li>Provided a "first" start" configuration Wizard to help guide users through the initial configuration of Decoder Pro 3</li>
+        <li>When a loco is found via the identify button, the roster table will scroll so that the identified loco will be visible</li>
+        <li>Added the ability to launch the comprehensive programmer by double clickling on a roster entry in the table</li>
+    </ul>
+    
+	<li>Added to the Layout Editor turnout, the ability to configure a second turnout on Cross-overs, so that when the turnout is changed on the layout panel it will change both turnouts.
+    Note: That only a change in the primary turnout will update the status on the panel, not the secondary.</li>
+    <li>Updated the list of langauges in the preferences to be in alphabetical order</li>
+    <li>Updated the SignalMast logic so that when the logic changes from one destination mast to another this forces the source signal mast to go to a stop asppearance.</li>
+</ul>
+
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
