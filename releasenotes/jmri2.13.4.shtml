@@ -136,14 +136,32 @@ None at the time of this release.
 	<li><b>DecoderPro3</b></li>
     <ul>
         <li>Provided a "first" start" configuration Wizard to help guide users through the initial configuration of Decoder Pro 3</li>
+        <li>When Decoder Pro 3 opens with a blank roster, an introduction screen shows the user how to create their first entry.</li>
         <li>When a loco is found via the identify button, the roster table will scroll so that the identified loco will be visible</li>
         <li>Added the ability to launch the comprehensive programmer by double clickling on a roster entry in the table</li>
+        <li>Provided the right click pop-up menu in the roster table.</li>
+        <li>Updated the xml file and toolbar files, so that translations can be added.</li>
     </ul>
     
-	<li>Added to the Layout Editor turnout, the ability to configure a second turnout on Cross-overs, so that when the turnout is changed on the layout panel it will change both turnouts.
-    Note: That only a change in the primary turnout will update the status on the panel, not the secondary.</li>
+    <li><b>SignalMast and SignalMast Logic</b></li>
+    <ul>
+        <li>In the SignalMast Logic, if a specific held aspect is not found then the aspect for Danger is used.</li>
+        <li>Updated the SignalMast logic so that when the logic changes from one destination mast to another this forces the source signal mast to go to a stop asppearance.</li>
+        <li>Updated the SignalMast UI to use drop down boxes to select signal heads used to build the mast.</li>
+    </ul>
+    
+    <li><b>Editors</b></li>
+    <ul>
+        <li>Added to the Layout Editor turnout, the ability to configure a second turnout on Cross-overs, so that when the turnout is changed on the layout panel it will change both turnouts.
+        Note: That only a change in the primary turnout will update the status on the panel, not the secondary.</li>
+        <li>Fixed an issue where, slips, three-ways and cross-overs could not be added in the panel editor.</li>
+        <li>Updated the text based icon in the layout editor to use a separate properties window to edit the text styles.</li>
+    </ul>
     <li>Updated the list of langauges in the preferences to be in alphabetical order</li>
-    <li>Updated the SignalMast logic so that when the logic changes from one destination mast to another this forces the source signal mast to go to a stop asppearance.</li>
+    <li>Converted the roster entry xml files from using dtd to schema.</li>
+    <li>Updated the add/edit Routes screen so that trigger sensors/turnouts are selected from a combo box.</li>
+    <li>Fixed a bug in the logix, where it was not possible to use the first aspect in the drop down list as part of a condition</li>
+    <li>Fixed a bug in the Throttle code that handled the disposing and releasing of throttles which could result in the throttle not being correctly disposed of.</li>
 </ul>
 
 <p>David Duchamp made the following enhancements to Dispatcher:</p>
