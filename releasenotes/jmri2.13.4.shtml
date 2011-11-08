@@ -111,7 +111,8 @@ None at the time of this release.
 	<LI>Fixed a problem where train icons would not appear on a panel if car, engine, or train logging was enabled.</LI>
 	<LI>Fixed a problem when requesting an engine change in a train's route.  Sometimes the program would experience a null pointer which would cause the 
 	program to lock up.</LI>
-	<LI>Changed the drawbar length for UK localization from 4 meters to 1 meter.</LI>
+	<LI>Removed "Unit of Length" as part of localization and added the ability to select feet or meters in the Setting window.
+	<LI>Changed the draw bar length when using meters as the unit of length from 4 meters to 1 meter.</LI>
 	<LI>New feature, blocking cars from staging.  The blocks are based on the location where the cars where picked up before terminating into staging.
 	So for example, if your train's route had three stops, A, B, and C, and then terminated into staging.  The cars from A would be blocked together
 	when the next train departed staging.  The same goes for pick ups from B and C, those cars would remain together.  The program when attempting to
