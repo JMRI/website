@@ -164,6 +164,7 @@ None at the time of this release.
     <li>Updated the add/edit Routes screen so that trigger sensors/turnouts are selected from a combo box.</li>
     <li>Fixed a bug in the logix, where it was not possible to use the first aspect in the drop down list as part of a condition</li>
     <li>Fixed a bug in the Throttle code that handled the disposing and releasing of throttles which could result in the throttle not being correctly disposed of.</li>
+    <li>Updated the "DCC Signal Decoder" signal head, so that you can specify which interface the signal is attached to.</li>
 </ul>
 
 <p>David Duchamp made the following enhancements to Dispatcher:</p>
