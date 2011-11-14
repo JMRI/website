@@ -111,6 +111,12 @@ None at the time of this release.
 	you prefer that all cars in staging be set out before other cars in the train's route.</LI>
 	</ul>
 
+<p>Steve Todd made the following enhancements to the Mini Web Server:</p>
+<ul>
+	<LI>The /frame/[frame-name].html pages (formerly /panel/[frame-name].html) now use ajax for smoother image refreshing.
+	A new preference was added to allow this feature to be turned off (e.g. for older browsers).</LI>
+	</ul>
+
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
