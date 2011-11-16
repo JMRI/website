@@ -105,20 +105,25 @@ None at the time of this release.
 
 <h3>Changes since test release 2.13.4</h3>
 
-<p>Dan Boudreau made the following enhancements to operations.</p>
-<ul>
-	<LI>You can now request that when building a train to use normal mode.  Useful if your train is departing staging and
-	you prefer that all cars in staging be set out before other cars in the train's route.</LI>
-	</ul>
+   <p>Dan Boudreau made the following enhancements to operations.</p>
+   <ul>
+    <LI>You can now request that when building a train to use normal mode. Useful if your train
+     is departing staging and you prefer that all cars in staging be set out before other cars in
+     the train's route.</LI>
+    <LI>Fixed a minor bug in conductor window. Previously if the conductor window was open and
+     a new train was built, the window status would sometimes show 0 cars 0 length 0 tons when
+     departing a location without any work.</LI>
+   </ul>
 
-<p>Steve Todd made the following enhancements to the Mini Web Server:</p>
-<ul>
-	<LI>The /frame/[frame-name].html pages (formerly /panel/[frame-name].html) now use ajax for smoother image refresh and clicking.
-	A new preference was added to allow this feature to be turned off (e.g. for older browsers).</LI>
-	</ul>
+   <p>Steve Todd made the following enhancements to the Mini Web Server:</p>
+   <ul>
+    <LI>The /frame/[frame-name].html pages (formerly /panel/[frame-name].html) now use ajax for
+     smoother image refresh and clicking. A new preference was added to allow this feature to be
+     turned off (e.g. for older browsers).</LI>
+   </ul>
 
 
-<!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </div> <!-- closes #container -->
