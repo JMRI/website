@@ -113,6 +113,10 @@ None at the time of this release.
     <LI>Fixed a minor bug in conductor window. Previously if the conductor window was open and
      a new train was built, the window status would sometimes show 0 cars 0 length 0 tons when
      departing a location without any work.</LI>
+     <LI>When manually placing a car at a spur with a schedule, the program now will ask if you want to apply
+     the schedule to the car.</LI>
+     <LI>If you reduce the maximum train length in the settings window, the program now checks all of your routes
+     to see if any of your locations has a departure train length greater than the new length you just entered.</LI>
    </ul>
 
    <p>Steve Todd made the following enhancements to the Mini Web Server:</p>
