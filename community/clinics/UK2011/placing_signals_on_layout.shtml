@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- $Id: index.shtml,v 1.2 2011-07-10 20:29:42 jacobsen Exp $ -->
+<html lang="en">
+<head>
+ <TITLE>JMRI: UK Signalling, Placing Signals on Layout</TITLE>
+    <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+    <META content="Nigel Cliffe" name=Author>
+    <META name="keywords" content="clinics java model railroad JMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra signalling UK British">
+
+<!-- Style -->
+  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+  <link rel="icon" href="/images/jmri.ico" type="image/png">
+  <link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
+
+<body>
+<h2>Adding Signal Masts to the Layout, and creating Signal Mast Rules</h2>
+<p>Signal Mast Rules work from signal to signal. If we consider our layout, and 
+  the down line, there is a signal controlling access to platform 2 or into the 
+  bay platform (platform 1).</p>
+<p><img src="layoutoverview.png" width="830" height="278"></p>
+<p>The Down Approach Mast has a signal ahead of it on the Down main line at the 
+  end of Platform 2, but currently there are no signals along the bay for the 
+  rules from the Down Approach Mast. Therefore, we need to create a virtual signal 
+  for use at the buffer stop on the Bay platform (one can think of this as the 
+  red lamp or red flag often hung on buffer stops). </p>
+<p>Once all the Masts are created, they can be positioned. This is done in the 
+  Layout Editor by a command to position a Mast on the context menu (right click) 
+  of the block boundaries. </p>
+<p>Once Masts are positioned, the rule between them can be created, using the 
+  context menu (right click) on the originating mast. This will bring up a dialogue 
+  which can &quot;discover&quot; the masts beyond the signal in question, and 
+  calculate the rules to use. </p>
+<p>The following video illustrates the creation of the virtual signal for the 
+  Buffer Stop, the positioning of Masts, and the creation of Rules between them. 
+</p>
+<iframe width="640" height="480" src="http://www.youtube.com/embed/eNfmfuSMYxk" frameborder="0" allowfullscreen></iframe>
+<p>&nbsp;</p>
+<p>The Panel file for the layout at the end of this stage of the tutorial can 
+  be downloaded here </p>
+<p>[ <a href="jmri_files/Demo%20Signal%204.xml">Link to Panel file 4</a> (masts 
+  positioned)]</p>
+<p>[ <a href="jmri_files/Demo%20Signal%205.xml">Link to Panel file 5</a> (masts 
+  rules added)]</p>
+<p></p>
+<p>&nbsp; </p>
+<p><a href="permissive_working.shtml">Move on to Part 8</a> </p>
+<p><a href="Introduction.shtml">Back to Introduction</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- $Id: index.shtml,v 1.2 2011-07-10 20:29:42 jacobsen Exp $ -->
+<html lang="en">
+<head>
+ <TITLE>JMRI: UK Signalling, Semaphore Signals</TITLE>
+    <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+    <META content="Nigel Cliffe" name=Author>
+    <META name="keywords" content="clinics java model railroad JMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra signalling UK British">
+
+<!-- Style -->
+  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+  <link rel="icon" href="/images/jmri.ico" type="image/png">
+  <link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
+
+<body>
+<h2>Using Semaphore Signals rather than Colour Lights</h2>
+<p>So far, this tutorial has used colour light signals. However, semaphore signals 
+  can be used in place of colour lights. </p>
+<p>Bear in mind that this approach to signal control is based on signalling techniques 
+  which are not the same as a lever frame in a signal box. There is a presumption 
+  that the signals will go to &quot;proceed&quot; if the line is clear ahead, 
+  rather than the signalman in his box only pulling the levers for the signals 
+  when he is ready for a train to proceed. </p>
+<p>There is also a feature yet to be developed; at present the instructions to 
+  change state are sent to all signal heads simultaneously. Thus, if you have 
+  a mast with two semaphore arms (say a home plus distant), it is likely that 
+  both arms will move together. A feature enhancement request to change this within 
+  JMRI has been made, but no date yet given for implementation. </p>
+<h3>Creating semaphore masts</h3>
+<p>A Semaphore Mast is created in the same way as a colour light mast. The arms 
+  are each defined as &quot;signal heads&quot; and the combination of arms (heads) 
+  are made onto a Mast. The definition of the Mast is in the signalling rules 
+  of the prototype, in our demonstration layout this is BR signalling. </p>
+<p>Once the Mast has been created, it is positioned at a block boundary in the 
+  same way as the colour light signals, and the rules from one signal to the next 
+  created in the same manner as before. </p>
+<p><i>The Video covering this part of the tutorial is in preparation. </i></p>
+<p>The download of the panel file with the bay signal replaced with a semaphore 
+  can be downloaded below:</p>
+<p>[ <a href="jmri_files/Demo%20Signal%208.xml">Link to download panel file</a> 
+  ]</p>
+<p>&nbsp;</p>
+<p><a href="Introduction.shtml">Back to Introduction</a></p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- $Id: index.shtml,v 1.2 2011-07-10 20:29:42 jacobsen Exp $ -->
+<html lang="en">
+<head>
+ <TITLE>JMRI: UK Signalling, Permissive Working</TITLE>
+    <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+    <META content="Nigel Cliffe" name=Author>
+    <META name="keywords" content="clinics java model railroad JMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra signalling UK British">
+
+<!-- Style -->
+  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+  <link rel="icon" href="/images/jmri.ico" type="image/png">
+  <link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
+
+<body>
+<h2>Permissive Block Working</h2>
+<p>In the previous section of the tutorial, we placed the signal masts on the 
+  Layout and created the rules between them. </p>
+<p>With all the rules in place, the signals worked correctly, following the position 
+  of turnouts and the occupancy of blocks. There was, however, one exception, 
+  the Calling-On light which is part of the Down Approach signal. </p>
+<p>The Calling-On light should be illuminated to permit shunting past the signal 
+  into the Bay, even if the Bay is occupied. This is done by changing the status 
+  of the Bay Block in the Blocks Table to be &quot;permissive&quot;. The check-box 
+  for &quot;permissive&quot; is at the right of the very wide Blocks Table, so 
+  scrolling will probably be necessary. </p>
+<p>Once the Block is set to &quot;permissive&quot;, the Calling-On light will 
+  behave correctly. </p>
+<p>The video below shows the creation of the permissive state in the Bay Block.</p>
+<iframe width="640" height="480" src="http://www.youtube.com/embed/8E3UQ05aalI" frameborder="0" allowfullscreen></iframe>
+<p>The JMRI Panel file for the layout at this stage of the tutorial is available 
+  below</p>
+<p>[ <a href="jmri_files/Demo%20Signal%206.xml">Link to Panel File 6</a> ] </p>
+<p>&nbsp;</p>
+<p><a href="logix_and_feathers.shtml">Move on to Part 9</a> </p>
+<p><a href="Introduction.shtml">Back to Introduction</a></p>
+</body>
+</html>

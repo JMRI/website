@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- $Id: index.shtml,v 1.2 2011-07-10 20:29:42 jacobsen Exp $ -->
+<html lang="en">
+<head>
+ <TITLE>JMRI: UK Signalling, Hardware</TITLE>
+    <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+    <META content="Nigel Cliffe" name=Author>
+    <META name="keywords" content="clinics java model railroad JMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra signalling UK British">
+
+<!-- Style -->
+  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+  <link rel="icon" href="/images/jmri.ico" type="image/png">
+  <link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
+
+<body>
+<h2>Signal Mast Logic - Layout Hardware</h2>
+<p>The choice of hardware for a signalling project is very open, there are lots 
+  of makers of accessory decoders which can operate turnouts or signals. The choices 
+  used in this tutorial are NOT the only ones which could work, just those the 
+  authors happened to have available at the time. </p>
+<p>To allow our signals to operate automatically, we require a means of controlling 
+  them from JMRI. Therefore, our signals are controlled by an accessory decoder 
+  which is addressed by commands from JMRI. </p>
+<p>The Signal Mast Logic must know the state of the turnouts, otherwise it cannot 
+  set a signal correctly, so our turnouts are also controlled by accessory decoders.. 
+  Additionally it is desirable to know whether the track ahead of a signal is 
+  occupied. so we require a means of detecting block occupancy.</p>
+<p>For the tutorial, we constructed a system based around LocoNet. LocoNet includes 
+  the ability to send information back to the command station and computer running 
+  JMRI. In our case, we used this to send back occupancy information. </p>
+<p>Our Command Station is a Digitrax Zephyr. This is linked to the computer running 
+  JMRI using a Digitrax PR3 computer interface. The turnouts are controlled using 
+  a CML Electronics DAC20 accessory decoder. In addition, that decoder can accept 
+  input from occupancy detectors, so we used a Digitrax BD4 occupancy detector 
+  to monitor four track sections. Our colour light signals are controlled using 
+  a LocoIO board (from Hans De Loof), and the Semaphore Signals are controlled 
+  by a LocoServo board (also HDL). The LocoServo has a few spare inputs on our 
+  demonstration, so we used those for push-buttons to set routes - thus there 
+  is a push button interface to set the track. </p>
+<p>&nbsp;</p>
+<p><img src="schematic.png" width="1033" height="603"></p>
+<p>&nbsp;</p>
+<p>The arrangement of blocks is shown below, with the three track segments coloured 
+  red linked to individual inputs on the BD4 detector (the fourth input was not 
+  used). The blocks which are coloured black were used in software but not attached 
+  to hardware detectors. With the hardware detectors, the system can tell that 
+  a train is in the bay, crossing the junction, or on the Up line before the west-most 
+  signal. </p>
+<p>It is quite possible to operate without any hardware detectors, and instead 
+  use the user interface onto a Panel in JMRI to operate &quot;internal&quot; 
+  sensors which are attached to blocks. Thus a human operator tells the system 
+  that a block is occupied or clear, and the system will then calculate the correct 
+  signal settings. </p>
+<p><img src="layoutoverview-blocks.png" width="830" height="278"></p>
+<p>&nbsp;</p>
+<p>The video (hosted on YouTube) gives an overview of the layout and its hardware. 
+</p>
+<iframe width="640" height="480" src="http://www.youtube.com/embed/Ia6Jq6BQ8gE" frameborder="0" allowfullscreen></iframe> 
+<p><a href="turnout_table.shtml">Move on to Part 4</a> </p>
+<p><a href="Introduction.shtml">Back to Introduction</a></p>
+<p>&nbsp; </p>
+</body>
+</html>
