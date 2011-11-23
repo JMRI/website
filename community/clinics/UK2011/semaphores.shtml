@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<!--#include virtual="/Header" -->
 <h2>Using Semaphore Signals rather than Colour Lights</h2>
 <p>So far, this tutorial has used colour light signals. However, semaphore signals 
   can be used in place of colour lights. </p>
@@ -44,6 +45,11 @@
 <p>[ <a href="jmri_files/Demo%20Signal%208.xml">Link to download panel file</a> 
   ]</p>
 <p>&nbsp;</p>
-<p><a href="Introduction.shtml">Back to Introduction</a></p>
+<p><a href="index.shtml">Back to Introduction</a></p>
+<!--#include virtual="/Footer" -->
+
+   </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</div> <!-- closes #container -->
 </body>
 </html>

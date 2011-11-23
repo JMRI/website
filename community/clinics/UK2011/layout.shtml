@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<!--#include virtual="/Header" -->
 <h2>Signal Mast Logic - The Layout</h2>
 <p>The track arrangement chosen for the tutorial is shown in the illustration 
   below. Being a UK prototype, trains run on the left hand line of a double track. 
@@ -40,7 +41,12 @@
   lines, but we felt that the arrangement in the diagram has sufficient features 
   for the tutorial. </p>
 <p><a href="Hardware.shtml">Move on to Part 3</a> </p>
-<p><a href="Introduction.shtml">Back to Introduction</a></p>
+<p><a href="index.shtml">Back to Introduction</a></p>
 <p>&nbsp;</p>
+<!--#include virtual="/Footer" -->
+
+   </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</div> <!-- closes #container -->
 </body>
 </html>

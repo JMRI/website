@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<!--#include virtual="/Header" -->
 <h2>Describe the Layout with the Layout Editor</h2>
 <p>Within JMRI there are a number of editors which can produce graphical representations 
   for controlling a layout. In this tutorial, we are using the Layout Editor. 
@@ -81,6 +82,11 @@
 <p>[<a href="jmri_files/Demo%20Signal%202.xml"> Link to download file</a> ] </p>
 <p>&nbsp;</p>
 <p><a href="signalheads_and_masts.shtml">Move on to Part 6</a> </p>
-<p><a href="Introduction.shtml">Back to Introduction</a></p>
+<p><a href="index.shtml">Back to Introduction</a></p>
+<!--#include virtual="/Footer" -->
+
+   </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</div> <!-- closes #container -->
 </body>
 </html>

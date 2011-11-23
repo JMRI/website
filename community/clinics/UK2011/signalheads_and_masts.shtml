@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<!--#include virtual="/Header" -->
 <h2>Signal Heads and Signal Masts</h2>
 <p>To get to our goal of full signal rules on our layout, we need to describe 
   the signals to JMRI. </p>
@@ -66,7 +67,7 @@
 <p>[ <a href="jmri_files/Demo%20Signal%203.xml">Link to download file</a> ]</p>
 <p>&nbsp;</p>
 <p><a href="placing_signals_on_layout.shtml">Move on to Part 7</a> </p>
-<p><a href="Introduction.shtml">Back to Introduction</a></p>
+<p><a href="index.shtml">Back to Introduction</a></p>
 <p>&nbsp;</p>
 <h3>Diversion - Using Fewer Decoder Outputs for 2 or 3 Aspect Signals. </h3>
 <p>With this little trick one can save considerably on the number of accessory 
@@ -87,5 +88,10 @@
   to select &quot;invert&quot; in the turnout table for one of the two decoder 
   addresses. </p>
 <p>&nbsp;</p>
+<!--#include virtual="/Footer" -->
+
+   </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</div> <!-- closes #container -->
 </body>
 </html>

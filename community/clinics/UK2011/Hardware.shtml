@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<!--#include virtual="/Header" -->
 <h2>Signal Mast Logic - Layout Hardware</h2>
 <p>The choice of hardware for a signalling project is very open, there are lots 
   of makers of accessory decoders which can operate turnouts or signals. The choices 
@@ -61,7 +62,12 @@
 </p>
 <iframe width="640" height="480" src="http://www.youtube.com/embed/Ia6Jq6BQ8gE" frameborder="0" allowfullscreen></iframe> 
 <p><a href="turnout_table.shtml">Move on to Part 4</a> </p>
-<p><a href="Introduction.shtml">Back to Introduction</a></p>
+<p><a href="index.shtml">Back to Introduction</a></p>
 <p>&nbsp; </p>
+<!--#include virtual="/Footer" -->
+
+   </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</div> <!-- closes #container -->
 </body>
 </html>

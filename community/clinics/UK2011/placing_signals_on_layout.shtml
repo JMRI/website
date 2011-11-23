@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<!--#include virtual="/Header" -->
 <h2>Adding Signal Masts to the Layout, and creating Signal Mast Rules</h2>
 <p>Signal Mast Rules work from signal to signal. If we consider our layout, and 
   the down line, there is a signal controlling access to platform 2 or into the 
@@ -48,8 +49,13 @@
 <p></p>
 <p>&nbsp; </p>
 <p><a href="permissive_working.shtml">Move on to Part 8</a> </p>
-<p><a href="Introduction.shtml">Back to Introduction</a></p>
+<p><a href="index.shtml">Back to Introduction</a></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+<!--#include virtual="/Footer" -->
+
+   </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</div> <!-- closes #container -->
 </body>
 </html>
