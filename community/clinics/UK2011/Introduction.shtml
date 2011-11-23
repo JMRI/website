@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<!--#include virtual="/Header" -->
 <h2>Signal Mast Logic - Introduction </h2>
 <p><i>At the Lancashire and Yorkshire DCC exhibition in October 2011, Nigel Cliffe and 
   Kevin Dickerson presented a tutorial on using JMRI for signal control. This 
@@ -55,6 +56,10 @@
   <li><a href="semaphores.shtml">Using Semaphore Signals rather than Colour Lights</a> 
   </li>
 </ol>
-<p>&nbsp;</p>
+<!--#include virtual="/Footer" -->
+
+   </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</div> <!-- closes #container -->
 </body>
 </html>
