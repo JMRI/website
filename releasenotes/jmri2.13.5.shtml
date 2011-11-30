@@ -134,6 +134,16 @@ None at the time of this release.
       <li>The direction checkboxes now function properly</li>
       <li>The reverse button now has some function, though there is a known issue with loosing the lead address</li>
    </ul>
+   
+  <p> Kevin Dickerson has made the following updates
+   <ul>
+      <li>Deprecated the loconet ALM code as it is believed to no longer be used and has bugs that have been un-reported</li>
+      <li>Added a Method to generate Entry Exit routes using the Layout Editor, so that only a source and destination sensor
+        needs to be made active and the turnouts between the two points will automatically be set.</li>
+      <li>Added an option into Blocks, to set the direction of traffic flow to neighbouring blocks, this is mainly used with 
+      the SignalMast logic and Entry Exit pairs, to help define sections of traffic that only work in one direction.</li>
+      <li>Added the ability to set the permissive flag for a block from the Layout Editor block editor</li>
+   </ul>
 
 <p>Spectrum Engineering provided a decoder definition for their Animation Controller AC8824 accessory decoder.
 
