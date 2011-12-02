@@ -145,6 +145,17 @@ None at the time of this release.
       <li>Added the ability to set the permissive flag for a block from the Layout Editor block editor</li>
    </ul>
 
+  <p> Dave Duchamp has made the following updates
+   <ul>
+      <li>Dispatcher - Stopping automatically running trains when using the 'Pause" action has been 
+        improved.</li>
+      <li>Transits - Fixed a bug that caused an exception when saving a panel containing a Transit with a missing 
+        Section that a user had deleted.</li>
+      <li>Sections - Added a new dialog to the Section Table informing the user if a Section the user is 
+        proposing to delete is in use by Transits, and listing which Transits are using the Section.  The 
+        user is given a choice of proceeding with the deletion, or cancelling.</li>
+   </ul>
+
 <p>Spectrum Engineering provided a decoder definition for their Animation Controller AC8824 accessory decoder.
 
 <p>Jim Wouter provided an update for the sound levels and defaults in the MRC Sound Brilliance 1812 decoder definition.
