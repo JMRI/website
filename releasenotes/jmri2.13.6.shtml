@@ -42,7 +42,7 @@ And please back up your JMRI files before installing this, in case you want to g
 back to an earlier version.</p>
 
 <p>This is the next in a series of test versions. We expect this series
-to end in a JMRI 3.0 production release.</p> 
+to end in a JMRI 2.14 production release.</p> 
 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.  
@@ -117,6 +117,16 @@ None at the time of this release.
       <li>Get app logos using toolkit to prevent startup crash(es) when building (if copyfile step not performed).</li>
    </ul>
 
+<p> Matthew Harris made the following updates:
+    <ul>
+        <li>Fixed a problem with System Console font choice</li>
+        <li>Incorporated the current logging level into the debug log level report</li>
+        <li>Fixed a problem in the Context Report which often failed if a 
+            network cable was not plugged in</li>
+        <li>Changed the Audio table views to use a tabbed pane</li>
+        <li>Added a 'Restart' option to the main JMRI File menu</li>
+        <li>Added an option to incorporate a 'Restart JMRI' button to the main JMRI window</li>
+    </ul>
 
 
    <!--#include virtual="/Footer" -->
