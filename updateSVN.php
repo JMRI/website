@@ -21,7 +21,7 @@ function my_exec($cmd, $input='')
          } 
 
 
-$command = 'svn update . help jython k resources web xml';
+$command = 'svn cleanup . help jython k resources web xml; svn update . help jython k resources web xml';
 
 echo 'Command: <pre>'.$command.'</pre><br>';
 
