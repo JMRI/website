@@ -115,6 +115,7 @@ None at the time of this release.
 <p> Steve Todd made the following update:
    <ul>
       <li>Get app logos using toolkit to prevent startup crash(es) when building (if copyfile step not performed).</li>
+      <li>add "protect" flag to frameserver to provide read-only page that auto-refreshes.</li>
    </ul>
 
 <p> Matthew Harris made the following updates:
