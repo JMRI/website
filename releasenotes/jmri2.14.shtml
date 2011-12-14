@@ -212,38 +212,8 @@ throttles connected by radio).
 <ul>
     <li>Developed Decoder Pro 3 with Nigel Cliffe into a format that is ready for Beta testing, additional
     enhancements to the Roster Groups in DP3 have been made by Randall Wood</li>
-	<li>Ensured that the order that items are saved and loaded in the panel XML files is consistent</li>
-    <li>Updated a number of files relating to the validation of the XML files (Bug 3370027)</li>
-    <li>Allowed layout block routing to be enable from the Signal Mast Logic 
-    table when performing a "discover all pairs"</li>
-    <li>Introduced a manager to help control the way in which changes to user names are handled</li>
-    <li>Changed the way in which UserNames are edited in the tables, so that 
-    renames are performed via a mouse pop-up menu and not directly editable</li>
-    <li>Did some work on the LocoNet Over TCP so that it appears correctly in the connection preferences</li>
-    <li>Caught an issue when clearing a connection from the preferences that could
-    prevent a new connection from being created</li>
-    <li>Fixed an issue with the sensor icon that prevented icon from being changed once placed on the panel (Bug 3361033)</li>
-    <li>Add the option in the layout editor to change sensor and signalhead 
-    icons for an item already on the panel</li>
-    <li>Fixed an issue with the Sensor Debounce on LocoNet connected Sensors (Bug 3368304)</li>
-    <li>Fixed an issue in the layout editor, where undashed track segments would become dashed</li>
-    <li>Updated the way in which Signal Heads are created, by using drop down boxes to select existing turnouts
-    or a seperate method to create turnouts on the fly using a drop down box to select the connection and a text
-    field to enter in the hardware address.</li>
 
-    <li>Updated the Ecos Sensor code to recognise the new ESU Detectors</li>
-    <li>Updated the Ecos messaging code to handle information from the Ecos better and improve performace</li>
-    <li>Made some improvements to the performance of displaying the Preferences for the first time</li>
-    <li>Made some improvements to the performance of opening the create loco for the first time</li>
-    <li>Provide Friendly Names for the serial ports, this is only available for Windows Systems</li>
-    
-    <li>Fixed a Bug in the XPressNet Simulator where if either the system prefix or system name had been updated, the details would not be saved</li>
-    <li>Fixed a Bug in the CAN Simulator, where the port selected wasn't saved or reloaded correctly</li>
-    <li>Removed the requirement to select a valid serial port for the CMRI Simulator</li>
-    <li>Updated the code so that the status screen is correctly updated when a network connection fails</li>
-    <li>Updated the DP3 interface so that roster entries can be printed out from the front screen</li>
-    <li>Fixed a Bug in the DP3 interface whereby the Roster Groups pane would not be displayed when a group was created</li>
-    <li>Fixed a Bug in the SignalHead code for the panel editor, where the held SignalHead would not be displayed</li>
+
 
 	<li><b>DecoderPro3</b></li>
     <ul>
@@ -253,6 +223,8 @@ throttles connected by radio).
         <li>Added the ability to launch the comprehensive programmer by double clickling on a roster entry in the table</li>
         <li>Provided the right click pop-up menu in the roster table.</li>
         <li>Updated the xml file and toolbar files, so that translations can be added.</li>
+        <li>Updated the DP3 interface so that roster entries can be printed out from the front screen</li>
+        <li>Fixed a Bug in the DP3 interface whereby the Roster Groups pane would not be displayed when a group was created</li>
     </ul>
     
     <li><b>SignalMast and SignalMast Logic</b></li>
@@ -260,6 +232,14 @@ throttles connected by radio).
         <li>In the SignalMast Logic, if a specific held aspect is not found then the aspect for Danger is used.</li>
         <li>Updated the SignalMast logic so that when the logic changes from one destination mast to another this forces the source signal mast to go to a stop asppearance.</li>
         <li>Updated the SignalMast UI to use drop down boxes to select signal heads used to build the mast.</li>
+        <li>Added a Method to generate Entry Exit routes using the Layout Editor, so that only a source and destination sensor
+        needs to be made active and the turnouts between the two points will automatically be set.</li>
+        <li>Added an option into Blocks, to set the direction of traffic flow to neighbouring blocks, this is mainly used with 
+        the SignalMast logic and Entry Exit pairs, to help define sections of traffic that only work in one direction.</li>
+        <li>Allowed layout block routing to be enable from the Signal Mast Logic table when performing a "discover all pairs"</li>
+        <li>Added in a Turnout based Signal Mast driver, where each turnout and state is used to control an appearance.</li>
+        <li>Added in a Virtual Signal Mast driver</li>
+        <li>Made it possible for users to create and store their own signalling systems in the user preferences folder, or alter specific signalmast for an existing supplied system</li>
     </ul>
     
     <li><b>Editors</b></li>
@@ -268,21 +248,51 @@ throttles connected by radio).
         Note: That only a change in the primary turnout will update the status on the panel, not the secondary.</li>
         <li>Fixed an issue where, slips, three-ways and cross-overs could not be added in the panel editor.</li>
         <li>Updated the text based icon in the layout editor to use a separate properties window to edit the text styles.</li>
+        <li>Added the ability to set the permissive flag for a block from the Layout Editor block editor</li>
+        <li>Fixed an issue with the sensor icon that prevented icon from being changed once placed on the panel (Bug 3361033)</li>
+        <li>Add the option in the layout editor to change sensor and signalhead 
+            icons for an item already on the panel</li>
+        <li>Fixed an issue in the layout editor, where undashed track segments would become dashed</li>
+        <li>Fixed a Bug in the SignalHead code for the panel editor, where the held SignalHead would not be displayed</li>
+    </ul>
+    
+    <li><b>Hardware and Connection Updates</b></li>
+    <ul>
+        <li>Deprecated the loconet ALM code as it is believed to no longer be used and has bugs that have been un-reported</li>
+        <li>Fixed a Bug in the XPressNet Simulator where if either the system prefix or system name had been updated, the details would not be saved</li>
+        <li>Fixed a Bug in the CAN Simulator, where the port selected wasn't saved or reloaded correctly</li>
+        <li>Removed the requirement to select a valid serial port for the CMRI Simulator</li>
+        <li>Updated the code so that the status screen is correctly updated when a network connection fails</li>
+        <li>Updated the Ecos Sensor code to recognise the new ESU Detectors</li>
+        <li>Updated the Ecos messaging code to handle information from the Ecos better and improve performace</li>
+        <li>Fixed an issue with the Sensor Debounce on LocoNet connected Sensors (Bug 3368304)</li>
+        <li>Did some work on the LocoNet Over TCP so that it appears correctly in the connection preferences</li>
+        <li>Caught an issue when clearing a connection from the preferences that could
+            prevent a new connection from being created</li>
     </ul>
     <li>Updated the list of langauges in the preferences to be in alphabetical order</li>
-    <li>Converted the roster entry xml files from using dtd to schema.</li>
-    <li>Updated the add/edit Routes screen so that trigger sensors/turnouts are selected from a combo box.</li>
+
     <li>Fixed a bug in the logix, where it was not possible to use the first aspect in the drop down list as part of a condition</li>
     <li>Fixed a bug in the Throttle code that handled the disposing and releasing of throttles which could result in the throttle not being correctly disposed of.</li>
+    
+    <li>Updated the add/edit Routes screen so that trigger sensors/turnouts are selected from a combo box.</li>
+    
+    <li>Ensured that the order that items are saved and loaded in the panel XML files is consistent</li>
+    <li>Updated a number of files relating to the validation of the XML files (Bug 3370027)</li>
+    <li>Converted the roster entry xml files from using dtd to schema.</li>
+
+    <li>Introduced a manager to help control the way in which changes to user names are handled</li>
+    <li>Changed the way in which UserNames are edited in the tables, so that 
+    renames are performed via a mouse pop-up menu and not directly editable</li>
+    
     <li>Updated the "DCC Signal Decoder" signal head, so that you can specify which interface the signal is attached to.</li>
+    <li>Updated the way in which Signal Heads are created, by using drop down boxes to select existing turnouts
+    or a seperate method to create turnouts on the fly using a drop down box to select the connection and a text
+    field to enter in the hardware address.</li>
+    <li>Provide Friendly Names for the serial ports, this is only available for Windows Systems</li>
 
-      <li>Deprecated the loconet ALM code as it is believed to no longer be used and has bugs that have been un-reported</li>
-      <li>Added a Method to generate Entry Exit routes using the Layout Editor, so that only a source and destination sensor
-        needs to be made active and the turnouts between the two points will automatically be set.</li>
-      <li>Added an option into Blocks, to set the direction of traffic flow to neighbouring blocks, this is mainly used with 
-      the SignalMast logic and Entry Exit pairs, to help define sections of traffic that only work in one direction.</li>
-      <li>Added the ability to set the permissive flag for a block from the Layout Editor block editor</li>
-
+    <li>Made some improvements to the performance of displaying the Preferences for the first time</li>
+    <li>Made some improvements to the performance of opening the create loco for the first time</li>
 </ul>
 
 <p>David Duchamp made the following enhancements to Dispatcher:</p>
