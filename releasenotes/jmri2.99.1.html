@@ -127,6 +127,8 @@ These are development files, and might not be working at any particular time.
    
    </ul>
 
+   <p>Paul Bender added a new Generic Consist Manager which will be installed onsystems such as the SPROG that implement a command station interface (the ability to send an arbitrary NMRA DCC packet).  This version of the Consist Manager uses an NMRA Consist Control packet to create the consist instead of the Operations Mode Programming request used in the previous Generic Consist Manager.  This will allow writing the consist address on decoders that support Operations Mode Programming, but do not allow operations mode programming of CV19 (Certain Lenz decoders fall into this category).
+
 
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
