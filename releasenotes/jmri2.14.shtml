@@ -50,7 +50,7 @@ see our
 
 <h3>Warnings</h3>
 
-The way in which UserNames are edited in the tables changed.
+The way in which UserNames are edited in the tables changed since JMRI 2.12.
 Renames are now performed via a mouse pop-up menu and can not be directly edited.
 
 <p>
@@ -69,6 +69,7 @@ None at the time of this release.
 
 <h3>Download links:</h3>
 
+<!-- 
 <p>Please use these links for downloading:</p>
 
 <p>MacOS X: <A
@@ -79,6 +80,11 @@ None at the time of this release.
 
 <p>Linux: <A
 	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.tgz/download</a></p>
+ -->
+
+Preliminary build files (not the final released files) can be found
+on the
+<a href="http://builds.jmri.org/jenkins/job/Release%202.14/lastSuccessfulBuild/artifact/jmri/dist/release/">2.14 CI project page</a>.
 
 <h3>Changes since production release 2.12</h3>
 
