@@ -126,6 +126,12 @@ These are development files, and might not be working at any particular time.
 
    <p>Paul Bender added a new Generic Consist Manager which will be installed onsystems such as the SPROG that implement a command station interface (the ability to send an arbitrary NMRA DCC packet).  This version of the Consist Manager uses an NMRA Consist Control packet to create the consist instead of the Operations Mode Programming request used in the previous Generic Consist Manager.  This will allow writing the consist address on decoders that support Operations Mode Programming, but do not allow operations mode programming of CV19 (Certain Lenz decoders fall into this category).
 
+   <p>Kevin Dickerson made the following updates:
+   <ul>
+    <li>Fixed an inconsistancy issue relating to the saving of preferences in DP3 depending upon the method that it was closed</li>
+    <li>Update the EasyDCC interface so that it would be picked up correctly on the DP3 status screen</li>
+   
+   </ul>
 
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
