@@ -29,11 +29,11 @@
       Release Notes for JMRI 2.13.7 release
       </h2>
 
-	<p>Date: December 10, 2011</p>
+	<p>Date: December 20, 2011</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Test version 2.13.7 of JMRI/DecoderPro is available for download.</p>
  
-<br><b>This is a draft release note only; the final download files are not yet available!</b>
+<!--<br><b>This is a draft release note only; the final download files are not yet available!</b>-->
 
 <h3>Notes:</h3>
 
@@ -79,7 +79,7 @@ created by default.</p>
 
 <p>
 JMRI 2.12 is the last release which is completely supported by Java 1.5.
-Starting with this release, there will be minor interface features, such as 
+Starting with JMRI 2.13.1, there are minor interface features, such as 
 drag-and-drop of some items, that require your computer to have Java 1.6 installed.
 Computers with only Java 1.5 will still be able to use JMRI, including PanelPro and DecoderPro,
 through the end of this 2.13.* release cycle.  Releases in the next cycle
@@ -92,22 +92,22 @@ None at the time of this release.
 
 <h3>Download links:</h3>
 
-<!-- 
 <p>Please use these links for downloading:</p>
 
 <p>MacOS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.6.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.6.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.6.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.6.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.6.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.6.tgz/download</a></p>
- -->
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.tgz/download</a></p>
 
+<!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Release%202.13.7/lastSuccessfulBuild/artifact/jmri/dist/release/">CI project page</a>.
+ -->
 
 <h3>Changes since test release 2.13.6</h3>
 
