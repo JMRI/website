@@ -116,10 +116,13 @@ These are development files, and might not be working at any particular time.
 <li>New switch list print option, you can now have a different car format for your switch list.  See Print Options.</li>
 <li>The build reports can be read using a text editor. This feature was enabled by using Java 1.6.  See Print Options.</li>
 <li>Enhanced the manifest printout for passenger trains.  Now when you have a route comment and there isn't any work, only the
-location's name and route comment is printed</li>
+location's name and route comment is printed.</li>
+<li>"Block cars by pick up location" is now disabled if you use one of the generate custom load features from staging.</li>
 <li>Fixed a minor problem where the track defaults weren't shown correctly when using the "Add Track" button when editing an existing track.</li>
 <li>Fixed a problem when changing a car's road name or road number, sometimes the program would report that the
 car would not fit on the car's current track.</li>
+<li>Fixed a problem when using the conductor window and canceling a local move.</li>
+<li>
 
 </ul>
 
