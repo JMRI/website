@@ -127,10 +127,15 @@ None at the time of this release.
 	staging, those cars will have the block tags assigned to them.  To enable this feature, see Edit Staging Track, "Optional Car Blocking" in the lower right corner of the window.</LI>
 </ul>
 
-<p>Randall Wood made the following enhancements to the mini web server:</p>
+<p>Mini web server enhancements:</p>
 <ul>
-	<li>The mini web server now displays Open Windows from /frame as well as /panel. In a future release, /panel will no longer be usable to remotely display Open Windows.</li>
-	<li>The XMLIO protocol recognizes the <em>frame</em> type as well as the <em>panel</em> type to list Open Windows. In a future release, <em>panel</em> will no longer be usable to list Open Windows.</li>
+	<li>The mini web server now displays Open Windows from /frame as well as /panel. In a future release, /panel will no longer be usable to remotely display Open Windows. (Randall Wood)</li>
+	<li>The XMLIO protocol recognizes the <em>frame</em> type as well as the <em>panel</em> type to list Open Windows. In a future release, <em>panel</em> will no longer be usable to list Open Windows.(Randall Wood)</li>
+
+<p>Mac OS X usability:</p>
+<ul>
+	<li>The Quit command in the Application menu, and the Cmd-Q keyboard shortcut, now correctly quit JMRI applications. (Randall Wood)</li>
+	<li>The Preferences item in the Application menu, and the Cmd-, keyboard shortcut, now correctly open the preferences window. (Randall Wood)</li>
 </ul>
 
 <p>Kevin Dickerson made the following enhancements:</p>
