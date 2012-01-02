@@ -98,6 +98,8 @@ These are development files, and might not be working at any particular time.
 <li>Added a new tool to help with custom loads and schedules.  Now you can select a car type
 and load and see which spur with schedules will receive and ship that commodity.  See under
 Tools "Show schedules by car type and load" in the Schedules window.</li>
+<li>Schedules in match mode now shows a hit count.  The hit count is incremented every time a
+schedule's line item is used during a build.</li>
 
 </ul>
 
