@@ -132,6 +132,8 @@ car would not fit on the car's current track.</li>
 <ul>
 <li>Fixed an inconsistancy issue relating to the saving of preferences in DP3 depending upon the method that it was closed</li>
 <li>Update the EasyDCC interface so that it would be picked up correctly on the DP3 status screen</li>
+<li>Updated the Layout Block Routing Protocol, so that when block traffic flow is updated, this is reflected in the routing table</li>
+<li>Added the ability to delete Signal Mast logic from the Signalling Pairs window</li>
 
 <p>Georgio Terdida fixed a bug that may occur when loading an XnTcp adapter.</p>
 
