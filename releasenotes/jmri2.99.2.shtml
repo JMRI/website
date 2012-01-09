@@ -100,6 +100,9 @@ and load and see which spur with schedules will receive and ship that commodity.
 Tools "Show schedules by car type and load" in the Schedules window.</li>
 <li>Schedules in match mode now shows a hit count.  The hit count is incremented every time a
 schedule's line item is used during a build.</li>
+<li>Improved the car import feature.  Now the program can be told to automatically create new car types
+and adjust track lengths during the import.  Saves a lot of time if your importing a lot of cars with new
+car types.</li>
 
 </ul>
 
