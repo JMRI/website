@@ -110,7 +110,7 @@ car types.</li>
 <li>Fixed a bug where the PR3 could not operate a throttle in Programming Mode</li>
 <li>Add a warning message when a logic is created/edited, that if the source or destination mast is used as part of the criteria with the logic, it may result in unexpected behaviour.</li>
 <li>Updated the logic behind the SignalMastLogic in determining routes on the layout editor involving a Double Crossing</li>
-<li>Updated the CAN BUS code so that it can used with multiple other systems.</li>
+<li>Updated the CAN BUS code so that it can handle mutliple connections and be configured with other systems at the same time.</li>
 
 <p>Randall Wood made various improvements to Mac OS X support.</p>
 
