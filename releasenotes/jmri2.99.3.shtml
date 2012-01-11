@@ -3,12 +3,12 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 2.99.2
+ JMRI: Release Notes for 2.99.3
  
  </title>
     <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
     <meta content="Bob Jacobsen" name=Author>
-    <meta name="keywords" content="java model railroad JMRI 2.99.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 2.99.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
@@ -26,12 +26,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 2.99.2 release
+      Release Notes for JMRI 2.99.3 release
       </h2>
 
 	<p>Date: MMM, DD YYYY</p>
 	<p>From: Bob Jacobsen</p>
-	<p>Subject: Test version 2.99.2 of JMRI/DecoderPro is available for download.</p>
+	<p>Subject: Test version 2.99.3 of JMRI/DecoderPro is available for download.</p>
  
 <br><b>This is a draft release note only; the download links do not yet work</b>
 
@@ -81,42 +81,18 @@ None at the time of this release.
 	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.tgz/download</a></p>
  -->
 
+<!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/Test%20Release%202.99.2/lastSuccessfulBuild/artifact/jmri/dist/release/">CI project page</a>.
+<a href="http://builds.jmri.org/jenkins/job/Test%20Release%202.99.3/lastSuccessfulBuild/artifact/jmri/dist/release/">CI project page</a>.
+ -->
 
-<!-- 
 During development leading to the actual release, you can find test download files on the 
 <a href="http://builds.jmri.org/jenkins/job/Packager/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.
- -->
- 
-<h3>Changes since test release 2.99.1</h3>
 
-<p>Dan Boudreau made the following enhancements and fixes to operations.</p>
-<ul>
-<li>Added a new tool to help with custom loads and schedules.  Now you can select a car type
-and load and see which spur with schedules will receive and ship that commodity.  See under
-Tools "Show schedules by car type and load" in the Schedules window.</li>
-<li>Schedules in match mode now shows a hit count.  The hit count is incremented every time a
-schedule's line item is used during a build.</li>
-<li>Improved the car import feature.  Now the program can be told to automatically create new car types
-and adjust track lengths during the import.  Saves a lot of time if your importing a lot of cars with new
-car types.</li>
-<li>Improved loco and caboose changes in a train's route.  Now you can depart without a caboose and add one
-later in the route, or depart with a caboose and remove it in the route.</li>
+<h3>Changes since test release 2.99.2</h3>
 
-</ul>
-
-<p>Kevin Dickerson
-<li>Fixed a bug where the PR3 could not operate a throttle in Programming Mode</li>
-<li>Add a warning message when a logic is created/edited, that if the source or destination mast is used as part of the criteria with the logic, it may result in unexpected behaviour.</li>
-<li>Updated the logic behind the SignalMastLogic in determining routes on the layout editor involving a Double Crossing</li>
-<li>Updated the CAN BUS code so that it can handle mutliple connections and be configured with other systems at the same time.</li>
-
-<p>Randall Wood made various improvements to Mac OS X support.</p>
-
-<p>Steve Todd updated jmdns.jar to v3.4.1 (latest release from http://sourceforge.net/projects/jmdns/).</p>
 
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
