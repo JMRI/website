@@ -98,6 +98,13 @@ These are development files, and might not be working at any particular time.
 <li>Removed accessory address restriction from NCE USB.  Early versions of the NCE USB and PowerCab/SB3 were limited to 250,
 now they can support the entire accessory address range.</li>
 </ul>
+
+<p>Kevin Dickerson made the following changes.</p>
+<ul>
+<li>Add a notification if an error occured during a panel store, rather than it previously failing silently.</li>
+<li>Updated the throttle window, so that when it is closed, any active throttles, no longer set the loco speed to 0 or turns off all the functions</li>
+</ul>
+
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
