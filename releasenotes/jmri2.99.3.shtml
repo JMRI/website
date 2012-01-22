@@ -106,6 +106,13 @@ now they can support the entire accessory address range.</li>
 <li>Updated the throttle window, so that when it is closed, any active throttles, no longer set the loco speed to 0 or turns off all the functions</li>
 </ul>
 
+<p>Randall Wood made the following changes:</p>
+<ul>
+<li>Fix issues preventing DP3 roster and roster group windows from consitently working correctly.</li>
+<li>Add a roster group selector to the Throttle windows.</li>
+<li>Remove all use of the Active Roster Group.</li>
+</ul>
+
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
