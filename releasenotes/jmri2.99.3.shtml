@@ -114,6 +114,7 @@ These are development files, and might not be working at any particular time.
 <ul>
 <li>Add a notification if an error occurred during a panel store, rather than it previously failing silently.</li>
 <li>Updated the throttle window, so that when it is closed, any active throttles, no longer set the loco speed to 0 or turns off all the functions</li>
+<li>Added a delay option into the SignalMast code to allow the simulation of manually operated signals ie Semaphore Signals<li>
 </ul>
 
 <p>Randall Wood made the following changes:</p>
