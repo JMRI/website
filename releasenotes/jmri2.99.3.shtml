@@ -115,6 +115,7 @@ These are development files, and might not be working at any particular time.
 <li>Add a notification if an error occurred during a panel store, rather than it previously failing silently.</li>
 <li>Updated the throttle window, so that when it is closed, any active throttles, no longer set the loco speed to 0 or turns off all the functions</li>
 <li>Added a delay option into the SignalMast code to allow the simulation of manually operated signals ie Semaphore Signals<li>
+<li>Fix an issue when an NullPointerException could occur when changing between signal mast driver types when the signalling system name does not match the directory that the signal mast are held in</li>
 <li>Updated the status bar font size in DP3 to hopefully make it clearer for some users</li>
 </ul>
 
