@@ -104,13 +104,19 @@ These are development files, and might not be working at any particular time.
    <P>Operations enhancements:
    
    <ul>
-    <li>Now in aggressive mode, tracks in staging can be made available for an inbound train as soon
-     as an outbound train is built. This allows a train to also depart and return to the same
+    <li>Now in aggressive mode, tracks in staging can be made available for an inbound train as
+     soon as an outbound train is built. This allows a train to also depart and return to the same
      staging track. You need to enable this feature to use it, see Settings-&gt;Tools-&gt;Options
      select "Make departure track available after train is built".</li>
+    <li>New car feature "utility". This feature helps mimic prototype car movements of coal or
+     other commodities. When a car is specified as a utility car, its road and number will not be
+     displayed on the manifests or switch lists. Instead the program will list the required number
+     of cars of a given type needed for the train.  See the "Edit Car" window under Type for this feature.
+    <li>Enhanced the operations "Edit Car" window. Now when you select Caboose, Passenger,
+     Hazardous, or Utility, the program asks if you want to change all cars of that type.</li>
    </ul>
 
-<p>Kevin Dickerson made the following changes.</p>
+   <p>Kevin Dickerson made the following changes.</p>
 <ul>
 <li>Add a notification if an error occurred during a panel store, rather than it previously failing silently.</li>
 <li>Updated the throttle window, so that when it is closed, any active throttles, no longer set the loco speed to 0 or turns off all the functions</li>
