@@ -101,9 +101,11 @@ These are development files, and might not be working at any particular time.
      language.</li>
    </ul>
 
-   <P>Operations enhancements:
+   <P>Operations bug fixes and enhancements:
    
    <ul>
+    <li>Fixed an intermittent problem when departing staging in aggressive mode and generate custom car loads
+    was enabled for that track</li>
     <li>Now in aggressive mode, tracks in staging can be made available for an inbound train as
      soon as an outbound train is built. This allows a train to also depart and return to the same
      staging track. You need to enable this feature to use it, see Settings-&gt;Tools-&gt;Options
@@ -114,6 +116,8 @@ These are development files, and might not be working at any particular time.
      of cars of a given type needed for the train.  See the "Edit Car" window under Type for this feature.
     <li>Enhanced the operations "Edit Car" window. Now when you select Caboose, Passenger,
      Hazardous, or Utility, the program asks if you want to change all cars of that type.</li>
+     <li>You can now edit the "hazardous" warning message, see Settings-&gt;Tools-&gt;Print Options.
+     <li>Improved the train build report for several build failures</li>
    </ul>
 
    <p>Kevin Dickerson made the following changes.</p>
