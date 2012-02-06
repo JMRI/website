@@ -132,7 +132,10 @@ These are development files, and might not be working at any particular time.
 <li>Updated the throttle window, so that when it is closed, any active throttles, no longer set the loco speed to 0 or turns off all the functions</li>
 <li>Added a delay option into the SignalMast code to allow the simulation of manually operated signals ie Semaphore Signals<li>
 <li>Fix an issue when an NullPointerException could occur when changing between signal mast driver types when the signalling system name does not match the directory that the signal mast are held in</li>
-<li>Updated the status bar font size in DP3 to hopefully make it clearer for some users</li>
+<li>Added an Experimental DCC accessory controlled SignalMast for the rr-cirkits LNCP module.</li>
+<li>Updated the status bar font size in DP3 to hopefully make it clearer for some users.</li>
+<li>Added the ability to save and recall the order in which column headers appear in DP3s roster table</li>
+<li>Add the ability in the Layout Editor to control a second turnout from another one on the layout panel.  This is ideal for situations where the user has two physical turnouts operating from one DCC Address and has to put onto the panel an Internal turnout to represent the second turnout.  Changes made to either turnout are reflected on the other.</li>
 </ul>
 
 <p>Randall Wood made the following changes:</p>
