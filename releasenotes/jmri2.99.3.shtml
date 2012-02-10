@@ -136,6 +136,9 @@ These are development files, and might not be working at any particular time.
 <li>Updated the status bar font size in DP3 to hopefully make it clearer for some users.</li>
 <li>Added the ability to save and recall the order in which column headers appear in DP3s roster table</li>
 <li>Add the ability in the Layout Editor to control a second turnout from another one on the layout panel.  This is ideal for situations where the user has two physical turnouts operating from one DCC Address and has to put onto the panel an Internal turnout to represent the second turnout.  Changes made to either turnout are reflected on the other.</li>
+<li>ECOS - Improved he handling of adding locos to the roster from ecos database.</li>
+<li>(Windows Only) In the preferences when you select a new connection, they system will try and match the correct comm port against the selected system</li>
+<li>Fixed an issue in the "Add/Edit Routes" window that could cause panel files to load slowly.</li>
 </ul>
 
 <p>Randall Wood made the following changes:</p>
