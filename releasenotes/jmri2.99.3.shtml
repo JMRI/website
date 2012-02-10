@@ -158,6 +158,11 @@ the OpSw read or write message.  These tools will now attempt up to three
 accesses to an OpSw before aborting the OpSw operation, instead of making 
 only one OpSw access attempt.</li>
 </ul>
+<p>Steve Todd made the following changes:</p>
+<ul>
+<li>Added default robots.txt file to ask webcrawlers to NOT index any content from miniserver.</li>
+</ul>
+
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
