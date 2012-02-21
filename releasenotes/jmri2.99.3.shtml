@@ -144,6 +144,9 @@ These are development files, and might not be working at any particular time.
 <li>ECOS - Improved he handling of adding locos to the roster from ecos database.</li>
 <li>(Windows Only) In the preferences when you select a new connection, they system will try and match the correct comm port against the selected system</li>
 <li>Fixed an issue in the "Add/Edit Routes" window that could cause panel files to load slowly.</li>
+<li>Fixed an issue with the Start-Up Wizard that could cause the system to hang when doing the final connect</li>
+<li>Fix potential NPE that would stop the Sprog command station from working if a null packet was queued.</li>
+<li>Fix a number of XML validation errors.</li>
 </ul>
 
 <p>Randall Wood made the following changes:</p>

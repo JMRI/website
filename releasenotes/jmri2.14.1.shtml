@@ -100,6 +100,7 @@ on the
 <p>Kevin Dickerson <li>fixed a bug where the PR3 could not operate a throttle in Programming Mode</li>
 <li>Fix an issue when an NullPointerException could occur when changing between signal mast driver types when the signalling system name does not match the directory that the signal mast are held in</li>
 <li>Fixed an issue in the "Add/Edit Routes" window that could cause panel files to load slowly.</li>
+<li>Fixed an issue with the Start-Up Wizard that could cause the system to hang when doing the final connect</li>
 
 <p>Matthew Harris fixed a bug that in certain circumstances caused a NullPointerException when accessing the Context report.
 
