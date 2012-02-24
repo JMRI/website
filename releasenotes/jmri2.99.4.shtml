@@ -97,6 +97,9 @@ These are development files, and might not be working at any particular time.
    <p>Kevin Dickerson made the following changes.</p>
    <li>(Bug Id 3105034) Fixed an issue with the function labels that would result in default label values that were once removed re-appearing.</li>
    <li>Added in a full Entry/Exit interlocking system for use with the layout editor.</li>
+   <li>Suppressed the "Serial Port" selection box from the preferences of the CAN and SMRI Simulator</li>
+   <li>Added an automatic connection recovery for the ECoS</li>
+   <li>Add the ability for the command monitor, jython input and output windows to be displyaed on top of any other window.</li>
 
 
 
