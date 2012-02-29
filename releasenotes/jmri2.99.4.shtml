@@ -102,10 +102,28 @@ These are development files, and might not be working at any particular time.
    <li>Added an automatic connection recovery for the ECoS</li>
    <li>Add the ability for the command monitor, jython input and output windows to be displyaed on top of any other window.</li>
    </ul>
-   
+
    <p>Dan Boudreau made the following changes.</p>
    <ul>
-   <li>Fixed throttle when launched from Edit NCE Consist and the operations train icon.</li>
+    <li>Fixed throttle when launched from Edit NCE Consist and the operations train icon.</li>
+    <li>Enhanced the JMRI consist tool to now use the NCE command station when setting up a
+     consist.</li>
+   </ul>
+
+   <p>Dan Boudreau made the following changes to operations.</p>
+   <ul>
+    <li>Increased the maximum sequential car count in a schedule line item from 10 to 100.</li>
+    <li>The schedule hit count now includes hits to a line item in sequential mode. Before the
+     count would only increment if the schedule was in match mode.</li>
+    <li>Some minor GUI improvements, now the program asks if you really want to delete a route
+     or a train.</li>
+    <li>Fixed a bug when deleting a loco, before you couldn't just press the add or save button
+     if you changed your mind about deleting the loco.</li>
+    <li>Enhanced the switch list printouts. You can now run the switch lists in two modes, real
+     time which was the only way it previously ran, and consolidation mode. Consolidation mode is
+     great for folks with small railroads. Basically the program allows you to build and terminate
+     your trains while capturing the switch list data for a location. See operations help for more
+     info. Should save paper!</li>
    </ul>
 
    <!--#include virtual="/Footer" -->
