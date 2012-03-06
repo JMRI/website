@@ -101,6 +101,9 @@ These are development files, and might not be working at any particular time.
    <li>Suppressed the "Serial Port" selection box from the preferences of the CAN and SMRI Simulator</li>
    <li>Added an automatic connection recovery for the ECoS</li>
    <li>Add the ability for the command monitor, jython input and output windows to be displyaed on top of any other window.</li>
+   <li>Added the ability to clear the jython output window via a button</li>
+   <li>Jython is now initialised in the background rather than when required to improve user performance.</li>
+   <li>Add SignalMasts - Filtered the list of available DCC systems available when the LNCP mast is selected to those with only a LocoNet Command Station</li>
    </ul>
 
    <p>Dan Boudreau made the following changes.</p>
