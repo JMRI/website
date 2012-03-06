@@ -115,8 +115,9 @@ These are development files, and might not be working at any particular time.
     <li>Increased the maximum sequential car count in a schedule line item from 10 to 100.</li>
     <li>The schedule hit count now includes hits to a line item in sequential mode. Before the
      count would only increment if the schedule was in match mode.</li>
-    <li>Some minor GUI improvements, now the program asks if you really want to delete a route
-     or a train.</li>
+    <li>Some GUI improvements, now the program asks if you really want to delete a route,
+     schedule or a train. You can now adjust and save the table column widths in the Edit Schedule
+     and Edit Route windows.</li>
     <li>Fixed a bug when deleting a loco, before you couldn't just press the add or save button
      if you changed your mind about deleting the loco.</li>
     <li>Enhanced the switch list printouts. You can now run the switch lists in two modes, real
@@ -125,7 +126,7 @@ These are development files, and might not be working at any particular time.
      your trains while capturing the switch list data for a location. See operations help for more
      info. Should save paper!</li>
    </ul>
-   
+
    <p>Matthew Harris made the following changes.</p>
    <ul>
     <li>Added support for the ARM architecture on Linux</li>
