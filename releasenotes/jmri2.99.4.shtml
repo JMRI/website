@@ -128,6 +128,11 @@ These are development files, and might not be working at any particular time.
      great for folks with small railroads. Basically the program allows you to build and terminate
      your trains while capturing the switch list data for a location. See operations help for more
      info. Should save paper!</li>
+     <LI>New operations feature, train manifests are now truncated when there's a switch list for the location visited.
+     A "truncated" manifest doesn't show where the cars are pulled from or where they are to be spotted.  Local moves
+     are also not shown.  All of the removed info is however shown on the switch list for the location.  This simplifies
+     the train manifest showing only what is needed for the train's conductor.
+     See Print Options and select the "Truncate" check box if you want to use this feature.</LI>
    </ul>
 
    <p>Matthew Harris made the following changes.</p>
