@@ -140,6 +140,10 @@ These are development files, and might not be working at any particular time.
     <li>Added support for the ARM architecture on Linux</li>
     <li>Updated Windows launcher with option to force use of 32-bit JRE on 64-bit
      versions of Windows</li>
+    <li>Fixed an issue with auto scrolling in the System Console</li>
+    <li>Added persisting options to the System Console for auto scrolling and
+     for keeping the console on top of the window stack</li>
+    <li>Incorporated an option to print a Java Stack Trace to the System Console</li>
    </ul>
 
 	<p>Ken Cameron made the following changes.</p>
