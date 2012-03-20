@@ -134,7 +134,10 @@ These are development files, and might not be working at any particular time.
      A "truncated" manifest doesn't show where the cars are pulled from or where they are to be spotted.  Local moves
      are also not shown.  All of the removed info is however shown on the switch list for the location.  This simplifies
      the train manifest showing only what is needed for the train's conductor.
-     See Print Options and select the "Truncate" check box if you want to use this feature.</LI>
+     See Print Options and select the "Truncate" checkbox if you want to use this feature.</LI>
+     <LI>New staging option, you can now have cars return to staging on a turn, rather than having a
+     build failure.  See help for more info, see Settings-&gtTools-&gtOptions "Allow cars to return to staging
+     if needed"."
    </ul>
 
    <p>Matthew Harris made the following changes.</p>
