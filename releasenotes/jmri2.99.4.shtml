@@ -104,6 +104,14 @@ These are development files, and might not be working at any particular time.
    <li>Added the ability to clear the jython output window via a button</li>
    <li>Jython is now initialised in the background rather than when required to improve user performance.</li>
    <li>Add SignalMasts - Filtered the list of available DCC systems available when the LNCP mast is selected to those with only a LocoNet Command Station</li>
+   <p>Layout Editor</p>
+   <ul>
+   <li>Add a Single/Double Slip to the layout editor, along with the associated signal logic.</li>
+   <li>fix bug (3175940) with scroll bars in the layout editor.  If the panel is loaded in edit mode the saved setting of the scrollbar is overwritten when you go into view mode.</li>
+   <li>Fixed a bug iin the layout editor that results in the loading of a memory icon, getting placed twice on the panel.</li>
+   <li>Added the ability to delete multiple selected items using either a popup menu or via the keyboard</li>
+   <li>Fixed a fault in the layout editor, that could allow for the same object to be selected twice, resulting in that item beiing moved double the distance</li>
+   </ul>
    </ul>
 
    <p>Herve Blorec provided a set of 
