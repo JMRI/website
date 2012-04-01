@@ -125,27 +125,41 @@ These are development files, and might not be working at any particular time.
 
    <p>Dan Boudreau made the following changes to operations.</p>
    <ul>
-    <li>Increased the maximum sequential car count in a schedule line item from 10 to 100.</li>
-    <li>The schedule hit count now includes hits to a line item in sequential mode. Before the
+    <li>In the "Edit Schedule" window, increased the maximum sequential car count in a schedule line item from 10 to 100.</li>
+    <li>The schedule hit count in the "Edit Schedule" window now includes hits to a line item in sequential mode. Before the
      count would only increment if the schedule was in match mode.</li>
     <li>Some GUI improvements, now the program asks if you really want to delete a route,
      schedule or a train. You can now adjust and save the table column widths in the Edit Schedule
      and Edit Route windows.</li>
-    <li>Fixed a bug when deleting a loco, before you couldn't just press the add or save button
-     if you changed your mind about deleting the loco.</li>
+    <li>Fixed a GUI bug when deleting a loco using the "Edit Locomotive" window, before you
+     couldn't just press the add or save button if you changed your mind about deleting the loco.</li>
     <li>Enhanced the switch list printouts. You can now run the switch lists in two modes, real
-     time which was the only way it previously ran, and consolidation mode. Consolidation mode is
-     great for folks with small railroads. Basically the program allows you to build and terminate
-     your trains while capturing the switch list data for a location. See operations help for more
-     info. Should save paper!</li>
-     <LI>New operations feature, train manifests are now truncated when there's a switch list for the location visited.
-     A "truncated" manifest doesn't show where the cars are pulled from or where they are to be spotted.  Local moves
-     are also not shown.  All of the removed info is however shown on the switch list for the location.  This simplifies
-     the train manifest showing only what is needed for the train's conductor.
-     See Print Options and select the "Truncate" checkbox if you want to use this feature.</LI>
-     <LI>New staging option, you can now have cars return to staging on a turn, rather than having a
-     build failure.  See help for more info, see Settings-&gtTools-&gtOptions "Allow cars to return to staging
-     if needed"."
+     time which was the way it previously ran, and consolidation mode. Consolidation mode is great
+     for folks with small railroads. Basically the program allows you to build and terminate your
+     trains while capturing the switch list data for a location. See operations help for more info.
+     Should save paper!</li>
+    <LI>New operations feature, train manifests are now truncated when there's a switch list
+     for the location visited. A "truncated" manifest doesn't show where the cars are pulled from or
+     where they are to be spotted. Local moves are also not shown. All of the removed info is
+     however shown on the switch list for the location. This simplifies the train manifest showing
+     only what is needed for the train's conductor. See Print Options and select the "Truncate"
+     checkbox if you want to use this feature.</LI>
+    <LI>New staging option, you can now have cars return to staging on a turn, rather than
+     having a build failure. See help for more info, see Settings-&gt;Tools-&gt;Options "Allow cars
+     to return to staging if needed"."
+    <LI>New operations feature, "Auto Save". When selected the program will automatically save
+     your operation files. The program checks very minute to see if the operation files have been
+     modified, and if so will save them when the next minute passes. See the "Setting" page for the
+     "Auto Save" checkbox.
+    <LI>Switch lists now order the trains by their arrival time rather than their departure
+     time from the start of their route.</LI>
+    <LI>You can now delete cars from a train using the "Set Cars" window. Now when you print
+     the train manifest it will show that the cars are no longer part of the train.</LI>
+    <LI>In the "Trains" window, the program now shows the date and time a train was terminated.</LI>
+    <LI>New operations feature, "Planned Pick Ups" found under "Tools" in "Edit Track" for
+     spurs and interchanges. For each track you can tell the program that cars are expected to be
+     picked up from the track and that cars currently sitting there should be ignored. See the
+     operations help for more information.</LI>
    </ul>
 
    <p>Matthew Harris made the following changes.</p>
