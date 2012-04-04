@@ -126,9 +126,10 @@ These are development files, and might not be working at any particular time.
 
    <p>Dan Boudreau made the following changes to operations.</p>
    <ul>
-    <li>In the "Edit Schedule" window, increased the maximum sequential car count in a schedule line item from 10 to 100.</li>
-    <li>The schedule hit count in the "Edit Schedule" window now includes hits to a line item in sequential mode. Before the
-     count would only increment if the schedule was in match mode.</li>
+    <li>In the "Edit Schedule" window, increased the maximum sequential car count in a schedule
+     line item from 10 to 100.</li>
+    <li>The schedule hit count in the "Edit Schedule" window now includes hits to a line item
+     in sequential mode. Before the count would only increment if the schedule was in match mode.</li>
     <li>Some GUI improvements, now the program asks if you really want to delete a route,
      schedule or a train. You can now adjust and save the table column widths in the Edit Schedule
      and Edit Route windows.</li>
@@ -154,14 +155,14 @@ These are development files, and might not be working at any particular time.
      "Auto Save" checkbox.
     <LI>Switch lists now order the trains by their arrival time rather than their departure
      time from the start of their route.</LI>
-    <LI>You can now delete cars from a train using the "Set Cars" window. Now when you print
-     the train manifest it will show that the cars are no longer part of the train.</LI>
+    <LI>You can now manually add or delete cars from a built train using the "Set Cars" window.
+     The train manifest will also show the changes you manually made to the train.</LI>
     <LI>In the "Trains" window, the program now shows the date and time a train was terminated.</LI>
     <LI>New operations feature, "Planned Pick Ups" found under "Tools" in "Edit Track" for
      spurs and interchanges. For each track you can tell the program that cars are expected to be
      picked up from the track and that cars currently sitting there should be ignored. See the
      operations help for more information.</LI>
-     <li>Fixed "Location Unknown" checkbox problem introduced in version 2.99.3.</li>
+    <li>Fixed "Location Unknown" checkbox problem introduced in version 2.99.3.</li>
    </ul>
 
    <p>Matthew Harris made the following changes.</p>
