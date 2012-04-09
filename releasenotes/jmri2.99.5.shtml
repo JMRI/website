@@ -103,6 +103,8 @@ write-only.</p>
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
     <li>Fixed a problem introduced in 2.99.4 with the switch list button "Print Switch List Changes".</li>
+    <li>New feature, auto backup.  When enabled, the program will make a backup copy of all operation
+    files when the program starts.</li>
     </ul>
 
    <!--#include virtual="/Footer" -->
