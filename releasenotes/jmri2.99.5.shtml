@@ -106,7 +106,13 @@ write-only.</p>
     <li>New feature, auto backup.  When enabled, the program will make a backup copy of all operation
     files when the program starts.</li>
     </ul>
-
+<p>Kevin Dickerson made the following changes:</p>
+    <ul>
+        <li>Increased the number items used to identify a roster entry in DP3 to include 
+        Decoder manufacture, version and address type used.</li>
+        <li>Fixed a problem introduced in 2.99.4 with the saving/loading of a layout panel that had a
+        level crossing included.</li>
+    </ul>
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
