@@ -113,6 +113,14 @@ write-only.</p>
         <li>Fixed a problem introduced in 2.99.4 with the saving/loading of a layout panel that had a
         level crossing included.</li>
     </ul>
+  <p>Randall Wood made the following changes to web services:</p>
+  <ul>
+    <li>Replace the Mini Web Server with a Jetty-based Web Server</li>
+    <li>Add a Roster servlet that handles most roster-based operations</li>
+    <li>Updated the index.html file to be more operations-oriented</li>
+    <li>Added a Panel servlet that provides a partial panel XML file with correct URLs for remote panel widgets</li>
+    <li>Streamlined existing servlets to make feature expansion easier in the future</li>
+  </ul>
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
