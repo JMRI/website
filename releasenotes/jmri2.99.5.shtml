@@ -121,6 +121,13 @@ indexed variables.</p>
         Decoder manufacture, version and address type used.</li>
         <li>Fixed a problem introduced in 2.99.4 with the saving/loading of a layout panel that had a
         level crossing included.</li>
+        <li>Added initial support for DCC4PC RailCom interface boards.  The interface is currently <b>not supported in Windows</b></li>
+        <li>Made some changes to the internal workings of the new Slips in the Layout Editor, this means that any added 
+            in 2.99.4 will have to be re-created or put a request up on the yaho group for assistance</li>
+        <li>Updated the memory icon in the panels so that if a roster entry is allocated against it, the roster media icon is displayed (if available) or the roster title. If an icon and throttle is available the icon will flip to match the direction</li>
+        <li>Added a script ("AllocateRosterEntryToBlock.py) that allows you to allocate a roster entry to a block</li>
+        <li>Added in the ability to allow an Entry Exit become a variable condition to a Logix.</li>
+        <li>Added in ability to the layout editor to hide turnouts when not in editing mode</li>
     </ul>
   <p>Randall Wood made the following changes to web services:</p>
   <ul>
