@@ -128,6 +128,14 @@ indexed variables.</p>
         <li>Added a script ("AllocateRosterEntryToBlock.py) that allows you to allocate a roster entry to a block</li>
         <li>Added in the ability to allow an Entry Exit become a variable condition to a Logix.</li>
         <li>Added in ability to the layout editor to hide turnouts when not in editing mode</li>
+        <li>Allow the following fields to be directly edited in the DP3 roster table, when the entry is not already opened
+        <ul><li>ID Col</li>
+        <li>Road Name</li>
+        <li>Road Number</li>
+        <li>Manufacturer</li>
+        <li>Model</li>
+        <li>Owner</li></ul>
+        This does mean that the double click option to open the programmer can now only be performed on the DCC Address, Icon or Decoder Model columns</li>
     </ul>
   <p>Randall Wood made the following changes to web services:</p>
   <ul>
