@@ -106,21 +106,24 @@ indexed variables.</p>
 
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
-    <li>Fixed a problem introduced in 2.99.4 with the switch list button "Print Switch List Changes".</li>
-    <li>New feature, auto backup.  When enabled, the program will make a backup copy of all operation
-    files when the program starts.</li>
     <li>Two new switch list features.  You can now eliminate trains that don't have work from your switch lists.
     You can if you wish use a separate page for each train visiting a location.  See help for more info.</li>
     <Li>You can now view a car's wait value in the Cars window.  Note that you need a schedule for this field
     to show up.</Li>
-    <LI>Fixed a problem when manually adding a car to a train when the train is a turn.</LI>
-    <li>Fixed a problem when manually adding multiple cars to a train using the Set Cars tool</li>
     <li>Enhanced the cars print and preview options. Now you can select the page orientation, and you can also 
     optionally select the car's train, destination, and comment.</li>
     <li>You can now print all of your routes from the "Tools" menu found in the routes window.</li>
     <li>Improved the train builder, you should see less final destinations assigned to cars that arn't part of the
     train</li>
     <LI>You can now add a unique switch list comment for each location.</LI>
+    <li>New feature, auto backup.  When enabled, the program will make a backup copy of all operation
+    files when the program starts.</li>
+    <li>Fixed a problem introduced in 2.99.4 with the switch list button "Print Switch List Changes".</li>
+    <LI>Fixed a problem when manually adding a car to a train when the train is a turn.</LI>
+    <li>Fixed a problem when manually adding multiple cars to a train using the Set Cars tool</li>
+    <LI>Fixed a problem with track reserved track lengths if you changed the length of rolling stock after a train was
+    built.</LI>
+    <LI>Fixed track length problem if you changed loco lengths after a loco was assigned to a track.</LI>
     </ul>
     
 <p>Kevin Dickerson made the following changes:</p>
