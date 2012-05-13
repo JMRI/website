@@ -70,17 +70,15 @@ licensing terms, kindly refer to
 <h3>Technical Details</h3>
 
 The code for XTrkCadReader is available in the 
-<a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/getcode.shtml">JMRI CVS Repository</a>.  You can 
+<a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/getcode.shtml">JMRI SVN Repository</a>.  You can 
 also
-<a href="http://jmri.cvs.sourceforge.net/jmri/XTrkCadReader">look at it in your web browser</a>.
+<a href="http://jmri.svn.sourceforge.net/viewvc/jmri/trunk/XTrkCadReader/">look at it in your web browser</a>.
 <P>
-If you'd like a complete copy from CVS, for example to modify or improve it,
-you can check it out from CVS using the commands:
+If you'd like a complete copy from SVN, for example to modify or improve it,
+you can check it out from SVN using the commands:
 <code><pre>
-   cvs -d:pserver:anonymous@jmri.cvs.sourceforge.net:/cvsroot/jmri login
-   cvs -d:pserver:anonymous@jmri.cvs.sourceforge.net:/cvsroot/jmri co XTrkCadReader
+   svn co https://jmri.svn.sourceforge.net/svnroot/jmri/trunk/XTrkCadReader
 </pre></code>
-(If you're asked for a password after the first command, just hit return)
 
 <!--#include virtual="/Footer" -->
 
