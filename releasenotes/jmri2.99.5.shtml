@@ -156,6 +156,12 @@ indexed variables.</p>
     <li>Added a Panel servlet that provides a partial panel XML file with correct URLs for remote panel widgets</li>
     <li>Streamlined existing servlets to make feature expansion easier in the future</li>
   </ul>
+
+<p>Steve Todd made the following change:</p>
+<ul>
+    <li>Change JmriJFrameServlet (web server click handler) to handle Layout Editor panels with background images.</li>
+</ul>
+
   
 The Locations item in the Help menu now have buttons to directly open the preferences and program directory from your desktop (may not work on all computer types)
 
