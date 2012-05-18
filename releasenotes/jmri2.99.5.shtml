@@ -157,9 +157,10 @@ indexed variables.</p>
     <li>Streamlined existing servlets to make feature expansion easier in the future</li>
   </ul>
 
-<p>Steve Todd made the following change:</p>
+<p>Steve Todd made the following changes:</p>
 <ul>
     <li>Change JmriJFrameServlet (web server click handler) to handle Layout Editor panels with background images.</li>
+    <li>on WiT server stop, explicitly close throttles prior to closing socket.</li>
 </ul>
 
   
