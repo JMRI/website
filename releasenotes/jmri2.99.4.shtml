@@ -66,7 +66,10 @@ This release, and all other releases in this cycle, require Java 1.6.
 
 <h3>Known problems with this release</h3>
 
-None at the time of this release.
+The operations part of the program can lose its routes.  The problem was introduced by
+the auto save feature.  To prevent this problem, always open the Trains or Routes
+window first and confirm that the train routes have been loaded before making any
+changes to the program.
 
 <h3>Download links:</h3>
 
