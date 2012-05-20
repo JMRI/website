@@ -166,6 +166,16 @@ indexed variables.</p>
   
 The Locations item in the Help menu now have buttons to directly open the preferences and program directory from your desktop (may not work on all computer types)
 
+<p>
+The OpenLCB support has been updated to the 0.5 version of the specification. This includes new tools:
+<ul>
+<li>A tree-like display of the entire network, accessed via the OpenLCB menu.
+<li>New capabilities on the Console, including access to the DecoderPro-like built in node programmer
+</ul>
+It may be necessary to reset your preferences if you have any defaults or open-at-start actions
+set for OpenLCB connections.
+
+
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
