@@ -131,27 +131,33 @@ indexed variables.</p>
     <ul>
         <li>Increased the number items used to identify a roster entry in DP3 to include 
         Decoder manufacture, version and address type used.</li>
-        <li>Fixed a problem introduced in 2.99.4 with the saving/loading of a layout panel that had a
-        level crossing included.</li>
         <li>Added initial support for DCC4PC RailCom interface boards.  The interface is currently <b>not supported in Windows</b></li>
-        <li>Made some changes to the internal workings of the new Slips in the Layout Editor, this means that any added 
-            in 2.99.4 will have to be re-created or put a request up on the yaho group for assistance</li>
-        <li>Update to the way that the single slip can operate to have either two or three different states.<li>
-        <li>Allow the logix for the signal to be recreated rather than skipped if it has already been created once, this allows for changes having been made at a later date on the slip for the turnout states.</li>
-        <li>Updated the memory icon in the panels so that if a roster entry is allocated against it, the roster media icon is displayed (if available) or the roster title. If an icon and throttle is available the icon will flip to match the direction</li>
         <li>Added a script ("AllocateRosterEntryToBlock.py) that allows you to allocate a roster entry to a block</li>
         <li>Added in the ability to allow an Entry Exit become a variable condition to a Logix.</li>
-        <li>Added in ability to the layout editor to hide turnouts when not in editing mode</li>
         <li>Allow the following fields to be directly edited in the DP3 roster table, when the entry is not already opened
         <ul><li>ID Col</li>
-        <li>Road Name</li>
-        <li>Road Number</li>
-        <li>Manufacturer</li>
-        <li>Model</li>
-        <li>Owner</li></ul>
-        This does mean that the double click option to open the programmer can now only be performed on the DCC Address, Icon or Decoder Model columns</li>
+            <li>Road Name</li>
+            <li>Road Number</li>
+            <li>Manufacturer</li>
+            <li>Model</li>
+            <li>Owner</li></ul>
+            This does mean that the double click option to open the programmer can now only be performed on the DCC Address, Icon or Decoder Model columns</li>
         <li>Added the ability to hide columns in the Roster Entry Table</li>
         <li>Updated the turnout table so that column widths retain their size when extra columns are shown or hidden.</li>
+        <li><b>Layout Editor</b><ul>
+            <li>Update to the way that the single slip can operate to have either two or three different states.<li>
+            <li>Allow the logix for the signal allocated to a Slip to be recreated rather than skipped if it has
+                already been created once, this allows for changes having been made at a later date on the slip for the turnout states.</li>
+            <li>Fixed a problem introduced in 2.99.4 with the saving/loading of a layout panel that had a
+                level crossing included.</li>
+            <li>Made some changes to the internal workings of the new Slips in the Layout Editor, this means that any added 
+                in 2.99.4 will have to be re-created or put a request up on the yaho group for assistance</li>
+            <li>Updated the memory icon in the panels so that if a roster entry is allocated against it, 
+                the roster media icon is displayed (if available) or the roster title. If an icon and throttle is available the icon will flip to match the direction</li>
+            <li>Added in ability to the layout editor to hide turnouts when not in editing mode</li>
+            <li>Added the ability to update a block value by changing the corresponding memory value from the panel</li>
+            <li>Added in the ability to change which memory object a memory labels points to if a change is made from the edit layout block GUI.</li>
+        </ul></li>
     </ul>
   <p>Randall Wood made the following changes to web services:</p>
   <ul>
@@ -167,6 +173,8 @@ indexed variables.</p>
     <li>Change JmriJFrameServlet (web server click handler) to handle Layout Editor panels with background images.</li>
     <li>on WiT server stop, explicitly close throttles prior to closing socket.</li>
 </ul>
+
+Gert Muller updated the CanExample.py script to reflect the changes made relating to the multiple CAN connections.
 
   
 The Locations item in the Help menu now have buttons to directly open the preferences and program directory from your desktop (may not work on all computer types)
