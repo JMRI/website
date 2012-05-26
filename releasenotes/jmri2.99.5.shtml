@@ -176,7 +176,7 @@ indexed variables.</p>
 
 Gert Muller updated the CanExample.py script to reflect the changes made relating to the multiple CAN connections.
 
-  
+<p>
 The Locations item in the Help menu now have buttons to directly open the preferences and program directory from your desktop (may not work on all computer types)
 
 <p>
@@ -187,6 +187,28 @@ The OpenLCB support has been updated to the 0.5 version of the specification. Th
 </ul>
 It may be necessary to reset your preferences if you have any defaults or open-at-start actions
 set for OpenLCB connections.
+
+<p>
+Richard Sauerbrun added a new DN163K4B decoder.
+
+<p>
+Mike Mosher:
+<ul>
+<li>updated Soundtraxx decoders
+<li>fixed a bug in QSI Version 8 decoders CV115.76.0
+<li>Fixed a problem in ESU LokSound V4
+</ul>
+
+<p>
+
+John Stather fixed some issues with the DCC Concepts locomotive decoder definition.
+
+<p>
+Chris Bradshaw provided a definition for the ANE Model Loco-Cruiser LC201 decoder.
+
+<p>
+
+John Sebastian provided a decoder definition for the MRC Sound Brilliance 1957.
 
 
    <!--#include virtual="/Footer" -->
