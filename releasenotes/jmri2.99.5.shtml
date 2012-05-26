@@ -174,7 +174,15 @@ indexed variables.</p>
     <li>on WiT server stop, explicitly close throttles prior to closing socket.</li>
 </ul>
 
-Gert Muller updated the CanExample.py script to reflect the changes made relating to the multiple CAN connections.
+Gert Muller
+<UL>
+<LI>updated the CanExample.py script to reflect the changes made relating to the multiple CAN connections.
+<li>You could add all the other panel items except a label with a right click and "Add Item" on a Panel. Added "Test/Label" at the bottom of the "Add Item" list.
+<li>Added line numbers to the script entry window
+<li>Fixed the help link from the CAN send-frame window
+<li>On panels,lock or unlock a whole bunch of items together, 
+    instead of aiming at every one and running the risk of moving it in the attempt.
+</ul>
 
 <p>
 The Locations item in the Help menu now have buttons to directly open the preferences and program directory from your desktop (may not work on all computer types)
@@ -197,19 +205,29 @@ Mike Mosher:
 <li>updated Soundtraxx decoders
 <li>fixed a bug in QSI Version 8 decoders CV115.76.0
 <li>Fixed a problem in ESU LokSound V4
+<li>NCE D13SR v10
 </ul>
 
 <p>
-
 John Stather fixed some issues with the DCC Concepts locomotive decoder definition.
 
 <p>
 Chris Bradshaw provided a definition for the ANE Model Loco-Cruiser LC201 decoder.
 
 <p>
-
 John Sebastian provided a decoder definition for the MRC Sound Brilliance 1957.
 
+<p>
+The TCS Bemf decoder was updated.
+
+<p>
+The Team Digital SD8 decoder was updated.
+
+<p>
+Martin Pischky improved the LocoNet firmware downloader and fixed some bugs.
+
+<p>
+Steve Lowens added the Con-cor Zephyr (HO & N) definitions to the Digitrax sound decoder definitions.
 
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
