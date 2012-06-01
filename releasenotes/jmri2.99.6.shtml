@@ -98,6 +98,10 @@ These are development files, and might not be working at any particular time.
    <ul>
    <li>The option "Print Valid" now also affects switch lists.</li>
    <Li>Improved the way cars, locomotives, and routes windows resize.</Li>
+   <li>Now when building trains that visit locations that have the "same" name, cars are no longer
+   moved between those locations unless a schedule is used. Locations with the "same" name are locations
+   that use the hyphen followed by a number feature.</li>
+   <li>Fixed a problem with auto backup where cars serviced by a train wasn't saved properly</li>
    </ul>
 
 
