@@ -112,6 +112,18 @@ The <a href="">OpenLCB</a> support has been updated:
 <li>The tree-display of your OpenLCB can now be resized so that really big layouts display well
 </ul>
 
+<p>Kevin Dickerson made teh following changes:</p>
+<ul>
+<li>DP3 - Set the "Programming Type" states are remembered between sessions</li>
+<li>DP3 - Added a wait cursor while opening up a roster entry for editing</li>
+<li>DP3 - Altered the mouse action in the roster table, so that a double click on a non-selected item will open it for Editing, 
+          while a single click on an already selected item will allow editing of that field</li>
+<li>Layout Editor - Provided an option to set the default colour for occupied and alternative track states</li>
+<li>Layout Editor - Provided an option to automatically create and assign blocks to track and turnouts.
+                    This can aid in providing continuous layoutblock connectivity which can be used by the signalmast logic and entry/exit work.</li>
+<li>Fixed the Copy and Delete Roster items in the classic JMRI interface</li>
+</ul>
+
 
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
