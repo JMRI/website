@@ -96,16 +96,19 @@ These are development files, and might not be working at any particular time.
 
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
-   <li>The option "Print Valid" now also affects switch lists.</li>
-   <Li>Improved the way cars, locomotives, and routes windows resize.</Li>
-   <li>Now when building trains that visit locations that have the "same" name, cars are no longer
-   moved between those locations unless a schedule is used. Locations with the "same" name are locations
-   that use the hyphen followed by a number feature.</li>
-   <li>Fixed a problem with auto backup where cars serviced by a train wasn't saved properly</li>
+    <li>The option "Print Valid" now also affects switch lists.</li>
+    <Li>Improved the way cars, locomotives, and routes windows resize.</Li>
+    <li>Switch lists now show the lead loco number as part of the train's name.  The
+    "Append Loco Number" must be selected in the Setting page.</li>
+    <li>Now when building trains that visit locations that have the "same" name, cars are no
+     longer moved between those locations unless a schedule is used. Locations with the "same" name
+     are locations that use the hyphen followed by a number feature. Also improved trains manifests
+     when "same" location names are used back to back.</li>
+    <li>Fixed a problem with auto backup where cars serviced by a train wasn't saved properly</li>
    </ul>
 
 
-<p>
+   <p>
 The <a href="">OpenLCB</a> support has been updated:
 <ul>
 <li>You can now use UTF-8 international characters in the board names and descriptions
