@@ -115,7 +115,7 @@ The <a href="">OpenLCB</a> support has been updated:
 <li>The tree-display of your OpenLCB can now be resized so that really big layouts display well
 </ul>
 
-<p>Kevin Dickerson made teh following changes:</p>
+<p>Kevin Dickerson made the following changes:</p>
 <ul>
 <li>DP3 - Set the "Programming Type" states are remembered between sessions</li>
 <li>DP3 - Added a wait cursor while opening up a roster entry for editing</li>
@@ -127,6 +127,13 @@ The <a href="">OpenLCB</a> support has been updated:
 <li>Fixed the Copy and Delete Roster items in the classic JMRI interface</li>
 </ul>
 
+<p>Paul Bender made the following changes:</p>
+<ul>
+<li> Internal changes to the consist manager to allow on demand updating of consist lists from the command station.</li>
+<li> Implemented consist reading for LocoNet systems.</li>
+<li> Changed Lenz and CVP EasyDCC consist managers so they update the consist list when the consist tool starts, not when the program does.</li>
+<li> Fixed several bugs in the LocoNet Consist manager.</li>
+</ul>
 
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
