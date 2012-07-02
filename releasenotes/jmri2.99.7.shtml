@@ -110,7 +110,20 @@ Alain Carasso added a Trix sound decoder definition.
 <p>
 Mike Mosher updated the QSI Version 8 decoder definitions.
 
-
+<p>Kevin Dickerson made the following changes:</p>
+<ul>
+<li>DP3 - Added the JMRI version to the status bar.</li>
+<li>Layout Editor - Updated the block routing details so that it is initialised after all the layout blocks have been initialised.</li>
+<li>Layout Editor - Fixed an issue with Slip that was introduced in 2.99.6.</li>
+<li>Editors - Add the ability to set the orientation of a label to be vertical up or vertical down. For icons in memory labels, this will also rotate the assigned icon to match</li>
+<li>SignalHeads - Fix bug 3535156.</li>
+<li>SignalMasts  Automatically create a resources/signals directory for user created custom signalmast definitions.</li>
+<li>SignalMast Logic - Fix an issue in the logic where disabled aspects were still being considered as potential valid aspects.</li>
+<li>Direct Driver Serial - Prevent this from being selected in the preferences for certain OS that are not supported.</li>
+<li>ESU - Added RailCom decoder reporter support.</li>
+<li>ESU - Fix an issue in the loco monitor where the initial states of locos was not reported.</li>
+<li>Added in initial support for the TAMs System with help from Jan Boen - please note that this is still in development.</li>
+</ul>
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
