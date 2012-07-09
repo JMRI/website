@@ -94,8 +94,10 @@ These are development files, and might not be working at any particular time.
 
 <h3>Changes since test release 2.99.7</h3>
 
-
-
+Fixes two issue in DP3 created in 2.99.6 that relate to direct editing of roster entries in the table view.
+<ul><li>If the user has clicked on an entry to edit it but made no change, the entry would get re-saved</li>
+<li>If the user has a Roster Group selected and edits a roster entry, the incorrect roster entry would be updated</li>
+</ul>
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
