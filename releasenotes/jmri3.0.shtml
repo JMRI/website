@@ -125,18 +125,9 @@ car would not fit on the car's current track.</li>
 
 <p>Paul Bender added a new Generic Consist Manager which will be installed onsystems such as the SPROG that implement a command station interface (the ability to send an arbitrary NMRA DCC packet).  This version of the Consist Manager uses an NMRA Consist Control packet to create the consist instead of the Operations Mode Programming request used in the previous Generic Consist Manager.  This will allow writing the consist address on decoders that support Operations Mode Programming, but do not allow operations mode programming of CV19 (Certain Lenz decoders fall into this category).
 
-<p>Kevin Dickerson made the following updates:
-<ul>
-<li>Fixed an inconsistancy issue relating to the saving of preferences in DP3 depending upon the method that it was closed</li>
-<li>Update the EasyDCC interface so that it would be picked up correctly on the DP3 status screen</li>
-<li>Updated the Layout Block Routing Protocol, so that when block traffic flow is updated, this is reflected in the routing table</li>
-<li>Added the ability to delete Signal Mast logic from the Signalling Pairs window</li>
-
 <p>Georgio Terdida fixed a bug that may occur when loading an XnTcp adapter.</p>
 
 <p>Paul Bender fixed the port number display for network connection configurations.</p>
-
-</ul>
 
 <p>Help pages with external links (e.g. full "http:" links) and of types that the JavaHelp browser
 can't display are now sent to the user's default web browser for display.
@@ -157,12 +148,6 @@ later in the route, or depart with a caboose and remove it in the route.</li>
 been printed.</li>
 
 </ul>
-
-<p>Kevin Dickerson
-<li>Fixed a bug where the PR3 could not operate a throttle in Programming Mode</li>
-<li>Add a warning message when a logic is created/edited, that if the source or destination mast is used as part of the criteria with the logic, it may result in unexpected behaviour.</li>
-<li>Updated the logic behind the SignalMastLogic in determining routes on the layout editor involving a Double Crossing</li>
-<li>Updated the CAN BUS code so that it can handle mutliple connections and be configured with other systems at the same time.</li>
 
 <p>Randall Wood made various improvements to Mac OS X support.</p>
 
@@ -205,24 +190,6 @@ been printed.</li>
     <li>Improved the "Set Cars" window, the program now remembers which "ignores" you previously selected.
    </ul>
 
-   <p>Kevin Dickerson made the following changes.</p>
-<ul>
-<li>Add a notification if an error occurred during a panel store, rather than it previously failing silently.</li>
-<li>Updated the throttle window, so that when it is closed, any active throttles, no longer set the loco speed to 0 or turns off all the functions</li>
-<li>Added a delay option into the SignalMast code to allow the simulation of manually operated signals ie Semaphore Signals<li>
-<li>Fix an issue when an NullPointerException could occur when changing between signal mast driver types when the signalling system name does not match the directory that the signal mast are held in</li>
-<li>Added an Experimental DCC accessory controlled SignalMast for the rr-cirkits LNCP module.</li>
-<li>Updated the status bar font size in DP3 to hopefully make it clearer for some users.</li>
-<li>Added the ability to save and recall the order in which column headers appear in DP3s roster table</li>
-<li>Add the ability in the Layout Editor to control a second turnout from another one on the layout panel.  This is ideal for situations where the user has two physical turnouts operating from one DCC Address and has to put onto the panel an Internal turnout to represent the second turnout.  Changes made to either turnout are reflected on the other.</li>
-<li>ECOS - Improved he handling of adding locos to the roster from ecos database.</li>
-<li>(Windows Only) In the preferences when you select a new connection, they system will try and match the correct comm port against the selected system</li>
-<li>Fixed an issue in the "Add/Edit Routes" window that could cause panel files to load slowly.</li>
-<li>Fixed an issue with the Start-Up Wizard that could cause the system to hang when doing the final connect</li>
-<li>Fix potential NPE that would stop the Sprog command station from working if a null packet was queued.</li>
-<li>Fix a number of XML validation errors.</li>
-</ul>
-
 <p>Randall Wood made the following changes:</p>
 <ul>
 <li>Fix issues preventing DP3 roster and roster group windows from consistently working correctly.</li>
@@ -247,25 +214,7 @@ only one OpSw access attempt.</li>
 
 <p>The OpenLCB support has been updated to version 0.4.1 of their specification and libraries.
 
-   <p>Kevin Dickerson made the following changes.</p>
-   <ul>
-   <li>(Bug Id 3105034) Fixed an issue with the function labels that would result in default label values that were once removed re-appearing.</li>
-   <li>Added in a full Entry/Exit interlocking system for use with the layout editor.</li>
-   <li>Suppressed the "Serial Port" selection box from the preferences of the CAN and SMRI Simulator</li>
-   <li>Added an automatic connection recovery for the ECoS</li>
-   <li>Add the ability for the command monitor, jython input and output windows to be displyaed on top of any other window.</li>
-   <li>Added the ability to clear the jython output window via a button</li>
-   <li>Jython is now initialised in the background rather than when required to improve user performance.</li>
-   <li>Add SignalMasts - Filtered the list of available DCC systems available when the LNCP mast is selected to those with only a LocoNet Command Station</li>
-   <p>Layout Editor</p>
-   <ul>
-   <li>Add a Single/Double Slip to the layout editor, along with the associated signal logic.</li>
-   <li>fix bug (3175940) with scroll bars in the layout editor.  If the panel is loaded in edit mode the saved setting of the scrollbar is overwritten when you go into view mode.</li>
-   <li>Fixed a bug iin the layout editor that results in the loading of a memory icon, getting placed twice on the panel.</li>
-   <li>Added the ability to delete multiple selected items using either a popup menu or via the keyboard</li>
-   <li>Fixed a fault in the layout editor, that could allow for the same object to be selected twice, resulting in that item beiing moved double the distance</li>
-   </ul>
-   </ul>
+
 
    <p>Herve Blorec provided a set of 
    <a href="http://jmri.org/help/fr/index.html">French-language help pages</a>.
@@ -376,38 +325,6 @@ indexed variables.</p>
     <LI>Fixed a problem where routes could be deleted when the auto save feature was enabled</LI>
     </ul>
     
-<p>Kevin Dickerson made the following changes:</p>
-    <ul>
-        <li>Increased the number items used to identify a roster entry in DP3 to include 
-        Decoder manufacture, version and address type used.</li>
-        <li>Added initial support for DCC4PC RailCom interface boards.  The interface is currently <b>not supported in Windows</b></li>
-        <li>Added a script ("AllocateRosterEntryToBlock.py) that allows you to allocate a roster entry to a block</li>
-        <li>Added in the ability to allow an Entry Exit become a variable condition to a Logix.</li>
-        <li>Allow the following fields to be directly edited in the DP3 roster table, when the entry is not already opened
-        <ul><li>ID Col</li>
-            <li>Road Name</li>
-            <li>Road Number</li>
-            <li>Manufacturer</li>
-            <li>Model</li>
-            <li>Owner</li></ul>
-            This does mean that the double click option to open the programmer can now only be performed on the DCC Address, Icon or Decoder Model columns</li>
-        <li>Added the ability to hide columns in the Roster Entry Table</li>
-        <li>Updated the turnout table so that column widths retain their size when extra columns are shown or hidden.</li>
-        <li><b>Layout Editor</b><ul>
-            <li>Update to the way that the single slip can operate to have either two or three different states.<li>
-            <li>Allow the logix for the signal allocated to a Slip to be recreated rather than skipped if it has
-                already been created once, this allows for changes having been made at a later date on the slip for the turnout states.</li>
-            <li>Fixed a problem introduced in 2.99.4 with the saving/loading of a layout panel that had a
-                level crossing included.</li>
-            <li>Made some changes to the internal workings of the new Slips in the Layout Editor, this means that any added 
-                in 2.99.4 will have to be re-created or put a request up on the yaho group for assistance</li>
-            <li>Updated the memory icon in the panels so that if a roster entry is allocated against it, 
-                the roster media icon is displayed (if available) or the roster title. If an icon and throttle is available the icon will flip to match the direction</li>
-            <li>Added in ability to the layout editor to hide turnouts when not in editing mode</li>
-            <li>Added the ability to update a block value by changing the corresponding memory value from the panel</li>
-            <li>Added in the ability to change which memory object a memory labels points to if a change is made from the edit layout block GUI.</li>
-        </ul></li>
-    </ul>
   <p>Randall Wood made the following changes to web services:</p>
   <ul>
     <li>Replace the Mini Web Server with a Jetty-based Web Server</li>
@@ -499,17 +416,7 @@ The <a href="">OpenLCB</a> support has been updated:
 <li>The tree-display of your OpenLCB can now be resized so that really big layouts display well
 </ul>
 
-<p>Kevin Dickerson made the following changes:</p>
-<ul>
-<li>DP3 - Set the "Programming Type" states are remembered between sessions</li>
-<li>DP3 - Added a wait cursor while opening up a roster entry for editing</li>
-<li>DP3 - Altered the mouse action in the roster table, so that a double click on a non-selected item will open it for Editing, 
-          while a single click on an already selected item will allow editing of that field</li>
-<li>Layout Editor - Provided an option to set the default colour for occupied and alternative track states</li>
-<li>Layout Editor - Provided an option to automatically create and assign blocks to track and turnouts.
-                    This can aid in providing continuous layoutblock connectivity which can be used by the signalmast logic and entry/exit work.</li>
-<li>Fixed the Copy and Delete Roster items in the classic JMRI interface</li>
-</ul>
+
 
 <p>Paul Bender made the following changes:</p>
 <ul>
@@ -540,20 +447,130 @@ Alain Carasso added a Trix sound decoder definition.
 Mike Mosher updated the QSI Version 8 decoder definitions.
 
 <p>Kevin Dickerson made the following changes:</p>
-<ul>
-<li>DP3 - Added the JMRI version to the status bar.</li>
-<li>Layout Editor - Updated the block routing details so that it is initialised after all the layout blocks have been initialised.</li>
-<li>Layout Editor - Fixed an issue with Slip that was introduced in 2.99.6.</li>
-<li>Editors - Add the ability to set the orientation of a label to be vertical up or vertical down. For icons in memory labels, this will also rotate the assigned icon to match</li>
-<li>SignalHeads - Fix bug 3535156.</li>
-<li>SignalMasts  Automatically create a resources/signals directory for user created custom signalmast definitions.</li>
-<li>SignalMast Logic - Fix an issue in the logic where disabled aspects were still being considered as potential valid aspects.</li>
-<li>Direct Driver Serial - Prevent this from being selected in the preferences for certain OS that are not supported.</li>
-<li>ESU - Added RailCom decoder reporter support.</li>
-<li>ESU - Fix an issue in the loco monitor where the initial states of locos was not reported.</li>
-<li>Added in initial support for the TAMs System with help from Jan Boen - please note that this is still in development.</li>
+
+<b>Signalling</b>
+    <ul>
+        <li>New Features</li><ul>
+            <li>Added an Experimental DCC accessory controlled SignalMast for the rr-cirkits LNCP module.</li>
+            <li>SignalMasts  Automatically create a resources/signals directory for user created custom signalmast definitions.</li>
+            <li>Added a delay option into the SignalMast code to allow the simulation of manually operated signals ie Semaphore Signals<li>
+        </ul>
+        <li>Updates</li><ul>
+            <li>Updated the logic behind the SignalMastLogic in determining routes on the layout editor involving a Double Crossing</li>
+            <li>Add a warning message when a logic is created/edited, that if the source or destination mast is used as part of the criteria with the logic, it may result in unexpected behaviour.</li>
+            <li>Added the ability to delete Signal Mast logic from the Signalling Pairs window</li>
+        </ul>
+        <li>Bug Fixes</li><ul>
+            <li>SignalHeads - Fix bug 3535156.</li>
+            <li>SignalMast Logic - Fix an issue in the logic where disabled aspects were still being considered as potential valid aspects.</li>
+            <li>Fix an issue when an NullPointerException could occur when changing between signal mast driver types when the signalling system name does not match the directory that the signal mast are held in</li>
+        </ul>
+    </ul>
+
+<b>Hardware Connection</b>
+    <ul>
+        <li>New Features</li><ul>
+            <li>ESU ECOS - Added RailCom decoder reporter support.</li>
+            <li>ESU ECOS - Added an automatic connection recovery.</li>
+            <li>Added in initial support for the TAMs System with help from Jan Boen - please note that this is still in development.</li>
+            <li>Added initial support for DCC4PC RailCom interface boards.  The interface is currently <b>not supported in Windows</b></li>
+            <li>(Windows Only) In the preferences when you select a new connection, they system will try and match the correct comm port against the selected system</li>
+            <li>Updated the CAN BUS code so that it can handle mutliple connections and be configured with other systems at the same time.</li>
+        </ul>
+        <li>Bug Fixes</li><ul>
+            <li>ESU ECOS - Fix an issue in the loco monitor where the initial states of locos was not reported.</li>
+            <li>ESU ECOS - Improved he handling of adding locos to the roster from ecos database.</li>
+            <li>Direct Driver Serial - Prevent this from being selected in the preferences for certain OS that are not supported.</li>
+            <li>Suppressed the "Serial Port" selection box from the preferences of the CAN and SMRI Simulator</li>
+            <li>Fix potential NPE that would stop the Sprog command station from working if a null packet was queued.</li>
+        </ul>
+    </ul>
+<b>DP3</b>
+    <ul>
+        <li>New Features</li><ul>
+            <li>Allow the following fields to be directly edited in the DP3 roster table, when the entry is not already opened
+            <ul><li>ID Col</li>
+                <li>Road Name</li>
+                <li>Road Number</li>
+                <li>Manufacturer</li>
+                <li>Model</li>
+                <li>Owner</li></ul>
+            <li>Added the ability to hide columns in the Roster Entry Table</li>
+        </ul>
+        <li>Updates</li><ul>
+            <li>Altered the mouse action in the roster table, so that a double click on a non-selected item will open it for Editing, 
+              while a single click on an already selected item will allow editing of that field</li>
+            <li>Increased the number items used to identify a roster entry in DP3 to include Decoder manufacture, version and address type used.</li>
+            <li>Added the ability to save and recall the order in which column headers appear in DP3s roster table</li>
+            <li>Added a wait cursor while opening up a roster entry for editing</li>
+            <li>Update the EasyDCC interface so that it would be picked up correctly on the DP3 status screen</li>
+            <li>Set the "Programming Type" states are remembered between sessions</li>
+            <li>Updated the status bar font size in DP3 to hopefully make it clearer for some users.</li>
+        </ul>
+        <li>Bug Fixes</li><ul>
+            <li>Fixed a bug where the PR3 could not operate a throttle in Programming Mode</li>
+            <li>Fixed an issue with the Start-Up Wizard that could cause the system to hang when doing the final connect</li>
+            <li>Fixed an inconsistancy issue relating to the saving of preferences in DP3 depending upon the method that it was closed</li>
+        </ul>
+    </ul>
+
+<b>Editors</b><ul>
+<li>New Features</li><ul>
+    <li>Updated the memory icon in the panels so that if a roster entry is allocated against it, 
+        the roster media icon is displayed (if available) or the roster title. If an icon and throttle is available the icon will flip to match the direction</li>
+    <li>Editors - Add the ability to set the orientation of a label to be vertical up or vertical down. For icons in memory labels, this will also rotate the assigned icon to match</li>
+</ul>
+</ul>
+    
+<b>Layout Editor</b><ul>
+<li>New Features</li><ul>
+<li>Add a Single/Double Slip to the layout editor, along with the associated signal logic.</li>
+<li>Added in a full Entry/Exit interlocking system for use with the layout editor.</li>
+</ul>
+<li>Updates</li><ul>
+    <li>Added a script ("AllocateRosterEntryToBlock.py) that allows you to allocate a roster entry to a block</li>
+    <li>Added in the ability to allow an Entry Exit become a variable condition to a Logix.</li>
+    <li>Updated the block routing details so that it is initialised after all the layout blocks have been initialised.</li>
+    <li>Allow the logix for the signal allocated to a Slip to be recreated rather than skipped if it has
+        already been created once, this allows for changes having been made at a later date on the slip for the turnout states.</li>
+<li>Added in ability to the layout editor to hide turnouts when not in editing mode</li>
+    <li>Added the ability to update a block value by changing the corresponding memory value from the panel</li>
+    <li>Added in the ability to change which memory object a memory labels points to if a change is made from the edit layout block GUI.</li>
+    <li>Provided an option to set the default colour for occupied and alternative track states</li>
+    <li>Provided an option to automatically create and assign blocks to track and turnouts.
+            This can aid in providing continuous layoutblock connectivity which can be used by the signalmast logic and entry/exit work.</li>
+    <li>Updated the Layout Block Routing Protocol, so that when block traffic flow is updated, this is reflected in the routing table</li>
+    <li>Add the ability in the Layout Editor to control a second turnout from another one on the layout panel.  This is ideal for situations where the user has two physical turnouts operating from one DCC Address and has to put onto the panel an Internal turnout to represent the second turnout.  Changes made to either turnout are reflected on the other.</li>
+    <li>Added the ability to delete multiple selected items using either a popup menu or via the keyboard</li>
+</ul>
+<li>Bug fixes</li><ul>
+    <li>fix bug (3175940) with scroll bars in the layout editor.  If the panel is loaded in edit mode the saved setting of the scrollbar is overwritten when you go into view mode.</li>
+    <li>Fixed a fault in the layout editor, that could allow for the same object to be selected twice, resulting in that item being moved double the distance</li>
+    <li>Fixed a bug in the layout editor that results in the loading of a memory icon, getting placed twice on the panel.</li>
+</ul>
+</ul>
+<b>Misc</b><ul>
+<li>New Features</li><ul>
+    <li>Add the ability for the command monitor, jython input and output windows to be displyaed on top of any other window.</li>
+    <li>Added the ability to clear the jython output window via a button</li>
+</ul>
+<li>Updates</li><ul>
+    <li>Add a notification if an error occurred during a panel store, rather than it previously failing silently.</li>
+    <li>Updated the throttle window, so that when it is closed, any active throttles, no longer set the loco speed to 0 or turns off all the functions</li>
+    <li>Updated the turnout table so that column widths retain their size when extra columns are shown or hidden.</li>
+   <li>Jython is now initialised in the background rather than when required to improve user performance.</li>
+
+</ul>
+<li>Bug fixes</li><ul>
+    <li>Fixed the Copy and Delete Roster items in the classic JMRI interface</li>
+    <li>(Bug Id 3105034) Fixed an issue with the function labels that would result in default label values that were once removed re-appearing.</li>
+    <li>Fixed an issue in the "Add/Edit Routes" window that could cause panel files to load slowly.</li>
+    <li>Fix a number of XML validation errors.</li>
 </ul>
 
+
+
+</ul>
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
