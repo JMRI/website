@@ -29,7 +29,7 @@
       Release Notes for JMRI 2.14.1 release
       </h2>
 
-	<p>Date: MMM DD, 2012</p>
+	<p>Date: July 12, 2012</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Production release 2.14.1 of JMRI/DecoderPro is available for download.</p>
  
@@ -37,9 +37,8 @@
 
 <h3>Notes:</h3>
 
-We are very pleased to announce that the 2.13 series of JMRI test releases has resulted in a
-version that's good enough to be recommended for general use, including by new users.
-We're therefore making that version, "Production version 2.14" available for download today.
+This is a small update of JMRI production release 2.14 to include a few additional
+features, see below.
 
 <p><b>
 JMRI is now only available under the 
@@ -50,16 +49,12 @@ see our
 
 <h3>Warnings</h3>
 
-The way in which UserNames are edited in the tables changed since JMRI 2.12.
-Renames are now performed via a mouse pop-up menu and can not be directly edited.
-
-<p>
-JMRI 2.12 is the last release which is completely supported by Java 1.5.
+JMRI 2.12 was the last release which is completely supported by Java 1.5.
 In this release, there are minor interface features, such as 
 drag-and-drop of some items, that require your computer to have Java 1.6 installed.
 Computers with only Java 1.5 will still be able to use JMRI, including PanelPro and DecoderPro,
 in this release except for those features.
-Releases in the next cycle
+Releases in the next cycle (2.99.* and 3.*)
 will require Java 1.6.
 
 
@@ -70,24 +65,22 @@ If you are experiancing issues, then please raise a question on the yahoo group 
 <h3>Download links:</h3>
 
 
-<!-- 
 p>Please use these links for downloading:</p>
 
 <p>MacOS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1.tgz/download</a></p><
+	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.tgz/download</a></p><
 
- -->
-
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Release%202.14.1/lastSuccessfulBuild/artifact/jmri/dist/release/">2.14.1 CI project page</a>.
-
+-->
 
 <h3>Changes since production release 2.14</h3>
 
@@ -107,7 +100,8 @@ on the
 <p>Dan Boudreau fixed a problem with the NCE pushbutton turnout lock.  This has been broken since version 2.10.
 <br>Also fixed a localization issue where some of the menu items weren't displayed in the selected language.</p>
 
-This includes all decoder definitions up to the release build date.
+<p>
+This release includes all decoder definitions up to the release build date.
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
