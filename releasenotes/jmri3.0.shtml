@@ -533,7 +533,7 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
     <li>Updated the block routing details so that it is initialised after all the layout blocks have been initialised.</li>
     <li>Allow the logix for the signal allocated to a Slip to be recreated rather than skipped if it has
         already been created once, this allows for changes having been made at a later date on the slip for the turnout states.</li>
-<li>Added in ability to the layout editor to hide turnouts when not in editing mode</li>
+    <li>Added in ability to the layout editor to hide turnouts when not in editing mode</li>
     <li>Added the ability to update a block value by changing the corresponding memory value from the panel</li>
     <li>Added in the ability to change which memory object a memory labels points to if a change is made from the edit layout block GUI.</li>
     <li>Provided an option to set the default colour for occupied and alternative track states</li>
@@ -542,6 +542,7 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
     <li>Updated the Layout Block Routing Protocol, so that when block traffic flow is updated, this is reflected in the routing table</li>
     <li>Add the ability in the Layout Editor to control a second turnout from another one on the layout panel.  This is ideal for situations where the user has two physical turnouts operating from one DCC Address and has to put onto the panel an Internal turnout to represent the second turnout.  Changes made to either turnout are reflected on the other.</li>
     <li>Added the ability to delete multiple selected items using either a popup menu or via the keyboard</li>
+    <li>Updated the "New Title" option to become an "Edit Title"</li>
 </ul>
 <li>Bug fixes</li><ul>
     <li>fix bug (3175940) with scroll bars in the layout editor.  If the panel is loaded in edit mode the saved setting of the scrollbar is overwritten when you go into view mode.</li>
