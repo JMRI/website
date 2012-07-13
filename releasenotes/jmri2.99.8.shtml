@@ -62,7 +62,8 @@ This release, and all other releases in this cycle, require Java 1.6.
 
 <h3>Known problems with this release</h3>
 
-None at the time of this release.
+The consist tool when connected to a NCE command station will not always show all of the available consists, usually 127, 126, and 125 are missing.
+As an alternative, you can use the NCE consist tool.  We expect to have this problem fixed in the next test release.
 
 <h3>Download links:</h3>
 
