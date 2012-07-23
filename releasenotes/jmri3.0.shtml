@@ -106,24 +106,128 @@ These are development files, and might not be working at any particular time.
 
 <p>Walt Thompson fixed a problem causing panel files with tooltips to fail validation.
 
-<p>Dan Boudreau made the following enhancements and fixes to operations.</p>
-<ul>
-<li>You no longer need a schedule to assign an alternate track to a spur.  See "Alternate Track" under Edit Spur-&gt; Tools.</li>
-<li>Added to print locations the ability to analyze how your tracks are consumed by various car types.</li>
-<li>New switch list print option, you can now have a different car format for your switch list.  See Print Options.</li>
-<li>The build reports can be read using a text editor. This feature was enabled by using Java 1.6.  See Print Options.</li>
-<li>Enhanced the manifest printout for passenger trains.  Now when you have a route comment and there isn't any work, only the
-location's name and route comment is printed.</li>
-<li>"Block cars by pick up location" is now disabled if you use one of the generate custom load features from staging.</li>
-<li>Fixed a minor problem where the track defaults weren't shown correctly when using the "Add Track" button when editing an existing track.</li>
-<li>Fixed a problem when changing a car's road name or road number, sometimes the program would report that the
-car would not fit on the car's current track.</li>
-<li>Fixed a problem when using the conductor window and canceling a local move.</li>
-<li>
 
-</ul>
+   <p>Dan Boudreau made the following changes:</p>
+   <ul>
+    <li>Removed accessory address restriction from NCE USB. Early versions of the NCE USB and
+     PowerCab/SB3 were limited to 250, now they can support the entire accessory address range.</li>
+    <li>Fixed localization issue where some of the menu items weren't displayed in the selected
+     language.</li>
+    <li>Improved the NCE command monitor by making the data captured human readable.</li>
+    <li>Fixed the NCE turnout lock</li>
+   </ul>
 
-<p>Paul Bender added a new Generic Consist Manager which will be installed onsystems such as the SPROG that implement a command station interface (the ability to send an arbitrary NMRA DCC packet).  This version of the Consist Manager uses an NMRA Consist Control packet to create the consist instead of the Operations Mode Programming request used in the previous Generic Consist Manager.  This will allow writing the consist address on decoders that support Operations Mode Programming, but do not allow operations mode programming of CV19 (Certain Lenz decoders fall into this category).
+   <p>Dan Boudreau made the following enhancements and fixes to operations.</p>
+   <ul>
+    <li>You no longer need a schedule to assign an alternate track to a spur. See "Alternate
+     Track" under Edit Spur-&gt; Tools.</li>
+    <li>Added to print locations the ability to analyze how your tracks are consumed by various
+     car types.</li>
+    <li>New switch list print option, you can now have a different car format for your switch
+     list. See Print Options.</li>
+    <li>The build reports can be read using a text editor. This feature was enabled by using
+     Java 1.6. See Print Options.</li>
+    <li>Enhanced the manifest printout for passenger trains. Now when you have a route comment
+     and there isn't any work, only the location's name and route comment is printed.</li>
+    <li>"Block cars by pick up location" is now disabled if you use one of the generate custom
+     load features from staging.</li>
+    <li>Added a new tool to help with custom loads and schedules. Now you can select a car type
+     and load and see which spur with schedules will receive and ship that commodity. See under
+     Tools "Show schedules by car type and load" in the Schedules window.</li>
+    <li>Schedules in match mode now shows a hit count. The hit count is incremented every time
+     a schedule's line item is used during a build.</li>
+    <li>Improved the car import feature. Now the program can be told to automatically create
+     new car types and adjust track lengths during the import. Saves a lot of time if your importing
+     a lot of cars with new car types.</li>
+    <li>Improved loco and caboose changes in a train's route. Now you can depart without a
+     caboose and add one later in the route, or depart with a caboose and remove it in the route.</li>
+    <li>The switch list button in the Trains window is now highlighted in red when changes
+     occur to switch lists that have been printed.</li>
+    <li>Now in aggressive mode, tracks in staging can be made available for an inbound train as
+     soon as an outbound train is built. This allows a train to also depart and return to the same
+     staging track. You need to enable this feature to use it, see Settings-&gt;Tools-&gt;Options
+     select "Make departure track available after train is built".</li>
+    <li>When a train departs from staging and also terminates into staging, the program will if
+     needed generate a load for a car that will terminate into staging as long as one of the two
+     "Generate custom loads ..." from staging is selected.</li>
+    <li>New car feature "utility". This feature helps mimic prototype car movements of coal or
+     other commodities. When a car is specified as a utility car, its road and number will not be
+     displayed on the manifests or switch lists. Instead the program will list the required number
+     of cars of a given type needed for the train. See the "Edit Car" window under Type for this
+     feature.
+    <li>Enhanced the operations "Edit Car" window. Now when you select Caboose, Passenger,
+     Hazardous, or Utility, the program asks if you want to change all cars of that type.</li>
+    <li>You can now edit the "hazardous" warning message, see Settings-&gt;Tools-&gt;Print
+     Options.
+    <li>Improved the train build report for several build failures</li>
+    <li>Improved the "Set Cars" window, the program now remembers which "ignores" you
+     previously selected.
+    <li>In the "Edit Schedule" window, increased the maximum sequential car count in a schedule
+     line item from 10 to 100.</li>
+    <li>The schedule hit count in the "Edit Schedule" window now includes hits to a line item
+     in sequential mode. Before the count would only increment if the schedule was in match mode.</li>
+    <li>Some GUI improvements, now the program asks if you really want to delete a route,
+     schedule or a train. You can now adjust and save the table column widths in the Edit Schedule
+     and Edit Route windows.</li>
+    <li>Enhanced the switch list printouts. You can now run the switch lists in two modes, real
+     time which was the way it previously ran, and consolidation mode. Consolidation mode is great
+     for folks with small railroads. Basically the program allows you to build and terminate your
+     trains while capturing the switch list data for a location. See operations help for more info.
+     Should save paper!</li>
+    <LI>New operations feature, train manifests are now truncated when there's a switch list
+     for the location visited. A "truncated" manifest doesn't show where the cars are pulled from or
+     where they are to be spotted. Local moves are also not shown. All of the removed info is
+     however shown on the switch list for the location. This simplifies the train manifest showing
+     only what is needed for the train's conductor. See Print Options and select the "Truncate"
+     checkbox if you want to use this feature.</LI>
+    <LI>New staging option, you can now have cars return to staging on a turn, rather than
+     having a build failure. See help for more info, see Settings-&gt;Tools-&gt;Options "Allow cars
+     to return to staging if needed"."
+    <LI>New operations feature, "Auto Save". When selected the program will automatically save
+     your operation files. The program checks very minute to see if the operation files have been
+     modified, and if so will save them when the next minute passes. See the "Setting" page for the
+     "Auto Save" checkbox.
+    <LI>Switch lists now order the trains by their arrival time rather than their departure
+     time from the start of their route.</LI>
+    <LI>You can now manually add or delete cars from a built train using the "Set Cars" window.
+     The train manifest will also show the changes you manually made to the train.</LI>
+    <LI>In the "Trains" window, the program now shows the date and time a train was terminated.</LI>
+    <LI>New operations feature, "Planned Pick Ups" found under "Tools" in "Edit Track" for
+     spurs and interchanges. For each track you can tell the program that cars are expected to be
+     picked up from the track and that cars currently sitting there should be ignored. See the
+     operations help for more information.</LI>
+    <li>Two new switch list features. You can now eliminate trains that don't have work from
+     your switch lists. You can if you wish use a separate page for each train visiting a location.
+     See help for more info.</li>
+    <Li>You can now view a car's wait value in the Cars window. Note that you need a schedule
+     for this field to show up.</Li>
+    <li>Enhanced the cars print and preview options. Now you can select the page orientation,
+     and you can also optionally select the car's train, destination, and comment.</li>
+    <li>You can now print all of your routes from the "Tools" menu found in the routes window.</li>
+    <li>Improved the train builder, you should see less final destinations assigned to cars
+     that arn't part of the train</li>
+    <LI>You can now add a unique switch list comment for each location.</LI>
+    <li>New feature, auto backup. When enabled, the program will make a backup copy of all
+     operation files when the program starts.</li>
+    <li>The Trains window now shows which staging track a train is departing or terminating on.</li>
+    <LI>New enhancement, you can now exclude trains or routes from spurs, interchanges, and
+     staging tracks.</LI>
+    <li>Fixed a problem introduced in 2.99.4 with the switch list button "Print Switch List
+     Changes".</li>
+    <li>The option "Print Valid" now also affects switch lists.</li>
+    <Li>Improved the way cars, locomotives, and routes windows resize.</Li>
+    <li>Switch lists now show the lead loco number as part of the train's name. The "Append
+     Loco Number" must be selected in the Setting page.</li>
+    <li>Now when building trains that visit locations that have the "same" name, cars are no
+     longer moved between those locations unless a schedule is used. Locations with the "same" name
+     are locations that use the hyphen followed by a number feature. Also improved trains manifests
+     when "same" location names are used back to back.</li>
+    <li>New operations feature, user can select a page size of 3.25" x 11" for hand held
+     devices. See the Print Options page for detail.</li>
+    <li>
+   </ul>
+
+   <p>Paul Bender added a new Generic Consist Manager which will be installed onsystems such as the SPROG that implement a command station interface (the ability to send an arbitrary NMRA DCC packet).  This version of the Consist Manager uses an NMRA Consist Control packet to create the consist instead of the Operations Mode Programming request used in the previous Generic Consist Manager.  This will allow writing the consist address on decoders that support Operations Mode Programming, but do not allow operations mode programming of CV19 (Certain Lenz decoders fall into this category).
 
 <p>Georgio Terdida fixed a bug that may occur when loading an XnTcp adapter.</p>
 
