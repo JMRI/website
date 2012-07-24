@@ -77,15 +77,15 @@ None at the time of this release.
 	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.0-r20578.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.0-r20578.tgz/download</a></p>
  -->
 
-<!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/2.99.8/ws/jmri/dist/release/">CI project page</a>.
- -->
+<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.0/ws/jmri/dist/release/">CI project page</a>.
  
+<!-- 
 During development leading to the actual release, you can find test download files on the 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.
+ -->
 
 
 <h3>Changes since production release 2.14</h3>
@@ -316,9 +316,6 @@ only one OpSw access attempt.</li>
 <li>Added default robots.txt file to ask webcrawlers to NOT index any content from miniserver.</li>
 </ul>
 
-<p>The OpenLCB support has been updated to version 0.4.1 of their specification and libraries.
-
-
 
    <p>Herve Blorec provided a set of 
    <a href="http://jmri.org/help/fr/index.html">French-language help pages</a>.
@@ -458,10 +455,11 @@ Gert Muller
 The Locations item in the Help menu now have buttons to directly open the preferences and program directory from your desktop (may not work on all computer types)
 
 <p>
-The OpenLCB support has been updated to the 0.5 version of the specification. This includes new tools:
+The OpenLCB support has been updated to the 0.6.1 version of the specification. This includes new tools:
 <ul>
 <li>A tree-like display of the entire network, accessed via the OpenLCB menu.
-<li>New capabilities on the Console, including access to the DecoderPro-like built in node programmer
+<li>New capabilities on the Console, including access to the DecoderPro-like built-in node programmer
+<li>You can now use UTF-8 international characters in the board names and descriptions
 </ul>
 It may be necessary to reset your preferences if you have any defaults or open-at-start actions
 set for OpenLCB connections.
@@ -511,15 +509,6 @@ Steve Lowens added the Con-cor Zephyr (HO & N) definitions to the Digitrax sound
      when "same" location names are used back to back.</li>
     <li>Fixed a problem with auto backup where cars serviced by a train wasn't saved properly</li>
    </ul>
-
-
-   <p>
-The <a href="">OpenLCB</a> support has been updated:
-<ul>
-<li>You can now use UTF-8 international characters in the board names and descriptions
-<li>The tree-display of your OpenLCB can now be resized so that really big layouts display well
-</ul>
-
 
 
 <p>Paul Bender made the following changes:</p>
