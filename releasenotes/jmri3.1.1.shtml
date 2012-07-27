@@ -94,10 +94,17 @@ These are development files, and might not be working at any particular time.
 
 <h3>Changes since production release 3.0</h3>
 
-<p>
 Steve Todd added a new JmriFaceless app for linux installs, and modified WiThrottle server and Loconet simulator to not show a window when JMRI is running in headless mode.
-
-
+<p>
+Kevin Dickerson Made the following changes<br>
+<ul>
+<li>Added in initial support for the Marklin Command Station 2 System with help from Jean-Francois - please note that this is still in development.</li>
+<li>Editors - Provided a method for external code to add menu items to the popmenus of icons on the panel</li>
+<li>Tables - User set column widths, order, sorting etc is now saved between sessions</li>
+<li>Throttles - Provide a method to create a throttle by passing the Roster Entry rather than the DCC Address</li>
+<li>Throttles/Roster Enties - Records the duration that the loco has been operating for, along with the last time last was used, the information is stored as an attribute against the roster entry and can be viewed in the media pane.</li>
+<li>When setting a sensor in a block, if that sensor has a reporter associated against it the user is asked if they wish to use the reporter on that block.</li>
+</ul>
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
