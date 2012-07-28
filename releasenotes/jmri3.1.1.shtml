@@ -96,7 +96,7 @@ These are development files, and might not be working at any particular time.
 
 Steve Todd added a new JmriFaceless app for linux installs, and modified WiThrottle server and Loconet simulator to not show a window when JMRI is running in headless mode.
 <p>
-Kevin Dickerson Made the following changes<br>
+Kevin Dickerson made the following changes<br>
 <ul>
 <li>Added in initial support for the Marklin Command Station 2 System with help from Jean-Francois - please note that this is still in development.</li>
 <li>Editors - Provided a method for external code to add menu items to the popmenus of icons on the panel</li>
@@ -106,7 +106,14 @@ Kevin Dickerson Made the following changes<br>
 <li>When setting a sensor in a block, if that sensor has a reporter associated against it the user is asked if they wish to use the reporter on that block.</li>
 </ul>
 
-<!--#include virtual="/Footer" -->
+   <p>Dan Boudreau made the following changes to operations:</p>
+   <ul>
+    <li>Improved how cars are forwarded to alternate tracks. Now if the alternate track's spur
+     becomes available during the build, cars originally sent to the alternate are now redirected to
+     the spur.</li>
+   </ul>
+
+   <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
