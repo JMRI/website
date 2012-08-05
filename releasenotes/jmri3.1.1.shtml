@@ -104,6 +104,11 @@ Kevin Dickerson made the following changes<br>
 <li>Throttles - Provide a method to create a throttle by passing the Roster Entry rather than the DCC Address</li>
 <li>Throttles/Roster Enties - Records the duration that the loco has been operating for, along with the last time last was used, the information is stored as an attribute against the roster entry and can be viewed in the media pane.</li>
 <li>When setting a sensor in a block, if that sensor has a reporter associated against it the user is asked if they wish to use the reporter on that block.</li>
+<li>Updated the backend of the Connection Configuration to remove some limitations on the numbers of settings per connection</li>
+<li>Tweaked some of the GUI settings relating to the connection details</li>
+<li>ESU ECoS - Only update the throttle speed on the reply of the last throttle message which has been sent and ignore the event messages until all set speed messages have been processed, otherwise the throttle speed value jumps up and down like a yoyo until the last message is proceed.</li>
+<li>ESU ECoS - Update the loco import to blank out disabled functions and set non-descript function labels to be Fx.</li>
+<li>Programming - Fix an issue whereby the code doesn't wait for a reply to a programming command and other messages are sent/processed.  This happens if no message is required to put the command station into programming mode.</li>
 </ul>
 
    <p>Dan Boudreau made the following changes to operations:</p>
