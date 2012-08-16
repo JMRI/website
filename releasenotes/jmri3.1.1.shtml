@@ -94,8 +94,8 @@ These are development files, and might not be working at any particular time.
 
 <h3>Changes since production release 3.0</h3>
 
-Steve Todd added a new JmriFaceless app for linux installs, and modified WiThrottle server and Loconet simulator to not show a window when JMRI is running in headless mode.
-<p>
+<p>Steve Todd added a new JmriFaceless app for linux installs, and modified WiThrottle server and Loconet simulator to not show a window when JMRI is running in headless mode.</p>
+
 Kevin Dickerson made the following changes<br>
 <ul>
 <li>Added in initial support for the Marklin Command Station 2 System with help from Jean-Francois - please note that this is still in development.</li>
@@ -128,6 +128,8 @@ Kevin Dickerson made the following changes<br>
    dialog to select between automatic and regular backups when restoring, and a dialog to allow deleting automatic backups.</li>
    </ul>
 
+  <p>Robin Becker added xxx-blink-web.gif icons with correct frame delays and dimensions for web and panel use.</p>
+  
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
