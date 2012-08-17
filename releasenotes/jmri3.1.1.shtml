@@ -99,8 +99,17 @@ These are development files, and might not be working at any particular time.
 Kevin Dickerson made the following changes<br>
 <ul>
 <li>Added in initial support for the Marklin Command Station 2 System with help from Jean-Francois - please note that this is still in development.</li>
+<li>Provide support for systems that can handle multi-protocols for throttle control and extend this to cover decoders and roster entries.  Additional supported protocols now include
+    <ul>
+    <li>Motorola</li>
+    <li>Selectrix</li>
+    <li>MFX</li>
+    </ul>
+    The change is only seen if the system that controls the throttle supports multiple protocols.
+</li>
 <li>Editors - Provided a method for external code to add menu items to the popmenus of icons on the panel</li>
 <li>Tables - User set column widths, order, sorting etc is now saved between sessions</li>
+<li>Tables - Added a "Copy User Name" item to the mouse popup menu</li>
 <li>Throttles - Provide a method to create a throttle by passing the Roster Entry rather than the DCC Address</li>
 <li>Throttles/Roster Enties - Records the duration that the loco has been operating for, along with the last time last was used, the information is stored as an attribute against the roster entry and can be viewed in the media pane.</li>
 <li>When setting a sensor in a block, if that sensor has a reporter associated against it the user is asked if they wish to use the reporter on that block.</li>
