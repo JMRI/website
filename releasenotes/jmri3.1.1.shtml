@@ -143,7 +143,26 @@ Kevin Dickerson made the following changes<br>
       <li>added the binaries needed by the Raspbian hard-float distro (for the Raspberry Pi).</li>
     </ul>  
 
-   <!--#include virtual="/Footer" -->
+  <p>Stephen Lowens:
+  <ul>
+    <li>updated decoder definitions for Digitrax sound/motor decoders. This version adds CV144 (Dynamic brake volume) and moves Con-cor Zephyr definitions to new file
+    <li>provided decoder definitions for Con-cor MP54 and Zephyr models. These use Digitrax SDH164D and/or SDN144PS with unique programming and/or sound projects.
+  </ul>
+  
+<p> D Heap:<blockquote>
+LokSound V4.0 Decoder CV249 (Min Steam Chuff Distance) was inadvertently assigned to CV248 instead of CV249.
+
+Also some others I wanted were missing, so I added CVs 47,48,51,122,123,129,130,133,250,255, which were the ones missing but present in LokProgrammer 4.3.3 and present in LokSound V4.0 Instruction manual 4. Edition, May 2012 from firmware 4.6.
+CV131 appears to be obsolete but I did not remove it.
+
+Had to move a few option numbers up and down to fit all on to existing panes.  
+</blockquote>
+
+<p>
+Clint Taylor added code to allow function buttons to work within the loconet slot manager.
+
+
+<!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
