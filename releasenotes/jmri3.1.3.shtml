@@ -8,7 +8,7 @@
  </title>
     <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
     <meta content="Bob Jacobsen" name=Author>
-    <meta name="keywords" content="java model railroad JMRI 3.1.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 3.1.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
@@ -94,12 +94,15 @@ These are development files, and might not be working at any particular time.
 
 <h3>Changes since test release 3.1.2</h3>
 
-Labels, LocoIcons, SenorIcons in text display mode, MemoryDisplayIcons can be rotated to any angle along with any margin or border deorations they have.
-LocoIcons may have a "docking location" specified.
-Sensor overlay bug fixed.
-Picklist will retain user's location.
+<p>Pete Cressman made the following changes:</p>
+<ul>
+    <li>Labels, LocoIcons, SenorIcons in text display mode, MemoryDisplayIcons can be rotated to any angle along with any margin or border decorations they have.</li>
+    <li>LocoIcons may have a "docking location" specified.</li>
+    <li>Sensor overlay bug fixed.</li>
+    <li>Picklist will retain user's location.</li>
+</ul>
 
-
+<p>Steve Todd added initial /panel/ servlet support for Layout Editor and Control Panel panels.</p>
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
