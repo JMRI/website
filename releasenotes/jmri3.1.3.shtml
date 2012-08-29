@@ -107,6 +107,7 @@ These are development files, and might not be working at any particular time.
 <p>Kevin Dickerson made the following changes:</p>
 <ul>
     <li>Fix an issue where memory icons that load with an empty string value, the saved background color is ignored and subsequently lost</li>
+    <li>In the block table the unit length is now remembered between sessions</li>
 </ul>
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
