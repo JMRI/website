@@ -102,12 +102,16 @@ These are development files, and might not be working at any particular time.
     <li>Picklist will retain user's location.</li>
 </ul>
 
-<p>Steve Todd added initial /panel/ servlet support for Layout Editor and Control Panel panels.</p>
-
 <p>Kevin Dickerson made the following changes:</p>
 <ul>
     <li>Fix an issue where memory icons that load with an empty string value, the saved background color is ignored and subsequently lost</li>
     <li>In the block table the unit length is now remembered between sessions</li>
+</ul>
+
+<p>Steve Todd made the following changes:</p>
+<ul>
+    <li>add initial /panel/ servlet support for Layout Editor and Control Panel panels.</li>
+    <li>add a web page for drawing panels in the browser (supports only limited number of elements now)</li>
 </ul>
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
