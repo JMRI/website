@@ -104,8 +104,13 @@ These are development files, and might not be working at any particular time.
 
 <p>Kevin Dickerson made the following changes:</p>
 <ul>
-    <li>Fix an issue where memory icons that load with an empty string value, the saved background color is ignored and subsequently lost</li>
-    <li>In the block table the unit length is now remembered between sessions</li>
+    <li>Editors - Fix an issue where memory icons that load with an empty string value, the saved background color is ignored and subsequently lost</li>
+    <li>Block Table - The unit length is now remembered between sessions</li>
+    <li>Auto Dispatcher Train - If a train has been created using a roster entry, the roster entry is now passed to the throttle manager rather than just the address, this allows use 
+            roster entries and systems that support multiple protocols, it also allows the use of the loco to be recorded in the roster entry</li>
+    <li>Turnout Table - The feedback sensor selection is now done via a drop down list rather</li>
+    <li>Entry Exit - The cancel/clear route option can now be accessed via mouse pop-up on the source sensor icon in a panel</li>
+    <li>Tables - Remove the un-necessary question when adding a username to an item for the first time if the item has yet to be used.</li>
 </ul>
 
 <p>Steve Todd made the following changes:</p>
