@@ -104,6 +104,10 @@ The larger target is especially useful when used with a 3 position multi sensor 
 They are available in the 
 <a href="http://jmri.org/resources/icons/USS/plate/levers/">/resources/icons/USS/plate/levers/</a> directory.
 
+<p>Kevin Dickerson made the following changes:</p>
+<ul>
+    <li>Roster - Fix an issue that corrupted the roster index if the roster was saved while a newly created unsaved roster entry was open</li>
+</ul>
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
