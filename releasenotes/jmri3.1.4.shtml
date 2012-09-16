@@ -112,6 +112,9 @@ They are available in the
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
    <li>When building a train, the move list is no longer in alphabetical order.</li>
+   <li>You can now force a car or locomotive to any track when using the "Set" window.</li>
+   <li>Fixed a bug where all cars in a kernel were being checked when selecting a track from staging.  Only
+   the lead car in the kernel should have been checked.</li>
    </ul>
 
 <!--#include virtual="/Footer" -->
