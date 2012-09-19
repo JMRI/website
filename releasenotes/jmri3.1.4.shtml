@@ -93,9 +93,12 @@ These are development files, and might not be working at any particular time.
 
 <h3>Changes since test release 3.1.3</h3>
 
-<p>Steve Todd made the following change:</p>
+<p>Steve Todd made the following changes:</p>
 <ul>
     <li>fixed issue with xmlio server which was preventing multiple clients from getting updates.</li>
+    <li>added layoutblocks to /panel servlet</li>
+    <li>added signalhead list and monitoring to /xmlio servlet</li>
+    <li>multiple enhancements to showPanel.js, now handles majority of panel widgets</li>
 </ul>
 
 <p>Bob Bucklew contributed a set of six wider lever icons that use the same graphic but are placed on a wider transparent background. 
