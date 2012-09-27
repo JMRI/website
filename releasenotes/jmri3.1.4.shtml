@@ -131,10 +131,13 @@ They are available in the
 <li>Added let Warrants run automated trains without them occupying the starting block - thus warrants can be chained dynamically.</li>
 </ul>
 
-<UL>
+<P>
 The OpenLCB support now has a built-in hub for Internet access to your OpenLCB. Start the hub
 from the OpenLCB menu or a startup item, the connect your iPhone via port 12021.
-  
+
+<P>Robin Becker fixed a nasty, long-standing problem with how various complicated variable definitions in DecoderPro
+interacted.  This could, under the right circumstances, cause reading or writing of the decoder to hang permanently.
+
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
