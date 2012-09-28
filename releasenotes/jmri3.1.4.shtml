@@ -119,6 +119,8 @@ interacted.  This could, under the right circumstances, cause reading or writing
     <li>Entry Exit (NX) - Added the option to set the action when the NX sensors are selected a second time.</li>
     <li>Layout Editor - Fixed an issue with te SSL Logic for a slip icon that resulted in a diverging route not being set for limited speed correctly.</li>
     <li>Sections - Add Directional Sensors to SSL, now covers SSL used on Single and Double Slips.</li>
+    <li>Abstract Automation - Assign the name to the thread to help identify any issues caused by the thread</li>
+    <li>Dispatcher - Fix a couple of Index Out Of Bounds Exceptions</li>
 </ul>
 
    <p>Dan Boudreau made the following changes to operations:</p>
