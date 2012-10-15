@@ -56,7 +56,10 @@ see our
 
 <h3>New warnings for this version:</h3>
 
-None
+On Windows, there may be a problem if you ask the installer to install Java for you
+during the installation process.  If you don't have Java installed on your Windows
+computer, install it manually before installing JMRI by going to 
+<a href="http://java.com/en/download/manual.jsp#win">http://java.com/en/download/manual.jsp#win</a>.
 
 <h3>Older warnings</h3>
 
@@ -68,21 +71,21 @@ None at the time of this release.
 
 <h3>Download links:</h3>
 
-<!--  
 <p>Please use these links for downloading:</p>
 <p>MacOS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21034.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21034.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21417.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21417.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21034.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21034.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21417.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21417.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21034.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21034.tgz/download</a></p>
- -->
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21417.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21417.tgz/download</a></p>
  
+<!--  
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.1.4/ws/jmri/dist/release/">CI project page</a>.
+ -->
 
 <!-- 
 During development leading to the actual release, you can find test download files on the 
@@ -176,7 +179,7 @@ Clint Taylor updated how functions are handled in the LocoNet slot monitor.
 Dick Bronson updated the RR-CirKits LNCP definition file.
 
 <p>
-OpenLCB support now in throttles.
+OpenLCB support now in throttles. The OpenLCB monitor now shows formatted messages.
 
 
 <!--#include virtual="/Footer" -->
