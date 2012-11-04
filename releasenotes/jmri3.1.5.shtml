@@ -112,6 +112,9 @@ of English that will require some code changes)
 <p>Dan Boudreau made the following changes to operations:</p>
 <ul>
 <li>The schedules window status has been improved to show more cases where a schedule has a problem.</li>
+<li>The edit train window will now only launch one edit route window</li>
+<li>Train reset in the Trains window now checks to see if the departure staging track was allocated to another in bound train.
+This prevents using reset for the departure train, and then ending up with two trains on the same staging track.</li>
 </ul>
 
 <!--#include virtual="/Footer" -->
