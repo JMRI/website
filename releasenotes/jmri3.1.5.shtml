@@ -56,7 +56,15 @@ see our
 
 <h3>New warnings for this version:</h3>
 
-None
+To allow use of UTF-8 characters (special characters with accents, Japanese text, etc) in XML
+files, particularly decoder definitions, the default file encoding has been changed to UTF-8.
+This requires a change to the startup scripts distributed with JMRI.
+If you're just using the JMRI-provided startup tools, you should be all set.
+If you're using your own custom startup scripts, 
+you need to add a "-Dfile.encoding=UTF-8" option to them. 
+If you have any problems with special characters in your existing files, 
+please let us know as soon as possible.
+
 
 <h3>Older warnings</h3>
 
@@ -117,6 +125,12 @@ of English that will require some code changes)
 <li>Train reset in the Trains window now checks to see if the departure staging track was allocated to another in bound train.
 This prevents using reset for the departure train, and then ending up with two trains on the same staging track.</li>
 </ul>
+
+To allow use of UTF-8 characters (special characters with accents, Japanese text, etc) in XML
+files, particularly decoder definitions, the default file encoding has been changed to UTF-8.
+This requires a change to the startup scripts distributed with JMRI.
+If you're using your own custom startup scripts, you need to add 
+a "-Dfile.encoding=UTF-8" option to them.
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
