@@ -112,7 +112,7 @@
 	    <p>See if you have a version of Java already installed<p>
 	    <p class=example> sh> java -version</p>
 
-	    <p>If the version is 1.4 or later, you may be fine, but
+	    <p>If the version is 1.6 or later, you may be fine, but
 	       be aware that if you did not install Java on your system
 	       yourself, some systems have Java only partially installed. They
 	       will respond correctly to the above command, but still are not
@@ -120,7 +120,7 @@
 	       variable PATH, the install is probably not complete. Check with
 	       the system manager or do a fresh Java installation.</p>
 	   
-	   <p>If it is not at least 1.4, or if you get a "java: not found"
+	   <p>If it is not at least 1.6, or if you get a "java: not found"
 	   error, you will need to install it.</p>
 
        <p>Most Linux distributions can get an automated install download
@@ -134,27 +134,14 @@
 	    priviledges:</p>
 
 	    <ol type="a">
-	    <li>Download the Java 1.4 "Linux Red Hat RPM shell script" from 
-	       <A href="http://java.sun.com/j2se/">http://java.sun.com/j2se/</A>.
-		This should give you a file named "j2re-1_4_0-fcs-linux-i386.rpm".
+	    <li>Download the Java 1.6 "jre-6u34-linux-i586-rpm.bin" from the
+	       <A href="http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jre-6u34-oth-JPR">Oracle download</A>.
+		This should give you a file named "jre-6u34-linux-i586-rpm".
 		Install that with:<BR>
-		<TT>rpm -i j2re-1_4_0-fcs-linux-i386.rpm</TT></li>
+		<TT>rpm -i jre-6u34-linux-i586-rpm</TT></li>
         </ol>
 
 	<li>Download and Install the Java Communications API
-	    <p>
-	    If you are installing JMRI 2.9.1 or earlier, you need to
-	    install a Java Communications API (Java comm) library.
-	    If you are installing JMRI 2.9.2 or later, skip this step.
-        
-        <ol>
-	    <li>Download and install javacomm20-x86 from
-		<A
-		HREF="http://java.sun.com/products/javacomm/">http://java.sun.com/products/javacomm/</A>
-		and install it with<br>
-		<TT>cp comm.jar /usr/java/j2re1.4.0/lib/ext/</TT><BR>
-		<TT>echo Driver=gnu.io.RXTXCommDriver &gt;
-		/usr/java/j2re1.4.0/lib/javax.comm.properties</TT><BR></li>
 
 		<li>JavaComm on Linux requires a version of the rxtx package.
 		Finding and building an rxtx package that works is a bit of a
