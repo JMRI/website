@@ -1,24 +1,27 @@
 production:
-  version: 3.0
+ 3.0
   tgz: https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.tgz/download
   dmg: https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.dmg/download
   exe: https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.exe/download
 production:
-  version: 2.14.1
+ 2.14.1
   comment: For installations that must use Java 1.5; all others require Java 1.6 or later
   tgz: https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.tgz/download
   dmg: https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.dmg/download
   exe: https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.exe/download
 test:
-  version: 3.1.5
+ 3.1.5
   tgz: https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.5-r21632.tgz/download
   dmg: https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.5-r21632.dmg/download
   exe: https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.5-r21632.exe/download
 test:
-  version: 3.1.4
+ 3.1.4
   tgz: https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21417.tgz/download
   dmg: https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21417.dmg/download
   exe: https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.4-r21417.exe/download
 
 # This file contains information about the last few JMRI (http://jmri.org) releases.
 # JMRI is distributed under license. More information is at http://jmri.org/Copyright.html
+#
+# Note to maintainers:  The zero, one, two space indentations in this file are significant
+
