@@ -156,7 +156,31 @@ Robin Becker provided a new Tam Valley Quad Ln decoder definition.
 
 <p>Ken Cameron edited the BN-1989 signal mast set to have required specific aspects and a basic set of aspect mapping.</p>
 
-<p>James Koretsky submitted the icon files for the BN-1989 and aspects.</p>
+<p>James Koretsky submitted the icon files for the BN-1989 and
+   aspects.</p>
+
+<p>Mark Underwood submitted the following changes to Virtual Sound Decoder</p>
+<ul>
+  <li> Sound will now follow the locomotive if you use one of the
+  following location tracking systems:
+  <ul>
+    <li>Digitrax Transponding (verified)</li>
+    <li>RPS (not verified)</li>
+    <li>RFID (not verified)</li>
+    <li>Dcc4PC (not verified)</li>
+    <li>ECoS (not verified)</li>
+  </ul>
+  </li>
+  <li>Listener position does not have to be the origin now.</li>
+  <li>Roster "Save" button on the VSD window now saves to the file on
+  disk</li>
+  <li>New Diesel engine model (still under development)</li>
+</ul>
+
+<p>If you have one of the location reporting hardware systems listed
+above as "not verified", and would like to help verify correct
+operation, please contact Mark (user "twindadrails") on the JMRI Yahoo!
+Group.</p>
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
