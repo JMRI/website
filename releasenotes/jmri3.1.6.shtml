@@ -103,23 +103,23 @@ These are development files, and might not be working at any particular time.
 
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
+    <li>New feature for trains, you can now prevent local moves even when using custom loads.
+     You can also prevent through traffic from origin to terminal. See under Edit Train, Tools,
+     Train Build Options.</li>
     <li>Removed switch list and build report options from the Print Options window. Build
      report options now have their own window. Switch list options were moved the switch list window
      that is launched by the "Switch List" button in the Trains window.
     <li>Increased the number of fonts available for operations. Only monospaced fonts are now
      available if you've selected tabular manifests and switch lists.</li>
     <li>Improved the train build reports. Now the build report separates each car being
-     processed by a line break in very detailed mode.</li>>
+     processed by a line break in very detailed mode.</li>
     <li>Fixed a problem with selecting the "Courier" font that was introduced in 3.1.5.</li>
     <li>Fixed a problem with the Switch List window not appearing when the default printer
      wasn't specified on the PC. We only know of one user that has experienced this problem, might
      be related to one of the newer versions of JAVA.</li>
-     <li>New feature for trains, you can now prevent local moves even when using custom loads.  You can
-     also prevent through traffic from origin to terminal.  See under Edit Train,
-     Tools, Train Build Options.</li>
    </ul>
 
-<p>Stephen Lowens provided a decoder definition for the Tsunami for Rapido FP9A.
+   <p>Stephen Lowens provided a decoder definition for the Tsunami for Rapido FP9A.
 
 <P>If you define a sensor for OpenLCB using just one event, it will work in a momentary fashion.
 
