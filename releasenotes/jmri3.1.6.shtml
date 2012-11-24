@@ -123,6 +123,7 @@ These are development files, and might not be working at any particular time.
 
 <P>If you define a sensor for OpenLCB using just one event, it will work in a momentary fashion.
 
+<p>Fixed a problem where CAN interfaces might pick up the wrong protocol name in the preferences.
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
