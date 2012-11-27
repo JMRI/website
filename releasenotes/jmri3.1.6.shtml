@@ -128,6 +128,11 @@ These are development files, and might not be working at any particular time.
 
 <p>Fixed a problem where CAN interfaces might pick up the wrong protocol name in the preferences.
 
+<p>Kevin Dickerson made the following changes:</p>
+<ul>
+    <li>DP3 - Fixed the issue where the splash screen was not displayed at startup and the buttons added at Startup were not displayed.</li>
+    <li>DP3 - Added the option to suppress the quitting application message.</li>
+</ul>
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
