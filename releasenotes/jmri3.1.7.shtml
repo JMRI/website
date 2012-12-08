@@ -128,6 +128,24 @@ SoundTraxx MC IMRC and Genesis decoder definitions.
 
 <p>Mark Waters update the Zimo version 28, 30 and 31 decoders.
 
+<p>Mark Underwood made changes to Virtual Sound Decoder:
+<ul>
+  <li>New, consolidated user interface keeps all decoders in one window</li>
+  <li>New locations manager makes setting physical locations
+  easier</li>
+  <li>New, smoother sounding Diesel engine model</li>
+  <li>Numerous bug fixes in various areas (and, likely, new
+  bugs!)</li>
+  <li>Usability improvements including tool tips</li>
+  <li>"Load VSD Files" window remembers the last folder you
+  visited</li>
+  <li>New Listener model handles listener location and
+  orientation</li>
+  <li>New Validator catches errors in VSD files when the file is
+  loaded</li>
+</ul>
+</p>
+  
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
