@@ -134,7 +134,7 @@ Kevin Dickerson made the following changes<br>
      <li>You can now open a csv manifest directly from the trains window.</li>
    </ul>
    
-   <p>Gregory Madsen made the following changes to operations:</p>
+<p>Gregory Madsen made the following changes to operations:</p>
    <ul>
    <li>Improvements to the Backup capabilities, including separate stores for "automatic" and "default" backups, 
    dialog to select between automatic and regular backups when restoring, and a dialog to allow deleting automatic backups.</li>
@@ -142,7 +142,7 @@ Kevin Dickerson made the following changes<br>
 
   <p>Robin Becker added xxx-blink-web.gif icons with correct frame delays and dimensions for web and panel use.</p>
   
-  <p>Steve Todd made the following changes:</p>
+<p>Steve Todd made the following changes:</p>
     <ul>
       <li>added a new JmriFaceless app for linux installs, and modified WiThrottle server and Loconet simulator to not show a window when JMRI is running in headless mode.</li>
       <li>added the binaries needed by the Raspbian hard-float distro (for the Raspberry Pi).</li>
@@ -165,6 +165,8 @@ Had to move a few option numbers up and down to fit all on to existing panes.
 
 <p>
 Clint Taylor added code to allow function buttons to work within the Loconet Slot Monitor.
+<p>
+Clint Taylor updated how functions are handled in the LocoNet slot monitor.
 
 <p>
 John Crellin updated several MRC decoders and provided a new definition for the MRC 1905.
@@ -208,9 +210,16 @@ John Crellin updated several MRC decoders and provided a new definition for the 
 </ul>
 
 <p>
-Several additional features have been added to the OpenLCB support, including
-an updated node browser that directly lets you configure boards and improvements
-to the specific configuration tools.
+Several additional features have been added to the OpenLCB support, including:
+<ul>
+<li>an updated node browser that directly lets you configure boards
+<li>improvements to the specific configuration tools
+<li>added a built-in hub for Internet access to your OpenLCB. Start the hub
+from the OpenLCB menu or a startup item, the connect your iPhone via port 12021.
+<li>support in JMRI throttles for access to an OpenLCB command station
+<li>the OpenLCB monitor now shows formatted messages.
+<li>If you define a sensor for OpenLCB using just one event, it will work in a momentary fashion.
+</ul>
 
 <p>Mike Mosher contributed a decoder definition for the MTH Expanded DCC decoder.
 
@@ -261,7 +270,7 @@ interacted.  This could, under the right circumstances, cause reading or writing
     <li>ECOS - Update throttle code to allow 14/28/128 speed steps</li>
 </ul>
 
-   <p>Dan Boudreau made the following changes to operations:</p>
+<p>Dan Boudreau made the following changes to operations:</p>
    <ul>
     <li>When building a train, the move list is no longer in alphabetical order.</li>
     <li>You can now force a car or locomotive to any track when using the "Set" window.</li>
@@ -276,7 +285,7 @@ interacted.  This could, under the right circumstances, cause reading or writing
      arrival time. See Print Options for more information</li>
    </ul>
 
-   <p>Ken Cameron made the following changes:</p>
+<p>Ken Cameron made the following changes:</p>
 <ul>
 	<li>NCE Cab Monitor - Converted to using table format for the cab detail display</li>
 </ul>
@@ -288,12 +297,6 @@ interacted.  This could, under the right circumstances, cause reading or writing
 <li>Added let Warrants run automated trains without them occupying the starting block - thus warrants can be chained dynamically.</li>
 </ul>
 
-<P>
-The OpenLCB support now has a built-in hub for Internet access to your OpenLCB. Start the hub
-from the OpenLCB menu or a startup item, the connect your iPhone via port 12021.
-<p>
-The issue that prevented NCE Power Pro Systems from being used for programming has now been fixed.
-
 <p>
 Dave Heap improved the ESU LokSoundV4.0 and LokSound Select decoder definitions.
 
@@ -303,16 +306,9 @@ Nigel Cliffe provided definition files for two Harman DIY decoders.
 <p>
 Mike Mosher did a major update to the QSI Version 8 decoder definitions
 
-<p>
-Clint Taylor updated how functions are handled in the LocoNet slot monitor.
 
 <p>
 Dick Bronson updated the RR-CirKits LNCP definition file.
-
-<p>
-OpenLCB support now in throttles. The OpenLCB monitor now shows formatted messages.
-
-
 
 <p>Randall Wood made the following changes:</p>
 <ul>
@@ -328,14 +324,15 @@ OpenLCB support now in throttles. The OpenLCB monitor now shows formatted messag
 <li>Fixed issue with WiThrottle handling of wildcard multi-throttles (seen with EngineDriver only).</li>
 <li>Added signalmast list and monitoring to xmlio server, added memory and signalmast to json servers</li>
 <li>Added signalmast aspect image list to /panel servlet</li>
-
 </ul>
 
 <p>Enzo Fortuna provided an full Italian translation.  (There are still a few bits
 of English that will require some code changes)
 
+<p>Fixed a problem where CAN interfaces might pick up the wrong protocol name in the preferences.
 
-   <p>Dan Boudreau made the following changes to operations:</p>
+
+<p>Dan Boudreau made the following changes to operations:</p>
    <ul>
     <li>The schedules window status has been improved to show more cases where a schedule has a
      problem.</li>
@@ -351,11 +348,15 @@ of English that will require some code changes)
      picked up cars are to be placed in the train.</li>
    </ul>
 
-   To allow use of UTF-8 characters (special characters with accents, Japanese text, etc) in XML
+<p>To allow use of UTF-8 characters (special characters with accents, Japanese text, etc) in XML
 files, particularly decoder definitions, the default file encoding has been changed to UTF-8.
 This requires a change to the startup scripts distributed with JMRI.
 If you're using your own custom startup scripts, you need to add 
 a "-Dfile.encoding=UTF-8" option to them.
+
+<p>
+Added RailStars Limited to the list of decoder manufacturers (company has been around for a while,
+but the NMRA C&I Department hasn't updated their list in more than 18 months).
 
 <p>
 Tighe Kuykendall provided some documentation updates and fixes.
@@ -370,7 +371,7 @@ Robin Becker provided a new Tam Valley Quad Ln decoder definition.
 
 <p>Mark Underwood submitted the following changes to Virtual Sound Decoder</p>
 <ul>
-  <li> Sound will now follow the locomotive if you use one of the
+  <li>Sound will now follow the locomotive if you use one of the
   following location tracking systems:
   <ul>
     <li>Digitrax Transponding (verified)</li>
@@ -385,8 +386,7 @@ Robin Becker provided a new Tam Valley Quad Ln decoder definition.
   disk</li>
   <li>New Diesel engine model (still under development)</li>
 </ul>
-
-<p>If you have one of the location reporting hardware systems listed
+If you have one of the location reporting hardware systems listed
 above as "not verified", and would like to help verify correct
 operation, please contact Mark (user "twindadrails") on the JMRI Yahoo!
 Group.</p>
@@ -422,9 +422,6 @@ Group.</p>
 
    <p>Stephen Lowens provided a decoder definition for the Tsunami for Rapido FP9A.
 
-<P>If you define a sensor for OpenLCB using just one event, it will work in a momentary fashion.
-
-<p>Fixed a problem where CAN interfaces might pick up the wrong protocol name in the preferences.
 
 <p>Kevin Dickerson made the following changes:</p>
 <ul>
@@ -433,6 +430,7 @@ Group.</p>
 </ul>
 
 <p>Nigel Cliffe and Mark Waters added some new Zimo Unified Software decoder definitions.
+
 <p>Gert Muller fixed a problem preventing the help page from showing for the preference pane.
 
 <p>Bob Milhaupt removed OpSw 36 from the DCS51 configuration page, as it's not supported by that command station.
@@ -463,7 +461,7 @@ Group.</p>
 <p>Mike Mosher updated the ESU LokSound Select decoder definitions, and the 
 SoundTraxx MC IMRC and Genesis decoder definitions.
 
-<p>Mark Waters update the Zimo version 28, 30 and 31 decoders.
+<p>Mark Waters updated the Zimo version 28, 30 and 31 decoders.
 
 <p>Mark Underwood made changes to Virtual Sound Decoder:
 <ul>
@@ -486,9 +484,6 @@ SoundTraxx MC IMRC and Genesis decoder definitions.
 <p>
 Dan Boudreau fixed a problem with window size on Mac OS X
 
-<p>
-Added RailStars Limited to the list of decoder manufacturers (company has been around for a while,
-but the NMRA hasn't bothered up update their list in more than 18 months).
 
 
 
