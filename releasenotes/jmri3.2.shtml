@@ -35,12 +35,11 @@
  
 <br><b>This is a draft release note only; the download links do not yet work</b>
 
+We are very pleased to announce that the 3.1 series of JMRI test releases has resulted in a
+version that's good enough to be recommended for general use, including by new users.
+We're therefore making that version, "Production version 3.2" available for download today.
+
 <h3>Notes:</h3>
-
-
-<p>Some of the changes involved are quite extensive.
-They may require a certain amount of experience before they are working well.  
-Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
@@ -50,11 +49,7 @@ see our
 
 <h3>New warnings for this version:</h3>
 
-
-
-<h3>Older warnings</h3>
-
-This release, and all other releases in this cycle, require Java 1.6.
+This release requires Java 1.6.
 
 <p>
 To allow use of UTF-8 characters (special characters with accents, Japanese text, etc) in XML
@@ -76,25 +71,15 @@ None at the time of this release.
 <!--  
 <p>Please use these links for downloading:</p>
 <p>MacOS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.7-r21034.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.7-r21034.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.2-r21034.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.2-r21034.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.7-r21034.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.7-r21034.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.2-r21034.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.2-r21034.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.7-r21034.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.7-r21034.tgz/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.2-r21034.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.2-r21034.tgz/download</a></p>
  -->
  
-<!-- 
-Preliminary build files (not the final released files) can be found
-on the
-<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.1.7/ws/jmri/dist/release/">CI project page</a>.
- -->
-
-During development leading to the actual release, you can find test download files on the 
-<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
-These are development files, and might not be working at any particular time.
-
 
 <h3>Changes since production release 3.0</h3>
 
@@ -140,7 +125,6 @@ Kevin Dickerson made the following changes<br>
    dialog to select between automatic and regular backups when restoring, and a dialog to allow deleting automatic backups.</li>
    </ul>
 
-  <p>Robin Becker added xxx-blink-web.gif icons with correct frame delays and dimensions for web and panel use.</p>
   
 <p>Steve Todd made the following changes:</p>
     <ul>
@@ -154,7 +138,7 @@ Kevin Dickerson made the following changes<br>
     <li>provided decoder definitions for Con-cor MP54 and Zephyr models. These use Digitrax SDH164D and/or SDN144PS with unique programming and/or sound projects.
   </ul>
   
-<p> D Heap:<blockquote>
+<p>D Heap:<blockquote>
 LokSound V4.0 Decoder CV249 (Min Steam Chuff Distance) was inadvertently assigned to CV248 instead of CV249.
 
 Also some others I wanted were missing, so I added CVs 47,48,51,122,123,129,130,133,250,255, which were the ones missing but present in LokProgrammer 4.3.3 and present in LokSound V4.0 Instruction manual 4. Edition, May 2012 from firmware 4.6.
@@ -162,11 +146,6 @@ CV131 appears to be obsolete but I did not remove it.
 
 Had to move a few option numbers up and down to fit all on to existing panes.  
 </blockquote>
-
-<p>
-Clint Taylor added code to allow function buttons to work within the Loconet Slot Monitor.
-<p>
-Clint Taylor updated how functions are handled in the LocoNet slot monitor.
 
 <p>
 John Crellin updated several MRC decoders and provided a new definition for the MRC 1905.
@@ -221,17 +200,22 @@ from the OpenLCB menu or a startup item, the connect your iPhone via port 12021.
 <li>If you define a sensor for OpenLCB using just one event, it will work in a momentary fashion.
 </ul>
 
-<p>Mike Mosher contributed a decoder definition for the MTH Expanded DCC decoder.
+<p>Mike Mosher:
+<ul>
+<li>contributed a decoder definition for the MTH Expanded DCC decoder.
+<li>did a major update to the QSI Version 8 decoder definitions
+<li>updated the ESU LokSound Select decoder definitions, and the SoundTraxx MC IMRC and Genesis decoder definitions.
+</ul>
 
 <p>Jack Shall contributed an update to the Tsunami diesel decoder definition
 to add the GN1000 series and EMD 645 (non_turbo)
 
+
 <p>Clint Taylor improved the LocoNet slot monitor. 
 <ul>
-<li>
-Loconet Slot monitor will refresh if cmd station ops sw 36, 37, 38, or 39 is set to closed 'c'. This is Feature Request 1876188 which specifically asked for Ops SW 36, but there is no reason to limit to sw 36, since 39 will erase all slots memory.
-<li>
-The loconet Slot monitor function Key were active for System Slots. This could have caused Command Station configuration issues. As a result of this change Function Keys F1-F8, E Stop button, and Free button will not longer work for the reserved system slots which are above slot 120.
+<li>added code to allow function buttons to work within the Loconet Slot Monitor.
+<li>Loconet Slot monitor will refresh if cmd station ops sw 36, 37, 38, or 39 is set to closed 'c'. This is Feature Request 1876188 which specifically asked for Ops SW 36, but there is no reason to limit to sw 36, since 39 will erase all slots memory.
+<li>The loconet Slot monitor function Key were active for System Slots. This could have caused Command Station configuration issues. As a result of this change Function Keys F1-F8, E Stop button, and Free button will not longer work for the reserved system slots which are above slot 120.
 </ul>
 
 
@@ -251,9 +235,14 @@ The larger target is especially useful when used with a 3 position multi sensor 
 They are available in the 
 <a href="http://jmri.org/resources/icons/USS/plate/levers/">/resources/icons/USS/plate/levers/</a> directory.
 
-<p>Robin Becker contributed a set of code buttons to match Bob Bucklew's wider lever icons.</p>
-<P>Robin Becker fixed a nasty, long-standing problem with how various complicated variable definitions in DecoderPro
+<p>Robin Becker:
+<ul>
+<li>contributed a set of code buttons to match Bob Bucklew's wider lever icons.</p>
+<li>fixed a nasty, long-standing problem with how various complicated variable definitions in DecoderPro
 interacted.  This could, under the right circumstances, cause reading or writing of the decoder to hang permanently.
+<li>provided a new Tam Valley Quad Ln decoder definition.
+<li>added xxx-blink-web.gif icons with correct frame delays and dimensions for web and panel use.</p>
+</ul>
 
 <p>Kevin Dickerson made the following changes:</p>
 <ul>
@@ -303,9 +292,6 @@ Dave Heap improved the ESU LokSoundV4.0 and LokSound Select decoder definitions.
 <p>
 Nigel Cliffe provided definition files for two Harman DIY decoders.
 
-<p>
-Mike Mosher did a major update to the QSI Version 8 decoder definitions
-
 
 <p>
 Dick Bronson updated the RR-CirKits LNCP definition file.
@@ -330,7 +316,6 @@ Dick Bronson updated the RR-CirKits LNCP definition file.
 of English that will require some code changes)
 
 <p>Fixed a problem where CAN interfaces might pick up the wrong protocol name in the preferences.
-
 
 <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
@@ -361,13 +346,9 @@ but the NMRA C&I Department hasn't updated their list in more than 18 months).
 <p>
 Tighe Kuykendall provided some documentation updates and fixes.
 
-<p>
-Robin Becker provided a new Tam Valley Quad Ln decoder definition.
-
 <p>Ken Cameron edited the BN-1989 signal mast set to have required specific aspects and a basic set of aspect mapping.</p>
 
-<p>James Koretsky submitted the icon files for the BN-1989 and
-   aspects.</p>
+<p>James Koretsky submitted icon files for the BN-1989 and aspects.</p>
 
 <p>Mark Underwood submitted the following changes to Virtual Sound Decoder</p>
 <ul>
@@ -458,8 +439,6 @@ Group.</p>
         better clarify the use of velocity with audio sources.</li>
 </ul>
 
-<p>Mike Mosher updated the ESU LokSound Select decoder definitions, and the 
-SoundTraxx MC IMRC and Genesis decoder definitions.
 
 <p>Mark Waters updated the Zimo version 28, 30 and 31 decoders.
 
