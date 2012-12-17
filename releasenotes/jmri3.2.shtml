@@ -81,30 +81,6 @@ None at the time of this release.
 
 <h3>Changes since production release 3.0</h3>
 
-Kevin Dickerson made the following changes<br>
-<ul>
-<li>Added in initial support for the Marklin Command Station 2 System with help from Jean-Francois - please note that this is still in development.</li>
-<li>Provide support for systems that can handle multi-protocols for throttle control and extend this to cover decoders and roster entries.  Additional supported protocols now include
-    <ul>
-    <li>Motorola</li>
-    <li>Selectrix</li>
-    <li>MFX</li>
-    </ul>
-    The change is only seen if the system that controls the throttle supports multiple protocols.
-</li>
-<li>Editors - Provided a method for external code to add menu items to the popmenus of icons on the panel</li>
-<li>Tables - User set column widths, order, sorting etc is now saved between sessions</li>
-<li>Tables - Added a "Copy User Name" item to the mouse popup menu</li>
-<li>Throttles - Provide a method to create a throttle by passing the Roster Entry rather than the DCC Address</li>
-<li>Throttles/Roster Enties - Records the duration that the loco has been operating for, along with the last time last was used, the information is stored as an attribute against the roster entry and can be viewed in the media pane.</li>
-<li>When setting a sensor in a block, if that sensor has a reporter associated against it the user is asked if they wish to use the reporter on that block.</li>
-<li>Updated the backend of the Connection Configuration to remove some limitations on the numbers of settings per connection</li>
-<li>Tweaked some of the GUI settings relating to the connection details</li>
-<li>ESU ECoS - Only update the throttle speed on the reply of the last throttle message which has been sent and ignore the event messages until all set speed messages have been processed, otherwise the throttle speed value jumps up and down like a yoyo until the last message is proceed.</li>
-<li>ESU ECoS - Update the loco import to blank out disabled functions and set non-descript function labels to be Fx.</li>
-<li>Programming - Fix an issue whereby the code doesn't wait for a reply to a programming command and other messages are sent/processed.  This happens if no message is required to put the command station into programming mode.</li>
-</ul>
-
 <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
     <li>Improved how cars are forwarded to alternate tracks. Now if the alternate track's spur
@@ -159,13 +135,75 @@ Kevin Dickerson made the following changes<br>
     <li>Additional improvements to the train build report, a better description of location
      moves.</li>
    </ul>
-
+   
    <p>Gregory Madsen made the following changes to operations:</p>
    <ul>
    <li>Improvements to the Backup capabilities, including separate stores for "automatic" and "default" backups, 
    dialog to select between automatic and regular backups when restoring, and a dialog to allow deleting automatic backups.</li>
    </ul>
 
+   Kevin Dickerson made the following changes<br>
+<ul>
+    <li>Hardware Support</li><ul>
+        <li>Added in initial support for the <b>Marklin Command Station 2</b> System with help from Jean-Francois</li>
+        <li>ESU ECOS - Only update the throttle speed on the reply of the last throttle message which has been sent and ignore the event messages until all set speed messages have been processed, otherwise the throttle speed value jumps up and down like a yoyo until the last message is proceed.</li>
+        <li>ESU ECOS - Update the loco import to blank out disabled functions and set non-descript function labels to be Fx.</li>
+        <li>ESU ECOS - Update some of the back end code relating to the Ecos loco database</li>
+        <li>ESU ECOS - Update throttle code to allow 14/28/128 speed steps</li>
+        <li>ESU ECOS - Update some of the back end code relating to the turnout and throttle control</li>
+        <li>ESU ECOS added support for multi-protocol throttle</li>
+        <li>NCE USB - Updated the throttle so that speed step 1 (as shown in the GUI) actually sets the loco speed.</li>
+        <li>Updated the backend of the Connection Configuration to remove some limitations on the numbers of settings per connection</li>
+        <li>Tweaked some of the GUI settings relating to the connection details</li>
+        <li>Added back in the PR3 Standalone option in the connection details</li>
+    </ul>
+    <li>Decoder Pro 3 / Roster</li><ul>
+        <li>Fixed an issue where the splash screen was not displayed at startup and the buttons added at Startup were not displayed.</li>
+        <li>Added the option to suppress the quitting application message.</li>
+        <li>Fixed an issue in DP3 that caused an issue with the preference file</li>
+        <li>Roster - Fix an issue that corrupted the roster index if the roster was saved while a newly created unsaved roster entry was open.</li>
+        <li>Decoder Selection Tree - Decoder family groups are now kept together within the Manufacturer list</li>
+        <li>Programming - Fix an issue whereby the code doesn't wait for a reply to a programming command and other messages are sent/processed.  This happens if no message is required to put the command station into programming mode.</li>
+    </ul>
+    <li>Throttles</li><ul>
+    <li>Provide support for systems that can handle multi-protocols for throttle control and extend this to cover decoders and roster entries.  Additional supported protocols now include
+        <ul>
+        <li>Motorola</li>
+        <li>Selectrix</li>
+        <li>MFX</li>
+        </ul>
+        The change is only seen if the system that controls the throttle supports multiple protocols.
+    </li>
+    <li>Throttles - Provide a method to create a throttle by passing the Roster Entry rather than the DCC Address</li>
+    <li>Throttles/Roster Enties - Records the duration that the loco has been operating for, along with the last time last was used, the information is stored as an attribute against the roster entry and can be viewed in the media pane.</li>
+    </ul>
+    <li>Tables</li><ul>
+        <li>User set column widths, order, sorting etc is now saved between sessions</li>
+        <li>Added a "Copy User Name" item to the mouse popup menu</li>
+        <li>Remove the un-necessary question when adding a username to an item for the first time if the item has yet to be used.</li>
+        <li>Fixed a potential error that could occur when loading a panel file if the turnout table was already open.</li>
+        <li>Turnout Table - The feedback sensor selection is now done via a drop down list rather</li>
+        <li>Block Table - The unit length is now remembered between sessions</li>
+    </ul>
+    <li>Editors</li><ul>
+        <li>Fix an issue where memory icons that load with an empty string value, the saved background color is ignored and subsequently lost</li>
+        <li>Provided a method for external code to add menu items to the popmenus of icons on the panel</li>
+        <li>Layout Editor - Fixed an issue with the SSL Logic for a slip icon that resulted in a diverging route not being set for limited speed correctly.</li>
+    </ul>
+    <li>Auto Dispatcher</li><ul>
+        <li>If a train has been created using a roster entry, the roster entry is now passed to the throttle manager rather than just the address, this allows use 
+            roster entries and systems that support multiple protocols, it also allows the use of the loco to be recorded in the roster entry</li>
+        <li>Fix a couple of Index Out Of Bounds Exceptions</li>
+        <li>Fix an issue where a loco set to a paused state would never restart</li>
+    </ul>
+    <li>Entry Exit (NX)</li><ul>
+        <li>Added the option to set the action when the NX sensors are selected a second time.</li>
+        <li>The cancel/clear route option can now be accessed via mouse pop-up on the source sensor icon in a panel</li>
+    </ul>
+    <li>When setting a sensor in a block, if that sensor has a reporter associated against it the user is asked if they wish to use the reporter on that block.</li>
+    <li>Logix - Fix bug 3565824 - create logix button staying disabled.</li>
+    <li>Abstract Automation - Assign the name to the thread to help identify any issues caused by the thread</li>
+</ul>
   
 <p>Steve Todd made the following changes:</p>
     <ul>
@@ -191,36 +229,12 @@ Had to move a few option numbers up and down to fit all on to existing panes.
 <p>
 John Crellin updated several MRC decoders and provided a new definition for the MRC 1905.
 
-
-
-<p>Kevin Dickerson made the following changes<br>
-<ul>
-    <li>Added back in the PR3 Standalone option in the connection details</li>
-    <li>ESU ECoS added support for multi-protocol throttle</li>
-    <li>Fixed an issue in DP3 that caused an issue with the preference file</li>
-</ul>
-
-
-
-
 <p>Pete Cressman made the following changes:</p>
 <ul>
     <li>TextLabels, LocoIcons, SensorIcons in text display mode, MemoryDisplayIcons can be rotated to any angle along with any margin or border decorations they have.</li>
     <li>LocoIcons may have a "docking location" specified.</li>
     <li>Sensor overlay bug fixed.</li>
     <li>Picklist will retain user's location.</li>
-</ul>
-
-<p>Kevin Dickerson made the following changes:</p>
-<ul>
-    <li>Editors - Fix an issue where memory icons that load with an empty string value, the saved background color is ignored and subsequently lost</li>
-    <li>Block Table - The unit length is now remembered between sessions</li>
-    <li>Auto Dispatcher Train - If a train has been created using a roster entry, the roster entry is now passed to the throttle manager rather than just the address, this allows use 
-            roster entries and systems that support multiple protocols, it also allows the use of the loco to be recorded in the roster entry</li>
-    <li>Turnout Table - The feedback sensor selection is now done via a drop down list rather</li>
-    <li>Entry Exit - The cancel/clear route option can now be accessed via mouse pop-up on the source sensor icon in a panel</li>
-    <li>Tables - Remove the un-necessary question when adding a username to an item for the first time if the item has yet to be used.</li>
-    <li>Logix - Fix bug 3565824 - create logix button staying disabled.</li>
 </ul>
 
 <p>Steve Todd made the following changes:</p>
@@ -283,21 +297,6 @@ They are available in the
 interacted.  This could, under the right circumstances, cause reading or writing of the decoder to hang permanently.
 <li>provided a new Tam Valley Quad Ln decoder definition.
 <li>added xxx-blink-web.gif icons with correct frame delays and dimensions for web and panel use.</p>
-</ul>
-
-<p>Kevin Dickerson made the following changes:</p>
-<ul>
-    <li>Roster - Fix an issue that corrupted the roster index if the roster was saved while a newly created unsaved roster entry was open.</li>
-    <li>Tables - Fixed a potential error that could occur when loading a panel file if the turnout table was already open.<li>
-    <li>Entry Exit (NX) - Added the option to set the action when the NX sensors are selected a second time.</li>
-    <li>Layout Editor - Fixed an issue with te SSL Logic for a slip icon that resulted in a diverging route not being set for limited speed correctly.</li>
-    <li>Sections - Add Directional Sensors to SSL, now covers SSL used on Single and Double Slips.</li>
-    <li>Abstract Automation - Assign the name to the thread to help identify any issues caused by the thread</li>
-    <li>Dispatcher - Fix a couple of Index Out Of Bounds Exceptions</li>
-    <li>Dispatcher - Fix an issue where a loco set to a paused state would never restart</li>
-    <li>ZTC - Fixed an issue that prevent a connection being made</li>
-    <li>ECOS - Update some of the back end code relating to the Ecos loco database</li>
-    <li>ECOS - Update throttle code to allow 14/28/128 speed steps</li>
 </ul>
 
 <p>Dick Bronson provided signal definitions for the 
@@ -385,20 +384,7 @@ above as "not verified", and would like to help verify correct
 operation, please contact Mark (user "twindadrails") on the JMRI Yahoo!
 Group.</p>
 
-<p>Kevin Dickerson made the following changes:</p>
-<ul>
-    <li>ECOS - Update some of the back end code relating to the turnout and throttle control</li>
-    <li>NCE USB - Updated the throttle so that speed step 1 (as shown in the GUI) actually sets the loco speed.</li>
-</ul>
-
    <p>Stephen Lowens provided a decoder definition for the Tsunami for Rapido FP9A.
-
-
-<p>Kevin Dickerson made the following changes:</p>
-<ul>
-    <li>DP3 - Fixed the issue where the splash screen was not displayed at startup and the buttons added at Startup were not displayed.</li>
-    <li>DP3 - Added the option to suppress the quitting application message.</li>
-</ul>
 
 <p>Nigel Cliffe and Mark Waters added some new Zimo Unified Software decoder definitions.
 
@@ -407,10 +393,6 @@ Group.</p>
 <p>Bob Milhaupt removed OpSw 36 from the DCS51 configuration page, as it's not supported by that command station.
 
 <p>Bryan Vianco provided two MRC decoder definitions
-
-
-
-<p>Decoder Selection Tree - Decoder family groups are now kept together within the Manufacturer list (Kevin Dickerson)
 
 <p>Layout Editor - The click area for turnouts now increases to match larger turnout circle sizes (Steve Todd)
 
