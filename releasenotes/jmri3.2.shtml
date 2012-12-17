@@ -110,14 +110,57 @@ Kevin Dickerson made the following changes<br>
     <li>Improved how cars are forwarded to alternate tracks. Now if the alternate track's spur
      becomes available during the build, cars originally sent to the alternate are now redirected to
      the spur.</li>
-     <li>Made some minor improvements to the train build reports when a train departs or enters staging.</li>
-     <li>Improved how the csv manifest counts empty cars with custom loads.</li>
-     <li>New operations feature, you can now control if arrival or departure times are shown on your train manifests. 
-     See under "Edit Train"-&gt;Tools-&gt;Options</li>
-     <li>You can now open a csv manifest directly from the trains window.</li>
+    <li>Made some minor improvements to the train build reports when a train departs or enters
+     staging.</li>
+    <li>Improved how the csv manifest counts empty cars with custom loads.</li>
+    <li>New operations feature, you can now control if arrival or departure times are shown on
+     your train manifests. See under "Edit Train"-&gt;Tools-&gt;Options</li>
+    <li>You can now open a csv manifest directly from the trains window.</li>
+    <li>When building a train, the move list is no longer in alphabetical order.</li>
+    <li>You can now force a car or locomotive to any track when using the "Set" window.</li>
+    <li>You can now reset the move counts for cars and locos. See under Tools-&gt;Roster in the
+     Cars and Locomotives window.</li>
+    <li>Train, car, and locomotive log files are now only created when there's data to save.
+     This should eliminate empty log files.</li>
+    <li>Fixed a bug where all cars in a kernel were being checked when selecting a track from
+     staging. Only the lead car in the kernel should have been checked.</li>
+    <li>The train log now includes the build failure messages</li>
+    <li>You can now have your manifest show the departure time rather than the estimated
+     arrival time. See Print Options for more information</li>
+    <li>The schedules window status has been improved to show more cases where a schedule has a
+     problem.</li>
+    <li>The edit train window will now only launch one edit route window</li>
+    <li>Train reset in the Trains window now checks to see if the departure staging track was
+     allocated to another in bound train. This prevents using reset for the departure train, and
+     then ending up with two trains on the same staging track.</li>
+    <li>You can now allow cars to return to staging by train. The train has to be a turn, it
+     must depart and return to the same staging location. The option can be found under Edit Train
+     -&gt; Tools, Train Build Options.</li>
+    <li>New feature "Show Cars in Train" can be found under Tools in the Conductor window or
+     from the train icon menu. Now you can see which cars are in the train at the various locations,
+     and where picked up cars are to be placed in the train.</li>
+    <li>New feature for trains, you can now prevent local moves even when using custom loads.
+     You can also prevent through traffic from origin to terminal. See under Edit Train, Tools,
+     Train Build Options.</li>
+    <li>Now when you select a car type in the location window, the program will bring up the
+     "Modify location by car type" window. Now you can quickly see which tracks will service the car
+     type selected.</li>
+    <li>Removed switch list and build report options from the Print Options window. Build
+     report options now have their own window. Switch list options were moved the switch list window
+     that is launched by the "Switch List" button in the Trains window.
+    <li>Increased the number of fonts available for operations. Only monospaced fonts are now
+     available if you've selected tabular manifests and switch lists.</li>
+    <li>Improved the train build reports. Now the build report separates each car being
+     processed by a line break in very detailed mode.</li>
+    <li>Fixed a problem with selecting the "Courier" font that was introduced in 3.1.5.</li>
+    <li>Fixed a problem with the Switch List window not appearing when the default printer
+     wasn't specified on the PC. We only know of one user that has experienced this problem, might
+     be related to one of the newer versions of JAVA.</li>
+    <li>Additional improvements to the train build report, a better description of location
+     moves.</li>
    </ul>
-   
-<p>Gregory Madsen made the following changes to operations:</p>
+
+   <p>Gregory Madsen made the following changes to operations:</p>
    <ul>
    <li>Improvements to the Backup capabilities, including separate stores for "automatic" and "default" backups, 
    dialog to select between automatic and regular backups when restoring, and a dialog to allow deleting automatic backups.</li>
@@ -259,21 +302,6 @@ interacted.  This could, under the right circumstances, cause reading or writing
 
 <p>Dick Bronson provided signal definitions for the 
     <a href="http://jmri.org/xml/signals/NS-2008/index.shtml">Norfolk Southern Corporation 2008 operating rule book (NORAC)</a>.
-    
-<p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>When building a train, the move list is no longer in alphabetical order.</li>
-    <li>You can now force a car or locomotive to any track when using the "Set" window.</li>
-    <li>You can now reset the move counts for cars and locos. See under Tools-&gt;Roster in the
-     Cars and Locomotives window.</li>
-    <li>Train, car, and locomotive log files are now only created when there's data to save.
-     This should eliminate empty log files.</li>
-    <li>Fixed a bug where all cars in a kernel were being checked when selecting a track from
-     staging. Only the lead car in the kernel should have been checked.</li>
-    <li>The train log now includes the build failure messages</li>
-    <li>You can now have your manifest show the departure time rather than the estimated
-     arrival time. See Print Options for more information</li>
-   </ul>
 
 <p>Ken Cameron made the following changes:</p>
 <ul>
@@ -317,22 +345,6 @@ Dick Bronson updated the RR-CirKits LNCP definition file.
 of English that will require some code changes)
 
 <p>Fixed a problem where CAN interfaces might pick up the wrong protocol name in the preferences.
-
-<p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>The schedules window status has been improved to show more cases where a schedule has a
-     problem.</li>
-    <li>The edit train window will now only launch one edit route window</li>
-    <li>Train reset in the Trains window now checks to see if the departure staging track was
-     allocated to another in bound train. This prevents using reset for the departure train, and
-     then ending up with two trains on the same staging track.</li>
-    <li>You can now allow cars to return to staging by train. The train has to be a turn, it must depart
-     and return to the same staging location. The option can be found under Edit Train -&gt; Tools,
-     Train Build Options.</li>
-     <li>New feature "Show Cars in Train" can be found under Tools in the Conductor window or from the 
-     train icon menu.  Now you can see which cars are in the train at the various locations, and where
-     picked up cars are to be placed in the train.</li>
-   </ul>
 
 <p>To allow use of UTF-8 characters (special characters with accents, Japanese text, etc) in XML
 files, particularly decoder definitions, the default file encoding has been changed to UTF-8.
@@ -379,29 +391,6 @@ Group.</p>
     <li>NCE USB - Updated the throttle so that speed step 1 (as shown in the GUI) actually sets the loco speed.</li>
 </ul>
 
-
-
-<p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>New feature for trains, you can now prevent local moves even when using custom loads.
-     You can also prevent through traffic from origin to terminal. See under Edit Train, Tools,
-     Train Build Options.</li>
-    <li>Now when you select a car type in the location window, the program will bring up the
-     "Modify location by car type" window. Now you can quickly see which tracks will service the car
-     type selected.</li>
-    <li>Removed switch list and build report options from the Print Options window. Build
-     report options now have their own window. Switch list options were moved the switch list window
-     that is launched by the "Switch List" button in the Trains window.
-    <li>Increased the number of fonts available for operations. Only monospaced fonts are now
-     available if you've selected tabular manifests and switch lists.</li>
-    <li>Improved the train build reports. Now the build report separates each car being
-     processed by a line break in very detailed mode.</li>
-    <li>Fixed a problem with selecting the "Courier" font that was introduced in 3.1.5.</li>
-    <li>Fixed a problem with the Switch List window not appearing when the default printer
-     wasn't specified on the PC. We only know of one user that has experienced this problem, might
-     be related to one of the newer versions of JAVA.</li>
-   </ul>
-
    <p>Stephen Lowens provided a decoder definition for the Tsunami for Rapido FP9A.
 
 
@@ -426,11 +415,6 @@ Group.</p>
 <p>Layout Editor - The click area for turnouts now increases to match larger turnout circle sizes (Steve Todd)
 
 <P>Nigel Cliffe updated the Zimo programming script for additional functions
-
-   <p>Dan Boudreau made the following changes to operations:</p>
-   <ul> 
-    <li>Additional improvements to the train build report, a better description of location moves.</li>
-    </ul>
 
 <p>Matthew Harris made the following changes:
 <ul>
