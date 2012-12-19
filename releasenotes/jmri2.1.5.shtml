@@ -91,7 +91,7 @@ If you read a file containing a panel with a name that duplicates an existing pa
 Depending on user reaction, this may become a dialog box that asks if you want to continue.
 
 <p>
-The scripts used to start the JMRI applications on Linux and MacOS X have been extensively reworked.  
+The scripts used to start the JMRI applications on Linux and Mac OS X have been extensively reworked.  
 The new ones should do everything the old ones do, plus
 <a href="http://jmri.sourceforge.net/install/ShellScripts.shtml">more</a>.  
 Please keep an eye out for new problems, however, and don't hesitate to report them to the list.
@@ -124,7 +124,7 @@ version of Java.  To see JMRI's future plans for this and other compatibility is
 
 <p>Please use these links for downloading, including the "?download" at the end. That adds to SourceForge's advertising statistics, which makes them happy to host our stuff.
 
-<p>MacOS X:
+<p>Mac OS X:
      <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.1.5.dmg?download">http://downloads.sourceforge.net/jmri/JMRI.2.1.5.dmg?download</a>
 
 <p>Windows:
@@ -144,7 +144,7 @@ for
 <a href="http://www.cti-electronics.com/app_sw.htm">CTI Acela</a> hardware.
 
 <p>
-Fix broken JMRI_HOME option in the new Linux and MacOS X startup scripts
+Fix broken JMRI_HOME option in the new Linux and Mac OS X startup scripts
 
 <p>
 Bill Chown has updated the MRC Big Boy decoder definition
@@ -189,7 +189,7 @@ The new Mac OS X startup scripts would fail if placed in a directory with spaces
 This has been fixed. Thanks to Graeme Brown for help figuring this out.
 
 <p>
-The "Check buffer on send" option for Lenz (XPressNet) protocols now defaults to "no" on MacOS X systems, "yes" on Windows and Linux.
+The "Check buffer on send" option for Lenz (XPressNet) protocols now defaults to "no" on Mac OS X systems, "yes" on Windows and Linux.
 If you've already set it and have it working, this shouldn't cause any trouble.
 
 <p>
@@ -301,7 +301,7 @@ decoders, which take longer to erase.
 
 <p>
 Following a suggestion from James Lefevre and David Duchamp, 
-added AppleScript capability on MacOS X.
+added AppleScript capability on Mac OS X.
 
 <p>
 Dan Boudreau fixed a bug with regards to the "all panel items can be repositioned" checkbox.  Unfortunately starting with JMRI 2.0 the program stores the checkbox as always enabled.  
