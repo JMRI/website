@@ -106,8 +106,13 @@ These are development files, and might not be working at any particular time.
     <li>SignalMasts (New Feature) - Added in the ability to repeat the state of one SignalMast onto another and vice-versa</li>
    </ul>
 
+   <p>
+    Dan Boudreau added support for NCE USB / PowerCab version 7. NCE now supports the use of AUIs
+    for sensors when using a NCE USB and PowerCab. You need to have the latest USB interface which
+    is version 7.x.x and your PowerCab must be version 1.65 or newer.
 
-   <!--#include virtual="/Footer" -->
+
+    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
