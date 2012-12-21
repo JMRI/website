@@ -107,6 +107,9 @@ These are development files, and might not be working at any particular time.
      directly in the Cars window</li>
     <li>Improved the car wait feature. Now the car's wait will only decrement when the train
      can actually service the car, not just passing through.</li>
+    <li>Fixed a line formatting problem with manifest and switch lists that have carriage
+     returns embedded in the comments.</li>
+     <li>More build report formating and improvements to help readability.</li>
    </ul>
 
    <p>Kevin Dickerson made the following changes :</p>
