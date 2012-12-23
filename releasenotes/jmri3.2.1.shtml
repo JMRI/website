@@ -79,6 +79,10 @@ None at the time of this release.
 
 <h3>Changes since production release 3.2</h3>
 
+Fixed a problem with MS100 mode. Note that MS100 is only available on
+certain older Windows machines; this fix doesn't change that, just
+restores some function lost in JMRI 3.2. In the long run, you need
+to replace your MS100 with something from this century.
 
 
    <!--#include virtual="/Footer" -->
