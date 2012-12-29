@@ -56,7 +56,10 @@ see our
 
 <h3>New warnings for this version:</h3>
 
-
+The decoder definition files have been extensively reworked for this release
+to reduce their size and allow  them to be translated to other languages.
+Please keep an eye out for any inadvertent changes to the definitions 
+that might have been introduced.
 
 <h3>Older warnings</h3>
 
@@ -151,6 +154,8 @@ More reducing decoder definitions to common form via XInclude of "part files".
 <p>
 Dave Heap changed the preferences associated with roster location and "User File Location".
 
+<p>
+Paco Cañada provided decoder definitions for <a href="http://www.ppp-digital.es/">PpP decoders</a>.
 
     <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
