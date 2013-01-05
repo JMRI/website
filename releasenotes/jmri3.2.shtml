@@ -146,7 +146,8 @@ some later release.
 
    Kevin Dickerson made the following changes<br>
 <ul>
-    <li>Hardware Support</li><ul>
+    <li>Hardware Support<br>
+    <ul>
         <li>Added in initial support for the <b>Marklin Command Station 2</b> System with help from Jean-Francois</li>
         <li>ESU ECOS - Only update the throttle speed on the reply of the last throttle message which has been sent and ignore the event messages until all set speed messages have been processed, otherwise the throttle speed value jumps up and down like a yoyo until the last message is proceed.</li>
         <li>ESU ECOS - Update the loco import to blank out disabled functions and set non-descript function labels to be Fx.</li>
@@ -158,16 +159,18 @@ some later release.
         <li>Updated the backend of the Connection Configuration to remove some limitations on the numbers of settings per connection</li>
         <li>Tweaked some of the GUI settings relating to the connection details</li>
         <li>Added back in the PR3 Standalone option in the connection details</li>
-    </ul>
-    <li>Decoder Pro 3 / Roster</li><ul>
+    </ul></li>
+    <li>Decoder Pro 3 / Roster<br>
+    <ul>
         <li>Fixed an issue where the splash screen was not displayed at startup and the buttons added at Startup were not displayed.</li>
         <li>Added the option to suppress the quitting application message.</li>
         <li>Fixed an issue in DP3 that caused an issue with the preference file</li>
         <li>Roster - Fix an issue that corrupted the roster index if the roster was saved while a newly created unsaved roster entry was open.</li>
         <li>Decoder Selection Tree - Decoder family groups are now kept together within the Manufacturer list</li>
         <li>Programming - Fix an issue whereby the code doesn't wait for a reply to a programming command and other messages are sent/processed.  This happens if no message is required to put the command station into programming mode.</li>
-    </ul>
-    <li>Throttles</li><ul>
+    </ul></li>
+    <li>Throttles<br>
+    <ul>
     <li>Provide support for systems that can handle multi-protocols for throttle control and extend this to cover decoders and roster entries.  Additional supported protocols now include
         <ul>
         <li>Motorola</li>
@@ -178,30 +181,34 @@ some later release.
     </li>
     <li>Throttles - Provide a method to create a throttle by passing the Roster Entry rather than the DCC Address</li>
     <li>Throttles/Roster Enties - Records the duration that the loco has been operating for, along with the last time last was used, the information is stored as an attribute against the roster entry and can be viewed in the media pane.</li>
-    </ul>
-    <li>Tables</li><ul>
+    </ul></li>
+    <li>Tables<br>
+    <ul>
         <li>User set column widths, order, sorting etc is now saved between sessions</li>
         <li>Added a "Copy User Name" item to the mouse popup menu</li>
         <li>Remove the un-necessary question when adding a username to an item for the first time if the item has yet to be used.</li>
         <li>Fixed a potential error that could occur when loading a panel file if the turnout table was already open.</li>
         <li>Turnout Table - The feedback sensor selection is now done via a drop down list rather</li>
         <li>Block Table - The unit length is now remembered between sessions</li>
-    </ul>
-    <li>Editors</li><ul>
+    </ul></li>
+    <li>Editors<br>
+    <ul>
         <li>Fix an issue where memory icons that load with an empty string value, the saved background color is ignored and subsequently lost</li>
         <li>Provided a method for external code to add menu items to the popmenus of icons on the panel</li>
         <li>Layout Editor - Fixed an issue with the SSL Logic for a slip icon that resulted in a diverging route not being set for limited speed correctly.</li>
-    </ul>
-    <li>Auto Dispatcher</li><ul>
+    </ul></li>
+    <li>Auto Dispatcher<br>
+    <ul>
         <li>If a train has been created using a roster entry, the roster entry is now passed to the throttle manager rather than just the address, this allows use 
             roster entries and systems that support multiple protocols, it also allows the use of the loco to be recorded in the roster entry</li>
         <li>Fix a couple of Index Out Of Bounds Exceptions</li>
         <li>Fix an issue where a loco set to a paused state would never restart</li>
-    </ul>
-    <li>Entry Exit (NX)</li><ul>
+    </ul></li>
+    <li>Entry Exit (NX)<br>
+    <ul>
         <li>Added the option to set the action when the NX sensors are selected a second time.</li>
         <li>The cancel/clear route option can now be accessed via mouse pop-up on the source sensor icon in a panel</li>
-    </ul>
+    </ul></li>
     <li>When setting a sensor in a block, if that sensor has a reporter associated against it the user is asked if they wish to use the reporter on that block.</li>
     <li>Logix - Fix bug 3565824 - create logix button staying disabled.</li>
     <li>Abstract Automation - Assign the name to the thread to help identify any issues caused by the thread</li>
@@ -294,11 +301,11 @@ They are available in the
 
 <p>Robin Becker:
 <ul>
-<li>contributed a set of code buttons to match Bob Bucklew's wider lever icons.</p>
+<li>contributed a set of code buttons to match Bob Bucklew's wider lever icons.</li>
 <li>fixed a nasty, long-standing problem with how various complicated variable definitions in DecoderPro
-interacted.  This could, under the right circumstances, cause reading or writing of the decoder to hang permanently.
-<li>provided a new Tam Valley Quad Ln decoder definition.
-<li>added xxx-blink-web.gif icons with correct frame delays and dimensions for web and panel use.</p>
+interacted.  This could, under the right circumstances, cause reading or writing of the decoder to hang permanently.</li>
+<li>provided a new Tam Valley Quad Ln decoder definition.</li>
+<li>added xxx-blink-web.gif icons with correct frame delays and dimensions for web and panel use.</li>
 </ul>
 
 <p>Dick Bronson provided signal definitions for the 
@@ -355,7 +362,7 @@ a "-Dfile.encoding=UTF-8" option to them.
 
 <p>
 Added RailStars Limited to the list of decoder manufacturers (company has been around for a while,
-but the NMRA C&I Department hasn't updated their list in more than 18 months).
+but the NMRA C&amp;I Department hasn't updated their list in more than 18 months).
 
 <p>
 Tighe Kuykendall provided some documentation updates and fixes.
@@ -381,7 +388,7 @@ Tighe Kuykendall provided some documentation updates and fixes.
   disk</li>
   <li>New Diesel engine model (still under development)</li>
 </ul>
-If you have one of the location reporting hardware systems listed
+<p>If you have one of the location reporting hardware systems listed
 above as "not verified", and would like to help verify correct
 operation, please contact Mark (user "twindadrails") on the JMRI Yahoo!
 Group.</p>
@@ -412,6 +419,7 @@ Group.</p>
 <p>Mark Waters updated the Zimo version 28, 30 and 31 decoders.
 
 <p>Mark Underwood made changes to Virtual Sound Decoder:
+</p>
 <ul>
   <li>New, consolidated user interface keeps all decoders in one window</li>
   <li>New locations manager makes setting physical locations
@@ -427,7 +435,6 @@ Group.</p>
   <li>New Validator catches errors in VSD files when the file is
   loaded</li>
 </ul>
-</p>
 
 <p>
 Dan Boudreau fixed a problem with window size on Mac OS X
