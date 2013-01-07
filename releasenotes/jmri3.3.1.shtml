@@ -172,6 +172,17 @@ Dave Heap improved some of the file-location-related terminology.
 Paco Cañada provided decoder definitions for <a href="http://www.ppp-digital.es/">PpP decoders</a>.
 
 <p>
+Changes for Virtual Sound Decoder (by Mark Underwood)
+<ul>
+  <li>Fixed a LOT of bugs from 3.2.0</li>
+  <li>Added support for designating a location as being inside a
+  tunnel (still experimental)</li>
+  <li>Added the ability to assign a Physical Location to a Block if
+  that Block is associated with a Reporter.  This gives added
+  resolution in locating the train, under certain circumstances.</li>
+</ul>
+</p>
+<p>
 Walt Thompson fixed links in several help pages.
 
     <!--#include virtual="/Footer" -->
