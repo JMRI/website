@@ -124,15 +124,19 @@ These are development files, and might not be working at any particular time.
    </ul>
 
    <p>Kevin Dickerson made the following changes :</p>
-<ul>
-<li>CAN Ethernet - Added the ability to select the correct protocol</li>
-<li>Merg CBUS Ethernet - Added in a new adapter to handle this configuration</li>
-<li>SignalMasts (New Feature) - Added in the ability to repeat the state of one SignalMast onto another and vice-versa</li>
-<li>Layout Editor - Added in the ability to rotate Slips</li>
-<li>SignalHeads - Fixed an issue which prevent the Add button from working correctly</li>
-<li>Decoder Selection - Added a Show/Hide facility on matched decoders after the decoder has been read</li>
-<li>DP3 - The new Loco window, now allows you to create a basic roster entry without having to open a separate window</li>
-</ul>
+    <ul>
+    <li>CAN Ethernet - Added the ability to select the correct protocol</li>
+    <li>Merg CBUS Ethernet - Added in a new adapter to handle this configuration</li>
+    <li>LocoNetOverTCP - Fix an issue with the connection details that prevented it from being loaded.</li>
+    <li>Ecos - Fixed a minor issue with the way that the speed step reply was processed that cuased an error</li>
+    <li>SignalMasts (New Feature) - Added in the ability to repeat the state of one SignalMast onto another and vice-versa</li>
+    <li>Layout Editor - Added in the ability to rotate Slips</li>
+    <li>Include internal block boundaries on the continuing path of a crossover as a valid location for setting a signalmast/sensor</li>
+    <li>SignalHeads - Fixed an issue which prevent the Add button from working correctly</li>
+    <li>SignalMast Logic - Update the user defined blocks so that they are updated when user names are changed and move</li>
+    <li>Decoder Selection - Added a Show/Hide facility on matched decoders after the decoder has been read</li>
+    <li>DP3 - The new Loco window, now allows you to create a basic roster entry without having to open a separate window</li>
+    </ul>
 
 <p>
 Dan Boudreau added support for NCE USB / PowerCab version 7. NCE now supports the use of AUIs
