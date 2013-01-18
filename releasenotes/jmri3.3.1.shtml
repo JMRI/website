@@ -161,7 +161,9 @@ to replace your MS100 with something from this century.
 The Xerces-J parser used to read and write XML files was updated to version 2.11.0
 
 <p>
-More changes for internationalization, particularly for the Italian language.
+More changes for internationalization, particularly for the operations code by
+Dan Boudreau.  Enzo Fortuna has made large updates to the the Italian language support,
+including Digitrax and Lenz decoder definitions.
 
 <p>
 More reducing decoder definitions to common form via XInclude of "part files".
@@ -196,6 +198,10 @@ Fixed problem when exporting roster files.
 <p>
 Fred Dalzell added a definition for the MRC Steam Sync Mini decoder MRC_soundbrilliance1869.xml
 
+<P>
+Gert Muller fixed a problem when storing panels from the web client.
+
+<p>
     <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
