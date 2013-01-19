@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- $Id: index.html,v 1.143 2011-07-11 02:46:03 jacobsen Exp $ -->
+<html lang="en">
+
+<head>
+ <TITLE>JMRI: Downloads</TITLE>
+    <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+    <META content="John Plocher" name=Author>
+    <META name="keywords" content="java model railroad JMRI download binaries binary code jar install">
+
+<!-- Style -->
+  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+  <link rel="icon" href="/images/jmri.ico" type="image/png">
+  <link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
+
+<body class="secondlevel">
+<div id="container">
+
+<p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
+<!--#include virtual="/Header" -->
+
+<!--#include virtual="Sidebar" -->
+
+
+ <hr class="hide"> 
+ <div id="mainContent">
+    <div id="teaser">
+	<h2>Latest News</h2>
+	<dl>
+		<dt>Production version 3.2 released</dt>
+	    <dd>
+	    <p>On December 16, 2012 production version 3.2 was made available.</p>
+	    
+	    <p>
+	    Version 3.2 replaces version 3.0 as the current "production" version, recommended
+	    for first-time users. Please see the 
+	    <A HREF="#prod-rel">next section</A> for download and install
+	    information. 
+
+		<dt>Production version 2.14.1 released</dt>
+	    <dd>
+	    <p>On July 15, 2012 production version 2.14.1 was made available.</p>
+	    
+	    <p>
+	    Version 2.14.1 is recommended for JMRI users with computers that can only
+	    run Java 1.5. Please see the 
+	    <A HREF="../releasenotes/jmri2.14.1.shtml">release note</A> for download and install
+	    information. 
+ 
+<!-- 
+	    <dt>Test version 3.1.7 released</dt>
+	    <dd>
+	    <p>Test version 3.1.7 was made available on December 9, 2012.
+
+        <p>JMRI 3.1.7 is the most recent test release, containing the latest
+        and greatest JMRI updates. 
+        <p>
+        This is the next in a series working toward an eventual JMRI 3.2 production version.
+        <p>
+        For more
+	    information, including the links to download a copy,
+	    please see the
+	    <A HREF="../releasenotes/jmri3.1.7.shtml">release note</a>.
+	  
+	    <a href="#prod-rel">Version 3.0</a> is the current "production" version, recommended
+	    for first-time users. 
+ -->
+	    
+	</dl>
+    </div>
+
+  <div class="list">
+    <A ID="prod-rel"/>
+    <h2>JMRI 3.2 - Production release</h2>
+    <dl>
+    <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI 2.14 logo"></dt>
+    <dd>
+	<p>If you've never installed a version of this program before, please
+	read the installation guide (on the left) for your computer type
+	and layout hardware. They will show you how to install the things
+	that are needed before the program will run.</p>
+
+    <P>Installation guides:
+	<A href="../install/WindowsNew.shtml">Windows</a>,
+	<A href="../install/MacOSX.html">Mac OS X</a>,
+	<A href="../install/Linux.html">Linux</a>
+
+    <P>See also the page of 
+        <a href="/help/en/html/hardware/index.shtml">layout connections</a>.
+
+	<p>If you've previously installed a working version of the program, you
+	only need to download and install one of the files
+	listed here.</p>
+
+
+	<A ID="prod-download"/><p class="dl">Download: 
+	<UL>
+        <li>Mac OS X: <A
+            HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.dmg/download</a></p>
+
+        <li>Windows: <A
+            HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.exe/download</a></p>
+
+        <li>Linux: <A
+            HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.tgz/download</a></p>
+      </UL>
+      </p>
+
+    <strong>Notes:</strong><br />
+    <p>For more information on the release contents, please see the
+    <a href="../releasenotes/jmri3.2.shtml">release note</a>.
+    </p>
+    <P>
+    If you're looking to download Rodney Black's 
+    <A HREF="http://home.comcast.net/~kb0oys/">CATS</a>
+    application, see the 
+    <A HREF="http://home.comcast.net/~kb0oys/">CATS download page</a>.
+    </P>
+    
+	<div style="clear: both"></div>
+    </dd>
+    </dl>
+
+    <h2>JMRI - Developer releases</h2>
+    <p>As the program develops, we also produce test versions. You may
+	    want to try these, as new features will show up in them first. They
+	    are announced in the
+	    <A HREF="http://groups.yahoo.com/group/jmriusers/">JMRI users email group</A>.</p>
+    <p>
+        The most current test release is JMRI 3.1.4.  More information on it, 
+        including the links to download a copy, can be found in
+        <a href="../releasenotes/jmri3.1.4.shtml">release note</a>.
+	<p>
+	   For more information on the rough development schedule, please see the 
+	   <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">JMRI road map</a>
+	   (which is only occasionally updated).</P>
+</dl>
+
+
+<h2>Other Related Items</h2>
+<dl>
+
+<!-- 	<dt class="im"><a href="CD.html"><img src="CDROM.gif" width="32" height="30" alt="Java"></a></dt> -->
+<!-- 	<dt><a href="CD.html">JMRI CD</a></dt> -->
+<!-- 	<dd> -->
+<!-- 	    <p>The JMRI software suite is also available on CD -->
+<!-- 	    <A HREF="CD.html">[More]</a></p> -->
+<!-- 	</dd> -->
+	
+	
+	<dt class="im">
+<a href="http://java.com/java/download/index.jsp?cid=jdp74834" target="_blank">
+<img width="88" height="31" border="0" style="margin: 8px;" alt="GetJava Download Button" title="GetJava" src="http://java.com/en/img/everywhere/getjava_sm.gif?cid=jdp74834">
+</a>
+    <dt><a href="http://java.com/java/download/index.jsp?cid=jdp74834">Java</a></dt>
+	<dd>
+	    <p>Sun's Java Runtime support [<a href="http://java.com/java/download/index.jsp?cid=jdp74834">more</a>]</p>
+	</dd>
+
+	<dt class="im">
+	<a href="http://home.comcast.net/~kb0oys/">
+	<img src="http://home.comcast.net/~bbfrager/crandic/crandic.gif" width="60" height="60" alt="CATS"></a></dt>
+	<dt><a href="http://home.comcast.net/~kb0oys/">CATS</a></dt>
+	<dd>
+	    <p>The Crandic Automated Traffic System (CATS) 
+	    is a JMRI-based application by Rodney Black for 
+	    controlling and operating a model railroad. There's
+	    more information on the
+	    <A HREF="http://home.comcast.net/~kb0oys/">CATS web site</a>.
+	    </p>
+	    <p>The current version of CATS requires JMRI 2.5.5 or later;
+	    we recommend you use it with the
+	    <a href="../releasenotes/jmri2.6.1.shtml">JMRI 2.6.1<a> production version.
+	    </P>
+	    <p>The earlier version 2.15/2.06 of CATS (current as of July 4, 2009)
+	    required JMRI 2.0 through 2.5.3. 
+	    We recommend use of 
+	    <a href="../releasenotes/jmri2.5.3.shtml">JMRI 2.5.3<a>
+	    with these earlier version of CATS.
+	    </p>
+	</dd>
+    
+    </dl>
+    </div> <!-- closes .list -->
+
+
+
+
+  <hr class="hide">
+<!-- Footer -->
+    <hr class="hide">
+    <div id="footer">
+	<ul id="bn">
+	<li><a href="/contact/">Contact Us</a></li>
+	</ul>
+
+	<p>Thanks and congratulations to
+	    <A href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
+	   	all who contributed</A>! </p>
+
+	<p>Copyright &copy; 1997 - 2012 JMRI Community. 
+	<P>JMRI, DecoderPro, PanelPro, DispatcherPro and associated logos are our trademarks.
+	<P><A href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
+    
+       <BR/>Site hosted by: <BR/>
+        <A href="http://sourceforge.net"> 
+        <IMG src="http://sourceforge.net/sflogo.php?group_id=26788&amp;type=1" width="88" height="31" border="0" alt="SourceForge Logo"> </A> 
+
+
+    </div>
+<!-- /Footer -->
+
+ </div> <!-- closes #mainContent-->
+</div> <!-- closes #mBody--> 
+</div> <!-- closes #container --> 
+</body>
+</html>
+
