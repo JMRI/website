@@ -51,24 +51,22 @@
 	    <A HREF="../releasenotes/jmri2.14.1.shtml">release note</A> for download and install
 	    information. 
  
-<!-- 
-	    <dt>Test version 3.1.7 released</dt>
+	    <dt>Test version 3.3.1 released</dt>
 	    <dd>
-	    <p>Test version 3.1.7 was made available on December 9, 2012.
+	    <p>Test version 3.3.1 was made available on January 19, 2013.
 
-        <p>JMRI 3.1.7 is the most recent test release, containing the latest
+        <p>JMRI 3.3.1 is the most recent test release, containing the latest
         and greatest JMRI updates. 
         <p>
-        This is the next in a series working toward an eventual JMRI 3.2 production version.
+        This is the next in a series working toward an eventual JMRI 3.4 production version.
         <p>
         For more
 	    information, including the links to download a copy,
 	    please see the
-	    <A HREF="../releasenotes/jmri3.1.7.shtml">release note</a>.
+	    <A HREF="../releasenotes/jmri3.3.1.shtml">release note</a>.
 	  
-	    <a href="#prod-rel">Version 3.0</a> is the current "production" version, recommended
+	    <a href="#prod-rel">Version 3.2</a> is the current "production" version, recommended
 	    for first-time users. 
- -->
 	    
 	</dl>
     </div>
@@ -131,9 +129,9 @@
 	    are announced in the
 	    <A HREF="http://groups.yahoo.com/group/jmriusers/">JMRI users email group</A>.</p>
     <p>
-        The most current test release is JMRI 3.1.4.  More information on it, 
+        The most current test release is JMRI 3.3.1.  More information on it, 
         including the links to download a copy, can be found in
-        <a href="../releasenotes/jmri3.1.4.shtml">release note</a>.
+        <a href="../releasenotes/jmri3.3.1.shtml">release note</a>.
 	<p>
 	   For more information on the rough development schedule, please see the 
 	   <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">JMRI road map</a>
@@ -191,28 +189,7 @@
 
 
   <hr class="hide">
-<!-- Footer -->
-    <hr class="hide">
-    <div id="footer">
-	<ul id="bn">
-	<li><a href="/contact/">Contact Us</a></li>
-	</ul>
-
-	<p>Thanks and congratulations to
-	    <A href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
-	   	all who contributed</A>! </p>
-
-	<p>Copyright &copy; 1997 - 2012 JMRI Community. 
-	<P>JMRI, DecoderPro, PanelPro, DispatcherPro and associated logos are our trademarks.
-	<P><A href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
-    
-       <BR/>Site hosted by: <BR/>
-        <A href="http://sourceforge.net"> 
-        <IMG src="http://sourceforge.net/sflogo.php?group_id=26788&amp;type=1" width="88" height="31" border="0" alt="SourceForge Logo"> </A> 
-
-
-    </div>
-<!-- /Footer -->
+<!--#include virtual="/Footer" -->
 
  </div> <!-- closes #mainContent-->
 </div> <!-- closes #mBody--> 
