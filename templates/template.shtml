@@ -11,19 +11,13 @@
     <meta name="keywords" content="SOME KEYWORDS">
 
 
-<!-- Style -->
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-<link rel="icon" href="/images/jmri.ico" TYPE="image/png">
-<link rel="home" title="Home" href="/">
-<!-- /Style -->
+<!--#include virtual="/Style" -->
 </head>
 
 <body>
 <!--#include virtual="/Header" -->
 
-<!--#include virtual="Sidebar" -->
+<!--#include virtual="/Sidebar" --> <!-- select the local or global Sidebar file -->
 <div id="mainContent">
 
 	    <!-- -------- -->
