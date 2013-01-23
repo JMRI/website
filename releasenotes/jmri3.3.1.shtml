@@ -181,12 +181,19 @@ Paco Cañada provided decoder definitions for <a href="http://www.ppp-digital.es/
 <p>
 Changes for Virtual Sound Decoder (by Mark Underwood)
 <ul>
-  <li>Fixed a LOT of bugs from 3.2.0</li>
+  <li>Fixed a LOT of bugs from 3.2.0. Some big ones are called out
+  specifically below.</li>
   <li>Added support for designating a location as being inside a
   tunnel (still experimental)</li>
   <li>Added the ability to assign a Physical Location to a Block if
   that Block is associated with a Reporter.  This gives added
   resolution in locating the train, under certain circumstances.</li>
+  <li>Engine start sound now only played when throttle is at
+  idle.</li>
+  <li>Added filesystem browsers to the default path and file entries
+  in the Preferences</li>
+  <li>VSD file can now explcitly indicate which defined Diesel notch
+  is the Idle notch.</li>
 </ul>
 </p>
 <p>
