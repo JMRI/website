@@ -110,7 +110,29 @@ More graphics in the help pages will not display in a desktop web browser when c
 export an entry and then re-import it into the same JMRI instance.  If you have done this, 
 in the past, the fix is to "Recreate Roster Index" from the debug menu.
 
-    <!--#include virtual="/Footer" -->
+   <p>Dan Boudreau made the following changes to operations:</p>
+   <ul>
+    <li>You can now independently control the build report font size. If using the text editor,
+     use a smaller font size if you want to increase the amount of text per line.</li>
+    <li>Some additional work integrating the Manifest Creator. There are now run buttons on the
+     trains window to activate the program. Select "Generate csv Manifest" in the build options
+     window to enable these new buttons.</li>
+    <li>In the "Set Car" window, the destination for the car is now by default disabled. You
+     should be using the "Final Destination" when manually setting a destination for the car. If you
+     need the destination field enabled, under Tools, is an option to enable it.</li>
+    <li>New feature, the last date and time a car was assigned to a train. Note that the last
+     time and date is set when the car is delivered, or if the car was reset from a built train.
+     This should help you find "stuck" cars if you have any.</li>
+    <li>Improved car routing when the car has custom loads and/or final destinations. Thanks to
+     Dave Cochrun and Inspector Dave in helping me improve this part of the program.</li>
+    <li>You can now use the escape key to close any active operations window. Operations and
+     other jmri windows can also be closed by using the control-W key.
+   </ul>
+
+
+
+
+   <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
