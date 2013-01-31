@@ -98,8 +98,8 @@ These are development files, and might not be working at any particular time.
 
 Fixed speedometer opening three little blank windows.
 
-<p>
-Walt Thompson fixed a bunch of links in the help pages.
+<p>Walt Thompson fixed a bunch of links in the help pages.
+<p>Walt Thompson improved the help file linking.
 
 <p>
 More graphics in the help pages will not display in a desktop web browser when clicked.
@@ -112,11 +112,16 @@ in the past, the fix is to "Recreate Roster Index" from the debug menu.
 
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
+    <li>A new feature called the "Yardmaster" window. Now you can now get a switch list for a location
+     similar to the "Conductor" window. In the "Locations" window, there's now a button called
+     "Yardmaster" for each location. The Yardmaster window has a combobox containing a list of trains
+     that have work for the location. Only built trains with work are available.</li>
     <li>You can now independently control the build report font size. If using the text editor,
      use a smaller font size if you want to increase the amount of text per line.</li>
     <li>Some additional work integrating the Manifest Creator. There are now run buttons on the
      trains window to activate the program. Select "Generate csv Manifest" in the build options
-     window to enable these new buttons.</li>
+     window to enable these new buttons.  You can also edit the file name of the Manifest Creator,
+     see under Trains->Tools "Setup Excel Program".</li>
     <li>In the "Set Car" window, the destination for the car is now by default disabled. You
      should be using the "Final Destination" when manually setting a destination for the car. If you
      need the destination field enabled, under Tools, is an option to enable it.</li>
@@ -125,10 +130,10 @@ in the past, the fix is to "Recreate Roster Index" from the debug menu.
      This should help you find "stuck" cars if you have any.</li>
     <li>Improved car routing when the car has custom loads and/or final destinations. Thanks to
      Dave Cochrun and Inspector Dave in helping me improve this part of the program.</li>
-    <li>You can now use the escape key to close any active operations window. Operations and
+    <li>You can now use the escape key to close any active operations window. All operations and
      other jmri windows can also be closed by using the control-W key.
    </ul>
-   
+
    <p>Steve Todd added an option to the Communications Monitor windows to allow users
      to filter out unwanted message types.</p> 
 
@@ -138,7 +143,7 @@ in the past, the fix is to "Recreate Roster Index" from the debug menu.
 
 <p>Michael Mosher update the BLI and NCE decoder definitions
 
-<p>Walt Thompson improved the help file linking.
+
 
 
    <!--#include virtual="/Footer" -->
