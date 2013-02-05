@@ -96,7 +96,25 @@ These are development files, and might not be working at any particular time.
 
 <h3>Changes since test release 3.3.2:</h3>
 
+<p>
+Updated the DCC Signal Head to work like the DCC Signal Mast and all known hardware.  The NMRA Standard
+for addressing DCC Signal Accessory Decoders is poorly written and ambiguous. JMRI support for these
+is moving toward what the hardware manufacturers are actually doing, and away from NMRA DCC Working Group diktat.
 
+<p>
+Add LinkingLabel, a type of icon on the various panel editors that will let you move to another window or open a web page.
+Just a starting point for eventual web-server features.
+
+<p>
+Improvements to aspect-signaling docs.
+
+<p>
+Added a new LinkingLabel icon type to the three kinds of panels.  This can be 
+text or an icon. When clicked, it takes you to another JMRI window or an external
+web page or file.  Steve Todd also built in web support for remote viewing.
+
+<p>
+Dick Bronson improved the NS-2008 signal set.
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
