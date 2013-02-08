@@ -116,6 +116,17 @@ web page or file.  Steve Todd also built in web support for remote viewing.
 <p>
 Dick Bronson improved the NS-2008 signal set.
 
+   <p>Dan Boudreau made the following changes to operations:</p>
+   <ul>
+    <li>Yardmaster and Conductor windows now show utility cars by their quantity rather than by
+     road and number.  Both windows now support the "Sort by Track" option.  The Yardmaster
+     window now uses the "Switch List" format rather than the "Manifest" format.</li>
+    <li>Fixed a problem when swapping cabooses in a train's route. The code didn't check to see
+     if there was the correct number of moves available in the route to do the swap.  Thanks
+     to Quintin Foster for finding and reporting this problem.</li>
+   </ul>
+
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
