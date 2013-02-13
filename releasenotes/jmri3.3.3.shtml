@@ -56,10 +56,12 @@ see our
 
 <h3>New warnings for this version:</h3>
 
-The decoder definition files have been extensively reworked for this release
+<p>This release and all future releases will not support the NCE serial interface running at 19,200 baud.</p>
+
+<p>The decoder definition files have been extensively reworked for this release
 to reduce their size and allow  them to be translated to other languages.
 Please keep an eye out for any inadvertent changes to the definitions 
-that might have been introduced.
+that might have been introduced.</p>
 
 <h3>Older warnings</h3>
 
@@ -115,6 +117,11 @@ web page or file.  Steve Todd also built in web support for remote viewing.
 
 <p>
 Dick Bronson improved the NS-2008 signal set.
+
+<p>
+Removed the ability to run the NCE serial interface at 19,200 baud.  This speed has been found to cause
+problems with the NCE command station.  The default is now 9,600 baud.  If you were running at 19,200
+baud, you'll have to reconfigure your NCE command station to run at 9,600.
 
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
