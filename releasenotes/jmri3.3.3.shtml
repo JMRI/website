@@ -118,11 +118,11 @@ web page or file.  Steve Todd also built in web support for remote viewing.
 <p>
 Dick Bronson improved the NS-2008 signal set.
 
-<p>
-Removed the ability to run the NCE serial interface at 19,200 baud.  This speed has been found to cause
-problems with the NCE command station.  The default is now 9,600 baud.  If you were running at 19,200
-baud, you'll have to reconfigure your NCE command station to run at 9,600.
 
+   <p>Removed the ability to run the NCE serial interface at 19,200 baud. This speed has been
+    found to cause problems with the NCE command station. The default is now 9,600 baud. If you were
+    running at 19,200 baud, you'll have to reconfigure your NCE command station to run at 9,600.
+   
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
     <li>Yardmaster and Conductor windows now show utility cars by their quantity rather than by
@@ -134,9 +134,16 @@ baud, you'll have to reconfigure your NCE command station to run at 9,600.
      Quintin Foster for finding and reporting this problem.</li>
     <li>Fixed a problem with a train's departure time when there was back to back locations
      using the same name. Thanks to Bob Byck for finding and reporting this issue.</li>
+    <li>Improved the routing code to search for several interchange or yard tracks at a
+     location when trying to find a route to a spur. The previous version didn't try find other
+     tracks at a location when the first track tried was full. Thanks to Jim Elbe for finding and
+     reporting this issue.</li>
+    <Li>Improved on how the program deals with "car type and custom load pairs" for locations
+     and trains when a car type is changed or deleted. Thanks to Inspector Dave for reporting this
+     issue.</Li>
    </ul>
 
-<p>John Crellin provided decoder definitions for the MRC 1619 through 1624 decoders.
+   <p>John Crellin provided decoder definitions for the MRC 1619 through 1624 decoders.
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
