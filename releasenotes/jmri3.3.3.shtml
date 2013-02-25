@@ -146,6 +146,11 @@ Dick Bronson improved the NS-2008 signal set.
    </ul>
 
    <p>John Crellin provided decoder definitions for the MRC 1619 through 1624 decoders.
+   
+   <p>Updated the SignalMast Logic to work with multiple protecting blocks for a single SignalMast located at the
+   throat of a turnout.
+   
+   <p>Fixed an issue in the EntryExit (NX) not working correctly due to previous work done in improving the SignalMast Logic
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
