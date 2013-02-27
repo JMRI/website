@@ -143,6 +143,9 @@ Dick Bronson improved the NS-2008 signal set.
      issue.</Li>
      <li>Fixed an issue where the "Add" or "Edit" Track window size would revert to its previous size while
      modifying the track checkboxes.</li>
+     <li>Improved how the program deals with custom loads and kernels.  Now all cars in a kernel will get
+     a the same custom load if the the custom load is valid for the various cars.</li>
+     <li>Improved the dialog window for a route comment.</li>
    </ul>
 
    <p>John Crellin provided decoder definitions for the MRC 1619 through 1624 decoders.
