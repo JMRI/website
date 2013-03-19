@@ -106,6 +106,13 @@ These are development files, and might not be working at any particular time.
   <li>Updated the DCC signal head decoder to allow user defined numbering for different aspects. -- Kevin Dickerson</li>
   <li>Fixed a bug in the DCC Signal Mast when copying a Signalmast which has aspects set as disabled. -- Kevin Dickerson</li>
   
+  <li>Fixed a problem with help links that reported a 404 error through the default browser. -- Dan Boudreau</li>
+  
+     <p>Dan Boudreau made the following changes to operations:</p>
+   <ul>
+   <li>Fix a problem correctly selecting a staging track when exclude train or route was selected.</li>
+   </ul> 
+  
   </ul>
       
    <!--#include virtual="/Footer" -->
