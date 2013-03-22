@@ -109,12 +109,21 @@ These are development files, and might not be working at any particular time.
   
   <li>Fixed a problem with help links that reported a 404 error through the default browser. -- Dan Boudreau</li>
   
-     <p>Dan Boudreau made the following changes to operations:</p>
+     <p>Dan Boudreau made the following changes to operations:
    <ul>
    <li>Fix a problem correctly selecting a staging track when exclude train or route was selected.</li>
    </ul> 
-  
-   <li>One LocoNet systems with transponding, fix a spurious power-off when doing ops-mode decoder reads.
+	</p>
+   <li>On LocoNet systems with transponding, fix a spurious power-off when doing ops-mode decoder reads.</li>
+
+	<p>Ken Cameron made the following changes to NCE systems:<br>
+		<ul>
+		<li>Added preliminary support for the SB5 and Twin systems.</li>
+		<li>Expanded support for the updated PowerCab (1.65) and the updated USB (7.*)</li>
+		<li>Changed the way NCE systems figure out which menu options are supported for a given connection type.</li>
+		<li>Removed the multiple line format of the Cab Monitor based on user feedback and headaches it caused the code.</li>
+		</ul>
+	</p>
   </ul>
       
    <!--#include virtual="/Footer" -->
