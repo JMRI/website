@@ -126,6 +126,20 @@ These are development files, and might not be working at any particular time.
 		<li>Added USB Interface support to allow changing the USB cab number</li>
 		</ul>
 	</p>
+	
+	<li>You can now use the "Start Up" pane in preferences to have any of the six
+	    Operations windows open when the program starts.  You can also use that to 
+	    put buttons on the PanelPro or DecoderPro startup window to open the Operations
+	    windows without going through the menus.
+	    
+	<li>In the past, all menu items were listed under the Preferences "Start Up" choices
+	    for a new action or button.  This is slowly changing so that only valid ones,
+	    based on the currently configured connection(s), are displayed. This is meant to
+	    make it easier to find the ones you're looking for.  This is a subtle change to
+	    the code, so please let us know if something has gone awry.  About 1/3 of the 
+	    system-specific items have been removed so far, with the migration intended to 
+	    be complete by the time JMRI 3.4 is released this coming summer.
+	    
   </ul>
       
    <!--#include virtual="/Footer" -->
