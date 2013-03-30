@@ -113,10 +113,15 @@ These are development files, and might not be working at any particular time.
   <li>Fixed a problem with help links that reported a 404 error through the default browser. -- Dan Boudreau</li>
   
      <p>Dan Boudreau made the following changes to operations:
-   <ul>
-   <li>Fix a problem correctly selecting a staging track when exclude train or route was selected.</li>
-   </ul> 
-	</p>
+   
+    <ul>
+     <li>Fixed a problem where the program wouldn't correctly select a staging track when
+      exclude train or route was selected.</li>
+     <li>Fixed an issue where the program would route too many cars to a spur with a schedule.</li>
+     <li>Fixed a problem where a car with a custom load in route would lose which schedule item
+      the car had been assigned when the train carrying the car was reset.</li>
+    </ul>
+    </p>
    <li>On LocoNet systems with transponding, fix a spurious power-off when doing ops-mode decoder reads.</li>
 
 	<p>Ken Cameron made the following changes to NCE systems:<br>
