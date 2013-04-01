@@ -115,8 +115,9 @@ These are development files, and might not be working at any particular time.
      <p>Dan Boudreau made the following changes to operations:
    
     <ul>
+    <li>The Locations window now shows the track types for each location.</li>
      <li>Fixed a problem where the program wouldn't correctly select a staging track when
-      exclude train or route was selected.</li>
+      exclude train or route was used.</li>
      <li>Fixed an issue where the program would route too many cars to a spur with a schedule.</li>
      <li>Fixed a problem where a car with a custom load in route would lose which schedule item
       the car had been assigned when the train carrying the car was reset.</li>
