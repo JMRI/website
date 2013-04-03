@@ -121,6 +121,8 @@ These are development files, and might not be working at any particular time.
      <li>Fixed an issue where the program would route too many cars to a spur with a schedule.</li>
      <li>Fixed a problem where a car with a custom load in route would lose which schedule item
       the car had been assigned when the train carrying the car was reset.</li>
+      <li>Fixed a problem where a switcher would ignore a car's wait count.  Thanks to Joe Mattick for 
+      finding and reporting this issue.</li>
     </ul>
     </p>
    <li>On LocoNet systems with transponding, fix a spurious power-off when doing ops-mode decoder reads.</li>
