@@ -110,6 +110,7 @@ These are development files, and might not be working at any particular time.
   <li>Fixed a bug in the DCC Signal Mast when copying a Signalmast which has aspects set as disabled. -- Kevin Dickerson</li>
   <li>Added in the ability to stack Entry/Exit (NX) Interlocks. -- Kevin Dickerson</li>
   <li>SignalMast Logix & NX Interlocking, now considers the opposing blocks when it encounters a double crossover. -- Kevin Dickerson</li>
+  <li>SignalMast - When an Aspect is either disabled or enabled, the Aspect ComboBox in the table is reflect this change. -- Kevin Dickerson
   <li>Provided a new method to edit turnout and sensor details. -- Kevin Dickerson</li>
   
   <li>Fixed a problem with help links that reported a 404 error through the default browser. -- Dan Boudreau</li>
