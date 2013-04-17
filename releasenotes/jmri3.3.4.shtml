@@ -72,7 +72,7 @@ that might have been introduced.</p>
 
 <h3>Known problems with this release</h3>
 
-None at the time of this release.
+In operations, using the new destination feature can sometimes cause the program to decide too early that all cars for a location have been processed.
 
 <h3>Download links:</h3>
 
@@ -116,15 +116,15 @@ These are development files, and might not be working at any particular time.
   <li>Provided a new method to edit turnout and sensor details. -- Kevin Dickerson</li>
   
   <li>Fixed a problem with help links that reported a 404 error through the default browser. -- Dan Boudreau</li>
-  
-     <p>Dan Boudreau made the following changes to operations:
-   
+
+    <p>Dan Boudreau made the following changes to operations:
     
     <ul>
      <li>The Locations window now shows the track types for each location.</li>
      <li>New feature, for classification/interchange tracks you can now restrict which
       destinations the track will serve. See "Track Destination" under Tools in the edit track
-      window.</li>
+      window. NOTE, a user has found that sometimes the program doesn't process all of the cars at a
+      location when using this feature. This will be fixed in the next test release.</li>
      <li>You can now tell the router if you want it to consider yard tracks when routing a car.
       Deselect "Enable Car Routing via Yards" in the Option window under Tools in the settings
       window if you don't want to use yards when routing cars. The yards are still available for
@@ -137,7 +137,7 @@ These are development files, and might not be working at any particular time.
      <li>Fixed a problem where a switcher would ignore a car's wait count. Thanks to Joe
       Mattick for finding and reporting this issue.</li>
     </ul>
-    
+
     </p>
    <li>On LocoNet systems with transponding, fix a spurious power-off when doing ops-mode decoder reads.</li>
 
