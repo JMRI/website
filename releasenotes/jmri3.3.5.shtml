@@ -108,6 +108,8 @@ These are development files, and might not be working at any particular time.
     <li>SignalMast Logic based section blocks are populated at load</li>
     </ul>
   </li>
+  <li>Added the option to store the Roster Entry in allocated blocks from the dispather rather than just a text string - Kevin Dickerson</li>
+  <li>Provide access to the Dispatcher functions of create new train, allocate sections and terminate for an active train from a memory icon, if a Roster Entry is used - Kevin Dickerson</li>
   <li>Added the option to set the state of an Internal Sensor at load/creation to something other than Unknown - Kevin Dickerson</li>
   
   <li>There's now a <code>layoutblocks</code>  variable predefined
