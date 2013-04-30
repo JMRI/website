@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- $Id: WindowsNew.shtml,v 1.11 2011-05-31 16:58:12 matthewharris Exp $ -->
+<html lang="en">
+<HEAD>
+        <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+        <TITLE>JMRI on Windows: "The JAVA SE Platform binary has stopped working" error</TITLE>
+
+<!-- Style -->
+  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+  <link rel="icon" href="/images/jmri.ico" type="image/png">
+  <link rel="home" title="Home" href="/">
+<!-- /Style -->
+
+</HEAD>
+
+<BODY>
+<!--#include virtual="/Header" -->
+
+<div class="nomenu" id="mBody">
+<div id="mainContent">
+<H1> 
+JMRI on Windows: "The JAVA SE Platform binary has stopped working" error
+</H1>
+
+This page discusses what to do when your Windows machine displays a 
+"The JAVA SE Platform binary has stopped working" error
+message when starting JMRI.
+
+<p>
+This seems to happen only on Windows, and only in particular situations.
+We don't understand exactly when.
+<p>
+(Should we add more info here on which Windows versions, etc?  
+Does that matter if somebody has hit the error)
+<p>
+The problem seems to involve the USB connection to 
+layout hardware.
+
+<ol>
+<li>If you have your layout connected through USB,
+try connecting via a powered hub.
+<li>If you're already using a powered hub, try connecting
+directly to the computer. 
+</ol>
+
+You may have to reset preferences after each change of the wiring.
+
+<!--#include virtual="/Footer" -->
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody-->
+
+</BODY>
+</HTML>
