@@ -102,6 +102,7 @@ These are development files, and might not be working at any particular time.
   <ul>
 
   <li>Fixed the DP3 Quit from menu option - Kevin Dickerson</li>
+  <li>Fixed an issue where a new Roster Entry may not get saved correctly to the roster index. - Kevin Dickerson</li>
   <li>Initial Support for Signal Mast in the Dispatcher including<ul>
     <li>Automatic train responding to SignalMasts</li>
     <li>Section generation based upon SignalMast Logic</li>
@@ -110,7 +111,9 @@ These are development files, and might not be working at any particular time.
   </li>
   <li>Added the option to store the Roster Entry in allocated blocks from the dispather rather than just a text string - Kevin Dickerson</li>
   <li>Provide access to the Dispatcher functions of create new train, allocate sections and terminate for an active train from a memory icon, if a Roster Entry is used - Kevin Dickerson</li>
+  <li>Store the train type as set in the Dispatcher New Train Window against the roster entry, and retrieve it when the entry is selected again - Kevin Dickerson</li>
   <li>Added the option to set the state of an Internal Sensor at load/creation to something other than Unknown - Kevin Dickerson</li>
+  <li>Fixed a placement issue with the SignalMast/Sensor tool in the Layout Editor - Kevin Dickerson</li>
   
   <li>There's now a <code>layoutblocks</code>  variable predefined
     for access to the LayoutBlockManager from Jython scripts.</li>
