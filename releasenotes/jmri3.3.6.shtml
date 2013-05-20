@@ -31,7 +31,7 @@
 
 	<p>Date: MMM DD, 2013</p>
 	<p>From: Bob Jacobsen</p>
-	<p>Subject: Test version 3.3.5 of JMRI/DecoderPro is available for download.</p>
+	<p>Subject: Test version 3.3.6 of JMRI/DecoderPro is available for download.</p>
  
 <br><b>This is a draft release note only; the download links do not yet work</b>
 
@@ -115,6 +115,9 @@ These are development files, and might not be working at any particular time.
 		<li>Add a JSON method to enumerate all advertised ZeroConf services; this is intended to allow a client outside the ZeroConf boundary with only knowledge of the Web service to request a JSON-formatted list of all network services (WiThrottle, SRCP, LocoRMI, etc...) with ports and connection information. - Randall Wood</li>
 	</ul>
 	</li>
+      
+   <li>webserver wasn't creating new threads when needed, changed from ExecutorThreadPool() to QueuedThreadPool() to correct - Steve Todd</li>
+  
   </ul>
       
    <!--#include virtual="/Footer" -->
