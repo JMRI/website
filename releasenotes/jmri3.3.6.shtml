@@ -116,7 +116,7 @@ These are development files, and might not be working at any particular time.
 	</ul>
 	</li>
       
-   <li>webserver wasn't creating new threads when needed, changed from ExecutorThreadPool() to QueuedThreadPool() to correct - Steve Todd</li>
+   <li>Improved web server performance with a large number of clients or large number of requests per client. - Steve Todd</li>
   
   </ul>
       
