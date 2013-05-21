@@ -115,13 +115,18 @@ These are development files, and might not be working at any particular time.
 		<li>Add a JSON method to enumerate all advertised ZeroConf services; this is intended to allow a client outside the ZeroConf boundary with only knowledge of the Web service to request a JSON-formatted list of all network services (WiThrottle, SRCP, LocoRMI, etc...) with ports and connection information. - Randall Wood</li>
 	</ul>
 	</li>
-      
-   <li>Improved web server performance with a large number of clients or large number of requests per client. - Steve Todd</li>
-  
-  </ul>
-      
-   <!--#include virtual="/Footer" -->
-  </div><!-- closes #mainContent-->
+
+    <li>Improved web server performance with a large number of clients or large number of
+     requests per client. - Steve Todd</li>
+
+    <li>Dan Boudreau made the following changes to operations:
+
+     <ul>
+      <li>Added the ability to print out a car's final destination and return when empty to the
+       car roster print function.</li>
+     </ul>
+     
+     </ul> <!--#include virtual="/Footer" --></div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
 </html>
