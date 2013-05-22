@@ -56,6 +56,10 @@ see our
 
 <h3>New warnings for this version:</h3>
 
+<p>For users of JMRI on Microsoft Windows, the installer will now request
+Administrator permissions if the user running the installation is not a member
+of the administrators group. Users of Windows Vista or later may receive a
+UAC (User Account Control) pop-up message when installing.</p>
 
 <h3>Older warnings</h3>
 
@@ -125,7 +129,9 @@ These are development files, and might not be working at any particular time.
       <li>Added the ability to print out a car's final destination and return when empty to the
        car roster print function.</li>
      </ul>
-     
+    
+    <li>Request administrator rights when installing - fix for bug highlighted by Suzie Tall</li>
+
      </ul> <!--#include virtual="/Footer" --></div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
