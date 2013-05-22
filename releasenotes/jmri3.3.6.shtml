@@ -56,10 +56,6 @@ see our
 
 <h3>New warnings for this version:</h3>
 
-<p>For users of JMRI on Microsoft Windows, the installer will now request
-Administrator permissions if the user running the installation is not a member
-of the administrators group. Users of Windows Vista or later may receive a
-UAC (User Account Control) pop-up message when installing.</p>
 
 <h3>Older warnings</h3>
 
@@ -107,9 +103,9 @@ These are development files, and might not be working at any particular time.
   <ul>
 
   <li>Decoder definition for the MPM RRR cars and advanced light functions decoder from Wekomm - Alain Carasso</li>
-  
+  <p>
   <li>Improved internationalization for the About dialog - Jens E Christensen</li>
-
+    <p>
   <li>Improvements to JSON server and protocols:
 	<ul>
     <li>Begin versioning the JSON protocol so clients can use an explicit JSON protocol version. - Randall Wood</li>
@@ -119,20 +115,34 @@ These are development files, and might not be working at any particular time.
 		<li>Add a JSON method to enumerate all advertised ZeroConf services; this is intended to allow a client outside the ZeroConf boundary with only knowledge of the Web service to request a JSON-formatted list of all network services (WiThrottle, SRCP, LocoRMI, etc...) with ports and connection information. - Randall Wood</li>
 	</ul>
 	</li>
-
+    <p>
     <li>Improved web server performance with a large number of clients or large number of
      requests per client. - Steve Todd</li>
-
+    <p>
     <li>Dan Boudreau made the following changes to operations:
-
      <ul>
       <li>Added the ability to print out a car's final destination and return when empty to the
        car roster print function.</li>
      </ul>
-    
+    <p>
     <li>Request administrator rights when installing - fix for bug highlighted by Suzie Tall</li>
-
-     </ul> <!--#include virtual="/Footer" --></div><!-- closes #mainContent-->
+    <p>
+    <li>Updated the routes window to allow it to contain scroll bars if the window is too small for the information contained - Kevin Dickerson</li>
+    <li>ESU ECOS - Fixed an issue with the way that the thorttle speed changes are handled - Kevin Dickerson</li>
+    <li>Blocks/LayoutBlocks - When the layoutblock useExtraColor is changed, propagate this down to the "block" so that it can fire off a propertychange event of "allocated" to all its listeners.  The "block" itself does not keep track or store the allocated setting.  This saves any objects having to listener to both the block and layoutblock states. - Kevin Dickerson</li>
+    <li>SignalMast Logic - React to LayoutBlocks being allocated to sections.  This only occurs if the Logic has a section associated with it, and the dispatcher has been loaded. - Kevin Dickerson</li>
+    <li>SensorIcon - Fix an inconsistency issue with the setting of sensor text colours. - Kevin Dickerson</li>
+    <li>Text Properties - Fix the font size selection list in text properties to work correctly - Kevin Dickerson</li>
+    <li>Loconet Simulator - Initial states of sensors can be set via the preferences, rather than using the default of UNKNOWN - Kevin Dickerson</li>
+    <li>Dispatcher/AutoDispatcher changes
+    <ul><li>Fix an issue where turnouts are not correctly being set in the last section, (when continuous running isn't selected) or the previous block is not picked up if the active train is starting in the transit and is not in the first block of that section.</li>
+    <li>Add the ability to delay the start of a train based upon a sensor going active.</li>
+    <li>Add to the memory icon, the ability to reset an Automatic Active Train once it has completed.</li>
+    <li>Add a text label with the actual speed(percentage)/direction as seen by the associated throttle to an auto active train.</li>
+    <li>When using SignalMasts and Auto Allocate, the mast at the end of the last allocated section is set held, so that the approaching automatic auto train does not simply read what the logic has calculated.  When allocating the next section, set the mast at the end of that to held and then release the previous one.</li>
+    </ul>
+  </ul> <!--#include virtual="/Footer" --></div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
 </html>
+
