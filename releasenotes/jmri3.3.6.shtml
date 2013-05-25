@@ -135,6 +135,7 @@ These are development files, and might not be working at any particular time.
       <li>Fixed a bug where a train wouldn't build after deleting a car or loco type that the
        train used to carry. Restarting the program would clear the error in previous releases.</li>
       <li>Fixed a bug in the cvs files when user had commas in their comments.</li>
+      <li>Fixed a bug where a train wouldn't terminate if the first location in a route was deleted in a built train.</li>
      </ul>
     <p>
     <li>Request administrator rights when installing - fix for bug highlighted by Suzie Tall</li>
