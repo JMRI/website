@@ -143,6 +143,8 @@ These are development files, and might not be working at any particular time.
     <li>ESU ECOS - Fixed an issue with the way that the thorttle speed changes are handled - Kevin Dickerson</li>
     <li>Blocks/LayoutBlocks - When the layoutblock useExtraColor is changed, propagate this down to the "block" so that it can fire off a propertychange event of "allocated" to all its listeners.  The "block" itself does not keep track or store the allocated setting.  This saves any objects having to listener to both the block and layoutblock states. - Kevin Dickerson</li>
     <li>SignalMast Logic - React to LayoutBlocks being allocated to sections.  This only occurs if the Logic has a section associated with it, and the dispatcher has been loaded. - Kevin Dickerson</li>
+    <li>SignalMast Logic - Identifies Signal Masts that can be classed as intermediate.  Intermediate Masts are classed as those that only have a single destination mast, with no turnouts in the path.</li>
+    <li>SignalMast Logic/Sections - Flag sections as being intermediate where they go to or from an Intermediate Mast.</li>
     <li>SensorIcon - Fix an inconsistency issue with the setting of sensor text colours. - Kevin Dickerson</li>
     <li>Text Properties - Fix the font size selection list in text properties to work correctly - Kevin Dickerson</li>
     <li>Loconet Simulator - Initial states of sensors can be set via the preferences, rather than using the default of UNKNOWN - Kevin Dickerson</li>
@@ -152,6 +154,8 @@ These are development files, and might not be working at any particular time.
     <li>Add to the memory icon, the ability to reset an Automatic Active Train once it has completed.</li>
     <li>Add a text label with the actual speed(percentage)/direction as seen by the associated throttle to an auto active train.</li>
     <li>When using SignalMasts and Auto Allocate, the mast at the end of the last allocated section is set held, so that the approaching automatic auto train does not simply read what the logic has calculated.  When allocating the next section, set the mast at the end of that to held and then release the previous one.</li>
+    <li>Update the auto active train terminate option, so that it waits until the loco has stopped before finally disposing of it.</li>
+    <li>If allocating a section that this flagged as intermediate test all subsequent sections that are also flagged as intermediate to make sure that we do not end up with trains meeting face-to-face.</li>
     </ul>
   </ul> <!--#include virtual="/Footer" --></div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
