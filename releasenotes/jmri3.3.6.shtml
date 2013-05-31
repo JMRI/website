@@ -149,6 +149,9 @@ These are development files, and might not be working at any particular time.
     <li>SensorIcon - Fix an inconsistency issue with the setting of sensor text colours. - Kevin Dickerson</li>
     <li>Text Properties - Fix the font size selection list in text properties to work correctly - Kevin Dickerson</li>
     <li>Loconet Simulator - Initial states of sensors can be set via the preferences, rather than using the default of UNKNOWN - Kevin Dickerson</li>
+    <li>Debug Throttle - Add 14 & 28 Speed step settings to those that are available</li>
+    <li>Entry/Exit - Add the option to set an alternative colour for the layout blocks while the Entry/Exit route is being set up. Colour is defined in the Entry/Exit Options</li>
+    <li>Entry/Exit - Can now extend the transit of an Active Train in the dispatcher</li>
     <li>Dispatcher/AutoDispatcher changes
     <ul><li>Fix an issue where turnouts are not correctly being set in the last section, (when continuous running isn't selected) or the previous block is not picked up if the active train is starting in the transit and is not in the first block of that section.</li>
     <li>Add the ability to delay the start of a train based upon a sensor going active.</li>
@@ -157,6 +160,8 @@ These are development files, and might not be working at any particular time.
     <li>When using SignalMasts and Auto Allocate, the mast at the end of the last allocated section is set held, so that the approaching automatic auto train does not simply read what the logic has calculated.  When allocating the next section, set the mast at the end of that to held and then release the previous one.</li>
     <li>Update the auto active train terminate option, so that it waits until the loco has stopped before finally disposing of it.</li>
     <li>If allocating a section that this flagged as intermediate test all subsequent sections that are also flagged as intermediate to make sure that we do not end up with trains meeting face-to-face.</li>
+    <li>When a section that is waiting to be allocated goes from an occupied to an un-occupied state force the dispatcher to do a rescan of sections waiting to be allocated.</li>
+    <li>Extend the Entry/Exit interlocking so that it can extend the transit of an active train.<li>
     </ul>
   </ul> <!--#include virtual="/Footer" --></div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
