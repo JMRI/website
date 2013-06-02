@@ -61,11 +61,16 @@ Administrator permissions if the user running the installation is not a member
 of the administrators group. Users of Windows Vista or later may receive a
 UAC (User Account Control) pop-up message when installing.</p>
 
+<p>The TCS decoder definitions have been extensively reworked.  
+You'll notice that they list different families and the models are 
+organized differently.  This is to make the automatic identification 
+work much better.  Please let us know if you encounter any problems with this.
+
 <h3>Older warnings</h3>
 
 <p>This release and all future releases will not support the NCE serial interface running at 19,200 baud.</p>
 
-<p>The decoder definition files have been extensively reworked for this release
+<p>The decoder definition files have been extensively reworked for this release series
 to reduce their size and allow  them to be translated to other languages.
 Please keep an eye out for any inadvertent changes to the definitions 
 that might have been introduced.</p>
@@ -163,6 +168,9 @@ These are development files, and might not be working at any particular time.
     <li>When a section that is waiting to be allocated goes from an occupied to an un-occupied state force the dispatcher to do a rescan of sections waiting to be allocated.</li>
     <li>Extend the Entry/Exit interlocking so that it can extend the transit of an active train.<li>
     </ul>
+    
+    <li>Many changes to how TCS decoders are defined.  See warning above.
+    
   </ul> <!--#include virtual="/Footer" --></div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
