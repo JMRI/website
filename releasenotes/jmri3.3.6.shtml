@@ -137,6 +137,7 @@ These are development files, and might not be working at any particular time.
       <li>The program no longer shows an error in the train build report if you delete a schedule item for a car
       that was assigned that item in match mode.  The program now tries to find another match for the car, and will
       report a problem if there isn't a match available.</li>
+      <li>The program now shows the train, departure and arrival locations if the prompt to or from staging is selected.</li>
       <li>Fixed a bug where a train wouldn't build after deleting a car or loco type that the
        train used to carry. Restarting the program would clear the error in previous releases.</li>
       <li>Fixed a bug in the cvs files when user had commas in their comments.</li>
