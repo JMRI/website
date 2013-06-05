@@ -1,5 +1,4 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id: jmri2.13.1.shtml,v 1.2 2011-07-13 20:25:41 dan_boudreau Exp $ -->
 <html lang="en">
 <head>
  <title>
@@ -116,14 +115,15 @@ These are development files, and might not be working at any particular time.
   <li>Improved internationalization for the About dialog - Jens E Christensen</li>
     <p>
   <li>Improvements to JSON server and protocols:
-	<ul>
-    <li>Begin versioning the JSON protocol so clients can use an explicit JSON protocol version. - Randall Wood</li>
-		<li>Include the JSON protocol version in the ZeroConf advertisement for both network services that support the JSON protocol. - Randall Wood</li>
-		<li>Allow the JSON socket connection hello message to be read using an HTTP GET to /json/hello - Randall Wood</li>
-		<li>Allow the JSON hello message to be requested by JSON clients through the socket connection. - Randall Wood</li>
-		<li>Add a JSON method to enumerate all advertised ZeroConf services; this is intended to allow a client outside the ZeroConf boundary with only knowledge of the Web service to request a JSON-formatted list of all network services (WiThrottle, SRCP, LocoRMI, etc...) with ports and connection information. - Randall Wood</li>
-	</ul>
-	</li>
+    <ul>
+      <li>JSON clients can now add, edit, and delete consists. - Randall Wood</li>
+      <li>Begin versioning the JSON protocol so clients can use an explicit JSON protocol version. - Randall Wood</li>
+      <li>Include the JSON protocol version in the ZeroConf advertisement for both network services that support the JSON protocol. - Randall Wood</li>
+      <li>Allow the JSON socket connection hello message to be read using an HTTP GET to /json/hello - Randall Wood</li>
+      <li>Allow the JSON hello message to be requested by JSON clients through the socket connection. - Randall Wood</li>
+      <li>Add a JSON method to enumerate all advertised ZeroConf services; this is intended to allow a client outside the ZeroConf boundary with only knowledge of the Web service to request a JSON-formatted list of all network services (WiThrottle, SRCP, LocoRMI, etc...) with ports and connection information. - Randall Wood</li>
+    </ul>
+  </li>
     <p>
     <li>Improved web server performance with a large number of clients or large number of
      requests per client. - Steve Todd</li>
