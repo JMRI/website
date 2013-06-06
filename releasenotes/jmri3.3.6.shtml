@@ -28,11 +28,13 @@
       Release Notes for JMRI 3.3.6 release
       </h2>
 
-	<p>Date: MMM DD, 2013</p>
+	<p>Date: June 6, 2013</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Test version 3.3.6 of JMRI/DecoderPro is available for download.</p>
  
+<!-- 
 <br><b>This is a draft release note only; the download links do not yet work</b>
+ -->
 
 <h3>Notes:</h3>
 
@@ -82,29 +84,27 @@ None at the time of this release.
 
 <h3>Download links:</h3>
 
-<!--  
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r21034.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r21034.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r21034.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r21034.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r21034.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r21034.tgz/download</a></p>
- -->
- 
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.tgz/download</a></p>
+
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.3.6/ws/jmri/dist/release/">CI project page</a>.
  -->
-
+<!--  
 During development leading to the actual release, you can find test download files on the 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.
-
+ -->
 
 <h3>Changes since test release 3.3.5:</h3>
 
@@ -175,7 +175,24 @@ These are development files, and might not be working at any particular time.
     <li>New Train Window - When called from the panel with a known Roster Entry and block, the transit combo is populated with transits that either contain the block past or have it as an entry poing.</li>
     </ul>
     
-    <li>Many changes to how TCS decoders are defined.  See warning above.
+<li>The TCS decoder definition files have been realligned with great help from TCS. 
+    All old definitions are still there, but three new families have been created from which 
+    only the one with the latest firmware (called Jan 2012) is always visible. 
+    If you identify a decoder on the programming track the correct decoder definition 
+    file will be called. The decoder files now also leverage the unique decoder type 
+    ID provided by TCS. When identifying the decoder not only a large family  will 
+    populate but only the right decoder featuring its correct firmware will be shown. 
+<li>There's also a new feature in the tool allowing to replace obsolete decoder definition 
+    files with their current replacement. 
+    To do this, select "Update Decoder Definitions" from the "Debug" menu.
+    In this release, the only decoder definitions that are available for
+    update at the TCS ones. If you have TCS decoders and want to use the most
+    recent decoder definitions, please back up your files and then go ahead with doing
+    this update.
+<li>An initial decoder definition file for the soon to be released WOW sound decoder 
+    is included. 
+    So far only the NON sound related CV's are supported, as the sound CV's 
+    require additional rework of the code base. 
     
     <li>Peter Ulvestad improved the Atlas 342 and 345 decoder definitions 
     <li>Nigel Cliffe improved some CT Electonik decoders.
