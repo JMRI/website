@@ -3,12 +3,12 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 3.3.7
+ JMRI: Release Notes for 3.3.8
  
  </title>
     <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
     <meta content="Bob Jacobsen" name=Author>
-    <meta name="keywords" content="java model railroad JMRI 3.3.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 3.3.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
@@ -33,9 +33,7 @@
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Test version 3.3.7 of JMRI/DecoderPro is available for download.</p>
  
-<!-- 
 <br><b>This is a draft release note only; the download links do not yet work</b>
- -->
 
 <h3>Notes:</h3>
 
@@ -45,10 +43,6 @@ back to an earlier version.</p>
 
 <p>This is the next in a series of test versions. We expect this series
 to end in a JMRI 3.4 production release at mid-year.</p> 
-
-<p>Some of the changes involved are quite extensive.
-They may require a certain amount of experience before they are working well.  
-Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
@@ -85,22 +79,22 @@ None at the time of this release.
 
 <h3>Download links:</h3>
 
+<!-- 
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.7-r23644.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.7-r23644.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.8-r23644.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.8-r23644.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.7-r23644.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.7-r23644.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.8-r23644.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.8-r23644.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.7-r23644.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.7-r23644.tgz/download</a></p>
- 
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.8-r23644.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.8-r23644.tgz/download</a></p>
+ --> 
 
-<!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.3.7/ws/jmri/dist/release/">CI project page</a>.
- -->
+<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.3.8/ws/jmri/dist/release/">CI project page</a>.
+
 
 <!--
 During development leading to the actual release, you can find test download files on the 
@@ -108,22 +102,19 @@ During development leading to the actual release, you can find test download fil
 These are development files, and might not be working at any particular time.
 -->
 
-<h3>Changes since test release 3.3.6:</h3>
+<h3>Changes since test release 3.3.7:</h3>
 
   <ul>
 
-  <li>Andrew Crosland added dynamic changing of speed step modes to the SPROG throttle
-  <li>Andrew Crosland made changed to the Bachrus Speedo following user feedback
-	<ul>
-	<li>Change window layout to show dial and graph together
-	<li>Added optional grid overlay
-	<li>Added selectors for programming track or main track operation (doesn't do very much at present)
-	<li>Added User editable title string
-	</ul>
-  <li>Dave Heap added further Patches to fix ESU V4 Indexed CVs decoder definitions, plus some code in LocoFile.java to correct existing roster entry files as they are read, in order to match corrected definitions.
-    
-    <li>Joan de Castro added additional Catalan translation.
-
+  <li>Fix issue with the editing of the forward blocking sensor
+  <li>Fix an issue where a simple circular track circuit doesn't get the signal mast pairs detected correctly.
+  <li>Fix an additional issue when a signal mast logic is deleted it may generate an NPE.
+  <li>Prevent potential NPE during JSON operations
+  <li>Fix a out of range exception in dispatcher.
+  <li>Correct the way that the auto active train stops using a speed profile
+  <li>Adjustments to the way that final speed step is in a calculation is handled.
+  <li>Set JSON protocol version for 3.4
+  
   </ul> <!--#include virtual="/Footer" --></div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
