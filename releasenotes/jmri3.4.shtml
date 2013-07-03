@@ -91,7 +91,7 @@ that might have been introduced.</p>
 
 <h3>Changes since production release 3.2</h3>
 
-   <p>Dan Boudreau made the following changes to operations:</p>
+   <p>Dan Boudreau made the following enhancements to operations:</p>
    <ul>
     <li>You can now control loads for trains and tracks by the type of car. Previously only the
      load name was available. Now you can control by load names, and by car type and load name.</li>
@@ -107,11 +107,89 @@ that might have been introduced.</p>
      can actually service the car, not just passing through.</li>
     <li>You can now adjust the tab length if you're using the tabular format for your manifests
      and switch lists. See in the Manifest Print Options under Tools.</li>
+    <li>The conductor window will now show locomotives assigned to the train.</li>
+    <li>Made some improvements in the print locations tool with regards to schedules.</li>
+    <li>More build report formating and readability improvements.</li>
+    <li>A new feature called the "Yardmaster" window. Now you can now get a switch list for a
+     location similar to the "Conductor" window. In the "Locations" window, there's now a button
+     called "Yardmaster" for each location. The Yardmaster window has a combobox containing a list
+     of trains that have work for the location. Only built trains with work are available.</li>
+    <li>You can now independently control the build report font size. If using the text editor,
+     use a smaller font size if you want to increase the amount of text per line.</li>
+    <li>Some additional work integrating the Manifest Creator. There are now run buttons on the
+     trains window to activate the program. Select "Generate csv Manifest" in the build options
+     window to enable these new buttons. You can also edit the file name of the Manifest Creator,
+     see under Trains-&gt;Tools "Setup Excel Program".</li>
+    <li>In the "Set Car" window, the destination for the car is now by default disabled. You
+     should be using the "Final Destination" when manually setting a destination for the car. If you
+     need the destination field enabled, under Tools, is an option to enable it.</li>
+    <li>New feature, the last date and time a car was assigned to a train. Note that the last
+     time and date is set when the car is delivered, or if the car was reset from a built train.
+     This should help you find "stuck" cars if you have any.</li>
+    <li>Improved car routing when the car has custom loads and/or final destinations. Thanks to
+     Dave Cochrun and Inspector Dave in helping us improve this part of the program.</li>
+    <li>You can now use the escape key to close any active operations window. All operations
+     and other jmri windows can also be closed by using the control-W key.
+    <li>Yardmaster and Conductor windows now show utility cars by their quantity rather than by
+     road and number. Both windows now support the "Sort by Track" option. The Yardmaster window now
+     uses the "Switch List" format rather than the "Manifest" format.</li>
+    <li>You can now control which loads are allowed to ship from staging.</li>
+    <li>Improved the routing code to search for several interchange or yard tracks at a
+     location when trying to find a route to a spur. The previous version didn't try find other
+     tracks at a location when the first track tried was full. Thanks to Jim Elbe for finding and
+     reporting this issue.</li>
+    <li>Made some improvements to the build report with regards to car routing. Also improved
+     how the program deals with routing a car into staging and which tracks in staging are
+     appropriate.</li>
+    <Li>Improved on how the program deals with "car type and custom load pairs" for locations
+     and trains when a car type is changed or deleted. Thanks to Inspector Dave for reporting this
+     issue.</Li>
+    <li>Improved how the program deals with custom loads and kernels. Now all cars in a kernel
+     will get the same custom load if the the custom load is valid for the car.</li>
+    <li>Improved the dialog window for a route comment. Now you can easily enter several lines
+     of text.</li>
+    <li>The Locations window now shows the track types for each location.</li>
+    <li>New feature, for classification/interchange tracks you can now restrict which
+     destinations the track will serve. See "Track Destination" under Tools in the edit track
+     window.</li>
+    <li>You can now tell the router if you want it to consider yard tracks when routing a car.
+     Deselect "Enable Car Routing via Yards" in the Option window under Tools in the settings window
+     if you don't want to use yards when routing cars. The yards are still available for other
+     purposes.</li>
+    <li>Added the ability to print out a car's final destination and return when empty to the
+     car roster print function.</li>
+    <li>In the "Set Car" window, the return when empty and final destination fields are now
+     disabled if you turn routing off. Both features require routing to work properly.</li>
+    <li>The program no longer shows an error in the train build report if you delete a schedule
+     item for a car that was assigned that item in match mode. The program now tries to find another
+     match for the car, and will report a problem if there isn't a match available.</li>
+    <li>The program now shows the train, departure and arrival locations if the prompt to or
+     from staging is selected.</li>
+   </ul>
+
+   <p>Dan Boudreau made the following fixes to operations:</p>
+   <ul>
     <li>Fixed a line formatting problem with manifest and switch lists that have carriage
      returns embedded in the comments.</li>
-     <li>The conductor window will now show locomotives assigned to the train.</li>
-     <li>Made some improvements in the print locations tool with regards to schedules.</li>
-    <li>More build report formating and readability improvements.</li>
+    <li>Fixed a problem when swapping cabooses in a train's route. The code didn't check to see
+     if there was the correct number of moves available in the route to do the swap. Thanks to
+     Quintin Foster for finding and reporting this problem.</li>
+    <li>Fixed a problem with a train's departure time when there was back to back locations
+     using the same name. Thanks to Bob Byck for finding and reporting this issue.</li>
+    <li>Fixed an issue where the "Add" or "Edit" Track window size would revert to its previous
+     size while modifying the track checkboxes.</li>
+    <li>Fixed a problem where the program wouldn't correctly select a staging track when
+     exclude train or route was used.</li>
+    <li>Fixed an issue where the program would route too many cars to a spur with a schedule.</li>
+    <li>Fixed a problem where a car with a custom load in route would lose which schedule item
+     the car had been assigned when the train carrying the car was reset.</li>
+    <li>Fixed a problem where a switcher would ignore a car's wait count. Thanks to Joe Mattick
+     for finding and reporting this issue.</li>
+    <li>Fixed a bug where a train wouldn't build after deleting a car or loco type that the
+     train used to carry.</li>
+    <li>Fixed a bug in the cvs files when user had commas in their comments.</li>
+    <li>Fixed a bug where a train wouldn't terminate if the first location in a route was
+     deleted in a built train.</li>
    </ul>
 
    <p>Kevin Dickerson made the following changes :</p>
@@ -186,7 +264,6 @@ Changes for Virtual Sound Decoder (by Mark Underwood)
   <li>VSD file can now explcitly indicate which defined Diesel notch
   is the Idle notch.</li>
 </ul>
-</p>
 <p>
 Walt Thompson fixed links in several help pages.
 
@@ -213,30 +290,6 @@ More graphics in the help pages will not display in a desktop web browser when c
 <p>Fixed a problem that could result in roster entries sharing a backing file if you 
 export an entry and then re-import it into the same JMRI instance.  If you have done this, 
 in the past, the fix is to "Recreate Roster Index" from the debug menu.
-
-   <p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>A new feature called the "Yardmaster" window. Now you can now get a switch list for a location
-     similar to the "Conductor" window. In the "Locations" window, there's now a button called
-     "Yardmaster" for each location. The Yardmaster window has a combobox containing a list of trains
-     that have work for the location. Only built trains with work are available.</li>
-    <li>You can now independently control the build report font size. If using the text editor,
-     use a smaller font size if you want to increase the amount of text per line.</li>
-    <li>Some additional work integrating the Manifest Creator. There are now run buttons on the
-     trains window to activate the program. Select "Generate csv Manifest" in the build options
-     window to enable these new buttons.  You can also edit the file name of the Manifest Creator,
-     see under Trains->Tools "Setup Excel Program".</li>
-    <li>In the "Set Car" window, the destination for the car is now by default disabled. You
-     should be using the "Final Destination" when manually setting a destination for the car. If you
-     need the destination field enabled, under Tools, is an option to enable it.</li>
-    <li>New feature, the last date and time a car was assigned to a train. Note that the last
-     time and date is set when the car is delivered, or if the car was reset from a built train.
-     This should help you find "stuck" cars if you have any.</li>
-    <li>Improved car routing when the car has custom loads and/or final destinations. Thanks to
-     Dave Cochrun and Inspector Dave in helping me improve this part of the program.</li>
-    <li>You can now use the escape key to close any active operations window. All operations and
-     other jmri windows can also be closed by using the control-W key.
-   </ul>
 
    <p>Steve Todd added an option to the Communications Monitor windows to allow users
      to filter out unwanted message types.</p> 
@@ -271,33 +324,6 @@ Dick Bronson improved the NS-2008 signal set.
    <p>Removed the ability to run the NCE serial interface at 19,200 baud. This speed has been
     found to cause problems with the NCE command station. The default is now 9,600 baud. If you were
     running at 19,200 baud, you'll have to reconfigure your NCE command station to run at 9,600.
-   
-   <p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>Yardmaster and Conductor windows now show utility cars by their quantity rather than by
-     road and number. Both windows now support the "Sort by Track" option. The Yardmaster window now
-     uses the "Switch List" format rather than the "Manifest" format.</li>
-    <li>You can now control which loads are allowed to ship from staging.</li>
-    <li>Fixed a problem when swapping cabooses in a train's route. The code didn't check to see
-     if there was the correct number of moves available in the route to do the swap. Thanks to
-     Quintin Foster for finding and reporting this problem.</li>
-    <li>Fixed a problem with a train's departure time when there was back to back locations
-     using the same name. Thanks to Bob Byck for finding and reporting this issue.</li>
-    <li>Improved the routing code to search for several interchange or yard tracks at a
-     location when trying to find a route to a spur. The previous version didn't try find other
-     tracks at a location when the first track tried was full. Thanks to Jim Elbe for finding and
-     reporting this issue.</li>
-     <li>Made some improvements to the build report with regards to car routing.  Also improved how
-     the program deals with routing a car into staging and which tracks in staging are appropriate.</li>
-    <Li>Improved on how the program deals with "car type and custom load pairs" for locations
-     and trains when a car type is changed or deleted. Thanks to Inspector Dave for reporting this
-     issue.</Li>
-     <li>Fixed an issue where the "Add" or "Edit" Track window size would revert to its previous size while
-     modifying the track checkboxes.</li>
-     <li>Improved how the program deals with custom loads and kernels.  Now all cars in a kernel will get
-     the same custom load if the the custom load is valid for the car.</li>
-     <li>Improved the dialog window for a route comment.  Now you can easily enter several lines of text.</li>
-   </ul>
 
    <p>John Crellin provided decoder definitions for the MRC 1619 through 1624 decoders,
     and updated the TCS X definition.
@@ -332,29 +358,7 @@ Dick Bronson improved the NS-2008 signal set.
   <li>Provided a new method to edit turnout and sensor details. -- Kevin Dickerson</li>
   
   <li>Fixed a problem with help links that reported a 404 error through the default browser. -- Dan Boudreau</li>
-
-    <p>Dan Boudreau made the following changes to operations:
-    
-    <ul>
-     <li>The Locations window now shows the track types for each location.</li>
-     <li>New feature, for classification/interchange tracks you can now restrict which
-      destinations the track will serve. See "Track Destination" under Tools in the edit track
-      window. NOTE, a user has found that sometimes the program doesn't process all of the cars at a
-      location when using this feature. This will be fixed in the next test release.</li>
-     <li>You can now tell the router if you want it to consider yard tracks when routing a car.
-      Deselect "Enable Car Routing via Yards" in the Option window under Tools in the settings
-      window if you don't want to use yards when routing cars. The yards are still available for
-      other purposes.</li>
-     <li>Fixed a problem where the program wouldn't correctly select a staging track when
-      exclude train or route was used.</li>
-     <li>Fixed an issue where the program would route too many cars to a spur with a schedule.</li>
-     <li>Fixed a problem where a car with a custom load in route would lose which schedule item
-      the car had been assigned when the train carrying the car was reset.</li>
-     <li>Fixed a problem where a switcher would ignore a car's wait count. Thanks to Joe
-      Mattick for finding and reporting this issue.</li>
-    </ul>
-
-    </p>
+  
    <li>On LocoNet systems with transponding, fix a spurious power-off when doing ops-mode decoder reads.</li>
 
 	<p>Ken Cameron made the following changes to NCE systems:<br>
@@ -439,22 +443,6 @@ Dick Bronson improved the NS-2008 signal set.
     <p>
     <li>Improved web server performance with a large number of clients or large number of
      requests per client. - Steve Todd</li>
-    <p>
-    <li>Dan Boudreau made the following changes to operations:
-     <ul>
-      <li>Added the ability to print out a car's final destination and return when empty to the
-       car roster print function.</li>
-      <li>In the "Set Car" window, the return when empty and final destination fields are now disabled if
-      you turn routing off.  Both features require routing to work properly.</li>
-      <li>The program no longer shows an error in the train build report if you delete a schedule item for a car
-      that was assigned that item in match mode.  The program now tries to find another match for the car, and will
-      report a problem if there isn't a match available.</li>
-      <li>The program now shows the train, departure and arrival locations if the prompt to or from staging is selected.</li>
-      <li>Fixed a bug where a train wouldn't build after deleting a car or loco type that the
-       train used to carry. Restarting the program would clear the error in previous releases.</li>
-      <li>Fixed a bug in the cvs files when user had commas in their comments.</li>
-      <li>Fixed a bug where a train wouldn't terminate if the first location in a route was deleted in a built train.</li>
-     </ul>
     <p>
     <li>Request administrator rights when installing - fix for bug highlighted by Suzie Tall</li>
     <p>
