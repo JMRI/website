@@ -106,9 +106,14 @@ These are development files, and might not be working at any particular time.
    </ul>
 
    <ul>
-
-      <li>
-     </ul> <!--#include virtual="/Footer" -->
+      <li>SignalMasts - Improved support for SignalMast unlit for DCC/LNCP & Turnout based masts - KD</li>
+      <li>SignalMasts - Corrected the way in which a unlit/lit signal mast icon is displayed on a panel - KD</li>
+      <li>SignalMasts - Add an option to allow a default DCC accessory aspect ID to be recorded against a given aspect in a signalling system - KD</li>
+      <li>Layout Editor - Change the block edit so that it is now possible to access all of the properties of the block, and not just those items that specifically relate to a layout block. - KD</li>
+      <li>Blocks - Remove the dependency for a block to have a valid sensor to move an object about, but use the occupancy state of the neighbouring blocks instead. - KD</li>
+     </ul> 
+     
+     <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
