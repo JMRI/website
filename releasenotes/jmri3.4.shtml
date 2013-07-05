@@ -199,43 +199,43 @@ is version 7.x.x and your PowerCab must be version 1.65 or newer.
 
    <p>Kevin Dickerson made the following changes :</p>
     <ul>
-    <li>Hardware Updates</li>
+    <li>Hardware Updates<br>
     <ul>
         <li>CAN Ethernet - Added the ability to select the correct protocol</li>
         <li>Merg CBUS Ethernet - Added in a new adapter to handle this configuration</li>
         <li>LocoNetOverTCP - Fix an issue with the connection details that prevented it from being loaded.</li>
-        <li>Ecos - Fixed a minor issue with the way that the speed step reply was processed that cuased an error</li>
-        <li>ESU ECOS - Fixed an issue with the way that the thorttle speed changes are handled</li>
+        <li>Ecos - Fixed a minor issue with the way that the speed step reply was processed that caused an error</li>
+        <li>ESU ECOS - Fixed an issue with the way that the throttle speed changes are handled</li>
         <li>Loconet Simulator - Initial states of sensors can be set via the preferences, rather than using the default of UNKNOWN</li>
-        <li>Debug Throttle - Add 14 & 28 Speed step settings to those that are available</li>
-        <li>Loconet Throttle - Fix issues where certain speed steps were being skipped over in 14 & 28 mode. - Michael Mosher & Kevin Dickerson</li>
-    </ul>
+        <li>Debug Throttle - Add 14 &amp; 28 Speed step settings to those that are available</li>
+        <li>Loconet Throttle - Fix issues where certain speed steps were being skipped over in 14 &amp; 28 mode. - Michael Mosher &amp; Kevin Dickerson</li>
+    </ul></li>
     
-    <li>Editors</li>
+    <li>Editors<br>
     <ul>
         <li>SensorIcon - Fix an inconsistency issue with the setting of sensor text colours.</li>
         <li>Text Properties - Fix the font size selection list in text properties to work correctly</li>
         <li>Layout Editor - Added in the ability to rotate Slips</li>
         <li>Layout Editor - Include internal block boundaries on the continuing path of a crossover as a valid location for setting a signalmast/sensor</li>
         <li>Layout Editor - Fixed a placement issue with the SignalMast/Sensor tool in the Layout Editor</li>
-    </ul>
+    </ul></li>
     
-    <li>SignalHeads</li>
+    <li>SignalHeads<br>
     <ul>
         <li>SignalHeads - Fixed an issue which prevent the Add button from working correctly</li>
         <li>Updated the DCC signal head decoder to allow user defined numbering for different aspects.</li>
         <li>Fixed an issue where if the username is changed, this is not reflected in the Editor Icons.</li>
-    </ul>
+    </ul></li>
     
-    <li>SignalMast</li>
+    <li>SignalMast<br>
     <ul>
         <li>Added in the ability to repeat the state of one SignalMast onto another and vice-versa</li>
         <li>When an Aspect is either disabled or enabled, the Aspect ComboBox in the table is reflect this change.
         <li>Fixed a bug in the DCC Signal Mast when copying a Signalmast which has aspects set as disabled.</li>
         <li>Fixed an issue where if the username is changed, this is not reflected in the Editor Icons.</li>
-    </ul>
+    </ul></li>
     
-    <li>SignalMast Logic</li>
+    <li>SignalMast Logic<br>
     <ul>
         <li>Update the user defined blocks so that they are updated when user names are changed and move</li>
         <li>React to LayoutBlocks being allocated to sections.  This only occurs if the Logic has a section associated with it, and the dispatcher has been loaded.</li>
@@ -244,9 +244,9 @@ is version 7.x.x and your PowerCab must be version 1.65 or newer.
         <li>Now considers the opposing blocks when it encounters a double crossover.</li>
         <li>Fix an additional issue when a signal mast logic is deleted it may generate an NPE.</li>
         <li>Allow multiple protecting blocks for a single SignalMast located at the throat of a turnout.</li>
-    </ul>
+    </ul></li>
 
-    <li>Entry/Exit(NX)</li>
+    <li>Entry/Exit(NX)<br>
     <ul>
         <li>Add the option to set an alternative colour for the layout blocks while the Entry/Exit route is being set up. Colour is defined in the Entry/Exit Options</li>
         <li>Allow extended NX routes to be set eg A-D, rather than A-B, B-C, C-D</li>
@@ -254,17 +254,17 @@ is version 7.x.x and your PowerCab must be version 1.65 or newer.
         <li>Now considers the opposing blocks when it encounters a double crossover.</li>
         <li>Added in the ability to stack Entry/Exit (NX) Interlocks.</li>
         <li>Allow multiple protecting blocks for a single NX Source located at the throat of a turnout.</li>
-    </ul>
+    </ul></li>
 
-    <li>Decoder Pro</li>
+    <li>Decoder Pro<br>
     <ul>
         <li>Decoder Selection - Added a Show/Hide facility on matched decoders after the decoder has been read</li>
         <li>DP3 - The new Loco window, now allows you to create a basic roster entry without having to open a separate window</li>
         <li>Fixed the DP3 Quit from menu option</li>
         <li>Fixed an issue where a new Roster Entry may not get saved correctly to the roster index.</li>
-    </ul>
+    </ul></li>
     
-    <li>Dispatcher/AutoDispatcher changes</li>
+    <li>Dispatcher/AutoDispatcher changes<br>
     <ul>
         <li>Initial Support for Signal Mast in the Dispatcher including</li>
         <li>Automatic train responding to SignalMasts</li>
@@ -287,7 +287,7 @@ is version 7.x.x and your PowerCab must be version 1.65 or newer.
         <li>Provide access to the Dispatcher functions of create new train, allocate sections and terminate for an active train from a memory icon, if a Roster Entry is used</li>
         <li>Store the train type as set in the Dispatcher New Train Window against the roster entry, and retrieve it when the entry is selected again</li>
         <li>Added the option to store the Roster Entry in allocated blocks from the dispather rather than just a text string</li>
-    </ul>
+    </ul></li>
 
     <li>Provided a new method to edit block, turnout and sensor details in the table.</li>
     <li>Added the option to set the state of an Internal Sensor at load/creation to something other than Unknown</li>
@@ -415,6 +415,16 @@ Dick Bronson improved the NS-2008 signal set.
 
 <p> Paul Bender fixed a bug in the JMRIClient implementation that prevented the names of CBUS turnouts and sensors from being passed to the server.</p>
 
+<p>Ken Cameron made the following changes to NCE systems:</p>
+	<ul>
+	<li>Added preliminary support for the SB5 and Twin systems.</li>
+	<li>Expanded support for the updated PowerCab (1.65) and the updated USB (7.*)</li>
+	<li>Changed the way NCE systems figure out which menu options are supported for a given connection type.</li>
+	<li>Removed the multiple line format of the Cab Monitor based on user feedback and headaches it caused the code.</li>
+	<li>Cab Monitor now displays AIU inputs bits as functions on the cab.</li>
+	<li>Added USB Interface support to allow changing the USB cab number</li>
+	</ul>
+
   <ul>
 
   <li>The following changes were made to network services:<ul>
@@ -424,18 +434,7 @@ Dick Bronson improved the NS-2008 signal set.
   
   <li>Fixed a problem with help links that reported a 404 error through the default browser. -- Dan Boudreau</li>
   
-   <li>On LocoNet systems with transponding, fix a spurious power-off when doing ops-mode decoder reads.</li>
-
-	<p>Ken Cameron made the following changes to NCE systems:<br>
-		<ul>
-		<li>Added preliminary support for the SB5 and Twin systems.</li>
-		<li>Expanded support for the updated PowerCab (1.65) and the updated USB (7.*)</li>
-		<li>Changed the way NCE systems figure out which menu options are supported for a given connection type.</li>
-		<li>Removed the multiple line format of the Cab Monitor based on user feedback and headaches it caused the code.</li>
-		<li>Cab Monitor now displays AIU inputs bits as functions on the cab.</li>
-		<li>Added USB Interface support to allow changing the USB cab number</li>
-		</ul>
-	</p>
+  <li>On LocoNet systems with transponding, fix a spurious power-off when doing ops-mode decoder reads.</li>
 	
 	<li>You can now use the "Start Up" pane in preferences to have any of the six
 	    Operations windows open when the program starts.  You can also use that to 
@@ -465,22 +464,22 @@ Dick Bronson improved the NS-2008 signal set.
   <li>There's now a <code>layoutblocks</code> variable predefined
     for access to the LayoutBlockManager from Jython scripts.</li>
 
-  <li>Mattias K updated the LocoNet support to track the time that LocoNet messages were received.
+  <li>Mattias K updated the LocoNet support to track the time that LocoNet messages were received.</li>
     
-  <li>Dick Bronson updated the definitions for RR-CirKits products
+  <li>Dick Bronson updated the definitions for RR-CirKits products</li>
   
-  <li>Stephen Lowens updated the SoundTraxx Tsunami Rapido definition
-  <li>Dave Heap updated the ESU V4 decoder definitions
-  <li>Nigel Cliffe provided a definition for Harman DCC "Signalist" decoders.
+  <li>Stephen Lowens updated the SoundTraxx Tsunami Rapido definition</li>
+  <li>Dave Heap updated the ESU V4 decoder definitions</li>
+  <li>Nigel Cliffe provided a definition for Harman DCC "Signalist" decoders.</li>
   
   </ul>
 
   <ul>
 
   <li>Decoder definition for the MPM RRR cars and advanced light functions decoder from Wekomm - Alain Carasso</li>
-  <p>
+
   <li>Improved internationalization for the About dialog - Jens E Christensen</li>
-    <p>
+
   <li>Improvements to JSON server and protocols:
     <ul>
       <li>JSON clients can now add, edit, and delete consists. - Randall Wood</li>
@@ -491,12 +490,11 @@ Dick Bronson improved the NS-2008 signal set.
       <li>Add a JSON method to enumerate all advertised ZeroConf services; this is intended to allow a client outside the ZeroConf boundary with only knowledge of the Web service to request a JSON-formatted list of all network services (WiThrottle, SRCP, LocoRMI, etc...) with ports and connection information. - Randall Wood</li>
     </ul>
   </li>
-    <p>
-    <li>Improved web server performance with a large number of clients or large number of
+  
+  <li>Improved web server performance with a large number of clients or large number of
      requests per client. - Steve Todd</li>
-    <p>
-    <li>Request administrator rights when installing - fix for bug highlighted by Suzie Tall</li>
-    <p>
+
+  <li>Request administrator rights when installing - fix for bug highlighted by Suzie Tall</li>
     
 <li>The TCS decoder definition files have been realligned with great help from TCS. 
     All old definitions are still there, but three new families have been created from which 
