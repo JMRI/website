@@ -113,6 +113,12 @@ These are development files, and might not be working at any particular time.
       <li>Blocks - Remove the dependency for a block to have a valid sensor to move an object about, but use the occupancy state of the neighbouring blocks instead. - KD</li>
      </ul> 
      
+    <p>Suzie Tall provided support for three new signal systems:
+        <a href="http://jmri.org/xml/signals/CROR-2008/index.shtml">CROR-2008</a> from Transport Canada,
+        <a href="http://jmri.org/xml/signals/InfraBel-2013/index.shtml">InfraBel-2013</a> from Belgium and
+        <a href="http://jmri.org/xml/signals/ProRail-1954/index.shtml">ProRail-1954</a> from the Netherlands.
+        
+    
      <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
