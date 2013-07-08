@@ -127,7 +127,9 @@ These are development files, and might not be working at any particular time.
         
     <p>Martin Jahner improved the Kato FL12 decoder definition
     
-    
+    <p>Paul Bender Added base support for IEEE 802.15.4 messages.  All this does at this point is allows sending and receiving of raw IEEE 802.15.4 messages from a serial port connection.  This configuration was tested using an XBee in API mode connected to the computer via a SparkFun Electronics XBee Explorer USB device.  Other devices supporting the IEEE 802.15.4 protocol should work as well, but have not been tested.  This code should be considered experimental.  There are likely bugs.<p> 
+
+   
      <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
