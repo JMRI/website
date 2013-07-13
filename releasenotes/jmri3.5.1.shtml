@@ -107,8 +107,14 @@ These are development files, and might not be working at any particular time.
 
    <ul>
       <li>SignalMasts - Improved support for SignalMast unlit for DCC/LNCP & Turnout based masts - KD</li>
+      <li>SignalMasts - Log a warning to the console rather than throwing an error when trying to set an aspect that has not been configured - KD</li>
       <li>SignalMasts - Corrected the way in which a unlit/lit signal mast icon is displayed on a panel - KD</li>
       <li>SignalMasts - Add an option to allow a default DCC accessory aspect ID to be recorded against a given aspect in a signalling system - KD</li>
+      <li>SignalMast Logic/Entry Exit - Consider the state of a crossing block on a Level Crossing - KD</li>
+      <li>SignalMast Logic/Entry Exit - Handle layout editor crossovers where there are two physical turnouts that need to be set/check rather than the primary turnout.- KD</li>
+      <li>Entry Exit - Update the Stack window to use a JDialog rather than a JFrame - KD</li>
+      <li>Editors - Fix an issue where a rotated icon based sensor icon is changed to a text based icon fails as no text values were set. - KD</li>
+      <li>Editors - Change the loading of sensor icons, so that the text details are loaded before the sensor is set, so that when the panel is loaded the sensor icon is displayed correctly when first displayed. - KD</li>
       <li>Layout Editor - Change the block edit so that it is now possible to access all of the properties of the block, and not just those items that specifically relate to a layout block. - KD</li>
       <li>Blocks - Remove the dependency for a block to have a valid sensor to move an object about, but use the occupancy state of the neighbouring blocks instead. - KD</li>
      </ul> 
