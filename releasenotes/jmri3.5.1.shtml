@@ -29,11 +29,13 @@
       Release Notes for JMRI 3.5.1 release
       </h2>
 
-	<p>Date: MMM DD, 2013</p>
+	<p>Date: July 12, 2013</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Test version 3.5.1 of JMRI/DecoderPro is available for download.</p>
  
+<!-- 
 <br><b>This is a draft release note only; the download links do not yet work</b>
+ -->
 
 <h3>Notes:</h3>
 
@@ -68,17 +70,16 @@ None at the time of this release.
 
 <h3>Download links:</h3>
 
-<!--  
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r21034.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r21034.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.5.1-r23800.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.5.1-r23800.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r21034.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r21034.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.5.1-r23800.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.5.1-r23800.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r21034.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r21034.tgz/download</a></p>
- -->
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.5.1-r23800.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.5.1-r23800.tgz/download</a></p>
+
  
 
 <!-- 
@@ -87,9 +88,11 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.3.6/ws/jmri/dist/release/">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.
+ -->
 
 
 <h3>Changes since production release 3.4:</h3>
@@ -135,7 +138,8 @@ These are development files, and might not be working at any particular time.
     
     <p>Paul Bender Added base support for IEEE 802.15.4 messages.  All this does at this point is allows sending and receiving of raw IEEE 802.15.4 messages from a serial port connection.  This configuration was tested using an XBee in API mode connected to the computer via a SparkFun Electronics XBee Explorer USB device.  Other devices supporting the IEEE 802.15.4 protocol should work as well, but have not been tested.  This code should be considered experimental.  There are likely bugs.<p> 
 
-   
+    <p> Michael Mosher updated the TCS WOW decoder definition.
+    
      <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
