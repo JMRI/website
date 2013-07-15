@@ -105,6 +105,9 @@ These are development files, and might not be working at any particular time.
      aren't available when using this format.</li>
     <li>You can now modify all of the manifest and switch lists text. See under Manifest Print
      Options, Tools, "Edit Manifest Text" and "Edit Switch List Text".</li>
+    <li>Now when you modify the train manifest using the "Manifest Print Options" window, the
+     train manifests are immediately changed for trains that are built but haven't departed the
+     first location in their route.</li>
     <li>Improved text line wrapping for comments in the Conductor and Yardmaster windows.</li>
    </ul>
 
