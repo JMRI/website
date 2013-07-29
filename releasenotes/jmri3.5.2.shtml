@@ -95,7 +95,10 @@ These are development files, and might not be working at any particular time.
 
 <h3>Changes since test release 3.5.1:</h3>
 
-   <p>
+   <ul>
+   <li>Matthew Harris updated the InstallTest batch file to pause before exiting
+      in certain situations on 64-bit versions of Windows.</li>
+   </ul>
    
      <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
