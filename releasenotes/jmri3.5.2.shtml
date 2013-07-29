@@ -95,9 +95,13 @@ These are development files, and might not be working at any particular time.
 
 <h3>Changes since test release 3.5.1:</h3>
 
+   <p>Matthew Harris:</p>
    <ul>
-   <li>Matthew Harris updated the InstallTest batch file to pause before exiting
+   <li>Updated the InstallTest batch file to pause before exiting
       in certain situations on 64-bit versions of Windows.</li>
+   <li>Update logging behaviour to create individual per-session 
+       log files (session.log) and to collate several session log
+       files into messages.log</li>
    </ul>
    
      <!--#include virtual="/Footer" -->
