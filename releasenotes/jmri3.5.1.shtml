@@ -122,6 +122,7 @@ These are development files, and might not be working at any particular time.
       <li>Editors - Fix an issue where a rotated icon based sensor icon is changed to a text based icon fails as no text values were set. - KD</li>
       <li>Editors - Change the loading of sensor icons, so that the text details are loaded before the sensor is set, so that when the panel is loaded the sensor icon is displayed correctly when first displayed. - KD</li>
       <li>Layout Editor - Change the block edit so that it is now possible to access all of the properties of the block, and not just those items that specifically relate to a layout block. - KD</li>
+      <li>Layout Editor - Added in an Edge Connector to allow blocks to be connected over multiple panels to form a single logical view.</li>
       <li>Blocks - Remove the dependency for a block to have a valid sensor to move an object about, but use the occupancy state of the neighbouring blocks instead. - KD</li>
      </ul> 
      
