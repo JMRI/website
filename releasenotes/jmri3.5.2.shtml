@@ -110,7 +110,18 @@ These are development files, and might not be working at any particular time.
    
    <P>The CV table in DecoderPro is now sortable and by default appears in order by number.
    
-     <!--#include virtual="/Footer" -->
+      <p>Dan Boudreau made the following changes to operations:</p>
+   <ul>
+    <li>Fixed the "Exclude" option in the Destination window for classification/interchange
+     tracks.</li>
+    <li>Fixed the "All Trains" feature when using consolidation mode in switch lists.</li>
+    <li>The Yardmaster window now has a "Next" button which allows the window to be used with
+     the JMRI web server. The drop down menus unfortunately don't work when using a browser to
+     access the windows remotely.</li>
+    <li>Improved the Conductor and Yardmaster window layouts.</li>
+   </ul>
+
+   <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
