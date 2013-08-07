@@ -122,6 +122,14 @@ These are development files, and might not be working at any particular time.
     <li>Fixed the "Return when Empty" when a car entered staging with a custom load, and the
      remove custom loads option was enabled.</li>
    </ul>
+   
+   <p>Ken Cameron made the following changes:</p>
+   <ul>
+   	<li>Added code to prevent bad programming track writing to CV's greater than 255 which are not supported
+   		by the PowerHouse command station. Using the ops mode works as well as the PowerCab with the whole 1024 range.
+	</li>
+	<li>Fixed wrong properties name in USB Interface panel.</li>
+   </ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
