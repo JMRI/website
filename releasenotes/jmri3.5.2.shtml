@@ -112,13 +112,15 @@ These are development files, and might not be working at any particular time.
    
       <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
-    <li>Fixed the "Exclude" option in the Destination window for classification/interchange
-     tracks.</li>
-    <li>Fixed the "All Trains" feature when using consolidation mode in switch lists.</li>
     <li>The Yardmaster window now has a "Next" button which allows the window to be used with
      the JMRI web server. The drop down menus unfortunately don't work when using a browser to
      access the windows remotely.</li>
     <li>Improved the Conductor and Yardmaster window layouts.</li>
+    <li>Fixed the "Exclude" option in the Destination window for classification/interchange
+     tracks.</li>
+    <li>Fixed the "All Trains" feature when using consolidation mode in switch lists.</li>
+    <li>Fixed the "Return when Empty" when a car entered staging with a custom load, and the
+     remove custom loads option was enabled.</li>
    </ul>
 
    <!--#include virtual="/Footer" -->
