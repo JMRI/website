@@ -15,6 +15,10 @@ production:
    exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.exe/download"
 test:
  versions:
+  3.5.2:
+   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.5.2-r23995.tgz/download"
+   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.5.2-r23995.dmg/download"
+   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.5.2-r23995.exe/download"
   3.5.1:
    tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.5.1-r23800.tgz/download"
    dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.5.1-r23800.dmg/download"
