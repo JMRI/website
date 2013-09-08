@@ -108,7 +108,18 @@ These are development files, and might not be working at any particular time.
      when using variable width fonts like sansSerif.</li>
    </ul>
 
-
+    <p>Dave Heap improved DecoderPro slider support:
+    <ul>
+    <li>The "hslider" format displayed a plain slider for decVal and indexedPairVal variable types 
+        but a percentage slider for indexedVal type. The percentage display was currently only used in QSI definitions.
+    <li>Restored consistency so "hslider" displays a plain slider for all three variable types.
+    <li>Created a new "hslider-percent" format (using existing code) for all three variable types.
+    <li>Updated QSI pane definitions where necessary to restore pre-patch behaviour.
+    <li>Note that the existing code for "hslider-percent" is a bit kludgy and customised specifically to accommodate some QSI features. 
+        Future development would be to replace with a new "hslider-custom" format giving better control of labels, 
+        if a way could be devised of specifying a hashtable-type custom label list in programmer pane definitions.
+    </ul>
+    
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
