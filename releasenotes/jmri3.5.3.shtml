@@ -104,8 +104,16 @@ These are development files, and might not be working at any particular time.
    
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
-    <li>Improved the page layout (line wrap) for manifests and switch lists
-     when using variable width fonts like sansSerif.</li>
+    <li>Improved the page layout (line wrap) for manifests and switch lists when using variable
+     width fonts like sansSerif.</li>
+    <li>New feature, you can now control the order passenger cars are shown on your manifests
+     and switch lists. In the edit car window, a new field called "Passenger Car Blocking Order"
+     will appear when you select the "Passenger" check box in the "Type" field. The text box allows
+     you to enter numbers between 0 and 100. Lower numbers will place the car near the front of the
+     train, and higher numbers towards the rear. Recommend that you start off using numbers divisible by 10.
+     For example, you might what to place an observation car at the end of the train, a value of
+     "90" would be appropriate. If you wanted a baggage car to be the first car in the passenger
+     train, a value of "10" would be a good value, cars in the middle of the train could use "50".
    </ul>
 
     <p>Dave Heap improved DecoderPro slider support:
@@ -114,8 +122,8 @@ These are development files, and might not be working at any particular time.
         but a percentage slider for indexedVal type. The percentage display was currently only used in QSI definitions.
     <li>Restored consistency so "hslider" displays a plain slider for all three variable types.
     <li>Created a new "hslider-percent" format (using existing code) for all three variable types.
-    <li>Updated QSI pane definitions where necessary to restore pre-patch behaviour.
-    <li>Note that the existing code for "hslider-percent" is a bit kludgy and customised specifically to accommodate some QSI features. 
+    <li>Updated QSI pane definitions where necessary to restore pre-patch behavior.
+    <li>Note that the existing code for "hslider-percent" is a bit kludgy and customized specifically to accommodate some QSI features. 
         Future development would be to replace with a new "hslider-custom" format giving better control of labels, 
         if a way could be devised of specifying a hashtable-type custom label list in programmer pane definitions.
     </ul>
