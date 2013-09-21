@@ -95,6 +95,15 @@ These are development files, and might not be working at any particular time.
 
 <h3>Changes since test release 3.5.3:</h3>
 
+   <p>Dan Boudreau made the following changes to operations:</p>
+   <ul>
+    <li>Trains can now make local moves at the last location in a train's route. You can
+     disable this feature by not allowing pickups at the last location in the train's route.</li>
+    <li>Fixed a problem where the program would redirect cars from the alternate track for a
+     train that didn't have access to the spur that specified the alternate track. Thanks to Joe
+     Mattick for bring this to our attention.</li>
+   </ul>
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
