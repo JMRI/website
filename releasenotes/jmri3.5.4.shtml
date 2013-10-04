@@ -102,6 +102,8 @@ These are development files, and might not be working at any particular time.
     <li>Fixed a problem where the program would redirect cars from the alternate track for a
      train that didn't have access to the spur that specified the alternate track. Thanks to Joe
      Mattick for bring this to our attention.</li>
+    <li>Fixed a couple of minor issues when building trains that had restrictions with regards
+     to local moves and cars traveling from origin to terminal.</li>
    </ul>
 
    <p>Oscar Moutinho added a new webThrottle app, based on JSON and web sockets</p>
