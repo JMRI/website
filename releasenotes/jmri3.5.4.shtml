@@ -117,6 +117,13 @@ These are development files, and might not be working at any particular time.
 
     <p>Fixed problem where black-on-black panel icons would not display properly.
 
+    <P>Robin Becker improved the TAM quad decoder definition
+    
+    <p>Dave Heap improved the DecoderPro operation: Sheet Read and Write operations were ignoring readOnly and writeOnly attributes if the CV value was Unknown.
+    The readOnly and writeOnly attributes are now always respected for all Sheet operations. 
+    Read Changes will still attempt to read Unknown values but Write Changes will not attempt to write Unknown values.
+    
+    
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
