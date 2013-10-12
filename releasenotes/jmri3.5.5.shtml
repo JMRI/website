@@ -3,12 +3,12 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 3.5.4
+ JMRI: Release Notes for 3.5.5
  
  </title>
     <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
     <meta content="Bob Jacobsen" name=Author>
-    <meta name="keywords" content="java model railroad JMRI 3.5.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 3.5.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
@@ -26,12 +26,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 3.5.4 release
+      Release Notes for JMRI 3.5.5 release
       </h2>
 
 	<p>Date: MMM DD, 2013</p>
 	<p>From: Bob Jacobsen</p>
-	<p>Subject: Test version 3.5.4 of JMRI/DecoderPro is available for download.</p>
+	<p>Subject: Test version 3.5.5 of JMRI/DecoderPro is available for download.</p>
  
 <br><b>This is a draft release note only; the download links do not yet work</b>
 
@@ -58,7 +58,7 @@ see our
 
 <h3>Older warnings</h3>
 
-<p>This release and all future releases will not support the NCE PowerHousePro serial interface running at 19,200 baud.</p>
+<p>This release and all future releases will not support the NCE PowerHouse Pro serial interface running at 19,200 baud.</p>
 
 <P>This release, and all other releases in this cycle, require Java 1.6 or newer.
 
@@ -82,59 +82,19 @@ None at the time of this release.
  -->
  
 
+<!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.5.4/ws/jmri/dist/release/">CI project page</a>.
+<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.3.6/ws/jmri/dist/release/">CI project page</a>.
+ -->
 
-<!--
 During development leading to the actual release, you can find test download files on the 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.
- -->
 
-<h3>Changes since test release 3.5.3:</h3>
 
-   <p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>Trains can now make local moves at the last location in a train's route. You can
-     disable this feature by not allowing pickups at the last location in the train's route.</li>
-    <li>Fixed a problem where the program would redirect cars from the alternate track for a
-     train that didn't have access to the spur that specified the alternate track. Thanks to Joe
-     Mattick for bring this to our attention.</li>
-    <li>Fixed a couple of minor issues when building trains that had restrictions with regards
-     to local moves and cars traveling from origin to terminal.</li>
-   </ul>
+<h3>Changes since test release 3.5.4:</h3>
 
-   <p>Oscar Moutinho added a new webThrottle app, based on JSON and web sockets</p>
-
-   <p>Steve Todd updated the web version of the Operations Manifest to work properly for in-route trains, and rearranged 
-   and added some items to the JMRI Web Server local home page.</p>
-   
-   <p>Matthew Harris updated the MS Windows launcher to check for an already running
-   instance of a JMRI application and to provide an option to continue or abort.
-   </p>
-
-    <p>Fixed problem where black-on-black panel icons would not display properly.
-
-    <P>Robin Becker improved the TAM quad decoder definition
-    
-    <p>Dave Heap improved the DecoderPro operation: Sheet Read and Write operations were ignoring readOnly and writeOnly attributes if the CV value was Unknown.
-    The readOnly and writeOnly attributes are now always respected for all Sheet operations. 
-    Read Changes will still attempt to read Unknown values but Write Changes will not attempt to write Unknown values.
-    
-    <p>Dave Heap added extra CVs, panes, workarounds for programmer issues and numerous fixes/improvements for ESU V4 files.
-    
-    <p>Alain Carasso improved the Mistral Gold decoder definition with "Other Sound Setting" (CV62)
-    
-    <p>Dave Heap improved the TCS WOW decoder definition.
-    
-    <p>Steve Lowens improved the Tsunami Rapido F9A definition.
-    
-    <p>Jeff Schmaltz added a decoder definition for the SoundTrax Piko decoder
-    
-    <p>Dispatcher - Added an AutoTerminate Option when creating new Trains - KD
-    <p>Layout Editor - Fix an NPE error when bring up a popup on a Turntable Ray - KD
-    <p>Layout Editor - Fix a bug with the linked connection point - KD
     
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
