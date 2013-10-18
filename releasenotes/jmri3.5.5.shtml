@@ -95,6 +95,18 @@ These are development files, and might not be working at any particular time.
 
 <h3>Changes since test release 3.5.4:</h3>
 
+<p>Changes to decoder programming and definition allow 
+specification of workarounds when a command station only handles a subset of CVs, and
+the decoder provides a way to access the full range locally.  Useful with ESU and Zimo
+decoders, but not all (close to none) of the decoder definitions have been updated to
+use this. 
+
+<p>NCE command station programmer updated to indicate when it can't access high-address
+CVs.
+
+<p>The OpenLCB lib was updated to the current version.  This includes
+several memory-read protocol fixes.
+
     
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
