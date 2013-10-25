@@ -104,10 +104,19 @@ use this.
 <p>NCE command station programmer updated to indicate when it can't access high-address
 CVs.
 
-<p>The OpenLCB lib was updated to the current version.  This includes
-several memory-read protocol fixes.
 
-    
+   <p>The OpenLCB lib was updated to the current version. This includes several memory-read
+    protocol fixes.
+   
+   <p>Dan Boudreau made the following changes to operations:</p>
+   <ul>
+    <li>Fixed an issue with train manifest times when the "same" location was used back to
+     back.</li>
+    <li>Made some improvements to the train build reports.</li>
+    <li>Made some minor improvements to the conductor and yard master windows.</li>
+   </ul>
+
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
