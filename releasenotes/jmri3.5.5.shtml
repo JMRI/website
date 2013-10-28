@@ -101,12 +101,14 @@ the decoder provides a way to access the full range locally.  Useful with ESU an
 decoders, but not all (close to none) of the decoder definitions have been updated to
 use this. 
 
-<p>NCE command station programmer updated to indicate when it can't access high-address
-CVs.
+<p>NCE command station programmer updated to indicate when it can't access high-address CVs.
 
+<p>Dave Heap added automatic display of CV numbers in DecoderPro tooltips.
+To see the CV address for a decoder parameter, hover your mouse over it.
+By default this is off (DecoderPro exists to hide this information, not show it),
+but you can turn in on with a preference under Roster, then Programmer.
 
-   <p>The OpenLCB lib was updated to the current version. This includes several memory-read
-    protocol fixes.
+<p>The OpenLCB lib was updated to the current version. This includes several memory-read protocol fixes.
    
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
@@ -115,6 +117,11 @@ CVs.
     <li>Made some improvements to the train build reports.</li>
     <li>Made some minor improvements to the conductor and yard master windows.</li>
    </ul>
+
+<p>
+david zuhn updated the Mac OS X launcher to handle different Java configurations,
+particularly when installing a clean version of Mac OS X.
+
 
 
    <!--#include virtual="/Footer" -->
