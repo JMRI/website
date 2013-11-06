@@ -103,12 +103,12 @@ use this.
 
 <p>NCE command station programmer updated to indicate when it can't access high-address CVs.
 
-<p>Dave Heap added automatic display of CV numbers in DecoderPro tooltips.
-To see the CV address for a decoder parameter, hover your mouse over it.
-By default this is off (DecoderPro exists to hide this information, not show it),
-but you can turn in on with a preference under Roster, then Programmer.
 
-
+   <p>Dave Heap added automatic display of CV numbers in DecoderPro tooltips. To see the CV
+    address for a decoder parameter, hover your mouse over it. By default this is off (DecoderPro
+    exists to hide this information, not show it), but you can turn in on with a preference under
+    Roster, then Programmer.
+   
    <p>The OpenLCB lib was updated to the current version. This includes several memory-read
     protocol fixes.
    
@@ -120,6 +120,11 @@ but you can turn in on with a preference under Roster, then Programmer.
      back.</li>
     <li>Made some improvements to the train build reports.</li>
     <li>Made some minor improvements to the conductor and yard master windows.</li>
+    <li>New manifest and switch list option, the ability to show the car's final destination
+     and track.</li>
+    <li>Fixed a problem when a spur has a schedule and "Planned Pick Ups".</li>
+    <li>Improved car movement when the train's route move count is used up or the train's length
+     is maxed out when building the train.</li>
    </ul>
 
    <p>
