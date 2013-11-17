@@ -127,6 +127,14 @@ use this.
      is maxed out when building the train.</li>
    </ul>
 
+	<p>Ken Cameron made the following changes:</p>
+	<ul>
+		<li>Fixed memory addressing issue in macro editor/backup/restore.
+			This bug was introduced prior to 3.4 when adding support for the updated
+			NCE USB for other functions. Currently Macro support via the NCE USB is a
+			work in progress.
+			</li>
+	</ul>
    <p>
 david zuhn updated the Mac OS X launcher to handle different Java configurations,
 particularly when installing a clean version of Mac OS X.
