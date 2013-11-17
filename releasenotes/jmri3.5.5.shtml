@@ -135,7 +135,8 @@ use this.
 			work in progress.
 			</li>
 	</ul>
-   <p>
+
+<p>
 david zuhn updated the Mac OS X launcher to handle different Java configurations,
 particularly when installing a clean version of Mac OS X.
 
@@ -144,6 +145,7 @@ Bjorn Kvisli and Pierre Billon created multiple Doehler and Haass decoder defini
 
 <p>
 Bjorn Kvisli added decoder definitions for the Arnold N scale decoders.
+
 <p>
 Peter Ulvestad added a decoder definition for the MRC 1952,
 improved the definition for the MRC 1957, added the 1922 and 1916.
@@ -152,7 +154,12 @@ improved the definition for the MRC 1957, added the 1922 and 1916.
 Suzie Tall fixed some cross-references that were preventing the CROR-2008 
 and InfraBel signals from displaying properly.
 
+<p>
+Dick Bronson provided additional UTCS track segment icons.
 
+<p>
+The timestamp on messages in the console output was changed to default to
+a real timestamp like "2013-11-17 15:16:07,486" in local time.
 
 
    <!--#include virtual="/Footer" -->
