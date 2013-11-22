@@ -99,6 +99,10 @@ These are development files, and might not be working at any particular time.
 
 <p>Steve Todd fixed a problem with starting the LocoNetOverTcp server when running the JMRI faceless app.
 
+<p>Suzie Tall created a new signal head type "Triple Output RGB". 
+It is based on the existing triple output class and takes the same input as the quad output. 
+The three outputs drive the red, green and blue inputs of a RGB searchlight head 
+to give Red, Green, Yellow and Lunar indications both steady and flashing as well as dark. 
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
