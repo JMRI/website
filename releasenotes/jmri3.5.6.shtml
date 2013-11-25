@@ -97,12 +97,26 @@ These are development files, and might not be working at any particular time.
 
 <h3>Changes since test release 3.5.5:</h3>
 
-<p>Steve Todd fixed a problem with starting the LocoNetOverTcp server when running the JMRI faceless app.
-
-<p>Suzie Tall created a new signal head type "Triple Output RGB". 
-It is based on the existing triple output class and takes the same input as the quad output. 
-The three outputs drive the red, green and blue inputs of a RGB searchlight head 
-to give Red, Green, Yellow and Lunar indications both steady and flashing as well as dark. 
+   <p>Steve Todd fixed a problem with starting the LocoNetOverTcp server when running the JMRI
+    faceless app.
+   
+   <p>Suzie Tall created a new signal head type "Triple Output RGB". It is based on the existing
+    triple output class and takes the same input as the quad output. The three outputs drive the
+    red, green and blue inputs of a RGB searchlight head to give Red, Green, Yellow and Lunar
+    indications both steady and flashing as well as dark.
+   
+   <p>Dan Boudreau made the following changes to operations:</p>
+   <ul>
+    <li>New feature for folks using schedules to route cars. On a per train basis, you can ask
+     the program to pull cars with a final destination where the train being built doesn't provide
+     the most efficient route for the car. Useful if you want to the train being built to move cars
+     "closer" to their final destination, even if other trains could do it more efficiently. This
+     option does two things, it will add cars to the train being built that wouldn't normally travel
+     on the train, thus freeing up track space. And second creates more work for your operators as this
+     option can and will increase the number of trains needed to move the car to its final
+     destination. See under Tools->Train Build Options from the Train Edit window, select "Service
+     all cars with a final destination" if you want your train to carry more cars.</li>
+   </ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
