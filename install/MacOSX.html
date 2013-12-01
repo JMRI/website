@@ -130,53 +130,20 @@
         
         <li>Remove any old serial communications libraries</li>
 
-	<p>If you are installing JMRI for the first time, please skip
-	to the next numbered step.</p>
+        <p>If you are installing JMRI for the first time, please skip
+        to the next numbered step.</p>
 
-	<p>Versions of JMRI before 2.9.2 required that you install
-     communications libraries on your computer.  
-     If you had JMRI 2.9.2 or earlier installed and are now
-     updating to a more recent version for the first time, 
-	 you need to remove the communications library files that were 
-     installed earlier.  
-     You only need to do this once.
-     To do this, locate and delete these files:<br><br>
+        <p>Versions of JMRI before 2.9.2 required that you install
+         communications libraries on your computer.  
+         If you had JMRI 2.9.2 or earlier installed and are now
+         updating to a more recent version for the first time, 
+         you need to remove the communications library files that were 
+         installed earlier.  
+         You only need to do this once.
+         To do this, follow the
+         instructions on <a href="MacOSXrmLibs.shtml">this separate page</a>,
+         then return here to complete your JMRI installation.
 
-	 <tt>/Library/Java/Extensions/RXTXcomm.jar</tt><br>
-         <tt>/Library/Java/Extensions/comm.jar</tt><br>
-         <tt>/Library/Java/Extensions/librxtxSerial.jnilib</tt><br>
-         <tt>/System/Library/Frameworks/JavaVM.framework/Versions/1.4/Home/lib/javax.comm.properties</tt><br>
-         <tt>/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/lib/javax.comm.properties</tt><br>
-	
-	<p>Using the Finder, the sequence is:
-	    <ul>
-	       <li>Click on the icon for your computer's hard disk
-	       <li>Click on the "Library" icon
-	       <li>Click on the "Java" icon
-	       <li>Click on the "Extensions" icon
-	       <li>If there's an <tt>RXTXcomm.jar</tt>, <tt>comm.jar</tt>, or <tt>librxtxSerial.jnilib</tt>
-		  file, drag it to the Trash.
-	    </ul>
-
-	    <br>and<br>
-
-	    <ul>
-		<li>Click on the icon for your computer's hard disk
-		<li>Click on the "System" icon
-		<li>Click on the "Library" icon
-		<li>Click on the "Frameworks" icon
-		<li>Click on the "JavaVM.framework" icon
-		<li>Click on the "Versions" icon
-		<li>Click on the "1.4" icon
-		<li>Click on the "Home" icon
-		<li>Click on the "lib" icon
-		<li>If there's a <tt>javax.comm.properties</tt> file, drag it to the Trash.
-	    </ul>
-
-	    <br>then just repeat that last sequence with "CurrentJDK" in place of "1.4".</p>
-
-	    <p>If one of those files or directories isn't present, just skip the step.</p>
-    
        <li>Get the JMRI software...</li>
 
         <p><a href="../download/index.shtml#prod-rel">Download</a> a
