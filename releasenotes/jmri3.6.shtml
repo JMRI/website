@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- $Id: jmri2.13.1.shtml,v 1.2 2011-07-13 20:25:41 dan_boudreau Exp $ -->
+<html lang="en">
+<head>
+ <title>
+ JMRI: Release Notes for 3.6
+ 
+ </title>
+    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+    <meta content="Bob Jacobsen" name=Author>
+    <meta name="keywords" content="java model railroad JMRI 3.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+
+<!-- Style -->
+  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+  <link rel="icon" href="/images/jmri.ico" type="image/png">
+  <link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
+
+<body>
+  
+<!--#include virtual="/Header" -->
+
+  <div class="nomenu" id="mBody">
+    <div id="mainContent">
+      <h2>
+      Release Notes for JMRI 3.6 release
+      </h2>
+
+	<p>Date: July 8, 2013</p>
+	<p>From: Bob Jacobsen</p>
+	<p>Subject: Production version 3.4 of JMRI/DecoderPro is available for download.</p>
+ 
+
+<br><b>This is a draft release note only; the download links do not yet work</b>
+
+We are very pleased to announce that the 3.5 series of JMRI test releases has resulted in a
+version that's good enough to be recommended for general use, including by new users.
+We're therefore making that version, "Production version 3.6" available for download today.
+
+<h3>Notes:</h3>
+
+<p><b>
+JMRI is now only available under the 
+<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+see our 
+<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<h3>New warnings for this version:</h3>
+
+This release requires Java 1.6 or later.
+<p>
+This release no longer supports the Digitrax MS100 on any computer.  If you have an MS100 working
+with an earlier release, please stay with that release. You should plan on updating
+to a better LocoNet interface before updating to this or any later release.
+
+<p>For users of JMRI on Microsoft Windows, the installer will now request
+Administrator permissions if the user running the installation is not a member
+of the administrators group. Users of Windows Vista or later may receive a
+UAC (User Account Control) pop-up message when installing.</p>
+
+<p>The TCS decoder definitions have been extensively reworked.  
+You'll notice that they list different families and the models are 
+organized differently.  This is to make the automatic identification 
+work much better.  Please let us know if you encounter any problems with this.
+
+<p>This release and all future releases will not support the NCE serial interface running at 19,200 baud. Use the default 9,600 baud instead.</p>
+
+<p>The decoder definition files have been extensively reworked for this release series
+to reduce their size and allow  them to be translated to other languages.
+Please keep an eye out for any inadvertent changes to the definitions 
+that might have been introduced.</p>
+
+<h3>Known problems with this release</h3>
+
+<p>None at present</p>
+
+<h3>Download links:</h3>
+
+<p>Please use these links for downloading:</p>
+<p>Mac OS X: <A
+	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r23744.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r23744.dmg/download</a></p>
+
+<p>Windows: <A
+	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r23744.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r23744.exe/download</a></p>
+
+<p>Linux: <A
+	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r23744.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r23744.tgz/download</a></p>
+ 
+
+<h3>Changes since production release 3.4</h3>
+
+
+  
+   <!--#include virtual="/Footer" -->
+  </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</body>
+</html>
