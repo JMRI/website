@@ -92,7 +92,7 @@ that might have been introduced.</p>
 
 <h3>Changes since production release 3.4</h3>
 
-   <p>Dan Boudreau made the following changes to operations:</p>
+   <p>Dan Boudreau made the following enhancements to operations:</p>
    <ul>
     <li>New two column format for car pick ups and set outs. Go to the Manifest Print Options,
      and under Message Format, select "Two Column" if you want your manifest and switch lists to use
@@ -103,25 +103,89 @@ that might have been introduced.</p>
     <li>Now when you modify the train manifest using the "Manifest Print Options" window, the
      train manifests are immediately changed for trains that are built but haven't departed the
      first location in their route.</li>
+    <li>The Yardmaster window now has a "Next" button which allows the window to be used with
+     the JMRI web server. The drop down menus unfortunately don't work when using a browser to
+     access the windows remotely.</li>
+    <li>Trains can now make local moves at the last location in a train's route. You can
+     disable this feature by not allowing pickups at the last location in the train's route.</li>
+    <li>New feature, you can now control the order passenger cars are shown on your manifests
+     and switch lists. In the edit car window, a new field called "Passenger Car Blocking Order"
+     will appear when you select the "Passenger" check box in the "Type" field. The text box allows
+     you to enter numbers between 0 and 100. Lower numbers will place the car near the front of the
+     train, and higher numbers towards the rear. Recommend that you start off using numbers
+     divisible by 10. For example, you might what to place an observation car at the end of the
+     train, a value of "90" would be appropriate. If you wanted a baggage car to be the first car in
+     the passenger train, a value of "10" would be a good value, cars in the middle of the train
+     could use "50".
+    <li>New feature, the ability to copy any track to a location. See under the Edit Location,
+     Tools, "Copy Track".</li>
+    <li>New manifest and switch list option, the ability to show the car's final destination
+     and track.</li>
+    <li>New feature for folks using schedules to route cars. On a per train basis, you can ask
+     the program to pull cars with a final destination where the train being built doesn't provide
+     the most efficient route for the car. Useful if you want to the train being built to move cars
+     "closer" to their final destination, even if other trains could do it more efficiently. This
+     option does two things, it will add cars to the train being built that wouldn't normally travel
+     on the train, thus freeing up track space. And second creates more work for your operators as
+     this option can and will increase the number of trains needed to move the car to its final
+     destination. See under Tools->Train Build Options from the Train Edit window, select "Service
+     all cars with a final destination" if you want your train to carry more cars.</li>
+    <li>Updated the "Show cars types serviced" tool for a train. The window now shows any track
+     destination restrictions for a selected car.</li>
+    <li>Fixed an issue with train manifest times when the "same" location was used back to
+     back.</li>
+    <li>Fixed a problem where the program would redirect cars from the alternate track for a
+     train that didn't have access to the spur that specified the alternate track. Thanks to Joe
+     Mattick for bring this to our attention.</li>
+    <li>Fixed a problem when a spur has a schedule and "Planned Pick Ups".</li>
+    <li>Improved car movement when the train's route move count is used up or the train's
+     length is maxed out when building the train.</li>
+    <li>Fixed the "Exclude" option in the Destination window for classification/interchange
+     tracks.</li>
+    <li>Fixed the "All Trains" feature when using consolidation mode in switch lists.</li>
+    <li>Fixed the "Return when Empty" when a car entered staging with a custom load, and the
+     remove custom loads option was enabled.</li>
+    <li>Fixed a problem with the train manifest showing the wrong number of utility cars for
+     pick ups and set outs. Thanks to Joe Mattick and Clay Smith for bring this to our attention.
+    <li>Fixed a couple of minor issues when building trains that had restrictions with regards
+     to local moves and cars traveling from origin to terminal.</li>
+    <li>Improved the page layout (line wrap) for manifests and switch lists when using variable
+     width fonts like sansSerif.</li>
     <li>Improved text line wrapping for comments in the Conductor and Yardmaster windows.</li>
+    <li>Improved the Conductor and Yardmaster window layouts.</li>
    </ul>
 
+   <p>Kevin Dickerson made the following changes:</p>
+
    <ul>
-      <li>SignalMasts - Improved support for SignalMast unlit for DCC/LNCP & Turnout based masts - KD</li>
-      <li>SignalMasts - Log a warning to the console rather than throwing an error when trying to set an aspect that has not been configured - KD</li>
-      <li>SignalMasts - Corrected the way in which a unlit/lit signal mast icon is displayed on a panel - KD</li>
-      <li>SignalMasts - Add an option to allow a default DCC accessory aspect ID to be recorded against a given aspect in a signalling system - KD</li>
-      <li>SignalMast Logic/Entry Exit - Consider the state of a crossing block on a Level Crossing - KD</li>
-      <li>SignalMast Logic/Entry Exit - Handle layout editor crossovers where there are two physical turnouts that need to be set/check rather than the primary turnout.- KD</li>
-      <li>Entry Exit - Update the Stack window to use a JDialog rather than a JFrame - KD</li>
-      <li>Editors - Fix an issue where a rotated icon based sensor icon is changed to a text based icon fails as no text values were set. - KD</li>
-      <li>Editors - Change the loading of sensor icons, so that the text details are loaded before the sensor is set, so that when the panel is loaded the sensor icon is displayed correctly when first displayed. - KD</li>
-      <li>Layout Editor - Change the block edit so that it is now possible to access all of the properties of the block, and not just those items that specifically relate to a layout block. - KD</li>
-      <li>Layout Editor - Added in an Edge Connector to allow blocks to be connected over multiple panels to form a single logical view.</li>
-      <li>Blocks - Remove the dependency for a block to have a valid sensor to move an object about, but use the occupancy state of the neighbouring blocks instead. - KD</li>
-     </ul> 
-     
-    <p>Suzie Tall provided support for three new signal systems:
+    <li>SignalMasts - Improved support for SignalMast unlit for DCC/LNCP & Turnout based masts
+     - KD</li>
+    <li>SignalMasts - Log a warning to the console rather than throwing an error when trying to
+     set an aspect that has not been configured - KD</li>
+    <li>SignalMasts - Corrected the way in which a unlit/lit signal mast icon is displayed on a
+     panel - KD</li>
+    <li>SignalMasts - Add an option to allow a default DCC accessory aspect ID to be recorded
+     against a given aspect in a signalling system - KD</li>
+    <li>SignalMast Logic/Entry Exit - Consider the state of a crossing block on a Level
+     Crossing - KD</li>
+    <li>SignalMast Logic/Entry Exit - Handle layout editor crossovers where there are two
+     physical turnouts that need to be set/check rather than the primary turnout.- KD</li>
+    <li>Entry Exit - Update the Stack window to use a JDialog rather than a JFrame - KD</li>
+    <li>Editors - Fix an issue where a rotated icon based sensor icon is changed to a text
+     based icon fails as no text values were set. - KD</li>
+    <li>Editors - Change the loading of sensor icons, so that the text details are loaded
+     before the sensor is set, so that when the panel is loaded the sensor icon is displayed
+     correctly when first displayed. - KD</li>
+    <li>Layout Editor - Change the block edit so that it is now possible to access all of the
+     properties of the block, and not just those items that specifically relate to a layout block. -
+     KD</li>
+    <li>Layout Editor - Added in an Edge Connector to allow blocks to be connected over
+     multiple panels to form a single logical view.</li>
+    <li>Blocks - Remove the dependency for a block to have a valid sensor to move an object
+     about, but use the occupancy state of the neighbouring blocks instead. - KD</li>
+   </ul>
+
+   <p>Suzie Tall provided support for three new signal systems:
         <a href="http://jmri.org/xml/signals/CROR-2008/index.shtml">CROR-2008</a> from Transport Canada,
         <a href="http://jmri.org/xml/signals/InfraBel-2013/index.shtml">InfraBel-2013</a> from Belgium and
         <a href="http://jmri.org/xml/signals/ProRail-1954/index.shtml">ProRail-1954</a> from the Netherlands.
@@ -138,9 +202,6 @@ that might have been introduced.</p>
     <p>Paul Bender Added base support for IEEE 802.15.4 messages.  All this does at this point is allows sending and receiving of raw IEEE 802.15.4 messages from a serial port connection.  This configuration was tested using an XBee in API mode connected to the computer via a SparkFun Electronics XBee Explorer USB device.  Other devices supporting the IEEE 802.15.4 protocol should work as well, but have not been tested.  This code should be considered experimental.  There are likely bugs.<p> 
 
     <p> Michael Mosher updated the TCS WOW decoder definition.
-    
-
-
 
    <p>Matthew Harris:</p>
    <ul>
@@ -156,21 +217,6 @@ that might have been introduced.</p>
    </ul>
    
    <P>The CV table in DecoderPro is now sortable and by default appears in order by number.
-   
-      <p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>The Yardmaster window now has a "Next" button which allows the window to be used with
-     the JMRI web server. The drop down menus unfortunately don't work when using a browser to
-     access the windows remotely.</li>
-    <li>Improved the Conductor and Yardmaster window layouts.</li>
-    <li>Fixed the "Exclude" option in the Destination window for classification/interchange
-     tracks.</li>
-    <li>Fixed the "All Trains" feature when using consolidation mode in switch lists.</li>
-    <li>Fixed the "Return when Empty" when a car entered staging with a custom load, and the
-     remove custom loads option was enabled.</li>
-    <li>Fixed a problem with the train manifest showing the wrong number of utility cars for
-     pick ups and set outs. Thanks to Joe Mattick and Clay Smith for bring this to our attention.
-   </ul>
 
    <p>Ken Cameron made the following changes:</p>
    <ul>
@@ -202,20 +248,6 @@ that might have been introduced.</p>
    <p>Dave Heap updated help files
    
    <p>Walter Thompson fixed links in the help files
-   
-   <p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>Improved the page layout (line wrap) for manifests and switch lists when using variable
-     width fonts like sansSerif.</li>
-    <li>New feature, you can now control the order passenger cars are shown on your manifests
-     and switch lists. In the edit car window, a new field called "Passenger Car Blocking Order"
-     will appear when you select the "Passenger" check box in the "Type" field. The text box allows
-     you to enter numbers between 0 and 100. Lower numbers will place the car near the front of the
-     train, and higher numbers towards the rear. Recommend that you start off using numbers divisible by 10.
-     For example, you might what to place an observation car at the end of the train, a value of
-     "90" would be appropriate. If you wanted a baggage car to be the first car in the passenger
-     train, a value of "10" would be a good value, cars in the middle of the train could use "50".
-   </ul>
 
     <p>Dave Heap improved DecoderPro slider support:
     <ul>
@@ -234,20 +266,6 @@ that might have been introduced.</p>
     <p>Dave Heap added ESU V4/Select fixes, additions, new panes.
     
     <p>Jeff Schmaltz added a decoder definition for the Massoth pulsed smoke unit.
-
-
-
-
-   <p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>Trains can now make local moves at the last location in a train's route. You can
-     disable this feature by not allowing pickups at the last location in the train's route.</li>
-    <li>Fixed a problem where the program would redirect cars from the alternate track for a
-     train that didn't have access to the spur that specified the alternate track. Thanks to Joe
-     Mattick for bring this to our attention.</li>
-    <li>Fixed a couple of minor issues when building trains that had restrictions with regards
-     to local moves and cars traveling from origin to terminal.</li>
-   </ul>
 
    <p>Oscar Moutinho added a new webThrottle app, based on JSON and web sockets</p>
 
@@ -297,21 +315,6 @@ use this.
    
    <p>The OpenLCB lib was updated to the current version. This includes several memory-read
     protocol fixes.
-   
-   <p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>New feature, the ability to copy any track to a location. See under the Edit Location,
-     Tools, "Copy Track".</li>
-    <li>Fixed an issue with train manifest times when the "same" location was used back to
-     back.</li>
-    <li>Made some improvements to the train build reports.</li>
-    <li>Made some minor improvements to the conductor and yard master windows.</li>
-    <li>New manifest and switch list option, the ability to show the car's final destination
-     and track.</li>
-    <li>Fixed a problem when a spur has a schedule and "Planned Pick Ups".</li>
-    <li>Improved car movement when the train's route move count is used up or the train's length
-     is maxed out when building the train.</li>
-   </ul>
 
 	<p>Ken Cameron made the following changes:</p>
 	<ul>
@@ -357,21 +360,6 @@ a real timestamp like "2013-11-17 15:16:07,486" in local time.
     triple output class and takes the same input as the quad output. The three outputs drive the
     red, green and blue inputs of a RGB searchlight head to give Red, Green, Yellow and Lunar
     indications both steady and flashing as well as dark.
-   
-   <p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>New feature for folks using schedules to route cars. On a per train basis, you can ask
-     the program to pull cars with a final destination where the train being built doesn't provide
-     the most efficient route for the car. Useful if you want to the train being built to move cars
-     "closer" to their final destination, even if other trains could do it more efficiently. This
-     option does two things, it will add cars to the train being built that wouldn't normally travel
-     on the train, thus freeing up track space. And second creates more work for your operators as this
-     option can and will increase the number of trains needed to move the car to its final
-     destination. See under Tools->Train Build Options from the Train Edit window, select "Service
-     all cars with a final destination" if you want your train to carry more cars.</li>
-     <li>Updated the "Show cars types serviced" tool for a train.  The window now shows any track
-     destination restrictions for a selected car.</li>
-   </ul>
 
     <p>Dave Heap improved the tooltips for lots and lots of decoder definitions to make them more consistent
     
@@ -379,16 +367,9 @@ a real timestamp like "2013-11-17 15:16:07,486" in local time.
     
     <P>A bug in SRCP support was fixed.  It preventing storing panel files with
     certain kinds of SRCP information present.
-    
-
-   <p>Dan Bourdeau fixed a typo in operations
    
    <p>Dan Boudreau fixed a problem that was preventing people from printing just
     certain pages or page ranges.
-
-
-
-
 
   
    <!--#include virtual="/Footer" -->
