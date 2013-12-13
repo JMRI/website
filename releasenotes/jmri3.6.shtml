@@ -68,6 +68,8 @@ work much better.  Please let us know if you encounter any problems with this.
 
 <p>This release and all future releases will not support the NCE serial interface running at 19,200 baud. Use the default 9,600 baud instead.</p>
 
+<p>This release blocks Programming Track CV writes &gt; 256 with NCE Power Pro, due to a firmware issue. Current workaround is to use Programming on Main. It is planned to incorporate Programming Track workarounds for some decoder types in a future release.</p>
+
 <p>The decoder definition files have been extensively reworked for this release series
 to reduce their size and allow  them to be translated to other languages.
 Please keep an eye out for any inadvertent changes to the definitions 
@@ -226,7 +228,7 @@ that might have been introduced.</p>
 	<li>Fixed wrong properties name in USB Interface panel.</li>
    </ul>
    
-   <p>David Heap improved the NCE Monitor.
+   <p>Dave Heap improved the NCE Monitor.
    <p>John Lang provided a <a href="http://jmri.org/xml/signals/NYC-1956/index.shtml">signal definition for the New York Central on October 28, 1956</a>.
 
     <p>Suzie Tall updated the <a href="http://jmri.org/xml/signals/ProRail-1954/index.shtml">ProRail 1954</a>
