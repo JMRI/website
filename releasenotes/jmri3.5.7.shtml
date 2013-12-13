@@ -97,11 +97,12 @@ These are development files, and might not be working at any particular time.
  
 
 <h3>Changes since test release 3.5.6:</h3>
-
-   <p>Dan Bourdeau fixed a typo in operations
    
    <p>Dan Boudreau fixed a problem that was preventing people from printing just
-    certain pages or page ranges.
+    certain pages or page ranges.</p>
+    
+   <p>Dan Boudreau fixed a problem with the track table columns for loads and roads.  The table is displayed when editing a location,
+   and now you can quickly see if a track has a car road, load, or destination restriction.</p>
         
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
