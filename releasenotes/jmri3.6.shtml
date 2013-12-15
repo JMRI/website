@@ -81,6 +81,7 @@ that might have been introduced.</p>
 
 <h3>Download links:</h3>
 
+<!-- 
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
 	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r23744.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r23744.dmg/download</a></p>
@@ -91,6 +92,13 @@ that might have been introduced.</p>
 <p>Linux: <A
 	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r23744.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r23744.tgz/download</a></p>
  
+ -->
+
+
+Preliminary build files (not the final released files) can be found
+on the
+<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.6/ws/jmri/dist/release/">CI project page</a>.
+
 
 <h3>Changes since production release 3.4</h3>
 
@@ -282,7 +290,8 @@ that might have been introduced.</p>
 
     <P>Robin Becker improved the TAM quad decoder definition
     
-    <p>Dave Heap improved the DecoderPro operation: Sheet Read and Write operations were ignoring readOnly and writeOnly attributes if the CV value was Unknown.
+    <p>Dave Heap improved the DecoderPro operation: 
+    Sheet Read and Write operations were ignoring readOnly and writeOnly attributes if the CV value was Unknown.
     The readOnly and writeOnly attributes are now always respected for all Sheet operations. 
     Read Changes will still attempt to read Unknown values but Write Changes will not attempt to write Unknown values.
     
@@ -351,8 +360,6 @@ Dick Bronson provided additional UTCS track segment icons.
 <p>
 The timestamp on messages in the console output was changed to default to
 a real timestamp like "2013-11-17 15:16:07,486" in local time.
-
-
 
 
    <p>Steve Todd fixed a problem with starting the LocoNetOverTcp server when running the JMRI
