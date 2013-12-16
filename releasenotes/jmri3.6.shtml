@@ -236,9 +236,14 @@ on the
    	<li>Added code to prevent bad programming track writing to CV's greater than 255 which are not supported
    		by the PowerHouse command station. Using the ops mode works as well as the PowerCab with the whole 1024 range.
 	</li>
-	<li>Fixed wrong properties name in USB Interface panel.</li>
+	<li>Fixed wrong properties name in NCE USB Interface panel.</li>
+	<li>Fixed memory addressing issue in NCE macro editor/backup/restore.
+		This bug was introduced prior to 3.4 when adding support for the updated
+		NCE USB for other functions. Currently Macro support via the NCE USB is a
+		work in progress.
+	</li>
    </ul>
-   
+      
    <p>Dave Heap improved the NCE Monitor.
    <p>John Lang provided a <a href="http://jmri.org/xml/signals/NYC-1956/index.shtml">signal definition for the New York Central on October 28, 1956</a>.
 
@@ -325,15 +330,6 @@ use this.
    
    <p>The OpenLCB lib was updated to the current version. This includes several memory-read
     protocol fixes.
-
-	<p>Ken Cameron made the following changes:</p>
-	<ul>
-		<li>Fixed memory addressing issue in macro editor/backup/restore.
-			This bug was introduced prior to 3.4 when adding support for the updated
-			NCE USB for other functions. Currently Macro support via the NCE USB is a
-			work in progress.
-			</li>
-	</ul>
 
 <p>
 david zuhn updated the Mac OS X launcher to handle different Java configurations,
