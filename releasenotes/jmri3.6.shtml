@@ -213,13 +213,16 @@ on the
 
     <p> Michael Mosher updated the TCS WOW decoder definition.
 
-   <p>Matthew Harris:</p>
+   <p>Matthew Harris made the following changes:</p>
    <ul>
    <li>Updated the InstallTest batch file to pause before exiting
       in certain situations on 64-bit versions of Windows.</li>
    <li>Update logging behaviour to create individual per-session 
        log files (session.log) and to collate several session log
        files into messages.log</li>
+   <li>Updated the MS Windows launcher to check for an already running
+       instance of a JMRI application and to provide an option to
+       continue or abort.</li>
    </ul>
    
    <ul>
@@ -282,10 +285,6 @@ on the
    <p>Steve Todd updated the web version of the Operations Manifest to work properly for in-route trains, and rearranged 
    and added some items to the JMRI Web Server local home page.</p>
    
-   <p>Matthew Harris updated the MS Windows launcher to check for an already running
-   instance of a JMRI application and to provide an option to continue or abort.
-   </p>
-
     <p>Fixed problem where black-on-black panel icons would not display properly.
 
     <P>Robin Becker improved the TAM quad decoder definition
