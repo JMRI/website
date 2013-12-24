@@ -114,6 +114,10 @@ RailDriver.py,
 RocoCrane46902.py, 
 Zimo_pseudo_programmer.py
 
+<p>Added sample scripts:<ul>
+<LI><a a href="http://jmri.org/jython/SensorToTurnout.py">jython/SensorToTurnout.py</a>: takes Sensor inputs from an external system and maps them to Internal turnouts
+<LI><a a href="http://jmri.org/jython/SignalHeadFromSensors.py ">jython/SignalHeadFromSensors.py</a>: takes Sensor inputs from e.g. an external signal system and drives SignalHead objects
+</ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
