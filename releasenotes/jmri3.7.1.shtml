@@ -119,7 +119,30 @@ Zimo_pseudo_programmer.py
 <LI><a a href="http://jmri.org/jython/SignalHeadFromSensors.py ">jython/SignalHeadFromSensors.py</a>: takes Sensor inputs from e.g. an external signal system and drives SignalHead objects
 </ul>
 
-   <!--#include virtual="/Footer" -->
+   <p>Dan Boudreau made the following chnages to operations:</p>
+   <ul>
+    <li>The data in operations files has changed with this release. Previously the files
+     contained backward compatibility elements so that you could load a file created with the latest
+     release and read it back using one of the very early releases of operations. Now the backward
+     compatibility is limited to releases 3.4 and 3.6. In any case, you can always upgrade to a newer release
+     of operations, it is only the ability to go back to an older version of the program using the
+     latest data files that has been changed.</li>
+    <li>New feature, you can now let the program create your locomotive consists for you. See <a
+     a
+     href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml#TrainBuildOptions">Train
+      Build Options</a> "Build loco consist from single locos if needed" for more details. The program
+     when building the consist can adjust the number of locos based on Horsepower per Ton (HPT) and
+     the route's grades.
+    <li>New feature, you can now adjust all of your train departure times by a selected number
+     of hours. See under "Tools" in the "Trains" window "Change Train Departure Times".</li>
+     <li>The train edit window now shows if there are road or load restrictions for the train.</li>
+    <li>Fixed a bug in track copy where the car types serviced weren't copied to the new track.</li>
+    <li>Fixed a bug in train copy where the train build options weren't copied to the new
+     train.</li>
+   </ul>
+
+
+    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
