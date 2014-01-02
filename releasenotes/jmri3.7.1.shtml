@@ -141,6 +141,12 @@ Zimo_pseudo_programmer.py
      train.</li>
    </ul>
 
+<P>Allow Turnout icons to be "momentary".  (Sensor icons could already do this)
+
+<p>Dave Heap improved the handling of DCC addresses.  The decoder terminology has been 
+standardized.  There's more checking of values, to prevent erroneous behavior when an
+out-of-range value is entered.
+
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
