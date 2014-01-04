@@ -127,6 +127,23 @@ Zimo_pseudo_programmer.py
      compatibility is limited to releases 3.4 and 3.6. In any case, you can always upgrade to a
      newer release of operations, it is only the ability to go back to an older version of the
      program using the latest data files that has changed.</li>
+    <li>The lists that operations provides for scripts has changed significantly. Instead of
+     lists containing ids of the objects, the actual object is now passed in the list. For example a list
+     of cars in operations was a list of car ids, and not the cars themselves. If you use
+     scripts you will need to edit your scripts. Here's the changes you need to do for cars:
+     <P>In each of your script files, search for "carId". You should find something like this:
+     <P>for carId in carList: 
+     <br>car = cm.getById(carId)
+     <P>Change the first line to:
+     <br>for car in carList:
+     <P>And delete the line that has "car = cm.getById(carId)".
+     <P>For scripts that deal with trains, search for "trainId". You should find something like this:
+     <P>for trainId in tList:
+     <br>train = self.tm.getTrainById(trainId)
+     <P>Change the first line to:
+     <br>for train in tList:
+     <P>And delete the line that has "train = self.tm.getTrainById(trainId)".
+     <P>
     <li>New feature, you can now let the program create your locomotive consists for you. See <a
      href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml#TrainBuildOptions">Train
       Build Options</a> "Build loco consist from single locos if needed" for more details. The program
@@ -141,7 +158,7 @@ Zimo_pseudo_programmer.py
      train.</li>
    </ul>
 
-<P>Allow Turnout icons to be "momentary".  (Sensor icons could already do this)
+   <P>Allow Turnout icons to be "momentary".  (Sensor icons could already do this)
 
 <p>Dave Heap improved the handling of DCC addresses.  The decoder terminology has been 
 standardized.  There's more checking of values, to prevent erroneous behavior when an
