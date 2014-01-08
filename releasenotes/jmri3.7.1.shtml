@@ -170,6 +170,28 @@ out-of-range value is entered.
 
 <p>Paul Bender added mDNS support to the Lenz LIUSBEthernet adapter.</p>
 
+<p>Suzie Tall updated the BN 1989 signal definitions. Changes include:
+<ol>
+<li> Additional panel icons to support the new signal mast definitions.
+<li> A modified icon which was stopping the original 2-head mast from being added to a panel.
+<li> Twelve new signal mast definitions.
+<li> An updated index.shtml with a bit more information, reference to BN source and links to the new masts.
+<li> An updated aspects.xml with the addition of an unlit appearance and corrections to the appearance definitions.
+</ol>
+
+<p>Suzie Tall contributed a new signal system definition for the LMS speed signalling that was installed in parts of the UK in 1932 and continued in use until 1988. 
+The definition is as complete as is possible from the available documentation and covers all variations over the entire period of operation.
+
+<P>Pierre Billon contributed four additional TAMS decoder definitions, and more translation to French and German.
+
+<p>Peter Ulvestad contributed new decoder definitions for MRC 1641,1642, 1659 and 1664 N scale motor control only decoders.
+
+<p>John Lang updated the NTC 1956 signal files.
+
+<p>Dave Heap improved the ESU V4/Select function mapping pane
+
+<p>Dave Heap improved handling of long addresses in NCE consists
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
