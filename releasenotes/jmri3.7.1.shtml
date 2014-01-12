@@ -56,9 +56,11 @@ see our
 
 <h3>New warnings for this version:</h3>
 
-<h3>Older warnings</h3>
+<p>The internals for handling CV read and write addressing have been extensively 
+reworked.  The change should be transparent (invisible) to users. If you do notice anything 
+problems involving CV reading, writing, storage or anything else, please let us know.
 
-<p>This release and all future releases will not support the NCE PowerHouse Pro serial interface running at 19,200 baud.</p>
+<h3>Older warnings</h3>
 
 <P>This release, and all other releases in this cycle, require Java 1.6 or newer.
 
@@ -193,6 +195,13 @@ The definition is as complete as is possible from the available documentation an
 <p>Dave Heap improved handling of long addresses in NCE consists
 
 <p>Enzo Fortuna added additional Italian translation terms, and fixed a couple of existing ones.
+
+<p>Suzie Talk added a new <a href="http://jmri.org/xml/signals/BNSF-1996/index.xml">BNSF-1996 signal system</a>.
+
+<p>The internals for handling CV read and write addressing have been extensively 
+reworked.  The change should be transparent (invisible) to users. If you do notice anything 
+problems involving CV reading, writing, storage or anything else, please let us know.
+
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
