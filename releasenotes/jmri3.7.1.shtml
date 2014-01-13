@@ -58,7 +58,15 @@ see our
 
 <p>The internals for handling CV read and write addressing have been extensively 
 reworked.  The change should be transparent (invisible) to users. If you do notice anything 
-problems involving CV reading, writing, storage or anything else, please let us know.
+problems involving CV reading, writing, storage or anything else, please let us know.</p>
+
+<p>The configuration structure for JMRI is changing to use <em>Configuration
+Profiles</em>. Configuration Profiles allow a single JMRI application to have
+multiple, user selectable, configurations that can be changed as application
+startup. For some users, this change will have no impact; other users will be
+visibly impacted by this change. See <a
+href="http://jmri.org/help/en/html/profiles.shtml">http://jmri.org/help/en/html/profiles.shtml</a>
+for more information.</p>
 
 <h3>Older warnings</h3>
 
@@ -199,6 +207,8 @@ The definition is as complete as is possible from the available documentation an
 <p>Enzo Fortuna added additional Italian translation terms, and fixed a couple of existing ones.
 
 <p>Suzie Talk added a new <a href="http://jmri.org/xml/signals/BNSF-1996/index.xml">BNSF-1996 signal system</a>.
+
+<p>Randall Wood added <a href="http://jmri.org/help/en/html/profiles.shtml">configuration profiles</a>.</p>
 
 <p>The internals for handling CV read and write addressing have been extensively 
 reworked.  The change should be transparent (invisible) to users. If you do notice anything 
