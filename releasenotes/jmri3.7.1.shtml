@@ -158,6 +158,8 @@ Zimo_pseudo_programmer.py
     <li>Fixed a bug in track copy where the car types serviced weren't copied to the new track.</li>
     <li>Fixed a bug in train copy where the train build options weren't copied to the new
      train.</li>
+    <li>Fixed a bug in the router when the option to return a car to staging is enabled, and
+     the car get's a custom load from staging.</li>
    </ul>
 
    <P>Allow Turnout icons to be "momentary".  (Sensor icons could already do this)
