@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 3.7.1
+ JMRI: Release Notes for 3.7.2
  
  </title>
     <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
@@ -26,12 +26,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 3.7.1 release
+      Release Notes for JMRI 3.7.2 release
       </h2>
 
 	<p>Date: MMM DD, 2013</p>
 	<p>From: Bob Jacobsen</p>
-	<p>Subject: Test version 3.7.1 of JMRI/DecoderPro is available for download.</p>
+	<p>Subject: Test version 3.7.2 of JMRI/DecoderPro is available for download.</p>
  
 <br><b>This is a draft release note only; the download links do not yet work</b>
 
@@ -41,7 +41,7 @@
 And please back up your JMRI files before installing this, in case you want to go 
 back to an earlier version.</p>
 
-<p>This is the first in a series of test versions. We expect this series
+<p>This is the next in a series of test versions. We expect this series
 to end in a JMRI 3.8 production release around the middle of 2014.</p> 
 
 <p>Some of the changes involved are quite extensive.
@@ -81,26 +81,29 @@ None at the time of this release.
 <!-- 
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r23800.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r23800.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r23800.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r23800.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r23800.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r23800.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r23800.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r23800.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r23800.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r23800.tgz/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r23800.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r23800.tgz/download</a></p>
 
  -->
  
 
+
+<!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.7.1/ws/jmri/dist/release/">CI project page</a>.
+ -->
 
-<!-- 
+
 During development leading to the actual release, you can find test download files on the 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.
- --> 
+ 
  
 <h3>Changes since production release 3.6:</h3>
 
@@ -211,12 +214,6 @@ The definition is as complete as is possible from the available documentation an
 reworked.  The change should be transparent (invisible) to users. If you do notice anything 
 problems involving CV reading, writing, storage or anything else, please let us know.
 
-<p>Matthew Harris:
-<ul>
-<li>Updated the Windows Launcher to allow for a <a href="/help/en/html/profiles.shtml">configuration profile</a> to be specified.
-    For further details, see <a href="/help/en/html/doc/Technical/StartUpScripts.shtml#windows">technical details of how the startup scripts work</a>
-<li>Updated the Windows Launcher to bring memory calculations in-line with Linux and OS X
-</ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
