@@ -68,6 +68,9 @@ visibly impacted by this change. See <a
 href="http://jmri.org/help/en/html/profiles.shtml">http://jmri.org/help/en/html/profiles.shtml</a>
 for more information.</p>
 
+<p>The JMRI SRCP implemetnation is undergoing extensive revision, in part
+due to testing with 3rd party SRCP clients and servers.  If you are using the SRCP support, you will need to upgrade both the client(s) and the server to the same JMRI version.</p>
+
 <h3>Older warnings</h3>
 
 <P>This release, and all other releases in this cycle, require Java 1.6 or newer.
@@ -121,6 +124,8 @@ These are development files, and might not be working at any particular time.
 <a href="http://jmri.sourceforge.net/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#conditional">tools for structuring conditional decoder definitions</a>.
 
 <p>Matthew Harris updated the user interface font size change preference to no longer override the underlying font style
+
+<p>Paul Bender updated the JMRI SRCP support in both the client and server to better conform to the letter of the SRCP protocol standard and improve compatability with other SRCP implementations.</p>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
