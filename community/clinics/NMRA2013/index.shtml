@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- $Id: index.shtml,v 1.2 2011-07-10 20:29:42 jacobsen Exp $ -->
+<html lang="en">
+<head>
+ <TITLE>JMRI: NMRA 2013 Clinics</TITLE>
+    <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+    <META content="Bob Jacobsen" name=Author>
+    <META name="keywords" content="clinics java model railroad JMRI CMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+
+<!-- Style -->
+  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+  <link rel="icon" href="/images/jmri.ico" type="image/png">
+  <link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
+
+<body>
+<!-- Header -->
+  <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
+
+  <div id="header">
+	<!-- Logo -->
+	<a href="/" title="Return to home page" accesskey="1">
+	    <img src="/images/logo-jmri.gif" width="160" height="135" alt="JMRI Logo"> </a>
+	<!-- /Logo -->
+	<ul id="mainNav"> <!-- Top tool bar -->
+	   <li><a href="/download/index.shtml"  title="Get the latest software">Download</a></li>
+	   <li><a href="/help/en/html/apps/index.shtml"      title="Learn about JMRI applications">Applications</a></li>
+	   <li><a href="/help/en/html/hardware/index.shtml"  title="What hardware does JMRI support">Hardware</a></li>
+	   <li><a href="/help/en/webtoc.shtml"   title="JMRI Help Screens">Help</a></li>
+	   <li><a href="/help/en/manual/index.shtml"   title="DecoderPro Manual">Manual</a></li>
+	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
+	   <li><A href="/help/en/Acknowledgements.shtml" title="Who is JMRI">Acknowledgements</a></li>
+	</ul>
+
+	<div id="searchform"> <!--  Search Form -->
+          <form method="get" action="http://www.google.com/search">
+            <label for="q" title="Search JMRI.org">search JMRI: </label>
+            <input type="hidden" name="sitesearch" value="jmri.org">
+            <input type="text" id="q" name="q" accesskey="s" size="30">
+	    <input type="submit" id="submit" value="go">
+          </form>
+    </div> <!--  End #searchform -->
+  </div> <!-- closes #header-->
+<!-- /Header -->
+
+
+<H2>JMRI: NMRA 2013 Clinics</H2>
+
+<a href="http://www.nmra2013.org/">
+<img src="http://www.nmra2013.org/sites/all/themes/nmra2013_flex/logo.png" alt="Convention logo" align="right" ></a>
+
+<p>
+3 JMRI clinics presented at 2013 NMRA convention in Atlanta.  
+
+<p>
+Dick Bronson presented 2 clinics:
+<ul><b><a href="http://www.rr-cirkits.com/Clinics/Clinics.html">Control Panel Editor</a></b>
+Create a modern dispatch panel using Control Panel Editor</ul>
+<ul><b><a href="http://www.rr-cirkits.com/Clinics/Clinics.html">Automatic train control using Warrants</a></b>
+JMRI Warrants allow you to automatically run trains on panels created 
+with the Control Panel Editor and using Signal Masts for Aspect Based Signaling.
+</ul>
+
+<p>
+Steve Todd presented a clinic on:
+<ul><b>"Using Phones and Pads for Throttles and Panels (JMRI)"</b>
+</ul>
+
+<p>
+More information on the convention can be found on the  
+<a href="http://www.nmra2013.org/">convention website</a>.
+
+<!-- Footer -->
+    <hr class="hide">
+    <div id="footer">
+	<ul id="bn">
+	<li>Contact us via the <a href="http://groups.yahoo.com/group/jmriusers">JMRI users</a> mailing list</li>
+	</ul>
+
+	<p>Thanks and congratulations to
+	   <A href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
+	   	all who contributed</A>! </p>
+
+	<p>Copyright &copy; 1997 - 2009 JMRI Community. 
+	<P>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, TrainPro&trade;, DispatcherPro&trade; and associated logos are our trademarks.
+	<P><A href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
+    
+       <BR/>Site hosted by: <BR/>
+<a href="http://sourceforge.net/projects/jmri"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=26788&type=12" width="120" height="30" border="0" alt="Get JMRI Model Railroad Interface at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
+    </div>
+
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://apps.sourceforge.net/piwik/jmri/" : "http://apps.sourceforge.net/piwik/jmri/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = pkBaseURL + "piwik.php";
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+</script>
+<object><noscript><p><img src="http://apps.sourceforge.net/piwik/jmri/piwik.php?idsite=1" alt="piwik"/></p></noscript></object>
+<!-- End Piwik Tag -->
+
+<!-- /Footer -->
+
+
+   </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</div> <!-- closes #container -->
+</body>
+</html>
