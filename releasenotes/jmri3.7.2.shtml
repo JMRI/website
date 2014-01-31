@@ -68,7 +68,7 @@ visibly impacted by this change. See <a
 href="http://jmri.org/help/en/html/profiles.shtml">http://jmri.org/help/en/html/profiles.shtml</a>
 for more information.</p>
 
-<p>The JMRI SRCP implemetnation is undergoing extensive revision, in part
+<p>The JMRI SRCP implementation is undergoing extensive revision, in part
 due to testing with 3rd party SRCP clients and servers.  If you are using the SRCP support, you will need to upgrade both the client(s) and the server to the same JMRI version.</p>
 
 <h3>Older warnings</h3>
@@ -112,9 +112,17 @@ These are development files, and might not be working at any particular time.
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
     <li>Made some improvements to car routing and build report messages.</li>
+    <li>You can now configure the build report to always preview, saves paper! See Build Report
+     Options under Trains-&gt;Tools.</li>
+    <li>The program now blocks a kernel for your manifests and switch lists (a group of cars)
+     by the order that you add cars to the kernel.</li>
+    <li>New checkbox option for the Cars window. Under Tools in the Cars window are two new
+     options, one shows the checkboxes, and the other resets the ones showing in the window. Useful
+     if your doing an audit of your cars using a PC or portable device. Great for those that don't
+     like to waste paper!</li>
    </ul>
 
-<p>Enzo Fortuna improved the Italian translation.
+   <p>Enzo Fortuna improved the Italian translation.
 
 <p>Jeffrey Machacek added a "Clear all non-in-use Slots" button to the Loconet SlotMonitor.
 
