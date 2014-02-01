@@ -153,6 +153,8 @@ These are development files, and might not be working at any particular time.
 	<li>The panels servlet uses JSON and WebSockets instead of XMLIO. This may prevent older browsers from receiving asynchronous updates to panels.</li>
 </ul>
 
+<p>Dave Heap resolved the problem that caused function commands from JMRI or WiThrottles with NCE systems to be sent to seemingly random consist addresses.</p>
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
