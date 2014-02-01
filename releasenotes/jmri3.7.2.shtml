@@ -122,16 +122,16 @@ These are development files, and might not be working at any particular time.
      like to waste paper!</li>
    </ul>
 
-   <p>Enzo Fortuna improved the Italian translation.
+   <p>Enzo Fortuna improved the Italian translation.</p>
 
-<p>Jeffrey Machacek added a "Clear all non-in-use Slots" button to the Loconet SlotMonitor.
+<p>Jeffrey Machacek added a "Clear all non-in-use Slots" button to the Loconet SlotMonitor.</p>
 
-<p>Jeffrey Machacek updated the WiThrottle server.
+<p>Jeffrey Machacek updated the WiThrottle server.</p>
 
 <p>Many additions to the 
-<a href="http://jmri.sourceforge.net/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#conditional">tools for structuring conditional decoder definitions</a>.
+<a href="http://jmri.sourceforge.net/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#conditional">tools for structuring conditional decoder definitions</a>.</p>
 
-<p>Matthew Harris updated the user interface font size change preference to no longer override the underlying font style
+<p>Matthew Harris updated the user interface font size change preference to no longer override the underlying font style.</p>
 
 <p>Paul Bender updated the JMRI SRCP support in both the client and server to better conform to the letter of the SRCP protocol standard and improve compatability with other SRCP implementations.</p>
 
@@ -144,6 +144,14 @@ These are development files, and might not be working at any particular time.
 <p>Resolved an issue that caused some CVs to be skipped in Read Full Sheet operations. Particularly noticeable with ESU V4 decoders.</p>
 
 <p>Dave Heap added some more NCE menu items to the list of available startup actions and buttons.</p>
+
+<p>The Web server has been extensively updated by Randall Wood and Steve Todd:</p>
+<ul>
+	<li>The static index.html has been replaced with a home servlet responding to / and /index.html</li>
+	<li>The home, panels, and operations servlets have been updated with a new <a href="http://getbootstrap.com">Bootstrap</a> user interface.</li>
+	<li>The structure for the servlets resources has been changed to facilitate customization and internationalization.</li>
+	<li>The panels servlet uses JSON and WebSockets instead of XMLIO. This may prevent older browsers from receiving asynchronous updates to panels.</li>
+</ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
