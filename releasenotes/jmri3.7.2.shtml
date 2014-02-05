@@ -1,3 +1,5 @@
+import sun.org.mozilla.javascript.internal.ast.Block;
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <!-- $Id: jmri2.13.1.shtml,v 1.2 2011-07-13 20:25:41 dan_boudreau Exp $ -->
 <html lang="en">
@@ -156,6 +158,61 @@ These are development files, and might not be working at any particular time.
 <p>Dave Heap resolved the problem that caused function commands from JMRI or WiThrottles with NCE systems to be sent to seemingly random consist addresses.</p>
 
 <p>Steve Todd fixed a WiThrottle read loop that could cause high CPU usage when devices were "lost".</p>
+
+<p>Pete Cressman made the following changes:</p>
+<ul>
+	<li>Control Panel Editor
+	<ul>
+		<li>NX warrants (eNtry/eXit) menu item was added to the warrants menu.</li>
+		<li>Menu item Select panel items by Type was added to the Edit menu.</li>
+		<li>Menu item Select panel items by Level was added to the Edit menu.</li>
+		<li>Menu item Disable Selecting Shapes was added to the Shapes menu.</li>
+	</ul>
+	</li>
+	<li>Circuit Builder
+	<ul>
+		<li>An Edit Portal Direction menu item was added ti=o the CircuitBuilder menu. Direction arrows may be displayed at Portal locations
+			of a warrant route when the warrant is allocated.  Use this menu item to configure the arrows so they point to show entrance to 
+			the block.   Levels, rotation and scaling of an arrow can be done here also. 
+			with a right clck.</li>
+	</ul>
+	</li>
+	<li>Item Palette
+	<ul>
+	<li>Portal tab was added to the Item Palette. The icons used when editing Portals in Circuit Builder
+		or showing direction may be modified.  The "Set Default Icons" button sets the icons for all portals in the panel.  
+		The panel must reloaded for the change to take effect.</li>
+		<li>Several bug fixes were made in the editing and updating icon families code.</li> 
+	</ul>
+	</li>
+	<li>Shapes
+	<ul>
+		<li>Positioning vertex handles of Polygons was improved. Note, handles of a selected Shape 
+			can only be grabbed from within the bounding rectangle of the shape.</li>
+		<li>Either the display level or hidden property of a shape can be controlled with the 
+			"visibility/Level Contol Sensor".</li>
+	</ul>
+	</li>
+	<li>Tracker
+	<ul>
+		<li>The Tracker Table keeps a history of Tracker events. Click on the "Status" field to display.</li>
+		<li>Dragging and Dropping a Loco marker icon on an Indicator Track icon will launch a tracker on that train.</li>
+		<li>Clicking on "persistent train marker" from a completed warrant (see below) will launch a tracker on that train.</li>
+	</ul>
+	</li>
+	<li>Warrants
+	<ul>
+		<li>The Warrant Table keeps a history of warrant events. Click on the "Status" field to display.</li>
+		<li>NX warrants (eNtry/eXit) may create manual warrants.</li>
+		<li>The train ID marker will persist after a warrant has terminated on the occupied Indicator Track
+			icons.  The Indicator Track icon must be configured to display markers.</li>
+		<li>Warrant routes, either standard or NX, can have their location blocks (Origin, Destination, 
+			Via, Avoid) entered into the respective text fields by clicking on an Indicator Track icon of
+			the Block.  Clicking on the text field sets the target for a subsequent Indicator Track icon click.
+	</ul>
+	</li>
+</ul>
+	
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
