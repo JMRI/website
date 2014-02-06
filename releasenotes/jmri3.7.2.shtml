@@ -155,9 +155,11 @@ These are development files, and might not be working at any particular time.
 
 <p>Dave Heap resolved the problem that caused function commands from JMRI or WiThrottles with NCE systems to be sent to seemingly random consist addresses.</p>
 
-<p>Steve Todd fixed a WiThrottle read loop that could cause high CPU usage when devices were "lost".</p>
-
-<p>Steve Todd added some fractional zoom values to LayoutEditor.</p>
+<p>Steve Todd made the following changes:</p>
+<ul>
+  <li>fixed a WiThrottle read loop that could cause high CPU usage when devices were "lost".</li>
+  <li>added some fractional zoom values to LayoutEditor.</li>
+</ul>
 
 <p>Pete Cressman made the following changes:</p>
 <ul>
