@@ -213,6 +213,7 @@ These are development files, and might not be working at any particular time.
 		<li>The Tracker Table keeps a history of Tracker events. Click on the "Status" field to display.</li>
 		<li>Dragging and Dropping a Loco marker icon on an Indicator Track icon will launch a tracker on that train.</li>
 		<li>Clicking on "persistent train marker" from a completed warrant (see below) will launch a tracker on that train.</li>
+		<li>Time spent occupying a block is logged in the "Status: field</li>
 	</ul>
 	</li>
 	<li>Warrants
@@ -224,6 +225,7 @@ These are development files, and might not be working at any particular time.
 		<li>Warrant routes, either standard or NX, can have their location blocks (Origin, Destination, 
 			Via, Avoid) entered into the respective text fields by clicking on an Indicator Track icon of
 			the Block.  Clicking on the text field sets the target for a subsequent Indicator Track icon click.
+		<li>Additional Status messages have been added.</li>
 	</ul>
 	</li>
 </ul>
