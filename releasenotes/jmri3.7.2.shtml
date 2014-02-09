@@ -230,6 +230,12 @@ These are development files, and might not be working at any particular time.
 	
 <p>Dave Sand fixed RosterCsvExport.py to use new string format for CV definitions.</p>
 
+<p>The "Export Roster" and "Import Roster" menu items will now write your whole
+roster to a single file, and then read that back in.  You can use this to move your roster to
+another computer, for example.  On import, you'll be asked to confirm that you want to
+import each roster entry.  If there's already an entry with the same name (ID), you'll
+be asked if you want to replace it.
+
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
