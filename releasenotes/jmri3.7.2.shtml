@@ -71,6 +71,8 @@ for more information.</p>
 <p>The JMRI SRCP implementation is undergoing extensive revision, in part
 due to testing with 3rd party SRCP clients and servers.  If you are using the SRCP support, you will need to upgrade both the client(s) and the server to the same JMRI version.</p>
 
+<p>The JMRI Web Server is being extensively rewritten. Some functionality has been temporarily lost while this rewrite continues.</p>
+
 <h3>Older warnings</h3>
 
 <P>This release, and all other releases in this cycle, require Java 1.6 or newer.
@@ -162,7 +164,7 @@ These are development files, and might not be working at any particular time.
 	<li>The static index.html has been replaced with a home servlet responding to / and /index.html</li>
 	<li>The home, panels, and operations servlets have been updated with a new <a href="http://getbootstrap.com">Bootstrap</a> user interface.</li>
 	<li>The structure for the servlets resources has been changed to facilitate customization and internationalization.</li>
-	<li>The panels servlet uses JSON and WebSockets instead of XMLIO. This may prevent older browsers from receiving asynchronous updates to panels.</li>
+	<li>The panels servlet uses JSON and WebSockets instead of XMLIO. This may prevent older browsers from receiving asynchronous updates to panels. Testers may notice some panel features do will not work correctly in this test release.</li>
 </ul>
 
 
@@ -238,6 +240,8 @@ another computer, for example.  On import, you'll be asked to confirm that you w
 import each roster entry.  If there's already an entry with the same name (ID), you'll
 be asked if you want to replace it.
 
+<p>The ability to duplicate configuration profiles has been added. A duplicate profile contains a copy of everything in the existing profile's directory.<!-- Randall Wood --></p>
+<p>The Railroad name preference has been promoted from a Web Server setting to an application-wide setting.<!-- Randall Wood --></p>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
