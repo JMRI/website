@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- $Id$ -->
+<html lang="en">
+<head>
+ <title>
+ JMRI: Release Notes for 3.7.3
+ 
+ </title>
+    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+    <meta content="Bob Jacobsen" name=Author>
+    <meta name="keywords" content="java model railroad JMRI 3.7.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+
+<!-- Style -->
+  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+  <link rel="icon" href="/images/jmri.ico" type="image/png">
+  <link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
+
+<body>
+  
+<!--#include virtual="/Header" -->
+
+  <div class="nomenu" id="mBody">
+    <div id="mainContent">
+      <h2>
+      Release Notes for JMRI 3.7.3 release
+      </h2>
+
+	<p>Date: MMM DD, 2014</p>
+	<p>From: Bob Jacobsen</p>
+	<p>Subject: Test version 3.7.3 of JMRI/DecoderPro is available for download.</p>
+ 
+<br><b>This is a draft release note only; the download links do not yet work</b>
+
+<h3>Notes:</h3>
+
+<p>This is a test release.  Please post a note if you encounter any new or old bugs!  
+And please back up your JMRI files before installing this, in case you want to go 
+back to an earlier version.</p>
+
+<p>This is the next in a series of test versions. We expect this series
+to end in a JMRI 3.8 production release around the middle of 2014.</p> 
+
+<p>Some of the changes involved are quite extensive.
+They may require a certain amount of experience before they are working well.  
+Therefore, this test version should be considered experimental.</p>
+
+<p><b>
+JMRI is now only available under the 
+<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+see our 
+<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<h3>New warnings for this version:</h3>
+
+<p>The internals for handling CV read and write addressing have been extensively 
+reworked.  The change should be transparent (invisible) to users. If you do notice anything 
+problems involving CV reading, writing, storage or anything else, please let us know.</p>
+
+<p>The configuration structure for JMRI is changing to use <em>Configuration
+Profiles</em>. Configuration Profiles allow a single JMRI application to have
+multiple, user selectable, configurations that can be changed as application
+startup. For some users, this change will have no impact; other users will be
+visibly impacted by this change. See <a
+href="http://jmri.org/help/en/html/profiles.shtml">http://jmri.org/help/en/html/profiles.shtml</a>
+for more information.</p>
+
+<p>The JMRI SRCP implementation is undergoing extensive revision, in part
+due to testing with 3rd party SRCP clients and servers.  If you are using the SRCP support, you will need to upgrade both the client(s) and the server to the same JMRI version.</p>
+
+<p>The JMRI Web Server is being extensively rewritten. Some functionality has been temporarily lost while this rewrite continues.</p>
+
+<h3>Older warnings</h3>
+
+<P>This release, and all other releases in this cycle, require Java 1.6 or newer.
+
+<h3>Known problems with this release</h3>
+
+None at the time of this release.
+
+<h3>Download links:</h3>
+
+<!-- 
+<p>Please use these links for downloading:</p>
+<p>Mac OS X: <A
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r23800.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r23800.dmg/download</a></p>
+
+<p>Windows: <A
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r23800.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r23800.exe/download</a></p>
+
+<p>Linux: <A
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r23800.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r23800.tgz/download</a></p>
+
+ -->
+ 
+
+<!-- 
+Preliminary build files (not the final released files) can be found
+on the
+<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.7.3/ws/jmri/dist/release/">CI project page</a>.
+ -->
+
+
+During development leading to the actual release, you can find test download files on the 
+<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
+These are development files, and might not be working at any particular time.
+ 
+ 
+<h3>Changes since test release 3.7.2:</h3>
+
+
+
+
+
+   <!--#include virtual="/Footer" -->
+  </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</body>
+</html>
+
