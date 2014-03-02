@@ -129,6 +129,19 @@ These are development files, and might not be working at any particular time.
 	<li>A conductor's view has been added to the operations servlet.</li>
 </ul>
 
+<p>Ken Cameron has:</p>
+<ul>
+	<li>
+		Enabled startup features like scripts and panels to use portable filenames.
+		This replaces the absolute pathnames with relative pathnames within the scope of
+		other parts of JMRI like the users preferences.
+	</li>
+	<li>
+		Enabled Logix references like scripts and sounds to use portable filenames.
+		This replaces the absolute pathnames with relative pathnames within the scope of
+		other parts of JMRI like the users preferences.
+	</li>
+</ul>
 
 
    <!--#include virtual="/Footer" -->
