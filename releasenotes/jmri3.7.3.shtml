@@ -157,6 +157,19 @@ These are development files, and might not be working at any particular time.
 
 <p>Dave Heap added LokPilot Fx V4.0 and LokPilot XL V4.0, plus many corrections and improvements to existing ESU decoder definitions.</p>
 
+<p>AlanUS provided the Digitrax decoder definitions for DN163A4 (derived from DN163A2) + fix width values, for DN163A1/A2, DN163I2, DN163K0E
+
+<p>AlanUS updated  the Uhlenbrock 73400 definition:
+<ul>
+<li> Increased High version value to 4 (from a decoder purchased in 2011)
+<li> Change family name to Mini instead of Micro (Mini is the name used on the decoder user manual)
+<li> Removed Speed Table, not supported by this decoder (only Vlow, Vmid, Vhigh)
+<li> Fix enum for CV54 (cannot use a mask, only two specific values allowed 128 and 132)
+</ul>
+
+<p>AlanUS added custom definitions for Atlas decoders sourced from Digitrax and Lenz
+
+<p>Nigel Cliffe updated the Zimo definitions to extend the volume controls.
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
