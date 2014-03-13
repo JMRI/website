@@ -145,8 +145,10 @@ These are development files, and might not be working at any particular time.
 <ul>
     <li>Added a scroll pane for the virtual signalmast panel.</li>
     <li>Fix Bug 451</li>
-    <li>Layout Editor Crossover - Block 1's connection point is now highlighted in blue when a 
+    <li>Layout Editor Crossover - Block 1's connection point is now highlighted in pink or blue depending upon if  a 
     track segment is connected to aid identification</li>
+    <li>Layout Editor Turnouts can now be connected together by moving the turnout so that the connection points
+    overlap</li>
 </ul>
 
 <p>Suzie Tall updated the LMS-1932 and CR-2008 signal sets.</p>
