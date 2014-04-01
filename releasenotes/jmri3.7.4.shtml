@@ -143,14 +143,14 @@ This is in addition to the existing "Open Power Controller" option.
  
 <p>Some improvements to the tooltips on the decoder selection window suggested by Alan Le Marchand.
 
-<p>Enzo Fortuna improved the Italian translation
 
-
+   <p>Enzo Fortuna improved the Italian translation
+   
    <p>Daniel Boudreau made the following improvements to Operations:</p>
    <ul>
     <li>Better routing out of staging for cars with custom loads or final destinations. The
-     latest changes should reduce the chances of a build failure when using the Return When Empty
-     feature when sending cars to staging to be emptied.</li>
+     latest changes should reduce the chances of a build failure for cars in staging that
+     used the Return When Empty feature.</li>
     <li>Fixed an issue with Classification / Interchange tracks that have destination
      restrictions. Now if a car without a final destination is placed on a C/I track with
      destination restrictions, the program will only forward cars to that destination.</li>
