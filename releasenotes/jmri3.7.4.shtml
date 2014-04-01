@@ -130,7 +130,13 @@ Please let us know if anything isn't working as you'd expect.</p>
 
 <p>Lou DeHayes provided a fix for the Digitrax DS54 decoder definition.</p>
 
-<p>Dave Heap made corrections and improvements to existing ESU decoder definitions.</p>
+<p>Dave Heap made the following changes:</p>
+  <ul>
+    <li>Corrections and improvements to existing ESU decoder definitions.</li>
+    <li>Restored the ability to specify a fnmapping element by either output number OR name.</li>
+    <li>Added an optional "(alt)" suffix to a fnmapping element.</li>
+    <li>Added a live Function Group Exchange feature on the Function Map pane for two sample Tsunami decoders (Diesel Genesis OEM and Steam Genesis OEM).</li>
+  </ul>
 
 <p>Added a "Power Button" item that you can configure to directly include a button. 
 This is in addition to the existing "Open Power Controller" option.
