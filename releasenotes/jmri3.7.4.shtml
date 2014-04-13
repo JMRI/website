@@ -152,14 +152,20 @@ This is in addition to the existing "Open Power Controller" option.
    <p>Daniel Boudreau made the following improvements to Operations:</p>
    <ul>
     <li>Better routing out of staging for cars with custom loads or final destinations. The
-     latest changes should reduce the chances of a build failure for cars in staging that
-     used the Return When Empty feature.</li>
+     latest changes should reduce the chances of a build failure for cars in staging that used the
+     Return When Empty feature.</li>
+    <li>You can now specify a custom load when using the Return When Empty (RWE) feature for a
+     car.</li>
     <li>Fixed an issue with Classification / Interchange tracks that have destination
      restrictions. Now if a car without a final destination is placed on a C/I track with
      destination restrictions, the program will only forward cars to that destination.</li>
-    <li>Made some improvements to the build report.</li>
+    <li>Made some improvements to the train build report.</li>
+    <li>Added three more manifest color options; orange, yellow, and gray.</li>
+    <li>Improved the tabular format with regards to rolling stock locations and track names.</li>
+    <li>Fixed a problem where non lead cars in a kernel didn't have the correct final
+     destination shown in the Cars window.</li>
    </ul>
-   
+
    <p>Ken Cameron has provided:</p>
    <ul>
    	<li>Added support for NMRA signal decoders on NCE-USB connected systems.</li>
