@@ -132,10 +132,15 @@ Please let us know if anything isn't working as you'd expect.</p>
 
 <p>Dave Heap made the following changes:</p>
   <ul>
-    <li>Corrections and improvements to existing ESU decoder definitions.</li>
+    <li>Informative tooltips on the ESU Function Map pane.</li>
+    <li>Corrections and other improvements to existing ESU decoder definitions.</li>
     <li>Restored the ability to specify a fnmapping element by either output number OR name.</li>
     <li>Added an optional "(alt)" suffix to a fnmapping element.</li>
     <li>Added a live Function Group Exchange feature on the Function Map pane for two sample Tsunami decoders (Diesel Genesis OEM and Steam Genesis OEM).</li>
+    <li>Added the facility to define "soundlabels" (like "functionlabels") in the decoder definition files.</li>
+    <li>Can now add "functionlabels" and "soundlabels" to individual models in the decoder definition files. These override corresponding labels at the family level.</li>
+    <li>Added a "soundlabel" element to the pane programmer, allowing sound labels to be displayed on panes.</li>
+    <li>(A "functionlabel" pane element and user-editable sound labels are planned for the next release.)</li>
   </ul>
 
 <p>Added a "Power Button" item that you can configure to directly include a button. 
