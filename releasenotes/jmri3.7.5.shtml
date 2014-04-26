@@ -124,11 +124,18 @@ These are development files, and might not be working at any particular time.
  
 <h3>Changes since test release 3.7.4:</h3>
 
-<p>Additions to Warrants</p>
-<ul>
-	<li>Added "Halt All" button to Warrant List window</li>
-	<li>Enabled recording warrant scripts with dark blocks in the route.</li>
-</ul>
+   <p>Additions to Warrants</p>
+   <ul>
+    <li>Added "Halt All" button to Warrant List window</li>
+    <li>Enabled recording warrant scripts with dark blocks in the route.</li>
+   </ul>
+
+   <p>Daniel Boudreau made the following changes to Operations:</p>
+   <ul>
+    <li>Made some improvements to the train build report.</li>
+    <li>Fix a bug where the build report didn't always report which cars were ignored when all
+     of the moves for a route location were consumed.</li>
+   </ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
