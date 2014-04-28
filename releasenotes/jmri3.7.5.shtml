@@ -137,6 +137,17 @@ These are development files, and might not be working at any particular time.
      of the moves for a route location were consumed.</li>
    </ul>
 
+<p>Alain Le Marchand updated the Digitrax decoder definitions:
+<ul>
+<li>New Digitrax series 6 sound decoders: SDH166D, SDXH166D, SDN136PS, SDXN136PS (including extended CVs/options for John McMasters sound projects)
+<li>New Digitrax series 6 non-sound decoders DH126D, DH126P, DH126PD , DH166D, DH166P, DH166PD, DN136D, DN136PS, DN146IP, DN166PS, DZ126, DZ126PS, DS126IN, DZ126T, DZ146, DZ146PS
+<li>Digitrax/Con-cor decoder definitions added for most of the existing ones.
+<li>Functions labels added for sound decoders.
+<li>New pane for sound decoders, with sound project information (Series 3 only).
+<li>Comments/tooltips extended to most of the recent Digitrax decoders.
+<li>Specifications (size, connectors) updated according to Digitrax documentation
+<li>A lot of refactoring through new fragment/parts files in the digitrax directory. Will help further maintenance and internationalization.
+</ul>
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
