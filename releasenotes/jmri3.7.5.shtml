@@ -148,6 +148,16 @@ These are development files, and might not be working at any particular time.
 <li>Specifications (size, connectors) updated according to Digitrax documentation
 <li>A lot of refactoring through new fragment/parts files in the digitrax directory. Will help further maintenance and internationalization.
 </ul>
+
+<p>Dave Heap made the following changes:</p>
+  <ul>
+    <li>Corrections and other improvements to existing ESU decoder definitions.</li>
+    <li>Added the ability to import decoder CSV files, as created by the existing "Export CSV file..." command.</li>
+    <li>Added a new
+      <a href="/help/en/html/apps/DecoderPro/Programmer.shtml#grid" target="_blank">Grid Layout</a>
+      feature to the decoder pane programmer, for greater control of pane layouts.</li>
+  </ul>
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
