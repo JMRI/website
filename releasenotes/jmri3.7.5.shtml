@@ -158,6 +158,13 @@ These are development files, and might not be working at any particular time.
       feature to the decoder pane programmer, for greater control of pane layouts.</li>
   </ul>
 
+<p>Ken Cameron has:</p>
+<ul>
+	<li>
+		Fixed issue with NCE SB5/TWIN and ops mode programming. Was trying to use raw
+		packet commands instead of specific ops mode programming commands in the USB.
+	</li>
+</ul>
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
