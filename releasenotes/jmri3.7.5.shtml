@@ -165,6 +165,11 @@ These are development files, and might not be working at any particular time.
 		packet commands instead of specific ops mode programming commands in the USB.
 	</li>
 </ul>
+
+<p>Fixed a problem with the handling of decoder definitions that was causing certain TCS decoders (and perhaps others)
+to not display properly.
+
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
