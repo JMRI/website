@@ -133,12 +133,16 @@ These are development files, and might not be working at any particular time.
 
    <p>Daniel Boudreau made the following changes to Operations:</p>
    <ul>
+    <li>New feature for manifests and switch lists, the ability to add headers describing each
+     of the car attributes. Select "Print Headers" in the "Manifest Print Options" You can also
+     customize all of the header text, see under "Tools" in the "Manifest Print Options" window,
+     "Edit Header Text".
     <li>Made some improvements to the train build report.</li>
     <li>Fix a bug where the build report didn't always report which cars were ignored when all
      of the moves for a route location were consumed.</li>
    </ul>
 
-<p>Alain Le Marchand updated the Digitrax decoder definitions:
+   <p>Alain Le Marchand updated the Digitrax decoder definitions:
 <ul>
 <li>New Digitrax series 6 sound decoders: SDH166D, SDXH166D, SDN136PS, SDXN136PS (including extended CVs/options for John McMasters sound projects)
 <li>New Digitrax series 6 non-sound decoders DH126D, DH126P, DH126PD , DH166D, DH166P, DH166PD, DN136D, DN136PS, DN146IP, DN166PS, DZ126, DZ126PS, DS126IN, DZ126T, DZ146, DZ146PS
