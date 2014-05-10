@@ -131,8 +131,10 @@ These are development files, and might not be working at any particular time.
     <li>Improved correlation of ramp down speed timing with block length in NX warrants</li> 
    </ul>
 
-   <p>Daniel Boudreau made the following changes to Operations:</p>
-   <ul>
+	<p>Operations</p>
+	<ul>
+		<li>Train manifests are now available in a JSON format.</li>
+		<li>Train manifests are in the web server again.</li>
     <li>New feature for manifests and switch lists, the ability to add headers describing each
      of the car attributes. Select "Print Headers" in the "Manifest Print Options" You can also
      customize all of the header text, see under "Tools" in the "Manifest Print Options" window,
@@ -173,9 +175,9 @@ These are development files, and might not be working at any particular time.
 </ul>
 
 <p>Fixed a problem with the handling of decoder definitions that was causing certain TCS decoders (and perhaps others)
-to not display properly.
+to not display properly.</p>
 
-<p>John Crellin provided a decoder definition for the MRC Sound Brilliance 1806 and 1955.
+<p>John Crellin provided a decoder definition for the MRC Sound Brilliance 1806 and 1955.</p>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
