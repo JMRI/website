@@ -135,6 +135,11 @@ These are development files, and might not be working at any particular time.
 
 <p>Added a "Check for Updates" item under the help menu.  If you want a button, you can configure it under startup preferences.
 
+<p>Read-only enum decoder variables now are disabled (grey-out) in the DecoderPro/DP3 interface.  
+    This includes as combo (selection) boxes, check boxes and radio buttons.  They still track the CV value, but 
+    you can't change them yourself.  This may cause unexpected side-effects, e.g. if a decoder file 
+    has improperly set read-only on a variable and nobody noticed because it wasn't visible.
+    
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
