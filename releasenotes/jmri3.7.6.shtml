@@ -56,6 +56,10 @@ see our
 
 <h3>New warnings for this version:</h3>
 
+The decoder definition files have been reformatted to make them easier to maintain.
+If you want to make a change in a decoder definition file, please start with a 
+file from this release or later.
+
 <h3>Older warnings</h3>
 
 <p>The XmlIO web service has been deprecated and is scheduled to be removed in JMRI 3.11.
@@ -124,6 +128,10 @@ These are development files, and might not be working at any particular time.
  
 <h3>Changes since test release 3.7.5:</h3>
 
+<p>Reformatted the decoder definition files using the xml/XSLT/normalizeDecoder XSLT transforms.
+    This cleans up some ambiguous attributes, adds missing elements, and formats them into a consistent (comparable) style
+    using xmllint. In the process some errors (usually missing elements) were found and fixed.
+    There were also some refinements and additions to the XML schema for panes and decoders.
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
