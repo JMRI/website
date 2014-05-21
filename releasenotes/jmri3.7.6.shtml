@@ -6,12 +6,11 @@
  JMRI: Release Notes for 3.7.6
  
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
     <meta content="Bob Jacobsen" name=Author>
-    <meta name="keywords" content="java model railroad JMRI 3.7.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 3.7.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -33,7 +32,7 @@
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Test version 3.7.6 of JMRI/DecoderPro is available for download.</p>
  
-<br><b>This is a draft release note only; the download links do not yet work</b>
+<p><b>This is a draft release note only; the download links do not yet work</b></p>
 
 <h3>Notes:</h3>
 
@@ -56,9 +55,9 @@ see our
 
 <h3>New warnings for this version:</h3>
 
-The decoder definition files have been reformatted to make them easier to maintain.
+<p>The decoder definition files have been reformatted to make them easier to maintain.
 If you want to make a change in a decoder definition file, please start with a 
-file from this release or later.
+file from this release or later.</p>
 
 <h3>Older warnings</h3>
 
@@ -70,7 +69,7 @@ webThrottle, the iOS WiThrottle, or the Android Engine Driver.</p>
 
 <p>This release has some changes to the application-initialization structure, particularly in the 
 <a href="http://jmri.sourceforge.net/JavaDoc/doc/apps/Apps.html">apps.Apps</a> class.  If you have written code of your own
-that runs applications based on JMRI, please check for use of deprecated methods.
+that runs applications based on JMRI, please check for use of deprecated methods.</p>
 
 <p>The internals for handling CV read and write addressing have been extensively 
 reworked.  The change should be transparent (invisible) to users. If you do notice anything 
@@ -89,14 +88,13 @@ due to testing with 3rd party SRCP clients and servers.
 If you are using the SRCP support, 
 you will need to upgrade both the client(s) and the server to the same JMRI version.</p>
 
-<p>The JMRI Web Server is being extensively rewritten. 
-Some functionality has been temporarily lost while this rewrite continues.</p>
+<p>The JMRI Web Server is being extensively rewritten. If you notice any problems using it, please let us know.</p>
 
-<P>This release, and all other releases in this cycle, require Java 1.6 or newer.
+<P>This release, and all other releases in this cycle, require Java 1.6 or newer.</p>
 
 <h3>Known problems with this release</h3>
 
-None at the time of this release.
+<p>None at the time of this release.</p>
 
 <h3>Download links:</h3>
 
@@ -121,9 +119,9 @@ on the
  --> 
 
 
-During development leading to the actual release, you can find test download files on the 
+<p>During development leading to the actual release, you can find test download files on the 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
-These are development files, and might not be working at any particular time.
+These are development files, and might not be working at any particular time.</p>
 
  
 <h3>Changes since test release 3.7.5:</h3>
@@ -131,14 +129,14 @@ These are development files, and might not be working at any particular time.
 <p>Reformatted the decoder definition files using the xml/XSLT/normalizeDecoder XSLT transforms.
     This cleans up some ambiguous attributes, adds missing elements, and formats them into a consistent (comparable) style
     using xmllint. In the process some errors (usually missing elements) were found and fixed.
-    There were also some refinements and additions to the XML schema for panes and decoders.
+    There were also some refinements and additions to the XML schema for panes and decoders.</p>
 
-<p>Added a "Check for Updates" item under the help menu.  If you want a button, you can configure it under startup preferences.
+<p>Added a "Check for Updates" item under the help menu.  If you want a button, you can configure it under startup preferences.</p>
 
 <p>Read-only enum decoder variables now are disabled (grey-out) in the DecoderPro/DP3 interface.  
     This includes as combo (selection) boxes, check boxes and radio buttons.  They still track the CV value, but 
     you can't change them yourself.  This may cause unexpected side-effects, e.g. if a decoder file 
-    has improperly set read-only on a variable and nobody noticed because it wasn't visible.
+    has improperly set read-only on a variable and nobody noticed because it wasn't visible.</p>
     
 <p>Dave Heap made the following changes:</p>
   <ul>
@@ -166,15 +164,15 @@ These are development files, and might not be working at any particular time.
     </ul>
   </ul>
 
-<p>Bernd Wisotzki improved the German translation.
+<p>Bernd Wisotzki improved the German translation.</p>
 
-<p>Enzo Fortuna did more work on the Italian translation.
+<p>Enzo Fortuna did more work on the Italian translation.</p>
 
 <p>Older versions of the JMRI manuals and associated PDF files have been 
 moved out of the JMRI distribution.  They are now 
 <a href="http://jmri.org/manual/index.shtml">available on the web</a>. This was done to make it easier to 
 keep the manual up-to-date, and reduce the download size.  
-You may have to update your bookmarks.
+You may have to update your bookmarks.</p>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
