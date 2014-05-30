@@ -153,20 +153,28 @@ These are development files, and might not be working at any particular time.</p
     <li>Added a "group" pane element that can be used to apply the same qualifier to multiple pane elements.</li>
   </ul>
 
-<p>Alain Le Marchand added and updated the following Uhlenbrock decoder definitions:</p>
+<p>Alain Le Marchand made the following changes:</p>
+
   <ul>
-    <li>Created: 73100, 73110, 73140, 75330, 76150, 76200, 76320, 76425, 76560</li>
-    <li>Reformatted (and completed): 76400, 76420</li>
-    <li>Changed family name (for consistency) for: 73400, 73410, 73500, 73510, 77500</li>
-    <p> </p>
-    <li>For new or reformatted files:</li>
-    <ul>        
-        <li>Heavy refactoring with fragment files (in new directory \decoders\uhlenbrock)</li>
-        <li>Used the generic function map pane</li>
-        <li>Used generic items on standard panes (motor, lights, analog) as much as possible</li>
-        <li>New ad-hoc Uhlenbrock pane, only for other parameters than listed above</li>
-        <li>Support of English and German versions, with terms as defined in official Uhlenbrock documentation, where possible</li>
+    <li>Added and updated the following Uhlenbrock decoder definitions:</li>
+    <p> </p>    
+    <ul>
+        <li>Created: 73100, 73110, 73140, 75330, 76150, 76200, 76320, 76425, 76560</li>
+        <li>Reformatted (and completed): 76400, 76420</li>
+        <li>Changed family name (for consistency) for: 73400, 73410, 73500, 73510, 77500</li>
+
+        <li>For new or reformatted files:</li>
+        <ul>        
+            <li>Heavy refactoring with fragment files (in new directory \decoders\uhlenbrock)</li>
+            <li>Used the generic function map pane</li>
+            <li>Used generic items on standard panes (motor, lights, analog) as much as possible</li>
+            <li>New ad-hoc Uhlenbrock pane, only for other parameters than listed above</li>
+            <li>Support of English and German versions, with terms as defined in official Uhlenbrock documentation, where possible</li>
+        </ul>
     </ul>
+    <p> </p>    
+    <li>Extended the Soundtraxx Tsunami Function Groups Exchange feature (created by Dave Heap) to all Tsunami decoders</li>
+    <li>Fixed an issue with Tsunami 750 function map not displaying properly</li>    
   </ul>
 
 <p>Bernd Wisotzki improved the German translation.</p>
