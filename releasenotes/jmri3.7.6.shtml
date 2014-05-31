@@ -61,13 +61,13 @@ file from this release or later.</p>
 
 <h3>Older warnings</h3>
 
-<p>The XmlIO web service has been deprecated and is scheduled to be removed in JMRI 3.11.
+<p>The XmlIO web service has been deprecated and is scheduled to be removed in JMRI 3.11 (July 2015).
 All users who are relying on direct access to the XmlIO API are
 recommended to begin using the JSON API. inControl web throttle users are recommended to
 begin using webThrottle instead, or to plan on investing in devices that can support
 webThrottle, the iOS WiThrottle, or the Android Engine Driver.</p>
 
-<p>This release has some changes to the application-initialization structure, particularly in the 
+<p>This release series has some changes to the application-initialization structure, particularly in the 
 <a href="http://jmri.sourceforge.net/JavaDoc/doc/apps/Apps.html">apps.Apps</a> class.  If you have written code of your own
 that runs applications based on JMRI, please check for use of deprecated methods.</p>
 
@@ -101,28 +101,25 @@ you will need to upgrade both the client(s) and the server to the same JMRI vers
 <!-- 
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.5-r23800.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.5-r23800.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.6-r23800.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.6-r23800.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.5-r23800.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.5-r23800.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.6-r23800.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.6-r23800.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.5-r23800.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.5-r23800.tgz/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.6-r23800.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.6-r23800.tgz/download</a></p>
 
  -->
  
-
- <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.7.5/ws/jmri/dist/release/">CI project page</a>.
- --> 
+<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.7.6/ws/jmri/dist/release/">CI project page</a>.
 
-
+ <!--
 <p>During development leading to the actual release, you can find test download files on the 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+ --> 
  
 <h3>Changes since test release 3.7.5:</h3>
 
