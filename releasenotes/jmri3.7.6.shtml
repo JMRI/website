@@ -186,6 +186,12 @@ You may have to update your bookmarks.</p>
 
 <p>Nigel Cliffe provided a new Zimo decoder definition.
 
+<p>JMRI now implements a "transform-xslt" XML processing instruction for post-processing XML files with XSLT transforms.
+(If that doesn't mean anything to you, you can ignore the rest of this item).  For an example of invoking
+this, see the
+<a href="https://sourceforge.net/p/jmri/code/HEAD/tree/trunk/jmri/java/test/jmri/jmrit/XmlFileTest_PI.xml">test XML file</a> and
+<a href="https://sourceforge.net/p/jmri/code/HEAD/tree/trunk/jmri/java/test/jmri/jmrit/XmlFileTest_PI.xsl">test XSLT transform</a>.
+
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
