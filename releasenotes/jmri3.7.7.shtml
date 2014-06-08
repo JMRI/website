@@ -130,6 +130,11 @@ These are development files, and might not be working at any particular time.</p
 
 <P>Jim Crellin added definitions for TCS function decoders.
 
+<p>Fixed a problem that would leave the wrong DCC address on the DecoderPro roster pane at startup under certain circumstances.
+
+<p>Fixed a bug that would cause programming crashes in DecoderPro when using simulators.
+
+
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
