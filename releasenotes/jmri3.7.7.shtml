@@ -134,7 +134,11 @@ These are development files, and might not be working at any particular time.</p
 
 <p>Fixed a bug that would cause programming crashes in DecoderPro when using simulators.
 
-
+<p>Routes
+<ul>
+<li>When a route is loaded from a panel file, the system will now check the turnouts and trigger the aligned sensor, rather than wait for a change to occur</li>
+<li>Fix a bug in the routes gui, whereby if the user removes the "TurnoutsAlignedSensor" it doesn't actually get removed.</li>
+</ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
