@@ -140,6 +140,14 @@ These are development files, and might not be working at any particular time.</p
 <li>Fix a bug in the routes gui, whereby if the user removes the "TurnoutsAlignedSensor" it doesn't actually get removed.</li>
 </ul>
 
+<p>Dave Heap made the following changes:</p>
+  <ul>
+    <li>Fixed an issue that caused a hang when reading all sheets of an ESU decoder with some systems.</li>
+    <li>Fixed an issue with inherited attributes in
+      <a href="/help/en/html/apps/DecoderPro/Programmer.shtml#grid" target="_blank">Grid Layout</a>
+      for the decoder pane programmer.</li>
+  </ul>
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
