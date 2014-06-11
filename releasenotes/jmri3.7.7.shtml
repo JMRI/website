@@ -164,6 +164,12 @@ These are development files, and might not be working at any particular time.</p
      only the first occurrence of a full yard or interchange is shown.</li>
    </ul>
 
+   <p>B. Milhaupt updated the LocoNet Download Firmware tool to provide automatic
+       identification of the firmware file's address format as well as extensive
+       checking of the firmware file for evidence of corruption or out-of-range
+       parameters.  These improvements significantly reduce the risk of 
+       corrupting a device's firmware when using this tool.  The associated help 
+       file was expanded to suit.</p> 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
