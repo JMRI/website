@@ -148,6 +148,16 @@ These are development files, and might not be working at any particular time.</p
       for the decoder pane programmer.</li>
   </ul>
 
+   <p>Daniel Boudreau made the following changes to Operations:</p>
+   <ul>
+    <li>New manifest and switch list format. Two columns, one for pulls and one for spots, with
+     track names centered in each column.</li>
+    <li>Fixed a bug where a kernel's length (group of cars) wasn't being checked with regards
+     to spurs with schedules</li>
+    <li>Some build report improvement with regards to yard or interchanges that are full. Now
+     only the first occurrence of a full yard or interchange is shown.</li>
+   </ul>
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
