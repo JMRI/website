@@ -112,17 +112,15 @@ you will need to upgrade both the client(s) and the server to the same JMRI vers
  -->
  
 
- <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.7.5/ws/jmri/dist/release/">CI project page</a>.
- --> 
+<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.7.7/ws/jmri/dist/release/">CI project page</a>.
 
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
  
 <h3>Changes since test release 3.7.6:</h3>
 
@@ -170,6 +168,9 @@ These are development files, and might not be working at any particular time.</p
        parameters.  These improvements significantly reduce the risk of 
        corrupting a device's firmware when using this tool.  The associated help 
        file was expanded to suit.</p> 
+       
+<p>Robin Becker provided a decoder definition for the Tam Valley Depot Quad-LN_S decoder.
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

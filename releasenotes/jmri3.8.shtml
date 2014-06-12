@@ -649,6 +649,54 @@ this, see the
 
 <!-- from 3.7.7 note -->
 
+<P>Additional German translation, particularly in the DecoderPro/DP3 presentation, from Bernd W.
+
+<P>Jim Crellin added definitions for TCS function decoders.
+
+<p>Fixed a problem that would leave the wrong DCC address on the DecoderPro roster pane at startup under certain circumstances.
+
+<p>Fixed a bug that would cause programming crashes in DecoderPro when using simulators.
+
+<p>Routes
+<ul>
+<li>When a route is loaded from a panel file, the system will now check the turnouts and trigger the aligned sensor, rather than wait for a change to occur</li>
+<li>Fix a bug in the routes gui, whereby if the user removes the "TurnoutsAlignedSensor" it doesn't actually get removed.</li>
+</ul>
+
+<p>Dave Heap made the following changes:</p>
+  <ul>
+    <li>Fixed an issue that caused a hang when reading all sheets of an ESU decoder with some systems.</li>
+    <li>Fixed an issue with inherited attributes in
+      <a href="/help/en/html/apps/DecoderPro/Programmer.shtml#grid" target="_blank">Grid Layout</a>
+      for the decoder pane programmer.</li>
+  </ul>
+
+<p>Egbert Bourse updated the signaling help.
+
+<p>John Crellin updated the TCS FL2 and FL4 decoder definitions
+
+<p>Pierre Billon did a major update to the Doehler &amp; Haass decoder definitions.
+
+   <p>Daniel Boudreau made the following changes to Operations:</p>
+   <ul>
+    <li>New manifest and switch list format. Two columns, one for pulls and one for spots, with
+     track names centered in each column.</li>
+    <li>Fixed a bug where a kernel's length (group of cars) wasn't being checked with regards
+     to spurs with schedules</li>
+    <li>Some build report improvement with regards to yard or interchanges that are full. Now
+     only the first occurrence of a full yard or interchange is shown.</li>
+   </ul>
+
+   <p>B. Milhaupt updated the LocoNet Download Firmware tool to provide automatic
+       identification of the firmware file's address format as well as extensive
+       checking of the firmware file for evidence of corruption or out-of-range
+       parameters.  These improvements significantly reduce the risk of 
+       corrupting a device's firmware when using this tool.  The associated help 
+       file was expanded to suit.</p> 
+       
+<p>Robin Becker provided a decoder definition for the Tam Valley Depot Quad-LN_S decoder.
+
+
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
