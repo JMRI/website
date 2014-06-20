@@ -79,13 +79,16 @@ that might have been introduced.</p>
 
 <h3>Known problems with this release</h3>
 
-The following scripts are broken in this release:
-AAR105.py, 
-RailDriver.py, 
-RocoCrane46902.py, 
-Zimo_pseudo_programmer.py
-<br>
-Update versions of these can be downloaded from
+<p>Do not use this release for programming any ESU Select or V4.0 decoder. 
+Instead, please use <a href="jmri3.7.7.shtml">test release 3.7.7</a> or later.</p>
+
+<ul>The following scripts are broken in this release:
+<li>AAR105.py, 
+<li>RailDriver.py, 
+<li>RocoCrane46902.py, 
+<li>Zimo_pseudo_programmer.py
+</ul>
+Updated versions of these can be downloaded from
 <a href="http://www.jmri.org/jython/">http://www.jmri.org/jython/</a>
 on the JMRI web site.
 
