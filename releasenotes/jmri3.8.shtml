@@ -702,6 +702,28 @@ this, see the
     can't be found, instead of having it fail silently.
 
 
+<!-- from 3.7.8 note -->
+
+<p>User request to only print or preview trains in the Trains window that are selected. (r26300)
+
+<p>Fix bug where characters would exceed the line width in the two column format, and tabular disabled. (r26301)
+
+<p>Fix problem with local move of utility car. (r26308)
+
+<p>User request to only show trains that can service a location (r26309)
+
+<p>Fix car type string length calculation (r26329)
+
+<p>Put the creation of each block xml element into a try/catch.  
+There is an issue where the block data isn't being saved but at this stage I have no idea what the trigger is and have had no log files from a user to help narrow it down or replicate it.  
+Doing this will at least prevent all block data from being lost during a save. (r26333)
+
+<p>Ensure that the file paths are correctly loaded from the configuration file, and that the user files (preferences:) path is loaded before other paths.
+Ensure that the scripts path ends with a file separator character.(r26344)
+
+<p>Minor improvement in how the program determines maximum location and track names for manifests and switch lists. (r26347)
+
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
