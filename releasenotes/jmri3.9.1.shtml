@@ -88,6 +88,22 @@ These are development files, and might not be working at any particular time.</p
  
 <h3>Changes since production release 3.8:</h3>
 
+<h4>New / Updated decoder definitions</h4>
+
+<h5>Digitrax</h5>
+<p>Alain Le Marchand made the following changes:</p>
+  <ul>	   
+    <li>Function decoder TF4 :  add a note on pane that CV62 and CV63 values are opposite to what Digitrax documentation writes, and that CV63 is inoperative in fact.</li>
+    <li>Add N Scale Intermountain Board Replacement DN166I0, DN166I1A, DN166I1B, DN166I1C, DN166I1D, DN166I2</li> 
+  </ul>
+
+<h5>SoundTraxx</h5>
+<p>Alain Le Marchand made the following changes:</p>
+  <ul>	   
+    <li>Extended the Soundtraxx Tsunami Function Groups Exchange feature (created by Dave Heap) to Bachmann Sound Value decoders</li>
+    <li>Added Bachmann HO Sound Value EMD GP7, SD70ACe, GEVO ES44AC</li>
+    <li>Added Walthers Proto HO Metroliner, E7A, GP20, GP30, SD7, SD45, U28B/U30B GN,MILW,NYC, USRA 0-8-0</li>   
+  </ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
