@@ -125,36 +125,45 @@ on the
 <p>During development leading to the actual release, you can find test download files on the 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- --> 
+ -->
 
- 
-<h3>Changes since test release 3.7.7:</h3>
 
-<p>User request to only print or preview trains in the Trains window that are selected. (r26300)
+   <h3>Changes since test release 3.7.7:</h3>
 
-<p>Fix bug where characters would exceed the line width in the two column format, and tabular disabled. (r26301)
+   <p>Put the creation of each block xml element into a try/catch. There is an issue where the
+    block data isn't being saved but at this stage I have no idea what the trigger is and have had
+    no log files from a user to help narrow it down or replicate it. Doing this will at least
+    prevent all block data from being lost during a save. (r26333)
+   
+   <p>Ensure that the file paths are correctly loaded from the configuration file, and that the
+    user files (preferences:) path is loaded before other paths. Ensure that the scripts path ends
+    with a file separator character.(r26344)
+   
+   <p>
+    Support for the RR-CirKits MotorMan (r26387)
 
-<p>Fix problem with local move of utility car. (r26308)
-
-<p>User request to only show trains that can service a location (r26309)
-
-<p>Fix car type string length calculation (r26329)
-
-<p>Put the creation of each block xml element into a try/catch.  
-There is an issue where the block data isn't being saved but at this stage I have no idea what the trigger is and have had no log files from a user to help narrow it down or replicate it.  
-Doing this will at least prevent all block data from being lost during a save. (r26333)
-
-<p>Ensure that the file paths are correctly loaded from the configuration file, and that the user files (preferences:) path is loaded before other paths.
-Ensure that the scripts path ends with a file separator character.(r26344)
-
-<p>Minor improvement in how the program determines maximum location and track names for manifests and switch lists. (r26347)
-
-<p>Support for the RR-CirKits MotorMan (r26387)
+    
+   <p>Daniel Boudreau made the following changes to Operations:</p>
+   <ul>
+    <li>User request to only print or preview trains in the Trains window that are selected.
+     (r26300)
+    <li>Fix bug where characters would exceed the line width in the two column format, and
+     tabular disabled. (r26301)
+    
+    <li>Fix problem with local move of utility car. (r26308)
+    
+    <li>User request to only show trains that can service a location (r26309)
+    
+    <li>Fix car type string length calculation (r26329)
+    
+    <li>Minor improvement in how the program determines maximum location and track names for
+     manifests and switch lists. (r26347)</li>
+   </ul>
 
 
 
    <!--#include virtual="/Footer" -->
-  </div><!-- closes #mainContent-->
+   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
 </html>
