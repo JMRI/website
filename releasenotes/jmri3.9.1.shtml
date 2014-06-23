@@ -88,6 +88,25 @@ These are development files, and might not be working at any particular time.</p
  
 <h3>Changes since production release 3.8:</h3>
 
+<h4>Hardware Support</h4>
+<h5>MRC/GaugeMaster</h5>
+Initial Support has been included for the MRC/Gaugemaster Prodigy Advanced system (Ken Cameron & Kevin Dickerson)
+Supported features include:
+  <ul>
+    <li>Programming</li>
+    <li>Turnouts Control</li>
+    <li>Throttle Control</li>
+  </ul>
+  
+<h5>TAMS</h5>
+<p>Added support for Sensors on the TAMS System.  The Tams MC must be running firmware 1.4.7 or above for s88 to work correctly. (kd)
+  
+<h4>Layout Editor</h4>
+<p>On curved track segments the right click popup area is now on the track itself and the chord line has now been removed. (kd)
+<p>On curved track segments it is now possible to hide the construction lines in edit mode. (kd)
+<p>Removal of a Turnout, Slip, Level Crossing or Turntable, no longer removes the connected track segements. (kd)
+<p>It is now possible to join track segments to other items on the panel by dragging the anchor point on top of other anchor points. (kd)
+
 <h4>New / Updated decoder definitions</h4>
 
 <h5>Digitrax</h5>
