@@ -157,6 +157,14 @@ on the
   <li>added some fractional zoom values to LayoutEditor.</li>
 </ul>
 
+<!-- from 3.7.2 note -->
+<p>Dave Heap made the following changes:</p>
+  <ul>
+    <li>Improved the display of file locations under the Help menu.</li>
+    <li>Fixed issues with item state colour coding with OS X and Nimbus display GUIs.</li>
+  </ul>
+
+
 <p>The "Export Roster" and "Import Roster" menu items will now write your whole
 roster to a single file, and then read that back in.  You can use this to move your roster to
 another computer, for example.  On import, you'll be asked to confirm that you want to
@@ -460,11 +468,9 @@ The definition is as complete as is possible from the available documentation an
 <!-- from 3.7.2 note -->
 <p>Dave Heap made the following changes:</p>
   <ul>
-    <li>Improved the display of file locations under the Help menu.</li>
     <li>Added some more NCE menu items to the list of available startup actions and buttons.</li>
     <li>Resolved the problem that caused function commands from JMRI or WiThrottles with NCE systems to be sent to seemingly random consist addresses.</li>
     <li>Fixed a resize issue with the NCE Packet Analyzer window.</li>
-    <li>Fixed issues with item state colour coding with OS X and Nimbus display GUIs.</li>
   </ul>
 
 <h5>Uhlenbrock</h5>
@@ -779,6 +785,7 @@ problems involving CV reading, writing, storage or anything else, please let us 
       for the decoder pane programmer.</li>
     <li>Pane elements "label", "soundlabel", "row", "column", "grid" and "griditem" now support qualifiers.</li>
     <li>Added a "group" pane element that can be used to apply the same qualifier to multiple pane elements.</li>
+    <li>The "pane" and "group" elements now support "include" and "exclude" attributes for decoder/family-specific configuration.</li>
 	<p></p>
 	<!-- from 3.7.7 note -->
     <li>Fixed an issue that caused a hang when reading all sheets of an ESU decoder with some systems.</li>
