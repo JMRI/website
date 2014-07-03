@@ -29,7 +29,7 @@
       Release Notes for JMRI 3.8 release
       </h2>
 
-	<p>Date: MM DD, YYYY</p>
+	<p>Date: July 3, 2014</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Production version 3.8 of JMRI/DecoderPro is available for download.</p>
  
@@ -54,7 +54,7 @@ see our
 
 <p>The decoder definition files have been reformatted to make them easier to maintain.
 If you want to make a change in a decoder definition file, please start with a 
-file from JMRI 3.7.6 or later, such as this release.</p>
+file from this release or later.</p>
 
 <p>The XmlIO web service has been deprecated and is scheduled to be removed in JMRI 3.11 (July 2015).
 All users who are relying on direct access to the XmlIO API are
@@ -92,7 +92,7 @@ you will need to upgrade both the client(s) and the server to the same JMRI vers
 
 This release is being developed via a series of test releases that contain multiple 
 changes.  See those
-<a href="http://jmri.org/download/index.shtml">release notes</a> 
+<a href="http://jmri.org/download/older.html">release notes</a> 
 for more information.
 
 <p>Please use these links for downloading:</p>
@@ -404,7 +404,7 @@ to not display properly.</p>
 <p>Suzie Tall contributed a new signal system definition for the LMS speed signalling that was installed in parts of the UK in 1932 and continued in use until 1988. 
 The definition is as complete as is possible from the available documentation and covers all variations over the entire period of operation.
 
-<p>Suzie Talk added a new <a href="http://jmri.org/xml/signals/BNSF-1996/index.shtml">BNSF-1996 signal system</a>.
+<p>Suzie Tall added a new <a href="http://jmri.org/xml/signals/BNSF-1996/index.shtml">BNSF-1996 signal system</a>.
 
 <p>John Lang updated the NTC 1956 signal files.
 
