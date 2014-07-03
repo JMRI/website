@@ -34,7 +34,9 @@
 	<p>Subject: Production version 3.8 of JMRI/DecoderPro is available for download.</p>
  
 
+<!-- 
 <br><b>This is a draft release note only; the download links do not yet work</b>
+ -->
 
 We are very pleased to announce that the 3.7 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
@@ -93,17 +95,15 @@ changes.  See those
 <a href="http://jmri.org/download/index.shtml">release notes</a> 
 for more information.
 
-<!--
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r24520.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r24520.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r24520.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r24520.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r24520.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r24520.tgz/download</a></p>
--->
+	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.tgz/download</a></p>
  
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -126,8 +126,8 @@ on the
 <!-- from 3.7.1 note -->
 <p>Matthew Harris:
 <ul>
-<li>Updated the Windows Launcher to allow for a <a href="/help/en/html/profiles.shtml">configuration profile</a> to be specified.
-    For further details, see <a href="/help/en/html/doc/Technical/StartUpScripts.shtml#windows">technical details of how the startup scripts work</a>
+<li>Updated the Windows Launcher to allow for a <a href="http://jmri.org/help/en/html/profiles.shtml">configuration profile</a> to be specified.
+    For further details, see <a href="http://jmri.org/help/en/html/doc/Technical/StartUpScripts.shtml#windows">technical details of how the startup scripts work</a>
 <li>Updated the Windows Launcher to bring memory calculations in-line with Linux and OS X
 </ul>
 

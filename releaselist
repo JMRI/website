@@ -1,19 +1,23 @@
 production:
  versions:
+  3.8:
+   tgz: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.tgz/download"
+   dmg: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.dmg/download"
+   exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.exe/download"
   3.6:
    tgz: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r24520.tgz/download"
    dmg: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r24520.dmg/download"
    exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.6-r24520.exe/download"
 test:
  versions:
-  3.7.7:
+  3.9.1:
+   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.tgz/download"
+   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.dmg/download"
+   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.exe/download"
+  3.7.9:
    tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.9-r26488.tgz/download"
    dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.9-r26488.dmg/download"
    exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.9-r26488.exe/download"
-  3.7.8:
-   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.8-r26387.tgz/download"
-   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.8-r26387.dmg/download"
-   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.8-r26387.exe/download"
 
 # This file contains information about the last few JMRI (http://jmri.org) releases.
 # JMRI is distributed under license. More information is at http://jmri.org/Copyright.html
