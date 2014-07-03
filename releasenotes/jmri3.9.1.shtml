@@ -62,6 +62,23 @@ see our
 
 <h3>Older warnings</h3>
 
+<p>The XmlIO web service has been deprecated and is scheduled to be removed in JMRI 3.11 (July 2015).
+All users who are relying on direct access to the XmlIO API are
+recommended to begin using the JSON API. inControl web throttle users are recommended to
+begin using webThrottle instead, or to plan on investing in devices that can support
+webThrottle, the iOS WiThrottle, or the Android Engine Driver.</p>
+
+<p>The configuration structure for JMRI is changing to use <em>Configuration
+Profiles</em>. Configuration Profiles allow a single JMRI application to have
+multiple, user selectable, configurations that can be changed as application
+startup. For some users, this change will have no impact; other users will be
+visibly impacted by this change. See <a
+href="http://jmri.org/help/en/html/profiles.shtml">http://jmri.org/help/en/html/profiles.shtml</a>
+for more information.</p>
+
+<P>This release, and all other releases in this cycle, require Java 1.6 or newer.</p>
+
+
 <h3>Known problems with this release</h3>
 
 <p>None at the time of this release.</p>
