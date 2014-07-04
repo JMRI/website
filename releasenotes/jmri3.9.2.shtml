@@ -93,6 +93,9 @@ These are development files, and might not be working at any particular time.</p
 
 <p>The roster table is now smarter about sorting columns if they contain numbers (instead of alphanumeric names).
 
+<p>There's now a decodeJmriFilename(..) helper routine for use in Jython scripts.
+See the 
+<a href="http://jmri.org/help/en/html/tools/scripting/FAQ.shtml">scripting FAQ</a> for more info.
 
 
 <h4>Hardware Support</h4>
