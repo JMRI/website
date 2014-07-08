@@ -57,6 +57,10 @@ see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
 <h3>New warnings for this version:</h3>
+<p>RFID support has been changed to allow for additional protocols - existing
+   CORE-ID readers <em>should</em> remain unaffected but, in certain
+   circumstances, it may be necessary to update connection configuration with 
+   the correct protocol.</p>
 
 <h3>Older warnings</h3>
 
@@ -99,7 +103,12 @@ See the
 
 
 <h4>Hardware Support</h4>
-<h5>xxx</h5>
+<h5>RFID</h5>
+<p>The current implementation has been refactored to better facilitate the support of additional
+   protocols. Whilst this <em>should</em> not affect the existing CORE-ID readers, it may be necessary
+   to update connection configuration with the correct protocol. (Matthew Harris)</p>
+<p>Initial support has been added for RFID readers that use the Olimex protocol. (Matthew Harris)</p>
+<p>Initial support has been added for RFID readers that use the Parallax protocol. (Matthew Harris)</p>
 
 <h4>New / Updated decoder definitions</h4>
 <h5>SoundTraxx</h5>
