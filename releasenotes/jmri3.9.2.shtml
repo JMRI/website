@@ -107,7 +107,8 @@ See the
 <p>The current implementation has been refactored to better facilitate the support of additional
    protocols. Whilst this <em>should</em> not affect the existing CORE-ID readers, it may be necessary
    to update connection configuration with the correct protocol. (Matthew Harris)</p>
-<p>Initial support has been added for RFID readers that use the Olimex protocol. (Matthew Harris)</p>
+<p>Initial support has been added for RFID readers that use the Olimex protocol.
+   Many thanks to George Bowler for testing with real hardware. (Matthew Harris)</p>
 <p>Initial support has been added for RFID readers that use the Parallax protocol. (Matthew Harris)</p>
 
 <h4>New / Updated decoder definitions</h4>
