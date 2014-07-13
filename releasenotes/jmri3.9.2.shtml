@@ -97,15 +97,8 @@ These are development files, and might not be working at any particular time.</p
 
 <p>The roster table is now smarter about sorting columns if they contain numbers (instead of alphanumeric names).
 
-<p>There's now a decodeJmriFilename(..) helper routine for use in Jython scripts.
-See the 
-<a href="http://jmri.org/help/en/html/tools/scripting/FAQ.shtml">scripting FAQ</a> for more info.
 
-<p>There's now an "exists" qualifier for use in decoder definition files.
-
-<p>Fixed some problems in C/MRI-specific scripts.
-
-<h4>Hardware Support</h4>
+<h4>System Support</h4>
 <h5>RFID</h5>
 <p>The current implementation has been refactored to better facilitate the support of additional
    protocols. Whilst this <em>should</em> not affect the existing CORE-ID readers, it may be necessary
@@ -114,9 +107,23 @@ See the
    Many thanks to George Bowler for testing with real hardware. (Matthew Harris)</p>
 <p>Initial support has been added for RFID readers that use the Parallax protocol. (Matthew Harris)</p>
 
+<h5>OpenLCB</h5>
+The OpenLCB support has been updated to the most recent version of the specifications.
+The most noticeable effect will be faster and cleaner operation of the configuration (CDI-using) tools.
+
+
 <h4>New / Updated decoder definitions</h4>
-<h5>SoundTraxx</h5>
+<p>There's now an "exists" qualifier for use in decoder definition files.
+
 <p>Alain Le Marchand added Tsunami SoundCar DSD definition</p>
+
+<h4>Scripting</h4>
+
+<p>There's now a decodeJmriFilename(..) helper routine for use in Jython scripts.
+See the 
+<a href="http://jmri.org/help/en/html/tools/scripting/FAQ.shtml">scripting FAQ</a> for more info.
+
+<p>Fixed some problems in C/MRI-specific sample scripts.
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
