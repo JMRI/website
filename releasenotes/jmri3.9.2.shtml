@@ -99,6 +99,9 @@ These are development files, and might not be working at any particular time.</p
 
 <p>ARM V7 processor libraries added, so this architecture should work out-of-the-box on Linux.
 
+<p>The format of the mask value in XML decoder definitions is now included in validity checking. The existing decoder
+definitions had a few problems with this, now fixed.
+
 <h4>System Support</h4>
 <h5>RFID</h5>
 <p>The current implementation has been refactored to better facilitate the support of additional
