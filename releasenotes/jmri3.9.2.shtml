@@ -105,7 +105,10 @@ definitions had a few problems with this, now fixed.
 
 <p>
 Configuration XML files (Store Panels, Store Configuration Only) are now written
-with the line-ends standard on the local machine.s
+with the line-ends standard on the local machines.
+
+<p><b>This is the first series of JMRI to support the Roco Z21 command stations via it's built in network connection.</b></p>
+
 
 <h4>System Support</h4>
 <h5>RFID</h5>
@@ -120,6 +123,8 @@ with the line-ends standard on the local machine.s
 The OpenLCB support has been updated to the most recent version of the specifications.
 The most noticeable effect will be faster and cleaner operation of the configuration (CDI-using) tools.
 
+<h5>Roco Z21</h5>
+<p> Initial support has been added for the Roco Z21.  Current support includes XPressNet tunneling only.  Thanks to Bill Lang for testing with real hardware. (Paul Bender)</p>
 
 <h4>New / Updated decoder definitions</h4>
 <p>There's now an "exists" qualifier for use in decoder definition files.</p>
