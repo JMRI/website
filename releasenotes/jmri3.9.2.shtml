@@ -103,6 +103,10 @@ via the Prodigy USB computer interface.</b></p>
 <p>The format of the mask value in XML decoder definitions is now included in validity checking. The existing decoder
 definitions had a few problems with this, now fixed.
 
+<p>
+Configuration XML files (Store Panels, Store Configuration Only) are now written
+with the line-ends standard on the local machine.s
+
 <h4>System Support</h4>
 <h5>RFID</h5>
 <p>The current implementation has been refactored to better facilitate the support of additional
@@ -126,6 +130,7 @@ The most noticeable effect will be faster and cleaner operation of the configura
 <p>Added Doehler &amp; Haass DHF250 definition (Alain Le Marchand )</p>
 <p>Fixed Kuehn N025/T125/T145 defintion (CV55) and refactored definition file and panes (Alain Le Marchand )</p>
 <p>Added Tsunami SoundCar DSD definition (Alain Le Marchand )</p>
+<p>Pierre Billon improved the Doehler &amp; Haass FH05A definition.</p>
 
 <h4>Scripting</h4>
 
@@ -134,6 +139,11 @@ See the
 <a href="http://jmri.org/help/en/html/tools/scripting/FAQ.shtml">scripting FAQ</a> for more info.
 
 <p>Fixed some problems in C/MRI-specific sample scripts.
+
+<p>Brett Scott provided updated versions of the <a href="http://jmri.org/jython/dccspecialties">DCC Specialities scripts</a>
+for the Wabbit et al.
+
+<p>Robin Becker updated the IO Action options in the Tam Valley Quad LN_S decoder definition.
 
 <h4>Operations</h4>
  <p>Dan Boudreau made the following changes to operations:</p>
