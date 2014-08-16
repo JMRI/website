@@ -94,6 +94,11 @@ on the
 <h3>Changes since test release 3.9.2:</h3>
 
 <p>
+The Speedometer now handles international format input.  If you live in a place where
+decimal numbers are written like "1,3" and JMRI is set to that locale
+(see the Locale section on <a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#Display">this page</a>), 
+then use commas when inputing the distances.
+We'll be updating more parts of JMRI to do this in the future.
 
 <h4>System Support</h4>
 <p>This is the first series of JMRI releases to support the MRC command stations
