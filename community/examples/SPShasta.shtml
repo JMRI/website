@@ -39,16 +39,16 @@
 
 This page describes how
 PanelPro is used to control 
-<A HREF="http://www.spshastaroute.com/">Otis McGee's SP Shasta Route</a> layout.
+<A HREF="http://www.spshastaroute.org/">Otis McGee's SP Shasta Route</a> layout.
 <h3>The Layout</h3>
 The SP Shasta Route layout is a model of the Southern Pacific's
 Shasta Division, Black Butte Subdivision in 1952. There's
 an extensive 
-<A HREF="http://spshastaroute.com/">web site</a>
+<A HREF="http://spshastaroute.org/">web site</a>
 describing it.
 <P>
-<A HREF="http://spshastaroute.com/images/22.jpg">
-<IMG SRC="http://spshastaroute.com/images/thumb_22_jpg.gif" WIDTH="200" HEIGHT="150" align="right">
+<A HREF="http://spshastaroute.org/images/22.jpg">
+<IMG SRC="http://spshastaroute.org/images/thumb_22_jpg.gif" WIDTH="200" HEIGHT="150" align="right">
 </A>
 
 Otis's main goal is operations with prototypical fidelity. 
@@ -71,8 +71,8 @@ let us install and operate signals on the layout, and use them for
 collision avoidance during the initial operating sessions.
 
 <P>
-<A HREF="http://spshastaroute.com/e/4.jpg">
-<IMG SRC="http://spshastaroute.com/e/thumb_4_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT">
+<A HREF="http://spshastaroute.org/e/4.jpg">
+<IMG SRC="http://spshastaroute.org/e/thumb_4_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT">
 </A>
 After some research, Otis decided to use C/MRI for layout control,
 and NCE DCC to operate the trains.  C/MRI was well suited because
@@ -92,8 +92,8 @@ Locally operated turnouts have the slide switch directly
 connected to the SMC board, operating the turnout without
 going through the computer.
 <P>
-<A HREF="http://spshastaroute.com/e/12.jpg">
-<IMG SRC="http://spshastaroute.com/e/thumb_12_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT">
+<A HREF="http://spshastaroute.org/e/12.jpg">
+<IMG SRC="http://spshastaroute.org/e/thumb_12_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT">
 </A>
 Mainline turnouts are controlled through PanelPro, because it needs
 to know their position for operating the signals, and because once
@@ -153,7 +153,7 @@ DCC and C/MRI power control!
 
 While the signaling phase was going on, Otis 
 commissioned Rod Loder to build a 
-<A HREF="http://spshastaroute.com/ctc.html">CTC machine</a>.  
+<A HREF="http://spshastaroute.org/ctc.html">CTC machine</a>.  
 Rod does excellent work, using
 prototypical techniques and original components to
 the greatest extent possible. The photo's below show 
@@ -162,14 +162,14 @@ the panel, the beginning of the roughly one thousand connections needed
 to the C/MRI system, and the final panel with the 
 first few indicators lit.
 <br>
-<A HREF="http://spshastaroute.com/c/3.jpg">
-<IMG SRC="http://spshastaroute.com/c/thumb_3_jpg.gif" WIDTH="200" HEIGHT="150">
+<A HREF="http://spshastaroute.org/c/3.jpg">
+<IMG SRC="http://spshastaroute.org/c/thumb_3_jpg.gif" WIDTH="200" HEIGHT="150">
 </A>
-<A HREF="http://spshastaroute.com/c/8.jpg">
-<IMG SRC="http://spshastaroute.com/c/thumb_8_jpg.gif" WIDTH="200" HEIGHT="150">
+<A HREF="http://spshastaroute.org/c/8.jpg">
+<IMG SRC="http://spshastaroute.org/c/thumb_8_jpg.gif" WIDTH="200" HEIGHT="150">
 </A>
-<A HREF="http://spshastaroute.com/c/14.jpg">
-<IMG SRC="http://spshastaroute.com/c/thumb_14_jpg.gif" WIDTH="200" HEIGHT="150">
+<A HREF="http://spshastaroute.org/c/14.jpg">
+<IMG SRC="http://spshastaroute.org/c/thumb_14_jpg.gif" WIDTH="200" HEIGHT="150">
 </A>
 <a href="images/ShastaCTTMachine.jpg">
 <IMG SRC="images/ShastaCTTMachine.jpg" width="200" height="150" alt="Picture of real CTC machine"/></a>
@@ -180,8 +180,8 @@ CTC panel is providing an excellent test-bed for that logic.  They're
 evolving together.
 
 <h3>Third Stage: Automated Staging Assistance</h3>
-<A HREF="http://spshastaroute.com/e/15.jpg">
-<IMG SRC="http://spshastaroute.com/e/thumb_15_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT"></a>
+<A HREF="http://spshastaroute.org/e/15.jpg">
+<IMG SRC="http://spshastaroute.org/e/thumb_15_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT"></a>
 
 Although we've not started on this yet, 
 in the long run we'd like to have PanelPro
