@@ -117,7 +117,14 @@ via it's built in network connection.</b></p>
 <h4>Scripting</h4>
 
 
-<h4>Operations</h4>
+   <h4>Operations</h4>
+   <p>Dan Boudreau made the following changes to operations:</p>
+   <ul>
+    <li>Improved how the alternate track feature works. You can now use the alternate track feature
+     without schedules or custom loads. Note that if you specify an alternate for a spur, only cars
+     destined for that spur will be placed on the alternate track.</li>
+   </ul>
+
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
