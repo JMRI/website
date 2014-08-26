@@ -59,6 +59,12 @@ see our
    circumstances, it may be necessary to update connection configuration with 
    the correct protocol.</p>
 
+<p>The activation.jar library is no longer included with the JMRI download.
+This shouldn't have any impact on you, but it's remotely possible that it
+might impact you if you have your own Java code that you're combining with JMRI
+and/or you're still using a Java version before Java 1.6.
+(Scripts and panel files will not be impacted)
+
 <h3>Older warnings</h3>
 
 <h3>Known problems with this release</h3>
@@ -105,6 +111,9 @@ The AAR-1946 and B&O-1957 signal system definitions had some internal problems f
 This shouldn't cause any problems for people using them, but we can't be 100% certain.
 If you're using these, please check to make sure your signals are still working OK, 
 and let us know if they're not.
+
+<p>Removed the activation.jar library, along with various references to loading it.
+This is no longer needed since JMRI now requires Java 1.6 or later.</p>
 
 <h4>System Support</h4>
     <p>Some improvements to the support for MRC command stations
