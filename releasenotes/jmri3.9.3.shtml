@@ -140,7 +140,11 @@ This is no longer needed since JMRI now requires Java 1.6 or later.</p>
     <li>Diesel TSU-IM1000 (828070, 828071, 828074), TSU-GN1000 GEVO-12 (828059), TSU-KT1000 P42 (828068) (Alain Le Marchand).</li>    
     </ul>
     <p>Robin Becker updated the Tam Valley Depot Quad-LN_S stationary decoder to add a Reset menu item when using the Service Mode programmer.</p>
-    <p>Added the ability to specify (f) or (r) suffixes for functions other than FL (Dave Heap).</p>
+    <p>Dave Heap made the following changes:</p>
+    <ul>
+    <li>Added the ability to specify (f) or (r) suffixes for functions other than FL (see <a href="/help/en/html/apps/DecoderPro/FnMapping.shtml" target="_blank">Function Map</a> page).</li>
+    <li>Improved the warning displayed in the ESU Function Map pane if using the Mac OS X and Java 1.6 combination.</li>
+    </ul>
 <h4>Scripting</h4>
 
 
