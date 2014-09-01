@@ -63,7 +63,10 @@ see our
 This shouldn't have any impact on you, but it's remotely possible that it
 might impact you if you have your own Java code that you're combining with JMRI
 and/or you're still using a Java version before Java 1.6.
-(Scripts and panel files will not be impacted)
+(Scripts and panel files will not be impacted.)</p>
+
+<p>Images associated with roster entries are now saved to the roster directory instead of
+the resources directory when added to the roster entry. Existing images are not moved.</p>
 
 <h3>Older warnings</h3>
 
@@ -156,6 +159,27 @@ This is no longer needed since JMRI now requires Java 1.6 or later.</p>
      destined for that spur will be placed on the alternate track.</li>
     </ul>
 
+<h4>JSON and Web Throttles</h4>
+	<ul>
+	<li>Improved the ability for a JSON or Web Throttle client that has unexpectedly
+	dropped its connection to regain control of the throttle before JMRI automatically
+	stops the train. (Randall Wood)</li>
+	<li>JSON or Web Throttle clients that request a throttle for the same DCC address or
+	roster entry will share a throttle even if the supporting DCC system does not allow
+	multiple throttles per address. (Randall Wood)</li>
+	<li>Web Throttles only display function buttons that have labels assigned to them.
+	(Randall Wood)</li>
+	</ul>
+
+<h4>Miscellaneous</h4>
+	<ul>
+	<li>Images added to a roster entry are now stored within the roster directory instead
+	of the resources directory. (Randall Wood)</li>
+	<li>If multiple profiles are selected, only those actions that apply to multiple
+	profiles are available. (Randall Wood)</li>
+	<li>Clicking anywhere on the profile selection dialog cancels automatically starting
+	with the last used profile. (Randall Wood)</li>
+	</ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
