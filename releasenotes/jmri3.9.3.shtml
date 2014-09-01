@@ -70,6 +70,14 @@ the resources directory when added to the roster entry. Existing images are not 
 
 <h3>Older warnings</h3>
 
+<!-- keep this warning in place through the 3.11/3.12 development cycle -->
+<p>The XmlIO web service has been deprecated and is scheduled to be removed in JMRI 3.11 (July 2015).
+All users and developers who are relying on direct access to the XmlIO API are
+recommended to begin using the JSON API. inControl web throttle users are recommended to
+begin using webThrottle instead, or to plan on investing in devices that can support
+webThrottle, <a href="http://withrottle.com">WiThrottle</a> for iOS, or
+<a href="http://enginedriver.rrclubs.org">Engine Driver</a> for Android.</p>
+
 <h3>Known problems with this release</h3>
 
 <p>None at the time of this release.</p>
