@@ -161,13 +161,22 @@ This is no longer needed since JMRI now requires Java 1.6 or later.</p>
 
 <h4>Operations</h4>
     <p>Dan Boudreau made the following changes to operations:</p>
-    <ul>
-    <li>Improved how the alternate track feature works. You can now use the alternate track feature
-     without schedules or custom loads. Note that if you specify an alternate for a spur, only cars
-     destined for that spur will be placed on the alternate track.</li>
-    </ul>
+   <ul>
+    <li>Improved how the alternate track feature works. You can now use the alternate track
+     feature without schedules or custom loads. Note that if you specify an alternate for a spur,
+     only cars destined for that spur will be placed on the alternate track.</li>
+    <li>New feature, random moves for any location in a train's route. In the route edit window
+     you will find a new column labeled "Random" with a menu of 10 items, The default is "Off" or
+     disabled, and there are values between 10 and 100. If you select 10, it tells the program to
+     randomly reduce the number of cars moves at the location by up to 10%. So if you asked for 10
+     moves, you could get 10 or 9 moves. If you selected 50, you could get any number of moves
+     between 10 and 5. If you select 100, you could get any number of moves between 10 and 0. Be
+     sure and press "Save" after you make your selection.
+     <li>Fixed a bug where cars out of staging used the same schedule item, even if the schedule was in
+     sequential mode.  Thanks to Dave Cochrun for identifying and helping us debug this problem.
+   </ul>
 
-<h4>JSON and Web Throttles</h4>
+   <h4>JSON and Web Throttles</h4>
 	<ul>
 	<li>Improved the ability for a JSON or Web Throttle client that has unexpectedly
 	dropped its connection to regain control of the throttle before JMRI automatically
