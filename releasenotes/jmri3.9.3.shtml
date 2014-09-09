@@ -201,6 +201,9 @@ This is no longer needed since JMRI now requires Java 1.6 or later.</p>
 	profiles are available. (Randall Wood)</li>
 	<li>Clicking anywhere on the profile selection dialog cancels automatically starting
 	with the last used profile. (Randall Wood)</li>
+	<li>Changed the upload debugging info functions to now use SourceForge mailing 
+	list. This should avoid problems previously seen when attempting to access
+	previous mailing list directly. (Matthew Harris)</li>
 	</ul>
 
    <!--#include virtual="/Footer" -->
