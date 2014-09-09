@@ -19,9 +19,9 @@ if(strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
     $headers['To'] = join(', ', $recipients);
     $headers['Subject'] = test_input($_POST['summary']);
 
-    // Add sender to the recipents // TODO: Make this optional
-    $headers['Cc'] = test_input($_POST['reporter']);
-    $recipients .= ', ' . test_input($_POST['reporter']);
+    // Add sender to the recipents // TODO: Make this optional and fix it!!
+    //$headers['Cc'] = test_input($_POST['reporter']);
+    //$recipients .= ', ' . test_input($_POST['reporter']);
 
     // Get detailed problem
     $body = htmlspecialchars($_POST['problem']);
