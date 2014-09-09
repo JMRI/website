@@ -6,22 +6,28 @@ include_once('include/settings.php');
 /**
  * Process an HTTP POST request based on the following fields:
  * reporter: email address of reporter
+ * sendcopy: send a copy of message to the reporter (yes|no)
  * summary: short summary of problem (used as title)
  * problem: detailed error report (used as body)
  * logfileupload: log files to attach
  */
 
 // First check that we've been accessed via an HTTP POST request
-if(strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
+if((strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') 
+        && (!empty($_POST['reporter']))) {
 
     // Set-up basic headers
     $headers['From'] = test_input($_POST['reporter']);
     $headers['To'] = join(', ', $recipients);
     $headers['Subject'] = test_input($_POST['summary']);
 
-    // Add sender to the recipents // TODO: Make this optional and fix it!!
-    //$headers['Cc'] = test_input($_POST['reporter']);
-    //$recipients .= ', ' . test_input($_POST['reporter']);
+    // If requested, add sender to the recipents
+    if (!empty($_POST['sendcopy'])) {
+        if (test_input($_POST['sendcopy']) == 'yes') {
+            $headers['Cc'] = test_input($_POST['reporter']);
+            $recipients[] = test_input($_POST['reporter']);
+        }
+    }
 
     // Get detailed problem
     $body = htmlspecialchars($_POST['problem']);
