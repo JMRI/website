@@ -19,6 +19,10 @@ if(strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
     $headers['To'] = join(', ', $recipients);
     $headers['Subject'] = test_input($_POST['summary']);
 
+    // Add sender to the recipents // TODO: Make this optional
+    $headers['Cc'] = test_input($_POST['reporter']);
+    $recipients .= ', ' . test_input($_POST['reporter']);
+
     // Get detailed problem
     $body = htmlspecialchars($_POST['problem']);
 
@@ -62,9 +66,9 @@ if(strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
 
                 // Add attachment to message
                 $body .= "--{$mimeBoundary}\n" .
-                        "Content-Type: {$fileType};\n" .
-                        " name=\"{$fileName}\"\n" .
-                        "Content-Transfer-Encoding: base64\n\n" .
+                        "Content-Type: {$fileType}; name=\"{$fileName}\"\n" .
+                        "Content-Transfer-Encoding: base64\n" .
+                        "Content-Disposition: attachment; filename=\"{$fileName}\"\n\n" .
                         $data . "\n\n";
             }
         }
