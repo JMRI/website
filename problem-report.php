@@ -15,8 +15,6 @@ include_once('include/settings.php');
 if(strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
 
     // Set-up basic headers
-    $recipients = array('jmri-problem-reports@googlegroups.com');
-
     $headers['From'] = test_input($_POST['reporter']);
     $headers['To'] = join(', ', $recipients);
     $headers['Subject'] = test_input($_POST['summary']);
@@ -39,9 +37,9 @@ if(strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
                 "--{$mimeBoundary}\n" .
                 "Content-Type: text/plain; charset=\"ISO-8859-1\"\n" .
                 "Content-Transfer-Encoding: 7bit\n\n" .
-                $body;
+                $body . "\n\n";
 
-        // Loop through attachements
+        // Loop through attachments
         foreach( $_FILES['logfileupload']['tmp_name'] as $index => $tmpName) {
             if(!empty($_FILES['logfileupload']['error'][$index])) {
                 // Oh dear, there's a problem with this file.
@@ -63,31 +61,41 @@ if(strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
                 $data = chunk_split(base64_encode($data));
 
                 // Add attachment to message
-                $body .= "\n\n--{$mimeBoundary}\n" .
+                $body .= "--{$mimeBoundary}\n" .
                         "Content-Type: {$fileType};\n" .
                         " name=\"{$fileName}\"\n" .
                         "Content-Transfer-Encoding: base64\n\n" .
-                        $data;
+                        $data . "\n\n";
             }
         }
         // Add final MIME boundary
-        $body .= "\n\n--{$mimeBoundary}\n";
+        $body .= "--{$mimeBoundary}\n";
     }
 
     // Generate a mail object
     $mail_object =& Mail::factory('smtp',
             array(
                 'host' => $settings['host'],
+                'port' => $settings['port'],
                 'auth' => $settings['auth'],
                 'username' => $settings['username'],
                 'password' => $settings['password'],
             ));
 
     // Now send it
-    $mail_object->send($recipients, $headers, $body);
-    echo 'Sent!!' ;
+    $status = $mail_object->send($recipients, $headers, $body);
+
+    // Check for errors
+    if (PEAR::isError($status)) {
+        echo '<p>Message NOT sent:</p>\n'
+            . '<p>' . $status->getMessage() . '</p>\n'
+            . '<p>' . $status->getDebugInfo() . '</p>';
+    } else {
+        echo '<p>Message successfully sent!</p>';
+    }
 } else {
-    echo 'No form data received.';
+    // We've been accessed directly - report appropriately
+    echo '<p>No form data received.</p>';
 }
 
 /**
