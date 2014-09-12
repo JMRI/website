@@ -204,6 +204,8 @@ This is no longer needed since JMRI now requires Java 1.6 or later.</p>
 	<li>Changed the upload debugging info functions to now use SourceForge mailing 
 	list. This should avoid problems previously seen when attempting to access
 	previous mailing list directly. (Matthew Harris)</li>
+	<li>in AbstractAutomaton (used by some scripting) provide for timeout value when throttle not acquired, 
+	default to 30 seconds (Steve Todd)</li>
 	</ul>
 
    <!--#include virtual="/Footer" -->
