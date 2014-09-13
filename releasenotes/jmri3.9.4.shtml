@@ -117,6 +117,9 @@ on the
 <h4>New / Updated decoder definitions</h4>
 
 <h4>Scripting</h4>
+<ul><li>in AbstractAutomaton (used by some scripts), cancel throttle requests after failure or timeout so that 
+		subsequent retries can complete</li>
+</ul>	
 
 <h4>Operations</h4>
    
@@ -128,7 +131,6 @@ on the
 </ul>
 
 <h4>Miscellaneous</h4>
-
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

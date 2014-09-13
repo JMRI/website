@@ -161,6 +161,10 @@ This is no longer needed since JMRI now requires Java 1.6 or later.</p>
     <li>Improved the warning displayed in the ESU Function Map pane if using the Mac OS X and Java 1.6 combination.</li>
     </ul>
 <h4>Scripting</h4>
+   <ul>
+   	<li>in AbstractAutomaton (used by some scripting) provide for timeout value when throttle not acquired, 
+	default to 30 seconds (Steve Todd)</li>
+</ul>
 
 
 <h4>Operations</h4>
@@ -204,9 +208,7 @@ This is no longer needed since JMRI now requires Java 1.6 or later.</p>
 	<li>Changed the upload debugging info functions to now use SourceForge mailing 
 	list. This should avoid problems previously seen when attempting to access
 	previous mailing list directly. (Matthew Harris)</li>
-	<li>in AbstractAutomaton (used by some scripting) provide for timeout value when throttle not acquired, 
-	default to 30 seconds (Steve Todd)</li>
-	</ul>
+</ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
