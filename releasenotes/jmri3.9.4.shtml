@@ -113,11 +113,16 @@ on the
 <p>
 
 <h4>System Support</h4>
+<ul>
+	<li>LocoNet: no longer ignore slot responses that don't immediately follow a slot
+	request.  Other hardware can insert messages, which were causing lost acquisitions in software throttles.</li>
+</ul>	
 
 <h4>New / Updated decoder definitions</h4>
 
 <h4>Scripting</h4>
-<ul><li>in AbstractAutomaton (used by some scripts), cancel throttle requests after failure or timeout so that 
+<ul>
+	<li>in AbstractAutomaton (used by some scripts), cancel throttle requests after failure or timeout so that 
 		subsequent retries can complete</li>
 </ul>	
 
