@@ -124,6 +124,7 @@ on the
 <ul>
 	<li>in AbstractAutomaton (used by some scripts), cancel throttle requests after failure or timeout so that 
 		subsequent retries can complete</li>
+	<li>change AutoDispatcher2.py to retry on acquisition failure or timeout</li>
 </ul>	
 
 <h4>Operations</h4>
