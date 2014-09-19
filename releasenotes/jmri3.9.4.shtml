@@ -132,7 +132,8 @@ on the
 	    <a href="http://jmri.org/jython/HoldSignalForSensor.py">HoldSignalForSensor.py</a>(Steve Todd)</li>
 	<li>Script to use fascia button to control loco functions (horn, bell, etc.) 
 	    <a href="http://jmri.org/jython/ThrottleFunctionForSensor.py">ThrottleFunctionForSensor.py</a>(Steve Todd)</li>
-	    
+	<li>Script to check the status of C/MRI node polling, e.g. to detect a powered-off node, and
+	    set into sensors for display on panels: <a href="http://jmri.org/jython/CmriNodeMonitor.py">CmriNodeMonitor.py</a>
 </ul>	
 
 <h4>Operations</h4>
@@ -140,11 +141,15 @@ on the
    
 <h4>Web Server and Web Throttles</h4>
 
-<ul>
-<li>Fixed error introduced in 3.8 that sometimes prevented a Panel from linking to another Panel (Randall Wood)</li>
-</ul>
+    <ul>
+    <li>Fixed error introduced in 3.8 that sometimes prevented a Panel from linking to another Panel (Randall Wood)</li>
+    </ul>
 
 <h4>Miscellaneous</h4>
+
+Joan de Castro improved the Catalan translation.
+<p>
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
