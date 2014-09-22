@@ -114,8 +114,10 @@ on the
 
 <h4>System Support</h4>
 <ul>
-	<li>LocoNet: no longer ignore slot responses that don't immediately follow a slot
-	request.  Other hardware can insert messages, which were causing lost acquisitions in software throttles.</li>
+	<li>LocoNet: no longer ignore slot responses that don't immediately follow a slot request.
+	        Other hardware can insert messages, which were causing lost acquisitions in software throttles. (Steve Todd)</li>
+	<li>LocoNet: if no response to slot request, retry, then call failure method if still no response.  
+	        Handles Slot Max error, for example. (Steve Todd)</li>
 </ul>	
 
 <h4>New / Updated decoder definitions</h4>
