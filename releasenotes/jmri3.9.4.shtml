@@ -136,12 +136,23 @@ on the
 	    <a href="http://jmri.org/jython/ThrottleFunctionForSensor.py">ThrottleFunctionForSensor.py</a>(Steve Todd)</li>
 	<li>Script to check the status of C/MRI node polling, e.g. to detect a powered-off node, and
 	    set into sensors for display on panels: <a href="http://jmri.org/jython/CmriNodeMonitor.py">CmriNodeMonitor.py</a>
-</ul>	
+</ul>
 
-<h4>Operations</h4>
-   
-   
-<h4>Web Server and Web Throttles</h4>
+   <h4>Operations</h4>
+   <p>Dan Boudreau made the following changes to operations:</p>
+   <ul>
+    <li>You can now select the type of sort you want directly in the car roster print or
+     preview window.</li>
+    <li>The program now prints out the entire location and track name when printing or
+     previewing your car roster. Previously the program limited the number of print characters to
+     38.</li>
+    <li>Some additional improvements to the train build report.</li>
+    <li>Fixed a problem were cars in a kernel weren't correctly redirected from an alternate
+     track. Thanks to David Waraxa for finding and reporting this problem.</li>
+   </ul>
+
+
+   <h4>Web Server and Web Throttles</h4>
 
     <ul>
     <li>Fixed error introduced in 3.8 that sometimes prevented a Panel from linking to another Panel (Randall Wood)</li>
