@@ -151,6 +151,18 @@ on the
      track. Thanks to David Waraxa for finding and reporting this problem.</li>
    </ul>
 
+<h4>Shapes (Control Panel Editor)</h4>
+<ul>
+	<li>Minimal size of a shape changed to 4x4 pixels.</li>
+	<li>Error detection improve - shapes no longer disappear on invalid data.</li>
+	<li>Both line and fill colors may have transparency - i.e. can be made transparent.</li>
+</ul>	
+<h4>Warrants/h4>
+<ul>
+	<li>Help file added to the NXWarrant window. See file for details to the following</li>
+	<li>NXWarrant algorithm changed to conform to actual block distances.  It is strongly recommended to enter reasonable lengths of OBlocks.</li>
+	<li>Menu item for layout scale added.</li>
+</ul>	
 
    <h4>Web Server and Web Throttles</h4>
 
