@@ -122,6 +122,9 @@ on the
 
 <h4>New / Updated decoder definitions</h4>
 
+    <p>Added definitions for Qdecoder accessory and function decoders:  F0-4, F0-8, F0-4+, F0-8+, Z1-8N, Z1-16, Z1-16+, Z2-8N, Z2-8, Z2-8+ (Alain Le Marchand)</p>
+    <p>Added definitions for Digirails (Digikeijs) DCC LED bar DR80010 (Ronald aka ROn30)</p>
+
 <h4>Scripting</h4>
 <ul>
 	<li>in AbstractAutomaton (used by some scripts), cancel throttle requests after failure or timeout so that 
