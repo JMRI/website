@@ -118,6 +118,8 @@ on the
 	        Other hardware can insert messages, which were causing lost acquisitions in software throttles. (Steve Todd)</li>
 	<li>LocoNet: if no response to slot request, retry, then call failure method if still no response.  
 	        Handles Slot Max error, for example. (Steve Todd)</li>
+        <li>LocoNet: Configure Duplex Group tool now operates correctly in JMRI profiles 
+            which have more than one active LocoNet connection. (B. Milhaupt></li>
 </ul>	
 
 <h4>New / Updated decoder definitions</h4>
@@ -160,7 +162,7 @@ on the
 	<li>Error detection improve - shapes no longer disappear on invalid data.</li>
 	<li>Both line and fill colors may have transparency - i.e. can be made transparent.</li>
 </ul>	
-<h4>Warrants/h4>
+<h4>Warrants</h4>
 <ul>
 	<li>Help file added to the NXWarrant window. See file for details to the following</li>
 	<li>NXWarrant algorithm changed to conform to actual block distances.  It is strongly recommended to enter reasonable lengths of OBlocks.</li>
