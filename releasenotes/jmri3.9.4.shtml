@@ -119,7 +119,7 @@ on the
 	<li>LocoNet: if no response to slot request, retry, then call failure method if still no response.  
 	        Handles Slot Max error, for example. (Steve Todd)</li>
         <li>LocoNet: Configure Duplex Group tool now operates correctly in JMRI profiles 
-            which have more than one active LocoNet connection. (B. Milhaupt></li>
+            which have more than one active LocoNet connection. (B. Milhaupt)</li>
 </ul>	
 
 <h4>New / Updated decoder definitions</h4>
@@ -151,12 +151,17 @@ on the
     <li>The program now prints out the entire location and track name when printing or
      previewing your car roster. Previously the program limited the number of print characters to
      38.</li>
-    <li>Some additional improvements to the train build report.</li>
+    <li>The column order for the Cars window is now saved correctly.</li>
     <li>Fixed a problem were cars in a kernel weren't correctly redirected from an alternate
      track. Thanks to David Waraxa for finding and reporting this problem.</li>
+    <li>Track comments are now saved to the CSV files.</li>
+    <li>Some additional improvements to the train build report. A list of cars that couldn't be
+     routed is now shown at the end of the report,</li>
+    <li>Fixed an issue where cars in a kernel in a train departing staging and returning to the
+     same staging track could cause the program to incorrectly report track space issues.</li>
    </ul>
 
-<h4>Shapes (Control Panel Editor)</h4>
+   <h4>Shapes (Control Panel Editor)</h4>
 <ul>
 	<li>Minimal size of a shape changed to 4x4 pixels.</li>
 	<li>Error detection improve - shapes no longer disappear on invalid data.</li>
