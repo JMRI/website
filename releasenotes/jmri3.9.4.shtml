@@ -114,12 +114,18 @@ on the
 
 <h4>System Support</h4>
 <ul>
-	<li>LocoNet: no longer ignore slot responses that don't immediately follow a slot request.
-	        Other hardware can insert messages, which were causing lost acquisitions in software throttles. (Steve Todd)</li>
-	<li>LocoNet: if no response to slot request, retry, then call failure method if still no response.  
-	        Handles Slot Max error, for example. (Steve Todd)</li>
-        <li>LocoNet: Configure Duplex Group tool now operates correctly in JMRI profiles 
-            which have more than one active LocoNet connection. (B. Milhaupt)</li>
+    <li>LocoNet: no longer ignore slot responses that don't immediately follow a slot request.
+            Other hardware can insert messages, which were causing lost acquisitions in software throttles. (Steve Todd)</li>
+    <li>LocoNet: if no response to slot request, retry, then call failure method if still no response.  
+            Handles Slot Max error, for example. (Steve Todd)</li>
+    <li>LocoNet: Configure Duplex Group tool now operates correctly in JMRI profiles 
+        which have more than one active LocoNet connection. (B. Milhaupt></li>
+    <li>Zimo: Now Supporting the Binary Protocol v5 for the MXULF and tentatively on the MX10 for  (K Dickerson)
+        <ul>
+            <li>Service Mode Programming</li>
+            <li>Track Power Control</li>
+            <li>Throttle Control</li>
+        </ul></li>
 </ul>	
 
 <h4>New / Updated decoder definitions</h4>
