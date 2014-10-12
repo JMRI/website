@@ -121,13 +121,17 @@ on the
     <li>LocoNet: if no response to slot request, retry, then call failure method if still no response.  
             Handles Slot Max error, for example. (Steve Todd)</li>
     <li>LocoNet: Configure Duplex Group tool now operates correctly in JMRI profiles 
-        which have more than one active LocoNet connection. (B. Milhaupt></li>
+        which have more than one active LocoNet connection. (B. Milhaupt)</li>
     <li>Zimo: Now Supporting the Binary Protocol v5 for the MXULF and tentatively on the MX10 for  (K Dickerson)
         <ul>
             <li>Service Mode Programming</li>
             <li>Track Power Control</li>
             <li>Throttle Control</li>
         </ul></li>
+    <li>MERG: attempt to resolve the throttle allowing full range of long addresses.
+    	It was not correctly processing the long/short option for some address values.
+    	NOTE: This needs more testing as hardware wasn't available when I was correcting
+    	the code. (K. Cameron)</li>
 </ul>	
 
 <h4>New / Updated decoder definitions</h4>
@@ -136,6 +140,7 @@ on the
     <p>Added definitions for Digirails (Digikeijs) DCC LED bar DR80010 (Ronald aka ROn30)</p>
     <p>Alain Carraso added definitions for the Trix Glasscar 22191 and BB12000</p>
     <p>Nigel Cliffe added a definition for the Hornby TTS</p>
+    <p>Team Digital provided updates for the CSC and SHD2</p>
 
 <h4>Scripting</h4>
 <ul>
@@ -198,7 +203,7 @@ on the
     <li>Added the possibility to include both the currently loaded panel file and
         relevant files from active profile when uploading debugging info (Matthew Harris)</li>
     <li>Added ability to export profile as a ZIP archive (Randall Wood)</li>
-    <li>Suzie Tall added a <a href="http://jmri.org/xml/signals/B&O-2009">2009 B&O signal system</a></li>
+    <li>Suzie Tall added a <a href="http://jmri.org/xml/signals/B&O-2009">2009 B&amp;O signal system</a></li>
 </ul>
 <p>
 
