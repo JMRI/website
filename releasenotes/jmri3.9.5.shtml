@@ -115,7 +115,22 @@ on the
 
 <h4>New / Updated decoder definitions</h4>
     <ul>
-    <li></li>
+    <li><a href="http://jmri.org/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#tcsaccess">Code improvements</a> to handle some special cases in the TCS WOW decoders</li>
+    </ul>
+
+<h4>Signaling</h4>
+    <ul>
+    <li>
+        Blocks now have a UNDETECTED state to represent a block that's not connected to a Sensor.
+        The default signal logic treats this an unoccupied, so that a train can be cleared into
+        an undetected track.  
+        <p>
+        Custom signal logic can use this to handle special rules for unsignaled sidings, etc.
+        <p>
+        By default, this is similar to the behavior of JMRI 3.6 and before.  JMRI 3.8
+        treated blocks without a connected sensor as occupied, so that trains could not be cleared into 
+        a block if there was no sensor configured in the block.
+    </li>
     </ul>
 
  
