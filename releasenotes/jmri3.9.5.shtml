@@ -139,13 +139,21 @@ on the
     <li></li>
     </ul>
 
-<h4>Operations</h4>
-    <p>Dan Boudreau made the following changes to operations:</p>
-    <ul>
-    <li></li>
-    </ul>
+   <h4>Operations</h4>
+   <p>Dan Boudreau made the following changes to operations:</p>
+   <ul>
+    <li>Added more options and tool tips to the Edit Manifest Text and Edit Switch List Test
+     windows. You can now show the train's name and description to most of the manifest and switch
+     lists messages.</li>
+    <li>Added a "Check Destinations" button to the "Edit Track Destinations" window. When
+     pressed the program will check all car types, roads, and loads that the track services, and
+     will confirm if the destinations selected can also service the same types, roads, and load.
+     Also checks to see if there's a train or trains that can also service the track and the
+     destinations for all car types services by the track. The check stops when the first problem is
+     found.</li>
+   </ul>
 
-<h4>Shapes (Control Panel Editor)</h4>
+   <h4>Shapes (Control Panel Editor)</h4>
     <ul>
     <li>Vertices of polygon shapes may be deleted or inserted.  Use A or D, or Insert or Delete keys.</li>
     </ul>	
