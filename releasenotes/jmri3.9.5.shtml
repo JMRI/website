@@ -55,7 +55,10 @@ see our
 
 <h3>New warnings for this version:</h3>
 
-None at this time.
+This release has some changes to XML file processing.  They're meant to be transparent
+for existing files (roster, panels, etc), but mistakes happen. If you encounter trouble
+with existing roster or panel files, please let us know.  Most importantly, if 
+that happens, immediately make a back up copy of your files!
 
 <h3>Older warnings</h3>
 
@@ -140,7 +143,7 @@ on the
     <li></li>
     </ul>
 
-   <h4>Operations</h4>
+<h4>Operations</h4>
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
     <li>Added more options and tool tips to the Edit Manifest Text and Edit Switch List Test
@@ -154,7 +157,7 @@ on the
      The check stops when the first problem is found.</li>
    </ul>
 
-   <h4>Control Panel Editor</h4>
+<h4>Control Panel Editor</h4>
     <ul>
     <li>Shapes: Vertices of polygon shapes may be deleted or inserted.  Use A or D, or Insert or Delete keys.</li>
     <li>Item Palette: Additional sensor positions can be added (or deleted) to MultiSensors. See Help page.</li>
@@ -172,7 +175,12 @@ on the
 
 <h4>Miscellaneous</h4>
     <ul>
-    <li></li>
+    <li>
+        The XML output format has changed from NORMALIZE to PRESERVE. This allows keeping
+        leading and trailing spaces on text in the XML file.  This shouldn't cause any
+        problems with existing files, but if it does, please let us know so we can correct
+        things.
+    </li>
     </ul>
 
 
