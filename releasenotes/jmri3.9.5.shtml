@@ -149,7 +149,7 @@ on the
     <li></li>
     </ul>
 
-<h4>Operations</h4>
+   <h4>Operations</h4>
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
     <li>Added more options and tool tips to the Edit Manifest Text and Edit Switch List Test
@@ -161,9 +161,20 @@ on the
      also service the same types, roads, and load. Also checks to see if there's a train or trains
      that can also service the track and the destinations for all car types services by the track.
      The check stops when the first problem is found.</li>
+    <li>New tool for the "Locations" window, "Modify Locations by Car Load". Now you can
+     quickly see and adjust which tracks at a location can accept certain loads. Also show which
+     loads staging tracks can ship.</li>
+    <li>Fixed a minor issue when manually placing a car on an interchange/classification track.
+     The program would remember which route the car was previously set out by. The program now
+     clears the last route information when manually placing a car.</li>
+    <li>Improved how the program determines where in a train's route to set out a car when
+     manually adding a car to a train.</li>
+    <li>Fix a minor problem when using a pool, sometimes the program reported a "Capacity"
+     issue, when it really was a "Length" issue.</li>
+    <li>Added the "Show Car Types" tool the the "Trains" window.</li>
    </ul>
 
-<h4>Control Panel Editor</h4>
+   <h4>Control Panel Editor</h4>
     <ul>
     <li>Shapes: Vertices of polygon shapes may be deleted or inserted.  Use A or D, or Insert or Delete keys.</li>
     <li>Item Palette: Additional sensor positions can be added (or deleted) to MultiSensors. See Help page.</li>
