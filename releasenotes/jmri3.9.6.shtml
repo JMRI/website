@@ -77,12 +77,19 @@ and/or you're still using a Java version before Java 1.6.
 the resources directory when added to the roster entry. Existing images are not moved.</p>
 
 <!-- keep this warning in place through the 3.11/3.12 development cycle -->
-<p>The XmlIO web service has been deprecated and is scheduled to be removed in JMRI 3.11 (July 2015).
+<p>The XmlIO web service has been deprecated and is scheduled to be removed after JMRI 3.12 (July 2015).
 All users and developers who are relying on direct access to the XmlIO API are
 recommended to begin using the JSON API. inControl web throttle users are recommended to
 begin using webThrottle instead, or to plan on investing in devices that can support
 webThrottle, <a href="http://withrottle.com">WiThrottle</a> for iOS, or
 <a href="http://enginedriver.rrclubs.org">Engine Driver</a> for Android.</p>
+
+<!-- keep this warning in place through the 3.11/3.12 development cycle -->
+<p>Several methods in the InstanceManager class have been deprecated and will be removed
+after JMRI 3.12 (July 2015). This doesn't affect JMRI users, but if you have your own 
+code that uses JMRI, please 
+<a href="http://sourceforge.net/p/jmri/code/HEAD/tree/trunk/jmri/java/src/jmri/InstanceManager.java">take a look at the code</a>
+and make any necessary changes.
 
 <h3>Known problems with this release</h3>
 
@@ -104,13 +111,13 @@ on the
 <!-- 
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.4-r23800.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.4-r23800.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r23800.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r23800.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.4-r23800.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.4-r23800.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r23800.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r23800.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.4-r23800.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.4-r23800.tgz/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r23800.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r23800.tgz/download</a></p>
  -->
 
 
@@ -119,6 +126,10 @@ on the
 <h4>New / Updated decoder definitions</h4>
     <ul>
         <li>A problem in the QDecoder ZBasic definition was fixed.
+        <li>Decoder definitions can now be written for accessory decoders that use
+            accessory ops mode programming.  See the xml/decoders/0NMRA_accessory.xml file
+            for an example.  This is new support which needs more work and testing. If you
+            have one of these decoders and want to help, please contact us.
     </ul>
 
 <h4>Signaling</h4>
