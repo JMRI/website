@@ -169,6 +169,15 @@ on the
 
 <h4>Miscellaneous</h4>
     <ul>
+    <li>LocoNet turnouts that use EXACT feedback now transition through INCONSISTENT as 
+        they move from THROWN to CLOSED or CLOSED to THROWN.  
+    <li>SE8c signal heads now try to track the layout status to detect changes
+        in their state caused by external events, e.g. something outside JMRI
+        changing them.  This is useful when e.g. you've got two computers controlling
+        a LocoNet.  Note that this works for RED, YELLOW, GREEN and DARK, but 
+        not for the FLASHING aspects, nor for Held and Lit states.  The recommendation
+        is still to have all your layout logix running in a single running copy
+        of JMRI.
     </ul>
 
 
