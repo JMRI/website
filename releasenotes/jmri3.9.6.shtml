@@ -142,7 +142,15 @@ on the
  
 <h4>Scripting</h4>
     <ul>
-    <li></li>
+    <li>The Python interpreter is now initialized on demand, when first used. If the former
+    default behavior of initializing the Python interpreter during application launch is
+    required, include -Dorg.jmri.python.preload=true in the JMRI_OPTIONS environment
+    variable.</li>
+    <li>It is now possible to influence the initialization of the Python interpreter by
+    setting Jython and Python properties in the file "python.properties" in a Configuration
+    Profile directory, or in the JMRI Settings directory.</li>
+    <li>A Jython interpreter must be in the Java CLASSPATH. JMRI is shipped with a Jython
+    interpreter, so unless the JMRI installation is modified, one should be available.</li>
     </ul>
 
 <h4>Operations</h4>
