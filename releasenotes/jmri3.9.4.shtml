@@ -72,6 +72,13 @@ the resources directory when added to the roster entry. Existing images are not 
 
 <h3>Older warnings</h3>
 
+The JMRI 3.9.* releases series, including this one, and JMRI 3.10 (expected in December 2014),
+will be the last JMRI releases that will work with Java 1.6.  
+To use any later JMRI test or production releases, you'll have to 
+<a href="https://java.com/en/download/index.jsp">update the Java on your computer<a/> to Java 1.8 or later.
+All JMRI releases 3.9.3 and later are tested on Java 1.8, so you 
+can do the Java update now if you want to.
+
 <!-- keep this warning in place through the 3.11/3.12 development cycle -->
 <p>The XmlIO web service has been deprecated and is scheduled to be removed in JMRI 3.11 (July 2015).
 All users and developers who are relying on direct access to the XmlIO API are
