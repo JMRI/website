@@ -138,6 +138,7 @@ on the
             See the <a href="http://xml/decoders/0NMRA_accessory.xml">xml/decoders/0NMRA_accessory.xml</a> file
             for an example.  This is new support which needs more work and testing. If you
             have one of these decoders and want to help, please contact us.
+        <li>Peter Ulvestad fixed some spelling errors in BLI Blueline decoder definitions.
     </ul>
 
 <h4>Signaling</h4>
@@ -196,6 +197,8 @@ on the
         of JMRI.
     <li>NCE Network Connection method fixed to enable the different NCE menu items. (Ken C)
     <li>RFID support has been added for Seeed Studio RDM630 readers. (Matthew Harris)
+    <li>Walter Thompson improved the LocoNet stats help.
+    <li>Improved handling of long vs short in AbstractAutomat scripting
     </ul>
 
 
