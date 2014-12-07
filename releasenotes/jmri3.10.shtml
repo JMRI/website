@@ -48,7 +48,23 @@ JMRI is now only available under the
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
-<h3>New warnings for this version:</h3>
+<h3>Warnings:</h3>
+
+<!-- keep this warning in place through the 3.11/3.12 development cycle -->
+<p>The XmlIO web service has been deprecated and is scheduled to be removed after JMRI 3.12 (July 2015).
+All users and developers who are relying on direct access to the XmlIO API are
+recommended to begin using the JSON API. inControl web throttle users are recommended to
+begin using webThrottle instead, or to plan on investing in devices that can support
+webThrottle, <a href="http://withrottle.com">WiThrottle</a> for iOS, or
+<a href="http://enginedriver.rrclubs.org">Engine Driver</a> for Android.</p>
+
+<!-- keep this warning in place through the 3.11/3.12 development cycle -->
+<p>Several methods in the InstanceManager class have been deprecated and will be removed
+after JMRI 3.12 (July 2015). This doesn't affect JMRI users, but if you have your own 
+code that uses JMRI, please 
+<a href="http://sourceforge.net/p/jmri/code/HEAD/tree/trunk/jmri/java/src/jmri/InstanceManager.java">take a look at the code</a>
+and make any necessary changes.
+
 
 
 <h3>Known problems with this release</h3>
@@ -71,6 +87,7 @@ for more information.
 <p>Linux: <A
 	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r26527.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r26527.tgz/download</a></p>
  
+
 
 <h3>Changes since production release 3.8</h3>
 
