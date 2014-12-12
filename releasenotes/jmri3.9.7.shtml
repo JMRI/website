@@ -8,7 +8,7 @@
  </title>
     <meta http-equiv=Content-Type content="text/html; charset=utf-8">
     <meta content="Bob Jacobsen" name=Author>
-    <meta name="keywords" content="java model railroad JMRI 3.9.6 decoderpro panelpro loconet lenz nce easydcc">
+    <meta name="keywords" content="java model railroad JMRI 3.9.7 decoderpro panelpro loconet lenz nce easydcc">
 
 <!-- Style -->
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
@@ -112,7 +112,7 @@ builds status shows as OK before attempting to use one.</p>
  <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.9.3/ws/jmri/dist/release/">CI project page</a>.
+<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.9.7/ws/jmri/dist/release/">CI project page</a>.
  --> 
 
 <!-- 
@@ -129,8 +129,6 @@ on the
 
 
 <h3>Changes since test release 3.9.6:</h3>
-
-<p>The label on the F28 function is now properly saved and restored. (r27807)
 
 <h4>New / Updated decoder definitions</h4>
    <ul>
@@ -149,6 +147,7 @@ on the
 <h4>Miscellaneous</h4>
     <ul>
         <li>Added new access methods to DefaultSignalAppearanceMap for CATS use.
+        <li>The label on the F28 function is now properly saved and restored. (r27807)
     </ul>
 
 
