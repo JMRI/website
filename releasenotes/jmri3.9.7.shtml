@@ -133,32 +133,18 @@ on the
 <p>The label on the F28 function is now properly saved and restored. (r27807)
 
 <h4>New / Updated decoder definitions</h4>
-
-<p>Michael Mosher fixed a CV246 bit label in the BLI Blueline Paragon Steam definition.
-
-<h4>Signaling</h4>
-
- 
+   <ul>
+    <li>Michael Mosher fixed a CV246 bit label in the BLI Blueline Paragon Steam definition.
+   </ul>
+   
 <h4>Scripting</h4>
 
-   <h4>Operations</h4>
+<h4>Operations</h4>
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
     <li>When a car is placed at a spur with a custom load of type "empty", the program now changes
      the car's load name to the default load name "L".</li>
    </ul>
-
-   <h4>Control Panel Editor</h4>
-    <ul>
-    </ul>	
-
-<h4>Warrants</h4>
-    <ul>
-    </ul>	
-
-<h4>Web Server and Web Throttles</h4>
-    <ul>
-    </ul>
 
 <h4>Miscellaneous</h4>
     <ul>
