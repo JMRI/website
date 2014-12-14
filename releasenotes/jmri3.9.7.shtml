@@ -143,6 +143,7 @@ on the
     <ul>
         <li>Added new access methods to DefaultSignalAppearanceMap for CATS use.
         <li>The label on the F28 function is now properly saved and restored. (r27807)
+        <li>Fixed issue where Jython scripts path preference could be saved incorrectly or where setting Jython scripts path preference could cause user files path prefreence to be lost. (r27822-27823, r27825-27826)</li>
     </ul>
 
 
