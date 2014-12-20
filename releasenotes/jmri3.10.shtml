@@ -29,12 +29,14 @@
       Release Notes for JMRI 3.10 release
       </h2>
 
-	<p>Date: MMM DD, YYYY</p>
+	<p>Date: December 20, 2014</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Production version 3.10 of JMRI/DecoderPro is available for download.</p>
  
 
+<!-- 
 <br><b>This is a draft release note only; the download links do not yet work</b>
+ -->
 
 We are very pleased to announce that the 3.9 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
@@ -47,6 +49,12 @@ JMRI is now only available under the
 <A HREF="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<p>This is the last JMRI production or test version that will work with Java 1.6.  
+To use any later JMRI test or production releases, you'll have to 
+<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or later.
+This version has been tested on Java 1.8, so you can do the Java update now if you want to.
+
 
 <h3>Warnings:</h3>
 
@@ -90,10 +98,6 @@ for more information.
 
 
 <h3>Changes since production release 3.8</h3>
-
-<h4>General</h4>
-<!-- from 3.9.2 note -->
-
 
 
 <h4>New / Updated decoder definitions</h4>
@@ -471,9 +475,6 @@ for more information.
     </ul>
 
 
-<h4>Documentation / Help</h4>
-
-
 <h4>Web services, JSON and Web Throttles</h4>
 <!-- from 3.9.3 note -->
 	<ul>
@@ -510,6 +511,13 @@ for more information.
 
 
 <h4>Misc</h4>
+<!-- from 3.9.2 note -->
+    <p>The roster table is now smarter about sorting columns if they contain numbers (instead of alphanumeric names).
+    <p>ARM V7 processor libraries added, so this architecture should work out-of-the-box on Linux.
+    <p>The format of the mask value in XML decoder definitions is now included in validity checking. The existing decoder
+    definitions had a few problems with this, now fixed.
+    <p>Configuration XML files (Store Panels, Store Configuration Only) are now written
+    with the line-ends standard on the local machines.
 <!-- from 3.9.3 note -->
 	<ul>
     <li>
@@ -579,17 +587,6 @@ for more information.
 <!-- from 3.9.3 note -->
     <p>Removed the activation.jar library, along with various references to loading it.
     This is no longer needed since JMRI now requires Java 1.6 or later.</p>
-
-
-<h4>Bug fixes</h4>
-
-<!-- from 3.9.2 note -->
-    <p>The roster table is now smarter about sorting columns if they contain numbers (instead of alphanumeric names).
-    <p>ARM V7 processor libraries added, so this architecture should work out-of-the-box on Linux.
-    <p>The format of the mask value in XML decoder definitions is now included in validity checking. The existing decoder
-    definitions had a few problems with this, now fixed.
-    <p>Configuration XML files (Store Panels, Store Configuration Only) are now written
-    with the line-ends standard on the local machines.
 
 
 
