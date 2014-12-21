@@ -55,6 +55,22 @@ see our
 
 <h3>New warnings for this version:</h3>
 
+<P>This release, and all later releases in this cycle, require Java 1.8 or higher.
+To use this or any later JMRI releases, you'll have to 
+<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
+</p>
+
+<P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
+calling the parts of JMRI that interchange XML objects.</P>
+
+<p>There are now separate settings for the default Service Mode Programmer and 
+for the default Ops Mode Programmer.  If you're using two or more system connections,
+this lets you use one connection for ops mode (on track) programming and another connection
+for your programming track. If you're using two separate connections, you
+should go to the Defaults pane on the Preferences window and check that those 
+defaults were set properly.
+
+
 <h3>Older warnings</h3>
 
 <p>The XmlIO web service has been deprecated and is scheduled to be removed later 
@@ -63,8 +79,6 @@ All users who are relying on direct access to the XmlIO API are
 recommended to begin using the JSON API. inControl web throttle users are recommended to
 begin using webThrottle instead, or to plan on investing in devices that can support
 webThrottle, the iOS WiThrottle, or the Android Engine Driver.</p>
-
-<P>This release, and all other releases in this cycle, require Java 1.8 or newer.</p>
 
 
 <h3>Known problems with this release</h3>
@@ -99,8 +113,22 @@ These are development files, and might not be working at any particular time.</p
  
 <h3>Changes since production release 3.10:</h3>
 
+<p>This release was built with Java 1.8, which is now required for JMRI.</P>
+
+<P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
+calling the parts of JMRI that interchange XML objects. There's more information
+in the
+<a href="http://jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml#jdom2">migration section of the JMRI Tech Road Map</a>.</P>
+
 
 <h4>Hardware Support</h4>
+
+<p>There are now separate settings for the default Service Mode Programmer and 
+for the default Ops Mode Programmer.  If you're using two or more system connections,
+this lets you use one connection for ops mode (on track) programming and another connection
+for your programming track. If you're using two separate connections, you
+should go to the Defaults pane on the Preferences window and check that those 
+defaults were set properly.
   
 <h4>Layout Editor</h4>
 
