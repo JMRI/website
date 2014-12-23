@@ -130,10 +130,23 @@ for your programming track. If you're using two separate connections, you
 should go to the Defaults pane on the Preferences window and check that those 
 defaults were set properly.
   
+<p>The Uhlenbrock Intellibox support has been improved:
+<ul>
+<li>Enhancements to Loconet Monitor to parse the special IB-COM CV programming messages.
+<li>Implementation of CV programming through IB-COM / Intellibox II. 
+<li>Turnout control
+<li>Improvements in message transfer from and to the LocoNet connection
+</ul>
+
 <h4>Layout Editor</h4>
 
 
 <h4>New / Updated decoder definitions</h4>
+
+<h5>SoundTraxx</h5>
+
+<p>SoundTraxx now appears in the manufacturer list as "SoundTraxx (Throttle-Up)" 
+instead of the original "Throttle-Up (SoundTraxx)". It's a long story....
 
 <h4>Operations</h4>
 
