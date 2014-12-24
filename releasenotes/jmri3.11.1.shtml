@@ -138,6 +138,12 @@ defaults were set properly.
 <li>Improvements in message transfer from and to the LocoNet connection
 </ul>
 
+<h4>Signals</h4>
+
+<p>The aspects.xml file in each signal definition defines the speeds used for automated operation.
+These values are now required (by the schema check) for a valid XML file.  Basic values
+have been added for all signal systems included in JMRI.
+
 <h4>Layout Editor</h4>
 
 
