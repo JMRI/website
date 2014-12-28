@@ -70,6 +70,12 @@ for your programming track. If you're using two separate connections, you
 should go to the Defaults pane on the Preferences window and check that those 
 defaults were set properly.
 
+<p> If you are making a direct connection to a Intellibox unit via
+    serial or USB, you will have to reselect your preferences.
+    See the 
+    <a href="http://jmri.org/help/en/html/hardware/loconet/Uhlenbrock.shtml">Uhlenbrock support page</a> 
+    for instructions.
+
 
 <h3>Older warnings</h3>
 
@@ -123,36 +129,44 @@ in the
 
 <h4>Hardware Support</h4>
 
-<p>There are now separate settings for the default Service Mode Programmer and 
-for the default Ops Mode Programmer.  If you're using two or more system connections,
-this lets you use one connection for ops mode (on track) programming and another connection
-for your programming track. If you're using two separate connections, you
-should go to the Defaults pane on the Preferences window and check that those 
-defaults were set properly.
+    <p>There are now separate settings for the default Service Mode Programmer and 
+    for the default Ops Mode Programmer.  If you're using two or more system connections,
+    this lets you use one connection for ops mode (on track) programming and another connection
+    for your programming track. If you're using two separate connections, you
+    should go to the Defaults pane on the Preferences window and check that those 
+    defaults were set properly.
   
-<p>The Uhlenbrock Intellibox support has been improved:
-<ul>
-<li>Enhancements to Loconet Monitor to parse the special IB-COM CV programming messages.
-<li>Implementation of CV programming through IB-COM / Intellibox II. 
-<li>Turnout control
-<li>Improvements in message transfer from and to the LocoNet connection
-</ul>
-
+    <h5>Uhlenbrock Intellibox</h5>
+        <p>The Uhlenbrock Intellibox support has been improved:
+        <ul>
+        <li>Enhancements to Loconet Monitor to parse the special IB-COM CV programming messages.
+        <li>Implementation of CV programming through IB-COM / Intellibox II. 
+        <li>Turnout control added for some Intellibox command stations
+        <li>Improved handling of decoder functions from throttles.
+        <li>Improvements in message transfer from and to the LocoNet connection
+        </ul>
+        <p>As part of this, the Fleishmann connection type has been merged into
+            the Uhlenbrock type.  
+            If you are making a direct connection to your Intellibox unit via
+            serial or USB, you will have to reselect your preferences.
+            See the 
+            <a href="http://jmri.org/help/en/html/hardware/loconet/Uhlenbrock.shtml">Uhlenbrock support page</a> 
+            for instructions.
+        
 <h4>Signals</h4>
 
-<p>The aspects.xml file in each signal definition defines the speeds used for automated operation.
-These values are now required (by the schema check) for a valid XML file.  Basic values
-have been added for all signal systems included in JMRI.
+    <p>The aspects.xml file in each signal definition defines the speeds used for automated operation.
+    These values are now required (by the schema check) for a valid XML file.  Basic values
+    have been added for all signal systems included in JMRI.
 
 <h4>Layout Editor</h4>
 
 
 <h4>New / Updated decoder definitions</h4>
 
-<h5>SoundTraxx</h5>
-
-<p>SoundTraxx now appears in the manufacturer list as "SoundTraxx (Throttle-Up)" 
-instead of the original "Throttle-Up (SoundTraxx)". It's a long story....
+    <h5>SoundTraxx</h5>
+        <p>SoundTraxx now appears in the manufacturer list as "SoundTraxx (Throttle-Up)" 
+        instead of the original "Throttle-Up (SoundTraxx)". It's a long story....
 
 <h4>Operations</h4>
 
