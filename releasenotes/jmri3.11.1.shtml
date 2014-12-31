@@ -76,6 +76,10 @@ defaults were set properly.
     <a href="http://jmri.org/help/en/html/hardware/loconet/Uhlenbrock.shtml">Uhlenbrock support page</a> 
     for instructions.
 
+<p>Because of internal code changes, this version of JMRI is not compatible with
+<a href="http://home.comcast.net/~kb0oys/">CATS 2.34</a> or earlier.  Keep using 
+<a href="jmri3.10.shtml">JMRI 3.10</a> with CATS until there's a CATS update that
+says it will work with JMRI 3.11.
 
 <h3>Older warnings</h3>
 
@@ -168,6 +172,9 @@ in the
         <p>SoundTraxx now appears in the manufacturer list as "SoundTraxx (Throttle-Up)" 
         instead of the original "Throttle-Up (SoundTraxx)". It's a long story....
 
+    <h5>TCS</h5>
+        <p>Michael Mosher updated the TCS WOW definition.</p>
+        
 <h4>Operations</h4>
 
    <p>Dan Boudreau made the following changes to operations:</p>
