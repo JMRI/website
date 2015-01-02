@@ -83,12 +83,11 @@ says it will work with JMRI 3.11.
 
 <h3>Older warnings</h3>
 
-<p>The XmlIO web service has been deprecated and is scheduled to be removed later 
-during this series of test releases.
-All users who are relying on direct access to the XmlIO API are
-recommended to begin using the JSON API. inControl web throttle users are recommended to
-begin using webThrottle instead, or to plan on investing in devices that can support
-webThrottle, the iOS WiThrottle, or the Android Engine Driver.</p>
+<p>The XmlIO web service has been removed. All users who were relying on the
+XmlIO API are recommended to begin using the JSON API. inControl web throttle
+users are recommended to begin using webThrottle instead, or invest in devices
+that can support webThrottle, the iOS WiThrottle, or the Android Engine
+Driver.</p>
 
 
 <h3>Known problems with this release</h3>
