@@ -10,14 +10,14 @@ production:
    exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.exe/download"
 test:
  versions:
+  3.11.1:
+   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download"
+   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download"
+   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download"
   3.9.7:
    tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.7-r27851.tgz/download"
    dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.7-r27851.dmg/download"
    exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.7-r27851.exe/download"
-  3.9.6:
-   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.tgz/download"
-   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.dmg/download"
-   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.exe/download"
 
 # This file contains information about the last few JMRI (http://jmri.org) releases.
 # JMRI is distributed under license. More information is at http://jmri.org/Copyright.html
