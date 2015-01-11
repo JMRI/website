@@ -194,9 +194,11 @@ in the
      "Locations".</LI>
     <LI>New switch list option to print out a new sheet of paper each time a train visits a
      location.</LI>
+    <LI>The file path name for manifest and switch list logos are now stored as a relative path
+     name.</LI>
    </ul>
 
-<h4>Warrants</h4>
+   <h4>Warrants</h4>
    <p>Pete Cressman made the following changes to warrants:</p>
    <ul>
     <li>Fixed bug #481 "Warrant Logix not working as of 3.7.2".  Warrants can be executed from
