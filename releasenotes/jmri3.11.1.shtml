@@ -28,11 +28,13 @@
       Release Notes for JMRI 3.11.1 release
       </h2>
 
-	<p>Date: MMM DD, YYYY</p>
+	<p>Date: January 11, 2015</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Test version 3.11.1 of JMRI/DecoderPro is available for download.</p>
  
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h3>Notes:</h3>
 
@@ -96,17 +98,15 @@ Driver.</p>
 
 <h3>Download links:</h3>
 
-<!--
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.tgz/download</a></p>
- -->
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download</a></p>
  
  <!--
 Preliminary build files (not the final released files) can be found
@@ -115,10 +115,11 @@ on the
  --> 
 
 
+<!--
 <p>During development leading to the actual release, you can find test download files on the 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+ -->
  
 <h3>Changes since production release 3.10:</h3>
 
@@ -167,9 +168,6 @@ in the
 
     <p>Egbert Broerse improved the signal-system and signal mast setup help files.
     
-<h4>Layout Editor</h4>
-
-
 <h4>New / Updated decoder definitions</h4>
 
     <h5>SoundTraxx</h5>
@@ -198,7 +196,6 @@ in the
    </ul>
 
 <h4>Warrants</h4>
-
    <p>Pete Cressman made the following changes to warrants:</p>
    <ul>
     <li>Fixed bug #481 "Warrant Logix not working as of 3.7.2".  Warrants can be executed from
@@ -206,8 +203,6 @@ in the
     <li>Warrant command "Run Warrant" that allows one warrant to launch another is now fully 
     implemented.</li>
    </ul>
-
-<h4>Misc</h4>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
