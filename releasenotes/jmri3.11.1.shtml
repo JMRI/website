@@ -164,6 +164,8 @@ in the
     These values are now required (by the schema check) for a valid XML file.  Basic values
     have been added for all signal systems included in JMRI.
 
+    <p>Egbert Broerse improved the signal-system and signal mast setup help files.
+    
 <h4>Layout Editor</h4>
 
 
@@ -178,8 +180,8 @@ in the
 
     <h5>ESU</h5>
         <p>Mathias Rufer and Dave Heap added an ESU LokPilot Standard V1.0 definition.</p>
-
-   <h4>Operations</h4>
+        
+<h4>Operations</h4>
 
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
@@ -194,7 +196,7 @@ in the
      location.</LI>
    </ul>
 
-   <h4>Warrants</h4>
+<h4>Warrants</h4>
 
    <p>Pete Cressman made the following changes to warrants:</p>
    <ul>
@@ -203,6 +205,8 @@ in the
     <li>Warrant command "Run Warrant" that allows one warrant to launch another is now fully 
     implemented.</li>
    </ul>
+
+<h4>Misc</h4>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->

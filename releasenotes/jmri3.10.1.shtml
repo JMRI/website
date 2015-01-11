@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- $Id$ -->
+<html lang="en">
+<head>
+ <title>
+ JMRI: Release Notes for 3.10
+ 
+ </title>
+    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+    <meta content="Bob Jacobsen" name=Author>
+    <meta name="keywords" content="java model railroad JMRI 3.10 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+
+<!-- Style -->
+  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+  <link rel="icon" href="/images/jmri.ico" type="image/png">
+  <link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
+
+<body>
+  
+<!--#include virtual="/Header" -->
+
+  <div class="nomenu" id="mBody">
+    <div id="mainContent">
+      <h2>
+      Release Notes for JMRI 3.10.1 release
+      </h2>
+
+	<p>Date: December 20, 2014</p>
+	<p>From: Bob Jacobsen</p>
+	<p>Subject: Production version 3.10.1 of JMRI/DecoderPro is available for download.</p>
+ 
+
+<!-- 
+<br><b>This is a draft release note only; the download links do not yet work</b>
+ -->
+
+JMRI 3.10.1 includes a few small bug fixes for JMRI Production Release 3.10.
+
+<h3>Notes:</h3>
+
+<p><b>
+JMRI is now only available under the 
+<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+see our 
+<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<p>This is the last JMRI production or test version that will work with Java 1.6.  
+To use any later JMRI test or production releases, you'll have to 
+<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or later.
+This version has been tested on Java 1.8, so you can do the Java update now if you want to.
+
+
+<h3>Warnings:</h3>
+
+<!-- keep this warning in place through the 3.11/3.12 development cycle -->
+<p>The XmlIO web service has been deprecated and is scheduled to be removed after JMRI 3.12 (July 2015).
+All users and developers who are relying on direct access to the XmlIO API are
+recommended to begin using the JSON API. inControl web throttle users are recommended to
+begin using webThrottle instead, or to plan on investing in devices that can support
+webThrottle, <a href="http://withrottle.com">WiThrottle</a> for iOS, or
+<a href="http://enginedriver.rrclubs.org">Engine Driver</a> for Android.</p>
+
+<!-- keep this warning in place through the 3.11/3.12 development cycle -->
+<p>Several methods in the InstanceManager class have been deprecated and will be removed
+after JMRI 3.12 (July 2015). This doesn't affect JMRI users, but if you have your own 
+code that uses JMRI, please 
+<a href="http://sourceforge.net/p/jmri/code/HEAD/tree/trunk/jmri/java/src/jmri/InstanceManager.java">take a look at the code</a>
+and make any necessary changes.
+
+
+
+<h3>Known problems with this release</h3>
+<p>None at present</p>
+
+<h3>Download links:</h3>
+
+This release is being developed via a series of test releases that contain multiple 
+changes.  See those
+<a href="http://jmri.org/download/older.html">release notes</a> 
+for more information.
+
+<p>Please use these links for downloading:</p>
+<p>Mac OS X: <A
+	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.dmg/download</a></p>
+
+<p>Windows: <A
+	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.exe/download</a></p>
+
+<p>Linux: <A
+	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.tgz/download</a></p>
+ 
+
+
+<h3>Changes since production release 3.10</h3>
+
+
+<h4>New / Updated decoder definitions</h4>
+
+<h5>Digitrax</h5>
+
+<h4>Signaling, including new/updated signal definitions and icons</h4>
+
+
+<h4>Hardware / Systems</h4>
+
+http://sourceforge.net/p/jmri/code/28276
+Author:   ken_c
+Date:     2015-01-05 14:49:52 +0000 (Mon, 05 Jan 2015)
+Log Message:
+-----------
+Was byte casting the CV instead of leaving it int. Had no limit on CV range, it's 1024.
+
+Modified Paths:
+--------------
+   trunk/jmri/java/src/jmri/jmrix/mrc/MrcProgrammer.java
+
+
+<h4>Operations</h4>
+
+
+
+   <!--#include virtual="/Footer" -->
+  </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</body>
+</html>
