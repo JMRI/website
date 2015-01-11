@@ -144,10 +144,11 @@ in the
     <h5>Uhlenbrock Intellibox</h5>
         <p>The Uhlenbrock Intellibox support has been improved:
         <ul>
-        <li>Enhancements to Loconet Monitor to parse the special IB-COM CV programming messages.
+        <li>Enhancements to Loconet Monitor to parse the special IB-COM / Intellibox II CV programming messages.
         <li>Implementation of CV programming through IB-COM / Intellibox II. 
         <li>Turnout control added for some Intellibox command stations
-        <li>Improved handling of decoder functions from throttles beyond F8 for Intellibox-I and -II.
+        <li>Full handling of decoder functions beyond F8 from/to throttles for Intellibox-II.
+        <li>Partial handling of decoder functions beyond F8 from throttles for Intellibox-I with SW version 2.x (changes from IB-I keyboard not handled by throttle).            
         <li>Improvements in message transfer from and to the LocoNet connection
         </ul>
         <p>As part of this, the Fleishmann connection type has been merged into
