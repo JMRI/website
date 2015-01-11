@@ -76,14 +76,13 @@ and make any necessary changes.
 
 
 <h3>Known problems with this release</h3>
-<p>None at present</p>
+<p>This version of JMRI can't program CVs greater than 127 using the MRC command stations.
+If you use MRC hardware, you should update to 
+<a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a>. This is the only change in JMRI 3.10.1, so
+users of other hardware who have installed JMRI 3.10 (this release) do 
+not need to up date to 3.10.1.</p>
 
 <h3>Download links:</h3>
-
-This release is being developed via a series of test releases that contain multiple 
-changes.  See those
-<a href="http://jmri.org/download/older.html">release notes</a> 
-for more information.
 
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A

@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 3.10
+ JMRI: Release Notes for 3.10.1
  
  </title>
     <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
@@ -34,11 +34,9 @@
 	<p>Subject: Production version 3.10.1 of JMRI/DecoderPro is available for download.</p>
  
 
-<!-- 
 <br><b>This is a draft release note only; the download links do not yet work</b>
- -->
 
-JMRI 3.10.1 includes a few small bug fixes for JMRI Production Release 3.10.
+JMRI 3.10.1 includes a bug fix for JMRI Production Release 3.10.
 
 <h3>Notes:</h3>
 
@@ -78,11 +76,6 @@ and make any necessary changes.
 
 <h3>Download links:</h3>
 
-This release is being developed via a series of test releases that contain multiple 
-changes.  See those
-<a href="http://jmri.org/download/older.html">release notes</a> 
-for more information.
-
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
 	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.dmg/download</a></p>
@@ -95,33 +88,11 @@ for more information.
  
 
 
-<h3>Changes since production release 3.10</h3>
-
-
-<h4>New / Updated decoder definitions</h4>
-
-<h5>Digitrax</h5>
-
-<h4>Signaling, including new/updated signal definitions and icons</h4>
-
 
 <h4>Hardware / Systems</h4>
 
-http://sourceforge.net/p/jmri/code/28276
-Author:   ken_c
-Date:     2015-01-05 14:49:52 +0000 (Mon, 05 Jan 2015)
-Log Message:
------------
-Was byte casting the CV instead of leaving it int. Had no limit on CV range, it's 1024.
-
-Modified Paths:
---------------
-   trunk/jmri/java/src/jmri/jmrix/mrc/MrcProgrammer.java
-
-
-<h4>Operations</h4>
-
-
+JMRI 3.10 had a problem programming CVs greater than 127 using the MRC command stations.
+That problem is fixed in this version. (SVN revision r28276)
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
