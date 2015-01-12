@@ -195,8 +195,9 @@ in the
 
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
-    <li>When a car is placed at a spur with a custom load of type "Empty", the program now
-     changes the car's load name to the default load name "L".</li>
+    <li>When a car is placed at a spur, without a schedule, but with a custom load of type
+     "Empty", the program now changes the car's load name to the default load name "L" rather than
+     "E".</li>
     <LI>Improvements to the "Timetable" window to allow the building, printing, and termination
      of selected trains. Also allows for the updating or printing of switch lists. This should help
      simplify things when building and terminating multiple sets of trains for a session.</LI>
