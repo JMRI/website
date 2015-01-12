@@ -128,7 +128,12 @@ These are development files, and might not be working at any particular time.</p
 
 <h4>Hardware Support</h4>
 
-    <p></p>
+    <p>Fixed problems with programmers created during the programming mode migration:
+    <ul>
+        <li>LocoNet connections using the LocoNet TCP Server (only, not local hardwired connections)</li>
+        <li>NCE via the NCE USB device to SB5 smart boosters</li>
+    </ul>
+    </p>
         
 <h4>Signals</h4>
 
