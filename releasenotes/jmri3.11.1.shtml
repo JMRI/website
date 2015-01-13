@@ -96,10 +96,12 @@ Driver.</p>
 
 <p>This release has problems with:
     <ul>
-        <li>LocoNet connections using the LocoNet TCP Server (only, not local hardwired connections)</li>
-        <li>NCE via the NCE USB device to SB5 smart boosters</li>
+        <li>LocoNet connections using the LocoNet TCP Server (only, not local hardwired connections) may not work with old configuration files</li>
+        <li>Crashes on startup if configured to connect via the NCE USB device to SB5 smart boosters</li>
+        <li>Rebuilding the roster (from the Debug menu) can lose roster groups</li>
     </ul>
-If you use those configurations, please either wait for 
+    
+If any of those effect you, please either wait for 
 <A href="jmri3.11.2.shtml">JMRI 3.11.2</a>, due out shortly after this one,
 or pick up a 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/1783/">development build installer</a>
