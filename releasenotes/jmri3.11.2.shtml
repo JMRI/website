@@ -28,11 +28,13 @@
       Release Notes for JMRI 3.11.2 release
       </h2>
 
-	<p>Date: MMM DD, 2015</p>
+	<p>Date: January 13, 2015</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Test version 3.11.2 of JMRI/DecoderPro is available for download.</p>
  
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h3>Notes:</h3>
 
@@ -99,17 +101,17 @@ Driver.</p>
 
 <h3>Download links:</h3>
 
-<!--
+
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.2-r28410.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.2-r28410.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.2-r28410.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.2-r28410.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.tgz/download</a></p>
--->
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.2-r28410.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.2-r28410.tgz/download</a></p>
+
 
  <!--
 Preliminary build files (not the final released files) can be found
@@ -117,13 +119,13 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.11.2/ws/jmri/dist/release/">CI project page</a>.
  --> 
 
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
  
-<h3>Changes since test release 3.11:</h3>
+<h3>Changes since test release 3.11.1:</h3>
 
 
 <p>Fixed problem where rebuilding the Roster can lose the existing roster groups.</p>
@@ -137,36 +139,11 @@ These are development files, and might not be working at any particular time.</p
     </ul>
     </p>
         
-<h4>Signals</h4>
-
-    <p></p>
-    
-<h4>Layout Editor</h4>
-
-
 <h4>New / Updated decoder definitions</h4>
-
-    <h5>SoundTraxx</h5>
-        <p></p>
-
-    <h5>TCS</h5>
-        <p></p>
 
     <h5>ESU</h5>
         <p>Dave Heap fixed a problem with strange sound slot names displayed in LokSound Select.</p>
         
-<h4>Operations</h4>
-
-   <p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li></li>
-   </ul>
-
-<h4>Warrants</h4>
-
-   <p>
-
-<h4>Misc</h4>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
