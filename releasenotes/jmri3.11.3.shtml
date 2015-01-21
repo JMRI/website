@@ -170,7 +170,9 @@ These are development files, and might not be working at any particular time.</p
    <LI>Fixed a problem where manifests and switch lists wouldn't preview or print if there wasn't a logo specified.</LI>
    </ul>
 
-<h4>Warrants</h4>
+<h4>Blocks</h4>
+    <p>Fixed a problem where the Block table would throw errors at various times
+        when JMRI was in a locale where decimal numbers are written 0,00 (as opposed to 0.00).
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
