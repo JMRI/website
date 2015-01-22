@@ -153,6 +153,11 @@ These are development files, and might not be working at any particular time.</p
     
 <h4>New / Updated decoder definitions</h4>
 
+        <p>Dave Heap updated the
+        <a href="/help/en/html/apps/DecoderPro/FnMapping.shtml" target="_blank">Function Mapping page</a>
+        to emphasise that &quot;label&quot; and &quot;tooltip&quot; attributes <strong><em>should not</em></strong>
+        be added to a &quot;fnmapping&quot; element (they are ignored).</p>
+
     <h5>SoundTraxx</h5>
         <p>
 
@@ -160,7 +165,12 @@ These are development files, and might not be working at any particular time.</p
         <p>
 
     <h5>ESU</h5>
-        <p>
+        <p>Dave Heap made the following changes:</p>
+        <ul>
+        <li>Added a Row Move facility to the Function Map pane.</li>
+        <li>Updated the &quot;Read Me&quot; pane.</li>
+        <li>Replaced confusing ESU LokSound V4.0 models that are functionally identical with generic models.</li>
+        </ul>
             
     <h5>Trix</h5>
     <p>Added Trix 66840 (Bjørn Kvisli - Alain Le Marchand)</p>            
