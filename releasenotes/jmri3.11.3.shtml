@@ -28,7 +28,7 @@
       Release Notes for JMRI 3.11.3 release
       </h2>
 
-	<p>Date: January 11, 2015</p>
+	<p>Date: xx, 2015</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Test version 3.11.3 of JMRI/DecoderPro is available for download.</p>
  
@@ -180,10 +180,13 @@ These are development files, and might not be working at any particular time.</p
 
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
-   <LI>Fixed a problem where manifests and switch lists wouldn't preview or print if there wasn't a logo specified.</LI>
+    <LI>Fixed a problem where manifests and switch lists wouldn't preview or print if there
+     wasn't a logo specified.</LI>
+    <LI>Improved the "Two Column by Track" manifest and switch list format to not show the
+     car's track name. Allows the conductor and yardmaster windows to now show the track name.</LI>
    </ul>
 
-<h4>Blocks</h4>
+   <h4>Blocks</h4>
     <p>Fixed a problem where the Block table would throw errors at various times
         when JMRI was in a locale where decimal numbers are written 0,00 (as opposed to 0.00).
 
