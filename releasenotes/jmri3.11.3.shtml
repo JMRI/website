@@ -133,13 +133,13 @@ These are development files, and might not be working at any particular time.</p
 
 <p>Ken Cameron fixed a problem (present since 3.11.1) that prevented the NCE Consist tool window from opening.
 
+<p>Fixed a stall occasionally encountered when running a locomotive to measure a speed table via a LocoNet connection.
+
 <h4>Hardware Support</h4>
 
   
     <h5>Uhlenbrock Intellibox</h5>
-        <p>
         <ul>
-        <li>
         <li>Implementation of CV programming through IB-COM / Intellibox II. 
         <li>Turnout control added for some Intellibox command stations
         <li>Full handling of decoder functions beyond F8 from/to throttles for Intellibox-II.
