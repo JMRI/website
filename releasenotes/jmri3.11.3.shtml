@@ -190,6 +190,11 @@ These are development files, and might not be working at any particular time.</p
    <h4>Blocks</h4>
     <p>Fixed a problem where the Block table would throw errors at various times
         when JMRI was in a locale where decimal numbers are written 0,00 (as opposed to 0.00).
+        
+<h4>Preferences</h4>
+
+	The parameters for ramping speed changes used by Warrants and the Speed Map are now accessible
+	through Preferences.
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
