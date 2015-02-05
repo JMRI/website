@@ -58,6 +58,14 @@ see our
 
 None at release time.
 
+<!-- 
+If any of those effect you, please either wait for 
+<A href="jmri3.11.2.shtml">JMRI 3.11.2</a>, due out shortly after this one,
+or pick up a 
+<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
+from
+<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
+ -->
 
 <h3>New warnings for this version:</h3>
 
@@ -160,7 +168,9 @@ These are development files, and might not be working at any particular time.</p
 
     <h5>SoundTraxx</h5>
     <p>Added definition for Bachmann On30 Whitcomb 50-Ton Center-Cab (DCC Sound On-Board, Plug-and-Play Sound Module) (Alain Le Marchand)</p>
-
+    <p>Fixed a problem (originating in the Great SoundTraxx renaming that took place in JMRI 3.11.1) that
+        prevented some Soundtraxx decoders from being recognized</p>
+        
     <h5>TCS</h5>
         <p>
 
