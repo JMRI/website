@@ -169,10 +169,15 @@ These are development files, and might not be working at any particular time.</p
         to emphasise that &quot;label&quot; and &quot;tooltip&quot; attributes <strong><em>should not</em></strong>
         be added to a &quot;fnmapping&quot; element (they are ignored).</p>
 
+    <h5>Fleischmann</h5>
+        <p>Xavier Chazelle contributed a decoder definition for 
+            the N scale Fleischmann "Leig einheit" F830681 double unit of van equipped with a 
+            Fleischmann-specific dual decoder for opening or closing doors
+            
     <h5>SoundTraxx</h5>
-    <p>Added definition for Bachmann On30 Whitcomb 50-Ton Center-Cab (DCC Sound On-Board, Plug-and-Play Sound Module) (Alain Le Marchand)</p>
-    <p>Fixed a problem (originating in the Great SoundTraxx renaming that took place in JMRI 3.11.1) that
-        prevented some Soundtraxx decoders from being recognized</p>
+        <p>Added definition for Bachmann On30 Whitcomb 50-Ton Center-Cab (DCC Sound On-Board, Plug-and-Play Sound Module) (Alain Le Marchand)</p>
+        <p>Fixed a problem (originating in the Great SoundTraxx renaming that took place in JMRI 3.11.1) that
+            prevented some Soundtraxx decoders from being recognized</p>
         
     <h5>TCS</h5>
         <p>Michael Mosher updated the TCS WOW definitions.
