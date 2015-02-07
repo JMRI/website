@@ -143,6 +143,9 @@ These are development files, and might not be working at any particular time.</p
 
 <p>Fixed a stall occasionally encountered when running a locomotive to measure a speed table via a LocoNet connection.
 
+<p>Fixed a problem where, if the decoder definition causes DecoderPro or DecoderPro3 to select a non-default
+    programming mode, that wasn't properly being displayed.
+    
 <h4>Hardware Support</h4>
 
   
