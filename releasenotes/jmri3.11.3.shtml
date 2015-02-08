@@ -82,24 +82,28 @@ for the default Ops Mode Programmer.  If you're using two or more system connect
 this lets you use one connection for ops mode (on track) programming and another connection
 for your programming track. If you're using two separate connections, you
 should go to the Defaults pane on the Preferences window and check that those 
-defaults were set properly.
+defaults were set properly.</p>
 
 <p> If you are making a direct connection to a Intellibox unit via
     serial or USB, you will have to reselect your preferences.
     See the 
     <a href="http://jmri.org/help/en/html/hardware/loconet/Uhlenbrock.shtml">Uhlenbrock support page</a> 
-    for instructions.
+    for instructions.</p>
 
 <p> If you are using an NCE USB adapter, you will have to reselect your preferences
      the first time you use a JMRI 3.11 version (if you set them using JMRI 3.10 or earlier).
     See the 
     <a href="http://jmri.org/help/en/html/hardware/nce/NCE.shtml">page on configuring JMRI for NCE</a> 
-    for instructions.
+    for instructions.</p>
+
+<p>The Save button in the Preferences window now only prompts for restarts if required.
+There may be instances when pressing save incorrectly fails to prompt to restart JMRI or
+prompts to restart JMRI when it should not.</p>
 
 <p>Because of internal code changes, this version of JMRI is not compatible with
 <a href="http://home.comcast.net/~kb0oys/">CATS 2.34</a> or earlier.  Keep using 
 <a href="jmri3.10.shtml">JMRI 3.10</a> with CATS until there's a CATS update that
-says it will work with JMRI 3.11.
+says it will work with JMRI 3.11.</p>
 
 <h3>Older warnings</h3>
 
@@ -227,8 +231,17 @@ These are development files, and might not be working at any particular time.</p
         
 <h4>Preferences</h4>
 
-	The parameters for ramping speed changes used by Warrants and the Speed Map are now accessible
-	through Preferences.
+	<p>The parameters for ramping speed changes used by Warrants and the Speed Map are now accessible
+	through Preferences.</p>
+	
+	<p>Clicking the Save button now prompts to restart only if the preferences have changed
+	and if the change requires a restart. (Randall Wood)</p>
+
+<h4>Miscellaneous</h4>
+
+	<p>The Web Server has been upgraded from Jetty 8.1.11 to 9.2.7. This is expected to
+	improve performance, especially on constrained devices such as the Raspberry Pi.
+	(Randall Wood)</p>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
