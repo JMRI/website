@@ -150,6 +150,11 @@ These are development files, and might not be working at any particular time.</p
 <p>Fixed a problem where, if the decoder definition causes DecoderPro or DecoderPro3 to select a non-default
     programming mode, that wasn't properly being displayed.
     
+<p>Randall Wood improved how the web throttle support handles system names with special characters. 
+    This was causing a problem throwing MERG-controlled turnouts.
+    
+<p>More steps in the migration away from the XMLIO protocol.
+
 <h4>Hardware Support</h4>
 
   
