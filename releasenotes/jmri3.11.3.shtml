@@ -149,11 +149,6 @@ These are development files, and might not be working at any particular time.</p
 
 <p>Fixed a problem where, if the decoder definition causes DecoderPro or DecoderPro3 to select a non-default
     programming mode, that wasn't properly being displayed.
-    
-<p>Randall Wood improved how the web throttle support handles system names with special characters. 
-    This was causing a problem throwing MERG-controlled turnouts.
-    
-<p>More steps in the migration away from the XMLIO protocol.
 
 <h4>Hardware Support</h4>
 
@@ -241,12 +236,21 @@ These are development files, and might not be working at any particular time.</p
 	
 	<p>Clicking the Save button now prompts to restart only if the preferences have changed
 	and if the change requires a restart. (Randall Wood)</p>
+	
+	<p>Closing the Preferences window now prompts to save or discard preferences if the
+	preferences have been changed. (Randall Wood)</p>
 
-<h4>Miscellaneous</h4>
+<h4>Web Server</h4>
+
+	<p>Fix an issue preventing the Web Throttle from handling certain turnouts. (Randall Wood)</p>
+	
+	<p>Remove documentation and examples that use the XmlIO protocol.</p>
 
 	<p>The Web Server has been upgraded from Jetty 8.1.11 to 9.2.7. This is expected to
 	improve performance, especially on constrained devices such as the Raspberry Pi.
 	(Randall Wood)</p>
+
+<h4>Miscellaneous</h4>
 
 	<p>LinkingLabels will now restore a minimized frame on Windows (already worked this way in Linux)	(mstevetodd)</p>
 
