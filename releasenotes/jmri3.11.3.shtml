@@ -162,6 +162,17 @@ These are development files, and might not be working at any particular time.</p
         <li>Improvements in message transfer from and to the LocoNet connection
         </ul>
         
+    <h5>Bachrus Speedometer</h5>
+        <p>Dennis Miller made the following changes:</p>
+        <ul>
+            <li>Added a new feature that allows loading a reference speed profile to make it easier to do 
+            speed matching.</li>
+            <li>Fixed a bug that prevented loading the loco address from the roster.</li>
+            <li>Made the Reset Graph button also reset the speedometer dial scale.</li>
+            <li>Fixed the scaling routine so that it uses the maximum of all profiles, not just the first.</li>
+            <li>Updated the help files for the speedometer</li>
+         </ul>
+        
 <h4>Signals</h4>
 
     <p>Dave Sand improved the SPTCO-1930 definitions.
