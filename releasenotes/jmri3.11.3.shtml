@@ -244,6 +244,10 @@ These are development files, and might not be working at any particular time.</p
 
 	<p>Fix an issue preventing the Web Throttle from handling certain turnouts. (Randall Wood)</p>
 	
+	<p>Fix an issue preventing the Web Throttle from loading rosters. (Randall Wood)</p>
+	
+	<p>Fix an issue preventing the Web Throttle from setting routes. (Ken Cameron)</p>
+	
 	<p>Remove documentation and examples that use the XmlIO protocol.</p>
 
 	<p>The Web Server has been upgraded from Jetty 8.1.11 to 9.2.7. This is expected to
@@ -253,6 +257,8 @@ These are development files, and might not be working at any particular time.</p
 <h4>Miscellaneous</h4>
 
 	<p>LinkingLabels will now restore a minimized frame on Windows (already worked this way in Linux)	(mstevetodd)</p>
+	
+	<p>Add ability to specify the default location for new configuration profiles. (Randall Wood)</p>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
