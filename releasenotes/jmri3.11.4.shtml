@@ -149,6 +149,11 @@ These are development files, and might not be working at any particular time.</p
 
 <p>Fixed a problem where, if the decoder definition causes DecoderPro or DecoderPro3 to select a non-default
     programming mode, that wasn't properly being displayed.
+    
+<p>Randall Wood improved how the web throttle support handles system names with special characters. 
+    This was causing a problem throwing MERG-controlled turnouts.
+    
+<p>More steps in the migration away from the XMLIO protocol.
 
 <h4>Hardware Support</h4>
 
@@ -162,22 +167,9 @@ These are development files, and might not be working at any particular time.</p
         <li>Improvements in message transfer from and to the LocoNet connection
         </ul>
         
-    <h5>Bachrus Speedometer</h5>
-        <p>Dennis Miller made the following changes:</p>
-        <ul>
-            <li>Added a new feature that allows loading a reference speed profile to make it easier to do 
-            speed matching.</li>
-            <li>Fixed a bug that prevented loading the loco address from the roster.</li>
-            <li>Made the Reset Graph button also reset the speedometer dial scale.</li>
-            <li>Fixed the scaling routine so that it uses the maximum of all profiles, not just the first.</li>
-            <li>Updated the help files for the speedometer</li>
-         </ul>
-        
 <h4>Signals</h4>
 
     <p>Dave Sand improved the SPTCO-1930 definitions.
-    <p>Egbert Broerse improved the signal documentation.
-    <p>Suzie Tall provided additional signal icons
     
 <h4>New / Updated decoder definitions</h4>
 
@@ -196,6 +188,9 @@ These are development files, and might not be working at any particular time.</p
         <p>Fixed a problem (originating in the Great SoundTraxx renaming that took place in JMRI 3.11.1) that
             prevented some Soundtraxx decoders from being recognized</p>
         
+    <h5>TCS</h5>
+        <p>Michael Mosher updated the TCS WOW definitions.
+
     <h5>ESU</h5>
         <p>Dave Heap made the following changes:</p>
         <ul>
@@ -208,9 +203,6 @@ These are development files, and might not be working at any particular time.</p
         <li>Fixed an issue with &quot;Requires Drive Sound&quot; for V4 and Select decoders.</li>
         </ul>
             
-    <h5>TCS</h5>
-        <p>Michael Mosher updated the TCS WOW definitions.
-
     <h5>Trix</h5>
         <p>Added Trix 66840 (Bjørn Kvisli - Alain Le Marchand)</p>  
         
@@ -221,10 +213,6 @@ These are development files, and might not be working at any particular time.</p
 
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
-    <LI>New feature for schedules. You can now select a random value for any schedule item. For
-     example if you select 15 as the random value, you have a 15% chance that this item will be
-     selected. Great feature for RIP tracks where you would like to randomly send a car to
-     maintenance.</LI>
     <LI>Fixed a problem where manifests and switch lists wouldn't preview or print if there
      wasn't a logo specified. Problem was introduced in versions 3.11.1 and 3.11.2</LI>
     <LI>Improved the "Two Column by Track" manifest and switch list format to automatically not
@@ -253,29 +241,14 @@ These are development files, and might not be working at any particular time.</p
 	
 	<p>Clicking the Save button now prompts to restart only if the preferences have changed
 	and if the change requires a restart. (Randall Wood)</p>
-	
-	<p>Closing the Preferences window now prompts to save or discard preferences if the
-	preferences have been changed. (Randall Wood)</p>
 
-<h4>Web Server</h4>
-
-	<p>Fix an issue preventing the Web Throttle from handling certain turnouts. (Randall Wood)</p>
-	
-	<p>Fix an issue preventing the Web Throttle from loading rosters. (Randall Wood)</p>
-	
-	<p>Fix an issue preventing the Web Throttle from setting routes. (Ken Cameron)</p>
-	
-	<p>Remove documentation and examples that use the XmlIO protocol.</p>
+<h4>Miscellaneous</h4>
 
 	<p>The Web Server has been upgraded from Jetty 8.1.11 to 9.2.7. This is expected to
 	improve performance, especially on constrained devices such as the Raspberry Pi.
 	(Randall Wood)</p>
 
-<h4>Miscellaneous</h4>
-
 	<p>LinkingLabels will now restore a minimized frame on Windows (already worked this way in Linux)	(mstevetodd)</p>
-	
-	<p>Add ability to specify the default location for new configuration profiles. (Randall Wood)</p>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
