@@ -8,7 +8,7 @@
  </title>
     <meta http-equiv=Content-Type content="text/html; charset=utf-8">
     <meta content="Bob Jacobsen" name=Author>
-    <meta name="keywords" content="java model railroad JMRI 3.11.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 3.11.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
@@ -69,6 +69,13 @@ from
 
 <h3>New warnings for this version:</h3>
 
+<p>The Save button in the Preferences window now only prompts for restarts if required.
+There may be instances when pressing save incorrectly fails to prompt to restart JMRI or
+prompts to restart JMRI when it should not.</p>
+
+
+<h3>Older warnings</h3>
+
 <P>This release, and all later releases in this cycle, require Java 1.8 or higher.
 To use this or any later JMRI releases, you'll have to 
 <a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
@@ -96,16 +103,10 @@ defaults were set properly.</p>
     <a href="http://jmri.org/help/en/html/hardware/nce/NCE.shtml">page on configuring JMRI for NCE</a> 
     for instructions.</p>
 
-<p>The Save button in the Preferences window now only prompts for restarts if required.
-There may be instances when pressing save incorrectly fails to prompt to restart JMRI or
-prompts to restart JMRI when it should not.</p>
-
 <p>Because of internal code changes, this version of JMRI is not compatible with
 <a href="http://home.comcast.net/~kb0oys/">CATS 2.34</a> or earlier.  Keep using 
 <a href="jmri3.10.shtml">JMRI 3.10</a> with CATS until there's a CATS update that
 says it will work with JMRI 3.11.</p>
-
-<h3>Older warnings</h3>
 
 <p>The XmlIO web service has been removed. All users who were relying on the
 XmlIO API are recommended to begin using the JSON API. inControl web throttle
@@ -120,18 +121,18 @@ Driver.</p>
 <!--
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28340.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28340.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28340.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28340.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28340.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28340.tgz/download</a></p>
 -->
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.7.5/ws/jmri/dist/release/">CI project page</a>.
+<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.11.3/ws/jmri/dist/release/">CI project page</a>.
  --> 
 
 
@@ -140,7 +141,7 @@ on the
 These are development files, and might not be working at any particular time.</p>
 
  
-<h3>Changes since production release 3.10:</h3>
+<h3>Changes since test release 3.11.2:</h3>
 
 
 <p>Ken Cameron fixed a problem (present since 3.11.1) that prevented the NCE Consist tool window from opening.
