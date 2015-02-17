@@ -69,16 +69,17 @@ from
 
 <h3>New warnings for this version:</h3>
 
-
-
-
-
 <h3>Older warnings</h3>
 
 <P>This release, and all later releases in this cycle, require Java 1.8 or higher.
 To use this or any later JMRI releases, you'll have to 
 <a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
 </p>
+
+<p>Copying this version of JMRI over an older version of JMRI to upgrade it will not work.
+You must remove the older version of JMRI or install this version of JMRI in an alternate
+location. Failure to do so can result in some portions of JMRI (notably the web server)
+failing to function correctly.</p>
 
 <P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
 calling the parts of JMRI that interchange XML objects.</P>
