@@ -79,7 +79,8 @@ To use this or any later JMRI releases, you'll have to
 <p>Copying this version of JMRI over an older version of JMRI to upgrade it will not work.
 If running JMRI on Linux, you must remove the older version of JMRI or install this
 version of JMRI in an alternate location. Failure to do so can result in some portions of
-JMRI (notably the web server) failing to function correctly.</p>
+JMRI (notably the web server) failing to function correctly. The recommended installation
+procedures for Microsoft Windows and OS X already remove the older version of JMRI.</p>
 
 <P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
 calling the parts of JMRI that interchange XML objects.</P>
@@ -156,18 +157,18 @@ These are development files, and might not be working at any particular time.</p
         <ul>Fixed an issue where the Loco Database from the Ecos wasn't always loaded correctly</ul>
         
 <h4>Signals</h4>
-    <p>
+    <p></p>
     
 <h4>New / Updated decoder definitions</h4>
 
     <h5>Fleischmann</h5>
-        <p>
+        <p></p>
             
     <h5>SoundTraxx</h5>
-        <p>
+        <p></p>
         
     <h5>TCS</h5>
-        <p>
+        <p></p>
 
     <h5>ESU</h5>
         <p>
@@ -182,13 +183,15 @@ These are development files, and might not be working at any particular time.</p
    </ul>
 
 <h4>Blocks</h4>
-    <p>
+    <p></p>
      
 <h4>Preferences</h4>
-	<p>
+	<p></p>
 	
 <h4>Miscellaneous</h4>
-	<p>
+	<p>The name of the active profile is displayed on the PanelPro main window and in the
+	status bar on all Roster windows (including the DecoderPro 3 main window).
+	(Randall Wood)</p>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
