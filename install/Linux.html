@@ -107,7 +107,7 @@
 	    For troubleshooting, see the 
 	    <a href="FAQLinux.html#usb">FAQ</a></P>
 
-	<LI>Get and Install Java (if needed)</LI>
+	    <LI>Get and Install Java (if needed)</LI>
 
 	    <p>See if you have a version of Java already installed<p>
 	    <p class=example> sh> java -version</p>
@@ -137,52 +137,57 @@
 	    <li>Download the Java 1.6 "jre-6u34-linux-i586-rpm.bin" from the
 	       <A href="http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html#jre-6u34-oth-JPR">Oracle download</A>.
 		This should give you a file named "jre-6u34-linux-i586-rpm".
-		Install that with:<BR>
+		<li>Install that with:<BR>
 		<TT>rpm -i jre-6u34-linux-i586-rpm</TT></li>
         </ol>
 
         
-	      <LI>Give user-level application access to serial ports<BR>
+	    <LI>Give user-level application access to serial ports<BR>
 		    <TT>chmod 666 /dev/ttyS0</TT><BR>
 		    <TT>chmod 666 /dev/ttyS1</TT></LI>
 
-	      <LI>Give user access to lock files (required on Red Hat).
+	    <LI>Give user access to lock files (required on Red Hat).
 	       Edit /etc/group &amp; /etc/gshadow to add user to 'uucp' and 'lock'
 	       groups.</p>
-	       </ol>
-
-	    <p>Note that you will have to reinstall the rxtx driver and
-	    javax.com package if you have to reinstall the system software,
-	    or if you do a "clean install" of an OS update.</p>
+	     
 
 
-	<LI>Get JMRI</LI>
+        <LI>Get JMRI</LI>
 
-	<p><a href="../download/index.shtml#prod-rel">Download</a> a version of JMRI, either the
-	latest production version, or a "test version".  Since the version
-	numbers change with every release, this link takes you to the general
-	JMRI download page, where you can select whichever version you like.</p>
+            <p><a href="../download/index.shtml#prod-rel">Download</a> a version of JMRI, either the
+            latest production version, or a "test version".  Since the version
+            numbers change with every release, this link takes you to the general
+            JMRI download page, where you can select whichever version you like.</p>
 
-	<p>The JMRI project is continuously adding features, bug fixes,
-	examples and tutorials to the release, and so a new "test" versions
-	appear every couple of weeks.  You may find one of these has features
-	that you really want.  These are announced in the "jmriusers" Yahoo
-	discussion group at
-	<a href="http://groups.yahoo.com/group/jmriusers/">http://groups.yahoo.com/group/jmriusers/</a>.
-	</p>
+            <p>The JMRI project is continuously adding features, bug fixes,
+            examples and tutorials to the release, and so a new "test" versions
+            appear every couple of weeks.  You may find one of these has features
+            that you really want.  These are announced in the "jmriusers" Yahoo
+            discussion group at
+            <a href="http://groups.yahoo.com/group/jmriusers/">http://groups.yahoo.com/group/jmriusers/</a>.
+            </p>
 
-	<LI>Install JMRI</LI>
+        <a id="update">
+        <LI>Install JMRI</LI>
 
-	<p>Uncompress/untar the file you downloaded above.  This will create the "JMRI" folder.</p>
-	<p>To install, you just have to move the JMRI folder to where you
-	want it on your computer.</p>
+            <p>Uncompress/untar the file you downloaded above.  This will create a new "JMRI" folder.</p>
 
-	<LI>Installation is complete.</LI>
-	<p>
-	You can run the program by using
-	the "DecoderPro", "PanelPro", or
-	"JmriDemo" scripts in the JMRI folder.  Change directory there, and
-	invoke a script with e.g. "./DecoderPro"
+            <P>Note: Each JMRI release is an independent set of files: It's intended to be used as a
+            whole.  Each release provides new files, and sometimes removes old files.
+            You should therefore <em>not</em> expand the download into the same place as an 
+            existing JMRI installation.  Instead, expand it into a separate location, and
+            move in to it's final destination, completely replacing any previous version of JMRI.
+
+            <p>To install, you just have to move that new JMRI folder to where you
+            want it on your computer.</p>
+            
+
+        <LI>Installation is complete.</LI>
+            <p>
+            You can run the program by using
+            the "DecoderPro", "PanelPro", or
+            "JmriDemo" scripts in the JMRI folder.  Change directory there, and
+            invoke a script with e.g. "./DecoderPro"
 
 	</OL>
 
