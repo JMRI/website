@@ -75,11 +75,20 @@ from
 There may be instances when pressing save incorrectly fails to prompt to restart JMRI or
 prompts to restart JMRI when it should not.</p>
 
-<p>Copying this version of JMRI over an older version of JMRI to upgrade it will not work.
-If running JMRI on Linux, you must remove the older version of JMRI or install this
-version of JMRI in an alternate location. Failure to do so can result in some portions of
-JMRI (notably the web server) failing to function correctly. The recommended installation
-procedures for Microsoft Windows and OS X already remove the older version of JMRI.</p>
+<P>This JMRI version removes some files that were present in earlier versions.
+Failure to remove these can result in some portions of
+JMRI (notably the web server) failing to function correctly.
+If you are updating an existing JMRI installation to this version 
+<a href="../install/Linux.html#update">Linux</a>, 
+you must remove any older version of JMRI or unpack this
+version of JMRI in an alternate location. 
+The recommended update procedures for JMRI on
+<a href="../install/WindowsNew.shtml#update">Microsoft Windows (run the installer)</a> 
+and 
+<a href="../install/MacOSX.html#update">Mac OS X (open disk image and drag to final location, e.g. Applications folder)</a> 
+remove/replace the older version of JMRI, ensuring that these obsolete files are not 
+present.
+</p>
 
 <h3>Older warnings</h3>
 
