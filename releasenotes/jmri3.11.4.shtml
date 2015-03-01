@@ -191,6 +191,15 @@ These are development files, and might not be working at any particular time.</p
     <li>New feature, you can now have the program assign a locomotive to a train based on the
      train's tonnage, route grades, and engine horsepower. See the operation's help "Optional Train
      Requirement" for more details.</li>
+    <li>Changed the date and time format when logging rolling stock and trains to be more MS
+     Excel compatible. Makes it easier to combine several Excel sheets and then sort by date and
+     time.</li>
+    <li>Improved how the program deals with cars on a FIFO or LIFO track. Previously, cars
+     on a FIFO or LIFO track were stuck behind cars that couldn't move. Program will now bypass a
+     stuck car and process the next cars in the order defined by FIFO or LIFO. A car could be
+     "temporary" stuck if the car's destination was full and couldn't accept the car.
+    <li>Fixed a problem where a caboose or car with FRED would lose its departure track in in
+     staging after reseting a train that departed and returned to the same staging track.</li>
    </ul>
 
    <h4>Blocks</h4>
