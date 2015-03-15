@@ -185,6 +185,29 @@ These are development files, and might not be working at any particular time.</p
         <li>
         </ul>
 
+    <h5>Digitrax</h5>
+        <p>Economy Serie 6: version (CV7) starts with 51 instead of 52 (Alain Le Marchand)</p>
+        
+    <h5> Doehler &amp; Haass</h5>
+    <p>Global update (Pierre Billon)</p>
+        <ul>
+         <li>Added: 1 new Decoder / 4 Fw versions (DH22A)</li>
+         <li>Added: 3 new Fw version(s) (DH05C,DH06A,DH10C,DH12A,DH16A,DH18A,DH21A)</li>
+         <li>Added: 1 new Fw version(s) (FH05A,SD18A,SD21A,SH10A,generic profile)</li>
+         <li>Added: SUSI pane, moved relevant options there (All decoders)</li>
+         <li>Added: Start/Brake/Shunt pane, moved relevant options there (All decoders)</li>
+         <li>Change: Adv. mapping now in standard mapping table (All Decoders)</li>
+         <li>Change: Railcom pane (grid + qualifyer) (All Decoders)</li>
+         <li>Change: Adapted Trix 66840 def to match above changes to the core D&H XMLs.</li>         
+         <li>Fixed: Consistent Reset function / translation (All Decoders)</li>
+         <li>Fixed: Removed non applicable Motorola options (FH05A,DH05A,DH05B,DH10A,DH10B,DHP160,DHP250,DHP260)</li>         
+         <li>Info: New ProductID format for future versions (e.g.: DH05A_2014.10)</li>
+         <li>Info: No new models created for new Fw on long deprecated models (DH05A/B,DH10A/B,DHP160/250/260). Use generic profile if needed.</li>         
+        </ul>        
+        
+    <h5>Miscellaenous</h5>
+        <p>Add <a href="http://www.dccconcepts.com/">DCCconcepts</a> Zen series of decoders (Alain Le Marchand)</p>        
+
    <h4>Operations</h4>
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
