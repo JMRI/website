@@ -229,7 +229,22 @@ These are development files, and might not be working at any particular time.</p
     <p></p>
      
 <h4>Preferences</h4>
-	<p></p>
+	<p>A Warrants panel is added to Preferences.  Warrants can now interpret the Aspect Speed Map 
+	four ways: % of Normal, % of Full Throttle, Miles per Hour or Kilometers per hour.  A
+	global Throttle Factor to aid trains in running at scale track speed is added.  Also added is
+	a combo box to set the layout scale.  See the warrant's help documentation for details.</p>
+	
+<H4>Warrants</H4>
+	<li>The algorithm to change speeds due to track conditions is improved to more accurately predict
+	speed change start and end points.</li>
+	<li>Warrants now respond to block speed changes.</li>
+	<li>Aspect speed changes for warrants may be indicated by actual prototype speeds - e.g. mph 
+	or kmph.</li>
+	<li>Individual engine addresses may be calibrated with a "Throttle Factor" so they can run at
+	scale track speeds.  The NXWarrants have a new feature to calibrate an address.</li>
+	<li>The "Offset(sec)" column in the Signal Table at <i>Add Items->Occupancy Blocks</i> now can 
+	adjust the the end point of a speed change (+/-).</li>
+	<li>Warrant help documentation is updated.</li>
 	
 <h4>Miscellaneous</h4>
 	<p>The name of the active profile is displayed on the PanelPro main window and in the
