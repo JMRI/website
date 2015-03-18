@@ -207,7 +207,7 @@ These are development files, and might not be working at any particular time.</p
          <li>Info: No new models created for new Fw on long deprecated models (DH05A/B,DH10A/B,DHP160/250/260). Use generic profile if needed.</li>         
         </ul>        
         
-    <h5>Miscellaenous</h5>
+    <h5>Miscellaneous</h5>
         <p>Add <a href="http://www.dccconcepts.com/">DCCconcepts</a> Zen series of decoders (Alain Le Marchand)</p>        
 
    <h4>Operations</h4>
@@ -219,12 +219,20 @@ These are development files, and might not be working at any particular time.</p
     <li>Changed the date and time format when logging rolling stock and trains to be more MS
      Excel compatible. Makes it easier to combine several Excel sheets and then sort by date and
      time.</li>
-    <li>Improved how the program deals with cars on a FIFO or LIFO track. Previously, cars
-     on a FIFO or LIFO track were stuck behind cars that couldn't move. Program will now bypass a
-     stuck car and process the next cars in the order defined by FIFO or LIFO. A car could be
-     "temporary" stuck if the car's destination was full and couldn't accept the car.
+    <li>Improved how the program deals with cars on a FIFO or LIFO track. Previously, cars on a
+     FIFO or LIFO track were stuck behind cars that couldn't move. Program will now bypass a stuck
+     car and process the next cars in the order defined by FIFO or LIFO. A car could be "temporary"
+     stuck if the car's destination was full and couldn't accept the car.
+    <li>Improved how the "Edit Car" window blocking feature deals with cars that are defined as
+     "Passenger" and also in a kernel. Now the program won't ask if all passenger cars should have
+     the same blocking number if the car is also in a kernel</li>
+     <li>Made improvements to the car router to allow routing through staging. This allows users to
+     model industries that aren't on the layout. Feature is still disabled by default.</li>
     <li>Fixed a problem where a caboose or car with FRED would lose its departure track in in
-     staging after reseting a train that departed and returned to the same staging track.</li>
+     staging after reseting a train that also departed and returned to the same staging track.</li>
+    <li>Fixed a problem where a car's final destination and custom load didn't reset properly
+     when a car was departing staging and was assigned to staging that was full. Thanks to Dave
+     Waraxa for finding and reporting the two last problems.</li>
    </ul>
 
    <h4>Blocks</h4>
