@@ -28,7 +28,7 @@
       Release Notes for JMRI 3.11.4 release
       </h2>
 
-	<p>Date: xx, 2015</p>
+	<p>Date: mmm dd, 2015</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Test version 3.11.4 of JMRI/DecoderPro is available for download.</p>
  
@@ -237,6 +237,7 @@ These are development files, and might not be working at any particular time.</p
 	a combo box to set the layout scale.  See the warrant's help documentation for details.</p>
 	
 <H4>Warrants</H4>
+    <ul>
 	<li>The algorithm to change speeds due to track conditions is improved to more accurately predict
 	speed change start and end points.</li>
 	<li>Warrants now respond to block speed changes.</li>
@@ -247,6 +248,7 @@ These are development files, and might not be working at any particular time.</p
 	<li>The "Offset(sec)" column in the Signal Table at <i>Add Items->Occupancy Blocks</i> now can 
 	adjust the the end point of a speed change (+/-).</li>
 	<li>Warrant help documentation is updated.</li>
+	</ul>
 	
 <h4>Miscellaneous</h4>
 	<p>The name of the active profile is displayed on the PanelPro main window and in the
