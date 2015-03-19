@@ -166,7 +166,13 @@ These are development files, and might not be working at any particular time.</p
         <ul>Fixed an issue where the Loco Database from the Ecos wasn't always loaded correctly</ul>
         
 <h4>Signals</h4>
-    <p></p>
+    <p>Egbert Broerse improved the signaling system documentation</p>
+    <p>Balazs Racz: For single output signal head, whenever the underlying turnout changes
+        (due to change in the turnout table, turnout feedback, or JMRI listening on the command bus and picking up a turnout change event), 
+        the signal head will adjust the displayed output.
+        Also fixed a bug at JMRI startup: 
+            The single output signal head implementation was generating a turnout change command every 
+            time JMRI started up (at panel.xml load time).
     
 <h4>New / Updated decoder definitions</h4>
 
@@ -210,7 +216,7 @@ These are development files, and might not be working at any particular time.</p
     <h5>Miscellaneous</h5>
         <p>Add <a href="http://www.dccconcepts.com/">DCCconcepts</a> Zen series of decoders (Alain Le Marchand)</p>        
 
-   <h4>Operations</h4>
+<h4>Operations</h4>
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
     <li>New feature, you can now have the program assign a locomotive to a train based on the
