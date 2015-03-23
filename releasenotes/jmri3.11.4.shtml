@@ -276,6 +276,9 @@ These are development files, and might not be working at any particular time.</p
 	status bar on all Roster windows (including the DecoderPro 3 main window).
 	(Randall Wood)</p>
 	
+	<p>Fixed an issue where editing the DecoderPro 3 Preferences could cause the configuration
+	to be corrupted or destroyed. (Randall Wood)</p>
+	
 	<p>Lisby made an enhancement to the train tracking as implemented in Block.java:
         When the existing code has not been able to track the train, i.e. the train ID in terms of block value will be lost.
         The enhancement stores the candidate Blocks that a train may have arrived from when a block becomes occupied 
