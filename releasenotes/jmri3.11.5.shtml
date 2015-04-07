@@ -210,7 +210,9 @@ These are development files, and might not be working at any particular time.</p
 
 	
 <h4>Miscellaneous</h4>
-
+   <ul>
+    <li>Fixed a bug in the Layout Editor, whereby a Cross-Over that has been snapped to grid then rotated by 90' fails to display correctly when the panel is reloaded. - KD</li>
+   </ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
