@@ -3,12 +3,12 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 3.11.5
+ JMRI: Release Notes for 3.11.6
  
  </title>
     <meta http-equiv=Content-Type content="text/html; charset=utf-8">
     <meta content="Bob Jacobsen" name=Author>
-    <meta name="keywords" content="java model railroad JMRI 3.11.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 3.11.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
@@ -25,12 +25,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 3.11.5 release
+      Release Notes for JMRI 3.11.6 release
       </h2>
 
 	<p>Date: mmm dd, 2015</p>
 	<p>From: Bob Jacobsen</p>
-	<p>Subject: Test version 3.11.5 of JMRI/DecoderPro is available for download.</p>
+	<p>Subject: Test version 3.11.6 of JMRI/DecoderPro is available for download.</p>
  5
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -59,7 +59,7 @@ None at release time.
 
 <!-- 
 If any of those effect you, please either wait for 
-<A href="jmri3.11.6.shtml">JMRI 3.11.6</a>, due out shortly after this one,
+<A href="jmri3.11.7.shtml">JMRI 3.11.7</a>, due out shortly after this one,
 or pick up a 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -154,7 +154,7 @@ on the
 These are development files, and might not be working at any particular time.</p>
 
  
-<h3>Changes since test release 3.11.4:</h3>
+<h3>Changes since test release 3.11.5:</h3>
 
 
 <h4>Hardware Support</h4>
@@ -165,8 +165,6 @@ These are development files, and might not be working at any particular time.</p
         
     <h5>MERG CBus</h5>
         <ul>
-        <li>Mark Riddoch provided a Reporter for CBus that allows for the 
-            connection of an RFID reader attached via a suitable CBus node.
         </ul>
 <h4>Signals</h4>
     <p></p>
@@ -196,9 +194,7 @@ These are development files, and might not be working at any particular time.</p
    <h4>Operations</h4>
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
-    <li>You can now control which destinations out of staging are allowed for custom loads. See
-     under "Edit Staging Track" tools "Track Destinations". "</li>
-     <li>Improved build report to show trains in the route when using detailed or very detailed.</li>
+    <li></li>
    </ul>
 
    <h4>Blocks</h4>
@@ -212,7 +208,6 @@ These are development files, and might not be working at any particular time.</p
 	
 <h4>Miscellaneous</h4>
    <ul>
-    <li>Fixed a bug in the Layout Editor, whereby a Cross-Over that has been snapped to grid then rotated by 90' fails to display correctly when the panel is reloaded. - KD</li>
    </ul>
 
    <!--#include virtual="/Footer" -->
