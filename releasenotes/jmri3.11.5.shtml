@@ -158,15 +158,11 @@ These are development files, and might not be working at any particular time.</p
 
 
 <h4>Hardware Support</h4>
-    <h5>Uhlenbrock Intellibox</h5>
-        <ul>
-        </ul>
-    <h5>ESU - ECOS</h5>
         
     <h5>MERG CBus</h5>
         <ul>
         <li>Mark Riddoch provided a Reporter for CBus that allows for the 
-            connection of an RFID reader attached via a suitable CBus node.
+            connection of an RFID reader attached via a suitable CBus node.</li>
         </ul>
 
     <h5>NCE</h5>
@@ -245,6 +241,11 @@ These are development files, and might not be working at any particular time.</p
     <li>Fixed a bug in the Layout Editor, whereby a Cross-Over that has been snapped to grid 
         then rotated by 90&deg; fails to display correctly when the panel is reloaded. - KD</li>
    </ul>
+   
+	<ul>
+		<li>Fixed an issue where WebThrottle could occasionally send unwanted
+		emergency stops with LocoNet and CBUS systems. (Bug 516) - Randall Wood</li>
+	</ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
