@@ -169,6 +169,13 @@ These are development files, and might not be working at any particular time.</p
             connection of an RFID reader attached via a suitable CBus node.
         </ul>
 
+    <h5>NCE</h5>
+        <ul>
+        <li>Ken Cameron has fixed significant issues in the NCE Macro editor when
+        	used with the serial connected PowerPro system (CS02). It seems
+        	to have been an issue since June 2014, release 3.7.8 when the
+        	NCE USB support was added.
+        </ul>
 <h4>Signals</h4>
     <p></p>
     
