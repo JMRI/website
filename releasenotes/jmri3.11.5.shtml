@@ -31,7 +31,7 @@
 	<p>Date: mmm dd, 2015</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Test version 3.11.5 of JMRI/DecoderPro is available for download.</p>
- 5
+	
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
 <h3>Notes:</h3>
@@ -176,6 +176,18 @@ These are development files, and might not be working at any particular time.</p
         	to have been an issue since June 2014, release 3.7.8 when the
         	NCE USB support was added.
         </ul>
+    
+    <h5>SPROG</h5>
+        SPROG can now use DCC addresses from 100 to 127 as either long ("Extended")
+        or short ("Basic") addresses. The throttle gives you a selector for those.
+        
+    <h5>"Direct" programming mode</h5>
+        A new "Direct" programming mode choice is present for 
+        DCC systems, such as NCE, that can use both the Direct Bit and Direct Byte
+        operations when programming.  Direct Bit and Direct Byte, when
+        available, mean that the command station is told to use only one or the
+        other, which might be useful with very old decoders.
+        
 <h4>Signals</h4>
     <p></p>
     
@@ -184,10 +196,10 @@ These are development files, and might not be working at any particular time.</p
     <h5>BLI</h5>
         <p>Michael Mosher improved the BLI P2 definition</p>
             
-<!-- 
-    <h5>SoundTraxx</h5>
-        <p></p>
+    <h5>MRC</h5>
+        <p>Alain Le Marchand added definitions for the MRC sound 1617 and 1618 decoders</p>
         
+<!-- 
     <h5>TCS</h5>
         <p></p>
 
@@ -209,12 +221,13 @@ These are development files, and might not be working at any particular time.</p
      <li>Improved build report to show trains in the route when using detailed or very detailed.</li>
    </ul>
 
-   <h4>Blocks</h4>
+<h4>Blocks</h4>
     <p></p>
      
 <h4>Logix</h4>
    <ul>
-    <li>Bug #520 fixed.  Actions Delayed Turnout and Delayed Sensor now toggle states correctly. </li>
+    <li><a href="https://sourceforge.net/p/jmri/bugs/520/">Bug #520</a> fixed. 
+        Actions Delayed Turnout and Delayed Sensor now toggle states correctly. </li>
    </ul>
 
 	
@@ -227,7 +240,7 @@ These are development files, and might not be working at any particular time.</p
 <h4>Miscellaneous</h4>
    <ul>
     <li>Fixed a bug in the Layout Editor, whereby a Cross-Over that has been snapped to grid 
-        then rotated by 90' fails to display correctly when the panel is reloaded. - KD</li>
+        then rotated by 90&deg; fails to display correctly when the panel is reloaded. - KD</li>
    </ul>
 
    <!--#include virtual="/Footer" -->
