@@ -178,14 +178,17 @@ These are development files, and might not be working at any particular time.</p
         </ul>
     
     <h5>SPROG</h5>
-        SPROG can now use DCC addresses from 100 to 127 as either long ("Extended")
-        or short ("Basic") addresses. The throttle gives you a selector for those.
-        
+        <ul>
+        <li>Dave Heap changed the SPROG and SPRG Command Station code so you can now use
+			the full NMRA DCC address ranges of 0 to 10,239 long ("Extended")
+			or 1 to 127 short ("Basic") addresses. The throttle now gives you a selector for Long or Short address.</li>
+        <li>Dave Heap improved the Slot Monitor display.</li>
+        </ul>        
     <h5>"Direct" programming mode</h5>
-        A new "Direct" programming mode choice is present for 
-        DCC systems, such as NCE, that can use both the Direct Bit and Direct Byte
-        operations when programming.  Direct Bit and Direct Byte, when
-        available, mean that the command station is told to use only one or the
+        Dave Heap added a new "Direct" programming mode choice for 
+        DCC systems (such as NCE) that use both the Direct Bit and Direct Byte
+        operations when programming.  Direct Bit and Direct Byte (when
+        available) mean that the command station is told to use only one or the
         other, which might be useful with very old decoders.
         
 <h4>Signals</h4>
