@@ -57,16 +57,16 @@ see our
 
 <h3>Known problems with this release</h3>
 
-None at release time.
+<ul>
+    <li>Paths in panels that start with <code>home:</code> will not load correctly.</li>
+</ul>
 
-<!-- 
 If any of those effect you, please either wait for 
 <A href="jmri3.11.6.shtml">JMRI 3.11.6</a>, due out shortly after this one,
 or pick up a 
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
 
 <h3>New warnings for this version:</h3>
 
