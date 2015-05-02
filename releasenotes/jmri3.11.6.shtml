@@ -171,9 +171,11 @@ These are development files, and might not be working at any particular time.</p
     <p></p>
 
 <h4>New / Updated decoder definitions</h4>
-
-    <p>A single decoder model can now match multiple Product IDs, specified as a comma-separated list in the "productID" attribute. (Dave Heap)</p>
-
+	<p>Dave Heap made the following changes :</p>
+	<ul>
+		<li>Improved the reliability of "Read type from decoder" by retrying several times in the event of a (possibly transient) read failure.</li>
+		<li>A single decoder model can now match multiple Product IDs, specified as a comma-separated list in the "productID" attribute.</li>
+	</ul>
 
 <!--
     <h5>Fleischmann</h5>
