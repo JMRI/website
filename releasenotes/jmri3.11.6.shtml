@@ -4,7 +4,7 @@
 <head>
  <title>
  JMRI: Release Notes for 3.11.6
- 
+
  </title>
     <meta http-equiv=Content-Type content="text/html; charset=utf-8">
     <meta content="Bob Jacobsen" name=Author>
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  
+
 <!--#include virtual="/Header" -->
 
   <div class="nomenu" id="mBody">
@@ -31,36 +31,36 @@
 	<p>Date: mmm dd, 2015</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Test version 3.11.6 of JMRI/DecoderPro is available for download.</p>
-	
+
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
 <h3>Notes:</h3>
 
-<p>This is a test release.  Please post a note if you encounter any new or old bugs!  
-And please back up your JMRI files before installing this, in case you want to go 
+<p>This is a test release.  Please post a note if you encounter any new or old bugs!
+And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
 <p>This is the next in a series of test versions. We expect this series
-to end in the next JMRI production release around the middle of 2015.</p> 
+to end in the next JMRI production release around the middle of 2015.</p>
 
 <p>Some of the changes involved are quite extensive.
-They may require a certain amount of experience before they are working well.  
+They may require a certain amount of experience before they are working well.
 Therefore, this test version should be considered experimental.</p>
 
 <p><b>
-JMRI is now only available under the 
+JMRI is now only available under the
 <A HREF="/COPYING">GNU General Public License</a>. For more information, please
-see our 
+see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
 <h3>Known problems with this release</h3>
 
 None at release time.
 
-<!-- 
-If any of those effect you, please either wait for 
+<!--
+If any of those effect you, please either wait for
 <A href="jmri3.11.7.shtml">JMRI 3.11.7</a>, due out shortly after this one,
-or pick up a 
+or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
@@ -71,7 +71,7 @@ from
 <h3>Older warnings</h3>
 
 <P>This release, and all later releases in this cycle, require Java 1.8 or higher.
-To use this or any later JMRI releases, you'll have to 
+To use this or any later JMRI releases, you'll have to
 <a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
 </p>
 
@@ -79,37 +79,37 @@ To use this or any later JMRI releases, you'll have to
 Failure to remove these can result in some portions of
 JMRI (notably the web server) failing to function correctly.
 If you are updating an existing JMRI installation to this version on
-<a href="../install/Linux.html#update">Linux</a>, 
+<a href="../install/Linux.html#update">Linux</a>,
 you must remove any older version of JMRI or unpack this
-version of JMRI in an alternate location. 
+version of JMRI in an alternate location.
 The recommended update procedures for JMRI on
-<a href="../install/WindowsNew.shtml#update">Microsoft Windows (run the installer)</a> 
-and 
-<a href="../install/MacOSX.html#update">Mac OS X (open disk image and drag to final location, e.g. Applications folder)</a> 
-remove/replace the older version of JMRI, ensuring that these obsolete files are not 
+<a href="../install/WindowsNew.shtml#update">Microsoft Windows (run the installer)</a>
+and
+<a href="../install/MacOSX.html#update">Mac OS X (open disk image and drag to final location, e.g. Applications folder)</a>
+remove/replace the older version of JMRI, ensuring that these obsolete files are not
 present.
 </p>
 
 <P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
 calling the parts of JMRI that interchange XML objects.</P>
 
-<p>There are now separate settings for the default Service Mode Programmer and 
+<p>There are now separate settings for the default Service Mode Programmer and
 for the default Ops Mode Programmer.  If you're using two or more system connections,
 this lets you use one connection for ops mode (on track) programming and another connection
 for your programming track. If you're using two separate connections, you
-should go to the Defaults pane on the Preferences window and check that those 
+should go to the Defaults pane on the Preferences window and check that those
 defaults were set properly.</p>
 
 <p> If you are making a direct connection to a Intellibox unit via
     serial or USB, you will have to reselect your preferences.
-    See the 
-    <a href="http://jmri.org/help/en/html/hardware/loconet/Uhlenbrock.shtml">Uhlenbrock support page</a> 
+    See the
+    <a href="http://jmri.org/help/en/html/hardware/loconet/Uhlenbrock.shtml">Uhlenbrock support page</a>
     for instructions.</p>
 
 <p> If you are using an NCE USB adapter, you will have to reselect your preferences
      the first time you use a JMRI 3.11 version (if you set them using JMRI 3.10 or earlier).
-    See the 
-    <a href="http://jmri.org/help/en/html/hardware/nce/NCE.shtml">page on configuring JMRI for NCE</a> 
+    See the
+    <a href="http://jmri.org/help/en/html/hardware/nce/NCE.shtml">page on configuring JMRI for NCE</a>
     for instructions.</p>
 
 <p>The Save button in the Preferences window now only prompts for restarts if required.
@@ -117,7 +117,7 @@ There may be instances when pressing save incorrectly fails to prompt to restart
 prompts to restart JMRI when it should not.</p>
 
 <p>Because of internal code changes, this version of JMRI may not be compatible with
-<a href="http://home.comcast.net/~kb0oys/">CATS 2.34</a> or earlier.  Keep using 
+<a href="http://home.comcast.net/~kb0oys/">CATS 2.34</a> or earlier.  Keep using
 <a href="jmri3.10.shtml">JMRI 3.10</a> with CATS until there's a CATS update that
 says it will work with JMRI 3.11.</p>
 
@@ -146,14 +146,14 @@ Driver.</p>
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.11.6/ws/jmri/dist/release/">CI project page</a>.
- --> 
+ -->
 
 
-<p>During development leading to the actual release, you can find test download files on the 
+<p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
 
- 
+
 <h3>Changes since test release 3.11.5:</h3>
 
 
@@ -162,30 +162,30 @@ These are development files, and might not be working at any particular time.</p
         <ul>
         </ul>
     <h5>ESU - ECOS</h5>
-        
+
     <h5>MERG CBus</h5>
         <ul>
         </ul>
 
 <h4>Signals</h4>
     <p></p>
-    
+
 <h4>New / Updated decoder definitions</h4>
 
     <p>A single decoder model can now match multiple Product IDs, specified as a comma-separated list in the "productID" attribute. (Dave Heap)</p>
 
 
-<!-- 
+<!--
     <h5>Fleischmann</h5>
         <p></p>
-            
+
     <h5>SoundTraxx</h5>
         <p></p>
-        
+
     <h5>TCS</h5>
         <p></p>
  -->
- 
+
 	<h5>ESU</h5>
 	<p>Dave Heap made the following changes :</p>
 	<ul>
@@ -194,8 +194,21 @@ These are development files, and might not be working at any particular time.</p
 		<li>Other improvements and corrections to the ESU decoder definitions.</li>
 	</ul>
 
-        
+    <h5>MRC</h5>
+	<p>Alain Le Marchand made the following changes :</p>
+    <p>Complete overhaul of the MRC Sound decoders.</p>
+	<ul>
+		<li>Renamed all models in a consistent way. Rearranged families by scale. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
+		<li>Dispatched all CVs previously displayed on "MRC" pane to the relevant standard panes.</li>
+        <li>Fixed several definitions and aligned to the documentation available on MRC web site.</li>
+        <li>Added new definitions for: 1660 (N Life-Like C-Liner), 1817 and 1818 (G Diesels), 1822 (S Diesel), 1828 (N Atlas SD50/60), 1907 (HO Atlas S2/S4), 1911 (HO Steam), 1913 (HO Diesel), 1956 (N Steam), 1958 (N Kato PA1), 1959 (N Diesel), 1960 (N Kato SD45/SD70MAC/AC4400)</li>
+	</ul>
+
     <h5>Miscellaneous</h5>
+
+	<p>Digikeijs (Digirails): Added definition for Function decoder DR80015 (Alain Le Marchand)</p>
+	<p>Hornby: Added defintions for Hornby TTS Class 37 and Class 40 (Nigel Cliffe)</p>
+	<p>Trix: Added defintions for Trix Sound HO BR V160 and BR 41 (Alain Le Marchand)</p>
 
    <h4>Operations</h4>
    <p>Dan Boudreau made the following changes to operations:</p>
@@ -210,18 +223,18 @@ These are development files, and might not be working at any particular time.</p
 
    <h4>Blocks</h4>
     <p></p>
-     
+
 <h4>Preferences</h4>
 
-	
+
 <H4>Warrants</H4>
    <ul>
     <li>Fix several bugs recently introduced in record learn mode warrants.</li>
     <li>Add feature to display warrant routes graphically for review when multiple routes
         are possible.</li>
-   </ul>     
+   </ul>
 
-	
+
 <h4>Miscellaneous</h4>
    <ul>
    </ul>
