@@ -163,8 +163,9 @@ These are development files, and might not be working at any particular time.</p
         </ul>
     <h5>ESU - ECOS</h5>
 
-    <h5>MERG CBus</h5>
+    <h5>SPROG</h5>
         <ul>
+            <li>Fixed a problem where DecoderPro's read buttons would be disabled if using SPROG while JMRI is configured with multiple hardware interfaces.
         </ul>
 
 <h4>Signals</h4>
@@ -239,6 +240,7 @@ These are development files, and might not be working at any particular time.</p
 
 <h4>Miscellaneous</h4>
    <ul>
+    <li>Debugging improvements in the Programmer support.
    </ul>
 
    <!--#include virtual="/Footer" -->
