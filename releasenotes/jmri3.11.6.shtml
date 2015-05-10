@@ -158,36 +158,22 @@ These are development files, and might not be working at any particular time.</p
 
 
 <h4>Hardware Support</h4>
-    <h5>Uhlenbrock Intellibox</h5>
+    <h5>MRC</h5>
         <ul>
+            <li>Ken Cameron added support for inverting turnouts on MRC systems.
         </ul>
-    <h5>ESU - ECOS</h5>
 
     <h5>SPROG</h5>
         <ul>
             <li>Fixed a problem where DecoderPro's read buttons would be disabled if using SPROG while JMRI is configured with multiple hardware interfaces.
         </ul>
 
-<h4>Signals</h4>
-    <p></p>
-
 <h4>New / Updated decoder definitions</h4>
-	<p>Dave Heap made the following changes :</p>
+	<p>Dave Heap made the following changes:</p>
 	<ul>
 		<li>Improved the reliability of "Read type from decoder" by retrying several times in the event of a (possibly transient) read failure.</li>
 		<li>A single decoder model can now match multiple Product IDs, specified as a comma-separated list in the "productID" attribute.</li>
 	</ul>
-
-<!--
-    <h5>Fleischmann</h5>
-        <p></p>
-
-    <h5>SoundTraxx</h5>
-        <p></p>
-
-    <h5>TCS</h5>
-        <p></p>
- -->
 
 	<h5>ESU</h5>
 	<p>Dave Heap made the following changes :</p>
@@ -199,14 +185,13 @@ These are development files, and might not be working at any particular time.</p
 	</ul>
 
     <h5>MRC</h5>
-	<p>Alain Le Marchand made the following changes :</p>
-    <p>Complete overhaul of the MRC Sound decoders.</p>
+	<p>Alain Le Marchand made a complete overhaul of the MRC Sound decoders:
 	<ul>
 		<li>Renamed all models in a consistent way. Rearranged families by scale. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
 		<li>Dispatched all CVs previously displayed on "MRC" pane to the relevant standard panes.</li>
         <li>Fixed several definitions and aligned to the documentation available on MRC web site.</li>
         <li>Added new definitions for: 1660 (N Life-Like C-Liner), 1817 and 1818 (G Diesels), 1822 (S Diesel), 1828 (N Atlas SD50/60), 1907 (HO Atlas S2/S4), 1911 (HO Steam), 1913 (HO Diesel), 1956 (N Steam), 1958 (N Kato PA1), 1959 (N Diesel), 1960 (N Kato SD45/SD70MAC/AC4400)</li>
-	</ul>
+	</ul></p>
 
     <h5>Miscellaneous</h5>
 
@@ -214,7 +199,7 @@ These are development files, and might not be working at any particular time.</p
 	<p>Hornby: Added defintions for Hornby TTS Class 37 and Class 40 (Nigel Cliffe)</p>
 	<p>Trix: Added defintions for Trix Sound HO BR V160 and BR 41 (Alain Le Marchand)</p>
 
-   <h4>Operations</h4>
+<h4>Operations</h4>
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
     <li>New feature, car summary by track for Switch Lists. The summary shows by track all of
@@ -230,10 +215,11 @@ These are development files, and might not be working at any particular time.</p
    an IdTag associated with the piece of rolling stock is seen by a reader 
    associated with a location.</p>
 
-   <h4>Blocks</h4>
-    <p></p>
 
 <h4>Preferences</h4>
+  <ul>
+    <li>Allow startup files to be edited in the DecoderPro 3 preferences dialog.</li>
+  </ul>
 
 
 <H4>Warrants</H4>
@@ -246,8 +232,8 @@ These are development files, and might not be working at any particular time.</p
 
 <h4>Miscellaneous</h4>
   <ul>
-    <li>Allow startup files to be edited in the DecoderPro 3 preferences dialog.</li>
     <li>Debugging improvements in the Programmer support.</li>
+    <li>Minor performance improvements in programmer selection widgets.</li>
   </ul>
 
    <!--#include virtual="/Footer" -->
