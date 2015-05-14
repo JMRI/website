@@ -53,7 +53,7 @@ JMRI is now only available under the
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
-<h3>Known problems with this release</h3>
+<h3 id="problems">Known problems with this release</h3>
 
 OPERATIONS IS BROKEN IN THIS RELEASE. DO NOT USE VERSION 3.11.6 FOR OPERATIONS! When reading the car file, there's a chance
 that some cars won't be loaded at startup.
@@ -132,6 +132,13 @@ Driver.</p>
 
 <h3>Download links:</h3>
 
+<p><strong>Downloading of JMRI 3.11.6 has been suspended due to discovery of a bug in Operations that could cause user data loss. See <a href="#problems">Known problems with this release</a> above.</strong></p>
+<p><strong>We are currently testing a fix for this problem and will either release a patched version of 3.11.6 or a V3.11.7 release as soon as possible. This will be announced on this page and on the
+	<a href="http://groups.yahoo.com/group/jmriusers" target="blank">JMRI users</a>
+	mailing list.</strong></p>
+<p><strong>In the interim, please <em>do not</em> use JMRI 3.11.6 for Operations.</strong></p>
+
+<!-- 
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
 	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.6-r29243.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.6-r29243.dmg/download</a></p>
@@ -141,6 +148,7 @@ Driver.</p>
 
 <p>Linux: <A
 	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.6-r29243.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.6-r29243.tgz/download</a></p>
+ -->
 
 <!--
 Preliminary build files (not the final released files) can be found
