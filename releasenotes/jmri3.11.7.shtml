@@ -201,13 +201,19 @@ These are development files, and might not be working at any particular time.</p
 -->
 
 
-    <h4>Operations</h4>
-        <p>Dan Boudreau made the following changes to operations:</p>
-        <ul>
-            <li></li>
-        </ul>
+   <h4>Operations</h4>
+   <ul>
+    <li>Fixed a major bug introduced in version 3.11.6 where during startup the program won't
+     load all of the cars saved in the xml file.</li>
+    <li>New feature, car summary by track for Switch Lists. The summary shows by track all of
+     the car pulls and set outs. It also shows the hold cars for each track. Now your operators will
+     know by track all of the pulls needed for all trains and which cars need to stay put. Should be
+     useful for the larger switch jobs. The summary is only available if you're running the switch
+     list in real time.</li>
+    <li>The train's description now has the option to include the lead engine's road name.</li>
+   </ul>
 
-    <h4>Blocks</h4>
+   <h4>Blocks</h4>
         <p></p>
         <ul>
             <li></li>
