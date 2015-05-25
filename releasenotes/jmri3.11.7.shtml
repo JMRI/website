@@ -168,7 +168,7 @@ These are development files, and might not be working at any particular time.</p
         <h5>SPROG</h5>
             <ul>
             </ul>
-            
+
         <h5>Zimo MXULF</h5>
             <ul>Now supports version 0.61.13 for programming (KD)</ul>
 
@@ -187,13 +187,15 @@ These are development files, and might not be working at any particular time.</p
         <h5>SoundTraxx</h5>
             <p>Bachmann Sound Value definitions updated following publication of data sheets on SoundTraxx website (Alain Le Marchand)</p>
             <ul>
-                <li>On30 Whitcomb 50-ton</li>
-                <li>2-8-4 Berkshire (HO and N scale) - 3 variants each</li>            
-            </ul>            
+                <li>On30 Whitcomb 50-ton: horns and default values</li>
+                <li>2-8-4 Berkshire (HO and N scale) - 3 variants each - full update</li>
+                <li>EMD GP-7 (HO scale): horns and default values</li>
+                <li>CV113 only supported by SD70ACe, GEVO ES44AC and GGE.</li>
+            </ul>
 
         <h5>TCS</h5>
             <p>Old decoders where no replacement exists in the present range are now shown permanently.</p>
-            <p>Old versions of present decoders will only show is there is a hit on version range through automatic identification.</p>            
+            <p>Old versions of present decoders will only show is there is a hit on version range through automatic identification.</p>
 <!--
         <h5>ESU</h5>
             <p></p>
@@ -241,7 +243,7 @@ These are development files, and might not be working at any particular time.</p
         <ul>
             <li>Added ability to set timeout for automatically starting with a profile. (Randall Wood)</li>
             <li>Audio support has been updated to now use the <a href="http://jogamp.org/joal/www/">Jogamp</a>
-                version of the JOAL libraries. This now means that 64-bit operating systems are 
+                version of the JOAL libraries. This now means that 64-bit operating systems are
                 supported as well as some ARM-based systems. Additionally,
                 <a href="http://kcat.strangesoft.net/openal.html">OpenAL-Soft</a> is now bundled
                 with JMRI and no longer requires separate installation. (Matthew Harris)</li>
