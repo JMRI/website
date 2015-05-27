@@ -72,13 +72,14 @@ code that uses JMRI, please
 and make any necessary changes.
 
 
+   <h3>Known problems with this release</h3>
+   <p>NCE macro editor when used on the PowerHouse (CS02) serial port was broken (3.7.9) while
+    adding code to support the USB based NCE systems (PowerCab, SB5, Twin). This is fixed in 3.11.5.</p>
 
-<h3>Known problems with this release</h3>
-<p>NCE macro editor when used on the PowerHouse (CS02) serial port was broken (3.7.9)
-	while adding code to support the USB based NCE systems (PowerCab, SB5, Twin).
-	This is fixed in 3.11.5.</p>
+   <p>OperationsPro bug, caboose or car with FRED that departs and returns to the same staging
+    track can lose the departure track assignment after the train is built. Fixed in 3.11.4.</p>
 
-<h3>Download links:</h3>
+   <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
