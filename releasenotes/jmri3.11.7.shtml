@@ -186,6 +186,11 @@ These are development files, and might not be working at any particular time.</p
         </ul>
 
     <h4>New / Updated decoder definitions</h4>
+	<p>Dave Heap made the following changes:</p>
+	<ul>
+		<li>Improved the reliability of "Read type from decoder" by retrying several times in the event of a (possibly transient) read failure.</li>
+		<li>A single decoder model can now match multiple Product IDs, specified as a comma-separated list in the "productID" attribute.</li>
+	</ul>
 
 <!--
         <h5>Fleischmann</h5>
@@ -203,10 +208,17 @@ These are development files, and might not be working at any particular time.</p
         <h5>TCS</h5>
             <p>Old decoders where no replacement exists in the present range are now shown permanently.</p>
             <p>Old versions of present decoders will only show is there is a hit on version range through automatic identification.</p>
-<!--
-        <h5>ESU</h5>
-            <p></p>
 
+	<h5>ESU</h5>
+	<p>Dave Heap made the following changes:</p>
+	<ul>
+		<li>Most modern ESU decoders will now be identified with "Read type from decoder".</li>
+		<li>Renamed and consolidated models to conform to ESU practice. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
+		<li>Preliminary support for ESU LokSound L V4.0.</li>
+		<li>Other improvements and corrections to the ESU decoder definitions.</li>
+	</ul>
+
+<!--
         <h5>MRC</h5>
             <p></p>
 
