@@ -28,11 +28,11 @@
       Release Notes for JMRI 3.11.7 release
       </h2>
 
-	<p>Date: mmm dd, 2015</p>
-	<p>From: Bob Jacobsen</p>
+	<p>Date: May 30, 2015</p>
+	<p>From: Matthew Harris</p>
 	<p>Subject: Test version 3.11.7 of JMRI/DecoderPro is available for download.</p>
 
-<p><b>This is a draft release note only; the download links do not yet work</b></p>
+<!--<p><b>This is a draft release note only; the download links do not yet work</b></p>-->
 
 <h3>Notes:</h3>
 
@@ -68,7 +68,7 @@ from
 
 <h3>New warnings for this version:</h3>
 
-<p>The old DecoderPro has been removed from the distribution package and DecoderPro 3 has been promoted to be the only available DecoderPro version. Existing customlaunchers that launched the old DecoderPro should continue to function without change or issue. If you absolutely cannot use the new DecoderPro user interface, we suggest using PanelPro instead, as with the execption of a different icon and different fixed buttons on the main window, PanelPro has an identical user interface to the old DecoderPro.</p>
+<p>The old DecoderPro has been removed from the distribution package and DecoderPro 3 has been promoted to be the only available DecoderPro version. Existing custom launchers that launched the old DecoderPro should continue to function without change or issue. If you absolutely cannot use the new DecoderPro user interface, we suggest using PanelPro instead, as with the exception of a different icon and different fixed buttons on the main window, PanelPro has an identical user interface to the old DecoderPro.</p>
 
 <h3>Older warnings</h3>
 
@@ -133,18 +133,18 @@ Driver.</p>
 
 <h3>Download links:</h3>
 
-<!--
+
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28340.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28340.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28340.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28340.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28340.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28340.tgz/download</a></p>
--->
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.tgz/download</a></p>
 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.11.7/ws/jmri/dist/release/">CI project page</a>.
@@ -154,13 +154,13 @@ on the
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
 
 <h3>Changes since test release 3.11.6:</h3>
 
 
     <h4>Hardware Support</h4>
-        <h5>Uhlenbrock Intellibox</h5>
+<!--        <h5>Uhlenbrock Intellibox</h5>
             <ul>
             </ul>
         <h5>ESU - ECOS</h5>
@@ -168,7 +168,7 @@ These are development files, and might not be working at any particular time.</p
         <h5>SPROG</h5>
             <ul>
             </ul>
-
+-->
         <h5>MERG CBUS</h5>
             <ul>
                 <li>Added basic support for non-variable lights (Matthew Harris)</li>
@@ -178,13 +178,13 @@ These are development files, and might not be working at any particular time.</p
             <ul>
                 <li>Now supports version 0.61.13 for programming (KD)</li>
             </ul>
-
+<!--
     <h4>Signals</h4>
         <p></p>
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>New / Updated decoder definitions</h4>
 	<p>Dave Heap made the following changes:</p>
 	<ul>
@@ -242,7 +242,7 @@ These are development files, and might not be working at any particular time.</p
     http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml#TrackBlockingOrder</a>
     for more info.</li>
    </ul>
-
+<!--
    <h4>Blocks</h4>
         <p></p>
         <ul>
@@ -260,7 +260,7 @@ These are development files, and might not be working at any particular time.</p
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Miscellaneous</h4>
         <p></p>
         <ul>
