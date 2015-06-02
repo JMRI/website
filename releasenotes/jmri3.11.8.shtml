@@ -75,7 +75,7 @@ To use this or any later JMRI releases, you'll have to
 <a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
 </p>
 
-<p>The old DecoderPro has been removed from the distribution package and DecoderPro 3 has been promoted to be the only available DecoderPro version. Existing customlaunchers that launched the old DecoderPro should continue to function without change or issue. If you absolutely cannot use the new DecoderPro user interface, we suggest using PanelPro instead, as with the execption of a different icon and different fixed buttons on the main window, PanelPro has an identical user interface to the old DecoderPro.</p>
+<p>The old DecoderPro has been removed from the distribution package and DecoderPro 3 has been promoted to be the only available DecoderPro version. Existing custom launchers that launched the old DecoderPro should continue to function without change or issue. If you absolutely cannot use the new DecoderPro user interface, we suggest using PanelPro instead, as with the exception of a different icon and different fixed buttons on the main window, PanelPro has an identical user interface to the old DecoderPro.</p>
 
 <P>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
 Failure to remove these can result in some portions of
@@ -239,6 +239,7 @@ These are development files, and might not be working at any particular time.</p
         panels. (Randall Wood)</li>
         <li>Fixed the Windows installer so it installs DecoderPro as "DecoderPro" instead
         of as "DecoderPro3". (Randall Wood)</li>
+        <li>Added the native OpenAL and JOAL libraries for ARM Linux platforms. (Matthew Harris)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
