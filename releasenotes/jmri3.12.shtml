@@ -133,14 +133,22 @@ To use this or any later JMRI test or production releases, you'll have to
 <h3>Changes since production release 3.10.1</h3>
 
     <h4>Hardware Support</h4>
-        <p>There are now separate settings for the default Service Mode Programmer and 
-        for the default Ops Mode Programmer.  If you're using two or more system connections,
-        this lets you use one connection for ops mode (on track) programming and another connection
-        for your programming track. If you're using two separate connections, you
-        should go to the Defaults pane on the Preferences window and check that those 
-        defaults were set properly. Some tools, like the Single CV Programmer and 
-        the DecoderPro main windows, will also allow you to select which system to use
-        instead of relying on just the default setting.
+        <h5>Default programmer choice</h5>
+            There are now separate settings for the default Service Mode Programmer and 
+            for the default Ops Mode Programmer.  If you're using two or more system connections,
+            this lets you use one connection for ops mode (on track) programming and another connection
+            for your programming track. If you're using two separate connections, you
+            should go to the Defaults pane on the Preferences window and check that those 
+            defaults were set properly. Some tools, like the Single CV Programmer and 
+            the DecoderPro main windows, will also allow you to select which system to use
+            instead of relying on just the default setting.
+
+        <h5>"Direct" programming mode</h5>
+            Dave Heap added a new "Direct" programming mode choice for 
+            DCC systems (such as NCE) that use both the Direct Bit and Direct Byte
+            operations when programming.  Direct Bit and Direct Byte (when
+            available) mean that the command station is told to use only one or the
+            other, which might be useful with very old decoders.
 
         <h5>Bachrus Speedometer</h5>
             <p>Dennis Miller made the following changes:</p>
@@ -182,19 +190,42 @@ To use this or any later JMRI test or production releases, you'll have to
                 <a href="http://jmri.org/help/en/html/hardware/loconet/Uhlenbrock.shtml">Uhlenbrock support page</a> 
                 for instructions.
 
-        <h5>ESU - ECOS</h5>
+        <h5>MERG CBus</h5>
+            <ul>
+                <li>Mark Riddoch provided a Reporter for CBus that allows for the 
+                connection of an RFID reader attached via a suitable CBus node.</li>
+                <li>Added basic support for non-variable lights (Matthew Harris)</li>
+            </ul>
 
+        <h5>MRC</h5>
+            <ul>
+                <li>Ken Cameron added support for inverting turnouts on MRC systems.
+            </ul>
+
+        <h5>NCE</h5>
+            <ul>
+            <li>Ken Cameron has fixed significant issues in the NCE Macro editor when
+                used with the serial connected PowerPro system (CS02). It seems
+                to have been an issue since June 2014, release 3.7.8 when the
+                NCE USB support was added.
+            </ul>
+    
         <h5>SPROG</h5>
             <ul>
-            </ul>
+            <li>Dave Heap changed the SPROG and SPROG Command Station code so you can now use
+                the full NMRA DCC address ranges of 0 to 10,239 long ("Extended")
+                or 1 to 127 short ("Basic") addresses. The throttle now gives you a selector for Long or Short address.</li>
+            <li>Dave Heap improved the Slot Monitor display.</li>
 
-        <h5>MERG CBUS</h5>
-            <ul>
-            </ul>
+            <li>Fixed a problem where DecoderPro's read buttons would be disabled if using SPROG while JMRI is configured with multiple hardware interfaces.
+
+            </ul>        
 
         <h5>Zimo MXULF</h5>
             <ul>
+                <li>Now supports version 0.61.13 for programming (KD)</li>
             </ul>
+
 
     <h4>Signals</h4>
         <p>The aspects.xml file in each signal definition defines the speeds used for automated operation.
@@ -207,6 +238,28 @@ To use this or any later JMRI test or production releases, you'll have to
         <p>Egbert Broerse improved the signal documentation.
         <p>Suzie Tall provided additional signal icons
 
+        <p>Egbert Broerse improved the signaling system documentation</p>
+        <p>Balazs Racz: For single output signal head, whenever the underlying turnout changes
+            (due to change in the turnout table, turnout feedback, or JMRI listening on the command bus and picking up a turnout change event), 
+            the signal head will adjust the displayed output.
+            Also fixed a bug at JMRI startup: 
+                The single output signal head implementation was generating a turnout change command every 
+                time JMRI started up (at panel.xml load time).</p>
+        <p>Oscar Moutinho updated the DB-HV-1969 signals definition to improve speed control and icons</p>
+        <p>The signal speed defintion has been updated for consistent operation. Also, a release
+            test has been added to keep it that way.</p>
+
+    	<h5>SPTCO-1969</h5>
+            <p>New SPTCO-1969 signal system containing Semaphore, Searchlight
+             and hybrid (semaphore with lower searchlight head) masts. 
+             <br>
+             Does not reference the rulebook as web link because I cannot find it 
+             hosted anywhere. There is a PDF of the rulebook in the Yahoo user group files area
+             if a place can be found to host it. Mast files contain page references for
+             the aspect appearances in the 1969 rulebook.
+             <br>
+             Provided by Suzie Tall, patch 1067
+             </p>
 
     <h4>New / Updated decoder definitions</h4>
 
@@ -215,44 +268,125 @@ To use this or any later JMRI test or production releases, you'll have to
             to emphasise that &quot;label&quot; and &quot;tooltip&quot; attributes <strong><em>should not</em></strong>
             be added to a &quot;fnmapping&quot; element (they are ignored).</p>
 
+        <p>Dave Heap made the following changes:</p>
+        <ul>
+            <li>Improved the reliability of "Read type from decoder" by retrying several times in the event of a (possibly transient) read failure.</li>
+            <li>A single decoder model can now match multiple Product IDs, specified as a comma-separated list in the "productID" attribute.</li>
+        </ul>
+
+        <h5>BLI</h5>
+            <ul>
+                <li>Michael Mosher improved the BLI P2 definition</li>
+            </ul>
+            
+        <h5>Digitrax</h5>
+            <p>Economy Series 6: version (CV7) starts with 51 instead of 52 (Alain Le Marchand)</p>
+        
+        <h5> Doehler &amp; Haass</h5>
+            <p>Global update (Pierre Billon)</p>
+                <ul>
+                 <li>Added: 1 new Decoder / 4 Fw versions (DH22A)</li>
+                 <li>Added: 3 new Fw version(s) (DH05C,DH06A,DH10C,DH12A,DH16A,DH18A,DH21A)</li>
+                 <li>Added: 1 new Fw version(s) (FH05A,SD18A,SD21A,SH10A,generic profile)</li>
+                 <li>Added: SUSI pane, moved relevant options there (All decoders)</li>
+                 <li>Added: Start/Brake/Shunt pane, moved relevant options there (All decoders)</li>
+                 <li>Change: Adv. mapping now in standard mapping table (All Decoders)</li>
+                 <li>Change: Railcom pane (grid + qualifyer) (All Decoders)</li>
+                 <li>Change: Adapted Trix 66840 def to match above changes to the core D&H XMLs.</li>         
+                 <li>Fixed: Consistent Reset function / translation (All Decoders)</li>
+                 <li>Fixed: Removed non applicable Motorola options (FH05A,DH05A,DH05B,DH10A,DH10B,DHP160,DHP250,DHP260)</li>         
+                 <li>Info: New ProductID format for future versions (e.g.: DH05A_2014.10)</li>
+                 <li>Info: No new models created for new Fw on long deprecated models (DH05A/B,DH10A/B,DHP160/250/260). Use generic profile if needed.</li>         
+            </ul>        
+
         <h5>ESU</h5>
             <ul>
                 <li>Mathias Rufer and Dave Heap added an ESU LokPilot Standard V1.0 definition.</li>
                 <li>Dave Heap has completely redone the ESU Function Map pane to make it easier to read and use. 
                     It is now more like the LokProgrammer Function Map pane.</li>
                 <li>Dave Heap fixed a problem with strange sound slot names displayed in LokSound Select.</li>
+                <li>Dave Heap made the following changes:</p>
+                    <ul>
+                        <li>Added a Row Move facility to the Function Map pane.</li>
+                        <li>Updated the &quot;Read Me&quot; pane.</li>
+                        <li>Replaced confusing LokSound V4.0 models that are functionally identical with generic models.</li>
+                        <li>Corrections to displayed state of a Function Map summary line.</li>
+                        <li>Fixed assorted V4 and LokPilot Standard issues, including rename CV48 for V4 and move to Sound pane.</li>
+                        <li>Added generic LokSound Select steam and diesel models for use with as-yet undefined models.</li>
+                        <li>Fixed an issue with &quot;Requires Drive Sound&quot; for V4 and Select decoders.</li>
+                    </ul></li>
+                <li>Most modern ESU decoders will now be identified with "Read type from decoder".</li>
+                <li>Renamed and consolidated models to conform to ESU practice. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
+                <li>Preliminary support for ESU LokSound L V4.0.</li>
+                <li>Other improvements and corrections to the ESU decoder definitions.</li>
             </ul>
+
         <h5>Fleischmann</h5>
             <ul>
-                <li></li>
+                <li>Xavier Chazelle contributed a decoder definition for 
+                    the N scale Fleischmann "Leig einheit" F830681 double unit of van equipped with a 
+                    Fleischmann-specific dual decoder for opening or closing doors</li>
             </ul>
 
         <h5>MRC</h5>
             <ul>
-                <li></li>
+                <li>Alain Le Marchand added definitions for the MRC sound 1617 and 1618 decoders</li>
+                <li>Alain Le Marchand made a complete overhaul of the MRC Sound decoders:
+                    <ul>
+                        <li>Renamed all models in a consistent way. Rearranged families by scale. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
+                        <li>Dispatched all CVs previously displayed on "MRC" pane to the relevant standard panes.</li>
+                        <li>Fixed several definitions and aligned to the documentation available on MRC web site.</li>
+                        <li>Added new definitions for: 1660 (N Life-Like C-Liner), 1817 and 1818 (G Diesels), 1822 (S Diesel), 1828 (N Atlas SD50/60), 1907 (HO Atlas S2/S4), 1911 (HO Steam), 1913 (HO Diesel), 1956 (N Steam), 1958 (N Kato PA1), 1959 (N Diesel), 1960 (N Kato SD45/SD70MAC/AC4400)</li>
+                    </ul></li>
             </ul>
 
         <h5>SoundTraxx</h5>
             <ul>
                 <li>SoundTraxx now appears in the manufacturer list as "SoundTraxx (Throttle-Up)" 
                     instead of the original "Throttle-Up (SoundTraxx)". It's a long story....</li>
+                <li>Added definition for Bachmann On30 Whitcomb 50-Ton Center-Cab (DCC Sound On-Board, Plug-and-Play Sound Module) 
+                    (Alain Le Marchand)</li>
+                <li>Fixed a problem (originating in the Great SoundTraxx renaming that took place in JMRI 3.11.1) that
+                    prevented some Soundtraxx decoders from being recognized</li>
+                <li>Bachmann Sound Value definitions updated following publication of data sheets on SoundTraxx website (Alain Le Marchand)</p>
+                    <ul>
+                        <li>On30 Whitcomb 50-ton: horns and default values</li>
+                        <li>2-8-4 Berkshire (HO and N scale) - 3 variants each - full update</li>
+                        <li>EMD GP-7 (HO scale): horns and default values</li>
+                        <li>CV113 only supported by SD70ACe, GEVO ES44AC and GG1.</li>
+                    </ul>
+            </ul>
+
+        <h5>TAMS</h5>
+            <ul>
+                <li>FD-R Basic 2 new definition provided by Pierre Billon, patch 1066</li>
             </ul>
 
         <h5>TCS</h5>
             <ul>
                 <li>Michael Mosher updated the TCS WOW definition.</li>
-                <li></li>
-            </ul>
-
-        <h5>TAMS</h5>
-            <ul>
-                <li></li>
-            </ul>
-            
+                <li>Added new definition for: 1917 (HO Atlas S2/S4) (Alain Le Marchand)</li>
+                <li>Old decoders where no replacement exists in the present range are now shown permanently.</li>
+                <li>Old versions of present decoders will only show is there is a hit on version range through automatic identification.</li>
+            </ul>            
  
+        <h5>Trix</h5>
+            <ul>
+                <li>Added Trix 66840 (Bjørn Kvisli - Alain Le Marchand)</li>
+            </ul>     
+        
+        <h5>Zimo</h5>      
+            <ul>
+                <li>Nigel Cliffe and Mark Waters did a lot of work on the Zimo decoders. </li>
+            </ul>      
+
         <h5>Miscellaneous</h5>
             <ul>
-                <li></li>
+                <li>Add <a href="http://www.dccconcepts.com/">DCCconcepts</a> Zen series of decoders (Alain Le Marchand)</li>        
+                <li>Peter MacKenzie added definitions for the Hattons MD4 and Gaugemaster Opti DCC25 decoders.</li>
+                <li>Digikeijs (Digirails): Added definition for Function decoder DR80015 (Alain Le Marchand)</li>
+                <li>Hornby: Added definitions for Hornby TTS Class 37 and Class 40 (Nigel Cliffe)</li>
+                <li>Trix: Added definitions for Trix Sound HO BR V160 and BR 41 (Alain Le Marchand)</li>
             </ul>
 
 
@@ -314,8 +448,51 @@ To use this or any later JMRI test or production releases, you'll have to
         <li>Fixed a problem where a car's final destination and custom load didn't reset properly
          when a car was departing staging and was assigned to staging that was full. Thanks to Dave
          Waraxa for finding and reporting the two last problems.</li>
+         
+        <li>You can now control which destinations out of staging are allowed for custom loads. See
+            under "Edit Staging Track" tools "Track Destinations". "</li>
+        <li>Improved build report to show trains in the route when using detailed or very detailed.</li>
+
+        <li>New feature, car summary by track for Switch Lists. The summary shows by track all of
+         the car pulls and set outs. It also shows the hold cars for each track. Now your operators will
+         know by track all of the pulls needed for all trains and which cars need to stay put. Should be
+         useful for the larger switch jobs. The summary is only available if you're running the switch
+         list in real time.</li>
+         <li>The train's description now has the option to include the lead engine's road name.</li>
+
+
+        <li>Fixed a major bug introduced in version 3.11.6 where during startup the program won't
+         load all of the cars saved in the xml file.</li>
+        <li>New feature, car summary by track for Switch Lists. The summary shows by track all of
+         the car pulls and set outs. It also shows the hold cars for each track. Now your operators will
+         know by track all of the pulls needed for all trains and which cars need to stay put. Should be
+         useful for the larger switch jobs. The summary is only available if you're running the switch
+         list in real time.</li>
+        <li>The train's description now has the option to include the lead engine's road name.</li>
+        <li>New feature, you can now block the tracks at a location for your manifests and switch lists. See 
+        <a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml#TrackBlockingOrder">
+        http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml#TrackBlockingOrder</a>
+        for more info.</li>
+        <li>New feature for road names, the "hyphen feature" now works for road names. Anything after the hyphen isn't
+        printed on manifests and switch lists.</li>
+
+         <li>You can now show on your manifests and switch lists the number of cars in a kernel.
+          The number only only shows up for the lead car.</li>
 
       </ul>
+
+       <p>Paul Bender updated support for IdTag readers in Operations.  Rolling 
+       Stock location and last moved date will now be automatically updated when
+       an IdTag associated with the piece of rolling stock is seen by a reader 
+       associated with a location.</p>
+
+
+    <h4>Logix</h4>
+       <ul>
+        <li><a href="https://sourceforge.net/p/jmri/bugs/520/">Bug #520</a> fixed. 
+            Actions Delayed Turnout and Delayed Sensor now toggle states correctly. </li>
+       </ul>
+
 
     <h4>Blocks</h4>
         <ul>
@@ -339,6 +516,8 @@ To use this or any later JMRI test or production releases, you'll have to
         global Throttle Factor to aid trains in running at scale track speed is added.  Also added is
         a combo box to set the layout scale.  See the warrant's help documentation for details.</p>
 
+        <p>Allow startup files to be edited in the DecoderPro 3 preferences dialog.</p>
+
     <h4>Web Server</h4>
 
         <p>Fix an issue preventing the Web Throttle from handling certain turnouts. (Randall Wood)</p>
@@ -360,6 +539,23 @@ To use this or any later JMRI test or production releases, you'll have to
         Logix.</li>
         <li>Warrant command "Run Warrant" that allows one warrant to launch another is now fully 
         implemented.</li>
+        
+        <li>The algorithm to change speeds due to track conditions is improved to more accurately predict
+        speed change start and end points.</li>
+        <li>Warrants now respond to block speed changes.</li>
+        <li>Aspect speed changes for warrants may be indicated by actual prototype speeds - e.g. mph 
+        or kmph.</li>
+        <li>Individual engine addresses may be calibrated with a "Throttle Factor" so they can run at
+        scale track speeds.  The NXWarrants have a new feature to calibrate an address.</li>
+        <li>The "Offset(sec)" column in the Signal Table at <i>Add Items->Occupancy Blocks</i> now can 
+        adjust the the end point of a speed change (+/-).</li>
+        <li>Warrant help documentation is updated.</li>
+
+        <li>Lengths of paths within a block can now be set individually.</li>
+
+        <li>Fix several bugs recently introduced in record learn mode warrants.</li>
+        <li>Add feature to display warrant routes graphically for review when multiple routes
+            are possible.</li>
        </ul>
 
     <h4>Miscellaneous</h4>
@@ -384,487 +580,28 @@ To use this or any later JMRI test or production releases, you'll have to
                 and then when a block becomes unoccupied, it informs its neighbours who can then choose to use their candidate list to 
                 determine where their train came from.</li>
 
-        </ul>
 
+            <li>Fixed a bug in the Layout Editor, whereby a Cross-Over that has been snapped to grid 
+                then rotated by 90&deg; fails to display correctly when the panel is reloaded. - KD</li>
+            <li>Fixed an issue where WebThrottle could occasionally send unwanted
+                emergency stops with LocoNet and CBUS systems. (<a href="https://sourceforge.net/p/jmri/bugs/516/">Bug 516</a>) - Randall Wood</li>
 
-
-<!-- ********************************************* -->
-<!-- Below here are the original individual notes. -->
-<!-- Move lines from below here to the appropriate -->
-<!-- sections above.                               -->
-<!-- ********************************************* -->
-
-
-
-
-
-<!-- 3.11.3 -->
-
-
-
-
-        
-    
-<h4>New / Updated decoder definitions</h4>
-
-
-    <h5>Fleischmann</h5>
-        <p>Xavier Chazelle contributed a decoder definition for 
-            the N scale Fleischmann "Leig einheit" F830681 double unit of van equipped with a 
-            Fleischmann-specific dual decoder for opening or closing doors
+            <li>Debugging improvements in the Programmer support.</li>
+            <li>Minor performance improvements in programmer selection widgets.</li>
             
-    <h5>SoundTraxx</h5>
-        <p>Added definition for Bachmann On30 Whitcomb 50-Ton Center-Cab (DCC Sound On-Board, Plug-and-Play Sound Module) (Alain Le Marchand)</p>
-        <p>Fixed a problem (originating in the Great SoundTraxx renaming that took place in JMRI 3.11.1) that
-            prevented some Soundtraxx decoders from being recognized</p>
-        
-    <h5>ESU</h5>
-        <p>Dave Heap made the following changes:</p>
-        <ul>
-        <li>Added a Row Move facility to the Function Map pane.</li>
-        <li>Updated the &quot;Read Me&quot; pane.</li>
-        <li>Replaced confusing LokSound V4.0 models that are functionally identical with generic models.</li>
-        <li>Corrections to displayed state of a Function Map summary line.</li>
-        <li>Fixed assorted V4 and LokPilot Standard issues, including rename CV48 for V4 and move to Sound pane.</li>
-        <li>Added generic LokSound Select steam and diesel models for use with as-yet undefined models.</li>
-        <li>Fixed an issue with &quot;Requires Drive Sound&quot; for V4 and Select decoders.</li>
-        </ul>
-            
-    <h5>TCS</h5>
-        <p>Michael Mosher updated the TCS WOW definitions.
-
-    <h5>Trix</h5>
-        <p>Added Trix 66840 (Bjørn Kvisli - Alain Le Marchand)</p>  
-        
-    <h5>Zimo</h5>      
-        <p>Nigel Cliffe and Mark Waters did a lot of work on the Zimo decoders.    
-        
-        
-
-
-<!-- 3.11.4 -->
-
-
-        
-<h4>Signals</h4>
-    <p>Egbert Broerse improved the signaling system documentation</p>
-    <p>Balazs Racz: For single output signal head, whenever the underlying turnout changes
-        (due to change in the turnout table, turnout feedback, or JMRI listening on the command bus and picking up a turnout change event), 
-        the signal head will adjust the displayed output.
-        Also fixed a bug at JMRI startup: 
-            The single output signal head implementation was generating a turnout change command every 
-            time JMRI started up (at panel.xml load time).</p>
-    <p>Oscar Moutinho updated the DB-HV-1969 signals definition to improve speed control and icons</p>
-    <p>The signal speed defintion has been updated for consistent operation. Also, a release
-        test has been added to keep it that way.</p>
-    
-<h4>New / Updated decoder definitions</h4>
-
-
-    <h5>Digitrax</h5>
-        <p>Economy Series 6: version (CV7) starts with 51 instead of 52 (Alain Le Marchand)</p>
-        
-    <h5> Doehler &amp; Haass</h5>
-    <p>Global update (Pierre Billon)</p>
-        <ul>
-         <li>Added: 1 new Decoder / 4 Fw versions (DH22A)</li>
-         <li>Added: 3 new Fw version(s) (DH05C,DH06A,DH10C,DH12A,DH16A,DH18A,DH21A)</li>
-         <li>Added: 1 new Fw version(s) (FH05A,SD18A,SD21A,SH10A,generic profile)</li>
-         <li>Added: SUSI pane, moved relevant options there (All decoders)</li>
-         <li>Added: Start/Brake/Shunt pane, moved relevant options there (All decoders)</li>
-         <li>Change: Adv. mapping now in standard mapping table (All Decoders)</li>
-         <li>Change: Railcom pane (grid + qualifyer) (All Decoders)</li>
-         <li>Change: Adapted Trix 66840 def to match above changes to the core D&H XMLs.</li>         
-         <li>Fixed: Consistent Reset function / translation (All Decoders)</li>
-         <li>Fixed: Removed non applicable Motorola options (FH05A,DH05A,DH05B,DH10A,DH10B,DHP160,DHP250,DHP260)</li>         
-         <li>Info: New ProductID format for future versions (e.g.: DH05A_2014.10)</li>
-         <li>Info: No new models created for new Fw on long deprecated models (DH05A/B,DH10A/B,DHP160/250/260). Use generic profile if needed.</li>         
-        </ul>        
-        
-    <h5>Miscellaneous</h5>
-        <p>Add <a href="http://www.dccconcepts.com/">DCCconcepts</a> Zen series of decoders (Alain Le Marchand)</p>        
-        <p>Peter MacKenzie added definitions for the Hattons MD4 and Gaugemaster Opti DCC25 decoders.
-        
-
-	
-<H4>Warrants</H4>
-    <ul>
-	<li>The algorithm to change speeds due to track conditions is improved to more accurately predict
-	speed change start and end points.</li>
-	<li>Warrants now respond to block speed changes.</li>
-	<li>Aspect speed changes for warrants may be indicated by actual prototype speeds - e.g. mph 
-	or kmph.</li>
-	<li>Individual engine addresses may be calibrated with a "Throttle Factor" so they can run at
-	scale track speeds.  The NXWarrants have a new feature to calibrate an address.</li>
-	<li>The "Offset(sec)" column in the Signal Table at <i>Add Items->Occupancy Blocks</i> now can 
-	adjust the the end point of a speed change (+/-).</li>
-	<li>Warrant help documentation is updated.</li>
-	</ul>
-	
-
-<!-- 3.11.5 -->
-<h4>Hardware Support</h4>
-        
-    <h5>MERG CBus</h5>
-        <ul>
-        <li>Mark Riddoch provided a Reporter for CBus that allows for the 
-            connection of an RFID reader attached via a suitable CBus node.</li>
-        </ul>
-
-    <h5>NCE</h5>
-        <ul>
-        <li>Ken Cameron has fixed significant issues in the NCE Macro editor when
-        	used with the serial connected PowerPro system (CS02). It seems
-        	to have been an issue since June 2014, release 3.7.8 when the
-        	NCE USB support was added.
-        </ul>
-    
-    <h5>SPROG</h5>
-        <ul>
-        <li>Dave Heap changed the SPROG and SPROG Command Station code so you can now use
-			the full NMRA DCC address ranges of 0 to 10,239 long ("Extended")
-			or 1 to 127 short ("Basic") addresses. The throttle now gives you a selector for Long or Short address.</li>
-        <li>Dave Heap improved the Slot Monitor display.</li>
-        </ul>        
-    <h5>"Direct" programming mode</h5>
-        Dave Heap added a new "Direct" programming mode choice for 
-        DCC systems (such as NCE) that use both the Direct Bit and Direct Byte
-        operations when programming.  Direct Bit and Direct Byte (when
-        available) mean that the command station is told to use only one or the
-        other, which might be useful with very old decoders.
-        
-<h4>New / Updated decoder definitions</h4>
-
-    <h5>BLI</h5>
-        <p>Michael Mosher improved the BLI P2 definition</p>
-            
-    <h5>MRC</h5>
-        <p>Alain Le Marchand added definitions for the MRC sound 1617 and 1618 decoders</p>
-        
-<h4>Operations</h4>
-   <p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>You can now control which destinations out of staging are allowed for custom loads. See
-     under "Edit Staging Track" tools "Track Destinations". "</li>
-     <li>Improved build report to show trains in the route when using detailed or very detailed.</li>
-   </ul>
-
-<h4>Logix</h4>
-   <ul>
-    <li><a href="https://sourceforge.net/p/jmri/bugs/520/">Bug #520</a> fixed. 
-        Actions Delayed Turnout and Delayed Sensor now toggle states correctly. </li>
-   </ul>
-
-	
-<H4>Warrants</H4>
-   <ul>
-    <li>Lengths of paths within a block can now be set individually.</li>
-   </ul>
-
-	
-<h4>Miscellaneous</h4>
-   <ul>
-    <li>Fixed a bug in the Layout Editor, whereby a Cross-Over that has been snapped to grid 
-        then rotated by 90&deg; fails to display correctly when the panel is reloaded. - KD</li>
-	<li>Fixed an issue where WebThrottle could occasionally send unwanted
-		emergency stops with LocoNet and CBUS systems. (<a href="https://sourceforge.net/p/jmri/bugs/516/">Bug 516</a>) - Randall Wood</li>
-	</ul>
-
-
-
-
-
-<!-- 3.11.6 -->
-
-<h4>Hardware Support</h4>
-    <h5>MRC</h5>
-        <ul>
-            <li>Ken Cameron added support for inverting turnouts on MRC systems.
-        </ul>
-
-    <h5>SPROG</h5>
-        <ul>
-            <li>Fixed a problem where DecoderPro's read buttons would be disabled if using SPROG while JMRI is configured with multiple hardware interfaces.
-        </ul>
-
-<h4>New / Updated decoder definitions</h4>
-	<p>Dave Heap made the following changes:</p>
-	<ul>
-		<li>Improved the reliability of "Read type from decoder" by retrying several times in the event of a (possibly transient) read failure.</li>
-		<li>A single decoder model can now match multiple Product IDs, specified as a comma-separated list in the "productID" attribute.</li>
-	</ul>
-
-	<h5>ESU</h5>
-	<p>Dave Heap made the following changes:</p>
-	<ul>
-		<li>Most modern ESU decoders will now be identified with "Read type from decoder".</li>
-		<li>Renamed and consolidated models to conform to ESU practice. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
-		<li>Preliminary support for ESU LokSound L V4.0.</li>
-		<li>Other improvements and corrections to the ESU decoder definitions.</li>
-	</ul>
-
-    <h5>MRC</h5>
-	<p>Alain Le Marchand made a complete overhaul of the MRC Sound decoders:
-	<ul>
-		<li>Renamed all models in a consistent way. Rearranged families by scale. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
-		<li>Dispatched all CVs previously displayed on "MRC" pane to the relevant standard panes.</li>
-        <li>Fixed several definitions and aligned to the documentation available on MRC web site.</li>
-        <li>Added new definitions for: 1660 (N Life-Like C-Liner), 1817 and 1818 (G Diesels), 1822 (S Diesel), 1828 (N Atlas SD50/60), 1907 (HO Atlas S2/S4), 1911 (HO Steam), 1913 (HO Diesel), 1956 (N Steam), 1958 (N Kato PA1), 1959 (N Diesel), 1960 (N Kato SD45/SD70MAC/AC4400)</li>
-	</ul></p>
-
-    <h5>Miscellaneous</h5>
-
-	<p>Digikeijs (Digirails): Added definition for Function decoder DR80015 (Alain Le Marchand)</p>
-	<p>Hornby: Added definitions for Hornby TTS Class 37 and Class 40 (Nigel Cliffe)</p>
-	<p>Trix: Added definitions for Trix Sound HO BR V160 and BR 41 (Alain Le Marchand)</p>
-
-<h4>Operations</h4>
-   <p>Dan Boudreau made the following changes to operations:</p>
-   <ul>
-    <li>New feature, car summary by track for Switch Lists. The summary shows by track all of
-     the car pulls and set outs. It also shows the hold cars for each track. Now your operators will
-     know by track all of the pulls needed for all trains and which cars need to stay put. Should be
-     useful for the larger switch jobs. The summary is only available if you're running the switch
-     list in real time.</li>
-     <li>The train's description now has the option to include the lead engine's road name.</li>
-   </ul>
-
-   <p>Paul Bender updated support for IdTag readers in Operations.  Rolling 
-   Stock location and last moved date will now be automatically updated when
-   an IdTag associated with the piece of rolling stock is seen by a reader 
-   associated with a location.</p>
-
-
-<h4>Preferences</h4>
-  <ul>
-    <li>Allow startup files to be edited in the DecoderPro 3 preferences dialog.</li>
-  </ul>
-
-
-<H4>Warrants</H4>
-   <ul>
-    <li>Fix several bugs recently introduced in record learn mode warrants.</li>
-    <li>Add feature to display warrant routes graphically for review when multiple routes
-        are possible.</li>
-   </ul>
-
-
-<h4>Miscellaneous</h4>
-  <ul>
-    <li>Debugging improvements in the Programmer support.</li>
-    <li>Minor performance improvements in programmer selection widgets.</li>
-  </ul>
-
-
-
-<!-- 3.11.7 -->
-    <h4>Hardware Support</h4>
-<!--        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-            </ul>
-        <h5>ESU - ECOS</h5>
-
-        <h5>SPROG</h5>
-            <ul>
-            </ul>
--->
-        <h5>MERG CBUS</h5>
-            <ul>
-                <li>Added basic support for non-variable lights (Matthew Harris)</li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li>Now supports version 0.61.13 for programming (KD)</li>
-            </ul>
-<!--
-    <h4>Signals</h4>
-        <p></p>
-        <ul>
-            <li></li>
-        </ul>
--->
-    <h4>New / Updated decoder definitions</h4>
-	<p>Dave Heap made the following changes:</p>
-	<ul>
-		<li>Improved the reliability of "Read type from decoder" by retrying several times in the event of a (possibly transient) read failure.</li>
-		<li>A single decoder model can now match multiple Product IDs, specified as a comma-separated list in the "productID" attribute.</li>
-	</ul>
-
-<!--
-        <h5>Fleischmann</h5>
-            <p></p>
--->
-        <h5>SoundTraxx</h5>
-            <p>Bachmann Sound Value definitions updated following publication of data sheets on SoundTraxx website (Alain Le Marchand)</p>
-            <ul>
-                <li>On30 Whitcomb 50-ton: horns and default values</li>
-                <li>2-8-4 Berkshire (HO and N scale) - 3 variants each - full update</li>
-                <li>EMD GP-7 (HO scale): horns and default values</li>
-                <li>CV113 only supported by SD70ACe, GEVO ES44AC and GG1.</li>
-            </ul>
-
-        <h5>TCS</h5>
-            <p>Old decoders where no replacement exists in the present range are now shown permanently.</p>
-            <p>Old versions of present decoders will only show is there is a hit on version range through automatic identification.</p>
-
-	<h5>ESU</h5>
-	<p>Dave Heap made the following changes:</p>
-	<ul>
-		<li>Most modern ESU decoders will now be identified with "Read type from decoder".</li>
-		<li>Renamed and consolidated models to conform to ESU practice. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
-		<li>Preliminary support for ESU LokSound L V4.0.</li>
-		<li>Other improvements and corrections to the ESU decoder definitions.</li>
-	</ul>
-
-<!--
-        <h5>MRC</h5>
-            <p></p>
-
-        <h5>Miscellaneous</h5>
-            <p></p>
--->
-
-
-   <h4>Operations</h4>
-   <ul>
-    <li>Fixed a major bug introduced in version 3.11.6 where during startup the program won't
-     load all of the cars saved in the xml file.</li>
-    <li>New feature, car summary by track for Switch Lists. The summary shows by track all of
-     the car pulls and set outs. It also shows the hold cars for each track. Now your operators will
-     know by track all of the pulls needed for all trains and which cars need to stay put. Should be
-     useful for the larger switch jobs. The summary is only available if you're running the switch
-     list in real time.</li>
-    <li>The train's description now has the option to include the lead engine's road name.</li>
-    <li>New feature, you can now block the tracks at a location for your manifests and switch lists. See 
-    <a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml#TrackBlockingOrder">
-    http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml#TrackBlockingOrder</a>
-    for more info.</li>
-    <li>New feature for road names, the "hyphen feature" now works for road names. Anything after the hyphen isn't
-    printed on manifests and switch lists.</li>
-   </ul>
-<!--
-   <h4>Blocks</h4>
-        <p></p>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Preferences</h4>
-        <p></p>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Warrants</h4>
-        <p></p>
-        <ul>
-            <li></li>
-        </ul>
--->
-    <h4>Miscellaneous</h4>
-        <p></p>
-        <ul>
             <li>Added ability to set timeout for automatically starting with a profile. (Randall Wood)</li>
             <li>Audio support has been updated to now use the <a href="http://jogamp.org/joal/www/">Jogamp</a>
                 version of the JOAL libraries. This now means that 64-bit operating systems are
                 supported as well as some ARM-based systems. Additionally,
                 <a href="http://kcat.strangesoft.net/openal.html">OpenAL-Soft</a> is now bundled
                 with JMRI and no longer requires separate installation. (Matthew Harris)</li>
-        </ul>
 
+            <li>Added the "jython/MakeOriginalDecoderPro.py" sample script. If you are used to the
+                original (old) DecoderPro startup screen with the individual buttons, launch
+                PanelPro instead and have it execute this script from the preferences. It'll add the
+                three original buttons.  It won't change the logo or labels, but you'll get your
+                buttons back.<li>
 
-
-
-<!-- 3.11.8 -->
-    Added the "jython/MakeOriginalDecoderPro.py" sample script. If you are used to the
-    original (old) DecoderPro startup screen with the individual buttons, launch
-    PanelPro instead and have it execute this script from the preferences. It'll add the
-    three original buttons.  It won't change the logo or labels, but you'll get your
-    buttons back.
-
-    <h4>Hardware Support</h4>
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-            </ul>
-        <h5>ESU - ECOS</h5>
-
-        <h5>SPROG</h5>
-            <ul>
-            </ul>
-
-        <h5>MERG CBUS</h5>
-            <ul>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-            </ul>
-
-    <h4>Signals</h4>
-    	<h5>SPTCO-1969</h5>
-        <p>New SPTCO-1969 signal system containing Semaphore, Searchlight
-         and hybrid (semaphore with lower searchlight head) masts. 
-         <br>
-         Does not reference the rulebook as web link because I cannot find it 
-         hosted anywhere. There is a PDF of the rulebook in the Yahoo user group files area
-         if a place can be found to host it. Mast files contain page references for
-         the aspect appearances in the 1969 rulebook.
-         <br>
-         Provided by Suzie Tall, patch 1067
-         </p>
-
-    <h4>New / Updated decoder definitions</h4>
-
-<!--
-        <h5>Fleischmann</h5>
-            <p></p>
-
-        <h5>SoundTraxx</h5>
-            <ul>
-            </ul>
-
-        <h5>TCS</h5>
-
--->
-        <h5>TAMS</h5>
-            <p>FD-R Basic 2 new definition provided by Pierre Billon, patch 1066</p>
-            
-        <h5>MRC</h5>
-            <p>Added new definition for: 1917 (HO Atlas S2/S4) (Alain Le Marchand)</p>
-<!--
-        <h5>Miscellaneous</h5>
-            <p></p>
--->
-
-
-    <h4>Operations</h4>
-    <ul>
-     <li>You can now show on your manifests and switch lists the number of cars in a kernel.
-      The number only only shows up for the lead car.</li>
-    </ul>
-
-    <h4>Blocks</h4>
-        <p></p>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Preferences</h4>
-        <p></p>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Warrants</h4>
-        <p></p>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Miscellaneous</h4>
-        <p></p>
-        <ul>
             <li>Improved WebSockets performance, especially with large layouts or complex
                panels. (Randall Wood)</li>
             <li>Fixed the Windows installer so it installs DecoderPro as "DecoderPro" instead
@@ -874,7 +611,6 @@ To use this or any later JMRI test or production releases, you'll have to
                 <a href="http://jmri.org/jython/DisableLayoutEditorSensorIcon.py"> sample script code to 
                 enable/disable Sensor icons on a Layout Editor panel.
         </ul>
-
 
 
    <!--#include virtual="/Footer" -->
