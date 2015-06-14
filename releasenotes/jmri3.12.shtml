@@ -36,9 +36,9 @@
 
 <br><b>This is a draft release note only; the download links do not yet work</b><p>
 
-We are very pleased to announce that the 3.9 series of JMRI test releases has resulted in a
+We are very pleased to announce that the 3.11 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
-We're therefore making that version, "Production version 3.10" available for download today.
+We're therefore making that version, "Production version 3.12" available for download today.
 
 <h3>Notes:</h3>
 
@@ -55,7 +55,7 @@ To use this or any later JMRI test or production releases, you'll have to
 
 <h3>Warnings:</h3>
 
-    <p>The old DecoderPro has been removed from the distribution package and DecoderPro 3 has been promoted to be the only available DecoderPro version. Existing custom launchers that launched the old DecoderPro should continue to function without change or issue. If you absolutely cannot use the new DecoderPro user interface, we suggest using PanelPro instead, as with the exception of a different icon and different fixed buttons on the main window, PanelPro has an identical user interface to the old DecoderPro.</p>
+    <p>The old DecoderPro has been removed from the distribution package and DecoderPro 3 has been promoted to be the only available DecoderPro version. Existing custom launchers that launched the old DecoderPro should continue to function without change or issue. If you absolutely cannot use the new DecoderPro user interface, we suggest using PanelPro instead, as with the exception of a different icon and different fixed buttons on the main window, PanelPro has an identical user interface to the old DecoderPro. See below in Miscellaneous section for usage of "MakeOriginalDecoderPro.py" script.</p>
 
     <P>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
     Failure to remove these can result in some portions of
@@ -330,28 +330,25 @@ To use this or any later JMRI test or production releases, you'll have to
 
         <h5>MRC</h5>
             <ul>
-                <li>Alain Le Marchand added definitions for the MRC sound 1617 and 1618 decoders</li>
-                <li>Alain Le Marchand made a complete overhaul of the MRC Sound decoders:
+                <li>Alain Le Marchand added new definitions for: 1617 (HO Light Steam), 1618 (HO Heavy Steam), 1660 (N Life-Like C-Liner), 1817 and 1818 (G Diesels), 1822 (S Diesel), 1828 (N Atlas SD50/60), 1907 (HO Atlas S2/S4), 1911 (HO Steam), 1913 (HO Diesel), 1917 (HO Atlas S2/S4), 1956 (N Steam), 1958 (N Kato PA1), 1959 (N Diesel), 1960 (N Kato SD45/SD70MAC/AC4400)</li>
+                <li>Alain Le Marchand made a complete overhaul of the MRC Sound decoders:</li>
                     <ul>
                         <li>Renamed all models in a consistent way. Rearranged families by scale. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
                         <li>Dispatched all CVs previously displayed on "MRC" pane to the relevant standard panes.</li>
                         <li>Fixed several definitions and aligned to the documentation available on MRC web site.</li>
-                        <li>Added new definitions for: 1660 (N Life-Like C-Liner), 1817 and 1818 (G Diesels), 1822 (S Diesel), 1828 (N Atlas SD50/60), 1907 (HO Atlas S2/S4), 1911 (HO Steam), 1913 (HO Diesel), 1956 (N Steam), 1958 (N Kato PA1), 1959 (N Diesel), 1960 (N Kato SD45/SD70MAC/AC4400)</li>
-                    </ul></li>
+                     </ul>
             </ul>
 
         <h5>SoundTraxx</h5>
             <ul>
                 <li>SoundTraxx now appears in the manufacturer list as "SoundTraxx (Throttle-Up)" 
                     instead of the original "Throttle-Up (SoundTraxx)". It's a long story....</li>
-                <li>Added definition for Bachmann On30 Whitcomb 50-Ton Center-Cab (DCC Sound On-Board, Plug-and-Play Sound Module) 
-                    (Alain Le Marchand)</li>
                 <li>Fixed a problem (originating in the Great SoundTraxx renaming that took place in JMRI 3.11.1) that
-                    prevented some Soundtraxx decoders from being recognized</li>
-                <li>Bachmann Sound Value definitions updated following publication of data sheets on SoundTraxx website (Alain Le Marchand)</p>
+                    prevented some Soundtraxx decoders from being recognized</li>               
+                <li>Bachmann Sound Value definitions added or updated following publication of data sheets on SoundTraxx website (Alain Le Marchand)</p>
                     <ul>
-                        <li>On30 Whitcomb 50-ton: horns and default values</li>
-                        <li>2-8-4 Berkshire (HO and N scale) - 3 variants each - full update</li>
+                        <li>On30 Whitcomb 50-ton Center-Cab (DCC Sound On-Board, Plug-and-Play Sound Module)</li>
+                        <li>2-8-4 Berkshire (HO and N scale) - 3 variants each</li>
                         <li>EMD GP-7 (HO scale): horns and default values</li>
                         <li>CV113 only supported by SD70ACe, GEVO ES44AC and GG1.</li>
                     </ul>
@@ -365,7 +362,6 @@ To use this or any later JMRI test or production releases, you'll have to
         <h5>TCS</h5>
             <ul>
                 <li>Michael Mosher updated the TCS WOW definition.</li>
-                <li>Added new definition for: 1917 (HO Atlas S2/S4) (Alain Le Marchand)</li>
                 <li>Old decoders where no replacement exists in the present range are now shown permanently.</li>
                 <li>Old versions of present decoders will only show is there is a hit on version range through automatic identification.</li>
             </ul>            
@@ -373,6 +369,7 @@ To use this or any later JMRI test or production releases, you'll have to
         <h5>Trix</h5>
             <ul>
                 <li>Added Trix 66840 (Bjørn Kvisli - Alain Le Marchand)</li>
+                <li>Added definitions for Trix Sound HO BR V160 and BR 41 (Alain Le Marchand)</li>                
             </ul>     
         
         <h5>Zimo</h5>      
@@ -386,7 +383,6 @@ To use this or any later JMRI test or production releases, you'll have to
                 <li>Peter MacKenzie added definitions for the Hattons MD4 and Gaugemaster Opti DCC25 decoders.</li>
                 <li>Digikeijs (Digirails): Added definition for Function decoder DR80015 (Alain Le Marchand)</li>
                 <li>Hornby: Added definitions for Hornby TTS Class 37 and Class 40 (Nigel Cliffe)</li>
-                <li>Trix: Added definitions for Trix Sound HO BR V160 and BR 41 (Alain Le Marchand)</li>
             </ul>
 
 
@@ -600,7 +596,7 @@ To use this or any later JMRI test or production releases, you'll have to
                 original (old) DecoderPro startup screen with the individual buttons, launch
                 PanelPro instead and have it execute this script from the preferences. It'll add the
                 three original buttons.  It won't change the logo or labels, but you'll get your
-                buttons back.<li>
+                buttons back.</li>
 
             <li>Improved WebSockets performance, especially with large layouts or complex
                panels. (Randall Wood)</li>
