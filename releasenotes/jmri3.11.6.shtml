@@ -242,6 +242,9 @@ These are development files, and might not be working at any particular time.</p
   <ul>
     <li>Debugging improvements in the Programmer support.</li>
     <li>Minor performance improvements in programmer selection widgets.</li>
+	<li>ARM version detection has been improved on Linux so that
+		ARMv5, ARMv6 and ARMv7 are correctly identified. This means that
+		for RaspberryPi, no library file copy modifications are required. (Matthew Harris)</li>
   </ul>
 
    <!--#include virtual="/Footer" -->

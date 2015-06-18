@@ -584,6 +584,9 @@ To use this or any later JMRI test or production releases, you'll have to
 
             <li>Debugging improvements in the Programmer support.</li>
             <li>Minor performance improvements in programmer selection widgets.</li>
+			<li>ARM version detection has been improved on Linux so that
+				ARMv5, ARMv6 and ARMv7 are correctly identified. This means that
+				for RaspberryPi, no library file copy modifications are required. (Matthew Harris)</li>
             
             <li>Added ability to set timeout for automatically starting with a profile. (Randall Wood)</li>
             <li>Audio support has been updated to now use the <a href="http://jogamp.org/joal/www/">Jogamp</a>
