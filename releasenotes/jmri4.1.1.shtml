@@ -159,18 +159,25 @@ These are development files, and might not be working at any particular time.</p
 <h3>Changes since test release 4.0:</h3>
 
     <h4>Hardware Support</h4>
-        <h5>Uhlenbrock Intellibox</h5>
+
+        <h5>C/MRI</h5>
             <ul>
+                <li>You can now connect to your C/MRI nodes via a 
+                    <a href="http://jmri.org/help/en/html/hardware/cmri/CMRI.shtml#net">network connection<a/>.</li>
             </ul>
-        <h5>ESU - ECOS</h5>
+
+        <h5>OpenLCB</h5>
             <ul>
+                <li>The OpenLCB library advanced to version 0.6.4, which (among other things)
+                    fixed a problem when trying to read broken configuration definition info
+                    from a node.</li>
             </ul>
 
         <h5>SPROG</h5>
             <ul>
             </ul>
 
-        <h5>MERG CBUS</h5>
+        <h5>Uhlenbrock Intellibox</h5>
             <ul>
             </ul>
 
