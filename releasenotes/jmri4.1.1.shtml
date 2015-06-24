@@ -230,7 +230,16 @@ These are development files, and might not be working at any particular time.</p
     <h4>Miscellaneous</h4>
         <p></p>
         <ul>
-            <li></li>
+            <li>Improved the script editor (Panels -&gt; Script Entry):
+                <ul>
+                <li>Now remembers the selected directory from operation to operation,
+                    so you don't have to renavigate each time.
+                <li>Use the same file selector for Load and Store, so it's 
+                    easy to work in one directory.
+                <li>Use a proper Store dialog so you can e.g. change the
+                    filename.
+                </ul>
+            </li>
         </ul>
 
    <!--#include virtual="/Footer" -->
