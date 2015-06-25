@@ -168,22 +168,28 @@ These are development files, and might not be working at any particular time.</p
         <h5>SPROG</h5>
             <ul>
             </ul>
-
+-->
         <h5>MERG CBUS</h5>
             <ul>
+            <li>Reduced logging level to debug for regular message reply loop
+                to avoid unnecessarily polluting the console log</li>
             </ul>
-
+<!--
         <h5>Zimo MXULF</h5>
             <ul>
             </ul>
 
     <h4>Signals</h4>
-    	<h5>SPTCO-1969</h5>
-
+        <h5>SPTCO-1969</h5>
+-->
     <h4>New / Updated decoder definitions</h4>
 
-        <h5>Digitrax</h5>
-
+        <h5>ESU</h5>
+            <ul>
+                <li>Dave Heap updated the ESU LokSound 4.0, Select and Select Direct
+                    definitions to modify the reset warnings</li>
+            </ul>
+<!--
         <h5>Fleischmann</h5>
             <p></p>
 
@@ -221,12 +227,15 @@ These are development files, and might not be working at any particular time.</p
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Miscellaneous</h4>
         <p></p>
         <ul>
+            <li>JavaDoc errors in the AbstractOperationsServer were fixed</li>
+            <li>Update to use the correct JOAL libraries for ARMv6</li>
+            <li>Fixed a minor issue with the JoalAudioFactory</li>
         </ul>
--->
+
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
