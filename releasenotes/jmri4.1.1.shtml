@@ -29,7 +29,7 @@
       </h2>
 
 	<p>Date: mmm dd, 2015</p>
-	<p>From: Bob Jacobsen</p>
+	<p>From: (pumpkin)</p>
 	<p>Subject: Test version 4.1.1 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
@@ -68,86 +68,35 @@ from
 
 <h3>New warnings for this version:</h3>
 
+<p>Decoder definitions that use the "ivariable" form are now deprecated.  The definitions
+included with this release have all been converted to the new form. 
+If you have decoder definitions with the older "ivariable" form, they will no longer
+validate, but can still be used for the first couple of test releases in this series.
+Please ask on the 
+<a href="https://groups.yahoo.com/neo/groups/jmriusers/info">jmriusers list</a>
+for help converting them, or just drop them and use the current definitions.
+
 <h3>Older warnings</h3>
 
-<P>This release, and all later releases in this cycle, require Java 1.8 or higher.
-To use this or any later JMRI releases, you'll have to
-<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
-</p>
-
-<p>The old DecoderPro has been removed from the distribution package and DecoderPro 3 has been promoted to be the only available DecoderPro version. Existing custom launchers that launched the old DecoderPro should continue to function without change or issue. If you absolutely cannot use the new DecoderPro user interface, we suggest using PanelPro instead, as with the exception of a different icon and different fixed buttons on the main window, PanelPro has an identical user interface to the old DecoderPro.</p>
-
-<P>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
-Failure to remove these can result in some portions of
-JMRI (notably the web server) failing to function correctly.
-If you are updating an existing JMRI installation to this version on
-<a href="../install/Linux.html#update">Linux</a>,
-you must remove any older version of JMRI or unpack this
-version of JMRI in an alternate location.
-The recommended update procedures for JMRI on
-<a href="../install/WindowsNew.shtml#update">Microsoft Windows (run the installer)</a>
-and
-<a href="../install/MacOSX.html#update">Mac OS X (open disk image and drag to final location, e.g. Applications folder)</a>
-remove/replace the older version of JMRI, ensuring that these obsolete files are not
-present.
-</p>
-
-<P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
-calling the parts of JMRI that interchange XML objects.</P>
-
-<p>There are now separate settings for the default Service Mode Programmer and
-for the default Ops Mode Programmer.  If you're using two or more system connections,
-this lets you use one connection for ops mode (on track) programming and another connection
-for your programming track. If you're using two separate connections, you
-should go to the Defaults pane on the Preferences window and check that those
-defaults were set properly.</p>
-
-<p> If you are making a direct connection to a Intellibox unit via
-    serial or USB, you will have to reselect your preferences.
-    See the
-    <a href="http://jmri.org/help/en/html/hardware/loconet/Uhlenbrock.shtml">Uhlenbrock support page</a>
-    for instructions.</p>
-
-<p> If you are using an NCE USB adapter, you will have to reselect your preferences
-     the first time you use a JMRI 3.13 version (if you set them using JMRI 3.10 or earlier).
-    See the
-    <a href="http://jmri.org/help/en/html/hardware/nce/NCE.shtml">page on configuring JMRI for NCE</a>
-    for instructions.</p>
-
-<p>The Save button in the Preferences window now only prompts for restarts if required.
-There may be instances when pressing save incorrectly fails to prompt to restart JMRI or
-prompts to restart JMRI when it should not.</p>
-
-<p>Because of internal code changes, this version of JMRI may not be compatible with
-<a href="http://home.comcast.net/~kb0oys/">CATS 2.34</a> or earlier.  Keep using
-<a href="jmri3.10.shtml">JMRI 3.10</a> with CATS until there's a CATS update that
-says it will work with JMRI 3.13.</p>
-
-<p>The XmlIO web service has been removed. All users who were relying on the
-XmlIO API are recommended to begin using the JSON API. inControl web throttle
-users are recommended to begin using webThrottle instead, or invest in devices
-that can support webThrottle, the iOS WiThrottle, or the Android Engine
-Driver.</p>
-
-
+See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating the 4.1 development series.
 
 <h3>Download links:</h3>
 
 <!--
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28340.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28340.dmg/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r28340.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r28340.dmg/download</a></p>
 
 <p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28340.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28340.exe/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r28340.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r28340.exe/download</a></p>
 
 <p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28340.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28340.tgz/download</a></p>
+	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r28340.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r28340.tgz/download</a></p>
 -->
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.11.7/ws/jmri/dist/release/">CI project page</a>.
+<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.1.1/ws/jmri/dist/release/">CI project page</a>.
  -->
 
 
@@ -189,19 +138,38 @@ These are development files, and might not be working at any particular time.</p
 
     <h4>New / Updated decoder definitions</h4>
 
-<!--
-        <h5>Fleischmann</h5>
-            <p></p>
-
-        <h5>SoundTraxx</h5>
-            <ul>
-            </ul>
-
+        <h5>MERG</h5>
+             <ul>
+             <li>The MERG ACC5 definition has been converted to the 
+             modern format of internal variables from the older
+             "ivariable" form. 
+             </ul>
+           
+        <h5>QSI</h5>
+             <ul>
+             <li>All QSI decoder definitions have been converted to the 
+             modern format of their internal variables from the older
+             "ivariable" form. 
+             <li>A problem with the "Max Bell" and "Bell Select"
+             variables in several QSI definitions was fixed.
+             </ul>
+           
+        <h5>RR-CirKits</h5>
+             <ul>
+             <li>The LNCP Basic definition has been converted to the 
+             modern format of internal variables from the older
+             "ivariable" form. 
+             </ul>
+           
         <h5>TCS</h5>
+             <ul>
+             <li>The "Global lighting option 1" on many TCS decoders has been fixed.
+             </ul>
+           
 
         <h5>Miscellaneous</h5>
             <p></p>
--->
+
 
 
     <h4>Operations</h4>
