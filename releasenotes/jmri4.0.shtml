@@ -116,17 +116,22 @@ To use this or any later JMRI test or production releases, you'll have to
 
 <h3>Download links:</h3>
 
-    <p>Please use these links for downloading:</p>
+    <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
+
+<!--    <p>Please use these links for downloading:</p>
     <p>Mac OS X: <A
         HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.dmg/download</a></p>
+    <p>sha256: 5d8c16089ad94e683cbc08d91ffea803763b563b184974028a19d0d8d68f81f5</p>
 
     <p>Windows: <A
         HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.exe/download</a></p>
+    <p>sha256: 5d8c16089ad94e683cbc08d91ffea803763b563b184974028a19d0d8d68f81f5</p>
 
     <p>Linux: <A
         HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.tgz/download</a></p>
+    <p>sha256: 5d8c16089ad94e683cbc08d91ffea803763b563b184974028a19d0d8d68f81f5</p>
 
-
+-->
 
 
 
@@ -195,6 +200,8 @@ To use this or any later JMRI test or production releases, you'll have to
                 <li>Mark Riddoch provided a Reporter for CBus that allows for the
                 connection of an RFID reader attached via a suitable CBus node.</li>
                 <li>Added basic support for non-variable lights (Matthew Harris)</li>
+                <li>Reduced logging level to debug for regular message reply loop
+                to avoid unnecessarily polluting the console log</li>
             </ul>
 
         <h5>MRC</h5>
@@ -315,6 +322,8 @@ To use this or any later JMRI test or production releases, you'll have to
                         <li>Fixed assorted V4 and LokPilot Standard issues, including rename CV48 for V4 and move to Sound pane.</li>
                         <li>Added generic LokSound Select steam and diesel models for use with as-yet undefined models.</li>
                         <li>Fixed an issue with &quot;Requires Drive Sound&quot; for V4 and Select decoders.</li>
+                        <li>Updated the ESU LokSound 4.0, Select and Select Direct
+                            definitions to modify the reset warnings</li>
                     </ul></li>
                 <li>Most modern ESU decoders will now be identified with "Read type from decoder".</li>
                 <li>Renamed and consolidated models to conform to ESU practice. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
@@ -610,6 +619,14 @@ To use this or any later JMRI test or production releases, you'll have to
             <li>Howard Watkins, Matt Harris and Randall Wood wrote the
                 <a href="http://jmri.org/jython/DisableLayoutEditorSensorIcon.py"> sample script code to
                 enable/disable Sensor icons on a Layout Editor panel.
+            <li>JavaDoc errors in the AbstractOperationsServer were fixed</li>
+            <li>Update to use the correct JOAL libraries for ARMv6</li>
+            <li>Fixed a minor issue with the JoalAudioFactory</li>
+            <li>Use RosterSpeedProfile for speed calibration in Warrants. 
+                Removed throttle factor from UI. (Pete Cressman)</li>
+            <li>Fixed can't add new signals bug in OBlocks. (Pete Cressman)</li>
+            <li>Randall Wood fixed a problem with invalid schema locations in the
+                BR-2003 signal aspects definition and one of the decoder definition tests.</li>
         </ul>
 
 
