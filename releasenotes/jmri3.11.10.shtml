@@ -227,9 +227,16 @@ These are development files, and might not be working at any particular time.</p
         </ul>
 
     <h4>Warrants</h4>
-        <p></p>
+        <p>An improvement has been made in calculating distances and times when speed changes are 
+        	done due to signal aspects or block speed specifications.  Warrants now use the
+        	Roster Speed Profile for engine speed characteristics.</p>
         <ul>
-            <li></li>
+            <li>NXWarrants can be used to add data to the Roster Speed Profile. See "Compute Factor"
+            	checkbox.</li>
+            <li>Fixed problems with Warrants calculating the correct point to begin and end signalled
+            	Speed changes</li>
+            <li>Signal table for OBlocks Offset column now specifies a distance rather than a time
+            	to adjust speed change points to conform to signal placement on the layout.</li>
         </ul>
 -->
     <h4>Miscellaneous</h4>

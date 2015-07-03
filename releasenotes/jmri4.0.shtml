@@ -542,25 +542,29 @@ To use this or any later JMRI test or production releases, you'll have to
        <p>Pete Cressman made the following changes to warrants:</p>
        <ul>
         <li>Fixed bug #481 "Warrant Logix not working as of 3.7.2".  Warrants can be executed from
-        Logix.</li>
+        	Logix.</li>
         <li>Warrant command "Run Warrant" that allows one warrant to launch another is now fully
-        implemented.</li>
+        	implemented.</li>
 
         <li>The algorithm to change speeds due to track conditions is improved to more accurately predict
-        speed change start and end points.</li>
-        <li>Warrants now respond to block speed changes.</li>
+        	speed change start and end points. Warrants now use the
+        	Roster Speed Profile for engine speed characteristics.</li>
+        <li>Warrants now respond to block speed changes set in the OBlock table.  Default is "blank", i.e.
+			continue at current speed.</li>
         <li>Aspect speed changes for warrants may be indicated by actual prototype speeds - e.g. mph
-        or kmph.</li>
-        <li>Individual engine addresses may be calibrated with a "Throttle Factor" so they can run at
-        scale track speeds.  The NXWarrants have a new feature to calibrate an address.</li>
-        <li>The "Offset(sec)" column in the Signal Table at <i>Add Items->Occupancy Blocks</i> now can
-        adjust the the end point of a speed change (+/-).</li>
+        	or kmph.</li>
+        <li>The NXWarrants have a new feature to calibrate throttle factors.  NXWarrants
+        	 can be used to add data to the Roster Speed Profile. See "Compute Factor" checkbox.</li>
+        <li>The "Offset(sec)" column in the Signal Table at <i>Add Items->Occupancy Blocks</i> has been
+        	changed to a distance. The "Offset" column will adjust speed change points (+/-) to conform to 
+        	signal placement on the layout.</li>
+        <li>Fixed a bug where new signal specifications could not be added for OBlocks.</li>
         <li>Warrant help documentation is updated.</li>
 
-        <li>Lengths of paths within a block can now be set individually.</li>
+        <li>Lengths of paths within a block can now be set individually. Configured with Circuit Builder</li>
 
-        <li>Fix several bugs recently introduced in record learn mode warrants.</li>
-        <li>Add feature to display warrant routes graphically for review when multiple routes
+        <li>Fixed several bugs recently introduced in recording learn mode warrants.</li>
+        <li>Feature added to display warrant routes graphically for review when multiple routes
             are possible.</li>
        </ul>
 
