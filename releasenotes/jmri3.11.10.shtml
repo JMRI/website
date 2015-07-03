@@ -180,8 +180,12 @@ These are development files, and might not be working at any particular time.</p
         <h5>Zimo MXULF</h5>
             <ul>
             </ul>
-
+-->
     <h4>Signals</h4>
+        <ul>
+            <li>Randall Wood fixed a NullPointerException error sometimes seen when using signal definitions from a user's own files.</li>
+        </ul>
+<!--
         <h5>SPTCO-1969</h5>
 
     <h4>New / Updated decoder definitions</h4>
@@ -233,6 +237,7 @@ These are development files, and might not be working at any particular time.</p
         <ul>
             <li>Randall Wood fixed a problem with invalid schema locations in the
                 BR-2003 signal aspects definition and one of the decoder definition tests.</li>
+            <li>Pete Cressman fixed the Portal/Signal tables to now conform with Speed Profiling.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
