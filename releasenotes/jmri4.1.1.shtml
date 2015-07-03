@@ -138,13 +138,18 @@ These are development files, and might not be working at any particular time.</p
 
     <h4>New / Updated decoder definitions</h4>
 
+        <h5>ESU</h5>
+            <ul>
+                <li>Dave Heap added the "Random Single Strobe" effect to Function Outputs.</li>
+            </ul>
+
         <h5>MERG</h5>
              <ul>
              <li>The MERG ACC5 definition has been converted to the 
              modern format of internal variables from the older
              "ivariable" form. 
              </ul>
-           
+
         <h5>QSI</h5>
              <ul>
              <li>All QSI decoder definitions have been converted to the 
@@ -153,19 +158,18 @@ These are development files, and might not be working at any particular time.</p
              <li>A problem with the "Max Bell" and "Bell Select"
              variables in several QSI definitions was fixed.
              </ul>
-           
+
         <h5>RR-CirKits</h5>
              <ul>
              <li>The LNCP Basic definition has been converted to the 
              modern format of internal variables from the older
              "ivariable" form. 
              </ul>
-           
+
         <h5>TCS</h5>
              <ul>
              <li>The "Global lighting option 1" on many TCS decoders has been fixed.
              </ul>
-           
 
         <h5>Miscellaneous</h5>
             <p></p>
