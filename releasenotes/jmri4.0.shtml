@@ -255,6 +255,7 @@ To use this or any later JMRI test or production releases, you'll have to
         <p>Oscar Moutinho updated the DB-HV-1969 signals definition to improve speed control and icons</p>
         <p>The signal speed defintion has been updated for consistent operation. Also, a release
             test has been added to keep it that way.</p>
+        <p>Randall Wood fixed a NullPointerException error sometimes seen when using signal definitions from a user's own files.</p>
 
     	<h5>SPTCO-1969</h5>
             <p>New SPTCO-1969 signal system containing Semaphore, Searchlight
@@ -626,6 +627,7 @@ To use this or any later JMRI test or production releases, you'll have to
             <li>Fixed can't add new signals bug in OBlocks. (Pete Cressman)</li>
             <li>Randall Wood fixed a problem with invalid schema locations in the
                 BR-2003 signal aspects definition and one of the decoder definition tests.</li>
+            <li>Pete Cressman fixed the Portal/Signal tables to now conform with Speed Profiling.</li>
         </ul>
 
 
