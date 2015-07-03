@@ -270,15 +270,13 @@ To use this or any later JMRI test or production releases, you'll have to
 
     <h4>New / Updated decoder definitions</h4>
 
-        <p>Dave Heap updated the
-            <a href="/help/en/html/apps/DecoderPro/FnMapping.shtml" target="_blank">Function Mapping page</a>
-            to emphasise that &quot;label&quot; and &quot;tooltip&quot; attributes <strong><em>should not</em></strong>
-            be added to a &quot;fnmapping&quot; element (they are ignored).</p>
-
         <p>Dave Heap made the following changes:</p>
         <ul>
             <li>Improved the reliability of "Read type from decoder" by retrying several times in the event of a (possibly transient) read failure.</li>
             <li>A single decoder model can now match multiple Product IDs, specified as a comma-separated list in the "productID" attribute.</li>
+            <li>Updated the <a href="/help/en/html/apps/DecoderPro/FnMapping.shtml" target="_blank">Function&nbsp;Mapping&nbsp;page</a>
+                to emphasise that &quot;label&quot; and &quot;tooltip&quot; attributes <strong><em>should not</em></strong>
+                be added to a &quot;fnmapping&quot; element (they are ignored).</li>
         </ul>
 
         <h5>BLI</h5>
@@ -310,11 +308,14 @@ To use this or any later JMRI test or production releases, you'll have to
         <h5>ESU</h5>
             <ul>
                 <li>Mathias Rufer and Dave Heap added an ESU LokPilot Standard V1.0 definition.</li>
-                <li>Dave Heap has completely redone the ESU Function Map pane to make it easier to read and use.
-                    It is now more like the LokProgrammer Function Map pane.</li>
-                <li>Dave Heap fixed a problem with strange sound slot names displayed in LokSound Select.</li>
                 <li>Dave Heap made the following changes:</p>
                     <ul>
+                        <li>Completely reworked the ESU Function Map pane to make it easier to read and use.
+                            It is now more like the LokProgrammer Function Map pane.</li>
+                        <li>Most modern ESU decoders will now be identified with "Read type from decoder".</li>
+                        <li>Renamed and consolidated models to conform to ESU practice.
+                            Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update&nbsp;Decoder&nbsp;Definitions</a>".</li>
+                        <li>Fixed a problem with strange sound slot names displayed in LokSound Select.</li>
                         <li>Added a Row Move facility to the Function Map pane.</li>
                         <li>Updated the &quot;Read Me&quot; pane.</li>
                         <li>Replaced confusing LokSound V4.0 models that are functionally identical with generic models.</li>
@@ -322,14 +323,12 @@ To use this or any later JMRI test or production releases, you'll have to
                         <li>Fixed assorted V4 and LokPilot Standard issues, including rename CV48 for V4 and move to Sound pane.</li>
                         <li>Added generic LokSound Select steam and diesel models for use with as-yet undefined models.</li>
                         <li>Fixed an issue with &quot;Requires Drive Sound&quot; for V4 and Select decoders.</li>
+                        <li>Preliminary support for ESU LokSound L V4.0.</li>
                         <li>Updated the ESU LokSound 4.0, Select and Select Direct
-                            definitions to modify the reset warnings</li>
+                             definitions to modify the reset warnings</li>
+                        <li>Other improvements and corrections to the ESU decoder definitions.</li>
                     </ul></li>
-                <li>Most modern ESU decoders will now be identified with "Read type from decoder".</li>
-                <li>Renamed and consolidated models to conform to ESU practice. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
-                <li>Preliminary support for ESU LokSound L V4.0.</li>
-                <li>Other improvements and corrections to the ESU decoder definitions.</li>
-            </ul>
+           </ul>
 
         <h5>Fleischmann</h5>
             <ul>
