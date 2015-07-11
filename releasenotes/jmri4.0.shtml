@@ -623,8 +623,8 @@ To use this or any later JMRI test or production releases, you'll have to
                of as "DecoderPro3". (Randall Wood)</li>
             <li>Added the native OpenAL and JOAL libraries for ARM Linux platforms. (Matthew Harris)</li>
             <li>Howard Watkins, Matt Harris and Randall Wood wrote the
-                <a href="http://jmri.org/jython/DisableLayoutEditorSensorIcon.py"> sample script code to
-                enable/disable Sensor icons on a Layout Editor panel.</li>
+                <a href="http://jmri.org/jython/DisableLayoutEditorSensorIcon.py">DisableLayoutSensorIcon</a>
+                sample script code to enable/disable Sensor icons on a Layout Editor panel.</li>
             <li>JavaDoc errors in the AbstractOperationsServer were fixed</li>
             <li>Update to use the correct JOAL libraries for ARMv6</li>
             <li>Fixed a minor issue with the JoalAudioFactory</li>
