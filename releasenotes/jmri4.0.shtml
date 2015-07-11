@@ -175,17 +175,12 @@ To use this or any later JMRI test or production releases, you'll have to
         <h5>Uhlenbrock Intellibox</h5>
             <p>The Uhlenbrock Intellibox support has been improved:
             <ul>
-            <li>Enhancements to Loconet Monitor to parse the special IB-COM / Intellibox II CV programming messages.
-            <li>Implementation of CV programming through IB-COM / Intellibox II.
-            <li>Turnout control added for some Intellibox command stations
-            <li>Full handling of decoder functions beyond F8 from/to throttles for Intellibox-II.
-            <li>Partial handling of decoder functions beyond F8 from throttles for Intellibox-I with SW version 2.x (changes from IB-I keyboard not handled by throttle).
-            <li>Improvements in message transfer from and to the LocoNet connection
-            <li>Implementation of CV programming through IB-COM / Intellibox II.
-            <li>Turnout control added for some Intellibox command stations
-            <li>Full handling of decoder functions beyond F8 from/to throttles for Intellibox-II.
-            <li>Partial handling of decoder functions beyond F8 from throttles for Intellibox-I with SW version 2.x (changes from IB-I keyboard not handled by throttle).
-            <li>Improvements in message transfer from and to the LocoNet connection
+            <li>Enhancements to Loconet Monitor to parse the special IB-COM / Intellibox II CV programming messages.</li>
+            <li>Implementation of CV programming through IB-COM / Intellibox II.</li>
+            <li>Turnout control added for some Intellibox command stations</li>
+            <li>Full handling of decoder functions beyond F8 from/to throttles for Intellibox-II.</li>
+            <li>Partial handling of decoder functions beyond F8 from throttles for Intellibox-I with SW version 2.x (changes from IB-I keyboard not handled by throttle).</li>
+            <li>Improvements in message transfer from and to the LocoNet connection</li>
             </ul>
             <p>As part of all this, the Fleishmann connection type has been merged into
                 the Uhlenbrock type.
@@ -206,7 +201,7 @@ To use this or any later JMRI test or production releases, you'll have to
 
         <h5>MRC</h5>
             <ul>
-                <li>Ken Cameron added support for inverting turnouts on MRC systems.
+                <li>Ken Cameron added support for inverting turnouts on MRC systems.</li>
             </ul>
 
         <h5>NCE</h5>
@@ -214,7 +209,7 @@ To use this or any later JMRI test or production releases, you'll have to
             <li>Ken Cameron has fixed significant issues in the NCE Macro editor when
                 used with the serial connected PowerPro system (CS02). It seems
                 to have been an issue since June 2014, release 3.7.8 when the
-                NCE USB support was added.
+                NCE USB support was added.</li>
             </ul>
 
         <h5>SPROG</h5>
@@ -224,7 +219,7 @@ To use this or any later JMRI test or production releases, you'll have to
                 or 1 to 127 short ("Basic") addresses. The throttle now gives you a selector for Long or Short address.</li>
             <li>Dave Heap improved the Slot Monitor display.</li>
 
-            <li>Fixed a problem where DecoderPro's read buttons would be disabled if using SPROG while JMRI is configured with multiple hardware interfaces.
+            <li>Fixed a problem where DecoderPro's read buttons would be disabled if using SPROG while JMRI is configured with multiple hardware interfaces.</li>
 
             </ul>
 
@@ -309,7 +304,7 @@ To use this or any later JMRI test or production releases, you'll have to
         <h5>ESU</h5>
             <ul>
                 <li>Mathias Rufer and Dave Heap added an ESU LokPilot Standard V1.0 definition.</li>
-                <li>Dave Heap made the following changes:</p>
+                <li>Dave Heap made the following changes:</li>
                     <ul>
                         <li>Completely reworked the ESU Function Map pane to make it easier to read and use.
                             It is now more like the LokProgrammer Function Map pane.</li>
@@ -328,7 +323,7 @@ To use this or any later JMRI test or production releases, you'll have to
                         <li>Updated the ESU LokSound 4.0, Select and Select Direct
                              definitions to modify the reset warnings</li>
                         <li>Other improvements and corrections to the ESU decoder definitions.</li>
-                    </ul></li>
+                    </ul>
            </ul>
 
         <h5>Fleischmann</h5>
@@ -360,7 +355,7 @@ To use this or any later JMRI test or production releases, you'll have to
                     instead of the original "Throttle-Up (SoundTraxx)". It's a long story....</li>
                 <li>Fixed a problem (originating in the Great SoundTraxx renaming that took place in JMRI 3.11.1) that
                     prevented some Soundtraxx decoders from being recognized</li>
-                <li>Bachmann Sound Value definitions added or updated following publication of data sheets on SoundTraxx website (Alain Le Marchand)</p>
+                <li>Bachmann Sound Value definitions added or updated following publication of data sheets on SoundTraxx website (Alain Le Marchand)</li>
                     <ul>
                         <li>On30 Whitcomb 50-ton Center-Cab (DCC Sound On-Board, Plug-and-Play Sound Module)</li>
                         <li>2-8-4 Berkshire (HO and N scale) - 3 variants each</li>
@@ -629,7 +624,7 @@ To use this or any later JMRI test or production releases, you'll have to
             <li>Added the native OpenAL and JOAL libraries for ARM Linux platforms. (Matthew Harris)</li>
             <li>Howard Watkins, Matt Harris and Randall Wood wrote the
                 <a href="http://jmri.org/jython/DisableLayoutEditorSensorIcon.py"> sample script code to
-                enable/disable Sensor icons on a Layout Editor panel.
+                enable/disable Sensor icons on a Layout Editor panel.</li>
             <li>JavaDoc errors in the AbstractOperationsServer were fixed</li>
             <li>Update to use the correct JOAL libraries for ARMv6</li>
             <li>Fixed a minor issue with the JoalAudioFactory</li>
