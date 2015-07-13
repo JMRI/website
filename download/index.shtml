@@ -31,14 +31,13 @@
     <div id="teaser">
 	<h2>Latest News</h2>
 	<dl>
-		<dt>Production version 3.10.1 released</dt>
+		<dt>Production version 4.0 released</dt>
 	    <dd>
-	    <p>On January 11, 2015 production version 3.10.1 was made available.</p>
+	    <p>On July 13, 2015 production version 4.0 was made available.</p>
 	    
 	    <p>
-	    Version 3.10.1 is the current "production" version, recommended
-	    for first-time users. It fixes a bug that affected CV programming for
-	    MRC system users, but is otherwise the same as JMRI 3.10.
+	    Version 4.0 is the current "production" version, recommended
+	    for first-time users.
 	    Please see the 
 	    <A HREF="#prod-rel">next section</A> for download and install
 	    information. 
@@ -57,9 +56,19 @@
 	    please see the
 	    <A HREF="../releasenotes/jmri3.11.10.shtml">release note</a>.
 	  
-	    <a href="#prod-rel">Version 3.10.1</a> is the current "production" version, recommended
+	    <a href="#prod-rel">Version 4.0</a> is the current "production" version, recommended
 	    for first-time users. 
 	    
+		<dt>Production version 3.10.1 released</dt>
+	    <dd>
+	    <p>On January 11, 2015 production version 3.10.1 was made available.</p>
+	    
+	    <p>
+	    Version 3.10.1 is recommended for JMRI users with computers that can only
+	    run Java 1.6. Please see the 
+	    <A HREF="../releasenotes/jmri3.10.1.shtml">release note</A> for download and install
+	    information. 
+ 
 		<dt>Production version 2.14.1 released</dt>
 	    <dd>
 	    <p>On July 15, 2012 production version 2.14.1 was made available.</p>
@@ -75,7 +84,7 @@
 
   <div class="list">
     <A ID="prod-rel"/>
-    <h2>JMRI 3.10.1 - Production release</h2>
+    <h2>JMRI 4.0 - Production release</h2>
     <dl>
     <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
     <dd>
@@ -100,13 +109,13 @@
 	<A ID="prod-download"/><p class="dl">Download: 
 	<UL>
         <li>Mac OS X: <A
-            HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.dmg/download</a></p>
+            HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0-r29647.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0-r29647.dmg/download</a><br>sha256: 42354c8b23e5d88f2223b43728a0bca39cbbf432e34d54717c8610c2f2ac050a</li>
 
         <li>Windows: <A
-            HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.exe/download</a></p>
+            HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0-r29647.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0-r29647.exe/download</a><br>sha256: 5e5fcc678b24dc4839db8c71eddeda4695ec71d61ac73967eda3481a9d351d96</li>
 
         <li>Linux: <A
-            HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.tgz/download</a></p>
+            HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0-r29647.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0-r29647.tgz/download</a><br>sha256: 6a085d88df1b457feed946a19d23ce0bfd714357422499f0f480352da4fa0e21</li>
       </UL>
       </p>
 
@@ -114,6 +123,7 @@
     <p>For more information on the release contents, please see the
     <a href="../releasenotes/jmri3.10.1.shtml">release note</a>.
     </p>
+    <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
     <P>
     If you're looking to download Rodney Black's 
     <A HREF="http://home.comcast.net/~kb0oys/">CATS</a>
