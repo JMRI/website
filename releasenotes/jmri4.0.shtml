@@ -170,7 +170,7 @@ To use this or any later JMRI test or production releases, you'll have to
             <p>Fixed a stall occasionally encountered when running a locomotive to measure a speed table via a LocoNet connection.</p>
 
         <h5>ESU - ECOS</h5>
-            <ul>Fixed an issue where the Loco Database from the Ecos wasn't always loaded correctly</ul>
+            <p>Fixed an issue where the Loco Database from the Ecos wasn't always loaded correctly</p>
 
         <h5>Uhlenbrock Intellibox</h5>
             <p>The Uhlenbrock Intellibox support has been improved:
@@ -294,7 +294,7 @@ To use this or any later JMRI test or production releases, you'll have to
                  <li>Added: Start/Brake/Shunt pane, moved relevant options there (All decoders)</li>
                  <li>Change: Adv. mapping now in standard mapping table (All Decoders)</li>
                  <li>Change: Railcom pane (grid + qualifyer) (All Decoders)</li>
-                 <li>Change: Adapted Trix 66840 def to match above changes to the core D&H XMLs.</li>
+                 <li>Change: Adapted Trix 66840 def to match above changes to the core D&amp;H XMLs.</li>
                  <li>Fixed: Consistent Reset function / translation (All Decoders)</li>
                  <li>Fixed: Removed non applicable Motorola options (FH05A,DH05A,DH05B,DH10A,DH10B,DHP160,DHP250,DHP260)</li>
                  <li>Info: New ProductID format for future versions (e.g.: DH05A_2014.10)</li>
@@ -304,7 +304,7 @@ To use this or any later JMRI test or production releases, you'll have to
         <h5>ESU</h5>
             <ul>
                 <li>Mathias Rufer and Dave Heap added an ESU LokPilot Standard V1.0 definition.</li>
-                <li>Dave Heap made the following changes:</li>
+                <li>Dave Heap made the following changes:<br>
                     <ul>
                         <li>Completely reworked the ESU Function Map pane to make it easier to read and use.
                             It is now more like the LokProgrammer Function Map pane.</li>
@@ -324,6 +324,7 @@ To use this or any later JMRI test or production releases, you'll have to
                              definitions to modify the reset warnings</li>
                         <li>Other improvements and corrections to the ESU decoder definitions.</li>
                     </ul>
+               </li>
            </ul>
 
         <h5>Fleischmann</h5>
@@ -336,12 +337,13 @@ To use this or any later JMRI test or production releases, you'll have to
         <h5>MRC</h5>
             <ul>
                 <li>Alain Le Marchand added new definitions for: 1617 (HO Light Steam), 1618 (HO Heavy Steam), 1660 (N Life-Like C-Liner), 1817 and 1818 (G Diesels), 1822 (S Diesel), 1828 (N Atlas SD50/60), 1907 (HO Atlas S2/S4), 1911 (HO Steam), 1913 (HO Diesel), 1917 (HO Atlas S2/S4), 1956 (N Steam), 1958 (N Kato PA1), 1959 (N Diesel), 1960 (N Kato SD45/SD70MAC/AC4400)</li>
-                <li>Alain Le Marchand made a complete overhaul of the MRC Sound decoders:</li>
+                <li>Alain Le Marchand made a complete overhaul of the MRC Sound decoders:<br>
                     <ul>
                         <li>Renamed all models in a consistent way. Rearranged families by scale. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
                         <li>Dispatched all CVs previously displayed on "MRC" pane to the relevant standard panes.</li>
                         <li>Fixed several definitions and aligned to the documentation available on MRC web site.</li>
-                     </ul>
+                    </ul>
+                </li>
             </ul>
 
         <h5>RR-CirKits</h5>
@@ -355,13 +357,14 @@ To use this or any later JMRI test or production releases, you'll have to
                     instead of the original "Throttle-Up (SoundTraxx)". It's a long story....</li>
                 <li>Fixed a problem (originating in the Great SoundTraxx renaming that took place in JMRI 3.11.1) that
                     prevented some Soundtraxx decoders from being recognized</li>
-                <li>Bachmann Sound Value definitions added or updated following publication of data sheets on SoundTraxx website (Alain Le Marchand)</li>
+                <li>Bachmann Sound Value definitions added or updated following publication of data sheets on SoundTraxx website (Alain Le Marchand)<br>
                     <ul>
                         <li>On30 Whitcomb 50-ton Center-Cab (DCC Sound On-Board, Plug-and-Play Sound Module)</li>
                         <li>2-8-4 Berkshire (HO and N scale) - 3 variants each</li>
                         <li>EMD GP-7 (HO scale): horns and default values</li>
                         <li>CV113 only supported by SD70ACe, GEVO ES44AC and GG1.</li>
                     </ul>
+                 </li>
             </ul>
 
         <h5>TAMS</h5>

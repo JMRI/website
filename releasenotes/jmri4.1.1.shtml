@@ -59,7 +59,7 @@ None at release time.
 
 <!--
 If any of those effect you, please either wait for
-<A href="jmri3.13.2.shtml">JMRI 3.13.2</a>, due out shortly after this one,
+<A href="jmri4.1.2.shtml">JMRI 4.1.2</a>, due out shortly after this one,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -112,7 +112,7 @@ These are development files, and might not be working at any particular time.</p
         <h5>C/MRI</h5>
             <ul>
                 <li>You can now connect to your C/MRI nodes via a 
-                    <a href="http://jmri.org/help/en/html/hardware/cmri/CMRI.shtml#net">network connection<a/>.</li>
+                    <a href="http://jmri.org/help/en/html/hardware/cmri/CMRI.shtml#net">network connection</a>.</li>
             </ul>
 
         <h5>OpenLCB</h5>
@@ -135,6 +135,10 @@ These are development files, and might not be working at any particular time.</p
             </ul>
 
     <h4>Signals</h4>
+    	<h5>Signal Mast Editor</h5>
+    		<ul>
+    			<li>Ken Cameron fixed editing of signal head masts to also support old format panel files.</li>
+    		</ul>
 
     <h4>New / Updated decoder definitions</h4>
 
