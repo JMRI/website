@@ -232,13 +232,13 @@ To use this or any later JMRI test or production releases, you'll have to
     <h4>Signals</h4>
         <p>The aspects.xml file in each signal definition defines the speeds used for automated operation.
         These values are now required (by the schema check) for a valid XML file.  Basic values
-        have been added for all signal systems included in JMRI.
+        have been added for all signal systems included in JMRI.</p>
 
-        <p>Egbert Broerse improved the signal-system and signal mast setup help files.
+        <p>Egbert Broerse improved the signal-system and signal mast setup help files.</p>
 
-        <p>Dave Sand improved the SPTCO-1930 definitions.
-        <p>Egbert Broerse improved the signal documentation.
-        <p>Suzie Tall provided additional signal icons
+        <p>Dave Sand improved the SPTCO-1930 definitions.</p>
+        <p>Egbert Broerse improved the signal documentation.</p>
+        <p>Suzie Tall provided additional signal icons UP-2008 (Patch 1061)</p>
 
         <p>Egbert Broerse improved the signaling system documentation</p>
         <p>Balazs Racz: For single output signal head, whenever the underlying turnout changes
@@ -251,7 +251,7 @@ To use this or any later JMRI test or production releases, you'll have to
         <p>The signal speed defintion has been updated for consistent operation. Also, a release
             test has been added to keep it that way.</p>
         <p>Randall Wood fixed a NullPointerException error sometimes seen when using signal definitions from a user's own files.</p>
-
+		<p>John Lang provided an update to NYCS-1956 to correctly handle held signals. (Patch 1068)</p>
     	<h5>SPTCO-1969</h5>
             <p>New SPTCO-1969 signal system containing Semaphore, Searchlight
              and hybrid (semaphore with lower searchlight head) masts.
