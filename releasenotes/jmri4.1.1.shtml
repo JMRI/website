@@ -197,11 +197,15 @@ These are development files, and might not be working at any particular time.</p
             <li></li>
         </ul>
 
-    <h4>Warrants</h4>
-        <p></p>
+    <h4>Roster Speed Profile</h4>
+        <p>Improvements were made to the UI.
         <ul>
-            <li></li>
-        </ul>
+            <li>The starting and ending speed steps can be set for measuring a profile. Also the
+            increment for each profile step may be set</li>
+            <li>The speed profile will interpolate or extrapolate for omitted speed steps<li>
+            <li>The speed profile can be viewed in a table</li>
+            <li>There is an option to merge or replace the speed profile</li>
+        </ul></p>
 
     <h4>Miscellaneous</h4>
         <p></p>
