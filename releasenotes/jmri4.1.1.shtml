@@ -69,10 +69,10 @@ from
 <h3>New warnings for this version:</h3>
 
 <p>Decoder definitions that use the "ivariable" form are now deprecated.  The definitions
-included with this release have all been converted to the new form. 
+included with this release have all been converted to the new form.
 If you have decoder definitions with the older "ivariable" form, they will no longer
 validate, but can still be used for the first couple of test releases in this series.
-Please ask on the 
+Please ask on the
 <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">jmriusers list</a>
 for help converting them, or just drop them and use the current definitions.
 
@@ -109,9 +109,12 @@ These are development files, and might not be working at any particular time.</p
 
     <h4>Hardware Support</h4>
 
+        <p>Improved error handling during start-up when something Really Unexpected
+            happens, such as configuring to connect to a port that doesn't even exist.</p>
+            
         <h5>C/MRI</h5>
             <ul>
-                <li>You can now connect to your C/MRI nodes via a 
+                <li>You can now connect to your C/MRI nodes via a
                     <a href="http://jmri.org/help/en/html/hardware/cmri/CMRI.shtml#net">network connection</a>.</li>
             </ul>
 
@@ -143,31 +146,42 @@ These are development files, and might not be working at any particular time.</p
     <h4>New / Updated decoder definitions</h4>
 
         <h5>ESU</h5>
-            <ul>
-                <li>Dave Heap added the "Random Single Strobe" effect to Function Outputs.</li>
-            </ul>
+        <p>Dave Heap made the following changes:</p>
+        <ul>
+            <li>Added the "Random Single Strobe" effect to Function Outputs.</li>
+            <li>Added the LokSound Select OEM.</li>
+            <li>Added some new ProductIDs for correct decoder identification.</li>
+            <li>Fixed the sense of the Adaptive Regulation Frequency bit.</li>
+        </ul>
 
         <h5>MERG</h5>
              <ul>
-             <li>The MERG ACC5 definition has been converted to the 
+             <li>The MERG ACC5 definition has been converted to the
              modern format of internal variables from the older
-             "ivariable" form. 
+             "ivariable" form.
              </ul>
 
         <h5>QSI</h5>
              <ul>
-             <li>All QSI decoder definitions have been converted to the 
+<!-- 
+             <li>All QSI decoder definitions have been converted to the
              modern format of their internal variables from the older
-             "ivariable" form. 
+             "ivariable" form.
+ -->
              <li>A problem with the "Max Bell" and "Bell Select"
              variables in several QSI definitions was fixed.
              </ul>
 
         <h5>RR-CirKits</h5>
              <ul>
-             <li>The LNCP Basic definition has been converted to the 
+             <li>The LNCP Basic definition has been converted to the
              modern format of internal variables from the older
-             "ivariable" form. 
+             "ivariable" form.
+             </ul>
+
+        <h5>SoundTraxx</h5>
+             <ul>
+               <li>Michael Mosher added the Econami range.</li>
              </ul>
 
         <h5>TCS</h5>
@@ -190,6 +204,10 @@ These are development files, and might not be working at any particular time.</p
     <li>The "Show Schedules by Car Type and Load" window now has the option to show all loads.</li>
     <li>You can now open all edit location windows at the same time. Previously you could only
      open two edit location windows at once.</li>
+     <li>CSV switch lists now include hold cars.</li>
+     <li>CSV manifests how include hold cars for tracks that are only served by the train being built.</li>
+     <li>New "Yardmaster by Track" window can be found under "Tools" in the "Yardmaster" window. This
+     window shows the work for a location listed by tracks.  It also shows the hold cars for each track.</li>
    </ul>
 
    <h4>Blocks</h4>
@@ -221,13 +239,18 @@ These are development files, and might not be working at any particular time.</p
                 <ul>
                 <li>Now remembers the selected directory from operation to operation,
                     so you don't have to renavigate each time.
-                <li>Use the same file selector for Load and Store, so it's 
+                <li>Use the same file selector for Load and Store, so it's
                     easy to work in one directory.
                 <li>Use a proper Store dialog so you can e.g. change the
                     filename.
                 </ul>
             </li>
             <li>Include a python.properties for configuring the Jython environment.</li>
+            <li>Improve 
+                <a href="http://jmri.org/help/en/html/doc/Technical/WebSite.shtml">instructions</a>
+                for making a local copy of the JMRI web site
+                and providing a local XML catalog.</li>
+            <li>Sonny Hansen has greatly improved the Danish translation.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
