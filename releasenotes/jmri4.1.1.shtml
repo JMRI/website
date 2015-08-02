@@ -269,6 +269,11 @@ These are development files, and might not be working at any particular time.</p
                 is generic "Danish", no matter where spoken.  If you have local translation
                 files for Danish, this might conflict. Contact the JMRI list for help
                 with this. Contributed translations are always welcome!</li>
+            <li>The "Check XML File" option under the PanelPro Debug menu didn't need
+                to be a separate item, as it was already included in "Validate XML File".
+                It's been removed, please select the "Validate XML File" from now on.</li>
+            <li>You can now add "Validate XML File" as a custom button via the Start Up pane
+                in the Preferences.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
