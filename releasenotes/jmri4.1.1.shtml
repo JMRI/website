@@ -123,6 +123,16 @@ These are development files, and might not be working at any particular time.</p
                 <li>The OpenLCB library advanced to version 0.6.7, which (among other things)
                     fixed a problem when trying to read broken configuration definition info
                     from a node.</li>
+                <li>The basic work to allow programming of OpenLCB Nodes via the 
+                    DecoderPro infrastructure is in place.  Later updates will 
+                    connect this to DecoderPro itself.</li>
+                <li>A basic 
+                <a href="http://jmri.org/help/en/package/jmri/jmrix/openlcb/swing/downloader/LoaderFrame.shtml">bootloader</a>
+                    is available for attached OpenLCB nodes.
+                    This lets you install new firmware in a compatible node from
+                    a local .hex file (provided by the node manufacturer). Nobody 
+                    has announced nodes that use this feature, but hopefully if we 
+                    built it they will come.s
             </ul>
 
         <h5>SPROG</h5>
@@ -254,7 +264,11 @@ These are development files, and might not be working at any particular time.</p
             <li>The Multiple Decoder Programming tool is back to being available
                 in the DecoderPro tools menu.  Also, you can add it as a button or 
                 startup item in PanelPro and DecoderPro.</li>
-            
+            <li>The Danish translations has been made more general. It was coded as
+                _da_DK, which is "Danish (Denmark)".  That's been changed to _da, which 
+                is generic "Danish", no matter where spoken.  If you have local translation
+                files for Danish, this might conflict. Contact the JMRI list for help
+                with this. Contributed translations are always welcome!</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
