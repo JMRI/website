@@ -112,7 +112,14 @@ To use this or any later JMRI test or production releases, you'll have to
 
 <h3>Known problems with this release</h3>
 
-    None.
+    There's a problem with this release where it will hang if a LocoNet device 
+    (only LocoNet, not others like NCE, etc) isn't present where it was configured to be.
+    The next 
+    <a href="jmri4.1.1.shtml">4.1.1 test release</a> will have a fix for this.
+    If you're encountering this, 
+    either connect the device
+    you can manually delete the preferences and reconfigure to use a simulator connection 
+    (or to use the right port, if it's on a different one)
 
 <h3>Download links:</h3>
 
