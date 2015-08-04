@@ -231,9 +231,15 @@ These are development files, and might not be working at any particular time.</p
         <ul>
             <li></li>
         </ul>
+        
+    <h4>logix</h4>
+        <ul>
+            <li>Enhancement Request #574 implemented. Can use fractions of seconds for timing.</li>
+            <li>Add feature to set sensor/turnout delay times indirectly from memory.</li>
+        </ul>
 
     <h4>Roster Speed Profile</h4>
-        <p>Improvements were made to the UI.
+        <p>Improvements made to the UI.
         <ul>
             <li>The starting and ending speed steps can be set for measuring a profile. Also the
             increment for each profile step may be set</li>
@@ -242,6 +248,13 @@ These are development files, and might not be working at any particular time.</p
             <li>There is an option to merge or replace the speed profile</li>
         </ul></p>
 
+    <h4>Panel Editors</h4>
+        <ul>
+            <li>Fix backgrounds of text to stay transparent when rotated.</li>
+            <li>Fix false resizing of IndicatorTrackIcons</li>
+            <li>Fix spurious window names appearing under "Windows" menu</li>
+        </ul>
+        
     <h4>Miscellaneous</h4>
         <p></p>
         <ul>
