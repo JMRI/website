@@ -65,7 +65,8 @@ if((strtoupper($_SERVER['REQUEST_METHOD']) == 'POST')
                 // 'Orrible hack to mangle .zip file extension as these
                 // are no longer allowed by SourceForge...
                 if(substr($fileName, -4) == ".zip") {
-                    $fileName = $fileName . ".txt";
+                    // Trim off the last character
+                    $fileName = substr($fileName, 0, -1);
                 }
 
                 // Read file in binary mode (rb)
