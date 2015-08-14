@@ -118,6 +118,13 @@ These are development files, and might not be working at any particular time.</p
                     <a href="http://jmri.org/help/en/html/hardware/cmri/CMRI.shtml#net">network connection</a>.</li>
             </ul>
 
+		<h5>NCE</h5>
+			<ul>
+				<li>Configure USB Tool - Removed attempted reading of the current USB cab id.
+					It was not working for all cases and prevented reseting the cab id
+					when the USB had an invalid (for the system currently connected) cab id.</li>
+			</ul>
+			
         <h5>OpenLCB</h5>
             <ul>
                 <li>The OpenLCB library advanced to version 0.6.7, which (among other things)
