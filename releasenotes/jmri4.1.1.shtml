@@ -111,7 +111,7 @@ These are development files, and might not be working at any particular time.</p
 
         <p>Improved error handling during start-up when something Really Unexpected
             happens, such as configuring to connect to a port that doesn't even exist.</p>
-            
+
         <h5>C/MRI</h5>
             <ul>
                 <li>You can now connect to your C/MRI nodes via a
@@ -124,21 +124,21 @@ These are development files, and might not be working at any particular time.</p
 					It was not working for all cases and prevented reseting the cab id
 					when the USB had an invalid (for the system currently connected) cab id.</li>
 			</ul>
-			
+
         <h5>OpenLCB</h5>
             <ul>
                 <li>The OpenLCB library advanced to version 0.6.7, which (among other things)
                     fixed a problem when trying to read broken configuration definition info
                     from a node.</li>
-                <li>The basic work to allow programming of OpenLCB Nodes via the 
-                    DecoderPro infrastructure is in place.  Later updates will 
+                <li>The basic work to allow programming of OpenLCB Nodes via the
+                    DecoderPro infrastructure is in place.  Later updates will
                     connect this to DecoderPro itself.</li>
-                <li>A basic 
+                <li>A basic
                 <a href="http://jmri.org/help/en/package/jmri/jmrix/openlcb/swing/downloader/LoaderFrame.shtml">bootloader</a>
                     is available for attached OpenLCB nodes.
                     This lets you install new firmware in a compatible node from
-                    a local .hex file (provided by the node manufacturer). Nobody 
-                    has announced nodes that use this feature, but hopefully if we 
+                    a local .hex file (provided by the node manufacturer). Nobody
+                    has announced nodes that use this feature, but hopefully if we
                     built it they will come.s
             </ul>
 
@@ -182,10 +182,10 @@ These are development files, and might not be working at any particular time.</p
 			<ul>
              <li>Michael Mosher provided patch: 1069</li>
 			</ul>
-             
+
         <h5>QSI</h5>
              <ul>
-<!-- 
+<!--
              <li>All QSI decoder definitions have been converted to the
              modern format of their internal variables from the older
              "ivariable" form.
@@ -242,9 +242,17 @@ These are development files, and might not be working at any particular time.</p
     <h4>Preferences</h4>
         <p></p>
         <ul>
-            <li></li>
+            <li>Some preferences are now stored in properties files in the  <code>preferences</code> directory within the current profile. The file <code>preferences.properties</code> contains settings that a common to all computers using that profile, while the file (or files) named in the pattern <code>jmri-&lt;MAC address&gt;-&lt;profile-hash&gt;.properties</code> contain per-computer settings.</li>
+            <li>Web Server and JSON Server preferences are now stored in the above format. Although the pre-JMRI 4.1 settings files for these servers are not removed, changes to these services' settings made in JMRI 4.1 will not be available to earlier versions of JMRI. These services' settings will only be migrated to the new format by clicking Save in the Preferences window.</li>
+            <li>mDNS / Bonjour / ZeroConf network services advertisements can be blocked on IPv4 or IPv6 addresses by editing the the per-computer
+              preferences file to include either or both of the following lines:
+              <ul>
+                <li><code>jmri-util-zeroconf.IPv4=false</code></li>
+                <li><code>jmri-util-zeroconf.IPv6=false</code></li>
+              </ul>
+              Valid values for these settings are <code>true</code> or <code>false</code>. Note that this is an experimental feature.</li>
         </ul>
-        
+
     <h4>logix</h4>
         <ul>
             <li>Enhancement Request #574 implemented. Can use fractions of seconds for timing.</li>
@@ -267,7 +275,7 @@ These are development files, and might not be working at any particular time.</p
             <li>Fix false resizing of IndicatorTrackIcons</li>
             <li>Fix spurious window names appearing under "Windows" menu</li>
         </ul>
-        
+
     <h4>Miscellaneous</h4>
         <p></p>
         <ul>
@@ -282,16 +290,16 @@ These are development files, and might not be working at any particular time.</p
                 </ul>
             </li>
             <li>Include a python.properties for configuring the Jython environment.</li>
-            <li>Improve 
+            <li>Improve
                 <a href="http://jmri.org/help/en/html/doc/Technical/WebSite.shtml">instructions</a>
                 for making a local copy of the JMRI web site
                 and providing a local XML catalog.</li>
             <li>Sonny Hansen has greatly improved the Danish translation.</li>
             <li>The Multiple Decoder Programming tool is back to being available
-                in the DecoderPro tools menu.  Also, you can add it as a button or 
+                in the DecoderPro tools menu.  Also, you can add it as a button or
                 startup item in PanelPro and DecoderPro.</li>
             <li>The Danish translations has been made more general. It was coded as
-                _da_DK, which is "Danish (Denmark)".  That's been changed to _da, which 
+                _da_DK, which is "Danish (Denmark)".  That's been changed to _da, which
                 is generic "Danish", no matter where spoken.  If you have local translation
                 files for Danish, this might conflict. Contact the JMRI list for help
                 with this. Contributed translations are always welcome!</li>
@@ -307,4 +315,3 @@ These are development files, and might not be working at any particular time.</p
   </div> <!-- closes #mBody-->
 </body>
 </html>
-
