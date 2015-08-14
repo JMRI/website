@@ -118,6 +118,18 @@ These are development files, and might not be working at any particular time.</p
                     <a href="http://jmri.org/help/en/html/hardware/cmri/CMRI.shtml#net">network connection</a>.</li>
             </ul>
 
+        <h5>LocoNet</h5>
+            <ul>
+                <li>JMRI can now directly program LocoNet devices that use the
+                    "System Variable" (SV) protocol version 2.  Select
+                    "<a href="http://jmri.org/help/en/html/hardware/loconet/Addressing.shtml#SVs">System Variable Type 2</a>"
+                    as a 
+                    <a href="http://jmri.org/help/en/package/jmri/jmrit/simpleprog/SimpleProgFrame.shtml">Single CV Programmer</a>
+                    mode to use this, and see 
+                    <a href="http://jmri.org/help/en/html/hardware/loconet/Addressing.shtml#SVs">this page</a>
+                    for more details.
+            </ul>
+            
 		<h5>NCE</h5>
 			<ul>
 				<li>Configure USB Tool - Removed attempted reading of the current USB cab id.
@@ -139,7 +151,7 @@ These are development files, and might not be working at any particular time.</p
                     This lets you install new firmware in a compatible node from
                     a local .hex file (provided by the node manufacturer). Nobody
                     has announced nodes that use this feature, but hopefully if we
-                    built it they will come.s
+                    built it they will come. 
             </ul>
 
         <h5>SPROG</h5>
