@@ -93,17 +93,16 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
 <p>Linux: <A
 	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r28340.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r28340.tgz/download</a></p>
 -->
-<!--
+
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.1.1/ws/jmri/dist/release/">CI project page</a>.
- -->
 
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
 
 <h3>Changes since test release 4.0:</h3>
 
@@ -139,9 +138,16 @@ These are development files, and might not be working at any particular time.</p
 
         <h5>OpenLCB</h5>
             <ul>
-                <li>The OpenLCB library advanced to version 0.6.7, which (among other things)
+                <li>The OpenLCB library advanced to version 0.6.4, which (among other things)
                     fixed a problem when trying to read broken configuration definition info
-                    from a node.</li>
+                    from a node.
+                    <p>
+                    Note that this is probably the last version of this library, as
+                    prototype work is no longer a part of the OpenLCB group effort.
+                    It's not yet clear whether a new group will emerge to maintain
+                    this code. If you're interested in helping, please contact
+                    the JMRI or OpenLCB developers.
+                    </li>
                 <li>The basic work to allow programming of OpenLCB Nodes via the
                     DecoderPro infrastructure is in place.  Later updates will
                     connect this to DecoderPro itself.</li>
@@ -152,6 +158,12 @@ These are development files, and might not be working at any particular time.</p
                     a local .hex file (provided by the node manufacturer). Nobody
                     has announced nodes that use this feature, but hopefully if we
                     built it they will come. 
+                    <p>
+                    Note: For safe and reliable operation, this relies on items 
+                    that were removed from the OpenLCB specification in February 2015.
+                    For more information, see the 
+                    <a href="http://jmri.sourceforge.net/JavaDoc/doc/jmri/jmrix/openlcb/swing/downloader/package-summary.html">package documentation</a>.
+                    </li>
             </ul>
 
         <h5>SPROG</h5>
