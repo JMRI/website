@@ -70,8 +70,8 @@ from
 
 <h3>New warnings for this version:</h3>
 
-<p>Decoder definitions that use the "ivariable" form are now deprecated.  The definitions
-included with this release have all been converted to the new form.
+<p>Decoder definitions that use the "ivariable" form are now deprecated.  Definitions
+included with this release have been converted to the new form.
 If you have decoder definitions with the older "ivariable" form, they will no longer
 validate, but can still be used for the first couple of test releases in this series.
 Please ask on the
@@ -161,7 +161,7 @@ These are development files, and might not be working at any particular time.</p
                     is available for attached OpenLCB nodes.
                     This lets you install new firmware in a compatible node from
                     a local .hex file (provided by the node manufacturer). Nobody
-                    has announced nodes that use this feature, but hopefully if we
+                    has announced nodes that use this feature, but hopefully since we
                     built it they will come. 
                     <p>
                     Note: For safe and reliable operation, this relies on items 
@@ -169,18 +169,6 @@ These are development files, and might not be working at any particular time.</p
                     For more information, see the 
                     <a href="http://jmri.sourceforge.net/JavaDoc/doc/jmri/jmrix/openlcb/swing/downloader/package-summary.html">package documentation</a>.
                     </li>
-            </ul>
-
-        <h5>SPROG</h5>
-            <ul>
-            </ul>
-
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
             </ul>
 
     <h4>Signals</h4>
@@ -242,9 +230,6 @@ These are development files, and might not be working at any particular time.</p
              <li>Michael Mosher provided patch: 1070 to update WOW diesel sound set 2</li>
              </ul>
 
-        <h5>Miscellaneous</h5>
-            <p></p>
-
 
 
     <h4>Operations</h4>
@@ -282,7 +267,7 @@ These are development files, and might not be working at any particular time.</p
               Valid values for these settings are <code>true</code> or <code>false</code>. Note that this is an experimental feature.</li>
         </ul>
 
-    <h4>logix</h4>
+    <h4>Logix</h4>
         <ul>
             <li>Enhancement Request #574 implemented. Can use fractions of seconds for timing.</li>
             <li>Add feature to set sensor/turnout delay times indirectly from memory.</li>
