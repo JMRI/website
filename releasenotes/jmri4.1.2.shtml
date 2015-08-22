@@ -121,7 +121,20 @@ These are development files, and might not be working at any particular time.</p
 
         <h5>LocoNet</h5>
             <ul>
-                <li></li>
+                <li>More work on the LN SV2 programming protocol. 
+                    Please see the 
+                    <a href="http://jmri.org/help/en/html/hardware/loconet/Addressing.shtml#SVs">documentation page</a>.
+                    It's basically ready for people to
+                    start defining board definition files.
+                    A basic definition is available</li>
+                    under "Public Domain and DIY" decoders, then
+                    "LNSV2-using boards".
+                <li>A programmer mode for the original LocoIO boards, 
+                    which use the LN SV1 programming protocol,
+                    is <a href="http://jmri.org/help/en/html/hardware/loconet/Addressing.shtml#SVs">also available</a>.
+                    A basic DecoderPro decoder definition is available
+                    under "Public Domain and DIY" decoders, then
+                    "Hans De Loof LocoIO".</li>
             </ul>
             
 		<h5>NCE</h5>
