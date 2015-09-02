@@ -80,6 +80,21 @@ for help converting them, or just drop them and use the current definitions.
 
 See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating the 4.1 development series.
 
+<p>Decoder definitions that use the "ivariable" form are now deprecated.  Definitions
+    included with this release have been converted to the new form.
+    If you have decoder definitions with the older "ivariable" form, they will no longer
+    validate, but can still be used for the first couple of test releases in this series.
+    Please ask on the
+    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">jmriusers list</a>
+    for help converting them, or just drop them and use the current definitions.
+
+<p>The OpenLCB 0.6.4 library in this version has a bug in its alias 
+    calculations which prevents JMRI from communicating occasionally.
+    A patch has been submitted to the OpenLCB group.
+    In the meantime, the workaround is to restart JMRI and/or the node
+    and try again; that might allocate different alias values.
+    
+
 <h3>Download links:</h3>
 
 <!--
