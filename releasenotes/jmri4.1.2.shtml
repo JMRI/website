@@ -74,7 +74,16 @@ If you have decoder definitions with the older "ivariable" form, they will no lo
 validate, but can still be used for the first couple of test releases in this series.
 Please ask on the
 <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">jmriusers list</a>
-for help converting them, or just drop them and use the current definitions.
+for help converting them, or just drop them and use the current definitions.</p>
+
+<!-- retain through 4.2 -->
+<p>Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:
+<ul>
+  <li>The decodeJmriFilename() function is no longer available by default. Use the  FileUtil.getExternalFilename() method instead.</li>
+  <li>The simple propertyListener object is no longer available by default. Create your own, following the examples provided in the jython folder in the JMRI distribution.</li>
+  <li>jmri_defaults.py included in the JMRI distribution is no longer executed by default, but will be executed before any other Jython scipts if included in your User Files location.</li>
+  <li>The default behavior of python.cachedir.skip is now true. If using a custom python.properties file, include "python.cachedir.skip=false" in that file.</li>
+</ul></p>
 
 <h3>Older warnings</h3>
 
@@ -88,12 +97,12 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
     <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">jmriusers list</a>
     for help converting them, or just drop them and use the current definitions.
 
-<p>The OpenLCB 0.6.4 library in this version has a bug in its alias 
+<p>The OpenLCB 0.6.4 library in this version has a bug in its alias
     calculations which prevents JMRI from communicating occasionally.
     A patch has been submitted to the OpenLCB group.
     In the meantime, the workaround is to restart JMRI and/or the node
     and try again; that might allocate different alias values.
-    
+
 
 <h3>Download links:</h3>
 
@@ -235,7 +244,7 @@ These are development files, and might not be working at any particular time.</p
      <li>Clarify is an entry will be deleted from the Roster or from a group in the context menu. (Randall Wood)</li>
      <li>Allow a multiple selection of entries in the Roster or a group to be deleted. (Randall Wood)</li>
    </ul>
-   
+
    <h4>OBlocks</h4>
         <ul>
             <li></li>
@@ -256,6 +265,17 @@ These are development files, and might not be working at any particular time.</p
         <ul>
             <li></li>
         </ul>
+
+    <h4>Scripting</h4>
+    <ul>
+      <li>Support for running ECMAScript and JavaScript from external files has been added in all cases except within Jynstruments.</li>
+      <li>Jython has been upgraded to version 2.7.0.</li>
+      <li>Any Java-compatible ScriptEngine can be included by including the ScriptEngine JAR file in the JMRI Classpath.</li>
+      <li>The decodeJmriFilename() function is no longer available by default. Use the  FileUtil.getExternalFilename() method instead.</li>
+      <li>The simple propertyListener object is no longer available by default. Create your own, following the examples provided in the jython folder in the JMRI distribution.</li>
+      <li>jmri_defaults.py included in the JMRI distribution is no longer executed by default, but will be executed before any other Jython scipts if included in your User Files location.</li>
+      <li>The default behavior of python.cachedir.skip is now true. If using a custom python.properties file, include "python.cachedir.skip=false" in that file.</li>
+    </ul>
 
     <h4>Miscellaneous</h4>
         <ul>
