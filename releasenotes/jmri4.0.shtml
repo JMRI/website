@@ -121,6 +121,13 @@ To use this or any later JMRI test or production releases, you'll have to
     you can manually delete the preferences and reconfigure to use a simulator connection 
     (or to use the right port, if it's on a different one)
 
+    <p>The OpenLCB library in this version has a bug in its alias 
+        calculations which prevents JMRI from communicating occasionally.
+        A patch has been submitted to the OpenLCB group.
+        In the meantime, the workaround is to restart JMRI and/or the node
+        and try again; that might allocate different alias values.
+    
+
 <h3>Download links:</h3>
 
     <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
