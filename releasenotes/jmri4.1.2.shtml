@@ -158,8 +158,12 @@ These are development files, and might not be working at any particular time.</p
 				<li>Dave Heap added display of USB &amp; Serial computer cab context pages to the NCE Cabs Monitor.</li>
 			</ul>
 
-        <h5>SPROG</h5>
+        <h5>RFID</h5>
             <ul>
+                <li>Network connections to RFID readers are now possible.  Each connection
+                    configured into JMRI can talk to a single RFID reader, or to multiple ones
+                    through a MERG-style concentrator or equivalent.  JMRI can have
+                    as many RFID readers connected via network connections as desired.
             </ul>
 
         <h5>Uhlenbrock Intellibox</h5>
