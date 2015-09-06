@@ -135,6 +135,13 @@ These are development files, and might not be working at any particular time.</p
                 <li></li>
             </ul>
 
+        <h5>JMRI Simple Server/JMRI Client</h5>
+            <ul>
+                <li>Fixed bugs in both the JMRI Simple Server and JMRI Client 
+                    that prevented reporter information from being passed from
+                    the server to the client.
+            </ul>
+
         <h5>LocoNet</h5>
             <ul>
                 <li>More work on the LN SV2 programming protocol.
