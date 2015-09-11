@@ -140,6 +140,11 @@ These are development files, and might not be working at any particular time.</p
                 <li>Fixed bugs in both the JMRI Simple Server and JMRI Client 
                     that prevented reporter information from being passed from
                     the server to the client.
+                <li>Fixed bugs in both the JMRI Simple Server and the JMRI
+                    Client that caused the server crash when a lower case 
+                    letter was used in the transmitted prefix.
+                <li>Make client attempt to reconnect if the connection is
+                    closed unexpectedly. 
             </ul>
 
         <h5>LocoNet</h5>
