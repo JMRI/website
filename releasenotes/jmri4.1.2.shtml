@@ -69,13 +69,13 @@ from
 <h3>New warnings for this version:</h3>
 
 <!-- retain through 4.2 -->
-<p>Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:
+<p>Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
 <ul>
   <li>The decodeJmriFilename() function is no longer available by default. Use the  FileUtil.getExternalFilename() method instead.</li>
   <li>The simple propertyListener object is no longer available by default. Create your own, following the examples provided in the jython folder in the JMRI distribution.</li>
   <li>jmri_defaults.py included in the JMRI distribution is no longer executed by default, but will be executed before any other Jython scipts if included in your User Files location.</li>
   <li>The default behavior of python.cachedir.skip is now true. If using a custom python.properties file, include "python.cachedir.skip=false" in that file.</li>
-</ul></p>
+</ul>
 
 <h3>Older warnings</h3>
 
@@ -154,10 +154,10 @@ These are development files, and might not be working at any particular time.</p
                     <a href="http://jmri.org/help/en/html/hardware/loconet/Addressing.shtml#SVs">documentation page</a>.
                     It's basically ready for people to
                     start defining board definition files.
-                    A basic definition is available</li>
+                    A basic definition is available
                     under "Public Domain and DIY" decoders, then
-                    "LNSV2-using boards".
-                <li>LocoNet Monitor now decodes LN SV2 programming protocol messages.
+                    "LNSV2-using boards".</li>
+                <li>LocoNet Monitor now decodes LN SV2 programming protocol messages.</li>
                 <li>A programmer mode for the original LocoIO boards,
                     which use the LN SV1 programming protocol,
                     is <a href="http://jmri.org/help/en/html/hardware/loconet/Addressing.shtml#SVs">also available</a>.
@@ -166,7 +166,7 @@ These are development files, and might not be working at any particular time.</p
                     "Hans De Loof LocoIO".</li>
                 <li>You can now configure a connection to a 
                     <a href="http://www.mollehem.se/index.php/electronics/smartphoninterface-detail">Bluetooth LocoBridge adapter</a>
-                    in the Digitrax connection preferences.
+                    in the Digitrax connection preferences.</li>
                     
             </ul>
 
@@ -232,7 +232,13 @@ These are development files, and might not be working at any particular time.</p
 
         <h5>SoundTraxx</h5>
              <ul>
-               <li></li>
+	             <li>
+	             	Updated the Econami Steam to use a separate SoundPane to warn about
+	             	the issue with the chuff and 'original' Econami decoders.
+	             	The value range now supports 0-255, but 'original' Econami decoders
+	             	will go silent if value is >127.
+	             	Soundtraxx will reprogram the decoder to allow the new range.
+	             </li>
              </ul>
 
         <h5>TCS</h5>
