@@ -3,12 +3,12 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.0
+ JMRI: Release Notes for 4.0.1
 
  </title>
     <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
     <meta content="Bob Jacobsen" name=Author>
-    <meta name="keywords" content="java model railroad JMRI 4.0 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.0.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
@@ -26,19 +26,20 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 4.0 release
+      Release Notes for JMRI 4.0.1 release
       </h2>
 
-	<p>Date: July 13, 2015</p>
-	<p>From: Matthew Harris</p>
-	<p>Subject: Production version 4.0 of JMRI/DecoderPro is available for download.</p>
+	<p>Date: September NN, 2015</p>
+	<p>From: NNN NNNN</p>
+	<p>Subject: Production version 4.0.1 of JMRI/DecoderPro is available for download.</p>
 
 
 <!--<br><b>This is a draft release note only; the download links do not yet work</b><p>-->
 
 We are very pleased to announce that the 3.11 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
-We're therefore making that version, "Production version 4.0" available for download today.
+We're therefore making that version, "Production version 4.0.1" available for download today.
+(JMRI 4.0.1 is an update to JMRI 4.0 to fix one specific problem)
 
 <h3>Notes:</h3>
 
@@ -112,15 +113,7 @@ To use this or any later JMRI test or production releases, you'll have to
 
 <h3>Known problems with this release</h3>
 
-    There's a problem with this release where it will hang if a LocoNet device 
-    (only LocoNet, not others like NCE, etc) isn't present where it was configured to be.
-    The
-    <a href="jmri4.1.1.shtml">4.0.1 production release</a> was created to 
-    fix this. 
-    If you're encountering this, 
-    please update to a href="jmri4.1.1.shtml">JMRI 4.0.1</a>.
-
-    <p>The OpenLCB library in this version has a bug in its alias 
+        The OpenLCB library in this version has a bug in its alias 
         calculations which prevents JMRI from communicating occasionally.
         A patch has been submitted to the OpenLCB group.
         In the meantime, the workaround is to restart JMRI and/or the node
@@ -129,6 +122,7 @@ To use this or any later JMRI test or production releases, you'll have to
 
 <h3>Download links:</h3>
 
+<!--
     <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
 
    <p>Please use these links for downloading:</p>
@@ -143,7 +137,7 @@ To use this or any later JMRI test or production releases, you'll have to
     <p>Linux: <A
         HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0-r29647.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0-r29647.tgz/download</a></p>
     <p>sha256: 6a085d88df1b457feed946a19d23ce0bfd714357422499f0f480352da4fa0e21</p>
-
+-->
 
 
 
@@ -151,6 +145,11 @@ To use this or any later JMRI test or production releases, you'll have to
 <h3>Changes since production release 3.10.1</h3>
 
     <h4>Hardware Support</h4>
+        <h5>Crash if port missing</h5>
+            JMRI would crash on startup if a previously configured port was
+            no longer present.  This is now fixed. This change is the only
+            difference between JMRI 4.0 and 4.0.1
+            
         <h5>Default programmer choice</h5>
             There are now separate settings for the default Service Mode Programmer and
             for the default Ops Mode Programmer.  If you're using two or more system connections,
@@ -160,6 +159,7 @@ To use this or any later JMRI test or production releases, you'll have to
             defaults were set properly. Some tools, like the Single CV Programmer and
             the DecoderPro main windows, will also allow you to select which system to use
             instead of relying on just the default setting.
+            
 
         <h5>"Direct" programming mode</h5>
             Dave Heap added a new "Direct" programming mode choice for
