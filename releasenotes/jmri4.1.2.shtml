@@ -75,6 +75,7 @@ from
   <li>The simple propertyListener object is no longer available by default. Create your own, following the examples provided in the jython folder in the JMRI distribution.</li>
   <li>jmri_defaults.py included in the JMRI distribution is no longer executed by default, but will be executed before any other Jython scipts if included in your User Files location.</li>
   <li>The default behavior of python.cachedir.skip is now true. If using a custom python.properties file, include "python.cachedir.skip=false" in that file.</li>
+  <li>As supplied, the 'MakeOriginalDecoderPro.py' script no longer functions as a result of this change. This is fixed in <a href="jmri4.1.3.shtml">JMRI 4.1.3</a>.</li>
 </ul>
 
 <h3>Older warnings</h3>
