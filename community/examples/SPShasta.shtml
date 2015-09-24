@@ -5,7 +5,8 @@
     <TITLE>
  	JMRI: PanelPro on the SP Shasta Route
     </TITLE>
-    <META content="Bob Jacobsen name=Author>
+    <META name="Author" content="Bob Jacobsen">
+ 		<meta name="Date.Modified" content="20150923"/>
     <meta name="keywords" content="JMRI PanelPro control panel DCC C/MRI signals">
 
     <!-- The combination of "Define" and {Header,Style, Logo and Footer} comments -->
@@ -24,7 +25,35 @@
 <body>
     <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
-<!--#include virtual="/Header" -->
+<!-- Header -->
+  <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
+
+  <div id="header">
+	<!-- Logo -->
+	<a href="/" title="Return to home page" accesskey="1">
+	    <img src="/images/logo-jmri.gif" width="160" height="135" alt="JMRI Logo"> </a>
+	<!-- /Logo -->
+	<ul id="mainNav"> <!-- Top tool bar -->
+	   <li><a href="/download/index.shtml"  title="Get the latest software">Download</a></li>
+	   <li><a href="/help/en/html/apps/index.shtml"      title="Learn about JMRI applications">Applications</a></li>
+	   <li><a href="/help/en/html/hardware/index.shtml"  title="What hardware does JMRI support">Hardware</a></li>
+	   <li><a href="/help/en/webtoc.shtml"   title="JMRI Help Screens">Help</a></li>
+	   <li><a href="/help/en/manual/index.shtml"   title="DecoderPro Manual">Manual</a></li>
+	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
+	   <li><A href="/help/en/Acknowledgements.shtml" title="Who is JMRI">Acknowledgements</a></li>
+	</ul>
+
+	<div id="searchform"> <!--  Search Form -->
+          <form method="get" action="http://www.google.com/search">
+            <label for="q" title="Search JMRI.org">search JMRI: </label>
+            <input type="hidden" name="sitesearch" value="jmri.org">
+            <input type="text" id="q" name="q" accesskey="s" size="30">
+	    <input type="submit" id="submit" value="go">
+          </form>
+    </div> <!--  End #searchform -->
+  </div> <!-- closes #header-->
+<!-- /Header -->
+
 
     <hr class="hide">
 
@@ -37,73 +66,68 @@
 
 	    <H1>JMRI: PanelPro on the SP Shasta Route</H1>
 
-This page describes how
-PanelPro is used to control 
-<A HREF="http://www.spshastaroute.org/">Otis McGee's SP Shasta Route</a> layout.
+<p>This page describes how PanelPro is used to control 
+	<a href="http://www.spshastaroute.org/">Otis McGee's SP Shasta Route</a> layout.</p>
 <h3>The Layout</h3>
-The SP Shasta Route layout is a model of the Southern Pacific's
-Shasta Division, Black Butte Subdivision in 1952. There's
-an extensive 
-<A HREF="http://spshastaroute.org/">web site</a>
-describing it.
-<P>
-<A HREF="http://spshastaroute.org/images/22.jpg">
+<p>The SP Shasta Route layout is a model of the Southern Pacific's
+Shasta Division, Black Butte Subdivision in 1952. There's 
+an extensive <a HREF="http://spshastaroute.org/">web site</a> describing it.
+</p>
+		
+<a HREF="http://spshastaroute.org/images/22.jpg">
 <IMG SRC="http://spshastaroute.org/images/thumb_22_jpg.gif" WIDTH="200" HEIGHT="150" align="right">
-</A>
+</a>
 
-Otis's main goal is operations with prototypical fidelity. 
+<p>Otis's main goal is operations with prototypical fidelity. 
 In 1952, the prototype was a mix of CTC signaling on the 
 lower (western) half of this division, and timetable-and-train-order on the 
-upper (eastern) half.  The layout is meant to reproduce this as
-closely as possible.
+upper (eastern) half. The layout is meant to reproduce this as closely as possible.</p>
 
-<P>
-Eventually, Otis wanted to reproduce the dispatcher's experience with
-an operating CTC machine.  In 1952, there was large CTC machine
+<p>Eventually, Otis wanted to reproduce the dispatcher's experience with
+an operating CTC machine.  In 1952, a large CTC machine was
 installed at the Dunsmuir station, part of the modelled portion of the railroad
-(see prototype photo to right).
-Otis was not interested in computer-based control panels, even as
-a temporary measure.
+(see prototype photo to the right).
+Otis was not interested in computer-based control panels, even as a temporary measure.</p>
 
 <h3>Initial Stage: ABS Signaling</h3>
-The first project was to introduce ABS signaling. This would
+<p>The first project was to introduce ABS signaling. This would
 let us install and operate signals on the layout, and use them for
-collision avoidance during the initial operating sessions.
+	collision avoidance during the initial operating sessions.</p>
 
-<P>
-<A HREF="http://spshastaroute.org/e/4.jpg">
+<a href="http://spshastaroute.org/e/4.jpg">
 <IMG SRC="http://spshastaroute.org/e/thumb_4_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT">
-</A>
-After some research, Otis decided to use C/MRI for layout control,
+</a>
+
+	<p>After some research, Otis decided to use C/MRI for layout control,
 and NCE DCC to operate the trains.  C/MRI was well suited because
 the layout is large, but there are a large number of control points
 (inputs and outputs) 
 needed at specific points like the CTC machine, staging and operational
 yards, etc.  
-The C/MRI SUSIC and SMINI units were well suited in size to these
-I/O requirements.
-<P>
+The C/MRI SUSIC and SMINI units were well suited in size to these I/O requirements.</p>
+<p>
 All turnouts on the layout are operated by Tortoise slow-motion switch motors,
 operated through C/MRI Switch Motor Controller (SMC) boards and
 slide switches on the facia (this method was originally
 perfected on 
-<A HREF="http://www.lwmweb.com/sw&sf/">Rick Fortin's Sierra Western & Santa Fe Railroad</a>.)
+<a HREF="http://www.lwmweb.com/sw&sf/">Rick Fortin's Sierra Western & Santa Fe Railroad</a>.)
 Locally operated turnouts have the slide switch directly
 connected to the SMC board, operating the turnout without
-going through the computer.
-<P>
-<A HREF="http://spshastaroute.org/e/12.jpg">
+	going through the computer.</p>
+
+<a HREF="http://spshastaroute.org/e/12.jpg">
 <IMG SRC="http://spshastaroute.org/e/thumb_12_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT">
-</A>
-Mainline turnouts are controlled through PanelPro, because it needs
+</a>
+
+	<p>Mainline turnouts are controlled through PanelPro, because it needs
 to know their position for operating the signals, and because once
 the CTC machine is installed, the turnouts will be controlled from
 both the fascia and the CTC machine.  To do this, the toggle switch
 is connected to a C/MRI input, and the SMC is connected to a C/MRI
 output.  A JMRI
-<A HREF="/tools/Routes.html">Route</a>
-is then used to operate the turnout when the slide switch changes.
-<P>
+<a hret="http://jmri.sourceforge.net/help/en/html/tools/Routes.shtml">Route</a>
+		is then used to operate the turnout when the slide switch changes.</p>
+<p>
 This works very well when the program is running, but does an 
 unfortunate thing when the C/MRI system is first turned on.
 When power is first applied to the C/MRI system, before the computer
@@ -116,26 +140,24 @@ parked trains, etc.
 To help this, we start PanelPro before powering up the 
 C/MRI system, so that the program will rapidly set the outputs
 once the C/MRI turns on.  Combined with the slow speed of the 
-Tortoise machines, the turnouts only move a little way.
-<P>
+	Tortoise machines, the turnouts only move a little way.</p>
+<p>
 We're considering a more elegant situation, where power to the
 SMC boards is interrupted by a relay until the computer has
 been able to communicate enough with the C/MRI system to switch
 a specific output. Since the SMC machines won't have 
 power, they won't be able to move the Tortoises until they are 
-under positive control.
+	under positive control.</p>
 
-<P>
-PanelPro 
-"<A HREF="/apps/Signalling/#logic">Simple Signaling Logic</a>"
+<p>PanelPro legacy 
+"<a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/blockboss/BlockBossFrame.shtml">Simple Signaling Logic</a>"
 is used to operate each signal.  Note that this is entirely
 "behind the scenes"; there's no control panel on the computer, 
 and the dispatcher has no way to set the signals.  Instead, they
 just respond to how turnouts are set and where trains are present,
-essentially just warning train engineers of unsafe conditions ahead.
+	essentially just warning train engineers of unsafe conditions ahead.</p>
 
-<P>
-Also during this stage, JMRI scripting was used to control a 
+<p>Also during this stage, JMRI scripting was used to control a 
 large turntable and roundhouse complex at the Dunsmuir yard.
 Since every locomotive on the layout is highly detailed and has sound, 
 Otis wanted
@@ -145,42 +167,40 @@ This greatly reduces the sound volume in the engine terminal, and makes
 it much harder to accidentally drive a locomotive into the turntable pit.
 A pair of scripts were used to watch the turnout operation, and
 turn on and off appropriate channels in C/MRI relay cards to control
-track power in the area.  This is an interesting combination of 
-DCC and C/MRI power control!
+track power in the area.  This is an interesting combination of DCC and C/MRI power control!</p>
 
 <h3>Second Stage: The CTC Machine</h3>
 
-
-While the signaling phase was going on, Otis 
+<p>While the signaling phase was going on, Otis 
 commissioned Rod Loder to build a 
-<A HREF="http://spshastaroute.org/ctc.html">CTC machine</a>.  
+<a href="http://spshastaroute.org/ctc.html">CTC machine</a>.  
 Rod does excellent work, using
 prototypical techniques and original components to
 the greatest extent possible. The photo's below show 
 Rod delivering it, the original switches and indicators on the back of
 the panel, the beginning of the roughly one thousand connections needed
 to the C/MRI system, and the final panel with the 
-first few indicators lit.
-<br>
-<A HREF="http://spshastaroute.org/c/3.jpg">
-<IMG SRC="http://spshastaroute.org/c/thumb_3_jpg.gif" WIDTH="200" HEIGHT="150">
-</A>
-<A HREF="http://spshastaroute.org/c/8.jpg">
-<IMG SRC="http://spshastaroute.org/c/thumb_8_jpg.gif" WIDTH="200" HEIGHT="150">
-</A>
-<A HREF="http://spshastaroute.org/c/14.jpg">
-<IMG SRC="http://spshastaroute.org/c/thumb_14_jpg.gif" WIDTH="200" HEIGHT="150">
-</A>
+	first few indicators lit.</p>
+	
+<a HREF="http://spshastaroute.org/c/3.JPG">
+<IMG SRC="http://spshastaroute.org/c/thumb_3_JPG.gif" WIDTH="200" HEIGHT="150">
+</a>
+<a HREF="http://spshastaroute.org/c/8.JPG">
+<IMG SRC="http://spshastaroute.org/c/thumb_8_JPG.gif" WIDTH="200" HEIGHT="150">
+</a>
+<a HREF="http://spshastaroute.org/c/14.JPG">
+<IMG SRC="http://spshastaroute.org/c/thumb_14_JPG.gif" WIDTH="200" HEIGHT="150">
+</a>
 <a href="images/ShastaCTTMachine.jpg">
 <IMG SRC="images/ShastaCTTMachine.jpg" width="200" height="150" alt="Picture of real CTC machine"/></a>
 
-<P>
+<p>
 PanelPro is providing USS signal logic to drive the panel, and this
 CTC panel is providing an excellent test-bed for that logic.  They're
-evolving together.
+	evolving together.</p>
 
 <h3>Third Stage: Automated Staging Assistance</h3>
-<A HREF="http://spshastaroute.org/e/15.jpg">
+<a HREF="http://spshastaroute.org/e/15.jpg">
 <IMG SRC="http://spshastaroute.org/e/thumb_15_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT"></a>
 
 Although we've not started on this yet, 
@@ -196,9 +216,9 @@ throat turnouts and orients the power for entrance or exit in the loops.
 It also reads the track occupancy status and lights indicators on
 the panels to show which tracks are occupied.  All of this is
 done with a total of about 48 JMRI
-<A HREF="/tools/Routes.html">Routes</a>.
+<a HREF="http://jmri.sourceforge.net/help/en/html/tools/Routes.shtml">Routes</a>.
 
-<P>
+<p>
 The next step, which we probably won't work on until
 after the CTC machine is completely operational,
 is to add controls so the computer can help with staging operations.
@@ -209,9 +229,42 @@ have the computer run the train into staging while the crew goes off to their
 next assignment.  This removes the unprototypical part of staging
 from the crew's experience, without adding too much 
 unprototypical workload to the 
-operator.
+	operator.</p>
 
-<!--#include virtual="/Footer" -->
+<!-- Footer -->
+    <hr class="hide">
+    <div id="footer">
+	<ul id="bn">
+	<li>Contact us via the <a href="http://groups.yahoo.com/group/jmriusers">JMRI users</a> mailing list</li>
+	</ul>
+
+	<p>Thanks and congratulations to
+	   <a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
+	   	all who contributed</a>! </p>
+
+	<p>Copyright &copy; 1997 - 2015 JMRI Community. 
+	<P>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, TrainPro&trade;, DispatcherPro&trade;, OperationsPro&trade; and associated logos are our trademarks.
+	<P><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
+    
+       <BR/>Site hosted by: <BR/>
+<a href="http://sourceforge.net/projects/jmri"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=26788&type=12" width="120" height="30" border="0" alt="Get JMRI Model Railroad Interface at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
+    </div>
+
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://apps.sourceforge.net/piwik/jmri/" : "http://apps.sourceforge.net/piwik/jmri/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+piwik_action_name = '';
+piwik_idsite = 1;
+piwik_url = pkBaseURL + "piwik.php";
+piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+</script>
+<object><noscript><p><img src="http://apps.sourceforge.net/piwik/jmri/piwik.php?idsite=1" alt="piwik"/></p></noscript></object>
+<!-- End Piwik Tag -->
+
+<!-- /Footer -->
+
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->
