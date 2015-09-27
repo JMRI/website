@@ -75,6 +75,7 @@ from
   <li>The simple propertyListener object is no longer available by default. Create your own, following the examples provided in the jython folder in the JMRI distribution.</li>
   <li>jmri_defaults.py included in the JMRI distribution is no longer executed by default, but will be executed before any other Jython scipts if included in your User Files location.</li>
   <li>The default behavior of python.cachedir.skip is now true. If using a custom python.properties file, include "python.cachedir.skip=false" in that file.</li>
+  <li>Certain Python scripts are too large to be evaluated in Jython. If a script fails with the <code>java.io.IOException: Mark invalid</code> error, set "jython.exec=true" in a custom python.properties file or rewrite the script to be less than 100,000 characters per file. Note that when using "jython.exec=true" it may be desirable to run the included script jmri_bindings.py to emulate the evaluation environment used when jython.exec=false.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -137,7 +138,7 @@ These are development files, and might not be working at any particular time.</p
 
         <h5>JMRI Simple Server/JMRI Client</h5>
             <ul>
-                <li></li> 
+                <li></li>
             </ul>
 
         <h5>LocoNet</h5>
@@ -172,6 +173,11 @@ These are development files, and might not be working at any particular time.</p
     		</ul>
 
     <h4>New / Updated decoder definitions</h4>
+
+        <h5>Digitrax</h5>
+            <ul>
+                <li>John McMasters updated the Digitrax Extended Series 6 v3.5</li>
+            </ul>
 
         <h5>ESU</h5>
             <ul>
@@ -248,7 +254,10 @@ These are development files, and might not be working at any particular time.</p
 
     <h4>Scripting</h4>
         <ul>
-            <li>The 'MakeOriginalDecoderPro.py' script has been corrected to work with the updated scripting support introduced in <a href="jmri4.1.2.shtml">JMRI 4.1.2</a>.</li>
+            <li>The "MakeOriginalDecoderPro.py" script has been corrected to work with the updated scripting support introduced in <a href="jmri4.1.2.shtml">JMRI 4.1.2</a>.</li>
+            <li>The "AutoDispatcher2.py" script has been corrected to work with
+              the updated scripting support when the "jython.exec=true" setting
+              is set within the "python.properties" file.</li>
         </ul>
 
     <h4>Miscellaneous</h4>
