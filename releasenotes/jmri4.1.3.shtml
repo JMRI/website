@@ -258,6 +258,18 @@ These are development files, and might not be working at any particular time.</p
             <li>The "AutoDispatcher2.py" script has been corrected to work with
               the updated scripting support when the "jython.exec=true" setting
               is set within the "python.properties" file.</li>
+            <li>Certain Python scripts are too large to be evaluated in Jython.
+              If a script fails with the <code>java.io.IOException: Mark
+                invalid</code> error, set "jython.exec=true" in a custom
+              python.properties file or rewrite the script to be less than
+              100,000 characters per file. Note that when using
+              "jython.exec=true" it may be desirable to run the included script
+              jmri_bindings.py to emulate the evaluation environment used when
+              jython.exec=false.</li>
+            <li>The user-defined scripts folder and the jython folder in the
+              JMRI installation are automatically appended to the python.path so
+              Jython scripts can directly import other jython scripts in those
+              locations.</li>
         </ul>
 
     <h4>Miscellaneous</h4>
