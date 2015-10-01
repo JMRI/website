@@ -68,6 +68,12 @@ from
 
 <h3>New warnings for this version:</h3>
 
+<p>Mac OS X 10.11 El Capitan requires signed drivers for USB adapters. If you've upgraded
+from an earlier version, your drivers may not work.  That will cause JMRI to throw errors
+when it doesn't find communications links.  To fix this, go to the web site for your 
+adapter manufacturer, find the drivers that are listed to work with Mac OS X 10.9 or later, 
+download, and install, then retry JMRI again.
+
 <!-- retain through 4.2 -->
 <p>Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
 <ul>

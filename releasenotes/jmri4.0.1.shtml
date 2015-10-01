@@ -56,6 +56,12 @@ To use this or any later JMRI test or production releases, you'll have to
 
 <h3>Warnings:</h3>
 
+    <p>Mac OS X 10.11 El Capitan requires signed drivers for USB adapters. If you've upgraded
+    from an earlier version, your drivers may not work.  That will cause JMRI to throw errors
+    when it doesn't find communications links.  To fix this, go to the web site for your 
+    adapter manufacturer, find the drivers that are listed to work with Mac OS X 10.9 or later, 
+    download, and install, then retry JMRI again.
+
     <p>The old DecoderPro has been removed from the distribution package and DecoderPro 3 has been promoted to be the only available DecoderPro version.
 	Existing custom launchers that launched the old DecoderPro should continue to function without change or issue.
 	If you absolutely cannot use the new DecoderPro user interface, we suggest using PanelPro instead, as with the exception of a different icon and different fixed buttons on the main window, PanelPro has an identical user interface to the old DecoderPro.
