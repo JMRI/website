@@ -56,7 +56,17 @@ To use this or any later JMRI test or production releases, you'll have to
 
 <h3>Warnings:</h3>
 
-    <p>The old DecoderPro has been removed from the distribution package and DecoderPro 3 has been promoted to be the only available DecoderPro version. Existing custom launchers that launched the old DecoderPro should continue to function without change or issue. If you absolutely cannot use the new DecoderPro user interface, we suggest using PanelPro instead, as with the exception of a different icon and different fixed buttons on the main window, PanelPro has an identical user interface to the old DecoderPro. See below in Miscellaneous section for usage of "MakeOriginalDecoderPro.py" script.</p>
+    <p>Mac OS X 10.11 El Capitan requires signed drivers for USB adapters. If you've upgraded
+    from an earlier version, your drivers may not work.  That will cause JMRI to throw errors
+    when it doesn't find communications links.  To fix this, go to the web site for your 
+    adapter manufacturer, find the drivers that are listed to work with Mac OS X 10.9 or later, 
+    download, and install, then retry JMRI again.
+
+    <p>The old DecoderPro has been removed from the distribution package and DecoderPro 3 has been promoted to be the only available DecoderPro version.
+	Existing custom launchers that launched the old DecoderPro should continue to function without change or issue.
+	If you absolutely cannot use the new DecoderPro user interface, we suggest using PanelPro instead, as with the exception of a different icon and different fixed buttons on the main window, PanelPro has an identical user interface to the old DecoderPro.
+	See below in Miscellaneous section for usage of "MakeOriginalDecoderPro.py" script.
+	More information on "<a href="../help/en/html/doc/Technical/StartUpScripts.shtml#old_DecoderPro">Retrieving "legacy" DecoderPro from versions prior to 4.0.x</a></p>
 
     <P>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
     Failure to remove these can result in some portions of
@@ -113,12 +123,12 @@ To use this or any later JMRI test or production releases, you'll have to
 
 <h3>Known problems with this release</h3>
 
-        The OpenLCB library in this version has a bug in its alias 
+        The OpenLCB library in this version has a bug in its alias
         calculations which prevents JMRI from communicating occasionally.
         A patch has been submitted to the OpenLCB group.
         In the meantime, the workaround is to restart JMRI and/or the node
         and try again; that might allocate different alias values.
-    
+
 
 <h3>Download links:</h3>
 
@@ -145,7 +155,7 @@ To use this or any later JMRI test or production releases, you'll have to
             JMRI would crash on startup if a previously configured port was
             no longer present.  This is now fixed. This change is the only
             difference between JMRI 4.0 and 4.0.1
-            
+
         <h5>Default programmer choice</h5>
             There are now separate settings for the default Service Mode Programmer and
             for the default Ops Mode Programmer.  If you're using two or more system connections,
@@ -155,7 +165,7 @@ To use this or any later JMRI test or production releases, you'll have to
             defaults were set properly. Some tools, like the Single CV Programmer and
             the DecoderPro main windows, will also allow you to select which system to use
             instead of relying on just the default setting.
-            
+
 
         <h5>"Direct" programming mode</h5>
             Dave Heap added a new "Direct" programming mode choice for
@@ -564,7 +574,7 @@ To use this or any later JMRI test or production releases, you'll have to
         <li>The NXWarrants have a new feature to calibrate throttle factors.  NXWarrants
         	 can be used to add data to the Roster Speed Profile. See "Compute Factor" checkbox.</li>
         <li>The "Offset(sec)" column in the Signal Table at <i>Add Items->Occupancy Blocks</i> has been
-        	changed to a distance. The "Offset" column will adjust speed change points (+/-) to conform to 
+        	changed to a distance. The "Offset" column will adjust speed change points (+/-) to conform to
         	signal placement on the layout.</li>
         <li>Fixed a bug where new signal specifications could not be added for OBlocks.</li>
         <li>Warrant help documentation is updated.</li>
@@ -634,7 +644,7 @@ To use this or any later JMRI test or production releases, you'll have to
             <li>JavaDoc errors in the AbstractOperationsServer were fixed</li>
             <li>Update to use the correct JOAL libraries for ARMv6</li>
             <li>Fixed a minor issue with the JoalAudioFactory</li>
-            <li>Use RosterSpeedProfile for speed calibration in Warrants. 
+            <li>Use RosterSpeedProfile for speed calibration in Warrants.
                 Removed throttle factor from UI. (Pete Cressman)</li>
             <li>Fixed can't add new signals bug in OBlocks. (Pete Cressman)</li>
             <li>Randall Wood fixed a problem with invalid schema locations in the

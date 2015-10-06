@@ -68,6 +68,12 @@ from
 
 <h3>New warnings for this version:</h3>
 
+<p>Mac OS X 10.11 El Capitan requires signed drivers for USB adapters. If you've upgraded
+from an earlier version, your drivers may not work.  That will cause JMRI to throw errors
+when it doesn't find communications links.  To fix this, go to the web site for your 
+adapter manufacturer, find the drivers that are listed to work with Mac OS X 10.9 or later, 
+download, and install, then retry JMRI again.
+
 <!-- retain through 4.2 -->
 <p>Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
 <ul>
@@ -75,6 +81,7 @@ from
   <li>The simple propertyListener object is no longer available by default. Create your own, following the examples provided in the jython folder in the JMRI distribution.</li>
   <li>jmri_defaults.py included in the JMRI distribution is no longer executed by default, but will be executed before any other Jython scipts if included in your User Files location.</li>
   <li>The default behavior of python.cachedir.skip is now true. If using a custom python.properties file, include "python.cachedir.skip=false" in that file.</li>
+  <li>Certain Python scripts are too large to be evaluated in Jython. If a script fails with the <code>java.io.IOException: Mark invalid</code> error, set "jython.exec=true" in a custom python.properties file or rewrite the script to be less than 100,000 characters per file. Note that when using "jython.exec=true" it may be desirable to run the included script jmri_bindings.py to emulate the evaluation environment used when jython.exec=false.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -137,7 +144,7 @@ These are development files, and might not be working at any particular time.</p
 
         <h5>JMRI Simple Server/JMRI Client</h5>
             <ul>
-                <li></li> 
+                <li></li>
             </ul>
 
         <h5>LocoNet</h5>
@@ -172,6 +179,11 @@ These are development files, and might not be working at any particular time.</p
     		</ul>
 
     <h4>New / Updated decoder definitions</h4>
+
+        <h5>Digitrax</h5>
+            <ul>
+                <li>John McMasters updated the Digitrax Extended Series 6 v3.5</li>
+            </ul>
 
         <h5>ESU</h5>
             <ul>
@@ -248,12 +260,28 @@ These are development files, and might not be working at any particular time.</p
 
     <h4>Scripting</h4>
         <ul>
-            <li>The 'MakeOriginalDecoderPro.py' script has been corrected to work with the updated scripting support introduced in <a href="jmri4.1.2.shtml">JMRI 4.1.2</a>.</li>
+            <li>The "MakeOriginalDecoderPro.py" script has been corrected to work with the updated scripting support introduced in <a href="jmri4.1.2.shtml">JMRI 4.1.2</a>.</li>
+            <li>The "AutoDispatcher2.py" script has been corrected to work with
+              the updated scripting support when the "jython.exec=true" setting
+              is set within the "python.properties" file.</li>
+            <li>Certain Python scripts are too large to be evaluated in Jython.
+              If a script fails with the <code>java.io.IOException: Mark
+                invalid</code> error, set "jython.exec=true" in a custom
+              python.properties file or rewrite the script to be less than
+              100,000 characters per file. Note that when using
+              "jython.exec=true" it may be desirable to run the included script
+              jmri_bindings.py to emulate the evaluation environment used when
+              jython.exec=false.</li>
+            <li>The user-defined scripts folder and the jython folder in the
+              JMRI installation are automatically appended to the python.path so
+              Jython scripts can directly import other jython scripts in those
+              locations.</li>
         </ul>
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>Paul Bender updated the consist tool to sort the consist list numerically.</li>
+            <li>Paul Bender added restore button to the consist tool that requests the command station re-create the consist.
         </ul>
 
    <!--#include virtual="/Footer" -->

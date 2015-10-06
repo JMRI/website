@@ -68,6 +68,12 @@ from
 
 <h3>New warnings for this version:</h3>
 
+<p>Mac OS X 10.11 El Capitan requires signed drivers for USB adapters. If you've upgraded
+from an earlier version, your drivers may not work.  That will cause JMRI to throw errors
+when it doesn't find communications links.  To fix this, go to the web site for your 
+adapter manufacturer, find the drivers that are listed to work with Mac OS X 10.9 or later, 
+download, and install, then retry JMRI again.
+
 <!-- retain through 4.2 -->
 <p>Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
 <ul>
@@ -76,6 +82,7 @@ from
   <li>jmri_defaults.py included in the JMRI distribution is no longer executed by default, but will be executed before any other Jython scipts if included in your User Files location.</li>
   <li>The default behavior of python.cachedir.skip is now true. If using a custom python.properties file, include "python.cachedir.skip=false" in that file.</li>
   <li>As supplied, the 'MakeOriginalDecoderPro.py' script no longer functions as a result of this change. This is fixed in <a href="jmri4.1.3.shtml">JMRI 4.1.3</a>.</li>
+  <li>Scripts larger than 100,000 characters cannot be run. This is fixed in JMRI 4.1.3</a>.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -138,11 +145,11 @@ These are development files, and might not be working at any particular time.</p
 -->
         <h5>JMRI Simple Server/JMRI Client</h5>
             <ul>
-                <li>Fixed bugs in both the JMRI Simple Server and JMRI Client 
+                <li>Fixed bugs in both the JMRI Simple Server and JMRI Client
                     that prevented reporter information from being passed from
                     the server to the client.</li>
                 <li>Fixed bugs in both the JMRI Simple Server and the JMRI
-                    Client that caused the server crash when a lower case 
+                    Client that caused the server crash when a lower case
                     letter was used in the transmitted prefix.</li>
                 <li>Make client attempt to reconnect if the connection is
                     closed unexpectedly.</li>
@@ -165,10 +172,10 @@ These are development files, and might not be working at any particular time.</p
                     A basic DecoderPro decoder definition is available
                     under "Public Domain and DIY" decoders, then
                     "Hans De Loof LocoIO".</li>
-                <li>You can now configure a connection to a 
+                <li>You can now configure a connection to a
                     <a href="http://www.mollehem.se/index.php/electronics/smartphoninterface-detail">Bluetooth LocoBridge adapter</a>
                     in the Digitrax connection preferences.</li>
-                    
+
             </ul>
 
 		<h5>NCE</h5>
