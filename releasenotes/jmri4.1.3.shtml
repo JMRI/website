@@ -160,6 +160,13 @@ These are development files, and might not be working at any particular time.</p
         <h5>RFID</h5>
             <ul>
                 <li>A bug that caused connections using the MERG Concentrator to not work has been fixed. (Matt Harris)</li>
+                <li>A bug that meant RFID tags were misread when using Olimex RFID readers has been fixed. This will mean that
+                    details of any existing tags read using an Olimex reader are now invalid and will need to be re-identified 
+                    and updated in the ID Tag list. (Matt Harris)</li>
+                <li>Minor corrections were made in the Core-ID, EM18 and SeeedStudio RFID reader interfaces to correctly reject
+                    any tag reads with invalid checksums - this was not always happening resulting in the potential of incorrect
+                    tag reads being accepted. (Matt Harris)</li>
+                <li>Added test cases for all implemented RFID protocols. (Matt Harris)</li>
             </ul>
 
         <h5>Uhlenbrock Intellibox</h5>
