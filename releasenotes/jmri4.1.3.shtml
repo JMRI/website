@@ -74,6 +74,12 @@ when it doesn't find communications links.  To fix this, go to the web site for 
 adapter manufacturer, find the drivers that are listed to work with Mac OS X 10.9 or later, 
 download, and install, then retry JMRI again.
 
+<p>RFID readers using the Olimex protocol were incorrectly decoding tag values - this has 
+now been fixed. If you were using Olimex RFID readers with earlier versions, your existing
+ID Tag database will contain invalid tags. New ID Tag entries will be generated for each
+correctly read tag - this will require that any additional information be re-entered and,
+optionally, old invalid entries manually deleted.</p>
+
 <!-- retain through 4.2 -->
 <p>Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
 <ul>
