@@ -241,9 +241,16 @@ These are development files, and might not be working at any particular time.</p
 
 
    <h4>Operations</h4>
-        <ul>
-            <li>The "Edit Car" window now shows the blocking order for kernels.</li>
-        </ul>
+   <ul>
+    <li>The "Edit Car" window now shows the blocking order for kernels.</li>
+    <li>Changed how the program deals with alternate tracks and cars with custom loads.
+     Previously if the program found an alternate track assigned to a spur, and all spurs were full,
+     it would hold the car at its current location until one of the spurs had space for the car. Now
+     there's a new option for a spur that is part of the load option window for a spur. A checkbox
+     labeled "Hold cars with custom loads when spurs are full" now performs the same function as the
+     alternate track did with regards to holding cars. For more information, see the help and "Load
+     Options" for a spur.</li>
+   </ul>
 
    <h4>Roster</h4>
         <ul>
