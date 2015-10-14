@@ -1,0 +1,92 @@
+<!-- Sidebar -->
+<!-- This is the common sidebar definition for /download and /install (host systems) pages -->
+
+<hr class="hide">
+
+<div id="mBody">
+ <div id="side">
+    <h2>Install Guides</h2>
+	<UL>
+	<LI><A href="../install/WindowsNew.shtml">Windows</a>
+	<LI><A href="../install/MacOSX.html">Mac OS X</a>
+	<LI><A href="../install/Linux.html">Linux</a>
+	<LI><A href="../install/Debug.shtml">Debugging an installation</a>
+	</UL>
+
+    <h2>Connecting to your layout</h2>
+	<ul>
+		    <li> <A HREF="/help/en/html/hardware/XPressNet/index.shtml">Atlas Commander</a>
+		    <li> <A HREF="/help/en/html/hardware/bachrus/index.shtml">Bachrus</a>
+		    <li> <A HREF="/help/en/html/hardware/cmri/CMRI.shtml">C/MRI</a>
+		    <li> <A HREF="/help/en/html/hardware/loconet/Digitrax.shtml">Digitrax</a>
+		    <li> <A HREF="/help/en/html/hardware/easydcc/EasyDCC.shtml">EasyDCC</a>
+		    <li> <A HREF="/help/en/html/hardware/loconet/Fleischmann.shtml">Fleischmann</a>
+		    <li> <A HREF="/help/en/html/hardware/XPressNet/index.shtml">Hornby</a>
+		    <li> <A HREF="/help/en/html/hardware/XPressNet/index.shtml">Lenz</a>
+		    <li> <A HREF="/help/en/html/hardware/tmcc/index.shtml">Lionel TMCC</a>
+		    <li> <A HREF="/help/en/html/hardware/nce/NCE.shtml">NCE</a>
+		    <li> <A HREF="/help/en/html/hardware/rps/index.shtml">RPS</a>
+		    <li> <A HREF="/help/en/html/hardware/oaktree/OakTree.shtml">Oak Tree Systems</a>
+		    <li> <A HREF="/help/en/html/hardware/grapevine/index.shtml">Protrak Grapevine</a>
+		    <li> <A HREF="/help/en/html/hardware/XPressNet/index.shtml">Roco</a>
+		    <li> <A HREF="/help/en/html/hardware/sprog/SPROG.shtml">SPROG</a>
+		    <li> <A HREF="/help/en/html/hardware/loconet/Digitrax.shtml">Uhlenbrock Intellibox</a>
+	        <li> <A HREF="/help/en/html/hardware/nce/Wangrow.shtml">Wangrow</a>
+		    <li> <A HREF="/help/en/html/hardware/zimo/Zimo.shtml">Zimo MX-1</a>
+		    <li> <A HREF="/help/en/html/hardware/XPressNet/index.shtml">ZTC</a>
+	</ul>
+
+    <H2><a href="../releasenotes/">Release Notes</a></H2>
+	<ul>
+	<li>Production Versions</li>
+	    <UL>
+	    <LI><A href="../releasenotes/jmri3.6.shtml">JMRI 3.6</a>
+	    <LI><A href="../releasenotes/jmri3.4.shtml">JMRI 3.4</a>
+	    <LI><A href="../releasenotes/jmri3.2.shtml">JMRI 3.2</a>
+	    <LI><A href="../releasenotes/jmri3.0.shtml">JMRI 3.0</a>
+	    <LI><A href="../releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a>
+	    <LI><A href="older.html">Older/other releases</a>
+	    </UL>
+	<li>Test Versions</li>
+	    <UL>
+	    <LI><A href="../releasenotes/jmri3.7.1.shtml">JMRI 3.7.1</a>
+	    <LI><A href="../releasenotes/jmri3.5.7.shtml">JMRI 3.5.7</a>
+	    <LI><A href="../releasenotes/jmri3.5.6.shtml">JMRI 3.5.6</a>
+	    <LI><A href="../releasenotes/jmri3.5.5.shtml">JMRI 3.5.5</a>
+	    <LI><A href="../releasenotes/jmri3.5.4.shtml">JMRI 3.5.4</a>
+	    <LI><A href="../releasenotes/jmri3.5.3.shtml">JMRI 3.5.3</a>
+	    <LI><A href="../releasenotes/jmri3.5.2.shtml">JMRI 3.5.2</a>
+	    <LI><A href="../releasenotes/jmri3.5.1.shtml">JMRI 3.5.1</a>
+	    <LI><A href="../releasenotes/jmri3.3.8.shtml">JMRI 3.3.8</a>
+	    <LI><A href="../releasenotes/jmri3.1.7.shtml">JMRI 3.1.7</a>
+	    <LI><A href="../releasenotes/jmri2.99.8.shtml">JMRI 2.99.8</a>
+	    <LI><A href="../releasenotes/jmri2.13.7.shtml">JMRI 2.13.7</a>
+	    <LI><A href="../releasenotes/jmri2.11.9.shtml">JMRI 2.11.9</a>
+	    <LI><A href="older.html">Older Releases</a>
+	    </UL>
+	<li>(Tentative) Next Test Version</li>
+	    <UL>
+	    <LI><A href="../releasenotes/jmri3.7.2.shtml">JMRI 3.7.2</a>
+        </ul>
+	</ul>
+
+    <h2>User Guides</h2>
+	<UL>
+	<li><a href="../apps/DecoderPro">Decoder Pro</a>
+	<li>Panel Pro
+	</UL>
+
+    <h2>Source Code</h2>
+	<ul>
+	<LI> <a href="/help/en/html/doc/Technical/getcode.shtml">Get The Code</a></p>
+	</ul>
+
+    <h2>Bugs and Requests</h2>
+	<ul>
+	<LI> <a href="http://sourceforge.net/tracker/?group_id=26788&atid=388313">JMRI Bug Tracker</a></p>
+	<LI> <a href="http://sourceforge.net/tracker/?group_id=26788&atid=388316">JMRI Enhancement Requests</a></p>
+	</ul>
+
+ </div> <!-- closes #side --> 
+ 
+ <!-- /Sidebar -->
