@@ -1,15 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
-<!-- Copyright (Author) 2008 -->
-<!-- $Id: template.shtml,v 1.1 2008-02-24 13:45:28 jacobsen Exp $ -->
+<!-- $Id: $ -->
 
-    <TITLE>
- 	JMRI: ... TITLE ...
-    </TITLE>
-    <META content="YOUR NAME HERE" name=Author>
+    <title>
+ 	JMRI: ... Title ...
+    </title>
+    <meta name="author" content="YOUR NAME HERE">
     <meta name="keywords" content="SOME KEYWORDS">
-
 
 <!--#include virtual="/Style" -->
 </head>
@@ -41,8 +39,8 @@
 	    <!-- Page TOC --> <!-- Optional -->
 	    <!-- -------- -->
 
-	    <H1>Optional Table of Contents </H1>
-	    <p> For a complicated page - like a user guide or technical reference </p>
+	    <h1>Optional Table of Contents</h1>
+	    <p>For a complicated page - like a user guide or technical reference </p>
 	    <dl class=toc>
 		<dt><a href="#topic1">TOC entry 1</a></dt>
 		<dt><a href="#topic2">TOC entry 2</a></dt>
@@ -72,7 +70,7 @@
 	    <!-- Page Contents --> <!-- Required -->
 	    <!-- ------------- -->
 
-	    <H1>Page TITLE repeated here</H1>
+	    <h1>Page TITLE repeated here</h1>
 		<p class=subtitle>
 		    subtitles are used as the first paragraph under a main
 		    heading - if at all
@@ -97,7 +95,7 @@
 
 		    <div class=para>
 		    <p>Sections are used for indenting and outlines</p>
-		    <p>H2 Content</p>
+		    <p>hh2 Content</p>
 		    <p>Random text Random text Random text Random text Random text</p>
 		    <p>Random text Random text Random text Random text Random text</p>
 		    <p>Random text Random text Random text Random text Random text</p>
@@ -115,20 +113,20 @@ foreach $f (@files) {
 
 			<p class=mice>mice text is for editorial comments and the like</p>
 			<p class=remark>Remarks get stuff before and after.</p>
-			<p class=note> Notes get a "Note:" prepended.</p>
+			<p class=note>Notes get a "Note:" prepended.</p>
 
 		    </div>
 
 		    <div class=section>
-			<H3> H3 Section Title </H3>
+			<h3>h3 Section Title</h3>
 			<div class=para>
-			    <p>H3 Content</p>
+			    <p>h3 Content</p>
 			    <p> ... etc ... </p>
 			</div>
 			<div class=section>
-			    <H4> H4 Section Title </H4>
+			    <h4>4 Section Title</h4>
 			    <div class=section>
-				<H5> H5 Section Title </H5>
+				<h5>h5 Section Title</h5>
 			    </div>
 			</div>
 		    </div>
@@ -136,7 +134,7 @@ foreach $f (@files) {
 
 		<div class=list>
 		<h1>List header</h1>
-		<p> Lists are used to display single level outlines that benefit from
+		<p>Lists are used to display single level outlines that benefit from
 		    a "topic and discussion" type of display.</p>
 		<dl>
 		    <dt class="left">Topic</dt>
@@ -146,25 +144,27 @@ foreach $f (@files) {
 
 		    <dt class="left">Topic</dt>
 		    <dd>
-			<p> Lists can have sections in them as well...</p>
+			<p>Lists can have sections in them as well...</p>
 
-			<H1> Section Title </H1>
-			H1 Content
+			<h1>Section Title</h1>
+			h1 Content
 			<div class=section>
-			    <H2> Section Title </H2>
-			    H2 Content
+			    <h2>Section Title</h2>
+			    h2 Content
 			    <div class=section>
-				<H3> Section Title </H3>
-				H3 Content ... etc ...
+				<h3>Section Title</h3>
+				h3 Content ... etc ...
 			    </div>
 			</div>
 		    </dd>
 
 		</dl>
-		</div>
+		</div> <!-- closes #list -->
 
     
 <!--#include virtual="/Footer" -->
+
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, was opened by Sidebar -->
 </body>
 </html>
-
