@@ -1,18 +1,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id: template-nosidebar.html,v 1.14 2011-06-21 18:37:29 matthewharris Exp $ -->
+<!-- $Id: $ -->
 <html lang="en">
 <head>
-    <TITLE>
- 	JMRI: ... TITLE ...
-    </TITLE>
-    <META content="YOUR NAME HERE" name=Author>
+    <title>
+ 	JMRI: ... Title ...
+    </title>
+    <meta name="author" content="YOUR NAME HERE">
     <meta name="keywords" content="JMRI decoderpro dcc nmra">
 
 <!--#include virtual="/Style" -->
 </head>
 
 <body>
-    <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
+<p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
 <!--#include virtual="/Header" -->
 
@@ -41,8 +41,8 @@
 	    <!-- Page TOC --> <!-- Optional -->
 	    <!-- -------- -->
 
-	    <H1>Optional Table of Contents </H1>
-	    <p> For a complicated page - like a user guide or technical reference </p>
+	    <h1>Optional Table of Contents </h1>
+	    <p>For a complicated page - like a user guide or technical reference</p>
 	    <dl class=toc>
 		<dt><a href="#topic1">TOC entry 1</a></dt>
 		<dt><a href="#topic2">TOC entry 2</a></dt>
@@ -50,10 +50,10 @@
 		<dt><a href="#topic3">TOC entry 3</a></dt>
 		<dd>
 		    <ol>
-		    <li> a list of sub items </li>
-		    <li> a list of sub items </li>
-		    <li> a list of sub items </li>
-		    <li> a list of sub items </li>
+		    <li> a list of sub items</li>
+		    <li> a list of sub items</li>
+		    <li> a list of sub items</li>
+		    <li> a list of sub items</li>
 		    </ol>
 		</dd>
 		<dt><a href="#topic4">TOC entry 4</a></dt>
@@ -72,7 +72,7 @@
 	    <!-- Page Contents --> <!-- Required -->
 	    <!-- ------------- -->
 
-	    <H1>Page TITLE repeated here</H1>
+	    <h1>Page TITLE repeated here</h1>
 		<p class=subtitle>
 		    subtitles are used as the first paragraph under a main
 		    heading - if at all
@@ -97,7 +97,7 @@
 
 		    <div class=para>
 		    <p>Sections are used for indenting and outlines</p>
-		    <p>H2 Content</p>
+		    <p>h2 Content</p>
 		    <p>Random text Random text Random text Random text Random text</p>
 		    <p>Random text Random text Random text Random text Random text</p>
 		    <p>Random text Random text Random text Random text Random text</p>
@@ -120,15 +120,15 @@ foreach $f (@files) {
 		    </div>
 
 		    <div class=section>
-			<H3> H3 Section Title </H3>
+			<h3>h3 Section Title</h3>
 			<div class=para>
-			    <p>H3 Content</p>
+			    <p>h3 Content</p>
 			    <p> ... etc ... </p>
 			</div>
 			<div class=section>
-			    <H4> H4 Section Title </H4>
+			    <h4>h4 Section Title </h4>
 			    <div class=section>
-				<H5> H5 Section Title </H5>
+				<h5>h5 Section Title </h5>
 			    </div>
 			</div>
 		    </div>
@@ -148,14 +148,14 @@ foreach $f (@files) {
 		    <dd>
 			<p> Lists can have sections in them as well...</p>
 
-			<H1> Section Title </H1>
+			<h1> Section Title </h1>
 			H1 Content
 			<div class=section>
-			    <H2> Section Title </H2>
-			    H2 Content
+			    <h2> Section Title</h2>
+			    h2 Content
 			    <div class=section>
-				<H3> Section Title </H3>
-				H3 Content ... etc ...
+				<h3> Section Title</h3>
+				h3 Content ... etc ...
 			    </div>
 			</div>
 		    </dd>
