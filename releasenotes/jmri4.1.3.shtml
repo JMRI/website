@@ -68,6 +68,11 @@ from
 
 <h3>New warnings for this version:</h3>
 
+<p>This is the first JMRI version build from our shiny new
+<a href="https://github.com/JMRI">GitHub repository</a>.  
+For more information on this, please see our
+<a href="http://jmri.org/help/en/html/doc/Technical/getgitcode.shtml">documentation page</a>.
+
 <p>Mac OS X 10.11 El Capitan requires signed drivers for USB adapters. If you've upgraded
 from an earlier version, your drivers may not work.  That will cause JMRI to throw errors
 when it doesn't find communications links.  To fix this, go to the web site for your 
@@ -198,9 +203,9 @@ These are development files, and might not be working at any particular time.</p
                 <li>John McMasters updated the Digitrax Extended Series 6 v3.5</li>
             </ul>
 
-        <h5>ESU</h5>
+        <h5>Doehler &amp; Haas</h5>
             <ul>
-                <li></li>
+                <li><a href="https://github.com/JMRI/JMRI/pull/97">Pierre Billon improved and consolidated the D&amp;H definitions</a></li>
             </ul>
 
         <h5>MERG</h5>
