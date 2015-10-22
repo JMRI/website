@@ -68,13 +68,18 @@ from
 
 <h3>New warnings for this version:</h3>
 
+<p>This is the first JMRI version build from our shiny new
+<a href="https://github.com/JMRI">GitHub repository</a>.
+For more information on this, please see our
+<a href="http://jmri.org/help/en/html/doc/Technical/getgitcode.shtml">documentation page</a>.
+
 <p>Mac OS X 10.11 El Capitan requires signed drivers for USB adapters. If you've upgraded
 from an earlier version, your drivers may not work.  That will cause JMRI to throw errors
-when it doesn't find communications links.  To fix this, go to the web site for your 
-adapter manufacturer, find the drivers that are listed to work with Mac OS X 10.9 or later, 
+when it doesn't find communications links.  To fix this, go to the web site for your
+adapter manufacturer, find the drivers that are listed to work with Mac OS X 10.9 or later,
 download, and install, then retry JMRI again.
 
-<p>RFID readers using the Olimex protocol were incorrectly decoding tag values - this has 
+<p>RFID readers using the Olimex protocol were incorrectly decoding tag values - this has
 now been fixed. If you were using Olimex RFID readers with earlier versions, your existing
 ID Tag database will contain invalid tags. New ID Tag entries will be generated for each
 correctly read tag - this will require that any additional information be re-entered and,
@@ -87,7 +92,7 @@ optionally, old invalid entries manually deleted.</p>
   <li>The simple propertyListener object is no longer available by default. Create your own, following the examples provided in the jython folder in the JMRI distribution.</li>
   <li>jmri_defaults.py included in the JMRI distribution is no longer executed by default, but will be executed before any other Jython scipts if included in your User Files location.</li>
   <li>The default behavior of python.cachedir.skip is now true. If using a custom python.properties file, include "python.cachedir.skip=false" in that file.</li>
-  <li>Certain Python scripts are too large to be evaluated in Jython. If a script fails with the <code>java.io.IOException: Mark invalid</code> error, set "jython.exec=true" in a custom python.properties file or rewrite the script to be less than 100,000 characters per file. Note that when using "jython.exec=true" it may be desirable to run the included script jmri_bindings.py to emulate the evaluation environment used when jython.exec=false.</li>
+  <li>Certain Python scripts are too large to be evaluated in Jython. If a script fails with the <code>java.io.IOException: Mark invalid</code> error, set "jython.exec=true" in a custom python.properties file or rewrite the script to be less than 100,000 characters per file. Note that when using "jython.exec=true" it may be desirable to run the included script jmri_bindings.py as a startup action to emulate the evaluation environment used when jython.exec=false.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -167,7 +172,7 @@ These are development files, and might not be working at any particular time.</p
             <ul>
                 <li>A bug that caused connections using the MERG Concentrator to not work has been fixed. (Matt Harris)</li>
                 <li>A bug that meant RFID tags were misread when using Olimex RFID readers has been fixed. This will mean that
-                    details of any existing tags read using an Olimex reader are now invalid and will need to be re-identified 
+                    details of any existing tags read using an Olimex reader are now invalid and will need to be re-identified
                     and updated in the ID Tag list. (Matt Harris)</li>
                 <li>Minor corrections were made in the Core-ID, EM18 and SeeedStudio RFID reader interfaces to correctly reject
                     any tag reads with invalid checksums - this was not always happening resulting in the potential of incorrect
@@ -198,9 +203,9 @@ These are development files, and might not be working at any particular time.</p
                 <li>John McMasters updated the Digitrax Extended Series 6 v3.5</li>
             </ul>
 
-        <h5>ESU</h5>
+        <h5>Doehler &amp; Haas</h5>
             <ul>
-                <li></li>
+                <li><a href="https://github.com/JMRI/JMRI/pull/97">Pierre Billon improved and consolidated the D&amp;H definitions</a></li>
             </ul>
 
         <h5>MERG</h5>
@@ -289,11 +294,12 @@ These are development files, and might not be working at any particular time.</p
               100,000 characters per file. Note that when using
               "jython.exec=true" it may be desirable to run the included script
               jmri_bindings.py to emulate the evaluation environment used when
-              jython.exec=false.</li>
+              jython.exec=false. (Randall Wood)</li>
             <li>The user-defined scripts folder and the jython folder in the
               JMRI installation are automatically appended to the python.path so
               Jython scripts can directly import other jython scripts in those
-              locations.</li>
+              locations. (Randall Wood)</li>
+            <li>Support for AppleScript has been added. On platforms other than OS X, this may send the message <code>ScriptEngineManager providers.next(): javax.script.ScriptEngineFactory: Provider apple.applescript.AppleScriptEngineFactory not found</code> to the console, but this message can be safely ignored. (Randall Wood)</li>
         </ul>
 
     <h4>Miscellaneous</h4>
