@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Main_Roster.shtml 18150 2011-08-10 13:07:19Z dat7719 $ -->
+<!-- $Id: -->
 <title>Roster Menu</title>
 
 <!-- Style -->
@@ -62,7 +62,7 @@
 <blockquote>
   <p>Open print preview window and displays your roster but nothing will be sent to the printer. </p>
 </blockquote>
-<p><strong><a href="Main_RosterGroup.shtml">Roster Groups</a></strong><img src="images/arrow.gif" width="20" height="9" alt="arrow"></p>
+<p><strong><a id="rostergroups" href="Main_RosterGroup.shtml">Roster Groups</a></strong><img src="images/arrow.gif" width="20" height="9" alt="arrow"></p>
 
   <p>Roster Grouping allows you to allocate Roster Entries into different groups.  
   If for example you run multiple layouts with different locomotives, 
