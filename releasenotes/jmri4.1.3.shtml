@@ -6,8 +6,8 @@
  JMRI: Release Notes for 4.1.3
 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 4.1.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
@@ -28,9 +28,9 @@
       Release Notes for JMRI 4.1.3 release
       </h2>
 
-	<p>Date: mmm dd, 2015</p>
-	<p>From: (pumpkin)</p>
-	<p>Subject: Test version 4.1.3 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: mmm dd, 2015</p>
+    <p>From: (pumpkin)</p>
+    <p>Subject: Test version 4.1.3 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -59,7 +59,7 @@ None at release time.
 
 <!--
 If any of those effect you, please either wait for
-<A href="jmri4.1.4.shtml">JMRI 4.1.4</a>, due out shortly after this one,
+<a href="jmri4.1.4.shtml">JMRI 4.1.4</a>, due out shortly after this one,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -67,6 +67,23 @@ from
  -->
 
 <h3>New warnings for this version:</h3>
+
+<p>This is the first JMRI version build from our shiny new
+<a href="https://github.com/JMRI">GitHub repository</a>.  
+For more information on this, please see our
+<a href="http://jmri.org/help/en/html/doc/Technical/getgitcode.shtml">documentation page</a>.
+
+<p>Mac OS X 10.11 El Capitan requires signed drivers for USB adapters. If you've upgraded
+from an earlier version, your drivers may not work.  That will cause JMRI to throw errors
+when it doesn't find communications links.  To fix this, go to the web site for your 
+adapter manufacturer, find the drivers that are listed to work with Mac OS X 10.9 or later, 
+download, and install, then retry JMRI again.
+
+<p>RFID readers using the Olimex protocol were incorrectly decoding tag values - this has 
+now been fixed. If you were using Olimex RFID readers with earlier versions, your existing
+ID Tag database will contain invalid tags. New ID Tag entries will be generated for each
+correctly read tag - this will require that any additional information be re-entered and,
+optionally, old invalid entries manually deleted.</p>
 
 <!-- retain through 4.2 -->
 <p>Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
@@ -88,29 +105,29 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
     validate, but can still be used for the first couple of test releases in this series.
     Please ask on the
     <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">jmriusers list</a>
-    for help converting them, or just drop them and use the current definitions.
+    for help converting them, or just drop them and use the current definitions.</p>
 
 <p>The OpenLCB 0.6.4 library in this version has a bug in its alias
     calculations which prevents JMRI from communicating occasionally.
     A patch has been submitted to the OpenLCB group.
     In the meantime, the workaround is to restart JMRI and/or the node
-    and try again; that might allocate different alias values.
+    and try again; that might allocate different alias values.</p>
 
 
 <h3>Download links:</h3>
 
 <!--
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.dmg/download</a><br/>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.dmg/download</a><br/>
     sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.exe/download</a><br/>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.exe/download</a><br/>
     sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download</a><br/>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download</a><br/>
     sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
 -->
 <!--
@@ -153,7 +170,14 @@ These are development files, and might not be working at any particular time.</p
 
         <h5>RFID</h5>
             <ul>
-                <li></li>
+                <li>A bug that caused connections using the MERG Concentrator to not work has been fixed. (Matt Harris)</li>
+                <li>A bug that meant RFID tags were misread when using Olimex RFID readers has been fixed. This will mean that
+                    details of any existing tags read using an Olimex reader are now invalid and will need to be re-identified 
+                    and updated in the ID Tag list. (Matt Harris)</li>
+                <li>Minor corrections were made in the Core-ID, EM18 and SeeedStudio RFID reader interfaces to correctly reject
+                    any tag reads with invalid checksums - this was not always happening resulting in the potential of incorrect
+                    tag reads being accepted. (Matt Harris)</li>
+                <li>Added test cases for all implemented RFID protocols. (Matt Harris)</li>
             </ul>
 
         <h5>Uhlenbrock Intellibox</h5>
@@ -167,10 +191,10 @@ These are development files, and might not be working at any particular time.</p
             </ul>
 
     <h4>Signals</h4>
-    	<h5>Signal Mast Editor</h5>
-    		<ul>
-    			<li></li>
-    		</ul>
+        <h5>Signal Mast Editor</h5>
+            <ul>
+                <li></li>
+            </ul>
 
     <h4>New / Updated decoder definitions</h4>
 
@@ -179,9 +203,9 @@ These are development files, and might not be working at any particular time.</p
                 <li>John McMasters updated the Digitrax Extended Series 6 v3.5</li>
             </ul>
 
-        <h5>ESU</h5>
+        <h5>Doehler &amp; Haas</h5>
             <ul>
-                <li></li>
+                <li><a href="https://github.com/JMRI/JMRI/pull/97">Pierre Billon improved and consolidated the D&amp;H definitions</a></li>
             </ul>
 
         <h5>MERG</h5>
@@ -211,20 +235,26 @@ These are development files, and might not be working at any particular time.</p
 
         <h5>TCS</h5>
             <ul>
-                <li></li>
+                <li>Peter Ulvestad corrected the tooltips in some of the TCS decoder definitions</li>
             </ul>
 
         <h5>Miscellaneous</h5>
-            <p></p>
             <ul>
                 <li></li>
             </ul>
 
 
    <h4>Operations</h4>
-        <ul>
-            <li>The "Edit Car" window now shows the blocking order for kernels.</li>
-        </ul>
+   <ul>
+    <li>The "Edit Car" window now shows the blocking order for kernels.</li>
+    <li>Changed how the program deals with alternate tracks and cars with custom loads.
+     Previously if the program found an alternate track assigned to a spur, and all spurs were full,
+     it would hold the car at its current location until one of the spurs had space for the car. Now
+     there's a new option for a spur that is part of the load option window for a spur. A checkbox
+     labeled "Hold cars with custom loads when spurs are full" now performs the same function as the
+     alternate track did with regards to holding cars. For more information, see the help and "Load
+     Options" for a spur.</li>
+   </ul>
 
    <h4>Roster</h4>
         <ul>
@@ -233,13 +263,12 @@ These are development files, and might not be working at any particular time.</p
 
    <h4>OBlocks</h4>
         <ul>
-            <li></li>
+            <li>Allow international locales to correctly specify lengths in OBlock tables. (Matt Harris)</li>
         </ul>
 
     <h4>Preferences</h4>
-        <p></p>
         <ul>
-            <li></li>
+            <li>Copying a Configuration Profile no longer throws an error. (Randall Wood)</li>
         </ul>
 
     <h4>logix</h4>
@@ -274,7 +303,8 @@ These are development files, and might not be working at any particular time.</p
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>Paul Bender updated the consist tool to sort the consist list numerically.</li>
+            <li>Paul Bender added restore button to the consist tool that requests the command station re-create the consist.
         </ul>
 
    <!--#include virtual="/Footer" -->

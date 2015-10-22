@@ -100,6 +100,14 @@
             they're already present in Mac OS X.  In some cases you will need a driver, though, 
             so check the manufacturer's web site to make sure.</p>
           
+            <p><em>Note: Mac OS X 10.11 El Capitan generally requires
+            signed drivers.  If you installed drivers for a previous version,
+            particularly drivers that don't say they support Mac OS X 10.10 Yosemite,
+            those older drivers may not work with 10.11 El Capitan.  Go to the 
+            web site for your USB adapter, download the newest driver and 
+            install it before you update to El Capitan, or right after updating before
+            trying to run JMRI.</em>
+            
             <p>
             We test using a Keyspan PDA Adapter; those drivers are available at
             <a href="http://www.keyspan.com/downloads/">
@@ -125,26 +133,6 @@
             PR3</a> instead.  Please see our page on <A
              HREF="/help/en/html/hardware/USBtoSerial.shtml">USB
             adapters</a> for more information.</p>
-
-        <!-- remove this step when 2.12 comes out - then the "most
-        recent production release" will not have needed separate RXTX
-        libraries -->
-        
-        <li>Remove any old serial communications libraries</li>
-
-        <p>If you are installing JMRI for the first time, please skip
-        to the next numbered step.</p>
-
-        <p>Versions of JMRI before 2.9.2 required that you install
-         communications libraries on your computer.  
-         If you had JMRI 2.9.2 or earlier installed and are now
-         updating to a more recent version for the first time, 
-         you need to remove the communications library files that were 
-         installed earlier.  
-         You only need to do this once.
-         To do this, follow the
-         instructions on <a href="MacOSXrmLibs.shtml">this separate page</a>,
-         then return here to complete your JMRI installation.
 
        <li>Get the JMRI software...</li>
 
