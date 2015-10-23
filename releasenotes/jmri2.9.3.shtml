@@ -6,8 +6,8 @@
  JMRI: Release Notes for 2.9.3
  
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.9.3 decoderpro panelpro locotools loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
@@ -51,7 +51,7 @@ It contains
 many new features, including:
 
 <ul>
-<li>New RXTX communications libraries makes installation easier
+<li>New RXTX communications libraries make installation easier
 <li>Settable preferences for many warning and info dialogs
 <li>DecoderPro manual updated
 <li>Lionel TMCC updated
@@ -64,7 +64,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -90,7 +90,7 @@ is installed, and where it was placed.  This will be fixed in a later version.
 
 <p>There's a temporary fix for the 64-bit Windows 7 compatibility
 issue. See <a href="http://groups.yahoo.com/group/jmriusers/files/Windows%20RXTX%2032-bit">Windows
-RXTX 32-bit</a> in the Files area for JMRI users.
+RXTX 32-bit</a> in the Files area for JMRI users (file no longer accessible, see also <a href="https://www.henrypoon.com/blog/2010/12/25/installing-rxtx-for-serial-communication-with-java/">RXTX on Java</a>; third party website).
 <p>
 This version does work fine with Mac OS X 10.5 (Leopard) and 10.6 (Snow Leopard), but 
 some users of earlier versions have reported problems.  If you're using Mac OS X 10.4, 
@@ -189,7 +189,7 @@ David Duchamp fixed two bugs in the Maple interface
 Kevin Dickerson added a page title to the roster print out that will either be
 "DecoderPro Roster All Entries" or "DecoderPro Roster Group 'GroupName' Entries",
 so you can see if you're printing the entire roster or just one of the 
-<a href="http://jmri.org/help/en/manual/Main_Roster.shtml#RosterGrouping">roster groups</a>.
+<a href="http://jmri.org/manual/JMRI_2-12_Manual/Main_Roster.shtml#rostergroups">roster groups</a>.
 
 <p>
 Kevin Dickerson fixes the order in which the MERG SD2 signal head sequences.
@@ -226,11 +226,11 @@ Matt Harris fixed a spurious warning about "Insets" when running under Gnome-bas
 Kevin Dickerson added a set of 
 <a href="http://jmri.org/xml/signals/BR-2003/aspects.xml">British Rail signal definitions</a>
 and 
-<a href="http://jmri.org/resources/icons/BritishRailSignals">associated images</a>.
+<a href="http://jmri.org/resources/icons/BritishRailSignals/">associated images</a>.
 
 <p>
 Jason M'Sadoques provided an update to 
-<a href="http://jmri.org/help/en/package/jmri/jmrit/withrottle/EngineDriverAndroidThrottle.shtml">use an Android phone as a throttle</a>.
+use an Android phone as a throttle.
 
 <p>
 Dan Boudreau added a new build option for operations: aggressive.  

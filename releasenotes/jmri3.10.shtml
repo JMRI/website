@@ -6,12 +6,11 @@
  JMRI: Release Notes for 3.10
  
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.10 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -46,7 +45,7 @@ We're therefore making that version, "Production version 3.10" available for dow
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a HREF="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -63,7 +62,7 @@ This version has been tested on Java 1.8, so you can do the Java update now if y
 All users and developers who are relying on direct access to the XmlIO API are
 recommended to begin using the JSON API. inControl web throttle users are recommended to
 begin using webThrottle instead, or to plan on investing in devices that can support
-webThrottle, <a href="http://withrottle.com">WiThrottle</a> for iOS, or
+webThrottle, <a href="http://www.withrottle.com">WiThrottle</a> for iOS, or
 <a href="http://enginedriver.rrclubs.org">Engine Driver</a> for Android.</p>
 
 <!-- keep this warning in place through the 3.11/3.12 development cycle -->
@@ -72,8 +71,6 @@ after JMRI 3.12 (July 2015). This doesn't affect JMRI users, but if you have you
 code that uses JMRI, please 
 <a href="http://sourceforge.net/p/jmri/code/HEAD/tree/trunk/jmri/java/src/jmri/InstanceManager.java">take a look at the code</a>
 and make any necessary changes.
-
-
 
 <h3>Known problems with this release</h3>
 <p>This version of JMRI can't program CVs greater than 127 using the MRC command stations.
@@ -85,16 +82,14 @@ not need to up date to 3.10.1.</p>
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
+<p>Mac OS X: <a
 	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.dmg/download</a></p>
 
-<p>Windows: <A
+<p>Windows: <a
 	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.exe/download</a></p>
 
-<p>Linux: <A
+<p>Linux: <a
 	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10-r27895.tgz/download</a></p>
- 
-
 
 <h3>Changes since production release 3.8</h3>
 
@@ -142,7 +137,7 @@ not need to up date to 3.10.1.</p>
 <!-- from 3.9.1 note -->
     <p>Alain Le Marchand added N12K0a and N12K0b</p>
 <!-- from 3.9.2 note -->
-    <p>Fixed Kuehn N025/T125/T145 defintion (CV55) and refactored definition file and panes (Alain Le Marchand)</p>
+    <p>Fixed Kuehn N025/T125/T145 definition (CV55) and refactored definition file and panes (Alain Le Marchand)</p>
 
 <h5>SoundTraxx</h5>
 <!-- from 3.9.1 note -->
@@ -196,7 +191,7 @@ not need to up date to 3.10.1.</p>
         <li>A problem in the QDecoder ZBasic definition was fixed.
         <li>Decoder definitions can now be written for accessory decoders that use
             accessory ops mode programming.  
-            See the <a href="http://xml/decoders/0NMRA_accessory.xml">xml/decoders/0NMRA_accessory.xml</a> file
+            See the <a href="../xml/decoders/0NMRA_accessory.xml">xml/decoders/0NMRA_accessory.xml</a> file
             for an example.  This is new support which needs more work and testing. If you
             have one of these decoders and want to help, please contact us.
         <li>Peter Ulvestad fixed some spelling errors in BLI Blueline decoder definitions.
@@ -219,7 +214,7 @@ not need to up date to 3.10.1.</p>
     signal systems.
     <p>Egbert Broerse improved the signaling help.
 <!-- from 3.9.3 note -->
-    <p>The AAR-1946 and B&O-1957 signal system definitions had some internal problems fixed.
+    <p>The AAR-1946 and B&amp;O-1957 signal system definitions had some internal problems fixed.
     This shouldn't cause any problems for people using them, but we can't be 100% certain.
     If you're using these, please check to make sure your signals are still working OK, 
     and let us know if they're not.
@@ -265,7 +260,7 @@ not need to up date to 3.10.1.</p>
 
 <h5>MRC/GaugeMaster</h5>
 <!-- from 3.9.1 note -->
-    Initial Support has been included for the MRC/Gaugemaster Prodigy Advanced system (Ken Cameron & Kevin Dickerson)
+    Initial Support has been included for the MRC/Gaugemaster Prodigy Advanced system (Ken Cameron &amp; Kevin Dickerson)
     Supported features include:
       <ul>
         <li>Programming</li>
@@ -309,10 +304,6 @@ not need to up date to 3.10.1.</p>
             <li>Track Power Control</li>
             <li>Throttle Control</li>
         </ul>
-
-
-
-
 
 <h4>Operations</h4>
 
@@ -397,15 +388,12 @@ not need to up date to 3.10.1.</p>
      list". Now manifests and switch lists text is completely under the control of a user.</li>
    </ul>
 
-
-
 <h4>Layout Editor</h4>
 <!-- from 3.9.1 note -->
     <p>On curved track segments the right click popup area is now on the track itself and the chord line has now been removed. (kd)
     <p>On curved track segments it is now possible to hide the construction lines in edit mode. (kd)
     <p>Removal of a Turnout, Slip, Level Crossing or Turntable, no longer removes the connected track segements. (kd)
     <p>It is now possible to join track segments to other items on the panel by dragging the anchor point on top of other anchor points. (kd)
-
 
 <h4>Control Panel Editor</h4>
 <!-- from 3.9.4 note -->
@@ -434,7 +422,7 @@ not need to up date to 3.10.1.</p>
     See the 
     <a href="http://jmri.org/help/en/html/tools/scripting/FAQ.shtml">scripting FAQ</a> for more info.
     <p>Fixed some problems in C/MRI-specific sample scripts.
-    <p>Brett Scott provided updated versions of the <a href="http://jmri.org/jython/dccspecialties">DCC Specialities scripts</a>
+    <p>Brett Scott provided updated versions of the <a href="http://jmri.org/jython/dccspecialties/">DCC Specialities scripts</a>
     for the Wabbit et al.
 <!-- from 3.9.3 note -->
    <ul>
@@ -460,7 +448,7 @@ not need to up date to 3.10.1.</p>
     <ul>
     <li>The Python interpreter is now initialized on demand, when first used. If the former
     default behavior of initializing the Python interpreter during application launch is
-    required, include -Dorg.jmri.python.preload=true in the JMRI_OPTIONS environment
+    required, include <code>-Dorg.jmri.python.preload=true</code> in the JMRI_OPTIONS environment
     variable.</li>
     <li>It is now possible to influence the initialization of the Python interpreter by
     setting Jython and Python properties in the file "python.properties" in a Configuration
@@ -538,7 +526,7 @@ not need to up date to 3.10.1.</p>
     <li>Added the possibility to include both the currently loaded panel file and
         relevant files from active profile when uploading debugging info (Matthew Harris)</li>
     <li>Added ability to export profile as a ZIP archive (Randall Wood)</li>
-    <li>Suzie Tall added a <a href="http://jmri.org/xml/signals/B&O-2009">2009 B&amp;O signal system</a></li>
+    <li>Suzie Tall added a <a href="http://jmri.org/xml/signals/B&O-2009/">2009 B&amp;O signal system</a></li>
     </ul>
 <!-- from 3.9.5 note -->
     <ul>
@@ -572,18 +560,14 @@ not need to up date to 3.10.1.</p>
     <ul>
         <li>Added new access methods to DefaultSignalAppearanceMap for CATS use.
         <li>The label on the F28 function is now properly saved and restored. (r27807)
-        <li>Fixed issue where Jython scripts path preference could be saved incorrectly or where setting Jython scripts path preference could cause user files path prefreence to be lost. (r27822-27823, r27825-27826)</li>
+        <li>Fixed issue where Jython scripts path preference could be saved incorrectly or where setting Jython scripts path preference could cause user files path preference to be lost. (r27822-27823, r27825-27826)</li>
     </ul>
-
-
 
 <h4>For developers</h4>
 
 <!-- from 3.9.3 note -->
     <p>Removed the activation.jar library, along with various references to loading it.
     This is no longer needed since JMRI now requires Java 1.6 or later.</p>
-
-
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->

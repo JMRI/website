@@ -6,11 +6,11 @@
  JMRI: Release Notes for 3.11.2
  
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.11.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -51,7 +51,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a HREF="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -68,13 +68,13 @@ see our
     
 <h3>Older warnings</h3>
 
-<P>This release, and all later releases in this cycle, require Java 1.8 or higher.
+<p>This release, and all later releases in this cycle, require Java 1.8 or higher.
 To use this or any later JMRI releases, you'll have to 
-<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
+<a href="https://java.com/en/download/">update the Java on your computer</a> to Java 1.8 or higher.
 </p>
 
-<P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
-calling the parts of JMRI that interchange XML objects.</P>
+<p>This release uses JDOM 2.0.5, which requires some code changes if you are directly
+calling the parts of JMRI that interchange XML objects.</p>
 
 <p>There are now separate settings for the default Service Mode Programmer and 
 for the default Ops Mode Programmer.  If you're using two or more system connections,
@@ -111,13 +111,13 @@ Driver.</p>
 
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
+<p>Mac OS X: <a
 	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.2-r28415.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.2-r28415.dmg/download</a></p>
 
-<p>Windows: <A
+<p>Windows: <a
 	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.2-r28415.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.2-r28415.exe/download</a></p>
 
-<p>Linux: <A
+<p>Linux: <a
 	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.2-r28415.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.2-r28415.tgz/download</a></p>
 
 

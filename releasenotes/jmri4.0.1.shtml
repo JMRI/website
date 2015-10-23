@@ -6,12 +6,11 @@
  JMRI: Release Notes for 4.0.1
 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 4.0.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -45,13 +44,13 @@ We're therefore making that version, "Production version 4.0.1" available for do
 
 <p><b>
 JMRI is now only available under the
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a HREF="/COPYING">GNU General Public License</a>. For more information, please
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
 <p>This JMRI version requires Java 1.8.
 To use this or any later JMRI test or production releases, you'll have to
-<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or later.
+<a href="https://java.com/en/download/">update the Java on your computer</a> to Java 1.8 or later.
 
 
 <h3>Warnings:</h3>
@@ -68,7 +67,7 @@ To use this or any later JMRI test or production releases, you'll have to
 	See below in Miscellaneous section for usage of "MakeOriginalDecoderPro.py" script.
 	More information on "<a href="../help/en/html/doc/Technical/StartUpScripts.shtml#old_DecoderPro">Retrieving "legacy" DecoderPro from versions prior to 4.0.x</a></p>
 
-    <P>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
+    <p>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
     Failure to remove these can result in some portions of
     JMRI (notably the web server) failing to function correctly.
     If you are updating an existing JMRI installation to this version on
@@ -83,7 +82,7 @@ To use this or any later JMRI test or production releases, you'll have to
     present.
     </p>
 
-    <P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
+    <p>This release uses JDOM 2.0.5, which requires some code changes if you are directly
     calling the parts of JMRI that interchange XML objects.</P>
 
     <p>There are now separate settings for the default Service Mode Programmer and
@@ -135,15 +134,15 @@ To use this or any later JMRI test or production releases, you'll have to
     <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
 
    <p>Please use these links for downloading:</p>
-   <p>Mac OS X: <A
+   <p>Mac OS X: <a
         HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.dmg/download</a></p>
     <p>sha256: c4b1c9015789226192c40953a6f61cdce51919b54e2c099aeb14277aec01fd6c</p>
 
-    <p>Windows: <A
+    <p>Windows: <a
         HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.exe/download</a></p>
     <p>sha256: ae902fa8acee29141440fcd09cd08ff627c6f3a77ac1b1f7bea7b876fc2ddb5c</p>
 
-    <p>Linux: <A
+    <p>Linux: <a
         HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.tgz/download</a></p>
     <p>sha256: bffbe93d6feb0873642fd4ca49a12ab513674610ecc842f9f5d17b7a0d6a975f</p>
 
@@ -201,7 +200,7 @@ To use this or any later JMRI test or production releases, you'll have to
             <li>Partial handling of decoder functions beyond F8 from throttles for Intellibox-I with SW version 2.x (changes from IB-I keyboard not handled by throttle).</li>
             <li>Improvements in message transfer from and to the LocoNet connection</li>
             </ul>
-            <p>As part of all this, the Fleishmann connection type has been merged into
+            <p>As part of all this, the Fleischmann connection type has been merged into
                 the Uhlenbrock type.
                 If you are making a direct connection to your Intellibox unit via
                 serial or USB, you will have to reselect your preferences.
@@ -267,7 +266,7 @@ To use this or any later JMRI test or production releases, you'll have to
                 The single output signal head implementation was generating a turnout change command every
                 time JMRI started up (at panel.xml load time).</p>
         <p>Oscar Moutinho updated the DB-HV-1969 signals definition to improve speed control and icons</p>
-        <p>The signal speed defintion has been updated for consistent operation. Also, a release
+        <p>The signal speed definition has been updated for consistent operation. Also, a release
             test has been added to keep it that way.</p>
         <p>Randall Wood fixed a NullPointerException error sometimes seen when using signal definitions from a user's own files.</p>
 		<p>John Lang provided an update to NYCS-1956 to correctly handle held signals. (Patch 1068)</p>
@@ -312,7 +311,7 @@ To use this or any later JMRI test or production releases, you'll have to
                  <li>Added: SUSI pane, moved relevant options there (All decoders)</li>
                  <li>Added: Start/Brake/Shunt pane, moved relevant options there (All decoders)</li>
                  <li>Change: Adv. mapping now in standard mapping table (All Decoders)</li>
-                 <li>Change: Railcom pane (grid + qualifyer) (All Decoders)</li>
+                 <li>Change: Railcom pane (grid + qualifier) (All Decoders)</li>
                  <li>Change: Adapted Trix 66840 def to match above changes to the core D&amp;H XMLs.</li>
                  <li>Fixed: Consistent Reset function / translation (All Decoders)</li>
                  <li>Fixed: Removed non applicable Motorola options (FH05A,DH05A,DH05B,DH10A,DH10B,DHP160,DHP250,DHP260)</li>
@@ -422,22 +421,22 @@ To use this or any later JMRI test or production releases, you'll have to
    New Features:
    <ul>
 
-    <LI>Improvements to the "Timetable" window to allow the building, printing, and termination
+    <li>Improvements to the "Timetable" window to allow the building, printing, and termination
      of selected trains. Also allows for the updating or printing of switch lists. This should help
-     simplify things when building and terminating multiple sets of trains for a session.</LI>
-    <LI>You can now print out all location and track comments using the print tool under
-     "Locations".</LI>
-    <LI>New switch list option to print out a new sheet of paper each time a train visits a
-     location.</LI>
-    <LI>New feature for schedules. You can now select a random value for any schedule item. For
+     simplify things when building and terminating multiple sets of trains for a session.</li>
+    <li>You can now print out all location and track comments using the print tool under
+     "Locations".</li>
+    <li>New switch list option to print out a new sheet of paper each time a train visits a
+     location.</li>
+    <li>New feature for schedules. You can now select a random value for any schedule item. For
      example if you select 15 as the random value, you have a 15% chance that this item will be
      selected. Great feature for RIP tracks where you would like to randomly send a car to
-     maintenance.</LI>
+     maintenance.</li>
 
-    <LI>Improved the "Two Column by Track" manifest and switch list format to automatically not
+    <li>Improved the "Two Column by Track" manifest and switch list format to automatically not
      show the car's track name. Allows the conductor and yardmaster windows to now show the track
-     name when using the "Two Column by Track" format.</LI>
-    <LI>New feature when departing staging, you can now control the maximum number of cars that
+     name when using the "Two Column by Track" format.</li>
+    <li>New feature when departing staging, you can now control the maximum number of cars that
      can depart out of staging. By adjusting the number of cars requested in the train's route
      departure staging location, you can have the program select a staging track that has a number
      of cars equal to or less than requested. Note that if you set the requested number of cars out
@@ -446,7 +445,7 @@ To use this or any later JMRI test or production releases, you'll have to
      enter in the train's route departure staging location a number of requested cars greater than
      the numbers of cars that can fit on the departure staging track. For example, if your staging
      track can fit 12 cars maximum, a request of 12 cars or more should fix the build failure if
-     there was one.</LI>
+     there was one.</li>
 
     <li>New feature, you can now have the program assign a locomotive to a train based on the
      train's tonnage, route grades, and engine horsepower. See the operation's help "Optional Train
@@ -495,11 +494,11 @@ To use this or any later JMRI test or production releases, you'll have to
     <li>When a car is placed at a spur, without a schedule, but with a custom load of type
      "Empty", the program now changes the car's load name to the default load name "L" rather than
      "E".</li>
-    <LI>The file path name for manifest and switch list logos are now stored as a relative path
-     name.</LI>
-    <LI>Fixed a problem where manifests and switch lists wouldn't preview or print if there
+    <li>The file path name for manifest and switch list logos are now stored as a relative path
+     name.</li>
+    <li>Fixed a problem where manifests and switch lists wouldn't preview or print if there
      wasn't a logo specified. Problem was introduced in versions 3.11.1 and 3.11.2 and fixed in
-     3.11.3</LI>
+     3.11.3</li>
     <li>Improved how the program deals with cars on a FIFO or LIFO track. Previously, cars on a
      FIFO or LIFO track were stuck behind cars that couldn't move. Program will now bypass a stuck
      car and process the next cars in the order defined by FIFO or LIFO. A car could be "temporary"
@@ -605,7 +604,7 @@ To use this or any later JMRI test or production releases, you'll have to
             <li>Lisby made an enhancement to the train tracking as implemented in Block.java:
                 When the existing code has not been able to track the train, i.e. the train ID in terms of block value will be lost.
                 The enhancement stores the candidate Blocks that a train may have arrived from when a block becomes occupied
-                and then when a block becomes unoccupied, it informs its neighbours who can then choose to use their candidate list to
+                and then when a block becomes unoccupied, it informs its neighbors who can then choose to use their candidate list to
                 determine where their train came from.</li>
 
 

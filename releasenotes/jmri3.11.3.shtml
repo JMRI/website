@@ -6,11 +6,11 @@
  JMRI: Release Notes for 3.11.3
  
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.11.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -52,7 +52,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a HREF="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -75,7 +75,7 @@ from
 There may be instances when pressing save incorrectly fails to prompt to restart JMRI or
 prompts to restart JMRI when it should not.</p>
 
-<P>This JMRI version removes some files that were present in earlier versions.
+<p>This JMRI version removes some files that were present in earlier versions.
 Failure to remove these can result in some portions of
 JMRI (notably the web server) failing to function correctly.
 If you are updating an existing JMRI installation to this version 
@@ -92,12 +92,12 @@ present.
 
 <h3>Older warnings</h3>
 
-<P>This release, and all later releases in this cycle, require Java 1.8 or higher.
+<p>This release, and all later releases in this cycle, require Java 1.8 or higher.
 To use this or any later JMRI releases, you'll have to 
-<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
+<a href="https://java.com/en/download/">update the Java on your computer</a> to Java 1.8 or higher.
 </p>
 
-<P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
+<p>This release uses JDOM 2.0.5, which requires some code changes if you are directly
 calling the parts of JMRI that interchange XML objects.</P>
 
 <p>There are now separate settings for the default Service Mode Programmer and 
@@ -130,19 +130,16 @@ users are recommended to begin using webThrottle instead, or invest in devices
 that can support webThrottle, the iOS WiThrottle, or the Android Engine
 Driver.</p>
 
-
-
 <h3>Download links:</h3>
 
-
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
+<p>Mac OS X: <a
 	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.dmg/download</a></p>
 
-<p>Windows: <A
+<p>Windows: <a
 	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.exe/download</a></p>
 
-<p>Linux: <A
+<p>Linux: <a
 	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.tgz/download</a></p>
 
 <!--
@@ -200,7 +197,7 @@ These are development files, and might not be working at any particular time.</p
 <h4>New / Updated decoder definitions</h4>
 
     <p>Dave Heap updated the
-        <a href="/help/en/html/apps/DecoderPro/FnMapping.shtml" target="_blank">Function Mapping page</a>
+        <a href="../help/en/html/apps/DecoderPro/FnMapping.shtml" target="_blank">Function Mapping page</a>
         to emphasise that &quot;label&quot; and &quot;tooltip&quot; attributes <strong><em>should not</em></strong>
         be added to a &quot;fnmapping&quot; element (they are ignored).</p>
 
@@ -239,16 +236,16 @@ These are development files, and might not be working at any particular time.</p
 
    <p>Dan Boudreau made the following changes to operations:</p>
    <ul>
-    <LI>New feature for schedules. You can now select a random value for any schedule item. For
+    <li>New feature for schedules. You can now select a random value for any schedule item. For
      example if you select 15 as the random value, you have a 15% chance that this item will be
      selected. Great feature for RIP tracks where you would like to randomly send a car to
-     maintenance.</LI>
-    <LI>Fixed a problem where manifests and switch lists wouldn't preview or print if there
-     wasn't a logo specified. Problem was introduced in versions 3.11.1 and 3.11.2</LI>
-    <LI>Improved the "Two Column by Track" manifest and switch list format to automatically not
+     maintenance.</li>
+    <li>Fixed a problem where manifests and switch lists wouldn't preview or print if there
+     wasn't a logo specified. Problem was introduced in versions 3.11.1 and 3.11.2</li>
+    <li>Improved the "Two Column by Track" manifest and switch list format to automatically not
      show the car's track name. Allows the conductor and yardmaster windows to now show the track
-     name when using the "Two Column by Track" format.</LI>
-    <LI>New feature when departing staging, you can now control the maximum number of cars that
+     name when using the "Two Column by Track" format.</li>
+    <li>New feature when departing staging, you can now control the maximum number of cars that
      can depart out of staging. By adjusting the number of cars requested in the train's route
      departure staging location, you can have the program select a staging track that has a number
      of cars equal to or less than requested. Note that if you set the requested number of cars out
@@ -257,11 +254,11 @@ These are development files, and might not be working at any particular time.</p
      enter in the train's route departure staging location a number of requested cars greater than
      the numbers of cars that can fit on the departure staging track. For example, if your staging
      track can fit 12 cars maximum, a request of 12 cars or more should fix the build failure if
-     there was one.</LI>
+     there was one.</li>
    </ul>
 
    <h4>Blocks</h4>
-    <p>Fixed a problem where the Block table would throw errors at various times
+    <p>Fixed a problem where the Block Table would throw errors at various times
         when JMRI was in a locale where decimal numbers are written 0,00 (as opposed to 0.00).
         
 <h4>Preferences</h4>

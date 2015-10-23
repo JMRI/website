@@ -72,8 +72,6 @@ reading old files, etc, please post a note on the
 and somebody will help you.
 
 <p>
-
-<p>
 The LocoTools application is no longer supported, and is being removed.
 Some parts of it are still present, but you should use e.g. PanelPro or
 DecoderPro instead.  They can do everything that LocoTools can.
@@ -123,7 +121,7 @@ removed before the next production release.
 <p>
 The JInput USB library was updated in  
 <a href="jmri2.9.1.shtml">JMRI 2.9.1</a>, and again in
-<a href="jmri2.9.1.shtml">JMRI 2.9.5</a>, which (should) 
+<a href="jmri2.9.5.shtml">JMRI 2.9.5</a>, which (should) 
 have fixed problems on
 Windows Vista, Intel Macs and some Linux machines.  We don't have a way to check this with all possible
 input devices, so please check to make sure that your USB-attached devices still work.
@@ -420,7 +418,7 @@ Pete Cressman fixed a problem with integer comparisons in Conditionals.
 Dan Boudreau and Pete Cressman fixed a problem with the order of saved PanelEditor items.
 
 <p>
-Pete Cressman made it so Conditonal action items can be specified from a memory value 
+Pete Cressman made it so Conditional action items can be specified from a memory value 
 using the syntax "@IMemory" for the device name - i.e. the name of the internal memory 
 variable preceded by the "@" character.
 Note the particular value being referenced is not verified by Logix.  
