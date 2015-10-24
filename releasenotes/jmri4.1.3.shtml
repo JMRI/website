@@ -130,43 +130,22 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download</a><br/>
     sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
 -->
-<!--
+
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.1.1/ws/jmri/dist/release/">CI project page</a>.
- -->
+<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.1.4/ws/jmri/dist/release/">CI project page</a>.
 
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+ -->
 
 <h3>Changes since test release 4.1.2:</h3>
 
     <h4>Hardware Support</h4>
 
         <p></p>
-
-        <h5>C/MRI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>LocoNet</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
 
         <h5>RFID</h5>
             <ul>
@@ -180,21 +159,6 @@ These are development files, and might not be working at any particular time.</p
                 <li>Added test cases for all implemented RFID protocols. (Matt Harris)</li>
             </ul>
 
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-    <h4>Signals</h4>
-        <h5>Signal Mast Editor</h5>
-            <ul>
-                <li></li>
-            </ul>
 
     <h4>New / Updated decoder definitions</h4>
 
@@ -208,40 +172,11 @@ These are development files, and might not be working at any particular time.</p
                 <li><a href="https://github.com/JMRI/JMRI/pull/97">Pierre Billon improved and consolidated the D&amp;H definitions</a></li>
             </ul>
 
-        <h5>MERG</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RR-CirKits</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SoundTraxx</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>TCS</h5>
             <ul>
                 <li>Peter Ulvestad corrected the tooltips in some of the TCS decoder definitions</li>
             </ul>
 
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
-            </ul>
 
 
    <h4>Operations</h4>
@@ -256,11 +191,6 @@ These are development files, and might not be working at any particular time.</p
      Options" for a spur.</li>
    </ul>
 
-   <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
    <h4>OBlocks</h4>
         <ul>
             <li>Allow international locales to correctly specify lengths in OBlock tables. (Matt Harris)</li>
@@ -269,16 +199,6 @@ These are development files, and might not be working at any particular time.</p
     <h4>Preferences</h4>
         <ul>
             <li>Copying a Configuration Profile no longer throws an error. (Randall Wood)</li>
-        </ul>
-
-    <h4>logix</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Panel Editors</h4>
-        <ul>
-            <li></li>
         </ul>
 
     <h4>Scripting</h4>
