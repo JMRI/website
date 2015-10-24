@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.13.2
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.13.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -110,28 +107,28 @@ normal mode to build your trains.  You can also download a replacement jmri.jar 
 
 <p>Dan Boudreau made the following enhancements to operations.</p>
 <ul>
-<LI>Now when the program fails to find destinations for cars
+<li>Now when the program fails to find destinations for cars
 departing out of staging, the program will list all of the cars and
 provide the option of removing the cars without destinations from the
-staging track.</LI>
-<LI>Added train copy feature. See under Tools for Trains or Edit
-Train.</LI>
-<LI>New feature, train conductor. Now you can get the manifest for
+staging track.</li>
+<li>Added train copy feature. See under Tools for Trains or Edit
+Train.</li>
+<li>New feature, train conductor. Now you can get the manifest for
 a train in a window that updates as the train moves. It also includes a
 check list for the work needed at each location. To activate the train
 conductor, see under Edit Train, Tools, Conductor. You can also launch
 the train conductor from the train icon. Right click the icon and select
-Conductor.</LI>
-<LI>The program now confirms during a build that all of the cars in
-a kernel have the same departure location and track.</LI>
-<LI>The program now waits for the scripts to complete before building a train.</LI>
-<LI>You can now rename the RFID and Value fields to anything you like.  See Settings->Tools->Options</LI>
+Conductor.</li>
+<li>The program now confirms during a build that all of the cars in
+a kernel have the same departure location and track.</li>
+<li>The program now waits for the scripts to complete before building a train.</li>
+<li>You can now rename the RFID and Value fields to anything you like.  See Settings->Tools->Options</li>
 </ul>
 
 <p>Kevin Dickerson made the following enhancements.</p>
 <ul>
-<li>Updated the Ecos Sensor code to recognise the new ESU Detectors</li>
-<li>Updated the Ecos messaging code to handle information from the Ecos better and improve performace</li>
+<li>Updated the Ecos Sensor code to recognize the new ESU Detectors</li>
+<li>Updated the Ecos messaging code to handle information from the Ecos better and improve performance</li>
 <li>Made some improvements to the performance of displaying the Preferences for the first time</li>
 <li>Made some improvements to the performance of opening the create loco for the first time</li>
 <li>Provide Friendly Names for the serial ports, this is only available for Windows Systems</li>
@@ -153,13 +150,13 @@ The attached patch implements both Load and Store.
 </ul>
 
 <p>Mark Dance provided a set of train order signal icons in 
-<a href="http://jmri.org/resources/icons/smallschematics/trainorder">resources/icons/smallschematics/trainorder</a>.
+<a href="http://jmri.org/resources/icons/smallschematics/trainorder">resources/icons/smallschematics/trainorder/</a>.
 
 <p>Bob Jacobsen fix the problem that was preventing some QSI decoders from properly loading.
 
 <p>Michael Mosher
 <ul>
-<li>Provided decoder XML files for Zimo MX644 & MX645
+<li>Provided decoder XML files for Zimo MX644 &amp; MX645
 <li>Updated the QSI Version 7 decoder definitions
 </ul>
 

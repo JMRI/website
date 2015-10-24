@@ -1,16 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.11.10
-
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.11.10 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -49,7 +47,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -72,7 +70,7 @@ from
 
 <P>This release, and all later releases in this cycle, require Java 1.8 or higher.
 To use this or any later JMRI releases, you'll have to
-<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
+<a href="https://java.com/en/download/">update the Java on your computer</a> to Java 1.8 or higher.
 </p>
 
 <p>The old DecoderPro has been removed from the distribution package and
@@ -143,16 +141,16 @@ Driver.</p>
 <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-    HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.10-r29607.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.10-r29607.dmg/download</a></p>
+<p>Mac OS X: <a
+    href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.10-r29607.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.10-r29607.dmg/download</a></p>
 <p>sha256: bbd6906f72a3d3749ae4c4180b5d588c3d9709b05f85f4d08be5a76ea75ffa94</p>
 
-<p>Windows: <A
-    HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.10-r29607.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.10-r29607.exe/download</a></p>
+<p>Windows: <a
+    href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.10-r29607.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.10-r29607.exe/download</a></p>
 <p>sha256: c3408993803a96f0aeec426e344de7eb6ca7b43cf3324334ea4e77f84e1727d6</p>
 
-<p>Linux: <A
-    HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.10-r29607.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.10-r29607.tgz/download</a></p>
+<p>Linux: <a
+    href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.10-r29607.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.10-r29607.tgz/download</a></p>
 <p>sha256: 91f6dbf975d7f0f53bb879516c04ffb99a601af3b9f647a81579f47389fe245f</p>
 <!--
 Preliminary build files (not the final released files) can be found
@@ -244,7 +242,7 @@ These are development files, and might not be working at any particular time.</p
         <ul>
             <li>NXWarrants can be used to add data to the Roster Speed Profile. See "Compute Factor"
                 checkbox.</li>
-            <li>Fixed problems with Warrants calculating the correct point to begin and end signalled
+            <li>Fixed problems with Warrants calculating the correct point to begin and end signaled
                 Speed changes</li>
             <li>Signal table for OBlocks Offset column now specifies a distance rather than a time
                 to adjust speed change points to conform to signal placement on the layout.</li>

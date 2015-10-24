@@ -1,16 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.9.2
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.9.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -51,7 +49,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -71,14 +69,14 @@ see our
 
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.2-r26958.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.2-r26958.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.2-r26958.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.2-r26958.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.2-r26958.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.2-r26958.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.2-r26958.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.2-r26958.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.2-r26958.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.2-r26958.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.2-r26958.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.2-r26958.tgz/download</a></p>
 
  
  <!--
@@ -136,7 +134,7 @@ The most noticeable effect will be faster and cleaner operation of the configura
 <p>Added CT Elektronik DCX33 and DCX74 (v26) definitions (Alain Le Marchand)</p>
 <p>Added Doehler &amp; Haass DHF250 definition (Alain Le Marchand)</p>
 <p>Pierre Billon improved the Doehler &amp; Haass FH05A definition.</p>
-<p>Fixed Kuehn N025/T125/T145 defintion (CV55) and refactored definition file and panes (Alain Le Marchand)</p>
+<p>Fixed Kuehn N025/T125/T145 definition (CV55) and refactored definition file and panes (Alain Le Marchand)</p>
 <p>Added Soundtraxx Tsunami SoundCar DSD definition (Alain Le Marchand)</p>
 <p>Updated (Soundtraxx) Bachmann SoundValue for SD70ACe &amp; GEVO ES44AC. Added GG1 (Alain Le Marchand)</p>
 <p>Added Uhlenbrock Sound Module 32300 definition and updated 32100 (Alain Le Marchand)</p>
@@ -149,7 +147,7 @@ See the
 
 <p>Fixed some problems in C/MRI-specific sample scripts.
 
-<p>Brett Scott provided updated versions of the <a href="http://jmri.org/jython/dccspecialties">DCC Specialities scripts</a>
+<p>Brett Scott provided updated versions of the <a href="http://jmri.org/jython/dccspecialties/">DCC Specialities scripts</a>
 for the Wabbit et al.
 
 <p>Robin Becker updated the IO Action options in the Tam Valley Quad LN_S decoder definition.

@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.10.1
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.10 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -44,13 +41,13 @@ JMRI 3.10.1 includes a bug fix for JMRI Production Release 3.10.
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
 <p>This is the last JMRI production or test version that will work with Java 1.6.  
 To use any later JMRI test or production releases, you'll have to 
-<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or later.
+<a href="https://java.com/en/download/">update the Java on your computer</a> to Java 1.8 or later.
 This version has been tested on Java 1.8, so you can do the Java update now if you want to.
 
 
@@ -61,7 +58,7 @@ This version has been tested on Java 1.8, so you can do the Java update now if y
 All users and developers who are relying on direct access to the XmlIO API are
 recommended to begin using the JSON API. inControl web throttle users are recommended to
 begin using webThrottle instead, or to plan on investing in devices that can support
-webThrottle, <a href="http://withrottle.com">WiThrottle</a> for iOS, or
+webThrottle, <a href="http://www.withrottle.com">WiThrottle</a> for iOS, or
 <a href="http://enginedriver.rrclubs.org">Engine Driver</a> for Android.</p>
 
 <!-- keep this warning in place through the 3.11/3.12 development cycle -->
@@ -82,14 +79,14 @@ and make any necessary changes.
    <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.tgz/download</a></p>
  
 
 <h3>Changes since production release 3.10</h3>
