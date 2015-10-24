@@ -1,10 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.11.6
-
  </title>
     <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.11.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
@@ -49,7 +47,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the
-<a HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -228,7 +226,7 @@ These are development files, and might not be working at any particular time.</p
   </ul>
 
 
-<H4>Warrants</H4>
+<h4>Warrants</h4>
    <ul>
     <li>Fix several bugs recently introduced in record learn mode warrants.</li>
     <li>Add feature to display warrant routes graphically for review when multiple routes

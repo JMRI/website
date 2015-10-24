@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.4
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.3.8 decoderpro panelpro locotools loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -73,8 +70,8 @@ many new features, including:
             &quot;<a href="http://jmri.sourceforge.net/help/en/html/apps/DecoderPro/FileUpdate.shtml">Import Decoder URL</a>&quot;
             items in the Debug menu to make it easier to install new decoder definitions
     	<li>New icons for 
-            <a href="http://jmri.sourceforge.net/resources/icons/mediumschematics/BandOsignals/">medium B&O signal heads</a>, 
-            <a href="http://jmri.sourceforge.net/resources/icons/smallschematics/BandOsignals/">small B&O signal heads</a>, 
+            <a href="http://jmri.sourceforge.net/resources/icons/mediumschematics/BandOsignals/">medium B&amp;O signal heads</a>, 
+            <a href="http://jmri.sourceforge.net/resources/icons/smallschematics/BandOsignals/">small B&amp;O signal heads</a>, 
             <a href="http://jmri.sourceforge.net/resources/icons/mediumschematics/PRRsignals/">medium PRR signal heads</a>.
             and some improvements to the 
             <a href="http://jmri.sourceforge.net/resources/icons/smallschematics/PRRsignals/">small PRR signal heads</a>
@@ -120,20 +117,20 @@ many new features, including:
 along with lots of other changes. The complete list can be found in the 
 release notes from the test releases leading up to this production release:
 <ul>
-	    <LI><A href="../releasenotes/jmri2.3.8.shtml">JMRI 2.3.8</a>
-	    <LI><A href="../releasenotes/jmri2.3.7.shtml">JMRI 2.3.7</a>
-	    <LI><A href="../releasenotes/jmri2.3.6.shtml">JMRI 2.3.6</a>
-	    <LI><A href="../releasenotes/jmri2.3.5.shtml">JMRI 2.3.5</a>
-	    <LI><A href="../releasenotes/jmri2.3.4.shtml">JMRI 2.3.4</a>
-	    <LI><A href="../releasenotes/jmri2.3.3.shtml">JMRI 2.3.3</a>
-	    <LI><A href="../releasenotes/jmri2.3.2.shtml">JMRI 2.3.2</a>
-	    <LI><A href="../releasenotes/jmri2.3.1.shtml">JMRI 2.3.1</a>
+	    <li><a href="../releasenotes/jmri2.3.8.shtml">JMRI 2.3.8</a>
+	    <li><a href="../releasenotes/jmri2.3.7.shtml">JMRI 2.3.7</a>
+	    <li><a href="../releasenotes/jmri2.3.6.shtml">JMRI 2.3.6</a>
+	    <li><a href="../releasenotes/jmri2.3.5.shtml">JMRI 2.3.5</a>
+	    <li><a href="../releasenotes/jmri2.3.4.shtml">JMRI 2.3.4</a>
+	    <li><a href="../releasenotes/jmri2.3.3.shtml">JMRI 2.3.3</a>
+	    <li><a href="../releasenotes/jmri2.3.2.shtml">JMRI 2.3.2</a>
+	    <li><a href="../releasenotes/jmri2.3.1.shtml">JMRI 2.3.1</a>
 </ul>
 along with a few updates listed at the bottom of this note.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -169,11 +166,11 @@ installed a very old version of JMRI, there might still be files around
 that can cause this problems.
 If so, you can fix it by moving aside those extra
 .jar files from the JMRI program directory, or by asking Windows to un-install JMRI,
-before reruning the installer.
+before rerunning the installer.
 For more information on this, please see this
-<a href="http://groups.yahoo.com/group/jmriusers/message/35065">discussion</a>
+<a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/topics/35065">discussion</a>
 on the 
-<a href="http://groups.yahoo.com/group/jmriusers/">jmriusers mailing list</a>.
+<a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>.
 
 <p>JMRI is moving toward requiring Java 1.5 or later.  Certain new features may not work if you are using an earlier
 version of Java.  To see JMRI's future plans for this and other compatibility issues, please see the JMRI
@@ -198,13 +195,13 @@ and if so a warning message will appear at startup requesting that AIU broadcast
 <p>Please use these links for downloading:
 
 <p>Mac OS X:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.4A.dmg">http://downloads.sourceforge.net/jmri/JMRI.2.4A.dmg</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.4A.dmg">http://downloads.sourceforge.net/jmri/JMRI.2.4A.dmg</a>
 
 <p>Windows:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.4A.exe">http://downloads.sourceforge.net/jmri/JMRI.2.4A.exe</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.4A.exe">http://downloads.sourceforge.net/jmri/JMRI.2.4A.exe</a>
 
 <p>Linux:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.4A.tgz">http://downloads.sourceforge.net/jmri/JMRI.2.4A.tgz</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.4A.tgz">http://downloads.sourceforge.net/jmri/JMRI.2.4A.tgz</a>
 
 
 
@@ -235,7 +232,7 @@ Chris Zurek added a new MRC 1662 definition,
 and updated the MRC 1666 definition to include more info on bells and horn.
 
 <p>
-Ken Cameron fixed a problem in the X10 support that was preventing the 16th device ona housecode from working.
+Ken Cameron fixed a problem in the X10 support that was preventing the 16th device on a housecode from working.
 
 <p>
 Dan Boudreau fixed a problem in the operations code that could cause lots of additional

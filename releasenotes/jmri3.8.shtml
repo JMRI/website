@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.8
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -46,7 +43,7 @@ We're therefore making that version, "Production version 3.8" available for down
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -96,14 +93,14 @@ changes.  See those
 for more information.
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.tgz/download</a></p>
  
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -202,12 +199,12 @@ Please let us know if anything isn't working as you'd expect.</p>
 <!-- <p>Enzo Fortuna did more work on the Italian translation.</p> -->
 
 <!-- from 3.7.1 note -->
-<P>Pierre Billon provided more translation to French and German.
+<p>Pierre Billon provided more translation to French and German.
 
 <!-- from 3.7.6 note -->
 <p>Bernd Wisotzki improved the German translation, and added additional German translation, particularly in the DecoderPro/DP3 presentation.</p>
 <!-- from 3.7.7 note -->
-<!-- <P>Additional German translation, particularly in the DecoderPro/DP3 presentation, from Bernd W.-->
+<!-- <p>Additional German translation, particularly in the DecoderPro/DP3 presentation, from Bernd W.-->
 
 <!-- from 3.7.2 note -->
 <p>Resolved an issue that caused some CVs to be skipped in Read Full Sheet operations. Particularly noticeable with ESU V4 decoders.</p>
@@ -284,7 +281,7 @@ Please let us know if anything isn't working as you'd expect.</p>
 <p>Dave Heap made the following changes:</p>
   <ul>
     <li>Corrections and other improvements to existing ESU decoder definitions.</li>
-  </ul>
+  </ul> -->
 <!-- from 3.7.6 note -->
 <!--
 <p>Dave Heap made the following changes: Corrections and other improvements to existing ESU decoder definitions.</p>
@@ -339,14 +336,14 @@ Please let us know if anything isn't working as you'd expect.</p>
 
 <h5>TAMS</h5>
 <!-- from 3.7.1 note -->
-<P>Pierre Billon contributed four additional TAMS decoder definitions.
+<p>Pierre Billon contributed four additional TAMS decoder definitions.
 
 <h5>TCS</h5>
 <!-- from 3.7.5 note -->
 <p>Fixed a problem with the handling of decoder definitions that was causing certain TCS decoders (and perhaps others)
 to not display properly.</p>
 <!-- from 3.7.7 note -->
-<P>John Crellin added definitions for TCS function decoders.
+<p>John Crellin added definitions for TCS function decoders.
 
 <p>John Crellin updated the TCS FL2 and FL4 decoder definitions
 
@@ -433,7 +430,7 @@ The definition is as complete as is possible from the available documentation an
 <p>Paul Bender improved support in the generic network client for automatic configuration.  This includes improvements to the generic  mDNS/ZeroConf/Bonjour automatic configuration tools.</p>
 
 <!-- from 3.7.2 note -->
-<p>Paul Bender updated the JMRI SRCP support in both the client and server to better conform to the letter of the SRCP protocol standard and improve compatability with other SRCP implementations.</p>
+<p>Paul Bender updated the JMRI SRCP support in both the client and server to better conform to the letter of the SRCP protocol standard and improve compatibility with other SRCP implementations.</p>
 
 <p>Steve Williams fixed a problem with LocoNet Simulator's reading of data files.
 
@@ -475,7 +472,7 @@ The definition is as complete as is possible from the available documentation an
 
 <h5>Uhlenbrock</h5>
 <!-- from 3.7.4 note -->
-<P>Intellibox support received a communications update (<a href="https://sourceforge.net/p/jmri/patches/978/">patch 978</a>)
+<p>Intellibox support received a communications update (<a href="https://sourceforge.net/p/jmri/patches/978/">patch 978</a>)
 to improve reliability of sensor readout.
 
 <h4>Operations</h4>
@@ -497,19 +494,19 @@ to improve reliability of sensor readout.
      lists containing ids of the objects, the actual object is now passed in the list. For example a list
      of cars in operations was a list of car ids, and not the cars themselves. If you use
      scripts you will need to edit your scripts. Here's the changes you need to do for cars:
-     <P>In each of your script files, search for "carId". You should find something like this:
-     <P>for carId in carList: 
-     <br>car = cm.getById(carId)
-     <P>Change the first line to:
-     <br>for car in carList:
-     <P>And delete the line that has "car = cm.getById(carId)".
-     <P>For scripts that deal with trains, search for "trainId". You should find something like this:
-     <P>for trainId in tList:
-     <br>train = self.tm.getTrainById(trainId)
-     <P>Change the first line to:
-     <br>for train in tList:
-     <P>And delete the line that has "train = self.tm.getTrainById(trainId)".
-     <P>
+     <p>In each of your script files, search for "carId". You should find something like this:
+     <code><p>for carId in carList: 
+     <br>car = cm.getById(carId)</p></code>
+     <p>Change the first line to:
+     <code><p>for car in carList:</p></code>
+     <p>And delete the line that has "car = cm.getById(carId)".
+     <p>For scripts that deal with trains, search for "trainId". You should find something like this:
+     <code><p>for trainId in tList:
+     <br>train = self.tm.getTrainById(trainId)</p></code>
+     <p>Change the first line to:
+     <code><p>for train in tList:</p></code>
+     <p>And delete the line that has "train = self.tm.getTrainById(trainId)".
+     <p>
     <li>New feature, you can now let the program create your locomotive consists for you. See <a
      href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml#TrainBuildOptions">Train
       Build Options</a> "Build loco consist from single locos if needed" for more details. The program
@@ -596,7 +593,7 @@ to improve reliability of sensor readout.
 		<li>Positioning vertex handles of Polygons was improved. Note, handles of a selected Shape 
 			can only be grabbed from within the bounding rectangle of the shape.</li>
 		<li>Either the display level or hidden property of a shape can be controlled with the 
-			"visibility/Level Contol Sensor".</li>
+			"visibility/Level Control Sensor".</li>
 		<!-- from 3.7.4 note -->   	
 		<li>Improved user interface and fixed bugs in Shape editor popup</li>			
 	</ul>
@@ -695,7 +692,7 @@ This is in addition to the existing "Open Power Controller" option.
 <p>Routes
 <ul>
 <li>When a route is loaded from a panel file, the system will now check the turnouts and trigger the aligned sensor, rather than wait for a change to occur</li>
-<li>Fix a bug in the routes gui, whereby if the user removes the "TurnoutsAlignedSensor" it doesn't actually get removed.</li>
+<li>Fix a bug in the Routes GUI, whereby if the user removes the "TurnoutsAlignedSensor" it doesn't actually get removed.</li>
 </ul>
 
 
@@ -704,14 +701,15 @@ This is in addition to the existing "Open Power Controller" option.
 <!-- from 3.7.1 note -->
 
 <p>Nigel Cliffe and Dave Heap fixed problems with international characters in four Python scripts:
-AAR105.py, 
-RailDriver.py, 
-RocoCrane46902.py, 
+AAR105.py<br>
+RailDriver.py<br>
+RocoCrane46902.py<br>
 Zimo_pseudo_programmer.py
 
-<p>Added sample scripts:<ul>
-<LI><a href="http://jmri.org/jython/SensorToTurnout.py">jython/SensorToTurnout.py</a>: takes Sensor inputs from an external system and maps them to Internal turnouts
-<LI><a href="http://jmri.org/jython/SignalHeadFromSensors.py ">jython/SignalHeadFromSensors.py</a>: takes Sensor inputs from e.g. an external signal system and drives SignalHead objects
+<p>Added sample scripts:
+<ul>
+<li><a href="http://jmri.org/jython/SensorToTurnout.py">jython/SensorToTurnout.py</a>: takes Sensor inputs from an external system and maps them to Internal turnouts
+<li><a href="http://jmri.org/jython/SignalHeadFromSensors.py ">jython/SignalHeadFromSensors.py</a>: takes Sensor inputs from e.g. an external signal system and drives SignalHead objects
 </ul>
 
 <!-- from 3.7.2 note -->
@@ -733,7 +731,7 @@ Zimo_pseudo_programmer.py
 
 <p>Older versions of the JMRI manuals and associated PDF files have been 
 moved out of the JMRI distribution.  They are now 
-<a href="http://jmri.org/manual/index.shtml">available on the web</a>. This was done to make it easier to 
+<a href="http://jmri.sourceforge.net/help/en/manual/index.shtml">available on the web</a>. This was done to make it easier to 
 keep the manual up-to-date, and reduce the download size.  
 You may have to update your bookmarks.</p>
 
