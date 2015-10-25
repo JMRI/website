@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.7.1
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.7.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -52,7 +49,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -72,7 +69,7 @@ for more information.</p>
 
 <h3>Older warnings</h3>
 
-<P>This release, and all other releases in this cycle, require Java 1.6 or newer.
+<p>This release, and all other releases in this cycle, require Java 1.6 or newer.
 
 <h3>Known problems with this release</h3>
 
@@ -83,14 +80,14 @@ Instead, please use <a href="jmri3.7.7.shtml">test release 3.7.7</a> or later.</
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.tgz/download</a></p>
  
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -117,14 +114,14 @@ that write or read CVs directly, check to see if we've broken anything, please.
 <p>Peter Ulvestad updated the Hornby 8249 default values.
 
 <p>Nigel Cliffe and Dave Heap fixed problems with international characters in four Python scripts:
-AAR105.py, 
-RailDriver.py, 
-RocoCrane46902.py, 
+AAR105.py<br>
+RailDriver.py<br>
+RocoCrane46902.py<br> 
 Zimo_pseudo_programmer.py
 
 <p>Added sample scripts:<ul>
-<LI><a href="http://jmri.org/jython/SensorToTurnout.py">jython/SensorToTurnout.py</a>: takes Sensor inputs from an external system and maps them to Internal turnouts
-<LI><a href="http://jmri.org/jython/SignalHeadFromSensors.py ">jython/SignalHeadFromSensors.py</a>: takes Sensor inputs from e.g. an external signal system and drives SignalHead objects
+<li<a href="http://jmri.org/jython/SensorToTurnout.py">jython/SensorToTurnout.py</a>: takes Sensor inputs from an external system and maps them to Internal turnouts</li>
+<li><a href="http://jmri.org/jython/SignalHeadFromSensors.py ">jython/SignalHeadFromSensors.py</a>: takes Sensor inputs from e.g. an external signal system and drives SignalHead objects</li>
 </ul>
 
    <p>Dan Boudreau made the following changes to operations:</p>
@@ -139,19 +136,19 @@ Zimo_pseudo_programmer.py
      lists containing ids of the objects, the actual object is now passed in the list. For example a list
      of cars in operations was a list of car ids, and not the cars themselves. If you use
      scripts you will need to edit your scripts. Here's the changes you need to do for cars:
-     <P>In each of your script files, search for "carId". You should find something like this:
-     <P>for carId in carList: 
+     <p>In each of your script files, search for "carId". You should find something like this:
+     <p>for carId in carList: 
      <br>car = cm.getById(carId)
-     <P>Change the first line to:
+     <p>Change the first line to:
      <br>for car in carList:
-     <P>And delete the line that has "car = cm.getById(carId)".
-     <P>For scripts that deal with trains, search for "trainId". You should find something like this:
-     <P>for trainId in tList:
+     <p>And delete the line that has "car = cm.getById(carId)".
+     <p>For scripts that deal with trains, search for "trainId". You should find something like this:
+     <p>for trainId in tList:
      <br>train = self.tm.getTrainById(trainId)
-     <P>Change the first line to:
+     <p>Change the first line to:
      <br>for train in tList:
-     <P>And delete the line that has "train = self.tm.getTrainById(trainId)".
-     <P>
+     <p>And delete the line that has "train = self.tm.getTrainById(trainId)".
+     <p>
     <li>New feature, you can now let the program create your locomotive consists for you. See <a
      href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml#TrainBuildOptions">Train
       Build Options</a> "Build loco consist from single locos if needed" for more details. The program
@@ -168,13 +165,13 @@ Zimo_pseudo_programmer.py
      the car get's a custom load from staging.</li>
    </ul>
 
-   <P>Allow Turnout icons to be "momentary".  (Sensor icons could already do this)
+   <p>Allow Turnout icons to be "momentary".  (Sensor icons could already do this)
 
 <p>Dave Heap improved the handling of DCC addresses.  The decoder terminology has been 
 standardized.  There's more checking of values, to prevent erroneous behavior when an
 out-of-range value is entered.
 
-<p>Paul Bender updated the XPressNet network connections (LIUSB-Server, LIUSB-Etherenet, and XnTCP) to allow automatic reconnection attempts in the event of a dropped network connection.</P>
+<p>Paul Bender updated the XPressNet network connections (LIUSB-Server, LIUSB-Etherenet, and XnTCP) to allow automatic reconnection attempts in the event of a dropped network connection.</p>
 
 <p>Paul Bender improved support in the generic network client for automatic configuration.  This includes improvements to the generic  mDNS/ZeroConf/Bonjour automatic configuration tools.</p>
 
@@ -182,17 +179,17 @@ out-of-range value is entered.
 
 <p>Suzie Tall updated the BN 1989 signal definitions. Changes include:
 <ol>
-<li> Additional panel icons to support the new signal mast definitions.
-<li> A modified icon which was stopping the original 2-head mast from being added to a panel.
-<li> Twelve new signal mast definitions.
-<li> An updated index.shtml with a bit more information, reference to BN source and links to the new masts.
-<li> An updated aspects.xml with the addition of an unlit appearance and corrections to the appearance definitions.
+<li>Additional panel icons to support the new signal mast definitions.
+<li>A modified icon which was stopping the original 2-head mast from being added to a panel.
+<li>Twelve new signal mast definitions.
+<li>An updated index.shtml with a bit more information, reference to BN source and links to the new masts.
+<li>An updated aspects.xml with the addition of an unlit appearance and corrections to the appearance definitions.
 </ol>
 
-<p>Suzie Tall contributed a new signal system definition for the LMS speed signalling that was installed in parts of the UK in 1932 and continued in use until 1988. 
+<p>Suzie Tall contributed a new signal system definition for the LMS speed signaling that was installed in parts of the UK in 1932 and continued in use until 1988. 
 The definition is as complete as is possible from the available documentation and covers all variations over the entire period of operation.
 
-<P>Pierre Billon contributed four additional TAMS decoder definitions, and more translation to French and German.
+<p>Pierre Billon contributed four additional TAMS decoder definitions, and more translation to French and German.
 
 <p>Peter Ulvestad contributed new decoder definitions for MRC 1641,1642, 1659 and 1664 N scale motor control only decoders.
 

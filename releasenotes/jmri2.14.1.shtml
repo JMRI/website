@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.14.1
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.14.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -42,7 +39,7 @@ features, see below.
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -60,21 +57,21 @@ will require Java 1.6.
 
 <h3>Known problems with this release</h3>
 There are currently some connectivity issues for Users running Windows v7 64-bit and a Digitrax PR3 interface.
-If you are experiancing issues, then please raise a question on the yahoo group for assistance.
+If you are experiencing issues, then please raise a question on the yahoo group for assistance.
 
 <h3>Download links:</h3>
 
 
 <p>Please use these links for downloading:</p>
 
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.tgz/download</a></p>
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -90,11 +87,11 @@ on the
 
 <p>Walt Thompson fixed a problem causing panel files with tooltips to fail validation.
 
-<p>Kevin Dickerson <li>fixed a bug where the PR3 could not operate a throttle in Programming Mode</li>
-<li>Fix an issue when an NullPointerException could occur when changing between signal mast driver types when the signalling system name does not match the directory that the signal mast are held in</li>
+<p>Kevin Dickerson <ul><li>fixed a bug where the PR3 could not operate a throttle in Programming Mode</li>
+<li>Fix an issue when an NullPointerException could occur when changing between signal mast driver types when the signaling system name does not match the directory that the signal mast are held in</li>
 <li>Fixed an issue in the "Add/Edit Routes" window that could cause panel files to load slowly.</li>
 <li>Fixed an issue with the Start-Up Wizard that could cause the system to hang when doing the final connect</li>
-
+</ul>
 <p>Matthew Harris fixed a bug that in certain circumstances caused a NullPointerException when accessing the Context report.
 
 <p>Dan Boudreau fixed a problem with the NCE pushbutton turnout lock.  This has been broken since version 2.10.
@@ -106,6 +103,5 @@ This release includes all decoder definitions up to the release build date.
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

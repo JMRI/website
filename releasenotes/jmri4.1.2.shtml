@@ -1,16 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 4.1.2
-
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Matthew Harris" name="Author">
     <meta name="keywords" content="java model railroad JMRI 4.1.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
+  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -49,7 +47,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -94,7 +92,7 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
     If you have decoder definitions with the older "ivariable" form, they will no longer
     validate, but can still be used for the first couple of test releases in this series.
     Please ask on the
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">jmriusers list</a>
+    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">jJMRI users Yahoo group</a>
     for help converting them, or just drop them and use the current definitions.
 
 <!--<p>The OpenLCB 0.6.4 library in this version has a bug in its alias
@@ -108,16 +106,16 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
 
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.dmg/download</a><br/>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.dmg/download</a><br/>
     sha256: ddba756abe430f0202baccc4536fb73533d87a9cd231ec1685ae95cd13b45a6a</p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.exe/download</a><br/>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.exe/download</a><br/>
     sha256: 7b46c10e78bb0f7173fcf1253aa21ec10ce0dc07db95ce14ce7762040c2e7ce2</p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.tgz/download</a><br/>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.tgz/download</a><br/>
     sha256: 88a40e0d2dd9d17aa4b83f84a8f33f20b868b6190dbcdc782a7b4cede2c187c5</p>
 
 <!--
@@ -230,7 +228,7 @@ These are development files, and might not be working at any particular time.</p
 			</ul>
 
         <h5>QSI</h5>
-             <ul>
+             <ul> -->
 <!--
              <li>All QSI decoder definitions have been converted to the
              modern format of their internal variables from the older

@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.7.2
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.7.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -52,7 +49,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -93,14 +90,14 @@ Instead, please use <a href="jmri3.7.7.shtml">test release 3.7.7</a> or later.</
 
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r25234.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r25234.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r25234.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r25234.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r25234.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r25234.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r25234.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r25234.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r25234.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r25234.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r25234.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.2-r25234.tgz/download</a></p>
 
 
 
@@ -149,7 +146,7 @@ These are development files, and might not be working at any particular time.
 
 <p>Matthew Harris updated the user interface font size change preference to no longer override the underlying font style.</p>
 
-<p>Paul Bender updated the JMRI SRCP support in both the client and server to better conform to the letter of the SRCP protocol standard and improve compatability with other SRCP implementations.</p>
+<p>Paul Bender updated the JMRI SRCP support in both the client and server to better conform to the letter of the SRCP protocol standard and improve compatibility with other SRCP implementations.</p>
 
 <p>Dave Heap made the following changes:</p>
   <ul>
@@ -198,7 +195,7 @@ These are development files, and might not be working at any particular time.
 		<li>An Edit Portal Direction menu item was added ti=o the CircuitBuilder menu. Direction arrows may be displayed at Portal locations
 			of a warrant route when the warrant is allocated.  Use this menu item to configure the arrows so they point to show entrance to 
 			the block.   Levels, rotation and scaling of an arrow can be done here also. 
-			with a right clck.</li>
+			with a right click.</li>
 		<li>Improved item selection when creating and editing OBlocks, Portals and OPaths</li>
 	</ul>
 	</li>
@@ -215,7 +212,7 @@ These are development files, and might not be working at any particular time.
 		<li>Positioning vertex handles of Polygons was improved. Note, handles of a selected Shape 
 			can only be grabbed from within the bounding rectangle of the shape.</li>
 		<li>Either the display level or hidden property of a shape can be controlled with the 
-			"visibility/Level Contol Sensor".</li>
+			"visibility/Level Control Sensor".</li>
 	</ul>
 	</li>
 	<li>Tracker
