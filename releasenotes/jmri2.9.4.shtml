@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.9.4
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.9.4 decoderpro panelpro locotools loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -64,7 +61,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -125,13 +122,13 @@ To make these stop, just store the file again so that it's rewritten in the most
 <p>Please use these links for downloading:
 
 <p>Mac OS X:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.4.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.4.dmg/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.4.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.4.dmg/download</a>
 
 <p>Windows:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.4.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.4.exe/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.4.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.4.exe/download</a>
 
 <p>Linux:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.4.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.4.tgz/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.4.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.4.tgz/download</a>
 
 <h3>Changes since test version 2.9.3</h3>
 
@@ -197,7 +194,7 @@ Andrew Berridge improves the XBox remote throttle.
 
 <p>
 Dan Boudreau changed the check of operations train names to be case-independent,
-because Windows file names are case-indepedent: "First" and "first" conflict.
+because Windows file names are case-independent: "First" and "first" conflict.
 
 <p>
 By suggestion of Jim Betz, the roster now includes the date and time 
@@ -206,7 +203,7 @@ by the computer on which it was saved. No checking of this value is done.
 
 <p>
 Kevin Dickerson made a number of changes to the way that JMRI works with the eCos, 
-mainly in the handling of roster entries and the ecos database.
+mainly in the handling of roster entries and the Ecos database.
 
 <p>
 The panel editor and layout editor code has been extensively reworked. It's not
@@ -214,11 +211,11 @@ intended that this cause any changes in how it appears to look to the user, but
 please let us know if you see any.
 
 <p>
-Bob Coleman updated the powerline insteon 2412s support to 
+Bob Coleman updated the Powerline Insteon 2412s support to 
 catch reply message 50 (echo from a repeater) and clean up console output a bit.
 Via an insteon 2412s an X10 device or a registered insteon device should turn on or off,
 but dim and sensors are not yet available. 
-Sometimes first commands to an insteon device fail -- once they have been retried they work.
+Sometimes first commands to an Insteon device fail -- once they have been retried they work.
 Note that Insteon devices must be registered with the adapter to work.
 
 <p>
@@ -231,7 +228,7 @@ The fix doesn't effect SE8c or non-LocoNet signal heads,
 so any problems with those should still be reported.
 
 <p>
-david zuhn updated the Linux start-up scripts.
+David Zuhn updated the Linux start-up scripts.
 
 <p>
 Fixed a bug in the way the roster populates the various selected combo boxes.
@@ -338,7 +335,7 @@ the "auto" checkbox will only show valid tracks for that car.
 A new preferences dialog is available for testing.  If people
 think it better, perhaps after some changes, we'll replace the current one
 with it.  To use it, select "New Tabbed Prefs" under the "Edit" menu.
-Please give feedback on the jmriusers list if you try it!
+Please give feedback on the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group</li> if you try it!
 Note: you should only attempt to use one preference panel or the other
 during a single run of the program, don't switch back and forth.
 
@@ -371,11 +368,9 @@ Jack Shall updated the Tsunami Diesel definition.
 Andrew Berridge added an optional "speed limit", which can be set by locomotive in the roster,
 when using JMRI throttles. Great for running with grand kids!
 
-
 <!--#include virtual="/Footer" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

@@ -3,7 +3,6 @@
 <head>
  <title>
  JMRI: Release Notes for 3.11.1
- 
  </title>
     <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.11.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
@@ -50,10 +49,9 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<a HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
-
 
 <h3>Known problems with this release</h3>
 
@@ -112,18 +110,17 @@ users are recommended to begin using webThrottle instead, or invest in devices
 that can support webThrottle, the iOS WiThrottle, or the Android Engine
 Driver.</p>
 
-
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download</a></p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download</a></p>
 
 <p>Windows: <a
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download</a></p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download</a></p>
 
 <p>Linux: <a
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download</a></p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download</a></p>
  
  <!--
 Preliminary build files (not the final released files) can be found
@@ -146,7 +143,6 @@ These are development files, and might not be working at any particular time.</p
 calling the parts of JMRI that interchange XML objects. There's more information
 in the
 <a href="http://jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml#jdom2">migration section of the JMRI Tech Road Map</a>.</p>
-
 
 <h4>Hardware Support</h4>
 

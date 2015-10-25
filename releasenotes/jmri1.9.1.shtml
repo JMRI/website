@@ -221,12 +221,12 @@ David Duchamp added a "delayed set turnout" action to Logix conditionals
 
 <p>
 David Duchamp updated Panel menu and the storing and deleting of panels:
-<OL>
+<ol>
 <li>A panel (either type) is not deleted when its panel window is closed.
 <li>To delete a panel (either type), select "Delete this panel..." in the panel's File menu.  A validation message is displayed before the panel is actually deleted. This action deletes the panel from the program.  To permanently delete the panel from files, panels must be saved to disk after deleting the panel.
 <li>A new entry "Show Panel" has been added to the Panels menu.  All panels currently present in the program are listed in the submenu of Show Panel, independent of whether the panel window is closed (checked in the submenu), frontmost, or minimized. Selecting a particular panel makes it visible and frontmost.
 <li>When "New panel..." is selected, a small window is displayed allowing the user to select a "Panel Editor" panel or a "Layout Editor" panel.  The default choice is "Panel Editor".
-</OL>
+</ol>
 
 <p>
 Alfredo Sola updated the Spanish version of the interface

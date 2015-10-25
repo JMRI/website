@@ -207,7 +207,7 @@ some later release.
         <li>The cancel/clear route option can now be accessed via mouse pop-up on the source sensor icon in a panel</li>
     </ul></li>
     <li>When setting a sensor in a block, if that sensor has a reporter associated against it the user is asked if they wish to use the reporter on that block.</li>
-    <li>Logix - Fix bug 3565824 - create logix button staying disabled.</li>
+    <li>Logix - Fix bug 3565824 - create Logix button staying disabled.</li>
     <li>Abstract Automation - Assign the name to the thread to help identify any issues caused by the thread</li>
 </ul>
   
@@ -278,8 +278,6 @@ to add the GN1000 series and EMD 645 (non_turbo)
 <li>Loconet Slot monitor will refresh if cmd station ops sw 36, 37, 38, or 39 is set to closed 'c'. This is Feature Request 1876188 which specifically asked for Ops SW 36, but there is no reason to limit to sw 36, since 39 will erase all slots memory.
 <li>The Loconet Slot monitor function Key were active for System Slots. This could have caused Command Station configuration issues. As a result of this change Function Keys F1-F8, E Stop button, and Free button will not longer work for the reserved system slots which are above slot 120.
 </ul>
-
-
 
 <p>Steve Todd made the following changes:</p>
 <ul>

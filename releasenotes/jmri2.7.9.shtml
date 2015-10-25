@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.7.9
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="JMRI 2.7.9">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -68,7 +65,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -143,13 +140,13 @@ as the program will update them to the new format upon storing them.
 <p>Please use these links for downloading:
 
 <p>Mac OS X:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.9.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.9.dmg/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.9.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.9.dmg/download</a>
 
 <p>Windows:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.9.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.9.exe/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.9.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.9.exe/download</a>
 
 <p>Linux:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.9.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.9.tgz/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.9.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.9.tgz/download</a>
 
 <h3>Changes since test version 2.7.8</h3>
 
@@ -176,7 +173,7 @@ Lionel Jeanson added a first Jynstrument for throttle tool bar, allows for USB d
 <p>
 Kevin Dickerson fixed a bug in sensor icons.  When the icon was using
 different size images for the four states, these used to be centered. 
-Starting in JMRI 2.7.4, this was inadvertantly changed so that they were
+Starting in JMRI 2.7.4, this was inadvertently changed so that they were
 aligned in the upper left corner.  This bug is now fixed, and the
 images have been moved back.  This won't effect you if you're using
 the (recommended) same-size icons, but if you're using different size 
@@ -218,6 +215,5 @@ Peter Ulvestad provided a decoder definition for the MRC Rapido Turbotrain.
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

@@ -3,8 +3,7 @@
 <head>
  <title>
  JMRI: Release Notes for 3.11.3
- 
- </title>
+  </title>
     <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.11.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
@@ -31,7 +30,6 @@
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Test version 3.11.3 of JMRI/DecoderPro is available for download.</p>
  
-
 <!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
@@ -51,7 +49,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<a HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -133,13 +131,13 @@ Driver.</p>
 
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.dmg/download</a></p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.dmg/download</a></p>
 
 <p>Windows: <a
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.exe/download</a></p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.exe/download</a></p>
 
 <p>Linux: <a
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.tgz/download</a></p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.3-r28686.tgz/download</a></p>
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -163,7 +161,6 @@ These are development files, and might not be working at any particular time.</p
     programming mode, that wasn't properly being displayed.
 
 <p>Randall Wood fixed a problem that would cause an exception when starting without an existing configuration.
-
 
 <h4>Hardware Support</h4>
   

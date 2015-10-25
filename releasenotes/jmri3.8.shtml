@@ -29,7 +29,6 @@
 	<p>Date: July 3, 2014</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Production version 3.8 of JMRI/DecoderPro is available for download.</p>
- 
 
 <!-- 
 <br><b>This is a draft release note only; the download links do not yet work</b>
@@ -108,7 +107,6 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.6/ws/jmri/dist/release/">CI project page</a>.
 -->
 
-
 <h3>Changes since production release 3.6</h3>
 
 <h4>General</h4>
@@ -161,7 +159,6 @@ on the
     <li>Fixed issues with item state colour coding with OS X and Nimbus display GUIs.</li>
   </ul>
 
-
 <p>The "Export Roster" and "Import Roster" menu items will now write your whole
 roster to a single file, and then read that back in.  You can use this to move your roster to
 another computer, for example.  On import, you'll be asked to confirm that you want to
@@ -186,7 +183,6 @@ Please let us know if anything isn't working as you'd expect.</p>
     This includes as combo (selection) boxes, check boxes and radio buttons.  They still track the CV value, but 
     you can't change them yourself.  This may cause unexpected side-effects, e.g. if a decoder file 
     has improperly set read-only on a variable and nobody noticed because it wasn't visible.</p>
-
 
 <h4>New / Updated decoder definitions</h4>
 <!-- from 3.7.1 note -->
@@ -686,7 +682,6 @@ This is in addition to the existing "Open Power Controller" option.
      the cars by the pick up track name. If by destination, the program will sort the cars by the
      set out track name.</li>
    </ul>
-
    
 <!-- from 3.7.7 note -->
 <p>Routes
@@ -694,7 +689,6 @@ This is in addition to the existing "Open Power Controller" option.
 <li>When a route is loaded from a panel file, the system will now check the turnouts and trigger the aligned sensor, rather than wait for a change to occur</li>
 <li>Fix a bug in the Routes GUI, whereby if the user removes the "TurnoutsAlignedSensor" it doesn't actually get removed.</li>
 </ul>
-
 
 <h4>Scripts</h4>
 
@@ -737,7 +731,6 @@ You may have to update your bookmarks.</p>
 
 <!-- from 3.7.7 note -->
 <p>Egbert Broerse updated the signaling help.
-
 	
 <h4>For developers</h4>
 

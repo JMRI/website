@@ -93,10 +93,8 @@ new support for boards from Oak Tree Systems and the Digitrax PR2 programmer.
 <p>While programming QSI decoders in Ops mode, it is necessary to disable CV 62 QSI Control (Verbal Acknowledgement), otherwise the writes will fail.
  
 <p>QSI CV 64 CV Numeric Verbal Readout currently does not work for indexed CVs.
- 
 
 <h3>Download links:</h3>
-
 
 <p>Please use these links for downloading, including the "?download" at the end. That adds to SourceForge's advertising statistics, which makes them happy to host our stuff.
 
@@ -112,8 +110,6 @@ new support for boards from Oak Tree Systems and the Digitrax PR2 programmer.
 <p>MacOS 8/9 "Classic" is not yet available.
 <!-- <p>MacOS 8/9 "Classic": -->
 <!--      <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.7.4.Classic.hqx?download">http://prdownloads.sourceforge.net/jmri/JMRI.1.7.4.Classic.hqx?download</a> -->
-
-
 
 <h3>Changes since test version 1.7.3:</h3>
 
@@ -155,11 +151,11 @@ new support for boards from Oak Tree Systems and the Digitrax PR2 programmer.
 
 <p>Paul Bender updated XPressNet (Lenz) turnout support to fix a problem with turnout outputs staying on for too long. Also, the program now resends the turnout command if the XPressNet system returns a "not-operated" message. On feedback replies for turnouts, make sure correct address is returned when neither turnout has been operated.  
 
-<p>David Duchamp updated the C/MRI support so that it can drive turnouts through two outputs.  Some layouts have Tortoise and similar switch motors wired to two C/MRI output pins.  By alterating which pin is enabled, the turnout can be driven one way or the other.  David also added support for configuring and printing these assignments.
+<p>David Duchamp updated the C/MRI support so that it can drive turnouts through two outputs.  Some layouts have Tortoise and similar switch motors wired to two C/MRI output pins.  By alternating which pin is enabled, the turnout can be driven one way or the other.  David also added support for configuring and printing these assignments.
 
 <p>Dick Bronson contributed additional PanelPro icons for 90 crossings
 
-<p>David Duchamp improved the formating when printing tables
+<p>David Duchamp improved the formatting when printing tables
 
 <p>To reduce confusion, Paul Bender changed the name of one XPressNet connection choice from "Lenz LI101" to "Lenz LI101F"
 
@@ -205,7 +201,7 @@ More on this can be seen in the "javaone/jython" example directory.
 
 <li>Paul Bender extended the XPressNet programmer support to better handle communication errors and unsolicited messages/responses
 
-<li>With help from Digitrax, Bob added support for the new Digitrax PR2 programmer. If you have one, select it in the preferences (be sure to specify the correct serial port), save and restart.  You'll then be able to use it to program CVs.  Turnouts, sensors, etc will not be available because the PR2 is a programming device, not a command station.  A simple tool for downloading sound into Digitrax SoundFX decoders is also provided, but it is not complete. We hope to soon have better sound capablities and throttle support available. As part of this, the Digitrax CV programming low-level code has been updated. Please let us know of any new problems this may have created.
+<li>With help from Digitrax, Bob added support for the new Digitrax PR2 programmer. If you have one, select it in the preferences (be sure to specify the correct serial port), save and restart.  You'll then be able to use it to program CVs.  Turnouts, sensors, etc will not be available because the PR2 is a programming device, not a command station.  A simple tool for downloading sound into Digitrax SoundFX decoders is also provided, but it is not complete. We hope to soon have better sound capabilities and throttle support available. As part of this, the Digitrax CV programming low-level code has been updated. Please let us know of any new problems this may have created.
 
 <li>The panel icons for Sensors, Turnouts, SignalHeads, Memories, and Reporters can now have their level set via a "level" attribute in panel XML files.  This allows the user to determine which icons appear in front of others.  The default values for level have not been changed.
 </ul>

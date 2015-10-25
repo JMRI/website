@@ -486,7 +486,7 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
     <li>Added in the ability to change which memory object a memory labels points to if a change is made from the edit layout block GUI.</li>
     <li>Provided an option to set the default colour for occupied and alternative track states</li>
     <li>Provided an option to automatically create and assign blocks to track and turnouts.
-            This can aid in providing continuous layoutblock connectivity which can be used by the signalmast logic and entry/exit work.</li>
+            This can aid in providing continuous layoutblock connectivity which can be used by the Signal Mast Logic and entry/exit work.</li>
     <li>Updated the Layout Block Routing Protocol, so that when block traffic flow is updated, this is reflected in the routing table</li>
     <li>Add the ability in the Layout Editor to control a second turnout from another one on the layout panel.  This is ideal for situations where the user has two physical turnouts operating from one DCC Address and has to put onto the panel an Internal turnout to represent the second turnout.  Changes made to either turnout are reflected on the other.</li>
     <li>Added the ability to delete multiple selected items using either a popup menu or via the keyboard</li>
@@ -516,9 +516,6 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
     <li>Fixed an issue in the "Add/Edit Routes" window that could cause panel files to load slowly.</li>
     <li>Fix a number of XML validation errors.</li>
 </ul>
-
-
-
 </ul>
 
 <!--#include virtual="/Footer" -->

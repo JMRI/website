@@ -4,7 +4,7 @@
  <title>
  JMRI: Release Notes for 3.11.10
  </title>
-    <meta content="Bob Jacobsen" name="Author">
+    <meta content="Matthew Harris" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.11.10 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
@@ -68,7 +68,7 @@ from
 
 <h3>Older warnings</h3>
 
-<P>This release, and all later releases in this cycle, require Java 1.8 or higher.
+<p>This release, and all later releases in this cycle, require Java 1.8 or higher.
 To use this or any later JMRI releases, you'll have to
 <a href="https://java.com/en/download/">update the Java on your computer</a> to Java 1.8 or higher.
 </p>
@@ -82,7 +82,7 @@ To use this or any later JMRI releases, you'll have to
     different fixed buttons on the main window, PanelPro has an identical
     user interface to the old DecoderPro.</p>
 
-<P>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
+<p>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
 Failure to remove these can result in some portions of
 JMRI (notably the web server) failing to function correctly.
 If you are updating an existing JMRI installation to this version on
@@ -97,8 +97,8 @@ remove/replace the older version of JMRI, ensuring that these obsolete files are
 present.
 </p>
 
-<P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
-calling the parts of JMRI that interchange XML objects.</P>
+<p>This release uses JDOM 2.0.5, which requires some code changes if you are directly
+calling the parts of JMRI that interchange XML objects.</p>
 
 <p>There are now separate settings for the default Service Mode Programmer and
 for the default Ops Mode Programmer.  If you're using two or more system connections,
