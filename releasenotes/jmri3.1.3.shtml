@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.1.3
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.1.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -50,7 +47,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -77,14 +74,14 @@ instead.
 
 <p>Please use these links for downloading:</p>
 
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.3-r21158.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.3-r21158.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.3-r21158.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.3-r21158.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.3-r21158.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.3-r21158.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.3-r21158.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.3-r21158.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.3-r21158.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.3-r21158.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.3-r21158.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.1.3-r21158.tgz/download</a></p>
  
 
 <!--
@@ -117,7 +114,7 @@ These are development files, and might not be working at any particular time.
     <li>Turnout Table - The feedback sensor selection is now done via a drop down list rather</li>
     <li>Entry Exit - The cancel/clear route option can now be accessed via mouse pop-up on the source sensor icon in a panel</li>
     <li>Tables - Remove the un-necessary question when adding a username to an item for the first time if the item has yet to be used.</li>
-    <li>Logix - Fix bug 3565824 - create logix button staying disabled.</li>
+    <li>Logix - Fix bug 3565824 - create Logix button staying disabled.</li>
 </ul>
 
 <p>Steve Todd made the following changes:</p>
@@ -141,7 +138,7 @@ to add the GN1000 series and EMD 645 (non_turbo)
 <li>
 Loconet Slot monitor will refresh if cmd station ops sw 36, 37, 38, or 39 is set to closed 'c'. This is Feature Request 1876188 which specifically asked for Ops SW 36, but there is no reason to limit to sw 36, since 39 will erase all slots memory.
 <li>
-The loconet Slot monitor function Key were active for System Slots. This could have caused Command Station configuration issues. As a result of this change Function Keys F1-F8, E Stop button, and Free button will not longer work for the reserved system slots which are above slot 120.
+The Loconet Slot monitor function Key were active for System Slots. This could have caused Command Station configuration issues. As a result of this change Function Keys F1-F8, E Stop button, and Free button will not longer work for the reserved system slots which are above slot 120.
 </ul>
 
 <!--#include virtual="/Footer" -->

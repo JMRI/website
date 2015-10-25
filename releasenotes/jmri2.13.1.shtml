@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.13.1
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.13.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -69,7 +66,7 @@ created by default.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -104,47 +101,47 @@ This will be fixed in the next test release.
 
 <p>Please use these links for downloading:</p>
 
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.tgz/download</a></p>
     
 <h3>Changes since production release 2.12</h3>
 
 <p>Dan Boudreau made the following enhancements to operations.</p>
 <ul>
-	<LI>You can now show the timetable name on your manifests and switch lists.  See under Settings-&gt;Tools
-	Print Options, Manifest Comments, select Show Timetable.</LI>
-	<LI>You can now show the loco consist name and car kernel name on manifests and switch lists.
-	See Print Options under Settings-&gt;Tools</LI>
-	<LI>You can now select which staging track a train is to terminate on.
-	See Options under Settings-&gt;Tools</LI>
-	<LI>You can now optionally select 12 hour format for your manifests and switch lists.  See under Settings-&gt;Tools
-	Print Options, Manifest Comments "12hr Format" check box.</LI>
-	<LI>Fixed a minor issue with cars in a kernel and their destinations when performing a train reset.</LI>
-	<LI>Improved build report when a train is departing staging.</LI>
-	<LI>The program can now generate a csv switch list file.  This allows you to create custom switch lists
-	for your railroad.  See Settings-&gt;Tools-&gt;Options.</LI>
-	<LI>You can now print the loco's or car's owner name on manifests and switch lists.</LI>
-	<LI>You can now print the car's return when empty (RWE) on manifests and switch lists.</LI>
-	<LI>Added RWE location and track to csv manifests and switch lists</LI>
-	<LI>You can now optionally print the route comment on manifests.  See Print Options under Settings-&gt;Tools</LI>
-	<LI>The loco consist name is now printed on the roster when sort by consist is selected in the locomotives window</LI>
-	<LI>Custom loads can now be defined as a "load" or an "Empty".  This is useful when using the loads and empties feature
-	when creating manifests.</LI> 
-	<LI>Manifest and switch list font size can now be increased to 14 points.</LI>
-	<LI>Fixed a problem where a car would be set out to a track that wasn't to be serviced as determined by the train's direction.
-	This only occurred when a train visited a location more than once.  Thank you Steve Davis for bring this bug to our attention.</LI>
-	<LI>Fixed a problem when generating a car load from staging and the spur would not service the default load empty.  Thank
-	you Frank Wyatt for bringing this bug to our attention.</LI> 	
-	<LI>You can now use a text editor to preview and edit your train manifest and switch lists. Requires Java 1.6 and jar file from
-	my <A HREF="http://home.comcast.net/~daboudreau/JMRI_JAVA1.6/jmri.jar">site</A>. See Print Options under Settings-&gt;Tools.</LI>
-	<LI>Improved how the program selects the departure track from staging, now if the train requires a caboose or car with FRED,
-	all tracks in staging are checked.</LI>
+	<li>You can now show the timetable name on your manifests and switch lists.  See under Settings-&gt;Tools
+	Print Options, Manifest Comments, select Show Timetable.</li>
+	<li>You can now show the loco consist name and car kernel name on manifests and switch lists.
+	See Print Options under Settings-&gt;Tools</li>
+	<li>You can now select which staging track a train is to terminate on.
+	See Options under Settings-&gt;Tools</li>
+	<li>You can now optionally select 12 hour format for your manifests and switch lists.  See under Settings-&gt;Tools
+	Print Options, Manifest Comments "12hr Format" check box.</li>
+	<li>Fixed a minor issue with cars in a kernel and their destinations when performing a train reset.</li>
+	<li>Improved build report when a train is departing staging.</li>
+	<li>The program can now generate a csv switch list file.  This allows you to create custom switch lists
+	for your railroad.  See Settings-&gt;Tools-&gt;Options.</li>
+	<li>You can now print the loco's or car's owner name on manifests and switch lists.</li>
+	<li>You can now print the car's return when empty (RWE) on manifests and switch lists.</li>
+	<li>Added RWE location and track to csv manifests and switch lists</li>
+	<li>You can now optionally print the route comment on manifests.  See Print Options under Settings-&gt;Tools</li>
+	<li>The loco consist name is now printed on the roster when sort by consist is selected in the locomotives window</li>
+	<li>Custom loads can now be defined as a "load" or an "Empty".  This is useful when using the loads and empties feature
+	when creating manifests.</li> 
+	<li>Manifest and switch list font size can now be increased to 14 points.</li>
+	<li>Fixed a problem where a car would be set out to a track that wasn't to be serviced as determined by the train's direction.
+	This only occurred when a train visited a location more than once.  Thank you Steve Davis for bring this bug to our attention.</li>
+	<li>Fixed a problem when generating a car load from staging and the spur would not service the default load empty.  Thank
+	you Frank Wyatt for bringing this bug to our attention.</li> 	
+	<li>You can now use a text editor to preview and edit your train manifest and switch lists. Requires Java 1.6 and jar file from
+	my <a href="http://home.comcast.net/~daboudreau/JMRI_JAVA1.6/jmri.jar">site</a>. See Print Options under Settings-&gt;Tools.</li>
+	<li>Improved how the program selects the departure track from staging, now if the train requires a caboose or car with FRED,
+	all tracks in staging are checked.</li>
 	
 </ul>
 
@@ -165,12 +162,12 @@ This will be fixed in the next test release.
     <li>Caught an issue when clearing a connection from the preferences that could
     prevent a new connection from being created</li>
     <li>Fixed an issue with the sensor icon that prevented icon from being changed once placed on the panel (Bug 3361033)</li>
-    <li>Add the option in the layout editor to change sensor and signalhead 
+    <li>Add the option in the Layout Editor to change sensor and Signal Head 
     icons for an item already on the panel</li>
     <li>Fixed an issue with the Sensor Debounce on LocoNet connected Sensors (Bug 3368304)</li>
     <li>Fixed an issue in the layout editor, where undashed track segments would become dashed</li>
     <li>Updated the way in which Signal Heads are created, by using drop down boxes to select existing turnouts
-    or a seperate method to create turnouts on the fly using a drop down box to select the connection and a text
+    or a separate method to create turnouts on the fly using a drop down box to select the connection and a text
     field to enter in the hardware address.</li>
 </ul>
 
@@ -186,10 +183,10 @@ This will be fixed in the next test release.
     <li>Updated LaunchJMRI on Windows to support the new automated restart mechanism</li>
     <li>Modified the ant build script to support the new automated restart mechanism in development environments</li>
     <li>Added a new FontCombo class that can provide a preview of the font being selected</li>
-    <li>Updated the System Console to allow the displayed font to be customised and added a right-click menu</li>
+    <li>Updated the System Console to allow the displayed font to be customized and added a right-click menu</li>
 </ul>
 
-<p>david zuhn made the following changes:</p>
+<p>David Zuhn made the following changes:</p>
 <ul>
   <li>Moved the source code from CVS to Subversion.</li>
   <li>Simplified the process for creating installer release images.</li>
@@ -228,6 +225,5 @@ have to modify your CAN-RS to use these, consult their Yahoo email group for det
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

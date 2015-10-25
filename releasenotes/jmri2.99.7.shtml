@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.99.7
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.99.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -52,7 +49,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -73,14 +70,14 @@ As an alternative, you can use the NCE consist tool.  We expect to have this pro
 
 <p>Please use these links for downloading:</p>
 
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.7-r20746.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.7-r20746.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.7-r20746.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.7-r20746.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.7-r20746.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.7-r20746.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.7-r20746.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.7-r20746.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.7-r20746.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.7-r20746.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.7-r20746.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.7-r20746.tgz/download</a></p>
 
 
 <!-- 
@@ -114,11 +111,11 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
 <p>Kevin Dickerson made the following changes:</p>
 <ul>
 <li>DP3 - Added the JMRI version to the status bar.</li>
-<li>Layout Editor - Updated the block routing details so that it is initialised after all the layout blocks have been initialised.</li>
+<li>Layout Editor - Updated the block routing details so that it is initialized after all the layout blocks have been initialized.</li>
 <li>Layout Editor - Fixed an issue with Slip that was introduced in 2.99.6.</li>
 <li>Editors - Add the ability to set the orientation of a label to be vertical up or vertical down. For icons in memory labels, this will also rotate the assigned icon to match</li>
 <li>SignalHeads - Fix bug 3535156.</li>
-<li>SignalMasts  Automatically create a resources/signals directory for user created custom signalmast definitions.</li>
+<li>SignalMasts - Automatically create a resources/signals directory for user created custom Signal Mast definitions.</li>
 <li>SignalMast Logic - Fix an issue in the logic where disabled aspects were still being considered as potential valid aspects.</li>
 <li>Direct Driver Serial - Prevent this from being selected in the preferences for certain OS that are not supported.</li>
 <li>ESU - Added RailCom decoder reporter support.</li>

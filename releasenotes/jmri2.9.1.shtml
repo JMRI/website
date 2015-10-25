@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.9.1
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.9.1 decoderpro panelpro locotools loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -65,7 +62,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -89,13 +86,13 @@ To make these stop, just store the file again so that it's rewritten in the most
 <p>Please use these links for downloading:
 
 <p>Mac OS X:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.1.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.1.dmg/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.1.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.1.dmg/download</a>
 
 <p>Windows:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.1.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.1.exe/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.1.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.1.exe/download</a>
 
 <p>Linux:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.1.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.1.tgz/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.1.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.1.tgz/download</a>
 
 <h3>Changes since production version 2.8</h3>
 
@@ -107,7 +104,7 @@ and potentially reduce CPU overhead.
 Also handles double slip and three way points better.
 
 <p>
-Kevin Dickerson updated the storage code so that Signalheads in panel files are saved using the new namedBeanHandle.
+Kevin Dickerson updated the storage code so that Signal Heads in panel files are saved using the new namedBeanHandle.
 This means that they will be remembered by their system name or user name, whichever you specified.
 
 <p>
@@ -141,7 +138,7 @@ Kevin Dickerson made a number of improvements:
 <li>Resolves an issue where phantom panel load error message appears, when no error is registered in the console window.
 This was caused when the getBySystemName failed when loading a turnout (which it would on initial load), the result to return was set to false, even if the newTurnout successfully created the turnout.
 <li>Only loads an output turnout or sensor once per route, even if it is listed multiple times.
-An issue occurs whereby if a user loads the same panel file multiple times then the output sensors & turnouts for a route get appended to the existing route even though they already exist.  When the panel file is saved it will save the outputs a multiple of times.
+An issue occurs whereby if a user loads the same panel file multiple times then the output sensors &amp; turnouts for a route get appended to the existing route even though they already exist.  When the panel file is saved it will save the outputs a multiple of times.
 <li>MemoryIcon, MemoryInputIcon, and PanelEditor were updated so that the Memory &amp;  MemoryInput Icons are now referenced using the namedBeanHandle.
 <li>Message added when closing the layout window, asking the user if they are simply hiding the window, or wishing to delete it.  Done in the same way that the panel editor does.
 Updated so that the Memory is now referenced using the namedBeanHandle.
@@ -167,14 +164,14 @@ without having to know the IP address or name.
 The included jmdns.jar (Zeroconf/Bonjour networking) library has been updated to version 3.0 to
 solve a problem with the program hanging at shutdown.  This required no code changes.
 
-<P>
+<p>
 Pete Cressman fixed a problem with integer comparisons in Conditionals.
 
 <p>
 Dan Boudreau and Pete Cressman fixed a problem with the order of saved PanelEditor items.
 
 <p>
-Pete Cressman made it so Conditonal action items can be specified from a memory value 
+Pete Cressman made it so Conditional action items can be specified from a memory value 
 using the syntax "@IMemory" for the device name - i.e. the name of the internal memory 
 variable preceded by the "@" character.
 Note the particular value being referenced is not verified by Logix.  
@@ -304,6 +301,5 @@ Paul Bender fixed a timeout issue in the XPressNet support that mostly effected 
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>
