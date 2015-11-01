@@ -196,19 +196,26 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.1.4+">
 
     <h4>New / Updated decoder definitions</h4>
 
-        <h5>Digitrax</h5>
+        <h5>BLI</h5>
             <ul>
-                <li></li>
+                <li>Michael Mosher updated the BLI Paragon 3 and 2 decoders</li>
             </ul>
 
         <h5>Doehler &amp; Haas</h5>
             <ul>
-                <li></li>
+                <li>Pierre Billon updated the Doehler &amp; Haas definitions,
+                    including adding a new entry for the 1.06 version of the SH10A
+                </li>
             </ul>
 
-        <h5>MERG</h5>
+        <h5>MGP</h5>
              <ul>
-                <li></li>
+                <li>Anders Bostrom provided definitions for the <a href="http://mollehem.se">MGP</a>
+                    LocoBridge, 
+                    Servo5, Panel and Signal 10 decoders.  These use the LocoNet
+                    VS2 protocol to configure the units over a LocoNet, not
+                    over a programming track<
+                </li>
              </ul>
 
         <h5>MTH</h5>
@@ -228,12 +235,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.1.4+">
 
         <h5>SoundTraxx</h5>
             <ul>
-                <li></li>
+                <li>Michael Mosher updated the Soundtraxx MC decoders</li>
+                <li>Michael Mosher updated the Genesis caboose lighting decoder</li>
             </ul>
 
         <h5>TCS</h5>
             <ul>
-                <li></li>
+                <li>Michael Mosher removed the non-existance CV139 from the non-sound TCS decoders</li>
             </ul>
 
         <h5>Miscellaneous</h5>
@@ -277,7 +285,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.1.4+">
 
     <h4>Scripting</h4>
         <ul>
-            <li></li>
+            <li>Randall Wood made the jmri_bindings.py file again available in the jython directory
+            </li>
         </ul>
 
     <h4>Miscellaneous</h4>
