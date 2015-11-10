@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.11.8
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.11.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -50,7 +47,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -97,13 +94,13 @@ None at the time of this release.
 <p>Please use these links for downloading:
 
 <p>Mac OS X:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.8.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.8.dmg/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.8.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.8.dmg/download</a>
 
 <p>Windows:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.8.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.8.exe/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.8.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.8.exe/download</a>
 
 <p>Linux:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.8.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.8.tgz/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.8.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.8.tgz/download</a>
 
 <h3>Changes since test release version 2.11.7</h3>
 
@@ -114,17 +111,17 @@ Add user's name to loconet titles when user has modified default name to disting
 
 <p>
 The initial display of the CBUS console was fixed so that the buttons show properly.
-</P>
+</p>
 
-<P>Dan Boudreau</P>
+<p>Dan Boudreau</p>
 
-<P>New operations features and bug fixes:</P>
+<p>New operations features and bug fixes:</p>
 <UL>
-	<LI>Fixed some of the operations windows so the input text fields
-	now work correctly when using large font sizes.</LI>
-	<LI>Fixed a bug were the program didn't check to see if a train
+	<li>Fixed some of the operations windows so the input text fields
+	now work correctly when using large font sizes.</li>
+	<li>Fixed a bug were the program didn't check to see if a train
 	could service a track when the car had a destination assigned to it
-	before the build.</LI>
+	before the build.</li>
 </UL>
 
 <p>Steve Todd</p>
@@ -146,7 +143,7 @@ The initial display of the CBUS console was fixed so that the buttons show prope
 <p>Kevin Dickerson</p>
 
 <ul>
-	<li>Fixed an error in the loading of Simple Signalling Logic (SSL) where an invalid entry potentially causes all of the logic not be loaded and are lost on 
+	<li>Fixed an error in the loading of Simple Signaling Logic (SSL) where an invalid entry potentially causes all of the logic not be loaded and are lost on 
     any subsequent stores.</li>
     <li>Fixed an error that potentially prevented the pop-up menu for a turnout from being displayed.</li>
     <li>Fixed an error in the global sensor de-bounce load process that potentially prevented sensors from not being loaded correctly.</li>
@@ -154,12 +151,11 @@ The initial display of the CBUS console was fixed so that the buttons show prope
 
 <p>Dick Bronson</p>
 <ul>
-    <li>Added the CSX-1998 Signalmasts</li>
-    <li>Updated the AAR-1946 Signalmasts to work with the Signalling Logic.</li>
+    <li>Added the CSX-1998 Signal Masts</li>
+    <li>Updated the AAR-1946 Signal Masts to work with the Signaling Logic.</li>
 </ul>
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.99.3
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.99.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -52,7 +49,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -73,14 +70,14 @@ None at the time of this release.
  
 <p>Please use these links for downloading:</p>
 
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.3-r20014.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.3-r20014.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.3-r20014.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.3-r20014.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.3-r20014.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.3-r20014.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.3-r20014.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.3-r20014.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.3-r20014.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.3-r20014.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.3-r20014.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.3-r20014.tgz/download</a></p>
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -136,12 +133,12 @@ These are development files, and might not be working at any particular time.
 <li>Add a notification if an error occurred during a panel store, rather than it previously failing silently.</li>
 <li>Updated the throttle window, so that when it is closed, any active throttles, no longer set the loco speed to 0 or turns off all the functions</li>
 <li>Added a delay option into the SignalMast code to allow the simulation of manually operated signals ie Semaphore Signals<li>
-<li>Fix an issue when an NullPointerException could occur when changing between signal mast driver types when the signalling system name does not match the directory that the signal mast are held in</li>
-<li>Added an Experimental DCC accessory controlled SignalMast for the rr-cirkits LNCP module.</li>
+<li>Fix an issue when an NullPointerException could occur when changing between signal mast driver types when the signaling system name does not match the directory that the signal mast are held in</li>
+<li>Added an Experimental DCC accessory controlled SignalMast for the RR-Cirkits LNCP module.</li>
 <li>Updated the status bar font size in DP3 to hopefully make it clearer for some users.</li>
 <li>Added the ability to save and recall the order in which column headers appear in DP3s roster table</li>
 <li>Add the ability in the Layout Editor to control a second turnout from another one on the layout panel.  This is ideal for situations where the user has two physical turnouts operating from one DCC Address and has to put onto the panel an Internal turnout to represent the second turnout.  Changes made to either turnout are reflected on the other.</li>
-<li>ECOS - Improved he handling of adding locos to the roster from ecos database.</li>
+<li>ECOS - Improved he handling of adding locos to the roster from Ecos database.</li>
 <li>(Windows Only) In the preferences when you select a new connection, they system will try and match the correct comm port against the selected system</li>
 <li>Fixed an issue in the "Add/Edit Routes" window that could cause panel files to load slowly.</li>
 <li>Fixed an issue with the Start-Up Wizard that could cause the system to hang when doing the final connect</li>
@@ -176,6 +173,5 @@ only one OpSw access attempt.</li>
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

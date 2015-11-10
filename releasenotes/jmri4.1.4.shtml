@@ -4,13 +4,12 @@
 <head>
  <title>
  JMRI: Release Notes for 4.1.4
-
  </title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 4.1.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -49,7 +48,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<A href="/COPYING">GNU General Public License</a>. For more information, please
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -107,7 +106,7 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
     If you have decoder definitions with the older "ivariable" form, they will no longer
     validate, but can still be used for the first couple of test releases in this series.
     Please ask on the
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">jmriusers list</a>
+    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
     for help converting them, or just drop them and use the current definitions.</p>
 
 <p>The OpenLCB 0.6.4 library in this version has a bug in its alias

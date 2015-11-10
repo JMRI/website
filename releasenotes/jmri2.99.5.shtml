@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.99.5
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.99.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -52,7 +49,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -72,14 +69,14 @@ None at the time of this release.
 
 <p>Please use these links for downloading:</p>
 
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.5-r20578.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.5-r20578.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.5-r20578.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.5-r20578.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.5-r20578.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.5-r20578.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.5-r20578.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.5-r20578.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.5-r20578.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.5-r20578.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.5-r20578.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.5-r20578.tgz/download</a></p>
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -110,25 +107,25 @@ indexed variables.</p>
    <ul>
     <li>Two new switch list features.  You can now eliminate trains that don't have work from your switch lists.
     You can if you wish use a separate page for each train visiting a location.  See help for more info.</li>
-    <Li>You can now view a car's wait value in the Cars window.  Note that you need a schedule for this field
-    to show up.</Li>
+    <li>You can now view a car's wait value in the Cars window.  Note that you need a schedule for this field
+    to show up.</li>
     <li>Enhanced the cars print and preview options. Now you can select the page orientation, and you can also 
     optionally select the car's train, destination, and comment.</li>
     <li>You can now print all of your routes from the "Tools" menu found in the routes window.</li>
-    <li>Improved the train builder, you should see less final destinations assigned to cars that arn't part of the
+    <li>Improved the train builder, you should see less final destinations assigned to cars that aren't part of the
     train</li>
-    <LI>You can now add a unique switch list comment for each location.</LI>
+    <li>You can now add a unique switch list comment for each location.</li>
     <li>New feature, auto backup.  When enabled, the program will make a backup copy of all operation
     files when the program starts.</li>
     <li>The Trains window now shows which staging track a train is departing or terminating on.</li>
-    <LI>New enhancement, you can now exclude trains or routes from spurs, interchanges, and staging tracks.</LI>
+    <li>New enhancement, you can now exclude trains or routes from spurs, interchanges, and staging tracks.</li>
     <li>Fixed a problem introduced in 2.99.4 with the switch list button "Print Switch List Changes".</li>
-    <LI>Fixed a problem when manually adding a car to a train when the train is a turn.</LI>
+    <li>Fixed a problem when manually adding a car to a train when the train is a turn.</li>
     <li>Fixed a problem when manually adding multiple cars to a train using the Set Cars tool</li>
-    <LI>Fixed a problem with track reserved track lengths if you changed the length of rolling stock after a train was
-    built.</LI>
-    <LI>Fixed track length problem if you changed loco lengths after a loco was assigned to a track.</LI>
-    <LI>Fixed a problem where routes could be deleted when the auto save feature was enabled</LI>
+    <li>Fixed a problem with track reserved track lengths if you changed the length of rolling stock after a train was
+    built.</li>
+    <li>Fixed track length problem if you changed loco lengths after a loco was assigned to a track.</li>
+    <li>Fixed a problem where routes could be deleted when the auto save feature was enabled</li>
     </ul>
     
 <p>Kevin Dickerson made the following changes:</p>
@@ -150,12 +147,12 @@ indexed variables.</p>
         <li>Updated the turnout table so that column widths retain their size when extra columns are shown or hidden.</li>
         <li><b>Layout Editor</b><ul>
             <li>Update to the way that the single slip can operate to have either two or three different states.<li>
-            <li>Allow the logix for the signal allocated to a Slip to be recreated rather than skipped if it has
+            <li>Allow the Logix for the signal allocated to a Slip to be recreated rather than skipped if it has
                 already been created once, this allows for changes having been made at a later date on the slip for the turnout states.</li>
             <li>Fixed a problem introduced in 2.99.4 with the saving/loading of a layout panel that had a
                 level crossing included.</li>
             <li>Made some changes to the internal workings of the new Slips in the Layout Editor, this means that any added 
-                in 2.99.4 will have to be re-created or put a request up on the yaho group for assistance</li>
+                in 2.99.4 will have to be re-created or put a request up on the Yahoo group for assistance</li>
             <li>Updated the memory icon in the panels so that if a roster entry is allocated against it, 
                 the roster media icon is displayed (if available) or the roster title. If an icon and throttle is available the icon will flip to match the direction</li>
             <li>Added in ability to the layout editor to hide turnouts when not in editing mode</li>
@@ -180,7 +177,7 @@ indexed variables.</p>
 
 Gert Muller
 <UL>
-<LI>updated the CanExample.py script to reflect the changes made relating to the multiple CAN connections.
+<li>updated the CanExample.py script to reflect the changes made relating to the multiple CAN connections.
 <li>You could add all the other panel items except a label with a right click and "Add Item" on a Panel. Added "Test/Label" at the bottom of the "Add Item" list.
 <li>Added line numbers to the script entry window
 <li>Fixed the help link from the CAN send-frame window
@@ -231,7 +228,7 @@ The Team Digital SD8 decoder was updated.
 Martin Pischky improved the LocoNet firmware downloader and fixed some bugs.
 
 <p>
-Steve Lowens added the Con-cor Zephyr (HO & N) definitions to the Digitrax sound decoder definitions.
+Steve Lowens added the Con-cor Zephyr (HO &amp; N) definitions to the Digitrax sound decoder definitions.
 
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->

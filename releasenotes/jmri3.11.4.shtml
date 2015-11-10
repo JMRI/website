@@ -1,16 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.11.4
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.11.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
+  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -52,7 +50,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -73,12 +71,12 @@ from
 
 <h3>Older warnings</h3>
 
-<P>This release, and all later releases in this cycle, require Java 1.8 or higher.
+<p>This release, and all later releases in this cycle, require Java 1.8 or higher.
 To use this or any later JMRI releases, you'll have to 
 <a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
 </p>
 
-<P>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
+<p>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
 Failure to remove these can result in some portions of
 JMRI (notably the web server) failing to function correctly.
 If you are updating an existing JMRI installation to this version on
@@ -93,8 +91,8 @@ remove/replace the older version of JMRI, ensuring that these obsolete files are
 present.
 </p>
 
-<P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
-calling the parts of JMRI that interchange XML objects.</P>
+<p>This release uses JDOM 2.0.5, which requires some code changes if you are directly
+calling the parts of JMRI that interchange XML objects.</p>
 
 <p>There are now separate settings for the default Service Mode Programmer and 
 for the default Ops Mode Programmer.  If you're using two or more system connections,
@@ -136,14 +134,14 @@ Driver.</p>
 
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28907.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28907.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28907.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28907.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28907.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28907.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28907.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28907.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28907.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28907.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28907.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.4-r28907.tgz/download</a></p>
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -176,7 +174,7 @@ These are development files, and might not be working at any particular time.</p
             The single output signal head implementation was generating a turnout change command every 
             time JMRI started up (at panel.xml load time).</p>
     <p>Oscar Moutinho updated the DB-HV-1969 signals definition to improve speed control and icons</p>
-    <p>The signal speed defintion has been updated for consistent operation. Also, a release
+    <p>The signal speed definition has been updated for consistent operation. Also, a release
         test has been added to keep it that way.</p>
     
 <h4>New / Updated decoder definitions</h4>
@@ -205,17 +203,17 @@ These are development files, and might not be working at any particular time.</p
     <p>Global update (Pierre Billon)</p>
         <ul>
          <li>Added: 1 new Decoder / 4 Fw versions (DH22A)</li>
-         <li>Added: 3 new Fw version(s) (DH05C,DH06A,DH10C,DH12A,DH16A,DH18A,DH21A)</li>
-         <li>Added: 1 new Fw version(s) (FH05A,SD18A,SD21A,SH10A,generic profile)</li>
+         <li>Added: 3 new Fw version(s) (DH05C, DH06A, DH10C, DH12A, DH16A, DH18A, DH21A)</li>
+         <li>Added: 1 new Fw version(s) (FH05A, SD18A, SD21A, SH10A, generic profile)</li>
          <li>Added: SUSI pane, moved relevant options there (All decoders)</li>
          <li>Added: Start/Brake/Shunt pane, moved relevant options there (All decoders)</li>
          <li>Change: Adv. mapping now in standard mapping table (All Decoders)</li>
-         <li>Change: Railcom pane (grid + qualifyer) (All Decoders)</li>
-         <li>Change: Adapted Trix 66840 def to match above changes to the core D&H XMLs.</li>         
+         <li>Change: Railcom pane (grid + qualifier) (All Decoders)</li>
+         <li>Change: Adapted Trix 66840 def to match above changes to the core D&amp;H XMLs.</li>         
          <li>Fixed: Consistent Reset function / translation (All Decoders)</li>
-         <li>Fixed: Removed non applicable Motorola options (FH05A,DH05A,DH05B,DH10A,DH10B,DHP160,DHP250,DHP260)</li>         
+         <li>Fixed: Removed non applicable Motorola options (FH05A, DH05A, DH05B, DH10A, DH10B, DHP160, DHP250, DHP260)</li>         
          <li>Info: New ProductID format for future versions (e.g.: DH05A_2014.10)</li>
-         <li>Info: No new models created for new Fw on long deprecated models (DH05A/B,DH10A/B,DHP160/250/260). Use generic profile if needed.</li>         
+         <li>Info: No new models created for new Fw on long deprecated models (DH05A/B, DH10A/B, DHP160/250/260). Use generic profile if needed.</li>         
         </ul>        
         
     <h5>Miscellaneous</h5>
@@ -257,7 +255,7 @@ These are development files, and might not be working at any particular time.</p
 	global Throttle Factor to aid trains in running at scale track speed is added.  Also added is
 	a combo box to set the layout scale.  See the warrant's help documentation for details.</p>
 	
-<H4>Warrants</H4>
+<h4>Warrants</h4>
     <ul>
 	<li>The algorithm to change speeds due to track conditions is improved to more accurately predict
 	speed change start and end points.</li>
@@ -282,7 +280,7 @@ These are development files, and might not be working at any particular time.</p
 	<p>Lisby made an enhancement to the train tracking as implemented in Block.java:
         When the existing code has not been able to track the train, i.e. the train ID in terms of block value will be lost.
         The enhancement stores the candidate Blocks that a train may have arrived from when a block becomes occupied 
-        and then when a block becomes unoccupied, it informs its neighbours who can then choose to use their candidate list to 
+        and then when a block becomes unoccupied, it informs its neighbors who can then choose to use their candidate list to 
         determine where their train came from.
 
    <!--#include virtual="/Footer" -->

@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.2
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -43,7 +40,7 @@ We're therefore making that version, "Production version 3.2" available for down
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -71,14 +68,14 @@ some later release.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.2-r21862.tgz/download</a></p>
  
 
 <h3>Changes since production release 3.0</h3>
@@ -148,7 +145,7 @@ some later release.
 <ul>
     <li>Hardware Support<br>
     <ul>
-        <li>Added in initial support for the <b>Marklin Command Station 2</b> System with help from Jean-Francois</li>
+        <li>Added in initial support for the <b>M%auml;rklin Command Station 2</b> System with help from Jean-Francois</li>
         <li>ESU ECOS - Only update the throttle speed on the reply of the last throttle message which has been sent and ignore the event messages until all set speed messages have been processed, otherwise the throttle speed value jumps up and down like a yoyo until the last message is proceed.</li>
         <li>ESU ECOS - Update the loco import to blank out disabled functions and set non-descript function labels to be Fx.</li>
         <li>ESU ECOS - Update some of the back end code relating to the Ecos loco database</li>
@@ -180,7 +177,7 @@ some later release.
         The change is only seen if the system that controls the throttle supports multiple protocols.
     </li>
     <li>Throttles - Provide a method to create a throttle by passing the Roster Entry rather than the DCC Address</li>
-    <li>Throttles/Roster Enties - Records the duration that the loco has been operating for, along with the last time last was used, the information is stored as an attribute against the roster entry and can be viewed in the media pane.</li>
+    <li>Throttles/Roster Entries - Records the duration that the loco has been operating for, along with the last time last was used, the information is stored as an attribute against the roster entry and can be viewed in the media pane.</li>
     </ul></li>
     <li>Tables<br>
     <ul>
@@ -194,7 +191,7 @@ some later release.
     <li>Editors<br>
     <ul>
         <li>Fix an issue where memory icons that load with an empty string value, the saved background color is ignored and subsequently lost</li>
-        <li>Provided a method for external code to add menu items to the popmenus of icons on the panel</li>
+        <li>Provided a method for external code to add menu items to the popupmenus of icons on the panel</li>
         <li>Layout Editor - Fixed an issue with the SSL Logic for a slip icon that resulted in a diverging route not being set for limited speed correctly.</li>
     </ul></li>
     <li>Auto Dispatcher<br>
@@ -210,7 +207,7 @@ some later release.
         <li>The cancel/clear route option can now be accessed via mouse pop-up on the source sensor icon in a panel</li>
     </ul></li>
     <li>When setting a sensor in a block, if that sensor has a reporter associated against it the user is asked if they wish to use the reporter on that block.</li>
-    <li>Logix - Fix bug 3565824 - create logix button staying disabled.</li>
+    <li>Logix - Fix bug 3565824 - create Logix button staying disabled.</li>
     <li>Abstract Automation - Assign the name to the thread to help identify any issues caused by the thread</li>
 </ul>
   
@@ -279,10 +276,8 @@ to add the GN1000 series and EMD 645 (non_turbo)
 <ul>
 <li>added code to allow function buttons to work within the Loconet Slot Monitor.
 <li>Loconet Slot monitor will refresh if cmd station ops sw 36, 37, 38, or 39 is set to closed 'c'. This is Feature Request 1876188 which specifically asked for Ops SW 36, but there is no reason to limit to sw 36, since 39 will erase all slots memory.
-<li>The loconet Slot monitor function Key were active for System Slots. This could have caused Command Station configuration issues. As a result of this change Function Keys F1-F8, E Stop button, and Free button will not longer work for the reserved system slots which are above slot 120.
+<li>The Loconet Slot monitor function Key were active for System Slots. This could have caused Command Station configuration issues. As a result of this change Function Keys F1-F8, E Stop button, and Free button will not longer work for the reserved system slots which are above slot 120.
 </ul>
-
-
 
 <p>Steve Todd made the following changes:</p>
 <ul>
@@ -405,7 +400,7 @@ Group.</p>
 
 <p>Layout Editor - The click area for turnouts now increases to match larger turnout circle sizes (Steve Todd)
 
-<P>Nigel Cliffe updated the Zimo programming script for additional functions
+<p>Nigel Cliffe updated the Zimo programming script for additional functions
 
 <p>Matthew Harris made the following changes:
 <ul>
@@ -438,9 +433,6 @@ Group.</p>
 
 <p>
 Dan Boudreau fixed a problem with window size on Mac OS X
-
-
-
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
