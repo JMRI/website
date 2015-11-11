@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.11.4
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.11.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -61,7 +58,7 @@ many new features, including:
 
 <li>The LocoNet monitor translates additional commands into plain English
 
-<li>Fixes glitches in the CP290 and Insteon powerline interfaces
+<li>Fixes glitches in the CP290 and Insteon Powerline interfaces
 
 <li>Fixes a timing glitch in the RobotThrottle3 script that allowed a train 
     to effectively trip its own signal before it actually passed. 
@@ -95,7 +92,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -139,20 +136,20 @@ None at the time of this release.
 <p>Please use these links for downloading:
 
 <p>Mac OS X:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.4.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.4.dmg/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.4.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.4.dmg/download</a>
 
 <p>Windows:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.4.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.4.exe/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.4.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.4.exe/download</a>
 
 <p>Linux:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.4.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.4.tgz/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.4.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.4.tgz/download</a>
 
 <h3>Changes since production version 2.11.3</h3>
 
 <p>
-<P>Dan Boudreau:
+<p>Dan Boudreau:
 <ul>
-<LI>Users can now adjust font size.  See Edit Preferences, Display GUI.</LI>
+<li>Users can now adjust font size.  See Edit Preferences, Display GUI.</li>
 </ul>
 
 New operations features and bug fixes:
@@ -174,17 +171,17 @@ New operations features and bug fixes:
 	<li>New car sort in the cars window, by car's final destination.</li>	
 	<li>New build option, you can now optionally select the departure
 	track from staging.</li>
-	<Li>New operations feature. You can now optionally create a Comma
+	<li>New operations feature. You can now optionally create a Comma
 	Separated Values (csv) manifest file. Now you can use Excel to create a
 	custom manifest to your liking. Files can be found in
-	operations-&gt;csvManifests</Li>
+	operations-&gt;csvManifests</li>
 	<li>A new capacity check has been added to limit overloading of a
 	siding with a schedule in aggressive mode. Overloading a siding can
 	still happen when using aggressive mode, but the overloading is now
 	limited.</li>
-	<Li>Bug fix. A car in a kernel with FRED must be the lead (*) car.
+	<li>Bug fix. A car in a kernel with FRED must be the lead (*) car.
 	When editing car with FRED and in kernel, the program will
-	automatically make the car the lead.</Li>
+	automatically make the car the lead.</li>
 	<li>Manifests and switch lists now block
 	cars by kernel. The new blocking order is: first by road, then number,
 	kernel, location and finally destination.  This should keep cars in a
@@ -217,7 +214,7 @@ no issues!!</li>
 <li>Added a new test case for Reporter objects.</li>
 <li>Updated documentation for Windows start-up scripts, giving more details of how the shortcuts are structured.</li>
 <li>Updated LaunchJMRI to correctly set the user.home variable which was incorrectly determined in some configurations.</li>
-<li>Allowed the use of environment variables to modify launcher behaviour.</li>
+<li>Allowed the use of environment variables to modify launcher behavior.</li>
 <li>Enabled the process name displayed in Task Manager to match the JMRI application being launched.</li>
 <li>Added a new object and test case that holds the current JMRI application name.</li>
 <li>Corrected the behavior of snapping JSliders by making them snap whilst dragging
@@ -244,8 +241,8 @@ been replaced with checkboxes.  See the help page on the Item Palette.</li>
 <li>Warrant throttle command scripts editing improved. Commands may be added and deleted.  
 Scripts can be edited to trigger an external sensor to operate additional animation.
 <li>Internal improvements to Portals and OPaths</li>
-<li>Fixed bug that would hang scipts if Speed Table was not initialized.</li>
-<li>Fixed bug #3209940 Logix StateVariable for SignalHead Apperance and Mast Aspect did not report user errors.</li> 
+<li>Fixed bug that would hang scripts if Speed Table was not initialized.</li>
+<li>Fixed bug #3209940 Logix StateVariable for SignalHead Appearance and Mast Aspect did not report user errors.</li> 
 </ul>
 
 <p>
@@ -274,7 +271,7 @@ Kevin Dickerson:
     to multiple potential local appearances.  
     See <a href="http://jmri.org/xml/signals/BR-2003/appearance-3.xml">BR-2003/appearance-3.xml</a> for an example.</li>
 <li>Added a set action in a signal mast icon, so that when it is clicked the appearance will change aspect,
-alternate held, alternate dark.  In the same manner as the existing Signalhead Icon.</li>
+alternate held, alternate dark.  In the same manner as the existing Signal Head Icon.</li>
 <li>It is now possible to select which set of icons are used for a signal mast in the editors 
 where more than one set has been provided for.</li>
 </ul>
@@ -334,6 +331,5 @@ test the held state of signal heads and to operate turnouts and accessories like
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

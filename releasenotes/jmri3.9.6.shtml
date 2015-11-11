@@ -1,16 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.9.6
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.9.6 decoderpro panelpro loconet lenz nce easydcc">
 
 <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -47,7 +45,7 @@ to end in a JMRI 3.10 production release around the end of 2014.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<A href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -58,7 +56,7 @@ see our
 The JMRI 3.9.* releases series, including this one, and JMRI 3.10 (expected in December 2014),
 will be the last JMRI releases that will work with Java 1.6.  
 To use any later JMRI test or production releases, you'll have to 
-<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or later.
+<a href="https://java.com/en/download/">update the Java on your computer</a> to Java 1.8 or later.
 All JMRI releases 3.9.3 and are tested on Java 1.8, so you 
 can do the Java update now if you want to.
 
@@ -86,7 +84,7 @@ the resources directory when added to the roster entry. Existing images are not 
 All users and developers who are relying on direct access to the XmlIO API are
 recommended to begin using the JSON API. inControl web throttle users are recommended to
 begin using webThrottle instead, or to plan on investing in devices that can support
-webThrottle, <a href="http://withrottle.com">WiThrottle</a> for iOS, or
+webThrottle, <a href="http://www.withrottle.com">WiThrottle</a> for iOS, or
 <a href="http://enginedriver.rrclubs.org">Engine Driver</a> for Android.</p>
 
 <!-- keep this warning in place through the 3.11/3.12 development cycle -->
@@ -115,14 +113,14 @@ on the
  --> 
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.6-r27781.tgz/download</a></p>
 
 <h3>Changes since test release 3.9.5:</h3>
 
@@ -131,7 +129,7 @@ on the
         <li>A problem in the QDecoder ZBasic definition was fixed.
         <li>Decoder definitions can now be written for accessory decoders that use
             accessory ops mode programming.  
-            See the <a href="http://xml/decoders/0NMRA_accessory.xml">xml/decoders/0NMRA_accessory.xml</a> file
+            See the <a href="http://jmri.org/xml/decoders/0NMRA_accessory.xml">xml/decoders/0NMRA_accessory.xml</a> file
             for an example.  This is new support which needs more work and testing. If you
             have one of these decoders and want to help, please contact us.
         <li>Peter Ulvestad fixed some spelling errors in BLI Blueline decoder definitions.
@@ -178,7 +176,7 @@ on the
         changing them.  This is useful when e.g. you've got two computers controlling
         a LocoNet.  Note that this works for RED, YELLOW, GREEN and DARK, but 
         not for the FLASHING aspects, nor for Held and Lit states.  The recommendation
-        is still to have all your layout logix running in a single running copy
+        is still to have all your layout Logix running in a single running copy
         of JMRI.
     <li>NCE Network Connection method fixed to enable the different NCE menu items. (Ken C)
     <li>RFID support has been added for Seeed Studio RDM630 readers. (Matthew Harris)

@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.3.5
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.3.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -52,7 +49,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -78,14 +75,14 @@ None at the time of this release.
 
  
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r23358.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r23358.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r23358.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r23358.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r23358.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r23358.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r23358.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r23358.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r23358.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r23358.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r23358.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.5-r23358.tgz/download</a></p>
 
  
 <!-- 
@@ -112,7 +109,7 @@ These are development files, and might not be working at any particular time.
     <li>SignalMast Logic based section blocks are populated at load</li>
     </ul>
   </li>
-  <li>Added the option to store the Roster Entry in allocated blocks from the dispather rather than just a text string - Kevin Dickerson</li>
+  <li>Added the option to store the Roster Entry in allocated blocks from the dispatcher rather than just a text string - Kevin Dickerson</li>
   <li>Provide access to the Dispatcher functions of create new train, allocate sections and terminate for an active train from a memory icon, if a Roster Entry is used - Kevin Dickerson</li>
   <li>Store the train type as set in the Dispatcher New Train Window against the roster entry, and retrieve it when the entry is selected again - Kevin Dickerson</li>
   <li>Added the option to set the state of an Internal Sensor at load/creation to something other than Unknown - Kevin Dickerson</li>

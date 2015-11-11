@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.3.1
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.3.1 decoderpro panelpro locotools loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -46,15 +43,15 @@ back to an earlier version.
 It contains 
 many new features, including:
 <ul>
-<LI>Comment fields in the Turnout, Sensor, etc tables so you can document your work
-<LI>Much improved support for
+<li>Comment fields in the Turnout, Sensor, etc tables so you can document your work
+<li>Much improved support for
 <li>Improved handling of F9-F28 on Digitrax systems,
 <li>New features in the Layout Editor,
 <li><a href="http://jmri.sf.net/help/en/html/web/index.shtml">Web access</a> for JMRI windows,
 <li>A new "C/MRI simulator" selection for when you really need to play with JMRI, but
 aren't near the layout,
-<LI>Several new and improved decoder definitions,
-<LI>Many small improvements to the usability and reliability,
+<li>Several new and improved decoder definitions,
+<li>Many small improvements to the usability and reliability,
 </ul>
 along with lots of other changes.  See the complete list below.
 
@@ -69,13 +66,13 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
 <h3>New warnings for this version:</h3>
 
-<P>There may be a problem with automatic identification of QSI decoders in this
+<p>There may be a problem with automatic identification of QSI decoders in this
 version.  We're still trying to determine what's going on.
 If you find that DecoderPro can't identify a QSI decoder type,
 please select the right decoder manually.
@@ -101,18 +98,15 @@ version of Java.  To see JMRI's future plans for this and other compatibility is
 <p>Please use these links for downloading, including the "?download" at the end. That adds to SourceForge's advertising statistics, which makes them happy to host our stuff.
 
 <p>Mac OS X:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.3.1.dmg?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.1.dmg?download</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.3.1.dmg?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.1.dmg?download</a>
 
 <p>Windows:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.3.1.exe?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.1.exe?download</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.3.1.exe?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.1.exe?download</a>
 
 <p>Linux:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.3.1.tgz?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.1.tgz?download</a>
-
-
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.3.1.tgz?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.1.tgz?download</a>
 
 <h3>Changes since production version 2.2:</h3>
-
 
 Ian Birchenough added a decoder definition for the Lenz Standard decoder.
 
@@ -142,7 +136,7 @@ for system and user names expand as the window is expanded.  This lets you
 enter the really long names that some systems (RPS, CBUS) can use.  If this
 works well, it'll be done for the rest of the places.
 
-<P>
+<p>
 The JMRI throttle now has a "Program" button which opens an ops-mode programmer
 window for the selected locomotive. It's only active when a roster entry
 has been selected on the throttle.
@@ -154,7 +148,7 @@ via a column in the associated table. It will be stored in panel files
 along with the object's other information, and 
 can be accessed via scripts, etc.
 
-<P>
+<p>
 The JMRI
 <a href="http://jmri.sf.net/help/en/html/hardware/can/cbus/index.shtml">CBUS support</a>
 now takes an easier format for specifying CBUS events in sensors
@@ -167,7 +161,7 @@ discusses various optional forms.
 Jos Wils provided updated ESU decoder definitions, and extended the Comprehensive
 programmer format to work well with them.
 
-<P>
+<p>
 The JMRI 
 <a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrix/loconet/sdfeditor/EditorFrame.shtml">editor for Digitrax SDF sound definitions</a>
 has been updated with more editing options and some layout 
@@ -294,6 +288,5 @@ Dan Boudreau added train markers to Layout Editor panels.
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

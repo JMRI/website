@@ -1,17 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.3.5
- 
  </title>
     <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.3.5 decoderpro panelpro locotools loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -54,7 +52,6 @@ many new features, including:
 </ul>
 along with lots of other changes.  See the complete list below.
 
-
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.  
 Therefore, this test version should be considered experimental.
@@ -65,7 +62,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -93,11 +90,11 @@ installed a very old version of JMRI, there might still be files around
 that can cause this problems.
 If so, you can fix it by moving aside those extra
 .jar files from the JMRI program directory, or by asking Windows to un-install JMRI,
-before reruning the installer.
+before rerunning the installer.
 For more information on this, please see this
-<a href="http://groups.yahoo.com/group/jmriusers/message/35065">discussion</a>
+<a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/topics/35065">discussion</a>
 on the 
-<a href="http://groups.yahoo.com/group/jmriusers/">jmriusers mailing list</a>.
+<a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group</li>.
 
 <p>JMRI is moving toward requiring Java 1.5 or later.  Certain new features may not work if you are using an earlier
 version of Java.  To see JMRI's future plans for this and other compatibility issues, please see the JMRI
@@ -120,15 +117,13 @@ Code has been added to detect if AIU broadcasts are enabled, and if so a warning
 <p>Please use these links for downloading, including the "?download" at the end. That adds to SourceForge's advertising statistics, which makes them happy to host our stuff.
 
 <p>Mac OS X:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.3.5.dmg?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.5.dmg?download</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.3.5.dmg?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.5.dmg?download</a>
 
 <p>Windows:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.3.5.exe?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.5.exe?download</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.3.5.exe?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.5.exe?download</a>
 
 <p>Linux:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.3.5.tgz?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.5.tgz?download</a>
-
-
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.3.5.tgz?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.5.tgz?download</a>
 
 <h3>Changes since test version 2.3.4:</h3>
 
@@ -194,8 +189,8 @@ sending lots of turnout messages.
 
 <p>
 Dick Bronson contributted new icons for 
-<a href="http://jmri.sourceforge.net/resources/icons/mediumschematics/BandOsignals/">medium B&O signal heads</a>, 
-<a href="http://jmri.sourceforge.net/resources/icons/smallschematics/BandOsignals/">small B&O signal heads</a>, 
+<a href="http://jmri.sourceforge.net/resources/icons/mediumschematics/BandOsignals/">medium B&amp;O signal heads</a>, 
+<a href="http://jmri.sourceforge.net/resources/icons/smallschematics/BandOsignals/">small B&amp;O signal heads</a>, 
 <a href="http://jmri.sourceforge.net/resources/icons/mediumschematics/PRRsignals/">medium PRR signal heads</a>.
 and some improvements to the 
 <a href="http://jmri.sourceforge.net/resources/icons/smallschematics/PRRsignals/">small PRR signal heads</a>.
@@ -236,6 +231,5 @@ fixed.
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

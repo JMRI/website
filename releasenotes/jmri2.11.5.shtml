@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.11.5
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.11.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -44,14 +41,14 @@ back to an earlier version.
 <p>This is the fifth in a series of test versions. We expect this series
 to end in a JMRI 2.12 or 3.0 production release in 2011. 
 
-<p>
+<!-- <p>
 It contains 
 many new features, including:
 
 <ul>
 <li>
 </ul>
-along with other changes.  See the complete list below.
+along with other changes.  See the complete list below. -->
 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.  
@@ -59,7 +56,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -106,72 +103,72 @@ None at the time of this release.
 <p>Please use these links for downloading:
 
 <p>Mac OS X:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.dmg/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.dmg/download</a>
 
 <p>Windows:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.exe/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.exe/download</a>
 
 <p>Linux:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.tgz/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.tgz/download</a>
 
 <h3>Changes since test release version  2.11.4</h3>
 
-<P>Dan Boudreau:</P>
+<p>Dan Boudreau:</p>
 
-<P>New operations features and bug fixes:</P>
-<UL>
-	<LI>Enhancement to the "Set Cars" tool. You can now ignore
-	selected fields when changing a group of cars.</LI>
-	<LI>You can now optionally select which trains can set out and
-	pick up cars from a siding.</LI>
-	<LI>Car routing enhancement, program now checks the number of
-	available moves when determining if a train can service a car.</LI>
-	<LI>Improved how the program set outs cars when there's two or
+<p>New operations features and bug fixes:</p>
+<ul>
+	<li>Enhancement to the "Set Cars" tool. You can now ignore
+	selected fields when changing a group of cars.</li>
+	<li>You can now optionally select which trains can set out and
+	pick up cars from a siding.</li>
+	<li>Car routing enhancement, program now checks the number of
+	available moves when determining if a train can service a car.</li>
+	<li>Improved how the program set outs cars when there's two or
 	more stops at the same location. There is now a bias to set out the
-	cars at the earlier stop.</LI>
-	<LI>New schedules enhancement, uses can optionally control a
+	cars at the earlier stop.</li>
+	<li>New schedules enhancement, uses can optionally control a
 	schedule using the train timetables. For example you can now deliver a
-	car to a siding based on the day of the week.</LI>
-	<LI>The trains window now shows which timetable is active.</LI>
-	<LI>Siding/schedule enhancement. When a car is placed at a siding with
+	car to a siding based on the day of the week.</li>
+	<li>The trains window now shows which timetable is active.</li>
+	<li>Siding/schedule enhancement. When a car is placed at a siding with
 	a schedule the car's destination isn't immediately set, only the car's
 	final destination. This should eliminate overloading at sidings with
-	schedules when in aggressive mode.</LI>
-	<LI>Car forwarding enhancement when a car has a final destination.
+	schedules when in aggressive mode.</li>
+	<li>Car forwarding enhancement when a car has a final destination.
 	Now when the destination track is full, the program will determine if a
 	yard track at the destination is available, and deliver the car to the
 	yard track. The car will remain at the yard track until the siding
-	becomes available.</LI>
-	<LI>The program will now warn you if you haven't saved your files
-	before doing a backup.</LI>
-	<LI>You can now use the wild card "*" when using the "Find" button in the
+	becomes available.</li>
+	<li>The program will now warn you if you haven't saved your files
+	before doing a backup.</li>
+	<li>You can now use the wild card "*" when using the "Find" button in the
 	cars and locomotives windows. For example, if you wanted to find all
-	cars with road numbers that ended with 456, you would enter *456.</LI>
-	<LI>Fixed a problem when a siding has a schedule and a group of cars (kernel) was
+	cars with road numbers that ended with 456, you would enter *456.</li>
+	<li>Fixed a problem when a siding has a schedule and a group of cars (kernel) was
 	placed at the siding.  Sometimes the car load wasn't updated properly.  Thank-you
-	Frank Wyatt for bring this to our attention.</LI>
-	<Li>Changed the order of the location comment when there's no work at a location.
-	The location and route comments now come after the "No work statement".</Li>
-	<LI>Added some additional comments in the build report with regards to car routing.
-	Messages are now in the build report.  Messages to the console have been removed.</LI>
-	<LI>Fixed a problem with switch lists showing loco pickups when there wasn't.  This
-	happened when the switch list was printed when the engines were at that location.</LI>
-	<LI>New feature, train logging.  In addition to car and loco logging, the program
-	can now log train activity.</LI>
-	<LI>Operations manifest and switch lists enhancement, users can
-	now specify local car message format and color, see Print Options for details.</LI>
-	<LI>Program now remembers a car's previous final destination when reseting a train. Now
-	when you reset a train and the car destinations that were set by a schedule will remain.</LI>
-	<LI>Improved how tracks with setting FIFO and LIFO behave.  Previously if the program couldn't
+	Frank Wyatt for bring this to our attention.</li>
+	<li>Changed the order of the location comment when there's no work at a location.
+	The location and route comments now come after the "No work statement".</li>
+	<li>Added some additional comments in the build report with regards to car routing.
+	Messages are now in the build report.  Messages to the console have been removed.</li>
+	<li>Fixed a problem with switch lists showing loco pickups when there wasn't.  This
+	happened when the switch list was printed when the engines were at that location.</li>
+	<li>New feature, train logging.  In addition to car and loco logging, the program
+	can now log train activity.</li>
+	<li>Operations manifest and switch lists enhancement, users can
+	now specify local car message format and color, see Print Options for details.</li>
+	<li>Program now remembers a car's previous final destination when reseting a train. Now
+	when you reset a train and the car destinations that were set by a schedule will remain.</li>
+	<li>Improved how tracks with setting FIFO and LIFO behave.  Previously if the program couldn't
 	find a destination for a car, all cars behind that car were stuck.  Now the program will jump
-	over a car that can't move.</LI>
-	<LI>Train manifests now correctly show trains length and weight when there are engine changes
-	in route.</LI>
-	<LI>New feature, you can now enter a cost value for your cars and locos.  Nothing to do with
-	operations, but nice to have.</LI>
-	<LI>You can now delete a schedule directly from the schedules window.</LI>
+	over a car that can't move.</li>
+	<li>Train manifests now correctly show trains length and weight when there are engine changes
+	in route.</li>
+	<li>New feature, you can now enter a cost value for your cars and locos.  Nothing to do with
+	operations, but nice to have.</li>
+	<li>You can now delete a schedule directly from the schedules window.</li>
 
-</UL>
+</ul>
 
 <p>Pete Cressman</p>
 <ul>
@@ -181,7 +178,7 @@ None at the time of this release.
 <li>Fix route finder and warrant recording bug introduced in ver 2.11.4</li>
 <li>Fix loco icon following warrant playback through all track circuits.</li>
 <li>Fix bug that did not load ver 2.4 signalHead icons.</lii>
-<li>Fix bug that did not load rotated or scaled signalMastd icons.</li>
+<li>Fix bug that did not load rotated or scaled Signal Mast icons.</li>
 <li>Fix bug loading panel after Occupancy Block Table is open.</li>
 <li>Inserting or deleting rows of a Throttle Command warrant script now
  keeps the total elapsed time a train is in a block the same.</li>
@@ -225,7 +222,7 @@ sending multiple messages.
 </ul>
 <p>Kevin Dickerson</p>
 <ul>
-<li>Updated so that the user selected preferences and the window size/position data is now saved in a seperate file and not in with the connection preferences.</li>
+<li>Updated so that the user selected preferences and the window size/position data is now saved in a separate file and not in with the connection preferences.</li>
 <li>Added a sensor debounce facility to individual sensors see <a href="http://www.jmri.org/help/en/html/tools/Sensors.shtml#Debounce">Sensors</a> for further information.<br>
 By default this new option is disabled</li>
 <li>It is now possible to view signal mast specific appearances, and aspect mapping on the JMRI website.</li>

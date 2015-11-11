@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.12
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.12 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -45,7 +42,7 @@ We're therefore making that version, "Production version 2.12" available for dow
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -90,14 +87,14 @@ NCE turnout pushbutton lock does not work properly, solution is to upgrade to 2.
 
 <p>Please use these links for downloading:</p>
 
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.12.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.12.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.12.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.12.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.12.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.12.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.12.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.12.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.12.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.12.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.12.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.12.tgz/download</a></p>
 
 <h3>Changes since production release 2.10</h3>
 
@@ -128,7 +125,7 @@ from one system to another.
 <li> updated the error checking in the JMRI consisting tool.
 <li> added a Consist Manager for LocoNet with the following notes on it's current capabilities and known issues:
 <ol>
-<li> Basic functionallity of adding and removing locomotives from consits is working.
+<li> Basic functionality of adding and removing locomotives from consists is working.
 <li> The check boxes for changing the direction of a locomotive within a
 consist are not working
 <li> The delete button at the bottom of the consist tool does not work correctly.
@@ -164,15 +161,15 @@ Leo Bicknell
 <li>Prefixed LONG_ACK a few places it was missing.
 <li>Improved decode of switch status broadcast, even though I've never seen anything send one.
 <li>Changed OPC_PANEL_RESPONSE to indicate if it was duplex capable, if we're interpreting that bit correctly.
-<li>Included a long form decode of Command Station OpSw reponses.
+<li>Included a long form decode of Command Station OpSw responses.
 </ul>
 <li>fixed a presentation problem in the LocoNet ID tool
 </ul>
 
 <p>Dan Boudreau made many enhancements to operations.</p>
 <ul>
-	<LI>Changed the track type "siding" to "spur" to better represent
-	a track that serves an industry.</LI>
+	<li>Changed the track type "siding" to "spur" to better represent
+	a track that serves an industry.</li>
 	<li>The operations program now supports car routing. The program
 	will now use up to 5 trains to move a car from one location to another.
 	Routing through staging tracks is disabled by default.</li>
@@ -297,17 +294,17 @@ Leo Bicknell
 	<li>New "Set Cars" tool. Now you can set the location,
 	destinations, and load for a group of cars.</li>
 	<li>New car sort in the cars window, by car's final destination.</li>
-	<Li>New operations feature. You can now optionally create a Comma
+	<li>New operations feature. You can now optionally create a Comma
 	Separated Values (csv) manifest file. Now you can use Excel to create a
 	custom manifest to your liking. Files can be found in
-	operations-&gt;csvManifests</Li>
+	operations-&gt;csvManifests</li>
 	<li>A new capacity check has been added to limit overloading of a
 	spur with a schedule in aggressive mode. Overloading a spur can
 	still happen when using aggressive mode, but the overloading is now
 	limited.</li>
-	<Li>Enhancement. A car in a kernel with FRED must be the lead (*)
+	<li>Enhancement. A car in a kernel with FRED must be the lead (*)
 	car. When editing car with FRED and in kernel, the program will
-	automatically make the car the lead.</Li>
+	automatically make the car the lead.</li>
 	<li>Manifests and switch lists now block cars by kernel. The new
 	blocking order is: first by road, then number, kernel, location and
 	finally destination. This should keep cars in a kernel together on the
@@ -318,89 +315,89 @@ Leo Bicknell
 	<li>You can now reset a train directly from the Trains window.</li>
 	<li>You can now have operations windows close on save. See
 	Settings Options.</li>
-	<LI>Enhancement to the "Set Cars" tool. You can now ignore
-	selected fields when changing a group of cars.</LI>
-	<LI>You can now optionally select which trains can set out and
-	pick up cars from a spur.</LI>
-	<LI>Car routing enhancement, program now checks the number of
-	available moves when determining if a train can service a car.</LI>
-	<LI>Improved how the program set outs cars when there's two or
+	<li>Enhancement to the "Set Cars" tool. You can now ignore
+	selected fields when changing a group of cars.</li>
+	<li>You can now optionally select which trains can set out and
+	pick up cars from a spur.</li>
+	<li>Car routing enhancement, program now checks the number of
+	available moves when determining if a train can service a car.</li>
+	<li>Improved how the program set outs cars when there's two or
 	more stops at the same location. There is now a bias to set out the
-	cars at the earlier stop.</LI>
-	<LI>New schedules enhancement, uses can optionally control a
+	cars at the earlier stop.</li>
+	<li>New schedules enhancement, uses can optionally control a
 	schedule using the train timetables. For example you can now deliver a
-	car to a spur based on the day of the week.</LI>
-	<LI>The trains window now shows which timetable is active.</LI>
-	<LI>Spur/schedule enhancement. When a car is placed at a spur
+	car to a spur based on the day of the week.</li>
+	<li>The trains window now shows which timetable is active.</li>
+	<li>Spur/schedule enhancement. When a car is placed at a spur
 	with a schedule the car's destination isn't immediately set, only the
 	car's final destination. This should eliminate overloading at spurs
-	with schedules when in aggressive mode.</LI>
-	<LI>Car forwarding enhancement when a car has a final destination.
+	with schedules when in aggressive mode.</li>
+	<li>Car forwarding enhancement when a car has a final destination.
 	Now when the destination track is full, the program will determine if a
 	yard track at the destination is available, and deliver the car to the
 	yard track. The car will remain at the yard track until the spur
-	becomes available.</LI>
-	<LI>The program will now warn you if you haven't saved your files
-	before doing a backup.</LI>
-	<LI>You can now use the wild card "*" when using the "Find" button
+	becomes available.</li>
+	<li>The program will now warn you if you haven't saved your files
+	before doing a backup.</li>
+	<li>You can now use the wild card "*" when using the "Find" button
 	in the cars and locomotives windows. For example, if you wanted to find
-	all cars with road numbers that ended with 456, you would enter *456.</LI>
-	<LI>Fixed a problem when a spur has a schedule and a group of
+	all cars with road numbers that ended with 456, you would enter *456.</li>
+	<li>Fixed a problem when a spur has a schedule and a group of
 	cars (kernel) was placed at the spur. Sometimes the car load wasn't
 	updated properly. Thank-you Frank Wyatt for bring this to our
-	attention.</LI>
-	<Li>Changed the order of the location comment when there's no work
+	attention.</li>
+	<li>Changed the order of the location comment when there's no work
 	at a location. The location and route comments now come after the "No
-	work statement".</Li>
-	<LI>Added some additional comments in the build report with
+	work statement".</li>
+	<li>Added some additional comments in the build report with
 	regards to car routing. Messages are now in the build report. Messages
-	to the console have been removed.</LI>
-	<LI>Fixed a problem with switch lists showing loco pick ups when
+	to the console have been removed.</li>
+	<li>Fixed a problem with switch lists showing loco pick ups when
 	there wasn't. This happened when the switch list was printed when the
-	locos were at that location.</LI>
-	<LI>New feature, train logging. In addition to car and loco
-	logging, the program can now log train activity.</LI>
-	<LI>Operations manifest and switch lists enhancement, users can
+	locos were at that location.</li>
+	<li>New feature, train logging. In addition to car and loco
+	logging, the program can now log train activity.</li>
+	<li>Operations manifest and switch lists enhancement, users can
 	now specify local car message format and color, see Print Options for
-	details.</LI>
-	<LI>Program now remembers a car's previous final destination when
+	details.</li>
+	<li>Program now remembers a car's previous final destination when
 	reseting a train. Now when you reset a train and the car destinations
-	that were set by a schedule will remain.</LI>
-	<LI>Improved how tracks with setting FIFO and LIFO behave.
+	that were set by a schedule will remain.</li>
+	<li>Improved how tracks with setting FIFO and LIFO behave.
 	Previously if the program couldn't find a destination for a car, all
 	cars behind that car were stuck. Now the program will jump over a car
-	that can't move.</LI>
-	<LI>Train manifests now correctly show trains length and weight
-	when there are loco changes in route.</LI>
-	<LI>New feature, you can now enter a cost value for your cars and
-	locos. Nothing to do with operations, but nice to have.</LI>
-	<LI>You can now delete a schedule directly from the schedules
-	window.</LI>
-	<LI>You can now specify an alternative track for spurs with
-	schedules. See Tools-&gt;Options in the Schedule window.</LI>
-	<LI>Improved car import by allowing users the option of having the
+	that can't move.</li>
+	<li>Train manifests now correctly show trains length and weight
+	when there are loco changes in route.</li>
+	<li>New feature, you can now enter a cost value for your cars and
+	locos. Nothing to do with operations, but nice to have.</li>
+	<li>You can now delete a schedule directly from the schedules
+	window.</li>
+	<li>You can now specify an alternative track for spurs with
+	schedules. See Tools-&gt;Options in the Schedule window.</li>
+	<li>Improved car import by allowing users the option of having the
 	program automatically create new locations and tracks during the car
-	import.</LI>
-	<LI>Print car and loco roster can now show the value field.</LI>
-	<LI>Export car and loco now exports the value field.</LI>
-	<LI>Switch lists now show the train's arrival and or departure
-	direction.</LI>
-	<LI>Improved how custom car loads are generated from staging when
+	import.</li>
+	<li>Print car and loco roster can now show the value field.</li>
+	<li>Export car and loco now exports the value field.</li>
+	<li>Switch lists now show the train's arrival and or departure
+	direction.</li>
+	<li>Improved how custom car loads are generated from staging when
 	using match mode, and "Generate custom loads for train spurs serviced
-	by this train".</LI>
-	<LI>Fixed some of the operations windows so the input text fields
-	now work correctly when using large font sizes.</LI>
-	<LI>New feature, the ability to pool a set of tracks to share
-	their lengths. See under Edit Track, Tools-&gt;Pools.</LI>
+	by this train".</li>
+	<li>Fixed some of the operations windows so the input text fields
+	now work correctly when using large font sizes.</li>
+	<li>New feature, the ability to pool a set of tracks to share
+	their lengths. See under Edit Track, Tools-&gt;Pools.</li>
 </ul>
 
-<P>Dan Boudreau made the following general enhancements:
+<p>Dan Boudreau made the following general enhancements:
 <ul>
-<LI>Users can now adjust font size.  See Edit Preferences, Display GUI.</LI>
-<LI>Fixed the NCE consist editor.</LI>
-<LI>Worked with Ken Cameron to allow multiple NCE connections.</LI>
-<LI>Worked with Jeff Rowe to fix a problem with timeouts on the serial interface.  Problem
-was found using a Mac Intel Mini connected to a NCE system.</LI>
+<li>Users can now adjust font size.  See Edit Preferences, Display GUI.</li>
+<li>Fixed the NCE consist editor.</li>
+<li>Worked with Ken Cameron to allow multiple NCE connections.</li>
+<li>Worked with Jeff Rowe to fix a problem with timeouts on the serial interface.  Problem
+was found using a Mac Intel Mini connected to a NCE system.</li>
 
 </ul>
 
@@ -410,8 +407,8 @@ Chris Bradshaw provided a decoder definition for the TCS Z2 and DP2x decoders.
 <p>Dick Bronson</p>
 <ul>
     <li>updated the RR-CirKits Tower Controller 64 decoder definition
-    <li>Added the CSX-1998 Signalmasts</li>
-    <li>Updated the AAR-1946 Signalmasts to work with the Signalling Logic.</li>
+    <li>Added the CSX-1998 Signal Masts</li>
+    <li>Updated the AAR-1946 Signal Masts to work with the Signaling Logic.</li>
 </ul>
 
 <p>
@@ -477,16 +474,16 @@ actions are still triggered according to the truth value of the antecedent expre
 </ul>
 <li>added new ControlPanelEditor features
 <ul>
-<li>Clipboard Copy & Paste can be done between two control panels.</li>
+<li>Clipboard Copy &amp; Paste can be done between two control panels.</li>
 <li>The Item Palette can hold multiple sets of icons for each item type.</li>
 <li>The Item Palette has "Indicator Track" and "Indicator Turnouts" that change color when their block sensor 
-shows occupacy.  When used with Occupancy Blocks and Warrants, indicator icons will show allocation, 
+shows occupancy.  When used with Occupancy Blocks and Warrants, indicator icons will show allocation, 
 path route, occupancy or error condition by color.</li>
 <li>Accelerator keys added for Item Palette and Table List.</li>
 <li>The Item Palette user interface has all tab items drag from a "Drag Panel" icon.  Dragging from a table
 row places a text label in the panel.</li>
 </ul>
-<li>edited tooltip-text is saved and default tiooltip is its device display name
+<li>edited tooltip-text is saved and default tooltip is its device display name
 <li>improved path detection and display for simultaneous manual and auto train running under warrants.
 <li>fixed duplication and copy of rotated Signal Masts bug.
 <li>improved path detection and display for simultaneous manual and auto train running under warrants.
@@ -506,14 +503,14 @@ been replaced with checkboxes.  See the help page on the Item Palette.</li>
 Scripts can be edited to trigger an external sensor to operate additional animation.
 <li>Internal improvements to Portals and OPaths</li>
 <li>Fixed bug that would hang scipts if Speed Table was not initialized.</li>
-<li>Fixed bug #3209940 Logix StateVariable for SignalHead Apperance and Mast Aspect did not report user errors.</li> 
+<li>Fixed bug #3209940 Logix StateVariable for SignalHead Appearance and Mast Aspect did not report user errors.</li> 
 <li>Added Circuit Builder tool to Control Panel Editor.  This is an 
  alternative tool to the Occupancy Tables that creates OBlocks,
  Portals and OPaths through a "point and click" GUI. (features still in progress)</li>
 <li>Fix route finder and warrant recording bug introduced in ver 2.11.4</li>
 <li>Fix loco icon following warrant playback through all track circuits.</li>
 <li>Fix bug that did not load ver 2.4 signalHead icons.</lii>
-<li>Fix bug that did not load rotated or scaled signalMastd icons.</li>
+<li>Fix bug that did not load rotated or scaled Signal Mast icons.</li>
 <li>Fix bug loading panel after Occupancy Block Table is open.</li>
 <li>Inserting or deleting rows of a Throttle Command warrant script now
  keeps the total elapsed time a train is in a block the same.</li>
@@ -522,7 +519,7 @@ Scripts can be edited to trigger an external sensor to operate additional animat
 <li>Add indirection to Logix actions for device names and action types.
  The '@' symbol before a memory location will use the value in that memory for
  the device name or its action string.</li>
-<li>Simplifird LRoute GUI</li> 
+<li>Simplified LRoute GUI</li> 
 <li>Added an LRoute "Initializer".  Creates a Logix guaranteed to execute first
  for initializing sensors, turnouts and signals, avoiding thrashing of
  enabling Logixes at panel load time.</li>
@@ -533,7 +530,7 @@ Scripts can be edited to trigger an external sensor to operate additional animat
 <li>Dark blocks may used as starting and destination blocks.  They should be registered OBlocks without a sensor.</li>   
 <li>Speed sampling interval changed to 500ms instead of 200ms when recording auto train scripts</li>
 <li>Train name in loco icon follows progress on both record and playback of a warrant.<li>   
-<li>Occupany Block Tables, PickLists, Palette bean tables are sortable.</li>
+<li>Occupancy Block Tables, PickLists, Palette bean tables are sortable.</li>
 <li>Fix bug where auto trains waited indefinitely when resynchronizing block entry.</li>
 <li>Fix bug intoduced in 2.11.5 where rotated SignalMasts were not stored properly.</li>
 <li>Add copy warrant button to warrant list table.</li>
@@ -542,11 +539,11 @@ Scripts can be edited to trigger an external sensor to operate additional animat
 <li>Warrant route loops with repeating blocks or the same starting and ending bocks can record and playback.</li>
 <li>Indicator tracks move train Id markers automatically under both manual and auto playback warrants.</li>
 <li>Gray menus when CircuitBuilder is in an editing mode</li>
-<li>Portal editing in CircuitBuilder interface simpified.</li>
+<li>Portal editing in CircuitBuilder interface simplified.</li>
 <li>Name changing in CircuitBuilder for Blocks, Portals and Paths implemented.</li>
 <li>Conversion of track icons to Indicator icons in CircuitBuilder improved.</li>
 <li>Other fixes and improvements - CircuitBuilder is ready for use.</li>
-<li>Added user's name to loconet titles when user has modified default name to distinguish multiple connections
+<li>Added user's name to LocoNet titles when user has modified default name to distinguish multiple connections
 </ul>
 
 <p>
@@ -609,7 +606,7 @@ Sensor manager now allows for multiple sensors to be added.
 <li>added the ability to find an east or west bound positionable point by either a signal head, signal mast or sensor.
 Also added tools to return either a facing or protected blocks by signal heads, masts or sensors.
 <li>Fixed an error that would occur if a cv value is left blank.  If the user blanks out a value and doesn't enter in a new, then the old value is restored.</li>
-<li>Prevented an occuring from occuring when the power on command is issued to the NCE Power Cab via the usb interface.</li>
+<li>Prevented an error from occurring when the power on command is issued to the NCE Power Cab via the USB interface.</li>
 <li>Fixed a bug with the default selector for the throttle manager.</li>
 <li>Fixed a bug in the Speedo Console read button, where the correct address isn't correct read.</li>
 <li>Updated the file export facility on the Speedo Console, so that the forward and reverse values for a given speed step are on the same row.</li>
@@ -673,7 +670,7 @@ It displays the same information as the old Windows Console, is easy to resize a
 <li>Updated Windows Installation documentation incorporating details of reversion procedure (thanks to Walter Thompson for the initial procedure)
 <li>Updated the Windows documentation to help debug JMRI shutdown problems
 <li>Updated documentation for Windows start-up scripts, giving more details of how the shortcuts are structured.
-<li>Allowed the use of environment variables to modify launcher behaviour.
+<li>Allowed the use of environment variables to modify launcher behavior.
 <li>Updated LaunchJMRI to correctly set the user.home variable which was incorrectly determined in some configurations.
 <li>Enabled the process name displayed in Task Manager to match the JMRI application being launched.
 </ul>
@@ -681,7 +678,7 @@ It displays the same information as the old Windows Console, is easy to resize a
 <li><b>User interface related</b>
 <ul>
 <li>Added a new column to the Reporters table that shows the last known report.
-<li>Changed the BeanTableDataModel to use internationalised strings for column names rather than hard-coded strings.
+<li>Changed the BeanTableDataModel to use internationalized strings for column names rather than hard-coded strings.
 <li>Added a VerticalLabelUI class so to allow JLabels to be displayed vertically.
 <li>Corrected some GUI anomalies, especially on Tabbed Preferences window.
 <li>Corrected the behavior of snapping JSliders by making them snap whilst dragging
@@ -741,7 +738,7 @@ Lionel Jeanson
 <li>made multiple improvements to throttles:
 <ul>
 <li>More French translation
-<li>Improved edit/play mode and transparency, transparency no longer proposed as a preference, in edit mode, internal frames are opaque and are set translucent when going to play mode (click on button with pen in toolbar). Tested on OS-X/Windows/Linux with several L&F, works fine on all.
+<li>Improved edit/play mode and transparency, transparency no longer proposed as a preference, in edit mode, internal frames are opaque and are set translucent when going to play mode (click on button with pen in toolbar). Tested on OS-X/Windows/Linux with several L&amp;F, works fine on all.
 <li>Improved "save throttle layout" and "save default throttle layout", now also save throttles themselves, new preference in throttle preference to configure this behavior (activated as default, to be deactivated to go to older mode that would only save the windows layout).
 </ul>
 <li>added buttons in throttle window (next and previous running locomotives) and
@@ -842,7 +839,7 @@ Dennis Miller fixed some help page links
 <p>
 Mike Mosher: 
 <ul>
-<li>updated the TCS V51+ decoder definition to add LL8 & EU621 decoders
+<li>updated the TCS V51+ decoder definition to add LL8 &amp; EU621 decoders
 <li>provided a "RosterMigrate2.py" script to allow users to migrate their "Soundtraxx OEM"
 decoders to specific models.
 <li>provided a decoder definition for the ESU LS Select steam
@@ -857,7 +854,7 @@ needed for BLI P2 steam.
 <li>updated the Tsunami Diesel Genesis OEM decoder definition
 version 3 to change SD70ACe model and add SD70M-2 model
 <li>added new SoundTraxx MC and MC IMRC OEM decoder definitions
-<li>rovided an ESU LokSound V4.0 decoder definition.
+<li>provided an ESU LokSound V4.0 decoder definition.
 <li>Updated the DecoderPro Advanced pane
 <li>improved the ESU LokSounds V4.0 decoder definition.
 </ul>
@@ -949,7 +946,7 @@ and provided a definition for the Bachmann Soundtraxx decoder
 
 <p>Greg Watkins provided a decoder definition for the Hornby R8245 decoder
 
-<P>Mark Waters provided a large group of Zimo Unified decoder definitions.
+<p>Mark Waters provided a large group of Zimo Unified decoder definitions.
 
 <p>Randall Wood 
 <ul>
@@ -961,7 +958,7 @@ values to the XMLIO support so that web browsers can inquire about the JMRI vers
 
 
 <p>
-david zuhn added support for exporting the entire roster to one file.  
+David Zuhn added support for exporting the entire roster to one file.  
 Menu support (but a null implementation) for importing from an exported roster file.
 
 
@@ -1007,7 +1004,7 @@ setups.</li>
     <ul>
     <li>Positioning can now be adjusted by using the arrow keys, the arrow keys on their own will move the items by 5 pixels either way, by holding shift and then the arrow key, it will move a pixel at a time. (KD)</li>
     <li>Add the ability to set the background color of the panel via a menu option. Selected items now have a square box drawn around them. (KD)</li>
-    <li>Provides a basic copy & paste function within a single panel, allows for single or multiple items to be copied. (KD)</li>
+    <li>Provides a basic copy &amp; paste function within a single panel, allows for single or multiple items to be copied. (KD)</li>
     <li>Multiple items can be selected, by holding down the ctrl key and clicking on them.</li>
     <li>Selected items now have a square box drawn around them. (KD)</li>
     <li>updated memory labels to set the auto width justification of a memory label around the x position, ie the text will centre around position X, or be right justified to the value of X. Before the justification only really showed itself with fixed width memory labels.(KD)</li>
@@ -1026,7 +1023,7 @@ setups.</li>
 (eg Font Size, Color, Background, style, border margins etc) and preview them prior to applying the changes. Also allows for the user to enter in font sizes that are not listed in the popup.
 For texted based sensors, it is possible to preview and configure the text for the four different states. Feature request 2958431 relates.(KD)</ul>
 
-        <li>Added a double & single slip and a three way turnout to the panel editor. (KD)</li>
+        <li>Added a double &amp; single slip and a three way turnout to the panel editor. (KD)</li>
         <li>It is now possible to add icons tot he panel editor via the mouse popup menu while in edit mode.  The Icon will be placed at the co-ordinates of the mouse location. (KD)</li>
     </ul></li>
     </ul>
@@ -1061,7 +1058,7 @@ startup splash screen gives you more information when you disable at startup.
     
     </ul>
 <b>SSL</b><ul>
-    <li>Fixed an error in the loading of Simple Signalling Logic (SSL) where an invalid entry potentially causes all of the logic not be loaded and are lost on any subsequent stores. (KD)</li>
+    <li>Fixed an error in the loading of Simple Signaling Logic (SSL) where an invalid entry potentially causes all of the logic not be loaded and are lost on any subsequent stores. (KD)</li>
     </ul>
 <b>Roster</b><ul>
 
@@ -1070,9 +1067,9 @@ startup splash screen gives you more information when you disable at startup.
     <li>It is also possible to the select items to print option, prior to selecting the printer.  (KD)</li>
     </ul>
 <b>Connections</b><ul>
-    <li>The Serial port drop down list refereshes each time it is selected, thus picking up any new serial/usb interfaces that might have been added since JMRI was started. (KD)</li>
+    <li>The Serial port drop down list refreshes each time it is selected, thus picking up any new serial/usb interfaces that might have been added since JMRI was started. (KD)</li>
 
-    <li>Invalid/missing serial ports that are configured against a device are now shown iin red, while valid comm ports are left in black (KD)</li>
+    <li>Invalid/missing serial ports that are configured against a device are now shown in red, while valid comm ports are left in black (KD)</li>
 
     <li>Catched an error that causes a High CPU Utilisation when an unexpected/abnormal termination occurs in a TCP connection. (KD)</li>
 
@@ -1094,7 +1091,7 @@ startup splash screen gives you more information when you disable at startup.
     </ul>
 
 <b>Preferences</b><ul>
-    <li>Window size and posstions are now saved, so that when you open the window in a new session it will return to its last know size and position. (KD)</li>
+    <li>Window size and positions are now saved, so that when you open the window in a new session it will return to its last know size and position. (KD)</li>
 
     <li>Newly opened windows will now cascade down the screen rather than stacking up on top of each other. (KD)</li>
 </ul>
@@ -1103,6 +1100,5 @@ startup splash screen gives you more information when you disable at startup.
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

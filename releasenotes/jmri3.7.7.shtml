@@ -1,16 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.7.7
  
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.7.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -51,7 +50,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -101,14 +100,14 @@ you will need to upgrade both the client(s) and the server to the same JMRI vers
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.7-r26293.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.7-r26293.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.7-r26293.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.7-r26293.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.7-r26293.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.7-r26293.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.7-r26293.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.7-r26293.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.7-r26293.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.7-r26293.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.7-r26293.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.7-r26293.tgz/download</a></p>
  
 <!--
 Preliminary build files (not the final released files) can be found
@@ -135,7 +134,7 @@ These are development files, and might not be working at any particular time.</p
 <p>Routes
 <ul>
 <li>When a route is loaded from a panel file, the system will now check the turnouts and trigger the aligned sensor, rather than wait for a change to occur</li>
-<li>Fix a bug in the routes gui, whereby if the user removes the "TurnoutsAlignedSensor" it doesn't actually get removed.</li>
+<li>Fix a bug in the routes GUI, whereby if the user removes the "TurnoutsAlignedSensor" it doesn't actually get removed.</li>
 </ul>
 
 <p>Dave Heap made the following changes:</p>
@@ -146,7 +145,7 @@ These are development files, and might not be working at any particular time.</p
       for the decoder pane programmer.</li>
   </ul>
 
-<p>Egbert Bourse updated the signaling help.
+<p>Egbert Broerse updated the signaling help.
 
 <p>John Crellin updated the TCS FL2 and FL4 decoder definitions
 
