@@ -3,14 +3,12 @@
 <head>
  <title>
  JMRI: Release Notes for 3.3.6
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.3.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -51,7 +49,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -76,7 +74,7 @@ to reduce their size and allow  them to be translated to other languages.
 Please keep an eye out for any inadvertent changes to the definitions 
 that might have been introduced.</p>
 
-<P>This release, and all other releases in this cycle, require Java 1.6 or later.
+<p>This release, and all other releases in this cycle, require Java 1.6 or later.
 
 <h3>Known problems with this release</h3>
 
@@ -85,14 +83,14 @@ None at the time of this release.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.tgz/download</a></p>
 
 
 <!-- 
@@ -147,16 +145,16 @@ These are development files, and might not be working at any particular time.
     <li>Request administrator rights when installing - fix for bug highlighted by Suzie Tall</li>
     <p>
     <li>Updated the routes window to allow it to contain scroll bars if the window is too small for the information contained - Kevin Dickerson</li>
-    <li>ESU ECOS - Fixed an issue with the way that the thorttle speed changes are handled - Kevin Dickerson</li>
+    <li>ESU ECOS - Fixed an issue with the way that the throttle speed changes are handled - Kevin Dickerson</li>
     <li>Blocks/LayoutBlocks - When the layoutblock useExtraColor is changed, propagate this down to the "block" so that it can fire off a propertychange event of "allocated" to all its listeners.  The "block" itself does not keep track or store the allocated setting.  This saves any objects having to listener to both the block and layoutblock states. - Kevin Dickerson</li>
     <li>SignalMast Logic - React to LayoutBlocks being allocated to sections.  This only occurs if the Logic has a section associated with it, and the dispatcher has been loaded. - Kevin Dickerson</li>
     <li>SignalMast Logic - Identifies Signal Masts that can be classed as intermediate.  Intermediate Masts are classed as those that only have a single destination mast, with no turnouts in the path.</li>
     <li>SignalMast Logic/Sections - Flag sections as being intermediate where they go to or from an Intermediate Mast.</li>
-    <li>SensorIcon - Fix an inconsistency issue with the setting of sensor text colours. - Kevin Dickerson</li>
+    <li>SensorIcon - Fix an inconsistency issue with the setting of sensor text colors. - Kevin Dickerson</li>
     <li>Text Properties - Fix the font size selection list in text properties to work correctly - Kevin Dickerson</li>
     <li>Loconet Simulator - Initial states of sensors can be set via the preferences, rather than using the default of UNKNOWN - Kevin Dickerson</li>
-    <li>Debug Throttle - Add 14 & 28 Speed step settings to those that are available</li>
-    <li>Loconet Throttle - Fix issues where certain speed steps were being skipped over in 14 & 28 mode. - Michael Mosher & Kevin Dickerson</li>
+    <li>Debug Throttle - Add 14 &amp; 28 Speed step settings to those that are available</li>
+    <li>LocoNet Throttle - Fix issues where certain speed steps were being skipped over in 14 &amp; 28 mode. - Michael Mosher &amp; Kevin Dickerson</li>
     <li>Entry/Exit - Add the option to set an alternative colour for the layout blocks while the Entry/Exit route is being set up. Colour is defined in the Entry/Exit Options</li>
     <li>Entry/Exit - Allow extended NX routes to be set eg A-D, rather than A-B, B-C, C-D</li>
     <li>Entry/Exit - Can now extend the transit of an Active Train in the dispatcher</li>
@@ -172,10 +170,10 @@ These are development files, and might not be working at any particular time.
     <li>Extend the Entry/Exit interlocking so that it can extend the transit of an active train.</li>
     <li>Add the option to allow the dispatcher window to be opened when the panel file is loaded.</li>
     <li>New Train Window - The starting block combo box will automatically select the first occupied block in the list</li>
-    <li>New Train Window - When called from the panel with a known Roster Entry and block, the transit combo is populated with transits that either contain the block past or have it as an entry poing.</li>
+    <li>New Train Window - When called from the panel with a known Roster Entry and block, the transit combo is populated with transits that either contain the block past or have it as an entry point.</li>
     </ul>
     
-<li>The TCS decoder definition files have been realligned with great help from TCS. 
+<li>The TCS decoder definition files have been realigned with great help from TCS. 
     All old definitions are still there, but three new families have been created from which 
     only the one with the latest firmware (called Jan 2012) is always visible. 
     If you identify a decoder on the programming track the correct decoder definition 
@@ -195,12 +193,13 @@ These are development files, and might not be working at any particular time.
     require additional rework of the code base. 
     
     <li>Peter Ulvestad improved the Atlas 342 and 345 decoder definitions 
-    <li>Nigel Cliffe improved some CT Electonik decoders.
+    <li>Nigel Cliffe improved some CT Electronik decoders.
     
     <li>David Heap improved the Help Locations window.
     <li>Dave Sand contributed a new ManageBlocks.py sample script
     
-  </ul> <!--#include virtual="/Footer" --></div><!-- closes #mainContent-->
+  </ul> <!--#include virtual="/Footer" -->
+  </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
 </html>

@@ -1,16 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.11.6
-
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.11.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -49,18 +47,20 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
 <h3 id="problems">Known problems with this release</h3>
 
-OPERATIONS IS BROKEN IN THIS RELEASE. DO NOT USE VERSION 3.11.6 FOR OPERATIONS! When reading the car file, there's a chance
-that some cars won't be loaded at startup.
+<strong>OPERATIONS IS BROKEN IN THIS RELEASE. DO NOT USE VERSION 3.11.6 FOR OPERATIONS!</strong><br>
+When reading the car file, there's a chance
+that some cars won't be loaded at startup.<br>
+Please use <a href="jmri3.11.7.shtml">JMRI 3.11.7</a> or later instead.
 
 <!--
 If any of those effect you, please either wait for
-<A href="jmri3.11.7.shtml">JMRI 3.11.7</a>, due out shortly after this one,
+<a href="jmri3.11.7.shtml">JMRI 3.11.7</a>, due out shortly after this one,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -71,12 +71,12 @@ from
 
 <h3>Older warnings</h3>
 
-<P>This release, and all later releases in this cycle, require Java 1.8 or higher.
+<p>This release, and all later releases in this cycle, require Java 1.8 or higher.
 To use this or any later JMRI releases, you'll have to
-<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
+<a href="https://java.com/en/download/">update the Java on your computer</a> to Java 1.8 or higher.
 </p>
 
-<P>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
+<p>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
 Failure to remove these can result in some portions of
 JMRI (notably the web server) failing to function correctly.
 If you are updating an existing JMRI installation to this version on
@@ -91,8 +91,8 @@ remove/replace the older version of JMRI, ensuring that these obsolete files are
 present.
 </p>
 
-<P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
-calling the parts of JMRI that interchange XML objects.</P>
+<p>This release uses JDOM 2.0.5, which requires some code changes if you are directly
+calling the parts of JMRI that interchange XML objects.</p>
 
 <p>There are now separate settings for the default Service Mode Programmer and
 for the default Ops Mode Programmer.  If you're using two or more system connections,
@@ -128,15 +128,11 @@ users are recommended to begin using webThrottle instead, or invest in devices
 that can support webThrottle, the iOS WiThrottle, or the Android Engine
 Driver.</p>
 
-
-
 <h3>Download links:</h3>
 
 <p><strong>Downloading of JMRI 3.11.6 has been suspended due to discovery of a bug in Operations that could cause user data loss. See <a href="#problems">Known problems with this release</a> above.</strong></p>
-<p><strong>We are currently testing a fix for this problem and will either release a patched version of 3.11.6 or a V3.11.7 release as soon as possible. This will be announced on this page and on the
-	<a href="http://groups.yahoo.com/group/jmriusers" target="blank">JMRI users</a>
-	mailing list.</strong></p>
-<p><strong>In the interim, please <em>do not</em> use JMRI 3.11.6 for Operations.</strong></p>
+<p><strong>We are currently testing a fix for this problem and will release the <a href="jmri3.11.7.shtml">JMRI 3.11.7</a> release as soon as possible.</strong></p>
+<p><strong>Please <em>do not</em> use JMRI 3.11.6 for Operations.</strong></p>
 
 <!-- 
 <p>Please use these links for downloading:</p>
@@ -163,7 +159,6 @@ These are development files, and might not be working at any particular time.</p
 -->
 
 <h3>Changes since test release 3.11.5:</h3>
-
 
 <h4>Hardware Support</h4>
     <h5>MRC</h5>
@@ -223,14 +218,13 @@ These are development files, and might not be working at any particular time.</p
    an IdTag associated with the piece of rolling stock is seen by a reader 
    associated with a location.</p>
 
-
 <h4>Preferences</h4>
   <ul>
     <li>Allow startup files to be edited in the DecoderPro 3 preferences dialog.</li>
   </ul>
 
 
-<H4>Warrants</H4>
+<h4>Warrants</h4>
    <ul>
     <li>Fix several bugs recently introduced in record learn mode warrants.</li>
     <li>Add feature to display warrant routes graphically for review when multiple routes

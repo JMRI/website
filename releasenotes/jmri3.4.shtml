@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.4
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -45,7 +42,7 @@ We're therefore making that version, "Production version 3.4" available for down
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -81,14 +78,14 @@ that might have been introduced.</p>
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.4-r23744.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.4-r23744.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.4-r23744.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.4-r23744.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.4-r23744.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.4-r23744.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.4-r23744.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.4-r23744.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.4-r23744.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.4-r23744.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.4-r23744.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.4-r23744.tgz/download</a></p>
  
 
 <h3>Changes since production release 3.2</h3>
@@ -111,7 +108,7 @@ that might have been introduced.</p>
      and switch lists. See in the Manifest Print Options under Tools.</li>
     <li>The conductor window will now show locomotives assigned to the train.</li>
     <li>Made some improvements in the print locations tool with regards to schedules.</li>
-    <li>More build report formating and readability improvements.</li>
+    <li>More build report formatting and readability improvements.</li>
     <li>A new feature called the "Yardmaster" window. Now you can now get a switch list for a
      location similar to the "Conductor" window. In the "Locations" window, there's now a button
      called "Yardmaster" for each location. The Yardmaster window has a combobox containing a list
@@ -131,7 +128,7 @@ that might have been introduced.</p>
     <li>Improved car routing when the car has custom loads and/or final destinations. Thanks to
      Dave Cochrun and Inspector Dave in helping us improve this part of the program.</li>
     <li>You can now use the escape key to close any active operations window. All operations
-     and other jmri windows can also be closed by using the control-W key.
+     and other JMRI windows can also be closed by using the control-W key.
     <li>Yardmaster and Conductor windows now show utility cars by their quantity rather than by
      road and number. Both windows now support the "Sort by Track" option. The Yardmaster window now
      uses the "Switch List" format rather than the "Manifest" format.</li>
@@ -283,12 +280,12 @@ is version 7.x.x and your PowerCab must be version 1.65 or newer.
         <li>Extend the Entry/Exit interlocking so that it can extend the transit of an active train.</li>
         <li>Add the option to allow the dispatcher window to be opened when the panel file is loaded.</li>
         <li>New Train Window - The starting block combo box will automatically select the first occupied block in the list</li>
-        <li>New Train Window - When called from the panel with a known Roster Entry and block, the transit combo is populated with transits that either contain the block past or have it as an entry poing.</li>
+        <li>New Train Window - When called from the panel with a known Roster Entry and block, the transit combo is populated with transits that either contain the block past or have it as an entry point.</li>
         <li>Fix issue with the editing of the forward blocking sensor</li>
         <li>Fix a out of range exception in dispatcher.</li>
         <li>Provide access to the Dispatcher functions of create new train, allocate sections and terminate for an active train from a memory icon, if a Roster Entry is used</li>
         <li>Store the train type as set in the Dispatcher New Train Window against the roster entry, and retrieve it when the entry is selected again</li>
-        <li>Added the option to store the Roster Entry in allocated blocks from the dispather rather than just a text string</li>
+        <li>Added the option to store the Roster Entry in allocated blocks from the dispatcher rather than just a text string</li>
     </ul></li>
 
     <li>Provided a new method to edit block, turnout and sensor details in the table.</li>
@@ -325,7 +322,7 @@ More reducing decoder definitions to common form via XInclude of "part files".
 
 <p>
 Dave Heap changed the preferences associated with roster location and "User File Location".
-He also added support for ESU's new Marklin-style speed tables in LokSound 4.0 decoders.
+He also added support for ESU's new M&auml;rklin-style speed tables in LokSound 4.0 decoders.
 
 <p>
 Dave Heap improved some of the file-location-related terminology.
@@ -345,7 +342,7 @@ Changes for Virtual Sound Decoder (by Mark Underwood)
   idle.</li>
   <li>Added filesystem browsers to the default path and file entries
   in the Preferences</li>
-  <li>VSD file can now explcitly indicate which defined Diesel notch
+  <li>VSD file can now explicitly indicate which defined Diesel notch
   is the Idle notch.</li>
 </ul>
 <p>
@@ -359,7 +356,7 @@ Fixed problem when exporting roster files.
 <p>
 Fred Dalzell added a definition for the MRC Steam Sync Mini decoder MRC_soundbrilliance1869.xml
 
-<P>
+<p>
 Gert Muller fixed a problem when storing panels from the web client.
 
 <p>
@@ -498,7 +495,7 @@ Dick Bronson improved the NS-2008 signal set.
 
   <li>Request administrator rights when installing - fix for bug highlighted by Suzie Tall</li>
     
-<li>The TCS decoder definition files have been realligned with great help from TCS. 
+<li>The TCS decoder definition files have been realigned with great help from TCS. 
     All old definitions are still there, but three new families have been created from which 
     only the one with the latest firmware (called Jan 2012) is always visible. 
     If you identify a decoder on the programming track the correct decoder definition 
@@ -518,7 +515,7 @@ Dick Bronson improved the NS-2008 signal set.
     require additional rework of the code base. 
     
     <li>Peter Ulvestad improved the Atlas 342 and 345 decoder definitions 
-    <li>Nigel Cliffe improved some CT Electonik decoders.
+    <li>Nigel Cliffe improved some CT Elektronik decoders.
     
     <li>David Heap improved the Help Locations window.
     <li>Dave Sand contributed a new ManageBlocks.py sample script
@@ -534,7 +531,7 @@ Dick Bronson improved the NS-2008 signal set.
 	<li>Added optional grid overlay
 	<li>Added selectors for programming track or main track operation (doesn't do very much at present)
 	<li>Added User editable title string
-	</ul>
+	</ul></li>
   <li>Dave Heap added further Patches to fix ESU V4 Indexed CVs decoder definitions, plus some code in LocoFile.java to correct existing roster entry files as they are read, in order to match corrected definitions.
     
     <li>Joan de Castro added additional Catalan translation.

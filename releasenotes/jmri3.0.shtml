@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.0
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.0 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -43,13 +40,13 @@ We're therefore making that version, "Production version 3.0" available for down
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -66,14 +63,14 @@ None at the time of this release.
 
 <p>Please use these links for downloading:</p>
 
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.tgz/download</a></p>
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -177,48 +174,48 @@ These are development files, and might not be working at any particular time.
      for folks with small railroads. Basically the program allows you to build and terminate your
      trains while capturing the switch list data for a location. See operations help for more info.
      Should save paper!</li>
-    <LI>New operations feature, train manifests are now truncated when there's a switch list
+    <li>New operations feature, train manifests are now truncated when there's a switch list
      for the location visited. A "truncated" manifest doesn't show where the cars are pulled from or
      where they are to be spotted. Local moves are also not shown. All of the removed info is
      however shown on the switch list for the location. This simplifies the train manifest showing
      only what is needed for the train's conductor. See Print Options and select the "Truncate"
-     checkbox if you want to use this feature.</LI>
-    <LI>New staging option, you can now have cars return to staging on a turn, rather than
+     checkbox if you want to use this feature.</li>
+    <li>New staging option, you can now have cars return to staging on a turn, rather than
      having a build failure. See help for more info, see Settings-&gt;Tools-&gt;Options "Allow cars
      to return to staging if needed"."
-    <LI>New operations feature, "Auto Save". When selected the program will automatically save
+    <li>New operations feature, "Auto Save". When selected the program will automatically save
      your operation files. The program checks very minute to see if the operation files have been
      modified, and if so will save them when the next minute passes. See the "Setting" page for the
      "Auto Save" checkbox.
-    <LI>Switch lists now order the trains by their arrival time rather than their departure
-     time from the start of their route.</LI>
-    <LI>You can now manually add or delete cars from a built train using the "Set Cars" window.
-     The train manifest will also show the changes you manually made to the train.</LI>
-    <LI>In the "Trains" window, the program now shows the date and time a train was terminated.</LI>
-    <LI>New operations feature, "Planned Pick Ups" found under "Tools" in "Edit Track" for
+    <li>Switch lists now order the trains by their arrival time rather than their departure
+     time from the start of their route.</li>
+    <li>You can now manually add or delete cars from a built train using the "Set Cars" window.
+     The train manifest will also show the changes you manually made to the train.</li>
+    <li>In the "Trains" window, the program now shows the date and time a train was terminated.</li>
+    <li>New operations feature, "Planned Pick Ups" found under "Tools" in "Edit Track" for
      spurs and interchanges. For each track you can tell the program that cars are expected to be
      picked up from the track and that cars currently sitting there should be ignored. See the
-     operations help for more information.</LI>
+     operations help for more information.</li>
     <li>Two new switch list features. You can now eliminate trains that don't have work from
      your switch lists. You can if you wish use a separate page for each train visiting a location.
      See help for more info.</li>
-    <Li>You can now view a car's wait value in the Cars window. Note that you need a schedule
-     for this field to show up.</Li>
+    <li>You can now view a car's wait value in the Cars window. Note that you need a schedule
+     for this field to show up.</li>
     <li>Enhanced the cars print and preview options. Now you can select the page orientation,
      and you can also optionally select the car's train, destination, and comment.</li>
     <li>You can now print all of your routes from the "Tools" menu found in the routes window.</li>
     <li>Improved the train builder, you should see less final destinations assigned to cars
-     that arn't part of the train</li>
-    <LI>You can now add a unique switch list comment for each location.</LI>
+     that aren't part of the train</li>
+    <li>You can now add a unique switch list comment for each location.</li>
     <li>New feature, auto backup. When enabled, the program will make a backup copy of all
      operation files when the program starts.</li>
     <li>The Trains window now shows which staging track a train is departing or terminating on.</li>
-    <LI>New enhancement, you can now exclude trains or routes from spurs, interchanges, and
-     staging tracks.</LI>
+    <li>New enhancement, you can now exclude trains or routes from spurs, interchanges, and
+     staging tracks.</li>
     <li>Fixed a problem introduced in 2.99.4 with the switch list button "Print Switch List
      Changes".</li>
     <li>The option "Print Valid" now also affects switch lists.</li>
-    <Li>Improved the way cars, locomotives, and routes windows resize.</Li>
+    <li>Improved the way cars, locomotives, and routes windows resize.</li>
     <li>Switch lists now show the lead loco number as part of the train's name. The "Append
      Loco Number" must be selected in the Setting page.</li>
     <li>Now when building trains that visit locations that have the "same" name, cars are no
@@ -229,7 +226,7 @@ These are development files, and might not be working at any particular time.
      devices. See the Print Options page for detail.</li>
    </ul>
 
-   <p>Paul Bender added a new Generic Consist Manager which will be installed onsystems such as the SPROG that implement a command station interface (the ability to send an arbitrary NMRA DCC packet).  This version of the Consist Manager uses an NMRA Consist Control packet to create the consist instead of the Operations Mode Programming request used in the previous Generic Consist Manager.  This will allow writing the consist address on decoders that support Operations Mode Programming, but do not allow operations mode programming of CV19 (Certain Lenz decoders fall into this category).
+   <p>Paul Bender added a new Generic Consist Manager which will be installed on systems such as the SPROG that implement a command station interface (the ability to send an arbitrary NMRA DCC packet).  This version of the Consist Manager uses an NMRA Consist Control packet to create the consist instead of the Operations Mode Programming request used in the previous Generic Consist Manager.  This will allow writing the consist address on decoders that support Operations Mode Programming, but do not allow operations mode programming of CV19 (Certain Lenz decoders fall into this category).
 
 <p>Georgio Terdida fixed a bug that may occur when loading an XnTcp adapter.</p>
 
@@ -242,7 +239,7 @@ can't display are now sent to the user's default web browser for display.
 
 <p>Steve Todd updated jmdns.jar to v3.4.1 (latest release from http://sourceforge.net/projects/jmdns/).</p>
 
-<p>david zuhn fixed the problem with preferences in Mac OS X that first appeared in JMRI 2.99.1</p>
+<p>David Zuhn fixed the problem with preferences in Mac OS X that first appeared in JMRI 2.99.1</p>
 
 <p>Randall Wood made the following changes:</p>
 <ul>
@@ -320,8 +317,8 @@ indexed variables.</p>
 </ul>
 
 Gert Muller
-<UL>
-<LI>updated the CanExample.py script to reflect the changes made relating to the multiple CAN connections.
+<ul>
+<li>updated the CanExample.py script to reflect the changes made relating to the multiple CAN connections.
 <li>You could add all the other panel items except a label with a right click and "Add Item" on a Panel. Added "Test/Label" at the bottom of the "Add Item" list.
 <li>Added line numbers to the script entry window
 <li>Fixed the help link from the CAN send-frame window
@@ -373,7 +370,7 @@ The Team Digital SD8 decoder was updated.
 Martin Pischky improved the LocoNet firmware downloader and fixed some bugs.
 
 <p>
-Steve Lowens added the Con-cor Zephyr (HO & N) definitions to the Digitrax sound decoder definitions.
+Steve Lowens added the Con-cor Zephyr (HO &amp; N) definitions to the Digitrax sound decoder definitions.
 
 <p>Paul Bender made the following changes:</p>
 <ul>
@@ -402,19 +399,19 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
 <b>Signalling</b>
     <ul>
         <li>New Features</li><ul>
-            <li>Added an Experimental DCC accessory controlled SignalMast for the rr-cirkits LNCP module.</li>
+            <li>Added an Experimental DCC accessory controlled SignalMast for the RR-Cirkits LNCP module.</li>
             <li>SignalMasts  Automatically create a resources/signals directory for user created custom signalmast definitions.</li>
             <li>Added a delay option into the SignalMast code to allow the simulation of manually operated signals ie Semaphore Signals<li>
         </ul>
         <li>Updates</li><ul>
             <li>Updated the logic behind the SignalMastLogic in determining routes on the layout editor involving a Double Crossing</li>
-            <li>Add a warning message when a logic is created/edited, that if the source or destination mast is used as part of the criteria with the logic, it may result in unexpected behaviour.</li>
-            <li>Added the ability to delete Signal Mast logic from the Signalling Pairs window</li>
+            <li>Add a warning message when a logic is created/edited, that if the source or destination mast is used as part of the criteria with the logic, it may result in unexpected behavior.</li>
+            <li>Added the ability to delete Signal Mast logic from the Signaling Pairs window</li>
         </ul>
         <li>Bug Fixes</li><ul>
             <li>SignalHeads - Fix bug 3535156.</li>
             <li>SignalMast Logic - Fix an issue in the logic where disabled aspects were still being considered as potential valid aspects.</li>
-            <li>Fix an issue when an NullPointerException could occur when changing between signal mast driver types when the signalling system name does not match the directory that the signal mast are held in</li>
+            <li>Fix an issue when an NullPointerException could occur when changing between signal mast driver types when the signaling system name does not match the directory that the signal mast are held in</li>
         </ul>
     </ul>
 
@@ -426,11 +423,11 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
             <li>Added in initial support for the TAMs System with help from Jan Boen - please note that this is still in development.</li>
             <li>Added initial support for DCC4PC RailCom interface boards.  The interface is currently <b>not supported in Windows</b></li>
             <li>(Windows Only) In the preferences when you select a new connection, they system will try and match the correct comm port against the selected system</li>
-            <li>Updated the CAN BUS code so that it can handle mutliple connections and be configured with other systems at the same time.</li>
+            <li>Updated the CAN BUS code so that it can handle multiple connections and be configured with other systems at the same time.</li>
         </ul>
         <li>Bug Fixes</li><ul>
             <li>ESU ECOS - Fix an issue in the loco monitor where the initial states of locos was not reported.</li>
-            <li>ESU ECOS - Improved he handling of adding locos to the roster from ecos database.</li>
+            <li>ESU ECOS - Improved he handling of adding locos to the roster from Ecos database.</li>
             <li>Direct Driver Serial - Prevent this from being selected in the preferences for certain OS that are not supported.</li>
             <li>Suppressed the "Serial Port" selection box from the preferences of the CAN and SMRI Simulator</li>
             <li>Fix potential NPE that would stop the Sprog command station from working if a null packet was queued.</li>
@@ -461,7 +458,7 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
         <li>Bug Fixes</li><ul>
             <li>Fixed a bug where the PR3 could not operate a throttle in Programming Mode</li>
             <li>Fixed an issue with the Start-Up Wizard that could cause the system to hang when doing the final connect</li>
-            <li>Fixed an inconsistancy issue relating to the saving of preferences in DP3 depending upon the method that it was closed</li>
+            <li>Fixed an inconsistency issue relating to the saving of preferences in DP3 depending upon the method that it was closed</li>
         </ul>
     </ul>
 
@@ -481,15 +478,15 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
 <li>Updates</li><ul>
     <li>Added a script ("AllocateRosterEntryToBlock.py) that allows you to allocate a roster entry to a block</li>
     <li>Added in the ability to allow an Entry Exit become a variable condition to a Logix.</li>
-    <li>Updated the block routing details so that it is initialised after all the layout blocks have been initialised.</li>
-    <li>Allow the logix for the signal allocated to a Slip to be recreated rather than skipped if it has
+    <li>Updated the block routing details so that it is initialized after all the layout blocks have been initialized.</li>
+    <li>Allow the Logix for the signal allocated to a Slip to be recreated rather than skipped if it has
         already been created once, this allows for changes having been made at a later date on the slip for the turnout states.</li>
     <li>Added in ability to the layout editor to hide turnouts when not in editing mode</li>
     <li>Added the ability to update a block value by changing the corresponding memory value from the panel</li>
     <li>Added in the ability to change which memory object a memory labels points to if a change is made from the edit layout block GUI.</li>
     <li>Provided an option to set the default colour for occupied and alternative track states</li>
     <li>Provided an option to automatically create and assign blocks to track and turnouts.
-            This can aid in providing continuous layoutblock connectivity which can be used by the signalmast logic and entry/exit work.</li>
+            This can aid in providing continuous layoutblock connectivity which can be used by the Signal Mast Logic and entry/exit work.</li>
     <li>Updated the Layout Block Routing Protocol, so that when block traffic flow is updated, this is reflected in the routing table</li>
     <li>Add the ability in the Layout Editor to control a second turnout from another one on the layout panel.  This is ideal for situations where the user has two physical turnouts operating from one DCC Address and has to put onto the panel an Internal turnout to represent the second turnout.  Changes made to either turnout are reflected on the other.</li>
     <li>Added the ability to delete multiple selected items using either a popup menu or via the keyboard</li>
@@ -503,14 +500,14 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
 </ul>
 <b>Misc</b><ul>
 <li>New Features</li><ul>
-    <li>Add the ability for the command monitor, jython input and output windows to be displyaed on top of any other window.</li>
+    <li>Add the ability for the command monitor, jython input and output windows to be displayed on top of any other window.</li>
     <li>Added the ability to clear the jython output window via a button</li>
 </ul>
 <li>Updates</li><ul>
     <li>Add a notification if an error occurred during a panel store, rather than it previously failing silently.</li>
     <li>Updated the throttle window, so that when it is closed, any active throttles, no longer set the loco speed to 0 or turns off all the functions</li>
     <li>Updated the turnout table so that column widths retain their size when extra columns are shown or hidden.</li>
-   <li>Jython is now initialised in the background rather than when required to improve user performance.</li>
+   <li>Jython is now initialized in the background rather than when required to improve user performance.</li>
 
 </ul>
 <li>Bug fixes</li><ul>
@@ -519,9 +516,6 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
     <li>Fixed an issue in the "Add/Edit Routes" window that could cause panel files to load slowly.</li>
     <li>Fix a number of XML validation errors.</li>
 </ul>
-
-
-
 </ul>
 
 <!--#include virtual="/Footer" -->

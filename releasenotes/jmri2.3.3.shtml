@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.3.3
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.3.3 decoderpro panelpro locotools loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -37,7 +34,7 @@
 
 <br><b>JMRI 2.3.3 has been replaced by 
 <a href="jmri2.3.4.shtml">JMRI 2.3.4</a>
-due to a Windows-related startup problem encounted by some 
+due to a Windows-related startup problem encountered by some 
 users.  Please see the 
 <a href="jmri2.3.4.shtml">JMRI 2.3.4 release note</a>
 for download links to that version.</b>
@@ -71,7 +68,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -93,9 +90,9 @@ that can cause this problems.
 If so, you can fix it by moving aside those extra
 .jar files from the JMRI program directory.
 For more information on this, please see this
-<a href="http://groups.yahoo.com/group/jmriusers/message/35065">discussion</a>
+<a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/topics/35065">discussion</a>
 on the 
-<a href="http://groups.yahoo.com/group/jmriusers/">jmriusers mailing list</a>.
+<a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>.
 
 <h3>Warnings from older versions:</h3>
 
@@ -120,13 +117,13 @@ Code has been added to detect if AIU broadcasts are enabled, and if so a warning
 <p>Please use these links for downloading, including the "?download" at the end. That adds to SourceForge's advertising statistics, which makes them happy to host our stuff.
 
 <p>Mac OS X:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.3.3.dmg?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.3.dmg?download</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.3.3.dmg?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.3.dmg?download</a>
 
 <p>Windows:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.3.3.exe?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.3.exe?download</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.3.3.exe?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.3.exe?download</a>
 
 <p>Linux:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.3.3.tgz?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.3.tgz?download</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.3.3.tgz?download">http://downloads.sourceforge.net/jmri/JMRI.2.3.3.tgz?download</a>
 
 
 
@@ -161,7 +158,7 @@ David Duchamp added
 to the Layout Editor.
 
 <p>
-Dan Boucreau provided improvements and fixes to the operations code, 
+Dan Boudreau provided improvements and fixes to the operations code, 
 including better print control.
 
 <p>
@@ -183,7 +180,7 @@ Michael Mosher fixed the recent ID problem with QSI decoders.
 
 <p>
 Additional RPS improvements and fixes: <ul>
-<li>Improvements to handling missing recievers.
+<li>Improvements to handling missing receivers.
 <li>You can now set limits on valid times from each receiver.
 <li>Improved help.
 </ul>
@@ -253,6 +250,5 @@ sample script.
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

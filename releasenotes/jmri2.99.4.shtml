@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.99.4
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.99.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -52,7 +49,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -75,14 +72,14 @@ changes to the program.
 
 <p>Please use these links for downloading:</p>
 
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.4-r20286.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.4-r20286.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.4-r20286.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.4-r20286.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.4-r20286.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.4-r20286.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.4-r20286.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.4-r20286.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.4-r20286.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.4-r20286.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.4-r20286.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.4-r20286.tgz/download</a></p>
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -106,9 +103,9 @@ These are development files, and might not be working at any particular time.
    <li>Added in a full Entry/Exit interlocking system for use with the layout editor.</li>
    <li>Suppressed the "Serial Port" selection box from the preferences of the CAN and SMRI Simulator</li>
    <li>Added an automatic connection recovery for the ECoS</li>
-   <li>Add the ability for the command monitor, jython input and output windows to be displyaed on top of any other window.</li>
+   <li>Add the ability for the command monitor, jython input and output windows to be displayed on top of any other window.</li>
    <li>Added the ability to clear the jython output window via a button</li>
-   <li>Jython is now initialised in the background rather than when required to improve user performance.</li>
+   <li>Jython is now initialized in the background rather than when required to improve user performance.</li>
    <li>Add SignalMasts - Filtered the list of available DCC systems available when the LNCP mast is selected to those with only a LocoNet Command Station</li>
    <p>Layout Editor</p>
    <ul>
@@ -145,28 +142,28 @@ These are development files, and might not be working at any particular time.
      for folks with small railroads. Basically the program allows you to build and terminate your
      trains while capturing the switch list data for a location. See operations help for more info.
      Should save paper!</li>
-    <LI>New operations feature, train manifests are now truncated when there's a switch list
+    <li>New operations feature, train manifests are now truncated when there's a switch list
      for the location visited. A "truncated" manifest doesn't show where the cars are pulled from or
      where they are to be spotted. Local moves are also not shown. All of the removed info is
      however shown on the switch list for the location. This simplifies the train manifest showing
      only what is needed for the train's conductor. See Print Options and select the "Truncate"
-     checkbox if you want to use this feature.</LI>
-    <LI>New staging option, you can now have cars return to staging on a turn, rather than
+     checkbox if you want to use this feature.</li>
+    <li>New staging option, you can now have cars return to staging on a turn, rather than
      having a build failure. See help for more info, see Settings-&gt;Tools-&gt;Options "Allow cars
      to return to staging if needed"."
-    <LI>New operations feature, "Auto Save". When selected the program will automatically save
+    <li>New operations feature, "Auto Save". When selected the program will automatically save
      your operation files. The program checks very minute to see if the operation files have been
      modified, and if so will save them when the next minute passes. See the "Setting" page for the
      "Auto Save" checkbox.
-    <LI>Switch lists now order the trains by their arrival time rather than their departure
-     time from the start of their route.</LI>
-    <LI>You can now manually add or delete cars from a built train using the "Set Cars" window.
-     The train manifest will also show the changes you manually made to the train.</LI>
-    <LI>In the "Trains" window, the program now shows the date and time a train was terminated.</LI>
-    <LI>New operations feature, "Planned Pick Ups" found under "Tools" in "Edit Track" for
+    <li>Switch lists now order the trains by their arrival time rather than their departure
+     time from the start of their route.</li>
+    <li>You can now manually add or delete cars from a built train using the "Set Cars" window.
+     The train manifest will also show the changes you manually made to the train.</li>
+    <li>In the "Trains" window, the program now shows the date and time a train was terminated.</li>
+    <li>New operations feature, "Planned Pick Ups" found under "Tools" in "Edit Track" for
      spurs and interchanges. For each track you can tell the program that cars are expected to be
      picked up from the track and that cars currently sitting there should be ignored. See the
-     operations help for more information.</LI>
+     operations help for more information.</li>
     <li>Fixed "Location Unknown" checkbox problem introduced in version 2.99.3.</li>
    </ul>
 
