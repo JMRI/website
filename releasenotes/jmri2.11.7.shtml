@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.11.7
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.11.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -50,7 +47,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -97,19 +94,19 @@ None at the time of this release.
 <p>Please use these links for downloading:
 
 <p>Mac OS X:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.7.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.7.dmg/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.7.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.7.dmg/download</a>
 
 <p>Windows:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.7.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.7.exe/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.7.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.7.exe/download</a>
 
 <p>Linux:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.7.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.7.tgz/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.7.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.7.tgz/download</a>
 
 <h3>Changes since test release version 2.11.6</h3>
 
 Paul Bender added a Consist Manager for LocoNet with the following notes on it's current capabilities and known issues:
 
-Basic functionallity of adding and removing locomotives from consits is working, however there are several known issues with this release:
+Basic functionality of adding and removing locomotives from consists is working, however there are several known issues with this release:
 1) The check boxes for changing the direction of a locomotive within a 
 consist are not working 
 2) The delete button at the bottom of the throttle does not work correctly.
@@ -117,32 +114,32 @@ consist are not working
 to another consist.  
 4) The consist manager does not currently examine the slots for consists
 
-<P>Dan Boudreau</P>
+<p>Dan Boudreau</p>
 
-<P>New operations features and bug fixes:</P>
+<p>New operations features and bug fixes:</p>
 <UL>
-	<LI>Fixed a bug where a schedule's alternate track wasn't restored
-	after restarting the program.</LI>
-	<LI>Fixed a bug, the program didn't check the car's road and the
-	schedule item's road when generating a custom load from staging.</LI>
-	<LI>Improved how custom car loads are generated from staging when
+	<li>Fixed a bug where a schedule's alternate track wasn't restored
+	after restarting the program.</li>
+	<li>Fixed a bug, the program didn't check the car's road and the
+	schedule item's road when generating a custom load from staging.</li>
+	<li>Improved how custom car loads are generated from staging when
 	using match mode, and "Generate custom loads for train sidings serviced
-	by this train".</LI>
+	by this train".</li>
 </UL>
 
 <p>Pete Cressman</p>
 <ul>
 <li>Fixed bug in LRoute Initializer where extra trigger items were included</li>
-<li>Warrant route loops with repeating blocks or the same starting and ending bocks can record and playback.</li>
+<li>Warrant route loops with repeating blocks or the same starting and ending blocks can record and playback.</li>
 <li>Indicator tracks move train Id markers automatically under both manual and auto playback warrants.</li>
 <li>Gray menus when CircuitBuilder is in an editing mode</li>
-<li>Portal editing in CircuitBuilder interface simpified.</li>
+<li>Portal editing in CircuitBuilder interface simplified.</li>
 <li>Name changing in CircuitBuilder for Blocks, Portals and Paths implemented.</li>
 <li>Conversion of track icons to Indicator icons in CircuitBuilder improved.</li>
 <li>Other fixes and improvements - CircuitBuilder is ready for use.</li>
 </ul>
 
-<P>Fixed the NCE consist editor, broken since 2.11.4.</P>
+<p>Fixed the NCE consist editor, broken since 2.11.4.</p>
 
 <p>Bob Jacobsen fixed a problem with checkboxes and indexed variables in
 DecoderPro. No decoders were using it yet, but several are about to, so this
@@ -150,18 +147,17 @@ will be needed for new decoder types. At the same time, an "issue"
 with sizing of indexed enum variables was fixed. Some decoder definitions
 may have been counting on the buggy behavior for their layouts, so 
 if you see any decoder definitions that look messy now, please mention 
-it in the jmriusers group.
+it in the JMRI users Yahoo group.
 
 <p>Kevin Dickerson</p>
 <ul>
 <li>Fixed an issue with the Digitrax Simulator Throttle</li>
-<li>Fixed an issue where when you edited a route configured with a auto system name. it would duplicate the route</li>
-<li>Added the signal mast specific appearances and mapping to the basic set of signalmasts</li>
-<li>Added the signal mast logic facility for controlling signal masts, more info can be found <a href="/help/en/html/tools/signaling/SignalMastLogic.shtml">here<a></li>
+<li>Fixed an issue where when you edited a route configured with an auto system name. It would duplicate the route</li>
+<li>Added the Signal Mast specific appearances and mapping to the basic set of Signal Masts</li>
+<li>Added the Signal Mast Logic facility for controlling Signal Masts, more info can be found <a href="/help/en/html/tools/signaling/SignalMastLogic.shtml">here<a></li>
 </ul>
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

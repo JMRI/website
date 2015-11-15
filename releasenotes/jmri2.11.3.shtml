@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.11.3
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.11.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -62,7 +59,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -103,13 +100,13 @@ click the button to continue.
 <p>Please use these links for downloading:
 
 <p>Mac OS X:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.dmg/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.dmg/download</a>
 
 <p>Windows:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.exe/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.exe/download</a>
 
 <p>Linux:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.tgz/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.tgz/download</a>
 
 <h3>Changes since production version 2.11.2</h3>
 
@@ -165,7 +162,7 @@ New operations features and bug fixes:
 
 <p>
 Pete Cressman added support for invisible icons on panels.  The file "Invisible.gif" in the program icon directory can be selected 
-as a dimensionless icon.  This can be used when sensors are stacked amd allows "peeking through" a state of the top sensor
+as a dimensionless icon.  This can be used when sensors are stacked and allows "peeking through" a state of the top sensor
 to view the state of the sensor underneath.  For example. combining two sensors to depict a 3 state panel jewel.
 
 <p>
@@ -235,7 +232,7 @@ actions are still triggered according to the truth value of the antecedent expre
 <p>
 Pete Cressman added new ControlPanelEditor features
 <ul>
-<li>Clipboard Copy & Paste can be done between two control panels.</li>
+<li>Clipboard Copy &amp; Paste can be done between two control panels.</li>
 <li>The Item Palette can hold multiple sets of icons for each item type.</li>
 <li>The Item Palette has "Indicator Track" and "Indicator Turnouts" that change color when their block sensor 
 shows occupacy.  When used with Occupancy Blocks and Warrants, indicator icons will show allocation, 
@@ -266,7 +263,7 @@ Ken Cameron made it possible to select a default power manager when using multip
 <p>
 Pete Cressman changes:
 <ul>
-<li>edited tooltip-text is saved and default tiooltip is its device display name
+<li>edited tooltip-text is saved and default tooltip is its device display name
 <li>improved path detection and display for simultaneous manual and auto train running under warrants.
 <li>fixed duplication and copy of rotated Signal Masts bug.
 <li>improved path detection and display for simultaneous manual and auto train running under warrants.
@@ -295,8 +292,8 @@ Kevin Dickerson updated the user preference manager so that items and descriptio
 are now dynamically added via the using code.  The message preferences pane is 
 now dynamically created bases upon this information.  
 See AbstractTableAction and LogixTableAction for examples of its use.
-The old items stored in the xml files is nolonger valid, but shouldn't 
-be a major issue as all these dealt with was the surpression of message boxes.
+The old items stored in the xml files is no longer valid, but shouldn't 
+be a major issue as all these dealt with was the supression of message boxes.
 
 <p>
 Matthew Harris fixed a GUI anomaly on Tabbed Preferences window
@@ -332,7 +329,7 @@ James LeFevre improved TMCC throttle support.
 Matthew Harris corrected a bug where Layout Editor and Control Panel Editor Panels were not being deleted when 'Delete' was picked from the 'File' menu.
 
 <p>
-Matthew Harris changed the BeanTableDataModel to use internationalised strings for column names rather than hard-coded strings.
+Matthew Harris changed the BeanTableDataModel to use internationalized strings for column names rather than hard-coded strings.
 
 <p>
 Paul Bender added a script showing how to add and remove a consist.
@@ -364,7 +361,7 @@ Leo Bicknell improved the LocoNet monitor:
 <li>Fixed sensor reporting logic to properly display SE8c information. Thanks to Bob Milhaupt.
 <li>Improved decode of switch status broadcast, even though I've never seen anything send one.
 <li>Changed OPC_PANEL_RESPONSE to indicate if it was duplex capable, if we're interpreting that bit correctly.
-<li>Included a long form decode of Command Station OpSw reponses.
+<li>Included a long form decode of Command Station OpSw responses.
 </ol>
 
 <p>
@@ -435,6 +432,5 @@ Steve Todd made multiple updates to the JMRI mini webserver:
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

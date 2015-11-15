@@ -1,16 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.11.7
-
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.11.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -49,7 +47,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -72,12 +70,12 @@ from
 
 <h3>Older warnings</h3>
 
-<P>This release, and all later releases in this cycle, require Java 1.8 or higher.
+<p>This release, and all later releases in this cycle, require Java 1.8 or higher.
 To use this or any later JMRI releases, you'll have to
-<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
+<a href="https://java.com/en/download/">update the Java on your computer</a> to Java 1.8 or higher.
 </p>
 
-<P>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
+<p>JMRI 3.11.3, and therefore this version, removes some files that were present in earlier versions.
 Failure to remove these can result in some portions of
 JMRI (notably the web server) failing to function correctly.
 If you are updating an existing JMRI installation to this version on
@@ -92,7 +90,7 @@ remove/replace the older version of JMRI, ensuring that these obsolete files are
 present.
 </p>
 
-<P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
+<p>This release uses JDOM 2.0.5, which requires some code changes if you are directly
 calling the parts of JMRI that interchange XML objects.</P>
 
 <p>There are now separate settings for the default Service Mode Programmer and
@@ -129,27 +127,22 @@ users are recommended to begin using webThrottle instead, or invest in devices
 that can support webThrottle, the iOS WiThrottle, or the Android Engine
 Driver.</p>
 
-
-
 <h3>Download links:</h3>
 
-
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.7-r29385.tgz/download</a></p>
 
 <!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.11.7/ws/jmri/dist/release/">CI project page</a>.
-
-
 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
@@ -213,7 +206,7 @@ These are development files, and might not be working at any particular time.</p
 	<p>Dave Heap made the following changes:</p>
 	<ul>
 		<li>Most modern ESU decoders will now be identified with "Read type from decoder".</li>
-		<li>Renamed and consolidated models to conform to ESU practice. Old model names are still recognised but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
+		<li>Renamed and consolidated models to conform to ESU practice. Old model names are still recognized but not shown. They can be updated via "<a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#update" target="_blank">Update Decoder Definitions</a>".</li>
 		<li>Preliminary support for ESU LokSound L V4.0.</li>
 		<li>Other improvements and corrections to the ESU decoder definitions.</li>
 	</ul>
@@ -225,7 +218,6 @@ These are development files, and might not be working at any particular time.</p
         <h5>Miscellaneous</h5>
             <p></p>
 -->
-
 
    <h4>Operations</h4>
    <ul>

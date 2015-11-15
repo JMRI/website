@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.1.5
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.1.5 decoderpro panelpro locotools loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -73,7 +70,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -125,15 +122,13 @@ version of Java.  To see JMRI's future plans for this and other compatibility is
 <p>Please use these links for downloading, including the "?download" at the end. That adds to SourceForge's advertising statistics, which makes them happy to host our stuff.
 
 <p>Mac OS X:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.1.5.dmg?download">http://downloads.sourceforge.net/jmri/JMRI.2.1.5.dmg?download</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.1.5.dmg?download">http://downloads.sourceforge.net/jmri/JMRI.2.1.5.dmg?download</a>
 
 <p>Windows:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.1.5.exe?download">http://downloads.sourceforge.net/jmri/JMRI.2.1.5.exe?download</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.1.5.exe?download">http://downloads.sourceforge.net/jmri/JMRI.2.1.5.exe?download</a>
 
 <p>Linux:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.1.5.tgz?download">http://downloads.sourceforge.net/jmri/JMRI.2.1.5.tgz?download</a>
-
-
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.1.5.tgz?download">http://downloads.sourceforge.net/jmri/JMRI.2.1.5.tgz?download</a>
 
 <h3>Changes since test version 2.1.4:</h3>
 
@@ -163,7 +158,7 @@ The "Double Turnout" and "Triple Turnout" signals are now called
 users.  They still work the way they used to.
 
 <p>
-The powerline adapter (X10) support has been rewritten to allow more adapter types
+The Powerline adapter (X10) support has been rewritten to allow more adapter types
 to work.  This shouldn't make any visible changes, but might have accidentally introduced
 some bugs, so please keep an eye out. 
 
@@ -325,7 +320,7 @@ Michael Mosher added a decoder definition for the Factory Direct Trains Trackmob
 
 <p>
 Mark Waters updated the decoder definitions for the several versions of the
-ZImo XM620 decoder so they contain the right CVs.
+Zimo XM620 decoder so they contain the right CVs.
 
 <p>
 Paul Bender updated how commands are sent to turnouts by XPressNet command stations.
@@ -357,7 +352,7 @@ including when the program shuts down.
 <p>
 Walter Thompson updated a number of decoder files:
 He added factory resets to the Digitrax and QSI decoders, and
-added serveral variables to the QSI articulated steam definition.
+added several variables to the QSI articulated steam definition.
 
 <p>
 Dan Boudreau simplified what's being stored when turnouts don't use the lock feature.
@@ -400,8 +395,8 @@ Tim Hatch of
 <a href="http://www.tchtechnology.com/">TCH Technology</a>
 provided 
 <a href="http://jmri.sourceforge.net/help/en/html/hardware/tchtech/index.shtml">JMRI interface code</a> for their 
-<a href="http://www.tchtechnology.com/products/nics/">Node Interface Control System (NICS)</a> 
-hardware system, which uses "H" as it's system letter.
+Node Interface Control System (NICS) hardware system, which uses "H" as it's system letter.<r>
+<strong>As of November 10, 2008, JMRI no longer supports the TCH Technology hardware.</strong>
 
 <p>
 John McAleely contributed new definitions for Hornby decoders
@@ -411,12 +406,11 @@ NCE systems now have CommandStation object support, so they can send
 arbitrary DCC packets.
 
 <p>
-The <a href="http://www.proto87.com/RPS-MR-position-detection-system.html">RPS</a> system support received a major update.
+The <a href="http://www.proto87.com/model-trains-DCC-decoders.html">RPS</a> system support received a major update.
 
 <!--#include virtual="/Footer" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

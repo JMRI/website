@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.99.1
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.99.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -48,7 +45,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -67,19 +64,18 @@ We do not recommend that Mac OS X users try this test release.
 This problem is fixed in
 <p>
 There are currently some connectivity issues for Users running Windows v7 64-bit and a Digitrax PR3 interface.
-If you are experiancing issues, then please raise a question on the yahoo group for assistance.
-
-<a href="jmri2.99.2.shtml">JMRI 2.99.2</a>.
+If you are experiencing issues, then please raise a question on the JMRI users Yahoo group for assistance<br>
+and try <a href="jmri2.99.2.shtml">JMRI v2.99.2</a>.
 
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.tgz/download</a></p>
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -125,17 +121,16 @@ location's name and route comment is printed.</li>
 car would not fit on the car's current track.</li>
 <li>Fixed a problem when using the conductor window and canceling a local move.</li>
 <li>
-
 </ul>
 
-<p>Paul Bender added a new Generic Consist Manager which will be installed onsystems such as the SPROG that implement a command station interface (the ability to send an arbitrary NMRA DCC packet).  This version of the Consist Manager uses an NMRA Consist Control packet to create the consist instead of the Operations Mode Programming request used in the previous Generic Consist Manager.  This will allow writing the consist address on decoders that support Operations Mode Programming, but do not allow operations mode programming of CV19 (Certain Lenz decoders fall into this category).
+<p>Paul Bender added a new Generic Consist Manager which will be installed on systems such as the SPROG that implement a command station interface (the ability to send an arbitrary NMRA DCC packet).  This version of the Consist Manager uses an NMRA Consist Control packet to create the consist instead of the Operations Mode Programming request used in the previous Generic Consist Manager.  This will allow writing the consist address on decoders that support Operations Mode Programming, but do not allow operations mode programming of CV19 (Certain Lenz decoders fall into this category).
 
 <p>Kevin Dickerson made the following updates:
 <ul>
-<li>Fixed an inconsistancy issue relating to the saving of preferences in DP3 depending upon the method that it was closed</li>
+<li>Fixed an inconsistency issue relating to the saving of preferences in DP3 depending upon the method that it was closed</li>
 <li>Update the EasyDCC interface so that it would be picked up correctly on the DP3 status screen</li>
 <li>Updated the Layout Block Routing Protocol, so that when block traffic flow is updated, this is reflected in the routing table</li>
-<li>Added the ability to delete Signal Mast logic from the Signalling Pairs window</li>
+<li>Added the ability to delete Signal Mast logic from the Signaling Pairs window</li>
 
 <p>Georgio Terdida fixed a bug that may occur when loading an XnTcp adapter.</p>
 
@@ -146,10 +141,8 @@ car would not fit on the car's current track.</li>
 <p>Help pages with external links (e.g. full "http:" links) and of types that the JavaHelp browser
 can't display are now sent to the user's default web browser for display.
 
-
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

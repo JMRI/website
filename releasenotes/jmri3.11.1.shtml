@@ -1,16 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 3.11.1
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 3.11.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -51,10 +49,9 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
-
 
 <h3>Known problems with this release</h3>
 
@@ -65,25 +62,20 @@ see our
         <li>Rebuilding the roster (from the Debug menu) can lose roster groups</li>
         <li>Strange sound slot names are displayed with LokSound Select decoders</li>
         <li>Operation manifests and switch lists won't preview or print unless there's a logo specified</li>
-        <li>Some SoundTraxx decoders won't be recognized (fixed in <a href="jmri3.11.3.shtml">JMRI 3.11.3</a>)
+        <li>Some SoundTraxx decoders won't be recognized (fixed in <a href="jmri3.11.3.shtml">JMRI 3.11.3</a>)</li>
     </ul>
     
 If any of those effect you, please either wait for 
-<A href="jmri3.11.2.shtml">JMRI 3.11.2</a>, due out shortly after this one,
-or pick up a 
-<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/1783/">development build installer</a>
-from
-<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
-
+<a href="jmri3.11.2.shtml">JMRI 3.11.2</a>, due out shortly after this one.</p>
 
 <h3>New warnings for this version:</h3>
 
-<P>This release, and all later releases in this cycle, require Java 1.8 or higher.
+<p>This release, and all later releases in this cycle, require Java 1.8 or higher.
 To use this or any later JMRI releases, you'll have to 
-<a href="https://java.com/en/download/index.jsp">update the Java on your computer</a> to Java 1.8 or higher.
+<a href="https://java.com/en/download/">update the Java on your computer</a> to Java 1.8 or higher.
 </p>
 
-<P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
+<p>This release uses JDOM 2.0.5, which requires some code changes if you are directly
 calling the parts of JMRI that interchange XML objects.</P>
 
 <p>There are now separate settings for the default Service Mode Programmer and 
@@ -118,18 +110,17 @@ users are recommended to begin using webThrottle instead, or invest in devices
 that can support webThrottle, the iOS WiThrottle, or the Android Engine
 Driver.</p>
 
-
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.1-r28340.tgz/download</a></p>
  
  <!--
 Preliminary build files (not the final released files) can be found
@@ -146,13 +137,12 @@ These are development files, and might not be working at any particular time.</p
  
 <h3>Changes since production release 3.10:</h3>
 
-<p>This release was built with Java 1.8, which is now required for JMRI.</P>
+<p>This release was built with Java 1.8, which is now required for JMRI.</p>
 
 <P>This release uses JDOM 2.0.5, which requires some code changes if you are directly
 calling the parts of JMRI that interchange XML objects. There's more information
 in the
-<a href="http://jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml#jdom2">migration section of the JMRI Tech Road Map</a>.</P>
-
+<a href="http://jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml#jdom2">migration section of the JMRI Tech Road Map</a>.</p>
 
 <h4>Hardware Support</h4>
 
@@ -211,15 +201,15 @@ in the
     <li>When a car is placed at a spur, without a schedule, but with a custom load of type
      "Empty", the program now changes the car's load name to the default load name "L" rather than
      "E".</li>
-    <LI>Improvements to the "Timetable" window to allow the building, printing, and termination
+    <li>Improvements to the "Timetable" window to allow the building, printing, and termination
      of selected trains. Also allows for the updating or printing of switch lists. This should help
-     simplify things when building and terminating multiple sets of trains for a session.</LI>
-    <LI>You can now print out all location and track comments using the print tool under
-     "Locations".</LI>
-    <LI>New switch list option to print out a new sheet of paper each time a train visits a
-     location.</LI>
-    <LI>The file path name for manifest and switch list logos are now stored as a relative path
-     name.</LI>
+     simplify things when building and terminating multiple sets of trains for a session.</li>
+    <li>You can now print out all location and track comments using the print tool under
+     "Locations".</li>
+    <li>New switch list option to print out a new sheet of paper each time a train visits a
+     location.</li>
+    <li>The file path name for manifest and switch list logos are now stored as a relative path
+     name.</li>
    </ul>
 
    <h4>Warrants</h4>

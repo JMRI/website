@@ -1,17 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
  JMRI: Release Notes for 2.99.2
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.99.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -48,7 +45,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -58,7 +55,7 @@ None
 
 <h3>Older warnings</h3>
 
-This release, and all other releases in this cycle, require Java 1.6.
+This release, and all other releases in this cycle, require <a href="https://java.com/en/download/">Java 1.6</a> or later.
 
 <h3>Known problems with this release</h3>
 There are currently some connectivity issues for Users running Windows v7 64-bit and a Digitrax PR3 interface.
@@ -68,14 +65,14 @@ If you are experiancing issues, then please raise a question on the yahoo group 
 
 <p>Please use these links for downloading:</p>
 
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.2-r19720.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.2-r19720.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.2-r19720.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.2-r19720.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.2-r19720.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.2-r19720.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.2-r19720.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.2-r19720.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.2-r19720.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.2-r19720.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.2-r19720.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.2-r19720.tgz/download</a></p>
 
 <!--Preliminary build files (not the final released files) can be found
 on the
@@ -109,19 +106,18 @@ been printed.</li>
 
 <p>Kevin Dickerson
 <li>Fixed a bug where the PR3 could not operate a throttle in Programming Mode</li>
-<li>Add a warning message when a logic is created/edited, that if the source or destination mast is used as part of the criteria with the logic, it may result in unexpected behaviour.</li>
+<li>Add a warning message when a logic is created/edited, that if the source or destination mast is used as part of the criteria with the logic, it may result in unexpected behavior.</li>
 <li>Updated the logic behind the SignalMastLogic in determining routes on the layout editor involving a Double Crossing</li>
-<li>Updated the CAN BUS code so that it can handle mutliple connections and be configured with other systems at the same time.</li>
+<li>Updated the CAN BUS code so that it can handle multiple connections and be configured with other systems at the same time.</li>
 
 <p>Randall Wood made various improvements to Mac OS X support.</p>
 
 <p>Steve Todd updated jmdns.jar to v3.4.1 (latest release from http://sourceforge.net/projects/jmdns/).</p>
 
-<p>david zuhn fixed the problem with preferences in Mac OS X that first appeared in JMRI 2.99.1</p>
+<p>David Zuhn fixed the problem with preferences in Mac OS X that first appeared in JMRI 2.99.1</p>
 
    <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

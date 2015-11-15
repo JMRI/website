@@ -4,14 +4,12 @@
 <head>
  <title>
  JMRI: Release Notes for 2.99.8
- 
  </title>
-    <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <meta content="Bob Jacobsen" name=Author>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 2.99.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -48,7 +46,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -69,14 +67,14 @@ As an alternative, you can use the NCE consist tool.  We expect to have this pro
 
 <p>Please use these links for downloading:</p>
 
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.8-r20824.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.8-r20824.dmg/download</a></p>
+<p>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.8-r20824.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.8-r20824.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.8-r20824.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.8-r20824.exe/download</a></p>
+<p>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.8-r20824.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.8-r20824.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.8-r20824.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.8-r20824.tgz/download</a></p>
+<p>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.8-r20824.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.8-r20824.tgz/download</a></p>
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -110,7 +108,7 @@ messages on congested or complete LocoNet networks.
 Updated the "New title" dialog for the layout editor to become a "Edit Title" and pre-populating the existing name.
 
 <p>
-All JMRI applications now have a <b>About <i>Application Name</i></b> Help menu item that displays an About dialog. On OS X, this menu item is in the <i>Application Name</i> menu.
+All JMRI applications now have an <b>About <i>Application Name</i> Help</b> menu item that displays an About dialog. On OS X, this menu item is in the <i>Application Name</i> menu.
 
 <!--#include virtual="/Footer" -->
 </div><!-- closes #mainContent-->
