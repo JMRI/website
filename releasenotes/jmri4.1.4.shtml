@@ -198,6 +198,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
+        <h5>SPROG</h5>
+            <ul>
+                <li>Dave Heap modified the SPROG Command Station code to work around issues with some non NMRA-compliant decoders.</li>
+            </ul>
 
         <h5>Uhlenbrock Intellibox</h5>
             <ul>
@@ -223,6 +227,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
            See the 
            <a href="#decoderSchema">warning above</a>
            for more on the implications of this.
+        <ul>
+            <li>Dave Heap made the following changes to Factory Resets:<br>
+                <ul>
+                    <li>A preferred programming mode for the reset can be specified and will be used if available.</li>
+                    <li>Programming on Main mode for the reset will now be available if explicitly specified for a decoder.</li>
+                    <li>These features are made available by specifying &lt;mode&gt; elements for
+                        &lt;resets&gt;, &lt;factReset&gt; or &lt;ifactReset&gt;.
+                    </li>
+                </ul>
+            </li>
+    </p>
+
         <h5>BLI</h5>
             <ul>
                 <li>Michael Mosher updated the BLI Paragon 3 and 2 decoders</li>
@@ -241,13 +257,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                     LocoBridge,
                     Servo5, Panel and Signal 10 decoders.  These use the LocoNet
                     VS2 protocol to configure the units over a LocoNet, not
-                    over a programming track<
+                    over a programming track.
                 </li>
              </ul>
 
         <h5>MTH</h5>
             <ul>
                 <li></li>
+            </ul>
+
+        <h5>NCE</h5>
+            <ul>
+                <li>Dave Heap corrected the range of CVs 3 &amp; 4 for some decoders.</li>
             </ul>
 
         <h5>QSI</h5>
@@ -257,6 +278,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                         <li>Added a definition for the Eureka 50 Class.</li>
                         <li>Improved the definition for the Eureka R Class.</li>
                         <li>Added the ability to import CV values from Quantum CV Manager (.qcv) files.</li>
+                        <li>Factory Reset uses Paged Mode (more reliable with some command stations , such as NCE Power Pro).</li>
+                        <li>Factory Reset can be done with Programming on Main.</li>
+                        <li>Corrected the range of CVs 3 &amp; 4 for some decoders.</li>
                     </ul>
                </li>
             </ul>
@@ -270,11 +294,22 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>Michael Mosher updated the Soundtraxx MC decoders</li>
                 <li>Michael Mosher updated the Genesis caboose lighting decoder</li>
+                <li>Dave Heap corrected the range of CVs 3 &amp; 4 for some decoders.</li>
             </ul>
 
         <h5>TCS</h5>
             <ul>
                 <li>Michael Mosher removed the non-existance CV139 from the non-sound TCS decoders</li>
+            </ul>
+
+        <h5>Wangrow</h5>
+            <ul>
+                <li>Dave Heap corrected the range of CVs 3 &amp; 4 for some decoders.</li>
+            </ul>
+
+        <h5>ZIMO</h5>
+            <ul>
+                <li>Dave Heap corrected the range of CVs 3 &amp; 4 for some decoders.</li>
             </ul>
 
         <h5>Miscellaneous</h5>
