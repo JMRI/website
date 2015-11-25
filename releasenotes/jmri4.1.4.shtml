@@ -294,7 +294,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Miscellaneous</h4>
         <ul>
             <li>The configuration is now stored in multiple files within a directory named <code>profile</code> inside a Configuration Profile instead of within the file <code>ProfileConfig.xml</code>. PanelPro and DecoderPro both should migrate from the old configuration to the new configuration seamlessly.  See <a href="https://github.com/JMRI/JMRI/issues/69#issuecomment-155385101">Issue #69</a> for more details.</li>
+            <li> Improvements to the way TCP based network connections detect a disconnected server.</li>
         </ul>
+        
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
