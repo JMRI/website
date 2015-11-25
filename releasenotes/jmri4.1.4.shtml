@@ -177,7 +177,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>SPROG</h5>
             <ul>
-                <li>Dave Heap modified the SPROG Command Station code to work around issues with some non NMRA-compliant decoders.</li>
+                <li>Dave Heap made the following changes:<br>
+                    <ul>
+                        <li>Modified the SPROG Command Station code to work around issues with some non NMRA-compliant decoders.</li>
+                        <li>The SPROG Programmer now correctly reports an overload on the Programming Track.</li>
+                    </ul>
+               </li>
             </ul>
 
     <h4>Signals</h4>
