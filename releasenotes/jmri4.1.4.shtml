@@ -56,16 +56,21 @@ see our
 
 <h3>Known problems with this release</h3>
 
-None at release time.
+<p>There's a problem with opening roster entries with certain programmer types if you're using a language other than English.
+For example, when the program is set to French language, it won't open the Comprehensive programmer.
+This has been fixed in the development builds. As a (not very good) workaround, please leave the program set to English.</p>
 
-<!--
+<p>Once you've configured one or more connections, you get various errors if you try to remove them and run JMRI without a connection.
+This has been improved, but not entirely fixed, in the development builds.  As a workaround, you can create a new profile
+without any connections.</p>
+
+<p>
 If any of those effect you, please either wait for
-<a href="jmri4.1.5.shtml">JMRI 4.1.5</a>, due out shortly after this one,
+<a href="jmri4.1.5.shtml">JMRI 4.1.5</a>, due out in early December,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
 
 <h3>New warnings for this version:</h3>
 
@@ -92,6 +97,7 @@ from
     sure the code will understand).
 
 </p>
+
 
 <h3>Older warnings</h3>
 
