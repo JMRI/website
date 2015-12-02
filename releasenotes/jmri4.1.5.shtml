@@ -67,7 +67,13 @@ from
 
 <h3>New warnings for this version:</h3>
 
-(None yet)
+        <p>The code for handling Panel Editor / Control Panel Editor icons has changed
+        to better deal with rotating icons.  This has changed how opaque vs transparent
+        icon backgrounds are handled. Please check your panels to make sure we 
+        haven't inadvertently caused a problem, particularly if you've got rotated 
+        icons and/or use have custom icons with transparent backgrounds.  If there
+        are any problems, please send in a copy of your panel file so we can 
+        recreate the problem and fix it.</p>
 
 </p>
 
@@ -331,7 +337,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+            <li><p>The code for handling Panel Editor / Control Panel Editor icons has changed
+            to better deal with rotating icons.  This has changed how opaque vs transparent
+            icon backgrounds are handled.</p>
+            <p>The cause of these effects was the necessity to remove many setOpaque(true) calls to Positionable objects.   
+            The reason is that when rotated with a color background the object cannot be setOpaque(true).  
+            If opaque, color background will be the entire bounding box, not a shape corresponding to the original item.  
+            To display a rotated Positionable, the background, margins and border, if any, are drawn with rotated and 
+            filled rectangles to simulate what is normally the unrotated bounding rectangle and border.</p>
+            <p>The affected objects are PositionableLabels, SensorIcons (especially when represented with text rather than icons) 
+            and MemoryIcons.  MemoryInputIcons, MemoryComboIcons and MemorySpinnerIcons are also affected, due to the background, 
+            margin and border code they share with PositionableLabel decendants. 
+            (They can't be rotated due to having widgets that won't rotate)</p>
+            </li>
         </ul>
 
     <h4>Scripting</h4>
