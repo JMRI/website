@@ -171,11 +171,11 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.1.5/ws/jmri/dist/release/">CI project page</a>.
 <!-- -->
 
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
 
 <h3>Changes since test release 4.1.4:</h3>
 
@@ -183,7 +183,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h4>Hardware Support</h4>
-
+<!--
         <p></p>
 
         <h5>C/MRI</h5>
@@ -224,15 +224,20 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
+        <h5>DCC++</h5>
+            <ul>
+                <li>Mark Underwood added preliminary support for the DCC++ Arduino-based command station</li>
+            </ul>
+<!--
     <h4>Signals</h4>
         <h5>Signal Mast Editor</h5>
             <ul>
                 <li></li>
             </ul>
-
+-->
     <h4>New / Updated decoder definitions</h4>
-
+<!--
         <p>
         <ul>
             <li>
@@ -249,12 +254,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>ESU</h5>
             <ul>
                 <li>Dave Heap corrected some maximum values and bitmasks on the Function Outputs pane.</li>
             </ul>
-
+<!--
         <h5>MGP</h5>
              <ul>
                 <li></li>
@@ -308,14 +313,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
 
    <h4>Operations</h4>
    <ul>
     <li>Fixed a bug where the train build reports were placed in a directory called "operationsbuildstatus". This problem
     was introduced in version 4.1.1.  You can delete this directory if you've used any of the test versions.</li>
    </ul>
-
+<!--
    <h4>Roster</h4>
         <ul>
             <li></li>
@@ -335,7 +340,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Panel Editors</h4>
         <ul>
             <li><p>The code for handling Panel Editor / Control Panel Editor icons has changed
@@ -352,7 +357,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             (They can't be rotated due to having widgets that won't rotate)</p>
             </li>
         </ul>
-
+<!--
     <h4>Scripting</h4>
         <ul>
             <li>
@@ -363,7 +368,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
