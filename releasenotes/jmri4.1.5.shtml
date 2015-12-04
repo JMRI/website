@@ -312,7 +312,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Operations</h4>
    <ul>
-    <li></li>
+    <li>Fixed a bug where the train build reports were placed in a directory called "operationsbuildstatus". This problem
+    was introduced in version 4.1.1.  You can delete this directory if you've used any of the test versions.</li>
    </ul>
 
    <h4>Roster</h4>
