@@ -27,11 +27,13 @@
       Release Notes for JMRI 4.1.4 release
       </h2>
 
-    <p>Date: mmm dd, 2015</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: November 25, 2015</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test version 4.1.4 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h3>Notes:</h3>
 
@@ -54,16 +56,25 @@ see our
 
 <h3>Known problems with this release</h3>
 
-None at release time.
+<p>There's a problem with opening roster entries with certain programmer types if you're using a language other than English.
+For example, when the program is set to French language, it won't open the Comprehensive programmer.
+This has been fixed in the development builds. As a (not very good) workaround, please leave the program set to English.</p>
 
-<!--
+<p>Once you've configured one or more connections, you get various errors if you try to remove them and run JMRI without a connection.
+This has been improved, but not entirely fixed, in the development builds.  As a workaround, you can create a new profile
+without any connections.</p>
+
+<p>Backgrounds to labels and icons on control panels will occasionally display incorrectly.
+Memory variable icons may also display an "X" marker at incorrect times.  
+This is fixed in <a href="jmri4.1.5.shtml">JMRI 4.1.5</a>.
+
+<p>
 If any of those effect you, please either wait for
-<a href="jmri4.1.5.shtml">JMRI 4.1.5</a>, due out shortly after this one,
+<a href="jmri4.1.5.shtml">JMRI 4.1.5</a>, due out in early December,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
 
 <h3>New warnings for this version:</h3>
 
@@ -90,6 +101,7 @@ from
     sure the code will understand).
 
 </p>
+
 
 <h3>Older warnings</h3>
 
@@ -140,25 +152,24 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
 
 <h3>Download links:</h3>
 
-<!--
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.dmg/download</a><br/>
-    sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.4-R50de131.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.4-R50de131.dmg/download</a><br/>
+    sha256: f45b6bd61f0a215007d0ada31a122e78c3a12928a27c0497855bdd775d9cd63e</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.exe/download</a><br/>
-    sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.4-R50de131.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.4-R50de131.exe/download</a><br/>
+    sha256: 817fcad8258e198d79995cf43814cde9e801d67f6fbe38d76b4a43af8e229b63</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download</a><br/>
-    sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
--->
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.4-R50de131.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.4-R50de131.tgz/download</a><br/>
+    sha256: 4c01e876cf81ebcb7e5bcaf2598dad40f312cee8e8e05c9cf09d0b0a3a46ef90</p>
 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.1.4/ws/jmri/dist/release/">CI project page</a>.
-
+-->
 
 <!--
 <p>During development leading to the actual release, you can find test download files on the
@@ -177,8 +188,26 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>SPROG</h5>
             <ul>
-                <li>Dave Heap modified the SPROG Command Station code to work around issues with some non NMRA-compliant decoders.</li>
+                <li>Dave Heap made the following changes:<br>
+                    <ul>
+                        <li>Modified the SPROG Command Station code to work around issues with some non NMRA-compliant decoders.</li>
+                        <li>The SPROG Programmer now correctly reports an overload on the Programming Track.</li>
+                    </ul>
+               </li>
             </ul>
+        <h5>DCC++</h5>
+        <ul>
+            <li>Mark Underwood added support for the open-source Arduino-based DCC++ Base Station</li>
+            <ul>
+                <li>Basic support for Base Station firmware versions 1.0 and 1.1</li>
+                <li>Supports Serial/USB interface</li>
+                <li>Simulator for off-line operation of JMRI</li>
+                <li>Basic support for "DCC++ over TCP" - connect from a remote JMRI instance to a local instance
+                    hosting a DCC++ base station</li>
+                <li>Throttle and Programmer support</li>
+                <li>Basic support for Sensors, Accessory decoders and Turnouts</li>
+            </ul>
+        </ul>
 
     <h4>Signals</h4>
         <h5>Signal Mast Editor</h5>
@@ -289,7 +318,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Miscellaneous</h4>
         <ul>
             <li>The configuration is now stored in multiple files within a directory named <code>profile</code> inside a Configuration Profile instead of within the file <code>ProfileConfig.xml</code>. PanelPro and DecoderPro both should migrate from the old configuration to the new configuration seamlessly.  See <a href="https://github.com/JMRI/JMRI/issues/69#issuecomment-155385101">Issue #69</a> for more details.</li>
+            <li> Improvements to the way TCP based network connections detect a disconnected server.</li>
         </ul>
+        
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
