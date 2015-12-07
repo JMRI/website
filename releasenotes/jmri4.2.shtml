@@ -93,6 +93,14 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
     (because sometimes in the past the program would miss one; now we require an order we're
     sure the code will understand).
 
+<p>The code for handling Panel Editor / Control Panel Editor icons has changed
+    to better deal with rotating icons.  This has changed how opaque vs transparent
+    icon backgrounds are handled. Please check your panels to make sure we 
+    haven't inadvertently caused a problem, particularly if you've got rotated 
+    icons and/or use have custom icons with transparent backgrounds.  If there
+    are any problems, please send in a copy of your panel file so we can 
+    recreate the problem and fix it.</p>
+
 <!-- retain through 4.2 -->
 
 <p>Mac OS X 10.11 El Capitan requires signed drivers for USB adapters. If you've upgraded
@@ -135,8 +143,8 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
 
 <p>The OpenLCB 0.6.4 library in this version has a bug in its alias
     calculations which prevents JMRI from communicating occasionally.
-    A patch has been submitted to the OpenLCB group.
-    In the meantime, the workaround is to restart JMRI and/or the node
+    A patch has been submitted to the OpenLCB group, but as they seem no longer interested in maintaining that code, it's not known when this will be fixed.
+    In the meantime, the workaround is to restart JMRI and/or the hardware node(s)
     and try again; that might allocate different alias values.</p>
 
 <h3>Download links:</h3>
@@ -401,11 +409,9 @@ These are development files, and might not be working at any particular time.</p
 
         <h5>QSI</h5>
             <ul>
-<!--
-                <li>All QSI decoder definitions have been converted to the
+                <li>Some QSI decoder definitions have been converted to the
                     modern format of their internal variables from the older
-                    "ivariable" form.
- -->
+                    "ivariable" form. The rest will be done early in the JMRI 4.3 release series.
                 <li>A problem with the "Max Bell" and "Bell Select"
                     variables in several QSI definitions was fixed.</li>
                 <li>Dave Heap made the following changes:<br>
