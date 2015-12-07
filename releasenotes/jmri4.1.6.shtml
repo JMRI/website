@@ -106,13 +106,13 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
     (because sometimes in the past the program would miss one; now we require an order we're
     sure the code will understand).
 
-        <p>The code for handling Panel Editor / Control Panel Editor icons has changed
-        to better deal with rotating icons.  This has changed how opaque vs transparent
-        icon backgrounds are handled. Please check your panels to make sure we 
-        haven't inadvertently caused a problem, particularly if you've got rotated 
-        icons and/or use have custom icons with transparent backgrounds.  If there
-        are any problems, please send in a copy of your panel file so we can 
-        recreate the problem and fix it.</p>
+<p>The code for handling Panel Editor / Control Panel Editor icons has changed
+    to better deal with rotating icons.  This has changed how opaque vs transparent
+    icon backgrounds are handled. Please check your panels to make sure we 
+    haven't inadvertently caused a problem, particularly if you've got rotated 
+    icons and/or use have custom icons with transparent backgrounds.  If there
+    are any problems, please send in a copy of your panel file so we can 
+    recreate the problem and fix it.</p>
 
 <!-- retain through 4.2 -->
 
