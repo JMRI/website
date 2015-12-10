@@ -5,22 +5,22 @@
 <div id="mBody">
 
 <div id="side"> <!-- Block of text at top -->
-    <div style="text-align: center"><strong>The JMRI Manual</strong></div>
+    <div style="text-align: center"><strong>DecoderPro&reg;</strong></div>
 
     <div style="text-align: right">
       <a href="http://jmri.org/manual/pdf/DP_man_3-4.pdf">Download 3.4</a>
     </div>
 
-<dl><!-- main table of contents -->
-
-	<dd>
+<dl class="toc"><!-- main table of contents -->
+<dt><h3>Installing JMRI</h3></dt>
+	  <dd>
     <ul>
-    <li><a href="Installing_JMRI.shtml">Preparing to Install JMRI</a></li>
-    <li><a href="Installing_JMRI.shtml#InstallJMRI">Installing JMRI Software</a></li>
+    <li><a href="Installing_JMRI.shtml">Preparing to Install</a></li>
+    <li><a href="Installing_JMRI.shtml#InstallJMRI">Installing JMRI</a></li>
     </ul>
     </dd>
 
-<dt>Getting Started</dt>
+<dt><h3>Getting Started</h3></dt>
     <dd>
     <ul>
     <li><a href="Start_DCC.shtml">What is DCC?</a></li>
@@ -31,15 +31,15 @@
     </ul>
     </dd>
     
-<dt>Using DecoderPro&reg;</dt>
+<dt><h3>Starting DecoderPro</h3></dt>
     <dd>
     <ul>
-    <li><a href="Programmer_Setup.shtml">How do I set up to program a decoder?</a></li>
+    <li><a href="Programmer_Setup.shtml">Setting up to program a decoder</a></li>
     <li><a href="Programmer_Start.shtml">What are the Programming Modes?</a></li>
     </ul>
     </dd>
     
-<dt>DecoderPro&reg; Programming Modes</dt>
+<dt><h3>DecoderPro Programming Modes</h3></dt>
     <dd>
     <ul>
     <li><a href="Programmer_SingleCV.shtml">Single CV Programmer</a></li>
@@ -49,20 +49,20 @@
     </ul>
     </dd>
 
-<dt>The Basic Programmer</dt>
+<dt><h3>The Basic Programmer</h3></dt>
     <dd>
     <ul>
-    <li><a href="Basic_Start.shtml">Entering locomotives in the "Roster"</a></li>
-    <li><a href="Basic_BasicPane.shtml">The basic programmer</a></li>
-    <li><a href="Basic_BasicPane.shtml">Reading the data from the decoder</a></li>
-    <li><a href="Basic_BasicPane.shtml">Entering and editing new data</a></li>
-    <li><a href="Basic_BasicPane.shtml">Writing the new data to the decoder</a></li>
-    <li><a href="Basic_BasicPane.shtml">Saving the new data to a file</a></li>
+    <li><a href="Basic_Start.shtml">Entering Locomotives in the "Roster"</a></li>
+    <li><a href="Basic_BasicPane.shtml">The basic Programmer</a></li>
+    <li><a href="Basic_BasicPane.shtml">Reading data from the decoder</a></li>
+    <li><a href="Basic_BasicPane.shtml">Entering/editing new data</a></li>
+    <li><a href="Basic_BasicPane.shtml">Writing new data to the decoder</a></li>
+    <li><a href="Basic_BasicPane.shtml">Saving data to a file</a></li>
     <li><a href="Basic_BasicPane.shtml#Do More">What if I need to do more?</a></li>
     </ul>
     </dd>
     
-<dt>The Comprehensive Programmer</dt>
+<dt><h3>The Comprehensive Programmer</h3></dt>
     <dd>
     <ul>
     <li><a href="Comp_Setup_Roster.shtml">Set-up and Roster Panes</a></li>
@@ -83,7 +83,8 @@
     <li><a href="Comp_PrintData.shtml">Printing the Decoder Data</a></li>
     </ul>
     </dd>
-<dt>The Advanced Programmer</dt>
+    
+<dt><h3>The Advanced Programmer</h3></dt>
     <dd>
     <ul>
     <li><a href="Adv_start.shtml">Starting Advanced Programmer</a></li>
@@ -107,7 +108,7 @@
     </ul>
     </dd>
 
-<dt><a name="Main"></a>DecoderPro&reg; Main Window</dt>
+<dt><h3><a name="Main"></a>DecoderPro Main Window</h3></dt>
     <dd>
     <ul>
       <li><a href="Main_Main.shtml">Main Window</a></li>
@@ -124,7 +125,7 @@
     </ul>
     </dd>
 
-<dt><a name="DecoderDefinition"></a>Creating a Decoder Definition </dt>
+<dt><h3><a name="DecoderDefinition"></a>Creating a New Decoder Definition</h3></dt>
     <dd>
     <ul>
     <li><a href="Dcode_Start.shtml">Getting Started</a></li>
@@ -134,7 +135,7 @@
     </ul>
     </dd>
 
-<dt><a name="Error"></a>Error Messages</dt>
+<dt><h3><a name="Error"></a>Error Messages</h3></dt>
     <dd>
     <ul>
       <li><a href="Error.shtml">Decoder Programmer Error Messages</a></li>
