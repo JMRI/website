@@ -307,7 +307,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Operations</h4>
    <ul>
-    <li></li>
+    <li>New feature for classification / interchange tracks, you can now specify that only cars
+     with final destinations are accepted by the C/I track. See "Track Destinations" in the
+     operations help for more information.</li>
+    <li>Fixed manifests and switch lists with regards to cabooses and cars with FRED that are
+     swapped during a train's route. Previously the caboose wasn't listed at the end of the train,
+     but where in the route it needed to be blocked for a proper set out, now correctly listed at
+     the end of the train.</li>
    </ul>
 
    <h4>Roster</h4>
