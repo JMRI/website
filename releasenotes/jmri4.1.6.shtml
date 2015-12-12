@@ -184,7 +184,7 @@ These are development files, and might not be working at any particular time.</p
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.1.6+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
-
+<!--
     <h4>Hardware Support</h4>
 
         <p></p>
@@ -213,7 +213,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-        <h5>SPROG</h5>
+
+            <h5>SPROG</h5>
             <ul>
                 <li></li>
             </ul>
@@ -233,21 +234,23 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
     <h4>New / Updated decoder definitions</h4>
-
+<!--
         <p>
         <ul>
             <li>
             </li>
         </ul>
     </p>
-
+-->
         <h5>BLI</h5>
             <ul>
-                <li></li>
+                <li>Michael Mosher updated the BLI Blueline Paragon2 Diesel,
+                    BLI Blueline Paragon2 Steam, BLI Paragon3 Diesel,
+                    BLI Paragon3 Steam and BLI Rolling Thunder definitions</li>
             </ul>
-
+<!--
         <h5>Doehler &amp; Haas</h5>
             <ul>
                 <li></li>
@@ -281,12 +284,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                     </ul>
                </li>
             </ul>
-
+-->
         <h5>RR-CirKits</h5>
             <ul>
                 <li>The MotorMan decoder definition was updated.</li>
             </ul>
-
+<!--
         <h5>SoundTraxx</h5>
             <ul>
                 <li></li>
@@ -311,19 +314,23 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
+-->
 
-
-   <h4>Operations</h4>
-   <ul>
-    <li></li>
-   </ul>
-
-   <h4>Roster</h4>
+    <h4>Operations</h4>
+        <p>Dan Boudreau made the following changes to Operations:</p>
+    <ul>
+        <li>Updated the Operations help files</li>
+        <li>Improved the Train Blocking window</li>
+        <li>Updated the Web manifest to not reset the manifest modified flag</li>
+        <li>Cleaned up some of the GUI</li>
+    </ul>
+<!--
+    <h4>Roster</h4>
         <ul>
             <li></li>
         </ul>
 
-   <h4>OBlocks</h4>
+    <h4>OBlocks</h4>
         <ul>
             <li></li>
         </ul>
@@ -337,22 +344,22 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+            <li>Pete Cressman fixed an issue with label backgrounds</li>
         </ul>
 
     <h4>Scripting</h4>
         <ul>
-            <li></li>
+            <li>Randall Wood updated the Jython cache location to be user-writable.</li>
         </ul>
-
+<!--
     <h4>Miscellaneous</h4>
         <ul>
             <li></li>
         </ul>
-
+-->
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
