@@ -42,7 +42,6 @@ back to an earlier version.</p>
 <p>This is the next in a series of test versions. We expect this series
 to end in the next JMRI production release around the end of 2015.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)</p>
-</p>
 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
@@ -311,10 +310,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <li>New feature for classification / interchange tracks, you can now specify that only cars
      with final destinations are accepted by the C/I track. See "Track Destinations" in the
      operations help for more information.</li>
-    <li>Fixed manifests and switch lists with regards to cabooses and cars with FRED that are
-     swapped during a train's route. Previously the caboose wasn't listed at the end of the train,
-     but where in the route it needed to be blocked for a proper set out, now correctly listed at
-     the end of the train.</li>
+    <li>Improved manifests and switch lists with regards to cabooses and cars with FRED that
+     are swapped during a train's route. Previously the caboose wasn't listed at the end of the
+     train, but where in the route it needed to be blocked for a proper set out, now correctly
+     listed at the end of the train.</li>
+    <li>Export cars and locomotives now includes an "Out of Service" remark under the column
+     "Miscellaneous".</li>
    </ul>
 
    <h4>Roster</h4>
