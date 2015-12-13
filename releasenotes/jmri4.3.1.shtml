@@ -193,7 +193,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>LocoNet</h5>
             <ul>
-                <li></li>
+                <li>A problem that prevented use with the Digitrax PR2 has been fixed.
+                </li>
             </ul>
 
         <h5>NCE</h5>
@@ -331,14 +332,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li></li>
         </ul>
 
-    <h4>logix</h4>
+    <h4>Logix</h4>
         <ul>
             <li>The file chooser you used to pick the script file that is run by Conditional Action now starts at the script default directory.</li>
         </ul>
 
     <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+            <li>Pete Cressman continues to improve the code to rotate icons to different orientations. 
+            The most recent change was an update to icons what have their content set and are then rotated.
+            There are lots of special cases, and we're not sure we've found them all yet.
+            If you have any issues around rotating various kinds of icons, please don't 
+            hesitate to get in touch.
+            </li>
         </ul>
 
     <h4>Scripting</h4>
@@ -348,7 +354,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>Sonny Hansen improved the Danish translation with help from Matt Harris.</li>
+            <li>Randall Wood updated the Jetty server (web server) to version 9.3.6 to 
+                improve reliability and connectivity.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
