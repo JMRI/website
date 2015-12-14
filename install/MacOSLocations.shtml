@@ -1,47 +1,46 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<!-- $Id: MacOSLocations.shtml,v 1.1 2007-11-18 07:05:46 jacobsen Exp $ -->
 <html lang="en">
-<HEAD>
-	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
-	<TITLE>JMRI Locations on Mac OS X</TITLE>
+<head>
+	<title>JMRI Locations on Mac OS X</title>
 
 <!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
   <link rel="home" title="Home" href="/">
 <!-- /Style -->
 
-</HEAD>
+</head>
 
+<body>
 <!--#include virtual="/Header" -->
 <!--#include virtual="/download/Sidebar" -->
 
 <div id="mainContent">
 
-<H1>JMRI Locations on Mac OS X</H1>
+<h1>JMRI Locations on Mac OS X</h1>
 
 NOTE: Since the Mac Finder does not usually display the location of a file using 
 a filepath, reference in this document to a file path such as "/Applications/JMRI/" 
 means the folder "JMRI", in the folder "Applications" on the Mac startup disk.
 
-<P>
+<p>
 During installation the JMRI program files can be copied to any folder 
 on a Mac hard disk. 
 A folder named "JMRI" in the "Applications" folder on the Mac startup 
 disk has been used as its location in these examples.
 
-<P>
+<p>
 When you click the DecoderPro icon in the "/Applications/JMRI/" folder, 
 it starts the Mac OS X application bundle DecoderPro.app which puts together the things 
 needed to run the JMRI program.
 "/Applications/JMRI/" is where JMRI finds all the files from the original download. 
 
-<P>
+<p>
 "[Username]" is the user name you use to log on to the Mac when running JMRI.
 
-<P>
+<p>
 The first time you open JMRI, it has you fill in the preferences info
 and then it stores it in the file 
 "/Users/[Username]/Library/Preferences/JMRI/DecoderProConfig2.xml" 
@@ -50,20 +49,20 @@ so it's there the next time you open JMRI.
 is where by default the JMRI program stores all the information
 that's specific to your particular setup.
 
-<P>
+<p>
 When you read a decoder on the programming track and save the file,
 JMRI saves the file to the folder
 "/Users/[Username]/Library/Preferences/JMRI/roster/".
 JMRI also adds the ID of that file to a list in
 "/Users/[Username]/Library/Preferences/JMRI/roster/roster.xml". 
 
-<P>
+<p>
 When you build and store a panel it is also stored by default in
 "/Users/[Username]/Library/Preferences/JMRI/".  
 This allows the JMRI files in the folder "/Applications/JMRI/"
 to be updated without overwriting your files.
 
-<P>
+<p>
 Each program in the suite of JMRI can store files for itself in various locations. 
 JMRI provides a facility to allow you to verify where the various files are stored.  
 On the 'Help' menu, choose the option 'Locations...'.
@@ -80,5 +79,5 @@ For more information follow these links:
 
 <!--#include virtual="/Footer" -->
 
-</BODY>
-</HTML>
+</body>
+</html>
