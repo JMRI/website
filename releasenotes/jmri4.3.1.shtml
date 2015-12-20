@@ -315,6 +315,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
      listed at the end of the train.</li>
     <li>Export cars and locomotives now includes an "Out of Service" remark under the column
      "Miscellaneous".</li>
+    <li>The "Show Schedules by Car Types and Load" window has been enhanced by allowing all car
+     types and loads to be selected. Selecting both will give you a summary of all schedules that
+     are available.</li>
+    <li>New feature, you can now label a locomotive as a "B" or booster unit. B units are never
+     assigned to a train requiring a single loco. B units should never appear as the lead loco in a
+     manifest or switch list.</li>
+     <li>More build report enhancements. Including a check to see if any cars or locos in staging
+     have been assigned to a train that isn't the one being built.</li>
+    <li>Fixed a problem where the program didn't use the road or model specified in the build
+     options for locomotive changes in a train's route, and the option "Build loco consist from
+     single locos" was selected.</li>
+     <li>The "Routes" window now shows the maximum train length in each route.</li>
+     <li>You can now sort and print your trains by their description.</li>
    </ul>
 
    <h4>Roster</h4>
