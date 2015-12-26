@@ -226,13 +226,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
     <h4>New / Updated decoder definitions</h4>
-
-        <p>
         <ul>
-            <li>
-            </li>
+            <li></li>
         </ul>
-    </p>
 
         <h5>BLI</h5>
             <ul>
@@ -306,6 +302,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Operations</h4>
    <ul>
+    <li>New feature to save all train manifest created by the program. See "Options" under
+     tools in the "Settings" window. Useful when you need to review an old train manifest.</li>
     <li>New feature for classification / interchange tracks, you can now specify that only cars
      with final destinations are accepted by the C/I track. See "Track Destinations" in the
      operations help for more information.</li>
@@ -320,14 +318,21 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
      are available.</li>
     <li>New feature, you can now label a locomotive as a "B" or booster unit. B units are never
      assigned to a train requiring a single loco. B units should never appear as the lead loco in a
-     manifest or switch list.</li>
-     <li>More build report enhancements. Including a check to see if any cars or locos in staging
-     have been assigned to a train that isn't the one being built.</li>
+     manifest or switch list.  "B" units are configured by model name.</li>
+     <li>The locomotive model name has the "hyphen" feature where the program won't print after
+     a hyphen followed by a left parenthesis.</li>
+    <li>More build report enhancements. Including a check to see if any cars or locos in
+     staging have been assigned to a train that isn't the one being built.</li>
+     <li>The "Routes" window now shows the maximum train length in each route.</li>
+    <li>You can now sort and print your trains by their description.</li>
+    <li>If "Auto Save" is enabled, the program will automatically save your files when you
+     close the program or the Trains window. You will not longer get a prompt to save the operation
+     files.</li>
+     <li>Json manifest files are now saved in their own directory called "jsonManifests". These files
+     are used to create the operation web manifests.</li>
     <li>Fixed a problem where the program didn't use the road or model specified in the build
      options for locomotive changes in a train's route, and the option "Build loco consist from
      single locos" was selected.</li>
-     <li>The "Routes" window now shows the maximum train length in each route.</li>
-     <li>You can now sort and print your trains by their description.</li>
    </ul>
 
    <h4>Roster</h4>
