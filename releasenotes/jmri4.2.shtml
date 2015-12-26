@@ -81,7 +81,7 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
     This shouldn't effect people who just use the JMRI decoder definitions as distributed,
     because they all work with this more precise version.  But if you have decoder
     definitions of your own, you may have to update them. Ask for help on 
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRIusers</a>
+    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a>
     if you have trouble.
     Specifically, the decoder file verification will now reject a few things
     that it didn't catch before, even though they didn't really work:
@@ -301,7 +301,7 @@ These are development files, and might not be working at any particular time.</p
                     been fixed. This will mean that details of any existing tags read using an
                     Olimex reader are now invalid and will need to be re-identified and updated
                     in the ID Tag list. (Matt Harris)</li>
-                <li>Minor corrections were made in the Core-ID, EM18 and SeeedStudio RFID reade
+                <li>Minor corrections were made in the Core-ID, EM18 and SeeedStudio RFID reader
                     interfaces to correctly reject any tag reads with invalid checksums - this
                     was not always happening resulting in the potential of incorrect tag reads
                     being accepted. (Matt Harris)</li>
@@ -374,12 +374,11 @@ These are development files, and might not be working at any particular time.</p
             <ul>
                 <li>Added the "Random Single Strobe" effect to Function Outputs.</li>
                 <li>Added the LokSound Select OEM.</li>
-                <li>Added some new ProductIDs for correct decoder identification.</li>
                 <li>Fixed the sense of the Adaptive Regulation Frequency bit.</li>
                 <li>Preliminary support for ESU LokSound Select L.</li>
-                <li>Dave Heap made various updates and corrections, including new Product IDs.</li>
-                <li>Dave Heap corrected some maximum values and bitmasks on the
+                <li>Corrected some maximum values and bitmasks on the
                     Function Outputs pane.</li>
+                <li>Various updates and corrections, including new Product IDs for correct decoder identification.</li>
             </ul>
 
         <h5>MERG</h5>
@@ -669,6 +668,7 @@ These are development files, and might not be working at any particular time.</p
                 See <a href="https://github.com/JMRI/JMRI/issues/69#issuecomment-155385101">Issue #69</a>
                 for more details.</li>
             <li>Improvements to the way TCP based network connections detect a disconnected server.</li>
+            <li>Update of the OperationsPro online Manual up to 3.11 and general readability (Egbert Broerse).
         </ul>
 
    <!--#include virtual="/Footer" -->
