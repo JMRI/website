@@ -50,7 +50,12 @@ To use this or any later JMRI test or production releases, you'll have to
 <a href="https://java.com/en/download/">update the Java on your computer</a> to Java 1.8 or later.
 
 
+<a id="warnings" name="warnings"></a>
 <h3>Warnings:</h3>
+
+    See the <a href="jmri3.10.1.shtml#warnings">JMRI 3.10.1 release note</a>
+    for older warnings that may be relevant to you if you're updating from an earlier version.
+
 
     <p>The old DecoderPro has been removed from the distribution package and DecoderPro 3 has been promoted to be the only available DecoderPro version.
 	Existing custom launchers that launched the old DecoderPro should continue to function without change or issue.
