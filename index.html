@@ -5,13 +5,12 @@
     <title>
 JMRI: A Java Model Railroad Interface
     </title>
-    <meta content="Bob Jacobsen" name="Author">
-    <meta content="John Plocher" name="Author">
-    <meta name="keywords"
-          content="java model railroad JMRI decoderpro panelpro loconet DCC NMRA">
+    <meta name="author" content="Bob Jacobsen">
+    <meta name="author" content="John Plocher">
+    <meta name="keywords" content="java model railroad JMRI decoderpro panelpro operationspro signalpro loconet DCC NMRA">
 
 <!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -22,12 +21,14 @@ JMRI: A Java Model Railroad Interface
 <body>
     <div id="container">
     <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
+
 <!-- Header -->
     <div id="header">
-	<!-- Logo -->
+<!-- Logo -->
 	<a href="/" title="Return to home page" accesskey="1">
 	    <img src="/images/logo-jmri.gif" width="160" height="135" alt="JMRI Logo"> </a>
-	<!-- /Logo -->
+<!-- /Logo -->
+
 	<ul id="mainNav"> <!-- Top tool bar -->
 	   <li><a href="/download/index.shtml"  title="Get the latest software">Download</a></li>
 	   <li><a href="/help/en/html/apps/index.shtml"      title="Learn about JMRI applications">Applications</a></li>
@@ -35,7 +36,7 @@ JMRI: A Java Model Railroad Interface
 	   <li><a href="/help/en/webtoc.shtml"   title="JMRI Help Screens">Help</a></li>
 	   <li><a href="/help/en/manual/index.shtml"   title="DecoderPro Manual">Manual</a></li>
 	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
-	   <li><A href="/help/en/Acknowledgements.shtml" title="Who is JMRI">Acknowledgements</a></li>
+	   <li><a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">Acknowledgements</a></li>
 	</ul>
 
 	<div id="searchform"> <!--  Search Form -->
@@ -50,114 +51,98 @@ JMRI: A Java Model Railroad Interface
 <!-- /Header -->
 
 <!-- Sidebar -->
-
 	  <hr class="hide">
 	  <div id="mBody">
 	  <div id="side"> <!-- Block of text on left side of page -->
 	    <div style="text-align: center">JMRI&reg; is...</div>
-	    <dl>
-		<dt><h3><a href="./help/en/html/apps/DecoderPro/index.shtml">DecoderPro&reg;</a></h3></dt>
+	    <dl class="doc">
+		  <dt><h3><a href="./help/en/html/apps/DecoderPro/index.shtml">DecoderPro&reg;</a></h3></dt>
 		<dd>
-		    A better tool for programming decoders.
-		    DecoderPro simplifies the job of configuring complicated DCC decoders
-		    by providing screens on which you can select the various options and
-		    values you want.
-		</dd>
+		    A better tool for programming decoders, simplifying the job of configuring DCC decoders from your computer		</dd>
 
 		<dt><h3><a href="./help/en/html/apps/PanelPro/PanelPro.shtml">PanelPro&trade;</a></h3></dt>
 		<dd>
-		    Designing and Operating CRT based CTC control panels that reflect the real-time
-		    state of your railroad <em>and</em> let you control it - almost like
-		    a Prototype dispatcher!
+				Design and Operate CRT based CTC control panels that reflect the real-time
+				state of your railroad <em>and</em> let you control it
 		</dd>
+
+		<dt><h3><a href="/help/en/package/jmri/jmrit/dispatcher/Dispatcher.shtml">DispatcherPro</a></h3></dt>
+    <dd>
+		A system for Dispatching, grouping your Roster and Throttles
+		</dd>        
 
 		<dt><h3><a href="./help/en/package/jmri/jmrit/operations/Operations.shtml">OperationsPro&trade;</a></h3></dt>
 		<dd>
-		    Create train manifests that detail the work your train crews will 
-		    perform during an operations session. 
-		    The manifest lists of car pick up and set outs,  
-		    shows where the cars are located, and provides the cars' destinations.
+		    Build Trains from your Roster and print Train Manifests that detail the work your train crews will perform
+		</dd>
+
+		<dt><h3><a href="/help/en/html/apps/SoundPro/SoundPro.shtml">SoundPro</a></h3></dt>
+    <dd>
+		A set of tools for using Audio with JMRI
 		</dd>
 
 		<dt><h3><a href="./community/examples/Gallery.shtml">Cool Uses</a></h3></dt>
 		<dd>People have used JMRI to do some great things.  
 		They've built incredible dispatcher panels, controlled impressive
-		layouts, and built other tools for the model railroad community.
+		layouts, and built other tools for the model railroad community.<br>
 		Our 
 		<a href="./community/examples/Gallery.shtml">Gallery page</a>
 		highlights some of these.
 		</dd>
 		
-		<dt><h3><a href="./help/en/html/tools/index.shtml">General Tools</a></h3></dt>
+		<dt><h3><a href="./help/en/html/tools/index.shtml">Tools</a></h3></dt>
 		<dd>JMRI provides powerful tools for working with your
 		layout.
-		    <UL>
-		    <LI><dfn><a href="./help/en/html/tools/throttle/ThrottleMain.shtml">Throttles</a></dfn>
-            <li><dfn><a href="./help/en/package/jmri/jmrit/operations/Operations.shtml">OperationsPro&trade;</a></dfn>
-		    <LI><dfn><a href="./help/en/html/tools/consisttool/ConsistTool.shtml">Consisting</a></dfn>
-		    <LI><dfn><a href="./help/en/html/tools/Lights.shtml">Lights</a></dfn>
-		    <LI><dfn><a href="./help/en/html/tools/Routes.shtml">Routes</a></dfn>
-		    <LI><dfn><a href="./help/en/html/tools/Logix.shtml">Logix</a></dfn>
-		    <LI><dfn><a href="./help/en/html/tools/fastclock/index.shtml">Fast Clocks</a>
-		    <LI><dfn><a href="./help/en/html/tools/speedometer/index.shtml">Speedometer</a> &amp;<BR>
-		    <a href="./help/en/html/tools/speedometer/SpeedMatch.shtml">Engine Speed Matching</a></dfn>
-		    <LI><dfn><a href="./help/en/html/tools/scripting/index.shtml">Scripting</a></dfn>
-		    <LI><dfn><a href="./help/en/html/hardware/PDA.shtml">PDA access</a></dfn>
-		    <LI><dfn><a href="./help/en/html/apps/LocoTools/">LocoNet tools</a></dfn>
-		    </UL>
+		    <ul>
+        <li><dfn><a href="./help/en/html/tools/Turnouts.shtml">Turnouts</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/Sensors.shtml">Sensors</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/throttle/ThrottleMain.shtml">Throttles</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/consisttool/ConsistTool.shtml">Consisting</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/Lights.shtml">Lights</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/Reporters.shtml">Reporters</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/Memories.shtml">Memory Variables</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/Routes.shtml">Routes</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/LRoutes.shtml">LRoutes</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/Logix.shtml">Logix</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/fastclock/index.shtml">Fast Clocks</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/speedometer/index.shtml">Speedometer</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/Audio.shtml">Audio</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/IdTags.shtml">Id Tags</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/index.shtml#systemSpecificTools">System-specific...</a></dfn></li>
+        </ul>
 		</dd>
 
 		<dt><h3><a href="./help/en/html/tools/automation/">Layout Automation</a></h3></dt>
 		<dd>JMRI can be used to automate parts 
 		of your layout, from simply controlling a crossing gate
 		to running trains in the background.
-		    <UL>
-		    <LI><dfn><a href="./help/en/html/tools/signaling/index.shtml">Signaling</a></dfn>
-		    <LI><dfn><a href="./help/en/html/tools/scripting/index.shtml">Scripting</a></dfn>
-		    </UL>
+		    <ul>
+        <li><dfn><a href="./help/en/html/tools/signaling/index.shtml">Signaling</a></dfn>
+		    <li><dfn><a href="./help/en/html/tools/EntryExit.shtml">Entry Exit (NX)</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/Routes.shtml">Routes</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/fastclock/index.shtml">Fast Clocks</a></dfn>
+        <li><dfn><a href="./help/en/html/tools/scripting/index.shtml">Scripting</a></dfn>	
+		    </ul>
 		</dd>
 
 		<div style="clear: both"></div>
 		<dt><h3><a href="./help/en/html/hardware/index.shtml">Supported hardware</a></h3></dt>
 		<dd> 
-		<ul>
-		    <li> <A HREF="./help/en/html/hardware/XPressNet/index.shtml">Atlas Commander</a>
-		    <li> <A HREF="./help/en/html/hardware/bachrus/index.shtml">Bachrus</a>
-		    <li> <A HREF="./help/en/html/hardware/cmri/CMRI.shtml">C/MRI</a>
-		    <li> <A HREF="./help/en/html/hardware/loconet/Digitrax.shtml">Digitrax</a>
-		    <li> <A HREF="./help/en/html/hardware/easydcc/EasyDCC.shtml">EasyDCC</a>
-            <li> <A HREF="./help/en/html/hardware/ecos/index.shtml">ESU</a>
-		    <li> <A HREF="./help/en/html/hardware/loconet/Fleischmann.shtml">Fleischmann</a>
-		    <li> <A HREF="./help/en/html/hardware/XPressNet/index.shtml">Hornby</a>
-		    <li> <A HREF="./help/en/html/hardware/XPressNet/index.shtml">Lenz</a>
-		    <li> <A HREF="./help/en/html/hardware/tmcc/index.shtml">Lionel TMCC</a>
-		    <li> <A HREF="./help/en/html/hardware/can/cbus/index.shtml">MERG CBUS</a>
-		    <li> <A HREF="./help/en/html/hardware/nce/NCE.shtml">NCE</a>
-		    <li> <A HREF="./help/en/html/hardware/rps/index.shtml">RPS</a>
-		    <li> <A HREF="./help/en/html/hardware/oaktree/OakTree.shtml">Oak Tree Systems</a>
-		    <li> <A HREF="./help/en/html/hardware/grapevine/index.shtml">Protrak Grapevine</a>
-		    <li> <A HREF="./help/en/html/hardware/XPressNet/index.shtml">Roco</a>
-		    <li> <A HREF="./help/en/html/hardware/sprog/SPROG.shtml">SPROG</a>
-		    <li> <A HREF="./help/en/html/hardware/loconet/Digitrax.shtml">Uhlenbrock Intellibox</a>
-		<li> <A HREF="./help/en/html/hardware/XPressNet/index.shtml">Viessmann Commander</a>
-	        <li> <A HREF="./help/en/html/hardware/nce/Wangrow.shtml">Wangrow</a>
-		    <li> <A HREF="./help/en/html/hardware/zimo/Zimo.shtml">Zimo MX-1</a>
-		    <li> <A HREF="./help/en/html/hardware/XPressNet/index.shtml">ZTC</a>
-		</ul>
+		A wide range of DCC systems, Command Stations and protocols is actively supported to operate with JMRI.
 		</dd>
 
 		<div style="clear: both"></div>
-		<dt><h3>Supported computers</h3></dt>
+		<dt><h3>Supported Computers</h3></dt>
 		<dd> 
 		<ul>
-            <LI><A href="./install/WindowsNew.shtml">Windows</a>
-            <LI><A href="./install/MacOSX.html">Mac OS X</a>
-            <LI><A href="./install/Linux.html">Linux</a>
-            <LI><A href="./install/Debug.shtml">Debugging an installation</a>
+            <li><a href="./install/WindowsNew.shtml">Windows</a>
+            <li><a href="./install/MacOSX.html">Mac OS X</a>
+            <li><a href="./install/Linux.html">Linux</a>
+            <li><a href="./install/Debug.shtml">Debugging an installation</a>
 		</ul>
 		</dd>
 
-	    </dl>
+	  </dl>
 
 <a href="/donations.shtml">
  <img src="http://sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" ALIGN="RIGHT" alt="Donate to JMRI" />
@@ -182,50 +167,44 @@ JMRI: A Java Model Railroad Interface
 		    without having to create an entire system from scratch.</p>
 		<p> You can manage your locomotive rosters and easily program your decoders using
 		    <a href="./help/en/html/apps/DecoderPro/index.shtml">DecoderPro&reg;</a>.
-		    You can build control panels, set up signaling, configure operations and control
+		    You can build control panels and control
 		    your layout using
-		    <a href="./help/en/html/apps/PanelPro/PanelPro.shtml">PanelPro</a>.
-		    Going beyond the basics, you can use <a href="./help/en/html/tools/Logix.shtml">Logix</a> to
+		    <a href="./help/en/html/apps/PanelPro/PanelPro.shtml">PanelPro&trade;</a> or use <a href="./help/en/html/apps/SignalPro/index.shtml">SignalPro&trade;</a> to set up signaling. <a href="./help/en/package/jmri/jmrit/operations/Operations.shtml">OperationsPro&trade;</a>
+		    lets you create manifests that route cars across your railroad from shipper to receiver,
+		    and provide train crews with operating instructions.</p>
+		<p> Going beyond the basics, you can use <a href="./help/en/html/tools/Logix.shtml">Logix</a> to
 		    automate your layout's behavior, interface with X10 and Insteon systems to control your 
 		    layout room's <a href="./help/en/html/tools/Lights.shtml">lights</a> 		    
 		    and write 
 		    <a href="./help/en/html/tools/scripting/index.shtml">scripts</a> to extend the capabilities 
-		    of the system. 
-		    <a href="./help/en/package/jmri/jmrit/operations/Operations.shtml">OperationsPro&trade;</a>
-		    lets you create manifests that route cars across your railroad from shipper to receiver,
-		    and provide train crews with operating instructions.
-		    </p>		
+		    of the system.</p>		
 		
 		<p>
 		<a href="/donations.shtml">
-            <img src="http://sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" ALIGN="RIGHT" alt="Donate to JMRI" />
+            <img src="http://sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" align="right" alt="Donate to JMRI" />
         </a> 
-            As an open source project, JMRI is evolving in many directions at once.  You can get 
+            As an open source project, JMRI is evolving in many directions at once. You can get 
 			involved at many levels:
 			<ul>
 			<li> <strong>Learn about JMRI</strong> (check out the
 			     <a href="help/en/webindex.shtml">online help</a>, 
 				 <a href="/help/en/manual/index.shtml" title="DecoderPro Manual">DecoderPro manual</a>, 
 				 <a href="help/en/html/apps/PanelPro/FAQ.shtml">FAQs</a>
-			     and <a href="community/clinics/">clinics</a>
-			)
+			     and <a href="community/clinics/">clinics</a>)
 			<li> <strong>Kick the tires</strong>  (
 				 <a href="/download/index.shtml" title="Get the latest software">download</a> JMRI, 
-			install it on <A href="./install/WindowsNew.shtml">Windows</a>, <A href="./install/MacOSX.html">Mac OS X</a> 
-			or <A href="./install/Linux.html">Linux</a>,
-				<a href="http://jmri.org/help/en/html/hardware/index.shtml">connect it</a> to your layout
-			)
+			install it on <a href="./install/WindowsNew.shtml">Windows</a>, <a href="./install/MacOSX.html">Mac OS X</a> 
+			or <a href="./install/Linux.html">Linux</a>,
+				<a href="http://jmri.org/help/en/html/hardware/index.shtml">connect it</a> to your layout)
 			<li> <strong>Share your experiences with others</strong> ( 
-			    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info" title="jmriusers yahoo group">join </a> or 
-			    <a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/messages">browse</a> the JMRI Users Yahoo Group
-			)
+			    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info" title="jmriusers yahoo group">join</a> or 
+			    <a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/messages">browse</a> the JMRI Users Yahoo Group)
 			<li> <strong>Help extend and develop it</strong> it (look 
 			    <a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">under the hood</a>,
 			    <a href="http://jmri.org/help/en/html/doc/Technical/getcode.shtml">get the source</a>,
 				<a href="https://lists.sourceforge.net/lists/listinfo/jmri-developers">join</a> or
 				<a href="http://sourceforge.net/p/jmri/mailman/jmri-developers/">browse</a>
-				the JMRI-Developers mailing list
-			).  
+				the JMRI-Developers mailing list) 
 			</ul>
 			</p>
 			<p> Whatever it is that you choose to do with JMRI, and however you get involved,
@@ -238,15 +217,15 @@ JMRI: A Java Model Railroad Interface
         <table border=0>
 	    <tr><td width="50%" valign=top>    
 
-			<h2><a name="download"><a href="/download/index.shtml#prod-rel">JMRI 4.0.1 Production Version</a></h2>
-				Released on September 18, 2015.
+			<h2><a name="download"><a href="/download/index.shtml#prod-rel">JMRI 4.2 Production Version</a></h2>
+				Released on December 25, 2015.
 				<p>
-				JMRI 4.0.1 is recommended for new users. It's the most
+				JMRI 4.2 is recommended for new users. It's the most
 				recent stable production version.
 				
 			    </p>
 				<p class="dl">For more information, please read the
-				<A HREF="releasenotes/jmri4.0.1.shtml">JMRI 4.0.1 Release Note</a>, 
+				<a href="releasenotes/jmri4.2.shtml">JMRI 4.2 Release Note</a>, 
 				which also contains the download links.</p>
 
 			<h2><a href="releasenotes/jmri3.10.1.shtml">JMRI 3.10.1 Production Version</a></h2>
@@ -257,7 +236,7 @@ JMRI: A Java Model Railroad Interface
 				
 			    </p>
 				<p class="dl">For more information, please read the
-				<A HREF="releasenotes/jmri3.10.1.shtml">JMRI 3.10.1 Release Note</a>, 
+				<a href="releasenotes/jmri3.10.1.shtml">JMRI 3.10.1 Release Note</a>, 
 				which also contains the download links.</p>
 
 			<h2><a href="releasenotes/jmri2.14.1.shtml">JMRI 2.14.1 Production Version</a></h2>
@@ -268,7 +247,7 @@ JMRI: A Java Model Railroad Interface
 				
 			    </p>
 				<p class="dl">For more information, please read the
-				<A HREF="releasenotes/jmri2.14.1.shtml">JMRI 2.14.1 Release Note</a>, 
+				<a href="releasenotes/jmri2.14.1.shtml">JMRI 2.14.1 Release Note</a>, 
 				which also contains the download links.</p>
 
 	    </td><td width="50%" valign=top>
@@ -280,10 +259,10 @@ JMRI: A Java Model Railroad Interface
                 in late 2015.
                 <p>
                 For more information on this test release, please read the
-                <A href="releasenotes/jmri4.1.6.shtml">JMRI 4.1.6 Release Note</a>,
+               <A href="releasenotes/jmri4.1.6.shtml">JMRI 4.1.6 Release Note</a>,
                     which also contains the download links.
                  </p>
-                <a href="#download">Version 4.0.1</a> is the current "production" version, recommended
+                <a href="#download">Version 4.2</a> is the current "production" version, recommended
                 for first-time users. 
 
     </td></tr></table>
@@ -323,7 +302,6 @@ JMRI: A Java Model Railroad Interface
 			
 		    </dd>
 	        </dl>
-
     
     	<h2><a id="anyrail"/>AnyRail export to JMRI Layout Editor</h2>
 		    <dl>
@@ -362,14 +340,13 @@ JMRI: A Java Model Railroad Interface
 		    </dt>
 		    <dd>
             Several users have contributed their clinics for our
-			<A HREF="community/clinics/">clinics page</a>.  There are both conventional handout
+			<a href="community/clinics/">clinics page</a>.  There are both conventional handout
 			and slides clinics, and also some neat interactive clinics for DecoderPro&reg;
 			and PanelPro&trade;.
 			<p>
 			Some JMRI clinics from past NMRA national and other conventions are also included.
 		   </dd>
 	        </dl>
-
  
 		<h2><a href="help/en/package/jmri/jmrit/withrottle/UserInterface.shtml">Use Your Smart Phone As a Throttle!</a></h2>
 		<dl>
@@ -392,7 +369,6 @@ JMRI: A Java Model Railroad Interface
 			
 		    </dd>
 	        </dl>
-
 	        
 		<h2><a href="/help/en/package/jmri/jmrit/webThrottle/webThrottle.shtml">Control Your Locos From a Web Browser - computer, smartphone or tablet</a></h2>
 		<dl>
@@ -409,7 +385,6 @@ JMRI: A Java Model Railroad Interface
 			<a href="help/en/package/jmri/jmrit/webThrottle/webThrottle.shtml">webThrottle - Web control for locos, panels, turnouts and routes</a> page.
 		    </dd>
 	        </dl>
-
 
 	        <h2><a href="help/en/webindex.shtml">Help Pages Online</a></h2>
 		<dl>
@@ -437,11 +412,10 @@ JMRI: A Java Model Railroad Interface
 		    	is a JMRI-based application by Rodney Black for 
 		    	controlling and operating a model railroad. There's
 		    	more information on the
-		    <A HREF="http://home.comcast.net/~kb0oys/">CATS web site</a>.
+		    <a href="http://home.comcast.net/~kb0oys/">CATS web site</a>.
 		    <p/>
 		   </dd>
 	        </dl>
-
 
 		<h2><a href="community/connections/XtrkCadReader/index.shtml">XTrkCad and JMRI</a></h2>
 		<dl>
@@ -471,7 +445,7 @@ JMRI: A Java Model Railroad Interface
 			A "Decoder ID" page has been added to the web. 
 			Automagically created from the current DecoderPro definitions,
 			it provides easy access to all sorts of information about decoders. 
-			<P>
+			<p>
 			Contribute more information to our decoder definitions, and help these pages become even more useful!</li>
 			
 			<div style="clear: both"></div>
@@ -518,7 +492,7 @@ JMRI: A Java Model Railroad Interface
 		    <dd>
 		    	<a href="http://www.oracle.com/technetwork/java/index.html">Sun Microsystems</a> (now part of <a href="http://www.oracle.com/us/sun/index.html"></a>Oracle</a>)
 		    	has awarded JMRI a 
-		    	<a href="https://www.java.net/dukeschoice/2006">2006 Duke's Choice award</A>.  
+		    	<a href="https://www.java.net/dukeschoice/2006">2006 Duke's Choice award</a>.  
 		    	Also called a "Dukie", this award is given
 			annually to "some of the most clever, practical, and inspirational Java technology applications on the planet".  
 			The award was presented at the
@@ -539,26 +513,23 @@ JMRI: A Java Model Railroad Interface
 	</ul>
 
 	<p>Thanks and congratulations to
-	   <A href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
-	   	all who contributed</A>! </p>
+	   <a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
+	   	all who contributed</a>! </p>
 
 	<p>Copyright &copy; 1997 - 2016 JMRI Community. 
-	<P>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, DispatcherPro&trade;, OperationsPro&trade;  and associated logos are our trademarks.
-	<P><A href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
+	<p>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, DispatcherPro&trade;, OperationsPro&trade;  and associated logos are our trademarks.
+	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
     
-       <BR/>Site hosted by: <BR/>
+       <br/>Site hosted by: <br/>
 <a href="http://sourceforge.net/projects/jmri/"><img src="http://sourceforge.net/sflogo.php?group_id=26788&type=12" width="120" height="30" border="0" alt="Get JMRI Model Railroad Interface at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
     </div>
-
 <!-- /Footer -->
 
 		<!-- Cluster map code -->
 		<a href="http://clustrmaps.com/counter/maps.php?url=http://jmri.sf.net" id="clustrMapsLink"><img src="http://clustrmaps.com/counter/index2.php?url=http://jmri.sf.net" border=1 alt="Locations of visitors to this page"onError="this.onError=null; this.src='http://www.meetomatic.com/images/clustrmaps-back-soon.jpg'; document.getElementById('clustrMapsLink').href='http://clustrmaps.com/'"></a>
 
-	</div> <!-- closes #mainContent-->
-    </div> <!-- closes #mBody-->
+	  </div> <!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
 </div> <!-- closes #container -->
 </body>
 </html>
-
-
