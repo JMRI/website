@@ -5,7 +5,7 @@
  JMRI: Release Notes for 4.2
  </title>
     <meta content="Bob Jacobsen" name="Author">
-    <meta name="keywords" content="java model railroad JMRI 4.1.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -26,12 +26,12 @@
       Release Notes for JMRI 4.2 release
       </h2>
 
-	<p>Date: mmm dd, 2015</p>
-	<p>From: (pumpkin)</p>
-	<p>Subject: Production version 4.2 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: December 25, 2015</p>
+    <p>From: Matthew Harris</p>
+    <p>Subject: Production version 4.2 of JMRI/DecoderPro is available for download.</p>
 
 
-<p><b>This is a draft release note only; the download links do not yet work</b></p>
+<!--<p><b>This is a draft release note only; the download links do not yet work</b></p>-->
 
 We are very pleased to announce that the 4.1 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
@@ -46,6 +46,10 @@ see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
 <h3>Known problems with this release</h3>
+
+<p>OS X can not show most connections correctly. This can be fixed by running the command
+<code>sudo find / -name StartJMRI -type f -exec sed -i "" -e 's/\/dev\/tty\\\.\*//' -e 's/\/dev\/cu\\\.\*//' {} \;</code>
+in Terminal.app. It will ask for your password, and, after a couple of minutes, have fixed the issue.</p>
 
 <p>The Digitrax PR2 does not work with this release.  If you need to work with a 
 PR2, please stay with <a href="jmri4.1.3.shtml">JMRI 4.1.3</a> or earlier,
@@ -151,25 +155,25 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
 
 <h3>Download links:</h3>
 
-<!--
+
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.dmg/download</a><br/>
-    sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.dmg/download</a><br/>
+    sha256: 7503308fcf8c17dc62b345016c439f986d62341cc5feb8e33e53b64414ca0358</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.exe/download</a><br/>
-    sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.exe/download</a><br/>
+    sha256: 43baa7f2dea96924595882f778034f6ef86c99f74a16a766fe271d2295b6a316</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download</a><br/>
-    sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
--->
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.tgz/download</a><br/>
+    sha256: 76cb4293ab9016f037ddfb67e04918af41eae3e967b6a22b8921d42add21aac8</p>
 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.2/ws/dist/release/">CI project page</a>.
-
+-->
 
 <!--
 <p>During development leading to the actual release, you can find test download files on the
@@ -374,12 +378,11 @@ These are development files, and might not be working at any particular time.</p
             <ul>
                 <li>Added the "Random Single Strobe" effect to Function Outputs.</li>
                 <li>Added the LokSound Select OEM.</li>
-                <li>Added some new ProductIDs for correct decoder identification.</li>
                 <li>Fixed the sense of the Adaptive Regulation Frequency bit.</li>
                 <li>Preliminary support for ESU LokSound Select L.</li>
-                <li>Dave Heap made various updates and corrections, including new Product IDs.</li>
-                <li>Dave Heap corrected some maximum values and bitmasks on the
+                <li>Corrected some maximum values and bitmasks on the
                     Function Outputs pane.</li>
+                <li>Various updates and corrections, including new Product IDs for correct decoder identification.</li>
             </ul>
 
         <h5>MERG</h5>
