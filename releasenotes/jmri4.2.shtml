@@ -196,17 +196,7 @@ These are development files, and might not be working at any particular time.</p
 
         <h5>DCC++</h5>
             <ul>
-                <li>Mark Underwood added support for the open-source Arduino-based DCC++ Base Station
-                    <ul>
-                        <li>Basic support for Base Station firmware versions 1.0 and 1.1</li>
-                        <li>Supports Serial/USB interface</li>
-                        <li>Simulator for off-line operation of JMRI</li>
-                        <li>Basic support for "DCC++ over TCP" - connect from a remote
-                            JMRI instance to a local instance hosting a DCC++ base station</li>
-                        <li>Throttle and Programmer support</li>
-                        <li>Basic support for Sensors, Accessory decoders and Turnouts</li>
-                    </ul>
-                </li>
+                <li>NOTE: DCC++ Support is broken in 4.2.0.  Sorry!  If you need DCC++ support, please revert to 4.1.5 or wait for 4.3.1</li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
