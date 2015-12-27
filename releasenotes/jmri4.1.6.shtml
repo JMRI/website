@@ -1,12 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.1.5
+ JMRI: Release Notes for 4.1.6
  </title>
     <meta content="Bob Jacobsen" name="Author">
-    <meta name="keywords" content="java model railroad JMRI 4.1.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.1.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -24,12 +23,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 4.1.5 release
+      Release Notes for JMRI 4.1.6 release
       </h2>
 
-    <p>Date: Dec 04, 2015</p>
+    <p>Date: Dec 12, 2015</p>
     <p>From: Matthew Harris</p>
-    <p>Subject: Test version 4.1.5 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test version 4.1.6 of JMRI/DecoderPro is available for download.</p>
 
 <!--<p><b>This is a draft release note only; the download links do not yet work</b></p>-->
 
@@ -56,13 +55,13 @@ see our
 
 <h3>Known problems with this release</h3>
 
-The Digitrax PR2 does not work with this release.  If you need to work with a 
-PR2, please stay with <a href="jmri4.1.4.shtml">JMRI 4.1.3</a> or earlier,
+<p>The Digitrax PR2 does not work with this release.  If you need to work with a 
+PR2, please stay with <a href="jmri4.1.3.shtml">JMRI 4.1.3</a> or earlier,
 or wait for <a href="jmri4.3.1.shtml">JMRI 4.3.1</a> which should appear in December 2015.
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.1.6.shtml">JMRI 4.1.6</a>, due out shortly after this one,
+<a href="jmri4.1.7.shtml">JMRI 4.1.7</a>, due out shortly after this one,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -71,13 +70,8 @@ from
 
 <h3>New warnings for this version:</h3>
 
-<p>The code for handling Panel Editor / Control Panel Editor icons has changed
-    to better deal with rotating icons.  This has changed how opaque vs transparent
-    icon backgrounds are handled. Please check your panels to make sure we 
-    haven't inadvertently caused a problem, particularly if you've got rotated 
-    icons and/or use have custom icons with transparent backgrounds.  If there
-    are any problems, please send in a copy of your panel file so we can 
-    recreate the problem and fix it.</p>
+<p>
+</p>
 
 <h3>Older warnings</h3>
 
@@ -112,6 +106,14 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
     at the back. You can't just sprinkle them around and hope the code finds them
     (because sometimes in the past the program would miss one; now we require an order we're
     sure the code will understand).
+
+<p>The code for handling Panel Editor / Control Panel Editor icons has changed
+    to better deal with rotating icons.  This has changed how opaque vs transparent
+    icon backgrounds are handled. Please check your panels to make sure we 
+    haven't inadvertently caused a problem, particularly if you've got rotated 
+    icons and/or use have custom icons with transparent backgrounds.  If there
+    are any problems, please send in a copy of your panel file so we can 
+    recreate the problem and fix it.</p>
 
 <!-- retain through 4.2 -->
 
@@ -156,48 +158,41 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
 
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.5-R25e54ec.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.5-R25e54ec.dmg/download</a><br/>
-    sha256: cce9703e45a654bc7712e42f77a01a9dfa96b1fd896929b7337b01c94f3e127c</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.6-R47390b0.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.6-R47390b0.dmg/download</a><br/>
+    sha256: ee2e47d840ffd8ae1efea9ba11c289b8ac1d76dc8dc5cbd330a581d364421fe6</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.5-R25e54ec.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.5-R25e54ec.exe/download</a><br/>
-    sha256: 1ff145ae626138dfb7797d4ce37d28261e9e681f030aa3570e61f99a610b54d1</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.6-R47390b0.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.6-R47390b0.exe/download</a><br/>
+    sha256: 64828358712a9fb7c67556f2ead48961c531f878ca2ebb6e367483f5521ad75f</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.5-R25e54ec.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.5-R25e54ec.tgz/download</a><br/>
-    sha256: ef00de21d7e59e6102e0a60e0629e3445a736c62506fb48ddc10d4b0a80eaec8</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.6-R47390b0.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.6-R47390b0.tgz/download</a><br/>
+    sha256: fb28ed2d3dc8dfa2c6cf57ad740c7185e7c75990b2426d2864543d63add7c00a</p>
 
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.1.5/ws/jmri/dist/release/">CI project page</a>.
+<a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.1.6/ws/jmri/dist/release/">CI project page</a>.
+-->
 
-
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
 -->
 
-<h3>Changes since test release 4.1.4:</h3>
+<h3>Changes since test release 4.1.5:</h3>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.1.5+">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.1.6+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
-
-    <h4>Hardware Support</h4>
 <!--
+    <h4>Hardware Support</h4>
+
         <p></p>
 
         <h5>C/MRI</h5>
             <ul>
                 <li></li>
-            </ul>
-
-        <h5>DCC++</h5>
-            <ul>
-                <li>Supports Network connection to Base Station</li>
-                <li>Added Packet Generator and updated Port Monitor</li>
-                <li>Added Configurator for Sensors and Turnouts on the Base Station</li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
@@ -219,7 +214,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-        <h5>SPROG</h5>
+
+            <h5>SPROG</h5>
             <ul>
                 <li></li>
             </ul>
@@ -233,12 +229,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
--->
-        <h5>DCC++</h5>
-            <ul>
-                <li>Mark Underwood added preliminary support for the DCC++ Arduino-based command station</li>
-            </ul>
-<!--
+
     <h4>Signals</h4>
         <h5>Signal Mast Editor</h5>
             <ul>
@@ -253,22 +244,24 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </li>
         </ul>
     </p>
-
+-->
         <h5>BLI</h5>
             <ul>
-                <li></li>
+                <li>Michael Mosher updated the BLI Blueline Paragon2 Diesel,
+                    BLI Blueline Paragon2 Steam, BLI Paragon3 Diesel,
+                    BLI Paragon3 Steam and BLI Rolling Thunder definitions</li>
             </ul>
-
+<!--
         <h5>Doehler &amp; Haas</h5>
             <ul>
                 <li></li>
             </ul>
--->
+
         <h5>ESU</h5>
             <ul>
-                <li>Dave Heap corrected some maximum values and bitmasks on the Function Outputs pane.</li>
+                <li></li>
             </ul>
-<!--
+
         <h5>MGP</h5>
              <ul>
                 <li></li>
@@ -286,18 +279,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>QSI</h5>
             <ul>
-                <li><br>
+                <li>Dave Heap made the following changes:<br>
                     <ul>
                         <li></li>
                     </ul>
                </li>
             </ul>
-
+-->
         <h5>RR-CirKits</h5>
             <ul>
-                <li></li>
+                <li>The MotorMan decoder definition was updated.</li>
             </ul>
-
+<!--
         <h5>SoundTraxx</h5>
             <ul>
                 <li></li>
@@ -324,18 +317,21 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 -->
 
-   <h4>Operations</h4>
-   <ul>
-    <li>Fixed a bug where the train build reports were placed in a directory called "operationsbuildstatus". This problem
-    was introduced in version 4.1.1.  You can delete this directory if you've used any of the test versions.</li>
-   </ul>
+    <h4>Operations</h4>
+        <p>Dan Boudreau made the following changes to Operations:</p>
+    <ul>
+        <li>Updated the Operations help files</li>
+        <li>Improved the Train Blocking window</li>
+        <li>Updated the Web manifest to not reset the manifest modified flag</li>
+        <li>Cleaned up some of the GUI</li>
+    </ul>
 <!--
-   <h4>Roster</h4>
+    <h4>Roster</h4>
         <ul>
             <li></li>
         </ul>
 
-   <h4>OBlocks</h4>
+    <h4>OBlocks</h4>
         <ul>
             <li></li>
         </ul>
@@ -352,27 +348,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 -->
     <h4>Panel Editors</h4>
         <ul>
-            <li><p>The code for handling Panel Editor / Control Panel Editor icons has changed
-            to better deal with rotating icons.  This has changed how opaque vs transparent
-            icon backgrounds are handled.</p>
-            <p>The cause of these effects was the necessity to remove many setOpaque(true) calls to Positionable objects.   
-            The reason is that when rotated with a color background the object cannot be setOpaque(true).  
-            If opaque, color background will be the entire bounding box, not a shape corresponding to the original item.  
-            To display a rotated Positionable, the background, margins and border, if any, are drawn with rotated and 
-            filled rectangles to simulate what is normally the unrotated bounding rectangle and border.</p>
-            <p>The affected objects are PositionableLabels, SensorIcons (especially when represented with text rather than icons) 
-            and MemoryIcons.  MemoryInputIcons, MemoryComboIcons and MemorySpinnerIcons are also affected, due to the background, 
-            margin and border code they share with PositionableLabel decendants. 
-            (They can't be rotated due to having widgets that won't rotate)</p>
-            </li>
-        </ul>
-<!--
-    <h4>Scripting</h4>
-        <ul>
-            <li>
-            </li>
+            <li>Pete Cressman fixed an issue with label backgrounds</li>
         </ul>
 
+    <h4>Scripting</h4>
+        <ul>
+            <li>Randall Wood updated the Jython cache location to be user-writable.</li>
+        </ul>
+<!--
     <h4>Miscellaneous</h4>
         <ul>
             <li></li>
@@ -380,6 +363,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 -->
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
-  </div> <!-- closes #mBody-->
+ </div> <!-- closes #mBody-->
 </body>
 </html>

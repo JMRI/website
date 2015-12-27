@@ -2,13 +2,12 @@
 <!-- $Id: codeswarm.shtml,v 1.7 2010-04-12 12:05:41 jacobsen Exp $ -->
 <html lang="en">
 <head>
- <TITLE>JMRI Code Swarm</TITLE>
-    <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <META content="Dennis Miller" name=Author>
-    <META name="keywords" content="codeswarm code swarm java model railroad JMRI CMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+ <title>JMRI Code Swarm</title>
+    <meta name="Author" content="Dennis Miller">
+    <meta name="keywords" content="codeswarm code swarm java model railroad JMRI CMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -21,27 +20,27 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
 
-    <H2>JMRI Code Swarm</H2>
+    <h2>JMRI Code Swarm</h2>
     
     <h3>Download the Video</h3>
     <p>You can download the JMRI Code Swarm <a href="/images/jmricodeswarm.zip">here</a>. 
     Note that this is a large file (~15M) and is in zip format.  After downloading, you 
-    will need to unzip it to extract the mpeg file, then play it in your favourite video 
+    will need to unzip it to extract the mpeg file, then play it in your favorite video 
     player.  It has been tested on Windows XP with Windows Media Player(V9) and Irfanview, 
     on Ubuntu with Totem (after installing the Gstreamer codec and its plugins) 
     as well as on the Mac. 
-    <p>The video is copyright JMRI and the musical track is copyright <i>AdHoc</i>, see 
+    <p>The video is &copy; copyright JMRI and the musical track is copyright <i>AdHoc</i>, see 
     <a href="#details">license details.</a>
 
     <h3>Introduction</h3>
     <p><b><em>What the heck is a Code Swarm?</em></b>
     
-    <p><a href="http://code.google.com/p/codeswarm/">Code Swarm </a> is a new open source
-    visualization package that was released this past summer (2008).  It can be used to 
+    <p><a href="http://code.google.com/p/codeswarm/">Code Swarm </a> is an open source
+    visualization package that was released in 2008.  It can be used to 
     provide a dynamic video history of a software project, in this case JMRI.
     
     <p>Each time a developer "commits" (i.e. saves) a new file or a change to an 
-    existing one, a colour-coded dot appears on the screen.  The dots coalesce around 
+    existing one, a color-coded dot appears on the screen.  The dots coalesce around 
     the developer's name and the names move around the screen as others join in.  
     The file dots fade away if there is no further activity on them, or flare up if changed again.
     The names fade as well if that 
@@ -125,11 +124,11 @@
     session, change to the <code> convert_logs </code> directory and issue the command:<br><br>
     <code>python convert_logs.py -c activity.log -o activity.xml</code><br><br>
     This will generate a file called <code> activity.xml </code> in the <code> codeswarm/convert_logs </code> 
-    directory<br><br></li>
+    directory<br></li>
     
     
     <li>This step is optional.  Open the <code> activity.xml </code> file in a text editor and do a Replace All 
-    for each user id to replace it with the committer's name.  The names are available on our Sourceforge site.</li>
+    for each user id to replace it with the committer's name.  The names are available on our SourceForge site.</li>
     
     <li>One statement in the source code for code_swarm can be changed to make the Legend
     more visible, especially when compressed video versions of the swarm will be generated. 
@@ -161,7 +160,7 @@
 	</code>
     </li>
     </ul>
-    <li>The <code> ColorAssign </code> statements above in the config file colour-codes the files to be 
+    <li>The <code> ColorAssign </code> statements above in the config file color-codes the files to be 
     displayed as:<br>
     <dl>
     <dt>Documentation<dd>in Blue; files: all help files, but not web site (doc, html/css) and 
@@ -201,7 +200,7 @@
     Copying these files isn't really necessary but it keeps the path names short in the following command.</li>
     <li>In a command session, change to the directory containing the <code>ffmpeg/bin</code> directory and issue
     the following command:<br><br>
-    <code>ffmpeg -i sumbala.mp3 -f image2 -r 24 -i frames\code_swarm-%05d.png -qmax 15 jmricodeswarm.mpg</code><br><br>
+    <code>ffmpeg -i sumbala.mp3 -f image2 -r 24 -i frames\code_swarm-%05d.png -qmax 15 jmricodeswarm.mpg</code><br>
     
     This creates an mpeg file called <code>jmricodeswarm.mpg</code> in the same directory that is a combination of
     the video (made from the individual frames) and the musical sound track.</li>
@@ -212,7 +211,8 @@
     </ul>
     
 <!--#include virtual="/Footer" -->
-
+    </div> <!-- closes mainContent -->
+  </div> <!-- closes mBody -->
 </body>
 </html>
 
