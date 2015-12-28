@@ -47,7 +47,7 @@ see our
 
 <h3>Known problems with this release</h3>
 
-<p>OS X can not show most connections correctly. This can be fixed by running the command
+<p>MacOS X cannot show most connections correctly. As a workaround, this can be fixed by running the command
 <code>sudo find / -name StartJMRI -type f -exec sed -i "" -e 's/\/dev\/tty\\\.\*//' -e 's/\/dev\/cu\\\.\*//' {} \;</code>
 in Terminal.app. It will ask for your password, and, after a couple of minutes, have fixed the issue.</p>
 
@@ -55,18 +55,20 @@ in Terminal.app. It will ask for your password, and, after a couple of minutes, 
 PR2, please stay with <a href="jmri4.1.3.shtml">JMRI 4.1.3</a> or earlier,
 or wait for <a href="jmri4.3.1.shtml">JMRI 4.3.1</a> which should appear in December 2015.
 
-<!--
-If any of those effect you, please either wait for
-<A href="jmri4.1.2.shtml">JMRI 4.1.2</a>, due out shortly after this one,
+<p>Fixes for these problems will be in 
+<A href="jmri4.3.1.shtml">JMRI 4.3.1</a>, due out soon after this release,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
 
+<a id="warnings" name="warnings"></a>
 <h3>Warnings:</h3>
 
-See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating the 4.1 development series.
+See the <a href="jmri4.0.1.shtml#warnings">JMRI 4.0.1 release note</a>
+for older warnings that may be relevant to you if you're updating from an earlier version.
+
+too.
 
 <p>We are now building releases, including this one, from our
     <a href="https://github.com/JMRI">GitHub repository</a>.
