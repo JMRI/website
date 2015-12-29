@@ -1,11 +1,10 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id: MacOSClassic.html,v 1.22 2011-06-21 18:37:29 matthewharris Exp $ -->
 <html lang="en">
 <head>
  <TITLE>
  JMRI: MacOS Classic Install Guide
- 
  </TITLE>
+
 <!-- Style -->
   <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
@@ -23,17 +22,19 @@
   <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 <!-- Header -->
     <div id="header">
-	<!-- Logo -->
+<!-- Logo -->
 	<a href="/" title="Return to home page" accesskey="1">
 	    <img src="/images/logo-jmri.gif" width="160" height="135" alt="JMRI Logo"> </a>
-	<!-- /Logo -->
+<!-- /Logo -->
+
 	<ul id="mainNav"> <!-- Top tool bar -->
 	   <li><a href="/download/index.shtml"  title="Get the latest software">Download</a></li>
 	   <li><a href="/help/en/html/apps/index.shtml"      title="Learn about JMRI applications">Applications</a></li>
 	   <li><a href="/help/en/html/hardware/index.shtml"  title="What hardware does JMRI support">Hardware</a></li>
-	   <li><a href="/help/en/manual/index.shtml"   title="Trouble-shooting, and FAQs">Manual</a></li>
+	   <li><a href="/help/en/webtoc.shtml"   title="JMRI Help Screens">Help</a></li>
+	   <li><a href="/help/en/manual/index.shtml"   title="DecoderPro Manual">Manual</a></li>
 	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
-	   <li><A href="/community/" title="Who is JMRI">Acknowledgements</a></li>
+	   <li><a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">Acknowledgements</a></li>
 	</ul>
 
 	<div id="searchform"> <!--  Search Form -->
@@ -47,35 +48,34 @@
     </div> <!-- closes #header-->
 <!-- /Header -->
 
-
   <div class="nomenu" id="mBody">
     <div id="mainContent">
-      <H2> 
+      <h2> 
       JMRI Install Guide: MacOS Classic (8.x, 9.x)
-      </H2>
+      </h2>
 
-      <OL>
-        <LI>Determine if your hardware supports Java and JMRI</LI>
+      <ol>
+        <li>Determine if your hardware supports Java and JMRI</li>
       
-        <P>Minimum hardware specification for JMRI Versions up to 1.4:
+        <p>Minimum hardware specification for JMRI Versions up to 1.4:
         
-        <UL>
-        <LI>A Macintosh with a Power PC processor running OS8.1
-        <LI>At least 32MB of memory
-        <LI>At least 8MB of disk space available
-        </UL>
+        <ul>
+        <li>A Macintosh with a Power PC processor running OS8.1
+        <li>At least 32MB of memory
+        <li>At least 8MB of disk space available
+        </ul>
          A faster CPU, later OS version and more memory are recommended. A screen size of 800x600 or larger is strongly recommended.
          
-        <P>Minimum hardware specification for JMRI Versions 1.6 and later:
+        <p>Minimum hardware specification for JMRI Versions 1.6 and later:
 
-        <UL>
-        <LI>Any Macintosh with a PCI bus and a PPC603e processor or better, 
-        <LI>A minimum of 64MB of RAM (96MB or greater is recommended)
-        <LI>A minimum screen size of 800x600
-        </UL>
+        <ul>
+        <li>Any Macintosh with a PCI bus and a PPC603e processor or better, 
+        <li>A minimum of 64MB of RAM (96MB or greater is recommended)
+        <li>A minimum screen size of 800x600
+        </ul>
         OS8.6 or OS9.1 are recommended.
-        <P>        
-	<LI>Get and Install Java (if needed)</LI>
+        <p>        
+	<li>Get and Install Java (if needed)</li>
 
 	<p>This application should run with any recent release of the
 	Macintosh Runtime for Java (MRJ). MRJ requires Mac OS 8.1 or later.
@@ -99,7 +99,7 @@
 	reinstall the system software, or if you do a "clean install" of an
 	OS update. </p>
 
-	<LI>Get JMRI</LI>
+	<li>Get JMRI</li>
 
 	<p><a href="../download/index.shtml#prod-rel">Download</a> a version of JMRI, either the
 	latest production version, or a "test version".  Since the version
@@ -115,53 +115,52 @@
 	</p>
 
 
-	<LI>Install JMRI</LI>
+	<li>Install JMRI</li>
 
 	<p>To install, you just have to move the JMRI folder to where you
 	want it on your computer.</p>
 
-    <LI>Connect your computer system to your command station hardware</LI>
-    <P>Generally, older Macs use a style of serial connector called
+    <li>Connect your computer system to your command station hardware</li>
+    <p>Generally, older Macs use a style of serial connector called
     "Mini-DIN-8".  It looks similar to, but identical to, the ADB connectors
     used to connect keyboards and mice.  You'll need an adapter that 
     adapts that connector to the connector on your particular DCC system.
 	<p>More information on the wiring in these connectors
 	is available on the page of <a href="/help/en/html/hardware/MacintoshSerialPorts.shtml">Mini-DIN-8 page</a>.
-	<P>If your computer doesn't have serial ports, see our page on 
-	<A HREF="/help/en/html/hardware/USBtoSerial.shtml">USB adapters</a>
+	<p>If your computer doesn't have serial ports, see our page on 
+	<a href="/help/en/html/hardware/USBtoSerial.shtml">USB adapters</a>
 	for more information
-    <P>
+    <p>
     You may also need to configure the Macintosh to allow the program
     to use the serial port, instead of the Mac using it for a printer
     or LocalTalk connection.  For more information on doing that, 
     see the 
-    <A href="MacOSOldSerial.html">Serial Port Configuration</a> page.
+    <a href="MacOSOldSerial.html">Serial Port Configuration</a> page.
 
-	<LI> Installation is complete.</LI>
+	<li> Installation is complete.</li>
 	<p>
 	Once those packages are installed, you can run the program by
 	double-clicking on the "DecoderPro", "PanelPro" or
 	"JmriDemo" application icons in the JMRI folder.
-	</OL>
+	</ol>
 
-      <hr class="hide">
 <!-- Footer -->
     <hr class="hide">
     <div id="footer">
 	<ul id="bn">
-	<li><a href="/contact/">Contact Us</a></li>
+	<li>Contact us via the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> mailing list</li>
 	</ul>
 
 	<p>Thanks and congratulations to
-	   <A href="/community/" title="Who is JMRI">
-	   	all who contributed</A>! </p>
+	   <a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
+	   	all who contributed</a>!</p>
 
-	<p>Copyright &copy; 1997 - 2004 JMRI Community. 
-	<P>JMRI, DecoderPro, PanelPro, DispatcherPro and associated logos are our trademarks.
-	<P><A href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
+	<p>Copyright &copy; 1997 - 2015 JMRI Community. 
+	<p>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, TrainPro&trade;, DispatcherPro&trade;, OperationsPro&trade; and associated logos are our trademarks.
+	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
     
-       <BR/>Site hosted by: <BR/>
-<a href="http://sourceforge.net/projects/jmri"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=26788&type=12" width="120" height="30" border="0" alt="Get JMRI Model Railroad Interface at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
+       <br>Site hosted by:<br>
+<a href="http://sourceforge.net/projects/jmri/"><img src="https://sourceforge.net/sflogo.php?group_id=26788&type=12" width="120" height="30" border="0" alt="Get JMRI Model Railroad Interface at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
     </div>
 <!-- /Footer -->
 

@@ -25,9 +25,7 @@
 <p>These are instructions for the installation of JMRI
 on a Ubuntu Linux/GNU system. &nbsp; &nbsp; These have been used by a number of users
 successfully and should work on Ubuntu, Kubuntu, XUbuntu and Debian
-(The USB
-port has not been tested under Debian).</p>
-<p>This draft is now in its final stage.</p>
+(The USB port has not been tested under Debian).</p>
 
 
 <h2>1 Introduction</h2>
@@ -71,7 +69,8 @@ Before starting that, make sure you're machine has a working
 internet connection (for downloads), etc.
 
 <h3>LocoBuffer USB</h3>
-If you are planning to&nbsp; Ubuntu 7.10 and a
+We recommend you use Ubuntu 8.04 or later with the LocoBuffer.
+If you are planning to the old Ubuntu 7.10 or older and a
 <a href="http://rr-cirkits.com/locobuffer-usb/LB-manual-USB.pdf">LocoBuffer-USB</a>
 from 
 <a href="http://rr-cirkits.com/">RR-Cirkits</a>
@@ -79,8 +78,6 @@ you will need to download the patched&nbsp;
 <a href="http://rr-cirkits.com/locobuffer-usb/linux/ftdi_sio.ko">ftdi_sio.ko file</a>
 &nbsp;(right click and save this file) to replace the one that came
 with the distribution. 
-A better option is to upgrade your system to the
-Ubuntu 8.04 release which includes a fix for this driver problem.
 
 <h2>3 Installation Steps</h2>
 <p>There are two steps in Installing JMRI in Linux/GNU,
@@ -88,14 +85,15 @@ The are installation of Java, or the modification of an previously modified copy
 
 <h3>3.1 JAVA</h3>
 
-One must be careful which Java is loaded. 
-'java -version' will often show Java 1.4.2 gij, this one is not wanted.
-The 'Blackwood' Java Virtual Machine does not work for JMRI, as it doesn't have all the needed libraries.<p>We recommend installing from the
-repositories. 
+One must be careful which Java is loaded. You need a "Java 8" or "Java 1.8" (the Java numbering is confusing).
+With some Ubuntu versions, 'java -version' will often show Java 1.4.2 gij, this one is too old.
+Also, the 'Blackwood' Java Virtual Machine does not work for JMRI, as it doesn't have all the needed libraries.
+
+<p>We recommend installing Java from the repositories:
 
 </p><p>System &gt; Administration &gt; Synaptic Package Manager
 
-</p><p>Then search for sun-java6-jre or OpenJDK-6-jre. 
+</p><p>Then search for sun-java8-jre or OpenJDK-8-jre. 
 Once you've found it, mark it to be loaded, and click apply.
 You'll probably be told that a number of other packages will 
 also be loaded. That's OK.
@@ -103,53 +101,54 @@ also be loaded. That's OK.
 <a id="rxtx">
 <h3>3.2 RxTx</h3></a>
 
-</p><p>RxTx used to be a problem requiring modifications to Java to
+<p>RxTx used to be a problem requiring modifications to Java to
 enable JMRI to run. &nbsp;This is no longer required. &nbsp;However if
 you are using a version of JMRI prior to 2.9.2 then Java must be
 "unmodified". &nbsp;There is a script to do this in the Users Group
-Files area, or one can work back from the following.</p>For those who
+Files area, or one can work back from the following.</p>
+
+<p>For those who
 do not wish to use the new version the instructions for modifying Java
 are given below. &nbsp;If one wishes to run both then this is simply a
-matter of unmodifying or modyfying Java using the scripts.<p>The problem was that the RxTx in the Ubuntu
+matter of unmodifying or modyfying Java using the scripts.
+
+<p>The problem was that the RxTx in the Ubuntu
 repositories would not work with JMRI! RXTX 2.1 uses a different structure than
 RXTX 2.0; JMRI requires the RXTX 2.0 structure.
 The "2.0.7pre2" is known to work well
-and that is what is included in the automated script which can currently be downloaded</p>
-<p><a href="http://downloads.sourceforge.net/jmri/RXTX-install-5.tar.gz">Download RXTX-Install</a>
-</p><p>and place it
+and that is what is included in the automated script which can currently be downloaded from
+<a href="http://downloads.sourceforge.net/jmri/RXTX-install-5.tar.gz">Download RXTX-Install</a>
+and placed
 in a spare directory. Unpack it by double clicking, and then
 extracting (extract) the file. 
 The script is run by opening a terminal and giving the command "./RXTXinstall"
 
-</p><p>The script will do the following:
-
-</p><ul>
+<p>The script will do the following:
+<ul>
 <li>Checks that the correct java version is installed, then copies the RXTX files to the following directories:
 
-<ul>
-<li>javax.comm.properties,&nbsp;ext/javax.comm.rxtx.properties, ext/comm.jar and ext/RXTXcomm.jar to
-/usr/lib/jvm/java-6-sun-??/jre/lib/ and lib/ext
-</li><li>i386/* to /usr/lib/jvm/java-6-sun-???/jre/lib/i386/
-</li></ul>
+    <ul>
+    <li>javax.comm.properties,&nbsp;ext/javax.comm.rxtx.properties, ext/comm.jar and ext/RXTXcomm.jar to
+    /usr/lib/jvm/java-6-sun-??/jre/lib/ and lib/ext</li>
+    <li>i386/* to /usr/lib/jvm/java-6-sun-???/jre/lib/i386/</li>
+    </ul>
 
-</li><li>Makes a symbolic link in /i386/ so the program finds the correct
-RxTx (ln -s librxtxSerial-2.0.7pre2.so librxtxSerial.so).
+</li>
 
-</li><li>Alters the permission on dev/ttyS0 and ttyS1.
+<li>Makes a symbolic link in /i386/ so the program finds the correct
+RxTx (ln -s librxtxSerial-2.0.7pre2.so librxtxSerial.so).</li>
 
-</li><li>Backs up /etc/group and adds the user to it.
+<li>Alters the permission on dev/ttyS0 and ttyS1.</li>
 
-</li></ul>
-The above description is brief, as the script itself can be opened in a text editor and studied at leisure.<br>
+<li>Backs up /etc/group and adds the user to it.</li>
+</ul>
+The above description is brief, as the script itself can be opened in a text editor and studied at leisure.
 
 <h3>3.3 JMRI</h3>
 <p>JMRI is downloaded in the normal manner.</p>
-<p><a href="http://jmri.sourceforge.net/download/index.shtml#prod-rel">Download
-JMRI</a> 
-</p>
-<p>Double
-click on the .tgz file to open the File Roller, then click extract. 
-</p>
+<p><a href="http://jmri.sourceforge.net/download/index.shtml#prod-rel">Download JMRI</a> </p>
+
+<p>Double click on the .tgz file to open the File Roller, then click extract. </p>
 
 <p>JMRI will created inside a "JMRI" directory which is
 created inside the directory that contains the downloaded .tgz file.  Umm..</p>
@@ -176,7 +175,7 @@ below
 <p>Please see the&nbsp;<a href="http://jmri.sourceforge.net/install/FAQLinux.html">FAQ</a> for more details.</p>
 
 <h2>4 Starting JMRI</h2>
-<p>To start open a terminal and enter ./DecoderPro or double click on the icon. &nbsp;Remember&nbsp;</p>
+<p>To start open a terminal and enter ./DecoderPro or double click on the icon.</p>
 
 <h3>4.1 Errors</h3>
 <p>If you have any problems get back to the group.</p>
