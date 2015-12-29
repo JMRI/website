@@ -335,6 +335,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <li>Fixed a problem where the program didn't use the road or model specified in the build
      options for locomotive changes in a train's route, and the option "Build loco consist from
      single locos" was selected.</li>
+    <li>Fixed a minor problem with train icons animation when there was a locomotive change in
+     a route, and two or more locomotives were individually assigned to the train.</li>
    </ul>
 
    <h4>Roster</h4>
