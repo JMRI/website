@@ -1,7 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<!-- $Id: OpenSUSE.shtml,v 1.1 2008-02-22 03:57:02 jacobsen Exp $ -->
 <html lang="en">
-<HEAD>
+<head>
         <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
         <TITLE>JMRI Install Guide: OpenSure Linux</TITLE>
         <META NAME="GENERATOR" CONTENT="OpenOffice.org 2.2  (Linux)">
@@ -10,23 +9,24 @@
         <META NAME="CHANGED" CONTENT="20070720;13070200">
 
 <!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
   <link rel="home" title="Home" href="/">
 <!-- /Style -->
 
-</HEAD>
+</head>
 
+<body>
 <!--#include virtual="/Header" -->
 <!--#include virtual="/download/Sidebar" -->
 
 <div id="mainContent">
 
-<H2> 
+<h2> 
 JMRI Install Guide: OpenSure Linux
-</H2>
+</h2>
 
 It's recommended that you install the Java SDK (Software Development Kit), 
 which includes the Java compiler, etc, rather than just the 
@@ -40,7 +40,7 @@ obscure problems.
       getting the Java communications library installed and 
       working.
       
-<PRE>
+<pre>
 First I deleted all references to rxtx from my java directory as
 follows:
 
@@ -111,9 +111,9 @@ instructions. If I'd loaded commapi version 2 in the first place it
 would have been fine :^) instead I just grabbed the first one I saw on
 the sun site which was version 3.
 
-</PRE>
+</pre>
 
-Stephen Williams added a little more info about setting permissions:
+<p>Stephen Williams added a little more info about setting permissions:
 
 <pre>
 The basic problem here is that you will need to add yourself to the
@@ -138,9 +138,10 @@ at the entry for '.').  If there is a group other than root listed
 there, you need to belong to that group (it is often "uucp" or "lock").
 
 Hope that helps.
-</PRE>
+</pre>
 
 <!--#include virtual="/Footer" -->
-
-</BODY>
-</HTML>
+  </div> <!-- closes #mainContent-->
+ </div> <!-- closes #mBody-->
+</body>
+</html>

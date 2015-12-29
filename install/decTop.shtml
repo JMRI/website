@@ -1,15 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
-<!-- Copyright Bob Jacobsen 2008 -->
-<!-- $Id: decTop.shtml,v 1.5 2008-03-03 03:54:25 jacobsen Exp $ -->
-
-    <TITLE>
+    <title>
  	Running JMRI on a decTOP small form factor computer
-    </TITLE>
-    <META content="Bob Jacobsen" name=Author>
+    </title>
+    <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="JMRI decTOP SFF Ubuntu Xubuntu">
-
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -59,9 +55,9 @@ between the common LocoNet (LayoutNet) and a LocoNet that only runs to
 their modules (LocalNet).  JMRI would then translate addresses as 
 LocoNet messages move back and forth, so that address 120 on each of the LocalNet modular
 sections becomes 220 and 430 on the global LayoutNet. At the same time, JMRI could continue
-to provide local control panes, signaling and automation, and all the other thimgs.
+to provide local control panes, signaling and automation, and all the other things.
 <p>
-All we need to make something like this work is sufficently cheap and robust
+All we need to make something like this work is sufficiently cheap and robust
 hardware, that can make two layout connections.
 <p>
 The 
@@ -99,7 +95,7 @@ You'll also need
 USB adapter(s) to connect to your layout.  There are four 
 USB ports available for use with a LocoBuffer USB, LI-USB or
 USB - serial adapter. Note that normally three of those ports are
-used for the keybooard, mouse and Ethernet adapter, leaving one available
+used for the keyboard, mouse and Ethernet adapter, leaving one available
 for a layout connection.
 
 <p>
@@ -303,7 +299,6 @@ In our case, it mounted as /media/KINGSTON, specifically:
 After that, the process just went through as described
 in the Linux instructions.
 
-
 <h3>Java</h3>
 
 <a href="http://www.linuxquestions.org/questions/linux-newbie-8/java-runtime-enviroment-plugin-wont-work-with-firefox-in-xubuntu-616663/:">Post recommending Java 1.5</a>
@@ -311,6 +306,7 @@ in the Linux instructions.
 <a href="https://jdk-distros.dev.java.net/ubuntu.html">More on Java distributions for Linux</a>.
 
 <!--#include virtual="/Footer" -->
+  </div> <!-- closes #mainContent-->
+ </div> <!-- closes #mBody-->
 </body>
 </html>
-
