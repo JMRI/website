@@ -20,19 +20,17 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
-
+<a name="Top"></a>
 <h1>DecoderPro&reg; Comprehensive Programmer</h1>
-<h1>Consisting Functions Pane</h1>
+<h2>Consisting Functions Pane</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_Analog.shtml">Previous | </a>
   <a href="Comp_Advanced.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
 
 <hr>
-
 
 <p>Consisting is a means to have two or more locomotives respond to orders from the command station, and do it together in unison.  There are a number of terms used to describe consisting, and the manufacturers don’t agree what those terms should be.  The NMRA has adopted terminology, so that is what will be used in this discussion.</p>
 
@@ -47,17 +45,20 @@
 
 <p>DecoderPro utilizes the Consisting Pane to set up NMRA Advanced Consists and the response of the locomotive to function requests sent to the consist address.
 </p>
-<h1><img src="images/Comp_07_Consisting.png" width="920" height="799" alt="Consist panel"></h1>
+<p><img src="images/Comp_07_Consisting.png" width="920" height="799" alt="Consist panel"></p>
 <p>The  Advanced Consist Address is for <strong>EPF</strong> (<strong>Extended Packet Format</strong>, as  defined by the NMRA Recommended Practices for DCC).&nbsp; If the consist address is <strong>any value other than zero</strong>, the  locomotive is considered to be in a consist and will only respond to  instructions sent to the consist address. Thus we set a short address here to  create a multiple engine group that will all respond to the same address. Think  of it as an MU specific locomotive address. &nbsp;Since the address is in the same range as  non-consisted locomotives with short addresses, we need to be sure the address  is unique on the layout.&nbsp; A way of doing  this is to use higher end of the short address range starting from 127 and  going down.&nbsp; Most folks working with  single locomotives with short addresses tend to be using the manufacturer&rsquo;s  default of 3, or other low values, typically&nbsp;for their logging locomotives.</p>
 <p>This  Pane also allows one to instruct the decoder what effects are to be active when  the locomotive is in a consist, assuming the decoder is capable of responding  appropriately.&nbsp; As an example, this allows  you to specify if the headlights and other lighting functions are to be always  off if the locomotive is in the middle, or tail end.&nbsp; This can be handy if only the &ldquo;B&rdquo; unit has  sound.&nbsp; You can set it&rsquo;s lights to be off  in a consist, but it can sound it&rsquo;s horn even though it&rsquo;s in the consist.
 <p>
 If you've had your locomotives on another layout and ran them together, but can't get them to run separately on your home system,  check this to see if it's consist  address has been  set.
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_Analog.shtml">Previous | </a> <a href="Comp_Advanced.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a> </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

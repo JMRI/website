@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_PrintOptions.shtml 18257 2011-08-22 08:50:56Z dat7719 $ -->
 <title>Operations-Print Options</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Operations Print Options</h1>
+<h2>Operations Print Options</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Settings.shtml">Back</a></p>
 </div>
 
@@ -110,10 +109,13 @@ and select a file with the image you want to display. Each train in your roster 
 after changing the build report selection.</p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Settings.shtml">Back</a><a href="index.shtml#Main"></a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Main_Tool.shtml 18146 2011-08-09 11:51:16Z dat7719 $ -->
 <title>DecoderPro Tool Menu</title>
 
 <!-- Style -->
@@ -22,9 +21,9 @@
 
 <a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
-<h1>Tools Menu </h1>
+<h2>Tools Menu </h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Edit.shtml">Previous | </a><a href="Main_Roster.shtml">Next</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -179,11 +178,14 @@
 <p align="center"><img src="images/Main_Debug03.png" width="428" height="70" alt="mini server"></p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Roster.shtml"></a><a href="Main_Edit.shtml">Previous | </a><a href="Main_Roster.shtml">Next</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

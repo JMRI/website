@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_ImportEngines.shtml 18278 2011-08-23 19:50:23Z dat7719 $ -->
 <title>Operations Importing Engines</title>
 
 <!-- Style -->
@@ -20,10 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Importing Locomotives </h1>
-<div align=right>
+<h2>Importing Locomotives </h2>
+
+<div align="right">
   <p><a href="Ops_Cars.shtml">Back </a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -164,11 +164,14 @@ and then press
 that can be found at the bottom  right of the <strong>Edit locomotive</strong> window</p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Cars.shtml">Back </a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

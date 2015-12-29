@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Main_Throttle.shtml 18167 2011-08-13 11:22:06Z dat7719 $ -->
 <title>DecoderPro Throttle</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
-<h1>Throttle Window</h1>
+<h2>Throttle Window</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml">Previous </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -104,7 +103,7 @@
     <h4><strong>View
   --</strong></h4>  
    
-      <p>Allows you to select which of the three       panels of the throttle are being shown. Place a check mark in each of the panels that your want to display. </p>
+      <p>Allows you to select which of the three panels of the throttle are being shown. Place a check mark in each of the panels that your want to display. </p>
    
     <ul>
       <li>
@@ -122,7 +121,7 @@
         Function Panel</strong></li>
     </ul>
     <blockquote>
-      <p>You  may ask yourself, &ldquo;Why would I want to turn off any of these panels?&rdquo;&nbsp; As only one example, let&rsquo;s say we have an  observation car at the rear of a passenger train.&nbsp; We could equip this car with a function only  decoder to control:</p>
+      <p>You  may ask yourself, &ldquo;Why would I want to turn off any of these panels?&rdquo; As only one example, let&rsquo;s say we have an  observation car at the rear of a passenger train. We could equip this car with a function only decoder to control:</p>
       <ol>
         <li> Interior lights, </li>
         <li> Rear marker lights, and</li>
@@ -342,7 +341,7 @@ through 0%</h4></td>
     <p>
       <input type="checkbox" name="checkbox7" id="checkbox7">
       <strong>Track sider in real time</strong></p>
-    <p><strong>Switch to contiuous speed slider on function:</strong>
+    <p><strong>Switch to continuous speed slider on function:</strong>
 <input name="textfield" type="text" id="textfield" value="F5" size="5">
     Enter the function from the <strong>Function Panel</strong> that you want to use.</p>
     <p>
@@ -399,16 +398,20 @@ through 0%</h4></td>
   </tr>
 </table>
 <p>The descriptions shown  above are only a small part of what the <strong>Throttle</strong> Window can do. The author(s)  of the <strong>Throttle</strong> Window have created an extensive set of Help files to help you  customize Throttle Windows to your way of operating.&nbsp; To access Help, just open a New <strong>Throttle</strong>. Then,  click on <strong>Help</strong> and select <strong>Window Help</strong> from the dropdown box.&nbsp; There&rsquo;s lots of good stuff in there.</p>
+
 <div>
   <div align="right"><a href="#Top">Top</a></div>
 </div>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml">Previous </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

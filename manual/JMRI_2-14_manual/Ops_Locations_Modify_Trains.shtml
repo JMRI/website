@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
-<!-- $Id: Ops_Locations.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
 <title>Operations-Locations</title>
 
 <!-- Style -->
@@ -19,12 +18,12 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Operations Modify Trains by Car Type Window</h1>
+<h2>Operations Modify Trains by Car Type Window</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Locations_ShowCars.shtml">Back </a></p>
 </div>
 
@@ -32,10 +31,13 @@
 <p><img src="images/Ops_Location_Modify_Trains.png" width="300" height="356" alt="modify trains"></p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Locations_ShowCars.shtml">Back </a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

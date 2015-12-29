@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
-<!-- $Id: Simple_Programmer.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<TITLE>
+<title>
 JMRI: Simple Programmer
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -23,9 +22,9 @@ JMRI: Simple Programmer
 <div id="mainContent">
 
 <h1>DecoderPro&reg; Main Window</h1>
-<h1>Simple Programmer</h1>
+<h2>Simple Programmer</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml">Back</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -37,14 +36,17 @@ JMRI: Simple Programmer
 <p>On the left side of the window you can select the Programming Mode. Any mode not supported by your command station will be grayed out.</p>
 <p>If you select the<strong> Ops</strong> mode, which programs on the main track, you need to enter the address of the decoder (locomotive) that you are programming. Your DCC system may require you to check the <strong>Long address </strong>check box if the address is a long address. Most DCC systems do not allow you to read on the main, if so, the <strong>Read CV </strong>button will be disabled.</p>
 <p>Now that you have everything  setup, you may read the current  value in the decoder&rsquo;s memory from the CV by clicking on the<strong> Read CV </strong>button  or write your new value to  the CV by clicking on the <strong>Write CV</strong> button.</p>
-<p>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml">Back</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
-</body>
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
+    </body>
 </html>

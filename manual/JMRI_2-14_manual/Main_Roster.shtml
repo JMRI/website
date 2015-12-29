@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Main_Roster.shtml 18150 2011-08-10 13:07:19Z dat7719 $ -->
 <title>Roster Menu</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
-<h1>Roster Menu </h1>
+<h2>Roster Menu </h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml"> Previous | </a><a href="Main_Panels.shtml">Next </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -131,11 +130,14 @@
 </div>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Panels.shtml"></a><a href="Main_Tool.shtml">Previous | </a><a href="Main_Panels.shtml">Next </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

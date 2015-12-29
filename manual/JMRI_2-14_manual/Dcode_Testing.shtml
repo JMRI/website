@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
-<!-- $Id: Dcode_Testing.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<TITLE>
+<title>
 Decoder Definition
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -23,15 +22,15 @@ Decoder Definition
 <div id="mainContent">
 
 <h1>Decoder Definition</h1>
-<h1>Testing </h1>
+<h2>Testing </h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Dcode_Format.shtml">Previous</a> | <a href="Dcode_Submit.shtml">Next</a></p>
 <p><a href="index.shtml#DecoderDefinition">Back to Index</a><a href="index.shtml#Main"></a></p>
 </div>
 
 <hr>
-<h4>Testing the decoder definition</h4>
+<h3>Testing the decoder definition</h3>
 <p>At this point, you've created a new configuration file! 
   You can check it for syntax by selecting the <a href="Main_Debug.shtml#CheckXML">Check XML File</a> item from the <a href="Main_Debug.shtml">Debug menu</a>. The <strong>Open</strong> dialog is displayed; select  your file and click
   <input type="submit" name="button" id="button" value="Open">
@@ -44,11 +43,14 @@ Decoder Definition
 <p>When you are happy with your definition, you&rsquo;ll probably want to share it  with the JMRI world, so next we&rsquo;ll look at submitting the definition to JMRI  for inclusion in the next release.</p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Dcode_Submit.shtml"></a><a href="Dcode_Format.shtml">Previous</a> | <a href="Dcode_Submit.shtml">Next</a></p>
 <p><a href="index.shtml#DecoderDefinition">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
-</body>
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
+    </body>
 </html>

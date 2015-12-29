@@ -20,11 +20,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Comprehensive Programmer</h1>
-<h1>Lighting and FX Functions Pane</h1>
+<h2>Lighting and FX Functions Pane</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_FMap.shtml">Previous | </a>
   <a href="Comp_Analog.shtml">Next</a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
@@ -40,7 +40,7 @@ more attention when, for example, the ditch lights that were steadily shining
 as the locomotive approached the crossing suddenly begin flashing alternately,
 then return to a steady glow; or when a locomotive pulls into a siding,
 stops, and dims its headlight for the approaching train.
-All  these effects are possible with the right decoder and proper set-up, and set-up  is what DecderPro is all about. 
+All  these effects are possible with the right decoder and proper set-up, and set-up  is what DecoderPro is all about. 
 <p>Note: FP45 Tsunami decoder does not allow you to program the lights, We are using a Digitrax decoder for Kato F7A, which has full FX lighting capability.
 <p align="center"><img src="images/Comp_06_Lights.png" width="920" height="799" alt="Lights FX">
 <p>
@@ -74,14 +74,16 @@ The other lighting effects are highly variable between decoders. Check
 your specific decoder documentation for what the decoder is supposed to
 be capable of doing, and have fun playing with them. They are the most visually
 satisfying of all the capabilities of the decoders!
-<p>Even if the function and effect are available, you may have to add the lighting to your locomotive in order to be able to use that function, such as adding ditch lights, beacons, etc.
+<p>Even if the function and effect are available, you may have to add the lighting to your Locomotive in order to be able to use that function, such as adding ditch lights, beacons, etc.
 
-<p>
 <hr>
-<div align=right>
+<div align="right">
 <p><a href="Comp_Consist.shtml"></a><a href="Comp_FMap.shtml">Previous | </a> <a href="Comp_Analog.shtml">Next</a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a> </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_SelectTrainsRoutes.shtml 18257 2011-08-22 08:50:56Z dat7719 $ -->
 <title>Comprehensive Programmer - Advanced Features Pane</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Build Options for Trains</h1>
+<h2>Build Options for Trains</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Trains.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -67,7 +66,7 @@ Note that once you've built a train, the build option can not be changed until a
       When enabled, the program will use multiple trains to deliver a car to its final destination. It is recommended that you leave this option enabled. When enabled , you can use <strong><a href="Ops_schedule.shtml">Schedule</a></strong> to deliver a car to a specific location.</p>
 <p><strong>Logging Options<br>
 </strong><br>
-      You can have the progrm log your locomotive, car, or train movement to a file by selecting the appropriate check boxes. The program creates a new directory &quot;logger&quot; in the operations directory. For each day's sessioon the program will create a new file (.csv) using the day's date.</p>
+      You can have the program log your locomotive, car, or train movement to a file by selecting the appropriate check boxes. The program creates a new directory &quot;logger&quot; in the operations directory. For each day's session the program will create a new file (.csv) using the day's date.</p>
     <p> <strong>Options</strong><br>
       Allow you to create your own custom manifest using .csv file. Import into a program like Excel to create a manifest to your liking.</p>
     <p>
@@ -81,16 +80,17 @@ Note that once you've built a train, the build option can not be changed until a
     <td valign="top">&nbsp;</td>
   </tr>
 </table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Trains.shtml">Back</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

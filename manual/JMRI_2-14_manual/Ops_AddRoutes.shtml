@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_AddRoutes.shtml 18290 2011-08-25 09:06:42Z dat7719 $ -->
 <title>Operations-Add Routes window</title>
 
 <!-- Style -->
@@ -19,13 +18,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Add Route Window<br>
-  Edit Route Window
-</h1>
+<h2>Add Route Window - Edit Route Window</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Engines.shtml">Back</a><a href="Ops_Trains.shtml"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -131,11 +128,14 @@ on any route and the <strong>Edit Route</strong> window opens which is identical
 <p>Now that we have routes setup we need to set up some<a href="Ops_Trains.shtml"> Trains.</a></p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Engines.shtml">Back</a><a href="Ops_Trains.shtml"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>
