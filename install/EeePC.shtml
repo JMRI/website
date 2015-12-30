@@ -1,35 +1,34 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<!-- $Id: EeePC.shtml,v 1.5 2010-04-12 12:04:50 jacobsen Exp $ -->
 <html lang="en">
-<HEAD>
-	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
-	<TITLE>Installing JMRI on Asus EeePC</TITLE>
+<head>
+	<title>Installing JMRI on Asus EeePC</title>
 	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.2  (Linux)">
 	<META NAME="CREATED" CONTENT="20070720;11550900">
 	<META NAME="CHANGEDBY" CONTENT="peter">
 	<META NAME="CHANGED" CONTENT="20070720;13070200">
 
 <!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
   <link rel="home" title="Home" href="/">
 <!-- /Style -->
 
-</HEAD>
+</head>
 
+<body>
 <!--#include virtual="/Header" -->
 <!--#include virtual="/download/Sidebar" -->
 
 <div id="mainContent">
 
-<H1>Installing JMRI on Asus EeePC</H1>
+<h1>Installing JMRI on Asus EeePC</h1>
 
 This procedure outlines the steps taken to install the JMRI suite on an Asus EeePC.
 
 <p>
-The Asus EeePC is a flash-based device running a customised version of 
+The Asus EeePC is a flash-based device running a customized version of 
 Linux (based on Xandros). 
 As a result, the majority of the installation steps are similar to that 
 when installing on any other (recent) Linux distribution. 
@@ -285,5 +284,7 @@ Once restarted, icons for Decoder Pro and Panel Pro should exist on the Play tab
 
 <!--#include virtual="/Footer" -->
 
-</BODY>
-</HTML>
+	 </div> <!-- closes #mainContent-->
+ </div> <!-- closes #mBody-->
+</body>
+</html>

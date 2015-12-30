@@ -3,9 +3,9 @@
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009, 2010 -->
 <!-- $Id: Comp_Motor.shtml 18120 2011-08-07 11:49:22Z dat7719 $ -->
-<TITLE>
+<title>
 DecoderPro&reg; Comprehensive Programmer
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -23,9 +23,9 @@ DecoderPro&reg; Comprehensive Programmer
 <div id="mainContent">
 
 <h1>DecoderPro&reg; Comprehensive Programmer</h1>
-<h1>Motor Control Pane</h1>
+<h2>Motor Control Pane</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_Basic.shtml"> Previous | </a>
   <a href="Comp_Speed.shtml">Next</a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a></div>
@@ -33,7 +33,7 @@ DecoderPro&reg; Comprehensive Programmer
 <hr>
 <p>Motor  control is divided into three separate panes.&nbsp;  The<strong> Motor Control pane</strong> deals with CV&rsquo;s for simulating locomotive weight or  inertia.&nbsp; The <a href="Comp_Speed.shtml" target="_parent"><strong>Basic Speed Control pane</strong></a><a href="Comp_Basic.shtml" target="_parent"></a> deals with basic  motor control CV&rsquo;s and the third <a href="Comp_Speed_Talble.shtml" target="_parent"><strong>Speed Table pane</strong></a><a href="Comp_Speed.shtml" target="_parent"></a> covers those dealing with the Speed Table  method of controlling the motor.&nbsp; These  last two  methods of motor control  are mutually exclusive.&nbsp; The selection is made with a radio button at  the top of each of those two panes.&nbsp; The  default selection is Basic Speed Control.
 <p><strong>The  Motor Pane </strong></p>
-<h1><img src="images/Comp_03_Motor.png" width="799" height="583" alt="motor"></h1>
+<p><img src="images/Comp_03_Motor.png" width="799" height="583" alt="motor"></p>
 
 <p>The contents of the  Motor pane will vary significantly between different brands and models of decoders.  In the  case of the  decoder shown in the illustration:</p>
 
@@ -45,12 +45,16 @@ locomotive stop and cycle through the acceleration curve  again!  On the latest 
 decoder documentation for the best ways to implement these variables,  and be prepared to 
 do a lot of experimenting! However they do it and whatever they call it,  you should find it 
 in this pane. </p>
+
 <hr>
-<div align=right>
+<div align="right">
 <p><a href="Comp_Speed.shtml"></a>
   <a href="Comp_Basic.shtml">Previous | </a> <a href="Comp_Speed.shtml">Next</a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a></div>
 
 <!--#include virtual="/Footer" -->
-</body>
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
+    </body>
 </html>
