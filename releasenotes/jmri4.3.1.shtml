@@ -69,6 +69,8 @@ from
 <h3>New warnings for this version:</h3>
 
 <p>
+    The internals of the Layout Editor have been reworked a bit.  Please keep an 
+    eye out for any changed behaviors.
 </p>
 
 <h3>Older warnings</h3>
@@ -222,6 +224,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
     <h4>Signals</h4>
+        <h5>Signal Systems</h5>
+            <ul>
+                <li>Greg McCartney provided a definition for the Norfolk and Western 1981 rulebook</li>
+            </ul>
         <h5>Signal Mast Editor</h5>
             <ul>
                 <li></li>
@@ -234,7 +240,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>BLI</h5>
             <ul>
-                <li></li>
+                <li>Michael Mosher updated the BLI Diesel P3 definition</li>
             </ul>
 
         <h5>Doehler &amp; Haas</h5>
@@ -293,7 +299,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>ZIMO</h5>
             <ul>
-                <li></li>
+                <li>Mark Waters fixed errors in Lighting output Behavior in CVs 127 to 132 for Zimo decoders</li>
+                <li>Mark Waters updated the Zimo MX633 and MX634 decoder definitions</li>
+                <li>Mark Waters provided new decoder definitions for the Zimo MX618 and MX622 decoders</li>
             </ul>
 
         <h5>Miscellaneous</h5>
