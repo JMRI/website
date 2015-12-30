@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009, 2010 -->
-<!-- $Id: Comp_Speed.shtml 18138 2011-08-08 07:37:28Z dat7719 $ -->
 <title>Comprehensive Programmer - Speed Control Pane</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Comprehensive Programmer</h1>
-<h1>Basic Speed Control Pane</h1>
+<h2>Basic Speed Control Pane</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_Motor.shtml">Previous &nbsp;| </a>
   <a href="Comp_Speed_Talble.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
@@ -71,16 +70,19 @@ same speed forward and backward due to the motor mechanics and the gear train to
   <p>There are no hard and fast rules for the exact numbers to use. Even identical locomotives with identical decoders will need different numbers, due to variances in motors and drive trains. Experiment with the settings - Decoder Pro makes it easy!
   <p>Note: Not all decoders will have Start, Mid and Max Volts, but will have some version of this which will be displayed by Decoder Pro for the specific decoder.
 </div>
-<hr>
+
 <p>If you select <a href="Comp_Speed_Talble.shtml"><strong>Speed Table </strong></a>all of the settings in this pane are ignored. 
-   <br>
+
 <hr>
-<div align=right>
+<div align="right">
 <p><a href="Comp_Speed_Talble.shtml"></a>
   <a href="Comp_Motor.shtml">Previous &nbsp;| </a> <a href="Comp_Speed_Talble.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

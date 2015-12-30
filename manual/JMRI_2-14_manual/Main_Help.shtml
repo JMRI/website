@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Main_Help.shtml 18157 2011-08-11 10:37:44Z dat7719 $ -->
 <title>Help Menu</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
-<h1>Help Menu </h1>
+<h2>Help Menu </h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Window.shtml"> Previous</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -58,11 +57,14 @@
 <p><img src="images/Main_Help_04.png" width="577" height="311" alt="help">
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Window.shtml">Previous</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

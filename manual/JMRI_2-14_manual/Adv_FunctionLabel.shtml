@@ -20,7 +20,7 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Advanced Programmer</h1>
 <h1>Function Labels Pane</h1>
 
@@ -30,7 +30,7 @@
 </div>
 
 <hr>
-<p>This  pane is more than a scratch pad to keep track of what happens when function  buttons are pushed.&nbsp; It also interacts  with the <a href="Main_Throttle.shtml">JMRI throttle</a>. </p>
+<p>This  pane is more than a scratch pad to keep track of what happens when function  buttons are pushed. It also interacts  with the <a href="Main_Throttle.shtml">JMRI throttle</a>. </p>
 <p wrap="">The <strong>Function Label</strong> Tab makes settings for the Software Throttles within JMRI.  Primarily the on-screen throttles, but some of the settings are mirrored on smart-phones (iPhone/Android) using the WiThrottle interface.</p>
 <p>When you  use the roster pull-down on the JMRI throttle to select a loco from your  roster, the function buttons will be marked with the descriptions you have  entered for those functions in this pane. </p>
 <p align="center"><img src="images/Adv_03_FunctionLabels.png" width="636" height="598" alt="function labels"></p>
@@ -55,7 +55,7 @@
     <td>Sets &quot;virtual&quot; funtion key for software throttle. The &quot;lock&quot; option also needs to be set simultaneously with the &quot;shunt&quot; virtual function key activation. When this Function key is pressed the throttle speed slider on the software throttle changes to &quot;center off&quot; style for shunting, rather than the &quot;full-range with separate direction key&quot;</td>
   </tr>
 </table>
-<p>You may drag and drop icons into the off or on space holder herer or in the Throttle Function pane properties.
+<p>You may drag and drop icons into the off or on space holder here or in the Throttle Function pane properties.
 <p>You  may also edit the function button text in the <strong><a href="Main_Throttle.shtml">JMRI Throttle</a></strong> and save those changes to the selected Roster entry. To use these changed entries in the future, make  sure you click on the
   <input type="submit" name="button" id="button" value="Save to Roster"> 
   to save these values into the Roster entry that is in use.
@@ -67,5 +67,8 @@
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

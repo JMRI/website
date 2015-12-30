@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Main_TurnoutControl.shtml 18167 2011-08-13 11:22:06Z dat7719 $ -->
 <title>DecoderPro Turnout Control</title>
 
 <!-- Style -->
@@ -20,17 +19,16 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Tool Menu</h1>
-<h1>Turnout Control Panel</h1>
+<h2>Turnout Control Panel</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml#Turnout">Back</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <hr>
-<p>&nbsp;</p>
 
 <table width="90%" border="0" cellspacing="1" cellpadding="1">
   <tr>
@@ -61,14 +59,17 @@ will only change the state of the internal turnout and will not change a turnout
     <p><strong>Pushbuttons:</strong> Shows state of Pushbuttons.</p></td>
   </tr>
 </table>
-<p>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml#Turnout">Back</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

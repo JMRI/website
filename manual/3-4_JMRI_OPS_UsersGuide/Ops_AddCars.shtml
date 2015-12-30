@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_AddCars.shtml 18278 2011-08-23 19:50:23Z dat7719 $ -->
 <title>Operations Add Cars</title>
 
 <!-- Style -->
@@ -19,7 +18,7 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>How to Use JMRI&reg; to Operate Trains</h1>
 <h1>Add Cars (Edit Cars) Window</h1>
 
@@ -289,5 +288,7 @@ when pressed, opens the <strong>Set Car Location</strong> panel and allows you t
 </div>
 
 <!--#include virtual="/Footer" -->
-</body>
+    </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+  </body>
 </html>
