@@ -19,7 +19,7 @@
 
 <div id="mainContent">
 
-<h1>JMRI Locations on Windows</h1>
+<h1>JMRI File Locations on Windows</h1>
 
 When a JMRI script such as "C:\Program Files\JMRI\DecoderPro.bat" is started, 
 it creates the Java command line needed to start the JMRI program.
@@ -64,7 +64,8 @@ For more information follow these links:
 <a href="/help/en/html/apps/DecoderPro/RosterFile.shtml">Roster</a>,
 <a href="/help/en/html/apps/DecoderPro/NetworkFiles.shtml">Network files</a>.
 
-<!--#include virtual="/Footer" -->
-
+   <!--#include virtual="/Footer" -->
+  </div><!-- closes #mainContent-->
+ </div> <!-- closes #mBody-->
 </body>
 </html>
