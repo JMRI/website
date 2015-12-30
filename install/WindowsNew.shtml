@@ -15,7 +15,8 @@
 
 <body>
 <!--#include virtual="/Header" -->
-<div class="nomenu" id="mBody">
+
+<!--#include virtual="/download/Sidebar" -->
 <div id="mainContent">
 
 <h1> 
@@ -26,23 +27,23 @@ JMRI Install Guide: Windows
 <p><strong>This Install Guide is suitable for JMRI versions 2.5.2 and later -<br>
 for versions 2.5.1 and earlier (2008 and before), <a href="Windows.html">refer to the old Windows Install Guide</a>.</strong></p>
 
-<ul>
-<li><a href="#installation">Installation procedure</a></li>
-<li><a href="#notes">Notes</a></li>
-<ul>
-<li><a href="#offline">Offline installation details</a></li>
-<li><a href="#largewindow">Large Windows</a></li>
-<li><a href="#themes">Windows Themes and Skins</a></li>
-<li><a href="#serialconfig">Serial port configuration</a></li>
-</ul>
-<li><a href="#debugging">Debugging</a></li>
-<ul>
-<li><a href="#logscreen">The Log Screen</a></li>
-<li><a href="#startupissues">Startup issues</a></li>
-<li><a href="#shutdownissues">Shutdown issues</a></li>
-</ul>
-<li><a href="#revert">Reverting to an earlier version</a></li>
-</ul>
+	<ul>
+	<li><a href="#installation">Installation procedure</a></li>
+	<li><a href="#notes">Notes</a></li>
+		<ul>
+		<li><a href="#offline">Offline installation details</a></li>
+		<li><a href="#largewindow">Large Windows</a></li>
+		<li><a href="#themes">Windows Themes and Skins</a></li>
+		<li><a href="#serialconfig">Serial port configuration</a></li>
+		</ul>
+	<li><a href="#debugging">Debugging</a></li>
+		<ul>
+		<li><a href="#logscreen">The Log Screen</a></li>
+		<li><a href="#startupissues">Startup issues</a></li>
+		<li><a href="#shutdownissues">Shutdown issues</a></li>
+		</ul>
+	<li><a href="#revert">Reverting to an earlier version</a></li>
+	</ul>
 
 <p>There is a <a href="WindowsSeStoppedWorking.shtml">separate Help page</a>
 for debugging the "The JAVA SE Platform binary has stopped working" error message.
@@ -171,45 +172,45 @@ for debugging the "The JAVA SE Platform binary has stopped working" error messag
 
 <p>JMRI logs information about errors to a "messages.log" file in the "systemfiles" sub-directory of the JMRI preferences directory, and to a console window. This window is generally white text on a black background, and is labelled either "Java" or "DOS". If something is going wrong, look there for more information.</p>
 
-<ol>
-<li>To view the "systemfiles" sub-directory, follow the "Preferences" link in "JMRI > Tools and Demos" from the Start menu.
-<br /><img src="images/WinDebugLog-01_StartMenuPreferences.png" height="358" width="531" alt="Preferences link in JMRI > Tools and Demos start menu"/>
-
-<li>Once the preferences folder is opened, navigate to the "systemfiles" folder.
-<br /><img src="images/WinDebugLog-02_SystemFiles.png" height="299" width="663" alt="systemfiles folder within JMRI preferences"/>
-
-<li>Finally, within the "systemfiles" folder, is "messages.log".
-<br /><img src="images/WinDebugLog-03_MessagesLog.png" height="299" width="663" alt="messages.log file within systemfiles folder"/>
-</ol>
+	<ol>
+	<li>To view the "systemfiles" sub-directory, follow the "Preferences" link in "JMRI > Tools and Demos" from the Start menu.
+	<br /><img src="images/WinDebugLog-01_StartMenuPreferences.png" height="358" width="531" alt="Preferences link in JMRI > Tools and Demos start menu"/>
+	
+	<li>Once the preferences folder is opened, navigate to the "systemfiles" folder.
+	<br /><img src="images/WinDebugLog-02_SystemFiles.png" height="299" width="663" alt="systemfiles folder within JMRI preferences"/>
+	
+	<li>Finally, within the "systemfiles" folder, is "messages.log".
+	<br /><img src="images/WinDebugLog-03_MessagesLog.png" height="299" width="663" alt="messages.log file within systemfiles folder"/>
+	</ol>
 
 <p>If asked for a copy of the error messages, you can usually get them from the messages.log file.  If not, to make a copy of the log window:</p>
 
 <h4>For JMRI 2.11.1 or later</h4>
-<ol>
-<li>From the main JMRI window, choose "Help > System Console ...".
-<br /><img src="images/Win-JMRISystemConsole.png" height="409" width="850" alt="JMRI system console"/>
-
-<li>Click the button "Copy to clipboard".
-
-<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad,
-favorite word processor, etc, position your cursor and left-click on Edit and
-then Paste, or press the "Ctrl" and "V" keys.
-</ol>
+	<ol>
+	<li>From the main JMRI window, choose "Help > System Console ...".
+	<br /><img src="images/Win-JMRISystemConsole.png" height="409" width="850" alt="JMRI system console"/>
+	
+	<li>Click the button "Copy to clipboard".
+	
+	<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad,
+	favorite word processor, etc, position your cursor and left-click on Edit and
+	then Paste, or press the "Ctrl" and "V" keys.
+	</ol>
     
 <h4>For earlier versions of JMRI</h4>
-<ol>
-<li>In the command prompt window, left-click on the JMRI icon to the left of the  words "DecoderPro" (or "PanelPro").  You will get a drop-down menu.
-
-<li>In that menu, put your cursor over "Edit" to get a sub-menu.
-
-<li>Left-click on "Select All" in that sub-menu.  All the text in the window will reverse colors with the background, and the menus will disappear.
-
-<p>Alternately, you can left click on "Mark" in that sub-menu. The menus will disappear.  Then, left-click and hold while dragging the cursor over the text to be copied.  Only the selected text will reverse colors with the background.</p>
-
-<li>Repeat Steps 1 and 2 above, then left click "Copy" on the sub-menu.  The text and window will revert to their original colors.  The text is now on XP's clipboard.
-
-<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad, favorite word processor, etc, position your cursor and left-click on Edit and then Paste, or press the "Ctrl" and "V" keys.
-</ol>
+	<ol>
+	<li>In the command prompt window, left-click on the JMRI icon to the left of the  words "DecoderPro" (or "PanelPro").  You will get a drop-down menu.
+	
+	<li>In that menu, put your cursor over "Edit" to get a sub-menu.
+	
+	<li>Left-click on "Select All" in that sub-menu.  All the text in the window will reverse colors with the background, and the menus will disappear.
+	
+	<p>Alternately, you can left click on "Mark" in that sub-menu. The menus will disappear.  Then, left-click and hold while dragging the cursor over the text to be copied.  Only the selected text will reverse colors with the background.</p>
+	
+	<li>Repeat Steps 1 and 2 above, then left click "Copy" on the sub-menu.  The text and window will revert to their original colors.  The text is now on XP's clipboard.
+	
+	<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad, favorite word processor, etc, position your cursor and left-click on Edit and then Paste, or press the "Ctrl" and "V" keys.
+	</ol>
 
 <a id="startupissues"/>
 <h3>Startup issues</h3>
@@ -217,20 +218,20 @@ then Paste, or press the "Ctrl" and "V" keys.
 
 <p>Shortcuts are modified as follows:</p>
 
-<ol>
-<li>From the Start button, navigate to the JMRI menu and right-click the DecoderPro icon
-(the PanelPro and/or SoundPro icons can be similarly modified)
-<br /><img src="images/WinDebug-01_StartMenuItemProperties.png" height="358" width="456" alt="start menu properties"/>
-
-<li>Insert the '/debug' option into the shortcut 'Target'
-<br /><img src="images/WinDebug-02_ModifyShortcutTarget.png" height="509" width="367" alt="modify shortcut target"/>
-<p>When launched, the following window will appear showing various useful information:
-<br /><img src="images/WinDebug-03_LauncherDebugWindow.png" height="295" width="426" alt="launcher debug window"/></p>
-<p>Copy the contents of this window by 'right-clicking' and then choosing 'Copy Details to Clipboard'
-<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad,
-favorite word processor, etc, position your cursor and left-click on Edit and
-then Paste, or press the "Ctrl" and "V" keys.
-</ol>
+	<ol>
+	<li>From the Start button, navigate to the JMRI menu and right-click the DecoderPro icon
+	(the PanelPro and/or SoundPro icons can be similarly modified)
+	<br /><img src="images/WinDebug-01_StartMenuItemProperties.png" height="358" width="456" alt="start menu properties"/>
+	
+	<li>Insert the '/debug' option into the shortcut 'Target'
+	<br /><img src="images/WinDebug-02_ModifyShortcutTarget.png" height="509" width="367" alt="modify shortcut target"/>
+	<p>When launched, the following window will appear showing various useful information:
+	<br /><img src="images/WinDebug-03_LauncherDebugWindow.png" height="295" width="426" alt="launcher debug window"/></p>
+	<p>Copy the contents of this window by 'right-clicking' and then choosing 'Copy Details to Clipboard'
+	<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad,
+	favorite word processor, etc, position your cursor and left-click on Edit and
+	then Paste, or press the "Ctrl" and "V" keys.
+	</ol>
 
 <p>For further information on the JMRI shortcuts, see the <a href="/help/en/html/doc/Technical/StartUpScripts.shtml#windows">page outlining the start-up procedure on Windows</a>.</p>
 
@@ -241,35 +242,35 @@ start menu shortcut used to launch JMRI.</p>
 
 <p>Shortcuts are modified as follows:</p>
 
-<ol>
-<li>From the Start button, navigate to the JMRI menu and right-click the DecoderPro icon
-(the PanelPro and/or SoundPro icons can be similarly modified)
-<br /><img src="images/WinDebug-01_StartMenuItemProperties.png" height="358" width="456" alt="start menu properties"/>
-
-<li>Insert the '/noisy' option into the shortcut 'Target'
-<br /><img src="images/WinExitDebug-02_ModifyShortcutTarget.png" height="509" width="367" alt="modify shortcut target"/>
-
-<p>When launched, the Java System Console window will appear showing various
-messages from the JMRI program:
-<br /><img src="images/WinExitDebug-03_JavaSystemConsole.png" height="338" width="669" alt="java system console window"/></p>
-
-<li>When the shutdown of JMRI appears to hang, click in the Java System Console
-window and then press 'Ctrl-Break' on the keyboard - this will print a Java
-Thread Dump showing all active threads still running in JMRI:
-<br /><img src="images/WinExitDebug-04_ConsoleThreadDump.png" height="338" width="669" alt="java thread dump"/>
-
-<li>Once the Java Thread Dump has been printed, select all the text in the
-window by clicking the top-left icon and choosing 'Edit > Select all':
-<br /><img src="images/WinExitDebug-05_ConsoleSelectAll.png" height="338" width="669" alt="java thread dump"/>
-
-<li>Once selected, copy the text to the clipboard by clicking the top-left icon
-and choosing 'Edit > Copy':
-<br /><img src="images/WinExitDebug-06_ConsoleCopyToClipboard.png" height="338" width="669" alt="java thread dump"/>
-
-<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad,
-favorite word processor, etc, position your cursor and left-click on Edit and
-then Paste, or press the "Ctrl" and "V" keys.
-</ol>
+	<ol>
+	<li>From the Start button, navigate to the JMRI menu and right-click the DecoderPro icon
+	(the PanelPro and/or SoundPro icons can be similarly modified)
+	<br /><img src="images/WinDebug-01_StartMenuItemProperties.png" height="358" width="456" alt="start menu properties"/>
+	
+	<li>Insert the '/noisy' option into the shortcut 'Target'
+	<br /><img src="images/WinExitDebug-02_ModifyShortcutTarget.png" height="509" width="367" alt="modify shortcut target"/>
+	
+	<p>When launched, the Java System Console window will appear showing various
+	messages from the JMRI program:
+	<br /><img src="images/WinExitDebug-03_JavaSystemConsole.png" height="338" width="669" alt="java system console window"/></p>
+	
+	<li>When the shutdown of JMRI appears to hang, click in the Java System Console
+	window and then press 'Ctrl-Break' on the keyboard - this will print a Java
+	Thread Dump showing all active threads still running in JMRI:
+	<br /><img src="images/WinExitDebug-04_ConsoleThreadDump.png" height="338" width="669" alt="java thread dump"/>
+	
+	<li>Once the Java Thread Dump has been printed, select all the text in the
+	window by clicking the top-left icon and choosing 'Edit > Select all':
+	<br /><img src="images/WinExitDebug-05_ConsoleSelectAll.png" height="338" width="669" alt="java thread dump"/>
+	
+	<li>Once selected, copy the text to the clipboard by clicking the top-left icon
+	and choosing 'Edit > Copy':
+	<br /><img src="images/WinExitDebug-06_ConsoleCopyToClipboard.png" height="338" width="669" alt="java thread dump"/>
+	
+	<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad,
+	favorite word processor, etc, position your cursor and left-click on Edit and
+	then Paste, or press the "Ctrl" and "V" keys.
+	</ol>
 
 <p>For further information on the JMRI shortcuts, see the <a href="/help/en/html/doc/Technical/StartUpScripts.shtml#windows">page outlining the start-up procedure on Windows</a>.</p>
 
@@ -294,21 +295,20 @@ find this is to follow the "Preferences" link in "JMRI > Tools and Demos" from t
 <br /><img src="images/WinDebugLog-01_StartMenuPreferences.png" height="358" width="531" alt="Preferences link in JMRI > Tools and Demos start menu"/>
 <br />Once opened, navigate up one level to your user-profile folder.
 <p>Depending on the version of Windows, this will typically be one of:</p>
-<dl>
-<dt>Windows 98 - ME
-<dd>C:\WINDOWS
-<dt>Windows 2000 - XP
-<dd>C:\Documents and Settings\[username]
-<dt>Windows Vista - 7
-<dd>C:\Users\[username]
-</dl>
+	<dl>
+	<dt>Windows 98 - ME
+	<dd>C:\WINDOWS
+	<dt>Windows 2000 - XP
+	<dd>C:\Documents and Settings\[username]
+	<dt>Windows Vista - 7
+	<dd>C:\Users\[username]
+	</dl>
 Within this folder, look for and delete the folder "JMRI" then rename
 folder "JMRI_backup" to "JMRI".
 <p>Restart JMRI and you should be back to where you were before installing the new version.</p>
 
 <!--#include virtual="/Footer" -->
-</div><!-- closes #mainContent-->
-</div> <!-- closes #mBody-->
-
-</body>
+   </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+ </body>
 </html>
