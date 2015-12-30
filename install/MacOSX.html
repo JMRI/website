@@ -54,11 +54,12 @@
       JMRI Install Guide: Mac OS X
       </h1>
 
+      <h2>Note:</h2>
       <p>These directions are for installing the latest 
        3.x/4.x releases of JMRI on OS X.</p>
 
       <p>If you need to install an earlier release (such as 2.8, or
-      perhaps even earlier), please see these <a
+      even earlier), please see these <a
        href="MacOSXRetro.html">Mac install instructions for old JMRI
       releases</a>.</p>
 
@@ -67,67 +68,73 @@
       <h2>Installing JMRI on your Mac OS X computer</h2>
 
       <ol>
-       <li>Determine if your system software is up to date</li>
+       <li>Determine if your system software is up to date.
+       Find the current Mac OS X version number by choosing "About this Mac" from the Apple menu.</li>
+       
+        <h3>JMRI System Requirements</h3>
+        <p>Using JMRI requires a combination of hardware (in this case a Mac), Java software and a JMRI download for a specific version.
+        <p>JMRI&reg; 4.2 requires Java 1.8.<br>
+        Version 3.10.1 requires Java 1.6 or later.<br>
+        Version 2.14.1 requires Java 1.6 (or 1.5 without drag &amp; drop)<br>
+        version 2.12 requires Java 1.5 or later.
+        </p>
 
-            <p>Mac OS X version 10.5.8 "Leopard" can run the current test 
-            and production releases.  If you have 10.5 or later, just go to the 
-            next step. 
-            <p>Mac OS X version 10.4 "Tiger" through 10.5.7 
-            can only run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a>,
-            because that's the last JMRI version that can run on Java 1.5, which is the most
-            recent Java version that's available on those Mac OS X versions.
-            If you have "Tiger", you can download and install JMRI 2.14.1 
-            via its <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">release note</a>.
-            <p>If you're still running Mac OS X 10.3 "Panther", you can download and use
-            <a href="http://jmri.sourceforge.net/releasenotes/jmri2.2.shtml">JMRI version 2.2</a>.
+        <p>Mac OS X version 10.8.3 "Mountain Lion"/10.9 "Maverick/10.10 "Yosemite"/10.11 "Maverick" can run the <a href="http://jmri.sourceforge.net/download/index.shtml">current JMRI test and production releases</a> with Java 8.
+        If your computer runs one of these OS versions, just go to the next step.<br>
+        Mac OS X version 10.7.3 "Lion" can run <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7<br>
+        Mac OS X version 10.5.8 "Leopard" can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6<br>
+        Mac OS X version 10.4 "Tiger" through 10.5.7
+        can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a>,
+        because that's the last JMRI version that can run on Java 1.5, the most
+        recent Java version that's available from Apple for those Mac OS X versions.
 
-            <p>The install will take up about 120MB of disk space, mostly for the help pages.
+        <p>The JMRI install will take up about 120MB of disk space, mostly for the Help pages.
         
-        <li>Determine if you have the needed hardware support.
+        <li>Determine if you have the needed hardware drivers.
                 
-            <p>No Macintosh that runs Mac OS X has built-in serial
-            ports, so if your layout hardware needs a serial connection,
-            you'll have to use a USB to serial adapter.</p>
+        <p>No Macintosh that runs Mac OS X has built-in serial
+        ports, so if your layout hardware needs a serial connection,
+        you'll have to use a USB to serial adapter.</p>
 
-            <p>No matter if you have a USB to serial adapter, or a device with
-            USB directly, you will need Mac OS X drivers for the hardware you're using.
-            Most hardware won't need a separate driver;
-            they're already present in Mac OS X.  In some cases you will need a driver, though, 
-            so check the manufacturer's web site to make sure.</p>
+        <p>No matter if you have a USB to serial adapter, or a device with
+        USB directly, you will need Mac OS X drivers (system software) for the hardware you're using.
+        Most hardware won't need a separate driver;
+        they're already present in Mac OS X.  In some cases you will need to install a special driver, though, 
+        so check the manufacturer's web site to make sure.</p>
+      
+        <p><em>Note: Mac OS X 10.11 El Capitan generally requires
+        signed drivers.  If you installed drivers for a previous version,
+        particularly drivers that don't say they support Mac OS X 10.10 Yosemite,
+        those older drivers may not work with 10.11 El Capitan.  Go to the 
+        web site for your USB adapter, download the newest driver and 
+        install it before you update to El Capitan, or right after updating before
+        trying to run JMRI.</em>
+        
+        <p>
+        We test using a Keyspan PDA Adapter; those drivers are available at
+        <a href="http://www.keyspan.com/downloads/">
+        http://www.keyspan.com/downloads/</a>. Some device drivers will list
+        each port under several names, e.g. starting with "/dev/tty" or
+        "/dev/cu", for example "/dev/tty.KeyUSA19181.1". In that case, you
+        must select the one that starts with "cu", e.g.
+        "/dev/cu.KeyUSA19181.1".</p>
           
-            <p><em>Note: Mac OS X 10.11 El Capitan generally requires
-            signed drivers.  If you installed drivers for a previous version,
-            particularly drivers that don't say they support Mac OS X 10.10 Yosemite,
-            those older drivers may not work with 10.11 El Capitan.  Go to the 
-            web site for your USB adapter, download the newest driver and 
-            install it before you update to El Capitan, or right after updating before
-            trying to run JMRI.</em>
-            
-            <p>
-            We test using a Keyspan PDA Adapter; those drivers are available at
-            <a href="http://www.keyspan.com/downloads/">
-            http://www.keyspan.com/downloads/</a>. Some device drivers will list
-            each port under several names, e.g. starting with "/dev/tty" or
-            "/dev/cu", for example "/dev/tty.KeyUSA19181.1". In that case, you
-            must select the one that starts with "cu", e.g.
-            "/dev/cu.KeyUSA19181.1".</p>
-              
-            <p>There's a Mac OS X driver for USB-serial adapters
-            based on the Prolific PL2303 chipset 
-            <a href="http://osx-pl2303.sourceforge.net/">available here</a>.
-            If you can't access your USB dongle and it seems to use that
-            chipset (you can check in the USB tab of System Profiler), 
-            this driver will make it available as /dev/cu.PL2303-xxx.</p>
-             
-            <p>Note that because of baud rate limitations in Mac OS X
-            itself, it is <b>not</b> possible to use a Digitrax MS100
-            currently.  Use a <a
-             href="http://rrcirkits.com/">RR-CirKits
-            LocoBuffer-USB</a> or <a
-             href="http://www.digitrax.com/prd_compint_pr3.php">Digitrax
-            PR3</a> instead.  Please see our page on <a
-             href="/help/en/html/hardware/USBtoSerial.shtml">USB
-            adapters</a> for more information.</p>
+        <p>There's a Mac OS X driver for USB-serial adapters
+        based on the Prolific PL2303 chipset 
+        <a href="http://osx-pl2303.sourceforge.net/">available here</a>.
+        If you can't access your USB dongle and it seems to use that
+        chipset (you can check in the USB tab of System Profiler), 
+        this driver will make it available as /dev/cu.PL2303-xxx.</p>
+         
+        <p>Note that because of baud rate limitations in Mac OS X
+        itself, it is <b>not</b> possible to use a Digitrax MS100
+        currently.  Use a <a
+         href="http://rrcirkits.com/">RR-CirKits
+        LocoBuffer-USB</a> or <a
+         href="http://www.digitrax.com/prd_compint_pr3.php">Digitrax
+        PR3</a> instead.  Please see our page on <a
+         href="/help/en/html/hardware/USBtoSerial.shtml">USB
+        adapters</a> for more information.</p>
 
        <li>Get the JMRI software...</li>
 
@@ -143,7 +150,7 @@
         "test" version appears every month or so.  You may find one of
         these has features that you really want.  These are announced
         in the "jmriusers" Yahoo discussion group at <a
-         href="http://groups.yahoo.com/group/jmriusers/">http://groups.yahoo.com/group/jmriusers/</a>.
+         href="https://groups.yahoo.com/neo/groups/jmriusers/info">https://groups.yahoo.com/neo/groups/jmriusers/info</a>.
         </p>
 
        <li>...and install it.</li>
@@ -172,10 +179,11 @@
                 to install Java, or takes you to the Java
                 install web site, just follow those instructions.
             <li>If that doesn't work, and you have a recent
-                MacOS X version, you can 
-                <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">download the most-recent Java JRE installer from Oracle</a>.
-                After that download is complete, follow Oracles's instructions to run the installer.
-            <li>If your Mac OS X version is so old that Oracle does not provide an installer, you can try to
+                MacOS X version, you can get the latest Java JRE installer as a free download at: 
+                <a href="http://java.com/download/" target="_blank">java.com/download</a>.
+                After that download is complete, follow the included instructions to run the Java installer.<br>
+                More on <a href="https://www.java.com/en/download/help/sysreq.xml">Java versions and hardware requirements</a>.<br>
+             <li>If your Mac OS X version is so old that Oracle does not provide an installer, you can try to
                 you can <a href="http://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US">download an installer from Apple</a>.
                 In this case, you may not be able to run the most recent JMRI versions.  Please go back to the top of the page
                 for further information about older Mac OS X versions.
@@ -262,9 +270,9 @@ We handle this by making available some alternative libraries, at least
 one of which is going to make JMRI work.
 <p>
 If you've got Mac OS X 10.4 and are having a problem either getting JMRI
-to start, or seeing the attached layout hardware from within the program, 
+to start, or to see the attached layout hardware from within the program, 
 please see this 
-<a href="https://groups.yahoo.com/neo/groups/jmriusers/message/61242">description of how to debug this</a>.
+<a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/messages/61242">description of how to debug this</a>.
 
 <h2>Customizing your JMRI Installation</h2>
 
