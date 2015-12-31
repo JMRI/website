@@ -69,7 +69,7 @@ from
 <h3>New warnings for this version:</h3>
 
 <p>
-    The internals of the Layout Editor have been reworked a bit.  Please keep an 
+    The internals of the Layout Editor have been reworked a bit.  Please keep an
     eye out for any changed behaviors.
 </p>
 
@@ -394,8 +394,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>Update of JMRI website navigation up to current tools and system support, Table of Contents grouped by activity, styling of older Help pages and broken links &amp; icons fixed, Hardware help pages share a common scheme (some items were moved up/down), Manuals page focussed on supported versions, OS X install page updated (Egbert Broerse)</li>
             <li>Sonny Hansen improved the Danish translation with help from Matt Harris.</li>
-            <li>Randall Wood updated the Jetty server (web server) to version 9.3.6 to
-                improve reliability and connectivity.</li>
+            <li>A script to disable or enable IPv4 and IPv6 support in zero configuration networking, named <code>zeroconf-preferences.js</code>, can be run from the <code>jython</code> directory in the JMIR distribution. This may help some users having issues with the iPhone WiThrottle app. (Randall Wood)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
