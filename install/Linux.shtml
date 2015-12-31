@@ -18,39 +18,12 @@
 </head>
 
 <body>
-<div id="container">
-  <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
-<!-- Header -->
-    <div id="header">
-<!-- Logo -->
-	<a href="/" title="Return to home page" accesskey="1">
-	    <img src="/images/logo-jmri.gif" width="160" height="135" alt="JMRI Logo"> </a>
-<!-- /Logo -->
+<!--#include virtual="/Header" -->
 
-	<ul id="mainNav"> <!-- Top tool bar -->
-	   <li><a href="/download/index.shtml"  title="Get the latest software">Download</a></li>
-	   <li><a href="/help/en/html/apps/index.shtml"      title="Learn about JMRI applications">Applications</a></li>
-	   <li><a href="/help/en/html/hardware/index.shtml"  title="What hardware does JMRI support">Hardware</a></li>
-	   <li><a href="/help/en/webtoc.shtml"   title="JMRI Help Screens">Help</a></li>
-	   <li><a href="/help/en/manual/index.shtml"   title="DecoderPro Manual">Manual</a></li>
-	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
-	   <li><a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">Acknowledgements</a></li>
-	</ul>
-
-	<div id="searchform"> <!--  Search Form -->
-	  <form id="search" method="get" action="http://www.google.com/search">
-	     <label for="q" title="Search JMRI.org">search JMRI: </label>
-	    <input type="hidden" name="sitesearch" value="jmri.org">
-	    <input type="text" id="q" name="q" accesskey="s" size="30">
-	    <input type="submit" id="submit" value="go">
-	  </form>
-       </div> <!--  End #searchform -->
-    </div> <!-- closes #header-->
-<!-- /Header -->
-
-  <div class="nomenu" id="mBody">
-    <div id="mainContent">
-      <h1>JMRI Install Guide: Linux</h1>
+<!--#include virtual="/download/Sidebar" -->
+  <div id="mainContent">
+  
+  <h1>JMRI Install Guide: Linux</h1>
 
       This page describes general aspects of installing JMRI on Linux.
       
@@ -164,7 +137,8 @@
 				    appear every couple of weeks.  You may find one of these has features
 				    that you really want.  These are announced in the "jmriusers" Yahoo
 				    discussion group at
-				    <a href="http://groups.yahoo.com/group/jmriusers/">http://groups.yahoo.com/group/jmriusers/</a>.
+				    <a
+				     href="https://groups.yahoo.com/neo/groups/jmriusers/info">https://groups.yahoo.com/neo/groups/jmriusers/info</a>.
 				    </p>
 				
 				<a id="update">
@@ -191,28 +165,8 @@
 				
 				</ol>
 
-<!-- Footer -->
-    <hr class="hide">
-    <div id="footer">
-	<ul id="bn">
-	<li>Contact us via the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> mailing list</li>
-	</ul>
-
-	<p>Thanks and congratulations to
-	   <a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
-	   	all who contributed</a>!</p>
-
-	<p>Copyright &copy; 1997 - 2015 JMRI Community. 
-	<p>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, TrainPro&trade;, DispatcherPro&trade;, OperationsPro&trade; and associated logos are our trademarks.
-	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
-    
-       <br>Site hosted by:<br>
-<a href="http://sourceforge.net/projects/jmri/"><img src="https://sourceforge.net/sflogo.php?group_id=26788&type=12" width="120" height="30" border="0" alt="Get JMRI Model Railroad Interface at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
-    </div>
-<!-- /Footer -->
-
+<!--#include virtual="/Footer" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>
