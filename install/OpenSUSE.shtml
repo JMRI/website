@@ -24,9 +24,9 @@
 
 <div id="mainContent">
 
-<h2> 
+<h1> 
 JMRI Install Guide: OpenSure Linux
-</h2>
+</h1>
 
 It's recommended that you install the Java SDK (Software Development Kit), 
 which includes the Java compiler, etc, rather than just the 
@@ -34,11 +34,11 @@ JRE (Java Runtime Environment).  Using the SDK seems to prevent various
 obscure problems.
 
 <p>
-      The next part of this page was provided by Rob Plevier,
-      and describes his successful experience installing
-      JMRI on OpenSUSE Linux.  Most of the effort when into 
-      getting the Java communications library installed and 
-      working.
+The next part of this page was provided by Rob Plevier,
+and describes his successful experience installing
+JMRI on OpenSUSE Linux.  Most of the effort when into 
+getting the Java communications library installed and 
+working.
       
 <pre>
 First I deleted all references to rxtx from my java directory as
@@ -64,15 +64,15 @@ Then I re-installed rxtx-2.0-7pre2 as follows
 # cd rxtx-2.0-7pre2
 # ./configure
         
-        during configure it asks you whether to run the script to place
-        comm.jar in the appropriate directory. On a side note, when I
-        specified the comm.jar that you sent me (the 28034 byte one) it
-        told me it was a Windows version of comm.jar so I grabbed the
-        one that I downloaded the second time which is 29411 bytes which
-        I got from javacomm20-x86. I thought Macs ran a flavour of
-        linux? Oh well.
-        This is the file I used:
-        -rw-r--r-- 1 root root  29411 2007-05-27 10:40 comm.jar
+    during configure it asks you whether to run the script to place
+    comm.jar in the appropriate directory. On a side note, when I
+    specified the comm.jar that you sent me (the 28034 byte one) it
+    told me it was a Windows version of comm.jar so I grabbed the
+    one that I downloaded the second time which is 29411 bytes which
+    I got from javacomm20-x86. I thought Macs ran a flavor of
+    linux? Oh well.
+    This is the file I used:
+    -rw-r--r-- 1 root root  29411 2007-05-27 10:40 comm.jar
 
 # make
 # make install
@@ -119,7 +119,7 @@ the sun site which was version 3.
 The basic problem here is that you will need to add yourself to the
 appropriate groups both to open the serial devices (/dev/ttyS*) and to
 be able to create files in the lock file directory.  This is another
-area where the RedHat-ish distribtions (and Suse is in that camp) differ
+area where the RedHat-ish distributions (and Suse is in that camp) differ
 from the Debian/Ubuntu distributions.
 
 On your Suse system, do the following command:

@@ -18,43 +18,13 @@
 </head>
 
 <body>
-<div id="container">
-  <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
-<!-- Header -->
-    <div id="header">
-<!-- Logo -->
-	<a href="/" title="Return to home page" accesskey="1">
-	    <img src="/images/logo-jmri.gif" width="160" height="135" alt="JMRI Logo"> </a>
-<!-- /Logo -->
+<!--#include virtual="/Header" -->
 
-	<ul id="mainNav"> <!-- Top tool bar -->
-	   <li><a href="/download/index.shtml"  title="Get the latest software">Download</a></li>
-	   <li><a href="/help/en/html/apps/index.shtml"      title="Learn about JMRI applications">Applications</a></li>
-	   <li><a href="/help/en/html/hardware/index.shtml"  title="What hardware does JMRI support">Hardware</a></li>
-	   <li><a href="/help/en/webtoc.shtml"   title="JMRI Help Screens">Help</a></li>
-	   <li><a href="/help/en/manual/index.shtml"   title="DecoderPro Manual">Manual</a></li>
-	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
-	   <li><a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">Acknowledgements</a></li>
-	</ul>
+<!--#include virtual="/download/Sidebar" -->
+<div id="mainContent">
+  <h1>JMRI Install Guide: Mac OS X</h1>
 
-	<div id="searchform"> <!--  Search Form -->
-	  <form id="search" method="get" action="http://www.google.com/search">
-	     <label for="q" title="Search JMRI.org">search JMRI: </label>
-	    <input type="hidden" name="sitesearch" value="jmri.org">
-	    <input type="text" id="q" name="q" accesskey="s" size="30">
-	    <input type="submit" id="submit" value="go">
-	  </form>
-       </div> <!--  End #searchform -->
-    </div> <!-- closes #header-->
-<!-- /Header -->
-
-  <div class="nomenu" id="mBody">
-    <div id="mainContent">
-      <h1> 
-      JMRI Install Guide: Mac OS X
-      </h1>
-
-      <h2>Note:</h2>
+  <h2>Note:</h2>
       <p>These directions are for installing the latest 
        3.x/4.x releases of JMRI on OS X.</p>
 
@@ -290,51 +260,29 @@ their preferences separately, so they can be configured independently.
 On a Mac, the different preferences files take their name from the name of the application icon that's invoked.
 This lets you create multiple copies of e.g. DecoderPro that each use their own, separate preferences files.
 Let's say you want one called "CoolNewOne".  
-<ul>
-<li>Duplicate the DecoderPro application icon (ctrl-click to get a popup menu and say duplicate, 
-or select the icon and choose duplicate from the File menu in Finder).
-<li>Change the duplicate's name.
-(It's probably better to use a simple one-word name like "CoolNewOne")
-<li>Double click your new icon, and off you go.  
-</ul>
+	<ul>
+	<li>Duplicate the DecoderPro application icon (ctrl-click to get a popup menu and say duplicate, 
+	or select the icon and choose duplicate from the File menu in Finder).
+	<li>Change the duplicate's name.
+	(It's probably better to use a simple one-word name like "CoolNewOne")
+	<li>Double click your new icon, and off you go.  
+	</ul>
 
 It won't work to drag one of the JMRI application icons out of the 
 JMRI folder, since they need the other files that can be found there.
 If you want an icon in some other place, like on your desktop:
 
-<ul>
-<li>Go to the JMRI folder and select the application icon.
-<li>From the file menu, select "Make Alias"
-<li>Drag that new alias icon to it's new location, and optionally rename it.
-</ul>
+	<ul>
+	<li>Go to the JMRI folder and select the application icon.
+	<li>From the file menu, select "Make Alias"
+	<li>Drag that new alias icon to it's new location, and optionally rename it.
+	</ul>
 
 Note that renaming the alias alone does not cause the application icon to be renamed, so the alias will be using the
 same preferences as the original.
 
-      <hr class="hide">
-<!-- Footer -->
-
-    <div id="footer">
-	<ul id="bn">
-	<li>Contact us via the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> mailing list</li>
-	</ul>
-
-	<p>Thanks and congratulations to
-	   <a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
-	   	all who contributed</a>!</p>
-
-	<p>Copyright &copy; 1997 - 2015 JMRI Community. 
-	<p>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, TrainPro&trade;, DispatcherPro&trade;, OperationsPro&trade; and associated logos are our trademarks.
-	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
-    
-       <br>Site hosted by:<br>
-<a href="http://sourceforge.net/projects/jmri/"><img src="https://sourceforge.net/sflogo.php?group_id=26788&type=12" width="120" height="30" border="0" alt="Get JMRI Model Railroad Interface at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
-    </div>
-<!-- /Footer -->
-
+<!--#include virtual="/Footer" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>
-
