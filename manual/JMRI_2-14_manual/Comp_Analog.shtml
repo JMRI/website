@@ -20,11 +20,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Comprehensive Programmer</h1>
-<h1>Analog Controls Pane</h1>
+<h2>Analog Controls Pane</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_LightFX.shtml"> Previous | </a>
   <a href="Comp_Consist.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
@@ -33,14 +33,17 @@
 <hr>
 <p>As  discussed in the <a href="Comp_Basic.shtml"><strong>Expanded Basic Pane</strong></a>, some decoders allow operation on Analog  or Conventional DC layouts.&nbsp;  At the discretion of the manufacturer, some of the non-motor responses  may be changeable by setting CV&rsquo;s in the decoder.&nbsp; This pane is where you would set these  values.&nbsp; Typical would be whether any of  the various functions (such as lights and bell) would be on or off when in DC  mode. Consult your decoders manual for options available
 <p>Some are very complex and others are very simple, such as alternate analog or DCC only.
-<h1><img src="images/AnalogModeFunctions.png" width="932" height="424" alt="analog options"></h1>
+<p><img src="images/AnalogModeFunctions.png" width="932" height="424" alt="analog options">
 <p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_SoundFX.shtml"></a><a href="Comp_LightFX.shtml">Previous | </a> <a href="Comp_Consist.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a> </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

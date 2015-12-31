@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_ImportCarsFile.shtml 18257 2011-08-22 08:50:56Z dat7719 $ -->
 <title>Comprehensive Programmer - Advanced Features Pane</title>
 
 <!-- Style -->
@@ -20,10 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Importing Cars from a File</h1>
-<div align=right>
+<h2>Importing Cars from a File</h2>
+
+<div align="right">
   <p><a href="Ops_Cars.shtml">Back </a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -48,11 +48,14 @@ that can be found at the bottom right  of the <strong>Edit Car</strong> window. 
 <p>You need to be very careful with spaces when importing a comma  delimitated file. The program will include leading and trailing spaces  if they exist between the commas.</p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Cars.shtml">Back </a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

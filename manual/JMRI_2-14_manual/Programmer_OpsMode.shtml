@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
-<!-- $Id: Programmer_OpsMode.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
 <title>Using DecoderPro</title>
 
 <!-- Style -->
@@ -20,17 +19,15 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<div align="center"><a NAME="Top"></a>
-  <img SRC="images/Logo.gif" ALT="JMRI DecoderPro Logo" BORDER=10 height=117 width=163 vspace="15">
+<a name="Top"></a>
+  <img src="images/Logo.gif" ALT="JMRI DecoderPro Logo" height="117" width="163" vspace="15">
   
-</div>
 <h1>DecoderPro&reg; Programming Modes</h1>
-<h1>Ops Mode Programming</h1>
+<h2>Ops Mode Programming</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="index.shtml">Back to Index</a></p>
 </div>
-
 
 <hr>
 <p><b>Operations Mode (Main Track) Programmer</b> - 
@@ -50,10 +47,14 @@ Program  on the Main writes are often called a &quot;blind write&quot; because t
 The decoder  is first addressed by the Command Station, then the CV is addressed and then  the data that is to be written into that CV of that decoder is sent. An  exception is if address zero is used,(or you forget to enter an address when  you start). &nbsp;Then <strong>ALL</strong> decoders  on the main will write that data into the appropriate CV which usually is an &ldquo;unintended  consequence&rdquo;.</blockquote>
 <p>Some command stations will only  &quot;broadcast&quot; programming commands, which can mean every locomotive on  the layout gets the same programming! If in doubt, check your documentation. </p>
 <p>In this window you  select the locomotive in which you wish to change CV values, and what  programmer you want to use.&nbsp; Once they are selected you click <strong>Open Programmer</strong> button just as you would do in the <strong>Service  Mode programmer</strong>.</p>
-<div align=right>
+
+<div align="right">
   <p><a href="index.shtml#Basic Programmer">Back to Index</a> </p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

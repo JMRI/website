@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_Locations.shtml 18278 2011-08-23 19:50:23Z dat7719 $ -->
 <title>Operations-Locations</title>
 
 <!-- Style -->
@@ -20,12 +19,12 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Operations Locations Window</h1>
+<h2>Operations Locations Window</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Settings.shtml">Previous </a> | <a href="Ops_Cars.shtml">Next</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -176,11 +175,14 @@ to save your work. The program will create a  file (OperationsLocationRoster.xml
 </p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Settings.shtml">Previous </a> | <a href="Ops_Cars.shtml">Next</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

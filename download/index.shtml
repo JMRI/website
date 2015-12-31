@@ -1,15 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id: index.html,v 1.143 2011-07-11 02:46:03 jacobsen Exp $ -->
 <html lang="en">
 
 <head>
- <TITLE>JMRI: Downloads</TITLE>
-    <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <META content="John Plocher" name=Author>
-    <META name="keywords" content="java model railroad JMRI download binaries binary code jar install">
+ <title>JMRI: Downloads</title>
+    <meta content="John Plocher" name="Author">
+    <meta name="keywords" content="java model railroad JMRI download binaries binary code jar install">
 
 <!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -25,38 +23,37 @@
 
 <!--#include virtual="Sidebar" -->
 
-
  <hr class="hide"> 
  <div id="mainContent">
     <div id="teaser">
 	<h2>Latest News</h2>
 	<dl>
-	    <dt>Test version 4.1.6 released</dt>
+	    <dt>Test version 4.3.1 released</dt>
 	    <dd>
-	    <p>Test version 4.1.6 was made available on December 12, 2015.
+	    <p>Test version 4.3.1 was made available on December 31, 2015.
 
-        <p>JMRI 4.1.6 is the next test release in a new series, containing the latest
+        <p>JMRI 4.3.1 is the first test release in a new series, containing the latest
         and greatest JMRI updates. 
         <p>
-        The series is working toward the next JMRI production version after JMRI 4.0, probably at the end of 2015.
+        The series is working toward the next JMRI production version, probably in the middle of 2016.
         <p>
         For more
 	    information, including the links to download a copy,
 	    please see the
-	    <A HREF="../releasenotes/jmri4.1.6.shtml">release note</a>.
+	    <a href="../releasenotes/jmri4.3.1.shtml">release note</a>.
 	  
-	    <a href="#prod-rel">Version 4.2</a> is the current "production" version, recommended
+	    <a href="#prod-rel">Version 4.2.1</a> is the current "production" version, recommended
 	    for first-time users. 
 
-		<dt>Production version 4.2 released</dt>
+		<dt>Production version 4.2.1 released</dt>
 	    <dd>
-	    <p>On December 25, 2015 production version 4.2 was made available.</p>
+	    <p>On December 31, 2015 production version 4.2.1 was made available.</p>
 	    
 	    <p>
-	    Version 4.2 is the current "production" version, recommended
+	    Version 4.2.1 is the current "production" version, recommended
 	    for first-time users.
 	    Please see the 
-	    <A HREF="#prod-rel">next section</A> for download and install
+	    <a href="#prod-rel">next section</A> for download and install
 	    information. 
 	    
 		<dt>Production version 3.10.1 released</dt>
@@ -66,7 +63,7 @@
 	    <p>
 	    Version 3.10.1 is recommended for JMRI users with computers that can only
 	    run Java 1.6. Please see the 
-	    <A HREF="../releasenotes/jmri3.10.1.shtml">release note</A> for download and install
+	    <a href="../releasenotes/jmri3.10.1.shtml">release note</A> for download and install
 	    information. 
  
 		<dt>Production version 2.14.1 released</dt>
@@ -76,15 +73,15 @@
 	    <p>
 	    Version 2.14.1 is recommended for JMRI users with computers that can only
 	    run Java 1.5. Please see the 
-	    <A HREF="../releasenotes/jmri2.14.1.shtml">release note</A> for download and install
+	    <a href="../releasenotes/jmri2.14.1.shtml">release note</A> for download and install
 	    information. 
  
 	</dl>
     </div>
 
   <div class="list">
-    <A ID="prod-rel"/>
-    <h2>JMRI 4.2 - Production release</h2>
+    <a id="prod-rel"/>
+    <h2>JMRI 4.2.1 - Production release</h2>
     <dl>
     <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
     <dd>
@@ -93,43 +90,42 @@
 	and layout hardware. They will show you how to install the things
 	that are needed before the program will run.</p>
 
-    <P>Installation guides:
-	<A href="../install/WindowsNew.shtml">Windows</a>,
-	<A href="../install/MacOSX.html">Mac OS X</a>,
-	<A href="../install/Linux.html">Linux</a>
+    <p>Installation guides:
+	<a href="../install/WindowsNew.shtml">Windows</a>,
+	<a href="../install/MacOSX.html">Mac OS X</a>,
+	<a href="../install/Linux.html">Linux</a>
 
-    <P>See also the page of 
+    <p>See also the page of 
         <a href="/help/en/html/hardware/index.shtml">layout connections</a>.
 
 	<p>If you've previously installed a working version of the program, you
 	only need to download and install one of the files
 	listed here.</p>
 
+	<a id="prod-download"/><p class="dl">Download: 
+	<ul>
+        <li>Mac OS X: <a
+            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download</a><br>sha256: 56eb8403292237b5f5f63fb6fa4f0462d253fea0a752c12c68072418f8f96a8b</li>
 
-	<A ID="prod-download"/><p class="dl">Download: 
-	<UL>
-        <li>Mac OS X: <A
-            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.dmg/download</a><br>sha256: 7503308fcf8c17dc62b345016c439f986d62341cc5feb8e33e53b64414ca0358</li>
+        <li>Windows: <a
+            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.exe/download</a><br>sha256: 73ffe6af404463d4d10122fff5ccb719db6daf336331b23e6ad55a890267b49a</li>
 
-        <li>Windows: <A
-            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.exe/download</a><br>sha256: 43baa7f2dea96924595882f778034f6ef86c99f74a16a766fe271d2295b6a316</li>
-
-        <li>Linux: <A
-            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.tgz/download</a><br>sha256: 76cb4293ab9016f037ddfb67e04918af41eae3e967b6a22b8921d42add21aac8</li>
-      </UL>
+        <li>Linux: <a
+            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.tgz/download</a><br>sha256: 5b4c7024c3767ac1e5bc659b14d9e415fc13a1937703d861757a2a3ed055547d</li>
+      </ul>
       </p>
 
     <strong>Notes:</strong><br />
     <p>For more information on the release contents, please see the
-    <a href="../releasenotes/jmri4.2.shtml">release note</a>.
+    <a href="../releasenotes/jmri4.2.1.shtml">release note</a>.
     </p>
     <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
-    <P>
+    <p>
     If you're looking to download Rodney Black's 
-    <A HREF="http://home.comcast.net/~kb0oys/">CATS</a>
+    <a href="http://home.comcast.net/~kb0oys/">CATS</a>
     application, see the 
-    <A HREF="http://home.comcast.net/~kb0oys/">CATS download page</a>.
-    </P>
+    <a href="http://home.comcast.net/~kb0oys/">CATS download page</a>.
+    </p>
     
 	<div style="clear: both"></div>
     </dd>
@@ -139,17 +135,16 @@
     <p>As the program develops, we also produce test versions. You may
 	    want to try these, as new features will show up in them first. They
 	    are announced in the
-	    <A HREF="http://groups.yahoo.com/group/jmriusers/">JMRI users email group</A>.</p>
+	    <a href="http://groups.yahoo.com/group/jmriusers/">JMRI users email group</A>.</p>
     <p>
-        The most current test release is JMRI 4.1.6.  More information on it, 
+        The most current test release is JMRI 4.3.1.  More information on it, 
         including the links to download a copy, can be found in
-        <a href="../releasenotes/jmri4.1.6.shtml">release note</a>.
+        <a href="../releasenotes/jmri4.3.1.shtml">release note</a>.
 	<p>
 	   For more information on the rough development schedule, please see the 
 	   <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">JMRI road map</a>
-	   (which is only occasionally updated).</P>
+	   (which is only occasionally updated).</p>
 </dl>
-
 
 <h2>Other Related Items</h2>
 <dl>
@@ -158,10 +153,9 @@
 <!-- 	<dt><a href="CD.html">JMRI CD</a></dt> -->
 <!-- 	<dd> -->
 <!-- 	    <p>The JMRI software suite is also available on CD -->
-<!-- 	    <A HREF="CD.html">[More]</a></p> -->
+<!-- 	    <a href="CD.html">[More]</a></p> -->
 <!-- 	</dd> -->
-	
-	
+
 	<dt class="im">
 <a href="http://java.com/java/download/index.jsp?cid=jdp74834" target="_blank">
 <img width="88" height="31" border="0" style="margin: 8px;" alt="GetJava Download Button" title="GetJava" src="http://java.com/en/img/everywhere/getjava_sm.gif?cid=jdp74834">
@@ -180,7 +174,7 @@
 	    is a JMRI-based application by Rodney Black for 
 	    controlling and operating a model railroad. There's
 	    more information on the
-	    <A HREF="http://home.comcast.net/~kb0oys/">CATS web site</a>.
+	    <a href="http://home.comcast.net/~kb0oys/">CATS web site</a>.
 	    </p>
 	    <p>CATS 2.34 (Release2037) is compatible with JMRI 3.3.1 thru 3.8.
 	    We recommend that you use <a href="../releasenotes/jmri3.8.shtml">JMRI 3.8 with it.</a>
@@ -190,15 +184,11 @@
     </dl>
     </div> <!-- closes .list -->
 
-
-
-
   <hr class="hide">
 <!--#include virtual="/Footer" -->
 
- </div> <!-- closes #mainContent-->
-</div> <!-- closes #mBody--> 
-</div> <!-- closes #container --> 
+   </div> <!-- closes #mainContent-->
+  </div> <!-- closes #mBody--> 
+ </div> <!-- closes #container --> 
 </body>
 </html>
-

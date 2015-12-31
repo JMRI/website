@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
-<!-- $Id: Main_TMCC.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<TITLE>
+<title>
 DecoderPro&reg; Main Window
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -23,9 +22,9 @@ DecoderPro&reg; Main Window
 <div id="mainContent">
 
 <h1>DecoderPro&reg; Main Window</h1>
-<h1>TMCC Menu</h1>
+<h2>TMCC Menu</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
@@ -35,12 +34,16 @@ DecoderPro&reg; Main Window
   <p>Opens the <a href="Main_Monitor_Window.shtml">Communications Monitor Window</a> and automatically displays the information that is being sent and received on the communications link between your computer and your DCC system.</p>
 </blockquote>
 <p><strong>Send Command</strong></p>
-<p>Opens the Send TMCC command prompt to send a command to the DCC system by typing in the <strong>Command</strong> text box and clicking the <strong>Send</strong> button to send the oommand.</p>
+<p>Opens the Send TMCC command prompt to send a command to the DCC system by typing in the <strong>Command</strong> text box and clicking the <strong>Send</strong> button to send the command.</p>
 <p align="center"><img src="images/Main_TMCC_Command.png" alt="TMCC Command" width="245" height="111" border="4"></p>
-<div align=right>
+
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

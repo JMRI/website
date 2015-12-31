@@ -20,9 +20,9 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Comprehensive Programmer</h1>
-<h1>Advanced Features Pane</h1>
+<h2>Advanced Features Pane</h2>
 
 <div align=right>
 <p><a href="Comp_Consist.shtml">Previous | </a>
@@ -41,17 +41,20 @@ which allows them to report their location and engine number back to the
 Loconet.
 <p>There  may be one or several of these panes, depending on how complex the decoder  programming is and the style of the person who wrote the definition file for  your particular decoder.
 
-<p>Note that the Tsunami decoder has advanced, Tsunami Lighting, Equalizer, Reverb, and ASC TAB that are unique to this deocoder and will not be discussed in this manual.
-<h1><img src="images/Comp_08_Advanced.png" width="932" height="792" alt="advanced"></h1>
-<p>
+<p>Note that the Tsunami decoder has advanced, Tsunami Lighting, Equalizer, Reverb, and ASC TAB that are unique to this decoder and will not be discussed in this manual.
+<p><img src="images/Comp_08_Advanced.png" width="932" height="792" alt="advanced">
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_SoundFX.shtml"></a>
   <a href="Comp_Consist.shtml">Previous | </a> <a href="Comp_SoundFX.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

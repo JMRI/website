@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Programmer_Start.shtml 18120 2011-08-07 11:49:22Z dat7719 $ -->
 <title>Using DecoderPro</title>
 
 <!-- Style -->
@@ -20,23 +19,20 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<div align="center"><a NAME="Top"></a>
-  <img SRC="images/Logo.gif" ALT="JMRI DecoderPro Logo" BORDER=10 height=117 width=163 vspace="15">
+<a name="Top"></a>
+  <img src="images/Logo.gif" ALT="JMRI DecoderPro Logo" BORDER=10 height=117 width=163 vspace="15">
   
-</div>
 <h1>Using DecoderPro&reg;</h1>
-<h1><a NAME="Setting Up"></a>What are the Programming
-Modes?</h1>
+<h2><a name="Setting Up"></a>What are the Programming
+Modes?</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Programmer_Setup.shtml"> Previous | </a><a href="Basic_Start.shtml">Next</a></p>
 <p><a href="index.shtml#Basic Programmer">Back to Index</a></p>
 </div>
 
-
 <hr>
 
-<h2>&nbsp;</h2>
 <p>Prior to using the programmer you  need to have completed the previous section (<a href="Start_DCC.shtml">Getting Started</a>), have your computer connected to  your command station/booster with the required interface device for your DCC  system, you are now ready to actually program a decoder that has been installed  in your locomotive.</p>
 <p><br>
   On opening DecoderPro, the main  page will be displayed: </p>
@@ -53,7 +49,7 @@ Modes?</h1>
 </p>
 <p>
   <input type="submit" name="button3" id="button3" value="Help">
-  - Accesses the help files</p>
+  - Accesses the Help files</p>
 <p>
   <input type="submit" name="button4" id="button4" value="Quit">
   - Exits the program. 
@@ -66,7 +62,7 @@ Modes?</h1>
 <p>Now let&rsquo;s  determine the type of decoder that&rsquo;s  installed in the locomotive that you would like to program. </p>
 <p>The decoder identification is entered by using the  selections in the middle of the page.&nbsp;</p>
 <p>Since we want to know what type of decoder is in the locomotive, we  can either look up what was listed when it was entered in the roster stored in this  computer, or we can ask it what it&rsquo;s manufacturer and firmware version are.
-  &nbsp;
+
 The first is method is <strong>
 <input type="button" name="button6" id="button6" value="Ident">
 ,</strong> and the other is <strong>
@@ -83,7 +79,7 @@ The first is method is <strong>
 
 <p>If you have a decoder that doesn&rsquo;t appear in the listing,  you may want to check to be sure that you are using the most up to date version  of Decoder Pro, because manufacturers are adding models almost faster than the  team can enter the new decoder definitions into the files.&nbsp; You can choose a manufacturer's version which  is as close as you can find, or if you&rsquo;re only interested in basic programming  functions, use the NMRA&copy; decoder which  is a generic file of the CV&rsquo;s contained in their standards.</p>
 
-<p>The last item on  this pane is the Programmer Format entry.&nbsp;  It is preset by your Preferences entry, but you can select other  programmers using the drop down arrow. &nbsp;For now use the <strong>Basic </strong>programmer, because  you won&rsquo;t be able to do much damage if you make mistakes.&nbsp; We&rsquo;ll get into the other programmers later  on.</p>
+<p>The last item on  this pane is the Programmer Format entry.&nbsp;  It is preset by your Preferences entry, but you can select other  programmers using the drop down arrow. &nbsp;For now use the <strong>Basic </strong>programmer, because  you won&rsquo;t be able to do much damage if you make mistakes. We&rsquo;ll get into the other programmers later  on.</p>
 <p>Once you have  selected a decoder, or Decoder Pro has done it for you, the <strong>
   <input type="button" name="button9" id="button9" value="Open Programmer">
 </strong>will become activated and you&rsquo;ll be able to move on with Service Mode  Programming.&nbsp; </p>
@@ -92,12 +88,16 @@ The first is method is <strong>
 
 <p>Now lets open the<strong><a href="Basic_Start.shtml">Basic Programmer</a></strong>, which is now completely set-up with a decoder and the Basic  programmer is selected.</p>
 
+<hr>
 
-<div align=right>
+<div align="right">
   <p><a href="Programmer_Setup.shtml">Previous | </a><a href="Basic_Start.shtml">Next</a></p>
   <p><a href="index.shtml#Basic Programmer">Back to Index</a><a href="index.shtml#Basic Programmer"></a> </p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

@@ -50,14 +50,17 @@
 <div class="nomenu" id="mBody">
 <div id="mainContent">
 
+<h1> 
+JMRI 2.5.1 and earlier Install Guide: Windows
+</h1>
 <h2>Note:</h2>
 <p>This Install Guide is suitable for JMRI versions 2.5.1 and earlier - for versions 2.5.2 and later, <a href="WindowsNew.shtml">refer to the new Install Guide</a>.</p>
-<H1> 
-JMRI 2.5.1 and earlier Install Guide: Windows
-</H1>
+
+<a id="installation"/>
+<h2>Installation Procedure</h2>
 
 <ol>
-    <li>Determine if your hardware supports Java and JMRI</li>
+  <li>Determine if your hardware supports Java and JMRI</li>
       
 	<p>We have had a report that a 100MHz Pentium is too slow to use, and
 	another that a 120MHz Pentium II is fine, so somewhere around there is
@@ -77,9 +80,9 @@ JMRI 2.5.1 and earlier Install Guide: Windows
 	<p>If
 	you don't yet have Java installed, or you have an older version,
 	you can get installers from Sun
-	by clicking this button:<BR>
+	by clicking this button:<br>
 <a href="http://java.com/java/download/index.jsp?cid=jdp74834" target="_blank">
-<img width="100" height="43" border="0" style="margin: 8px;" alt="GetJava Download Button" title="GetJava" src="http://java.com/en/img/everywhere/getjava_med.gif?cid=jdp74834">
+<img src="../images/ico-java.png" width="150" height="150" style="margin: 0px;" alt="GetJava Download Button" title="GetJava" src="http://java.com/en/img/everywhere/getjava_med.gif?cid=jdp74834">
 </a><br>	
 	or by going to <a href="http://java.com/java/download/index.jsp">http://java.com/java/download/index.jsp</a>.
 	
@@ -87,12 +90,12 @@ JMRI 2.5.1 and earlier Install Guide: Windows
 	running the JMRI installer in the next step, or it will issue an error
 	message and stop.</p>
 
-	<p> Sun offers both an "online" and an "offline" installer for
+	<p>Sun offers both an "online" and an "offline" installer for
 	the Java Runtime Engine (JRE). The online installer is about
 	1.5MB, but needs an Internet connection to complete the install.
 	The offline installer is about 20MB, but includes everything.</p>
 
-	<p> As the size of software you can download from the Internet has
+	<p>As the size of software you can download from the Internet has
 	increased, distributors have looked for ways to decrease the time
 	it takes to do this. Since a software package may include features
 	a user doen't need or want, one way to decrease the time is to
@@ -101,29 +104,29 @@ JMRI 2.5.1 and earlier Install Guide: Windows
 	what components of the package you want to install. Only those
 	components are downloaded and installed.</p>
 
-	<p> Heres's what Sun has to say about this:
-	<ul>
-	<li>Windows Installation
-
-	<p>
-	Saves download time if installing only some of the features. This 
-	install first downloads and runs a small program that prompts the user 
-	for options to download and install. The user must be connected to the 
-	Internet in order to complete this installation. Includes support for 
-	additional languages, fonts and media. This choice downloads and 
-	installs Microsoft Windows Installer 2.0 if not already installed. If 
-	you are behind an authenticated proxy server, you must use the Windows 
-	Offline Installer instead. Before making this choice, turn off any 
-	download managers, other than the Sun Download Manager, if you are using it.
-
-	<li>Windows Offline Installation
-	<p>This downloaded file includes everything required to perform a complete 
-	installation. It can be copied to a machine that is disconnected from 
-	the network and executed to perform a complete or custom install. 
-	Includes Microsoft Windows Installer 2.0 and support for additional 
-	languages, fonts and media. Use this installer if the normal Windows 
-	Installer does not work.
-	</ul>
+	<p>Heres's what Sun has to say about this:
+			<ul>
+			<li>Windows Installation
+		
+			<p>
+			Saves download time if installing only some of the features. This 
+			install first downloads and runs a small program that prompts the user 
+			for options to download and install. The user must be connected to the 
+			Internet in order to complete this installation. Includes support for 
+			additional languages, fonts and media. This choice downloads and 
+			installs Microsoft Windows Installer 2.0 if not already installed. If 
+			you are behind an authenticated proxy server, you must use the Windows 
+			Offline Installer instead. Before making this choice, turn off any 
+			download managers, other than the Sun Download Manager, if you are using it.
+		
+			<li>Windows Offline Installation
+			<p>This downloaded file includes everything required to perform a complete 
+			installation. It can be copied to a machine that is disconnected from 
+			the network and executed to perform a complete or custom install. 
+			Includes Microsoft Windows Installer 2.0 and support for additional 
+			languages, fonts and media. Use this installer if the normal Windows 
+			Installer does not work.
+			</ul>
     
     If the "java" command doesn't work after you've installed
     Java, there might be a problem with the 
@@ -153,7 +156,7 @@ JMRI 2.5.1 and earlier Install Guide: Windows
 	your Start menu and put a shortcut to the DecoderPro program on your
 	desktop.
 
-	<li> Installation is complete.</li>
+	<li>Installation is complete.</li>
 	<p>
 	You can start the programs from the JMRI group under Programs in your
 	Start menu.
@@ -166,12 +169,12 @@ JMRI 2.5.1 and earlier Install Guide: Windows
     JMRI can connect to, and gives links to 
     instruction pages. Go there next to complete your
     setup.
-
 	</ol>
+	
 <h2>Notes:</h2>
 	
-<a id="largewindow"/>
-<h4>Large Windows</h4>
+<a id="largewindow">
+<h3>Large Windows</h3></a>
 <img src="images/TaskbarOptions.png" height="228" width="202" align="right" alt="control panel"/>
 Depending on what it wants to display, JMRI can open up very large
 windows.  Generally, JMRI uses the size of the screen and 
@@ -193,13 +196,13 @@ JMRI windows can open to the full screen size if the
 Also, they can open to the full screen size if the 'Auto hide the taskbar' 
 option is selected
 
-<H4>Windows Themes and Skins</H4>
+<h3>Windows Themes and Skins</h3>
 If you're using a "skinning" utility which changes the appearance of
 programs running on your computer, you should tell it to ignore 
 the "java.exe" program.  That's how JMRI and DecoderPro will appear to
 it, and they weren't written with such "skins" in mind.
 
-<H4>Serial port configuration</H4>
+<h3>Serial port configuration</h3>
 <p>DecoderPro may encounter problems if the serial port used to
 connect to the layout shares an interrupt with another serial
 port.  
@@ -223,7 +226,7 @@ Restart JMRI and verify your connection settings.</p>
 <h2>Debugging</h2>
 Sometimes things go wrong.  The information in this section can help.
 
-<h4>The Log Screen</h4>
+<h3>The Log Screen</h3>
 
 JMRI logs information about errors to a "messages.log" file in the
 JMRI distribution directory, and to a console window. This window
@@ -235,31 +238,31 @@ If asked for a copy of the error messages, you can usually get them
 from the messages.log file.  If not, to make a copy of the 
 log window:
 
-<ol>
-<li>In the command prompt window, left-click on the JMRI icon to the
-left of the  words "DecoderPro" (or "PanelPro").  You will get a
-drop-down menu.
-
-<li>In that menu, put your cursor over "Edit" to get a sub-menu.  
-
-<li>Left-click on "Select All" in that sub-menu.  All the text in the
-window will reverse colors with the background, and the menus will
-disappear.  
-
-<p>
-Alternately, you can left click on "Mark" in that sub-menu. The
-menus will disappear.  Then, left-click and hold while dragging the
-cursor over the text to be copied.  Only the selected text will
-reverse colors with the background. 
-
-<li>Repeat Steps 1 and 2 above, then left click "Copy" on the sub-menu.
- The text and window will revert to their original colors.  The text
-is now on XP's clipboard.
-
-<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad,
-Wordpad, favorite word processor, etc, position your cursor and
-left-click on Edit and then Paste, or press the "Ctrl" and "V" keys.
-</ol>
+	<ol>
+	<li>In the command prompt window, left-click on the JMRI icon to the
+	left of the  words "DecoderPro" (or "PanelPro").  You will get a
+	drop-down menu.
+	
+	<li>In that menu, put your cursor over "Edit" to get a sub-menu.  
+	
+	<li>Left-click on "Select All" in that sub-menu.  All the text in the
+	window will reverse colors with the background, and the menus will
+	disappear.  
+	
+	<p>
+	Alternately, you can left click on "Mark" in that sub-menu. The
+	menus will disappear.  Then, left-click and hold while dragging the
+	cursor over the text to be copied.  Only the selected text will
+	reverse colors with the background. 
+	
+	<li>Repeat Steps 1 and 2 above, then left click "Copy" on the sub-menu.
+	 The text and window will revert to their original colors.  The text
+	is now on XP's clipboard.
+	
+	<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad,
+	Wordpad, favorite word processor, etc, position your cursor and
+	left-click on Edit and then Paste, or press the "Ctrl" and "V" keys.
+	</ol>
 
 <h4>Keeping The Log Window Open</h4>
 Usually the log window closes when the program ends, and
@@ -268,10 +271,10 @@ so you can see error messages that happen during shutdown, or even caused
 the shutdown.
 <p>
 To get the window to stay open:
-<ol>
-<li>Right click and select "show properties" on the program icon
-<li>Deselect "Close window on program end"
-</ol>
+	<ol>
+	<li>Right click and select "show properties" on the program icon
+	<li>Deselect "Close window on program end"
+	</ol>
 
 <!-- Footer -->
     <hr class="hide">
@@ -291,10 +294,10 @@ To get the window to stay open:
        <br>Site hosted by:<br>
 <a href="http://sourceforge.net/projects/jmri/"><img src="https://sourceforge.net/sflogo.php?group_id=26788&type=12" width="120" height="30" border="0" alt="Get JMRI Model Railroad Interface at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
     </div>
+
 <!-- /Footer -->
     </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </div> <!-- closes #container -->
 </body>
 </html>
-
