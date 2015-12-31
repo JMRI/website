@@ -68,15 +68,15 @@ from
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
 
-<p>
-    The internals of the Layout Editor have been reworked a bit.  Please keep an 
-    eye out for any changed behaviors.
-</p>
+None yet.
 
 <h3>Older warnings</h3>
 
 See the <a href="jmri4.2.shtml#warnings">JMRI 4.2 release note</a> for warnings predating the 4.3 development series.
 These may be relevant to you if you're updating from an earlier version.
+
+<p>The internals of the Layout Editor have been reworked a bit.  Please keep an 
+    eye out for any changed behaviors.</p>
 
 <p>We are now building releases, including this one, from our
     <a href="https://github.com/JMRI">GitHub repository</a>.
@@ -195,9 +195,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>LocoNet</h5>
             <ul>
-                <li>A problem that prevented use with the Digitrax PR2 has been fixed.
+                <li>
                 </li>
-                <li>Fixed filtering in the LocoNet monitor</li>
             </ul>
 
         <h5>NCE</h5>
@@ -227,7 +226,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Signals</h4>
         <h5>Signal Systems</h5>
             <ul>
-                <li>Greg McCartney provided a definition for the Norfolk and Western 1981 rulebook</li>
+                <li></li>
             </ul>
         <h5>Signal Mast Editor</h5>
             <ul>
@@ -241,12 +240,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>BLI</h5>
             <ul>
-                <li>Michael Mosher updated the BLI Diesel P3 definition</li>
+                <li></li>
             </ul>
 
         <h5>Doehler &amp; Haas</h5>
             <ul>
-                <li>Pierre Billon updated the SH10A decoder definition, improved SUSI support, and made other updates</li>
+                <li></li>
             </ul>
 
         <h5>ESU</h5>
@@ -300,9 +299,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>ZIMO</h5>
             <ul>
-                <li>Mark Waters fixed errors in Lighting output Behavior in CVs 127 to 132 for Zimo decoders</li>
-                <li>Mark Waters updated the Zimo MX633 and MX634 decoder definitions</li>
-                <li>Mark Waters provided new decoder definitions for the Zimo MX618 and MX622 decoders</li>
+                <li></li>
             </ul>
 
         <h5>Miscellaneous</h5>
@@ -313,39 +310,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Operations</h4>
    <ul>
-    <li>New feature to save all train manifest created by the program. See "Options" under
-     tools in the "Settings" window. Useful when you need to review an old train manifest.</li>
-    <li>New feature for classification / interchange tracks, you can now specify that only cars
-     with final destinations are accepted by the C/I track. See "Track Destinations" in the
-     operations help for more information.</li>
-    <li>Improved manifests and switch lists with regards to cabooses and cars with FRED that
-     are swapped during a train's route. Previously the caboose wasn't listed at the end of the
-     train, but where in the route it needed to be blocked for a proper set out, now correctly
-     listed at the end of the train.</li>
-    <li>Export cars and locomotives now includes an "Out of Service" remark under the column
-     "Miscellaneous".</li>
-    <li>The "Show Schedules by Car Types and Load" window has been enhanced by allowing all car
-     types and loads to be selected. Selecting both will give you a summary of all schedules that
-     are available.</li>
-    <li>New feature, you can now label a locomotive as a "B" or booster unit. B units are never
-     assigned to a train requiring a single loco. B units should never appear as the lead loco in a
-     manifest or switch list.  "B" units are configured by model name.</li>
-     <li>The locomotive model name has the "hyphen" feature where the program won't print after
-     a hyphen followed by a left parenthesis.</li>
-    <li>More build report enhancements. Including a check to see if any cars or locos in
-     staging have been assigned to a train that isn't the one being built.</li>
-     <li>The "Routes" window now shows the maximum train length in each route.</li>
-    <li>You can now sort and print your trains by their description.</li>
-    <li>If "Auto Save" is enabled, the program will automatically save your files when you
-     close the program or the Trains window. You will not longer get a prompt to save the operation
-     files.</li>
-     <li>Json manifest files are now saved in their own directory called "jsonManifests". These files
-     are used to create the operation web manifests.</li>
-    <li>Fixed a problem where the program didn't use the road or model specified in the build
-     options for locomotive changes in a train's route, and the option "Build loco consist from
-     single locos" was selected.</li>
-    <li>Fixed a minor problem with train icons animation when there was a locomotive change in
-     a route, and two or more locomotives were individually assigned to the train.</li>
+    <li></li>
    </ul>
 
    <h4>Roster</h4>
@@ -360,23 +325,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Preferences</h4>
         <ul>
-            <li>Preference to let you set how long a tooltip will be shown</li>
+            <li></li>
         </ul>
 
     <h4>Logix</h4>
         <ul>
-            <li>The file chooser you used to pick the script file that is run by Conditional Action 
-            now starts at the script default directory.</li>
+            <li></li>
         </ul>
 
     <h4>Panel Editors</h4>
         <ul>
-            <li>Pete Cressman continues to improve the code to rotate icons to different orientations. 
-            The most recent change was an update to icons what have their content set and are then rotated.
-            There are lots of special cases, and we're not sure we've found them all yet.
-            If you have any issues around rotating various kinds of icons, please don't 
-            hesitate to get in touch.
-            </li>
+            <li></li>
         </ul>
 
     <h4>Scripting</h4>
@@ -386,10 +345,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li>Update of JMRI website navigation up to current tools and system support, Table of Contents grouped by activity, styling of older Help pages and broken links &amp; icons fixed, Hardware help pages share a common scheme (some items were moved up/down), Manuals page focussed on supported versions, OS X install page updated (Egbert Broerse)</li>
-            <li>Sonny Hansen improved the Danish translation with help from Matt Harris.</li>
-            <li>Randall Wood updated the Jetty server (web server) to version 9.3.6 to 
-                improve reliability and connectivity.</li>
+            <li></li>
         </ul>
 
    <!--#include virtual="/Footer" -->
