@@ -63,6 +63,14 @@
 				
 				<ol>
 				<li>Determine if your hardware supports Java and JMRI</li>
+
+				<h3>JMRI System Requirements</h3>
+				<p>Using JMRI requires a combination of hardware (in this case running Linux), Java software and a JMRI download for a specific version.
+				<p>JMRI&reg; version 4.2 requires Java 1.8.<br>
+				Version 3.10.1 requires Java 1.6 or later.<br>
+				Version 2.14.1 requires Java 1.5 (or 1.6 if you wish for drag &amp; drop).<br>
+				Version 2.12 requires Java 1.5 or later.
+				</p>
 				
 				<p>These steps outline how to install DecoderPro on Linux.
 				These steps should work for Red Hat 8, 9 and 10. They don't
@@ -96,7 +104,7 @@
 				error, you will need to install it.</p>
 				
 				<p>Most Linux distributions can get an automated install download
-				from Sun by clicking on this button:<br>
+				from Oracle by clicking on this button:<br>
 				<a href="http://java.com/java/download/index.jsp?cid=jdp74834" target="_blank">
 				<img src="../images/ico-java.png" width="150" height="150" alt="GetJava Download Button" title="GetJava">
 				</a>

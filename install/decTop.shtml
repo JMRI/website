@@ -26,7 +26,7 @@
 	    <!-- Page Contents --> <!-- Required -->
 	    <!-- ------------- -->
 
-	    <H1>Running JMRI on a decTOP small form factor computer</H1>
+<h1>Running JMRI on a decTOP small form factor computer</h1>
 
 <a href="https://store.dataevolution.com/photos/DT-7001-2.jpg"/>
 <img src="https://store.dataevolution.com/photos/DT-7001-2.jpg" width="250" height="167" align="right" alt="decTop image"/>
@@ -65,20 +65,20 @@ The
 small form-factor computer
 seems to meet the cheap and rugged criteria, 
 and seems to have enough horsepower:
-<ul>
-<li>Processor subsystem -- AMD Geode GX processor, with CS5535 companion device
-<li>Memory -- 128 MB DDR SDRAM, upgradable
-<li>Hard drive -- internal 10 GB 2.5-inch drive
-<li>Display interface -- VGA 1600 x 1200 resolution, at 85 Hz
-<li>Four USB 1.1 ports (2 front, 2 rear)
-<li>LAN interface -- 10/100 Mbps Ethernet (via Ethernet-USB adapter that uses one port)
-<li>Modem -- internal 56 Kbps ITU v.92 Fax/Modem
-<li>Sound -- AC'97 audio with stereo in/out jacks
-<li>Size -- 8.5 x 5.5 x 2.5 inches
-<li>Weight -- approx. 3 pounds 
-<li>Power -- about 8 watts, separate power adapter
-<li>Software -- none, but can run several forms of Linux and Java
-</ul>
+	<ul>
+	<li>Processor subsystem -- AMD Geode GX processor, with CS5535 companion device
+	<li>Memory -- 128 MB DDR SDRAM, upgradable
+	<li>Hard drive -- internal 10 GB 2.5-inch drive
+	<li>Display interface -- VGA 1600 x 1200 resolution, at 85 Hz
+	<li>Four USB 1.1 ports (2 front, 2 rear)
+	<li>LAN interface -- 10/100 Mbps Ethernet (via Ethernet-USB adapter that uses one port)
+	<li>Modem -- internal 56 Kbps ITU v.92 Fax/Modem
+	<li>Sound -- AC'97 audio with stereo in/out jacks
+	<li>Size -- 8.5 x 5.5 x 2.5 inches
+	<li>Weight -- approx. 3 pounds 
+	<li>Power -- about 8 watts, separate power adapter
+	<li>Software -- none, but can run several forms of Linux and Java
+	</ul>
 <a href="http://pclab.nectec.or.th/wiki/images/7/70/Amd-pic-setup.jpg">
 <img src="http://pclab.nectec.or.th/wiki/images/7/70/Amd-pic-setup.jpg" align="right" height="115" width="175" alt="System view"/></a>
 You can get one for
@@ -94,7 +94,7 @@ for use during (at least) setup.
 You'll also need 
 USB adapter(s) to connect to your layout.  There are four 
 USB ports available for use with a LocoBuffer USB, LI-USB or
-USB - serial adapter. Note that normally three of those ports are
+<a href="../help/en/html/hardware/USBtoSerial.shtml">USB-to-Serial adapter</a>. Note that normally three of those ports are
 used for the keyboard, mouse and Ethernet adapter, leaving one available
 for a layout connection.
 
