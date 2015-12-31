@@ -197,6 +197,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>A problem that prevented use with the Digitrax PR2 has been fixed.
                 </li>
+                <li>Fixed filtering in the LocoNet monitor</li>
             </ul>
 
         <h5>NCE</h5>
@@ -359,12 +360,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Preferences</h4>
         <ul>
-            <li></li>
+            <li>Preference to let you set how long a tooltip will be shown</li>
         </ul>
 
     <h4>Logix</h4>
         <ul>
-            <li>The file chooser you used to pick the script file that is run by Conditional Action now starts at the script default directory.</li>
+            <li>The file chooser you used to pick the script file that is run by Conditional Action 
+            now starts at the script default directory.</li>
         </ul>
 
     <h4>Panel Editors</h4>
