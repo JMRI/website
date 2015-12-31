@@ -151,28 +151,27 @@ These may be relevant to you if you're updating from an earlier version.
 <!--
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.dmg/download</a><br/>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-r29773.dmg/download</a><br/>
     sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.exe/download</a><br/>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-r29773.exe/download</a><br/>
     sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download</a><br/>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-r29773.tgz/download</a><br/>
     sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
 -->
-<!--
+
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.3.1/ws/jmri/dist/release/">CI project page</a>.
- -->
 
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+ -->
 
 <h3>Changes since production release 4.2:</h3>
 
@@ -181,18 +180,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Hardware Support</h4>
 
-        <p></p>
-
-        <h5>C/MRI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>LocoNet</h5>
             <ul>
                 <li>A problem that prevented use with the Digitrax PR2 has been fixed.
@@ -200,44 +187,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Fixed filtering in the LocoNet monitor</li>
             </ul>
 
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
-        <h5>SPROG</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
-            </ul>
-
     <h4>Signals</h4>
         <h5>Signal Systems</h5>
             <ul>
                 <li>Greg McCartney provided a definition for the Norfolk and Western 1981 rulebook</li>
             </ul>
-        <h5>Signal Mast Editor</h5>
-            <ul>
-                <li></li>
-            </ul>
 
     <h4>New / Updated decoder definitions</h4>
-        <ul>
-            <li></li>
-        </ul>
 
         <h5>BLI</h5>
             <ul>
@@ -249,67 +205,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Pierre Billon updated the SH10A decoder definition, improved SUSI support, and made other updates</li>
             </ul>
 
-        <h5>ESU</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li>Dave Heap made the following changes:<br>
-                    <ul>
-                        <li></li>
-                    </ul>
-               </li>
-            </ul>
-
-        <h5>RR-CirKits</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SoundTraxx</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>ZIMO</h5>
             <ul>
                 <li>Mark Waters fixed errors in Lighting output Behavior in CVs 127 to 132 for Zimo decoders</li>
                 <li>Mark Waters updated the Zimo MX633 and MX634 decoder definitions</li>
                 <li>Mark Waters provided new decoder definitions for the Zimo MX618 and MX622 decoders</li>
             </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
-            </ul>
-
 
    <h4>Operations</h4>
    <ul>
@@ -348,15 +249,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
      a route, and two or more locomotives were individually assigned to the train.</li>
    </ul>
 
-   <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>OBlocks</h4>
-        <ul>
-            <li></li>
-        </ul>
 
     <h4>Preferences</h4>
         <ul>
@@ -377,11 +269,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             If you have any issues around rotating various kinds of icons, please don't
             hesitate to get in touch.
             </li>
-        </ul>
-
-    <h4>Scripting</h4>
-        <ul>
-            <li></li>
         </ul>
 
     <h4>WiThrottle</h4>
