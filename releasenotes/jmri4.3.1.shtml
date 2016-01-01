@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.3.1 release
       </h2>
 
-    <p>Date: mmm dd, 2015</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: December 31, 2015</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test version 4.3.1 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h3>Notes:</h3>
 
@@ -38,8 +40,8 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the next in a series of test versions. We expect this series
-to end in the next JMRI production release around the end of 2015.
+<p>This is the first in a new series of test versions. We expect this series
+to end in the next JMRI production release around the middle of 2016.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)</p>
 
 <p>Some of the changes involved are quite extensive.
@@ -54,7 +56,7 @@ see our
 
 <h3>Known problems with this release</h3>
 
-None at release time.
+This release has a problem with blinking sensor icons, the blinking animation is broken.
 
 <!--
 If any of those effect you, please either wait for
@@ -68,20 +70,14 @@ from
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
 
-<p>
-    The internals of the Layout Editor have been reworked a bit.  Please keep an
-    eye out for any changed behaviors.
-</p>
+<!-- 4.3.1 -->
+<p>The internals of the Layout Editor have been reworked a bit.  Please keep an
+    eye out for any changed behaviors.</p>
 
 <h3>Older warnings</h3>
 
 See the <a href="jmri4.2.shtml#warnings">JMRI 4.2 release note</a> for warnings predating the 4.3 development series.
 These may be relevant to you if you're updating from an earlier version.
-
-<p>We are now building releases, including this one, from our
-    <a href="https://github.com/JMRI">GitHub repository</a>.
-    For more information on this, please see our
-    <a href="http://jmri.org/help/en/html/doc/Technical/getgitcode.shtml">documentation page</a>.
 
 <p><!-- 4.1.5 -->The code for handling Panel Editor / Control Panel Editor icons has changed
     to better deal with rotating icons.  This has changed how opaque vs transparent
@@ -148,32 +144,31 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-<!--
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-r29773.dmg/download</a><br/>
-    sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-R2b72e88.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-R2b72e88.dmg/download</a><br/>
+    sha256: fec12e9aec86b4fb78331a7299a4a92658486c7e9f9dd954f07723618b77673a</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-r29773.exe/download</a><br/>
-    sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-R2b72e88.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-R2b72e88.exe/download</a><br/>
+    sha256: 72feae1d02f4dcce89f850f6866141aa71be1c62828dc00f150c75166391fcfd</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-r29773.tgz/download</a><br/>
-    sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
--->
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-R2b72e88.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-R2b72e88.tgz/download</a><br/>
+    sha256: 2380ba4d2ed3550794afec2126e22743305b16ea47eb5c01dd6f3c350fffd02d</p>
 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.3.1/ws/jmri/dist/release/">CI project page</a>.
-
+-->
 <!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
  -->
 
-<h3>Changes since production release 4.2:</h3>
+<h3>Changes since <a href="jmri4.2.shtml">production release 4.2</a>:</h3>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.3.1+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
@@ -252,7 +247,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Preferences</h4>
         <ul>
-            <li>Preference to let you set how long a tooltip will be shown</li>
+            <li>Preference (in Display-&gt;GUI) to let you set how long a tooltip will be shown. (Dave Heap)</li>
         </ul>
 
     <h4>Logix</h4>
@@ -284,6 +279,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Update of JMRI website navigation up to current tools and system support, Table of Contents grouped by activity, styling of older Help pages and broken links &amp; icons fixed, Hardware help pages share a common scheme (some items were moved up/down), Manuals page focussed on supported versions, OS X install page updated (Egbert Broerse)</li>
             <li>Sonny Hansen improved the Danish translation with help from Matt Harris.</li>
             <li>A script to disable or enable IPv4 and IPv6 support in zero configuration networking, named <code>zeroconf-preferences.js</code>, can be run from the <code>jython</code> directory in the JMIR distribution. This may help some users having issues with the iPhone WiThrottle app. (Randall Wood)</li>
+            <li>Fixed problem preventing "Validate XML File" from working as a Start Up Action or Button (Dave Heap).</li>
+            <li>Added a default explanation to empty programmer tabs and enabled viewing of same if "Show empty tabs" is enabled. (Dave Heap)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
