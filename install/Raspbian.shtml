@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<title>Installing JMRI on Raspbian/Linux</title>
+
+<!-- Style -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+<link rel="icon" href="/images/jmri.ico" TYPE="image/png">
+<link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
+
+<body>
+<!--#include virtual="/Header" -->
+
+<!--#include virtual="/download/Sidebar" -->
+<div id="mainContent">
+
+<h1>Installing JMRI on Raspbian</h1>
+
+<p>These are instructions for the installation of JMRI
+on a Raspberry Pi system running the Raspbian OS.<br>
+<p class="important">If you have any advice or problems get back to the JMRI users Yahoo group.</p>
+
+<h2>1. Introduction</h2>
+<p>The Raspberry Pi is becoming increasingly popular as a small and cheap computer. Raspbian is based on Debian and is recognized as being
+a very user friendly distribution. These instructions deal with installing
+JMRI on a <a href="https://www.raspberrypi.org/products/raspberry-pi-2-model-b/">Raspberry Pi model 2 B</a> running the latest Raspbian Operating System.</p>
+
+<h3>1.1 The Problem</h3>
+<p>JMRI installation consists
+of two stages: install Java and install JMRI. On Raspbian
+this used to involve some command line work as the Pi runs an Arm processor. An installation script
+was written by [NAME] to modify certain libraries so that JMRI would
+run. A script for this is provided on GitHub (see below).</p>
+
+<h3>Raspbian 4.1 Jessy</h3>
+<p>Fresh install on a Raspberry Pi B 2 is straightforward, as this OS includes Java 1.8 and the JMRI Linux install is ready for Arm. Follow the steps outlined below.</p>
+
+<h3>Raspbian 3.18 Wheezy</h3>
+<p>Might run on a Pi A or B+, but OpenJDK is said to be a lot slower then the JDK.
+</p>
+
+<p>Details on installing Raspbian can be found at the 
+<a href="https://www.raspberrypi.org/downloads/raspbian/">Raspberry Download site</a>.</p>
+
+<h2>2. Notes</h2>
+In the next section we describe how to install the components
+needed before JMRI can be run, followed by how to install JMRI itself.
+Before starting the install, make sure you're machine has a working
+internet connection (for downloads etc.) via either Wifi or a UTP cable to your Router.
+
+<h3>LocoBuffer USB</h3>
+We recommend you use Raspbian 12.04 or later with the LocoBuffer.
+
+<h2>3. Installation Steps</h2>
+<p>There are two steps in installing JMRI on Raspbian:
+Installation of Java (or the modification of a previously modified copy) and installing JMRI itself.</p>
+
+<h3>3.1 Java</h3>
+
+One must be careful which Java version is loaded. For current JMRI releases (3.10 and up) you need "Java 8" or "Java 1.8" (the Java numbering is confusing).
+With some Raspbian versions, 'java -version' will often show <pre>Java 1.4.2 gij</pre> which is too old.
+Also, the OpenJDK does not work for JMRI, as it doesn't have all the needed libraries.
+
+<p>We recommend installing Java from the repositories:
+
+<p>System &gt; Administration &gt; Synaptic Package Manager
+
+<p>Then search for sun-java8-jre or OpenJDK-8-jre or jdk8-jre (see <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Oracle JDK Downloads</a>. 
+Once you've found it, mark it to be loaded, and click "Apply".
+You'll probably be told that a number of other packages will 
+also be loaded, which is OK.
+
+<a id="rxtx">
+<h3>3.2 RxTx</h3></a>
+
+<p>RxTx used to be a problem requiring modifications to Java to
+enable JMRI to run. Since JMRI version 3.5 this is no longer required. However, if
+you are using a version of JMRI prior to 3.5 then the RxTx library in Raspbian must be
+"unmodified". There is a script to do this in the JMRI users Yahoo group
+"Files" area.</p>
+
+<p>The problem was that the RxTx in the Raspbian
+repositories would not work with JMRI. 
+
+<p>The script will do the following:
+<ul>
+<li>steps</li>
+</ul>
+
+<h3>3.3 JMRI</h3>
+<p>JMRI is downloaded in the normal manner.</p>
+<p><a href="http://jmri.sourceforge.net/download/index.shtml">Download JMRI</a>.</p>
+
+<p>Double click on the .tgz file to open the Tar, then click extract. </p>
+
+<h3>3.4 The Environment</h3>
+<p>On a fresh install the environment is OK, <code>java
+-version</code> will give something like: 
+</p>java version "1.6.0_15"<br>Java(TM) SE Runtime Environment (build 1.6.0_15-b03)<br>Java HotSpot(TM) Client VM (build 14.1-b02, mixed mode, sharing)<br><br>or<br><br>java version "1.6.0_0"<br>OpenJDK Runtime Environment (IcedTea6 1.6.1) (6b16-1.6.1-3ubuntu1)<br>OpenJDK Client VM (build 14.0-b16, mixed mode, sharing)
+
+<h2>4. Starting JMRI</h2>
+<p>To start open a terminal and enter ./DecoderPro or double click on the icon.</p>
+
+<h3>4.1 Errors</h3>
+<p>If you have any problems get back to the JMRI users Yahoo group.</p>
+
+<p><a href="https://www.raspberrypi.org/help/">Raspberrypi.org online Help</a>.</p>
+
+<p>(Rev 4.2, updated 01 Jan 2016 )</p>
+
+<!-- /Footer -->
+    </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</body>
+</html>

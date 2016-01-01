@@ -149,7 +149,7 @@ The above description is brief, but the script itself can be opened in a text ed
 
 <p>Double click on the .tgz file to open the File Roller, then click extract. </p>
 
-<p>JMRI will created inside a "JMRI" directory which is
+<p>JMRI will be created inside a "JMRI" directory which is
 created inside the directory that contains the downloaded .tgz file.  Umm..</p>
 <p><img src="images/JMRIdirectory.png" name="graphics2" align="left" border="0" height="120" width="374"><br><br>
 </p>
@@ -162,16 +162,16 @@ This directory holds the preferences. If you are
 experiencing difficulties  with the program failing to start up, removing the
 relevant Config2.xml file from this directory should fix it.</p>
 
-<h3>3.5 The Environment</h3>
+<h3>3.4 The Environment</h3>
 <p>On a fresh install the environment is OK, java
 -version will give something like: 
 </p>java version "1.6.0_15"<br>Java(TM) SE Runtime Environment (build 1.6.0_15-b03)<br>Java HotSpot(TM) Client VM (build 14.1-b02, mixed mode, sharing)<br><br>or<br><br>java version "1.6.0_0"<br>OpenJDK Runtime Environment (IcedTea6 1.6.1) (6b16-1.6.1-3ubuntu1)<br>OpenJDK Client VM (build 14.0-b16, mixed mode, sharing)<br><br>However
-upgrading Ubuntu may creat problems for JMRI releases prior to 2.9.2 as the upgrade may now point at the
+upgrading Ubuntu may create problems for JMRI releases prior to 2.9.2 as the upgrade may now point at the
 "wrong" java. In this case simply run the reinstall script.<br><p></p><p><big style="font-weight: bold;">USB Ports</big>&nbsp;</p>Currently the start up scripts work "out of the box".<p>However some versions&nbsp; may need altering to get the computer to "see" a USB
 port by adding "-Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0" as shown
 below
 </p><p style="margin-left: 40px;">java -noverify -Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0 -Djava.security.policy</p>
-<p>Please see the&nbsp;<a href="http://jmri.sourceforge.net/install/FAQLinux.html">FAQ</a> for more details.</p>
+<p>Please see the <a href="http://jmri.sourceforge.net/install/FAQLinux.html">FAQ</a> for more details.</p>
 
 <h2>4. Starting JMRI</h2>
 <p>To start open a terminal and enter ./DecoderPro or double click on the icon.</p>
@@ -188,7 +188,7 @@ below
 	</dt><dd>Try setting the icon to executable.</dd>
 	
 	<dt>Port not Found.
-	</dt><dd>See Para 3.5, but be aware that when a Java update is installed, it creates
+	</dt><dd>See paragraph 3.5 above, but be aware that when a Java update is installed, it creates
 	a new directory and alters the soft link to it. &nbsp;However all the
 	RxTx &nbsp;information is left behind in the old directory. &nbsp;The
 	solution is to run the install script again.</dd>

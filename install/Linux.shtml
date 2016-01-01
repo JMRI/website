@@ -4,7 +4,7 @@
  <title>
  JMRI: Linux Install Guide
  </title>
-    <meta content="Bob Jacobsen" name="Author">
+    <meta name="Author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI install Linux">
 
 <!-- Style -->
@@ -33,9 +33,9 @@
       There are specific pages describing details of
       installation on
 				<ul>
-				<li><a href="decTop.shtml">Xubuntu</a> (on a decTOP small computer),
-				<li><a href="OpenSUSE.shtml">Open SUSE</a>,
-				<li><a href="Mint.shtml">Mint</a>.
+				<li><a href="decTop.shtml">Xubuntu</a> (on a decTOP small computer)
+				<li><a href="OpenSUSE.shtml">Open SUSE</a>
+				<li><a href="Mint.shtml">Mint</a>
 				</ul>
 			JMRI users have created helpful pages:
 				<ul>
@@ -49,10 +49,11 @@
 				<a href="http://www.jerrard.ca/trains/f4/ICON.pdf">add an icon to the desktop</a>.
 				</ul>
 				
-			There are also detailed instructions for installing on the 
+			There are also detailed instructions for installing on a 
 				<ul>
-				<li><a href="EeePC.shtml">EeePC</a>, and
-				<li><a href="OLPC_XO.shtml">OLPC (One Laptop Per Child) XO</a>.
+				<li><a href="EeePC.shtml">EeePC</a></li>
+				<li><a href="OLPC_XO.shtml">OLPC (One Laptop Per Child) XO</a></li>
+				<li><a href="Raspbian.shtml">Raspberry Pi</a></li>
 				</ul>
 				
 			<p>
@@ -64,7 +65,7 @@
 				<ol>
 				<li>Determine if your hardware supports Java and JMRI</li>
 
-				<h3>JMRI System Requirements</h3>
+				<a name="sysreq"></a><h3>JMRI System Requirements</h3>
 				<p>Using JMRI requires a combination of hardware (in this case running Linux), Java software and a JMRI download for a specific version.
 				<p>JMRI&reg; version 4.2 requires Java 1.8.<br>
 				Version 3.10.1 requires Java 1.6 or later.<br>
@@ -92,7 +93,7 @@
 				<p>See if you have a version of Java already installed<p>
 				<p class="example"> sh> java -version</p>
 				
-				<p>If the version is 1.8 or later, you may be fine, but
+				<p>If the Java version is 1.8 or later, you may be fine, but
 				   be aware that if you did not install Java on your system
 				   yourself, some systems have Java only partially installed. They
 				   will respond correctly to the above command, but still are not
@@ -111,11 +112,12 @@
 				
 				<p>If that doesn't work or you need to manually install Java,
 				    you can find further information on the 
-				    <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java downloads page</a>.  
+				    <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html"> Oracle Java downloads page</a>.  
 				    <ul>
 				    <li>Java comes in several forms: 
 				    JMRI needs the Standard Edition (SE) version, but
-				    Java EE is also OK; neither Java ME or Java Embedded are sufficient.
+				    Java EE is also OK;<br>
+				    neither Java ME or Java Embedded are sufficient.
 				    <li>There are also different Java SE installers: JMRI can
 				    run with either a proper SDK (Software Development Kit, for compiling and running Java)
 				    or JRE (Java Runtime Environment, for just running Java) installation.
@@ -143,7 +145,7 @@
 				    <p>The JMRI project is continuously adding features, bug fixes,
 				    examples and tutorials to the release, and so a new "test" versions
 				    appear every couple of weeks.  You may find one of these has features
-				    that you really want.  These are announced in the "jmriusers" Yahoo
+				    that you really want.  These are announced in the "JMRI users" Yahoo
 				    discussion group at
 				    <a
 				     href="https://groups.yahoo.com/neo/groups/jmriusers/info">https://groups.yahoo.com/neo/groups/jmriusers/info</a>.

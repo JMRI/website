@@ -51,7 +51,7 @@ for debugging the "The JAVA SE Platform binary has stopped working" error messag
 <h2>Installation Procedure</h2>
 <ol>
   <li>Determine if your hardware supports Java and JMRI.
-  <h3>JMRI System Requirements</h3>
+  <a name="sysreq"></a><h3>JMRI System Requirements</h3>
   <p>Using JMRI requires a combination of hardware (in this case running Windows), Java software and a JMRI download for a specific version.
   <p>JMRI&reg; version 4.2 requires Java 1.8.<br>
   Version 3.10.1 requires Java 1.6 or later.<br>
@@ -65,12 +65,9 @@ for debugging the "The JAVA SE Platform binary has stopped working" error messag
 	Windows2000 SP3 and XP systems can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.<br>
 	Windows98 and ME can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.8</a>.
   
-  <p>We have had a report that a 180&nbsp;MHz Pentium II is too slow to use, and another that a 330&nbsp;MHz Pentium II is fine,
-    so somewhere around there is the minimum machine configuration, but it's important to have enough memory.  
-    We recommend you have at least 128&nbsp;MB of memory for Windows 98, 256&nbsp;MB of memory for Windows 2000 and 4&nbsp;GB for newer systems.  
-    Having 256&nbsp;MB or 512&nbsp;MB respectively would give better performance.  
-    For the more complicated programmer screens, a display with a resolution of 800x600 or larger is strongly recommended. 
-    Note that used PC hardware is available for very little money; it might be cheaper to buy a used computer than to update your existing one.</P>
+  <p>We recommend you have at least 256&nbsp;MB of memory for Windows 98, 512&nbsp;MB of memory for Windows 2000 and 2&nbsp;GB for the newer W7-W10 systems. We have had a report that a 330&nbsp;MHz Pentium II running W2000 is fine, but it's important to have enough memory and free hard disk space.
+  For the more complicated DecoderPro screens, a display with a resolution of 800x600 or larger is strongly recommended. 
+  Note that used PC hardware is available for very little money; it might be cheaper to buy a used computer than to update your existing one.</p>
 </li>
 
 <li>Get JMRI
