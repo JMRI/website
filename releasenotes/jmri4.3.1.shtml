@@ -247,7 +247,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Preferences</h4>
         <ul>
-            <li>Preference to let you set how long a tooltip will be shown</li>
+            <li>Preference (in Display-&gt;GUI) to let you set how long a tooltip will be shown. (Dave Heap)</li>
         </ul>
 
     <h4>Logix</h4>
@@ -279,6 +279,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Update of JMRI website navigation up to current tools and system support, Table of Contents grouped by activity, styling of older Help pages and broken links &amp; icons fixed, Hardware help pages share a common scheme (some items were moved up/down), Manuals page focussed on supported versions, OS X install page updated (Egbert Broerse)</li>
             <li>Sonny Hansen improved the Danish translation with help from Matt Harris.</li>
             <li>A script to disable or enable IPv4 and IPv6 support in zero configuration networking, named <code>zeroconf-preferences.js</code>, can be run from the <code>jython</code> directory in the JMIR distribution. This may help some users having issues with the iPhone WiThrottle app. (Randall Wood)</li>
+            <li>Fixed problem preventing "Validate XML File" from working as a Start Up Action or Button (Dave Heap).</li>
+            <li>Added a default explanation to empty programmer tabs and enabled viewing of same if "Show empty tabs" is enabled. (Dave Heap)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
