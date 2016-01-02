@@ -20,97 +20,108 @@
 
 <h1>Installing JMRI on Raspbian</h1>
 
-<p>These are instructions for the installation of JMRI
-on a Raspberry Pi system running the Raspbian OS.<br>
-<p class="important">If you have any advice or problems get back to the JMRI users Yahoo group.</p>
+<p>These instructions describe the installation of JMRI
+on a Raspberry Pi system running the Raspbian OS. The Raspberry Pi is becoming increasingly popular as a small and cheap computer.
+Raspbian is based on Debian and is recognized as being a very user friendly distribution.<br>
 
-<h2>1. Introduction</h2>
-<p>The Raspberry Pi is becoming increasingly popular as a small and cheap computer. Raspbian is based on Debian and is recognized as being
-a very user friendly distribution. These instructions deal with installing
-JMRI on a <a href="https://www.raspberrypi.org/products/raspberry-pi-2-model-b/">Raspberry Pi model 2 B</a> running the latest Raspbian Operating System.</p>
+<p>JMRI installation consists of two stages: install Java and install JMRI.
 
-<h3>1.1 The Problem</h3>
-<p>JMRI installation consists
-of two stages: install Java and install JMRI. On Raspbian
-this used to involve some command line work as the Pi runs an Arm processor. An installation script
-was written by [NAME] to modify certain libraries so that JMRI would
-run. A script for this is provided on GitHub (see below).</p>
+<a id="installation"/>
+<h2>Installation Steps</h2>
 
-<h3>Raspbian 4.1 Jessy</h3>
-<p>Fresh install on a Raspberry Pi B 2 is straightforward, as this OS includes Java 1.8 and the JMRI Linux install is ready for Arm. Follow the steps outlined below.</p>
+	<ol>
+	<li>Determine if your system software supports JMRI.</li>
+	
+	<a name="sysreq"></a><h3>JMRI System Requirements</h3>
+	<p>These instructions deal with installing
+	JMRI on a <a href="https://www.raspberrypi.org/products/raspberry-pi-2-model-b/">Raspberry Pi model 2 B</a> running the latest Raspbian OS.</p>
+	
+	<h4>Raspbian 4.1 Jessy</h4>
+	<p>Fresh install on a Raspberry Pi B 2 is straightforward, as this OS includes Java 1.8 and the JMRI Linux install is ready for Arm. Follow the steps outlined below.</p>
+	
+	<h4>Raspbian 3.18 Wheezy</h4>
+	<p>Wheezy might run on a Pi A or B+, but OpenJDK is said to be a lot slower then the JDK shipping with Jessy.
+	</p>
+	
+	<p>Details on installing Raspbian can be found at the 
+	<a href="https://www.raspberrypi.org/downloads/raspbian/">Raspberry Download site</a>. Beginners should start with the <a href="https://www.raspberrypi.org/downloads/noobs/">NOOBS</a> install.</p>
+	
+	
+  <li>Determine if you have the needed hardware drivers.
+	<h3>LocoBuffer USB</h3>
+	We recommend you use Raspbian 12.04 or later with the LocoBuffer-USB.
+	
+	<h3>Digitrax PR3</h3>
+	The PR3 is reported to works far more reliably than it did under Windows (Dan M.).
+	
+	<h3>XPressNet</h3>
+	<p>[please report your results]
+	
+<p>In the next section we describe how to install the components
+	needed for JMRI to run, followed by how to install JMRI itself.
+	Before starting the install, make sure your machine has a working
+	internet connection (for downloads etc.) via either Wifi or a UTP cable to your Router.
+	
+<li>Depending on how your Pi is set up, you might need to 
+  install <strong>Java</strong>.
+	<p>One must be careful which Java version is installed. For current JMRI releases (version 3.10 and up) you need "Java 8" or "Java 1.8" (the Java numbering is confusing). Open a Terminal window and type 'java -version'. This will return something like:
+	<pre>Java 1.x</pre>. 
+	If necessary, install Java from the repositories.<br>
+	[please report exact instructions to update Java]
+	
+	<a id="rxtx">
+	<li>Copy RxTx</li></a>
+	<p>Matt Harris reported in July 2015: The comms libraries fix is no longer necessary on the latest development releases of JMRI as the start-up script has been updated to better detect the ARM architecture. Some of the steps in the JMR-Pi script are no longer necessary.<br>
+	On a Pi2, it was simply a case of uncompressing the .tgz file to an appropriate location and executing the DecoderPro script. Comms interface (in my case MERG CANUSB) was detected automatically. Raspbian Jessy already has a suitable Java Runtime installed out of the box.
+	
+	<p>The RxTx library used to be a problem requiring modifications to
+	enable JMRI to run. Since JMRI version 3.5 this is no longer required. However, if
+	you are using a version of JMRI prior to 3.5 then the RxTx library in Raspbian must be
+	"unmodified". There is a script to do this in the JMRI users Yahoo group "Files" area if you wish to run JMRI 3.8 on Raspbian 3.18 Wheezy.</p>
+	
+	<p>This script will do the following:
+		<ul>
+		<li>steps</li>
+		</ul>
+	
+       <li>Get the JMRI software...</li>
+	<p><a href="http://jmri.sourceforge.net/download/index.shtml">Download JMRI</a>. Choose the Linux edition.</p>
+	<p>Double click on the .tgz file to open the Tar, then click extract.</p>
+	
+	       <li>...and install it.</li>
+	
+	Installation on Raspbian used to involve some command line work as the Pi runs an Arm processor. An installation script
+	was written by Matthew Macdonald-Wallace to modify certain libraries so that JMRI would run.
+	He provides a <a href="https://github.com/proffalken/JMR-Pi">Pi install script</a> on GitHub.</p>
+	
+	<li>The Environment</li>
+	<p>Your login account should have root permissions to access the outputs of the Pi interface. More details on our <a href="../help/en/html/hardware/pi/index.shtml">Raspberry Pi via GPIO</a> hardware Help page.</p>
+	<p>On a fresh install the environment is set okay. In a Terminal window type <code>java -version</code><br>
+	This will return something like:<br>
+	java version "1.6.0_15"<br>
+	Java(&trade;)  Runtime Environment (build 1.8.0)<br>
+	Java HotSpot(&trade;) Client VM (build 14.1-b02, mixed mode, sharing)</p>
+	</li>
+	
+	</ol>
 
-<h3>Raspbian 3.18 Wheezy</h3>
-<p>Might run on a Pi A or B+, but OpenJDK is said to be a lot slower then the JDK.
-</p>
+<h2>Starting JMRI</h2>
+<p>Using Terminal: To start JMRI, open a Terminal and enter "./DecoderPro".</p>
+<p>Using the GUI: To create a complete set of Desktop icons that you can just double-click, Dan M. wrote a <a href="support/Pimageset.tgz">set of desktop startup icons</a> for the Pi. Again, double click on the .tgz file to open the Tar, then click extract and copy the separate startup files you wish to your desktop folder; change the path in these text files to match your install).</p>
+<p>After a clean install, the JMRI Preferences pane will open. Select your Connection and USB port, click "Save"  and restart.</p>
 
-<p>Details on installing Raspbian can be found at the 
-<a href="https://www.raspberrypi.org/downloads/raspbian/">Raspberry Download site</a>.</p>
+<a id="notes"/>
+<h2>Notes:</h2>
 
-<h2>2. Notes</h2>
-In the next section we describe how to install the components
-needed before JMRI can be run, followed by how to install JMRI itself.
-Before starting the install, make sure you're machine has a working
-internet connection (for downloads etc.) via either Wifi or a UTP cable to your Router.
+<h3>Autostart</h3>
+<p>You could have your Pi automatically open DecoderPro and start a Terminal Server at startup if e.g. the Pi is mounted under your layout and runs a so called "headless mode". See this blog on <p><a href="http://www.nscale.net/forums/showthread.php?37250-JMRI-on-a-Raspberry-Pi-2">Nscale.net forum JMRI on a Pi2</a> for instructions.</p>
 
-<h3>LocoBuffer USB</h3>
-We recommend you use Raspbian 12.04 or later with the LocoBuffer.
-
-<h2>3. Installation Steps</h2>
-<p>There are two steps in installing JMRI on Raspbian:
-Installation of Java (or the modification of a previously modified copy) and installing JMRI itself.</p>
-
-<h3>3.1 Java</h3>
-
-One must be careful which Java version is loaded. For current JMRI releases (3.10 and up) you need "Java 8" or "Java 1.8" (the Java numbering is confusing).
-With some Raspbian versions, 'java -version' will often show <pre>Java 1.4.2 gij</pre> which is too old.
-Also, the OpenJDK does not work for JMRI, as it doesn't have all the needed libraries.
-
-<p>We recommend installing Java from the repositories:
-
-<p>System &gt; Administration &gt; Synaptic Package Manager
-
-<p>Then search for sun-java8-jre or OpenJDK-8-jre or jdk8-jre (see <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Oracle JDK Downloads</a>. 
-Once you've found it, mark it to be loaded, and click "Apply".
-You'll probably be told that a number of other packages will 
-also be loaded, which is OK.
-
-<a id="rxtx">
-<h3>3.2 RxTx</h3></a>
-
-<p>RxTx used to be a problem requiring modifications to Java to
-enable JMRI to run. Since JMRI version 3.5 this is no longer required. However, if
-you are using a version of JMRI prior to 3.5 then the RxTx library in Raspbian must be
-"unmodified". There is a script to do this in the JMRI users Yahoo group
-"Files" area.</p>
-
-<p>The problem was that the RxTx in the Raspbian
-repositories would not work with JMRI. 
-
-<p>The script will do the following:
-<ul>
-<li>steps</li>
-</ul>
-
-<h3>3.3 JMRI</h3>
-<p>JMRI is downloaded in the normal manner.</p>
-<p><a href="http://jmri.sourceforge.net/download/index.shtml">Download JMRI</a>.</p>
-
-<p>Double click on the .tgz file to open the Tar, then click extract. </p>
-
-<h3>3.4 The Environment</h3>
-<p>On a fresh install the environment is OK, <code>java
--version</code> will give something like: 
-</p>java version "1.6.0_15"<br>Java(TM) SE Runtime Environment (build 1.6.0_15-b03)<br>Java HotSpot(TM) Client VM (build 14.1-b02, mixed mode, sharing)<br><br>or<br><br>java version "1.6.0_0"<br>OpenJDK Runtime Environment (IcedTea6 1.6.1) (6b16-1.6.1-3ubuntu1)<br>OpenJDK Client VM (build 14.0-b16, mixed mode, sharing)
-
-<h2>4. Starting JMRI</h2>
-<p>To start open a terminal and enter ./DecoderPro or double click on the icon.</p>
-
-<h3>4.1 Errors</h3>
-<p>If you have any problems get back to the JMRI users Yahoo group.</p>
+<h3>Errors</h3>
+<p>If you have any problems get back to the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group.</p>
 
 <p><a href="https://www.raspberrypi.org/help/">Raspberrypi.org online Help</a>.</p>
 
-<p>(Rev 4.2, updated 01 Jan 2016 )</p>
+<p>(Rev 4.2, updated 02 Jan 2016 )</p>
 
 <!-- /Footer -->
     </div><!-- closes #mainContent-->
