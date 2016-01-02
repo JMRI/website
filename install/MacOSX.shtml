@@ -36,7 +36,7 @@
       <h2>Installing JMRI on your Mac OS X computer</h2>
 
       <ol>
-       <li>Determine if your system software supports JMRI.
+       <li>Determine if your system software supports JMRI:
        Find the current Mac OS X version number by choosing "About this Mac" from the Apple menu.</li>
        
         <a name="sysreq"></a><h3>JMRI System Requirements</h3>
@@ -57,7 +57,7 @@
 
         <p>The JMRI install will take up about 120&nbsp;MB of disk space, mostly for the Help pages.
         
-        <li>Determine if you have the needed hardware drivers.
+        <li>Determine if you have the needed hardware drivers:
                 
         <p>No Macintosh that runs Mac OS X has built-in Serial
         Ports, so if your layout hardware needs a serial connection,
@@ -136,7 +136,7 @@
         folder to the desired location.</p>
 
       <li>Depending on how your Mac is set up, you might need to 
-        install <strong>Java</strong>.
+        install <strong>Java</strong>:
             <ul>
             <li>Let's try the easy way first.  Open the
                 JMRI folder you just put in Applications, and
@@ -243,19 +243,19 @@ please see this
 
 <h2>Customizing your JMRI Installation</h2>
 
-You might want to have more than one configuration for DecoderPro
+You might want to have more than one Configuration for DecoderPro
 or PanelPro preset.  For example, you might to sometimes connect
-PanelPro to the command station on your layout, or other times 
+PanelPro to the Command Station on your layout, or other times 
 have a configuration that doesn't use a layout connection so you can 
 work with the program on a laptop away from the layout.
 
 <p>
 With Mac OS X, JMRI makes this easy to do.  PanelPro and DecoderPro save
-their preferences separately, so they can be configured independently.
+their Preferences separately, so they can be configured independently.
 
 <p>
-On a Mac, the different preferences files take their name from the name of the application icon that's invoked.
-This lets you create multiple copies of e.g. DecoderPro that each use their own, separate preferences files.
+On a Mac, the different Preferences files take their name from the name of the application icon that's invoked.
+This lets you create multiple copies of e.g. DecoderPro that each use their own, separate Preferences files.
 Let's say you want one called "CoolNewOne".  
 	<ul>
 	<li>Duplicate the DecoderPro application icon (ctrl-click to get a popup menu and say duplicate, 
@@ -276,7 +276,7 @@ If you want an icon in some other place, like on your desktop:
 	</ul>
 
 Note that renaming the alias alone does not cause the application icon to be renamed, so the alias will be using the
-same preferences as the original.
+same Preferences as the original.
 
 <!--#include virtual="/Footer" -->
    </div><!-- closes #mainContent-->
