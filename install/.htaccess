@@ -1,0 +1,13 @@
+# JMRI does not use Meta Redirect (pages). Add redirects for this /install directory below:
+
+MacOSX.html install converted to .shtml 12/2015
+ReDirect "/MacOSX.html" "/MacOSX.shtml"
+
+# Linux.html install converted to .shtml 12/2015
+ReDirect "/Linux.html" "/Linux.shtml"
+
+# openSUSE.html install converted to .shtml 03/2009
+ReDirect "/OpenSUSE.html" "/OpenSUSE.shtml"
+
+# openSUSE.html install converted to .shtml 03/2009
+ReDirect "/Debug.html" "/Debug.shtml"
