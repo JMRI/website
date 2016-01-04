@@ -21,93 +21,97 @@
 
 <h1>Installing JMRI on Ubuntu GNU/Linux</h1>
 
-<p>These are instructions for the installation of JMRI
+<p>GNU/Linux is becoming increasingly popular as a desktop
+operating system. This short instruction deals with installing
+JMRI on a Ubuntu (or similar Debian based) desktop.</p>
+
+<a id="installation"/>
+<h2>Installation Procedure</h2>
+<h3>Determine if your hardware supports Java and JMRI</h3>
+  
+<a name="sysreq"></a><h3>JMRI System Requirements</h3>
+<p>These instructions describe the installation of JMRI
 on a Ubuntu Linux/GNU system. These have been used by a number of users
-successfully and should work on Ubuntu, Kubuntu, Lubuntu, XUbuntu and Debian
+successfully and should work on Ubuntu, Ubuntu, Ubuntu (+ Java JDK), Ubuntu and Debian
 (The USB port has not been tested under Debian).</p>
 
-<h2>1. Introduction</h2>
-<p>GNU/Linux is becoming increasingly popular as a desk
-top operating system. This short instruction deals with installing
-JMRI on the Ubuntu (or similar Debian based) desktop.</p>
-<h3>1.1 The Problem</h3>
-<p>JMRI is quite easy to install on Windows, and since 2.9.3 on Ubuntu.
-It consists
-of two stages, install Java and install JMRI. Unfortunately GNU Linux
-used to involve five stages and some command line work. &nbsp;A script
-was written to make the task easier and modify Java so that JMRI would
-run. &nbsp;If you are updating from a JMRI version prior to 2.9.2 then
-Java needs to me unmodified. &nbsp;A script is provided on the users
-group to do this. </p>
+<p>JMRI is quite easy to install since 2.9.3 on Ubuntu (Linux).
+Installation consists of two stages: install Java and install JMRI. Unfortunately GNU Linux
+used to involve five stages and some command line work. A script
+was written to make the task easier and "modify" Java so that JMRI would run.<br>
+If you are updating from a JMRI version prior to 2.9.2 then
+Java needs to me "unmodified". A script for this is provided on the JMRI users Yahoo
+group Files area (see below).</p>
+
 <h3>1.2 Linux/GNU</h3>
-<p>GNU/Linux provides a viable alternative to Windows. Is it&nbsp;free and it is also suitable for loading onto older machines
-which may no longer have a viable legal OS.  It is also far less
-resource hungry than current windows distributions and this is&nbsp; particularly true of Xubuntu.</p>
+<p>GNU/Linux provides a viable alternative to Windows. Is it free and it is also suitable for loading onto older machines
+which may no longer have a viable commercial OS.  It is also far less
+resource hungry than current Windows distributions and this is particularly true of <a href="http://xubuntu.org">Xubuntu</a> and <a href="http://lubuntu.net">Lubuntu</a>.</p>
+
 <h3>1.3 Ubuntu (Debian)</h3>
 <p>Ubuntu is based on Debian and is recognized as being
-a very user friendly distribution. Indeed in the US Dell are going to
+a very user friendly distribution. Indeed in the USA, Dell are going to
 supply computers with it pre installed. 
 </p>
 
 <p style="margin-left: 0.19cm;">Details on installing Ubuntu can be found below at
-Ubuntu:<br></p><p style="margin-left: 0.19cm;">
+ubuntu.com:<br></p><p style="margin-left: 0.19cm;">
 <a href="http://www.ubuntu.com/getubuntu/download">Ubuntu
 Details</a></p>
 <p style="margin-left: 1.34cm;">Follow the Path
-"Download" then I suggest you read up on the help page which is
-offered which gives advice on how to download the iso image and
+"Download" and read up on the Help page which gives advice on how to download the ISO image and
 then create a bootable CD to install Ubuntu.</p>
-Details for <a href="http://jmri.sourceforge.net/install/decTop.shtml">installing Xubuntu</a> have also been written.
+JMRI Help has details for <a href="http://jmri.sourceforge.net/install/decTop.shtml">installing Xubuntu</a> available.
 
-
-<h2>2. Notes</h2>
+<a id="notes"/>
+<h2>Notes:</h2>
 In the next section we describe how to install the components
-needed before JMRI can be run, then how to install JMRI itself.
-Before starting that, make sure you're machine has a working
-internet connection (for downloads), etc.
+needed before JMRI can be run, followed by how to install JMRI itself.
+Before starting the install, make sure your machine has a working
+internet connection (for downloads etc.).
 
 <h3>LocoBuffer USB</h3>
 We recommend you use Ubuntu 8.04 or later with the LocoBuffer.
-If you are planning to the old Ubuntu 7.10 or older and a
+If you are planning to use Ubuntu 7.10 or older and a
 <a href="http://rr-cirkits.com/locobuffer-usb/LB-manual-USB.pdf">LocoBuffer-USB</a>
 from 
 <a href="http://rr-cirkits.com/">RR-Cirkits</a>
-you will need to download the patched&nbsp;
+you will need to download the patched
 <a href="http://rr-cirkits.com/locobuffer-usb/linux/ftdi_sio.ko">ftdi_sio.ko file</a>
-&nbsp;(right click and save this file) to replace the one that came
+(right click on the link and save this file) to replace the one that came
 with the distribution. 
 
 <h2>3. Installation Steps</h2>
-<p>There are two steps in Installing JMRI in Linux/GNU,
-The are installation of Java, or the modification of an previously modified copy and installing JMRI itself.</p>
+<p>There are two steps in installing JMRI on Linux/GNU:
+installation of Java (or the modification of a previously modified copy) and installing JMRI itself.</p>
 
 <h3>3.1 Java</h3>
 
-One must be careful which Java is loaded. You need a "Java 8" or "Java 1.8" (the Java numbering is confusing).
-With some Ubuntu versions, 'java -version' will often show Java 1.4.2 gij, this one is too old.
+One must be careful which Java version is loaded. For current JMRI releases (3.10 and up) you need "Java 8" or "Java 1.8" (the Java numbering is confusing).
+With some Ubuntu versions, 'java -version' will often show <pre>Java 1.4.2 gij</pre> which is too old.
 Also, the 'Blackwood' Java Virtual Machine does not work for JMRI, as it doesn't have all the needed libraries.
 
 <p>We recommend installing Java from the repositories:
 
-</p><p>System &gt; Administration &gt; Synaptic Package Manager
+<p>System &gt; Administration &gt; Synaptic Package Manager
 
-</p><p>Then search for sun-java8-jre or OpenJDK-8-jre. 
-Once you've found it, mark it to be loaded, and click apply.
+<p>Then search for sun-java8-jre or OpenJDK-8-jre or jdk8-jre (see <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Oracle JDK Downloads</a>. 
+Once you've found it, mark it to be loaded, and click "Apply".
 You'll probably be told that a number of other packages will 
-also be loaded. That's OK.
+also be loaded, which is OK.
 
 <a id="rxtx">
 <h3>3.2 RxTx</h3></a>
 
 <p>RxTx used to be a problem requiring modifications to Java to
-enable JMRI to run. &nbsp;This is no longer required. &nbsp;However if
+enable JMRI to run. Since JMRI version 3 this is no longer required. However, if
 you are using a version of JMRI prior to 2.9.2 then Java must be
-"unmodified". &nbsp;There is a script to do this in the Users Group
-Files area, or one can work back from the following.</p>
+"unmodified". There is a script to do this in the JMRI users Yahoo Group
+Files area, or one can work back from the following:</p>
 
 <p>For those who
-do not wish to use the new version the instructions for modifying Java
-are given below. &nbsp;If one wishes to run both then this is simply a
+do not wish to use the new version, the instructions for modifying Java
+are given below. If one wishes to run both, then this is simply a
 matter of unmodifying or modifying Java using the scripts.
 
 <p>The problem was that the RxTx in the Ubuntu
@@ -118,8 +122,8 @@ and that is what is included in the automated script which can currently be down
 <a href="http://downloads.sourceforge.net/jmri/RXTX-install-5.tar.gz">Download RXTX-Install</a>
 and placed
 in a spare directory. Unpack it by double clicking, and then
-extracting (extract) the file. 
-The script is run by opening a terminal and giving the command "./RXTXinstall"
+extracting (select: "Extract") the file. 
+The script is run by opening a Terminal and giving the command: <code>./RXTXinstall</code>
 
 <p>The script will do the following:
 <ul>
@@ -140,7 +144,7 @@ RxTx (ln -s librxtxSerial-2.0.7pre2.so librxtxSerial.so).</li>
 
 <li>Backs up /etc/group and adds the user to it.</li>
 </ul>
-The above description is brief, as the script itself can be opened in a text editor and studied at leisure.
+The above description is brief, but the script itself can be opened in a text editor and studied at leisure.
 
 <h3>3.3 JMRI</h3>
 <p>JMRI is downloaded in the normal manner.</p>
@@ -148,7 +152,7 @@ The above description is brief, as the script itself can be opened in a text edi
 
 <p>Double click on the .tgz file to open the File Roller, then click extract. </p>
 
-<p>JMRI will created inside a "JMRI" directory which is
+<p>JMRI will be created inside a "JMRI" directory which is
 created inside the directory that contains the downloaded .tgz file.  Umm..</p>
 <p><img src="images/JMRIdirectory.png" name="graphics2" align="left" border="0" height="120" width="374"><br><br>
 </p>
@@ -161,16 +165,16 @@ This directory holds the preferences. If you are
 experiencing difficulties  with the program failing to start up, removing the
 relevant Config2.xml file from this directory should fix it.</p>
 
-<h3>3.5 The Environment</h3>
+<h3>3.4 The Environment</h3>
 <p>On a fresh install the environment is OK, java
 -version will give something like: 
 </p>java version "1.6.0_15"<br>Java(TM) SE Runtime Environment (build 1.6.0_15-b03)<br>Java HotSpot(TM) Client VM (build 14.1-b02, mixed mode, sharing)<br><br>or<br><br>java version "1.6.0_0"<br>OpenJDK Runtime Environment (IcedTea6 1.6.1) (6b16-1.6.1-3ubuntu1)<br>OpenJDK Client VM (build 14.0-b16, mixed mode, sharing)<br><br>However
-upgrading Ubuntu may creat problems for JMRI releases prior to 2.9.2 as the upgrade may now point at the
+upgrading Ubuntu may create problems for JMRI releases prior to 2.9.2 as the upgrade may now point at the
 "wrong" java. In this case simply run the reinstall script.<br><p></p><p><big style="font-weight: bold;">USB Ports</big>&nbsp;</p>Currently the start up scripts work "out of the box".<p>However some versions&nbsp; may need altering to get the computer to "see" a USB
 port by adding "-Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0" as shown
 below
 </p><p style="margin-left: 40px;">java -noverify -Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0 -Djava.security.policy</p>
-<p>Please see the&nbsp;<a href="http://jmri.sourceforge.net/install/FAQLinux.html">FAQ</a> for more details.</p>
+<p>Please see the <a href="http://jmri.sourceforge.net/install/FAQLinux.html">FAQ</a> for more details.</p>
 
 <h2>4. Starting JMRI</h2>
 <p>To start open a terminal and enter ./DecoderPro or double click on the icon.</p>
@@ -187,21 +191,23 @@ below
 	</dt><dd>Try setting the icon to executable.</dd>
 	
 	<dt>Port not Found.
-	</dt><dd>See Para 3.5, but be aware that when a Java update is installed, it creates
+	</dt><dd>See paragraph 3.5 above, but be aware that when a Java update is installed, it creates
 	a new directory and alters the soft link to it. &nbsp;However all the
 	RxTx &nbsp;information is left behind in the old directory. &nbsp;The
 	solution is to run the install script again.</dd>
 	</dl>
 
 <h2>5. CATS</h2>
-<p>I have carried out limited testing on CATs
-with 2.9.2 and with a modified install script it runs. &nbsp;If you are
-running CATs, currently one drops the zip
-file into the JMRI directory, and unpacks it there. &nbsp;Then copy
-cradic.gif and put the copy into resources. &nbsp; I would however keep
-TrainStat in a separate directory.
+<p>CATS will operate with <a href="../releasenotes/jmri3.8.shtml">JMRI release 3.8</a>.
+Newer releases currently do not support CATs.</p>
+<p>We have carried out limited testing on CATS
+with 2.9.2 and with a modified install script it runs. If you are
+running CATS, one drops the zip
+file into the JMRI directory, and unpacks it there. Then copy
+cradic.gif and put the copy into resources. We recommend to keep
+TrainStat in a separate directory. Also move CATS out of the JMRI install directory before updating JMRI in the future to prevent it being deleted by the installer.
 
-<p style="text-align: right;">(Rev 1.9 Sun 24 Jan 2010)</p>
+<p>(Rev 1.9 Sun 24 Jan 2010; additional information on CATS and Java requirements Fri 31 Dec 2015)</p>
 
 <!-- /Footer -->
     </div><!-- closes #mainContent-->

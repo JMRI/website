@@ -23,7 +23,6 @@
 JMRI Install Guide: Windows
 </h1>
 
-<h2>Note:</h2>
 <p><strong>This Install Guide is suitable for JMRI versions 2.5.2 and later -<br>
 for versions 2.5.1 and earlier (2008 and before), <a href="Windows.html">refer to the old Windows Install Guide</a>.</strong></p>
 
@@ -51,29 +50,41 @@ for debugging the "The JAVA SE Platform binary has stopped working" error messag
 <a id="installation"/>
 <h2>Installation Procedure</h2>
 <ol>
-  <li>Determine if your hardware supports Java and JMRI
-  <P>We have had a report that a 180MHz Pentium II is too slow to use, and another that a 330MHz Pentium II is fine,
-    so somewhere around there is the minimum machine configuration, but it's important to have enough memory.  
-    We recommend you have at least 128MB of memory for Windows 98, and 256MB of memory for Windows 2000 or later.  
-    Having 256MB or 512MB respectively would give better performance.  
-    For the more complicated programmer screens, a display with a resolution of 800x600 or larger is strongly recommended. 
-    Note that used PC hardware is available for very little money; it might be cheaper to buy a used computer than to update your existing one.</P>
+  <li>Determine if your hardware supports Java and JMRI.
+  <a name="sysreq"></a><h3>JMRI System Requirements</h3>
+  <p>Using JMRI requires a combination of hardware (in this case running Windows), Java software and a JMRI download for a specific version.
+  <p>JMRI&reg; version 4.2 requires Java 1.8.<br>
+  Version 3.10.1 requires Java 1.6 or later.<br>
+  Version 2.14.1 requires Java 1.5 (or 1.6 if you wish for drag &amp; drop).<br>
+  Version 2.8 requires Java 1.5 or later.
+  </p>
+  
+	<p>Windows 7-10 and Vista SP2 can run the <a href="http://jmri.sourceforge.net/download/index.shtml">current JMRI test and production releases</a> with Java 8.
+	If your computer runs one of these Windows versions, just go to the next step.<br>
+	Computers running Vista SP1 can run <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7.<br>
+	Windows2000 SP3 and XP systems can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.<br>
+	Windows98 and ME can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.8</a>.
+  
+  <p>We recommend you have at least 256&nbsp;MB of memory for Windows 98, 512&nbsp;MB of memory for Windows 2000 and 2&nbsp;GB for the newer W7-W10 systems. We have had a report that a 330&nbsp;MHz Pentium II running W2000 is fine, but it's important to have enough memory and free hard disk space.
+  For the more complicated DecoderPro screens, a display with a resolution of 800x600 or larger is strongly recommended. 
+  Note that used PC hardware is available for very little money; it might be cheaper to buy a used computer than to update your existing one.</p>
 </li>
-<li>Get JMRI
 
+<li>Get JMRI
     <p><a href="../download/index.shtml#prod-rel">Download</a> a version of JMRI, either the latest production version, or a "test version".  Since the version numbers change with every release, this link takes you to the general JMRI download page, where you can select whichever version you like.</p>
 
-    <p>JMRI also supports an offline installation - to setup,  refer to the <a href="#offline">offline installation notes</a> below.
+    <p>JMRI also supports an offline installation - to setup,  refer to the <a href="#offline">Offline Installation</a> section below.
 
-    <p>The JMRI project is continuously adding features, bug fixes, examples and tutorials to the release, and so new "test" versions appear every couple of weeks.  You may find one of these has features that you really want.  These are announced in the "jmriusers" Yahoo discussion group at <a href="http://groups.yahoo.com/group/jmriusers/">http://groups.yahoo.com/group/jmriusers/</a>.</p>
+    <p>The JMRI project is continuously adding features, bug fixes, examples and tutorials to the release, and so new "test" versions appear every couple of weeks.  You may find one of these has features that you really want.  These are announced in the JMRI users Yahoo group at <a href="http://groups.yahoo.com/group/jmriusers/">http://groups.yahoo.com/group/jmriusers/</a>.</p>
 </li>
+
   <a id="update">
   <li>Run the JMRI installer</li>
     <ol type="i">
       <li>Installer start-up
         <p><img src="images/WinInstall-01_Welcome.png" height="393" width="503" alt="installer welcome page"/></p></li>
       <li>Check for a previous version
-        <p>It will then check to see if a previous version of JMRI exists, backup any preference, roster and other settings and, if necessary, uninstall the old version.
+        <p>It will then check to see if a previous version of JMRI exists, backup any Preference, Roster and other settings and, if necessary, uninstall the old JMRI version.
         <br /><img src="images/WinInstall-02_BackupAndRemove.png" height="393" width="503" alt="installer backup and remove page"/>
         <br />or<br /><img src="images/WinInstall-02_BackupOnly.png" height="393" width="503" alt="installer backup page"/></p>
         <p>Uninstall of version 2.5.1 or earlier:</p>
@@ -122,7 +133,7 @@ for debugging the "The JAVA SE Platform binary has stopped working" error messag
 <h2>Notes:</h2>
 
 <a id="offline"/>
-<h4>Offline installation</h4>
+<h3>Offline installation</h3>
 <p>The Windows JMRI installer for version 2.5.2 or later supports an offline installation of Java and JMRI. Typically, this would be used when the computer on which you wish to run JMRI does not have internet access.</p>
 
 <p>(The following instructions assume that you are setting up a blank removable flash drive - creation of a CD will be similar but may depend on the capabilities of your CD authoring software)</p>
@@ -143,7 +154,7 @@ for debugging the "The JAVA SE Platform binary has stopped working" error messag
 <p>Note: If you do not wish to support offline installation on Windows 98 and Windows ME, skip the creation of the directory 'JRE_98ME'.
 
 <a id="largewindow"/>
-<h4>Large Windows</h4>
+<h3>Large Windows</h3>
 <img src="images/TaskbarOptions.png" height="228" width="202" align="right" alt="control panel"/>
 <p>Depending on what it wants to display, JMRI can open up very large windows.  Generally, JMRI uses the size of the screen and information about fixed things like the start bar to decide the maximum size for an opening window so that e.g. the corners can't be reached to resize the window.</p>
 
@@ -154,14 +165,16 @@ for debugging the "The JAVA SE Platform binary has stopped working" error messag
 <p>Also, they can open to the full screen size if the 'Auto hide the taskbar' option is selected</p>
 
 <a id="themes"/>
-<h4>Windows Themes and Skins</h4>
+<h3>Windows Themes and Skins</h3>
 <p>If you're using a "skinning" utility which changes the appearance of programs running on your computer, you should tell it to ignore the "java.exe" program.  That's how JMRI and DecoderPro will appear to it, and they weren't written with such "skins" in mind.</p>
 
 <a id="serialconfig"/>
-<h4>Serial port configuration</h4>
-<p>DecoderPro may encounter problems if the serial port used to connect to the layout shares an interrupt with another serial port.  Typically COM1 and COM3 share an interrupt, as do COM2 and COM4. In particular, some systems are unable to communicate (and may experience a lockup) when the layout's serial port shares an interrupt with a port used for a serial mouse.  Please make sure that the serial port connected to your layout does not share an interrupt with another serial port.</p>
+<h4>Serial Port configuration</h4>
+<p>DecoderPro may encounter problems if the Serial Port used to connect to the layout shares an interrupt with another Serial Port.  Typically COM1 and COM3 share an interrupt, as do COM2 and COM4. In particular, some systems are unable to communicate (and may experience a lockup) when the layout's Serial Port shares an interrupt with a port used for a serial mouse.  Please make sure that the Serial Port connected to your layout does not share an interrupt with another Serial Port.</p>
 
-<p>With Windows XP, your serial port parameters might not be properly set for hardware flow control. To fix this, right-click on My Computer and select Properties. Go to the Hardware tab and click on Device Manager. Open up the section that says Ports (COM &amp; LPT). Right-click on the serial port you have the LocoBuffer hooked to and select Properties. Go to the Port Settings tab and set the options to 19200, 8, None, 1, Hardware. Click OK. Close everything. Restart JMRI and verify your connection settings.</p>
+<p>With Windows XP, your Serial Port parameters might not be properly set for hardware flow control. To fix this, right-click on My Computer and select Properties. Go to the Hardware tab and click on Device Manager. Open up the section that says Ports (COM &amp; LPT). Right-click on the Serial Port you have the LocoBuffer hooked up to and select Properties. Go to the Port Settings tab and set the options to:<br>
+19200, 8, None, 1, Hardware.<br>
+Click OK. Close everything. Restart JMRI and verify your connection settings.</p>
 
 <a id="debugging"/>
 <h2>Debugging</h2>
@@ -183,9 +196,9 @@ for debugging the "The JAVA SE Platform binary has stopped working" error messag
 	<br /><img src="images/WinDebugLog-03_MessagesLog.png" height="299" width="663" alt="messages.log file within systemfiles folder"/>
 	</ol>
 
-<p>If asked for a copy of the error messages, you can usually get them from the messages.log file.  If not, to make a copy of the log window:</p>
+<p>If you're asked for a copy of the error messages, you can usually get them from the messages.log file.  If you can't find it there, make a copy of the log window:</p>
 
-<h4>For JMRI 2.11.1 or later</h4>
+<h4>For JMRI version 2.11.1 or later</h4>
 	<ol>
 	<li>From the main JMRI window, choose "Help > System Console ...".
 	<br /><img src="images/Win-JMRISystemConsole.png" height="409" width="850" alt="JMRI system console"/>
@@ -197,7 +210,7 @@ for debugging the "The JAVA SE Platform binary has stopped working" error messag
 	then Paste, or press the "Ctrl" and "V" keys.
 	</ol>
     
-<h4>For earlier versions of JMRI</h4>
+<h4>For JMRI version 2.10 or earlier</h4>
 	<ol>
 	<li>In the command prompt window, left-click on the JMRI icon to the left of the  words "DecoderPro" (or "PanelPro").  You will get a drop-down menu.
 	
@@ -214,7 +227,7 @@ for debugging the "The JAVA SE Platform binary has stopped working" error messag
 
 <a id="startupissues"/>
 <h3>Startup issues</h3>
-<p>To assist with resolving JMRI start-up issues, it is possible to modify the start menu shortcut used to launch JMRI.</p>
+<p>To assist with resolving JMRI start-up issues, it is possible to modify the Start Menu shortcut used to launch JMRI.</p>
 
 <p>Shortcuts are modified as follows:</p>
 
@@ -272,7 +285,7 @@ start menu shortcut used to launch JMRI.</p>
 	then Paste, or press the "Ctrl" and "V" keys.
 	</ol>
 
-<p>For further information on the JMRI shortcuts, see the <a href="/help/en/html/doc/Technical/StartUpScripts.shtml#windows">page outlining the start-up procedure on Windows</a>.</p>
+<p>For further information on the JMRI shortcuts, see the <a href="/help/en/html/doc/Technical/StartUpScripts.shtml#windows">Help page outlining the start-up procedure on Windows</a>.</p>
 
 <a id="revert"/>
 <h2>Reverting to an earlier version</h2>
