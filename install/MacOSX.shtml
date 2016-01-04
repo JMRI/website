@@ -26,14 +26,18 @@
 
 	<p class="important">Note: These directions are for installing the latest 
 	3.x/4.x releases of JMRI on OS X.<br>
-
   If you need to install an earlier release (such as 2.8, or
   even earlier), please see these 
   <a href="MacOSXRetro.html">Mac install instructions for old JMRI releases</a>.</p>
 
+<ul class="snav"><!-- TOC -->
+<li><a href="#installation">Installation</a>
+<li><a href="#startup">Starting JMRI</a>
+<li><a href="#notes">Notes</a>
+</ul>
   <p>Now, on to the show:</p>
 
-      <h2>Installing JMRI on your Mac OS X computer</h2>
+      <a id="installation"><h2>Installing JMRI on your Mac OS X computer</h2></a>
 
       <ol>
        <li>Determine if your system software supports JMRI:
@@ -159,7 +163,7 @@
 
       </ol>
       
-      <a id="update">
+      <a id="update"></a>
       <h2>Updating JMRI</h2>
           <p>If you already have JMRI installed and working, and want to update
           to a newer version, just:
@@ -173,19 +177,16 @@
           <p>Your existing configuration information, Panel files, etc will
           continue to be used with the new version.
       
-      <h2>Configuring your JMRI setup</h2>
+      <a id="startup"></a><h2>Starting JMRI</h2>
       
-      <p>Connect your computer system to your <a
-         href="../help/en/html/hardware/index.shtml">command station
+      <p>Connect your computer to your <a
+         href="../help/en/html/hardware/index.shtml">Command Station
         hardware</a>.
 
       <p>You can run the program by double-clicking on the
         "DecoderPro" or "PanelPro" or other application icons in the
         JMRI folder.
-        
-        <a id="launch">
-        <p>
-        
+      <p>
         Depending on your security settings, when you
         first try to run a new JMRI version (usually by double clicking
         on the icon for DecoderPro or PanelPro), you may get a warning dialog
@@ -202,7 +203,9 @@
         </table>
         
        <p>
-       Your next step will be to set the preferences for your particular layout connection.
+       Your next step will be to set the Preferences for your particular layout connection.
+       More on this on the <a href="../help/en/html/setup/index.shtml">JMRI Setup help page. 
+       Go there next to complete your setup.</p>
 
        <p> Mac OS X uses names like "<tt>/dev/cu.SomeName</tt>" and
        "<tt>/dev/tty.SomeName</tt>" for devices, including
@@ -217,7 +220,7 @@
        the interface, start JMRI again, and look to see which extra
        name has appeared.  That's the name one you want.</p>
 
-<h2>Problem Solving</h2>
+<h2>Debugging</h2>
 
 JMRI supports many different Mac computers, 
 with several different kinds of processors,
@@ -226,7 +229,7 @@ and various layout hardware.
 Some combinations can cause trouble. 
 This section gives some debugging hints.
 
-<h4>Communications and Mac OS X 10.4</h4>
+<h3>Communications and Mac OS X 10.4</h3>
 
 Mac OS X 10.4 was a transitional version, with lots of 
 different structures in it depending on the specific sub-version (10.4.1 vs 10.4.2 vs 10.4.3).
@@ -241,7 +244,9 @@ to start, or to see the attached layout hardware from within the program,
 please see this 
 <a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/messages/61242">description of how to debug this</a>.
 
-<h2>Customizing your JMRI Installation</h2>
+<a href="#notes"><h2>Notes</h2></a>
+
+<h3>Customizing your JMRI Installation</h3>
 
 You might want to have more than one Configuration for DecoderPro
 or PanelPro preset.  For example, you might to sometimes connect
