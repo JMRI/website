@@ -26,7 +26,7 @@
  <hr class="hide"> 
  <div id="mainContent">
     <div id="teaser">
-	<h2>Latest News</h2>
+	<h1>Latest News</h1>
 	<dl>
 	    <dt>Test version 4.3.1 released</dt>
 	    <dd>
@@ -80,7 +80,7 @@
     </div>
 
   <div class="list">
-    <a id="prod-rel"/>
+    <a id="prod-rel"></a>
     <h2>JMRI 4.2.1 - Production release</h2>
     <dl>
     <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
@@ -92,8 +92,8 @@
 
     <p>Installation guides:
 	<a href="../install/WindowsNew.shtml">Windows</a>,
-	<a href="../install/MacOSX.html">Mac OS X</a>,
-	<a href="../install/Linux.html">Linux</a>
+	<a href="../install/MacOSX.shtml">Mac OS X</a>,
+	<a href="../install/Linux.shtml">Linux</a>
 
     <p>See also the page of 
         <a href="/help/en/html/hardware/index.shtml">layout connections</a>.
@@ -102,7 +102,7 @@
 	only need to download and install one of the files
 	listed here.</p>
 
-	<a id="prod-download"/><p class="dl">Download: 
+	<a id="prod-download"></a><p class="dl">Download: 
 	<ul>
         <li>Mac OS X: <a
             href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download</a><br>sha256: 56eb8403292237b5f5f63fb6fa4f0462d253fea0a752c12c68072418f8f96a8b</li>
@@ -115,7 +115,7 @@
       </ul>
       </p>
 
-    <strong>Notes:</strong><br />
+    <strong>Notes:</strong><br>
     <p>For more information on the release contents, please see the
     <a href="../releasenotes/jmri4.2.1.shtml">release note</a>.
     </p>
@@ -135,7 +135,7 @@
     <p>As the program develops, we also produce test versions. You may
 	    want to try these, as new features will show up in them first. They
 	    are announced in the
-	    <a href="http://groups.yahoo.com/group/jmriusers/">JMRI users email group</A>.</p>
+	    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group.</p>
     <p>
         The most current test release is JMRI 4.3.1.  More information on it, 
         including the links to download a copy, can be found in
@@ -146,7 +146,7 @@
 	   (which is only occasionally updated).</p>
 </dl>
 
-<h2>Other Related Items</h2>
+<h2>Related Items</h2>
 <dl>
 
 <!-- 	<dt class="im"><a href="CD.html"><img src="CDROM.gif" width="32" height="30" alt="Java"></a></dt> -->
