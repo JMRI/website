@@ -24,6 +24,12 @@
   <div id="mainContent">
   
   <h1>JMRI Install Guide: Linux</h1>
+<ul class="snav"><!-- TOC -->
+<li><a href="#installation">Installation</a>
+<li><a href="#startup">Starting JMRI</a>
+<li><a href="#notes">Notes</a>
+<li><a href="#documentation">Documentation</a>
+</ul>
 
       This page describes general aspects of installing JMRI on Linux.
       
@@ -45,21 +51,6 @@
 				<li><a href="OLPC_XO.shtml">OLPC (One Laptop Per Child) XO</a></li>
 				</ul>
 	
-			JMRI users have created helpful pages:
-				<ul>
-				<li>Instructions for Fedora on
-				<a href="http://stpaulterminal.org/software/jmri/">david zuhn's pages</a>
-				and 
-				<a href="http://trainguy.dyn.dhs.org/~jminer/dcc/Installing_JMRI_on_RedHat_Fedora_Core_3.html">Jon Miner's pages</a>.
-				<li>Instructions for Debian on
-				<a href="http://www.jerrard.ca/trains/f4/Debian_DecoderPro.html">Tom Jerrard's web site</a>,
-				including a great description of how to 
-				<a href="http://www.jerrard.ca/trains/f4/ICON.pdf">add an icon to the desktop</a>.
-				</ul>
-				
-			<p>
-			You can also find some more specific information
-			on the "<a href="FAQLinux.html">JMRI Linux FAQ page</a>".
 			<p>
 			The general procedure to install JMRI is:
 				
@@ -156,17 +147,15 @@
 				<li>Install JMRI</li>
 				
 				    <p>Uncompress/untar the file you downloaded above.  This will create a new "JMRI" folder.</p>
-				
 				    <p>Note: Each JMRI release is an independent set of files: It's intended to be used as a
 				    whole.  Each release provides new files, and sometimes removes old files.
 				    You should therefore <em>not</em> expand the download into the same place as an 
 				    existing JMRI installation.  Instead, expand it into a separate location, and
 				    move in to it's final destination, completely replacing any previous version of JMRI.
-				
 				    <p>To install, you just have to move that new JMRI folder to where you
-				    want it on your computer.</p>
-				    
+				    want it on your computer.</p>				    
 				
+<a id="startup"><h2>Starting JMRI</h2></a>
 				<li>Installation is complete.</li>
 				    <p>
 				    You can run the program by using
@@ -176,6 +165,21 @@
 				
 				</ol>
 
+<a id="notes"><h2>Notes</h2></a>
+				<p>You can find some more specific information
+				on the "<a href="FAQLinux.html">JMRI Linux FAQ page</a>".
+				<p>JMRI users have created helpful pages:
+					<ul>
+					<li>Instructions for Fedora on
+					<a href="http://stpaulterminal.org/software/jmri/">david zuhn's pages</a>
+					and 
+					<a href="http://trainguy.dyn.dhs.org/~jminer/dcc/Installing_JMRI_on_RedHat_Fedora_Core_3.html">Jon Miner's pages</a>.
+					<li>Instructions for Debian on
+					<a href="http://www.jerrard.ca/trains/f4/Debian_DecoderPro.html">Tom Jerrard's web site</a>,
+					including a great description of how to 
+					<a href="http://www.jerrard.ca/trains/f4/ICON.pdf">add an icon to the desktop</a>.
+					</ul>
+					
 <!--#include virtual="/Footer" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
