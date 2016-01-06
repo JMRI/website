@@ -306,8 +306,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Operations</h4>
    <ul>
+    <li>You can now manually add or delete rolling stock from a built train no matter where in
+     the route the train is. Previously, you could only add cars to a train that hadn't departed its
+     terminal. Now as long as the car or loco's location hasn't been serviced by the train, you can
+     manually modify the train's manifest. Nice feature for operators that run in real time.</li>
     <li>New feature, you can now add a comment for each of the radio buttons in the Timetable
      window.</li>
+    <li>You can now enter a two digit build date for your rolling stock. A two digit date will
+     convert to something built in the 1900s.</li>
+    <li>You can now force a track length to be shorter than the track space consumed by your
+     rolling stock. This allows you to make length adjustments without having to remove the cars or
+     locos sitting on the track.</li>
    </ul>
 
    <h4>Roster</h4>
