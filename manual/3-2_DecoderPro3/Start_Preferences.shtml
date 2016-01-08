@@ -12,14 +12,6 @@
 <link rel="icon" href="/images/jmri.ico" TYPE="image/png">
 <link rel="home" title="Home" href="/">
 <!-- /Style -->
-<script type="text/javascript">
-<!--
-function MM_jumpMenu(targ,selObj,restore){ //v3.0
-  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
-  if (restore) selObj.selectedIndex=0;
-}
-//-->
-</script>
 </head>
 
 <body>
@@ -244,7 +236,7 @@ An important concept to keep in mind is that JMRI is  nothing more than a very s
   <tr>
     <td><strong>Select font size in points</strong></td>
     <td><form name="form" id="form">
-      <select name="jumpMenu" id="jumpMenu" onChange="MM_jumpMenu('parent',this,0)">
+      <select name="jumpMenu" id="jumpMenu">
         <option>12</option>
       </select> 
       select font size
