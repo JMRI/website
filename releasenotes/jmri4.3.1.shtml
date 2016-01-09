@@ -56,7 +56,11 @@ see our
 
 <h3>Known problems with this release</h3>
 
-This release has a problem with blinking sensor icons, the blinking animation is broken.
+<p>This release has a problem with blinking sensor icons, the blinking animation is broken.
+
+   <p>Operations can lockup during a train build if you've selected "Auto HPT" for loco assignment,
+    and no cars were assigned to the train during the build, and the loco weight is set to zero. The
+    workaround is to enter a weight in tons for each loco. Fixed in test release 4.3.2.</p>
 
 <!--
 If any of those effect you, please either wait for
