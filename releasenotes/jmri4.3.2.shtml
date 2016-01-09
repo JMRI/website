@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.3.2 release
       </h2>
 
-    <p>Date: mmm dd, 2016</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: January 8, 2016</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test version 4.3.2 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h3>Notes:</h3>
 
@@ -144,164 +146,50 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-<!--
+
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.dmg/download</a><br/>
-    sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-R2edd195.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-R2edd195.dmg/download</a><br/>
+    sha256: 5e02da9ce3ee9b33961429dce7847823d0be7935056e80019c9f47620d0660fc</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.exe/download</a><br/>
-    sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-R2edd195.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-R2edd195.exe/download</a><br/>
+    sha256: c34e1fe1d38642c71d97f9fa119d827f2da6a11372a968675bf1239d4d5bde13</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.1-r29773.tgz/download</a><br/>
-    sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
--->
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-R2edd195.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-R2edd195.tgz/download</a><br/>
+    sha256: be2b032d8685b5a4635285a185b9a4289450c8cb3bb97ab9e6b506ac4592fab4</p>
+
 <!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.3.2/ws/jmri/dist/release/">CI project page</a>.
  -->
 
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
 
 <h3>Changes since <a href="">jmri4.3.1.shtml">test release 4.3.1</a>:</h3>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.3.2+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h4>Hardware Support</h4>
-
-        <p></p>
-
-        <h5>C/MRI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>LocoNet</h5>
-            <ul>
-                <li>
-                </li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
-        <h5>SPROG</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-    <h4>Signals</h4>
-        <h5>Signal Systems</h5>
-            <ul>
-                <li></li>
-            </ul>
-        <h5>Signal Mast Editor</h5>
-            <ul>
-                <li></li>
-            </ul>
 
     <h4>New / Updated decoder definitions</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-        <h5>BLI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Doehler &amp; Haas</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ESU</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li>Dave Heap made the following changes:<br>
-                    <ul>
-                        <li></li>
-                    </ul>
-               </li>
-            </ul>
-
-        <h5>RR-CirKits</h5>
-            <ul>
-                <li></li>
-            </ul>
 
         <h5>SoundTraxx</h5>
             <ul>
                 <li>Michael Mosher updated the Econamy definitions from the 1.3 manuals</li>
-            </ul>
-
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
+                <li>Soundtraxx was added as an OEM for the Athearn RTR SD40</li>
             </ul>
 
         <h5>ZIMO</h5>
             <ul>
                 <li>Mark Waters updated files to hide the Version 34 decoders as the v34 updates are included in the v33 files with qualifiers.</li>
                 <li>Mark Waters updated files to fix dimming mask meanings inverted, as reported on user group.</li>
-            </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
             </ul>
 
 
@@ -323,34 +211,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
      assigned loco weight was set to zero.</li>
    </ul>
 
-   <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>OBlocks</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Preferences</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Logix</h4>
-        <ul>
-            <li></li>
-        </ul>
-
     <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+            <li>Layout Editor panel files are validated against XML Schema.  These schema
+            were improved to catch several kinds of internal inconsistencies.</li>
         </ul>
 
     <h4>Scripting</h4>
         <ul>
-            <li></li>
+            <li>Several improvements to the scripting windows</li>
+            <li>ECMAScript is now consistently referred to as that, instead of sometimes being called JavaScript</li>
         </ul>
 
     <h4>Miscellaneous</h4>
@@ -358,6 +228,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Updated the libUSB (for misc USB device support), and enabled use on 64-bit MacOS X systems</li>
             <li>Updated the Joal library to now correctly load WAV files that contain metadata at the end of the file</li>
             <li>Herve Blorec improved the French translations</li>
+            <li>The stop aspect for Danish signals was improved</li>
+            <li>The "Monitor" panes in several systems weren't obeying the "always on top" check box, fixed.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
