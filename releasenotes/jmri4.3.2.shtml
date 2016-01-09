@@ -179,78 +179,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
 
     <h4>New / Updated decoder definitions</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-        <h5>BLI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Doehler &amp; Haas</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ESU</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li>Dave Heap made the following changes:<br>
-                    <ul>
-                        <li></li>
-                    </ul>
-               </li>
-            </ul>
-
-        <h5>RR-CirKits</h5>
-            <ul>
-                <li></li>
-            </ul>
 
         <h5>SoundTraxx</h5>
             <ul>
                 <li>Michael Mosher updated the Econamy definitions from the 1.3 manuals</li>
-            </ul>
-
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
+                <li>Soundtraxx was added as an OEM for the Athearn RTR SD40</li>
             </ul>
 
         <h5>ZIMO</h5>
             <ul>
                 <li>Mark Waters updated files to hide the Version 34 decoders as the v34 updates are included in the v33 files with qualifiers.</li>
                 <li>Mark Waters updated files to fix dimming mask meanings inverted, as reported on user group.</li>
-            </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
             </ul>
 
 
@@ -272,34 +211,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
      assigned loco weight was set to zero.</li>
    </ul>
 
-   <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>OBlocks</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Preferences</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Logix</h4>
-        <ul>
-            <li></li>
-        </ul>
-
     <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+            <li>Layout Editor panel files are validated against XML Schema.  These schema
+            were improved to catch several kinds of internal inconsistencies.</li>
         </ul>
 
     <h4>Scripting</h4>
         <ul>
-            <li></li>
+            <li>Several improvements to the scripting windows</li>
+            <li>ECMAScript is now consistently referred to as that, instead of sometimes being called JavaScript</li>
         </ul>
 
     <h4>Miscellaneous</h4>
@@ -307,6 +228,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Updated the libUSB (for misc USB device support), and enabled use on 64-bit MacOS X systems</li>
             <li>Updated the Joal library to now correctly load WAV files that contain metadata at the end of the file</li>
             <li>Herve Blorec improved the French translations</li>
+            <li>The stop aspect for Danish signals was improved</li>
+            <li>The "Monitor" panes in several systems weren't obeying the "always on top" check box, fixed.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
