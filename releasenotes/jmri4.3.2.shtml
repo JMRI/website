@@ -318,7 +318,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <li>You can now force a track length to be shorter than the track space consumed by your
      rolling stock. This allows you to make length adjustments without having to remove the cars or
      locos sitting on the track.</li>
-    <li>Fixed a problem were operations would lockup during a train build if "Auto HPT" was
+    <li>Fixed a problem where operations would lockup during a train build if "Auto HPT" was
      selected for loco assignment, and no cars were assigned to the train during the build, and the
      assigned loco weight was set to zero.</li>
    </ul>
