@@ -57,6 +57,10 @@ or use the <a href="jmri4.3.1.shtml">JMRI 4.3.1</a> test release.
 select the "Rebuild Decoder Index" item from the menu.  It's on the Debug menu in PanelPro,
 and the Actions menu in DecoderPro.
 
+   <p>Operations can lockup during a train build if you've selected "Auto HPT" for loco assignment,
+    and no cars were assigned to the train during the build, and the loco weight is set to zero. The
+    workaround is to enter a weight in tons for each loco. Fixed in test release 4.3.2.</p>
+
 <a id="warnings" name="warnings"></a>
 <h3>Warnings:</h3>
 
