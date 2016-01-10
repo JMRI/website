@@ -172,13 +172,23 @@ on the
 These are development files, and might not be working at any particular time.</p>
 -->
 
-<h3>Changes since <a href="">jmri4.3.1.shtml">test release 4.3.1</a>:</h3>
+<h3>Changes since <a href="jmri4.3.1.shtml">test release 4.3.1</a>:</h3>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.3.2+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
 
     <h4>New / Updated decoder definitions</h4>
+        <ul>
+            <li>Identify & Read Type fall back to Paged Mode if the selected mode fails. (Dave Heap)</li>
+            <li>HTML can now be used in variable labels. It can already be used in pane text and tool tips.
+            See <a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml" target="_blank">Advanced Decoder Definitions</a>. (Dave Heap)</li>
+        </ul>
+
+        <h5>ESU</h5>
+            <ul>
+                <li>The ESU decoder file panes have been reorganised in line with better practice. (Dave Heap)</li>
+            </ul>
 
         <h5>SoundTraxx</h5>
             <ul>
