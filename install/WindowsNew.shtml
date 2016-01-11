@@ -131,18 +131,15 @@ for versions 2.5.1 and earlier (2008 and before), <a href="Windows.html">refer t
 	<p>(The following instructions assume that you are setting up a blank removable flash drive - creation of a CD will be similar but may depend on the capabilities of your CD authoring software)</p>	
 		<ol>
 		<li>Copy the <a href="../download/index.shtml#prod-rel">previously downloaded</a> JMRI installer onto the root of the flash drive.
-		<li>Create directories in the root of the flash drive called:
+		<li>Create a directory in the root of the flash drive called:
 		<ul>
 		<li>JRE
-		<li>JRE_98ME
 		<p>The following image shows the resulting structure:
-		<br><img src="images/WinOfflineInstall-Folders.png" height="119" width="352" alt="Offline installer folder structure">
+		<br><img src="images/WinOfflineInstall-Folders.png" height="119" width="230" alt="Offline installer folder structure">
 		</ul>
-		<li>In the JRE directory, place a copy of the Java offline installer for Windows 2000 or later. If required, the latest version can be <a href="http://java.com/winoffline_installer/">downloaded from Sun Microsystems here</a>. A typical name for this file is 'jre-6u11-windows-i586-p-s.exe'.
-		<li>In the JRE_98ME directory, place a copy of the Java offline installer for Windows 98 and ME. If required, this can be <a href="http://javadl.sun.com/webapps/download/AutoDL?BundleId=26411">downloaded from Sun Microsystems here</a>. The filename should be 'jre-1_5_0_17-windows-i586-p-s.exe'.
+		<li>In the JRE directory, place a copy of the Java offline installer for Windows 2000 or later. If required, the latest version can be <a href="http://java.com/winoffline_installer/">downloaded from Sun Microsystems here</a>. A typical name for this file is 'jre-8u66-windows-i586.exe'.
 		</ol>
 	<p>Setup of the JMRI offline installation media is now complete.</p>
-	<p>Note: If you do not wish to support offline installation on Windows 98 and Windows ME, skip the creation of the directory 'JRE_98ME'.
 	
  <a id="startup"><h2>Starting JMRI</h2></a>
  <ul>
