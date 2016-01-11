@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_Cars.shtml 18388 2011-09-07 09:24:59Z dat7719 $ -->
 <title>Operations-Locations</title>
 
 <!-- Style -->
@@ -19,17 +18,14 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Operations Cars Window</h1>
+<h2>Operations Cars Window</h2>
 
-<div align=right>
 <div align="right">
   <p><a href="Ops_Locations.shtml">Previous </a> | <a href="Ops_Engines.shtml">Next</a></p>
   <p><a href="index.shtml#Operations">Back to Index</a></p>
-</div>
-<p><a href="Ops_Locations.shtml"></a></p>
 </div>
 
 <hr>
@@ -133,12 +129,15 @@ opens the<strong><a href="Ops_Locations_setCars.shtml">Set Car Location</a></str
 </ul>
  <p><strong>Window</strong></p>
  <p><strong>Help</strong></p>
-<p>&nbsp;</p>
-<div align=right>
+
+<div align="right">
   <p><a href="Ops_Locations.shtml">Previous </a> | <a href="Ops_Engines.shtml">Next</a></p>
   <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

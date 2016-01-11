@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
-<!-- $Id: Ops_Locations.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
 <title>Operations-Locations</title>
 
 <!-- Style -->
@@ -19,17 +18,17 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Operations Set Cars Window</h1>
+<h2>Operations Set Cars Window</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Cars.shtml">Back </a></p>
 </div>
 
 <hr>
-<p>You can select the <strong>Set Cars</strong> from the <strong><a href="Ops_Cars.shtml">Cars </a></strong>window <strong>Tools</strong> menu. This allows you to change the location, destinationa, status, or train assignment for a group of cars. This tool works the same as the <strong>Set Car Location </strong>tool as described below, except that multiple cars are modified. Select the cars you want in the table and then select <strong>Set Cars. </strong>The first selected car becomes the default, and if you press 
+<p>You can select the <strong>Set Cars</strong> from the <strong><a href="Ops_Cars.shtml">Cars </a></strong>window <strong>Tools</strong> menu. This allows you to change the location, destination, status, or train assignment for a group of cars. This tool works the same as the <strong>Set Car Location </strong>tool as described below, except that multiple cars are modified. Select the cars you want in the table and then select <strong>Set Cars. </strong>The first selected car becomes the default, and if you press 
   <input type="button" name="button" id="button" value="Change"> 
   , all of the other selected cars will have the same settings as the default car.  Be sure to 
   <input type="button" name="button5" id="button5" value="Save"> 
@@ -55,7 +54,7 @@ in the <a href="Ops_Cars.shtml">Cars</a> window if you want to keep your changes
           shows</strong> valid track for a given location.</p>
       <p><strong>Load</strong></p>
       <p>You may also change the cars load.</p>
-      <p><strong>Optional--Normally Set by Progam</strong></p>
+      <p><strong>Optional--Normally Set by Program</strong></p>
     <p>See window help </p></td>
   </tr>
 </table>
@@ -83,17 +82,20 @@ found for each car in the <strong><a href="Ops_Cars.shtml">Cars</a></strong> win
     shows</strong> valid track for a given location.</p>
     <p><strong>Load</strong></p>
     <p>You may also change the cars load.</p>
-    <p><strong>Optional--Normally Set by Progam</strong></p>
+    <p><strong>Optional--Normally Set by Program</strong></p>
     <p>See window help </p></td>
   </tr>
 </table>
-<p>&nbsp;</p>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Cars.shtml">Back </a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

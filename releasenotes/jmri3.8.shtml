@@ -46,6 +46,8 @@ JMRI is now only available under the
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
+<p><strong>This is the latest JMRI production or test version that will work with CATS 2.34 (Release2037)/Java 1.6.</strong></p>  
+
 <h3>New warnings for this version:</h3>
 
 <p>The decoder definition files have been reformatted to make them easier to maintain.
@@ -112,10 +114,10 @@ on the
 <h4>General</h4>
 
 <!-- from 3.7.1 note -->
-<p>Randall Wood added <a href="http://jmri.org/help/en/html/profiles.shtml">configuration profiles</a>.</p>
+<p>Randall Wood added <a href="http://jmri.org/help/en/html/profiles.shtml">Configuration Profiles</a>.</p>
 <!-- from 3.7.2 note -->
 <ul>
-<li>The ability to duplicate configuration profiles has been added. A duplicate profile contains a copy of everything in the existing profile's directory.<!-- Randall Wood --></li>
+<li>The ability to duplicate Configuration Profiles has been added. A duplicate Profile contains a copy of everything in the existing Profile's directory.<!-- Randall Wood --></li>
 </ul>
 
 <!-- from 3.7.1 note -->
@@ -129,7 +131,7 @@ on the
 <!-- from 3.7.2 note -->
 <p>Jeffrey Machacek made the following changes:</p>
   <ul>
-    <li>Added a "Clear all non-in-use Slots" button to the Loconet SlotMonitor.</li>
+    <li>Added a "Clear all non-in-use Slots" button to the LocoNet SlotMonitor.</li>
     <li>Updated the WiThrottle server.</li>
   </ul>
 

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Start_Preferences.shtml 18193 2011-08-16 23:19:17Z dat7719 $ -->
 <title>Decoder Pro Manual: Getting Started</title>
 
 <!-- Style -->
@@ -28,14 +27,13 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 <h1>Getting Started with DecoderPro&reg;</h1>
-<h1>How do I set up my preferences?</h1>
+<h2>How do I set up my preferences?</h2>
 
 <div align=right>
 <p><a href="Start_DecoderPro.shtml">Previous</a>
 <p><a href="index.shtml#Getting Started">Back to Index</a> </div>
 
 <hr>
-<h3>&nbsp;</h3>
 <p>
  Click on the Edit menu and then Preferences... option
 in the screen below, which opens the Preferences window. (This window may open automatically the first time you
@@ -271,5 +269,8 @@ button to save all your selections.</h2>
 <p><a href="index.shtml#Getting Started">Back to Index</a> </div>
 
 <!--#include virtual="/Footer" -->
-</body>
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
+    </body>
 </html>

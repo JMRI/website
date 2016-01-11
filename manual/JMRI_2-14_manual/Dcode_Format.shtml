@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009, 2010 -->
-<!-- $Id: Dcode_Format.shtml 18386 2011-09-07 08:33:40Z dat7719 $ -->
 <title>Formating the Decoder Definition</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Decoder Definition</h1>
-<h1>Format</h1>
+<h2>Format</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Dcode_Start.shtml">Previous</a> | <a href="Dcode_Testing.shtml">Next</a></p>
 <p><a href="index.shtml#DecoderDefinition">Back to Index</a></p>
 </div>
@@ -49,13 +48,16 @@ Use a basic text file editor like  Notepad, or an XML editor, XML Marker is a go
 <p><img src="images/Dcode04.png" alt="variable" width="522" height="81" border="2"></p>
 <p><img src="images/Dcode05.png" alt="variable sample" width="594" height="398" border="2"><br>
   Once you get your variables all in order, it&rsquo;s time to test the definition.</p>
-<hr>
 
-<div align=right>
+<hr>
+<div align="right">
 <p><a href="Dcode_Testing.shtml"></a><a href="Dcode_Start.shtml">Previous</a> | <a href="Dcode_Testing.shtml">Next</a></p>
 <p><a href="index.shtml#DecoderDefinition">Back to Index</a><a href="index.shtml#Main"></a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
-</body>
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
+    </body>
 </html>

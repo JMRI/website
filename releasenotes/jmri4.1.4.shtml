@@ -76,6 +76,10 @@ or pick up a
 from
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
 
+<p>The Digitrax PR2 does not work with this release.  If you need to work with a 
+PR2, please stay with <a href="jmri4.1.3.shtml">JMRI 4.1.3</a> or earlier,
+or wait for <a href="jmri4.3.1.shtml">JMRI 4.3.1</a> which should appear in December 2015.
+
 <h3>New warnings for this version:</h3>
 
 <p>The configuration is now stored in multiple files within a directory named <code>profile</code> inside a 
@@ -201,11 +205,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>Basic support for Base Station firmware versions 1.0 and 1.1</li>
                 <li>Supports Serial/USB interface</li>
+		<li>Supports Network connection to Base Station</li>
                 <li>Simulator for off-line operation of JMRI</li>
-                <li>Basic support for "DCC++ over TCP" - connect from a remote JMRI instance to a local instance
+                <li>Basic support for "DCC++ over TCP" - connect from
+            a remote JMRI instance to a local JMRI instance
                     hosting a DCC++ base station</li>
                 <li>Throttle and Programmer support</li>
-                <li>Basic support for Sensors, Accessory decoders and Turnouts</li>
+                <li>Basic support for Sensors, Accessory decoders and
+            Turnouts</li>
+	        <li>Packet Generator and Port Monitor</li>
+		<li>Configurator tool for Base Station defined Sensors
+            and Turnouts</li>
             </ul>
         </ul>
 
