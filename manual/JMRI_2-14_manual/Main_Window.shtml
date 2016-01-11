@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Main_Window.shtml 18157 2011-08-11 10:37:44Z dat7719 $ -->
-<TITLE>
+<title>
 DecoderPro&reg; Main Window
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -22,9 +21,9 @@ DecoderPro&reg; Main Window
 <div id="mainContent">
 
 <h1>DecoderPro&reg; Main Window</h1>
-<h1>Window Menu</h1>
+<h2>Window Menu</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Debug.shtml">Previous</a> | <a href="Main_Help.shtml">Next </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -42,14 +41,17 @@ DecoderPro&reg; Main Window
   <input type="checkbox" name="checkbox3" id="checkbox3"> 
   <strong>Throttle</strong></p>
 <p>Shows all DecoderPro windows that are open, active windows will be checked.</p>
-<p>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Help.shtml"></a><a href="Main_Debug.shtml">Previous</a> | <a href="Main_Help.shtml">Next </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

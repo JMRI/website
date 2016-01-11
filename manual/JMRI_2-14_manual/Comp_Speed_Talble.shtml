@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009, 2010 -->
-<!-- $Id: Comp_Speed_Talble.shtml 18193 2011-08-16 23:19:17Z dat7719 $ -->
 <title>Comprehensive Programmer - Speed Control Pane</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Comprehensive Programmer</h1>
-<h1>The Speed Table Pane</h1>
+<h2>The Speed Table Pane</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_Speed.shtml">Previous | </a>
   <a href="Comp_FMap.shtml">Next</a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
@@ -82,14 +81,18 @@ One very important thing to remember: <span class="ACCENT"><strong>No matter
 how pretty your speed table looks, it has absolutely no effect on the locomotive
 unless you write it to the decoder!</strong></span></p>
 <p>And this point is especially pertinent with the QSI and  Soundtraxx Tsunami decoders, because they have a separate drop down box like  the QSI box below.&nbsp; They require that you  select the <strong>user defined</strong> speed table  entry in this box or your table will not be written to the decoder.&nbsp; Interestingly, Tsunami puts the selection at  the bottom of the list making it very easy to miss. </p>
-<p align="center"><img src="images/Speed_Table_QSI.png" width="799" height="308" alt="QSI speed table"><br>
+<p align="center"><img src="images/Speed_Table_QSI.png" width="799" height="308" alt="QSI speed table">
+
 <hr>
-<div align=right>
+<div align="right">
 <p><a href="Comp_FMap.shtml"></a>
   <a href="Comp_Speed.shtml">Previous | </a> <a href="Comp_FMap.shtml">Next</a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
 
 <!--#include virtual="/Footer" -->
-</body>
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
+    </body>
 </html>

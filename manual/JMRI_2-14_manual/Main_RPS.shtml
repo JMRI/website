@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
-<!-- $Id: Main_RPS.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<TITLE>
+<title>
 DecoderPro&reg; Main Window
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -23,9 +22,9 @@ DecoderPro&reg; Main Window
 <div id="mainContent">
 
 <h1>DecoderPro&reg; Main Window</h1>
-<h1>RPS Menu</h1>
+<h2>RPS Menu</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
@@ -60,6 +59,7 @@ DecoderPro&reg; Main Window
   <p>Open the <a href="#RPSAlign">RPS Alignment</a> window that allows you to align the sensors.</p>
 </blockquote>
 <hr>
+
 <h4><a name="ReceiverControl"></a> RPS Receiver Control</h4>
 <p align="center"><img src="images/Main_RPS_RcvrCtrl.png" alt="RPS Receiver Control" width="585" height="261" border="4"></p>
 <div>
@@ -72,6 +72,7 @@ DecoderPro&reg; Main Window
 <div>
   <div align="right"><a href="#Polling">Back</a></div>
 </div>
+
 <h4 align="left"><a name="DebuggerWin"></a> RPS Debugger Window</h4>
 <p align="center"><img src="images/Main_RPS_Debugger.png" alt="RPS Debugger" width="372" height="339" border="4"></p>
 <div>
@@ -82,23 +83,28 @@ DecoderPro&reg; Main Window
 <div>
   <div align="right"><a href="#Tracking">Back</a></div>
 </div>
+
 <h4 align="left"><a name="SpeedSound"></a> RPS Sound Speed Control</h4>
 <p align="center"><img src="images/Main_RPS_SoundSpeed.png" alt="RPS Sound Speed Control" width="486" height="188"></p>
 <div>
   <div align="right"><a href="#Speed">Back</a></div>
 </div>
+
 <h4 align="left"><a name="RPSAlign"></a> RPS Alignment</h4>
 <p align="center"><img src="images/Main_RPS_Align.png" alt="RPS Align " width="779" height="538" border="4"></p>
 <div>
   <div align="right"><a href="#Align">Back</a></div>
 </div>
-<p align="left">&nbsp;</p>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

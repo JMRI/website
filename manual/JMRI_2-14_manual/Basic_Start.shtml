@@ -21,20 +21,18 @@
 <div id="mainContent">
 
 <h1>The Basic Programmer</h1>
-<h1>The Roster Entry Pane</h1>
+<h2>The Roster Entry Pane</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Programmer_Setup.shtml">Previous | </a><a href="Basic_BasicPane.shtml">Next</a></p>
 <p><a href="index.shtml#Basic Programmer">Back to Index</a></p>
 </div>
 
-
 <hr>
 
-<h2>&nbsp;</h2>
 <p>The first action in programming a locomotive with DecoderPro&reg; is to fill out the roster entry screen.</p>
 
-A <b>roster</b> is a  database of all locomotives that your installation
+A <b>Roster</b> is a  database of all locomotives that your installation
 of DecoderPro&reg; has programmed. It includes the information seen in the screen
 below:
 <div align="center"><img src="images/Basic_Roster.png" width="652" height="601" alt="basic roster"></div>
@@ -66,7 +64,7 @@ is the current programming mode that is selected.</p>
 <div align="center"><img src="images/SetProgramMode.png" alt="Set pogram mode dialog" border="5" class="BOXIT">
   
 </div>
-<p>There are severall <a href="Basic_Mode.shtml"><strong>programming modes</strong></a>. JMRI now selects the best mode for you.  It determines this from the command station type you are using and the decoder model you are attempting to program.  Usually this will be OK. If you find that you are having a problem with programming you may try a different mode.</p>
+<p>There are several <a href="Basic_Mode.shtml"><strong>programming modes</strong></a>. JMRI now selects the best mode for you.  It determines this from the command station type you are using and the decoder model you are attempting to program.  Usually this will be OK. If you find that you are having a problem with programming you may try a different mode.</p>
 
 <p>For most newer decoders, 
 stay with <strong>Paged mode</strong> or whichever Direct mode  your Command Station supports. Your 
@@ -89,5 +87,8 @@ necessary... but if you are having problems, experiment.  If a mode is not suppo
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_Settings.shtml 18473 2011-09-14 07:01:17Z dat7719 $ -->
 <title>Operations-Settings</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Operations Settings Window</h1>
+<h2>Operations Settings Window</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Start.shtml">Previous </a> | <a href="Ops_Locations.shtml">Next</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -397,7 +396,7 @@ you would like the program to ask you which track a train should Arrive to stagi
           <td colspan="3">Time uses the format HourMinute</td>
         </tr>
         <tr>
-          <td colspan="3"><p>The car parametes for pick up car (PC) and set out car (SC) are road, number, type, length, load, color, location namel, track name, destination name, destination track name, owner name, kernel name, car comment, pick up comment, set out comment, C, F, H, RFID. Where C = Caboose, F = FRED, and H = Hazardous.</p>
+          <td colspan="3"><p>The car parameters for pick up car (PC) and set out car (SC) are road, number, type, length, load, color, location name, track name, destination name, destination track name, owner name, kernel name, car comment, pick up comment, set out comment, C, F, H, RFID. Where C = Caboose, F = FRED, and H = Hazardous.</p>
             <p>The loco parameters for pick up (PL) and set out loco (SL) are road, number, model, length, type, hp, location name, track name, destination name, destination track name, owner name, consist name, car comment, RFID.</p>
             <p><a href="http://groups.yahoo.com/group/jmriusers/files/Operations" target="_blank">Examples of custom manifests</a> (requires that you have Yahoo ID and Password to JMRI Groups)</p></td>
         </tr>
@@ -405,16 +404,16 @@ you would like the program to ask you which track a train should Arrive to stagi
       <td width="34%" valign="top">&nbsp;</td>
     </tr>
   </table>
-  <p>&nbsp;</p>
-  <p align="right"><a href="#OptionsMenu">Back</a></p>
-  <div align=right>
-    <div align=right>
+
+    <div align="right">
+      <p><a href="#OptionsMenu">Back to Options</a></p>
       <p><a href="Ops_Start.shtml">Previous </a> | <a href="Ops_Locations.shtml">Next</a></p>
       <p><a href="index.shtml#Operations">Back to Index</a></p>
     </div>
-    <p>.</p>
-</div>
 	  
-  <!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

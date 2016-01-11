@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_ImportEngines.shtml 18278 2011-08-23 19:50:23Z dat7719 $ -->
 <title>Operations Importing Engines</title>
 
 <!-- Style -->
@@ -20,17 +19,18 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Importing Locomotives </h1>
-<div align=right>
+<h2>Importing Locomotives </h2>
+
+<div align="right">
   <p><a href="Ops_Cars.shtml">Back </a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <hr>
 <h4>Import locomotives from roster</h4>
-<p>If you already have a <a href="Comp_Setup_Roster.shtml">DecoderPro® roster</a> created when programming decoders, you may import them into the Operations program. All locomotives that are not already in your Operations roster will be imported and a message will be displayed informing you of how many locomotives were imported. This way you can use this  tool any time you add locomotives to your DecoderPro&reg; locomotive roster. The DecoderPro&reg; locomotive  roster doesn't have the locomotives length, so a default length is entered for  you. You should correct the locomotive length if you want the program to  correctly calculate your train lengths.</p>
+<p>If you already have a <a href="Comp_Setup_Roster.shtml">DecoderProï¿½ roster</a> created when programming decoders, you may import them into the Operations program. All locomotives that are not already in your Operations roster will be imported and a message will be displayed informing you of how many locomotives were imported. This way you can use this  tool any time you add locomotives to your DecoderPro&reg; locomotive roster. The DecoderPro&reg; locomotive  roster doesn't have the locomotives length, so a default length is entered for  you. You should correct the locomotive length if you want the program to  correctly calculate your train lengths.</p>
 <p>Now we should have imported yoiur programming engine roster into the  Operations Engine roster you will need to edit the entries to add the attributes that are required for operations but were not needed in the Engine Roster file when you programmed the recorders.</p>
 <p><img src="images/Ops_EngineRoster.png" width="922" height="301" alt="Engine Roster"></p>
 <p>These engines were imported from JMRI Roster, so we will need to edit them to set the correct length, Consist, Location as required.<br>
@@ -164,11 +164,14 @@ and then press
 that can be found at the bottom  right of the <strong>Edit locomotive</strong> window</p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Cars.shtml">Back </a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

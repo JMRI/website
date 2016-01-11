@@ -305,7 +305,7 @@
 		padding: .2em;
 		border: solid 1px;
 		font-family: monospace;
-		white-space: pre;
+		white-space: pre-wrap;
 	}
 
 	.co,
@@ -460,13 +460,12 @@ hr {
 
 #side h2 {
 	margin-top: 1em;
-	}
-#side h2 {
 	color: #33B;
 }
 #side h3 {
 	color: #333;
 	margin: 2em 0 0 0;
+	padding-left: 2em
 }
 #side h4 {
 	color: #999;

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Main_Menu.shtml 18146 2011-08-09 11:51:16Z dat7719 $ -->
 <title>DecoderPro Menus</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
-<h1>Menu Overview</h1>
+<h2>Menu Overview</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
@@ -290,10 +289,13 @@
 </ul>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

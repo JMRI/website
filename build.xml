@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ant build.xml file for JMRI development                                -->
+<!-- Bob Jacobsen, Copyright 2002-2016                                      -->
+
+<!-- This file is part of JMRI.                                             -->
+<!--                                                                        -->
+<!-- JMRI is free software; you can redistribute it and/or modify it under  -->
+<!-- the terms of version 2 of the GNU General Public License as published  -->
+<!-- by the Free Software Foundation. See the "COPYING" file for a copy     -->
+<!-- of this license.                                                       -->
+<!--                                                                        -->
+<!-- JMRI is distributed in the hope that it will be useful, but WITHOUT    -->
+<!-- ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or  -->
+<!-- FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License  -->
+<!-- for more details.                                                      -->
+
+<project name="JMRI/website" default="" basedir=".">
+
+    <!-- basedir="." means all paths are relative to the top level -->
+    <!-- directory in the project.                                 -->
+
+    <description>
+    Provides build services for JMRI website
+    </description>
+
+    <property name="jmri.copyright.year" value="1997-2016"/>
+
+    <!-- check for bad line ends, e.g. not ready to go into Git -->
+    <!-- May not (probably will not) work on Windows -->
+
+    <target name="checklineends" description="mark files with CRLF line ends">
+      <exec executable="sh" outputproperty="checklineeds.files">
+        <arg value="-c" />
+        <arg value="find . -not -type d -exec file '{}' ';' | grep CRLF" />
+      </exec>      
+      
+      <fail message="${checklineeds.files}">
+        <condition>
+          <length string="${checklineeds.files}" when="greater" length="0" />
+        </condition>     
+      </fail> 
+    </target>
+
+    <!-- end of file-checking targets -->
+
+    <target name="fixlineends" description="convert specific files to LF line ends">
+        <fixcrlf eol="unix" srcdir="." includes="
+            **/*.css
+            **/*.csh
+            **/*.df
+            **/*.dtd
+            **/*htm
+            **/*html
+            **/*.java
+            **/*.json
+            **/*.jsp
+            **/*.jspf
+            **/*.lcf
+            **/*.md
+            **/*.php
+            **/*.pl
+            **/*.plist
+            **/*.properties
+            **/*.sh
+            **/*.svg
+            **/*.tld
+            **/*.txt
+            **/*.xml
+            **/*.xsd
+            **/*.xsl
+            **/COPYING
+            **/Footer
+            **/Header
+            **/README*
+            **/Sidebar
+            **/TODO
+        " />
+    </target>
+
+    <!-- end of file-checking targets -->
+
+</project>
