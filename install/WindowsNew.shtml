@@ -23,8 +23,8 @@
 JMRI Install Guide: Windows
 </h1>
 
-<p class="important">This Install Guide is for JMRI versions 2.5.2 and later -<br>
-for versions 2.5.1 and earlier (2008 and before), <a href="Windows.html">refer to the old Windows Install Guide</a>.</p>
+<p class="important">This Install Guide is for JMRI versions 3 and later -<br>
+for earlier versions (2012 and before), <a href="Windows.html">refer to the old Windows Install Guide</a>.</p>
 
 	<ul>
 	<li><a href="#installation">Installation procedure</a></li>
@@ -76,7 +76,7 @@ for versions 2.5.1 and earlier (2008 and before), <a href="Windows.html">refer t
 	
 	    <p>JMRI also supports an offline installation - to setup,  refer to the <a href="#offline">Offline Installation</a> section below.
 	
-	    <p>The JMRI project is continuously adding features, bug fixes, examples and tutorials to the release, and so new "test" versions appear every couple of weeks.  You may find one of these has features that you really want.  These are announced in the JMRI users Yahoo group at <a href="http://groups.yahoo.com/group/jmriusers/">http://groups.yahoo.com/group/jmriusers/</a>.</p>
+	    <p>The JMRI project is continuously adding features, bug fixes, examples and tutorials to the release, and so new "test" versions appear every couple of weeks.  You may find one of these has features that you really want.  These are announced in the JMRI users Yahoo group at <a href="https://groups.yahoo.com/neo/groups/jmriusers/">https://groups.yahoo.com/neo/groups/jmriusers/</a>.</p>
 	</li>
 	
   <a id="update"></a>
@@ -120,7 +120,7 @@ for versions 2.5.1 and earlier (2008 and before), <a href="Windows.html">refer t
         <br><img src="images/WinInstall-06_InstallFiles.png" height="393" width="503" alt="installer files install"></p></li>
 
       <li>Installation is complete.
-        <p><img src="images/WinInstall-08_Finish.png" height="393" width="503" alt="installer finish"></p></li>
+	        <p><img src="images/WinInstall-08_Finish.png" height="393" width="503" alt="installer finish"></p></li>
     </ol>
  </ol>
 
@@ -131,29 +131,41 @@ for versions 2.5.1 and earlier (2008 and before), <a href="Windows.html">refer t
 	<p>(The following instructions assume that you are setting up a blank removable flash drive - creation of a CD will be similar but may depend on the capabilities of your CD authoring software)</p>	
 		<ol>
 		<li>Copy the <a href="../download/index.shtml#prod-rel">previously downloaded</a> JMRI installer onto the root of the flash drive.
-		<li>Create directories in the root of the flash drive called:
+		<li>Create a directory in the root of the flash drive called:
 		<ul>
 		<li>JRE
-		<li>JRE_98ME
+		<li>
 		<p>The following image shows the resulting structure:
 		<br><img src="images/WinOfflineInstall-Folders.png" height="119" width="352" alt="Offline installer folder structure">
 		</ul>
 		<li>In the JRE directory, place a copy of the Java offline installer for Windows 2000 or later. If required, the latest version can be <a href="http://java.com/winoffline_installer/">downloaded from Sun Microsystems here</a>. A typical name for this file is 'jre-6u11-windows-i586-p-s.exe'.
-		<li>In the JRE_98ME directory, place a copy of the Java offline installer for Windows 98 and ME. If required, this can be <a href="http://javadl.sun.com/webapps/download/AutoDL?BundleId=26411">downloaded from Sun Microsystems here</a>. The filename should be 'jre-1_5_0_17-windows-i586-p-s.exe'.
+		<li>If you do wish to support offline installation on Windows 98 and Windows ME, also create a JRE_98ME directory and place a copy of the Java offline installer for Windows 98 and ME in there. It is still available from <a href="http://javadl.sun.com/webapps/download/AutoDL?BundleId=26411">Sun Microsystems</a>. The filename should be 'jre-1_5_0_17-windows-i586-p-s.exe'.
 		</ol>
-	<p>Setup of the JMRI offline installation media is now complete.</p>
-	<p>Note: If you do not wish to support offline installation on Windows 98 and Windows ME, skip the creation of the directory 'JRE_98ME'.
+	<p>Setup of the JMRI offline installation media is now complete. Move the USB Drive to the stand alone computer and open the installer from Windows Explorer.</p>
 	
  <a id="startup"><h2>Starting JMRI</h2></a>
  <ul>
   <li>Connect your computer to your <a
      href="../help/en/html/hardware/index.shtml">Command Station hardware</a>.
-  <li>Start the programs from the JMRI group under Programs in your Start menu.
+  <li>Start one of the applications from the JMRI group under Programs in your Start menu.
     <p><img src="images/WinStartMenu.png" height="97" width="477" alt="JMRI Start menu">
     <br>(This shows the Start menu following a 'Typical' install - a 'Full' install will place additional icons in this menu)
 
   <li>Configure the program to connect to your layout. The Connections Preferences will open automatically on first run, or you can open the Preferences pane from the Edit menu. More on this on the <a href="../help/en/html/setup/index.shtml">JMRI Setup help page</a>.
-    <p>The JMRI <a href="http://jmri.sourceforge.net/help/en/html/hardware/index.shtml">Hardware help page</a> lists the various types of layout equipment that JMRI can connect to, and gives links to instruction pages. Go there next to complete your setup.</p>
+    <p>The JMRI <a href="http://jmri.sourceforge.net/help/en/html/hardware/index.shtml">Hardware help page</a> lists the various types of layout equipment that JMRI can connect to, and gives links to instruction pages</p>
+  <li>When you start DecoderPro 3.8 or later on Windows for the first time, the <strong>JMRI StartUp Wizard</strong> displays a series of screens to guide you through the setup proces:</p>
+    <ol type="i">
+    <li>Welcome Screen:<br>
+    <img src="images/InstallWin1.png" height="410" width="710" alt="JMRI Start Wizard">
+    <li>Set your Language:<br>
+    <img src="images/InstallWin2Language.png" height="410" width="710" alt="JMRI Start Wizard Set Language">
+    <li>Choose your DCC System's Manufacturer (protocol):<br>
+    <img src="images/InstallWin3Connection.png" height="410" width="710" alt="JMRI Start Wizard  Choose Manufacturer">
+    <li>Choose your hardware Connection Type:<br>
+    <img src="images/InstallWin4Connection.png" height="410" width="710" alt="JMRI Start Wizard Choose Interface">
+    <li>That's all!<br>
+    <img src="images/InstallWin5Finished.png" height="410" width="710" alt="JMRI Start Wizard Finished">
+    </ol>
 	</ul>
 
 <a id="notes"></a>
@@ -202,11 +214,9 @@ find this is to follow the "Preferences" link in "JMRI > Tools and Demos" from t
 <br>Once opened, navigate up one level to your user-profile folder.
 <p>Depending on the version of Windows, this will typically be one of:</p>
 	<dl>
-	<dt>Windows 98 - ME
-	<dd>C:\WINDOWS
 	<dt>Windows 2000 - XP
 	<dd>C:\Documents and Settings\[username]
-	<dt>Windows Vista - 7
+	<dt>Windows Vista - 7 - 10
 	<dd>C:\Users\[username]
 	</dl>
 Within this folder, look for and delete the folder "JMRI" then rename
