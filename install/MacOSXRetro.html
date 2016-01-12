@@ -12,8 +12,8 @@
   <link rel="home" title="Home" href="/">
 <!-- /Style -->
 
-    <meta content="Bob Jacobsen" name="Author">
-    <meta name="keywords" content="java model railroad JMRI install MacOSX">
+    <meta name="Author" content="Bob Jacobsen">
+    <meta name="keywords" content="java model railroad JMRI install MacOSX OS X">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
 	   <li><a href="/help/en/html/apps/index.shtml"      title="Learn about JMRI applications">Applications</a></li>
 	   <li><a href="/help/en/html/hardware/index.shtml"  title="What hardware does JMRI support">Hardware</a></li>
 	   <li><a href="/help/en/webtoc.shtml"   title="JMRI Help Screens">Help</a></li>
-	   <li><a href="/help/en/manual/index.shtml"   title="DecoderPro Manual">Manual</a></li>
+	   <li><a href="/help/en/manual/index.shtml"   title="JMRI Manuals">Manual</a></li>
 	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
 	   <li><a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">Acknowledgements</a></li>
 	</ul>
@@ -50,35 +50,40 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1> 
-      JMRI Install Guide: Mac OS X  (<b>for old releases of JMRI</b>)
+      JMRI Install Guide: Mac OS X  (<b>for releases of JMRI up to 2.8</b>)
       </h1>
 
-      <p>These directions are for installing older releases of
-      JMRI.</p>
+<p class="important">These directions are for installing older releases of
+JMRI on OS X.<br>
+If you're trying to install JMRI 2.10 or later on OS X, please see
+the <a href="MacOSX.shtml">current OS X Install instructions</a>.<br>
+If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic.html">the Mac Classic Install Guide</a>.</p>
 
-      <p>If you're trying to install JMRI 2.10 or later, please see
-      the <a href="MacOSX.html">production installation instructions</a>.</p>
-
-      <p>If you're really sure you want to install an old release (I'm
+      <p>If you're really sure you want to install an old JMRI release (I'm
       sure you have a really good reason), on to the show:</p>
 
-      <h2>Installing old JMRI releases on to your Mac OS X computer</h2>
+      <h2>Installing JMRI release 2.8 and below on a Mac OS X computer</h2>
 
-     <ol>
-        <li>Determine if your system software is up to date</li>
+      <ol>
+			<li>Determine if your system software is up to date.
+			Find the current Mac OS X version number by choosing "About this Mac" from the Apple menu.</li>
+			
+			 <a name="sysreq"></a><h3>JMRI System Requirements</h3>
+			 <p>Using JMRI requires a combination of hardware (in this case a Mac), Java software and a JMRI download for a specific version.
 
 	    <p>Mac OS X version 10.4 "Tiger" or later is required for
-	    JMRI version 2.4 or later because those JMRI versions
-	    require Java 1.5.  There's an Apple web page that lists
+	    JMRI version 2.4 to 2.8 because those JMRI versions
+	    require Java 1.5. There's an Apple web page that lists
 	    the computers that are <a
 	     href="http://support.apple.com/kb/HT1514?viewlocale=en_US">able
-	    to run Mac OS X 10.4</a> If you're still running Mac OS X
+	    to run Mac OS X 10.4</a>. If you're still running Mac OS X
 	    10.3 "Panther", you can download and use <a
 	     href="http://jmri.sourceforge.net/releasenotes/jmri2.2.shtml">JMRI
 	    version 2.2</a>.</p>
 
 	    <p>You should have enough memory for your computer to run
-	    well, but you don't need any more than that.</p>
+	    well, but you don't need any more than that. Starting JMRI with Java may take some time,
+	    but once it's running speed is no problem.</p>
 
 	    <p>The install will take up about 100MB of disk space, mostly for the help pages.
         
@@ -86,7 +91,7 @@
 		
 	    <P>No Macintosh that runs Mac OS X has built-in serial ports,
 	    so if your hardware needs a serial connection, 
-	    you'll have to use a USB to serial adapter.
+	    you'll have to use a <a href="../help/en/html/hardware/USBtoSerial.shtml">USB-to-Serial adapter</a>.
 
 	    <p>You will need Mac OS X drivers for the serial hardware you're using.
 	    If you're using Mac OS X 10.4 or later, most hardware won't need a separate driver;
@@ -94,7 +99,7 @@
 	    so check the manufacturer's web site to make sure.
 	  
 	    <p>
-	    We test using a Keyspan PDA Adapter; those drivers are available at
+	    We tested using a Keyspan PDA Adapter; those drivers are available at
 	    <a href="http://www.keyspan.com/downloads/">
 	    http://www.keyspan.com/downloads/</a>. Some device drivers will list
 	    each port under several names, e.g. starting with "/dev/tty" or
@@ -102,7 +107,7 @@
 	    must select the one that starts with "cu", e.g.
 	    "/dev/cu.KeyUSA19181.1".</p>
 	      
-	    <p>There's a Mac OS X driver for USB-serial adapters
+	    <p>There's a Mac OS X driver for USB-to-Serial adapters
 	    based on the Prolific PL2303 chipset 
 	    <a href="http://osx-pl2303.sourceforge.net/">available here</a>.
 	    If you can't access your USB dongle and it seems to use that
@@ -110,23 +115,23 @@
 	    this driver will make it available as /dev/cu.PL2303-xxx.
 	     
 	    <P>Note that because of baud rate limitations in Mac OS X itself,
-	    it's not possible to use a Digitrax MS100 currently.
+	    it's not possible to use a Digitrax MS100.
 	    Use a 
 	    <a href="http://rrcirkits.com/">RR-CirKits LocoBuffer-USB</a> or 
 	    <a href="http://www.digitrax.com/prd_compint_pr3.php">Digitrax PR3</a> instead.
 	    <P>
 	    See our page on 
-	    <A HREF="/help/en/html/hardware/USBtoSerial.shtml">USB adapters</a>
+	    <a href="/help/en/html/hardware/USBtoSerial.shtml">USB adapters</a>
 	    for more information
       
-	<li>Install the serial communications libraries</li>
+	<li>Install the Serial Communications libraries</li>
 
 	<p>Versions of JMRI before 2.9.2 required that you install
         communications libraries on your computer.</p>
    
 	<p>Although Mac OS X comes with an up-to-date Java, it doesn't
 	 include the Java communications libraries.  These are needed
-	 to talk to a command station, so we provide an installer.</p>
+	 to talk to a DCC Command Station, so we provide an installer.</p>
 	 
 	<p>If you're using Mac OS X 10.6 (Snow Leopard), you first
 	 have to configure Java on Mac OS X for "32 bit" operation.
@@ -183,10 +188,11 @@
 
 	<li>Get JMRI</li>
 
-	<p><a href="../download/index.shtml">Download</a> a version of
-	JMRI.  If you're on this install page, then that version
-	should be 2.8 or earlier.  As the version numbers change with
-	every release, <a href="../download/index.shtml">this link</a>
+	<p>Download a version of JMRI.  If you're on this install page,
+	then that version should be
+	<a href="http://jmri.sourceforge.net/releasenotes/jmri2.8.shtml">JMRI release 2.8</a> or earlier.
+	As the version numbers change with every release, 
+	<a href="../download/index.shtml">this link</a>
 	takes you to the general JMRI download page, where you can
 	select whichever version you like.</p>
 
@@ -212,10 +218,10 @@
 	<h2>Configuring your JMRI setup</h2>
 
 	<li>Connect your computer system to your <a
-	 href="../help/en/html/hardware/index.shtml">command station
+	 href="../help/en/html/hardware/index.shtml">Command Station
 	hardware</a>.</li>
 
-	<p> Your next step will be to set the preferences for your
+	<p> Your next step will be to set the Preferences for your
         particular layout connection.
     
 	<p>
@@ -231,7 +237,7 @@
 
       </ol>
 
-<h2>Customizing Your JMRI Installation</h2>
+<h2>Customizing your JMRI Installation</h2>
 
 You might want to have more than one configuration for DecoderPro
 or PanelPro preset.  For example, you might to sometimes connect

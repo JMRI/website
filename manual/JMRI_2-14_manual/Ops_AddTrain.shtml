@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_AddTrain.shtml 18290 2011-08-25 09:06:42Z dat7719 $ -->
 <title>Operations-Add Train</title>
 
 <!-- Style -->
@@ -20,13 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Add Train<br>
-  Edit Train
-</h1>
+<h2>Add Train - Edit Train</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Trains.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -118,11 +115,14 @@ is pressed. </p>
 <p>Note that the train is now shown in the<a href="Ops_Trains.shtml">Trains</a> window.</p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Trains.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

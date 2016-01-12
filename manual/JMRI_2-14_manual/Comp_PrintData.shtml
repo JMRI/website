@@ -3,10 +3,9 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009, 2010 -->
-<!-- $Id: Comp_PrintData.shtml 18141 2011-08-08 09:36:22Z dat7719 $ -->
-<TITLE>
+<title>
 DecoderPro&reg; Comprehensive Programmer
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -22,11 +21,10 @@ DecoderPro&reg; Comprehensive Programmer
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
-
 <h1>DecoderPro&reg; Comprehensive Programmer</h1>
-<h1>Printing Decoder Data</h1>
+<h2>Printing Decoder Data</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_ManfSpecific.shtml"> Previous </a><p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
 
@@ -54,24 +52,26 @@ DecoderPro&reg; Comprehensive Programmer
 </ul>
 <p>All are two columns, CV#, and Value) 
 
-<h1><img src="images/Comp_09_PrintData.png" width="636" height="598" alt="print"></h1>
+<p><img src="images/Comp_09_PrintData.png" width="636" height="598" alt="print"></p>
 
 <p>
 The three images below are samples of the "<b>All</b>" printout from the SD40-2 that has been used as an example in many places in this manual. Click on the page to see a larger image in a new window.</p>
 <div align="center">
-<a NAME="Print">
+<a name="Print">
 </a><a href="Comp_PrintData_a.shtml" target="_blank"><img src="images/Comp_09a_PrintData.png" alt="Comprehensive Programmer - Advanced Features"  border="5" height="63%" width="25%"></a><a href="Comp_PrintData_b.shtml" target="_blank"><img src="images/Comp_09b_PrintData.png" alt="Comprehensive Programmer - Advanced Features"  border="5" height="63%" width="25%"></a><a href="Comp_PrintData_c.shtml" target="_blank"><img src="images/Comp_09c_PrintData.png" alt="Comprehensive Programmer - Advanced Features"  border="5" height="63%" width="25%"></a>
 </div>
 <p>
 OK! That's it! You now know how to use DecoderPro to program your decoders. Now let's run trains!</p>
 
-
 <hr>
-<div align=right>
+<div align="right">
 <p><a href="Comp_ManfSpecific.shtml">Previous </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

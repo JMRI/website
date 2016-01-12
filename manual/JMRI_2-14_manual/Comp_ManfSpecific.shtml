@@ -20,11 +20,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Comprehensive Programmer</h1>
-<h1>Manufacturer Specific Data Pane</h1>
+<h2>Manufacturer Specific Data Pane</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_GlobalCVs.shtml">Previous</a> | <a href="Comp_PrintData.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
@@ -35,7 +35,8 @@ This pane in the <b>Comprehensive Programmer</b> provides programming
 for functions that are specific to an individual manufacturer, but outside
 the realm of the DCC standard. While items like <b>Transponding</b> may eventually find a place in the NMRA DCC standard, and are therefore in the Advanced pane, these items are obviously beyond that category.
 
-This pane will be manufacturer dependent and decoder family dependent<h1><img src="images/Comp_12_Manufacturer.png" width="920" height="510" alt="mfr"></h1>
+This pane will be manufacturer dependent and decoder family dependent
+<p><img src="images/Comp_12_Manufacturer.png" width="920" height="510" alt="mfr"></p>
 
 <p align="center"><img src="images/Comp_12A_Manufacturer.png" width="932" height="667" alt="mfr">
 <p>These items will, by definition, vary greatly between manufacturers.
@@ -44,12 +45,15 @@ This pane will be manufacturer dependent and decoder family dependent<h1><img sr
   
 <p>
 <hr>
-<div ALIGN=right>
+<div align="right">
 <p><a href="Comp_PrintData.shtml"></a>
   <a href="Comp_GlobalCVs.shtml">Previous</a> | <a href="Comp_PrintData.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
 
 <!--#include virtual="/Footer" -->
-</body>
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
+    </body>
 </html>

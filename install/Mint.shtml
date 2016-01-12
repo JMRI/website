@@ -1,40 +1,36 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<!-- $Id: OpenSUSE.shtml,v 1.1 2008-02-22 03:57:02 jacobsen Exp $ -->
 <html lang="en">
-<HEAD>
-        <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
-        <TITLE>JMRI Install Guide: Linux Mint</TITLE>
+<head>
+        <title>JMRI Install Guide: Linux Mint</title>
 
 <!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
   <link rel="home" title="Home" href="/">
 <!-- /Style -->
 
-</HEAD>
+</head>
 
+<body>
 <!--#include virtual="/Header" -->
 
- 
 <!--#include virtual="Sidebar" -->
-
-
 <div id="mainContent">
 
-<H2> 
+<h1> 
 JMRI Install Guide: Linux Mint
-</H2>
+</h1>
 
 <p>
       This page was provided by a JMRI users group member
       and describes how he installed JMRI on Linux Mint.
       
-<PRE>
+<pre>
 Installing JMRI on a Linux Mint
 
-1) If you have a recent version of Linux Mint installed on your machine, it will already inlcude the Java libraries.
+1) If you have a recent version of Linux Mint installed on your machine, it will already include the Java libraries.
    If not then open the Software Manager and install "openjdk-7-jre", if it is already installed it will show as "installed"
 
 2) Download JMRI from http://jmri.sourceforge.net/download/index.shtml and save the file.
@@ -48,16 +44,17 @@ Installing JMRI on a Linux Mint
 
 6) JMRI can now be run by double clicking on the DecoderPro3 icon in the JMRI folder. You have the option of simply running the program or running in Terminal, I would suggest running it in Terminal as it will show any error messages in the terminal window.
 
-7) JMRI will ask for preferences to be set up, select your Manufacturer of your DCC system (eg Digitrax, NCE, etc.), then select how you are connecting to the DCC system (LcocBuffer, Loconet PR3, etc.)
+7) JMRI will ask for preferences to be set up, select your Manufacturer of your DCC system (eg Digitrax, NCE, etc.), then select how you are connecting to the DCC system (LcocBuffer, LocoNet PR3, etc.)
 
    Then select the serial port from the drop down, it should be something like "/dev/ttyACM0"
    Now select your command station type, (DCS50, PR3, etc.) leave the Connection Prefix and Connection Name they way they are.
 
 8) It will ask you to restart JMRI. After the restart of JMRI, if all goes well, you should be running JMRI.
-</PRE>
+</pre>
 
    <!--#include virtual="/Footer" -->
 
-
-</BODY>
-</HTML>
+	 </div> <!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+ </body>
+</html>

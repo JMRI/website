@@ -1,0 +1,7 @@
+language: java
+
+script: travis_wait ant checklineends
+
+os:
+  - linux
+#  - osx # Travis OS X support does not include Java

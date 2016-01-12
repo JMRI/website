@@ -12,14 +12,6 @@
 <link rel="icon" href="/images/jmri.ico" TYPE="image/png">
 <link rel="home" title="Home" href="/">
 <!-- /Style -->
-<script type="text/javascript">
-<!--
-function MM_jumpMenu(targ,selObj,restore){ //v3.0
-  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
-  if (restore) selObj.selectedIndex=0;
-}
-//-->
-</script>
 </head>
 
 <body>
@@ -218,7 +210,7 @@ removes the item from the Start Up sequence. All of the panes are of the same fo
   <tr>
     <td><strong>Select font size in points</strong></td>
     <td><form name="form" id="form">
-      <select name="jumpMenu" id="jumpMenu" onChange="MM_jumpMenu('parent',this,0)">
+      <select name="jumpMenu" id="jumpMenu">
         <option>12</option>
       </select> 
       select font size
@@ -260,10 +252,10 @@ removes the item from the Start Up sequence. All of the panes are of the same fo
 <p>Ajax is now in use for smoother image refresh and clicking. For older browser you may want to unselect Ajax.</p>
 <p><img src="images/Preferences_miniServer.png" width="680" height="446" alt="web server"></p>
 <p><strong><a href="#Top">Top</a></strong></p>
-<h2 align="center">Before you exit the preferences, Click on          
+<h2 align="center">Before you exit the Preferences, click on          
   <input type="submit" name="button8" id="button8" value="Save">
 button to save all your selections.</h2>
-<h2 align="center">You must restart DecoderPro for preferences to take effect</h2>
+<h2 align="center">You must restart DecoderPro for Preferences to take effect</h2>
 <hr>
 <div align=right>
 <p><a href="Start_DecoderPro.shtml">Previous</a>

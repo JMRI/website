@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_AddStaging.shtml 18386 2011-09-07 08:33:40Z dat7719 $ -->
 <title>Operations-Add Staging</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Operations Add Staging Only</h1>
+<h2>Operations Add Staging Only</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Locations.shtml">Back</a><a href="Ops_Cars.shtml"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -200,15 +199,17 @@ and the <strong>Edit Staging Track</strong> window will open.</p>
   <input type="image" name="staging3" id="staging3" src="images/Ops_Staging07.png">
 </p>
 <p>You may add as many locations and track as you need to complete the description of your layout.</p>
-<p>&nbsp;</p>
 
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Locations.shtml">Back</a><a href="Ops_Cars.shtml"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

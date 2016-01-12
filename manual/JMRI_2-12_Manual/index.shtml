@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: index.shtml 19684 2012-01-09 11:04:47Z dat7719 $ -->
 <title>Decoder Pro Manual: Index</title>
 
 <!-- Style -->
@@ -20,10 +19,11 @@
 <div id="mainContent">
 
 <a NAME="Top"></a>
-<h1>JMRI&reg; v2.12 Archieve</h1>
-<h5>Updated 1/9/2012</h5>
-<p>&nbsp;
-</p>
+<h1>JMRI&reg; v2.12 Manual (Archived)<br>
+NO LONGER MAINTAINED,<br>
+SEE THE <a href="../JMRI_2-14_Manual/index.shtml">v 2.14.1 MANUAL</a></h1>
+
+<p>Last updated 1/9/2012</p>
 <p><strong>JMRI is a Java-based cross-platform application for model railroaders. JMRi contains applications for:</strong></p>
 <p><strong>The programming of Digital
   Command Control (DCC) decoders, (DecoderPro&reg;).<br>
@@ -34,7 +34,6 @@ Controlling the layout , (Layout Editor).<br>
   Controlling the signals on the layout<br>
 Controlling&nbsp;  lighting and sound in the room, and so forth. (SoundPro&reg;)</strong></p>
 <p>All this capability is contained in one program (JMRI) which has  several &ldquo;start-up&rdquo; screens for the various applications. </p>
-<p>&nbsp;</p>
 
 <hr>
 &nbsp;JMRI&reg; can  run on any computer system that will run Java 1.5.0 or later, whether it is  Macintosh, Windows, or Linux based. It does require that Java be installed on  the computer. You can get Java as a free (but very large...) download at:
@@ -45,8 +44,6 @@ Controlling&nbsp;  lighting and sound in the room, and so forth. (SoundPro&reg;)
 <p>Note: This entire manual has been updated to   correspond to DecoderPro 2.12, and the HTML verified using HTML4 and   Cascading Style Sheets. If the formatting looks odd, you probably need   to update your browser. </p>
 <p>
   <a name="index"></a>
-<div align="right">
-<p><a href="http://jmri.org/pdf/index.shtml" target="_blank"><strong>Manuals for older JMRI versions</strong></a> (requires web connection)</div>
 
 <h1>Table of Contents</h1>
 <h4><a name="Installing"></a>Installing JMRI</h4>
@@ -491,10 +488,10 @@ are best submitted to the
   </tr>
 </table>
 <hr>
-<div align=right>Go to the
-<a href="http://groups.yahoo.com/group/jmriusers/">
-JMRI Users home page on Yahoo Groups</a></div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

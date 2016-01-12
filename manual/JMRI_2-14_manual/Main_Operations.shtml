@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Main_Operations.shtml 18150 2011-08-10 13:07:19Z dat7719 $ -->
 <title>Comprehensive Programmer - Advanced Features Pane</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
-<h1>Operations Menu</h1>
+<h2>Operations Menu</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Panels.shtml">Previous </a> | <a href="Main_Menu.shtml#System">Next</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -60,15 +59,17 @@
 <blockquote>
   <p>Opens the <a href="Ops_Trains.shtml">Trains</a> window.</p>
 </blockquote>
-<p>&nbsp;</p>
 
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Panels.shtml">Previous </a> | <a href="Main_Menu.shtml#System">Next</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Ops_AddYard.shtml 18386 2011-09-07 08:33:40Z dat7719 $ -->
 <title>Operations-Add Yard</title>
 
 <!-- Style -->
@@ -20,11 +19,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
-<h1>Operations Add Yard</h1>
+<h2>Operations Add Yard</h2>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Locations.shtml">Back</a><a href="Ops_AddInterchange.shtml"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -149,15 +148,17 @@ and the <strong>Edit Siding Track</strong> window will open</p>
 <p>You may Edit any one of them, which opens the<strong> Edit Location</strong> window, which is the same as the <a href="Ops_Locations.shtml"><strong>Add Location</strong></a> window except it contains the info for the location you are editing.</p>
 <p><img src="images/Ops_YardLocation.png" width="670" height="278" alt="yard locatio"></p>
 <p>You may add as many locations and track as you need to complete the description of your layout.</p>
-<p>&nbsp;</p>
 
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Locations.shtml">Back</a><a href="Ops_AddInterchange.shtml"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer" -->
+
+      </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
 </body>
 </html>
