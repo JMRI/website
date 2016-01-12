@@ -134,14 +134,12 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
 		<li>Create a directory in the root of the flash drive called:
 		<ul>
 		<li>JRE
-		<li>
 		<p>The following image shows the resulting structure:
-		<br><img src="images/WinOfflineInstall-Folders.png" height="119" width="352" alt="Offline installer folder structure">
+		<br><img src="images/WinOfflineInstall-Folders.png" height="119" width="230" alt="Offline installer folder structure">
 		</ul>
-		<li>In the JRE directory, place a copy of the Java offline installer for Windows 2000 or later. If required, the latest version can be <a href="http://java.com/winoffline_installer/">downloaded from Sun Microsystems here</a>. A typical name for this file is 'jre-6u11-windows-i586-p-s.exe'.
-		<li>If you do wish to support offline installation on Windows 98 and Windows ME, also create a JRE_98ME directory and place a copy of the Java offline installer for Windows 98 and ME in there. It is still available from <a href="http://javadl.sun.com/webapps/download/AutoDL?BundleId=26411">Sun Microsystems</a>. The filename should be 'jre-1_5_0_17-windows-i586-p-s.exe'.
+		<li>In the JRE directory, place a copy of the Java offline installer for Windows 2000 or later. If required, the latest version can be <a href="http://java.com/winoffline_installer/">downloaded from Sun Microsystems here</a>. A typical name for this file is 'jre-8u66-windows-i586.exe'.
 		</ol>
-	<p>Setup of the JMRI offline installation media is now complete. Move the USB Drive to the stand alone computer and open the installer from Windows Explorer.</p>
+	<p>Setup of the JMRI offline installation media is now complete.</p>
 	
  <a id="startup"><h2>Starting JMRI</h2></a>
  <ul>
