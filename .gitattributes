@@ -13,6 +13,8 @@
 # The above will handle all files NOT found below
 #
 # These files are text and should be normalized (Convert crlf => lf)
+# This list should be kept consistent with the one in the build.xml ant "fixlineends" target
+#
 *.csh           text
 *.css           text
 *.df            text
@@ -42,11 +44,11 @@
 *.xml           text
 *.xsd           text
 *.xsl           text
-Header          text
-Footer          text
-Sidebar         text
 COPYING         text
+Footer          text
 README          text
+Header          text
+Sidebar         text
 TODO            text
 
 # These files are binary and should be left untouched
