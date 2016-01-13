@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
  <title>
- JMRI 2.5.1 and earlier Install Guide: Windows
+ JMRI 2.14 and earlier Install Guide: Windows
  </title>
 	<meta content="Bob Jacobsen" name="Author">
 	<meta name="keywords" content="java model railroad JMRI install windows">
@@ -51,10 +51,10 @@
 <div id="mainContent">
 
 <h1> 
-JMRI 2.5 and earlier Install Guide: Windows
+JMRI 2.14 and earlier Install Guide: Windows
 </h1>
 
-<p class="important">This Install Guide is suitable for JMRI versions 2.5 and earlier - for versions 2.9 and later, <a href="WindowsNew.shtml">refer to the new Windows Install Guide</a>.</p>
+<p class="important">This Install Guide is suitable for JMRI versions 2.14 and earlier - for versions 3.0 and later, <a href="WindowsNew.shtml">refer to the new Windows Install Guide</a>.</p>
 	
 <a id="installation"/>
 <h2>Installation Procedure</h2>
@@ -63,8 +63,9 @@ JMRI 2.5 and earlier Install Guide: Windows
   <li>Determine if your hardware supports Java and JMRI</li>
       
 	<h3>JMRI System Requirements</h3>
-	<p>Using JMRI requires a combination of hardware (in this case running Windows), Java software and a JMRI download for a specific version.
-	<p>JMRI&reg; version 2.5 requires Java 1.5 or later.
+	<p>Using JMRI requires a combination of hardware (in this case running Windows), Java software and a JMRI download for a specific version.<br>
+	Version 2.14.1 requires Java 1.5 (or 1.6 if you wish for drag &amp; drop).<br>
+	Version 2.5 requires Java 1.5 or later.
  </p>
 	<p>We have had a report that a 100&nbsp;MHz Pentium is too slow to use, and
 	another that a 120&nbsp;MHz Pentium II is fine, so somewhere around there is
@@ -321,6 +322,35 @@ To get the window to stay open:
 	<ol>
 	<li>Right click and select "show properties" on the program icon
 	<li>Deselect "Close window on program end"
+	</ol>
+	
+<p>If you're asked for a copy of the error messages, you can usually get them from the messages.log file.  If you can't find it there, make a copy of the log window:</p>
+	
+<h4>For JMRI version 2.11.1 or later</h4>
+	<ol>
+	<li>From the main JMRI window, choose "Help > System Console ...".
+	<br><img src="images/Win-JMRISystemConsole.png" height="409" width="850" alt="JMRI system console">
+	
+	<li>Click the button "Copy to clipboard".
+	
+	<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad,
+	favorite word processor, etc, position your cursor and left-click on Edit and
+	then Paste, or press the "Ctrl" and "V" keys.
+	</ol>
+    
+<h4>For JMRI version 2.10 or earlier</h4>
+	<ol>
+	<li>In the command prompt window, left-click on the JMRI icon to the left of the  words "DecoderPro" (or "PanelPro").  You will get a drop-down menu.
+	
+	<li>In that menu, put your cursor over "Edit" to get a sub-menu.
+	
+	<li>Left-click on "Select All" in that sub-menu.  All the text in the window will reverse colors with the background, and the menus will disappear.
+	
+	<br>Alternately, you can left click on "Mark" in that sub-menu. The menus will disappear.  Then, left-click and hold while dragging the cursor over the text to be copied.  Only the selected text will reverse colors with the background.</p>
+	
+	<li>Repeat Steps 1 and 2 above, then left click "Copy" on the sub-menu.  The text and window will revert to their original colors.  The text is now on XP's clipboard.
+	
+	<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad, favorite word processor, etc, position your cursor and left-click on Edit and then Paste, or press the "Ctrl" and "V" keys.
 	</ol>
 
 <!-- Footer -->
