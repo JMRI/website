@@ -47,20 +47,23 @@ see our
 
 <h3>Known problems with this release</h3>
 
-<p>MacOS X cannot show most connections correctly. As a workaround, this can be fixed by running the command
+<p>MacOS X cannot show most connections correctly with this JMRI version.
+This is fixed in <a href="jmri4.2.1.shtml">JMRI 4.2.1</a>, which you should use instead of this release.
+As a workaround, this can be fixed by running the command
 <code>sudo find / -name StartJMRI -type f -exec sed -i "" -e 's/\/dev\/tty\\\.\*//' -e 's/\/dev\/cu\\\.\*//' {} \;</code>
 in Terminal.app. It will ask for your password, and, after a couple of minutes, have fixed the issue.</p>
 
 <p>The Digitrax PR2 does not work with this release.  If you need to work with a
 PR2, please stay with <a href="jmri4.1.3.shtml">JMRI 4.1.3</a> or earlier,
-or wait for <a href="jmri4.3.1.shtml">JMRI 4.3.1</a> which should appear in December 2015.
+or use the <a href="jmri4.3.1.shtml">JMRI 4.3.1</a> test release..
 
-<p>Fixes for these problems will be in
-<A href="jmri4.3.1.shtml">JMRI 4.3.1</a>, due out soon after this release,
-or pick up a
-<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
-from
-<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
+<p>Some BLI decoder definitions (PR2, PR3 and similar) may not be available until you
+select the "Rebuild Decoder Index" item from the menu.  It's on the Debug menu in PanelPro,
+and the Actions menu in DecoderPro.
+
+   <p>Operations can lockup during a train build if you've selected "Auto HPT" for loco assignment,
+    and no cars were assigned to the train during the build, and the loco weight is set to zero. The
+    workaround is to enter a weight in tons for each loco. Fixed in test release 4.3.2.</p>
 
 <a id="warnings" name="warnings"></a>
 <h3>Warnings:</h3>
@@ -159,9 +162,10 @@ too.
 
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.dmg/download</a><br/>
-    sha256: 7503308fcf8c17dc62b345016c439f986d62341cc5feb8e33e53b64414ca0358</p>
+<p>Mac OS X: This file has superseded by <a href="jmri4.2.1.shtml">JMRI 4.2.1</a>, which fixes an important MacOS X-specific bug.  
+    For details see the <a href="jmri4.2.1.shtml">4.2.1release note</a>. That download is at:<br/><a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download</a><br/>
+    sha256: 56eb8403292237b5f5f63fb6fa4f0462d253fea0a752c12c68072418f8f96a8b</p>
 
 <p>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.exe/download</a><br/>
@@ -183,7 +187,7 @@ on the
 These are development files, and might not be working at any particular time.</p>
 -->
 
-<h3>Changes since test release 4.0:</h3>
+<h3>Changes since production release 4.0:</h3>
 
     <h4>Hardware Support</h4>
 
@@ -198,7 +202,7 @@ These are development files, and might not be working at any particular time.</p
 
         <h5>DCC++</h5>
             <ul>
-                <li>NOTE: DCC++ Support is broken in 4.2.0.  Sorry!  If you need DCC++ support, please revert to 4.1.5 or wait for 4.3.1</li>
+                <li>NOTE: DCC++ Support is broken in JMRI 4.2. Sorry!  If you need DCC++ support, please revert to 4.1.5 or wait for 4.3.1</li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
