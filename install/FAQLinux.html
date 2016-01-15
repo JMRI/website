@@ -129,8 +129,24 @@ listed in the preferences?</dt>
 <dd class="first">
 <p>There are several options for solving this problem.</p>
 <ol>
+    <li><p>With JMRI 4.4 and newer, you can set the
+            <code>purejavacomm.portnamepattern</code> system property as a
+            parameter to a JMRI launcher script:</p>
+        <pre>
+-J-Dpurejavacomm.portnamepattern=ttyUSB0
+        </pre>
+        <p>This can be set in an environment variable <code>JMRI_OPTIONS</code>
+            which can be set in your <tt>.bashrc</tt> file:</p>
+        <pre>
+export JMRI_OPTIONS="${JMRI_OPTIONS} -Dpurejavacomm.portnamepattern=ttyUSB0"
+        </pre>
+        <p> Multiple ports can be specified using a
+            <a href="http://docs.oracle.com/javase/tutorial/essential/regex/">regular expression</a>.
+            The simplest regular expression for this is
+            <code>(ttyUSB0|ttyUSB1)</code> (an <em>or</em> pattern).</p>
+    </li>
 <li>
-  <p>With JMRI 2.10 and later, you can set the environment variable
+  <p>With JMRI 2.10 through 4.2, you can set the environment variable
   <b>JMRI_SERIAL_PORTS</b> to a colon-separated list of the additional
   serial port devices you have available.  You can set this in your
   <tt>.bashrc</tt> file (or equivalent for whatever shell you
@@ -155,13 +171,11 @@ or "JmriDemo" script:
 <p>
 <pre>
 <code>
--Dgnu.io.rxtx.SerialPorts=/dev/ttyUSB9 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# JMRI 2.10 or later
+-Dgnu.io.rxtx.SerialPorts=/dev/ttyUSB0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# JMRI 2.10 to 4.2
 <br>
 -Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0 &nbsp;&nbsp; # for 2.8 or earlier
 </code>
 </pre>
-<p> Multiple ports can be added to the list by using a colon separated 
-list.
 <li>
 <p> <i>For JMRI 2.8 and earlier only:</i> If the RxTx and Java Communications Libraries are installed correctly, 
 and  the serial port to which your device is attached isn't listed, 
