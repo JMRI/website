@@ -197,7 +197,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>NCE</h5>
             <ul>
-                <li>Change acceleration and deceleration range (CVs 3 &amp; 4) to 0-254 for non-silent drive decoder families. (Dave Heap)</li>
+                <li></li>
             </ul>
 
         <h5>RFID</h5>
@@ -231,7 +231,27 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>New / Updated decoder definitions</h4>
         <ul>
-            <li></li>
+            <li>
+              The default Programming mode for any particular DCC system is now based
+              on the order listed in the Java code.
+              NCE and SPROG systems have been updated to default to Direct modes.
+              Other systems can have the default priority order changed on request.
+            </li>
+            <li>
+              The handling of decoder custom, replacement and empty panes has been improved. (Dave Heap)
+              <ul>
+                <li>
+                  Documentation has been updated at
+                  <a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#pane_considerations"
+                  target="_blank">Advanced Decoder Definitions</a>.
+                </li>
+                <li>
+                  There is now a
+                  <a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#pane_best_practice"
+                  target="_blank">Best Practice</a> recommendation, with examples.
+                </li>
+              </ul>
+            </li>
         </ul>
 
         <h5>BLI</h5>
@@ -261,13 +281,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>NCE</h5>
             <ul>
-                <li></li>
+                <li>Change acceleration and deceleration range (CVs 3 &amp; 4) to 0-254 for non-silent drive decoder families. (Dave Heap)</li>
             </ul>
 
         <h5>QSI</h5>
             <ul>
-                <li>Dave Heap made the following changes:<br>
+                <li>xxx made the following changes:<br>
                     <ul>
+                        <li></li>
                         <li></li>
                     </ul>
                </li>
@@ -343,6 +364,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Miscellaneous</h4>
         <ul>
             <li>Herve Blorec improved the French translations</li>
+            <li>Egbert Broerse improved the German translation</li>
+            <li>Sonny Hansen improved the Danish translation</li>
             <li>Scripting with AbstractAutomaton can now wait <u>either</u> for 
                 something (Sensor, Turnout, Signal...) to change <u>or</u> for 
                 a maximum time to go by. 
