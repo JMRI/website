@@ -82,14 +82,14 @@ JMRI installation consists of two stages: install Java and install JMRI.
 	<p>[please report exact instructions to update Java]</p>
 
   <li>Get the JMRI software...</li>
-	<p><a href="http://jmri.sourceforge.net/download/index.shtml">Download JMRI</a>. Choose the Linux edition.</p>
+	<p><a href="http://jmri.sourceforge.net/download/index.shtml">Download JMRI</a> (choose the Linux edition).</p>
 
   <li>...and install it.</li>
 	<p>
 	Uncompress/untar the file your download. Double click on the .tgz file to open the Tar, then click Extract. This will create a new "JMRI" folder.
 	<p class="note">Each JMRI release is an independent set of files: It's intended to be used as a whole. Each release provides new files, and sometimes removes old files. You should therefore not expand the download into the same place as an existing JMRI installation. Instead, expand it into a separate location, and move in to it's final destination, completely replacing any previous version of JMRI.
 	<p>
-	To install, you just have to move that new JMRI folder to where you want it on your computer.The latest test releases of JMRI include support for the ARM v7 processor, so extracting is all you need to do.<a href="#dave">[2]</a>
+	To install, you just have to move that new JMRI folder to where you want it on your computer.The latest test releases of JMRI include support for the ARM v7 processor, so extracting is all you need to do. <a href="#dave">[2]</a>
 	
 	<p>JMRI 3.10.1 did not, which required some startup script changes as the Pi2 runs an ARM7 processor. An installation script
 	was written by Matthew Macdonald-Wallace to modify certain libraries so that JMRI would run.
@@ -124,12 +124,27 @@ JMRI installation consists of two stages: install Java and install JMRI.
 More on this on the <a href="../help/en/html/setup/index.shtml">JMRI Setup help page</a>.
 
 <h3>Autostart</h3>
-<p>You could have your Pi automatically open DecoderPro and start an "xrdp" Remote Desktop at startup if e.g. the Pi is mounted under your layout and runs a so called "headless mode". See Sherman's blog on <p><a href="http://www.nscale.net/forums/showthread.php?37250-JMRI-on-a-Raspberry-Pi-2">Nscale.net forum JMRI on a Pi2</a> for instructions.</p>
+<p>You could have your Pi automatically open DecoderPro and start an "xrdp" Remote Desktop at startup if e.g. the Pi is mounted under your layout and runs a so called "headless mode". See Sherman's blog on <br>
+<a href="http://www.nscale.net/forums/showthread.php?37250-JMRI-on-a-Raspberry-Pi-2">Nscale.net forum JMRI on a Pi2</a> for instructions.</p>
+
+<h3>Using WiThrottle zeroconfig</h3>
+<p>Disable IPv6 for the network interfaces (with IPv6 turned on, the WiThrottle window will display <code>127.0.0.1</code>. After turning off IPv6 the window will display the IP address of your adapter. iPhone picks up the WiThrottle server when set to <em>automatic configuration</em> and no longer flashes the <code>network disconnected</code> error. Rebooting the Pi, restarting DecoderPro (including "Faceless") or restarting the WiThrottle app gave no issues in our testing).
+<p>Open a terminal window and enter <code>sudo leafpad</code>, then in Leafpad open the file:
+<code>edit /etc/sysctl.conf</code> and add these parameters to the bottom of the file: 
+<pre><code>
+net.ipv6.conf.all.disable_ipv6 = 1 
+net.ipv6.conf.default.disable_ipv6 = 1 
+net.ipv6.conf.lo.disable_ipv6 = 1 
+net.ipv6.conf.eth0.disable_ipv6 = 1
+</code></pre>
+<p>Note: you need <code>root</code> access to edit this file.</p>
+<p>Be sure to add extra lines for other network interfaces you want to disable ipv6 for.<br>
+After editing <code>sysctl.conf</code>, run <code>sysctl -p</code> to activate changes (or reboot your Pi). <a href="#scott">[3]</a></p>
 
 <h3>Turn off your Pi</h3>
 Anytime you need to shutdown the Raspberry Pi, use the line command:
 <code>sudo poweroff</code>
-and then switch the power off once the shutdown is complete.<a href="#david">[3]</a>
+and then switch the power off once the shutdown is complete. <a href="#david">[4]</a>
 
 <a id="notes"></a>
 <h2>Notes</h2>
@@ -165,7 +180,8 @@ and then switch the power off once the shutdown is complete.<a href="#david">[3]
 <h3>Third Party info</h3>
 <li><a href="https://www.raspberrypi.org/help/">Raspberrypi.org online Help</a>.</p>
 
-<p>(Rev 4.2, updated 04 Jan 2016 based on tips from [1] <a id="suzie">Suzie Tall</a>, [2] <a id="dave">Dave Sand</a> and [3] <a id="david">David McMorran</a>).</p>
+<p>(Rev 4.2, updated 21 Jan 2016 based on tips from [1] <a id="suzie">Suzie Tall</a>, [2] <a id="dave">Dave Sand</a>, [3] <a id="scott">Scott Jay</a> and [4] <a id="david">David McMorran<a>).
+</p>
 
 <!-- /Footer -->
     </div><!-- closes #mainContent-->
