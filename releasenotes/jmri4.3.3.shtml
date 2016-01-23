@@ -344,7 +344,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Preferences</h4>
         <ul>
-            <li></li>
+            <li>Individual Startup Preferences panels have been replaced with a single tabular
+            panel that allows the explicit setting of startup execution order.
+            (<a href="https://github.com/JMRI/JMRI/pull/687">PR 687</a>)</li>
         </ul>
 
     <h4>Logix</h4>
@@ -385,7 +387,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Herve Blorec improved the French translations</li>
             <li>Egbert Broerse improved the German translation</li>
             <li>Sonny Hansen improved the Danish translation</li>
-            <li>Randall Wood improved how a number of internal strings are handled</li>
             <li>John Socha-Leialoha improved the WiThrottle protocol documentation</li>
         </ul>
 
