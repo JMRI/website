@@ -264,6 +264,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
+	<h5>Digitrax</h5>
+            <ul>
+                <li>Alain Le Marchand improved 
+                <a href="https://github.com/JMRI/JMRI/pull/701">how Digitrax Series 5 and Series 6 decoders are identified</a>
+                </li>
+            </ul>
+            
         <h5>Doehler &amp; Haas</h5>
             <ul>
                 <li></li>
@@ -306,7 +313,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>SoundTraxx</h5>
             <ul>
-                <li>Alain fixed the enum order for CV123 Exhaust Select on the Econami</li>
+                <li>Alain Le Marchand fixed the enum order for CV123 Exhaust Select on the Econami</li>
             </ul>
 
         <h5>TCS</h5>
@@ -372,6 +379,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 Modified the behaviour so that selecting the blank entry removes the sensor, 
                 allowing the sensor to be assigned to a different block.
                 </li>
+            <li>Steve Rawlinson made a change to allow the user to set the grid size in Layout Editor
         </ul>
 
     <h4>Scripting</h4>
