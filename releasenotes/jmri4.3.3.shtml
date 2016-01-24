@@ -68,7 +68,10 @@ from
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
 
-None yet.
+<ul>
+    <li>The DispatcherPro, JMRI Demo, and SignalPro applications are not shipped in distributions. Use PanelPro
+    in lieu of these applications.</li>
+</ul>
 
 <h3>Older warnings</h3>
 
@@ -388,6 +391,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Egbert Broerse improved the German translation</li>
             <li>Sonny Hansen improved the Danish translation</li>
             <li>John Socha-Leialoha improved the WiThrottle protocol documentation</li>
+            <li>The DispatcherPro, JMRI Demo, and SignalPro applications are not shipped in distributions. The code
+            for these applications has not been removed from JMRI, only the launchers are no longer created. If the
+            use of PanelPro in lieu of these applications is not possible, please request assistance creating your
+            own launchers for these applications in the
+            <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI Users Group</a>. (Randall Wood)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
