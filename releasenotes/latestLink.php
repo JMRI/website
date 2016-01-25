@@ -1,4 +1,4 @@
-<!-- tiny fragment to include the next release number and a link to its note --?
+<!-- tiny fragment to include the next release number and a link to its note -->
 
 <a href="http://jmri.org/releasenotes/<?php
 // find and insert most recent 
