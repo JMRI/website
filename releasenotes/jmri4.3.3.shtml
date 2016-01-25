@@ -68,7 +68,10 @@ from
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
 
-None yet.
+<ul>
+    <li>The DispatcherPro, JMRI Demo, and SignalPro applications are not shipped in distributions. Use PanelPro
+    in lieu of these applications.</li>
+</ul>
 
 <h3>Older warnings</h3>
 
@@ -261,6 +264,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
+	<h5>Digitrax</h5>
+            <ul>
+                <li>Alain Le Marchand improved 
+                <a href="https://github.com/JMRI/JMRI/pull/701">how Digitrax Series 5 and Series 6 decoders are identified</a>
+                </li>
+            </ul>
+            
         <h5>Doehler &amp; Haas</h5>
             <ul>
                 <li></li>
@@ -303,7 +313,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>SoundTraxx</h5>
             <ul>
-                <li>Alain fixed the enum order for CV123 Exhaust Select on the Econami</li>
+                <li>Alain Le Marchand fixed the enum order for CV123 Exhaust Select on the Econami</li>
             </ul>
 
         <h5>TCS</h5>
@@ -344,7 +354,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Preferences</h4>
         <ul>
-            <li></li>
+            <li>Individual Startup Preferences panels have been replaced with a single tabular
+            panel that allows the explicit setting of startup execution order.
+            (<a href="https://github.com/JMRI/JMRI/pull/687">PR 687</a>)</li>
         </ul>
 
     <h4>Logix</h4>
@@ -367,6 +379,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 Modified the behaviour so that selecting the blank entry removes the sensor, 
                 allowing the sensor to be assigned to a different block.
                 </li>
+            <li>Steve Rawlinson made a change to allow the user to set the grid size in Layout Editor
         </ul>
 
     <h4>Scripting</h4>
@@ -385,8 +398,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Herve Blorec improved the French translations</li>
             <li>Egbert Broerse improved the German translation</li>
             <li>Sonny Hansen improved the Danish translation</li>
-            <li>Randall Wood improved how a number of internal strings are handled</li>
             <li>John Socha-Leialoha improved the WiThrottle protocol documentation</li>
+            <li>The DispatcherPro, JMRI Demo, and SignalPro applications are not shipped in distributions. The code
+            for these applications has not been removed from JMRI, only the launchers are no longer created. If the
+            use of PanelPro in lieu of these applications is not possible, please request assistance creating your
+            own launchers for these applications in the
+            <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI Users Group</a>. (Randall Wood)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
