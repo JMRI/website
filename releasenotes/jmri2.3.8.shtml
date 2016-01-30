@@ -107,7 +107,7 @@ on the
 
 <p>JMRI is moving toward requiring Java 1.5 or later.  Certain new features may not work if you are using an earlier
 version of Java.  To see JMRI's future plans for this and other compatibility issues, please see the JMRI
-<a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/TechRoadMap.shtml">technology roadmap</a>.
+<a href="http://jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">technology roadmap</a>.
 
 <p>JMRI no longer supports NCE AIU broadcasts. This change was needed so that JMRI could reliably read certain CV values. 
 We recommend that if you use NCE AIUs, that you upgrade the command station EPROM to version 2007 or newer and turn off AIU broadcasts. 
@@ -162,7 +162,7 @@ Paul Fraker provided a decoder definition file for the
 MRC Sheer Brilliance Mini HO EMD Modern Large Diesel Sound Decoder model 1638.
 
 <p>
-Transmitter IDs in the <a href="http://jmri.sf.net/help/en/html/hardware/rps/">RPS</a> system can now be set to any string
+Transmitter IDs in the <a href="http://jmri.org/help/en/html/hardware/rps/">RPS</a> system can now be set to any string
 instead of just the transmitter address number.  The polling control table has a
 column where you can change the ID string for each transmitter.  
 Initially, they're the name (ID) of the corresponding entry in the main 

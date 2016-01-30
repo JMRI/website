@@ -97,7 +97,7 @@ the CTC machine is installed, the turnouts will be controlled from
 both the fascia and the CTC machine.  To do this, the toggle switch
 is connected to a C/MRI input, and the SMC is connected to a C/MRI
 output.  A JMRI
-<a hret="http://jmri.sourceforge.net/help/en/html/tools/Routes.shtml">Route</a>
+<a hret="http://jmri.org/help/en/html/tools/Routes.shtml">Route</a>
 		is then used to operate the turnout when the slide switch changes.</p>
 <p>
 This works very well when the program is running, but does an 
@@ -122,7 +122,7 @@ power, they won't be able to move the Tortoises until they are
 	under positive control.</p>
 
 <p>PanelPro legacy 
-"<a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/blockboss/BlockBossFrame.shtml">Simple Signaling Logic</a>"
+"<a href="http://jmri.org/help/en/package/jmri/jmrit/blockboss/BlockBossFrame.shtml">Simple Signaling Logic</a>"
 is used to operate each signal.  Note that this is entirely
 "behind the scenes"; there's no control panel on the computer, 
 and the dispatcher has no way to set the signals.  Instead, they
@@ -188,7 +188,7 @@ throat turnouts and orients the power for entrance or exit in the loops.
 It also reads the track occupancy status and lights indicators on
 the panels to show which tracks are occupied.  All of this is
 done with a total of about 48 JMRI
-<a HREF="http://jmri.sourceforge.net/help/en/html/tools/Routes.shtml">Routes</a>.
+<a HREF="http://jmri.org/help/en/html/tools/Routes.shtml">Routes</a>.
 
 <p>
 The next step, which we probably won't work on until

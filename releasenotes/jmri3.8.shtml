@@ -61,7 +61,7 @@ begin using webThrottle instead, or to plan on investing in devices that can sup
 webThrottle, the iOS WiThrottle, or the Android Engine Driver.</p>
 
 <p>This release has some changes to the application-initialization structure, particularly in the 
-<a href="http://jmri.sourceforge.net/JavaDoc/doc/apps/Apps.html">apps.Apps</a> class.  If you have written code of your own
+<a href="http://jmri.org/JavaDoc/doc/apps/Apps.html">apps.Apps</a> class.  If you have written code of your own
 that runs applications based on JMRI, please check for use of deprecated methods.</p>
 
 <p>The internals for handling CV read and write addressing have been extensively 
@@ -506,7 +506,7 @@ to improve reliability of sensor readout.
      <p>And delete the line that has "train = self.tm.getTrainById(trainId)".
      <p>
     <li>New feature, you can now let the program create your locomotive consists for you. See <a
-     href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml#TrainBuildOptions">Train
+     href="http://jmri.org/help/en/package/jmri/jmrit/operations/Operations.shtml#TrainBuildOptions">Train
       Build Options</a> "Build loco consist from single locos if needed" for more details. The program
      when building the consist can adjust the number of locos based on Horsepower per Ton (HPT) and
      the route's grades.
@@ -715,7 +715,7 @@ Zimo_pseudo_programmer.py
 <!-- from 3.7.2 note -->
 
 <p>Many additions to the 
-<a href="http://jmri.sourceforge.net/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#conditional">tools for structuring conditional decoder definitions</a>.</p>
+<a href="http://jmri.org/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#conditional">tools for structuring conditional decoder definitions</a>.</p>
 
 <p>Peter Ulvestad updated the clinics information.</p>
 
@@ -727,7 +727,7 @@ Zimo_pseudo_programmer.py
 
 <p>Older versions of the JMRI manuals and associated PDF files have been 
 moved out of the JMRI distribution.  They are now 
-<a href="http://jmri.sourceforge.net/help/en/manual/index.shtml">available on the web</a>. This was done to make it easier to 
+<a href="http://jmri.org/help/en/manual/index.shtml">available on the web</a>. This was done to make it easier to 
 keep the manual up-to-date, and reduce the download size.  
 You may have to update your bookmarks.</p>
 

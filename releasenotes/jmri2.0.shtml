@@ -54,7 +54,7 @@ The NCE support has been revamped so that "NCE USB" is a new choice in the prefe
 <p>This version of JMRI no longer supports NCE AIU broadcasts. This change was needed so that JMRI could reliably read certain CV values. We recommend that if you use NCE AIUs, that you upgrade the command station EPROM to version 2007 or newer and turn off AIU broadcasts. Code has been added to detect if AIU broadcasts are enabled, and a warning message will appear at startup requesting that AIU broadcasts be turned off for proper operation of the JMRI programs.
 
 <p>This version of JMRI requires Java 1.3 or later.  To see JMRI's plans for which Java versions will be required when, please see our
-<a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/TechRoadMap.shtml">technological roadmap page</a>.
+<a href="http://jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">technological roadmap page</a>.
 
 <p>
 The starting location of file chooser windows used to determine which file to 
