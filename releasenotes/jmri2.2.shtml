@@ -124,7 +124,7 @@ Depending on user reaction, this may become a dialog box that asks if you want t
 <p>
 The scripts used to start the JMRI applications on Linux and Mac OS X have been extensively reworked.  
 The new ones should do everything the old ones do, plus
-<a href="http://jmri.sourceforge.net/install/ShellScripts.shtml">more</a>.  
+<a href="http://jmri.org/install/ShellScripts.shtml">more</a>.  
 Please keep an eye out for new problems, however, and don't hesitate to report them to the list.
 
 <p>
@@ -132,7 +132,7 @@ In JMRI 2.1.1, when you went to load a panel file, only files with a ".xml" file
 
 <p>JMRI is moving toward requiring Java 1.4 or later.  Certain new features may not work if you are using an earlier
 version of Java.  To see JMRI's future plans for this and other compatibility issues, please see the JMRI
-<a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/TechRoadMap.shtml">technology roadmap</a>.
+<a href="http://jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">technology roadmap</a>.
 
 <p>JMRI no longer supports NCE AIU broadcasts. This change was needed so that JMRI could reliably read certain CV values. We recommend that if you use NCE AIUs, that you upgrade the command station EPROM to version 2007 or newer and turn off AIU broadcasts. Code has been added to detect if AIU broadcasts are enabled, and a warning message will appear at startup requesting that AIU broadcasts be turned off for proper operation of the JMRI programs.
 

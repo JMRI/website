@@ -84,7 +84,7 @@ Depending on user reaction, this may become a dialog box that asks if you want t
 <p>
 The scripts used to start the JMRI applications on Linux and Mac OS X have been extensively reworked.  
 The new ones should do everything the old ones do, plus
-<a href="http://jmri.sourceforge.net/install/ShellScripts.shtml">more</a>.  
+<a href="http://jmri.org/install/ShellScripts.shtml">more</a>.  
 Please keep an eye out for new problems, however, and don't hesitate to report them to the list.
 
 <p>
@@ -92,7 +92,7 @@ In JMRI 2.1.1, when you went to load a panel file, only files with a ".xml" file
 
 <p>JMRI is moving toward requiring Java 1.4 or later.  Certain new features may not work if you are using an earlier
 version of Java.  To see JMRI's future plans for this and other compatibility issues, please see the JMRI
-<a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/TechRoadMap.shtml">technology roadmap</a>.
+<a href="http://jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">technology roadmap</a>.
 
 <p>JMRI no longer supports NCE AIU broadcasts. This change was needed so that JMRI could reliably read certain CV values. We recommend that if you use NCE AIUs, that you upgrade the command station EPROM to version 2007 or newer and turn off AIU broadcasts. Code has been added to detect if AIU broadcasts are enabled, and a warning message will appear at startup requesting that AIU broadcasts be turned off for proper operation of the JMRI programs.
 
@@ -138,7 +138,7 @@ David Duchamp added an outline to a memory icon that's being put on a layout edi
 More improvements in making panel files portable from one computer
 to another, particularly Mac to PC and back.
 Please remember to put your own custom icons in the 
-<a href="http://jmri.sourceforge.net/help/en/html/apps/PanelPro/FAQ.shtml#location">appropriate directory</a> 
+<a href="http://jmri.org/help/en/html/apps/PanelPro/FAQ.shtml#location">appropriate directory</a> 
 so that this can work well.
 
 <p>
@@ -153,7 +153,7 @@ shows you the decoder ID number (CV7 value) for each type.
 
 <p>
 The 
-<a href="http://jmri.sf.net/help/en/package/jmri/jmrix/rps/trackingpanel/RpsTrackingFrame.shtml">RPS tracking display</a>
+<a href="http://jmri.org/help/en/package/jmri/jmrix/rps/trackingpanel/RpsTrackingFrame.shtml">RPS tracking display</a>
 has been updated.
 
 <p>
@@ -177,13 +177,13 @@ If you're building your own application and now have an error with "jmrit.messag
 C/MRI poll timing has been improved a little.
 
 <p>
-<a href="http://jmri.sf.net/help/en/html/hardware/can/index.shtml">Initial support</a>
+<a href="http://jmri.org/help/en/html/hardware/can/index.shtml">Initial support</a>
 for CAN-based networks is included,
 focusing on the
 <a href="http://www.merg.org.uk/">MERG</a>
 <a href="http://www.merg.org.uk/merg_resources/cbus.php">CBUS</a>.
 See the initial draft of the 
-<a href="http://jmri.sf.net/help/en/html/hardware/can/index.shtml">help page</a> 
+<a href="http://jmri.org/help/en/html/hardware/can/index.shtml">help page</a> 
 for more information.
 
 <p>
@@ -209,7 +209,7 @@ using multiple Digitrax throttles.
 
 <p>
 Introductory support for the PI Engineering 
-<a href="http://jmri.sf.net/help/en/html/hardware/raildriver/index.shtml">RailDriver throttle simulator</a>
+<a href="http://jmri.org/help/en/html/hardware/raildriver/index.shtml">RailDriver throttle simulator</a>
 is included.
 
 <p>
@@ -237,7 +237,7 @@ very similar to a DecoderPro paned window.
 <p>
 For consistency with other JMRI utilities, conditionals now check the 
 "known state" of Turnouts instead of the "commanded state".  If you're not using
-<a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/TurnoutFeedback.shtml">turnout feedback</a>, this won't effect you.
+<a href="http://jmri.org/help/en/html/doc/Technical/TurnoutFeedback.shtml">turnout feedback</a>, this won't effect you.
 If you are using feedback, your conditionals will now fire when the 
 feedback comes back from the layout, rather than immediately with a 
 state change is requested.
@@ -262,7 +262,7 @@ the time won't be set, but the rest of the panel file will be loaded properly.
 
 <p>
 Added a new
-<a href="http://jmri.sf.net/help/en/package/jmri/jmrix/rps/swing/soundset/SoundSetFrame.shtml">RPS tool</a>
+<a href="http://jmri.org/help/en/package/jmri/jmrix/rps/swing/soundset/SoundSetFrame.shtml">RPS tool</a>
 for handling the speed of sound.
 
 <p>
@@ -275,13 +275,13 @@ for debugging installation problems.
 <p>
 Dick Bronson provided some icons for USS CTC track diagrams.  They're
 available in 
-<a href="http://jmri.sf.net/resources/icons/USS/proto">resources/icons/USS/proto</a>.
+<a href="http://jmri.org/resources/icons/USS/proto">resources/icons/USS/proto</a>.
 
 <p>
 Brett Scott provided a 
-<a href="http://jmri.sf.net/jython/dccspecialties/programwabbitmasterrevh.py">script</a>
+<a href="http://jmri.org/jython/dccspecialties/programwabbitmasterrevh.py">script</a>
 in the 
-<a href="http://jmri.sf.net/jython/dccspecialties">jython/dccspecialities</a>
+<a href="http://jmri.org/jython/dccspecialties">jython/dccspecialities</a>
 folder for programming the Wabbit Rev H or greater.
 
 <p>
