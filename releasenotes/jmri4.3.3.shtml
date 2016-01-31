@@ -349,6 +349,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <li>New feature for car and loco logging. Now the program creates a separate log for each
      car or loco when logging is enabled. These new files are stored in a directory called
      "rollingStock", and this directory can be found in the "logger" directory under "operations".
+    <li>Fixed a bug caused by using the "Set Cars" tool and the "Cars" table sorter (clicking on
+     a column heading to sort cars rather then one of the "Sort by" radio buttons). Thanks to Sam
+     Simons for finding and reporting this problem.</li>
    </ul>
 
    <h4>Roster</h4>
