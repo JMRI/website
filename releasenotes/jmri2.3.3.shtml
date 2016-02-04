@@ -50,9 +50,9 @@ back to an earlier version.
 It contains 
 many new features, including:
 <ul>
-<li>new <a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml">support for operations</a>
+<li>new <a href="http://jmri.org/help/en/package/jmri/jmrit/operations/Operations.shtml">support for operations</a>
 <li>a new Window menu, making it easier to move around in the programs,
-<li><a href="http://jmri.sf.net/help/en/html/hardware/ecos/index.shtml">support for the ESU ECoS system</a>
+<li><a href="http://jmri.org/help/en/html/hardware/ecos/index.shtml">support for the ESU ECoS system</a>
 <li>new startup scripts on Windows
 </ul>
 along with lots of other changes.  See the complete list below.
@@ -98,7 +98,7 @@ on the
 
 <p>JMRI is moving toward requiring Java 1.5 or later.  Certain new features may not work if you are using an earlier
 version of Java.  To see JMRI's future plans for this and other compatibility issues, please see the JMRI
-<a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/TechRoadMap.shtml">technology roadmap</a>.
+<a href="http://jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">technology roadmap</a>.
 
 <p>JMRI no longer supports NCE AIU broadcasts. This change was needed so that JMRI could reliably read certain CV values. 
 We recommend that if you use NCE AIUs, that you upgrade the command station EPROM to version 2007 or newer and turn off AIU broadcasts. 
@@ -138,7 +138,7 @@ Team Digital provided a definition for their SRC16 card.
 
 <p>
 Dan Boudreau's
-<a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml">operations</a>
+<a href="http://jmri.org/help/en/package/jmri/jmrit/operations/Operations.shtml">operations</a>
 tools are now available.
 
 <p>
@@ -154,7 +154,7 @@ Fixed a problem with read-only split variables in DecoderPro still being writabl
 
 <p>
 David Duchamp added
-<a href="http://jmri.sf.net/help/en/package/jmri/jmrit/display/LayoutEditor.shtml#markermenu">markers</a>
+<a href="http://jmri.org/help/en/package/jmri/jmrit/display/LayoutEditor.shtml#markermenu">markers</a>
 to the Layout Editor.
 
 <p>
@@ -170,7 +170,7 @@ shows total available memory in the title for the right column.
 
 <P>
 Initial
-<a href="http://jmri.sf.net/help/en/html/hardware/ecos/index.shtml">ESU ECoS support</a>
+<a href="http://jmri.org/help/en/html/hardware/ecos/index.shtml">ESU ECoS support</a>
 is available. This first version can control layout power and operate turnouts.
 We're very interested in feedback before moving on to the support for sensors and
 throttles.
@@ -193,7 +193,7 @@ Matt Harris fixed the ASUS EEPC install for RXTX. (Not really a release 2.3.3 it
 
 <p>
 Robert Coleman provided 
-<a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/JUnit.shtml">JUnit tests</a> for the operations code.
+<a href="http://jmri.org/help/en/html/doc/Technical/JUnit.shtml">JUnit tests</a> for the operations code.
 
 <p>
 Team Digital provided a fix for routes in the SMD16 definition file.
@@ -203,7 +203,7 @@ Many JUnit tests were added for operations by Robert Coleman.
 
 <p>
 There's a new 
-"<a href="http://jmri.sourceforge.net/help/en/html/apps/DecoderPro/Roster.shtml#edit">Edit ...</a>"
+"<a href="http://jmri.org/help/en/html/apps/DecoderPro/Roster.shtml#edit">Edit ...</a>"
 entry in the Roster menu that
 lets you update the contents of a roster entry (including changing
 CV values) even if you don't have a connection to your layout.
@@ -234,16 +234,16 @@ Peter Ulvestad added a definition for the Digitrax DH163IP decoder.
 
 <p>
 David Duchamp added tables for 
-<a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/beantable/SectionTable.shtml">Sections</a>
+<a href="http://jmri.org/help/en/package/jmri/jmrit/beantable/SectionTable.shtml">Sections</a>
 and
-<a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/beantable/TransitTable.shtml">Transits</a>.
+<a href="http://jmri.org/help/en/package/jmri/jmrit/beantable/TransitTable.shtml">Transits</a>.
 
 <p>
 Manufacturer number 33 has been renamed from "Praecipuus" to "Silicon Railway".
 
 <p>
 Ken Cameron updated his 
-<a href="http://jmri.sf.net/jython/RobotThrottle.py">RobotThrottle.py</a>
+<a href="http://jmri.org/jython/RobotThrottle.py">RobotThrottle.py</a>
 sample script.
 
 <!--#include virtual="/Footer" -->

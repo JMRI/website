@@ -47,7 +47,7 @@ many new features, including:
 <li>Much improved support for
 <li>Improved handling of F9-F28 on Digitrax systems,
 <li>New features in the Layout Editor,
-<li><a href="http://jmri.sf.net/help/en/html/web/index.shtml">Web access</a> for JMRI windows,
+<li><a href="http://jmri.org/help/en/html/web/index.shtml">Web access</a> for JMRI windows,
 <li>A new "C/MRI simulator" selection for when you really need to play with JMRI, but
 aren't near the layout,
 <li>Several new and improved decoder definitions,
@@ -81,7 +81,7 @@ please select the right decoder manually.
 
 <p>JMRI is moving toward requiring Java 1.5 or later.  Certain new features may not work if you are using an earlier
 version of Java.  To see JMRI's future plans for this and other compatibility issues, please see the JMRI
-<a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/TechRoadMap.shtml">technology roadmap</a>.
+<a href="http://jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">technology roadmap</a>.
 
 <p>JMRI no longer supports NCE AIU broadcasts. This change was needed so that JMRI could reliably read certain CV values. We recommend that if you use NCE AIUs, that you upgrade the command station EPROM to version 2007 or newer and turn off AIU broadcasts. Code has been added to detect if AIU broadcasts are enabled, and a warning message will appear at startup requesting that AIU broadcasts be turned off for proper operation of the JMRI programs.
 
@@ -126,7 +126,7 @@ Ken Cameron added a "DebounceSensor" sample script.
 
 <p>
 The JMRI 
-<a href="http://jmri.sf.net/help/en/html/hardware/can/cbus/index.shtml">CBUS support</a>
+<a href="http://jmri.org/help/en/html/hardware/can/cbus/index.shtml">CBUS support</a>
 now includes Senors and Turnouts.  Also, when using a non-MERG CAN adapter, the
 CAN ID is fixed at 126.
 
@@ -150,11 +150,11 @@ can be accessed via scripts, etc.
 
 <p>
 The JMRI
-<a href="http://jmri.sf.net/help/en/html/hardware/can/cbus/index.shtml">CBUS support</a>
+<a href="http://jmri.org/help/en/html/hardware/can/cbus/index.shtml">CBUS support</a>
 now takes an easier format for specifying CBUS events in sensors
 and turnouts:  MT2e3, which means "event 3 from node 2".
 The CBUS
-<a href="http://jmri.sf.net/help/en/html/hardware/can/cbus/Names.shtml">naming page</a>
+<a href="http://jmri.org/help/en/html/hardware/can/cbus/Names.shtml">naming page</a>
 discusses various optional forms.
 
 <p>
@@ -163,7 +163,7 @@ programmer format to work well with them.
 
 <p>
 The JMRI 
-<a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrix/loconet/sdfeditor/EditorFrame.shtml">editor for Digitrax SDF sound definitions</a>
+<a href="http://jmri.org/help/en/package/jmri/jmrix/loconet/sdfeditor/EditorFrame.shtml">editor for Digitrax SDF sound definitions</a>
 has been updated with more editing options and some layout 
 improvements.
 
@@ -172,7 +172,7 @@ Pekka Siiskonen suggested that we add "error numbers" to e.g. the
 programming error messages, so that when people report a problem
 it's really clear which error they've hit.  We've started to do this, 
 including a 
-<a href="http://jmri.sf.net/help/en/html/Errors.shtml">page that serves as a central registry</a>
+<a href="http://jmri.org/help/en/html/Errors.shtml">page that serves as a central registry</a>
 of error numbers.
 
 <p>
@@ -192,7 +192,7 @@ to decoder definitions has been fixed.
 
 <p>
 JMRI windows can now be
-<a href="http://jmri.sf.net/help/en/html/web/index.shtml">accessed from a web browser</a>.
+<a href="http://jmri.org/help/en/html/web/index.shtml">accessed from a web browser</a>.
 
 <p>
 David Duchamp added an "edit" capability to the Signal Table, so
@@ -210,7 +210,7 @@ more self-explanatory.
 
 <p>
 New 
-<a href="http://jmri.sf.net/help/en/package/jmri/jmrix/can/cbus/swing/configtool/ConfigToolFrame.shtml">setup tool</a>
+<a href="http://jmri.org/help/en/package/jmri/jmrix/can/cbus/swing/configtool/ConfigToolFrame.shtml">setup tool</a>
 for CBUS users.
 
 <p>
@@ -246,7 +246,7 @@ with that stopping the program.
 
 <p>
 Andrew Crosland added a filter to the 
-<a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrix/can/cbus/swing/console/CbusConsoleFrame.shtml">CBUS console</a>
+<a href="http://jmri.org/help/en/package/jmri/jmrix/can/cbus/swing/console/CbusConsoleFrame.shtml">CBUS console</a>
 (event display), which lets
 you pay attention to just the events you're interested in, and made a lot of other refinements.
 

@@ -68,7 +68,10 @@ from
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
 
-None yet.
+<ul>
+    <li>The DispatcherPro, JMRI Demo, and SignalPro applications are not shipped in distributions. Use PanelPro
+    in lieu of these applications.</li>
+</ul>
 
 <h3>Older warnings</h3>
 
@@ -170,7 +173,7 @@ on the
 These are development files, and might not be working at any particular time.</p>
 
 
-<h3>Changes since <a href="">jmri4.3.2.shtml">test release 4.3.2</a>:</h3>
+<h3>Changes since <a href="jmri4.3.2.shtml">test release 4.3.2</a>:</h3>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.3.3+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
@@ -192,6 +195,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h5>LocoNet</h5>
             <ul>
                 <li>
+                Steve Rawlinson fixed a
+                <a href="https://github.com/JMRI/JMRI/issues/159">problem with multiple throttles</a>.
                 </li>
             </ul>
 
@@ -206,7 +211,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
         <h5>SPROG</h5>
             <ul>
-                <li></li>
+                <li>Andrew Crosland fixed a problem with ops mode programming packet bursts through the SPROG command station.
+                Added a delay between ops mode packets and also handle the case where there is no free slot available for the packet, by reporting a timeout back to the programmer.</li>
             </ul>
 
         <h5>Uhlenbrock Intellibox</h5>
@@ -222,7 +228,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Signals</h4>
         <h5>Signal Systems</h5>
             <ul>
-                <li></li>
+                <li>John Lang updated the NYC signal definitions</li>
             </ul>
         <h5>Signal Mast Editor</h5>
             <ul>
@@ -231,7 +237,27 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>New / Updated decoder definitions</h4>
         <ul>
-            <li></li>
+            <li>
+              The default Programming mode for any particular DCC system is now based
+              on the order listed in the Java code.
+              NCE and SPROG systems have been updated to default to Direct modes.
+              Other systems can have the default priority order changed on request.
+            </li>
+            <li>
+              The handling of decoder custom, replacement and empty panes has been improved. (Dave Heap)
+              <ul>
+                <li>
+                  Documentation has been updated at
+                  <a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#pane_considerations"
+                  target="_blank">Advanced Decoder Definitions</a>.
+                </li>
+                <li>
+                  There is now a
+                  <a href="/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#pane_best_practice"
+                  target="_blank">Best Practice</a> recommendation, with examples.
+                </li>
+              </ul>
+            </li>
         </ul>
 
         <h5>BLI</h5>
@@ -239,6 +265,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
+	<h5>Digitrax</h5>
+            <ul>
+                <li>Alain Le Marchand improved 
+                <a href="https://github.com/JMRI/JMRI/pull/701">how Digitrax Series 5 and Series 6 decoders are identified</a>
+                </li>
+            </ul>
+            
         <h5>Doehler &amp; Haas</h5>
             <ul>
                 <li></li>
@@ -261,13 +294,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>NCE</h5>
             <ul>
-                <li></li>
+                <li>Change acceleration and deceleration range (CVs 3 &amp; 4) to 0-254 for non-silent drive decoder families. (Dave Heap)</li>
             </ul>
 
         <h5>QSI</h5>
             <ul>
-                <li>Dave Heap made the following changes:<br>
+                <li>xxx made the following changes:<br>
                     <ul>
+                        <li></li>
                         <li></li>
                     </ul>
                </li>
@@ -280,7 +314,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>SoundTraxx</h5>
             <ul>
-                <li></li>
+                <li>Alain Le Marchand fixed the enum order for CV123 Exhaust Select on the Econami</li>
+                <li>Michael Mosher added definitions for the Econami 200 and PNP decoders</li>
             </ul>
 
         <h5>TCS</h5>
@@ -306,7 +341,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Operations</h4>
    <ul>
-    <li></li>
+    <li>New feature for operations, a tool called "Automation" found under the "Trains" tools
+     menu. This tool can help you automate the building of trains, and the printing of manifests and
+     switch lists. See the <a
+     href="http://jmri.org/help/en/package/jmri/jmrit/operations/Operations.shtml#Automation">Help
+      for Automation</a> for more information.
+    </li>
+    <li>New feature for car and loco logging. Now the program creates a separate log for each
+     car or loco when logging is enabled. These new files are stored in a directory called
+     "rollingStock", and this directory can be found in the "logger" directory under "operations".
+    <li>Fixed a bug caused by using the "Set Cars" tool and the "Cars" table sorter (clicking on
+     a column heading to sort cars rather then one of the "Sort by" radio buttons). Thanks to Sam
+     Simons for finding and reporting this problem.</li>
    </ul>
 
    <h4>Roster</h4>
@@ -321,7 +367,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Preferences</h4>
         <ul>
-            <li></li>
+            <li>Individual Startup Preferences panels have been replaced with a single tabular
+            panel that allows the explicit setting of startup execution order.
+            (<a href="https://github.com/JMRI/JMRI/pull/687">PR 687</a>)</li>
+            <li>It is possible to specify one or more routes to be set when JMRI starts.
+            (<a href="https://github.com/JMRI/JMRI/pull/730">PR 730</a>)</li>
         </ul>
 
     <h4>Logix</h4>
@@ -335,14 +385,40 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             Layout Editor if a Memory was deleted that had been linked to a Layout Block.</li>
         </ul>
 
+    <h4>Layout Editor</h4>
+        <ul>
+            <li>Steve Rawlinson improved the Layout Editors handing of layout blocks:
+                Selecting the blank entry at the top of the drop down list when editing 
+                a layout block does not remove the existing sensor if there is one set. 
+                Next time you edit it the old sensor is back. 
+                Modified the behaviour so that selecting the blank entry removes the sensor, 
+                allowing the sensor to be assigned to a different block.
+                </li>
+            <li>Steve Rawlinson made a change to allow the user to set the grid size in Layout Editor
+        </ul>
+
     <h4>Scripting</h4>
         <ul>
-            <li></li>
+            <li>Scripting with AbstractAutomaton can now wait <u>either</u> for 
+                something (Sensor, Turnout, Signal...) to change <u>or</u> for 
+                a maximum time to go by. 
+                (<a href="http://jmri.org/help/en/html/tools/scripting/FAQ.shtml#several">more info</a>)
+                </li>
+            <li>Fixed a rare, but really annoying, problem when multiple script threads
+                wait for the same sensor.</li>
         </ul>
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>Herve Blorec improved the French translations</li>
+            <li>Egbert Broerse improved the German translation</li>
+            <li>Sonny Hansen improved the Danish translation</li>
+            <li>John Socha-Leialoha improved the WiThrottle protocol documentation</li>
+            <li>The DispatcherPro, JMRI Demo, and SignalPro applications are not shipped in distributions. The code
+            for these applications has not been removed from JMRI, only the launchers are no longer created. If the
+            use of PanelPro in lieu of these applications is not possible, please request assistance creating your
+            own launchers for these applications in the
+            <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI Users Group</a>. (Randall Wood)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
