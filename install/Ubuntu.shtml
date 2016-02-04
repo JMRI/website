@@ -67,7 +67,7 @@ Details</a></p>
 <p style="margin-left: 1.34cm;">Follow the Path
 "Download" and read up on the Help page which gives advice on how to download the ISO image and
 then create a bootable CD to install Ubuntu.</p>
-JMRI Help has details for <a href="http://jmri.sourceforge.net/install/decTop.shtml">installing Xubuntu</a> available.
+JMRI Help has details for <a href="http://jmri.org/install/decTop.shtml">installing Xubuntu</a> available.
 
 <a id="notes"/>
 <h2>Notes:</h2>
@@ -154,7 +154,7 @@ The above description is brief, but the script itself can be opened in a text ed
 
 <h3>3.3 Get JMRI</h3>
 <p>JMRI is downloaded in the normal manner.</p>
-<p><a href="http://jmri.sourceforge.net/download/index.shtml#prod-rel">Download JMRI</a> </p>
+<p><a href="http://jmri.org/download/index.shtml#prod-rel">Download JMRI</a> </p>
 
 <p>Double click on the .tgz file to open the File Roller, then click extract. </p>
 
@@ -180,13 +180,13 @@ upgrading Ubuntu may create problems for JMRI releases prior to 2.9.2 as the upg
 port by adding "-Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0" as shown
 below
 </p><p style="margin-left: 40px;">java -noverify -Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0 -Djava.security.policy</p>
-<p>Please see the <a href="http://jmri.sourceforge.net/install/FAQLinux.html">FAQ</a> for more details.</p>
+<p>Please see the <a href="http://jmri.org/install/FAQLinux.html">FAQ</a> for more details.</p>
 
 <a id="startup"><h2>4. Starting JMRI</h2></a>
 <p>To start open a terminal and enter ./DecoderPro or double click on the icon.</p>
 <p>After a clean install, the JMRI Preferences pane will open. Select your Connection and USB port, click "Save"  and restart.</p>
 More on this on the <a href="../help/en/html/setup/index.shtml">JMRI Setup help page</a>.
-  <p>The JMRI <a href="http://jmri.sourceforge.net/help/en/html/hardware/index.shtml">Hardware help page</a> lists the various types of layout equipment that JMRI can connect to, and gives links to instruction pages. Go there next to complete your setup.</p>
+  <p>The JMRI <a href="http://jmri.org/help/en/html/hardware/index.shtml">Hardware help page</a> lists the various types of layout equipment that JMRI can connect to, and gives links to instruction pages. Go there next to complete your setup.</p>
   
 <h3>4.1 Errors</h3>
 <p>If you have any problems get back to the group.</p>
