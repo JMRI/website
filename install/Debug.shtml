@@ -38,9 +38,13 @@ JMRI: Debugging Your Installation
 
 	<p class=example> java -version </p>
 
-	at a command prompt and looking the message that produces. 
-	You need to have at least Java version 1.5
-	installed to use JMRI.  If you get a message about "command not found"
+	at a command prompt and looking the message that produces.</p>
+	<p>JMRI&reg; version 4.2 requires Java 1.8.<br>
+	Version 3.10.1 requires Java 1.6 or later.<br>
+	Version 2.14.1 requires Java 1.5 (or 1.6 if you wish for drag &amp; drop).<br>
+	Version 2.12 requires Java 1.5 or later.
+	</p>
+	<p>If you get a message about "command not found"
 	or similar, then Java is not properly installed; consult the
 	install pages for your 
     <a href="MacOSX.html">Mac OS X</a>,
