@@ -229,6 +229,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h5>Signal Systems</h5>
             <ul>
                 <li>John Lang updated the NYC signal definitions</li>
+<li>(jkilsby) Background made transparant for icons for Danish Signals.</li>
+
             </ul>
         <h5>Signal Mast Editor</h5>
             <ul>
@@ -349,9 +351,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     </li>
     <li>New feature for car and loco logging. Now the program creates a separate log for each
      car or loco when logging is enabled. These new files are stored in a directory called
-     "rollingStock", and this directory can be found in the "logger" directory under "operations".
-    <li>Fixed a bug caused by using the "Set Cars" tool and the "Cars" table sorter (clicking on
-     a column heading to sort cars rather then one of the "Sort by" radio buttons). Thanks to Sam
+     "rollingStock", and this directory can be found in the "logger" directory under "operations".</li>
+    <li>The program will now adjust a schedule's ship destination track if you copy and delete
+     a track that is referenced by the schedule. This allows you to move a track (using the copy
+     track tool) to a different location and not break your schedules.</li>
+    <li>Fixed a bug caused by using the "Set Cars" tool and the "Cars" table sorter (clicking
+     on a column heading to sort cars rather then one of the "Sort by" radio buttons). Thanks to Sam
      Simons for finding and reporting this problem.</li>
    </ul>
 
@@ -419,6 +424,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             use of PanelPro in lieu of these applications is not possible, please request assistance creating your
             own launchers for these applications in the
             <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI Users Group</a>. (Randall Wood)</li>
+            <li>Steve Todd fixed issue with WiThrottle ip address not showing correctly on Linux systems.  Change included 
+            updating JmDNS from 3.4.1 to 3.4.2.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
