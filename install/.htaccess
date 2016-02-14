@@ -11,5 +11,8 @@ RewriteRule "Linux.html" "/install/Linux.shtml" [R=302,L]
 # openSUSE.html install converted to .shtml 03/2009
 RewriteRule "OpenSUSE.html" "/install/OpenSUSE.shtml" [R=302,L]
 
-# openSUSE.html install converted to .shtml 03/2009
+# Debug.html install converted to .shtml 02/2008
 RewriteRule "Debug.html" "/install/Debug.shtml" [R=302,L]
+
+# ShellScripts.shtml moved to html/doc/Technical/ 03/2008
+RewriteRule "ShellScripts.shtml" "/help/en/html/doc/Technical/StartUpScripts.shtml" [R=302,L]
