@@ -180,7 +180,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Hardware Support</h4>
 
-        <p></p>
+        <p>Help for setting up JMRI with your OS and Java version as well as setting general preferences is available as <a href="/help/en/html/setup/index.shtml"
+        target="_blank">Setup Help</a>, including a short FAQ section, so application help pages can focus on the functions in each part.</p>
 
         <h5>C/MRI</h5>
             <ul>
@@ -377,6 +378,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             (<a href="https://github.com/JMRI/JMRI/pull/687">PR 687</a>)</li>
             <li>It is possible to specify one or more routes to be set when JMRI starts.
             (<a href="https://github.com/JMRI/JMRI/pull/730">PR 730</a>)</li>
+            <li>Additional preferences labels are available for translation. 
+            (<a href="https://github.com/JMRI/JMRI/pull/781">PR 781</a>)</li>  
         </ul>
 
     <h4>Logix</h4>
@@ -415,10 +418,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li>Herve Blorec improved the French translations</li>
-            <li>Egbert Broerse improved the German translation</li>
+            <li>The PanelPro splash screen displays a localized F8 hint (Egbert Broerse).</li>
+            <li>Herv&eacute; Blorec improved the French translations</li>
+            <li>The French Index and Table of Contents pages properly display accentuated characters (<a href="https://github.com/JMRI/JMRI/pull/738">PR 738</a>).
+            <li>Egbert Broerse improved the German translation of menu items, including special character spelling</li>
             <li>Sonny Hansen improved the Danish translation</li>
             <li>John Socha-Leialoha improved the WiThrottle protocol documentation</li>
+            <li>Egbert Broerse added help on using IntelliJ as an IDE for JMRI, including instructions to set the correct character formats (<a href="https://github.com/JMRI/JMRI/pull/675">PR 675</a>).
             <li>The DispatcherPro, JMRI Demo, and SignalPro applications are not shipped in distributions. The code
             for these applications has not been removed from JMRI, only the launchers are no longer created. If the
             use of PanelPro in lieu of these applications is not possible, please request assistance creating your
