@@ -183,16 +183,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <p>Help for setting up JMRI with your OS and Java version as well as setting general preferences is available as <a href="/help/en/html/setup/index.shtml"
         target="_blank">Setup Help</a>, including a short FAQ section, so application help pages can focus on the functions in each part.</p>
 
-        <h5>C/MRI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>LocoNet</h5>
             <ul>
                 <li>
@@ -201,30 +191,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </li>
             </ul>
 
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
         <h5>SPROG</h5>
             <ul>
                 <li>Andrew Crosland fixed a problem with ops mode programming packet bursts through the SPROG command station.
                 Added a delay between ops mode packets and also handle the case where there is no free slot available for the packet, by reporting a timeout back to the programmer.</li>
             </ul>
 
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
-            </ul>
 
     <h4>Signals</h4>
         <h5>Signal Systems</h5>
@@ -232,10 +204,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>John Lang updated the NYC signal definitions</li>
 <li>(jkilsby) Background made transparant for icons for Danish Signals.</li>
 
-            </ul>
-        <h5>Signal Mast Editor</h5>
-            <ul>
-                <li></li>
             </ul>
 
     <h4>New / Updated decoder definitions</h4>
@@ -275,26 +243,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </li>
             </ul>
             
-        <h5>Doehler &amp; Haas</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ESU</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>NCE</h5>
             <ul>
                 <li>Change acceleration and deceleration range (CVs 3 &amp; 4) to 0-254 for non-silent drive decoder families. (Dave Heap)</li>
@@ -321,24 +269,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Michael Mosher added definitions for the Econami 200 and PNP decoders</li>
             </ul>
 
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>ZIMO</h5>
             <ul>
                 <li>Mark Waters added new and updated files adding new ZIMO decoders and additional productIDs for existing decoders</li>
-            </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
             </ul>
 
 
@@ -361,11 +294,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
      Simons for finding and reporting this problem.</li>
    </ul>
 
-   <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
    <h4>Warrants</h4>
         <ul>
             <li>Karl Lisby contributed new 
@@ -382,11 +310,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             (<a href="https://github.com/JMRI/JMRI/pull/730">PR 730</a>)</li>
             <li>Additional preferences labels are available for translation. 
             (<a href="https://github.com/JMRI/JMRI/pull/781">PR 781</a>)</li>  
-        </ul>
-
-    <h4>Logix</h4>
-        <ul>
-            <li></li>
         </ul>
 
     <h4>Panel Editors</h4>
