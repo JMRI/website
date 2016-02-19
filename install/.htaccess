@@ -3,16 +3,16 @@ RewriteEngine on
 # Provide redirects for removed pages
 
 # MacOSX.html install converted to .shtml 12/2015
-RewriteRule "MacOSX.html" "/install/MacOSX.shtml" [R=302,L]
+RewriteRule ^MacOSX\.html /install/MacOSX.shtml [R=302,L]
 
 # Linux.html install converted to .shtml 12/2015
-RewriteRule "Linux.html" "/install/Linux.shtml" [R=302,L]
+RewriteRule ^Linux\.html /install/Linux.shtml [R=302,L]
 
 # openSUSE.html install converted to .shtml 03/2009
-RewriteRule "OpenSUSE.html" "/install/OpenSUSE.shtml" [R=302,L]
+RewriteRule ^OpenSUSE\.html /install/OpenSUSE.shtml [R=302,L]
 
 # Debug.html install converted to .shtml 02/2008
-RewriteRule "Debug.html" "/install/Debug.shtml" [R=302,L]
+RewriteRule ^Debug.html /install/Debug.shtml [R=302,L]
 
 # ShellScripts.shtml moved to html/doc/Technical/ 03/2008
-RewriteRule "ShellScripts.shtml" "/help/en/html/doc/Technical/StartUpScripts.shtml" [R=302,L]
+RewriteRule ^ShellScripts.shtml /help/en/html/doc/Technical/StartUpScripts.shtml [R=302,L]
