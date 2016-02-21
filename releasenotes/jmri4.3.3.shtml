@@ -60,10 +60,13 @@ see our
 <ul>
 <li>The combination of an NCE-USB adapter with the PowerPro, SB3 or SB5 Smartbooster can't do ops-mode (on main) programming.
 	The fix for this is available via <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>, 
-	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.
+	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.</li>
 <li>Some complex Layout Editor panels don't load properly, resulting in the signals not updating properly. 
 	The fix for this is available via <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>, 
-	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.
+	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.</li>
+<li>There is a problem reloading some Logix that reference the same input (Sensor, Turnout) multiple times in a single Conditional.
+	The fix for this is available via <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>, 
+	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.</li>
 </ul>
 If any of those effect you, please either wait for
 <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>, due out in the first half of March,
