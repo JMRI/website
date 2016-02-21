@@ -57,11 +57,16 @@ see our
 <h3>Known problems with this release</h3>
 
 <!-- None at release time. -->
-
-We've had reports of issues with the combination of an NCE-USB adapter with the SB5 Smartbooster.
-
+<ul>
+<li>The combination of an NCE-USB adapter with the PowerPro, SB3 or SB5 Smartbooster can't do ops-mode (on main) programming.
+	The fix for this is available via <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>, 
+	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.
+<li>Some complex Layout Editor panels don't load properly, resulting in the signals not updating properly. 
+	The fix for this is available via <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>, 
+	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.
+</ul>
 If any of those effect you, please either wait for
-<a href="jmri4.3.4.shtml">JMRI 4.3.4</a>, due out shortly after this one,
+<a href="jmri4.3.4.shtml">JMRI 4.3.4</a>, due out in the first half of March,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -71,7 +76,7 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li>The DispatcherPro, JMRI Demo, and SignalPro applications are not shipped in distributions. Use PanelPro
+    <li>The DispatcherPro, JMRI Demo, and SignalPro applications are no longer shipped in distributions. Use PanelPro
     in lieu of these applications.</li>
 </ul>
 
