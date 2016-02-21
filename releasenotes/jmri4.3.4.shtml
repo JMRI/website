@@ -202,7 +202,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>NCE</h5>
             <ul>
-                <li></li>
+		<li>Fixed a problem preventing the combination of an NCE-USB adapter with the PowerPro, SB3 or SB5 Smartbooster 
+			from doing ops-mode (on main) programming.<li>
             </ul>
 
         <h5>RFID</h5>
@@ -228,7 +229,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Signals</h4>
         <h5>Signal Systems</h5>
             <ul>
-                <li></li>
+                <li>Fixed a problem where some complex Layout Editor panels don't load fully, resulting in the signals not updating properly.<li>
             </ul>
     
         <h5>Signal Mast Editor</h5>
@@ -345,6 +346,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Layout Editor</h4>
         <ul>
             <li>Steve Rawlinson added keyboard shortcuts to the Layout Editor</li>
+            <li>Fixed a problem where some complex Layout Editor panels don't load fully, resulting in the signals not updating properly.<li>
          </ul>
 
     <h4>Scripting</h4>
