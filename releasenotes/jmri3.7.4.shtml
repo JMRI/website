@@ -69,7 +69,7 @@ SVN.  Older versions will be hard to merge.</p>
 <h3>Older warnings</h3>
 
 <p>This release has some changes to the application-initialization structure, particularly in the 
-<a href="http://jmri.sourceforge.net/JavaDoc/doc/apps/Apps.html">apps.Apps</a> class.  If you have written code of your own
+<a href="http://jmri.org/JavaDoc/doc/apps/Apps.html">apps.Apps</a> class.  If you have written code of your own
 that runs applications based on JMRI, please check for use of deprecated methods.
 
 <p>The internals for handling CV read and write addressing have been extensively 

@@ -150,7 +150,7 @@ Zimo_pseudo_programmer.py
      <p>And delete the line that has "train = self.tm.getTrainById(trainId)".
      <p>
     <li>New feature, you can now let the program create your locomotive consists for you. See <a
-     href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/operations/Operations.shtml#TrainBuildOptions">Train
+     href="http://jmri.org/help/en/package/jmri/jmrit/operations/Operations.shtml#TrainBuildOptions">Train
       Build Options</a> "Build loco consist from single locos if needed" for more details. The program
      when building the consist can adjust the number of locos based on Horsepower per Ton (HPT) and
      the route's grades.
