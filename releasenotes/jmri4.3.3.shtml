@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.3.3 release
       </h2>
 
-    <p>Date: mmm dd, 2016</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: Feb 15, 2016</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test version 4.3.3 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h3>Notes:</h3>
 
@@ -54,22 +56,30 @@ see our
 
 <h3>Known problems with this release</h3>
 
-None at release time.
-
-<!--
+<!-- None at release time. -->
+<ul>
+<li>The combination of an NCE-USB adapter with the PowerPro, SB3 or SB5 Smartbooster can't do ops-mode (on main) programming.
+	The fix for this is available via <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>, 
+	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.</li>
+<li>Some complex Layout Editor panels don't load properly, resulting in the signals not updating properly. 
+	The fix for this is available via <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>, 
+	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.</li>
+<li>There is a problem reloading some Logix that reference the same input (Sensor, Turnout) multiple times in a single Conditional.
+	The fix for this is available via <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>, 
+	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.</li>
+</ul>
 If any of those effect you, please either wait for
-<a href="jmri4.3.4.shtml">JMRI 4.3.4</a>, due out shortly after this one,
+<a href="jmri4.3.4.shtml">JMRI 4.3.4</a>, due out in the first half of March,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li>The DispatcherPro, JMRI Demo, and SignalPro applications are not shipped in distributions. Use PanelPro
+    <li>The DispatcherPro, JMRI Demo, and SignalPro applications are no longer shipped in distributions. Use PanelPro
     in lieu of these applications.</li>
 </ul>
 
@@ -147,31 +157,31 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-<!--
+
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.dmg/download</a><br/>
-    sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.dmg/download</a><br/>
+    sha256: 8d63a2beafb2db5a6a18d298d258aa2b06212566c2f368c61d2fc7d4acaab0d5</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.exe/download</a><br/>
-    sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.exe/download</a><br/>
+    sha256: 3247ea32ed03521da86b0c04e03ed6e9a68cee3e8de61c452c1a179f96543168</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download</a><br/>
-    sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
--->
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.tgz/download</a><br/>
+    sha256: 59cb0f69f1eff78798c4949af3d11a7b8e4a12731b61663812e30d831477becf</p>
+
 <!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.3.3/ws/jmri/dist/release/">CI project page</a>.
  -->
 
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
 
 <h3>Changes since <a href="jmri4.3.2.shtml">test release 4.3.2</a>:</h3>
 
@@ -183,16 +193,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <p>Help for setting up JMRI with your OS and Java version as well as setting general preferences is available as <a href="/help/en/html/setup/index.shtml"
         target="_blank">Setup Help</a>, including a short FAQ section, so application help pages can focus on the functions in each part.</p>
 
-        <h5>C/MRI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>LocoNet</h5>
             <ul>
                 <li>
@@ -201,30 +201,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </li>
             </ul>
 
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
         <h5>SPROG</h5>
             <ul>
                 <li>Andrew Crosland fixed a problem with ops mode programming packet bursts through the SPROG command station.
                 Added a delay between ops mode packets and also handle the case where there is no free slot available for the packet, by reporting a timeout back to the programmer.</li>
             </ul>
 
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
-            </ul>
 
     <h4>Signals</h4>
         <h5>Signal Systems</h5>
@@ -232,10 +214,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>John Lang updated the NYC signal definitions</li>
 <li>(jkilsby) Background made transparant for icons for Danish Signals.</li>
 
-            </ul>
-        <h5>Signal Mast Editor</h5>
-            <ul>
-                <li></li>
             </ul>
 
     <h4>New / Updated decoder definitions</h4>
@@ -265,7 +243,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>BLI</h5>
             <ul>
-                <li></li>
+                <li>Fixed missing pane issues with BLI Paragon 2 Diesel definition. (Dave Heap)</li>
             </ul>
 
 	<h5>Digitrax</h5>
@@ -275,26 +253,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </li>
             </ul>
             
-        <h5>Doehler &amp; Haas</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ESU</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>NCE</h5>
             <ul>
                 <li>Change acceleration and deceleration range (CVs 3 &amp; 4) to 0-254 for non-silent drive decoder families. (Dave Heap)</li>
@@ -321,24 +279,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Michael Mosher added definitions for the Econami 200 and PNP decoders</li>
             </ul>
 
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>ZIMO</h5>
             <ul>
-                <li></li>
-            </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
+                <li>Mark Waters added new and updated files adding new ZIMO decoders and additional productIDs for existing decoders</li>
             </ul>
 
 
@@ -361,14 +304,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
      Simons for finding and reporting this problem.</li>
    </ul>
 
-   <h4>Roster</h4>
+   <h4>Warrants</h4>
         <ul>
-            <li></li>
-        </ul>
-
-   <h4>OBlocks</h4>
-        <ul>
-            <li></li>
+            <li>Karl Lisby contributed new 
+            <a href="https://github.com/JMRI/JMRI/pull/761">Signal Controlled Warrant</a>
+            support, which is better matched to layouts with short blocks between signals. </li>
         </ul>
 
     <h4>Preferences</h4>
@@ -380,11 +320,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             (<a href="https://github.com/JMRI/JMRI/pull/730">PR 730</a>)</li>
             <li>Additional preferences labels are available for translation. 
             (<a href="https://github.com/JMRI/JMRI/pull/781">PR 781</a>)</li>  
-        </ul>
-
-    <h4>Logix</h4>
-        <ul>
-            <li></li>
         </ul>
 
     <h4>Panel Editors</h4>
@@ -401,6 +336,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 Next time you edit it the old sensor is back. 
                 Modified the behaviour so that selecting the blank entry removes the sensor, 
                 allowing the sensor to be assigned to a different block.
+                A sensor attached to a layout block which is not in use can now be assigned
+                to a different layout block.
                 </li>
             <li>Steve Rawlinson made a change to allow the user to set the grid size in Layout Editor
         </ul>
