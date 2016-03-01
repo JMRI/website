@@ -105,7 +105,7 @@ These may be relevant to you if you're updating from an earlier version.
     This shouldn't effect people who just use the JMRI decoder definitions as distributed,
     because they all work with this more precise version.  But if you have decoder
     definitions of your own, you may have to update them. Ask for help on 
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRIusers</a>
+    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a>
     if you have trouble.
     Specifically, the decoder file verification will now reject a few things that it didn't catch before, even though they didn't really work:
     <ul>
@@ -363,6 +363,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>Sonny Hansen further improved the Danish translation</li>
             <li>Egbert Broerse expanded the <a href="http://jmri.sourceforge.net/help/en/glossary/index.shtml">JMRI Glossary</a>, made it sortable and added columns with keywords from some of our Help translations. Suggestions for additional definitions are welcome.</li>
+            <li>Egbert Broerse further improved the German translation and fixed some issues with the French translation</li>
+            <li>Kai Vehmersalo wrote an illustrated Ubuntu install instruction</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
