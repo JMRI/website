@@ -79,6 +79,10 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
+    <li>You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
+    the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
+    If you've set the order manually (e.g. by editing configuration files) in the past, please check this
+    preference to make sure it's set the way you want.</li>
     <li>The DispatcherPro, JMRI Demo, and SignalPro applications are no longer shipped in distributions. Use PanelPro
     in lieu of these applications.</li>
 </ul>
@@ -320,6 +324,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             (<a href="https://github.com/JMRI/JMRI/pull/730">PR 730</a>)</li>
             <li>Additional preferences labels are available for translation. 
             (<a href="https://github.com/JMRI/JMRI/pull/781">PR 781</a>)</li>  
+            <li>You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
+                the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
+                If you've set the order manually (e.g. by editing configuration files) in the past, please check this
+                preference to make sure it's set the way you want.</li>
+
         </ul>
 
     <h4>Panel Editors</h4>

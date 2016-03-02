@@ -78,8 +78,13 @@ See the <a href="jmri4.2.shtml#warnings">JMRI 4.2 release note</a> for warnings 
 These may be relevant to you if you're updating from an earlier version.
 
 <!-- 4.3.3 -->
-<p>The DispatcherPro, JMRI Demo, and SignalPro applications are not shipped in distributions. Use PanelPro
-    in lieu of these applications.
+<p>You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
+    the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
+    If you've set the order manually (e.g. by editing configuration files) in the past, please check this
+    preference to make sure it's set the way you want.</p>
+
+<p>The DispatcherPro, JMRI Demo, and SignalPro applications are no longer shipped in distributions. Use PanelPro
+    in lieu of these applications.</p>
 
 <!-- 4.3.1 -->
 <p>The internals of the Layout Editor have been reworked a bit.  Please keep an
