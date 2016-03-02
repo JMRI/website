@@ -2,6 +2,6 @@ RewriteEngine on
 
 # Provide redirects for removed pages
 
-# index.html redirected to main Acknowelgements page
-RewriteRule "index.html" "/help/en/Acknowledgements.shtml" [R=302,L]
+# index.html redirected to main Acknowledgements page
+RewriteRule ^index\.html /help/en/Acknowledgements.shtml [R=302,L]
 
