@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
-<title>Installing JMRI on Ubuntu GNU/Linux</title>
+<title>Ubuntu Linux Install Guide</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -18,13 +18,14 @@
 <!--#include virtual="/download/Sidebar" -->
 <div id="mainContent">
 
-<h1>Installing JMRI on Ubuntu</h1>
+<h1>JMRI Install Guide: Ubuntu Linux</h1>
 
-<ul class="snav"><!-- TOC -->
-<li><a href="#installation">Installation</a>
-<li><a href="#startup">Starting JMRI</a>
-<li><a href="#notes">Notes</a>
-</ul>
+	<ul class="snav"><!-- TOC -->
+	<li><a href="#installation">Installation</a>
+	<li><a href="#startup">Starting JMRI</a>
+	<li><a href="#debug">Debugging</a>
+	<li><a href="#notes">Notes</a>
+	</ul>
 
 <p>Ubuntu (Linux/GNU) is based on Debian and is recognized as being
 a very user friendly distribution.<br>
@@ -67,7 +68,7 @@ JMRI on a Ubuntu (or similar Debian based) desktop.</p>
 	</a>
 	<p>
 	You arrive at a page like this one:</p>
-	<p><img src="images/Ubinstall1.png" width="482" height="237">
+	<p><img src="images/UbInstall1.png" width="482" height="237">
 	<p>
 	Next you download the Java software package that suits your computer and operating system.<br>
 	When the download finishes, you will be asked where to store the Java install archive:</p>
@@ -99,7 +100,7 @@ JMRI on a Ubuntu (or similar Debian based) desktop.</p>
 	Just to be safe, before installing a new version of JMRI, rename your existing JMRI folder to "JMRI-1":
 	<p>
 	<img src="images/UbInstall4.png" width="465" height="155">
-	<p>
+	</p>
 	<p><a href="../download/index.shtml#prod-rel">Download</a> a version of JMRI, either the
 	latest production version, or a "test version".
 	<br>
@@ -107,29 +108,30 @@ JMRI on a Ubuntu (or similar Debian based) desktop.</p>
 	
 	<li>Installing JMRI</li>
 	<p>
-	Uncompress/untar the file you just downloaded. This will create a new "JMRI" folder so you should copy/move the installation file to the Home folder to create the JMRI folder there.
-	<img src="images/UbInstall5.png" width="417" height="204">
+	Uncompress/untar the file you just downloaded. This will create a new "JMRI" folder so you should copy/move the installation file to the Home folder to create the JMRI folder there.</p>
+	<p><img src="images/UbInstall5.png" width="417" height="204"></p>
 	
 	<p>Note: Each JMRI release is an independent set of files: It's intended to be used as a whole. Each release provides new files, and sometimes removes old files.<br>
 	You should therefore not expand the download into the same place as an existing JMRI installation. Instead, expand it into a separate location, and move in to it's final destination, completely replacing any previous version of JMRI.
 	<p>
-	To complete the install, just move that new JMRI folder to where you want it on your computer.<br>
-	<img src="images/UbInstall6.png" width="417" height="203">
+	To complete the install, just move that new JMRI folder to where you want it on your computer.
+	<p><img src="images/UbInstall6.png" width="417" height="203"></p>
 	
-	<p>You may have special icons or other files that you want to copy from the previous JMRI-1 folder now to the new installation. These may be in the resources folder.<br>
-	<img src="images/UbInstall7.png" width="409" height="337">
+	<p>You may have special icons or other files that you want to copy from the previous JMRI-1 folder now to the new installation.<br>
+	Copy them from the JMRI-1/resources folder.</p>
+	<p><img src="images/UbInstall7.png" width="409" height="337"></p>
 	
 	<li>Finishing up</li>
-	<p>Next we make a start-up launcher icon from the PanelPro script.<br>
-	<img src="images/UbInstall8.png" height="175" width="396"><br>
-	With the mouse middle button you launch the Create Launcher, give it a name, browse to the Command file and add an informative Comment. 
+	<p>Next we make a start-up launcher icon from the PanelPro script.</p>
+	<p><img src="images/UbInstall8.png" height="175" width="396"></p>
+	<p>With the mouse middle button you launch the Create Launcher, give it a name, browse to the Command file and add an informative Comment.</p>
 	
 	<p>To give your launcher an icon too, click the launching spring and pick up an icon from the resources folder (normally stored in the main JMRI folder).<br>
-	Now your PanelPro as well as the other JMRI SoundPro, Throttles, DecoderPro etc. launchers look like the one below:<br>
-	<img src="images/UbInstall9.png" height="174" width="379">
+	Now your PanelPro as well as the other JMRI SoundPro, Throttles, DecoderPro etc. launchers look like the one below:</p>
+	<p><img src="images/UbInstall9.png" height="174" width="379"></p>
 	
 	<p>Installation is complete.<br>
-	You can run the program by using the "DecoderPro", "PanelPro", or "JmriDemo" scripts in the JMRI folder. Change directory there, and invoke a script with e.g. "./DecoderPro" 
+	You can run the program by using the "DecoderPro", "PanelPro", or "JmriDemo" scripts in the JMRI folder. Change directory there, and invoke a script by typing e.g. "./DecoderPro" in Terminal.
 	</p>
 	
 	</ol>
@@ -185,14 +187,22 @@ The script is run by opening a Terminal and giving the command: <code>./RXTXinst
 The above description is brief, but the script itself can be opened in a text editor and studied at leisure.
 
 <h3>The Environment</h3>
-<p>On a fresh install the environment is OK, java
--version will give something like: 
-</p>java version "1.6.0_15"<br>Java(TM) SE Runtime Environment (build 1.6.0_15-b03)<br>Java HotSpot(TM) Client VM (build 14.1-b02, mixed mode, sharing)<br><br>or<br><br>java version "1.6.0_0"<br>OpenJDK Runtime Environment (IcedTea6 1.6.1) (6b16-1.6.1-3ubuntu1)<br>OpenJDK Client VM (build 14.0-b16, mixed mode, sharing)<br><br>However
-upgrading Ubuntu may create problems for JMRI releases prior to 2.9.2 as the upgrade may now point at the
-"wrong" java. In this case simply run the reinstall script.<br><p></p><p><big style="font-weight: bold;">USB Ports</big>&nbsp;</p>Currently the start up scripts work "out of the box".<p>However some versions&nbsp; may need altering to get the computer to "see" a USB
-port by adding "-Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0" as shown
-below
-</p><p style="margin-left: 40px;">java -noverify -Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0 -Djava.security.policy</p>
+<p>On a fresh install the environment is OK <code>java -version</code> will return something like:</p>
+<code>java version "1.6.0_15"<br>
+Java(TM) SE Runtime Environment (build 1.6.0_15-b03)<br>
+Java HotSpot(TM) Client VM (build 14.1-b02, mixed mode, sharing)</code><br>
+or<br>
+<code>java version "1.6.0_0"<br>
+OpenJDK Runtime Environment (IcedTea6 1.6.1) (6b16-1.6.1-3ubuntu1)<br>
+OpenJDK Client VM (build 14.0-b16, mixed mode, sharing)</code>
+
+<p>However, upgrading Ubuntu may create problems for JMRI releases prior to 2.9.2 as the upgrade may now point at the
+"wrong" java. In this case simply run the reinstall script.
+
+<h3>USB Ports</h3>
+<p>Currently the start up scripts work "out of the box". However, some versions may need altering to get the computer to "see" a USB
+port by adding "-Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0" as follows:</p>
+<example>java -noverify -Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0 -Djava.security.policy</example>
 <p>Please see the <a href="http://jmri.org/install/FAQLinux.html">FAQ</a> for more details.</p>
 
 <a id="startup"><h2>Starting JMRI</h2></a>
@@ -209,12 +219,32 @@ hidden directory in the file browser select "View" and then
 This directory holds the Preferences. If you are
 experiencing difficulties  with JMRI failing to start up, removing the
 relevant Config2.xml file from this directory should fix it.</p>
-  
+
+<a id="debug"><h2>Debugging</h2></a>
+<h3>Errors</h3
+
+	<dl>
+	<dt>bash: ./whatever.csh: bad interpreter: No such file
+	or directory
+	</dt><dd>Can not run the shell: Try installing csh.
+	
+	</dd><dt>bash; ./cats.csh: Permission denied
+	</dt><dd>Try setting the icon to executable.</dd>
+	
+	<dt>Port not Found.
+	</dt><dd>See <a href="#notes">above</a>, but be aware that when a Java update is installed, it creates
+	a new directory and alters the soft link to it. However all the
+	RxTx information is left behind in the old directory.<br>
+	The solution is to run the install script again.</dd>
+	</dl>
+<p>If you have any problems get back to the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group.</p>
+
+ 
 <a id="notes"/>
 <h2>Notes</h2>
 
 <h3>Using the Serial Ports</h3>
-Dave Heap provided the following instructions for JMRI serial ports under Ubuntu Linux (Feb 2016):
+Dave Heap provided the following instructions for setting up serial ports in JMRI under Ubuntu Linux (Feb 2016):
 <p>
 Open a Terminal window and put in the following command <strong>exactly</strong>:</p>
 <code>while : ;do clear;ls -lt /dev|head;i=$((i+1));echo $i;sleep 1;done</code>
@@ -235,36 +265,19 @@ Next, go to JMRI Preferences -&gt; Connections and the device name you saw earli
 - Try to change permissions of the serial port you see. They will be lost every time you plug/unplug/logout/reboot.
 </p>
 
-<p>If you keep having problems, check the /var/lock directory and remove any stale lock files for the device. In particular this can be a problem if you have ever run JMRI as root.</p>
+<p>If you keep having problems, check the /var/lock directory and remove any stale lock files for the device.<br>
+In particular this can be a problem if you have ever run JMRI as root.</p>
 
-<h3>LocoBuffer USB</h3>
-<p>We recommend you use Ubuntu 8.04 or later with the LocoBuffer.
+<h3>LocoBuffer-USB</h3>
+<p>We recommend you use Ubuntu 8.04 or later with the LocoBuffer-USB.
 If you are planning to use Ubuntu 7.10 or older and a
 <a href="http://rr-cirkits.com/locobuffer-usb/LB-manual-USB.pdf">LocoBuffer-USB</a>
 from 
-<a href="http://rr-cirkits.com/">RR-Cirkits</a>
+<a href="http://rr-cirkits.com/">RR-Cirkits</a>,
 you will need to download the patched
 <a href="http://rr-cirkits.com/locobuffer-usb/linux/ftdi_sio.ko">ftdi_sio.ko file</a>
 (right click on the link and save this file) to replace the one that came
 with the distribution.</p>
-
-<h3>Errors</h3
-
-	<dl>
-	<dt>bash: ./whatever.csh: bad interpreter: No such file
-	or directory
-	</dt><dd>Can not run the shell: Try installing csh.
-	
-	</dd><dt>bash; ./cats.csh: Permission denied
-	</dt><dd>Try setting the icon to executable.</dd>
-	
-	<dt>Port not Found.
-	</dt><dd>See <a href="#notes">above</a>, but be aware that when a Java update is installed, it creates
-	a new directory and alters the soft link to it. However all the
-	RxTx information is left behind in the old directory.<br>
-	The solution is to run the install script again.</dd>
-	</dl>
-<p>If you have any problems get back to the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group.</p>
 
 <h3>CATS</h3>
 <p>CATS 2.34 (Release2037) is compatible with JMRI 3.3.1 thru 3.8. We recommend that you use <a href="../releasenotes/jmri3.8.shtml">JMRI release 3.8</a> with it.
@@ -281,6 +294,10 @@ TrainStat in a separate directory. Also move CATS out of the JMRI install direct
 Follow the Path "Download" and read up on the Help page which gives advice on how to download the ISO image and
 then create a bootable CD to install Ubuntu.</p>
 JMRI Help also has details for <a href="http://jmri.org/install/decTop.shtml">installing Xubuntu</a>.</p>
+
+<h3>More info</h3>
+<p>You can find some more specific information
+on the "<a href="FAQLinux.html">JMRI Linux FAQ page</a>".
 
 <p>(Updated Ubuntu install instruction provided by Kai Vehmersalo Feb 2016; information on CATS and Java requirements Dec 2015)</p>
 
