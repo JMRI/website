@@ -43,7 +43,7 @@ back to an earlier version.
 It contains 
 many new features, including:
 <ul>
-<li>Many improvements to the <a href="http://jmri.sf.net/help/en/package/jmri/jmrit/operations/Operations.shtml">Operations</a> code
+<li>Many improvements to the <a href="http://jmri.org/help/en/package/jmri/jmrit/operations/Operations.shtml">Operations</a> code
 <li>Improved Windows menu
 <li>Updates to the QSI Diesel and CT Elektronik DCX decoder definitions
 </ul>
@@ -98,7 +98,7 @@ on the
 
 <p>JMRI is moving toward requiring Java 1.5 or later.  Certain new features may not work if you are using an earlier
 version of Java.  To see JMRI's future plans for this and other compatibility issues, please see the JMRI
-<a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/TechRoadMap.shtml">technology roadmap</a>.
+<a href="http://jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">technology roadmap</a>.
 
 <p>JMRI no longer supports NCE AIU broadcasts. This change was needed so that JMRI could reliably read certain CV values. 
 We recommend that if you use NCE AIUs, that you upgrade the command station EPROM to version 2007 or newer and turn off AIU broadcasts. 
@@ -163,7 +163,7 @@ Simple Signal Logic elements now have a comment field, for your convenience in d
 
 <p>
 Initial support for 
-<a href="http://jmri.sf.net/help/en/html/hardware/maple/index.shtml">Maple Systems</a>
+<a href="http://jmri.org/help/en/html/hardware/maple/index.shtml">Maple Systems</a>
 control panels is now available.
 
 <p>
@@ -177,7 +177,7 @@ Dan Boudreau added backup and restore capabilities to operations.
 Dan Boudreau customized the operations code for UK terminology.
 To use this, set the language of your computer to "en_GB", or 
 use the JMRI
-<a href="http://jmri.sourceforge.net/help/en/package/apps/AppConfigPanel.shtml#locale">advanced preferences</a>
+<a href="http://jmri.org/help/en/package/apps/AppConfigPanel.shtml#locale">advanced preferences</a>
 to set the language to "English (United Kingdom)".
 
 <p>
