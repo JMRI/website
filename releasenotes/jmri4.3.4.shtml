@@ -334,12 +334,35 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
 
-   <h4>Operations</h4>
-   <ul>
-    <li></li>
-   </ul>
+			<h4>Operations</h4>
+			<ul>
+				<li>New feature for the Train row color, you can now by train
+					define a train reset row color. See "Train Row Color" under "Tools"
+					in the "Trains" window.</li>
+				<li>Hold cars are no longer listed for staging tracks in the
+					CSV files.</li>
+				<li>Improvements to the import and export cars feature. You can
+					now import a car's load, move count, and if the car is a caboose,
+					passenger, has FRED, or utility car. You can now export only the
+					cars shown in the "Cars" window. Note that you can access the
+					"Cars" window from a location or track and only cars at that
+					location or track are shown. Useful when exchanging cars between
+					layouts.</li>
+				<li>Improvements to the "Switch Lists by Location" window. Now
+					changes to locations with "similar names" appear correctly in the
+					table.</li>
+				<li>The "Trains" window now scrolls automatically when building
+					trains.</li>
+				<li>Fixed a bug where a train manifest didn't show all of the
+					work at a location with several "similar names" and the sort by
+					track option was selected.</li>
+				<li>The program now disallows special control characters when
+					entering location names, road and road numbers. These names are
+					used to create file names and file names can't have embedded
+					control characters.</li>
+			</ul>
 
-   <h4>Roster</h4>
+			<h4>Roster</h4>
         <ul>
             <li>The "Roster" frame, which is also the main DecoderPro window, now 
             disables (grays out) the "Identify" button if there's no service mode (programming track)
