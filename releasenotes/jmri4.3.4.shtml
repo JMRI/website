@@ -218,7 +218,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Roco z21/Z21</h5>
             <ul>
-                <li>Throttle support now uses Z21/z21 specific XPressNet messaes and replies.</li>
+                <li>Throttle support now uses Z21/z21 specific XPressNet messages and replies.</li>
                 <li>Turnout support now uses Z21/z21 specific XPressNet messages and replies.</li>
             </ul>
             
@@ -412,6 +412,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Egbert Broerse further improved the German translation and fixed some issues with the French translation</li>
             <li>Egbert Broerse further improved the WiThrottle documentation and translations</li>
             <li>Kai Vehmersalo wrote an illustrated Ubuntu install instruction</li>
+            <li>Deprecated Findbugs annotations used in source code maintenance were updated to use replacement versions</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
