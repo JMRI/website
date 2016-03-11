@@ -202,7 +202,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>LocoNet</h5>
             <ul>
-                <li></li>
+                <li>The Digitrax DB150 Empire Builder command station uses a single output for powering
+                both the main track and the programming track. JMRI is supposed to turn track power back
+                on after doing a programming track (Service Mode) CV write, but it was also 
+                erroneously turning track power on after going an Ops Mode CV write.  This is now
+                fixed: Power on (GPON message sent) only happens after a service mode CV write.  Note
+                that JMRI does not turn track power on after a CV write that ends it in an error;
+                this is the same behavior as before.</li>
             </ul>
 
         <h5>NCE</h5>
