@@ -4,7 +4,7 @@
  <title>
  JMRI: Linux FAQ
  </title>
-    <meta content="Bob Jacobsen" name="Author">
+    <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI install Linux">
 
 <!-- Style -->
@@ -14,49 +14,27 @@
   <link rel="icon" href="/images/jmri.ico" type="image/png">
   <link rel="home" title="Home" href="/">
 <!-- /Style -->
+
+<!-- FAQ-Head -->
+  <script type="text/javascript">/*<![CDATA[*/document.documentElement.className="hasJS";/*]]>*/</script>
+  <link rel="stylesheet" type="text/css" href="/web/css/faq.css" media="screen">
+<!-- /FAQ-Head -->
 </head>
 
 <body>
-<div id="container">
-  <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
-<!-- Header -->
-    <div id="header">
-<!-- Logo -->
-	<a href="/" title="Return to home page" accesskey="1">
-	    <img src="/images/logo-jmri.gif" width="160" height="135" alt="JMRI Logo"> </a>
-<!-- /Logo -->
+<!--#include virtual="/Header" -->
 
-	<ul id="mainNav"> <!-- Top tool bar -->
-	   <li><a href="/download/index.shtml"  title="Get the latest software">Download</a></li>
-	   <li><a href="/help/en/html/apps/index.shtml"      title="Learn about JMRI applications">Applications</a></li>
-	   <li><a href="/help/en/html/hardware/index.shtml"  title="What hardware does JMRI support">Hardware</a></li>
-	   <li><a href="/help/en/webtoc.shtml"   title="JMRI Help Screens">Help</a></li>
-	   <li><a href="/help/en/manual/index.shtml"   title="DecoderPro Manual">Manual</a></li>
-	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
-	   <li><a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">Acknowledgements</a></li>
-	</ul>
+<!--#include virtual="/download/Sidebar" -->
+  <div id="mainContent">
+  
+<h1> 
+JMRI: Linux FAQ
+</h1>
 
-	<div id="searchform"> <!--  Search Form -->
-	  <form id="search" method="get" action="http://www.google.com/search">
-	     <label for="q" title="Search JMRI.org">search JMRI: </label>
-	    <input type="hidden" name="sitesearch" value="jmri.org">
-	    <input type="text" id="q" name="q" accesskey="s" size="30">
-	    <input type="submit" id="submit" value="go">
-	  </form>
-       </div> <!--  End #searchform -->
-    </div> <!-- closes #header-->
-<!-- /Header -->
+<dl class="faq">
 
-  <div class="nomenu" id="mBody">
-    <div id="mainContent">
-      <h1> 
-      JMRI: Linux FAQ
-      </h1>
-
-<dl>
-
-<dt class="left"><a id="help"/>Has anybody described making all this work?</dt>
-<dd class="first">
+<dt class="on" id="help">Has anybody described making all this work?</dt>
+<dd>
 The main 
 <a href="Linux.shtml">JMRI Linux page</a>
 has a general list of things you have to do.
@@ -70,8 +48,8 @@ Robert Plevier has provided a note on his
 <p>
 </dd>
 
-<dt class="left"><a id="path"/>The "java" command doesn't work. Now what?</dt>
-<dd class="first">
+<dt id="path">The "java" command doesn't work. Now what?</dt>
+<dd>
 <p>Make sure the java bin directory is on the path.  For example,
 the default location for the "SDK" 1.4.2_05 version of java is
 <code>
@@ -80,8 +58,8 @@ the default location for the "SDK" 1.4.2_05 version of java is
 </p>
 </dd>
 
-<dt class="left"><a id="sdk"/>What's the difference between the "SDK" and "JRE" java versions?</dt>
-<dd class="first">
+<dt id="sdk">What's the difference between the "SDK" and "JRE" java versions?</dt>
+<dd>
 "SDK" means Software Development Kit.  It's larger, because it contains the compiler
 and various development tools.  It also contains everything you need to run
 Java programs like JMRI.
@@ -90,8 +68,8 @@ Java programs like JMRI.
 Java programs, not develop them, so it's smaller.
 </dd>
 
-<dt class="left"><a id="commlibs"/>Do I need to install the Java comm libraries?</dt>
-<dd class="first">
+<dt id="commlibs">Do I need to install the Java comm libraries?</dt>
+<dd>
 If you want to use JMRI 2.10 or later, you don't need to 
 install the Java comm libraries.  With that version, JMRI 
 changed to use the RXTX library instead, and JMRI carries
@@ -100,11 +78,10 @@ installed, you will need to remove them.
 <p>
 If you want to use JMRI 2.9.1 or earlier, including JMRI 2.8,
 you <b>do</b> need to install the Java comm libraries.
-
 </dd>
 
-<dt class="left"><a id="comm"/>Where do I install the Java comm libraries?</dt>
-<dd class="first">
+<dt id="comm">Where do I install the Java comm libraries?</dt>
+<dd>
 <i>This answer is still correct, but no longer needed for JMRI 2.10 or
   later.</i>
 <p>
@@ -124,9 +101,9 @@ both the "SDK" and "JRE" forms of java installed, it will <i>usually</i>
 use the SDK directories, but you might want to install to both.
 </dd>
 
-<dt class="left"><a id="usb"/>What do I do if my (USB) serial port isn't 
-listed in the preferences?</dt>
-<dd class="first">
+<dt id="usb">What do I do if my (USB) serial port isn't 
+listed in the Preferences?</dt>
+<dd>
 <p>There are several options for solving this problem.</p>
 <ol>
 <li>
@@ -183,35 +160,21 @@ included in the INSTALLATION file contained within the RxTx package or
 at the <a href="http://rxtx.org/">RXTX home site</a>.</p>
 </dd>
 
-<dt class="left"><a id="pi"/>Can JMRI run on a Pi?</dt>
-<dd class="first">
+<dt id="pi">Can JMRI run on a Pi?</dt>
+<dd>
 <p>
 Certainly, check out the JMRI  <a href="Raspbian.shtml">Install Help on Raspberry Pi</a>.
 </dd>
 
 </dl>
-<!-- Footer -->
-    <hr class="hide">
-    <div id="footer">
-	<ul id="bn">
-	<li>Contact us via the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> mailing list</li>
-	</ul>
 
-	<p>Thanks and congratulations to
-	   <a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
-	   	all who contributed</a>!</p>
-
-	<p>Copyright &copy; 1997 - 2016 JMRI Community. 
-	<p>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, TrainPro&trade;, DispatcherPro&trade;, OperationsPro&trade; and associated logos are our trademarks.
-	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
-    
-       <br>Site hosted by:<br>
-<a href="http://sourceforge.net/projects/jmri/"><img src="https://sourceforge.net/sflogo.php?group_id=26788&type=12" width="120" height="30" border="0" alt="Get JMRI Model Railroad Interface at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
-    </div>
-<!-- /Footer -->
-
+<!--#include virtual="/Footer" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
-</body>
+
+<!-- FAQ-Tail -->
+<script type="text/javascript" src="/web/js/faq.js"></script>
+<!-- /FAQ-Tail -->
+
+ </body>
 </html>
