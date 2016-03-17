@@ -10,18 +10,18 @@ production:
    exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.exe/download"
 test:
  versions:
+  4.3.4:
+   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.4-Reb510be.tgz/download"
+   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.4-Reb510be.dmg/download"
+   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.4-Reb510be.exe/download"
   4.3.3:
    tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.tgz/download"
    dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.dmg/download"
    exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.exe/download"
-  4.3.2:
-   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-R2edd195.tgz/download"
-   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-R2edd195.dmg/download"
-   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-R2edd195.exe/download"
 
 # This file contains information about the last few JMRI (http://jmri.org) releases.
 # JMRI is distributed under license. More information is at http://jmri.org/Copyright.html
 #
-# Note to maintainers:  The zero, one, two,three space indentations in this file are significant
+# Note to maintainers:  The zero, one, two, three space indentations in this file are significant
 
 
