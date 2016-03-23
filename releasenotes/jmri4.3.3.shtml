@@ -57,11 +57,19 @@ see our
 <h3>Known problems with this release</h3>
 
 <!-- None at release time. -->
-
-We've had reports of issues with the combination of an NCE-USB adapter with the SB5 Smartbooster.
-
+<ul>
+<li>The combination of an NCE-USB adapter with the PowerPro, SB3 or SB5 Smartbooster can't do ops-mode (on main) programming.
+	The fix for this is available via <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>, 
+	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.</li>
+<li>Some complex Layout Editor panels don't load properly, resulting in the signals not updating properly. 
+	The fix for this is available via <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>, 
+	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.</li>
+<li>There is a problem reloading some Logix that reference the same input (Sensor, Turnout) multiple times in a single Conditional.
+	The fix for this is available via <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>, 
+	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.</li>
+</ul>
 If any of those effect you, please either wait for
-<a href="jmri4.3.4.shtml">JMRI 4.3.4</a>, due out shortly after this one,
+<a href="jmri4.3.4.shtml">JMRI 4.3.4</a>, due out in the first half of March,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -71,7 +79,11 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li>The DispatcherPro, JMRI Demo, and SignalPro applications are not shipped in distributions. Use PanelPro
+    <li>You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
+    the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
+    If you've set the order manually (e.g. by editing configuration files) in the past, please check this
+    preference to make sure it's set the way you want.</li>
+    <li>The DispatcherPro, JMRI Demo, and SignalPro applications are no longer shipped in distributions. Use PanelPro
     in lieu of these applications.</li>
 </ul>
 
@@ -312,6 +324,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             (<a href="https://github.com/JMRI/JMRI/pull/730">PR 730</a>)</li>
             <li>Additional preferences labels are available for translation. 
             (<a href="https://github.com/JMRI/JMRI/pull/781">PR 781</a>)</li>  
+            <li>You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
+                the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
+                If you've set the order manually (e.g. by editing configuration files) in the past, please check this
+                preference to make sure it's set the way you want.</li>
+
         </ul>
 
     <h4>Panel Editors</h4>
