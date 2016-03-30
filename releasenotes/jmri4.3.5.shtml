@@ -328,7 +328,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Miscellaneous</h5>
             <ul>
-                <li></li>
+                <li>Norsk Modelljernbane (NJM) Topline decoders added (Lolke H Bijlsma / <a href="https://github.com/JMRI/JMRI/pull/1085">#1085</a>)</li>
             </ul>
 
 
@@ -382,6 +382,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
+            <li>All power buttons now include text labels indicating current power state.</li>
             <li>Much work on internal cleanup of the code. Some small decoding and error handling improvements.</li>
             <li>The NamedBean class now only takes Strings as value keys. (If you don't know what this means, don't worry about it; it's an internal structure thing.)</li>
         </ul>
