@@ -69,7 +69,9 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li></li>
+    <li>When sharing a configuration between this version and JMRI 4.3.4 or older, the older version of JMRI may
+    start with a warning and forget table sort order. This is due to change in how table sorting and filtering are
+    handled.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -397,6 +399,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>The NamedBean class better adheres to the JavaBeans specificiation. Critically, these changes mean
             that only Strings can be used to name a property, and that the getPropertyChangeListeners(String) method
             has been renamed. (If you don't know what this means, don't worry about it; it's an internal structure thing.)</li>
+            <li>The Table sorting and filtering mechanism has been changed to use mechanisms introduced for that purpose
+            in Java 1.6 or newer. When sharing a configuration between this version and JMRI 4.3.4 or older, the older version
+            of JMRI may start with a warning and forget table sort order.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
