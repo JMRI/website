@@ -394,7 +394,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>All power buttons now include text labels indicating current power state.</li>
             <li>Much work on internal cleanup of the code. Some small decoding and error handling improvements.</li>
-            <li>The NamedBean class now only takes Strings as value keys. (If you don't know what this means, don't worry about it; it's an internal structure thing.)</li>
+            <li>The NamedBean class better adheres to the JavaBeans specificiation. Critically, these changes mean
+            that only Strings can be used to name a property, and that the getPropertyChangeListeners(String) method
+            has been renamed. (If you don't know what this means, don't worry about it; it's an internal structure thing.)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
