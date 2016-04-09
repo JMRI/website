@@ -69,9 +69,9 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li>When sharing a configuration between this version and JMRI 4.3.4 or older, the older version of JMRI may
-    start with a warning and forget table sort order. This is due to change in how table sorting and filtering are
-    handled.</li>
+    <li>When sharing a configuration between this version and JMRI 4.3.4 or older, the older version of JMRI will not
+    reflect changes in window position, table sorting, column order, or other user interface state. This is due to
+    changes in how user interface state is stored.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -402,6 +402,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>The Table sorting and filtering mechanism has been changed to use mechanisms introduced for that purpose
             in Java 1.6 or newer. When sharing a configuration between this version and JMRI 4.3.4 or older, the older version
             of JMRI may start with a warning and forget table sort order.</li>
+            <li>When sharing a configuration between this version and JMRI 4.3.4 or older, the older version of JMRI
+            will not reflect changes in window position, table sorting, column order, or other user interface state.
+            This is due to changes in how user interface state is stored.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
