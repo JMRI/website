@@ -255,9 +255,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
     <h4>New / Updated decoder definitions</h4>
-        <ul>
-            <li></li>
-        </ul>
+      <ul>
+        <li>
+          Added the ability to specify non-key states used by some decoders to control outputs,
+          such as Stopped, Moving, Forward, Reverse and Sensors.
+          For details see the <a href="/help/en/html/apps/DecoderPro/FnMapping.shtml" target="_blank">Function Map</a> page. (Dave Heap)
+        </li>
+</ul>
 
         <h5>BLI</h5>
             <ul>
