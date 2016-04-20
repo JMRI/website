@@ -369,13 +369,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <li>Made some build report improvements with regards to train turns.</li>
     <li>Improved how the program when building a train, finds locations for cars out of
      staging. Should help reduce the number of build failures.</li>
-    <li>There's now a "HIAF" Halt If Action Fails checkbox for each action in the automation
+    <li>There's now a "HIAF" (Halt If Action Fails) checkbox for each action in the automation
      table.</li>
     <li>A "Run" button has been added to the Timetable window. The button appears when CSV
      manifests are enabled.</li>
     <li>New automation action "Is train en-route?". See help for details.</li>
-    <li>Backed up train manifests are show stored in their own directories.</li>
-    <li>The location window now shows if there are track restrictions with regards to which
+    <li>Saved train Manifests are now stored in separate directories based on train names.</li>
+    <li>The location window now shows if there are track restrictions when only certain
      trains or routes can access a track.</li>
     <li>The program will attempt to place buffer cars between the locomotive and hazardous
      cars. If a hazardous car and a non-hazardous car are going to the same track, the program will
