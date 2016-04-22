@@ -206,6 +206,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>Steve Todd and Steve G. fixed an error in the Loconet Monitor that would cause exceptions to
                 appear if Sensor/Turnout/Reporter usernames were empty</li>
+                <li>Fix error preventing emergency stop in 14/28 speed step modes (Steve Rawlinson / <a href="https://github.com/JMRI/JMRI/pull/1185">1185</a>)</li>
             </ul>
 
         <h5>NCE</h5>
