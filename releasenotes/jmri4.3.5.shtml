@@ -378,11 +378,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
      manifests are enabled.</li>
     <li>New automation action "Is train en-route?". See help for details.</li>
     <li>Saved train Manifests are now stored in separate directories based on train names.</li>
-    <li>The location window now shows if there are track restrictions when only certain
-     trains or routes can access a track.</li>
+    <li>The location window now shows if there are track restrictions when only certain trains
+     or routes can access a track.</li>
     <li>The program will attempt to place buffer cars between the locomotive and hazardous
      cars. If a hazardous car and a non-hazardous car are going to the same track, the program will
      place the non-hazardous car in front of the hazardous car.</li>
+    <li>All table row heights are now adjusted based on font size selected.</li>
+    <li>The "Move" button for a train is now labeled "Terminate" when the train has arrived at
+     the last location in the train's route.</li>
    </ul>
 
    <h4>Roster</h4>
