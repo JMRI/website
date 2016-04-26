@@ -192,62 +192,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Hardware Support</h4>
 
         <p>Support for ARM processors running in 64-bit mode (aarch64) has been added</p>
-
-        <h5>C/MRI</h5>
-            <ul>
-                <li></li>
-            </ul>
         
         <h5>DCC++</h5>
 	    <ul>
 	    	<li>DCC++ crash when starting with the Base Station not attached has been fixed.</li>
 	    </ul>
 	    
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>LocoNet</h5>
             <ul>
                 <li>Steve Todd and Steve G. fixed an error in the Loconet Monitor that would cause exceptions to
                 appear if Sensor/Turnout/Reporter usernames were empty</li>
                 <li>Fix error preventing emergency stop in 14/28 speed step modes (Steve Rawlinson / <a href="https://github.com/JMRI/JMRI/pull/1185">1185</a>)</li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Roco z21/Z21</h5>
-            <ul>
-                <li></li>
-            </ul>
-            
-        <h5>SPROG</h5>
-            <ul>
-                <li></li>
-            </ul>
-            
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
             </ul>
 
     <h4>Signals</h4>
@@ -256,34 +211,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Added low mast appearances to Basic signal system (mstevetodd / <a href="https://github.com/JMRI/JMRI/pull/1080">#1080</a>)<li>
             </ul>
     
-        <h5>Signal Mast Editor</h5>
-            <ul>
-                <li></li>
-            </ul>
 
     <h4>New / Updated decoder definitions</h4>
-      <ul>
-        <li>
-          Added the ability to specify non-key states used by some decoders to control outputs,
-          such as Stopped, Moving, Forward, Reverse and Sensors.
-          For details see the <a href="/help/en/html/apps/DecoderPro/FnMapping.shtml" target="_blank">Function Map</a> page. (Dave Heap)
-        </li>
-</ul>
-
-        <h5>BLI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Digitrax</h5>
-            <ul>
-                <li></li>
-            </ul>
-            
-        <h5>Doehler &amp; Haas</h5>
-            <ul>
-                <li></li>
-            </ul>
+        <ul>
+            <li>
+              Added the ability to specify non-key states used by some decoders to control outputs,
+              such as Stopped, Moving, Forward, Reverse and Sensors.
+              For details see the <a href="/help/en/html/apps/DecoderPro/FnMapping.shtml" target="_blank">Function Map</a> page. (Dave Heap)
+            </li>
+        </ul>
 
         <h5>ESU</h5>
         <p>Dave Heap made the following changes:</p>
@@ -300,16 +236,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Standard+ V2 NEM652 10231-02 added (Alain Carasso / <a href="https://github.com/JMRI/JMRI/pull/1169">#1169</a>)</li>
             </ul>
 
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>MRC</h5>
             <ul>
                 <li>MRC 1961 - Sound Decoder for Model Power N-scale Pacific/Mikado added (Alain Le Marchand / <a href="https://github.com/JMRI/JMRI/pull/1105">#1105</a>)</li>
@@ -317,49 +243,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>MRC 1825 - Athearn SD45/60 HO improved (Alain Le Marchand / <a href="https://github.com/JMRI/JMRI/pull/1140">#1140</a>)</li>
             </ul>
 
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>Norsk Modelljernbane (NJM)</h5>
             <ul>
                 <li>Norsk Modelljernbane (NJM) Topline decoders added (Lolke H Bijlsma / <a href="https://github.com/JMRI/JMRI/pull/1085">#1085</a>)</li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RR-CirKits</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SoundTraxx</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Viessmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ZIMO</h5>
-            <ul>
-                <li></li>
             </ul>
 
         <h5>Miscellaneous</h5>
@@ -394,35 +280,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
      the last location in the train's route.</li>
    </ul>
 
-   <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>Warrants</h4>
-        <ul>
-            <li></li>
-        </ul>
-
     <h4>Preferences</h4>
         <ul>
             <li>Added ability to create a button to launch a specific script to the startup preferences (<a href="https://github.com/JMRI/JMRI/pull/1165">PR 1165</a>).</li>
         </ul>
-
-    <h4>Logix</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Panel Editors</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Layout Editor</h4>
-        <ul>
-            <li><li>
-         </ul>
 
     <h4>Scripting</h4>
         <ul>
