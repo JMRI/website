@@ -56,16 +56,17 @@ see our
 
 <h3>Known problems with this release</h3>
 
-None at release time.
+The following new issue has been discovered since release time:
+      <ul>
+        <li>Decoder definitions that have constants in Function Maps to fail to open in this version.</li>
+     </ul>
 
-<!--
-If any of those effect you, please either wait for
-<a href="jmri4.3.6.shtml">JMRI 4.3.6</a>, due out shortly after this one,
+If this issue affects you, please either wait for
+<a href="jmri4.3.6.shtml">JMRI 4.3.6</a>, due out in early May,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
