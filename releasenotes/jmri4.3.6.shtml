@@ -417,7 +417,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Alain Le Marchand updated the French translation</li>
             <li>The handling of locomotive identification was improved in DecoderPro; 
                 the selection should no longer be lost if you press "ident" after rearranging the columns.</li>
-            <li>The DecoderPro File menu now has a selection to verify XML files.
+            <li>The DecoderPro File menu now has a selection to verify XML files.</li>
+            <li>The web server now handles HTTP redirects slightly differently. See the
+            	<a href="http://jmri.org/help/en/html/web/">Web server help</a> for more details.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
