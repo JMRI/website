@@ -233,7 +233,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             
         <h5>SPROG</h5>
             <ul>
-                <li></li>
+                <li>Andrew Crosland modified SPROG command station support for a higher packet transmission rate. Added new connection methods for Pi-SPROG Raspbery-Pi hardware.</li>
             </ul>
             
         <h5>TCS</h5>
@@ -254,7 +254,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Signals</h4>
         <h5>Signal Systems</h5>
             <ul>
-                <li><li>
+                <li>Steve Todd improves the contents of and icons for the Basic signal system<li>
+                <li>Egbert Broerse provided updates to the ProRail 1954 system</li>
             </ul>
     
         <h5>Signal Mast Editor</h5>
@@ -305,7 +306,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>MRC</h5>
             <ul>
-                <li></li>
+                <li>Alain Le Marchand improved the handling of CV29 in the MRC 1825 definition</li>
             </ul>
 
         <h5>NCE</h5>
@@ -330,12 +331,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>SoundTraxx</h5>
             <ul>
-                <li></li>
+                <li>Marc Fournier added new EMD GP38-2 and EMD GP40 models</li>
             </ul>
 
         <h5>TCS</h5>
             <ul>
                 <li></li>
+            </ul>
+
+        <h5>Tehnologistic (train-O-matic)</h5>
+            <ul>
+                <li>Lolke Bijlsma provided definitions for the new NMJ B3 and B7 DCC light board decoders</li>
             </ul>
 
         <h5>Viessmann</h5>
@@ -384,6 +390,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li></li>
         </ul>
 
+    <h4>Routes</h4>
+        <ul>
+            <li>Routes in transition (started, not yet done) now show INCONSISTEN on their status sensor, and
+                ACTIVE only when complete</li>
+        </ul>
+
     <h4>Panel Editors</h4>
         <ul>
             <li></li>
@@ -401,7 +413,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>Sonny Hansen did a lot more work on the Danish translation</li>
+            <li>Alain Le Marchand updated the French translation</li>
+            <li>The handling of locomotive identification was improved in DecoderPro; 
+                the selection should no longer be lost if you press "ident" after rearranging the columns.</li>
+            <li>The DecoderPro File menu now has a selection to verify XML files.
         </ul>
 
    <!--#include virtual="/Footer" -->
