@@ -380,6 +380,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li></li>
         </ul>
 
+   <h4>Dispatcher</h4>
+     <p>Steve Todd enhanced Dispatcher's AutoActiveTrain feature with the following changes:
+        <ul>
+            <li>for target speed, use minimum of block speed and signal speed - for signalmasts</li>
+            <li>added user options to specify ramping interval and duration</li>
+            <li>manual slider sets speed directly, bypassing ramping</li>
+            <li>turned off AlwaysSet Turnouts, added "Trust Known State" option</li>
+            <li>added a fixed delay between turnout commands</li>
+            <li>prevent runaway by halting if train has no occupied sections - partial - only works with another moving train</li>
+            <li>enhanced debugging and squashed a few bugs</li>
+        </ul>
+
     <h4>Preferences</h4>
         <ul>
             <li>Displaying open windows or frames in the web server can be disabled or redirected to display panels.
