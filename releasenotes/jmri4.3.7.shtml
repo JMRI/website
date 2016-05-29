@@ -206,6 +206,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 	    	<li></li>
 	    </ul>
 	    
+        <h5>Digitrax</h5>
+	    <ul>
+	    	<li>Fixed a problem with PM42 addresses greater than 9.</li>
+	    </ul>
+	    
         <h5>JMRI Simple Server/JMRI Client</h5>
             <ul>
                 <li></li>
@@ -252,6 +257,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
     <h4>Signals</h4>
+        <p>Egbert Broerse improved the signals and signalling help pages.
         <h5>Signal Systems</h5>
             <ul>
                 <li></li>
@@ -287,6 +293,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>Added the LokPilot Nano Standard V1.0.</li>
                 <li>Added new Product IDs for some new LokSound Select hardware versions.</li>
+            </ul>
+
+        <h5>Hornby</h5>
+            <ul>
+                <li>Added ability to use CV59 for decoder product identification</li>
             </ul>
 
         <h5>Lenz</h5>
@@ -370,16 +381,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <li></li>
    </ul>
 
-   <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>Warrants</h4>
-        <ul>
-            <li></li>
-        </ul>
-
    <h4>Dispatcher</h4>
      <p>Steve Todd enhanced Dispatcher's AutoActiveTrain feature with the following changes <a href="https://github.com/JMRI/JMRI/pull/1364">(PR #1364)</a></li>:
         <ul>
@@ -392,19 +393,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>enhanced debugging and squashed a few bugs</li>
         </ul>
 
-    <h4>Preferences</h4>
+    <h4>Layout Editor</h4>
         <ul>
-            <li>Displaying open windows or frames in the web server can be disabled or redirected to display panels.
-            When disabled or redirected, the web server home page will list open panels under the <em>Open Windows</em>
-            heading.</li>
-        </ul>
+            <li><li>
+         </ul>
 
     <h4>Logix</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Routes</h4>
         <ul>
             <li></li>
         </ul>
@@ -414,14 +408,40 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li></li>
         </ul>
 
-    <h4>Layout Editor</h4>
+    <h4>Preferences</h4>
         <ul>
-            <li><li>
-         </ul>
+            <li>Displaying open windows or frames in the web server can be disabled or redirected to display panels.
+            When disabled or redirected, the web server home page will list open panels under the <em>Open Windows</em>
+            heading.</li>
+        </ul>
+
+   <h4>Roster</h4>
+        <ul>
+            <li>Traditionally, both CV and variable values were stored in roster entries, but only the
+            specific CV values were loaded when the roster entry was opened later.  This worked when 
+            all of the information was in the CVs (the variables were redundant), but now we have some
+            complex decoders that use "qualifiers" to separate variables from CVs.  To handle this case, 
+            we now reload the variable values from the file, then the CV values.</li>
+        </ul>
+
+    <h4>Routes</h4>
+        <ul>
+            <li></li>
+        </ul>
 
     <h4>Scripting</h4>
         <ul>
+            <li>ON and OFF are now defined by default for Jython scripts</li>
+        </ul>
+
+   <h4>Warrants</h4>
+        <ul>
             <li></li>
+        </ul>
+
+   <h4>Web Access</h4>
+        <ul>
+            <li>The legacy "frame server" was finally disabled.</li>
         </ul>
 
     <h4>Miscellaneous</h4>
