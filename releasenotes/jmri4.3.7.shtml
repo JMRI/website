@@ -256,26 +256,27 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-    <h4>Signals</h4>
-        <p>Egbert Broerse improved the signals and signalling help pages.
-        <h5>Signal Systems</h5>
-            <ul>
-                <li></li>
-            </ul>
-    
-        <h5>Signal Mast Editor</h5>
-            <ul>
-                <li></li>
-            </ul>
-
     <h4>New / Updated decoder definitions</h4>
       <ul>
-        <li></li>
+        <li>Improvements to the "validation" checks for decoder definitions.  A couple
+            false positives fixed; check that some numerical fields really do contain numbers.</li>
+        <li>Previously, when loading an existing roster entry, DecoderPro just loaded the CV values. 
+            This in turn loads the Variable values as the CVs change.
+            Because of DP's qualified-variable support, some Variables are not connected to specific CV contents at load time; 
+            they get the wrong values, and hilarity ensues. (First pointed out by Dick Bronson)
+            Updated so that JMRI loads oads the Variable values from the file (they've been stored all along), then loads CV values as before.
+            </li>
+        <li>The identification process for Hornby decoder models now includes the value of CV 159.</li>
      </ul>
 
         <h5>BLI</h5>
             <ul>
                 <li></li>
+            </ul>
+
+        <h5>Bachmann</h5>
+            <ul>
+                <li>Alain Le Marchand added three steam and one diesel decoder definitions</li>
             </ul>
 
         <h5>Digitrax</h5>
@@ -343,7 +344,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>SoundTraxx</h5>
             <ul>
-                <li></li>
+                <li>Michael Mosher contributed Tsuanmi2 Steam, Diesel and Electric locomotive decoder definitions</li>
             </ul>
 
         <h5>TCS</h5>
@@ -377,11 +378,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
 
-   <h4>Operations</h4>
-   <ul>
-    <li></li>
-   </ul>
-
    <h4>Dispatcher</h4>
      <p>Steve Todd enhanced Dispatcher's AutoActiveTrain feature with the following changes <a href="https://github.com/JMRI/JMRI/pull/1364">(PR #1364)</a></li>:
         <ul>
@@ -401,12 +397,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Logix</h4>
         <ul>
-            <li></li>
+        <li>Improvements to the "validation" checks for panel files.  A couple
+            false positives fixed; check that some numerical fields really do contain numbers.</li>
         </ul>
+
+   <h4>Operations</h4>
+   <ul>
+    <li></li>
+   </ul>
 
     <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+        <li>Improvements to the "validation" checks for panel files:  A
+            false positive fixed.</li>
         </ul>
 
     <h4>Preferences</h4>
@@ -435,6 +438,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>ON and OFF are now defined by default for Jython scripts</li>
         </ul>
 
+    <h4>Signals</h4>
+        <p>Egbert Broerse improved the signals and signalling help pages.
+        <h5>Signal Systems</h5>
+            <ul>
+                <li></li>
+            </ul>
+    
+        <h5>Signal Mast Editor</h5>
+            <ul>
+                <li></li>
+            </ul>
+
    <h4>Warrants</h4>
         <ul>
             <li></li>
@@ -447,7 +462,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>Sonnys Hansen updated the Dutch translation</li>
+            <li>Steve Todd updated Dispatcher's AutoActiveTrain feature.</li>
+            <li>Much infrastructure work, improvements to the JavaDoc, etc.</li>
+            <li>JavaDoc can now include UML</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
