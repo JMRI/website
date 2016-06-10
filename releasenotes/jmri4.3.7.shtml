@@ -457,9 +457,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Web Access</h4>
         <ul>
-            <li>The "frame server" can be optionally disabled.</li>
+            <li>The "frame server" can be optionally disabled.
+            (<a href="https://github.com/JMRI/JMRI/pull/1334">1334</a> and <a href="https://github.com/JMRI/JMRI/pull/1438">1438</a>)</li>
             <li>A placeholder has been created for embedding extra JavaScript in JMRI web pages.
-            See <a href="https://github.com/JMRI/JMRI/blob/master/web/js/user.js">user.js</a> for details.</li> 
+            See <a href="https://github.com/JMRI/JMRI/blob/master/web/js/user.js">user.js</a> for details.
+            (<a href="https://github.com/JMRI/JMRI/pull/1458">1458</a>)</li> 
+            <li>Excessive logging when a client fails have been silenced.
+            (<a href="https://github.com/JMRI/JMRI/pull/1469">1469</a>)</li>
         </ul>
 
     <h4>Miscellaneous</h4>
