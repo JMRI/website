@@ -33,7 +33,7 @@ JMRI: Linux FAQ
 
 <dl class="faq">
 
-<dt class="on"><a id="help">Has anybody described making all this work?</a></dt>
+<dt class="on" id="help">Has anybody described making all this work?</dt>
 <dd>
 The main 
 <a href="Linux.shtml">JMRI Linux page</a>
@@ -48,7 +48,7 @@ Robert Plevier has provided a note on his
 <p>
 </dd>
 
-<dt><a id="path">The "java" command doesn't work. Now what?</a></dt>
+<dt id="path">The "java" command doesn't work. Now what?</dt>
 <dd>
 <p>Make sure the java bin directory is on the path.  For example,
 the default location for the "SDK" 1.4.2_05 version of java is
@@ -58,7 +58,7 @@ the default location for the "SDK" 1.4.2_05 version of java is
 </p>
 </dd>
 
-<dt><a id="sdk">What's the difference between the "SDK" and "JRE" java versions?</a></dt>
+<dt id="sdk">What's the difference between the "SDK" and "JRE" java versions?</dt>
 <dd>
 "SDK" means Software Development Kit.  It's larger, because it contains the compiler
 and various development tools.  It also contains everything you need to run
@@ -68,7 +68,7 @@ Java programs like JMRI.
 Java programs, not develop them, so it's smaller.
 </dd>
 
-<dt><a id="commlibs">Do I need to install the Java comm libraries?</a></dt>
+<dt id="commlibs">Do I need to install the Java comm libraries?</dt>
 <dd>
 If you want to use JMRI 2.10 or later, you don't need to 
 install the Java comm libraries.  With that version, JMRI 
@@ -80,7 +80,7 @@ If you want to use JMRI 2.9.1 or earlier, including JMRI 2.8,
 you <b>do</b> need to install the Java comm libraries.
 </dd>
 
-<dt><a id="comm">Where do I install the Java comm libraries?</a></dt>
+<dt id="comm">Where do I install the Java comm libraries?</dt>
 <dd>
 <i>This answer is still correct, but no longer needed for JMRI 2.10 or
   later.</i>
@@ -101,8 +101,8 @@ both the "SDK" and "JRE" forms of java installed, it will <i>usually</i>
 use the SDK directories, but you might want to install to both.
 </dd>
 
-<dt><a id="usb"/>What do I do if my (USB) serial port isn't 
-listed in the preferences?</dt>
+<dt id="usb">What do I do if my (USB) serial port isn't 
+listed in the Preferences?</dt>
 <dd>
 <p>There are several options for solving this problem.</p>
 <ol>
@@ -160,7 +160,7 @@ included in the INSTALLATION file contained within the RxTx package or
 at the <a href="http://rxtx.org/">RXTX home site</a>.</p>
 </dd>
 
-<dt><a id="pi">Can JMRI run on a Pi?</a></dt>
+<dt id="pi">Can JMRI run on a Pi?</dt>
 <dd>
 <p>
 Certainly, check out the JMRI  <a href="Raspbian.shtml">Install Help on Raspberry Pi</a>.

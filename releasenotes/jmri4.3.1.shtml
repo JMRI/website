@@ -62,6 +62,9 @@ see our
     and no cars were assigned to the train during the build, and the loco weight is set to zero. The
     workaround is to enter a weight in tons for each loco. Fixed in test release 4.3.2.</p>
 
+<p>This release can alter the order of startup items when saving preferences. Order can be restorted by editing the file
+<em>profile/profile.xml</em> within the affected configuration profile. This problem is fixed in test release 4.3.2.</p>
+
 <!--
 If any of those effect you, please either wait for
 <a href="jmri4.3.2.shtml">JMRI 4.3.2</a>, due out shortly after this one,
