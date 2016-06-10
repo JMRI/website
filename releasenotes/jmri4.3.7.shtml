@@ -457,7 +457,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Web Access</h4>
         <ul>
-            <li>The legacy "frame server" was finally disabled.</li>
+            <li>The "frame server" can be optionally disabled.</li>
+            <li>A placeholder has been created for embedding extra JavaScript in JMRI web pages.
+            See <a href="https://github.com/JMRI/JMRI/blob/master/web/js/user.js">user.js</a> for details.</li> 
         </ul>
 
     <h4>Miscellaneous</h4>
