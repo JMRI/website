@@ -268,7 +268,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Routes</h4>
         <ul>
-            <li>Routes in transition (started, not yet done) now show INCONSISTEN on their status sensor, and
+            <li>Routes in transition (started, not yet done) now show INCONSISTENT on their status sensor, and
                 ACTIVE only when complete</li>
         </ul>
 
@@ -283,6 +283,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             	<a href="http://jmri.org/help/en/html/web/">Web server help</a> for more details.</li>
             <li>Walt Thompson highlighted a problem in the LightTable documentation
             	<a href="https://github.com/JMRI/JMRI/pull/1301">(PR #1301)</a></li>
+            <li>Egbert Broerse added more internationalization to the Add Routes and Add Signal Group panels
+                (translators may check new keys) and reduced duplicate resource bundle keys for common elements
+                to ease new translation (use Bundle.getMessage() in code)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
