@@ -69,7 +69,7 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li></li>
+    <li>None at release time</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -194,7 +194,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Hardware Support</h4>
 
         <p></p>
-
+<!--
         <h5>C/MRI</h5>
             <ul>
                 <li></li>
@@ -204,12 +204,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 	    <ul>
 	    	<li></li>
 	    </ul>
-	    
+-->
         <h5>Digitrax</h5>
 	    <ul>
 	    	<li>Fixed a problem with PM42 addresses greater than 9.</li>
 	    </ul>
-	    
+<!--
         <h5>JMRI Simple Server/JMRI Client</h5>
             <ul>
                 <li></li>
@@ -229,17 +229,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>Roco z21/Z21</h5>
             <ul>
                 <li>Add Configuration tool to the Z21 Menu.  This allows checking and setting the Z21's Broadcast flags, and displaying the serial number, hardware version, and software version.</li>
             </ul>
-            
+<!--
         <h5>SPROG</h5>
             <ul>
                 <li></li>
             </ul>
-            
+
         <h5>TCS</h5>
             <ul>
                 <li></li>
@@ -254,7 +254,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
     <h4>New / Updated decoder definitions</h4>
       <ul>
         <li>Improvements to the "validation" checks for decoder definitions.  A couple
@@ -267,17 +267,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </li>
         <li>The identification process for Hornby decoder models now includes the value of CV 159.</li>
      </ul>
-
+<!--
         <h5>BLI</h5>
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>Bachmann</h5>
             <ul>
                 <li>Alain Le Marchand added three steam and one diesel decoder definitions</li>
             </ul>
-
+<!--
         <h5>Digitrax</h5>
             <ul>
                 <li></li>
@@ -287,7 +287,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>ESU</h5>
         <p>Dave Heap made the following changes:</p>
             <ul>
@@ -300,7 +300,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>Added ability to use CV59 for decoder product identification</li>
             </ul>
-
+<!--
         <h5>Lenz</h5>
             <ul>
                 <li></li>
@@ -340,12 +340,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>SoundTraxx</h5>
             <ul>
                 <li>Michael Mosher contributed Tsuanmi2 Steam, Diesel and Electric locomotive decoder definitions</li>
             </ul>
-
+<!--
         <h5>TCS</h5>
             <ul>
                 <li></li>
@@ -375,7 +375,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
 
    <h4>Dispatcher</h4>
      <p>Steve Todd enhanced Dispatcher's AutoActiveTrain feature with the following changes <a href="https://github.com/JMRI/JMRI/pull/1364">(PR #1364)</a></li>:
@@ -388,23 +388,23 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>prevent runaway by halting if train has no occupied sections - partial - only works with another moving train</li>
             <li>enhanced debugging and squashed a few bugs</li>
         </ul>
-
+<!--
     <h4>Layout Editor</h4>
         <ul>
             <li><li>
          </ul>
-
+-->
     <h4>Logix</h4>
         <ul>
         <li>Improvements to the "validation" checks for panel files.  A couple
             false positives fixed; check that some numerical fields really do contain numbers.</li>
         </ul>
-
+<!--
    <h4>Operations</h4>
    <ul>
     <li></li>
    </ul>
-
+-->
     <h4>Panel Editors</h4>
         <ul>
         <li>Improvements to the "validation" checks for panel files:  A
@@ -426,12 +426,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             complex decoders that use "qualifiers" to separate variables from CVs.  To handle this case, 
             we now reload the variable values from the file, then the CV values.</li>
         </ul>
-
+<!--
     <h4>Routes</h4>
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Scripting</h4>
         <ul>
             <li>ON and OFF are now defined by default for Jython scripts</li>
@@ -439,6 +439,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Signals</h4>
         <p>Egbert Broerse improved the signals and signalling help pages.
+<!--
         <h5>Signal Systems</h5>
             <ul>
                 <li></li>
@@ -453,7 +454,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
    <h4>Web Access</h4>
         <ul>
             <li>The "frame server" can be optionally disabled.
