@@ -26,11 +26,11 @@
       Release Notes for JMRI 4.3.7 release
       </h2>
 
-    <p>Date: mmm dd, 2016</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: June 11, 2016</p>
+    <p>From: Matthew Harris</p>
     <p>Subject: Test version 4.3.7 of JMRI/DecoderPro is available for download.</p>
 
-<p><b>This is a draft release note only; the download links do not yet work</b></p>
+<!--<p><b>This is a draft release note only; the download links do not yet work</b></p>-->
 
 <h3>Notes:</h3>
 
@@ -69,7 +69,7 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li></li>
+    <li>None at release time</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -161,31 +161,30 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-<!--
+
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.dmg/download</a><br/>
-    sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.7-R4d87321.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.7-R4d87321.dmg/download</a><br/>
+    sha256: 46c124c6bd28d0903873afebc702f1f1b6dfe9dd252e953714c39a147fff2f89</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.exe/download</a><br/>
-    sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.7-R4d87321.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.7-R4d87321.exe/download</a><br/>
+    sha256: 3412254efcd2311f56857e8f43ae6c8d3508fe5ef9e37e46d2f77c1b440b6ba5</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download</a><br/>
-    sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
--->
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.7-R4d87321.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.7-R4d87321.tgz/download</a><br/>
+    sha256: 1a2aba24652a76f4a29a9caffe851d481b697bc5d281f14890aa3d0ee6036712</p>
+
 <!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.7/">CI project page</a>.
- -->
-
-
+-->
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+--->
 
 <h3>Changes since <a href="jmri4.3.6.shtml">test release 4.3.6</a>:</h3>
 
@@ -195,7 +194,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Hardware Support</h4>
 
         <p></p>
-
+<!--
         <h5>C/MRI</h5>
             <ul>
                 <li></li>
@@ -205,12 +204,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 	    <ul>
 	    	<li></li>
 	    </ul>
-	    
+-->
         <h5>Digitrax</h5>
 	    <ul>
 	    	<li>Fixed a problem with PM42 addresses greater than 9.</li>
 	    </ul>
-	    
+<!--
         <h5>JMRI Simple Server/JMRI Client</h5>
             <ul>
                 <li></li>
@@ -230,17 +229,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>Roco z21/Z21</h5>
             <ul>
                 <li>Add Configuration tool to the Z21 Menu.  This allows checking and setting the Z21's Broadcast flags, and displaying the serial number, hardware version, and software version.</li>
             </ul>
-            
+<!--
         <h5>SPROG</h5>
             <ul>
                 <li></li>
             </ul>
-            
+
         <h5>TCS</h5>
             <ul>
                 <li></li>
@@ -255,29 +254,30 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
-    <h4>Signals</h4>
-        <p>Egbert Broerse improved the signals and signalling help pages.
-        <h5>Signal Systems</h5>
-            <ul>
-                <li></li>
-            </ul>
-    
-        <h5>Signal Mast Editor</h5>
-            <ul>
-                <li></li>
-            </ul>
-
+-->
     <h4>New / Updated decoder definitions</h4>
       <ul>
-        <li></li>
+        <li>Improvements to the "validation" checks for decoder definitions.  A couple
+            false positives fixed; check that some numerical fields really do contain numbers.</li>
+        <li>Previously, when loading an existing roster entry, DecoderPro just loaded the CV values. 
+            This in turn loads the Variable values as the CVs change.
+            Because of DP's qualified-variable support, some Variables are not connected to specific CV contents at load time; 
+            they get the wrong values, and hilarity ensues. (First pointed out by Dick Bronson)
+            Updated so that JMRI loads oads the Variable values from the file (they've been stored all along), then loads CV values as before.
+            </li>
+        <li>The identification process for Hornby decoder models now includes the value of CV 159.</li>
      </ul>
-
+<!--
         <h5>BLI</h5>
             <ul>
                 <li></li>
             </ul>
-
+-->
+        <h5>Bachmann</h5>
+            <ul>
+                <li>Alain Le Marchand added three steam and one diesel decoder definitions</li>
+            </ul>
+<!--
         <h5>Digitrax</h5>
             <ul>
                 <li></li>
@@ -287,19 +287,20 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>ESU</h5>
         <p>Dave Heap made the following changes:</p>
             <ul>
                 <li>Added the LokPilot Nano Standard V1.0.</li>
                 <li>Added new Product IDs for some new LokSound Select hardware versions.</li>
+                <li>Fixed Vstart, Vmid &amp; Vhigh value ranges for various ESU decoders.</li>
             </ul>
 
         <h5>Hornby</h5>
             <ul>
                 <li>Added ability to use CV59 for decoder product identification</li>
             </ul>
-
+<!--
         <h5>Lenz</h5>
             <ul>
                 <li></li>
@@ -339,12 +340,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>SoundTraxx</h5>
             <ul>
-                <li></li>
+                <li>Michael Mosher contributed Tsuanmi2 Steam, Diesel and Electric locomotive decoder definitions</li>
             </ul>
-
+<!--
         <h5>TCS</h5>
             <ul>
                 <li></li>
@@ -374,12 +375,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
-
-   <h4>Operations</h4>
-   <ul>
-    <li></li>
-   </ul>
+-->
 
    <h4>Dispatcher</h4>
      <p>Steve Todd enhanced Dispatcher's AutoActiveTrain feature with the following changes <a href="https://github.com/JMRI/JMRI/pull/1364">(PR #1364)</a></li>:
@@ -392,20 +388,27 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>prevent runaway by halting if train has no occupied sections - partial - only works with another moving train</li>
             <li>enhanced debugging and squashed a few bugs</li>
         </ul>
-
+<!--
     <h4>Layout Editor</h4>
         <ul>
             <li><li>
          </ul>
-
+-->
     <h4>Logix</h4>
         <ul>
-            <li></li>
+        <li>Improvements to the "validation" checks for panel files.  A couple
+            false positives fixed; check that some numerical fields really do contain numbers.</li>
         </ul>
-
+<!--
+   <h4>Operations</h4>
+   <ul>
+    <li></li>
+   </ul>
+-->
     <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+        <li>Improvements to the "validation" checks for panel files:  A
+            false positive fixed.</li>
         </ul>
 
     <h4>Preferences</h4>
@@ -423,30 +426,54 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             complex decoders that use "qualifiers" to separate variables from CVs.  To handle this case, 
             we now reload the variable values from the file, then the CV values.</li>
         </ul>
-
+<!--
     <h4>Routes</h4>
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Scripting</h4>
         <ul>
             <li>ON and OFF are now defined by default for Jython scripts</li>
         </ul>
 
+    <h4>Signals</h4>
+        <p>Egbert Broerse improved the signals and signalling help pages.
+<!--
+        <h5>Signal Systems</h5>
+            <ul>
+                <li></li>
+            </ul>
+    
+        <h5>Signal Mast Editor</h5>
+            <ul>
+                <li></li>
+            </ul>
+
    <h4>Warrants</h4>
         <ul>
             <li></li>
         </ul>
-
+-->
    <h4>Web Access</h4>
         <ul>
-            <li>The legacy "frame server" was finally disabled.</li>
+            <li>The "frame server" can be optionally disabled.
+            (<a href="https://github.com/JMRI/JMRI/pull/1334">1334</a> and <a href="https://github.com/JMRI/JMRI/pull/1438">1438</a>)</li>
+            <li>A placeholder has been created for embedding extra JavaScript in JMRI web pages.
+            See <a href="https://github.com/JMRI/JMRI/blob/master/web/js/user.js">user.js</a> for details.
+            (<a href="https://github.com/JMRI/JMRI/pull/1458">1458</a>)</li> 
+            <li>Excessive logging when a client fails have been silenced.
+            (<a href="https://github.com/JMRI/JMRI/pull/1469">1469</a>)</li>
+            <li>Address vulnerability CVE-2016-4800 in Jetty. (a href="https://github.com/JMRI/JMRI/pull/1471">1471</a>)</li>
         </ul>
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>Sonnys Hansen updated the Danish translation</li>
+            <li>Steve Todd updated Dispatcher's AutoActiveTrain feature.</li>
+            <li>Much infrastructure work, improvements to the JavaDoc, etc.</li>
+            <li>JavaDoc can now include UML</li>
+            <li>There's just the beginnings of a <a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/JUnit.shtml#testScriptCode">test setup</a> for the Jython sample scripts</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
