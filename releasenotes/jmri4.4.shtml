@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.3.8
+ JMRI: Release Notes for 4.4
  </title>
     <meta content="Bob Jacobsen" name="Author">
-    <meta name="keywords" content="java model railroad JMRI 4.3.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,28 +23,20 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 4.3.8 release
+      Release Notes for JMRI 4.4 release
       </h2>
 
     <p>Date: mmm dd, 2016</p>
     <p>From: (pumpkin)</p>
-    <p>Subject: Test version 4.3.8 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Production version 4.4 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
+We are very pleased to announce that the 4.3 series of JMRI test releases has resulted in a
+version that's good enough to be recommended for general use, including by new users.
+We're therefore making that version, "Production version 4.4" available for download today.
+
 <h3>Notes:</h3>
-
-<p>This is a test release.  Please post a note if you encounter any new or old bugs!
-And please back up your JMRI files before installing this, in case you want to go
-back to an earlier version.</p>
-
-<p>This is the next in a series of test versions. We expect this series
-to end in the next JMRI production release around the middle of 2016.
-(See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)</p>
-
-<p>Some of the changes involved are quite extensive.
-They may require a certain amount of experience before they are working well.
-Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the
@@ -58,7 +50,7 @@ None at release time.
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.3.9.shtml">JMRI 4.3.9</a>, due out shortly after this one,
+<a href="jmri4.5.1.shtml">JMRI 4.5.1</a>, due out shortly after this one,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -74,8 +66,11 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.2.shtml#warnings">JMRI 4.2 release note</a> for warnings predating the 4.3 development series.
-These may be relevant to you if you're updating from an earlier version.
+<a id="warnings" name="warnings"></a>
+<h3>Warnings:</h3>
+
+See the <a href="jmri4.2.1.shtml#warnings">JMRI 4.2.1 release note</a>
+for older warnings that may be relevant to you if you're updating from an earlier version.
 
 <!-- 4.3.5 -->
 
@@ -178,7 +173,7 @@ These may be relevant to you if you're updating from an earlier version.
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.7/">CI project page</a>.
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.4/">CI project page</a>.
  -->
 
 
@@ -189,17 +184,12 @@ These are development files, and might not be working at any particular time.</p
 
 <h3>Changes since <a href="jmri4.2.shtml">production release 4.2</a>:</h3>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.3.8+">list of included commits</a> is available from our
-<a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
-
-
     <h4>Hardware Support</h4>
 
         <p>Help for setting up JMRI with your OS and Java version as well as setting general preferences is available as <a href="/help/en/html/setup/index.shtml"
         target="_blank">Setup Help</a>, including a short FAQ section, so application help pages can focus on the functions in each part.</p>
 
         <p>Support for ARM processors running in 64-bit mode (aarch64) has been added</p>
-
         
         <h5>DCC++</h5>
             <ul>
