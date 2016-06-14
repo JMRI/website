@@ -176,11 +176,11 @@ on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.4/">CI project page</a>.
  -->
 
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
 
 <h3>Changes since <a href="jmri4.2.shtml">production release 4.2</a>:</h3>
 
@@ -519,8 +519,6 @@ These are development files, and might not be working at any particular time.</p
             <li>Manifests and switch list now show locomotive set outs at the end of the work for
              switchers.</li>
             <li>Fixed a problem where locomotives wouldn't reset properly when running automations.</li>
-            <li>Fixed a lockup problem with the Trains window when using the table sort and building
-             trains. Problem was introduced in the last test release.</li>
             <li>Made some build report improvements with regards to train turns.</li>
             <li>Improved how the program when building a train, finds locations for cars out of
              staging. Should help reduce the number of build failures.</li>
