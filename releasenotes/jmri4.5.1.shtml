@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.3.6
+ JMRI: Release Notes for 4.5.1
  </title>
     <meta content="Bob Jacobsen" name="Author">
-    <meta name="keywords" content="java model railroad JMRI 4.3.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.3.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,16 +23,14 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 4.3.6 release
+      Release Notes for JMRI 4.5.1 release
       </h2>
 
-    <p>Date: May 15, 2016</p>
-    <p>From: Bob Jacobsen</p>
-    <p>Subject: Test version 4.3.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: mmm dd, 2016</p>
+    <p>From: (pumpkin)</p>
+    <p>Subject: Test version 4.5.1 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h3>Notes:</h3>
 
@@ -41,7 +39,7 @@ And please back up your JMRI files before installing this, in case you want to g
 back to an earlier version.</p>
 
 <p>This is the next in a series of test versions. We expect this series
-to end in the next JMRI production release around the middle of 2016.
+to end in the next JMRI production release around the end of 2016.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)</p>
 
 <p>Some of the changes involved are quite extensive.
@@ -56,12 +54,11 @@ see our
 
 <h3>Known problems with this release</h3>
 
-The DebounceSensors.py sample script doesn't work with sensors that go to INCONSISTENT state during their transition,
-particularly the Sensor that indicates whether a JMRI Route is lined or not.
+None at release time.
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.3.7.shtml">JMRI 4.3.7</a>, due out shortly after this one,
+<a href="jmri4.3.9.shtml">JMRI 4.3.9</a>, due out shortly after this one,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -72,7 +69,7 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li>None</li>
+    <li></li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -164,95 +161,205 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
+<!--
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.6-Re0639a6.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.6-Re0639a6.dmg/download</a><br/>
-    sha256: 782d6ea9de12301718dad7af4a32ff6313bf96183e05de9e4cfb46b1efef12d1</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.dmg/download</a><br/>
+    sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.6-Re0639a6.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.6-Re0639a6.exe/download</a><br/>
-    sha256: 8b887eca8804e47e431d18c0d32d6bec0d31894028a24bf4a85448e20d57c7bb</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.exe/download</a><br/>
+    sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.6-Re0639a6.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.6-Re0639a6.tgz/download</a><br/>
-    sha256: da581fca82a94e059fe86f90e22d6da36dadcf47ab23f4aad5e89d5b58f27ad3</p>
-
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download</a><br/>
+    sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
+-->
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.6/">CI project page</a>.
--->
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.7/">CI project page</a>.
+ -->
 
-<!--
+
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
 
-<h3>Changes since <a href="jmri4.3.5.shtml">test release 4.3.5</a>:</h3>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.3.6+">list of included commits</a> is available from our
+<h3>Changes since <a href="jmri4.4.shtml">production release 4.4</a>:</h3>
+
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.1+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h4>Hardware Support</h4>
 
+        <p></p>
+
+        <h5>C/MRI</h5>
+            <ul>
+                <li></li>
+            </ul>
+        
+        <h5>DCC++</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>Digitrax</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>JMRI Simple Server/JMRI Client</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>LocoNet</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>NCE</h5>
+            <ul>
+                <li><li>
+            </ul>
+
+        <h5>RFID</h5>
+            <ul>
+                <li></li>
+            </ul>
+
         <h5>Roco z21/Z21</h5>
             <ul>
-                <li>Set Broadcast Flags for XPressNet messages.  This causes the command station to generate the expected replies.</li>
+                <li></li>
             </ul>
             
         <h5>SPROG</h5>
             <ul>
-                <li>Andrew Crosland modified SPROG command station support for a higher packet transmission rate. Added new connection methods for Pi-SPROG Raspbery-Pi hardware.</li>
+                <li></li>
             </ul>
             
-    <h4>Signals</h4>
-        <h5>Signal Systems</h5>
+        <h5>TCS</h5>
             <ul>
-                <li>Steve Todd improves the contents of and icons for the Basic signal system<li>
-                <li>Egbert Broerse provided updates to the ProRail 1954 system</li>
+                <li></li>
             </ul>
-    
+
+        <h5>Uhlenbrock Intellibox</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>Zimo MXULF</h5>
+            <ul>
+                <li></li>
+            </ul>
+
     <h4>New / Updated decoder definitions</h4>
       <ul>
-        <li>Fixed a problem that caused decoder definitions that have constants in Function Maps to fail to open in V4.3.5. (Dave Heap)</li>
+        <li></li>
      </ul>
+
+        <h5>BLI</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>Bachmann</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>Digitrax</h5>
+            <ul>
+                <li></li>
+            </ul>
+            
+        <h5>Doehler &amp; Haas</h5>
+            <ul>
+                <li></li>
+            </ul>
 
         <h5>ESU</h5>
         <p>Dave Heap made the following changes:</p>
             <ul>
-                <li>Fixed the incorrect CV number for ESU Estop on speed step 0.</li>
+                <li></li>
+            </ul>
+
+        <h5>Hornby</h5>
+            <ul>
+                <li></li>
             </ul>
 
         <h5>Lenz</h5>
             <ul>
-                <li>Alain Carasso added version checks to the Lenz Plus decoder definitions <a href="https://github.com/JMRI/JMRI/pull/1267">(PR #1267)</a></li>
+                <li></li>
+            </ul>
+
+        <h5>MGP</h5>
+             <ul>
+                <li></li>
+             </ul>
+
+        <h5>MTH</h5>
+            <ul>
+                <li></li>
             </ul>
 
         <h5>MRC</h5>
             <ul>
-                <li>Alain Le Marchand improved the handling of CV29 in the MRC 1825 definition</li>
+                <li></li>
             </ul>
 
-        <h5>Norsk Modelljernbane (NMJ)</h5>
+        <h5>NCE</h5>
             <ul>
-                <li>New NMJ B3 and B7 series DCC light board decoders added (Lolke H Bijlsma / <a href="https://github.com/JMRI/JMRI/pull/1291">#1291</a>)</li>
+                <li></li>
+            </ul>
+
+        <h5>Norsk Modelljernbane (NJM)</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>QSI</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>RR-CirKits</h5>
+            <ul>
+                <li></li>
             </ul>
 
         <h5>SoundTraxx</h5>
             <ul>
-                <li>Marc Fournier added new EMD GP38-2 and EMD GP40 models</li>
+                <li></li>
+            </ul>
+
+        <h5>TCS</h5>
+            <ul>
+                <li></li>
             </ul>
 
         <h5>Tehnologistic (train-O-matic)</h5>
             <ul>
-                <li>New NMJ B3 and B7 series DCC light board decoders added (Lolke H Bijlsma / <a href="https://github.com/JMRI/JMRI/pull/1291">#1291</a>)</li>
-                <li>Updated Shine Plus Light board decoders to include the new NMJ B3 and B7 DCC light board decoders (Lolke H Bijlsma / <a href="https://github.com/JMRI/JMRI/pull/1291">#1291</a>)</li>
+                <li></li>
+            </ul>
+
+        <h5>Viessmann</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>Wangrow</h5>
+            <ul>
+                <li></li>
             </ul>
 
         <h5>ZIMO</h5>
             <ul>
-                <li>Nigel Cliffe provided a definition for the new MX600 decoder <a href="https://github.com/JMRI/JMRI/pull/1302">(PR #1302)</a></li>
+                <li></a></li>
             </ul>
 
         <h5>Miscellaneous</h5>
@@ -261,31 +368,79 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
 
+   <h4>Dispatcher</h4>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h4>Layout Editor</h4>
+        <ul>
+            <li><li>
+         </ul>
+
+    <h4>Logix</h4>
+        <ul>
+            <li></li>
+        </ul>
+
    <h4>Operations</h4>
-   <ul>
-    <li></li>
-   </ul>
+       <ul>
+           <li></li>
+       </ul>
+
+    <h4>Panel Editors</h4>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h4>Preferences</h4>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h4>Roster</h4>
+        <ul>
+            <li></li>
+        </ul>
 
     <h4>Routes</h4>
         <ul>
-            <li>Routes in transition (started, not yet done) now show INCONSISTENT on their status sensor, and
-                ACTIVE only when complete</li>
+            <li></li>
+        </ul>
+
+    <h4>Scripting</h4>
+        <ul>
+            <li>Added Jython functions and examples for pulling JMRI configurations into a script.
+            (<a href="https://github.com/JMRI/JMRI/pull/1502">#1502</a>)</li>
+        </ul>
+
+    <h4>Signals</h4>
+        <h5>Signal Systems</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>Signal Mast Editor</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+   <h4>Warrants</h4>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h4>Web Access</h4>
+        <ul>
+            <li></li>
         </ul>
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li>Sonny Hansen did a lot more work on the Danish translation</li>
-            <li>Alain Le Marchand updated the French translation</li>
-            <li>The handling of locomotive identification was improved in DecoderPro; 
-                the selection should no longer be lost if you press "ident" after rearranging the columns.</li>
-            <li>The DecoderPro File menu now has a selection to verify XML files.</li>
-            <li>The web server now handles HTTP redirects slightly differently. See the
-            	<a href="http://jmri.org/help/en/html/web/">Web server help</a> for more details.</li>
-            <li>Walt Thompson highlighted a problem in the LightTable documentation
-            	<a href="https://github.com/JMRI/JMRI/pull/1301">(PR #1301)</a></li>
-            <li>Egbert Broerse added more internationalization to the Add Routes and Add Signal Group panels
-                (translators may check new keys) and reduced duplicate resource bundle keys for common elements
-                to ease new translation (use Bundle.getMessage() in code)</li>
+            <li>Added startup action to allow a pause for up to five minutes in processing startup items.
+            (<a href="https://github.com/JMRI/JMRI/pull/1499">#1499</a>)</li>
+            <li>Tooltips in startup items show more information than can be shown in the table of startup items.
+            (<a href="https://github.com/JMRI/JMRI/pull/1505">#1505</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
