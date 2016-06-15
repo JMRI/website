@@ -410,7 +410,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Scripting</h4>
         <ul>
-            <li></li>
+            <li>Added Jython functions and examples for pulling JMRI configurations into a script.
+            (<a href="https://github.com/JMRI/JMRI/pull/1502">#1502</a>)</li>
         </ul>
 
     <h4>Signals</h4>
@@ -438,6 +439,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>Added startup action to allow a pause for up to five minutes in processing startup items.
             (<a href="https://github.com/JMRI/JMRI/pull/1499">#1499</a>)</li>
+            <li>Tooltips in startup items show more information than can be shown in the table of startup items.
+            (<a href="https://github.com/JMRI/JMRI/pull/1505">#1505</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
