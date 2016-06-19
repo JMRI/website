@@ -175,23 +175,23 @@ These may be relevant to you if you're updating from an earlier version.
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download</a><br/>
     sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
 -->
-<!--
+
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.7/">CI project page</a>.
- -->
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.8/">CI project page</a>.
 
 
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
 
 <h3>Changes since <a href="jmri4.3.7.shtml">test release 4.3.7</a>:</h3>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.3.8+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
-
+<!--
     <h4>Hardware Support</h4>
 
         <p></p>
@@ -255,9 +255,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
     <h4>New / Updated decoder definitions</h4>
-      <ul>
+<!--      <ul>
         <li></li>
      </ul>
 
@@ -331,17 +331,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>SoundTraxx</h5>
             <ul>
-                <li></li>
+                <li>Alain Le Marchand corrected the Econami Steam definitions (<a href="https://github.com/JMRI/JMRI/pull/1496">#1496</a>)</li>
             </ul>
 
         <h5>TCS</h5>
             <ul>
-                <li></li>
+                <li>Michael Mosher updated the WOW Diesel and Steam definitions for V4 decoders (<a href="https://github.com/JMRI/JMRI/pull/1510">#1510</a>)</li>
             </ul>
-
+<!--
         <h5>Tehnologistic (train-O-matic)</h5>
             <ul>
                 <li></li>
@@ -366,8 +366,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
-
+-->
+<!--
    <h4>Dispatcher</h4>
         <ul>
             <li></li>
@@ -382,22 +382,22 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
    <h4>Operations</h4>
        <ul>
-           <li></li>
+           <li>Daniel Boudreau fixed a bug where a random schedule was being ignored (<a href="https://github.com/JMRI/JMRI/pull/1524">#1524</a>)</li>
        </ul>
-
+<!--
     <h4>Panel Editors</h4>
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Preferences</h4>
         <ul>
-            <li></li>
+            <li>Randall Wood fixed a problem when attempting to read profiles created after version 4.3.2 (<a href="https://github.com/JMRI/JMRI/pull/1523">#1523</a>)</li>
         </ul>
-
+<!--
    <h4>Roster</h4>
         <ul>
             <li></li>
@@ -433,10 +433,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>Randall Wood fixed issues when reordering startup items (<a href="https://github.com/JMRI/JMRI/pull/1494">#1494</a>)</li>
+            <li>Randall Wood cleaned up some excessive console logging during startup (<a href="https://github.com/JMRI/JMRI/pull/1508">#1508</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
