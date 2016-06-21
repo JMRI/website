@@ -69,7 +69,7 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li></li>
+    <li>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -441,6 +441,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             (<a href="https://github.com/JMRI/JMRI/pull/1499">#1499</a>)</li>
             <li>Tooltips in startup items show more information than can be shown in the table of startup items.
             (<a href="https://github.com/JMRI/JMRI/pull/1505">#1505</a>)</li>
+            <li>Startup items that need a system connection can now be bound to a specific system connection.
+            (<a href="https://github.com/JMRI/JMRI/pull/1520">#1520</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
