@@ -176,24 +176,24 @@ These may be relevant to you if you're updating from an earlier version.
 <p>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download</a><br/>
     sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
-
+-->
 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.9/">CI project page</a>.
--->
 
 
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
 
 <h3>Changes since <a href="jmri4.3.8.shtml">test release 4.3.8</a>:</h3>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.3.9+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
-
+<!--
     <h4>Hardware Support</h4>
 
         <p></p>
@@ -202,7 +202,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-        
+
         <h5>DCC++</h5>
             <ul>
                 <li></li>
@@ -237,12 +237,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-            
+
         <h5>SPROG</h5>
             <ul>
                 <li></li>
             </ul>
-            
+
         <h5>TCS</h5>
             <ul>
                 <li></li>
@@ -257,12 +257,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
     <h4>New / Updated decoder definitions</h4>
       <ul>
-        <li></li>
+        <li>The following decoder definitions were added/updated</li>
      </ul>
-
+<!--
         <h5>BLI</h5>
             <ul>
                 <li></li>
@@ -272,12 +272,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>Digitrax</h5>
             <ul>
-                <li></li>
+                <li>Alain Le Marchand added the DH126MT definition (<a href="https://github.com/JMRI/JMRI/pull/1582">#1582</a>)</li>
             </ul>
-            
+<!--
         <h5>Doehler &amp; Haas</h5>
             <ul>
                 <li></li>
@@ -333,12 +333,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>SoundTraxx</h5>
             <ul>
-                <li></li>
+                <li>Michael Mosher has updated the Tsunami 2 definitions with new models TSU-2200 and TSU-PNP (<a href="https://github.com/JMRI/JMRI/pull/1563">#1563</a>)</li>
             </ul>
-
+<!--
         <h5>TCS</h5>
             <ul>
                 <li></li>
@@ -414,14 +414,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Signals</h4>
         <h5>Signal Systems</h5>
             <ul>
                 <li>Updated B&amp;O 2009 signal definitions to fix restricted aspect in some cases
                 (<a href="https://github.com/JMRI/JMRI/pull/1575">#1575</a>)</li>
             </ul>
-
+<!--
         <h5>Signal Mast Editor</h5>
             <ul>
                 <li></li>
@@ -436,10 +436,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>LocoTools has been removed from Linux and OS X distributions of JMRI (<a href="https://github.com/JMRI/JMRI/pull/1546">#1546</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
