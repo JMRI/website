@@ -75,13 +75,13 @@ See the <a href="jmri4.2.1.shtml#warnings">JMRI 4.2.1 release note</a>
 for older warnings that may be relevant to you if you're updating from an earlier version.
 
 <!-- 4.3.9 -->
-<p>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.
+<p>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</p>
 
 <!-- 4.3.5 -->
 
 <p>When sharing a configuration between this version and JMRI 4.3.4 or older, the older version of JMRI will not
     reflect changes in preferences, window position, table sorting, column order, or other user interface state. This is due to
-    changes in how user preferences and interface state are stored.
+    changes in how user preferences and interface state are stored.</p>
     
 <!-- 4.3.3 -->
 <p>You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
@@ -127,13 +127,13 @@ for older warnings that may be relevant to you if you're updating from an earlie
     be at the front of the contents, and the label, comment and tooltip elements have to be 
     at the back. You can't just sprinkle them around and hope the code finds them
     (because sometimes in the past the program would miss one; now we require an order we're
-    sure the code will understand).
+    sure the code will understand).</p>
 
 <p><!-- 4.1.2 -->Mac OS X 10.11 El Capitan requires signed drivers for USB adapters. If you've upgraded
     from an earlier version, your drivers may not work.  That will cause JMRI to throw errors
     when it doesn't find communications links.  To fix this, go to the web site for your
     adapter manufacturer, find the drivers that are listed to work with Mac OS X 10.9 or later,
-    download, and install, then retry JMRI again.
+    download, and install, then retry JMRI again.</p>
 
 <p><!-- 4.1.2 -->Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
     <ul>
@@ -649,6 +649,7 @@ These are development files, and might not be working at any particular time.</p
             <li>prevent runaway by halting if train has no occupied sections - partial - only works with another moving train</li>
             <li>enhanced debugging and squashed a few bugs</li>
         </ul>
+        </p>
 
     <h4>Layout Editor</h4>
         <ul>
