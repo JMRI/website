@@ -559,9 +559,9 @@ These are development files, and might not be working at any particular time.</p
             <li>Steve Rawlinson added an <a href="http://jmri.org/jython/AutoLayoutPowerOff.py">AutoLayoutPowerOff.py example script</a> 
                 which automatically powers off a layout
                 when no activity has been detected for a period of time.</li>
-            <li>Steve Toddy added an <a href="http://jmri.org/jython/SetAllUnknownSensorsToInactive.py ">SetAllUnknownSensorsToInactive.py  example script</a> 
-                which does what it's name says:  Any JMRI Sensor that's showing "UNKNOWN" state will be set to "INACTIVE" state.
-                This is particularly use when using a simulated connection, as it makes it look like there's a layout connected.</li>
+            <li>Steve Todd added a <a href="http://jmri.org/jython/SetAllUnknownSensorsToInactive.py ">SetAllUnknownSensorsToInactive.py  example script</a> 
+                which does what its name says:  Any JMRI Sensor that's showing "UNKNOWN" state will be set to "INACTIVE" state.
+                This is particularly useful when using a simulated connection, as it makes it look like there's a layout connected.</li>
             <li>The 'RosterCsvExport' script was updated with examples of extracting information from
                 specific bits of CV values, such as the DC-enabled bit of CV 29. (<a href="https://github.com/JMRI/JMRI/pull/1197">#1197</a>)</li>
             <li>ON and OFF are now defined by default for Jython scripts</li>
