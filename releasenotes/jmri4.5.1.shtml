@@ -70,6 +70,9 @@ from
 
 <ul>
     <li>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
+    <li>Internal turnouts and sensors need to have complete, individual system names.  The names "IT" and "IS" (without any 
+    suffix) are no longer permitted: "IT12" is fine, but just "IT" is not. Most panel files that contain these should 
+    automatically migrate them to new names when saved, but in some cases you might need to manually update them.
 </ul>
 
 <h3>Older warnings</h3>
