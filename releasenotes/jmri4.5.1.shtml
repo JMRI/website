@@ -238,9 +238,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
      window under tools, select "Show Track Moves". To change the move count for a track, double
      click on the "Moves" value in the table and enter a positive or negative number. Tracks with
      the least number of "Moves" are processed first.</li>
+    <li>Steve Todd fixed a bug with the JMRI Web Server Conductor where you couldn't properly
+     terminate a train that didn't have work at the last location in the train's route.</li>
    </ul>
 
-    <h4>Scripting</h4>
+   <h4>Scripting</h4>
         <ul>
             <li>Added Jython functions and examples for pulling JMRI configurations into a script.
                 (<a href="https://github.com/JMRI/JMRI/pull/1502">#1502</a>)</li>
