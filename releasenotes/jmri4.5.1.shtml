@@ -69,13 +69,15 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li>This and future versions of JMRI will not function on OS X if the Java SE 6 provided by Apple is installed. OS X
-    operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
-    user's group. JMRI developers will publish a process for cleanly removing Java SE 6 on OS X El Capitan shortly.</li>
+    <li>If you use the SRCP system connection and have configured JMRI Preferences
+        to open SRCP tool windows when JMRI starts, you'll have to reset those preferences.</li>
     <li>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
     <li>Internal turnouts and sensors need to have complete, individual system names.  The names "IT" and "IS" (without any 
     suffix) are no longer permitted: "IT12" is fine, but just "IT" is not. Most panel files that contain these should 
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
+    <li>This and future versions of JMRI will not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+    operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
+    user's group. JMRI developers will publish a process for cleanly removing Java SE 6 on OS X El Capitan shortly.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -191,6 +193,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 are not yet supported.</li>
             </ul>
             
+        <h5>SRCP</h5>
+            <ul>
+                <li>The SRCP layout connection can now handle more than one simultaneous connections.</li>
+            </ul>
+
         <h5>TAMS</h5>
             <ul>
                 <li>Jan Boen did 
