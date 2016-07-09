@@ -69,6 +69,9 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
+    <li>This and future versions of JMRI will not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+    operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
+    user's group. JMRI developers will publish a process for cleanly removing Java SE 6 on OS X El Capitan shortly.</li>
     <li>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
     <li>Internal turnouts and sensors need to have complete, individual system names.  The names "IT" and "IS" (without any 
     suffix) are no longer permitted: "IT12" is fine, but just "IT" is not. Most panel files that contain these should 
