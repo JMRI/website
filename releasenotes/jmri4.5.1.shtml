@@ -56,7 +56,12 @@ see our
 
 <h3>Known problems with this release</h3>
 
-None at release time.
+Two spurious messages are emitted at startup:<br/>
+startup.StartupActionModelUtil        ERROR - Did not find class "jmri.jmrix.srcp.srcpmon.SRCPMonAction" [main]<br/>
+startup.StartupActionModelUtil        ERROR - Did not find class "jmri.jmrix.srcp.packetgen.PacketGenAction" [main]<br/>
+Unless you're using a SRCP connection, these are not a problem, just an annoyance. They're fixed in JMRI 4.5.2.
+
+
 
 <!--
 If any of those effect you, please either wait for
