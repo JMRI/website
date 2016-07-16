@@ -85,6 +85,10 @@ from
     <li>This and future versions of JMRI will not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group. JMRI developers will publish a process for cleanly removing Java SE 6 on OS X El Capitan shortly.</li>
+    <li>Due to changes in the libraries shipped with 4.5.1 compared to earlier releases, if you choose to revert to
+    an earlier release after installing 4.5.1 without completely uninstalling, the 'lib' directory will contain extra
+    files that will cause problems running JMRI. If needing to revert to an earlier version, we recommend you to uninstall
+    4.5.1 first prior to installing the earlier version.
 </ul>
 
 <h3>Older warnings</h3>
