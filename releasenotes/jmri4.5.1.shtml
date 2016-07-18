@@ -56,21 +56,23 @@ see our
 
 <h3>Known problems with this release</h3>
 
+<ul>
+  <li>
 Two spurious messages are emitted at startup:<br/>
 startup.StartupActionModelUtil        ERROR - Did not find class "jmri.jmrix.srcp.srcpmon.SRCPMonAction" [main]<br/>
 startup.StartupActionModelUtil        ERROR - Did not find class "jmri.jmrix.srcp.packetgen.PacketGenAction" [main]<br/>
 Unless you're using a SRCP connection, these are not a problem, just an annoyance. They're fixed in JMRI 4.5.2.
+  </li>
+  <li>JMRI does not work on OS X unless a JDK is installed. This is fixed in version 4.5.2 (<a href="https://github.com/JMRI/JMRI/pull/1679">#1679</a>).</li>
+</ul>
 
-
-
-<!--
+<p>
 If any of those effect you, please either wait for
-<a href="jmri4.3.9.shtml">JMRI 4.3.9</a>, due out shortly after this one,
+<a href="jmri4.5.2.shtml">JMRI 4.5.2</a>, due out shortly after this one,
 or pick up a
-<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
+<a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
-<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
+<a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
