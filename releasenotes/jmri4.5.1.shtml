@@ -30,7 +30,7 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Test version 4.5.1 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
@@ -81,12 +81,29 @@ from
     <li>If you use the SRCP system connection and have configured JMRI Preferences
         to open SRCP tool windows when JMRI starts, you'll have to reset those preferences.</li>
     <li>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
-    <li>Internal turnouts and sensors need to have complete, individual system names.  The names "IT" and "IS" (without any 
-    suffix) are no longer permitted: "IT12" is fine, but just "IT" is not. Most panel files that contain these should 
+    <li>Internal turnouts and sensors need to have complete, individual system names.  The names "IT" and "IS" (without any
+    suffix) are no longer permitted: "IT12" is fine, but just "IT" is not. Most panel files that contain these should
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
-    <li>This and future versions of JMRI will not function on OS X if the Java SE 6 provided by Apple is installed. OS X
-    operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
-    user's group. JMRI developers will publish a process for cleanly removing Java SE 6 on OS X El Capitan shortly.</li>
+    <li>This and future versions of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+      operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
+      user's group.
+      <p>To remove Java SE 6 from OS X, follow these steps:</p>
+      <ol>
+      	<li>Download <a href="https://github.com/JMRI/JMRI/raw/master/scripts/MacOSXapps/TemplateApp.app/Contents/Resources/uninstall-java6.sh">uninstall-java6.sh</a>.
+          The rest of these steps assume you downloaded it to your <em>Downloads</em> folder.</li>
+        <li>Open <em>Terminal.app</em>.
+          <p><em>El Capitan only:</em> Reboot into Recovery Mode by restarting your
+            Mac and pressing Cmd-R until the Apple logo appears. Once in Recovery Mode,
+            select Terminal from the Utilities menu.</p>
+          </li>
+        <li>Run the command <code>bash ~/Downloads/uninstall-java6.sh</code> It can take
+          up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.
+          <p><em>El Capitan only:</em> Run the command <code>bash /Volumes/Macintosh\ HD/Users/your-user-name/Downloads/uninstall-java6.sh /Volumes/Macintosh\ HD</code>
+            It can take up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.</p>
+          </li>
+        <li><em>El Capitan only:</em> Restart your Mac.</li>
+      </ol>
+    </li>
     <li>Due to changes in the libraries shipped with 4.5.1 compared to earlier releases, if you choose to revert to
     an earlier release after installing 4.5.1 without completely uninstalling, the 'lib' directory will contain extra
     files that will cause problems running JMRI. If needing to revert to an earlier version, we recommend you to uninstall
@@ -101,7 +118,7 @@ These may be relevant to you if you're updating from an earlier version.
 <p><em>(Since JMRI 4.3.5)</em> When sharing a configuration between this version and JMRI 4.3.4 or older, the older version of JMRI will not
     reflect changes in preferences, window position, table sorting, column order, or other user interface state. This is due to
     changes in how user preferences and interface state are stored.
-    
+
 <p><em>(Since JMRI 4.3.3)</em> You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
     the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
     If you've set the order manually (e.g. by editing configuration files) in the past, please check this
@@ -157,7 +174,7 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
  -->
- 
+
 <h3>Changes since <a href="jmri4.4.shtml">production release 4.4</a>:</h3>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.1+">list of included commits</a> is available from our
@@ -169,11 +186,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Digitrax</h5>
             <ul>
-                <li>Initial support for the DCS240, allowing you to configure it in the 
+                <li>Initial support for the DCS240, allowing you to configure it in the
                 preferences.  This is just initial support:  Many advanced features
                 are not yet supported.</li>
             </ul>
-            
+
         <h5>SRCP</h5>
             <ul>
                 <li>The SRCP layout connection can now handle more than one simultaneous connections.</li>
@@ -181,8 +198,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>TAMS</h5>
             <ul>
-                <li>Jan Boen did 
-                    <a href="https://github.com/JMRI/JMRI/pull/1566">a lot of work</a> on the 
+                <li>Jan Boen did
+                    <a href="https://github.com/JMRI/JMRI/pull/1566">a lot of work</a> on the
                     <a href="http://jmri.net/help/en/html/hardware/tams/index.shtml">TAMS MasterControl support</a></li>
             </ul>
 
@@ -200,7 +217,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>Alain Le Marchand added support for the DH126T decoder.</li>
             </ul>
-            
+
         <h5>ESU</h5>
             <ul>
                 <li>Some earlier versions of JMRI emitted lots of warnings while loading a roster entry containing certain ESU decoders.
@@ -249,16 +266,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Web Access</h4>
         <ul>
-            <li>Added Json server support for blocks and layoutblocks. 
+            <li>Added Json server support for blocks and layoutblocks.
                 (<a href="https://github.com/JMRI/JMRI/pull/1623">#1623</a>, <a href="https://github.com/JMRI/JMRI/pull/1628">#1628</a>)</li>
         </ul>
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li>The POSIX (Mac and Linux) launcher script has 
-                <a href="https://github.com/JMRI/JMRI/pull/1548">been improved</a>.    
+            <li>The POSIX (Mac and Linux) launcher script has
+                <a href="https://github.com/JMRI/JMRI/pull/1548">been improved</a>.
                 It provides much more flexibility for adding extra .jar files and setting options.
-                The algorithm for how much memory the program uses has also been improved.</a>  
+                The algorithm for how much memory the program uses has also been improved.</a>
             <li>Egbert Broerse updated the French translation.</li>
             <li>Added startup action to allow a pause for up to five minutes in processing startup items.
             (<a href="https://github.com/JMRI/JMRI/pull/1499">#1499</a>)</li>
@@ -269,7 +286,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Sonnys Hansen updated the Danish translation.</li>
             <li>Many structural updates to the code as part of the new-series cleanup process.
                 If you have your own program based on JMRI, please check for newly-deprecated references.</li>
-            <li>Some semi-automatic and manual cleanup of the HTML in the help files.  
+            <li>Some semi-automatic and manual cleanup of the HTML in the help files.
                 If you notice any broken formatting, please report it. Thanks. </li>
         </ul>
 
