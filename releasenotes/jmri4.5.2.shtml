@@ -89,6 +89,12 @@ from
       <li><em>El Capitan only:</em> Restart your Mac.</li>
     </ol>
   </li>
+  <li>Support for directly executing AppleScript within JMRI has been removed
+    due to changes in macOS and Java outside our control. If you require the
+    ability to use AppleScript, you may be able to add this capability on your
+    own by visiting <a href="https://rhwood.github.io/applescript">JMRI
+      AppleScript Support</a>, but please be aware that this may not work
+    on upcoming releases of macOS or Java.</li>
 </ul>
 
 <h3>Older warnings</h3>
