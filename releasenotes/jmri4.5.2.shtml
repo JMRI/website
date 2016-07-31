@@ -358,23 +358,29 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Dispatcher</h4>
         <ul>
-            <li>Jay Jantzen provided some improvements to the Dispatcher</li>
+            <li>Jay Jantzen provided some improvements to Dispatcher
+                  (<a href="https://github.com/JMRI/JMRI/pull/1652">#1652</a>)</li>
+            <li>Steve Todd added a Restart feature for AutoActiveTrains
+                  (<a href="https://github.com/JMRI/JMRI/pull/1707">#1707</a>)</li>
         </ul>
 
     <h4>Layout Editor</h4>
         <ul>
-            <li><li>
+            <li>Steve Todd updated the Section code to set blocks' values instead of just memories,
+                  needed when the new BlockContentIcons are used instead of memoryIcons.
+                  (<a href="https://github.com/JMRI/JMRI/pull/1663">#1663</a>)</li>
          </ul>
 
     <h4>Logix</h4>
         <ul>
-            <li>Steve Todd updated the Section code to set blocks' values instead of just memories,
-            needed when the new BlockContentIcons are used instead of memoryIcons.</li>
+            <li><li>
         </ul>
 
    <h4>Operations</h4>
    <ul>
-    <li></li>
+    <li>Improvements were made to the Conductor and Yardmaster windows.</li>
+    <li>Improved the RWE feature when the car's load is removed and the car is already at the RWE
+     address, the program will not set the RWE address as the final destination.</li>
    </ul>
 
    <h4>Panel Editors</h4>
@@ -437,7 +443,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             used to find and connect to resources on the Internet (e.g. to allow 
             WiThrottle and Engine Driver to find JMRI) was updated to 
             <a href="https://github.com/jmdns/jmdns/releases/tag/jmdns-3.5.0">jmDNS version 3.5.0</a>.<li>
-            <li>Fixed issue preventing JMRI from detecting a JRE on OS X (<a href="https://github.com/JMRI/JMRI/pull/1679">#1679</a>).</li>
+            <li>Fixed an issue preventing JMRI from detecting a JRE on OS X (<a href="https://github.com/JMRI/JMRI/pull/1679">#1679</a>).</li>
+            <li>Fixed an issue preventing the JMRI launcher on Linux or OS X from correctly passing Java System Properties to JMRI (<a href="https://github.com/JMRI/JMRI/pull/1692">#1692</a>).</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
