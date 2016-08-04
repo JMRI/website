@@ -360,15 +360,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>Jay Jantzen provided some improvements to Dispatcher
                   (<a href="https://github.com/JMRI/JMRI/pull/1652">#1652</a>)</li>
-            <li>Steve Todd added a Restart feature for AutoActiveTrains
+            <li>New Restart feature for AutoActiveTrains.
                   (<a href="https://github.com/JMRI/JMRI/pull/1707">#1707</a>)</li>
-            <li>Steve Todd added a new Simulator Script for Dispatcher's AutoActiveTrains.
+            <li>New Simulator Script for AutoActiveTrains.
                   (<a href="https://github.com/JMRI/JMRI/pull/1726">#1726</a>)</li>
+            <li>New Actions to Hold and Release specified signal.
+                  (<a href="https://github.com/JMRI/JMRI/pull/1735">#1735</a>)</li>
         </ul>
 
     <h4>Layout Editor</h4>
         <ul>
-            <li>Steve Todd updated the Section code to set blocks' values instead of just memories,
+            <li>Updated the Section code to set blocks' values instead of just memories,
                   needed when the new BlockContentIcons are used instead of memoryIcons.
                   (<a href="https://github.com/JMRI/JMRI/pull/1663">#1663</a>)</li>
          </ul>
