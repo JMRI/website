@@ -267,9 +267,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
         <h5>ESU</h5>
-        <p>Dave Heap made the following changes:</p>
             <ul>
-                <li></li>
+                <li>Added ESU Digital LED lighting strip with integrated Digital decoder (<a href="https://github.com/JMRI/JMRI/pull/1724">#1742</a>)</li>
             </ul>
 
         <h5>Hornby</h5>
@@ -449,6 +448,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <a href="https://github.com/jmdns/jmdns/releases/tag/jmdns-3.5.0">jmDNS version 3.5.0</a>.<li>
             <li>Fixed an issue preventing JMRI from detecting a JRE on OS X (<a href="https://github.com/JMRI/JMRI/pull/1679">#1679</a>).</li>
             <li>Fixed an issue preventing the JMRI launcher on Linux or OS X from correctly passing Java System Properties to JMRI (<a href="https://github.com/JMRI/JMRI/pull/1692">#1692</a>).</li>
+            <li>It is now possible to use portable paths in jmri.jmrit.Sound when using that class from a script (<a href="https://github.com/JMRI/JMRI/pull/1738">#1738</a>).</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
