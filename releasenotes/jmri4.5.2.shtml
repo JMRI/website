@@ -384,8 +384,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <h4>Operations</h4>
    <ul>
     <li>Improvements were made to the Conductor and Yardmaster windows.</li>
-    <li>Improved the RWE feature when the car's load is removed and the car is already at the RWE
-     address, the program will not set the RWE address as the final destination.</li>
+    <li>Improved the RWE feature when the car's load is removed and the car is already at the
+     RWE address, the program will not set the RWE address as the final destination.</li>
+    <li>Fixed a bug where the RFID tag selected wouldn't save from the car and loco edit windows.
+    <li>New feature for RFID users, the Cars and Locomotives windows now show the last
+     "Reported Location" and "Reported Date" when passing a reader.
    </ul>
 
    <h4>Panel Editors</h4>
