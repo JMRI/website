@@ -26,8 +26,8 @@
       Release Notes for JMRI 4.3.8 release
       </h2>
 
-    <p>Date: mmm dd, 2016</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: June 19, 2016</p>
+    <p>From: Matthew Harris</p>
     <p>Subject: Test version 4.3.8 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
@@ -54,7 +54,9 @@ see our
 
 <h3>Known problems with this release</h3>
 
-None at release time.
+<ul>
+    <li>None at release time</li>
+</ul>
 
 <!--
 If any of those effect you, please either wait for
@@ -69,7 +71,7 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li></li>
+    <li>None at release time</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -161,37 +163,37 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-<!--
+
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.dmg/download</a><br/>
-    sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.8-R13791e6.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.8-R13791e6.dmg/download</a><br/>
+    sha256: e4acfe7635419162943505c8bbddcfcafc7c6b3c1d08a299a9e26322ac0949f8</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.exe/download</a><br/>
-    sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.8-R13791e6.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.8-R13791e6.exe/download</a><br/>
+    sha256: c9cdc7f80fbadae9cfe6c8859bf1b3023b19fe57c818a3a92ba3eb3ec2ed711c</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download</a><br/>
-    sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
--->
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.8-R13791e6.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.8-R13791e6.tgz/download</a><br/>
+    sha256: 6f24e234e2a9b276ed713588a0ab0738684b111b299eeb52828114d0533311ad</p>
+
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.7/">CI project page</a>.
- -->
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.8/">CI project page</a>.
 
 
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
 
 <h3>Changes since <a href="jmri4.3.7.shtml">test release 4.3.7</a>:</h3>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.3.8+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
-
+<!--
     <h4>Hardware Support</h4>
 
         <p></p>
@@ -255,9 +257,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
     <h4>New / Updated decoder definitions</h4>
-      <ul>
+<!--      <ul>
         <li></li>
      </ul>
 
@@ -331,17 +333,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>SoundTraxx</h5>
             <ul>
-                <li></li>
+                <li>Alain Le Marchand corrected the Econami Steam definitions (<a href="https://github.com/JMRI/JMRI/pull/1496">#1496</a>)</li>
             </ul>
 
         <h5>TCS</h5>
             <ul>
-                <li></li>
+                <li>Michael Mosher updated the WOW Diesel and Steam definitions for V4 decoders (<a href="https://github.com/JMRI/JMRI/pull/1510">#1510</a>)</li>
             </ul>
-
+<!--
         <h5>Tehnologistic (train-O-matic)</h5>
             <ul>
                 <li></li>
@@ -366,8 +368,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
-
+-->
+<!--
    <h4>Dispatcher</h4>
         <ul>
             <li></li>
@@ -382,22 +384,22 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
    <h4>Operations</h4>
        <ul>
-           <li></li>
+           <li>Daniel Boudreau fixed a bug where a random schedule was being ignored (<a href="https://github.com/JMRI/JMRI/pull/1524">#1524</a>)</li>
        </ul>
-
+<!--
     <h4>Panel Editors</h4>
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Preferences</h4>
         <ul>
-            <li></li>
+            <li>Randall Wood fixed a problem when attempting to read profiles created after version 4.3.2 (<a href="https://github.com/JMRI/JMRI/pull/1523">#1523</a>)</li>
         </ul>
-
+<!--
    <h4>Roster</h4>
         <ul>
             <li></li>
@@ -433,10 +435,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>Randall Wood fixed issues when reordering startup items (<a href="https://github.com/JMRI/JMRI/pull/1494">#1494</a>)</li>
+            <li>Randall Wood cleaned up some excessive console logging during startup (<a href="https://github.com/JMRI/JMRI/pull/1508">#1508</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
