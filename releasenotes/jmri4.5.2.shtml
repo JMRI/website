@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.5.2 release
       </h2>
 
-    <p>Date: mmm dd, 2016</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: August 15, 2016</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test version 4.5.2 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h3>Notes:</h3>
 
@@ -138,31 +140,30 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-<!--
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.dmg/download</a><br/>
-    sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.dmg/download</a><br/>
+    sha256: 300058970f474bf77279dc0cffc11dfce83f60a48f8fd4bec033f8ac154f182c</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.exe/download</a><br/>
-    sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.exe/download</a><br/>
+    sha256: 03f9c20d74cba3d7f8c880444cd5c5521efabd1cdb7297a980edc953aa12c2e2</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download</a><br/>
-    sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
--->
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.tgz/download</a><br/>
+    sha256: c9f03aa4228be166d8678b767b0ffd8d4efbce9934b54589f9b39b49712468bd</p>
+
 <!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.7/">CI project page</a>.
  -->
 
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
 
 <h3>Changes since <a href="jmri4.5.1.shtml">test release 4.5.1</a>:</h3>
 
@@ -173,6 +174,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <p></p>
 
+<!-- 
         <h5>C/MRI</h5>
             <ul>
                 <li></li>
@@ -187,7 +189,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
+ -->
 
+<!-- 
         <h5>JMRI Simple Server/JMRI Client</h5>
             <ul>
                 <li></li>
@@ -202,15 +206,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li><li>
             </ul>
+ -->
 
         <h5><a href="http://openlcb.org">OpenLCB</a></h5>
             <ul>
                 <li>Balazs Racz updated the
                 <a href="http://old.openlcb.org/trunk/prototypes/java/index.html">OpenLCB lib</a>
                 and associated JMRI code to
-                <a href="https://sourceforge.net/p/openlcb/svn/4213/">OpenLCB version 0.7</a>.<li>
+                <a href="https://sourceforge.net/p/openlcb/svn/4213/">OpenLCB version 0.7</a>.</li>
             </ul>
 
+<!-- 
         <h5>RFID</h5>
             <ul>
                 <li></li>
@@ -240,12 +246,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
+ -->
 
     <h4>New / Updated decoder definitions</h4>
+<!-- 
       <ul>
         <li></li>
      </ul>
+ -->
 
+<!-- 
         <h5>BLI</h5>
             <ul>
                 <li></li>
@@ -265,12 +275,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
+ -->
 
         <h5>ESU</h5>
             <ul>
                 <li>Added ESU Digital LED lighting strip with integrated Digital decoder (<a href="https://github.com/JMRI/JMRI/pull/1724">#1742</a>)</li>
             </ul>
 
+<!-- 
         <h5>Hornby</h5>
             <ul>
                 <li></li>
@@ -300,7 +312,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+ -->
+ 
+<!-- 
         <h5>Norsk Modelljernbane (NJM)</h5>
             <ul>
                 <li></li>
@@ -315,6 +329,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
+ -->
 
         <h5>SoundTraxx</h5>
             <ul>
@@ -326,9 +341,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>TCS</h5>
             <ul>
-                <li></li>
+                <li>Michael Mosher updated some TCS Steam decoder definitions</li>
             </ul>
 
+<!-- 
         <h5>Tehnologistic (train-O-matic)</h5>
             <ul>
                 <li></li>
@@ -343,16 +359,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
+ -->
 
         <h5>ZIMO</h5>
             <ul>
-                <li></a></li>
+                <li>Mark Waters updated the Zimo MX644 and MX600 definitions</li>
             </ul>
 
+<!-- 
         <h5>Miscellaneous</h5>
             <ul>
                 <li></li>
             </ul>
+ -->
 
 
    <h4>Dispatcher</h4>
@@ -376,10 +395,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                   (<a href="https://github.com/JMRI/JMRI/pull/1663">#1663</a>)</li>
          </ul>
 
+<!-- 
     <h4>Logix</h4>
         <ul>
             <li><li>
         </ul>
+ -->
 
    <h4>Operations</h4>
    <ul>
@@ -391,6 +412,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
      "Reported Location" and "Reported Date" when passing a reader.
    </ul>
 
+<!-- 
    <h4>Panel Editors</h4>
         <ul>
             <li></li>
@@ -410,6 +432,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
+ -->
 
     <h4>Scripting</h4>
         <ul>
@@ -425,15 +448,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Greg McCartney provided a new set based on the B&O 1980 rules.</li>
             </ul>
 
+<!-- 
         <h5>Signal Mast Editor</h5>
             <ul>
                 <li></li>
             </ul>
+ -->
 
+<!-- 
    <h4>Warrants</h4>
         <ul>
             <li></li>
         </ul>
+ -->
 
    <h4>Web Access</h4>
         <ul>
@@ -451,9 +478,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             used to find and connect to resources on the Internet (e.g. to allow 
             WiThrottle and Engine Driver to find JMRI) was updated to 
             <a href="https://github.com/jmdns/jmdns/releases/tag/jmdns-3.5.0">jmDNS version 3.5.0</a>.<li>
+            <li>Sonnys Hansen improved the Danish translation</li>
+            <li>Fixed problems with the formatting of many help pages
             <li>Fixed an issue preventing JMRI from detecting a JRE on OS X (<a href="https://github.com/JMRI/JMRI/pull/1679">#1679</a>).</li>
             <li>Fixed an issue preventing the JMRI launcher on Linux or OS X from correctly passing Java System Properties to JMRI (<a href="https://github.com/JMRI/JMRI/pull/1692">#1692</a>).</li>
             <li>It is now possible to use portable paths in jmri.jmrit.Sound when using that class from a script (<a href="https://github.com/JMRI/JMRI/pull/1738">#1738</a>).</li>
+            <li>Tables now save their settings much more efficiently as they're closed, which should make closing a table window
+                much quicker on some computers</li>
+            <li>Fixes to several crashes associated with starting up with older preferences, changing preferences (particularly connections)
+                and when configured hardware isn't present at startup.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
