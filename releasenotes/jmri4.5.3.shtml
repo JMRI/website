@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.5.2
+ JMRI: Release Notes for 4.5.3
  </title>
     <meta content="Bob Jacobsen" name="Author">
     <meta name="keywords" content="java model railroad JMRI 4.5.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
@@ -23,16 +23,14 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 4.5.2 release
+      Release Notes for JMRI 4.5.3 release
       </h2>
 
-    <p>Date: August 15, 2016</p>
-    <p>From: Bob Jacobsen</p>
-    <p>Subject: Test version 4.5.2 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: mmm dd, 2016</p>
+    <p>From: (pumpkin)</p>
+    <p>Subject: Test version 4.5.3 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h3>Notes:</h3>
 
@@ -71,7 +69,14 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-  <li>This and future versions of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+</ul>
+
+<h3>Older warnings</h3>
+
+See the <a href="jmri4.4.shtml#warnings">JMRI 4.4 release note</a> for warnings predating the 4.4 development series.
+These may be relevant to you if you're updating from an earlier version.
+
+<p><em>(Since JMRI 4.5.2)</em>This and future versions of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
     <p>To remove Java SE 6 from OS X, follow these steps (these steps assume
@@ -90,19 +95,13 @@ from
         </li>
       <li><em>El Capitan only:</em> Restart your Mac.</li>
     </ol>
-  </li>
-  <li>Support for directly executing AppleScript within JMRI has been removed
+  
+<p><em>(Since JMRI 4.5.2)</em>Support for directly executing AppleScript within JMRI has been removed
     due to changes in macOS and Java outside our control. If you require the
     ability to use AppleScript, you may be able to add this capability on your
     own by visiting <a href="https://rhwood.github.io/applescript">JMRI
       AppleScript Support</a>, but please be aware that this may not work
-    on upcoming releases of macOS or Java.</li>
-</ul>
-
-<h3>Older warnings</h3>
-
-See the <a href="jmri4.4.shtml#warnings">JMRI 4.4 release note</a> for warnings predating the 4.4 development series.
-These may be relevant to you if you're updating from an earlier version.
+    on upcoming releases of macOS or Java.
 
 <p><em>(Since JMRI 4.5.1)</em>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
 
@@ -140,41 +139,41 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
+<!--
 <p>Please use these links for downloading:</p>
 <p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.dmg/download</a><br/>
-    sha256: 300058970f474bf77279dc0cffc11dfce83f60a48f8fd4bec033f8ac154f182c</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.dmg/download</a><br/>
+    sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.exe/download</a><br/>
-    sha256: 03f9c20d74cba3d7f8c880444cd5c5521efabd1cdb7297a980edc953aa12c2e2</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.exe/download</a><br/>
+    sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.tgz/download</a><br/>
-    sha256: c9f03aa4228be166d8678b767b0ffd8d4efbce9934b54589f9b39b49712468bd</p>
-
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-r29773.tgz/download</a><br/>
+    sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
+-->
 <!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.7/">CI project page</a>.
  -->
 
-<!--
+
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
--->
 
-<h3>Changes since <a href="jmri4.5.1.shtml">test release 4.5.1</a>:</h3>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.2+">list of included commits</a> is available from our
+<h3>Changes since <a href="jmri4.5.2.shtml">test release 4.5.2</a>:</h3>
+
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.3+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h4>Hardware Support</h4>
 
         <p></p>
 
-<!-- 
         <h5>C/MRI</h5>
             <ul>
                 <li></li>
@@ -189,9 +188,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
- -->
 
-<!-- 
         <h5>JMRI Simple Server/JMRI Client</h5>
             <ul>
                 <li></li>
@@ -206,17 +203,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li><li>
             </ul>
- -->
 
         <h5><a href="http://openlcb.org">OpenLCB</a></h5>
             <ul>
-                <li>Balazs Racz updated the
-                <a href="http://old.openlcb.org/trunk/prototypes/java/index.html">OpenLCB lib</a>
-                and associated JMRI code to
-                <a href="https://sourceforge.net/p/openlcb/svn/4213/">OpenLCB version 0.7</a>.</li>
+                <li></li>
             </ul>
 
-<!-- 
         <h5>RFID</h5>
             <ul>
                 <li></li>
@@ -246,16 +238,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
- -->
 
     <h4>New / Updated decoder definitions</h4>
-<!-- 
       <ul>
         <li></li>
      </ul>
- -->
 
-<!-- 
         <h5>BLI</h5>
             <ul>
                 <li></li>
@@ -275,14 +263,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
- -->
 
         <h5>ESU</h5>
             <ul>
-                <li>Added ESU Digital LED lighting strip with integrated Digital decoder (<a href="https://github.com/JMRI/JMRI/pull/1724">#1742</a>)</li>
+                <li></li>
             </ul>
 
-<!-- 
         <h5>Hornby</h5>
             <ul>
                 <li></li>
@@ -312,9 +298,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
- -->
- 
-<!-- 
+
         <h5>Norsk Modelljernbane (NJM)</h5>
             <ul>
                 <li></li>
@@ -329,22 +313,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
- -->
 
         <h5>SoundTraxx</h5>
             <ul>
-                <li>Michael Mosher fixed sound selection for TSU-2200 and TSU-PNP models
-                    (missing Bell and Prime Mover selections)
-                    and fixed Lighting effect direction selection: CV57 & 58 bit 6 and 7
-                    set to 1 permanently though not being in use.</li>
+                <li></li>
             </ul>
 
         <h5>TCS</h5>
             <ul>
-                <li>Michael Mosher updated some TCS Steam decoder definitions</li>
+                <li></li>
             </ul>
 
-<!-- 
         <h5>Tehnologistic (train-O-matic)</h5>
             <ul>
                 <li></li>
@@ -359,60 +338,38 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
- -->
 
         <h5>ZIMO</h5>
             <ul>
-                <li>Mark Waters updated the Zimo MX644 and MX600 definitions</li>
+                <li></a></li>
             </ul>
 
-<!-- 
         <h5>Miscellaneous</h5>
             <ul>
                 <li></li>
             </ul>
- -->
 
 
    <h4>Dispatcher</h4>
         <ul>
-            <li>Jay Jantzen provided some improvements to Dispatcher
-                  (<a href="https://github.com/JMRI/JMRI/pull/1652">#1652</a>)</li>
-            <li>New Restart feature for AutoActiveTrains.
-                  (<a href="https://github.com/JMRI/JMRI/pull/1707">#1707</a>)</li>
-            <li>New Simulator Script for AutoActiveTrains.
-                  (<a href="https://github.com/JMRI/JMRI/pull/1726">#1726</a>)</li>
-            <li>New Actions to Hold and Release specified signal.
-                  (<a href="https://github.com/JMRI/JMRI/pull/1735">#1735</a>)</li>
-            <li>New flag to reload train(s) at Dispatcher startup.
-                  (<a href="https://github.com/JMRI/JMRI/pull/1768">#1768</a>)</li>
+             <li></li>
         </ul>
 
     <h4>Layout Editor</h4>
         <ul>
-            <li>Updated the Section code to set blocks' values instead of just memories,
-                  needed when the new BlockContentIcons are used instead of memoryIcons.
-                  (<a href="https://github.com/JMRI/JMRI/pull/1663">#1663</a>)</li>
+            <li></li>
          </ul>
 
-<!-- 
     <h4>Logix</h4>
         <ul>
             <li><li>
         </ul>
- -->
 
    <h4>Operations</h4>
-   <ul>
-    <li>Improvements were made to the Conductor and Yardmaster windows.</li>
-    <li>Improved the RWE feature when the car's load is removed and the car is already at the
-     RWE address, the program will not set the RWE address as the final destination.</li>
-    <li>Fixed a bug where the RFID tag selected wouldn't save from the car and loco edit windows.
-    <li>New feature for RFID users, the Cars and Locomotives windows now show the last
-     "Reported Location" and "Reported Date" when passing a reader.
-   </ul>
+        <ul>
+            <li></li>
+        </ul>
 
-<!-- 
    <h4>Panel Editors</h4>
         <ul>
             <li></li>
@@ -432,61 +389,36 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
- -->
 
     <h4>Scripting</h4>
         <ul>
-            <li>Several sample scripts received necessary updates to work with the current version of the
-            JMRI code: AllocateRosterEntryToBlock.py, AutoDispatcher2.py, LocoSelectorDropBox.py, RobotThrottle2.py,
-            RobotThrottle3.py, RosterCreateExample.py, RosterCsvExport.py, RosterLoop.py, RosterMigrate.py, RosterMigrate2.py,
-            SampleWriteRosterAttribute.py, Zimo_function_programmer.py, Zimo_pseudo_programmer.py</li>
+            <li></li>
         </ul>
 
     <h4>Signals</h4>
         <h5>Signal Systems</h5>
             <ul>
-                <li>Greg McCartney provided a new set based on the B&O 1980 rules.</li>
+                <li></li>
             </ul>
 
-<!-- 
         <h5>Signal Mast Editor</h5>
             <ul>
                 <li></li>
             </ul>
- -->
 
-<!-- 
    <h4>Warrants</h4>
         <ul>
             <li></li>
         </ul>
- -->
 
    <h4>Web Access</h4>
         <ul>
-            <li>Client-side layouteditor panels now show actual track color, not just occupied.
-                (<a href="https://github.com/JMRI/JMRI/pull/1641">#1641</a>)</li>
-            <li>Occupancy-based coloring for drawn track has been turned off
-                (<a href="https://github.com/JMRI/JMRI/pull/1642">#1642</a>)</li>
+            <li></li>
         </ul>
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li>Fixed two spurious SRCP messages at startup.</li>
-            <li>The 
-            <a href="https://github.com/jmdns/jmdns">jmDNS library</a>
-            used to find and connect to resources on the Internet (e.g. to allow 
-            WiThrottle and Engine Driver to find JMRI) was updated to 
-            <a href="https://github.com/jmdns/jmdns/releases/tag/jmdns-3.5.0">jmDNS version 3.5.0</a>.<li>
-            <li>Sonnys Hansen improved the Danish translation</li>
-            <li>Fixed problems with the formatting of many help pages
-            <li>Fixed an issue preventing JMRI from detecting a JRE on OS X (<a href="https://github.com/JMRI/JMRI/pull/1679">#1679</a>).</li>
-            <li>Fixed an issue preventing the JMRI launcher on Linux or OS X from correctly passing Java System Properties to JMRI (<a href="https://github.com/JMRI/JMRI/pull/1692">#1692</a>).</li>
-            <li>It is now possible to use portable paths in jmri.jmrit.Sound when using that class from a script (<a href="https://github.com/JMRI/JMRI/pull/1738">#1738</a>).</li>
-            <li>Tables now save their settings much more efficiently as they're closed, which should make closing a table window
-                much quicker on some computers</li>
-            <li>Fixes to several crashes associated with starting up with older preferences, changing preferences (particularly connections)
-                and when configured hardware isn't present at startup.</li>
+            <li></li>
         </ul>
 
    <!--#include virtual="/Footer" -->
