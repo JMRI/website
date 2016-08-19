@@ -413,12 +413,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Web Access</h4>
         <ul>
-            <li></li>
+            <li>Improvements to the handling of SignalHeads and SignalMasts (<a href="https://github.com/JMRI/JMRI/pull/1825">#1825</a>, <a href="https://github.com/JMRI/JMRI/pull/1830">#1830</a>).</li>
         </ul>
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>Fix issues on OS X preventing use of JMRI unless a JDK is installed (<a href="https://github.com/JMRI/JMRI/pull/1801">#1801</a>).</li>
+            <li>Fix issues attempting to play sounds from non-existant files (<a href="https://github.com/JMRI/JMRI/pull/1808">#1808</a>).</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
