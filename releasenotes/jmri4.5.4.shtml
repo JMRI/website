@@ -420,7 +420,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>The InstanceManager now sends a notification on every change of a default object for a class,
+            instead of just the ProgrammerManager. (<a href="https://github.com/JMRI/JMRI/pull/1934">#1934</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
