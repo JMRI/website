@@ -394,7 +394,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Scripting</h4>
         <ul>
-            <li></li>
+            <li>Scripts now have access always available "addressedProgrammers" and "globalProgrammers" objects
+            that provide replacements for the deprecated "programmers" object. Use of the "programmers" object will
+            log a deprecation warning. (<a href="https://github.com/JMRI/JMRI/pull/1932">#1932</a>)</li>
         </ul>
 
     <h4>Signals</h4>
@@ -422,6 +424,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>The InstanceManager now sends a notification on every change of a default object for a class,
             instead of just the ProgrammerManager. (<a href="https://github.com/JMRI/JMRI/pull/1934">#1934</a>)</li>
+            <li>A Service Provider Interface (SPI) is now available for thrid party developers to directly add items
+            to the list of Startup Actions and Startup Buttons. (<a href="https://github.com/JMRI/JMRI/pull/1936">#1936</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
