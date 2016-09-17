@@ -426,6 +426,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             instead of just the ProgrammerManager. (<a href="https://github.com/JMRI/JMRI/pull/1934">#1934</a>)</li>
             <li>A Service Provider Interface (SPI) is now available for thrid party developers to directly add items
             to the list of Startup Actions and Startup Buttons. (<a href="https://github.com/JMRI/JMRI/pull/1936">#1936</a>)</li>
+            <li>Fixed an issue where JMRI applications would silently fail to start if a Java Runtime Environment was not installed
+            on macOS instead of notifying the user. (<a href="https://github.com/JMRI/JMRI/pull/1943">#1943</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
