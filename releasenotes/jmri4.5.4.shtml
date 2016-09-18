@@ -368,9 +368,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
    <h4>Operations</h4>
-        <ul>
-            <li></li>
-        </ul>
+   <ul>
+    <li>All tables in operations now save immediately when their size or order is changed.</li>
+    <li>The car blocking for passenger cars no longer disappears after pressing "Save" in the
+     "Edit Car" window.
+     <li>Make some improvements to the train tool "Show Car Types Serviced".</li>
+     <li>The train description will no longer write across the top of a Manifest header.</li>
+   </ul>
 
    <h4>Panel Editors</h4>
         <ul>
