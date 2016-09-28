@@ -186,7 +186,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Digitrax</h5>
             <ul>
-                <li></li>
+                <li>DCS240 OpSw31 description corrected in LocoNet Command Station Configuration tool where English language has been used.  Where the tool provides non-English language text, the translation may not have been completed.
+		<p>When DCS240 OpSw31 is "C" (closed), "metering of switch messages" is disabled, and LocoNet switch messages are sent to the DCC track signal as quickly as possible.  When DCS240 OpSw31 is "T" (thrown), the command station may slowly send switch request messages to the DCC track signal.
+		</li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
