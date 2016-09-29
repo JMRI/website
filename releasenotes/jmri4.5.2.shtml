@@ -280,7 +280,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>ESU</h5>
             <ul>
-                <li>Added ESU Digital LED lighting strip with integrated Digital decoder (<a href="https://github.com/JMRI/JMRI/pull/1724">#1742</a>)</li>
+                <li>Added ESU Digital LED lighting strip with integrated Digital decoder
+                (<a href="https://github.com/JMRI/JMRI/pull/1724">#1742</a>)</li>
             </ul>
 
 <!-- 
@@ -336,7 +337,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>Michael Mosher fixed sound selection for TSU-2200 and TSU-PNP models
                     (missing Bell and Prime Mover selections)
-                    and fixed Lighting effect direction selection: CV57 & 58 bit 6 and 7
+                    and fixed Lighting effect direction selection: CV57 &amp; 58 bit 6 and 7
                     set to 1 permanently though not being in use.</li>
             </ul>
 
@@ -446,7 +447,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Signals</h4>
         <h5>Signal Systems</h5>
             <ul>
-                <li>Greg McCartney provided a new set based on the B&O 1980 rules.</li>
+                <li>Greg McCartney provided a new set based on the B&amp;O 1980 rules.</li>
             </ul>
 
 <!-- 
@@ -463,6 +464,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
  -->
 
+<h4>Tools</h4>
+    <h5>Tables</h5>
+    <h6>Routes (Logix Routes)</h6>
+        <ul>
+            <li>Egbert Broerse expanded the i18n (internationalization) of the LRoutes > Add LRoute pane
+            and fixed running Logix Conditionals under a non-English locale. Opening these after switching
+            locale may cause errors. Manually correct and save them to fix this for now.
+            (<a href="https://github.com/JMRI/JMRI/pull/1682">#1682</a>)</li>
+        </ul>
+        
    <h4>Web Access</h4>
         <ul>
             <li>Client-side layouteditor panels now show actual track color, not just occupied.
