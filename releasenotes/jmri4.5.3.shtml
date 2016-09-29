@@ -177,6 +177,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Miscellaneous</h4>
         <ul>
             <li>Fix issues on OS X preventing use of JMRI unless a JDK is installed (<a href="https://github.com/JMRI/JMRI/pull/1801">#1801</a>).</li>
+	    <li>Fix issues preventing JMRI from running on macOS with JDK 9 (<a href="https://github.com/JMRI/JMRI/pull/1453">#1453</a>).</li>
             <li>Fix issues attempting to play sounds from non-existant files (<a href="https://github.com/JMRI/JMRI/pull/1808">#1808</a>).</li>
         </ul>
 
