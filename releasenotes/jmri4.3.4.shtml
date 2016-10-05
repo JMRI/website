@@ -54,7 +54,8 @@ see our
 
 <h3>Known problems with this release</h3>
 
-None at release time.
+<p>If a DCC++ system connection is configured, but not connected to the computer where expected by JMRI, the JMRI application
+can hang at application startup. This is fixed in JMRI 4.3.5.</p>
 
 <!--
 If any of those effect you, please either wait for
