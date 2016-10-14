@@ -174,7 +174,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Hardware Support</h4>
 
         <p></p>
-
+<!--
         <h5>C/MRI</h5>
             <ul>
                 <li></li>
@@ -194,13 +194,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>LocoNet</h5>
             <ul>
                 <li>Send direction and function changes even when JMRI thinks the value is unchanged.
                 (<a href="https://github.com/JMRI/JMRI/pull/1894">#1894</a>)</li>
             </ul>
-
+<!--
         <h5>NCE</h5>
             <ul>
                 <li><li>
@@ -215,13 +215,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
         <h5>Roco z21/Z21</h5>
             <ul>
                 <li>Added Support for Z21 RailCom messaeges through the reporter interface.</li>
-                <li>Added Support to the Z21 Simulator to generate railcom messages based on the last 19 throttle messages sent to the simulator.  This mimics the behavior of the command station, which sends at most 19 addresses back at a time.</li>
+                <li>Added Support to the Z21 Simulator to generate railcom messages based on the last 19 throttle messages sent to the simulator.
+                This mimics the behavior of the command station, which sends at most 19 addresses back at a time.</li>
             </ul>
-
+<!--
         <h5>SPROG</h5>
             <ul>
                 <li></li>
@@ -367,7 +368,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li><li>
         </ul>
-
+-->
    <h4>Operations</h4>
    <ul>
     <li>All tables in operations now save immediately when their size or order is changed.</li>
@@ -379,9 +380,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+            <li>Panel Editor, Control Panel Editor, Layout Editor interfaces and the Add Entry-Exit (NX) Pairs
+            panel now have full i18n and a German translation.<br>
+            Translators please review the new jmrit.display bundle keys.
+            (<a href="https://github.com/JMRI/JMRI/pull/1889">#1889</a>)</li>
         </ul>
-
+<!--
     <h4>Preferences</h4>
         <ul>
             <li></li>
@@ -396,14 +400,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Scripting</h4>
         <ul>
             <li>Scripts now have access always available "addressedProgrammers" and "globalProgrammers" objects
             that provide replacements for the deprecated "programmers" object. Use of the "programmers" object will
             log a deprecation warning. (<a href="https://github.com/JMRI/JMRI/pull/1932">#1932</a>)</li>
         </ul>
-
+<!--
     <h4>Signals</h4>
         <h5>Signal Systems</h5>
             <ul>
@@ -424,7 +428,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Miscellaneous</h4>
         <ul>
             <li>The InstanceManager now sends a notification on every change of a default object for a class,
@@ -433,6 +437,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             to the list of Startup Actions and Startup Buttons. (<a href="https://github.com/JMRI/JMRI/pull/1936">#1936</a>)</li>
             <li>Fixed an issue where JMRI applications would silently fail to start if a Java Runtime Environment was not installed
             on macOS instead of notifying the user. (<a href="https://github.com/JMRI/JMRI/pull/1943">#1943</a>)</li>
+            <li>To ease translations, many <a href="http://jmri.sourceforge.net/help/en/html/doc/Technical/I8N.shtml#commonkeys">
+            commonly used property keys have been grouped</a> so they need to be translated only once to be available throughout JMRI.
+            Translators, please update your repository and review the application for missed items.
+            (<a href="https://github.com/JMRI/JMRI/pull/1828">#1828</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
