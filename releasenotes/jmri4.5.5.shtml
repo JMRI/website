@@ -53,9 +53,12 @@ see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
 <h3>Known problems with this release</h3>
-
-None at release time.
-
+<!-- None at release time. -->
+<ul>
+<li>It's not possible to set Aspects directly from the Signal Mast Table.
+Setting signals via Logix or Panels is not affected.</li>
+</ul>
+<p>See the complete list of current <a href="https://github.com/JMRI/JMRI/issues">Issues</a>.</p>
 <!--
 If any of those effect you, please either wait for
 <a href="jmri4.5.6.shtml">JMRI 4.5.6</a>, due out shortly after this one,
@@ -246,7 +249,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-    <h4>New / Updated decoder definitions</h4>
+	<h4>New / Updated decoder definitions</h4>
       <ul>
         <li></li>
      </ul>
@@ -357,32 +360,39 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
 
-   <h4>Dispatcher</h4>
+	<h4>Dispatcher</h4>
         <ul>
              <li></li>
         </ul>
 
-    <h4>Layout Editor</h4>
+	<h4>Layout Editor</h4>
         <ul>
             <li></li>
          </ul>
 
-    <h4>Logix</h4>
+	<h4>Localization</h4>
+        <ul>
+            <li>Keywords for Localization of Operations have been grouped to prevent duplicate work.
+            Translators please check your earlier work from a fresh repo.</li>
+            <li>German translation of Operations has been expanded.</li>
+        </ul>
+        
+	<h4>Logix</h4>
         <ul>
             <li><li>
         </ul>
 
-   <h4>Operations</h4>
+	<h4>Operations</h4>
         <ul>
             <li></li>
         </ul>
 
-   <h4>Panel Editors</h4>
+	<h4>Panel Editors</h4>
         <ul>
             <li>Fix errors preventing editing of sensor state labels (<a href="https://github.com/JMRI/JMRI/issues/2028">#2028</a>).</li>
         </ul>
 
-   <h4>Control Panel Editor Palette</h4>
+	<h4>Control Panel Editor Palette</h4>
         <ul>
         <li>No longer throws cast exception when a dragged item is dropped outside of a panel.</li>
 		<li>No longer will hang when displaying a warning during a Drag and Drop.</li>
@@ -395,12 +405,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li></li>
         </ul>
 
-   <h4>Roster</h4>
+	<h4>Roster</h4>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Routes</h4>
+	<h4>Routes</h4>
         <ul>
             <li></li>
         </ul>
@@ -421,17 +431,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-   <h4>Warrants</h4>
+	<h4>Warrants</h4>
         <ul>
             <li></li>
         </ul>
 
-   <h4>Web Access</h4>
+	<h4>Web Access</h4>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Miscellaneous</h4>
+	<h4>Miscellaneous</h4>
         <ul>
             <li></li>
         </ul>
