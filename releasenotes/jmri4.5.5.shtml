@@ -382,6 +382,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Fix errors preventing editing of sensor state labels (<a href="https://github.com/JMRI/JMRI/issues/2028">#2028</a>).</li>
         </ul>
 
+   <h4>Control Panel Editor Palette</h4>
+        <ul>
+        <li>No longer throws cast exception when a dragged item is dropped outside of a panel.</li>
+		<li>No longer will hang when displaying a warning during a Drag and Drop.</li>
+	    <li>Inactive buttons removed from SignalMast panel. Panel displays icons when the mast row is selected.</li>
+	    <li>Text and item Attribute panels now show changes to margin, border, fixed width and fixed height in the preview panel</li>
+        </ul>
+
     <h4>Preferences</h4>
         <ul>
             <li></li>
