@@ -263,7 +263,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Fixed a problem occurring when a signal system references icons
                     in the local preferences directory.</li>
             </ul>
-
+        <h5>Signal Mast Drivers</h5>
+            <ul>
+                <li>Egbert Broerse added a new Signal Masts driver, the
+                <a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/beantable/SignalMastAddEdit.shtml#matrixCtl">
+                Output Matrix Mast</a>. (<a href="https://github.com/JMRI/JMRI/pull/1345">#1345</a>)</li>
+            </ul>
+            
    <h4>Web Access</h4>
         <ul>
             <li>Added Json server support for blocks and layoutblocks.
