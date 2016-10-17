@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.5.5 release
       </h2>
 
-    <p>Date: mmm dd, 2016</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: October 17, 2016</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test version 4.5.5 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h3>Notes:</h3>
 
@@ -53,25 +55,37 @@ see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
 <h3>Known problems with this release</h3>
-<!-- None at release time. -->
-<ul>
-<li>It's not possible to set Aspects directly from the Signal Mast Table.
-Setting signals via Logix or Panels is not affected.</li>
-</ul>
+
 <p>See the complete list of current <a href="https://github.com/JMRI/JMRI/issues">Issues</a>.</p>
-<!--
+
+<ul>
+<li>The TMCC throttle support does not work; it did work in 
+        <a href="jmri4.4.shtml">JMRI 4.4</a>, so please stay with that release if you use TMCC.
+<li>There may be problems dragging and dropping to and from tables if the 
+        table has been sorted or had its columns reordered.
+<li>The Signal Mast table doesn't properly show default (initial) aspects and
+		it's not possible to set Aspects directly from the Signal Mast Table.
+		Setting signals via Logix or Panels is not affected.</li>
+</ul>
+
 If any of those effect you, please either wait for
 <a href="jmri4.5.6.shtml">JMRI 4.5.6</a>, due out shortly after this one,
-or pick up a
-<a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
-from
+or stay with your current release.
+as we work toward JRMI 4.5.6, there might also be fixes available in
+<a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installers</a>
+available from
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
 
 <ul>
+    <li>Apple has released a new "Sierra" version of macOS (formerly known as OS X) which has
+        enhanced security for downloaded programs.  We're providing a new form of signed download
+        to work with this, see below.  We'd be interested to hear whether that download
+        works on older OS versions, so that we can just release this new form
+        without having to provide separate downloads.
+    </li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -79,7 +93,7 @@ from
 See the <a href="jmri4.4.shtml#warnings">JMRI 4.4 release note</a> for warnings predating the 4.4 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><em>(Since JMRI 4.5.2)</em>This and future versions of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+<p><em>(Since JMRI 4.5.2)</em> This and future versions of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
     <p>To remove Java SE 6 from OS X, follow these steps (these steps assume
@@ -99,16 +113,16 @@ These may be relevant to you if you're updating from an earlier version.
       <li><em>El Capitan only:</em> Restart your Mac.</li>
     </ol>
   
-<p><em>(Since JMRI 4.5.2)</em>Support for directly executing AppleScript within JMRI has been removed
+<p><em>(Since JMRI 4.5.2)</em> Support for directly executing AppleScript within JMRI has been removed
     due to changes in macOS and Java outside our control. If you require the
     ability to use AppleScript, you may be able to add this capability on your
     own by visiting <a href="https://rhwood.github.io/applescript">JMRI
       AppleScript Support</a>, but please be aware that this may not work
     on upcoming releases of macOS or Java.
 
-<p><em>(Since JMRI 4.5.1)</em>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
+<p><em>(Since JMRI 4.5.1)</em> LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
 
-<p><em>(Since JMRI 4.5.1)</em>Internal turnouts and sensors need to have complete, individual system names.
+<p><em>(Since JMRI 4.5.1)</em> Internal turnouts and sensors need to have complete, individual system names.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
     "IT12" is fine, but just "IT" is not. Most panel files that contain these should
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
@@ -142,25 +156,29 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-<!--
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-r29773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-r29773.dmg/download</a><br/>
-    sha256: 615c9b69e51ec9305eba5fedf66a19c093f272abafed76b9663082671c01ca18</p>
+<p>OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.dmg/download</a><br/>
+    sha256: 635094115a6227465bcd74a62e718981e4f2a170155d2fe4d954d842a8277242 </p>
+
+<p>macOS (signed version for Sierra): <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224-signed.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224-signed.dmg/download</a><br/>
+    sha256: 214f99eb75cac3bee390a103a001108a65aba51eca365cbbfa81fe8fad980a72 </p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-r29773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-r29773.exe/download</a><br/>
-    sha256: c094d60e7d8afed717b5aa7b127d38f995eb2eedbb26fb7f0c08eb7aca967ff5</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.exe/download</a><br/>
+    sha256: cdce887acb1caa8097bc8a78a8a10a9df8263b32d0632d69002edc4dacf7e885</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-r29773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-r29773.tgz/download</a><br/>
-    sha256: bba0e4516645337a23ee4aeb9fe6293fcca71ec7ace32edf85d2ebf76e4bb9ad</p>
--->
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.tgz/download</a><br/>
+    sha256: f97db9eaa8dbeb87ffa2eb7ed988c2e02c8fb7c813f2373f56528bdf17eb531a</p>
 
 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.5.5/">CI project page</a>.
+-->
 
 <!--
 <p>During development leading to the actual release, you can find test download files on the
@@ -175,33 +193,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Hardware Support</h4>
 
-        <p></p>
-
-	<h5>Bachrus Speedo</h5>
+ 	    <h5>Bachrus Speedo</h5>
             <ul>
                 <li>Fix issues with Speedo systems in recent versions of JMRI (<a href="https://github.com/JMRI/JMRI/pull/2027">#2027</a>).</li>
             </ul>
 		
-        <h5>C/MRI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>DCC++</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>Digitrax</h5>
             <ul>
-                <li>DCS240 OpSw31 description corrected in LocoNet Command Station Configuration tool where English language has been used.  Where the tool provides non-English language text, the translation may not have been completed.
-		<p>When DCS240 OpSw31 is "C" (closed), "metering of switch messages" is disabled, and LocoNet switch messages are sent to the DCC track signal as quickly as possible.  When DCS240 OpSw31 is "T" (thrown), the command station may slowly send switch request messages to the DCC track signal.
-		</li>
-            </ul>
-
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
+                <li>DCS240 OpSw31 description corrected in LocoNet Command Station Configuration tool where English language has been used.  
+                    Where the tool provides non-English language text, the translation may not have been completed.
+		            <p>When DCS240 OpSw31 is "C" (closed), "metering of switch messages" is disabled, 
+		                and LocoNet switch messages are sent to the DCC track signal as quickly as possible.  
+		                When DCS240 OpSw31 is "T" (thrown), the command station may slowly send switch request messages to the DCC track signal.
+		        </li>
             </ul>
 
         <h5>LocoNet</h5>
@@ -209,184 +213,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Enable function keys on Sprog in programmer mode (<a href="https://github.com/JMRI/JMRI/pull/2027">#2027</a>).</li>
             </ul>
 
-        <h5>NCE</h5>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h5><a href="http://openlcb.org">OpenLCB</a></h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Roco z21/Z21</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SPROG</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-	<h4>New / Updated decoder definitions</h4>
-      <ul>
-        <li></li>
-     </ul>
-
-        <h5>BLI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Bachmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Digitrax</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Doehler &amp; Haas</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ESU</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Hornby</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Lenz</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MRC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Norsk Modelljernbane (NJM)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RR-CirKits</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SoundTraxx</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Tehnologistic (train-O-matic)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Viessmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ZIMO</h5>
-            <ul>
-                <li></a></li>
-            </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-
-	<h4>Dispatcher</h4>
-        <ul>
-             <li></li>
-        </ul>
-
-	<h4>Layout Editor</h4>
-        <ul>
-            <li></li>
-         </ul>
-
 	<h4>Localization</h4>
         <ul>
-            <li>Keywords for Localization of Operations have been grouped to prevent duplicate work.
+            <li>Keywords for localization of Operations have been grouped to prevent duplicate work.
             Translators please check your earlier work from a fresh repo.</li>
             <li>German translation of Operations has been expanded.</li>
         </ul>
         
-	<h4>Logix</h4>
-        <ul>
-            <li><li>
-        </ul>
-
-	<h4>Operations</h4>
-        <ul>
-            <li></li>
-        </ul>
-
 	<h4>Panel Editors</h4>
         <ul>
             <li>Fix errors preventing editing of sensor state labels (<a href="https://github.com/JMRI/JMRI/issues/2028">#2028</a>).</li>
@@ -398,52 +231,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		<li>No longer will hang when displaying a warning during a Drag and Drop.</li>
 	    <li>Inactive buttons removed from SignalMast panel. Panel displays icons when the mast row is selected.</li>
 	    <li>Text and item Attribute panels now show changes to margin, border, fixed width and fixed height in the preview panel</li>
-        </ul>
-
-    <h4>Preferences</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-	<h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-	<h4>Routes</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Scripting</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Signals</h4>
-        <h5>Signal Systems</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Signal Mast Editor</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-	<h4>Warrants</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-	<h4>Web Access</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-	<h4>Miscellaneous</h4>
-        <ul>
-            <li></li>
         </ul>
 
    <!--#include virtual="/Footer" -->
