@@ -84,7 +84,9 @@ available from
 <ul>
     <li>Apple has released a new "Sierra" version of macOS (formerly known as OS X) which has
         enhanced security for downloaded programs.  We're providing a new form of signed download
-        to work with this, see below.  We'd be interested to hear whether that download
+        to work with this, see below.  Just in case that new form doesn't work with older
+        Macs, we've also made the older format available. 
+        We'd be interested to hear whether the new form of download
         works on older OS versions, so that we can just release this new form
         without having to provide separate downloads.
     </li>
@@ -165,7 +167,7 @@ These may be relevant to you if you're updating from an earlier version.
 
 <p>Older OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.dmg/download</a><br/>
-    sha256: b2e41f9de2c4b34cecd283d5e84dfcb2e11286094f8120bea230cf6666ec4dab (This is an older form, use it if the signed image above doesn't work and please let us know)</p>
+    sha256: b2e41f9de2c4b34cecd283d5e84dfcb2e11286094f8120bea230cf6666ec4dab (This is an older form, use it if the signed image above doesn't work and then please let us know)</p>
 
 <p>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.exe/download</a><br/>
