@@ -62,7 +62,9 @@ see our
 <li>The TMCC throttle support does not work; it did work in 
         <a href="jmri4.4.shtml">JMRI 4.4</a>, so please stay with that release if you use TMCC.
 <li>There may be problems dragging and dropping to and from tables if the 
-        table has been sorted or had its columns reordered.
+        table has been sorted or had its columns reordered. Some parts of this
+        are known to be fixed, but there might be others left. If you
+        encounter this, please let us know.
 <li>The Signal Mast table doesn't properly show default (initial) aspects and
 		it's not possible to set Aspects directly from the Signal Mast Table.
 		Setting signals via Logix or Panels is not affected.</li>
@@ -157,21 +159,21 @@ These may be relevant to you if you're updating from an earlier version.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.dmg/download</a><br/>
-    sha256: 635094115a6227465bcd74a62e718981e4f2a170155d2fe4d954d842a8277242 </p>
+<p>macOS (Sierra) and OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd-signed.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd-signed.dmg/download</a><br/>
+    sha256: a9b17a2ebfb3cbb902dab0b09b98621be56e18c88ae1a9536ab544c9c46382ae (This is the new "signed" form)</p>
 
-<p>macOS (signed version for Sierra): <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224-signed.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224-signed.dmg/download</a><br/>
-    sha256: 214f99eb75cac3bee390a103a001108a65aba51eca365cbbfa81fe8fad980a72 </p>
+<p>Older OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.dmg/download</a><br/>
+    sha256: b2e41f9de2c4b34cecd283d5e84dfcb2e11286094f8120bea230cf6666ec4dab (This is an older form, use it if the signed image above doesn't work and please let us know)</p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.exe/download</a><br/>
-    sha256: cdce887acb1caa8097bc8a78a8a10a9df8263b32d0632d69002edc4dacf7e885</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.exe/download</a><br/>
+    sha256: cc02c4b9bf781579151a4d7217075471222aeedaf2a0cc81fac7867d37ce5f59</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.tgz/download</a><br/>
-    sha256: f97db9eaa8dbeb87ffa2eb7ed988c2e02c8fb7c813f2373f56528bdf17eb531a</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.tgz/download</a><br/>
+    sha256: 580a97fdf1e2b2e0c2e2c5f3315dbf25fabf54163940f7397b478d1937dac089</p>
 
 
 <!--
