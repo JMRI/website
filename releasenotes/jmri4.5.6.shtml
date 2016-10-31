@@ -55,8 +55,6 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-<li>The TMCC throttle support does not work; it did work in 
-        <a href="jmri4.4.shtml">JMRI 4.4</a>, so please stay with that release if you use TMCC.
 <li>There may be problems dragging and dropping to and from tables if the 
         table has been sorted or had its columns reordered.
 <li>The Signal Mast table doesn't properly show default (initial) aspects.
@@ -76,6 +74,13 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
+    <li>As part of fixing the 
+        <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
+        the handling of TMCC preferences was changed.  If you have a TMCC
+        connection configured, please go to the 
+        "<a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#Connection">Defaults</a>"
+        pane in the Preferences window and make sure that the 
+        TMCC connection is selected for the appropriate device types.
 </ul>
 
 <h3>Older warnings</h3>
@@ -83,7 +88,7 @@ from
 See the <a href="jmri4.4.shtml#warnings">JMRI 4.4 release note</a> for warnings predating the 4.4 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><em>Since JMRI 4.5.5)</em> 
+<p><em>(Since JMRI 4.5.5)</em> 
         Apple has released a new "Sierra" version of macOS (formerly known as OS X) which has
         enhanced security for downloaded programs.  We're providing a new form of signed download
         to work with this, see below.  We'd be interested to hear whether that download
@@ -193,7 +198,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <p></p>
 
-	<h5>Bachrus Speedo</h5>
+	    <h5>Bachrus Speedo</h5>
             <ul>
                 <li></li>
             </ul>
@@ -248,9 +253,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h5>TCS</h5>
+        <h5>TMCC</h5>
             <ul>
-                <li></li>
+                <li>Fixed the problem with
+                    <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttles not working</a>.
+                    As part of this, the handling of TMCC preferences was changed.  If you have a TMCC
+                    connection configured, please go to the 
+                    "<a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#Connection">Defaults</a>"
+                    pane in the Preferences window and make sure that the 
+                    TMCC connection is selected for the appropriate device types.</li>
             </ul>
 
         <h5>Uhlenbrock Intellibox</h5>
