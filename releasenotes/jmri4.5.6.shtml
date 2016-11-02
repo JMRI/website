@@ -462,7 +462,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>Logging Preferences in a file named "default.lcf" in the
+	    <a href="http://jmri.org/help/en/html/setup/Files.shtml#location">settings directory</a> take precedence over
+	    logging preferences that ship with JMRI. The "default.lcf" can be copied from the JMRI installation as a
+	    starting point. (<a href="https://github.com/JMRI/JMRI/pull/2448">#2448</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
