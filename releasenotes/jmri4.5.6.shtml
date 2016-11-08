@@ -59,6 +59,13 @@ see our
         table has been sorted or had its columns reordered.
 <li>The Signal Mast table doesn't properly show default (initial) aspects.
         You have to select the initial aspects by hand.
+<li>When a Digitrax DCS240 is the command station, JMRI throttles may not be able to take control 
+	of a locomotive or consist in some cases if the DCS240 "expanded slots" (i.e. 400 slots) feature is in use. 
+	Be sure to "dispatch" or "release" locomotives and consists from throttles which use "expanded 
+	slots" before attempting to acquire the locomotive or consist via a JMRI throttle, as this may 
+	enable JMRI to acquire the locomotive or consist.  This problem can affect throttles which 
+	use the JMRI WiThrottle interface and throttles controlled via the JMRI Web Server.  This issue
+	is thought to be present in all previous versions of JMRI.</li>
 </ul>
 
 <!--
@@ -215,7 +222,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Digitrax</h5>
             <ul>
-                <li></li>
+                <li>Adds Digitrax DCS210 as a possible command station in connection, and   
+		shows appropriate OpSw descriptions in the LocoNet Command Station Configuration 
+		tool for a LocoNet connection configured as using a DCS210 command station.</li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
