@@ -430,7 +430,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Preferences</h4>
         <ul>
-            <li></li>
+            <li>The method by which system-specific actions are populated has been changed.
+	    They should now be dynamically created depending on which system connections
+	    are configured.</li>
         </ul>
 
    <h4>Roster</h4>
