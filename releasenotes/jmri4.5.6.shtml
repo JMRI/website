@@ -346,7 +346,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>ZIMO</h5>
             <ul>
-                <li></a></li>
+                <li></li>
             </ul>
 
         <h5>Miscellaneous</h5>
@@ -377,9 +377,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+            <li>Dragging to and from sorted tables or Copy and Paste in sorted tables now operates correctly.</li>
         </ul>
 
+    <h4>Control Panel Editor Shapes</h4>
+        <ul>
+            <li>Fix bug of not loading or saving control sensor.</li>
+            <li>Editing results are shown immediately when parameters are changed</li>
+            <li>Editing Cancel button restores shape to previous settings.</li>
+        </ul>
+        
     <h4>Preferences</h4>
         <ul>
             <li></li>
@@ -413,7 +420,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Warrants</h4>
         <ul>
-            <li></li>
+            <li>Re-implemented the ramping code. Better handling signal and block occupancy speed restrictions
+            		when they interact with user interventions.</li>
+            <li>The "Halt" GUI command now ramps down and brings the train down to a stop smoothly.</li>
+            <li>A "Stop" GUI command has been added. This is an EStop, similar to the old Halt command 
+           			that was an immediate change to speed 0.</li>
+            <li>The "Resume" GUI command now does a ramp up rather than immediate restoration of former speed.</li>
+            <li>Ramps will use as many blocks as they need to change speed. Previous ramp down code did not look ahead properly.</li>
+            <li>/nReminder: Having reasonable values for block path lengths and speed factors is vital for calculating ramp
+            		start times.</li>
+            <li>Additional messages of running status are displayed</li>
+            <li>Double entry in the session log bug is fixed.</li>
+            <li>Rouge entry into a warrant route now changes the icon color.</li>
+            <li>Warrants can be started, ended and pass through Dark blocks.</li>
         </ul>
 
    <h4>Web Access</h4>
