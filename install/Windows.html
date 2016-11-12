@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
  <title>
- JMRI 2.5.1 and earlier Install Guide: Windows
+ JMRI 2.14 and earlier Install Guide: Windows
  </title>
 	<meta content="Bob Jacobsen" name="Author">
 	<meta name="keywords" content="java model railroad JMRI install windows">
@@ -51,10 +51,10 @@
 <div id="mainContent">
 
 <h1> 
-JMRI 2.5.1 and earlier Install Guide: Windows
+JMRI 2.14 and earlier Install Guide: Windows
 </h1>
 
-<p class="important">This Install Guide is suitable for JMRI versions 2.5.1 and earlier - for versions 2.5.2 and later, <a href="WindowsNew.shtml">refer to the new Windows Install Guide</a>.</p>
+<p class="important">This Install Guide is suitable for JMRI versions 2.14 and earlier - for versions 3.0 and later, <a href="WindowsNew.shtml">refer to the new Windows Install Guide</a>.</p>
 	
 <a id="installation"/>
 <h2>Installation Procedure</h2>
@@ -63,8 +63,9 @@ JMRI 2.5.1 and earlier Install Guide: Windows
   <li>Determine if your hardware supports Java and JMRI</li>
       
 	<h3>JMRI System Requirements</h3>
-	<p>Using JMRI requires a combination of hardware (in this case running Windows), Java software and a JMRI download for a specific version.
-	<p>JMRI&reg; version 2.5 requires Java 1.5 or later.
+	<p>Using JMRI requires a combination of hardware (in this case running Windows), Java software and a JMRI download for a specific version.<br>
+	Version 2.14.1 requires Java 1.5 (or 1.6 if you wish for drag &amp; drop).<br>
+	Version 2.5 requires Java 1.5 or later.
  </p>
 	<p>We have had a report that a 100&nbsp;MHz Pentium is too slow to use, and
 	another that a 120&nbsp;MHz Pentium II is fine, so somewhere around there is
@@ -150,7 +151,7 @@ JMRI 2.5.1 and earlier Install Guide: Windows
 	appear every couple of weeks.  You may find one of these has features
 	that you really want.  These are announced in the "JMRI users" Yahoo
 	discussion group at
-	<a href="https://groups.yahoo.com/neo/groups/jmriusers/info">http://groups.yahoo.com/group/jmriusers/</a>.
+	<a href="https://groups.yahoo.com/neo/groups/jmriusers/">https://groups.yahoo.com/neo/groups/jmriusers/</a>.
 	</p>
 
 	<li>Run the JMRI Windows installer</li>
@@ -158,7 +159,50 @@ JMRI 2.5.1 and earlier Install Guide: Windows
 	<p>It will ask you to read some licensing information, and
 	then install the needed libraries, plus add a "JMRI" program group to 
 	your Start menu and put a shortcut to the DecoderPro program on your
-	desktop.
+	desktop. Th installer for version 2.5.2 will present the following screens:
+	
+	    <ol type="i">
+	      <li>Installer start-up
+	        <p><img src="images/WinInstall-01_Welcome.png" height="393" width="503" alt="installer welcome page"></p></li>
+	      <li>Check for a previous version
+	        <p>It will then check to see if a previous version of JMRI exists, backup any Preference, Roster and other settings and, if necessary, uninstall the old JMRI version.
+	        <br><img src="images/WinInstall-02_BackupAndRemove.png" height="393" width="503" alt="installer backup and remove page">
+	        <br>or<br><img src="images/WinInstall-02_BackupOnly.png" height="393" width="503" alt="installer backup page"></p>
+	        <p>Uninstall of version 2.5.1 or earlier:</p>
+	        <p>Initial confirmation
+	        <br><img src="images/WinInstall-03a_UninstallOld.png" height="126" width="471" alt="installer uninstall old version confirmation"></p>
+	        <p>Uninstaller progress
+	        <br><img src="images/WinInstall-03b_UninstallOld.png" height="144" width="323" alt="installer uninstall old version progress"></p>
+	        <p>Uninstaller complete
+	        <br><img src="images/WinInstall-03c_UninstallOld.png" height="126" width="231" alt="installer uninstall old version complete"></p>
+			<p>In some circumstances, the removal of version 2.5.1 or earlier is not successful:</p>
+			<p>Uninstaller failed
+			<br><img src="images/WinInstall-03d_UninstallOldFailed.png" height="126" width="497" alt="installer uninstall old version failed"></p>
+			<p>In such cases, it is necessary to download and run the following file and then re-run the installer:
+			<br><a href="support/RemoveOldJMRIUninstallEntry.exe">RemoveOldJMRIUninstallEntry.exe</a></li>
+	      <li>Choose installation type
+	        <p>If supported by your Windows version and depending on the permissions of your user, the installer may ask you to choose to install JMRI just for yourself or for all users of the computer.
+	        <br><img src="images/WinInstall-04_ChooseUsers.png" height="393" width="503" alt="installer user choice"></p></li>
+	      <li>Choose components
+	        <p>The installer will now present a list of the components to be installed.
+	        <br><img src="images/WinInstall-05_ChooseComponents.png" height="393" width="503" alt="installer component choice">
+	        <br>This will install JMRI to the default location, place shortcuts for DecoderPro and PanelPro on the desktop and create a JMRI Start Menu folder containing shortcuts for typically used JMRI programs.</p>
+	        <p>If you wish to change where JMRI is installed, change the install type to 'Custom (select to choose program folder)'.
+	        <br><img src="images/WinInstall-05a_ChooseInstallType.png" height="393" width="503" alt="installer type choice"></li>
+	      <li>Check for Java
+	        <p>It will check for a suitable version of Java on your computer and, if required, will connect to the internet to download the most current version for your computer. (For an offline installation, refer to the <a href="#offline">offline installation notes</a> below).
+	        <br><img src="images/WinInstall-06a_NoJavaAskDownload.png" height="393" width="503" alt="installer ask Java download"></p>
+	        <p>Downloading java
+	        <br><img src="images/WinInstall-06b_StartJavaDownload.png" height="393" width="503" alt="installer start Java download"></p></li>
+	
+	      <li>Install files
+	         <p>Once existence of a suitable Java Runtime Environment has been confirmed, it will then install the needed libraries, plus add a "JMRI" program group to your Start menu and put shortcuts to the DecoderPro and PanelPro programs on your desktop.
+	        <br><img src="images/WinInstall-06_InstallFiles.png" height="393" width="503" alt="installer files install"></p></li>
+	
+	      <li>Installation is complete.
+	        <p><img src="images/WinInstall-08_Finish.png" height="393" width="503" alt="installer finish"></p></li>
+	    </ol>
+	 </ol>
 
 	<li>Installation is complete.</li>
 	<p>
@@ -168,7 +212,7 @@ JMRI 2.5.1 and earlier Install Guide: Windows
     <li>Configure the program to connect to your layout
     <p>
     The JMRI
-    <a href="http://jmri.sourceforge.net/help/en/html/hardware/index.shtml">hardware page</a>
+    <a href="http://jmri.org/help/en/html/hardware/index.shtml">hardware page</a>
     lists the various types of layout equipment that
     JMRI can connect to, and gives links to 
     instruction pages. Go there next to complete your
@@ -279,6 +323,35 @@ To get the window to stay open:
 	<li>Right click and select "show properties" on the program icon
 	<li>Deselect "Close window on program end"
 	</ol>
+	
+<p>If you're asked for a copy of the error messages, you can usually get them from the messages.log file.  If you can't find it there, make a copy of the log window:</p>
+	
+<h4>For JMRI version 2.11.1 or later</h4>
+	<ol>
+	<li>From the main JMRI window, choose "Help > System Console ...".
+	<br><img src="images/Win-JMRISystemConsole.png" height="409" width="850" alt="JMRI system console">
+	
+	<li>Click the button "Copy to clipboard".
+	
+	<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad,
+	favorite word processor, etc, position your cursor and left-click on Edit and
+	then Paste, or press the "Ctrl" and "V" keys.
+	</ol>
+    
+<h4>For JMRI version 2.10 or earlier</h4>
+	<ol>
+	<li>In the command prompt window, left-click on the JMRI icon to the left of the  words "DecoderPro" (or "PanelPro").  You will get a drop-down menu.
+	
+	<li>In that menu, put your cursor over "Edit" to get a sub-menu.
+	
+	<li>Left-click on "Select All" in that sub-menu.  All the text in the window will reverse colors with the background, and the menus will disappear.
+	
+	<br>Alternately, you can left click on "Mark" in that sub-menu. The menus will disappear.  Then, left-click and hold while dragging the cursor over the text to be copied.  Only the selected text will reverse colors with the background.</p>
+	
+	<li>Repeat Steps 1 and 2 above, then left click "Copy" on the sub-menu.  The text and window will revert to their original colors.  The text is now on XP's clipboard.
+	
+	<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad, favorite word processor, etc, position your cursor and left-click on Edit and then Paste, or press the "Ctrl" and "V" keys.
+	</ol>
 
 <!-- Footer -->
     <hr class="hide">
@@ -291,7 +364,7 @@ To get the window to stay open:
 	   <a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
 	   	all who contributed</a>!</p>
 
-	<p>Copyright &copy; 1997 - 2015 JMRI Community. 
+	<p>Copyright &copy; 1997 - 2016 JMRI Community. 
 	<p>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, TrainPro&trade;, DispatcherPro&trade;, OperationsPro&trade; and associated logos are our trademarks.
 	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
     
