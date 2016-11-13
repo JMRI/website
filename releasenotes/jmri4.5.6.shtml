@@ -217,7 +217,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>DCC++</h5>
             <ul>
-                <li></li>
+                <li>Fixed the timeout when programming in Ops Mode.</li>
             </ul>
 
         <h5>Digitrax</h5>
@@ -478,6 +478,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 	    logging preferences that ship with JMRI. The "default.lcf" can be copied from the JMRI installation as a
 	    starting point. (<a href="https://github.com/JMRI/JMRI/pull/2448">#2448</a>)</li>
 	    <li>Petr Šídlo provided a large update to the Czech translations of JMRI</li>
+            <li>Fixed the AmpMeter crash on Linux systems.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
