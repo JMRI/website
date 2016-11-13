@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.5.6
+ JMRI: Release Notes for 4.5.7
  </title>
     <meta content="Bob Jacobsen" name="Author">
-    <meta name="keywords" content="java model railroad JMRI 4.5.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.5.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,12 +23,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 4.5.6 release
+      Release Notes for JMRI 4.5.7 release
       </h2>
 
     <p>Date: mmm dd, 2016</p>
     <p>From: (pumpkin)</p>
-    <p>Subject: Test version 4.5.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test version 4.5.7 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -70,7 +70,7 @@ see our
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.5.7.shtml">JMRI 4.5.7</a>, due out shortly after this one,
+<a href="jmri4.5.8.shtml">JMRI 4.5.8</a>, due out shortly after this one,
 or pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -81,19 +81,22 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li>As part of fixing the 
-        <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
-        the handling of TMCC preferences was changed.  If you have a TMCC
-        connection configured, please go to the 
-        "<a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#Connection">Defaults</a>"
-        pane in the Preferences window and make sure that the 
-        TMCC connection is selected for the appropriate device types.
+    <li>None yet</a>
 </ul>
 
 <h3>Older warnings</h3>
 
 See the <a href="jmri4.4.shtml#warnings">JMRI 4.4 release note</a> for warnings predating the 4.4 development series.
 These may be relevant to you if you're updating from an earlier version.
+
+<p><em>(Since JMRI 4.5.6)</em> 
+        As part of fixing the 
+        <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
+        the handling of TMCC preferences was changed.  If you have a TMCC
+        connection configured, please go to the 
+        "<a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#Connection">Defaults</a>"
+        pane in the Preferences window and make sure that the 
+        TMCC connection is selected for the appropriate device types.
 
 <p><em>(Since JMRI 4.5.5)</em> 
         Apple has released a new "Sierra" version of macOS (formerly known as OS X) which has
@@ -196,9 +199,9 @@ on the
 These are development files, and might not be working at any particular time.</p>
 
 
-<h3>Changes since <a href="jmri4.5.5.shtml">test release 4.5.5</a>:</h3>
+<h3>Changes since <a href="jmri4.5.6.shtml">test release 4.5.6</a>:</h3>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.6+">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.7+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h4>Hardware Support</h4>
@@ -222,9 +225,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Digitrax</h5>
             <ul>
-                <li>Adds Digitrax DCS210 as a possible command station in connection, and   
-		shows appropriate OpSw descriptions in the LocoNet Command Station Configuration 
-		tool for a LocoNet connection configured as using a DCS210 command station.</li>
+                <li></li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
@@ -264,13 +265,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>TMCC</h5>
             <ul>
-                <li>Fixed the problem with
-                    <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttles not working</a>.
-                    As part of this, the handling of TMCC preferences was changed.  If you have a TMCC
-                    connection configured, please go to the 
-                    "<a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#Connection">Defaults</a>"
-                    pane in the Preferences window and make sure that the 
-                    TMCC connection is selected for the appropriate device types.</li>
+                <li></li>
             </ul>
 
         <h5>Uhlenbrock Intellibox</h5>
@@ -310,12 +305,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>ESU</h5>
             <ul>
-                <li>
-                  Added&nbsp;various&nbsp;new&nbsp;models; LokSound&nbsp;V4.0&nbsp;M4, LokSound&nbsp;V4.0&nbsp;M4&nbsp;OEM,
-                  LokPilot&nbsp;V4.0&nbsp;M4, LokPilot&nbsp;V4.0&nbsp;M4&nbsp;MKL, LokPilot&nbsp;Micro&nbsp;SlideIn&nbsp;V4.0&nbsp;DCC,
-                  LokPilot&nbsp;Fx&nbsp;Nano&nbsp;V1.0, Scale&nbsp;Trains&nbsp;Tender&nbsp;Light
-                  (Dave&nbsp;Heap)
-                </li>
+                <li></li>
             </ul>
 
         <h5>Hornby</h5>
@@ -325,7 +315,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>LaisDCC</h5>
             <ul>
-                <li>Claudio Capaccio of LaisDCC provided definitions for their family of decoders.</li>
+                <li></li>
             </ul>
 
         <h5>Lenz</h5>
@@ -370,11 +360,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>SoundTraxx</h5>
             <ul>
-                <li>
-                  "Read type from decoder" should now correctly identify
-                    individual Tsunami 2 and Econami models
-                    (Michael Mosher/Dave Heap).
-                  </li>
+                <li></li>
             </ul>
 
         <h5>TCS</h5>
@@ -435,9 +421,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Preferences</h4>
         <ul>
-            <li>The method by which system-specific actions are populated has been changed.
-	    They should now be dynamically created depending on which system connections
-	    are configured.</li>
+            <li></li>
         </ul>
 
    <h4>Roster</h4>
@@ -478,12 +462,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li>Logging Preferences in a file named "default.lcf" in the
-	    <a href="http://jmri.org/help/en/html/setup/Files.shtml#location">settings directory</a> take precedence over
-	    logging preferences that ship with JMRI. The "default.lcf" can be copied from the JMRI installation as a
-	    starting point. (<a href="https://github.com/JMRI/JMRI/pull/2448">#2448</a>)</li>
-	    <li>Petr Šídlo provided a large update to the Czech translations of JMRI</li>
-	    <li>Added a new SignalFollower.py sample script</li>
+            <li></li>
         </ul>
 
    <!--#include virtual="/Footer" -->
