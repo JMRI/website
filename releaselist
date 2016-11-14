@@ -10,15 +10,15 @@ production:
    exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.exe/download"
 test:
  versions:
+  4.5.6:
+   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.6-R9bfae82.tgz/download"
+   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.6-R9bfae82.dmg/download"
+   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.6-R9bfae82.exe/download"
   4.5.5:
    dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.dmg/download"
    signed-dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224-signed.dmg/download"
    tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.tgz/download"
    exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.exe/download"
-  4.5.4:
-   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.4-Rb93cb4f.tgz/download"
-   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.4-Rb93cb4f.dmg/download"
-   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.4-Rb93cb4f.exe/download"
 
 # This file contains information about the last few JMRI (http://jmri.org) releases.
 # JMRI is distributed under license. More information is at http://jmri.org/Copyright.html
