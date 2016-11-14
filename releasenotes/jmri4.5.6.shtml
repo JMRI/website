@@ -202,61 +202,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <p></p>
 
-	    <h5>Bachrus Speedo</h5>
-            <ul>
-                <li></li>
-            </ul>
-		
-        <h5>C/MRI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>DCC++</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>Digitrax</h5>
             <ul>
                 <li>Adds Digitrax DCS210 as a possible command station in connection, and   
-		shows appropriate OpSw descriptions in the LocoNet Command Station Configuration 
-		tool for a LocoNet connection configured as using a DCS210 command station.</li>
-            </ul>
-
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>LocoNet</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h5><a href="http://openlcb.org">OpenLCB</a></h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Roco z21/Z21</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SPROG</h5>
-            <ul>
-                <li></li>
+		        shows appropriate OpSw descriptions in the LocoNet Command Station Configuration 
+		        tool for a LocoNet connection configured as using a DCS210 command station.</li>
             </ul>
 
         <h5>TMCC</h5>
@@ -270,40 +220,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                     TMCC connection is selected for the appropriate device types.</li>
             </ul>
 
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
-            </ul>
-
     <h4>New / Updated decoder definitions</h4>
       <ul>
         <li></li>
      </ul>
-
-        <h5>BLI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Bachmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Digitrax</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Doehler &amp; Haas</h5>
-            <ul>
-                <li></li>
-            </ul>
 
         <h5>ESU</h5>
             <ul>
@@ -315,54 +235,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </li>
             </ul>
 
-        <h5>Hornby</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>LaisDCC</h5>
             <ul>
                 <li>Claudio Capaccio of LaisDCC provided definitions for their family of decoders.</li>
-            </ul>
-
-        <h5>Lenz</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MRC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Norsk Modelljernbane (NJM)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RR-CirKits</h5>
-            <ul>
-                <li></li>
             </ul>
 
         <h5>SoundTraxx</h5>
@@ -374,103 +249,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                   </li>
             </ul>
 
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Tehnologistic (train-O-matic)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Viessmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ZIMO</h5>
-            <ul>
-                <li></a></li>
-            </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-
-   <h4>Dispatcher</h4>
-        <ul>
-             <li></li>
-        </ul>
-
-    <h4>Layout Editor</h4>
-        <ul>
-            <li></li>
-         </ul>
-
-    <h4>Logix</h4>
-        <ul>
-            <li><li>
-        </ul>
-
-   <h4>Operations</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>Panel Editors</h4>
-        <ul>
-            <li></li>
-        </ul>
-
     <h4>Preferences</h4>
         <ul>
             <li>The method by which system-specific actions are populated has been changed.
-	    They should now be dynamically created depending on which system connections
-	    are configured.</li>
-        </ul>
-
-   <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Routes</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Scripting</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Signals</h4>
-        <h5>Signal Systems</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Signal Mast Editor</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-   <h4>Warrants</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>Web Access</h4>
-        <ul>
-            <li></li>
+	        They should now be dynamically created depending on which system connections
+	        are configured.</li>
         </ul>
 
     <h4>Miscellaneous</h4>
