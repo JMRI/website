@@ -68,7 +68,6 @@ see our
 	enable JMRI to acquire the locomotive or consist.  This problem can affect throttles which 
 	use the JMRI WiThrottle interface and throttles controlled via the JMRI Web Server.  This issue
 	is thought to be present in all previous versions of JMRI.</li>
-<li>DCC++ connections on Linux may not work.</li>
 </ul>
 
 If any of those effect you, please either wait for
@@ -200,7 +199,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Hardware Support</h4>
 
-        <p></p>
+        <h5>DCC++</h5>
+            <ul>
+                <li>Fixed the timeout when programming in Ops Mode.</li>
+            </ul>
 
         <h5>Digitrax</h5>
             <ul>
@@ -375,6 +377,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 	    starting point. (<a href="https://github.com/JMRI/JMRI/pull/2448">#2448</a>)</li>
 	    <li>Petr Šídlo provided a large update to the Czech translations of JMRI</li>
 	    <li>Added a new SignalFollower.py sample script</li>
+        <li>Fixed the AmpMeter crash on Linux systems.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
