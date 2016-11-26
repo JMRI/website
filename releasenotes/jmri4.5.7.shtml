@@ -57,8 +57,6 @@ see our
 <ul>
 <li>There may be problems dragging and dropping to and from tables if the 
         table has been sorted or had its columns reordered.
-<li>The Signal Mast table doesn't properly show default (initial) aspects.
-        You have to select the initial aspects by hand.
 <li>When a Digitrax DCS240 is the command station, JMRI throttles may not be able to take control 
 	of a locomotive or consist in some cases if the DCS240 "expanded slots" (i.e. 400 slots) feature is in use. 
 	Be sure to "dispatch" or "release" locomotives and consists from throttles which use "expanded 
@@ -105,7 +103,6 @@ These may be relevant to you if you're updating from an earlier version.
         to work with this, see below.  We'd be interested to hear whether that download
         works on older OS versions, so that we can just release this new form
         without having to provide separate downloads.
-
 
 <p><em>(Since JMRI 4.5.2)</em>This and future versions of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
@@ -441,6 +438,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h4>Signals</h4>
+        <ul>
+            <li>Fixed an issue to set aspects in the Signal Mast Table using the combobox. Sorting rows or moving columns in the table is fully supported.</li>
+        </ul>
         <h5>Signal Systems</h5>
             <ul>
                 <li></li>
