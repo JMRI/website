@@ -463,7 +463,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>The MS Windows launcher has had a number of updates including:
+	        <ul>
+		    <li>a new method to calculate the maximum memory</li>
+		    <li>use the Windows look and feel as an initial default</li>
+		    <li>allow the classpath to be modified by either appending `--cp:a=CLASSPATH` or prepending `--cp:p=CLASSPATH`</li>
+		    <li>allow for default options to be specified in a `jmri.conf` file stored in `%userprofile%\JMRI`
+		</ul>
+	    </li>
         </ul>
 
    <!--#include virtual="/Footer" -->
