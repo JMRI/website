@@ -55,8 +55,6 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-<li>There may be problems dragging and dropping to and from tables if the 
-        table has been sorted or had its columns reordered.
 <li>When a Digitrax DCS240 is the command station, JMRI throttles may not be able to take control 
 	of a locomotive or consist in some cases if the DCS240 "expanded slots" (i.e. 400 slots) feature is in use. 
 	Be sure to "dispatch" or "release" locomotives and consists from throttles which use "expanded 
@@ -383,7 +381,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>ZIMO</h5>
             <ul>
-                <li></a></li>
+                <li></li>
             </ul>
 
         <h5>Miscellaneous</h5>
@@ -453,7 +451,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Warrants</h4>
         <ul>
-            <li></li>
+            <li>A bug when Calibrating a throttle speed factor in NXWarrants has been fixed.</li>
+            <li>SCWarrants are converted to regular Warrants with a "No Ramping" flag set.  Such warrants change speed as before upon entering
+            	the approach block. Now they use the speeds specified by the signals rather than one hard coded value. The new "No Ramping" flag
+            	may be turned off and on in the Warrant Editing window.</li>
         </ul>
 
    <h4>Web Access</h4>
