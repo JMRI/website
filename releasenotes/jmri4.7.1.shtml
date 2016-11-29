@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.5.7
+ JMRI: Release Notes for 4.7.1
  </title>
     <meta content="Bob Jacobsen" name="Author">
-    <meta name="keywords" content="java model railroad JMRI 4.5.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.7.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,12 +23,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 4.5.7 release
+      Release Notes for JMRI 4.7.1 release
       </h2>
 
-    <p>Date: mmm dd, 2016</p>
+    <p>Date: mmm dd, 2017</p>
     <p>From: (pumpkin)</p>
-    <p>Subject: Test version 4.5.7 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test version 4.7.1 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -39,7 +39,7 @@ And please back up your JMRI files before installing this, in case you want to g
 back to an earlier version.</p>
 
 <p>This is the next in a series of test versions. We expect this series
-to end in the next JMRI production release around the end of 2016.
+to end in the next JMRI production release around the middle of 2017.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)</p>
 
 <p>Some of the changes involved are quite extensive.
@@ -55,21 +55,12 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-<li>There may be problems dragging and dropping to and from tables if the 
-        table has been sorted or had its columns reordered.
-<li>When a Digitrax DCS240 is the command station, JMRI throttles may not be able to take control 
-	of a locomotive or consist in some cases if the DCS240 "expanded slots" (i.e. 400 slots) feature is in use. 
-	Be sure to "dispatch" or "release" locomotives and consists from throttles which use "expanded 
-	slots" before attempting to acquire the locomotive or consist via a JMRI throttle, as this may 
-	enable JMRI to acquire the locomotive or consist.  This problem can affect throttles which 
-	use the JMRI WiThrottle interface and throttles controlled via the JMRI Web Server.  This issue
-	is thought to be present in all previous versions of JMRI.</li>
-<li>DCC++ connections on Linux may not work.</li>
+<li>None at release time</li>
 </ul>
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.5.8.shtml">JMRI 4.5.8</a>, due out shortly after this one,
+<a href="jmri4.5.9.shtml">JMRI 4.5.9</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -85,7 +76,7 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.4.shtml#warnings">JMRI 4.4 release note</a> for warnings predating the 4.4 development series.
+See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for warnings predating the 4.6 development series.
 These may be relevant to you if you're updating from an earlier version.
 
 <p><em>(Since JMRI 4.5.6)</em> 
@@ -185,21 +176,21 @@ These may be relevant to you if you're updating from an earlier version.
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.tgz/download</a><br/>
     sha256: f97db9eaa8dbeb87ffa2eb7ed988c2e02c8fb7c813f2373f56528bdf17eb531a</p>
 -->
-
+<!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.5.7/">CI project page</a>.
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.7/">CI project page</a>.
+ -->
 
 
-<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
--->
 
-<h3>Changes since <a href="jmri4.5.6.shtml">test release 4.5.6</a>:</h3>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.7+">list of included commits</a> is available from our
+<h3>Changes since <a href="jmri4.6.shtml">production release 4.6</a>:</h3>
+
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.1+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h4>Hardware Support</h4>
@@ -399,7 +390,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Layout Editor</h4>
         <ul>
-            <li>Fixes a problem with adding Train/loco icons to the panel</li>
+            <li></li>
          </ul>
 
     <h4>Logix</h4>
@@ -439,7 +430,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Signals</h4>
         <ul>
-            <li>Fixed an issue to set aspects in the Signal Mast Table using the combobox. Sorting rows or moving columns in the table is fully supported.</li>
+            <li></li>
         </ul>
         <h5>Signal Systems</h5>
             <ul>
@@ -463,14 +454,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li>The MS Windows launcher has had a number of updates including:
-	        <ul>
-		    <li>a new method to calculate the maximum memory</li>
-		    <li>use the Windows look and feel as an initial default</li>
-		    <li>allow the classpath to be modified by either appending `--cp:a=CLASSPATH` or prepending `--cp:p=CLASSPATH`</li>
-		    <li>allow for default options to be specified in a `jmri.conf` file stored in `%userprofile%\JMRI`
-		</ul>
-	    </li>
+            <li></li>
         </ul>
 
    <!--#include virtual="/Footer" -->

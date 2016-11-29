@@ -68,7 +68,6 @@ see our
 	enable JMRI to acquire the locomotive or consist.  This problem can affect throttles which 
 	use the JMRI WiThrottle interface and throttles controlled via the JMRI Web Server.  This issue
 	is thought to be present in all previous versions of JMRI.</li>
-<li>DCC++ connections on Linux may not work.</li>
 </ul>
 
 If any of those effect you, please either wait for
@@ -200,7 +199,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Hardware Support</h4>
 
-        <p></p>
+        <h5>DCC++</h5>
+            <ul>
+                <li>Fixed the timeout when programming in Ops Mode.</li>
+            </ul>
 
         <h5>Digitrax</h5>
             <ul>
@@ -208,6 +210,59 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		        shows appropriate OpSw descriptions in the LocoNet Command Station Configuration 
 		        tool for a LocoNet connection configured as using a DCS210 command station.</li>
             </ul>
+
+        <h5>OpenLCB / LCC</h5>
+	    <ul>
+            
+                <li>UI improvements in the CDI configuration dialog, such as collapsible sections, faster
+		scrolling and tabbed UI for repeated groups. This makes configuring nodes with large I/O
+		count or many repeated groups more convenient.</li>
+
+                <li>UI improvements in the network view dialog: the nodes on the layout are sorted by
+                their node ID, and when available, the node Name and Description is printed in the
+                overview to better identify which tree branch to expand.</li>
+
+                <li>Turnouts have a new feedback mode implemented: MONITORING. This mode allows turnout
+                change requests sent from other sources, such as fascia buttons or other JMRI computers
+                connected to the same layout to be respected in the JMRI Turnout's state. New turnouts
+                created with JMRI 4.5.6 or later will default to MONITORING feedback. Turnouts created
+                with older versions of JMRI or turnouts in panel XML files saved by older versions of
+                JMRI will be set to DIRECT feedback mode, and users of version 4.5.6 and above will have
+                to edit the turnouts one by one to set the desired feedback mode to MONITORING if they
+                wish to use the new behavior.</li>
+
+                <li>Improvements in the standards compliancy of JMRI Turnouts and Sensors; these will now
+                advertise as Producers and Consumers on the layout, as well as respond to Identify
+                Producer and Consumer requests coming from other sources. These advertisement messages
+                will appear as a short surge of a large number of messages transmitted to the layout upon
+                panel XML loads if there are many Turnouts and/or Sensors defined in the tables.</li>
+
+                <li>Turnouts (when configured for MONITORING feedback mode) and all Sensors inquire the
+                layout state upon startup, loading the panel file, or creating a new table entry, instead
+                of initializing to Unknown state. When a layout has multiple JMRI computers connected, a
+                newly started JMRI will load the layout state from an already running JMRI computer so
+                long as they have the respective Turnout and Sensor entries in both of their tables.</li>
+
+                <li>Fixed bug that caused duplicate processing of packets when using the TCP/IP "Hub"
+		feature in the OpenLCB menu. This allows multiple JMRI computers to share a single CAN
+		adapter by secondary computers connecting to the Hub started by the JMRI with CAN
+		connection.</li>
+
+		<li>Better error handling and reporting on Firmware Upgrade. The Supported Protocol list
+		now displays Firmware Upgrade for compatible nodes.</li>
+                
+	    	<li>Identification information such as Node name, version and protocol support
+		information is automatically reloaded when a node restarts, for example due to a Firmware
+		upgrade performed.</li>
+
+	    	<li>JMRI now replies to Simple Node Identification Information requests coming from other
+	    	sources on the bus. This allows multiple JMRI computers connected to a single layout to
+	    	correctly see each other in their network view dialog.</li>
+
+                <li>Miscellaneous standards compliancy improvements, such as fixes to JMRI replying to
+                Verify Node ID requests, and not sending messages with alias=000 to the bus.</li>
+
+	    </ul>
 
         <h5>TMCC</h5>
             <ul>
@@ -237,7 +292,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>LaisDCC</h5>
             <ul>
-                <li>Claudio Capaccio of LaisDCC provided definitions for their family of decoders.</li>
+                <li>Claudio Capaccio of <a href="http://laisdcc.com">LaisDCC</a> provided definitions for their family of decoders.</li>
             </ul>
 
         <h5>SoundTraxx</h5>
@@ -362,6 +417,54 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Web Access</h4>
         <ul>
+            <li></li>
+        </ul>
+
+   <h4>Roster</h4>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h4>Routes</h4>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h4>Scripting</h4>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h4>Signals</h4>
+        <h5>Signal Systems</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>Signal Mast Editor</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+   <h4>Warrants</h4>
+        <ul>
+            <li>Re-implemented the ramping code. Better handling signal and block occupancy speed restrictions
+            		when they interact with user interventions.</li>
+            <li>The "Halt" GUI command now ramps down and brings the train down to a stop smoothly.</li>
+            <li>A "Stop" GUI command has been added. This is an EStop, similar to the old Halt command 
+           			that was an immediate change to speed 0.</li>
+            <li>The "Resume" GUI command now does a ramp up rather than immediate restoration of former speed.</li>
+            <li>Ramps will use as many blocks as they need to change speed. Previous ramp down code did not look ahead properly.</li>
+            <li>/nReminder: Having reasonable values for block path lengths and speed factors is vital for calculating ramp
+            		start times.</li>
+            <li>Additional messages of running status are displayed</li>
+            <li>Double entry in the session log bug is fixed.</li>
+            <li>Rouge entry into a warrant route now changes the icon color.</li>
+            <li>Warrants can be started, ended and pass through Dark blocks.</li>
+        </ul>
+
+   <h4>Web Access</h4>
+        <ul>
             <li>The method by which system-specific actions are populated has been changed.
 	        They should now be dynamically created depending on which system connections
 	        are configured.</li>
@@ -375,6 +478,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 	    starting point. (<a href="https://github.com/JMRI/JMRI/pull/2448">#2448</a>)</li>
 	    <li>Petr Šídlo provided a large update to the Czech translations of JMRI</li>
 	    <li>Added a new SignalFollower.py sample script</li>
+        <li>Fixed the AmpMeter crash on Linux systems.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
