@@ -55,8 +55,6 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-<li>There may be problems dragging and dropping to and from tables if the 
-        table has been sorted or had its columns reordered.
 <li>When a Digitrax DCS240 is the command station, JMRI throttles may not be able to take control 
 	of a locomotive or consist in some cases if the DCS240 "expanded slots" (i.e. 400 slots) feature is in use. 
 	Be sure to "dispatch" or "release" locomotives and consists from throttles which use "expanded 
@@ -67,14 +65,14 @@ see our
 <li>DCC++ connections on Linux may not work.</li>
 </ul>
 
-<!--
+
 If any of those effect you, please either wait for
 <a href="jmri4.5.8.shtml">JMRI 4.5.8</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
+
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
@@ -200,8 +198,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Hardware Support</h4>
 
-        <p></p>
-
+        <p>No changes in this release</p>
+<!--
         <h5>Bachrus Speedo</h5>
             <ul>
                 <li></li>
@@ -271,12 +269,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
     <h4>New / Updated decoder definitions</h4>
       <ul>
-        <li></li>
+        <li>None in this release</li>
      </ul>
-
+<!--
         <h5>BLI</h5>
             <ul>
                 <li></li>
@@ -386,18 +384,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
-
+-->
+<!--
    <h4>Dispatcher</h4>
         <ul>
              <li></li>
         </ul>
-
+-->
     <h4>Layout Editor</h4>
         <ul>
-            <li>Fixes a problem with adding Train/loco icons to the panel</li>
+            <li>Fixed a problem with adding Train/loco icons to the panel</li>
          </ul>
-
+<!--
     <h4>Logix</h4>
         <ul>
             <li><li>
@@ -432,11 +430,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Signals</h4>
         <ul>
             <li>Fixed an issue to set aspects in the Signal Mast Table using the combobox. Sorting rows or moving columns in the table is fully supported.</li>
         </ul>
+<!--
         <h5>Signal Systems</h5>
             <ul>
                 <li></li>
@@ -446,17 +445,20 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-
+-->
    <h4>Warrants</h4>
         <ul>
-            <li></li>
+            <li>A bug when Calibrating a throttle speed factor in NXWarrants has been fixed.</li>
+            <li>SCWarrants are converted to regular Warrants with a "No Ramping" flag set.  Such warrants change speed as before upon entering
+            the approach block. Now they use the speeds specified by the signals rather than one hard coded value. The new "No Ramping" flag
+            may be turned off and on in the Warrant Editing window.</li>
         </ul>
-
+<!--
    <h4>Web Access</h4>
         <ul>
             <li></li>
         </ul>
-
+-->
     <h4>Miscellaneous</h4>
         <ul>
             <li>The MS Windows launcher has had a number of updates including:
