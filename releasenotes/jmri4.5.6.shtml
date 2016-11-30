@@ -417,6 +417,54 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Web Access</h4>
         <ul>
+            <li></li>
+        </ul>
+
+   <h4>Roster</h4>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h4>Routes</h4>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h4>Scripting</h4>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h4>Signals</h4>
+        <h5>Signal Systems</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h5>Signal Mast Editor</h5>
+            <ul>
+                <li></li>
+            </ul>
+
+   <h4>Warrants</h4>
+        <ul>
+            <li>Re-implemented the ramping code. Better handling signal and block occupancy speed restrictions
+            		when they interact with user interventions.</li>
+            <li>The "Halt" GUI command now ramps down and brings the train down to a stop smoothly.</li>
+            <li>A "Stop" GUI command has been added. This is an EStop, similar to the old Halt command 
+           			that was an immediate change to speed 0.</li>
+            <li>The "Resume" GUI command now does a ramp up rather than immediate restoration of former speed.</li>
+            <li>Ramps will use as many blocks as they need to change speed. Previous ramp down code did not look ahead properly.</li>
+            <li>/nReminder: Having reasonable values for block path lengths and speed factors is vital for calculating ramp
+            		start times.</li>
+            <li>Additional messages of running status are displayed</li>
+            <li>Double entry in the session log bug is fixed.</li>
+            <li>Rouge entry into a warrant route now changes the icon color.</li>
+            <li>Warrants can be started, ended and pass through Dark blocks.</li>
+        </ul>
+
+   <h4>Web Access</h4>
+        <ul>
             <li>The method by which system-specific actions are populated has been changed.
 	        They should now be dynamically created depending on which system connections
 	        are configured.</li>
