@@ -454,7 +454,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>For those connections which have the ability to monitor the bus traffic, the
+			feature to save the monitor data to a file has been improved.  If the tool is 
+			unable to access the log file, a dialog box will appear to inform the user of 
+			the problem.  Monitor log files will default to be placed in the configuration 
+			profile directory, where in some cases, previous versions of JMRI could attempt 
+			place the log file in the program directory.  As before, the user may select
+			a directory other than the configuration profile directory for storing the
+			log file.  This improvement affects the monitoring tools for many connection 
+			types.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
