@@ -227,7 +227,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>NCE</h5>
             <ul>
-                <li><li>
+                <li></li>
             </ul>
 
         <h5><a href="http://openlcb.org">OpenLCB</a></h5>
@@ -450,8 +450,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <!-- 4.5.6 -->
                 <li>"Read type from decoder" should now correctly identify
                     individual Tsunami 2 and Econami models
-                    (Michael Mosher/Dave Heap).
-                </li>
+                    (Michael Mosher/Dave Heap).</li>
             </ul>
 
         <h5>TCS</h5>
@@ -525,7 +524,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Logix</h4>
         <ul>
-            <li><li>
+            <li></li>
         </ul>
 
    <h4>Operations</h4>
@@ -723,7 +722,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <a href="https://github.com/jmdns/jmdns">jmDNS library</a>
                 used to find and connect to resources on the Internet (e.g. to allow 
                 WiThrottle and Engine Driver to find JMRI) was updated to 
-                <a href="https://github.com/jmdns/jmdns/releases/tag/jmdns-3.5.0">jmDNS version 3.5.0</a>.<li>
+                <a href="https://github.com/jmdns/jmdns/releases/tag/jmdns-3.5.0">jmDNS version 3.5.0</a>.</li>
             <li>Sonnys Hansen improved the Danish translation</li>
             <li>Fixed problems with the formatting of many help pages
             <li>Fixed an issue preventing JMRI from detecting a JRE on OS X (<a href="https://github.com/JMRI/JMRI/pull/1679">#1679</a>).</li>
@@ -762,7 +761,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                     <li>a new method to calculate the maximum memory</li>
                     <li>use the Windows look and feel as an initial default</li>
                     <li>allow the classpath to be modified by either appending `--cp:a=CLASSPATH` or prepending `--cp:p=CLASSPATH`</li>
-                    <li>allow for default options to be specified in a `jmri.conf` file stored in `%userprofile%\JMRI`
+                    <li>allow for default options to be specified in a `jmri.conf` file stored in `%userprofile%\JMRI`</li>
                 </ul>
             </li>
         </ul>
