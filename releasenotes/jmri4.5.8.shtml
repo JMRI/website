@@ -55,7 +55,14 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-<li>None at release time</li>
+<li>When a Digitrax DCS240 is the command station, JMRI throttles may not be able to take control 
+    of a locomotive or consist in some cases if the DCS240 "expanded slots" (i.e. 400 slots) feature is in use. 
+    Be sure to "dispatch" or "release" locomotives and consists from throttles which use "expanded 
+    slots" before attempting to acquire the locomotive or consist via a JMRI throttle, as this may 
+    enable JMRI to acquire the locomotive or consist.  This problem can affect throttles which 
+    use the JMRI WiThrottle interface and throttles controlled via the JMRI Web Server.  This issue
+    is thought to be present in all previous versions of JMRI.</li>
+<li>DCC++ connections on Linux may not work.</li>
 </ul>
 
 <!--
