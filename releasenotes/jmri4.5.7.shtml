@@ -198,7 +198,25 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Hardware Support</h4>
 
-        <p>No changes in this release</p>
+        <h5>OpenLCB</h5>
+            <ul>
+                <li>User interface improvements in the Configuration
+                dialog. The dialog will now use an advanced and much faster
+                algorithm to load the initial values of the configuration from
+                the hardware. Users should not need to use the "Read All"
+                button anymore. Changed values are now highlighted in similar
+                way as DecoderPro does. The configuration dialog opens
+                immediately and shows the progress as the XML data is
+                downloaded via the network. It is also possible to re-try
+                loading if the first load fails. A cache allows opening the
+                same dialog instantly for the second time.</li>
+                <li>Fixed a software problem that lead to multiple issues when
+                CPU load is high, such as failed firmware downloads or
+                inability to open the configuration dialog. On some systems it
+                was enough to have the OpenLCB Monitor window open to trigger
+                the problem.</li>
+            </ul>
+
 <!--
         <h5>Bachrus Speedo</h5>
             <ul>
