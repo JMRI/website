@@ -47,15 +47,9 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-<li>When a Digitrax DCS240 is the command station, JMRI throttles may not be able to take control 
-    of a locomotive or consist in some cases if the DCS240 "expanded slots" (i.e. 400 slots) feature is in use. 
-    Be sure to "dispatch" or "release" locomotives and consists from throttles which use "expanded 
-    slots" before attempting to acquire the locomotive or consist via a JMRI throttle, as this may 
-    enable JMRI to acquire the locomotive or consist.  This problem can affect throttles which 
-    use the JMRI WiThrottle interface and throttles controlled via the JMRI Web Server.  This issue
-    is thought to be present in all previous versions of JMRI.</li>
-<li>DCC++ connections on Linux may not work.</li>
+<li>None as yet</li>
 </ul>
+
 <!--
 If any of those effect you, please either wait for
 <a href="jmri4.7.1.shtml">JMRI 4.7.1</a>, due out shortly after this one,
@@ -78,6 +72,18 @@ See the <a href="jmri4.4.shtml#warnings">JMRI 4.4 release note</a> for warnings 
 These may be relevant to you if you're updating from an earlier version.
 
 <p><em>(Since JMRI 4.5.6)</em> 
+    When a Digitrax DCS240 is the command station, JMRI throttles may not be able to take control 
+    of a locomotive or consist in some cases if the DCS240 "expanded slots" (i.e. 400 slots) feature is in use. 
+    Be sure to "dispatch" or "release" locomotives and consists from throttles which use "expanded 
+    slots" before attempting to acquire the locomotive or consist via a JMRI throttle, as this may 
+    enable JMRI to acquire the locomotive or consist.  This problem can affect throttles which 
+    use the JMRI WiThrottle interface and throttles controlled via the JMRI Web Server.  This issue
+    is thought to be present in all previous versions of JMRI.
+    
+<p><em>(Since JMRI 4.5.6)</em> 
+   DCC++ connections on Linux may not work.
+
+<p><em>(Since JMRI 4.5.6)</em> 
         As part of fixing the 
         <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
         the handling of TMCC preferences was changed.  If you have a TMCC
@@ -86,14 +92,8 @@ These may be relevant to you if you're updating from an earlier version.
         pane in the Preferences window and make sure that the 
         TMCC connection is selected for the appropriate device types.
 
-<p><em>(Since JMRI 4.5.5)</em> 
-        Apple has released a new "Sierra" version of macOS (formerly known as OS X) which has
-        enhanced security for downloaded programs.  We're providing a new form of signed download
-        to work with this, see below.  We'd be interested to hear whether that download
-        works on older OS versions, so that we can just release this new form
-        without having to provide separate downloads.
-
-<p><em>(Since JMRI 4.5.2)</em>This and future versions of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+<p><em>(Since JMRI 4.5.2)</em>
+    This and future versions of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
     <p>To remove Java SE 6 from OS X, follow these steps (these steps assume
@@ -113,19 +113,52 @@ These may be relevant to you if you're updating from an earlier version.
       <li><em>El Capitan only:</em> Restart your Mac.</li>
     </ol>
   
-<p><em>(Since JMRI 4.5.2)</em>Support for directly executing AppleScript within JMRI has been removed
+<p><em>(Since JMRI 4.5.2)</em>
+    Support for directly executing AppleScript within JMRI has been removed
     due to changes in macOS and Java outside our control. If you require the
     ability to use AppleScript, you may be able to add this capability on your
     own by visiting <a href="https://jmri.github.io/applescript">JMRI
       AppleScript Support</a>, but please be aware that this may not work
     on upcoming releases of macOS or Java.
 
-<p><em>(Since JMRI 4.5.1)</em>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
+<p><em>(Since JMRI 4.5.1)</em>
+    LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
 
-<p><em>(Since JMRI 4.5.1)</em>Internal turnouts and sensors need to have complete, individual system names.
+<p><em>(Since JMRI 4.5.1)</em>
+    Internal turnouts and sensors need to have complete, individual system names.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
     "IT12" is fine, but just "IT" is not. Most panel files that contain these should
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
+
+<p><em>(Since JMRI 4.3.5)</em>
+    When sharing a configuration between this version and JMRI 4.3.4 or older, the older version of JMRI will not
+    reflect changes in preferences, window position, table sorting, column order, or other user interface state. This is due to
+    changes in how user preferences and interface state are stored.
+
+<p><em>(Since JMRI 4.3.3)</em>
+    You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
+    the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
+    If you've set the order manually (e.g. by editing configuration files) in the past, please check this
+    preference to make sure it's set the way you want.</p>
+
+<p><em>(Since JMRI 4.1.2)</em>
+    Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
+    <ul>
+      <li>The decodeJmriFilename() function is no longer available by default. Use the  FileUtil.getExternalFilename() method instead.</li>
+      <li>The simple propertyListener object is no longer available by default. Create your own, following the examples provided in the jython folder in the JMRI distribution.</li>
+      <li>jmri_defaults.py included in the JMRI distribution is no longer executed by default, but will be executed before any other Jython scipts if included in your User Files location.</li>
+      <li>The default behavior of python.cachedir.skip is now true. If using a custom python.properties file, include "python.cachedir.skip=false" in that file.</li>
+      <li>Certain Python scripts are too large to be evaluated in Jython. If a script fails with the <code>java.io.IOException: Mark invalid</code> error, set "jython.exec=true" in a custom python.properties file or rewrite the script to be less than 100,000 characters per file. Note that when using "jython.exec=true" it may be desirable to run the included script jmri_bindings.py as a startup action to emulate the evaluation environment used when jython.exec=false.</li>
+    </ul>
+
+<p><em>(Since JMRI 4.1.1)</em>
+    Decoder definitions that use the "ivariable" form are now deprecated.  Definitions
+    included with this release have been converted to the new form.
+    If you have decoder definitions with the older "ivariable" form, they will no longer
+    validate, but can still be used for the first couple of test releases in this series.
+    Please ask on the
+    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
+    for help converting them, or just drop them and use the current definitions.</p>
 
 
 <h3>Download links:</h3>
@@ -451,7 +484,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>RR-CirKits</h5>
             <ul>
-                <li></li>
+                <!-- 4.5.8 -->
+                <li>Improvements to TowerMan and MotorMan definitions</li>
             </ul>
 
         <h5>SoundTraxx</h5>
@@ -566,6 +600,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 "Edit Car" window.</li>
             <li>Made some improvements to the train tool "Show Car Types Serviced".</li>
             <li>The train description will no longer write across the top of a Manifest header.</li>
+            <!-- 4.5.8 -->
+            <li>Car's load changes when waited at interchange or yard</li>
+
         </ul>
 
    <h4>Panel Editors</h4>
