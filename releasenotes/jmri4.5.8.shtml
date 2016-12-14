@@ -175,35 +175,30 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-<!--
 <p>Please use these links for downloading:</p>
-<p>OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.dmg/download</a><br/>
-    sha256: 635094115a6227465bcd74a62e718981e4f2a170155d2fe4d954d842a8277242 </p>
-
-<p>macOS (signed version for Sierra): <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224-signed.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224-signed.dmg/download</a><br/>
-    sha256: 214f99eb75cac3bee390a103a001108a65aba51eca365cbbfa81fe8fad980a72 </p>
+<p>OS X / macOS: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.dmg/download</a><br/>
+    sha256: e4c8968ecc04a456b66438c0257055a69252feeb5051af8d3abde8dd127a6088 </p>
 
 <p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.exe/download</a><br/>
-    sha256: cdce887acb1caa8097bc8a78a8a10a9df8263b32d0632d69002edc4dacf7e885</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.exe/download</a><br/>
+    sha256: b78061d2d98820d4e448c669dcf6f9e299bb82fd71d782f6a94e9f0ff8331e49</p>
 
 <p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.tgz/download</a><br/>
-    sha256: f97db9eaa8dbeb87ffa2eb7ed988c2e02c8fb7c813f2373f56528bdf17eb531a</p>
--->
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.tgz/download</a><br/>
+    sha256: 48c21a895344bf5e0a7f736ab69294fb3f0b00db7fa1e393e2365eda104d0c98</p>
+
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.7/">CI project page</a>.
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.5.8/">CI project page</a>.
  -->
 
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+-->
 
 <h3>Changes since <a href="jmri4.5.7.shtml">test release 4.5.7</a>:</h3>
 
@@ -214,74 +209,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <p></p>
 
-	    <h5>Bachrus Speedo</h5>
-            <ul>
-                <li></li>
-            </ul>
-		
-        <h5>C/MRI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>DCC++</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Digitrax</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>LocoNet</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li><li>
-            </ul>
-
         <h5><a href="http://openlcb.org">OpenLCB</a></h5>
             <ul>
-                <li></li>
-            </ul>
-
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Roco z21/Z21</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SPROG</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TMCC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
+                <li>Fix leaking threads from the OlcbConfigurationManager.</li>
+                <li>Updates openlcb.jar to 0.7.11. Contains a softer inquiry and better.</li>
+                <li>Allows multiple OpenLCB firmware upgrade downloads from a single HEX</li>
             </ul>
 
     <h4>New / Updated decoder definitions</h4>
@@ -289,189 +221,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <li></li>
      </ul>
 
-        <h5>BLI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Bachmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Digitrax</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Doehler &amp; Haas</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ESU</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Hornby</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>LaisDCC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Lenz</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MRC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Norsk Modelljernbane (NJM)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>RR-CirKits</h5>
             <ul>
                 <li>Improvements to TowerMan and MotorMan definitions</li>
             </ul>
 
-        <h5>SoundTraxx</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Tehnologistic (train-O-matic)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Viessmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ZIMO</h5>
-            <ul>
-                <li></a></li>
-            </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-
-   <h4>Dispatcher</h4>
-        <ul>
-             <li></li>
-        </ul>
-
-    <h4>Layout Editor</h4>
-        <ul>
-            <li></li>
-         </ul>
-
-    <h4>Logix</h4>
-        <ul>
-            <li><li>
-        </ul>
-
    <h4>Operations</h4>
         <ul>
             <li>Car's load changes when waited at interchange or yard</li>
-        </ul>
-
-   <h4>Panel Editors</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Preferences</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Routes</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Scripting</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Signals</h4>
-        <ul>
-            <li></li>
-        </ul>
-        <h5>Signal Systems</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Signal Mast Editor</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-   <h4>Warrants</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>Web Access</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Miscellaneous</h4>
-        <ul>
-            <li></li>
         </ul>
 
    <!--#include virtual="/Footer" -->
