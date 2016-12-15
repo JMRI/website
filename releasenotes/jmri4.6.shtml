@@ -191,12 +191,18 @@ These are development files, and might not be working at any particular time.</p
 
 <h3>Changes since <a href="jmri4.4.shtml">production release 4.4</a>:</h3>
 
-<!-- We need to come up with a way of doing this as there doesn't seem to be an 
-easy way of adding a range of milestones to the query string -->
-<!--
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.4+">list of included commits</a> is available from our
+Links to the full list of changes from JMRI test release 
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.1+">4.5.1<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.2+">4.5.2<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.3+">4.5.3<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.4+">4.5.4<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.5+">4.5.5<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.6+">4.5.6<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.7+">4.5.7<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.8+">4.5.8<a>
+in our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
--->
+
 
     <h4>Hardware Support</h4>
 
@@ -325,6 +331,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                     inability to open the configuration dialog. On some systems it
                     was enough to have the OpenLCB Monitor window open to trigger
                     the problem.</li>
+                <!-- 4.5.8 -->
+                <li>Fix leaking threads from the OlcbConfigurationManager.</li>
+                <li>Updates openlcb.jar to 0.7.11. Contains a softer inquiry and better.</li>
+                <li>Allows multiple OpenLCB firmware upgrade downloads from a single HEX</li>
             </ul>
 
         <h5>RFID</h5>
