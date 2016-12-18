@@ -26,11 +26,11 @@
       Release Notes for JMRI 4.6 release
       </h2>
 
-    <p>Date: mmm dd, 2016</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: December 17, 2016</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Production version 4.6 of JMRI/DecoderPro is available for download.</p>
 
-<p><b>This is a draft release note only; the download links do not yet work</b></p>
+<!-- <p><b>This is a draft release note only; the download links do not yet work</b></p> -->
 
 We are very pleased to announce that the 4.5 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
@@ -214,17 +214,6 @@ in our
                 <li>Fix issues with Speedo systems in recent versions of JMRI (<a href="https://github.com/JMRI/JMRI/pull/2027">#2027</a>).</li>
             </ul>
 
-        <h5>C/MRI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>DCC++</h5>
-            <ul>
-                <!-- 4.5.6 -->
-                <li>Fixed the timeout when programming in Ops Mode.</li>
-            </ul>
-
         <h5>Digitrax</h5>
             <ul>
                 <!-- 4.5.1 -->
@@ -252,21 +241,11 @@ in our
                 <li>The JMRI Digi XBee support now uses the official Digi XBee Library.</li>
             </ul>
 
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>LocoNet</h5>
             <ul>
                 <!-- 4.5.4 -->
                 <li>Send direction and function changes even when JMRI thinks the value is unchanged.
                     (<a href="https://github.com/JMRI/JMRI/pull/1894">#1894</a>)</li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
             </ul>
 
         <h5><a href="http://openlcb.org">OpenLCB</a></h5>
@@ -337,11 +316,6 @@ in our
                 <li>Allows multiple OpenLCB firmware upgrade downloads from a single HEX</li>
             </ul>
 
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>Roco z21/Z21</h5>
             <ul>
                 <!-- 4.5.4 -->
@@ -382,30 +356,7 @@ in our
                     TMCC connection is selected for the appropriate device types.</li>
             </ul>
 
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
-            </ul>
-
     <h4>New / Updated decoder definitions</h4>
-      <ul>
-        <li></li>
-     </ul>
-
-        <h5>BLI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Bachmann</h5>
-            <ul>
-                <li></li>
-            </ul>
 
         <h5>Digirails</h5>
             <ul>
@@ -417,11 +368,6 @@ in our
             <ul>
                 <!-- 4.5.1 -->
                 <li>Alain Le Marchand added support for the DH126T decoder.</li>
-            </ul>
-
-        <h5>Doehler &amp; Haas</h5>
-            <ul>
-                <li></li>
             </ul>
 
         <h5>ESU</h5>
@@ -446,50 +392,10 @@ in our
                 </li>
             </ul>
 
-        <h5>Hornby</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>LaisDCC</h5>
             <ul>
                 <!-- 4.5.6 -->
                 <li>Claudio Capaccio of <a href="http://laisdcc.com">LaisDCC</a> provided definitions for their family of decoders.</li>
-            </ul>
-
-        <h5>Lenz</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MRC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Norsk Modelljernbane (NJM)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li></li>
             </ul>
 
         <h5>RR-CirKits</h5>
@@ -522,32 +428,11 @@ in our
                 <li>Michael Mosher updated some TCS Steam decoder definitions</li>
             </ul>
 
-        <h5>Tehnologistic (train-O-matic)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Viessmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>ZIMO</h5>
             <ul>
                 <!-- 4.5.2 -->
                 <li>Mark Waters updated the Zimo MX644 and MX600 definitions</li>
             </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
-            </ul>
-
 
    <h4>Dispatcher</h4>
         <ul>
@@ -580,11 +465,6 @@ in our
             <li>Keywords for localization of Operations have been grouped to prevent duplicate work.
                 Translators please check your earlier work from a fresh repo.</li>
             <li>German translation of Operations has been expanded.</li>
-        </ul>
-
-    <h4>Logix</h4>
-        <ul>
-            <li></li>
         </ul>
 
    <h4>Operations</h4>
@@ -645,21 +525,6 @@ in our
                 <li>Editing Cancel button restores shape to previous settings.</li>
             </ul>
 
-        <h4>Preferences</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Routes</h4>
-        <ul>
-            <li></li>
-        </ul>
-
     <h4>Scripting</h4>
         <ul>
             <!-- 4.5.1 -->
@@ -701,11 +566,6 @@ in our
                 <li>Egbert Broerse added a new Signal Masts driver, the
                 <a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/beantable/SignalMastAddEdit.shtml#matrixCtl">
                 Output Matrix Mast</a>. (<a href="https://github.com/JMRI/JMRI/pull/1345">#1345</a>)</li>
-            </ul>
-
-            <h5>Signal Mast Editor</h5>
-            <ul>
-                <li></li>
             </ul>
 
     <h4>Tools</h4>
