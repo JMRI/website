@@ -484,15 +484,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 			a directory other than the configuration profile directory for storing the
 			log file.  This improvement affects the monitoring tools for many connection 
 			types.</li>
-        <li>JMRI applications will not load a panel file that fails XML validation; an error will be
-            shown that explains the error, allowing it to be fixed using an editor.
-            (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
+            <li>JMRI applications will not load a panel file that fails XML validation; an error will be
+                shown that explains the error, allowing it to be fixed using an editor.
+                (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
 	    <li>JMRI no longer supports the portable paths <pre>resource:</pre> or <pre>file:</pre> that
 	        were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
-            if the panel contains a path that starts with <pre>resource:</pre> and the panel will
-            not load until changed using an external editor. Paths starting with <pre>file:</pre>
-            cannot be automatically flagged because JMRI allows file: URLs.
-            (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
+                if the panel contains a path that starts with <pre>resource:</pre> and the panel will
+                not load until changed using an external editor. Paths starting with <pre>file:</pre>
+                cannot be automatically flagged because JMRI allows file: URLs.
+                (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
+    	    <li>If a connection fails to initialize correctly, startup actions will not be run. An error
+	        message will be displayed reading "Unable to run startup actions due to earlier failures."
+                (<a href="https://github.com/JMRI/JMRI/pull/2799">#2799</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
