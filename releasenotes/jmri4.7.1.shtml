@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.5.7
+ JMRI: Release Notes for 4.7.1
  </title>
     <meta content="Bob Jacobsen" name="Author">
-    <meta name="keywords" content="java model railroad JMRI 4.5.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.7.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,14 +23,14 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 4.5.7 release
+      Release Notes for JMRI 4.7.1 release
       </h2>
 
-    <p>Date: Nov 30, 2016</p>
-    <p>From: Matthew Harris</p>
-    <p>Subject: Test version 4.5.7 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: mmm dd, 2017</p>
+    <p>From: (pumpkin)</p>
+    <p>Subject: Test version 4.7.1 of JMRI/DecoderPro is available for download.</p>
 
-<!--<p><b>This is a draft release note only; the download links do not yet work</b></p>-->
+<p><b>This is a draft release note only; the download links do not yet work</b></p>
 
 <h3>Notes:</h3>
 
@@ -39,7 +39,7 @@ And please back up your JMRI files before installing this, in case you want to g
 back to an earlier version.</p>
 
 <p>This is the next in a series of test versions. We expect this series
-to end in the next JMRI production release around the end of 2016.
+to end in the next JMRI production release around the middle of 2017.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)</p>
 
 <p>Some of the changes involved are quite extensive.
@@ -55,35 +55,34 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-<li>When a Digitrax DCS240 is the command station, JMRI throttles may not be able to take control 
-	of a locomotive or consist in some cases if the DCS240 "expanded slots" (i.e. 400 slots) feature is in use. 
-	Be sure to "dispatch" or "release" locomotives and consists from throttles which use "expanded 
-	slots" before attempting to acquire the locomotive or consist via a JMRI throttle, as this may 
-	enable JMRI to acquire the locomotive or consist.  This problem can affect throttles which 
-	use the JMRI WiThrottle interface and throttles controlled via the JMRI Web Server.  This issue
-	is thought to be present in all previous versions of JMRI.</li>
-<li>DCC++ connections on Linux may not work.</li>
+<li>None at release time</li>
 </ul>
 
-
+<!--
 If any of those effect you, please either wait for
-<a href="jmri4.5.8.shtml">JMRI 4.5.8</a>, due out shortly after this one,
+<a href="jmri4.5.9.shtml">JMRI 4.5.9</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
-
+ -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li>None yet</li>
+    <li>JMRI no longer supports the portable paths <pre>resource:</pre> or <pre>file:</pre> that
+        were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
+        if the panel contains a path that starts with <pre>resource:</pre> and the panel will
+        not load until changed using an external editor. Paths starting with <pre>file:</pre>
+        cannot be automatically flagged because JMRI allows file: URLs.</li>
+    <li>JMRI applications will not load a panel file that fails XML validation; an error will be
+        shown that explains the error, allowing it to be fixed using an editor.</li>
 </ul>
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.4.shtml#warnings">JMRI 4.4 release note</a> for warnings predating the 4.4 development series.
+See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for warnings predating the 4.6 development series.
 These may be relevant to you if you're updating from an earlier version.
 
 <p><em>(Since JMRI 4.5.6)</em> 
@@ -129,7 +128,7 @@ These may be relevant to you if you're updating from an earlier version.
       AppleScript Support</a>, but please be aware that this may not work
     on upcoming releases of macOS or Java.
 
-<p><em>(Since JMRI 4.5.1)</em>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.
+<p><em>(Since JMRI 4.5.1)</em>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
 
 <p><em>(Since JMRI 4.5.1)</em>Internal turnouts and sensors need to have complete, individual system names.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
@@ -165,64 +164,50 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-
+<!--
 <p>Please use these links for downloading:</p>
 <p>OS X: <a
-    href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.dmg/download</a><br/>
-    sha256: 68f9d4c8854f648a4eaeabc69d191db5a9b42171b569c6103b24a78adaef4c63</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.dmg/download</a><br/>
+    sha256: 635094115a6227465bcd74a62e718981e4f2a170155d2fe4d954d842a8277242 </p>
+
+<p>macOS (signed version for Sierra): <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224-signed.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224-signed.dmg/download</a><br/>
+    sha256: 214f99eb75cac3bee390a103a001108a65aba51eca365cbbfa81fe8fad980a72 </p>
 
 <p>Windows: <a
-    href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.exe/download</a><br/>
-    sha256: 57b8787927dd117b8fbb86391b9eb6d689fa00847730c13d7acae7ea8f53de12</p>
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.exe/download</a><br/>
+    sha256: cdce887acb1caa8097bc8a78a8a10a9df8263b32d0632d69002edc4dacf7e885</p>
 
 <p>Linux: <a
-    href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.tgz/download</a><br/>
-    sha256: 4d5aed5be82000b77742e0a101a5016c0cf9362b62957d119b68c98396aef95d</p>
-
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-Rcb78224.tgz/download</a><br/>
+    sha256: f97db9eaa8dbeb87ffa2eb7ed988c2e02c8fb7c813f2373f56528bdf17eb531a</p>
+-->
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.5.7/">CI project page</a>.
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.7/">CI project page</a>.
+ -->
 
 
-<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
--->
 
-<h3>Changes since <a href="jmri4.5.6.shtml">test release 4.5.6</a>:</h3>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.7+">list of included commits</a> is available from our
+<h3>Changes since <a href="jmri4.6.shtml">production release 4.6</a>:</h3>
+
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.1+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h4>Hardware Support</h4>
 
-        <h5>OpenLCB</h5>
-            <ul>
-                <li>User interface improvements in the Configuration
-                dialog. The dialog will now use an advanced and much faster
-                algorithm to load the initial values of the configuration from
-                the hardware. Users should not need to use the "Read All"
-                button anymore. Changed values are now highlighted in similar
-                way as DecoderPro does. The configuration dialog opens
-                immediately and shows the progress as the XML data is
-                downloaded via the network. It is also possible to re-try
-                loading if the first load fails. A cache allows opening the
-                same dialog instantly for the second time.</li>
-                <li>Fixed a software problem that lead to multiple issues when
-                CPU load is high, such as failed firmware downloads or
-                inability to open the configuration dialog. On some systems it
-                was enough to have the OpenLCB Monitor window open to trigger
-                the problem.</li>
-            </ul>
+        <p></p>
 
-<!--
-        <h5>Bachrus Speedo</h5>
+	    <h5>Bachrus Speedo</h5>
             <ul>
                 <li></li>
             </ul>
-
+		
         <h5>C/MRI</h5>
             <ul>
                 <li></li>
@@ -235,7 +220,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Digitrax</h5>
             <ul>
-                <li></li>
+                <li>When a JMRI program is configured to use the DCS240 is as a standalone programmer, upon program exit the
+		DCS240 will be re-configured as a LocoNet interface.  This allows other LocoNet devices to access the
+		DCS240 service-mode programming track after the JMRI program is closed.</li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
@@ -287,12 +274,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
--->
+
     <h4>New / Updated decoder definitions</h4>
       <ul>
-        <li>None in this release</li>
+        <li></li>
      </ul>
-<!--
+
         <h5>BLI</h5>
             <ul>
                 <li></li>
@@ -310,7 +297,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Doehler &amp; Haas</h5>
             <ul>
-                <li></li>
+                <li>Ronald Kuhn added/updated definitions for several decoders (<a href="https://github.com/JMRI/JMRI/pull/2736">#2736</a>):
+                    <ul>
+                        <li>SD10</li>
+                        <li>SD16</li>
+                        <li>SD18</li>
+                        <li>SD21</li>
+                        <li>SD22A</li>
+                        <li>FH05B</li>
+                        <li>DH05</li>
+                    </ul>
             </ul>
 
         <h5>ESU</h5>
@@ -321,6 +317,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h5>Hornby</h5>
             <ul>
                 <li></li>
+            </ul>
+
+        <h5>Kuehn</h5>
+            <ul>
+                <li>Ronald Kuhn updated definitions for the N45 and 5Moto decoder familes (<a href="https://github.com/JMRI/JMRI/pull/2736">#2736</a>)</li>
             </ul>
 
         <h5>LaisDCC</h5>
@@ -370,7 +371,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>SoundTraxx</h5>
             <ul>
-                <li></li>
+                <li>Added OEM decoder definitions for some PIKO G scale steam locomotives (Marc Fournier <a href="https://github.com/JMRI/JMRI/pull/2716">#2716</a>)</li>
             </ul>
 
         <h5>TCS</h5>
@@ -395,25 +396,26 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>ZIMO</h5>
             <ul>
-                <li></li>
+                <li>Ronald Kuhn added the MX681 and MX685 decoders (<a href="https://github.com/JMRI/JMRI/pull/2736">#2736</a>)</li>
+                <li>Ronald Kuhn updated German translations for several Zimo decoders (<a href="https://github.com/JMRI/JMRI/pull/2736">#2736</a>)</li>
             </ul>
 
         <h5>Miscellaneous</h5>
             <ul>
                 <li></li>
             </ul>
--->
-<!--
+
+
    <h4>Dispatcher</h4>
         <ul>
              <li></li>
         </ul>
--->
+
     <h4>Layout Editor</h4>
         <ul>
-            <li>Fixed a problem with adding Train/loco icons to the panel</li>
+            <li></li>
          </ul>
-<!--
+
     <h4>Logix</h4>
         <ul>
             <li><li>
@@ -448,12 +450,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li></li>
         </ul>
--->
+
     <h4>Signals</h4>
         <ul>
-            <li>Fixed an issue to set aspects in the Signal Mast Table using the combobox. Sorting rows or moving columns in the table is fully supported.</li>
+            <li></li>
         </ul>
-<!--
         <h5>Signal Systems</h5>
             <ul>
                 <li></li>
@@ -463,30 +464,40 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
--->
+
    <h4>Warrants</h4>
         <ul>
-            <li>A bug when Calibrating a throttle speed factor in NXWarrants has been fixed.</li>
-            <li>SCWarrants are converted to regular Warrants with a "No Ramping" flag set.  Such warrants change speed as before upon entering
-            the approach block. Now they use the speeds specified by the signals rather than one hard coded value. The new "No Ramping" flag
-            may be turned off and on in the Warrant Editing window.</li>
+            <li></li>
         </ul>
-<!--
+
    <h4>Web Access</h4>
         <ul>
             <li></li>
         </ul>
--->
+
     <h4>Miscellaneous</h4>
         <ul>
-            <li>The MS Windows launcher has had a number of updates including:
-                <ul>
-                    <li>a new method to calculate the maximum memory</li>
-                    <li>use the Windows look and feel as an initial default</li>
-                    <li>allow the classpath to be modified by either appending `--cp:a=CLASSPATH` or prepending `--cp:p=CLASSPATH`</li>
-                    <li>allow for default options to be specified in a `jmri.conf` file stored in `%userprofile%\JMRI`
-                </ul>
-            </li>
+            <li>For those connections which have the ability to monitor the bus traffic, the
+			feature to save the monitor data to a file has been improved.  If the tool is 
+			unable to access the log file, a dialog box will appear to inform the user of 
+			the problem.  Monitor log files will default to be placed in the configuration 
+			profile directory, where in some cases, previous versions of JMRI could attempt 
+			place the log file in the program directory.  As before, the user may select
+			a directory other than the configuration profile directory for storing the
+			log file.  This improvement affects the monitoring tools for many connection 
+			types.</li>
+            <li>JMRI applications will not load a panel file that fails XML validation; an error will be
+                shown that explains the error, allowing it to be fixed using an editor.
+                (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
+	    <li>JMRI no longer supports the portable paths <pre>resource:</pre> or <pre>file:</pre> that
+	        were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
+                if the panel contains a path that starts with <pre>resource:</pre> and the panel will
+                not load until changed using an external editor. Paths starting with <pre>file:</pre>
+                cannot be automatically flagged because JMRI allows file: URLs.
+                (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
+    	    <li>If a connection fails to initialize correctly, startup actions will not be run. An error
+	        message will be displayed reading "Unable to run startup actions due to earlier failures."
+                (<a href="https://github.com/JMRI/JMRI/pull/2799">#2799</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
