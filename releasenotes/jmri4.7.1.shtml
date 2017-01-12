@@ -220,7 +220,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Digitrax</h5>
             <ul>
-                <li></li>
+                <li>When a JMRI program is configured to use the DCS240 is as a standalone programmer, upon program exit the
+		DCS240 will be re-configured as a LocoNet interface.  This allows other LocoNet devices to access the
+		DCS240 service-mode programming track after the JMRI program is closed.</li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
@@ -484,15 +486,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 			a directory other than the configuration profile directory for storing the
 			log file.  This improvement affects the monitoring tools for many connection 
 			types.</li>
-        <li>JMRI applications will not load a panel file that fails XML validation; an error will be
-            shown that explains the error, allowing it to be fixed using an editor.
-            (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
+            <li>JMRI applications will not load a panel file that fails XML validation; an error will be
+                shown that explains the error, allowing it to be fixed using an editor.
+                (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
 	    <li>JMRI no longer supports the portable paths <pre>resource:</pre> or <pre>file:</pre> that
 	        were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
-            if the panel contains a path that starts with <pre>resource:</pre> and the panel will
-            not load until changed using an external editor. Paths starting with <pre>file:</pre>
-            cannot be automatically flagged because JMRI allows file: URLs.
-            (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
+                if the panel contains a path that starts with <pre>resource:</pre> and the panel will
+                not load until changed using an external editor. Paths starting with <pre>file:</pre>
+                cannot be automatically flagged because JMRI allows file: URLs.
+                (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
+    	    <li>If a connection fails to initialize correctly, startup actions will not be run. An error
+	        message will be displayed reading "Unable to run startup actions due to earlier failures."
+                (<a href="https://github.com/JMRI/JMRI/pull/2799">#2799</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
