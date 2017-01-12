@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+ <title>JMRI CodeFlower</title>
+    <meta name="Author" content="Egbert Broerse">
+    <meta name="keywords" content="codeflower code d3 java model railroad JMRI decoderpro panelpro dcc">
+
+<!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+  <link rel="icon" href="/images/jmri.ico" type="image/png">
+  <link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
+
+<body>
+<!--#include virtual="/Header" -->
+  <div class="nomenu" id="mBody">
+    <div id="mainContent">
+
+    <h2>JMRI CodeFlower</h2>
+    
+    <h3>Introduction</h3>
+    <p>The CodeFlower animation gives a lively perspective of how JMRI was built up and how incredibly diverse the current state of work is.</p>
+    
+    <div id="visualization"></div>
+    <!--javascript code for this div is below-->
+        
+    <h3>CodeFlower Source code visualization</h3>
+    <p>CodeFlower visualizes source repositories using an interactive tree. Each disc represents a file, with a radius proportional to the number of lines of code (loc). All rendering is done client-side, in JavaScript. Try hovering on nodes to see the loc number, clicking on directory nodes to fold them and dragging nodes to rearrange the layout. Built with <a href="https://github.com/mbostock/d3">d3.js</a>.</p>
+    
+    <p>Enjoy!</p>
+    
+     <p>Also view our <a href="codeswarm.shtml">2009 CodeSwarm</a>.</p>
+
+    <h3>Technical Details</h3>
+    <p>This CodeFlower was created using one local GitHub repository, <code>cloc</code> and
+    functions embedded in the CodeFlower page to convert the information into a json format.
+    <p>
+    <p>CodeFlower was built with <a href="https://github.com/mbostock/d3">d3.js</a>, inspired by <a href="https://code.google.com/p/codeswarm/">Code Swarm</a> and <a href="https://code.google.com/p/gource/">Gource</a>. It was published as open-source by <a href="https://twitter.com/francoisz">François Zaninotto</a> under the MIT license.</p>
+        
+    <h4>Data Source</h4>
+   <a href="jmri.json">jmri.json</a>
+    
+<!--#include virtual="/Footer" -->
+    </div> <!-- closes mainContent -->
+  </div> <!-- closes mBody -->
+  
+    <script type="text/javascript" src="javascripts/d3/d3.js"></script>
+    <script type="text/javascript" src="javascripts/d3/d3.geom.js"></script>
+    <script type="text/javascript" src="javascripts/d3/d3.layout.js"></script>
+    <script type="text/javascript" src="javascripts/CodeFlower.js"></script>
+    <script type="text/javascript">
+       var jmriCodeFlower = new CodeFlower("#visualization", 800, 800);
+       jmriCodeFlower.update("jmri.json");
+    </script>
+</body>
+</html>
