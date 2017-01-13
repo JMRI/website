@@ -331,7 +331,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Lenz</h5>
             <ul>
-                <li></li>
+                <li>Alain Carasso fixed the missing function map pane for older Lenz Silver decoders (<a href="https://github.com/JMRI/JMRI/pull/2873">#2873</a>)</li>
             </ul>
 
         <h5>MGP</h5>
@@ -498,6 +498,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     	    <li>If a connection fails to initialize correctly, startup actions will not be run. An error
 	        message will be displayed reading "Unable to run startup actions due to earlier failures."
                 (<a href="https://github.com/JMRI/JMRI/pull/2799">#2799</a>)</li>
+            <li>The WiThrottle window can now be resized so that when several client devices are
+                connected, it's possible to adjust the list to see all of them without needing to scroll
+                (<a href="https://github.com/JMRI/JMRI/pull/2857">#2857</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
