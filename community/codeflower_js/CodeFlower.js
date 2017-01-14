@@ -9,15 +9,15 @@ var CodeFlower = function(selector, w, h) {
     .attr('height', h);
 
   this.svg.append("svg:rect")
-    .style("stroke", "#999")
+    .style("stroke", "#ffff")
     .style("fill", "#fff")
     .attr('width', w)
     .attr('height', h);
 
   this.force = d3.layout.force()
     .on("tick", this.tick.bind(this))
-    .charge(function(d) { return d._children ? -d.size / 100 : -40; })
-    .linkDistance(function(d) { return d.target._children ? 80 : 25; })
+    .charge(function(d) { return d._children ? -d.size / 100 : -10; }) // default: 100:-40; slows down the action but keeps the elements away from the edge
+    .linkDistance(function(d) { return d.target._children ? 70 : 25; }) // default: 80:25; keeps the items closer in the final state
     .size([h, w]);
 };
 
@@ -37,7 +37,7 @@ CodeFlower.prototype.update = function(json) {
 
   // Restart the force layout
   this.force
-    .gravity(Math.atan(total / 50) / Math.PI * 0.4)
+    .gravity(Math.atan(total / 60) / Math.PI * 0.4) // default: Math.atan(total / 50) / Math.PI * 0.4; /60 makes it more compact in equilibrium
     .nodes(nodes)
     .links(links)
     .start();
@@ -63,13 +63,13 @@ CodeFlower.prototype.update = function(json) {
     .classed("collapsed", function(d) { return d._children ? 1 : 0; });
 
   this.node.transition()
-    .attr("r", function(d) { return d.children ? 3.5 : Math.pow(d.size, 2/5) || 1; });
+    .attr("r", function(d) { return d.children ? 3.5 : Math.pow(d.size, 2/5) || 1; }); // default: 3.5  Math.pow(d.size, 2/5); cf. line 72
 
   // Enter any new nodes
   this.node.enter().append('svg:circle')
     .attr("class", "node")
     .classed('directory', function(d) { return (d._children || d.children) ? 1 : 0; })
-    .attr("r", function(d) { return d.children ? 3.5 : Math.pow(d.size, 2/5) || 1; })
+    .attr("r", function(d) { return d.children ? 3.5 : Math.pow(d.size, 2/5) || 1; }) // set to 1/5 to reduce max. circle size; cf. line 66
     .style("fill", function color(d) {
       return "hsl(" + parseInt(360 / total * d.id, 10) + ",90%,70%)";
     })
