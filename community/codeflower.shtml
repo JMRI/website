@@ -3,7 +3,7 @@
 <head>
  <title>JMRI CodeFlower</title>
     <meta name="Author" content="Egbert Broerse">
-    <meta name="Date.Modified" content="20170115">
+    <meta name="Date.Modified" content="20170116">
     <meta name="keywords" content="codeflower code d3 java model railroad JMRI decoderpro panelpro dcc">
 
 <!-- Style -->
@@ -60,7 +60,9 @@
         <option value="codeflower_js/jmri.json">Full repo</option>
       </select>
 
-    <div id="visualization"></div>
+    <div id="visualization"><noscript>Drop down is disabled and a static image shown because JavaScript is not running in this window.<br>
+    <img src="codeflower_js/javaflower.png" alt="Javascript not enabled" width="770" height="774" />
+</noscript></div>
     <!--javascript code for this div is below-->
         
     <h3>Source code visualization</h3>
@@ -99,9 +101,9 @@
     <p>I had to trick a bit on the relative size of each element, as 3 files overshadowed the others: decoderIndex.xml, RR-CirKits-TC-64-basic.xml and functionGenerator.xml all containing over 25k lines of code (loc) while other files contain just 200 loc.<br>
     Open <code>CodeFlower.js</code> and make the following changes to show the full current code set of JMRI inside a reasonable square:
         <ul>
-        <li>on line 19:  <code>.charge(function(d) { return d._children ? -d.size / 100 : -40; })</code> // change 100:-40 to 100:-4 // -4 slows down the action but keeps the elements away from the edge</li>
-        <li>on line 20:  <code>.linkDistance(function(d) { return d.target._children ? 80 : 25; })</code> // change 80:25 to 8:25 // 8 keeps the items closer in the final state</li>
-        <li>on line 40:  <code>.gravity(Math.atan(total / 500) / Math.PI * 0.4)</code> // change total/50 to /500 makes it more compact in equilibrium</li>
+        <li>on line 19:  <code>.charge(function(d) { return d._children ? -d.size / 100 : -40; })</code> // change 100:-40 to 500:-15 // -15 slows down the action but keeps the elements away from the edge</li>
+        <li>on line 20:  <code>.linkDistance(function(d) { return d.target._children ? 70 : 25; })</code> // change 80:25 to 70:25 // 70 keeps the items closer in the final state</li>
+        <li>on line 40:  <code>.gravity(Math.atan(total / 60) / Math.PI * 0.4)</code> // change total/50 to /60 makes it more compact in equilibrium</li>
         <li>on line 72:  <code>.attr("r", function(d) { return d.children ? 3.5 : Math.pow(d.size, 2/5) || 1; })</code> // change 2/5 to 1/5 (or use log for pow?) NB: keep it about the same as line 66</li>
         </ul>
 
@@ -125,8 +127,8 @@
         if (currentCodeFlower) currentCodeFlower.cleanup();
         // adapt layout size to the total number of elements
         //var total = countElements(json);
-        w = 1200; //parseInt(Math.sqrt(total) * 5, 10);
-        h = 1200; //parseInt(Math.sqrt(total) * 5, 10);
+        w = 1500; //parseInt(Math.sqrt(total) * 5, 10);
+        h = 1500; //parseInt(Math.sqrt(total) * 5, 10);
         // create a new CodeFlower
         currentCodeFlower = new CodeFlower("#visualization", w, h).update(json);
       };
