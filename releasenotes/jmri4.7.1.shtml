@@ -207,7 +207,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Digitrax</h5>
             <ul>
-                <li>When a JMRI program is configured to use the DCS240 is as a standalone programmer, upon program exit the
+                <li>When a JMRI program is configured to use the DCS240 as a standalone programmer, upon program exit the
 		            DCS240 will be re-configured as a LocoNet interface.  This allows other LocoNet devices to access the
 		            DCS240 service-mode programming track after the JMRI program is closed.</li>
 		        <li>Bob Milhaupt improved the handling of the LocoNet-specific programmers for
@@ -431,12 +431,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Roster</h4>
         <ul>
-            <li></li>
+            <li>Proper display of new Roster Groups in the DecoderPro main window was fixed.</li>
         </ul>
 
-    <h4>Routes</h4>
+    <h4>Turnouts, Lights and other elements</h4>
         <ul>
-            <li></li>
+            <li>The pane to create new objects was modernized, with tooltips and a handy JSpinner to set the number of items to add (see the <a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/beantable/TurnoutAddEdit.shtml">Turnout Add/Edit help</a>.</li>
+            <li>The Cmd column in the Turnout table was renamed State to align with the other tables.</li>
         </ul>
 
     <h4>Scripting</h4>
@@ -453,11 +454,25 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h5>Signal Mast Editor</h5>
+        <h5>Signal Heads</h5>
             <ul>
-                <li></li>
+                <li>In the Signal Heads table, pick any of the valid Appearances from a combobox instead having to follow a fixed order.<br>
+                This change aligns the interface with the Signal Mast table. For developers, this interface element is reusable.</li>
+                <li>The panes to add or edit a Signal Head were updated, with more tooltips and (translatable) warning dialogs.<br>
+                Now uses JSpinners to set IDs for a DCC Head.<br>
+                Translators, please review your language.</li>
+                <li>The function of Turnouts in use as outputs for a Signal Head are now stored as localized Comments in the Turnout table.<br>
+                Existing comments are retained until they are manually deleted, after which a change in outputs will be stored.</li>
+                <li>After adding a new Head, the Name fields on the pane are emptied to help prevent using the same name again and receiving an error.</li>
+                <li>Adding a Bachmann Acela Signal Head now requires an active system connection to guarantee the proper ID.</li>
+                <li>The intention of the Home/Distant choice for a MERG head is explained in a clearer label and the items to choose from are adaptable per language.</li>
             </ul>
 
+        <h5>Signal Masts</h5>
+            <ul>
+                <li>Per user request, the Output Matrix Signal Mast connection can be configured using up to 6 outputs instead of 5.</li>
+            </ul>
+        
    <h4>Warrants</h4>
         <ul>
             <li></li>
@@ -468,6 +483,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li></li>
         </ul>
 
+   <h4>Internationalization</h4>
+        <ul>
+            <li>Expanded translations in Catalan, Danish and German for many of the tools.</li>
+            <li>Starting JMRI after changing Locale (language) gives a more informative warning in the Console.</li>
+        </ul>
+        
     <h4>Miscellaneous</h4>
         <ul>
             <li>For those connections which have the ability to monitor the bus traffic, the
@@ -495,10 +516,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 connected, it's possible to adjust the list to see all of them without needing to scroll
                 (<a href="https://github.com/JMRI/JMRI/pull/2857">#2857</a>)</li>
             <li>Added some additional tools for decoding and displaying NMRA DCC packets to the
-                NmraPacket class.
+                NmraPacket class.</li>
             <li>Added 
                 <a href="http://jmri.org/help/en/html/doc/Technical/XmlPersistance.shtml">support for reading older panel files</a> 
-                that use deprecated conversion classes
+                that use deprecated conversion classes</li>
+            <li>Behind the scenes, a lot of error handling and code documentation was added.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
