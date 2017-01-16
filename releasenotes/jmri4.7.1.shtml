@@ -94,13 +94,6 @@ These may be relevant to you if you're updating from an earlier version.
         pane in the Preferences window and make sure that the 
         TMCC connection is selected for the appropriate device types.
 
-<p><em>(Since JMRI 4.5.5)</em> 
-        Apple has released a new "Sierra" version of macOS (formerly known as OS X) which has
-        enhanced security for downloaded programs.  We're providing a new form of signed download
-        to work with this, see below.  We'd be interested to hear whether that download
-        works on older OS versions, so that we can just release this new form
-        without having to provide separate downloads.
-
 <p><em>(Since JMRI 4.5.2)</em>This and future versions of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
@@ -128,16 +121,10 @@ These may be relevant to you if you're updating from an earlier version.
       AppleScript Support</a>, but please be aware that this may not work
     on upcoming releases of macOS or Java.
 
-<p><em>(Since JMRI 4.5.1)</em>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
-
 <p><em>(Since JMRI 4.5.1)</em>Internal turnouts and sensors need to have complete, individual system names.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
     "IT12" is fine, but just "IT" is not. Most panel files that contain these should
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
-
-<p><em>(Since JMRI 4.3.5)</em> When sharing a configuration between this version and JMRI 4.3.4 or older, the older version of JMRI will not
-    reflect changes in preferences, window position, table sorting, column order, or other user interface state. This is due to
-    changes in how user preferences and interface state are stored.
 
 <p><em>(Since JMRI 4.3.3)</em> You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
     the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
@@ -221,8 +208,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h5>Digitrax</h5>
             <ul>
                 <li>When a JMRI program is configured to use the DCS240 is as a standalone programmer, upon program exit the
-		DCS240 will be re-configured as a LocoNet interface.  This allows other LocoNet devices to access the
-		DCS240 service-mode programming track after the JMRI program is closed.</li>
+		            DCS240 will be re-configured as a LocoNet interface.  This allows other LocoNet devices to access the
+		            DCS240 service-mode programming track after the JMRI program is closed.</li>
+		        <li>Bob Milhaupt improved the handling of the LocoNet-specific programmers for
+		            the SE8C, PM4 and BDL168</li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
@@ -408,13 +397,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Dispatcher</h4>
         <ul>
-             <li></li>
+             <li>Modify auto allocation operation of Dispatcher to allow via a selection made when creating a train 
+             that will override the default practice of allocating no more than three sections in front of the train. 
+             The override allows Dispatcher to allocate all the way to the designated end 
+             block barring other criteria such as occupation. (Jason Janzen)</li>
         </ul>
 
     <h4>Layout Editor</h4>
         <ul>
-            <li></li>
-         </ul>
+            <li>George Warner <a href="https://github.com/JMRI/JMRI/pull/2851">improved the handling of the Turnout circle to make it easier to hit.</li>
+            <li>Sonnys Hansen improved the Danish translation</li>
+        </ul>
 
     <h4>Logix</h4>
         <ul>
@@ -489,7 +482,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>JMRI applications will not load a panel file that fails XML validation; an error will be
                 shown that explains the error, allowing it to be fixed using an editor.
                 (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
-	    <li>JMRI no longer supports the portable paths <pre>resource:</pre> or <pre>file:</pre> that
+	        <li>JMRI no longer supports the portable paths <pre>resource:</pre> or <pre>file:</pre> that
 	        were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
                 if the panel contains a path that starts with <pre>resource:</pre> and the panel will
                 not load until changed using an external editor. Paths starting with <pre>file:</pre>
@@ -501,6 +494,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>The WiThrottle window can now be resized so that when several client devices are
                 connected, it's possible to adjust the list to see all of them without needing to scroll
                 (<a href="https://github.com/JMRI/JMRI/pull/2857">#2857</a>)</li>
+            <li>Added some additional tools for decoding and displaying NMRA DCC packets to the
+                NmraPacket class.
+            <li>Added 
+                <a href="http://jmri.org/help/en/html/doc/Technical/XmlPersistance.shtml">support for reading older panel files</a> 
+                that use deprecated conversion classes
         </ul>
 
    <!--#include virtual="/Footer" -->
