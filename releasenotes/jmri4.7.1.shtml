@@ -208,8 +208,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h5>Digitrax</h5>
             <ul>
                 <li>When a JMRI program is configured to use the DCS240 is as a standalone programmer, upon program exit the
-		DCS240 will be re-configured as a LocoNet interface.  This allows other LocoNet devices to access the
-		DCS240 service-mode programming track after the JMRI program is closed.</li>
+		            DCS240 will be re-configured as a LocoNet interface.  This allows other LocoNet devices to access the
+		            DCS240 service-mode programming track after the JMRI program is closed.</li>
+		        <li>Bob Milhaupt improved the handling of the LocoNet-specific programmers for
+		            the SE8C, PM4 and BDL168</li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
@@ -395,13 +397,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Dispatcher</h4>
         <ul>
-             <li></li>
+             <li>Modify auto allocation operation of Dispatcher to allow via a selection made when creating a train 
+             that will override the default practice of allocating no more than three sections in front of the train. 
+             The override allows Dispatcher to allocate all the way to the designated end 
+             block barring other criteria such as occupation. (Jason Janzen)</li>
         </ul>
 
     <h4>Layout Editor</h4>
         <ul>
             <li>George Warner <a href="https://github.com/JMRI/JMRI/pull/2851">improved the handling of the Turnout circle to make it easier to hit.</li>
-         </ul>
+            <li>Sonnys Hansen improved the Danish translation</li>
+        </ul>
 
     <h4>Logix</h4>
         <ul>
