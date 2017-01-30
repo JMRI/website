@@ -410,7 +410,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Layout Editor</h4>
         <ul>
-            <li>George Warner <a href="https://github.com/JMRI/JMRI/pull/2851">improved the handling of the Turnout circle to make it easier to hit.</li>
+            <li>George Warner improved the <a href="https://github.com/JMRI/JMRI/pull/2851">handling of the Turnout circle</a> to make it easier to hit.</li>
             <li>Sonnys Hansen improved the Danish translation</li>
         </ul>
 
@@ -437,6 +437,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <h4>Roster</h4>
         <ul>
             <li>Proper display of new Roster Groups in the DecoderPro main window was fixed.</li>
+            <li>Roster entries saved in 4.7.1 or newer store their date saved in ISO 8601 date so they can be sorted in that table and formatted for the Locale setting. To fix dates for existing roster entries, simply resave them.</li>
         </ul>
 
     <h4>Turnouts, Lights and other elements</h4>
@@ -478,6 +479,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Per user request, the Output Matrix Signal Mast connection can be configured using up to 6 outputs instead of 5.</li>
             </ul>
         
+       <h5>Signal Groups</h5>
+            <ul>
+                <li>Configuring <a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/beantable/SignalGroupAddEdit.shtml">Signal Groups</a> from the Signal Group Table has been fixed and a German translation added. The underlying code and xml were cleaned for readability and internationalization.</li>
+            </ul>
+            
    <h4>Warrants</h4>
         <ul>
             <li></li>
