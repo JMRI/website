@@ -77,7 +77,8 @@ from
         not load until changed using an external editor. Paths starting with <pre>file:</pre>
         cannot be automatically flagged because JMRI allows file: URLs.</li>
     <li>JMRI applications will not load a panel file that fails XML validation; an error will be
-        shown that explains the error, allowing it to be fixed using an editor.</li>
+        shown that should explains the error, allowing it to be fixed using an editor. (The
+	explainations remain a work in progress.)</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -410,7 +411,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Layout Editor</h4>
         <ul>
-            <li>George Warner <a href="https://github.com/JMRI/JMRI/pull/2851">improved the handling of the Turnout circle to make it easier to hit.</li>
+            <li>George Warner improved the handling of the Turnout circle to make it easier to hit. (<a href="https://github.com/JMRI/JMRI/pull/2851">#2851</a>)</li>
             <li>Sonnys Hansen improved the Danish translation</li>
         </ul>
 
@@ -439,6 +440,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <h4>Roster</h4>
         <ul>
             <li>Proper display of new Roster Groups in the DecoderPro main window was fixed.</li>
+	    <li>The last modified date for Roster Entries can be correctly sorted. In some cases,
+	    the Roster Entry may need to be opened and saved again for this to work.</li>
+	    <li>Roster Entries are now saved with ISO 8601 formatted dates.</li>
         </ul>
 
     <h4>Turnouts, Lights and other elements</h4>
@@ -479,7 +483,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>Per user request, the Output Matrix Signal Mast connection can be configured using up to 6 outputs instead of 5.</li>
             </ul>
-        <h5>NX Entry/Exit Logic</h5>
+	    
+    	<h5>Signal Groups</h5>
+            <ul>
+                <li>Configuring <a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/beantable/SignalGroupAddEdit.shtml">Signal Groups</a> from the Signal Group Table has been fixed and a German translation added. The underlying code and xml were cleaned for readability and internationalization.</li>
+            </ul>
+
+	<h5>NX Entry/Exit Logic</h5>
             <ul>
                 <li>Andy Brown and Peter Ulvestad fixed a problem with storing multiple NX pairs</li>
             </ul>
