@@ -47,17 +47,20 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-<li>None as yet</li>
+<li><a href="https://github.com/JMRI/JMRI/issues/2754">TMCC Throttle support is broken</a>.</li>
+<li>Existing C/MRI connections (created with an earlier release) work fine
+    but it's sometimes not possible to edit them or create new ones. Also,
+    some of the C/MRI table menus will be duplicated.</li>
+<li>There are <a href="https://github.com/JMRI/JMRI/issues/2753">problems with the Operations help pages</a>.
 </ul>
 
-<!--
 If any of those effect you, please either wait for
 <a href="jmri4.7.1.shtml">JMRI 4.7.1</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
+
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
