@@ -1,27 +1,31 @@
 production:
  versions:
+  4.6:
+   tgz: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.tgz/download"
+   dmg: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.dmg/download"
+   exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.exe/download"
+  4.4:
+   tgz: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.4-R1ccf76b.tgz/download"
+   dmg: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.4-R1ccf76b.dmg/download"
+   exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.4-R1ccf76b.exe/download"
   4.2.1:
    tgz: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.tgz/download"
    dmg: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download"
    exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.exe/download"
-  4.0.1:
-   tgz: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.tgz/download"
-   dmg: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.dmg/download"
-   exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.exe/download"
 test:
  versions:
-  4.3.2:
-   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-R2edd195.tgz/download"
-   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-R2edd195.dmg/download"
-   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.2-R2edd195.exe/download"
-  4.3.1:
-   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-R2b72e88.tgz/download"
-   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-R2b72e88.dmg/download"
-   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.1-R2b72e88.exe/download"
+  4.5.8:
+   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.tgz/download"
+   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.dmg/download"
+   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.exe/download"
+  4.5.7:
+   tgz: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.tgz/download"
+   dmg: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.dmg/download"
+   exe: "https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.exe/download"
 
 # This file contains information about the last few JMRI (http://jmri.org) releases.
 # JMRI is distributed under license. More information is at http://jmri.org/Copyright.html
 #
-# Note to maintainers:  The zero, one, two,three space indentations in this file are significant
+# Note to maintainers:  The zero, one, two, three space indentations in this file are significant
 
 

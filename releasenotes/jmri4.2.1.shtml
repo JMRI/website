@@ -61,6 +61,9 @@ and the Actions menu in DecoderPro.
     and no cars were assigned to the train during the build, and the loco weight is set to zero. The
     workaround is to enter a weight in tons for each loco. Fixed in test release 4.3.2.</p>
 
+<p>This release can alter the order of startup items when saving preferences. Order can be restorted by editing the file
+<em>profile/profile.xml</em> within the affected configuration profile. This problem is fixed in test release 4.3.2.</p>
+
 <a id="warnings" name="warnings"></a>
 <h3>Warnings:</h3>
 

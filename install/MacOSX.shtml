@@ -33,6 +33,7 @@
 		<ul class="snav"><!-- TOC -->
 		<li><a href="#installation">Installation</a>
 		<li><a href="#startup">Starting JMRI</a>
+		<li><a href="#debug">Debugging</a>
 		<li><a href="#notes">Notes</a>
 		</ul>
   <p>Now, on to the show:</p>
@@ -220,7 +221,7 @@
        the interface, start JMRI again, and look to see which extra
        name has appeared.  That's the name one you want.</p>
 
-<h2>Debugging</h2>
+<a id="debug"></a><h2>Debugging</h2>
 
 JMRI supports many different Mac computers, 
 with several different kinds of processors,

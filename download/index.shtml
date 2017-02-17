@@ -28,34 +28,34 @@
     <div id="teaser">
 	<h1>Latest News</h1>
 	<dl>
-	    <dt>Test version 4.3.2 released</dt>
+		<dt>Production version 4.6 released</dt>
 	    <dd>
-	    <p>Test version 4.3.2 was made available on January 8, 2016.
-
-        <p>JMRI 4.3.2 is the next test release in the current development series, containing the latest
-        and greatest JMRI updates. 
-        <p>
-        The series is working toward the next JMRI production version, probably in the middle of 2016.
-        <p>
-        For more
-	    information, including the links to download a copy,
-	    please see the
-	    <a href="../releasenotes/jmri4.3.2.shtml">release note</a>.
-	  
-	    <a href="#prod-rel">Version 4.2.1</a> is the current "production" version, recommended
-	    for first-time users. 
-
-		<dt>Production version 4.2.1 released</dt>
-	    <dd>
-	    <p>On December 31, 2015 production version 4.2.1 was made available.</p>
+	    <p>On December 17, 2016 production version 4.6 was made available.</p>
 	    
 	    <p>
-	    Version 4.2.1 is the current "production" version, recommended
+	    Version 4.6 is the current "production" version, recommended
 	    for first-time users.
 	    Please see the 
 	    <a href="#prod-rel">next section</A> for download and install
 	    information. 
 	    
+	    <dt>Test version 4.5.8 released</dt>
+	    <dd>
+	    <p>Test version 4.5.8 was made available on December 14, 2016.
+
+        <p>JMRI 4.5.8 is the next test release in the current development series, containing the latest
+        and greatest JMRI updates. 
+        <p>
+        The series is working toward the next JMRI production version, probably in December 2016.
+        <p>
+        For more
+	    information, including the links to download a copy,
+	    please see the
+	    <a href="../releasenotes/jmri4.5.8.shtml">release note</a>.
+	  
+	    <a href="#prod-rel">Version 4.6</a> is the current "production" version, recommended
+	    for first-time users. 
+
 		<dt>Production version 3.10.1 released</dt>
 	    <dd>
 	    <p>On January 11, 2015 production version 3.10.1 was made available.</p>
@@ -81,7 +81,7 @@
 
   <div class="list">
     <a id="prod-rel"></a>
-    <h2>JMRI 4.2.1 - Production release</h2>
+    <h2>JMRI 4.6 - Production release</h2>
     <dl>
     <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
     <dd>
@@ -105,19 +105,22 @@
 	<a id="prod-download"></a><p class="dl">Download: 
 	<ul>
         <li>Mac OS X: <a
-            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download</a><br>sha256: 56eb8403292237b5f5f63fb6fa4f0462d253fea0a752c12c68072418f8f96a8b</li>
+            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.dmg/download</a><br>
+            sha256: 778086e641ef8d9c85d5f57f68fcccd60d721520dc3fc6eb54ed197f48f4b016</li>
 
         <li>Windows: <a
-            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.exe/download</a><br>sha256: 73ffe6af404463d4d10122fff5ccb719db6daf336331b23e6ad55a890267b49a</li>
+            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.exe/download</a><br>
+            sha256: af9847a7dc9e62ec44a70fbae1cdea2c291ad8e31422c8f3c648186862c54442</li>
 
         <li>Linux: <a
-            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.tgz/download</a><br>sha256: 5b4c7024c3767ac1e5bc659b14d9e415fc13a1937703d861757a2a3ed055547d</li>
+            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.tgz/download</a><br>
+            sha256: 81c642347dc1bf8c4abf93c19385845e637ce801be68ab6aaf1d5fd9a5eded37</li>
       </ul>
       </p>
 
     <strong>Notes:</strong><br>
     <p>For more information on the release contents, please see the
-    <a href="../releasenotes/jmri4.2.1.shtml">release note</a>.
+    <a href="../releasenotes/jmri4.6.shtml">release note</a>.
     </p>
     <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
     <p>
@@ -137,9 +140,9 @@
 	    are announced in the
 	    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group.</p>
     <p>
-        The most current test release is JMRI 4.3.2.  More information on it, 
+        The most current test release is JMRI 4.5.8.  More information on it, 
         including the links to download a copy, can be found in
-        <a href="../releasenotes/jmri4.3.2.shtml">release note</a>.
+        <a href="../releasenotes/jmri4.5.8.shtml">release note</a>.
 	<p>
 	   For more information on the rough development schedule, please see the 
 	   <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">JMRI road map</a>
@@ -157,18 +160,16 @@
 <!-- 	</dd> -->
 
 	<dt class="im">
-<a href="http://java.com/java/download/index.jsp?cid=jdp74834" target="_blank">
-<img width="88" height="31" border="0" style="margin: 8px;" alt="GetJava Download Button" title="GetJava" src="http://java.com/en/img/everywhere/getjava_sm.gif?cid=jdp74834">
-</a>
-    <dt><a href="http://java.com/java/download/index.jsp?cid=jdp74834">Java</a></dt>
+        <a href="http://www.java.com" target="_blank"><img src="http://download.oracle.com/technetwork/java/get-java/getjavasoftware-88x31.png" alt="Get Java Software" border="0" width="88" height="31" /></a>
+        <dt><a href="http://www.java.com">Java</a></dt>
 	<dd>
-	    <p>Oracle Java Runtime support [<a href="http://java.com/java/download/index.jsp?cid=jdp74834">more</a>]</p>
+	    <p>Oracle Java Runtime support [<a href="http://www.java.com">more</a>]</p>
 	</dd>
 
 	<dt class="im">
-	<a href="http://cats4ctc.org"><!-- was http://home.comcast.net/~kb0oys/ --> 
-	<img src="http://cats4ctc.wdfiles.com/local--files/home:home/armstrong.jpg" width="60" height="40" alt="CATS"></a></dt>
-	<dt><a href="http://cats4ctc.org"><!-- was http://home.comcast.net/~kb0oys/ --> CATS</a></dt>
+	<a href="http://cats4ctc.org">
+	<img src="../images/CATS.png" width="64" height="64" alt="CATS"></a></dt>
+	<dt><a href="http://cats4ctc.org">CATS</a></dt>
 	<dd>
 	    <p>The Crandic Automated Traffic System (CATS) 
 	    is a JMRI-based application by Rodney Black for 
