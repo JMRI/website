@@ -203,7 +203,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>DCC++</h5>
             <ul>
-                <li></li>
+                <li>DCCppOverTCP support has been updated.  The SEND/RECEIVE prefixes between
+                    host and client have been removed.  New code is backward compatible with
+                    old (4.6 or previous)</li>
+                <li>Fixed a bug in DCCppOverTCP throttle message translation.</li>
+                <li>Fixed a bug in the &lt;s&gt; command response</li>
             </ul>
 
         <h5>Digitrax</h5>
@@ -531,6 +535,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>Expanded translations in Catalan, Danish and German for many of the tools.</li>
             <li>Starting JMRI after changing Locale (language) gives a more informative warning in the Console.</li>
+        </ul>
+   <h4>Virtual Sound Decoder</h4>
+        <ul>
+            <li>VSDecoder Manager can now be auto-launched at startup through preferences.</li>
         </ul>
         
     <h4>Miscellaneous</h4>
