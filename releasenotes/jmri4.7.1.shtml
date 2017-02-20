@@ -267,7 +267,25 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>New / Updated decoder definitions</h4>
       <ul>
-        <li></li>
+        <li>
+            Programming of Accessory Decoders on the Main
+            (<a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
+            target="_blank">Accessory Decoder Ops Mode</a>)
+            is now possible, if supported by the decoder.
+            You will need to configure your definition to enable this, as per
+            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
+            target="_blank">this link</a>.
+            <br>
+            Some limitations remain:
+              <ul>
+                <li>There are no progress messages in the status bar.</li>
+                <li>For multiple CV writes, programming may continue for some time after the "OK" appears.</li>
+                <li>This has been tested with NCE and SPROG systems. Some DCC systems may need extra code,
+                    please advise if your system doesn't work.</li>                
+                <li>Some accessory decoders do not cope well with closely spaced commands
+                    and may miss changing some CVs with "Write All" or "Write Changes".</li>
+             </ul>
+        </li>
      </ul>
 
         <h5>Arnold</h5>
@@ -386,7 +404,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Viessmann</h5>
             <ul>
-                <li></li>
+                <li>Added support for the 4557, 4558, 4559 and 4960 decoders (Alain Le Marchand <a href="https://github.com/JMRI/JMRI/pull/2842">#2842</a>)</li>
             </ul>
 
         <h5>Wangrow</h5>
