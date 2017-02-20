@@ -511,6 +511,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Per user request, the Output Matrix Signal Mast connection can be configured using up to 6 outputs instead of 5.</li>
             </ul>
 	    
+	    <h5>Signal Masts</h5>
+            <ul>
+                <li>Editing of Signal Mast Logic from the Signal Mast Table has been improved. The Signal Mast Pairs panel refreshes to immediately show newly created source-destination pairs. The lists to set up Control items and their Conditions now look and operate like real comboBoxes.</li>
+            </ul>
+            
     	<h5>Signal Groups</h5>
             <ul>
                 <li>Configuring <a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/beantable/SignalGroupAddEdit.shtml">Signal Groups</a> from the Signal Group Table has been fixed and a German translation added. The underlying code and xml were cleaned for readability and internationalization.</li>
@@ -535,6 +540,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>Expanded translations in Catalan, Danish and German for many of the tools.</li>
             <li>Starting JMRI after changing Locale (language) gives a more informative warning in the Console.</li>
+            <li>The first Dutch translation of the main PP interface, Preferences and Throttles was written by Egbert Broerse. He would like to receive feedback from Dutch language users on the chosen wording and which modules to add next. </li>
         </ul>
    <h4>Virtual Sound Decoder</h4>
         <ul>
