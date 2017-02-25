@@ -70,13 +70,13 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li>JMRI no longer supports the portable paths <pre>resource:</pre> or <pre>file:</pre> that
-        were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
-        if the panel contains a path that starts with <pre>resource:</pre> and the panel will
-        not load until changed using an external editor. Paths starting with <pre>file:</pre>
-        cannot be automatically flagged because JMRI allows file: URLs.</li>
-    <li>JMRI applications will not load a panel file that fails XML validation; an error will be
-        shown that explains the error, allowing it to be fixed using an editor.</li>
+    <li>The serial interface library has changed in this version. This has the following known effects:
+        <ul>
+            <li>The Digitrax MS100 is expected to be usable on all supported platforms.</li>
+            <li>The JMRI_SERIAL_PORTS environment variable and --serial-ports command line argument are ignored. These
+            options will be restored when merging this into the main JMRI development effort.</li>
+        </ul>
+    </li>
 </ul>
 
 <h3>Older warnings</h3>
