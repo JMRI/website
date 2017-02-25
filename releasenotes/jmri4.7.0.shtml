@@ -151,29 +151,34 @@ These may be relevant to you if you're updating from an earlier version.
 <h3>Download links:</h3>
 
 <!--
-<p>Please use these links for downloading:</p>
-<p>macOS: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R8f239c3.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R8f239c3.dmg/download</a><br/>
-    sha256: 385e052f673830d710fcee90b95a866b1d8e06937a3fd2503ca8b12022339e3c </p>
+<ul>
+<li>OS X / macOS: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.dmg/download</a><br/>
+  sha256: 15e44de8b83cdb7b828d22d67fb338dba9db579442b94029d0a18490f1774882 </p>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R8f239c3.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R8f239c3.exe/download</a><br/>
-    sha256: a43d4d6a4a6e14e3345b543888a939f62d002211ddf1be84f98db6759dea35da</p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.exe/download</a><br/>
+   sha256: d04ed98199786f41dda380859c3f230c0374483bd42a412a89a1efd3842c3afa</p>
 
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R8f239c3.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R8f239c3.tgz/download</a><br/>
-    sha256: 0eec78b6e343cf6d50adc01e355906544445a998c7beaf93aae5c28998c4ddf8</p>
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.tgz/download</a><br/>
+   sha256: fd84d712152f9367b08ec81824ff9d8158a455c9359603b79b1f5fc372e941a5</p>
+</ul>
 -->
 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/alpha-builds/job/rxtx-to-pjc/">CI project page</a>.
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.0/">CI project page</a>.
 
 
 
 <h3>Changes since <a href="jmri4.6.shtml">production release 4.6</a>:</h3>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.1+">list of included commits</a> is available from our
+This release is mostly about the update of the serial libraries.  It's otherwise quite
+similar to JRMI 4.6.
+<p>
+
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.0+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h4>Hardware Support</h4>
