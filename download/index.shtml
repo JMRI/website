@@ -26,6 +26,18 @@
  <hr class="hide"> 
  <div id="mainContent">
     <div id="teaser">
+    This page describes JMRI releases.  Briefly, we have three kinds:
+    <ul>
+    <li>"<a href="#prod-rel">Production releases</a>" about twice a year.  These are the ones we recommend to general users.
+    <li>"<a href="#test-rel">Test releases</a>", usually <a href="https://github.com/JMRI/JMRI/milestones">about monthly</a>.
+        These contain new features and changes that will eventually appear in the next production release.
+    <li>Development builds, which are created every few hours as the 
+        developers update the code. You can 
+        <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">download one of these</a>
+        if you want quick access to some particular fix, but please note that they're
+        not fully tested. Test releases get more testing as part of the release process.
+    </ul>
+    </div>
 	<h1>Latest News</h1>
 	<dl>
 		<dt>Production version 4.6 released</dt>
@@ -134,7 +146,8 @@
     </dd>
     </dl>
 
-    <h2>JMRI - Developer releases</h2>
+    <a id="test-rel"></a>
+    <h2>JMRI - Test Releases</h2>
     <p>As the program develops, we also produce test versions. You may
 	    want to try these, as new features will show up in them first. They
 	    are announced in the
