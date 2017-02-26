@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.7.1 release
       </h2>
 
-    <p>Date: mmm dd, 2017</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: February 26, 2017</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.7.1 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h3>Notes:</h3>
 
@@ -55,7 +57,20 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-<li>None at release time</li>
+    <li>There's a <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI preferences<a/>. 
+        If you've already configured your C/MRI connection before installing this
+        version, it should continue to work, but you probably won't be able to add, remove
+        or modify the C/MRI node configuration.  This should be fixed in JMRI 4.7.2.
+    </li>
+    <li>The look ahead of a Warrant for route occupation is unreliable in some cases and and 
+        when cleared does not restart automatically.  
+        Also resetting the path of the route is not done should turnouts be 
+        inadvertently thrown ahead of a warranted train.  
+        (Route occupation is when another train, accidentally or not, occupies the route of a warranted train)  
+    </li>
+    <li>The NXFrame window is not populated with defaults making it more difficult to use.  
+        The lack of defaults also makes the status message of the train always report 0 mph (or 0 kmph).
+    </li>
 </ul>
 
 <!--
@@ -71,10 +86,10 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>JMRI no longer supports the portable paths <pre>resource:</pre> or <pre>file:</pre> that
+    <li>JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
         were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
-        if the panel contains a path that starts with <pre>resource:</pre> and the panel will
-        not load until changed using an external editor. Paths starting with <pre>file:</pre>
+        if the panel contains a path that starts with <code>resource:</code> and the panel will
+        not load until changed using an external editor. Paths starting with <code>file:</code>
         cannot be automatically flagged because JMRI allows file: URLs.</li>
     <li>JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
@@ -152,26 +167,31 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-<!--
+Please note that the download links in this and future JMRI releases link to 
+<a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.1">Github servers</a>.
+If that doesn't work for you, the files are also still available from the
+<a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
+Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
+
 <ul>
 <li>OS X / macOS: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.1-R1b7dd65.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.1-R1b7dd65.dmg/download</a><br/>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.dmg</a><br/>
   sha256: fed355112237a22b366e7b961ef56215db30e85e76324ef1ca412a1c0b5240d6 </p>
 
 <li>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.1-R1b7dd65.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.1-R1b7dd65.exe/download</a><br/>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.exe</a><br/>
    sha256: 749c165f45dee6ebd8782e8d1912bb2e8560a83157ce53adf9add763e8612ab4</p>
 
 <li>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.1-R1b7dd65.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.1-R1b7dd65.tgz/download</a><br/>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.tgz</a><br/>
    sha256: 345fad551a453962514f3c2d2709471b6339e36505e90c3b8d389c2ec875b78a</p>
 </ul>
--->
 
+<!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.1/">CI project page</a>.
-
+ -->
 
 <!--
 <p>During development leading to the actual release, you can find test download files on the
@@ -188,14 +208,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <p></p>
 
-	    <h5>Bachrus Speedo</h5>
-            <ul>
-                <li></li>
-            </ul>
-		
         <h5>C/MRI</h5>
             <ul>
-                <li></li>
+            <li>There's a <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI preferences<a/>. 
+                If you've already configured your C/MRI connection before installing this
+                version, it should continue to work, but you probably won't be able to add, remove
+                or modify the C/MRI node configuration.  This should be fixed in JMRI 4.7.2.
+            </li>
             </ul>
 
         <h5>DCC++</h5>
@@ -214,56 +233,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		            DCS240 service-mode programming track after the JMRI program is closed.</li>
 		        <li>Bob Milhaupt improved the handling of the LocoNet-specific programmers for
 		            the SE8C, PM4 and BDL168</li>
-            </ul>
-
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>LocoNet</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h5><a href="http://openlcb.org">OpenLCB</a></h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Roco z21/Z21</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SPROG</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TMCC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
             </ul>
 
     <h4>New / Updated decoder definitions</h4>
@@ -292,16 +261,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h5>Arnold</h5>
             <ul>
                 <li>Alain Carasso fixed a missing consist problem with the Arnold 81210 decoder definition (<a href="https://github.com/JMRI/JMRI/pull/2938">#2938</a>)</li>
-            </ul>
-
-        <h5>BLI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Bachmann</h5>
-            <ul>
-                <li></li>
             </ul>
 
         <h5>Digitrax</h5>
@@ -333,19 +292,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </ul>
             </ul>
 
-        <h5>Hornby</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>Kuehn</h5>
             <ul>
                 <li>Ronald Kuhn updated definitions for the N45 and 5Moto decoder familes (<a href="https://github.com/JMRI/JMRI/pull/2736">#2736</a>)</li>
-            </ul>
-
-        <h5>LaisDCC</h5>
-            <ul>
-                <li></li>
             </ul>
 
         <h5>Lenz</h5>
@@ -353,54 +302,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Alain Carasso fixed the missing function map pane for older Lenz Silver decoders (<a href="https://github.com/JMRI/JMRI/pull/2873">#2873</a>)</li>
             </ul>
 
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MRC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Norsk Modelljernbane (NJM)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RR-CirKits</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>SoundTraxx</h5>
             <ul>
                 <li>Added OEM decoder definitions for some PIKO G scale steam locomotives (Marc Fournier <a href="https://github.com/JMRI/JMRI/pull/2716">#2716</a>)</li>
-            </ul>
-
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Tehnologistic (train-O-matic)</h5>
-            <ul>
-                <li></li>
             </ul>
 
         <h5>Viessmann</h5>
@@ -408,22 +312,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Added support for the 4557, 4558, 4559 and 4960 decoders (Alain Le Marchand <a href="https://github.com/JMRI/JMRI/pull/2842">#2842</a>)</li>
             </ul>
 
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>ZIMO</h5>
             <ul>
                 <li>Ronald Kuhn added the MX681 and MX685 decoders (<a href="https://github.com/JMRI/JMRI/pull/2736">#2736</a>)</li>
                 <li>Ronald Kuhn updated German translations for several Zimo decoders (<a href="https://github.com/JMRI/JMRI/pull/2736">#2736</a>)</li>
             </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
-            </ul>
-
 
    <h4>Dispatcher</h4>
         <ul>
@@ -439,27 +332,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Sonnys Hansen improved the Danish translation</li>
         </ul>
 
-    <h4>Logix</h4>
-        <ul>
-            <li><li>
-        </ul>
-
    <h4>Operations</h4>
 			<ul>
 				<li>The Timetable table order can now be readjusted if needed.
 					Simply reorder the table and the next time you open the Timetable
 					window, the table order will be restored.</li>
 			</ul>
-
-			<h4>Panel Editors</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Preferences</h4>
-        <ul>
-            <li></li>
-        </ul>
 
    <h4>Roster</h4>
         <ul>
@@ -475,20 +353,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>The Cmd column in the Turnout table was renamed State to align with the other tables.</li>
         </ul>
 
-    <h4>Scripting</h4>
-        <ul>
-            <li></li>
-        </ul>
-
     <h4>Signals</h4>
-        <ul>
-            <li></li>
-        </ul>
-        <h5>Signal Systems</h5>
-            <ul>
-                <li></li>
-            </ul>
-
         <h5>Signal Heads</h5>
             <ul>
                 <li>In the Signal Heads table, pick any of the valid Appearances from a combobox instead having to follow a fixed order.<br>
@@ -506,10 +371,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h5>Signal Masts</h5>
             <ul>
                 <li>Per user request, the Output Matrix Signal Mast connection can be configured using up to 6 outputs instead of 5.</li>
-            </ul>
-	    
-	    <h5>Signal Masts</h5>
-            <ul>
                 <li>Editing of Signal Mast Logic from the Signal Mast Table has been improved. The Signal Mast Pairs panel refreshes to immediately show newly created source-destination pairs. The lists to set up Control items and their Conditions now look and operate like real comboBoxes.</li>
             </ul>
             
@@ -522,16 +383,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>Andy Brown and Peter Ulvestad fixed a problem with storing multiple NX pairs</li>
             </ul>
-
-   <h4>Warrants</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>Web Access</h4>
-        <ul>
-            <li></li>
-        </ul>
 
    <h4>Internationalization</h4>
         <ul>
@@ -560,10 +411,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>JMRI applications will not load a panel file that fails XML validation; an error will be
                 shown that explains the error, allowing it to be fixed using an editor.
                 (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
-	        <li>JMRI no longer supports the portable paths <pre>resource:</pre> or <pre>file:</pre> that
+	        <li>JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
 	        were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
-                if the panel contains a path that starts with <pre>resource:</pre> and the panel will
-                not load until changed using an external editor. Paths starting with <pre>file:</pre>
+                if the panel contains a path that starts with <code>resource:</code> and the panel will
+                not load until changed using an external editor. Paths starting with <code>file:</code>
                 cannot be automatically flagged because JMRI allows file: URLs.
                 (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
     	    <li>If a connection fails to initialize correctly, startup actions will not be run. An error
