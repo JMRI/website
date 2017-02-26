@@ -26,20 +26,22 @@
       Release Notes for JMRI 4.7.0 release
       </h2>
 
-    <p>Date: mmm dd, 2017</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: February 26, 2017</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.7.0 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h3>Notes:</h3>
+
+<p>This is a special-purpose test release to get more experience with an 
+new serial library.  The content is very similar to JMRI 4.6.</p>
 
 <p>This is a test release.  Please post a note if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
-
-<p>This is a special-purpose test release to get more experience with an 
-new serial library.  The content is very similar to JMRI 4.6.</p>
 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
@@ -54,7 +56,11 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-<li>None at release time</li>
+    <li>There's a <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI preferences<a/>. 
+        If you've already configured your C/MRI connection before installing this
+        version, it should continue to work, but you probably won't be able to add, remove
+        or modify the C/MRI node configuration.  This should be fixed in JMRI 4.7.2.
+    </li>
 </ul>
 
 <!--
@@ -150,7 +156,7 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-<!--
+
 <ul>
 <li>OS X / macOS: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.dmg/download</a><br/>
@@ -164,301 +170,21 @@ These may be relevant to you if you're updating from an earlier version.
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.tgz/download</a><br/>
    sha256: fd84d712152f9367b08ec81824ff9d8158a455c9359603b79b1f5fc372e941a5</p>
 </ul>
--->
 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.0/">CI project page</a>.
-
-
+-->
 
 <h3>Changes since <a href="jmri4.6.shtml">production release 4.6</a>:</h3>
 
 This release is mostly about the update of the serial libraries.  It's otherwise quite
-similar to JRMI 4.6.
+similar to JMRI 4.6.
 <p>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.0+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
-
-    <h4>Hardware Support</h4>
-
-        <p></p>
-
-	    <h5>Bachrus Speedo</h5>
-            <ul>
-                <li></li>
-            </ul>
-		
-        <h5>C/MRI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>DCC++</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Digitrax</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>LocoNet</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h5><a href="http://openlcb.org">OpenLCB</a></h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Roco z21/Z21</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SPROG</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TMCC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-    <h4>New / Updated decoder definitions</h4>
-      <ul>
-        <li></li>
-     </ul>
-
-        <h5>BLI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Bachmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Digitrax</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Doehler &amp; Haas</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ESU</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Hornby</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Kuehn</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>LaisDCC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Lenz</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MRC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Norsk Modelljernbane (NJM)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RR-CirKits</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SoundTraxx</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Tehnologistic (train-O-matic)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Viessmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ZIMO</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-
-   <h4>Dispatcher</h4>
-        <ul>
-             <li></li>
-        </ul>
-
-    <h4>Layout Editor</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Logix</h4>
-        <ul>
-            <li><li>
-        </ul>
-
-   <h4>Operations</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>Panel Editors</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Preferences</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Turnouts, Lights and other elements</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Scripting</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Signals</h4>
-        <ul>
-            <li></li>
-        </ul>
-        <h5>Signal Systems</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Signal Heads</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Signal Masts</h5>
-            <ul>
-                <li></li>
-            </ul>
-        
-   <h4>Warrants</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>Web Access</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h4>Internationalization</h4>
-        <ul>
-            <li></li>
-        </ul>
-        
-    <h4>Miscellaneous</h4>
-        <ul>
-            <li></li>
-        </ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
