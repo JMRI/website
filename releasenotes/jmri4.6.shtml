@@ -28,13 +28,13 @@
 
     <p>Date: December 17, 2016</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Production version 4.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Production Release 4.6 of JMRI/DecoderPro is available for download.</p>
 
 <!-- <p><b>This is a draft release note only; the download links do not yet work</b></p> -->
 
 We are very pleased to announce that the 4.5 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
-We're therefore making that version, "Production version 4.6" available for download today.
+We're therefore making that version, "Production Release 4.6" available for download today.
 
 <h3>Notes:</h3>
 
@@ -63,7 +63,7 @@ from
 
 
 <a id="warnings" name="warnings"></a>
-<h3>New warnings for this version:</h3>
+<h3>New warnings for this release:</h3>
 
 <ul>
     <li>None at release time</a>
@@ -96,7 +96,7 @@ These may be relevant to you if you're updating from an earlier version.
         TMCC connection is selected for the appropriate device types.
 
 <p><em>(Since JMRI 4.5.2)</em>
-    This and future versions of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+    This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
     <p>To remove Java SE 6 from OS X, follow these steps (these steps assume
@@ -134,7 +134,7 @@ These may be relevant to you if you're updating from an earlier version.
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
 
 <p><em>(Since JMRI 4.3.5)</em>
-    When sharing a configuration between this version and JMRI 4.3.4 or older, the older version of JMRI will not
+    When sharing a configuration between this release and JMRI 4.3.4 or older, the older version of JMRI will not
     reflect changes in preferences, window position, table sorting, column order, or other user interface state. This is due to
     changes in how user preferences and interface state are stored.
 
@@ -268,7 +268,7 @@ in our
                     connected to the same layout to be respected in the JMRI Turnout's state. New turnouts
                     created with JMRI 4.5.6 or later will default to MONITORING feedback. Turnouts created
                     with older versions of JMRI or turnouts in panel XML files saved by older versions of
-                    JMRI will be set to DIRECT feedback mode, and users of version 4.5.6 and above will have
+                    JMRI will be set to DIRECT feedback mode, and users of release 4.5.6 and above will have
                     to edit the turnouts one by one to set the desired feedback mode to MONITORING if they
                     wish to use the new behavior.</li>
                 <li>Improvements in the standards compliancy of JMRI Turnouts and Sensors; these will now

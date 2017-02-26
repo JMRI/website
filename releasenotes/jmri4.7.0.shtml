@@ -28,7 +28,7 @@
 
     <p>Date: mmm dd, 2017</p>
     <p>From: (pumpkin)</p>
-    <p>Subject: Test version 4.7.0 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.7.0 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -43,7 +43,7 @@ new serial library.  The content is very similar to JMRI 4.6.</p>
 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
-Therefore, this test version should be considered experimental.</p>
+Therefore, this test release should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the
@@ -67,10 +67,10 @@ from
  -->
 
 <a id="warnings" name="warnings"></a>
-<h3>New warnings for this version:</h3>
+<h3>New warnings for this release:</h3>
 
 <ul>
-    <li>The serial interface library has changed in this version. This has the following known effects:
+    <li>The serial interface library has changed in this release. This has the following known effects:
         <ul>
             <li>The Digitrax MS100 is expected to be usable on all supported platforms.</li>
             <li>The JMRI_SERIAL_PORTS environment variable and --serial-ports command line argument are ignored. These
@@ -93,7 +93,7 @@ These may be relevant to you if you're updating from an earlier version.
         pane in the Preferences window and make sure that the 
         TMCC connection is selected for the appropriate device types.
 
-<p><em>(Since JMRI 4.5.2)</em>This and future versions of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+<p><em>(Since JMRI 4.5.2)</em>This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
     <p>To remove Java SE 6 from OS X, follow these steps (these steps assume
