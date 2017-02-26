@@ -28,7 +28,7 @@
 
     <p>Date: mmm dd, 2017</p>
     <p>From: (pumpkin)</p>
-    <p>Subject: Test version 4.7.1 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.7.1 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -38,13 +38,13 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the first in a series of test versions. We expect this series
+<p>This is the first in a series of test releases. We expect this series
 to end in the next JMRI production release around the middle of 2017.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)</p>
 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
-Therefore, this test version should be considered experimental.</p>
+Therefore, this test release should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the
@@ -68,7 +68,7 @@ from
  -->
 
 <a id="warnings" name="warnings"></a>
-<h3>New warnings for this version:</h3>
+<h3>New warnings for this release:</h3>
 
 <ul>
     <li>JMRI no longer supports the portable paths <pre>resource:</pre> or <pre>file:</pre> that
@@ -95,7 +95,7 @@ These may be relevant to you if you're updating from an earlier version.
         pane in the Preferences window and make sure that the 
         TMCC connection is selected for the appropriate device types.
 
-<p><em>(Since JMRI 4.5.2)</em>This and future versions of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+<p><em>(Since JMRI 4.5.2)</em>This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
     <p>To remove Java SE 6 from OS X, follow these steps (these steps assume
