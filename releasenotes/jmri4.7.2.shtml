@@ -463,7 +463,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+            <li>Bug that disabled operation of zoomed multisensors is fixed.</li>
         </ul>
 
     <h4>Preferences</h4>
@@ -517,7 +517,23 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Warrants</h4>
         <ul>
-            <li></li>
+		<li>The look ahead problems of a Warrant are fixed. Paths of routes are 
+        		maintained automatically. Trains resume running their scripts automatically
+        		when signals or rouge occupations are cleared ahead of them.
+		</li>
+        	<li>Warrants normally grant rights of track access solely to only one train.
+        		It now is possible to allow several warrants to share portions of their route.
+        		A 'Clearance to Share Route' checkbox has been added.
+        	</li>		
+    		<li>The NXWarrant window now is populated with defaults configured in Preferences.
+    			Users depending on the default 'throttle speed factor' may notice
+    			a difference in train speeds when trains respond to track conditions. 
+    			Use of speed profiles and input of distances of block paths enables more 
+    			precise calculation of train movements. 
+    		</li>
+            	<li>A 'Fast Acting' warrant has been added that makes instant speed changes
+            		upon entering an approach block.  This warrant type also shares routes.
+           	</li>
         </ul>
 
    <h4>Web Access</h4>
