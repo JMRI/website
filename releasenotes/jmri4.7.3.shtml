@@ -510,7 +510,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>The naming scheme for JMRI builds has changed slightly. Build metadata (the building user, build date/time,
+	    and git revision at time of build) are now deliniated using plus (+) signs instead of hyphens. The build
+	    date/time is now ISO 8601 parsable. (<a href="https://github.com/JMRI/JMRI/pull/3253">#3253</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
