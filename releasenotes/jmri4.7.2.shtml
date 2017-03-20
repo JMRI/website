@@ -81,13 +81,13 @@ from
 See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for warnings predating the 4.6 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><em>(Since JMRI 4.7.1) JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
+<p><em>(Since JMRI 4.7.1)</em> JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
         were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
         if the panel contains a path that starts with <code>resource:</code> and the panel will
         not load until changed using an external editor. Paths starting with <code>file:</code>
         cannot be automatically flagged because JMRI allows file: URLs.
         
-<p><em>(Since JMRI 4.7.1) JMRI applications will not load a panel file that fails XML validation; an error will be
+<p><em>(Since JMRI 4.7.1)</em> JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
 	    explainations remain a work in progress.)
 
