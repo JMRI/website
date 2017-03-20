@@ -80,13 +80,13 @@ from
 See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for warnings predating the 4.6 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><em>(Since JMRI 4.7.1) JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
+<p><em>(Since JMRI 4.7.1)</em> JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
         were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
         if the panel contains a path that starts with <code>resource:</code> and the panel will
         not load until changed using an external editor. Paths starting with <code>file:</code>
         cannot be automatically flagged because JMRI allows file: URLs.
         
-<p><em>(Since JMRI 4.7.1) JMRI applications will not load a panel file that fails XML validation; an error will be
+<p><em>(Since JMRI 4.7.1)</em> JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
 	    explainations remain a work in progress.)
 
@@ -196,7 +196,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Hardware Support</h4>
 
-        <p></p>
+        <p><a href="http://jmri.org/help/en//html/apps/DecoderPro/CreateDecoderAdvanced.shtml#capability">Programming capability facades</a> 
+            are little tools that are used to handle things
+            like indexed CVs, special ways to write upper-address CVs not supported by a command station, etc.
+            Previously, these would have trouble recovering when they encountered multiple errors.
+            (This came up in the context of the time that the DCS240 command station takes to do writes, 
+            which JMRI thought was an error) This has now been greatly improved.</p>
 
 	    <h5>Bachrus Speedo</h5>
             <ul>
@@ -215,7 +220,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Digitrax</h5>
             <ul>
-                <li></li>
+                <li>The Digitrax DCS240 command station sometimes takes a long time to write CVs
+                    It's thought that this is happening because it's doing a read-after-write to ensure
+                    the right value was stored in the right place.  In any case, it takes so
+                    long that JMRI was timing out and and retrying while waiting for it to complete. 
+                    This has now been improved.
+                    It's still slow, excruciatingly slow if writing indexed CVs, but the timing is properly handled.</li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
@@ -270,7 +280,23 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>New / Updated decoder definitions</h4>
       <ul>
-        <li>
+        <li>The 
+            <a href="http://jmri.org/help/en//html/apps/DecoderPro/CreateDecoderAdvanced.shtml#capability">programming capability facade</a> 
+            for handling indexed CVs has been improved to reduce the number of times that 
+            it has to write values to the "PI" and "SI" index CVs.  Some decoders require that e.g.
+            you write a value to CV31, then another value to CV32, then finally access the specific
+            CV you're looking for.  This can take a long time, especially when using a command station 
+            that writes slowly (see comment about DCS240 above)
+            The indexed CV support has been updated to skip writes when the previous 
+            operation was to an indexed CV with the exact same indexed values, and the command
+            station didn't report any errors.  This speeds things up greatly (can save over an hour when reading
+            an ESU LokSound V4 decoder with a DCS240).  
+            <p>
+            It can be turned on and off in each decoder definition.  Due to concerns about whether it 
+            will cause problems for people who's DCC systems don't reliably write CVs, it's currently
+            turned off in all decoder definitions shipped with JMRI.  But it's there if somebody wants to turn
+            it on later, see the
+            <a href="http://jmri.org/help/en//html/apps/DecoderPro/CreateDecoderAdvanced.shtml#indexedcap">documentation page</a>.
         </li>
      </ul>
 
@@ -465,7 +491,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
         <h5>Signal Systems</h5>
             <ul>
-                <li></li>
+                <li>Greg McCartney provided new definitions for the
+                    <a href="http://jmri.org/xml/signals/SOU-1981/index.shtml">Southern 1981 system</a></li>
             </ul>
 
         <h5>Signal Heads</h5>
@@ -500,7 +527,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Internationalization</h4>
         <ul>
-            <li></li>
+            <li>Much more Danish translation from Sonnys Hansen</li>
         </ul>
         
    <h4>Virtual Sound Decoder</h4>
