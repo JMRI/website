@@ -194,6 +194,60 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.3+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
+    <h4>DecoderPro</h4>
+
+        <p>DecoderPro now has two additional options for 
+           how it handles CV reads and writes.  These are set via the
+           <a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#programmer">Programmer section of the Roster preferences panel</a>.
+           <ul>
+          <li>"Allow caching when writing index CVs for read or write 
+                operations": Some decoders require that specific values
+                be written to "index" CVs before certain other locations can be 
+                read or written. QSI and ESU decoders use this extensively.
+                When doing a lot of reads or writes, for example an entire
+                decoder, the index CVs can end up being written with the
+                same value many times in a row.  When selected, this 
+                option allows DecoderPro to skip (save time on) writes 
+                of the same index value that are otherwise redundant.  
+                Don't use this (or use it only in combination with the
+                following operation) if you have reliability problems
+                writing decoders, as proper operation of this option depends on reliable writes.
+                <p>
+                More detail:  A single bad write with this option off trashes
+                one CV; writing a bad index with this option off trashes the CV that was supposed 
+                to be written and the wrong one addressed by the bad write,
+                but the write to the next CV in the sequence is OK due to the 
+                redundant next write of the index; writing a bad
+                index with this option on leaves that badly-written index value in place, so writes a sequence 
+                of bad CV values. Bottom line:  If working with a complicated
+                decoder with lots of CVs, you need a reliable programming connection, see next option.
+                
+          <li>"When possible, confirm CV writes by following this with a read": 
+               When selected, DecoderPro will read each CV after writing it.
+               If the value doesn't match, it marks the write as failed.
+               <p>If you're having intermittent trouble writing to a decoder, this 
+               may improve reliability. If DecoderPro is never able to properly write, 
+               this won't help; it only helps if the problem is occasional,
+               and retrying will get it right more often than not.
+               <p>Some DCC systems will check for a "write acknowledge pulse"
+               from the decoder before declaring the write a success.  
+               Those are almost as reliable as this, and much faster.  
+               So if you're using one of those DCC systems, this might 
+               not be needed.
+               On the other hand, if you're using a DCC system that
+               "writes blind", with no check, this might be really useful.
+               To tell if you have one of those, try writing CVs with
+               the locomotive off the track.  If DecoderPro thinks the write
+               succeeded, then the DCC system is writing blindly, without checking.
+               <p>This doesn't help (but doesn't hurt) if you can't read back
+               the decoder. Most DCC systems can't read during ops mode 
+               programming, for example. Some command stations (Digitrax DB150)
+               can't read from the decoder. In those cases, this option 
+               just asks the command station to write without reading back.
+          </ul>
+          These options are stored with the preferences for future use.  A new DecoderPro Roster window
+          will pick up new values of the options, without having to close and restart the program.
+           
     <h4>Hardware Support</h4>
 
         <p><a href="http://jmri.org/help/en//html/apps/DecoderPro/CreateDecoderAdvanced.shtml#capability">Programming capability facades</a> 
@@ -287,15 +341,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             you write a value to CV31, then another value to CV32, then finally access the specific
             CV you're looking for.  This can take a long time, especially when using a command station 
             that writes slowly (see comment about DCS240 above)
-            The indexed CV support has been updated to skip writes when the previous 
+            The indexed CV support has been updated so that it can skip writes when the previous 
             operation was to an indexed CV with the exact same indexed values, and the command
             station didn't report any errors.  This speeds things up greatly (can save over an hour when reading
             an ESU LokSound V4 decoder with a DCS240).  
             <p>
-            It can be turned on and off in each decoder definition.  Due to concerns about whether it 
-            will cause problems for people who's DCC systems don't reliably write CVs, it's currently
-            turned off in all decoder definitions shipped with JMRI.  But it's there if somebody wants to turn
-            it on later, see the
+            This option is under user control, see above, and defaults to off.
+            If a decoder cannot do this, e.g. the index values really do have to be written every time, 
+            that should be signaled by setting "skipDupIndexWrite" to false in the decoder definition, 
+            see the
             <a href="http://jmri.org/help/en//html/apps/DecoderPro/CreateDecoderAdvanced.shtml#indexedcap">documentation page</a>.
         </li>
      </ul>
