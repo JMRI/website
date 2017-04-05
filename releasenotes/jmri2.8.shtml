@@ -59,7 +59,7 @@ see our
 XML input processing was reworked in JMRI 2.7.8.  
 This shouldn't have any impact
 on users, but might effect people who have written scripts to 
-read or write XML files. See the XmlFile JavaDoc for more information.
+read or write XML files. See the XmlFile Javadoc for more information.
 
 <p>
 If you want to use the "Function Label" or "Roster Image" panes with the 
@@ -479,7 +479,7 @@ Paul Bender added a javadoc-uml build target to the Ant build.
 This uses UmlGraph and GraphViz to build UML class diagrams to include in the Javadoc.  
 UmlGraph is included as a jar in lib, GraphViz will need to be installed.
 This requires Java 1.6. You can check out the results via the 
-<a href="http://jmri.org/help/en/html/doc/Technical/JavaDoc.shtml">UML diagram listing</a>
+<a href="http://jmri.org/help/en/html/doc/Technical/Javadoc.shtml">UML diagram listing</a>
 on the JMRI web page.
 
 <p>
@@ -508,7 +508,7 @@ Randy McKenzie contributed some additional background images for CTC panels.
 <p>
 XML input processing has been reworked.  This shouldn't have any impact
 on users, but might effect people who have written scripts to 
-read or write XML files. See the XmlFile JavaDoc for more information.
+read or write XML files. See the XmlFile Javadoc for more information.
 
 <p>
 Nigel Cliffe contributed an update for the CT Elektronik SL version 40

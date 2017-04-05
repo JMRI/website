@@ -26,58 +26,69 @@
  <hr class="hide"> 
  <div id="mainContent">
     <div id="teaser">
+    This page describes JMRI releases.  Briefly, we have three kinds:
+    <ul>
+    <li>"<a href="#prod-rel">Production releases</a>" about twice a year.  These are the ones we recommend to general users.
+    <li>"<a href="#test-rel">Test releases</a>", usually <a href="https://github.com/JMRI/JMRI/milestones">about monthly</a>.
+        These contain new features and changes that will eventually appear in the next production release.
+    <li>Development builds, which are created every few hours as the 
+        developers update the code. You can 
+        <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">download one of these</a>
+        if you want quick access to some particular fix, but please note that they're
+        not fully tested. Test releases get more testing as part of the release process.
+    </ul>
+    </div><!-- closes #teaser-->
 	<h1>Latest News</h1>
 	<dl>
-		<dt>Production version 4.6 released</dt>
+		<dt>Production release 4.6 available</dt>
 	    <dd>
-	    <p>On December 17, 2016 production version 4.6 was made available.</p>
+	    <p>On December 17, 2016 production release 4.6 was made available.</p>
 	    
 	    <p>
-	    Version 4.6 is the current "production" version, recommended
+	    Release 4.6 is the current "production" release, recommended
 	    for first-time users.
 	    Please see the 
 	    <a href="#prod-rel">next section</A> for download and install
 	    information. 
 	    
-	    <dt>Test version 4.5.8 released</dt>
+	    <dt>Test release 4.7.2 available</dt>
 	    <dd>
-	    <p>Test version 4.5.8 was made available on December 14, 2016.
+	    <p>Test release 4.7.2 was made available on March 14, 2017.
 
-        <p>JMRI 4.5.8 is the next test release in the current development series, containing the latest
+        <p>JMRI 4.7.2 is the next test release in the current development series, containing the latest
         and greatest JMRI updates. 
         <p>
-        The series is working toward the next JMRI production version, probably in December 2016.
+        The series is working toward the next JMRI production release, probably in June 2017.
         <p>
         For more
 	    information, including the links to download a copy,
 	    please see the
-	    <a href="../releasenotes/jmri4.5.8.shtml">release note</a>.
+	    <a href="../releasenotes/jmri4.7.2.shtml">release note</a>.
 	  
-	    <a href="#prod-rel">Version 4.6</a> is the current "production" version, recommended
+	    <a href="#prod-rel">Release 4.6</a> is the current "production" release, recommended
 	    for first-time users. 
 
-		<dt>Production version 3.10.1 released</dt>
+		<dt>Production release 3.10.1 available</dt>
 	    <dd>
-	    <p>On January 11, 2015 production version 3.10.1 was made available.</p>
+	    <p>On January 11, 2015 production release 3.10.1 was made available.</p>
 	    
 	    <p>
-	    Version 3.10.1 is recommended for JMRI users with computers that can only
+	    Release 3.10.1 is recommended for JMRI users with computers that can only
 	    run Java 1.6. Please see the 
 	    <a href="../releasenotes/jmri3.10.1.shtml">release note</A> for download and install
 	    information. 
  
-		<dt>Production version 2.14.1 released</dt>
+		<dt>Production release 2.14.1 available</dt>
 	    <dd>
-	    <p>On July 15, 2012 production version 2.14.1 was made available.</p>
+	    <p>On July 15, 2012 production release 2.14.1 was made available.</p>
 	    
 	    <p>
-	    Version 2.14.1 is recommended for JMRI users with computers that can only
+	    Release 2.14.1 is recommended for JMRI users with computers that can only
 	    run Java 1.5. Please see the 
 	    <a href="../releasenotes/jmri2.14.1.shtml">release note</A> for download and install
 	    information. 
  
 	</dl>
-    </div>
 
   <div class="list">
     <a id="prod-rel"></a>
@@ -134,15 +145,16 @@
     </dd>
     </dl>
 
-    <h2>JMRI - Developer releases</h2>
-    <p>As the program develops, we also produce test versions. You may
+    <a id="test-rel"></a>
+    <h2>JMRI - Test Releases</h2>
+    <p>As the program develops, we also produce test releases. You may
 	    want to try these, as new features will show up in them first. They
 	    are announced in the
 	    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group.</p>
     <p>
-        The most current test release is JMRI 4.5.8.  More information on it, 
+        The most current test release is JMRI 4.7.2.  More information on it, 
         including the links to download a copy, can be found in
-        <a href="../releasenotes/jmri4.5.8.shtml">release note</a>.
+        <a href="../releasenotes/jmri4.7.2.shtml">release note</a>.
 	<p>
 	   For more information on the rough development schedule, please see the 
 	   <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">JMRI road map</a>
