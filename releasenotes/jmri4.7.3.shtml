@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.7.2
+ JMRI: Release Notes for 4.7.3
  </title>
     <meta content="Bob Jacobsen" name="Author">
-    <meta name="keywords" content="java model railroad JMRI 4.7.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.7.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,16 +23,14 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 4.7.2 release
+      Release Notes for JMRI 4.7.3 release
       </h2>
 
-    <p>Date: March 14, 2017</p>
-    <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.7.2 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: mmm dd, 2017</p>
+    <p>From: (pumpkin)</p>
+    <p>Subject: Test Release 4.7.3 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h3>Notes:</h3>
 
@@ -57,12 +55,13 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-    <li>None</li>
+    <li>None
+    </li>
 </ul>
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.7.3.shtml">JMRI 4.7.3</a>, due out shortly after this one,
+<a href="jmri4.7.4.shtml">JMRI 4.7.4</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -157,46 +156,106 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
+<!-- 
 Please note that the download links in this and future JMRI releases link to 
-<a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.2">Github servers</a>.
+<a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.3">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.2/JMRI.4.7.2-R741b21f.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.2/JMRI.4.7.2-R741b21f.dmg</a><br/>
-  sha256: a372bf6717516a5e27c2caa9229e47ec11afe1cd623c6f7aea98d6aaccfce3c9 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.dmg</a><br/>
+  sha256: fed355112237a22b366e7b961ef56215db30e85e76324ef1ca412a1c0b5240d6 </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.2/JMRI.4.7.2-R741b21f.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.2/JMRI.4.7.2-R741b21f.exe</a><br/>
-   sha256: b1fe27b08baf4140fd29befe44a288c4d762cc33ceafb67955bfe8bb0243f8f9</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.exe</a><br/>
+   sha256: 749c165f45dee6ebd8782e8d1912bb2e8560a83157ce53adf9add763e8612ab4</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.2/JMRI.4.7.2-R741b21f.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.2/JMRI.4.7.2-R741b21f.tgz</a><br/>
-   sha256: f02d8c056177a90de736b957937e62055773e79077cb9a489422d20b9037b323</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.tgz</a><br/>
+   sha256: 345fad551a453962514f3c2d2709471b6339e36505e90c3b8d389c2ec875b78a</p>
 </ul>
-
-<!--
-Preliminary build files (not the final released files) can be found
-on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.2/">CI project page</a>.
  -->
 
-<!--
+<!-- 
+Preliminary build files (not the final released files) can be found
+on the
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.3/">CI project page</a>.
+ -->
+
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
--->
 
-<h3>Changes since <a href="jmri4.7.1.shtml">test release 4.7.1</a>:</h3>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.2+">list of included commits</a> is available from our
+<h3>Changes since <a href="jmri4.6.shtml">production release 4.7.2</a>:</h3>
+
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.3+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
+    <h4>DecoderPro</h4>
+
+        <p>DecoderPro now has two additional options for 
+           how it handles CV reads and writes.  These are set via the
+           <a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#programmer">Programmer section of the Roster preferences panel</a>.
+           <ul>
+          <li>"Allow caching when writing index CVs for read or write 
+                operations": Some decoders require that specific values
+                be written to "index" CVs before certain other locations can be 
+                read or written. QSI and ESU decoders use this extensively.
+                When doing a lot of reads or writes, for example an entire
+                decoder, the index CVs can end up being written with the
+                same value many times in a row.  When selected, this 
+                option allows DecoderPro to skip (save time on) writes 
+                of the same index value that are otherwise redundant.  
+                Don't use this (or use it only in combination with the
+                following operation) if you have reliability problems
+                writing decoders, as proper operation of this option depends on reliable writes.
+                <p>
+                More detail:  A single bad write with this option off trashes
+                one CV; writing a bad index with this option off trashes the CV that was supposed 
+                to be written and the wrong one addressed by the bad write,
+                but the write to the next CV in the sequence is OK due to the 
+                redundant next write of the index; writing a bad
+                index with this option on leaves that badly-written index value in place, so writes a sequence 
+                of bad CV values. Bottom line:  If working with a complicated
+                decoder with lots of CVs, you need a reliable programming connection, see next option.
+                
+          <li>"When possible, confirm CV writes by following this with a read": 
+               When selected, DecoderPro will read each CV after writing it.
+               If the value doesn't match, it marks the write as failed.
+               <p>If you're having intermittent trouble writing to a decoder, this 
+               may improve reliability. If DecoderPro is never able to properly write, 
+               this won't help; it only helps if the problem is occasional,
+               and retrying will get it right more often than not.
+               <p>Some DCC systems will check for a "write acknowledge pulse"
+               from the decoder before declaring the write a success.  
+               Those are almost as reliable as this, and much faster.  
+               So if you're using one of those DCC systems, this might 
+               not be needed.
+               On the other hand, if you're using a DCC system that
+               "writes blind", with no check, this might be really useful.
+               To tell if you have one of those, try writing CVs with
+               the locomotive off the track.  If DecoderPro thinks the write
+               succeeded, then the DCC system is writing blindly, without checking.
+               <p>This doesn't help (but doesn't hurt) if you can't read back
+               the decoder. Most DCC systems can't read during ops mode 
+               programming, for example. Some command stations (Digitrax DB150)
+               can't read from the decoder. In those cases, this option 
+               just asks the command station to write without reading back.
+          </ul>
+          These options are stored with the preferences for future use.  A new DecoderPro Roster window
+          will pick up new values of the options, without having to close and restart the program.
+           
     <h4>Hardware Support</h4>
 
-        <p></p>
+        <p><a href="http://jmri.org/help/en//html/apps/DecoderPro/CreateDecoderAdvanced.shtml#capability">Programming capability facades</a> 
+            are little tools that are used to handle things
+            like indexed CVs, special ways to write upper-address CVs not supported by a command station, etc.
+            Previously, these would have trouble recovering when they encountered multiple errors.
+            (This came up in the context of the time that the DCS240 command station takes to do writes, 
+            which JMRI thought was an error) This has now been greatly improved.</p>
 
 	    <h5>Bachrus Speedo</h5>
             <ul>
@@ -205,9 +264,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		
         <h5>C/MRI</h5>
             <ul>
-            <li>The <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI preferences<a/> 
-                was fixed.
-            </li>
+            <li></li>
             </ul>
 
         <h5>DCC++</h5>
@@ -217,7 +274,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Digitrax</h5>
             <ul>
-                <li></li>
+                <li>The Digitrax DCS240 command station sometimes takes a long time to write CVs
+                    It's thought that this is happening because it's doing a read-after-write to ensure
+                    the right value was stored in the right place.  In any case, it takes so
+                    long that JMRI was timing out and and retrying while waiting for it to complete. 
+                    This has now been improved.
+                    It's still slow, excruciatingly slow if writing indexed CVs, but the timing is properly handled.</li>
+		<li>The DS64 configuration tool now has the ability to configure the addresses for the 
+		    turnout outputs, and to configure the DS64 "routes".</li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
@@ -272,7 +336,23 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>New / Updated decoder definitions</h4>
       <ul>
-        <li>Wayne Geary provided a number of spelling fixes that covered a number of decoder files.
+        <li>The 
+            <a href="http://jmri.org/help/en//html/apps/DecoderPro/CreateDecoderAdvanced.shtml#capability">programming capability facade</a> 
+            for handling indexed CVs has been improved to reduce the number of times that 
+            it has to write values to the "PI" and "SI" index CVs.  Some decoders require that e.g.
+            you write a value to CV31, then another value to CV32, then finally access the specific
+            CV you're looking for.  This can take a long time, especially when using a command station 
+            that writes slowly (see comment about DCS240 above)
+            The indexed CV support has been updated so that it can skip writes when the previous 
+            operation was to an indexed CV with the exact same indexed values, and the command
+            station didn't report any errors.  This speeds things up greatly (can save over an hour when reading
+            an ESU LokSound V4 decoder with a DCS240).  
+            <p>
+            This option is under user control, see above, and defaults to off.
+            If a decoder cannot do this, e.g. the index values really do have to be written every time, 
+            that should be signaled by setting "skipDupIndexWrite" to false in the decoder definition, 
+            see the
+            <a href="http://jmri.org/help/en//html/apps/DecoderPro/CreateDecoderAdvanced.shtml#indexedcap">documentation page</a>.
         </li>
      </ul>
 
@@ -408,17 +488,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		New Options menu items:
 		<ul>
 			<li>
-				<b>Highlight Selected Block</b> -- Use the alternate track color to verify track component block assignments.
-			</li><li>
+			</li>
+			<li>
 				<b>ToolBar</b>
 				<ul>
-					<li>
-						<b>ToolBar Side</b> -- Position the tool bar on top (default), left, bottom and right.  There is also a Float option which creates a toolbox that can be moved anywhere on the screen.
-					</li><li>
-						<b>Wide ToolBar</b> -- Force the <b>top</b> and <b>bottom</b> tool bars to use the wide mode which may result in horizontal scroll bars.
-					</li><li>
-						<b>Drop Down List Display Order</b> -- Select which names (user and/or system) to use for drop down combo boxes.  This will affect the sort order.  Changes will take effect the next time you start PanelPro.  Note:  This feature is not completely functional yet.
-					</li>
+					<li></li>
 				</ul>
 			</li>
 		</ul>
@@ -427,20 +501,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		Tool bar changes:
 		<ul>
 			<li>
-				Mutually exclusive checkboxes have been changed to radio buttons.  Related fields are enabled as needed.
-			</li><li>
-				All text fields, except for text labels,  have been changed to drop-down combo boxes with appropriate content, such as sensor names for the Sensor Icon.
-			</li><li>
-				Floating ToolBox:
-				<ul>
-					<li>
-						Tabs are used to group related toolbar items.
-					</li><li>
-						Clicking on the Close button <em><b>hides</b></em> the ToolBox.  Use the Window menu to make it visible.
-					</li><li>
-						Clicking on the Minimize button creates an icon on the operating system task bar.
-					</li>
-				</ul>
 			</li>
 		</ul>
 	</li>
@@ -458,7 +518,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Panel Editors</h4>
         <ul>
-            <li>Bug that disabled operation of zoomed multisensors is fixed.</li>
+            <li></li>
         </ul>
 
     <h4>Preferences</h4>
@@ -478,8 +538,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Scripting</h4>
         <ul>
-            <li>Added "<a href="http://jmri.org/jython/TurnOffXmlValidation.py">TurnOffXmlValidation.py</a>" sample script to
-                turn off validation when reading XML (panel) files</li>
+            <li></li>
         </ul>
 
     <h4>Signals</h4>
@@ -488,7 +547,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
         <h5>Signal Systems</h5>
             <ul>
-                <li></li>
+                <li>Greg McCartney provided new definitions for the
+                    <a href="http://jmri.org/xml/signals/SOU-1981/index.shtml">Southern 1981 system</a></li>
             </ul>
 
         <h5>Signal Heads</h5>
@@ -513,33 +573,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Warrants</h4>
         <ul>
-		<li>The look ahead problems of a Warrant are fixed. Paths of routes are 
-        		maintained automatically. Trains resume running their scripts automatically
-        		when signals or rouge occupations are cleared ahead of them.
-		</li>
-        	<li>Warrants normally grant rights of track access solely to only one train.
-        		It now is possible to allow several warrants to share portions of their route.
-        		A 'Clearance to Share Route' checkbox has been added.
-        	</li>		
-    		<li>The NXWarrant window now is populated with defaults configured in Preferences.
-    			Users depending on the default 'throttle speed factor' may notice
-    			a difference in train speeds when trains respond to track conditions. 
-    			Use of speed profiles and input of distances of block paths enables more 
-    			precise calculation of train movements. 
-    		</li>
-            	<li>A 'Fast Acting' warrant has been added that makes instant speed changes
-            		upon entering an approach block.  This warrant type also shares routes.
-           	</li>
+            <li></li>
         </ul>
 
    <h4>Web Access</h4>
         <ul>
-            <li></li>
+            <li>New feature to upload new or updated Roster Entry xml files and images. At top of existing Roster page.</li>
         </ul>
 
    <h4>Internationalization</h4>
         <ul>
-            <li></li>
+            <li>Much more Danish translation from Sonnys Hansen</li>
         </ul>
         
    <h4>Virtual Sound Decoder</h4>
@@ -549,7 +593,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>The naming scheme for JMRI builds has changed slightly. Build metadata (the building user, build date/time,
+	    and git revision at time of build) are now deliniated using plus (+) signs instead of hyphens. The build
+	    date/time is now ISO 8601 parsable. (<a href="https://github.com/JMRI/JMRI/pull/3253">#3253</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
