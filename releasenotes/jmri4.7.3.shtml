@@ -88,7 +88,7 @@ These may be relevant to you if you're updating from an earlier version.
         
 <p><em>(Since JMRI 4.7.1)</em> JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
-	    explainations remain a work in progress.)
+	    explanations remain a work in progress.)
 
 <p><em>(Since JMRI 4.5.6)</em> 
         As part of fixing the 
@@ -518,7 +518,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+            <li>Egbert Broerse added a new type of panel, <a href="http://jmri.org/help/en/package/jmri/jmrit/display/SwitchboardEditor.shtml">Switchboards</a>. They provide a grid of buttons to control turnouts, lights or sensors. Existing items will show their current state and allow you to toggle their state. This first edition include German and Dutch translations.</li>
         </ul>
 
     <h4>Preferences</h4>
@@ -583,7 +583,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Internationalization</h4>
         <ul>
-            <li>Much more Danish translation from Sonnys Hansen</li>
+            <li>Much more Danish translation from Sonnys Hansen.</li>
+            <li>Print outs of roster reports from DecoderPro were updated by Egbert Broerse to  use translatable headings (don't translate the word 'CV')</li>
         </ul>
         
    <h4>Virtual Sound Decoder</h4>
@@ -593,6 +594,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
+            <li>User Names entered by the user are checked for spaces at the start and end before they are applied. We expect this will prevent some hard to spot errors.</li>
             <li>The naming scheme for JMRI builds has changed slightly. Build metadata (the building user, build date/time,
 	    and git revision at time of build) are now deliniated using plus (+) signs instead of hyphens. The build
 	    date/time is now ISO 8601 parsable. (<a href="https://github.com/JMRI/JMRI/pull/3253">#3253</a>)</li>
