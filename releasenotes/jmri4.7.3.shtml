@@ -602,6 +602,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>The naming scheme for JMRI builds has changed slightly. Build metadata (the building user, build date/time,
 	    and git revision at time of build) are now deliniated using plus (+) signs instead of hyphens. The build
 	    date/time is now ISO 8601 parsable. (<a href="https://github.com/JMRI/JMRI/pull/3253">#3253</a>)</li>
+	    <li>The library used to identify connected systems on Windows has been updated. Although this should have no
+	    impact, scripts that accessed the Windows Registry using the WinRegistry should be updated to use Java Native
+	    Access. (<a href="https://github.com/JMRI/JMRI/pull/3353">#3353</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
