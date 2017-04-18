@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.7.3 release
       </h2>
 
-    <p>Date: mmm dd, 2017</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: April 17, 2017</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.7.3 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h3>Notes:</h3>
 
@@ -38,7 +40,7 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the second in a series of test releases. We expect this series
+<p>This is the next in a series of test releases. We expect this series
 to end in the next JMRI production release around the middle of 2017.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)</p>
 
@@ -72,7 +74,10 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>(none at this time)</li>
+    <li>This release will not start cleanly if installed over earlier versions of JMRI (the Windows installer ensures
+    this is not an issue). Remove the JAR files <em>jackson-annotations-2.0.6.jar</em>, <em>jackson-core-2.0.6.jar</em>,
+    and <em>jackson-databind-2.0.6.jar</em> from the <em>lib</em> directory within the installation directory to resolve
+    this.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -156,7 +161,6 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.3">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
@@ -176,18 +180,16 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3+R202c9ee.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3+R202c9ee.tgz</a><br/>
    sha256: 87a1cf58c3c39a47cdc22a29ce24469051ee4ae559b804df66dbbe274e520e47</p>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.3/">CI project page</a>.
- -->
 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+ -->
 
 <h3>Changes since <a href="jmri4.6.shtml">production release 4.7.2</a>:</h3>
 
@@ -264,12 +266,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		
         <h5>C/MRI</h5>
             <ul>
-            <li></li>
-            </ul>
-
-        <h5>DCC++</h5>
-            <ul>
-                <li></li>
+            <li>Much work on the reliability of the C/MRI support, fixing
+                bugs in both setting preferences and normal running.</li>
+            <li>Having multiple C/MRI connections should now basically work,
+                although there may still be some issues when starting up
+                C/MRI tools from the Preferences, e.g. opening the C/MRI
+                Monitor automatically at startup.  Work on all this is
+                proceeding.
             </ul>
 
         <h5>Digitrax</h5>
@@ -282,56 +285,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                     It's still slow, excruciatingly slow if writing indexed CVs, but the timing is properly handled.</li>
 		<li>The DS64 configuration tool now has the ability to configure the addresses for the 
 		    turnout outputs, and to configure the DS64 "routes".</li>
-            </ul>
-
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>LocoNet</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h5><a href="http://openlcb.org">OpenLCB</a></h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Roco z21/Z21</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SPROG</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TMCC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
             </ul>
 
     <h4>New / Updated decoder definitions</h4>
@@ -355,137 +308,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <a href="http://jmri.org/help/en//html/apps/DecoderPro/CreateDecoderAdvanced.shtml#indexedcap">documentation page</a>.
         </li>
      </ul>
-
-        <h5>Arnold</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>BLI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Bachmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Digitrax</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Doehler &amp; Haas</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ESU</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Hornby</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Kuehn</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>LaisDCC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Lenz</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MRC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Norsk Modelljernbane (NJM)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RR-CirKits</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SoundTraxx</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Tehnologistic (train-O-matic)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Viessmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ZIMO</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-
-   <h4>Dispatcher</h4>
-        <ul>
-             <li></li>
-        </ul>
-
-    <h4>Layout Editor</h4>
-        <ul>
-	    <li></li>
-        </ul>
 
     <h4>Logix</h4>
         <ul>
@@ -515,34 +337,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
           <li>The Logix help documents have been updated.</li>
         </ul>
 
-    <h4>Operations</h4>
-        <ul>
-            <li></li>
-        </ul>
-
     <h4>Panel Editors</h4>
         <ul>
             <li>Egbert Broerse added a new type of panel, <a href="http://jmri.org/help/en/package/jmri/jmrit/display/SwitchboardEditor.shtml">Switchboards</a>. They provide a grid of buttons to control turnouts, lights or sensors. Existing items will show their current state and allow you to toggle their state. This first edition include German and Dutch translations.</li>
-        </ul>
-
-    <h4>Preferences</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Turnouts, Lights and other elements</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Scripting</h4>
-        <ul>
-            <li></li>
         </ul>
 
     <h4>Signals</h4>
@@ -557,22 +354,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Signal Heads</h5>
             <ul>
-                <li></li>
-            </ul>
-
-        <h5>Signal Masts</h5>
-            <ul>
-                <li></li>
-            </ul>
-            
-    	<h5>Signal Groups</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-	    <h5>NX Entry/Exit Logic</h5>
-            <ul>
-                <li></li>
+                <li>SE8c Signal Heads now follow traffic on the layout, so 
+                if another signal system is setting the hardware SE8c signals, 
+                the JMRI panel signals will follow them.</li>
             </ul>
 
    <h4>Warrants</h4>
@@ -593,14 +377,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Print outs of roster reports from DecoderPro were updated by Egbert Broerse to  use translatable headings (don't translate the word 'CV')</li>
         </ul>
         
-   <h4>Virtual Sound Decoder</h4>
-        <ul>
-            <li></li>
-        </ul>
-
     <h4>Miscellaneous</h4>
         <ul>
-            <li>User Names entered by the user are checked for spaces at the start and end before they are applied. We expect this will prevent some hard to spot errors.</li>
+            <li>User Names entered by the user are checked for spaces at the start and end before they are applied. 
+                We expect this will prevent some hard to spot errors.</li>
             <li>The naming scheme for JMRI builds has changed slightly. Build metadata (the building user, build date/time,
 	    and git revision at time of build) are now deliniated using plus (+) signs instead of hyphens. The build
 	    date/time is now ISO 8601 parsable. (<a href="https://github.com/JMRI/JMRI/pull/3253">#3253</a>)</li>
