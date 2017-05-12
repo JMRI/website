@@ -4,7 +4,7 @@
  <title>
  JMRI: Release Notes for 4.7.4
  </title>
-    <meta content="Bob Jacobsen" name="Author">
+    <meta content="Bob Jacobsen" name="author">
     <meta name="keywords" content="java model railroad JMRI 4.7.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
@@ -61,7 +61,7 @@ see our
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.7.4.shtml">JMRI 4.7.5</a>, due out shortly after this one,
+<a href="jmri4.7.5.shtml">JMRI 4.7.5</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -439,7 +439,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+            <li>Fixed initial size and position of new Switchboards</li>
         </ul>
 
     <h4>Preferences</h4>
@@ -454,7 +454,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Turnouts, Lights and other elements</h4>
         <ul>
-            <li></li>
+            <li>Egbert Broerse added the option to display the current state of Turnouts, Lights, Sensors and Blocks as graphics instead of text.
+             It can be enabled in the Preferences &gt; Display &gt; GUI tab.</li>
         </ul>
 
     <h4>Scripting</h4>
