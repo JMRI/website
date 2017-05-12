@@ -72,7 +72,11 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li></li>
+    <li>This version of JMRI (and all later) writes a slightly streamlined
+        version of panel file contents.  
+        Older files should still be readable by this version of JMRI, 
+        but files written by this version may not be readable by versions
+        before JMRI 4.6.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -280,6 +284,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
+        <h5>ZTC</h5>
+            <ul>
+                <li>Added Support for the ZTC611 Command Station's internal USB connection</li>
+                <li>Added a ZTC611 specific implementation of XPressNet Turnouts</li>
+            </ul>
+
     <h4>New / Updated decoder definitions</h4>
       <ul>
         <li></li>
@@ -422,11 +432,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h4>Operations</h4>
-        <ul>
-            <li></li>
-        </ul>
+   <ul>
+    <li>Train and route departure times can now be set to one minute intervals. Previously, the
+     menus only allowed departure times to within five minute intervals.</li>
+   </ul>
 
-    <h4>Panel Editors</h4>
+   <h4>Panel Editors</h4>
         <ul>
             <li></li>
         </ul>
