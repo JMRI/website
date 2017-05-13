@@ -195,6 +195,16 @@
 		font-size: large;
 	}
 
+	span.since {
+		color: #fff;
+		float: right;
+		background: #222696;
+	    background-size: 100% 100%;
+	    border-radius: 4px;
+	    margin: 2px 2px 2px 2px;
+	    padding: .2em .3em;
+	}
+	
 /* Computers - General */
 
 	span.application {
