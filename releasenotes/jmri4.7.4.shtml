@@ -157,7 +157,7 @@ These may be relevant to you if you're updating from an earlier version.
       <li>Certain Python scripts are too large to be evaluated in Jython. If a script fails with the <code>java.io.IOException: Mark invalid</code> error, set "jython.exec=true" in a custom python.properties file or rewrite the script to be less than 100,000 characters per file. Note that when using "jython.exec=true" it may be desirable to run the included script jmri_bindings.py as a startup action to emulate the evaluation environment used when jython.exec=false.</li>
     </ul>
 
-<p><span class="since">(Since <a href="jmri4.1.1.shtml">JMRI 4.1.1</a>)</span>]
+<p><span class="since">(Since <a href="jmri4.1.1.shtml">JMRI 4.1.1</a>)</span>
     Decoder definitions that use the "ivariable" form are now deprecated.  Definitions
     included with this release have been converted to the new form.
     If you have decoder definitions with the older "ivariable" form, they will no longer
@@ -234,7 +234,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Digitrax</h5>
             <ul>
-                <li></li>
+                <li>Contains a fix for the "Looping" behavior with 
+                    SE8c SignalHeads seen in <a href="jmri4.7.3.shtml">JMRI 4.7.3</a>.</li>
 		        <li></li>
             </ul>
 
@@ -490,7 +491,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Signal Heads</h5>
             <ul>
-                <li></li>
+                <li>Contains a fix for the "Looping" behavior with 
+                    SE8c SignalHeads seen in <a href="jmri4.7.3.shtml">JMRI 4.7.3</a>.
+                    This most commonly hit LocoNet systems, but as SE8c boards
+                    can be used with any DCC system, it was a general problem.</li>
             </ul>
 
         <h5>Signal Masts</h5>
@@ -520,7 +524,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Internationalization</h4>
         <ul>
-            <li></li>
+            <li>Sonnys Hansen improved the Danish translation</li>
         </ul>
         
    <h4>Virtual Sound Decoder</h4>
@@ -530,7 +534,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>This version of JMRI (and all later) writes a slightly streamlined
+                version of panel file contents.  
+                Older files should still be readable by this version of JMRI, 
+                but files written by this version may not be readable by versions
+                before JMRI 4.6.</li>
+
         </ul>
 
    <!--#include virtual="/Footer" -->
