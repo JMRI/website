@@ -204,7 +204,19 @@
 	    margin: 2px 2px 2px 2px;
 	    padding: .2em .3em;
 	}
-	
+	.since a:link {
+			color: #fff;
+			font-weight: normal;
+	}
+	.since a:visited {
+			color: #fff;
+			font-weight: normal;
+	}
+	.since a:link:hover, :visited:hover {
+			color: #fff;
+			font-weight: normal;
+	}
+
 /* Computers - General */
 
 	span.application {
