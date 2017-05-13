@@ -428,7 +428,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Logix</h4>
         <ul>
-          <li></li>
+          <li>Logix conditionals are now directly related
+              to a parent Logix.  When an existing XML file is
+              loaded, existing conditional references are automatically
+              converted.  A review of the system console for any
+              messages is recommended.  Use <strong>Help >>
+              System Console...</strong> to display the system console.
+          </li>
+          <li>When creating a conditional reference, the input
+              field has been replaced by two drop down combo boxes.
+              The first one is used to select a Logix and the
+              second one to select the Conditional within the
+              selected Logix.
+          </li>
         </ul>
 
     <h4>Operations</h4>
