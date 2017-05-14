@@ -84,22 +84,22 @@ from
 See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for warnings predating the 4.6 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><span class="since">(Since <a href="jmri4.7.3.shtml">JMRI 4.7.3</a>)</span> This release will not start cleanly if installed over earlier versions of JMRI (the Windows installer ensures
+<p><span class="since">Since <a href="jmri4.7.3.shtml">JMRI 4.7.3</a></span> This release will not start cleanly if installed over earlier versions of JMRI (the Windows installer ensures
     this is not an issue). Remove the JAR files <em>jackson-annotations-2.0.6.jar</em>, <em>jackson-core-2.0.6.jar</em>,
     and <em>jackson-databind-2.0.6.jar</em> from the <em>lib</em> directory within the previous installation directory to resolve
     this.
 
-<p><span class="since">(Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a>)</span> JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
         were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
         if the panel contains a path that starts with <code>resource:</code> and the panel will
         not load until changed using an external editor. Paths starting with <code>file:</code>
         cannot be automatically flagged because JMRI allows file: URLs.
         
-<p><span class="since">(Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a>)</span> JMRI applications will not load a panel file that fails XML validation; an error will be
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
 	    explanations remain a work in progress.)
 
-<p><span class="since">(Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a>)</span>  
+<p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
         As part of fixing the 
         <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
         the handling of TMCC preferences was changed.  If you have a TMCC
@@ -108,7 +108,7 @@ These may be relevant to you if you're updating from an earlier version.
         pane in the Preferences window and make sure that the 
         TMCC connection is selected for the appropriate device types.
 
-<p><span class="since">(Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a>)</span> This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
     To remove Java SE 6 from OS X, follow these steps (these steps assume
@@ -128,26 +128,26 @@ These may be relevant to you if you're updating from an earlier version.
       <li><em>El Capitan only:</em> Restart your Mac.</li>
     </ol>
   
-<p><span class="since">(Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a>)</span> Support for directly executing AppleScript within JMRI has been removed
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> Support for directly executing AppleScript within JMRI has been removed
     due to changes in macOS and Java outside our control. If you require the
     ability to use AppleScript, you may be able to add this capability on your
     own by visiting <a href="https://jmri.github.io/applescript">JMRI
       AppleScript Support</a>, but please be aware that this may not work
     on upcoming releases of macOS or Java.
 
-<p><span class="since">(Since <a href="jmri4.5.1.shtml">JMRI 4.5.1</a>)</span> 
+<p><span class="since">Since <a href="jmri4.5.1.shtml">JMRI 4.5.1</a></span> 
     Internal turnouts and sensors need to have complete, individual system names.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
     "IT12" is fine, but just "IT" is not. Most panel files that contain these should
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
 
-<p><span class="since">(Since <a href="jmri4.3.3.shtml">JMRI 4.3.3</a>)</span>
+<p><span class="since">Since <a href="jmri4.3.3.shtml">JMRI 4.3.3</a></span>
     You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
     the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
     If you've set the order manually (e.g. by editing configuration files) in the past, please check this
     preference to make sure it's set the way you want.</p>
 
-<p><span class="since">(Since <a href="jmri4.1.2.shtml">JMRI 4.1.2</a>)</span>
+<p><span class="since">Since <a href="jmri4.1.2.shtml">JMRI 4.1.2</a></span>
     Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
     <ul>
       <li>The decodeJmriFilename() function is no longer available by default. Use the  FileUtil.getExternalFilename() method instead.</li>
@@ -157,7 +157,7 @@ These may be relevant to you if you're updating from an earlier version.
       <li>Certain Python scripts are too large to be evaluated in Jython. If a script fails with the <code>java.io.IOException: Mark invalid</code> error, set "jython.exec=true" in a custom python.properties file or rewrite the script to be less than 100,000 characters per file. Note that when using "jython.exec=true" it may be desirable to run the included script jmri_bindings.py as a startup action to emulate the evaluation environment used when jython.exec=false.</li>
     </ul>
 
-<p><span class="since">(Since <a href="jmri4.1.1.shtml">JMRI 4.1.1</a>)</span>
+<p><span class="since">Since <a href="jmri4.1.1.shtml">JMRI 4.1.1</a></span>
     Decoder definitions that use the "ivariable" form are now deprecated.  Definitions
     included with this release have been converted to the new form.
     If you have decoder definitions with the older "ivariable" form, they will no longer
