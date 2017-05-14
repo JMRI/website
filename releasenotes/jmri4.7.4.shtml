@@ -435,10 +435,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
           <li>Logix conditionals are now directly related
               to a parent Logix.  When an existing XML file is
-              loaded, existing conditional references are automatically
-              converted.  A review of the system console for any
-              messages is recommended.  Use <strong>Help >>
-              System Console...</strong> to display the system console.
+              loaded, any <strong>conditional references</strong>
+              are automatically converted.  A review of the 
+              system console for any messages is recommended.  There
+              are two possible messages:
+              <ul>
+	        <li>Conditional has no parent Logix</li>
+	        <li>Conditional is not in the Logix index</li>
+	      </ul>
+	      Both of these were caused by errors in previous versions
+	      or manual changes to the panel xml file.  After saving the
+	      xml file, the errors will not occur.<br>
+              Use <strong>Help &gt;&gt; System Console...</strong> to 
+              display the system console.
           </li>
           <li>When creating a conditional reference, the input
               field has been replaced by two drop down combo boxes.
