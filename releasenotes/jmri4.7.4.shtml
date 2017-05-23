@@ -202,7 +202,7 @@ on the
 These are development files, and might not be working at any particular time.</p>
 
 
-<h3>Changes since <a href="jmri4.6.shtml">production release 4.7.3</a>:</h3>
+<h3>Changes since <a href="jmri4.7.3.shtml">test release 4.7.3</a>:</h3>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.4+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
@@ -224,7 +224,25 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		
         <h5>C/MRI</h5>
             <ul>
-            <li></li>
+            <li>This release has improved support for multiple C/MRI connections. Working now:
+                <ul>
+                <li>Multiple connections, with the extra ones either identified by
+                    a new letter ('K', etc) or a suffix ('C2', 'C3', etc). Each 
+                    connection has to have its own nodes defined via the preferences screen.
+                <li>The connections
+                    can be of mixed type:  Multiple serial, or multiple network, or 
+                    a mix of serial and network.
+                <li>Sensors, Turnouts and Lights can be defined in all the 
+                    C/MRI connections through the respective tables.
+                </ul>>
+                    
+            </li>Not yet in this release:
+                <ul>
+                <li>You can't (yet) configure start-up actions to work with 
+                    the 2nd and later C/MRI connections. E.g. if you open a 
+                    C/MRI monitor in the startup, it'll be using the 1st connection.
+                <li>Some of the labeling and documentation needs to be updated.
+                </ul>
             </ul>
 
         <h5>DCC++</h5>
@@ -460,7 +478,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Operations</h4>
    <ul>
     <li>Train and route departure times can now be set to one minute intervals. Previously, the
-     menus only allowed departure times to within five minute intervals.</li>
+        menus only allowed departure times to within five minute intervals.</li>
      <li>The option to make backup copies of manifests now also makes backup copies of switch lists.</li>
    </ul>
 
@@ -482,7 +500,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>Turnouts, Lights and other elements</h4>
         <ul>
             <li>Egbert Broerse added the option to display the current state of Turnouts, Lights, Sensors and Blocks as graphics instead of text.
-             It can be enabled in the Preferences &gt; Display &gt; GUI tab.</li>
+                It can be enabled in the Preferences &gt; Display &gt; GUI tab.</li>
         </ul>
 
     <h4>Scripting</h4>
