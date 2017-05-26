@@ -52,7 +52,7 @@
         Version 2.12 requires Java 1.5 or later.
         </p>
 
-        <p>Mac OS X version 10.8.3 "Mountain Lion"/10.9 "Maverick/10.10 "Yosemite"/10.11 "El Capitan" can run the <a href="http://jmri.org/download/index.shtml">current JMRI test and production releases</a> with Java 8.
+        <p>MacOS 10.12 "Sierra" and Mac OS X versions 10.8.3 "Mountain Lion"/10.9 "Maverick/10.10 "Yosemite"/10.11 "El Capitan" can run the <a href="http://jmri.org/download/index.shtml">current JMRI test and production releases</a> with Java 8.
         If your computer runs one of these OS versions, just go to the next step.<br>
         Mac OS X version 10.7.3 "Lion" can run <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7.<br>
         Mac OS X version 10.5.8 "Leopard" can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.<br>
@@ -74,7 +74,7 @@
         they're already present in Mac OS X.  In some cases you will need to install a special driver, though, 
         so check the manufacturer's web site to make sure.</p>
       
-        <p><em>Note: Mac OS X 10.11 El Capitan generally requires
+        <p><em>Note: Mac OS X 10.11 El Capitan and later MacOS versions generally require
         signed drivers.  If you installed drivers for a previous version,
         particularly drivers that don't say they support Mac OS X 10.10 Yosemite,
         those older drivers may not work with 10.11 El Capitan.  Go to the 
@@ -150,15 +150,19 @@
                 step.  If it opens a dialog box that offers 
                 to install Java, or takes you to the Java
                 install web site, just follow those instructions.
-            <li>If that doesn't work, and you have a recent
-                MacOS X version, you can get the latest Java JRE installer as a free download at: 
+            <li>If that doesn't work, and you have a current
+                MacOS version, you can get the latest Java JRE installer as a free download at: 
                 <a href="http://java.com/download/" target="_blank">java.com/download</a>.<br>
                 After that download is complete, follow the included instructions to run the Java installer.<br>
-                More on <a href="https://www.java.com/en/download/help/sysreq.xml">Java versions and hardware requirements</a>.<br>
+                More on <a href="https://www.java.com/en/download/help/sysreq.xml">Java versions and
+                hardware requirements</a> (prompts for Java in your browser).<br>
+                Older Java installations typically are removed by a MacOS update. However, older Java
+                applications are known to try and reinstall old stuff that might cause conflicts while running JMRI.
+                See the <a href="#javase6">instructions</a> on how to check if this applies to your installation.
              <li>If your Mac OS X version is so old that Oracle does not provide an installer, you can try to
-                you can <a href="http://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US">download an installer from Apple</a>.
-                In this case, you may not be able to run the most recent JMRI versions.  Please go back to the top of the page
-                for further information about older Mac OS X versions.
+             <a href="http://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US">download an installer from Apple</a>.
+                In this case, you can not run the most recent JMRI versions (see <a href="#top">table</a>).
+                Please refer to <a href="MacOSXRetro.html">Mac install instructions for old JMRI releases</a>.
             </ul>
       <li>Congratulations! Installation is complete.</li>
 
@@ -229,6 +233,24 @@ multiple Mac OS X versions,
 and various layout hardware.  
 Some combinations can cause trouble. 
 This section gives some debugging hints.
+
+<a name="javase6"></a><h3>Java SE 6</h3>
+    <p>To check for Java SE 6, JMRI 4.5.2 and up include a script. Follow these steps (assuming
+      JMRI is installed in the folder <em>/Applications/JMRI</em>; if it's installed in a different location, adjust the paths as needed):</p>
+    <ol>
+      <li>Open <em>Terminal.app</em>.
+        <p><em>El Capitan only:</em> Reboot into Recovery Mode by restarting your
+          Mac and pressing Cmd-R until the Apple logo appears. Once in Recovery Mode,
+          select Terminal from the Utilities menu.</p>
+        </li>
+      <li>Run the command <code>/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh</code> It can take
+        up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.
+        <p><em>El Capitan only:</em> Run the command <code>bash /Volumes/Macintosh\ HD/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh /Volumes/Macintosh\ HD</code>
+          It can take up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.</p>
+        </li>
+      <li><em>El Capitan only:</em> Restart your Mac.</li>
+    </ol>
+<p>Source: <a href="../releasenotes/jmri4.5.2.shtml"> JMRI 4.5.2 Release notes</a>.</p>
 
 <h3>Communications and Mac OS X 10.4</h3>
 
