@@ -57,8 +57,11 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-    <li>None
-    </li>
+    <li>Under some conditions, in this release SE8c Signal Heads will "loop", 
+    sending an unending stream of Turnout messages.
+    This most commonly hit LocoNet systems, but as SE8c boards
+    can be used with any DCC system, it's a general problem.
+    This is fixed in <a href="jmri4.7.4.shtml">JMRI 4.7.4<a/></li>
 </ul>
 
 <!--
@@ -78,6 +81,7 @@ from
     this is not an issue). Remove the JAR files <em>jackson-annotations-2.0.6.jar</em>, <em>jackson-core-2.0.6.jar</em>,
     and <em>jackson-databind-2.0.6.jar</em> from the <em>lib</em> directory within the installation directory to resolve
     this.</li>
+
 </ul>
 
 <h3>Older warnings</h3>

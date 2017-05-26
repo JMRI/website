@@ -4,7 +4,7 @@
  <title>
  JMRI: Release Notes for 4.7.4
  </title>
-    <meta content="Bob Jacobsen" name="Author">
+    <meta content="Bob Jacobsen" name="author">
     <meta name="keywords" content="java model railroad JMRI 4.7.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
@@ -61,7 +61,7 @@ see our
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.7.4.shtml">JMRI 4.7.5</a>, due out shortly after this one,
+<a href="jmri4.7.5.shtml">JMRI 4.7.5</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -76,7 +76,10 @@ from
         version of panel file contents.  
         Older files should still be readable by this version of JMRI, 
         but files written by this version may not be readable by versions
-        before JMRI 4.6.</li>
+        before JMRI 4.7.4 depending on their contents.</li>
+    <li>The LocoNetOverTCP server has changes that may break scripts that reference it. Scripts refering to
+        the class jmri.jmrix.loconet.loconetovertcp.Server need to refer instead to
+        jmri.jmrix.loconet.loconetovertcp.LnTcpServer.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -84,22 +87,22 @@ from
 See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for warnings predating the 4.6 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><em>(Since JMRI 4.7.3)</em>This release will not start cleanly if installed over earlier versions of JMRI (the Windows installer ensures
+<p><span class="since">Since <a href="jmri4.7.3.shtml">JMRI 4.7.3</a></span> This release will not start cleanly if installed over earlier versions of JMRI (the Windows installer ensures
     this is not an issue). Remove the JAR files <em>jackson-annotations-2.0.6.jar</em>, <em>jackson-core-2.0.6.jar</em>,
     and <em>jackson-databind-2.0.6.jar</em> from the <em>lib</em> directory within the previous installation directory to resolve
     this.
 
-<p><em>(Since JMRI 4.7.1)</em> JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
         were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
         if the panel contains a path that starts with <code>resource:</code> and the panel will
         not load until changed using an external editor. Paths starting with <code>file:</code>
         cannot be automatically flagged because JMRI allows file: URLs.
         
-<p><em>(Since JMRI 4.7.1)</em> JMRI applications will not load a panel file that fails XML validation; an error will be
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
 	    explanations remain a work in progress.)
 
-<p><em>(Since JMRI 4.5.6)</em> 
+<p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
         As part of fixing the 
         <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
         the handling of TMCC preferences was changed.  If you have a TMCC
@@ -108,10 +111,10 @@ These may be relevant to you if you're updating from an earlier version.
         pane in the Preferences window and make sure that the 
         TMCC connection is selected for the appropriate device types.
 
-<p><em>(Since JMRI 4.5.2)</em>This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
-    <p>To remove Java SE 6 from OS X, follow these steps (these steps assume
+    To remove Java SE 6 from OS X, follow these steps (these steps assume
       JMRI is installed in the folder <em>/Applications/JMRI</em>, if not,
       adjust the following paths as needed):</p>
     <ol>
@@ -128,24 +131,27 @@ These may be relevant to you if you're updating from an earlier version.
       <li><em>El Capitan only:</em> Restart your Mac.</li>
     </ol>
   
-<p><em>(Since JMRI 4.5.2)</em>Support for directly executing AppleScript within JMRI has been removed
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> Support for directly executing AppleScript within JMRI has been removed
     due to changes in macOS and Java outside our control. If you require the
     ability to use AppleScript, you may be able to add this capability on your
     own by visiting <a href="https://jmri.github.io/applescript">JMRI
       AppleScript Support</a>, but please be aware that this may not work
     on upcoming releases of macOS or Java.
 
-<p><em>(Since JMRI 4.5.1)</em>Internal turnouts and sensors need to have complete, individual system names.
+<p><span class="since">Since <a href="jmri4.5.1.shtml">JMRI 4.5.1</a></span> 
+    Internal turnouts and sensors need to have complete, individual system names.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
     "IT12" is fine, but just "IT" is not. Most panel files that contain these should
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
 
-<p><em>(Since JMRI 4.3.3)</em> You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
+<p><span class="since">Since <a href="jmri4.3.3.shtml">JMRI 4.3.3</a></span>
+    You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
     the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
     If you've set the order manually (e.g. by editing configuration files) in the past, please check this
     preference to make sure it's set the way you want.</p>
 
-<p><em>(Since JMRI 4.1.2)</em> Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
+<p><span class="since">Since <a href="jmri4.1.2.shtml">JMRI 4.1.2</a></span>
+    Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
     <ul>
       <li>The decodeJmriFilename() function is no longer available by default. Use the  FileUtil.getExternalFilename() method instead.</li>
       <li>The simple propertyListener object is no longer available by default. Create your own, following the examples provided in the jython folder in the JMRI distribution.</li>
@@ -154,7 +160,8 @@ These may be relevant to you if you're updating from an earlier version.
       <li>Certain Python scripts are too large to be evaluated in Jython. If a script fails with the <code>java.io.IOException: Mark invalid</code> error, set "jython.exec=true" in a custom python.properties file or rewrite the script to be less than 100,000 characters per file. Note that when using "jython.exec=true" it may be desirable to run the included script jmri_bindings.py as a startup action to emulate the evaluation environment used when jython.exec=false.</li>
     </ul>
 
-<p><em>(Since JMRI 4.1.1)</em> Decoder definitions that use the "ivariable" form are now deprecated.  Definitions
+<p><span class="since">Since <a href="jmri4.1.1.shtml">JMRI 4.1.1</a></span>
+    Decoder definitions that use the "ivariable" form are now deprecated.  Definitions
     included with this release have been converted to the new form.
     If you have decoder definitions with the older "ivariable" form, they will no longer
     validate, but can still be used for the first couple of test releases in this series.
@@ -198,7 +205,7 @@ on the
 These are development files, and might not be working at any particular time.</p>
 
 
-<h3>Changes since <a href="jmri4.6.shtml">production release 4.7.3</a>:</h3>
+<h3>Changes since <a href="jmri4.7.3.shtml">test release 4.7.3</a>:</h3>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.4+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
@@ -220,7 +227,25 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		
         <h5>C/MRI</h5>
             <ul>
-            <li></li>
+            <li>This release has improved support for multiple C/MRI connections. Working now:
+                <ul>
+                <li>Multiple connections, with the extra ones either identified by
+                    a new letter ('K', etc) or a suffix ('C2', 'C3', etc). Each 
+                    connection has to have its own nodes defined via the preferences screen.
+                <li>The connections
+                    can be of mixed type:  Multiple serial, or multiple network, or 
+                    a mix of serial and network.
+                <li>Sensors, Turnouts and Lights can be defined in all the 
+                    C/MRI connections through the respective tables.
+                </ul>>
+                    
+            </li>Not yet in this release:
+                <ul>
+                <li>You can't (yet) configure start-up actions to work with 
+                    the 2nd and later C/MRI connections. E.g. if you open a 
+                    C/MRI monitor in the startup, it'll be using the 1st connection.
+                <li>Some of the labeling and documentation needs to be updated.
+                </ul>
             </ul>
 
         <h5>DCC++</h5>
@@ -230,7 +255,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Digitrax</h5>
             <ul>
-                <li></li>
+                <li>Contains a fix for the "Looping" behavior with 
+                    SE8c SignalHeads seen in <a href="jmri4.7.3.shtml">JMRI 4.7.3</a>.</li>
 		        <li></li>
             </ul>
 
@@ -241,7 +267,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>LocoNet</h5>
             <ul>
-                <li></li>
+                <li>The LocoNet over TCP server has been refactored with the following changes (<a href="https://github.com/JMRI/JMRI/pull/3498">#3498</a>):
+		            <ul>
+                        <li>The server can now be started automatically using the Startup preferences.</li>
+                        <li>Server preferences are set in the application preferences window.</li>
+                        <li>The server classname has changed to jmri.jmrix.loconet.loconetovertcp.LnTcpServer
+                            (any scripts referencing the server will need to be changed).</li>
+                        </li>
+                    </ul>
+                </li>
             </ul>
 
         <h5>NCE</h5>
@@ -428,18 +462,40 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Logix</h4>
         <ul>
-          <li></li>
+          <li>Logix conditionals are now directly related
+              to a parent Logix.  When an existing XML file is
+              loaded, any <strong>conditional references</strong>
+              are automatically converted.  A review of the 
+              system console for any messages is recommended.  There
+              are two possible messages:
+              <ul>
+                <li>Conditional has no parent Logix</li>
+                <li>Conditional is not in the Logix index</li>
+              </ul>
+              Both of these were caused by errors in previous versions
+              or manual changes to the panel xml file.  After saving the
+              xml file, the errors will not occur.<br>
+              Use <strong>Help &gt;&gt; System Console...</strong> to 
+              display the system console.
+          </li>
+          <li>When creating a conditional reference, the input
+              field has been replaced by two drop down combo boxes.
+              The first one is used to select a Logix and the
+              second one to select the Conditional within the
+              selected Logix.
+          </li>
         </ul>
 
     <h4>Operations</h4>
    <ul>
     <li>Train and route departure times can now be set to one minute intervals. Previously, the
-     menus only allowed departure times to within five minute intervals.</li>
+        menus only allowed departure times to within five minute intervals.</li>
+     <li>The option to make backup copies of manifests now also makes backup copies of switch lists.</li>
    </ul>
 
    <h4>Panel Editors</h4>
         <ul>
-            <li></li>
+            <li>Fixed initial size and position of new Switchboards</li>
         </ul>
 
     <h4>Preferences</h4>
@@ -454,7 +510,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Turnouts, Lights and other elements</h4>
         <ul>
-            <li></li>
+            <li>Egbert Broerse added the option to display the current state of Turnouts, Lights, Sensors and Blocks as graphics instead of text.
+                It can be enabled in the Preferences &gt; Display &gt; GUI tab.</li>
         </ul>
 
     <h4>Scripting</h4>
@@ -473,7 +530,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Signal Heads</h5>
             <ul>
-                <li></li>
+                <li>Contains a fix for the "Looping" behavior with 
+                    SE8c SignalHeads seen in <a href="jmri4.7.3.shtml">JMRI 4.7.3</a>.
+                    This most commonly hit LocoNet systems, but as SE8c boards
+                    can be used with any DCC system, it was a general problem.</li>
             </ul>
 
         <h5>Signal Masts</h5>
@@ -503,7 +563,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Internationalization</h4>
         <ul>
-            <li></li>
+            <li>Sonnys Hansen improved the Danish translation</li>
         </ul>
         
    <h4>Virtual Sound Decoder</h4>
@@ -513,7 +573,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
+            <li>This version of JMRI (and all later) writes a slightly streamlined
+                version of panel file contents.  
+                Older files should still be readable by this version of JMRI, 
+                but files written by this version may not be readable by versions
+                before JMRI 4.7.4 if they contain definitions of Blocks or OBlocks.</li>
+
         </ul>
 
    <!--#include virtual="/Footer" -->
