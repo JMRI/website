@@ -52,6 +52,7 @@ JMRI is now only available under the
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
+<!--
 <h3>Known problems with this release</h3>
 
 <ul>
@@ -59,7 +60,6 @@ see our
     </li>
 </ul>
 
-<!--
 If any of those effect you, please either wait for
 <a href="jmri4.7.5.shtml">JMRI 4.7.5</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
@@ -67,6 +67,22 @@ or (once there's a fix for the problem) pick up a
 from
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
  -->
+
+<a href="images/jmri-4.7.4-B.png"><img src="images/jmri-4.7.4-B.png" alt="after image" align="right" height="173" width="293"></a>
+<a href="images/jmri-4.7.4-A.png"><img src="images/jmri-4.7.4-A.png" alt="before image" align="right" height="173" width="295"></a>
+
+<a id="migration" name="migration"></a>
+<h3>Required Migration Step<span class="since">Since <a href="jmri4.7.4.shtml">JMRI 4.7.4</a></h3>
+</span>
+If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
+<em>you must open the JMRI preferences and make sure that the selections are 
+correct for your serial device(s).</em>
+<p>
+In general, previous versions used serial device names like 
+"/dev/cu.usbserial-ABC123FG". This version will generally omit the prefix, and
+use serial device names like "cu.usbserial-ABC123FG".
+(If given the choice if a name starting with "tty" and one starting with "cu", 
+pick the "cu" one). See the before and after images to the right.
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
