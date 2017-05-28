@@ -85,6 +85,12 @@ In general, previous versions used serial device names like
 use serial device names like "cu.usbserial-ABC123FG".
 (If given the choice if a name starting with "tty" and one starting with "cu", 
 pick the "cu" one). See the before and after images to the right.
+<p>
+If you are using Linux and have previously used the "JMRI_SERIAL_PORTS"
+option to make sure your serial device is visible to JMRI, you'll have 
+to change that to use the "purejavacomm.portnamepattern" option instead.
+See the 
+<a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>

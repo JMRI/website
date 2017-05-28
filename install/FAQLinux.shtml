@@ -104,77 +104,66 @@ use the SDK directories, but you might want to install to both.
 <dt id="usb">What do I do if my (USB) serial port isn't
 listed in the Preferences?</dt>
 <dd>
-<p>There are several options for solving this problem.</p>
+<p>There are several options for solving this problem depending on your JMRI version:</p>
 <ol>
-    <li><p>With JMRI 4.8 and newer, you can set the
+    <li><p><i>For JMRI 4.7.4 and newer:</i> You can identify your desired device's name in the
             <code>purejavacomm.portnamepattern</code> system property as a
             parameter to a JMRI launcher script:</p>
-        <pre>
+<pre>
 -J-Dpurejavacomm.portnamepattern=ttyUSB0
-        </pre>
+</pre>
         <p>This can be set in an environment variable <code>JMRI_OPTIONS</code>
             which can be set in your <tt>.bashrc</tt> file:</p>
-        <pre>
+<pre>
 export JMRI_OPTIONS="${JMRI_OPTIONS} -Dpurejavacomm.portnamepattern=ttyUSB0"
-        </pre>
-        <p> Multiple ports can be specified using a
-            <a href="http://docs.oracle.com/javase/tutorial/essential/regex/">regular expression</a>.
-            The simplest regular expression for this is
-            <code>(ttyUSB0|ttyUSB1)</code> (an <em>or</em> pattern).</p>
+</pre>
+    <p>You can also put this into <tt>/etc/profile.d/jmri.sh</tt> if you
+    don't want to change your personal <tt>.bashrc</tt> file.</p>
+    <p>Note that the "/dev/" prefix is not included in the specification.
+    <p>Multiple ports can be specified using a
+        <a href="http://docs.oracle.com/javase/tutorial/essential/regex/">regular expression</a>.
+        The simplest regular expression for this is
+        <code>(ttyUSB0|ttyUSB1)</code> (an <em>or</em> pattern).</p>
     </li>
 <li>
-  <p>With JMRI 2.10 through 4.6, you can set the environment variable
-  <b>JMRI_SERIAL_PORTS</b> to a colon-separated list of the additional
+  <p><i>For JMRI 2.10 through 4.7.3 only:</i> You can set the environment variable
+  <code>JMRI_SERIAL_PORTS</code> to a colon-separated list of the additional
   serial port devices you have available.  You can set this in your
   <tt>.bashrc</tt> file (or equivalent for whatever shell you
   use):</p>
 
-  <pre>
-  <code>
+<pre>
+<code>
   export JMRI_SERIAL_PORTS=/dev/nce:/dev/locobuffer
-  </code>
-  </pre>
+</code>
+</pre>
 
   <p>You can also put this into <tt>/etc/profile.d/jmri.sh</tt> if you
   don't want to change your personal <tt>.bashrc</tt> file.</p>
 
+  <p> Finally, if you want RxTx to scan the available ports for you, you can
+  modify the source code to do this.  The instructions for doing this are
+  included in the INSTALLATION file contained within the RxTx package or
+  at the <a href="http://rxtx.org/">RXTX home site</a>.</p>
+
 <li>
-  <p> If the RxTx and Java Communications Libraries are installed correctly,
-and  the serial port to which your device is attached isn't listed,
-you can force RxTx to recognize a specific serial port.
-<p>If you want to force the use of "/dev/ttyUSB0", you can do this by
-adding the following to java command line in the "DecoderPro","PanelPro",
-or "JmriDemo" script:
-<p>
-<pre>
-<code>
--Dgnu.io.rxtx.SerialPorts=/dev/ttyUSB0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# JMRI 2.10 to 4.6
-<br>
--Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0 &nbsp;&nbsp; # for 2.8 or earlier
-</code>
-</pre>
-<li>
-<p> <i>For JMRI 2.8 and earlier only:</i> If the RxTx and Java Communications Libraries are installed correctly,
-and  the serial port to which your device is attached isn't listed,
-you can force RxTx to recognize a specific serial port.
-<p>If you want to force the use of "/dev/ttyUSB0", you can do this by
-adding the following to the "javax.comm.properties":
-<p>
+    <p> <i>For JMRI 2.8 and earlier only:</i> If the RxTx and Java Communications Libraries are installed correctly,
+    and  the serial port to which your device is attached isn't listed,
+    you can force RxTx to recognize a specific serial port.
+    <p>If you want to force the use of "/dev/ttyUSB0", you can do this by
+    adding the following to the "javax.comm.properties":
+    <p>
 <pre>
 <code>
 javax.comm.rxtx.SerialPorts=/dev/ttyUSB0
 </code>
 </pre>
-<p> Multiple ports can be added to the list by using a colon separated
-list.
-<li>
-<p> Finally, if you want RxTx to scan the available ports for you, you can
-modify the source code to do this.  The instructions for doing this are
-included in the INSTALLATION file contained within the RxTx package or
-at the <a href="http://rxtx.org/">RXTX home site</a>.</p>
+    <p> Multiple ports can be added to the list by using a colon separated
+    list.
+
 </dd>
 
-<dt id="pi">Can JMRI run on a Pi?</dt>
+<dt id="pi">Can JMRI run on a Raspberry Pi?</dt>
 <dd>
 <p>
 Certainly, check out the JMRI  <a href="Raspbian.shtml">Install Help on Raspberry Pi</a>.
