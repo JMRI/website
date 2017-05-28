@@ -52,11 +52,14 @@ JMRI is now only available under the
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
-<!--
 <h3>Known problems with this release</h3>
 
 <ul>
-    <li>None
+    <li><span class="since">Since <a href="jmri4.7.3.shtml">JMRI 4.7.3</a></span>
+        The buttons to start the LocoNet Over TCP server
+        may not be set properly if the server
+        has already been started with the program (e.g. if the
+        preferences are set to start the server). 
     </li>
 </ul>
 
@@ -66,7 +69,6 @@ or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
 
 <a href="images/jmri-4.7.4-B.png"><img src="images/jmri-4.7.4-B.png" alt="after image" align="right" height="173" width="293"></a>
 <a href="images/jmri-4.7.4-A.png"><img src="images/jmri-4.7.4-A.png" alt="before image" align="right" height="173" width="295"></a>
