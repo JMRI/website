@@ -65,6 +65,16 @@ see our
     </li>
 </ul>
 
+<ul>
+    <li><span class="since">Since <a href="jmri4.7.3.shtml">JMRI 4.7.4</a></span>
+        If the NCE Command Monitor window is open,
+        messages of the form
+        "ERROR - Unhandled (command/reply type); code: &#8230;"
+        will appear in the JMRI System console.
+        The NCE Command Monitor still seems to be functioning correctly.
+    </li>
+</ul>
+
 If any of those effect you, please either wait for
 <a href="jmri4.7.5.shtml">JMRI 4.7.5</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
@@ -76,8 +86,7 @@ from
 <a href="images/jmri-4.7.4-A.png"><img src="images/jmri-4.7.4-A.png" alt="before image" align="right" height="173" width="295"></a>
 
 <a id="migration" name="migration"></a>
-<h3>Required Migration Step<span class="since">Since <a href="jmri4.7.4.shtml">JMRI 4.7.4</a></h3>
-</span>
+<h3>Required Migration Step<span class="since">Since <a href="jmri4.7.4.shtml">JMRI 4.7.4</a></span></h3>
 If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
 <em>you must open the JMRI preferences and make sure that the selections are 
 correct for your serial device(s).</em>
@@ -283,7 +292,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                         <li>The server can now be started automatically using the Startup preferences.</li>
                         <li>Server preferences are set in the application preferences window.</li>
                         <li>The server classname has changed to jmri.jmrix.loconet.loconetovertcp.LnTcpServer
-                            (any scripts referencing the server will need to be changed).</li>
+                            (any scripts referencing the server will need to be changed).
                         </li>
                     </ul>
                 </li>
