@@ -116,9 +116,18 @@ See the
         Older files should still be readable by this version of JMRI, 
         but files written by this version may not be readable by versions
         before JMRI 4.7.4 depending on their contents.</li>
-    <li>The LocoNetOverTCP server has changes that may break scripts that reference it. Scripts refering to
-        the class jmri.jmrix.loconet.loconetovertcp.Server need to refer instead to
-        jmri.jmrix.loconet.loconetovertcp.LnTcpServer.</li>
+    <li>The LocoNetOverTCP server has changes that may require users to take action:
+        <ul>
+        <li>If you have set the JMRI Preferences to start the LocoNetOverTCP
+            server when JMRI starts, or you have selected a port other 
+            that 1234, you need to go back to the Preferences window
+            and reconfigure that. The previously-stored preferences 
+            won't work with this version.
+        <li>Scripts refering to
+            the class jmri.jmrix.loconet.loconetovertcp.Server need to 
+            be changed to refer instead to
+            jmri.jmrix.loconet.loconetovertcp.LnTcpServer.</li>
+        </ul>
 </ul>
 
 <h3>Older warnings</h3>
