@@ -13,7 +13,7 @@
 $intended_host = "signer.jmri.org:50080";
 
 if ($_SERVER['HTTP_HOST'] != $intended_host) {
-    header("Location: http://".$intended_host."/problem-report.php");
+    header("Location: http://".$intended_host."/problem-report.php", true, 307);
     exit;
 }
 
