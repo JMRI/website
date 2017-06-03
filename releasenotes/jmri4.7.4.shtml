@@ -110,7 +110,12 @@ See the
     <li>This version of JMRI uses a new library to access serial ports, including
         USB serial ports.  This is a major migration for JMRI, so 
         please let us know if you encounter any problems connecting to 
-        your layout.
+        your layout. See the migration note above for steps you might have to take.
+            <ul>
+            <li>Windows users only: this version only, fixed in JMRI 4.7.5, you 
+                might have to manually remove a lib\jna-4.2.2.jar 
+                file if it's present. If the program starts OK for you, don't 
+                worry about this.</li>
     <li>This version of JMRI (and all later) writes a slightly streamlined
         version of panel file contents.  
         Older files should still be readable by this version of JMRI, 
