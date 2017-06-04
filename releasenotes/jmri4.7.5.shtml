@@ -38,9 +38,12 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the next in a series of test releases. We expect this series
-to end in the next JMRI production release around the middle of 2017.
-(See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)</p>
+<p>This is the fifth in a series of test releases.
+We expect this series to end in the next JMRI production release around the middle of 2017.
+(See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)
+This test release is the last in the series to contain big, new features and changes;
+the next few tests releases (up until the production release) will contain just incremental fixes and improvements.
+</p>
 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
@@ -51,6 +54,25 @@ JMRI is now only available under the
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<a id="migration" name="migration"></a>
+<h3>Required Migration Step<span class="since">Since <a href="jmri4.7.4.shtml">JMRI 4.7.4</a></span></h3>
+If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
+<em>you must open the JMRI preferences and make sure that the selections are 
+correct for your serial device(s).</em>
+<p>
+In general, previous versions used serial device names like 
+"/dev/cu.usbserial-ABC123FG". This version will generally omit the prefix, and
+use serial device names like "cu.usbserial-ABC123FG".
+(If given the choice if a name starting with "tty" and one starting with "cu", 
+pick the "cu" one). See the before and after images to the right.
+<p>
+If you are using Linux and have previously used the "JMRI_SERIAL_PORTS"
+option to make sure your serial device is visible to JMRI, you'll have 
+to change that to use the "purejavacomm.portnamepattern" option instead.
+See the 
+<a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
+
 
 <h3>Known problems with this release</h3>
 
@@ -76,7 +98,7 @@ from
         version of panel file contents.  
         Older files should still be readable by this version of JMRI, 
         but files written by this version may not be readable by versions
-        before JMRI 4.7.4 depending on their contents.</li>
+        before JMRI 4.2 depending on their contents.</li>
     <li>The LocoNetOverTCP server has changes that may break scripts that reference it. Scripts refering to
         the class jmri.jmrix.loconet.loconetovertcp.Server need to refer instead to
         jmri.jmrix.loconet.loconetovertcp.LnTcpServer.</li>
@@ -526,8 +548,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>Miscellaneous</h4>
         <ul>
-            <li></li>
-
+            <li>This version writes a slightly more verbose version of 
+                panel files to (attempt to) have them readable all the
+                way back to JMRI 4.2.  (JMRI 4.7.4 wrote files that
+                could only be read by JMRI 4.7.4 and later)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
