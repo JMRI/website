@@ -278,7 +278,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Digitrax</h5>
             <ul>
-                <li></li>
+                <li>The LocoNet Download Firmware tool has been updated to report an error when reading a 
+		firmware download file which is for a device which requires special LocoNet message timings
+		which are not supported by this tool.  Using the wrong protocol would corrupt the device's
+		firmware and require factory repair of the unit.  This change prevents this tool from 
+		corrupting the firmware of devices including the DCS210, DCS210, DB210, DB210-Opto, and DB220.
+		The Digitrax program <em>DigiIPLII.exe</em> may be used to perform firmware updates for these devices.</li>
+
+		<li>The LocoNet Download Firmware tool has been updated to provide slower timings which 
+		improve the success-rate of firmware updates, including the UR92.</li>
             </ul>
 
         <h5>JMRI Simple Server/JMRI Client</h5>
