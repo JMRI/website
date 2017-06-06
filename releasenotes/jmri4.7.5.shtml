@@ -244,9 +244,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h4>DecoderPro</h4>
 
         <ul>
-          <li></li>
-          </ul>
-           
+            <li>
+                The Single CV Programmer now supports Ops Mode Accessory Programming
+                (Program Accessory Decoder on the Main).
+                <br>This should work with most DCC systems<sup>*</sup>,
+                but only with Accessory Decoders that support this programming mode.
+                (Dave Heap)
+                <br><br><sup>*</sup>Please advise if your system does not work,
+                preferably by creating a
+                <a href="https://github.com/JMRI/JMRI/issues/" target="_blank">new issue on GitHub</a>.
+                We may be able to help.
+            </li>
+        </ul>
+
     <h4>Hardware Support</h4>
 
         <p></p>
