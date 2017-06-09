@@ -97,7 +97,7 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for warnings predating the 4.6 development series.
+See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.8 development series.
 These may be relevant to you if you're updating from an earlier version.
 
 <p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
@@ -179,37 +179,6 @@ These may be relevant to you if you're updating from an earlier version.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
     "IT12" is fine, but just "IT" is not. Most panel files that contain these should
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
-
-<!-- 
-<p><span class="since">Since <a href="jmri4.3.3.shtml">JMRI 4.3.3</a></span>
-    You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
-    the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
-    If you've set the order manually (e.g. by editing configuration files) in the past, please check this
-    preference to make sure it's set the way you want.</p>
- -->
-
-<!-- 
-<p><span class="since">Since <a href="jmri4.1.2.shtml">JMRI 4.1.2</a></span>
-    Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
-    <ul>
-      <li>The decodeJmriFilename() function is no longer available by default. Use the  FileUtil.getExternalFilename() method instead.</li>
-      <li>The simple propertyListener object is no longer available by default. Create your own, following the examples provided in the jython folder in the JMRI distribution.</li>
-      <li>jmri_defaults.py included in the JMRI distribution is no longer executed by default, but will be executed before any other Jython scipts if included in your User Files location.</li>
-      <li>The default behavior of python.cachedir.skip is now true. If using a custom python.properties file, include "python.cachedir.skip=false" in that file.</li>
-      <li>Certain Python scripts are too large to be evaluated in Jython. If a script fails with the <code>java.io.IOException: Mark invalid</code> error, set "jython.exec=true" in a custom python.properties file or rewrite the script to be less than 100,000 characters per file. Note that when using "jython.exec=true" it may be desirable to run the included script jmri_bindings.py as a startup action to emulate the evaluation environment used when jython.exec=false.</li>
-    </ul>
- -->
-
-<!-- 
-<p><span class="since">Since <a href="jmri4.1.1.shtml">JMRI 4.1.1</a></span>
-    Decoder definitions that use the "ivariable" form are now deprecated.  Definitions
-    included with this release have been converted to the new form.
-    If you have decoder definitions with the older "ivariable" form, they will no longer
-    validate, but can still be used for the first couple of test releases in this series.
-    Please ask on the
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
-    for help converting them, or just drop them and use the current definitions.</p>
- -->
 
 
 <h3>Download links:</h3>
