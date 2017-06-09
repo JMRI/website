@@ -53,11 +53,13 @@ JMRI is now only available under the
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
+<a href="images/jmri-4.7.4-B.png"><img src="images/jmri-4.7.4-B.png" alt="after image" align="right" height="173" width="293"></a>
+<a href="images/jmri-4.7.4-A.png"><img src="images/jmri-4.7.4-A.png" alt="before image" align="right" height="173" width="295"></a>
 <a id="migration" name="migration"></a>
 <h3>Required Migration Step<span class="since">Since <a href="jmri4.7.4.shtml">JMRI 4.7.4</a></span></h3>
 If you are using JMRI on Linux or Mac OS X and are updating from JMRI version 4.7.3 or earlier,
 <em>you must open the JMRI preferences and make sure that the selections are 
-correct for your serial device(s).</em>
+correct for your serial device(s).</em> Be sure to save the changes.
 <p>
 In general, previous versions used serial device names like 
 "/dev/cu.usbserial-ABC123FG". This version will generally omit the prefix, and
