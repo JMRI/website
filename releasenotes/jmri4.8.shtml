@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.7.6
+ JMRI: Release Notes for 4.8
  </title>
     <meta content="Bob Jacobsen" name="author">
     <meta name="keywords" content="java model railroad JMRI 4.7.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
@@ -23,33 +23,20 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h2>
-      Release Notes for JMRI 4.7.6 release
+      Release Notes for JMRI 4.8 release
       </h2>
 
     <p>Date: mmm dd, 2017</p>
     <p>From: (pumpkin)</p>
-    <p>Subject: Test Release 4.7.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Production Release 4.8 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
+We are very pleased to announce that the 4.7 series of JMRI test releases has resulted in a
+version that's good enough to be recommended for general use, including by new users.
+We're therefore making that version, "Production Release 4.8" available for download today.
+
 <h3>Notes:</h3>
-
-<p>This is a test release.  Please post a note if you encounter any new or old bugs!
-And please back up your JMRI files before installing this, in case you want to go
-back to an earlier version.</p>
-
-<p>This is the sixth in a series of test releases.
-We expect this series to end in the next JMRI production release around the middle of 2017.
-(See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)
-This test release contains just incremental fixes and improvements as we get closer 
-to the production release.  We'd appreciate you using and testing it.
-</p>
-
-<!-- 
-<p>Some of the changes involved are quite extensive.
-They may require a certain amount of experience before they are working well.
-Therefore, this test release should be considered experimental.</p>
- -->
 
 <p><b>
 JMRI is now only available under the
@@ -78,12 +65,12 @@ See the
 
 <h3>Known problems with this release</h3>
 
-<!--
 <ul>
     <li>None
     </li>
 </ul>
 
+<!--
 If any of those effect you, please either wait for
 <a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
@@ -94,15 +81,6 @@ from
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
-
-<ul>
-    <li></li>
-</ul>
-
-<h3>Older warnings</h3>
-
-See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for warnings predating the 4.6 development series.
-These may be relevant to you if you're updating from an earlier version.
 
 <p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
     This version of JMRI (and all later) writes a slightly streamlined
@@ -141,6 +119,11 @@ These may be relevant to you if you're updating from an earlier version.
 <p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
 	    explanations remain a work in progress.)
+
+<h3>Older warnings</h3>
+
+See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for more warnings predating the 4.6 development series.
+These may be relevant to you if you're updating from an earlier version.
 
 <p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
         As part of fixing the 
@@ -244,9 +227,18 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
  
-<h3>Changes since <a href="jmri4.7.5.shtml">test release 4.7.5</a>:</h3>
+<h3>Changes since <a href="jmri4.6.shtml">production release 4.6</a>:</h3>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">list of included commits</a> is available from our
+<a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
+The full lists of changes in each of the preceding test releases (
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.1+">4.7.1<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.2+">4.7.2<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.3+">4.7.3<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.4+">4.7.4<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.5+">4.7.5<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">4.7.6<a>)
+are available in our 
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h4>DecoderPro</h4>
