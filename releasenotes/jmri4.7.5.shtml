@@ -22,9 +22,9 @@
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
-      <h2>
+      <h1>
       Release Notes for JMRI 4.7.5 release
-      </h2>
+      </h1>
 
     <p>Date: June 8, 2017</p>
     <p>From: Bob Jacobsen</p>
@@ -34,7 +34,7 @@
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
-<h3>Notes:</h3>
+<h2>Notes:</h2>
 
 <p>This is a test release.  Please post a note if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
@@ -77,7 +77,7 @@ to change that to use the "purejavacomm.portnamepattern" option instead.
 See the 
 <a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
 
-
+<a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 
 <ul>
@@ -205,8 +205,8 @@ These may be relevant to you if you're updating from an earlier version.
     <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
     for help converting them, or just drop them and use the current definitions.</p>
 
-
-<h3>Download links:</h3>
+<a id="download" name="download"></a>
+<h2>Download links:</h2>
 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.5">Github servers</a>.
@@ -239,12 +239,12 @@ on the
 These are development files, and might not be working at any particular time.</p>
 -->
   
-<h3>Changes since <a href="jmri4.7.4.shtml">test release 4.7.4</a>:</h3>
+<h2>Changes since <a href="jmri4.7.4.shtml">test release 4.7.4</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.5+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h4>DecoderPro</h4>
+    <h3>DecoderPro</h3>
 
         <ul>
             <li>
@@ -260,16 +260,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </li>
         </ul>
 
-    <h4>Hardware Support</h4>
+    <h3>Hardware Support</h3>
 		
-        <h5>C/MRI</h5>
+        <h4>C/MRI</h4>
             <ul>
             <li>Some additional work on the multi-connection support.  JMRI should be 
                 able to support mixed sets of cable connected (e.g. serial) C/MRI and 
                 network connected C/MRI by defining multiple connections.</li>
             </ul>
 
-        <h5>Digitrax</h5>
+        <h4>Digitrax</h4>
             <ul>
                 <li>The LocoNet Download Firmware tool has been updated to report an error when reading a 
                 firmware download file which is for a device which requires special LocoNet message timings
@@ -288,13 +288,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		        <li>LocoStats Monitor was corrected to display only "interface status" LocoNet messages.</li>
             </ul>
 
-        <h5>SPROG</h5>
+        <h4>SPROG</h4>
             <ul>
                 <li>The SPROG command station code has been updated to fix an issue whereby users had observed
 		            very slow packet update rates on the rails causing locos to become unresponsive.</li>
             </ul>
 
-        <h5>Signal Heads</h5>
+        <h4>Signal Heads</h4>
             <ul>
                 <li>In <a href="jmri4.7.3.shtml ">JMRI 4.7.3</a>, we added support for SE8c Signal Heads
                     listening to the layout and (attempting to) follow messages that are
@@ -314,13 +314,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                     that shows you how it works.</li>
             </ul>
 
-   <h4>Internationalization</h4>
+   <h3>Internationalization</h3>
         <ul>
             <li>Sonnys Hansen provided updates to the Danish translation</li>
             <li>Egbert Broerse updated the Dutch translation</li>
         </ul>
         
-    <h4>Miscellaneous</h4>
+    <h3>Miscellaneous</h3>
         <ul>
             <li>This version writes a slightly more verbose version of 
                 panel files to (attempt to) have them readable all the

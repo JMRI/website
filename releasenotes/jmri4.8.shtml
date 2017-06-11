@@ -22,9 +22,9 @@
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
-      <h2>
+      <h1>
       Release Notes for JMRI 4.8 release
-      </h2>
+      </h1>
 
     <p>Date: mmm dd, 2017</p>
     <p>From: (pumpkin)</p>
@@ -36,7 +36,7 @@ We are very pleased to announce that the 4.7 series of JMRI test releases has re
 version that's good enough to be recommended for general use, including by new users.
 We're therefore making that version, "Production Release 4.8" available for download today.
 
-<h3>Notes:</h3>
+<h2>Notes:</h2>
 
 <p><b>
 JMRI is now only available under the
@@ -64,7 +64,7 @@ to change that to use the "purejavacomm.portnamepattern" option instead.
 See the 
 <a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
 
-
+<a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 
 <ul>
@@ -194,8 +194,8 @@ These may be relevant to you if you're updating from an earlier version.
     <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
     for help converting them, or just drop them and use the current definitions.</p>
 
-
-<h3>Download links:</h3>
+<a id="download" name="download"></a>
+<h2>Download links:</h2>
 
 <!-- 
 Please note that the download links in this and future JMRI releases link to 
@@ -229,7 +229,7 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
  
-<h3>Changes since <a href="jmri4.6.shtml">production release 4.6</a>:</h3>
+<h2>Changes since <a href="jmri4.6.shtml">production release 4.6</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
@@ -243,312 +243,312 @@ The full lists of changes in each of the preceding test releases (
 are available in our 
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h4>DecoderPro</h4>
+    <h3>DecoderPro</h3>
 
         <ul>
           <li></li>
           </ul>
            
-    <h4>Hardware Support</h4>
+    <h3>Hardware Support</h3>
 
         <p></p>
 
-	    <h5>Bachrus Speedo</h5>
+	    <h4>Bachrus Speedo</h4>
             <ul>
                 <li></li>
             </ul>
 		
-        <h5>C/MRI</h5>
+        <h4>C/MRI</h4>
             <ul>
             <li></li>
             </ul>
 
-        <h5>DCC++</h5>
+        <h4>DCC++</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Digitrax</h5>
+        <h4>Digitrax</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>JMRI Simple Server/JMRI Client</h5>
+        <h4>JMRI Simple Server/JMRI Client</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>LocoNet</h5>
+        <h4>LocoNet</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>NCE</h5>
+        <h4>NCE</h4>
             <ul>
                 <li><li>
             </ul>
 
-        <h5><a href="http://openlcb.org">OpenLCB</a></h5>
+        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>RFID</h5>
+        <h4>RFID</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Roco z21/Z21</h5>
+        <h4>Roco z21/Z21</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>SPROG</h5>
+        <h4>SPROG</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>TMCC</h5>
+        <h4>TMCC</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Uhlenbrock Intellibox</h5>
+        <h4>Uhlenbrock Intellibox</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Zimo MXULF</h5>
+        <h4>Zimo MXULF</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>ZTC</h5>
+        <h4>ZTC</h4>
             <ul>
                 <li></li>
             </ul>
 
-    <h4>New / Updated decoder definitions</h4>
+    <h3>New / Updated decoder definitions</h3>
       <ul>
         <li></li>
      </ul>
 
-        <h5>Arnold</h5>
+        <h4>Arnold</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>BLI</h5>
+        <h4>BLI</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Bachmann</h5>
+        <h4>Bachmann</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Digitrax</h5>
+        <h4>Digitrax</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Doehler &amp; Haas</h5>
+        <h4>Doehler &amp; Haas</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>ESU</h5>
+        <h4>ESU</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Hornby</h5>
+        <h4>Hornby</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Kuehn</h5>
+        <h4>Kuehn</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>LaisDCC</h5>
+        <h4>LaisDCC</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Lenz</h5>
+        <h4>Lenz</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>MGP</h5>
+        <h4>MGP</h4>
              <ul>
                 <li></li>
              </ul>
 
-        <h5>MTH</h5>
+        <h4>MTH</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>MRC</h5>
+        <h4>MRC</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>NCE</h5>
+        <h4>NCE</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Norsk Modelljernbane (NJM)</h5>
+        <h4>Norsk Modelljernbane (NJM)</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>QSI</h5>
+        <h4>QSI</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>RR-CirKits</h5>
+        <h4>RR-CirKits</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>SoundTraxx</h5>
+        <h4>SoundTraxx</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>TCS</h5>
+        <h4>TCS</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Tehnologistic (train-O-matic)</h5>
+        <h4>Tehnologistic (train-O-matic)</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Viessmann</h5>
+        <h4>Viessmann</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Wangrow</h5>
+        <h4>Wangrow</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>ZIMO</h5>
+        <h4>ZIMO</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Miscellaneous</h5>
+        <h4>Miscellaneous</h4>
             <ul>
                 <li></li>
             </ul>
 
 
-   <h4>Dispatcher</h4>
+   <h3>Dispatcher</h3>
         <ul>
              <li></li>
         </ul>
 
-    <h4>Layout Editor</h4>
+    <h3>Layout Editor</h3>
         <ul>
 	    <li></li>
         </ul>
 
-    <h4>Logix</h4>
+    <h3>Logix</h3>
         <ul>
           <li></li>
         </ul>
 
-    <h4>Operations</h4>
+    <h3>Operations</h3>
    <ul>
     <li></li>
    </ul>
 
-   <h4>Panel Editors</h4>
+   <h3>Panel Editors</h3>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Preferences</h4>
+    <h3>Preferences</h3>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Roster</h4>
+    <h3>Roster</h3>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Turnouts, Lights and other elements</h4>
+    <h3>Turnouts, Lights and other elements</h3>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Scripting</h4>
+    <h3>Scripting</h3>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Signals</h4>
+    <h3>Signals</h3>
         <ul>
             <li></li>
         </ul>
-        <h5>Signal Systems</h5>
+        <h4>Signal Systems</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Signal Heads</h5>
+        <h4>Signal Heads</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Signal Masts</h5>
+        <h4>Signal Masts</h4>
             <ul>
                 <li></li>
             </ul>
             
-    	<h5>Signal Groups</h5>
+    	<h4>Signal Groups</h4>
             <ul>
                 <li></li>
             </ul>
 
-	    <h5>NX Entry/Exit Logic</h5>
+	    <h4>NX Entry/Exit Logic</h4>
             <ul>
                 <li></li>
             </ul>
 
-   <h4>Warrants</h4>
+   <h3>Warrants</h3>
         <ul>
             <li></li>
         </ul>
 
-   <h4>Web Access</h4>
+   <h3>Web Access</h3>
         <ul>
             <li></li>
         </ul>
 
-   <h4>Internationalization</h4>
+   <h3>Internationalization</h3>
         <ul>
             <li></li>
         </ul>
         
-   <h4>Virtual Sound Decoder</h4>
+   <h3>Virtual Sound Decoder</h3>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Miscellaneous</h4>
+    <h3>Miscellaneous</h3>
         <ul>
             <li></li>
         </ul>
