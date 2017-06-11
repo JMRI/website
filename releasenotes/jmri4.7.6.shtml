@@ -78,12 +78,12 @@ See the
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 
-<!--
 <ul>
     <li>None
     </li>
 </ul>
 
+<!--
 If any of those effect you, please either wait for
 <a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
@@ -138,7 +138,8 @@ These may be relevant to you if you're updating from an earlier version.
         The workaround is to update both client and server JMRI machines to the same
         JMRI version. 
         
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI applications will not load a panel file that fails XML validation; an error will be
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> 
+        JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
 	    explanations remain a work in progress.)
 
@@ -151,7 +152,8 @@ These may be relevant to you if you're updating from an earlier version.
         pane in the Preferences window and make sure that the 
         TMCC connection is selected for the appropriate device types.
 
-<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
+    This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
     To remove Java SE 6 from OS X, follow these steps (these steps assume
@@ -171,7 +173,8 @@ These may be relevant to you if you're updating from an earlier version.
       <li><em>El Capitan only:</em> Restart your Mac.</li>
     </ol>
   
-<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> Support for directly executing AppleScript within JMRI has been removed
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
+    Support for directly executing AppleScript within JMRI has been removed
     due to changes in macOS and Java outside our control. If you require the
     ability to use AppleScript, you may be able to add this capability on your
     own by visiting <a href="https://jmri.github.io/applescript">JMRI
@@ -234,16 +237,19 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 </ul>
  -->
 
-<!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.6/">CI project page</a>.
- -->
+Please note that this test release is being built up incrementally, 
+and the files there are not likely to be final versions.
 
+
+<!-- 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- 
+ -->
+  
 <h2>Changes since <a href="jmri4.7.5.shtml">test release 4.7.5</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">list of included commits</a> is available from our
