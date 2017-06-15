@@ -48,7 +48,10 @@ see our
 <a href="images/jmri-4.7.4-A.png"><img src="images/jmri-4.7.4-A.png" alt="before image" align="right" height="173" width="295"></a>
 <a id="migration" name="migration"></a>
 <h3>Required Migration Step<span class="since">Since <a href="jmri4.7.4.shtml">JMRI 4.7.4</a></span></h3>
-If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
+JMRI was updated in JMRI 4.7.4 to use a new serial library. Depending on your exact
+circumstances, you may need to do some migrations:
+<ul>
+<li>If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
 <em>you must open the JMRI preferences and make sure that the selections are 
 correct for your serial device(s).</em> Be sure to save the changes.
 <p>
@@ -57,12 +60,26 @@ In general, previous versions used serial device names like
 use serial device names like "cu.usbserial-ABC123FG".
 (If given the choice if a name starting with "tty" and one starting with "cu", 
 pick the "cu" one). See the before and after images to the right.
-<p>
+<li>
 If you are using Linux and have previously used the "JMRI_SERIAL_PORTS"
 option to make sure your serial device is visible to JMRI, you'll have 
 to change that to use the "purejavacomm.portnamepattern" option instead.
 See the 
 <a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
+<li>
+If you have your own JMRI scripts to access a serial device, you'll have to update
+their library references:
+    <ul>
+    <li>Any 
+        <code>import gnu.io</code> statements will have to be replaced by 
+        <code>import purejavacomm</code> statements.
+    <li>More generally, any reference to 
+        <code>gnu.io</code>, e.g. a reference to a class like 
+        <code>gnu.io.SerialPort</code>, statements will have to be replaced by 
+        a reference to the corresponding 
+        <code>purejavacomm</code> class.
+    </ul>
+</ul>
 
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
