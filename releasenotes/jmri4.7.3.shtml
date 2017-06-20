@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.7.3 release
       </h2>
 
-    <p>Date: mmm dd, 2017</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: April 17, 2017</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.7.3 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h3>Notes:</h3>
 
@@ -38,7 +40,7 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the second in a series of test releases. We expect this series
+<p>This is the next in a series of test releases. We expect this series
 to end in the next JMRI production release around the middle of 2017.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)</p>
 
@@ -55,8 +57,11 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-    <li>None
-    </li>
+    <li>Under some conditions, in this release SE8c Signal Heads will "loop", 
+    sending an unending stream of Turnout messages.
+    This most commonly hit LocoNet systems, but as SE8c boards
+    can be used with any DCC system, it's a general problem.
+    This is fixed in <a href="jmri4.7.4.shtml">JMRI 4.7.4<a/></li>
 </ul>
 
 <!--
@@ -72,7 +77,11 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>(none at this time)</li>
+    <li>This release will not start cleanly if installed over earlier versions of JMRI (the Windows installer ensures
+    this is not an issue). Remove the JAR files <em>jackson-annotations-2.0.6.jar</em>, <em>jackson-core-2.0.6.jar</em>,
+    and <em>jackson-databind-2.0.6.jar</em> from the <em>lib</em> directory within the installation directory to resolve
+    this.</li>
+
 </ul>
 
 <h3>Older warnings</h3>
@@ -88,7 +97,13 @@ These may be relevant to you if you're updating from an earlier version.
         
 <p><em>(Since JMRI 4.7.1)</em> JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
-	    explainations remain a work in progress.)
+	    explanations remain a work in progress.)
+
+<p><em>(Since JMRI 4.7.1)</em>
+        The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
+        in this version of JMRI doesn't properly interoperate with JRMI 4.6 or before.
+        The workaround is to update both client and server JMRI machines to the same
+        JMRI version.  We expect this will be fixed in <a href="jmri4.7.1.shtml">JMRI 4.7.5</a>.
 
 <p><em>(Since JMRI 4.5.6)</em> 
         As part of fixing the 
@@ -156,7 +171,6 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h3>Download links:</h3>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.3">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
@@ -165,29 +179,27 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.dmg</a><br/>
-  sha256: fed355112237a22b366e7b961ef56215db30e85e76324ef1ca412a1c0b5240d6 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.dmg</a><br/>
+  sha256: c4ca7d32789de60a1764cc0c50cf2b73e2357ecd8e407a79b2c229193487858f </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.exe</a><br/>
-   sha256: 749c165f45dee6ebd8782e8d1912bb2e8560a83157ce53adf9add763e8612ab4</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.exe</a><br/>
+   sha256: 4fe5b78e96444939bf9933ad2c0d486a36ec40a472b2dcf1de30c8ffe6edb03b</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.tgz</a><br/>
-   sha256: 345fad551a453962514f3c2d2709471b6339e36505e90c3b8d389c2ec875b78a</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.tgz</a><br/>
+   sha256: 87a1cf58c3c39a47cdc22a29ce24469051ee4ae559b804df66dbbe274e520e47</p>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.3/">CI project page</a>.
- -->
 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+ -->
 
 <h3>Changes since <a href="jmri4.6.shtml">production release 4.7.2</a>:</h3>
 
@@ -257,19 +269,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             (This came up in the context of the time that the DCS240 command station takes to do writes, 
             which JMRI thought was an error) This has now been greatly improved.</p>
 
-	    <h5>Bachrus Speedo</h5>
-            <ul>
-                <li></li>
-            </ul>
-		
         <h5>C/MRI</h5>
             <ul>
-            <li></li>
-            </ul>
-
-        <h5>DCC++</h5>
-            <ul>
-                <li></li>
+            <li>Much work on the reliability of the C/MRI support, fixing
+                bugs in both setting preferences and normal running.</li>
+            <li>Having multiple C/MRI connections should now basically work,
+                although there may still be some issues when starting up
+                C/MRI tools from the Preferences, e.g. opening the C/MRI
+                Monitor automatically at startup.  Work on all this is
+                proceeding.
             </ul>
 
         <h5>Digitrax</h5>
@@ -282,56 +290,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                     It's still slow, excruciatingly slow if writing indexed CVs, but the timing is properly handled.</li>
 		<li>The DS64 configuration tool now has the ability to configure the addresses for the 
 		    turnout outputs, and to configure the DS64 "routes".</li>
-            </ul>
-
-        <h5>JMRI Simple Server/JMRI Client</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>LocoNet</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h5><a href="http://openlcb.org">OpenLCB</a></h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RFID</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Roco z21/Z21</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SPROG</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TMCC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Uhlenbrock Intellibox</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Zimo MXULF</h5>
-            <ul>
-                <li></li>
             </ul>
 
     <h4>New / Updated decoder definitions</h4>
@@ -356,195 +314,41 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </li>
      </ul>
 
-        <h5>Arnold</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>BLI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Bachmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Digitrax</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Doehler &amp; Haas</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ESU</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Hornby</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Kuehn</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>LaisDCC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Lenz</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MGP</h5>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h5>MTH</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>MRC</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>NCE</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Norsk Modelljernbane (NJM)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>QSI</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>RR-CirKits</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>SoundTraxx</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>TCS</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Tehnologistic (train-O-matic)</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Viessmann</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Wangrow</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>ZIMO</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h5>Miscellaneous</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-
-   <h4>Dispatcher</h4>
-        <ul>
-             <li></li>
-        </ul>
-
-    <h4>Layout Editor</h4>
-        <ul>
-	<li>
-		New Options menu items:
-		<ul>
-			<li>
-			</li>
-			<li>
-				<b>ToolBar</b>
-				<ul>
-					<li></li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-	<li>
-		Tool bar changes:
-		<ul>
-			<li>
-			</li>
-		</ul>
-	</li>
-        </ul>
-
     <h4>Logix</h4>
         <ul>
-            <li><li>
-        </ul>
-
-    <h4>Operations</h4>
-        <ul>
-            <li></li>
+          <li><strong>Name selection options</strong> &mdash; Two new methods for 
+          selecting names for "State Variables" and "Actions"
+          have been added.  Choose the desired option using the Logix Table
+          <strong>Options</strong> menu:
+            <ul>
+              <li><strong>Use Traditional Pick Lists</strong> &mdash; The default option uses a
+              	 text field where the system or user name is entered, such as a
+              	 turnout or sensor.  This method also provides a Pick List window
+              	 with tabs for each type of object.  Drag a name from the pick list
+                 and drop it on the name field.</li>
+              <li><strong>Use Single Pick Lists</strong> &mdash; This option also uses a
+                 text field, but the Pick List only displays the names for the
+                 current object, such as sensors.  Clicking on a name in the
+                 Pick List will automatically copy the name to the text field.</li>
+              <li><strong>Use Combo Name Boxes</strong> &mdash; The Combo Box option changes
+                 the text field to a drop down combo box.  Clicking on an item
+                   selects the name.</li>
+            </ul>
+          </li>
+          <li><strong>Conditional Browser</strong> &mdash; A <strong>Browse</strong> option has
+          been added to the <strong>Select</strong> menu for each Logix in the table.  Selecting this
+          entry will open a window that contains a formatted list of
+          the conditionals contained within the selected Logix.</li>
+          <li>The Logix help documents have been updated.</li>
         </ul>
 
     <h4>Panel Editors</h4>
         <ul>
-            <li></li>
-        </ul>
-
-    <h4>Preferences</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Roster</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Turnouts, Lights and other elements</h4>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h4>Scripting</h4>
-        <ul>
-            <li></li>
+            <li>Egbert Broerse added a new type of panel, <a href="http://jmri.org/help/en/package/jmri/jmrit/display/SwitchboardEditor.shtml">Switchboards</a>. They provide a grid of buttons to control turnouts, lights or sensors. Existing items will show their current state and allow you to toggle their state. This first edition include German and Dutch translations.</li>
         </ul>
 
     <h4>Signals</h4>
-        <ul>
-            <li></li>
-        </ul>
+
         <h5>Signal Systems</h5>
             <ul>
                 <li>Greg McCartney provided new definitions for the
@@ -553,27 +357,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>Signal Heads</h5>
             <ul>
-                <li></li>
-            </ul>
-
-        <h5>Signal Masts</h5>
-            <ul>
-                <li></li>
-            </ul>
-            
-    	<h5>Signal Groups</h5>
-            <ul>
-                <li></li>
-            </ul>
-
-	    <h5>NX Entry/Exit Logic</h5>
-            <ul>
-                <li></li>
+                <li>SE8c Signal Heads now follow traffic on the layout, so 
+                if another signal system is setting the hardware SE8c signals, 
+                the JMRI panel signals will follow them.</li>
             </ul>
 
    <h4>Warrants</h4>
         <ul>
-            <li></li>
+            <li>The Create/Edit Warrants help file was updated to explain the "Share Route" and "Don't Ramp" options.</li>
+            <li>Implementation of these options was completed.</li>
+            <li>A bug preventing restarts of cleared occupancy was fixed.</li>
         </ul>
 
    <h4>Web Access</h4>
@@ -583,19 +376,20 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h4>Internationalization</h4>
         <ul>
-            <li>Much more Danish translation from Sonnys Hansen</li>
+            <li>Much more Danish translation from Sonnys Hansen.</li>
+            <li>Print outs of roster reports from DecoderPro were updated by Egbert Broerse to  use translatable headings (don't translate the word 'CV')</li>
         </ul>
         
-   <h4>Virtual Sound Decoder</h4>
-        <ul>
-            <li></li>
-        </ul>
-
     <h4>Miscellaneous</h4>
         <ul>
+            <li>User Names entered by the user are checked for spaces at the start and end before they are applied. 
+                We expect this will prevent some hard to spot errors.</li>
             <li>The naming scheme for JMRI builds has changed slightly. Build metadata (the building user, build date/time,
 	    and git revision at time of build) are now deliniated using plus (+) signs instead of hyphens. The build
 	    date/time is now ISO 8601 parsable. (<a href="https://github.com/JMRI/JMRI/pull/3253">#3253</a>)</li>
+	    <li>The library used to identify connected systems on Windows has been updated. Although this should have no
+	    impact, scripts that accessed the Windows Registry using the WinRegistry should be updated to use Java Native
+	    Access. (<a href="https://github.com/JMRI/JMRI/pull/3353">#3353</a>)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->

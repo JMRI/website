@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.7.2
+ JMRI: Release Notes for 4.7.6
  </title>
-    <meta content="Bob Jacobsen" name="Author">
-    <meta name="keywords" content="java model railroad JMRI 4.7.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta content="Bob Jacobsen" name="author">
+    <meta name="keywords" content="java model railroad JMRI 4.7.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -22,31 +22,36 @@
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
-      <h2>
-      Release Notes for JMRI 4.7.2 release
-      </h2>
+      <h1>
+      Release Notes for JMRI 4.7.6 release
+      </h1>
 
-    <p>Date: March 14, 2017</p>
+    <p>Date: June 17, 2017</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.7.2 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.7.6 of JMRI/DecoderPro is available for download.</p>
 
 <!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
-<h3>Notes:</h3>
+<h2>Notes:</h2>
 
 <p>This is a test release.  Please post a note if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the second in a series of test releases. We expect this series
-to end in the next JMRI production release around the middle of 2017.
-(See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)</p>
+<p>This is the sixth in a series of test releases.
+We expect this series to end in the next JMRI production release around the middle of 2017.
+(See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
+This test release contains just incremental fixes and improvements as we get closer 
+to the production release.  We'd appreciate you using and testing it.
+</p>
 
+<!-- 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.</p>
+ -->
 
 <p><b>
 JMRI is now only available under the
@@ -54,15 +59,54 @@ JMRI is now only available under the
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
+<a href="images/jmri-4.7.4-B.png"><img src="images/jmri-4.7.4-B.png" alt="after image" align="right" height="173" width="293"></a>
+<a href="images/jmri-4.7.4-A.png"><img src="images/jmri-4.7.4-A.png" alt="before image" align="right" height="173" width="295"></a>
+<a id="migration" name="migration"></a>
+<h3>Required Migration Step<span class="since">Since <a href="jmri4.7.4.shtml">JMRI 4.7.4</a></span></h3>
+JMRI was updated in JMRI 4.7.4 to use a new serial library. Depending on your exact
+circumstances, you may need to do some migrations:
+<ul>
+<li>If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
+<em>you must open the JMRI preferences and make sure that the selections are 
+correct for your serial device(s).</em> Be sure to save the changes.
+<p>
+In general, previous versions used serial device names like 
+"/dev/cu.usbserial-ABC123FG". This version will generally omit the prefix, and
+use serial device names like "cu.usbserial-ABC123FG".
+(If given the choice if a name starting with "tty" and one starting with "cu", 
+pick the "cu" one). See the before and after images to the right.
+<li>
+If you are using Linux and have previously used the "JMRI_SERIAL_PORTS"
+option to make sure your serial device is visible to JMRI, you'll have 
+to change that to use the "purejavacomm.portnamepattern" option instead.
+See the 
+<a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
+<li>
+If you have your own JMRI scripts to access a serial device, you'll have to update
+their library references:
+    <ul>
+    <li>Any 
+        <code>import gnu.io</code> statements will have to be replaced by 
+        <code>import purejavacomm</code> statements.
+    <li>More generally, any reference to 
+        <code>gnu.io</code>, e.g. a reference to a class like 
+        <code>gnu.io.SerialPort</code>, statements will have to be replaced by 
+        a reference to the corresponding 
+        <code>purejavacomm</code> class.
+    </ul>
+</ul>
+
+<a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 
 <ul>
-    <li>None</li>
+    <li>None
+    </li>
 </ul>
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.7.3.shtml">JMRI 4.7.3</a>, due out shortly after this one,
+<a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -73,7 +117,7 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>(none at this time)</li>
+    <li></li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -81,23 +125,46 @@ from
 See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for warnings predating the 4.6 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><em>(Since JMRI 4.7.1)</em> JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
+<p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
+    This version of JMRI (and all later) writes a slightly streamlined
+    version of panel file contents.  
+    Older files should still be readable by this version of JMRI, 
+    but files written by this version may not be readable by versions
+    before JMRI 4.2 depending on their contents.
+
+<p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
+    The LocoNetOverTCP server has changes that may break scripts that reference it. Scripts refering to
+    the class jmri.jmrix.loconet.loconetovertcp.Server need to refer instead to
+    jmri.jmrix.loconet.loconetovertcp.LnTcpServer.
+
+<p><span class="since">Since <a href="jmri4.7.3.shtml">JMRI 4.7.3</a></span> 
+    This release will not start cleanly if installed over earlier versions of JMRI (the Windows installer ensures
+    this is not an issue). Remove the JAR files <em>jackson-annotations-2.0.6.jar</em>, <em>jackson-core-2.0.6.jar</em>,
+    and <em>jackson-databind-2.0.6.jar</em> from the <em>lib</em> directory within the previous installation directory to resolve
+    this.
+
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
         were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
         if the panel contains a path that starts with <code>resource:</code> and the panel will
         not load until changed using an external editor. Paths starting with <code>file:</code>
         cannot be automatically flagged because JMRI allows file: URLs.
         
-<p><em>(Since JMRI 4.7.1)</em> JMRI applications will not load a panel file that fails XML validation; an error will be
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
+        The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
+        in this version of JMRI doesn't properly interoperate with 
+        <a href="jmri4.7.1.shtml">JMRI 4.7.1</a> through <a href="jmri4.7.4.shtml">JMRI 4.7.4</a>.
+        It does work fine with <a href="jmri4.6.shtml">JMRI version 4.6</a> or before.
+        If you encounter a problem with version compatibility, you'll see an error
+        message that includes "<code>local class incompatible</code>".
+        The workaround is to update both client and server JMRI machines to the same
+        JMRI version. 
+        
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> 
+        JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
 	    explanations remain a work in progress.)
 
-<p><em>(Since JMRI 4.7.1)</em>
-        The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
-        in this version of JMRI doesn't properly interoperate with JRMI 4.6 or before.
-        The workaround is to update both client and server JMRI machines to the same
-        JMRI version.  We expect this will be fixed in <a href="jmri4.7.1.shtml">JMRI 4.7.5</a>.
-
-<p><em>(Since JMRI 4.5.6)</em> 
+<p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
         As part of fixing the 
         <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
         the handling of TMCC preferences was changed.  If you have a TMCC
@@ -106,10 +173,11 @@ These may be relevant to you if you're updating from an earlier version.
         pane in the Preferences window and make sure that the 
         TMCC connection is selected for the appropriate device types.
 
-<p><em>(Since JMRI 4.5.2)</em>This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
+    This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
-    <p>To remove Java SE 6 from OS X, follow these steps (these steps assume
+    To remove Java SE 6 from OS X, follow these steps (these steps assume
       JMRI is installed in the folder <em>/Applications/JMRI</em>, if not,
       adjust the following paths as needed):</p>
     <ol>
@@ -126,24 +194,28 @@ These may be relevant to you if you're updating from an earlier version.
       <li><em>El Capitan only:</em> Restart your Mac.</li>
     </ol>
   
-<p><em>(Since JMRI 4.5.2)</em>Support for directly executing AppleScript within JMRI has been removed
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
+    Support for directly executing AppleScript within JMRI has been removed
     due to changes in macOS and Java outside our control. If you require the
     ability to use AppleScript, you may be able to add this capability on your
     own by visiting <a href="https://jmri.github.io/applescript">JMRI
       AppleScript Support</a>, but please be aware that this may not work
     on upcoming releases of macOS or Java.
 
-<p><em>(Since JMRI 4.5.1)</em>Internal turnouts and sensors need to have complete, individual system names.
+<p><span class="since">Since <a href="jmri4.5.1.shtml">JMRI 4.5.1</a></span> 
+    Internal turnouts and sensors need to have complete, individual system names.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
     "IT12" is fine, but just "IT" is not. Most panel files that contain these should
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
 
-<p><em>(Since JMRI 4.3.3)</em> You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
+<p><span class="since">Since <a href="jmri4.3.3.shtml">JMRI 4.3.3</a></span>
+    You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
     the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
     If you've set the order manually (e.g. by editing configuration files) in the past, please check this
     preference to make sure it's set the way you want.</p>
 
-<p><em>(Since JMRI 4.1.2)</em> Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
+<p><span class="since">Since <a href="jmri4.1.2.shtml">JMRI 4.1.2</a></span>
+    Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
     <ul>
       <li>The decodeJmriFilename() function is no longer available by default. Use the  FileUtil.getExternalFilename() method instead.</li>
       <li>The simple propertyListener object is no longer available by default. Create your own, following the examples provided in the jython folder in the JMRI distribution.</li>
@@ -152,7 +224,8 @@ These may be relevant to you if you're updating from an earlier version.
       <li>Certain Python scripts are too large to be evaluated in Jython. If a script fails with the <code>java.io.IOException: Mark invalid</code> error, set "jython.exec=true" in a custom python.properties file or rewrite the script to be less than 100,000 characters per file. Note that when using "jython.exec=true" it may be desirable to run the included script jmri_bindings.py as a startup action to emulate the evaluation environment used when jython.exec=false.</li>
     </ul>
 
-<p><em>(Since JMRI 4.1.1)</em> Decoder definitions that use the "ivariable" form are now deprecated.  Definitions
+<p><span class="since">Since <a href="jmri4.1.1.shtml">JMRI 4.1.1</a></span>
+    Decoder definitions that use the "ivariable" form are now deprecated.  Definitions
     included with this release have been converted to the new form.
     If you have decoder definitions with the older "ivariable" form, they will no longer
     validate, but can still be used for the first couple of test releases in this series.
@@ -160,400 +233,356 @@ These may be relevant to you if you're updating from an earlier version.
     <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
     for help converting them, or just drop them and use the current definitions.</p>
 
-
-<h3>Download links:</h3>
+<a id="download" name="download"></a>
+<h2>Download links:</h2>
 
 Please note that the download links in this and future JMRI releases link to 
-<a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.2">Github servers</a>.
+<a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.4">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.2/JMRI.4.7.2-R741b21f.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.2/JMRI.4.7.2-R741b21f.dmg</a><br/>
-  sha256: a372bf6717516a5e27c2caa9229e47ec11afe1cd623c6f7aea98d6aaccfce3c9 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.dmg</a><br/>
+  sha256: b9f3f06c744837d4d82b3412a786732a91e7b434493d2dd695fc71f50a6145c7 </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.2/JMRI.4.7.2-R741b21f.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.2/JMRI.4.7.2-R741b21f.exe</a><br/>
-   sha256: b1fe27b08baf4140fd29befe44a288c4d762cc33ceafb67955bfe8bb0243f8f9</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.exe</a><br/>
+   sha256: 3a7d6340c10c0ec764a2e50e509a175b0227699565b79bca5de46bc552161ed0</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.2/JMRI.4.7.2-R741b21f.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.2/JMRI.4.7.2-R741b21f.tgz</a><br/>
-   sha256: f02d8c056177a90de736b957937e62055773e79077cb9a489422d20b9037b323</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz</a><br/>
+   sha256: b9135a2680cc9da24336635b92de00024ea155e6a85160d12e13b338c27ce8df</p>
 </ul>
 
-<!--
+<!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.2/">CI project page</a>.
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.6/">CI project page</a>.
+Please note that this test release is being built up incrementally, 
+and the files there are not likely to be final versions.
  -->
 
-<!--
+
+<!-- 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
--->
+ -->
+  
+<h2>Changes since <a href="jmri4.7.5.shtml">test release 4.7.5</a>:</h2>
 
-<h3>Changes since <a href="jmri4.7.1.shtml">test release 4.7.1</a>:</h3>
-
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.2+">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h4>Hardware Support</h4>
+    <h3>DecoderPro</h3>
+
+        <ul>
+          <li></li>
+          </ul>
+           
+    <h3>Hardware Support</h3>
 
         <p></p>
 
-	    <h5>Bachrus Speedo</h5>
+	    <h4>Bachrus Speedo</h4>
             <ul>
-                <li></li>
+                <li>Added custom scale selection</li>
             </ul>
 		
-        <h5>C/MRI</h5>
+        <h4>C/MRI</h4>
             <ul>
-            <li>The <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI preferences<a/> 
-                was fixed.
-            </li>
+            <li></li>
             </ul>
 
-        <h5>DCC++</h5>
+        <h4>DCC++</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Digitrax</h5>
+        <h4>Digitrax</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>JMRI Simple Server/JMRI Client</h5>
+        <h4>JMRI Simple Server/JMRI Client</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>LocoNet</h5>
+        <h4>LocoNet</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>NCE</h5>
+        <h4>NCE</h4>
             <ul>
                 <li><li>
             </ul>
 
-        <h5><a href="http://openlcb.org">OpenLCB</a></h5>
+        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>RFID</h5>
+        <h4>RFID</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Roco z21/Z21</h5>
+        <h4>Roco z21/Z21</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>SPROG</h5>
+        <h4>SPROG</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>TMCC</h5>
+        <h4>TMCC</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Uhlenbrock Intellibox</h5>
+        <h4>Uhlenbrock Intellibox</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Zimo MXULF</h5>
+        <h4>Zimo MXULF</h4>
             <ul>
                 <li></li>
             </ul>
 
-    <h4>New / Updated decoder definitions</h4>
+        <h4>ZTC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
       <ul>
-        <li>Wayne Geary provided a number of spelling fixes that covered a number of decoder files.
-        </li>
+        <li></li>
      </ul>
 
-        <h5>Arnold</h5>
+        <h4>Arnold</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>BLI</h5>
+        <h4>BLI</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Bachmann</h5>
+        <h4>Bachmann</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Digitrax</h5>
+        <h4>Digitrax</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Doehler &amp; Haas</h5>
+        <h4>Doehler &amp; Haas</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>ESU</h5>
+        <h4>ESU</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Hornby</h5>
+        <h4>Hornby</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Kuehn</h5>
+        <h4>Kuehn</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>LaisDCC</h5>
+        <h4>LaisDCC</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Lenz</h5>
+        <h4>Lenz</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>MGP</h5>
+        <h4>MGP</h4>
              <ul>
                 <li></li>
              </ul>
 
-        <h5>MTH</h5>
+        <h4>MTH</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>MRC</h5>
+        <h4>MRC</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>NCE</h5>
+        <h4>NCE</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Norsk Modelljernbane (NJM)</h5>
+        <h4>Norsk Modelljernbane (NJM)</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>QSI</h5>
+        <h4>QSI</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>RR-CirKits</h5>
+        <h4>RR-CirKits</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>SoundTraxx</h5>
+        <h4>SoundTraxx</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>TCS</h5>
+        <h4>TCS</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Tehnologistic (train-O-matic)</h5>
+        <h4>Tehnologistic (train-O-matic)</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Viessmann</h5>
+        <h4>Viessmann</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Wangrow</h5>
+        <h4>Wangrow</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>ZIMO</h5>
+        <h4>ZIMO</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Miscellaneous</h5>
+        <h4>Miscellaneous</h4>
             <ul>
                 <li></li>
             </ul>
 
 
-   <h4>Dispatcher</h4>
+   <h3>Dispatcher</h3>
         <ul>
              <li></li>
         </ul>
 
-    <h4>Layout Editor</h4>
+    <h3>Layout Editor</h3>
         <ul>
-	<li>
-		New Options menu items:
-		<ul>
-			<li>
-				<b>Highlight Selected Block</b> -- Use the alternate track color to verify track component block assignments.
-			</li><li>
-				<b>ToolBar</b>
-				<ul>
-					<li>
-						<b>ToolBar Side</b> -- Position the tool bar on top (default), left, bottom and right.  There is also a Float option which creates a toolbox that can be moved anywhere on the screen.
-					</li><li>
-						<b>Wide ToolBar</b> -- Force the <b>top</b> and <b>bottom</b> tool bars to use the wide mode which may result in horizontal scroll bars.
-					</li><li>
-						<b>Drop Down List Display Order</b> -- Select which names (user and/or system) to use for drop down combo boxes.  This will affect the sort order.  Changes will take effect the next time you start PanelPro.  Note:  This feature is not completely functional yet.
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-	<li>
-		Tool bar changes:
-		<ul>
-			<li>
-				Mutually exclusive checkboxes have been changed to radio buttons.  Related fields are enabled as needed.
-			</li><li>
-				All text fields, except for text labels,  have been changed to drop-down combo boxes with appropriate content, such as sensor names for the Sensor Icon.
-			</li><li>
-				Floating ToolBox:
-				<ul>
-					<li>
-						Tabs are used to group related toolbar items.
-					</li><li>
-						Clicking on the Close button <em><b>hides</b></em> the ToolBox.  Use the Window menu to make it visible.
-					</li><li>
-						Clicking on the Minimize button creates an icon on the operating system task bar.
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</li>
+	    <li>Dave Sand <a href="https://github.com/JMRI/JMRI/pull/3623">fixed</a>
+	        an issue with duplicate block connections when edge connectors are used.</li>
         </ul>
 
-    <h4>Logix</h4>
+    <h3>Logix</h3>
         <ul>
-            <li><li>
+          <li></li>
         </ul>
 
-    <h4>Operations</h4>
+    <h3>Operations</h3>
+   <ul>
+    <li></li>
+   </ul>
+
+   <h3>Panel Editors</h3>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Panel Editors</h4>
-        <ul>
-            <li>Bug that disabled operation of zoomed multisensors is fixed.</li>
-        </ul>
-
-    <h4>Preferences</h4>
+    <h3>Preferences</h3>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Roster</h4>
+    <h3>Roster</h3>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Turnouts, Lights and other elements</h4>
+    <h3>Turnouts, Lights and other elements</h3>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Scripting</h4>
-        <ul>
-            <li>Added "<a href="http://jmri.org/jython/TurnOffXmlValidation.py">TurnOffXmlValidation.py</a>" sample script to
-                turn off validation when reading XML (panel) files</li>
-        </ul>
-
-    <h4>Signals</h4>
+    <h3>Scripting</h3>
         <ul>
             <li></li>
         </ul>
-        <h5>Signal Systems</h5>
+
+    <h3>Signals</h3>
+        <ul>
+            <li></li>
+        </ul>
+        <h4>Signal Systems</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Signal Heads</h5>
+        <h4>Signal Heads</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h5>Signal Masts</h5>
+        <h4>Signal Masts</h4>
             <ul>
                 <li></li>
             </ul>
             
-    	<h5>Signal Groups</h5>
+    	<h4>Signal Groups</h4>
             <ul>
                 <li></li>
             </ul>
 
-	    <h5>NX Entry/Exit Logic</h5>
+	    <h4>NX Entry/Exit Logic</h4>
             <ul>
                 <li></li>
             </ul>
 
-   <h4>Warrants</h4>
-        <ul>
-		<li>The look ahead problems of a Warrant are fixed. Paths of routes are 
-        		maintained automatically. Trains resume running their scripts automatically
-        		when signals or rouge occupations are cleared ahead of them.
-		</li>
-        	<li>Warrants normally grant rights of track access solely to only one train.
-        		It now is possible to allow several warrants to share portions of their route.
-        		A 'Clearance to Share Route' checkbox has been added.
-        	</li>		
-    		<li>The NXWarrant window now is populated with defaults configured in Preferences.
-    			Users depending on the default 'throttle speed factor' may notice
-    			a difference in train speeds when trains respond to track conditions. 
-    			Use of speed profiles and input of distances of block paths enables more 
-    			precise calculation of train movements. 
-    		</li>
-            	<li>A 'Fast Acting' warrant has been added that makes instant speed changes
-            		upon entering an approach block.  This warrant type also shares routes.
-           	</li>
-        </ul>
-
-   <h4>Web Access</h4>
+   <h3>Warrants</h3>
         <ul>
             <li></li>
         </ul>
 
-   <h4>Internationalization</h4>
+   <h3>Web Access</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h3>Internationalization</h3>
         <ul>
             <li></li>
         </ul>
         
-   <h4>Virtual Sound Decoder</h4>
+   <h3>Virtual Sound Decoder</h3>
         <ul>
             <li></li>
         </ul>
 
-    <h4>Miscellaneous</h4>
+    <h3>Miscellaneous</h3>
         <ul>
             <li></li>
         </ul>
