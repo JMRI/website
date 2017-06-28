@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.7.6
+ JMRI: Release Notes for 4.7.7
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.7.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.7.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,16 +23,14 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.7.6 release
+      Release Notes for JMRI 4.7.7 release
       </h1>
 
-    <p>Date: June 17, 2017</p>
-    <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.7.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: MMM DD, 2017</p>
+    <p>From: pumpkin</p>
+    <p>Subject: Test Release 4.7.7 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h2>Notes:</h2>
 
@@ -40,18 +38,16 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the sixth in a series of test releases.
+<p>This is the seventh in a series of test releases.
 We expect this series to end in the next JMRI production release around the middle of 2017.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
-This test release contains just incremental fixes and improvements as we get closer 
-to the production release.  We'd appreciate you using and testing it.
+This test release is close to the final feature set for that production release.  
+We'd appreciate you testing and using it.
 </p>
 
-<!-- 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.</p>
- -->
 
 <p><b>
 JMRI is now only available under the
@@ -106,7 +102,7 @@ their library references:
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
+<a href="jmri4.7.8.shtml">JMRI 4.7.8</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -236,6 +232,7 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.4">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
@@ -255,6 +252,7 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz</a><br/>
    sha256: b9135a2680cc9da24336635b92de00024ea155e6a85160d12e13b338c27ce8df</p>
 </ul>
+ -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -264,29 +262,323 @@ Please note that this test release is being built up incrementally,
 and the files there are not likely to be final versions.
  -->
 
-
-<!-- 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
-  
-<h2>Changes since <a href="jmri4.7.5.shtml">test release 4.7.5</a>:</h2>
+ 
+<h2>Changes since <a href="jmri4.7.6.shtml">test release 4.7.6</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.7+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
+    <h3>DecoderPro</h3>
+
+        <ul>
+          <li></li>
+          </ul>
+           
     <h3>Hardware Support</h3>
+
+        <p></p>
 
 	    <h4>Bachrus Speedo</h4>
             <ul>
-                <li>Added custom scale selection</li>
+                <li></li>
             </ul>
 		
+        <h4>C/MRI</h4>
+            <ul>
+            <li></li>
+            </ul>
+
+        <h4>DCC++</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Digitrax</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>JMRI Simple Server/JMRI Client</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>NCE</h4>
+            <ul>
+                <li><li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>RFID</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Roco z21/Z21</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>SPROG</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>TMCC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Uhlenbrock Intellibox</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Zimo MXULF</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>ZTC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+      <ul>
+        <li></li>
+     </ul>
+
+        <h4>Arnold</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>BLI</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Bachmann</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Digitrax</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Doehler &amp; Haas</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>ESU</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Hornby</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Kuehn</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>LaisDCC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Lenz</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>MGP</h4>
+             <ul>
+                <li></li>
+             </ul>
+
+        <h4>MTH</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>MRC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>NCE</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Norsk Modelljernbane (NJM)</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>QSI</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>RR-CirKits</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>TCS</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Tehnologistic (train-O-matic)</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Viessmann</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Wangrow</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Miscellaneous</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+
+   <h3>Dispatcher</h3>
+        <ul>
+             <li></li>
+        </ul>
+
     <h3>Layout Editor</h3>
         <ul>
-	    <li>Dave Sand <a href="https://github.com/JMRI/JMRI/pull/3623">fixed</a>
-	        an issue with duplicate block connections when edge connectors are used.</li>
+	    <li></li>
+        </ul>
+
+    <h3>Logix</h3>
+        <ul>
+          <li></li>
+        </ul>
+
+    <h3>Operations</h3>
+       <ul>
+            <li></li>
+       </ul>
+
+   <h3>Panel Editors</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Preferences</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Roster</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Turnouts, Lights and other elements</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Signals</h3>
+        <ul>
+            <li></li>
+        </ul>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Signal Heads</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Signal Masts</h4>
+            <ul>
+                <li></li>
+            </ul>
+            
+    	<h4>Signal Groups</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+	    <h4>NX Entry/Exit Logic</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+   <h3>Warrants</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h3>Web Access</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h3>Internationalization</h3>
+        <ul>
+            <li></li>
+        </ul>
+        
+   <h3>Virtual Sound Decoder</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <ul>
+            <li></li>
         </ul>
 
    <!--#include virtual="/Footer" -->
