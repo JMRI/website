@@ -499,7 +499,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Operations</h3>
        <ul>
-            <li></li>
+            <li>Some improvements to the UK locale.  Fixed several references to "cars" rather than "wagons".</li>
+            <li>Fixed some train manifest "time" reference bugs where the option to use 12 hour format was ignored. Also fixed
+            a couple "time" bugs in the CSV file generation. Thanks to Dan Foltz for bring these to our attention.</li>
+            <li>Some improvements to the route windows, now if a route is assigned to a train, and a train is built, you won't be
+            able to modify the route until the train is either reset or terminated.</li>
        </ul>
 
    <h3>Panel Editors</h3>
