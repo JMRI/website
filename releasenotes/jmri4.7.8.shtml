@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.7.7
+ JMRI: Release Notes for 4.7.8
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.7.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.7.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,12 +23,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.7.7 release
+      Release Notes for JMRI 4.7.8 release
       </h1>
 
     <p>Date: MMM DD, 2017</p>
     <p>From: pumpkin</p>
-    <p>Subject: Test Release 4.7.7 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.7.8 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -38,7 +38,7 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the seventh in a series of test releases.
+<p>This is the eighth in a series of test releases.
 We expect this series to end in the next JMRI production release around the middle of 2017.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 This test release is close to the final feature set for that production release.  
@@ -252,43 +252,37 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz</a><br/>
    sha256: b9135a2680cc9da24336635b92de00024ea155e6a85160d12e13b338c27ce8df</p>
 </ul>
--->
-
-
-Preliminary build files (not the final released files) can be found
-on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.7/">CI project page</a>.
-Please note that this test release is being built up incrementally, 
-and the files there are not likely to be final versions.
-
+ -->
 
 <!-- 
+Preliminary build files (not the final released files) can be found
+on the
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.6/">CI project page</a>.
+Please note that this test release is being built up incrementally, 
+and the files there are not likely to be final versions.
+ -->
+
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
--->
-  
-<h2>Changes since <a href="jmri4.7.6.shtml">test release 4.7.6</a>:</h2>
+ 
+<h2>Changes since <a href="jmri4.7.7.shtml">test release 4.7.7</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.7+">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.8+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>DecoderPro</h3>
 
         <ul>
           <li></li>
-          </ul>
+        </ul>
            
     <h3>Hardware Support</h3>
 
         <ul>
-          <li>Turnouts now have a DELAYED feedback mode. In this mode, when you
-            command a turnout to move, it first goes to INCONSISTENT state for 
-            a few seconds (to give the points time to move), before finishing up
-            in the commanded state.  This is intended for cases where you don't have any
-            hardware to specifically read back point position from the layout.</li>
-        <ul>
-        
+          <li></li>
+        </ul>
+
 	    <h4>Bachrus Speedo</h4>
             <ul>
                 <li></li>
@@ -301,7 +295,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>DCC++</h4>
             <ul>
-                <li>Fixed a problem loading and storing Sensors to panel files.</li>
+                <li></li>
             </ul>
 
         <h4>Digitrax</h4>
@@ -336,8 +330,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Roco z21/Z21</h4>
             <ul>
-                <li>Paul Bender fixed an addressing problem with Roco Handheld throttles.</li>
-                <li>Paul Bender improved the Z21 support.</li>
+                <li></li>
             </ul>
 
         <h4>SPROG</h4>
@@ -498,7 +491,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Layout Editor</h3>
         <ul>
-            <li>George Warner improved the rendering of rotated text.<li>
+	    <li></li>
         </ul>
 
     <h3>Logix</h3>
@@ -517,7 +510,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Panel Editors</h3>
         <ul>
-            <li>George Warner improved the rendering of rotated text.<li>
+            <li></li>
         </ul>
 
     <h3>Preferences</h3>
@@ -537,22 +530,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Scripting</h3>
         <ul>
-            <li>Add two new script-based tools 
-                <a href="http://jmri.org/jython/CombineTurnouts.py">CombineTurnouts</a> and 
-                <a href="http://jmri.org/jython/CombineSensors.py">CombineSensors</a> 
-                for mapping a single Turnout or Sensor onto multiple pieces of hardware. 
-                Includes test routines which can serve as further examples.
-            </li>
+            <li></li>
         </ul>
 
     <h3>Signals</h3>
         <ul>
-            <li>There are new 
-                <a href="http://jmri.org/jython/SignalFollower.py">SignalFollower.py</a> (for SignalHeads) and
-                <a href="http://jmri.org/jython/SignalMastFollower.py">SignalMastFollower.py</a> (for SignalMasts)
-                that lets you have one mast or head follow another's state.  This can be useful,
-                for example, if you have a repeated signal on the fascia.             
-            </li>
+            <li></li>
         </ul>
         <h4>Signal Systems</h4>
             <ul>
@@ -579,13 +562,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-	    <h4>USS CTC Logic</h4>
-            <ul>
-                <li>Added a new package of 
-                <a href="http://jmri.org/help/en/html/tools/uss/index.shtml">tools for implementing USS CTC panels</a>.
-                </li>
-            </ul>
-
    <h3>Warrants</h3>
         <ul>
             <li></li>
@@ -598,7 +574,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Internationalization</h3>
         <ul>
-            <li>Egbert Broerse improved the German and Dutch translations.</li>
+            <li></li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
@@ -608,8 +584,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li>Improved the speed of loading panel files with lots of Sensors, Turnouts or Lights.</li>
-            <li>Fixed some links in the help pages</li>
+            <li></li>
         </ul>
 
    <!--#include virtual="/Footer" -->
