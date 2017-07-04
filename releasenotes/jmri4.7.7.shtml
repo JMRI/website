@@ -276,7 +276,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h3>DecoderPro</h3>
 
         <ul>
-          <li></li>
+            <li>
+                The Single CV Programmer now also supports:
+                <ul>
+                    <li>Ops Mode Accessory Programming (Program Accessory Decoder on the Main)</li>
+                    <li>Ops Mode Extended Accessory Programming (Program Signal Decoder on the Main)</li>
+                </ul>
+                (Dave Heap &amp Alex Shepherd)
+            </li>
         </ul>
            
     <h3>Hardware Support</h3>
@@ -367,7 +374,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>New / Updated decoder definitions</h3>
       <ul>
-        <li></li>
+        <li>
+            Programming of both Accessory & Signal (Extended Accessory) Decoders on the Main
+            (<a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
+            target="_blank">Accessory Decoder Ops Mode</a>)
+            is now possible, if supported by the decoder.
+            You will need to configure your definition to enable this, as per
+            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
+            target="_blank">this link</a>.
+            (Dave Heap)
+        </li>
      </ul>
 
         <h4>Arnold</h4>
@@ -397,8 +413,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>ESU</h4>
             <ul>
-                <li></li>
-            </ul>
+              <li>Added Drive Hold (Logical Function) for LokPilot. (Dave Heap)</li>
+                <li>Added/updated some models and Product IDs. (Dave Heap)
+                </li>
+              </ul>
 
         <h4>Hornby</h4>
             <ul>
