@@ -375,6 +375,86 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Bachmann</h4>
             <ul>
+
+334
+
+            </ul>
+
+335
+
+​
+
+336
+
+        <h4>SPROG</h4>
+
+337
+
+            <ul>
+
+338
+
+                <li></li>
+
+339
+
+            </ul>
+
+340
+
+​
+
+341
+
+        <h4>TMCC</h4>
+
+342
+
+            <ul>
+
+343
+
+                <li></li>
+
+344
+
+            </ul>
+
+345
+
+​
+
+346
+
+        <h4>Uhlenbrock Intellibox</h4>
+
+347
+
+            <ul>
+
+348
+
+                <li></li>
+
+349
+
+            </ul>
+
+350
+
+​
+
+351
+
+        <h4>Zimo MXULF</h4>
+
+352
+
+            <ul>
+
+353
+
+                <li></li>
                 <li></li>
             </ul>
 
@@ -564,7 +644,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Warrants</h3>
         <ul>
-            <li></li>
+            <li>Warrants uses the RosterSpeedProfile whenever possible to get track speeds, distance traveled and time of travel.
+            If a speed profile was created using measurements from one direction only, data requested for the other direction 
+            is unreliable. This affects NXWarrants ability to generate a throttle command script.  If multiple error messages are
+            posted to the console from the RosterSpeedProfile it may be preferable to delete the Speed Profile for that locomotive. 
+            When no speed profile is available, warrants uses the 'throttle factor' to determine track speeds, distance traveled etc.</li>
         </ul>
 
    <h3>Web Access</h3>
