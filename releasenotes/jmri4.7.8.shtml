@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.7.8 release
       </h1>
 
-    <p>Date: MMM DD, 2017</p>
-    <p>From: pumpkin</p>
+    <p>Date: July 13, 2017</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.7.8 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -45,9 +47,11 @@ This test release is close to the final feature set for that production release.
 We'd appreciate you testing and using it.
 </p>
 
+<!-- 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.</p>
+ -->
 
 <p><b>
 JMRI is now only available under the
@@ -110,11 +114,13 @@ from
  -->
 
 <a id="warnings" name="warnings"></a>
+<!-- 
 <h3>New warnings for this release:</h3>
 
 <ul>
     <li></li>
 </ul>
+ -->
 
 <h3>Older warnings</h3>
 
@@ -232,7 +238,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.4">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
@@ -241,18 +246,17 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.dmg</a><br/>
-  sha256: b9f3f06c744837d4d82b3412a786732a91e7b434493d2dd695fc71f50a6145c7 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.dmg</a><br/>
+  sha256: 688b6da8a2e66ad77ef6499d34381e82eb4eba88ad37477de6b24a11906cdf21 </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.exe</a><br/>
-   sha256: 3a7d6340c10c0ec764a2e50e509a175b0227699565b79bca5de46bc552161ed0</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.exe</a><br/>
+   sha256: 071d54f1ce97b8bf701567a0c44f63104462f7966bcc5319112f320cf133da8c</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz</a><br/>
-   sha256: b9135a2680cc9da24336635b92de00024ea155e6a85160d12e13b338c27ce8df</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.tgz</a><br/>
+   sha256: 804a8b715cb11983cad287fb58356644f36482ec2f02563f83ecbaff63f3f07e</p>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -261,253 +265,34 @@ on the
 Please note that this test release is being built up incrementally, 
 and the files there are not likely to be final versions.
  -->
-
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- 
+-->
+
 <h2>Changes since <a href="jmri4.7.7.shtml">test release 4.7.7</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.8+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h3>DecoderPro</h3>
-
-        <ul>
-          <li></li>
-        </ul>
-           
     <h3>Hardware Support</h3>
-
-        <ul>
-          <li></li>
-        </ul>
-
-	    <h4>Bachrus Speedo</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-        <h4>C/MRI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>DCC++</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>JMRI Simple Server/JMRI Client</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LocoNet</h4>
-            <ul>
-                <li></li>
-            </ul>
 
         <h4>MERG CBUS</h4>
             <ul>
                 <li>Fixed a crash when printing</li>
             </ul>
 
-        <h4>MRC</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RFID</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Roco z21/Z21</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SPROG</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TMCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Zimo MXULF</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZTC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
     <h3>New / Updated decoder definitions</h3>
-      <ul>
-        <li></li>
-     </ul>
-
-        <h4>Arnold</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>BLI</h4>
             <ul>
                 <li>Mike Mosher updated some BLI definitions</li>
-            </ul>
-
-        <h4>Bachmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Doehler &amp; Haas</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ESU</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Hornby</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Kuehn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LaisDCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Lenz</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MGP</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>MTH</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Norsk Modelljernbane (NJM)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>QSI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RR-CirKits</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SoundTraxx</h4>
-            <ul>
-                <li></li>
             </ul>
 
         <h4>TCS</h4>
             <ul>
                 <li>Michael Mosher updated some TCS WOW definitions</li>
             </ul>
-
-        <h4>Tehnologistic (train-O-matic)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Viessmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Wangrow</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZIMO</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Miscellaneous</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-
-   <h3>Dispatcher</h3>
-        <ul>
-             <li></li>
-        </ul>
-
-    <h3>Layout Editor</h3>
-        <ul>
-	    <li></li>
-        </ul>
-
-    <h3>Logix</h3>
-        <ul>
-          <li></li>
-        </ul>
 
     <h3>Operations</h3>
        <ul>
@@ -517,85 +302,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Some improvements to the route windows, now if a route is assigned to a train, and a train is built, you won't be
             able to modify the route until the train is either reset or terminated.</li>
        </ul>
-
-   <h3>Panel Editors</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Preferences</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Roster</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Turnouts, Lights and other elements</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Scripting</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Signals</h3>
-        <ul>
-            <li></li>
-        </ul>
-        <h4>Signal Systems</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Heads</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Masts</h4>
-            <ul>
-                <li></li>
-            </ul>
-            
-    	<h4>Signal Groups</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-	    <h4>NX Entry/Exit Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-   <h3>Warrants</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h3>Web Access</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h3>Internationalization</h3>
-        <ul>
-            <li></li>
-        </ul>
-        
-   <h3>Virtual Sound Decoder</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Miscellaneous</h3>
-        <ul>
-            <li></li>
-        </ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
