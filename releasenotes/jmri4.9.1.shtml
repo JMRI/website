@@ -262,13 +262,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>DCC++</h4>
             <ul>
-                <li></li>
+                <li>Kevin Dickerson did some work on the DCC++ support structure</li>
             </ul>
 
         <h4>Digitrax</h4>
             <ul>
-                <li>Added a sample script for communication between
-                two computers using LocoNet Peer Transfer messages
+                <li>Added a jython/SendReceiveLocoNetPeerXfrMessage.py sample script for communication between
+                two computers using LocoNet Peer Transfer messages.
                 </li>
             </ul>
 
@@ -349,7 +349,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>BLI</h4>
             <ul>
-                <li></li>
+                <li>Michael Mosher updated BLI decoders</li>
             </ul>
 
         <h4>Bachmann</h4>
@@ -434,10 +434,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>TCS</h4>
             <ul>
-                <li></li>
+                <li>Michael Mosher updated some decoder definitions: add new CV from V1.5 Eco manual and TSU-4400 models</li>
             </ul>
 
-        <h4>Tehnologistic (train-O-matic)</h4>
+        <h4>Technologistic (train-O-matic)</h4>
             <ul>
                 <li></li>
             </ul>
@@ -454,7 +454,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>ZIMO</h4>
             <ul>
-                <li></li>
+                <li>Peter Ulvestad fixed some spelling errors in decoder definitions</li>
             </ul>
 
         <h4>Miscellaneous</h4>
@@ -470,7 +470,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Layout Editor</h3>
         <ul>
-	        <li></li>
+	        <li>Some of the text boxes for entering input (e.g. names of items to add)
+	            have been updated to selection boxes.</li>
         </ul>
 
     <h3>Logix</h3>
@@ -485,12 +486,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Panel Editors</h3>
         <ul>
-            <li></li>
+            <li>A problem with reading really old panel files (pre-JMRI 4.0) was fixed.
         </ul>
 
     <h3>Preferences</h3>
         <ul>
             <li></li>
+        </ul>
+
+    <h3>Resources</h3>
+        <ul>
+            <li>Chuck Catania added some ATSF CTC icons</li>
         </ul>
 
     <h3>Roster</h3>
@@ -502,12 +508,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>The Turnout Table now makes it clear(er) which turnouts can 
                 use the turnout locking feature and which don't have it available.
-            </li>
+                </li>
+            <li>Improved the turnout locking GUI in the Turnout Table to make it
+                clearer what's going on.
         </ul>
 
     <h3>Scripting</h3>
         <ul>
-            <li></li>
+            <li>Added SensorGroupAutoItem sample script to handle the case of an "all-but-one" group.
+                For example, if you have sensor inputs for the left and right positions of a CTC signal level, 
+                but not the center one, this will let you use an internal sensor for that position.</li>
         </ul>
 
     <h3>Signals</h3>
@@ -551,12 +561,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Web Access</h3>
         <ul>
-            <li></li>
+            <li>Update to how roster entry IDs are handled:
+                <ul>
+                <li>URL-encode roster entry Ids in URL paths and only in URL paths.
+                <li>Accept URL-encoded roster entry Ids in request paths in the Roster servlet.
+                <li>Accept URL-encoded types and object Ids in request paths in the JSON servlet.
+                </ul>
+            </li>
         </ul>
 
    <h3>Internationalization</h3>
         <ul>
-            <li></li>
+            <li>Egbert Broerse updated the German and Dutch translations</li>
+            <li>Sonnys Hansen updated the Danish translation</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
@@ -569,6 +586,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Made some changes to how JMRI validates panel files to accept how AnyRail writes the files.</li>
 	        <li>USB support has been redone with a new USB browser window. (<a href="https://github.com/JMRI/JMRI/pull/3679">#3679</a>)</li>
             <li>Quite a bit of code that has been deprecated since JMRI 4.2 or before was removed.
+            <li>A problem with validating XML panel files created by XtrkCadReader was bypassed.
+            <li>The USB library has been <a href="https://github.com/JMRI/JMRI/pull/3679">updated to usb4java</a> and a new USB browser added.
         </ul>
 
    <!--#include virtual="/Footer" -->
