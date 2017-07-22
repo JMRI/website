@@ -91,7 +91,7 @@ their library references:
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
+<a href="jmri4.9.1.shtml">JMRI 4.9.1</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -240,27 +240,27 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 </ul>
  -->
 
-<!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.6/">CI project page</a>.
- -->
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.8/">CI project page</a>.
 
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- 
+-->
+
 <h2>Changes since <a href="jmri4.6.shtml">production release 4.6</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">list of included commits</a> is available from our
-<a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 The full lists of changes in each of the preceding test releases (
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.1+">4.7.1<a>,
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.2+">4.7.2<a>,
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.3+">4.7.3<a>,
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.4+">4.7.4<a>,
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.5+">4.7.5<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">4.7.6<a>)
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">4.7.6<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.7+">4.7.7<a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.8+">4.7.8<a>)
 are available in our 
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
@@ -361,14 +361,6 @@ are available in our
 
         <h4>C/MRI</h4>
             <ul>
-                <li>There's a <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI preferences<a/>. 
-                    If you've already configured your C/MRI connection before installing this
-                    version, it should continue to work, but you probably won't be able to add, remove
-                    or modify the C/MRI node configuration.  This should be fixed in JMRI 4.7.2.
-                </li>
-                <li>The <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI preferences<a/> 
-                    was fixed.
-                </li>
                 <li>Much work on the reliability of the C/MRI support, fixing
                     bugs in both setting preferences and normal running.</li>
                 <li>Having multiple C/MRI connections should now basically work,
@@ -376,7 +368,7 @@ are available in our
                     C/MRI tools from the Preferences, e.g. opening the C/MRI
                     Monitor automatically at startup.  Work on all this is
                     proceeding.
-                <li>This release has improved support for multiple C/MRI connections. Working now:
+                    Working now:
                     <ul>
                     <li>Multiple connections, with the extra ones either identified by
                         a new letter ('K', etc) or a suffix ('C2', 'C3', etc). Each 
@@ -394,9 +386,6 @@ are available in our
                         C/MRI monitor in the startup, it'll be using the 1st connection.
                     <li>Some of the labeling and documentation needs to be updated.
                     </ul>
-                <li>Some additional work on the multi-connection support.  JMRI should be 
-                    able to support mixed sets of cable connected (e.g. serial) C/MRI and 
-                    network connected C/MRI by defining multiple connections.</li>
             </ul>
 
         <h4>DCC++</h4>
@@ -424,8 +413,6 @@ are available in our
                     It's still slow, excruciatingly slow if writing indexed CVs, but the timing is properly handled.</li>
                 <li>The DS64 configuration tool now has the ability to configure the addresses for the 
                     turnout outputs, and to configure the DS64 "routes".</li>
-                <li>Contains a fix for the "Looping" behavior with 
-                    SE8c SignalHeads seen in <a href="jmri4.7.3.shtml">JMRI 4.7.3</a>.</li>
 		        <li></li>
                 <li>The LocoNet over TCP server has been refactored with the following changes (<a href="https://github.com/JMRI/JMRI/pull/3498">#3498</a>):
 		            <ul>
@@ -821,30 +808,16 @@ are available in our
                 <li>After adding a new Head, the Name fields on the pane are emptied to help prevent using the same name again and receiving an error.</li>
                 <li>Adding a Bachmann Acela Signal Head now requires an active system connection to guarantee the proper ID.</li>
                 <li>The intention of the Home/Distant choice for a MERG head is explained in a clearer label and the items to choose from are adaptable per language.</li>
-                <li>SE8c Signal Heads now follow traffic on the layout, so 
-                    if another signal system is setting the hardware SE8c signals, 
-                    the JMRI panel signals will follow them.</li>
-
-                <li>Contains a fix for the "Looping" behavior with 
-                    SE8c SignalHeads seen in <a href="jmri4.7.3.shtml">JMRI 4.7.3</a>.
-                    This most commonly hit LocoNet systems, but as SE8c boards
-                    can be used with any DCC system, it was a general problem.</li>
-                <li>In <a href="jmri4.7.3.shtml ">JMRI 4.7.3</a>, we added support for SE8c Signal Heads
-                    listening to the layout and (attempting to) follow messages that are
-                    happening there, so that if something other than JMRI changed 
-                    the SE8c-shown color, the JMRI icon(s) would follow.  That 
-                    didn't work right, so we fixed it in 4.7.4, and fixed it again.
-                    But we now understand that it can never really work right, 
-                    there's not enough information in the SE8c hardware messages.
-                    To prevent this from causing problems, we've removed that message-following, so the
-                    SE8c SignalHead in JMRI itself is now back to as it was in JMRI 4.7.2
-                    and before.  But in case somebody is willing to work through
-                    the imperfections to do something like this our their own layout, 
-                    we've added a new 
+                <li>We've added a new 
                     <a href="http://jmri.org/jython/FollowSE8c.py">jython/FollowSE8c.py sample script</a>,
                     along with a 
                     <a href="http://jmri.org/jython/test/FollowSE8cTest.py">test case</a>
-                    that shows you how it works.</li>
+                    that shows you how it works. You can work with this if you want your
+                    SE8c Signal Heads
+                    listening to the layout and (attempting to) follow messages that are
+                    happening there, so that if something other than JMRI changed 
+                    the SE8c-shown color, the JMRI icon(s) would follow.  
+                    </li>
             </ul>
 
         <h4>Signal Masts</h4>
@@ -904,44 +877,43 @@ are available in our
         <ul>
             <li>Expanded translations in Catalan, Danish and German for many of the tools.</li>
             <li>Starting JMRI after changing Locale (language) gives a more informative warning in the Console.</li>
-            <li>The first Dutch translation of the main PP interface, Preferences and Throttles was written by Egbert Broerse. He would like to receive feedback from Dutch language users on the chosen wording and which modules to add next. </li>
+            <li>The first Dutch translation of the main PP interface, Preferences and Throttles was written by Egbert Broerse. 
+                He would like to receive feedback from Dutch language users on the chosen wording and which modules to add next. </li>
             <li>Much more Danish translation from Sonnys Hansen.</li>
-            <li>Print outs of roster reports from DecoderPro were updated by Egbert Broerse to  use translatable headings (don't translate the word 'CV')</li>
-            <li>Sonnys Hansen improved the Danish translation</li>
+            <li>Print outs of roster reports from DecoderPro were updated by Egbert Broerse to use translatable headings (don't translate the word 'CV')</li>
             <li>Sonnys Hansen provided updates to the Danish translation</li>
-            <li>Egbert Broerse updated the Dutch translation</li>
             <li>Egbert Broerse improved the German and Dutch translations.</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
         <ul>
             <li>VSDecoder Manager can now be auto-launched at startup through preferences.</li>
-            <li>New location for sound sets was added at https://github.com/JMRI/vsdecoder.</li>
+            <li>New location for sound sets was added at <a href="https://github.com/JMRI/vsdecoder"">https://github.com/JMRI/vsdecoder</a>.</li>
             <li>New steam engine sound set Class64.vsd was added (provided by Klaus Killinger).</li>
         </ul>
 
     <h3>Miscellaneous</h3>
         <ul>
             <li>For those connections which have the ability to monitor the bus traffic, the
-			feature to save the monitor data to a file has been improved.  If the tool is 
-			unable to access the log file, a dialog box will appear to inform the user of 
-			the problem.  Monitor log files will default to be placed in the configuration 
-			profile directory, where in some cases, previous versions of JMRI could attempt 
-			place the log file in the program directory.  As before, the user may select
-			a directory other than the configuration profile directory for storing the
-			log file.  This improvement affects the monitoring tools for many connection 
-			types.</li>
+                feature to save the monitor data to a file has been improved.  If the tool is 
+                unable to access the log file, a dialog box will appear to inform the user of 
+                the problem.  Monitor log files will default to be placed in the configuration 
+                profile directory, where in some cases, previous versions of JMRI could attempt 
+                place the log file in the program directory.  As before, the user may select
+                a directory other than the configuration profile directory for storing the
+                log file.  This improvement affects the monitoring tools for many connection 
+                types.</li>
             <li>JMRI applications will not load a panel file that fails XML validation; an error will be
                 shown that explains the error, allowing it to be fixed using an editor.
                 (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
 	        <li>JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
-	        were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
+                were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
                 if the panel contains a path that starts with <code>resource:</code> and the panel will
                 not load until changed using an external editor. Paths starting with <code>file:</code>
                 cannot be automatically flagged because JMRI allows file: URLs.
                 (<a href="https://github.com/JMRI/JMRI/pull/2719">#2719</a>)</li>
     	    <li>If a connection fails to initialize correctly, startup actions will not be run. An error
-	        message will be displayed reading "Unable to run startup actions due to earlier failures."
+                message will be displayed reading "Unable to run startup actions due to earlier failures."
                 (<a href="https://github.com/JMRI/JMRI/pull/2799">#2799</a>)</li>
             <li>The WiThrottle window can now be resized so that when several client devices are
                 connected, it's possible to adjust the list to see all of them without needing to scroll
@@ -958,7 +930,7 @@ are available in our
             <li>The naming scheme for JMRI builds has changed slightly. Build metadata (the building user, build date/time,
                 and git revision at time of build) are now deliniated using plus (+) signs instead of hyphens. The build
                 date/time is now ISO 8601 parsable. (<a href="https://github.com/JMRI/JMRI/pull/3253">#3253</a>)</li>
-                <li>The library used to identify connected systems on Windows has been updated. Although this should have no
+            <li>The library used to identify connected systems on Windows has been updated. Although this should have no
                 impact, scripts that accessed the Windows Registry using the WinRegistry should be updated to use Java Native
                 Access. (<a href="https://github.com/JMRI/JMRI/pull/3353">#3353</a>)</li>
             <li>This version of JMRI (and all later) writes a slightly streamlined
