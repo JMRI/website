@@ -263,6 +263,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h4>DCC++</h4>
             <ul>
                 <li>Kevin Dickerson did some work on the DCC++ support structure</li>
+                <li>Costin Grigoras added an option to allow the DCC++ TCP server to be started from JmriFaceless</li>
             </ul>
 
         <h4>Digitrax</h4>
@@ -542,6 +543,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     	<h4>Signal Groups</h4>
             <ul>
                 <li></li>
+            </ul>
+
+    	<h4>Simple Signal Logic</h4>
+            <ul>
+                <li>SSL now has a "Restricting Speed" option that limits the 
+                fastest shown appearance to Flashing Red (Restricting).  This can be
+                useful in the entrance to a yard. A script can turn it on and off
+                for e.g. permission to switch on a lead.</li>
             </ul>
 
 	    <h4>NX Entry/Exit Logic</h4>
