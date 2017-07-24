@@ -273,59 +273,59 @@ are available in our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>DecoderPro</h3>
-        <p>DecoderPro now has two additional options for 
-           how it handles CV reads and writes.  These are set via the
-           <a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#programmer">Programmer section of the Roster preferences panel</a>.
-           <ul>
-          <li>"Allow caching when writing index CVs for read or write 
-                operations": Some decoders require that specific values
-                be written to "index" CVs before certain other locations can be 
-                read or written. QSI and ESU decoders use this extensively.
-                When doing a lot of reads or writes, for example an entire
-                decoder, the index CVs can end up being written with the
-                same value many times in a row.  When selected, this 
-                option allows DecoderPro to skip (save time on) writes 
-                of the same index value that are otherwise redundant.  
-                Don't use this (or use it only in combination with the
-                following operation) if you have reliability problems
-                writing decoders, as proper operation of this option depends on reliable writes.
-                <p>
-                More detail:  A single bad write with this option off trashes
-                one CV; writing a bad index with this option off trashes the CV that was supposed 
-                to be written and the wrong one addressed by the bad write,
-                but the write to the next CV in the sequence is OK due to the 
-                redundant next write of the index; writing a bad
-                index with this option on leaves that badly-written index value in place, so writes a sequence 
-                of bad CV values. Bottom line:  If working with a complicated
-                decoder with lots of CVs, you need a reliable programming connection, see next option.
+            <li>DecoderPro now has two additional options for 
+               how it handles CV reads and writes.  These are set via the
+               <a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#programmer">Programmer section of the Roster preferences panel</a>.
+               <ul>
+              <li>"Allow caching when writing index CVs for read or write 
+                    operations": Some decoders require that specific values
+                    be written to "index" CVs before certain other locations can be 
+                    read or written. QSI and ESU decoders use this extensively.
+                    When doing a lot of reads or writes, for example an entire
+                    decoder, the index CVs can end up being written with the
+                    same value many times in a row.  When selected, this 
+                    option allows DecoderPro to skip (save time on) writes 
+                    of the same index value that are otherwise redundant.  
+                    Don't use this (or use it only in combination with the
+                    following operation) if you have reliability problems
+                    writing decoders, as proper operation of this option depends on reliable writes.
+                    <p>
+                    More detail:  A single bad write with this option off trashes
+                    one CV; writing a bad index with this option off trashes the CV that was supposed 
+                    to be written and the wrong one addressed by the bad write,
+                    but the write to the next CV in the sequence is OK due to the 
+                    redundant next write of the index; writing a bad
+                    index with this option on leaves that badly-written index value in place, so writes a sequence 
+                    of bad CV values. Bottom line:  If working with a complicated
+                    decoder with lots of CVs, you need a reliable programming connection, see next option.
                 
-          <li>"When possible, confirm CV writes by following this with a read": 
-               When selected, DecoderPro will read each CV after writing it.
-               If the value doesn't match, it marks the write as failed.
-               <p>If you're having intermittent trouble writing to a decoder, this 
-               may improve reliability. If DecoderPro is never able to properly write, 
-               this won't help; it only helps if the problem is occasional,
-               and retrying will get it right more often than not.
-               <p>Some DCC systems will check for a "write acknowledge pulse"
-               from the decoder before declaring the write a success.  
-               Those are almost as reliable as this, and much faster.  
-               So if you're using one of those DCC systems, this might 
-               not be needed.
-               On the other hand, if you're using a DCC system that
-               "writes blind", with no check, this might be really useful.
-               To tell if you have one of those, try writing CVs with
-               the locomotive off the track.  If DecoderPro thinks the write
-               succeeded, then the DCC system is writing blindly, without checking.
-               <p>This doesn't help (but doesn't hurt) if you can't read back
-               the decoder. Most DCC systems can't read during ops mode 
-               programming, for example. Some command stations (Digitrax DB150)
-               can't read from the decoder. In those cases, this option 
-               just asks the command station to write without reading back.
-          </ul>
-          These options are stored with the preferences for future use.  A new DecoderPro Roster window
-          will pick up new values of the options, without having to close and restart the program.
+              <li>"When possible, confirm CV writes by following this with a read": 
+                   When selected, DecoderPro will read each CV after writing it.
+                   If the value doesn't match, it marks the write as failed.
+                   <p>If you're having intermittent trouble writing to a decoder, this 
+                   may improve reliability. If DecoderPro is never able to properly write, 
+                   this won't help; it only helps if the problem is occasional,
+                   and retrying will get it right more often than not.
+                   <p>Some DCC systems will check for a "write acknowledge pulse"
+                   from the decoder before declaring the write a success.  
+                   Those are almost as reliable as this, and much faster.  
+                   So if you're using one of those DCC systems, this might 
+                   not be needed.
+                   On the other hand, if you're using a DCC system that
+                   "writes blind", with no check, this might be really useful.
+                   To tell if you have one of those, try writing CVs with
+                   the locomotive off the track.  If DecoderPro thinks the write
+                   succeeded, then the DCC system is writing blindly, without checking.
+                   <p>This doesn't help (but doesn't hurt) if you can't read back
+                   the decoder. Most DCC systems can't read during ops mode 
+                   programming, for example. Some command stations (Digitrax DB150)
+                   can't read from the decoder. In those cases, this option 
+                   just asks the command station to write without reading back.
+              </ul>
+              These options are stored with the preferences for future use.  A new DecoderPro Roster window
+              will pick up new values of the options, without having to close and restart the program.
 
-        <ul>
+            </li>
             <li>
                 The Single CV Programmer now supports Ops Mode Accessory Programming
                 (Program Accessory Decoder on the Main).
@@ -387,7 +387,7 @@ are available in our
                     <li>Sensors, Turnouts and Lights can be defined in all the 
                         C/MRI connections through the respective tables.
                     </ul>
-                <li>Not yet in this release:
+                <p>Not yet in this release:
                     <ul>
                     <li>You can't (yet) configure start-up actions to work with 
                         the 2nd and later C/MRI connections. E.g. if you open a 
@@ -421,7 +421,6 @@ are available in our
                     It's still slow, excruciatingly slow if writing indexed CVs, but the timing is properly handled.</li>
                 <li>The DS64 configuration tool now has the ability to configure the addresses for the 
                     turnout outputs, and to configure the DS64 "routes".</li>
-		        <li></li>
                 <li>The LocoNet over TCP server has been refactored with the following changes (<a href="https://github.com/JMRI/JMRI/pull/3498">#3498</a>):
 		            <ul>
                         <li>The server can now be started automatically using the Startup preferences.</li>
@@ -667,7 +666,7 @@ are available in our
             </li>
             <li>Dave Sand <a href="https://github.com/JMRI/JMRI/pull/3623">fixed</a>
                 an issue with duplicate block connections when edge connectors are used.</li>
-            <li>George Warner improved the rendering of rotated text.<li>
+            <li>George Warner improved the rendering of rotated text.</li>
         </ul>
 
     <h3>Logix</h3>
@@ -747,12 +746,7 @@ are available in our
                 They provide a grid of buttons to control turnouts, lights or sensors. Existing items will show their current state and allow you to toggle their state. 
                 This first edition include German and Dutch translations.</li>
             <li>Fixed initial size and position of new Switchboards</li>
-            <li>George Warner improved the rendering of rotated text.<li>
-        </ul>
-
-    <h3>Preferences</h3>
-        <ul>
-            <li></li>
+            <li>George Warner improved the rendering of rotated text.</li>
         </ul>
 
     <h3>Roster</h3>
