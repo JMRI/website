@@ -142,12 +142,17 @@ from
         JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
 	    explanations remain a work in progress.) The usual cause of something like this is (imperfect) 
-	    manual editing of the file, but it can happen for multiple reasons. If you encounter this, either
-	    ask for help fixing the file on the JMRIusers list; use a copy of JMRI 4.6 to 
-	    load and rewrite the file into the proper format; or set your
+	    manual editing of the file, but it can happen for multiple reasons. If you encounter this, try these things:
+	    <ul>
+	    <li>Use a copy of JMRI 4.6 to 
+	    load and rewrite the file into the proper format; 
+	    <li>Or set your
 	    preferences to execute the 
 	    "<a href="http://jmri.org/jython/TurnOffXmlValidation.py">TurnOffXmlValidation.py</a>" script
-	    <em>before</em> JMRI loads your panel file.
+	    <em>before</em> JMRI loads your panel file;
+	    <li>Or finally, ask for help fixing the file on the JMRIusers list.
+	    </ul>
+	    It's a good idea to keep a copy of the original file as you work on this, just in case.
 
 <h3>Older warnings</h3>
 
