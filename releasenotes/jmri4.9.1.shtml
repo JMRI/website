@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.9.1 release
       </h1>
 
-    <p>Date: mmm dd, 2017</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: July 23, 2017</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.9.1 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -201,7 +203,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.4">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
@@ -210,18 +211,17 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg</a><br/>
-  sha256: f0eb649a303c76303bb5ecf79b6fcd1c9ffba2421aaf32c09354b5ce93ac98c3 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.1/JMRI.4.9.1.Rc0c8f0b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.1/JMRI.4.9.1.Rc0c8f0b.dmg</a><br/>
+  sha256: 6dc8714493ad04026491c455c8e4158dc86bf681d7452167231b144752116087 </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe</a><br/>
-   sha256: d04f9e2e108ce058c0de3e406f49893b4374ad013762425aeac2bdfeaf0f5dd6</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.1/JMRI.4.9.1.Rc0c8f0b.exe">https://github.com/JMRI/JMRI/releases/download/v4.9.1/JMRI.4.9.1.Rc0c8f0b.exe</a><br/>
+   sha256: e5ab509123c0a70fc36e66c699f2f2e1ffb3ee8016d451341e325b8cf5ed90fe</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz</a><br/>
-   sha256: 891ae78c024f35aa2b5e0b43554df61720dc61006c2e1913b8affddac2b2fb6f</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.1/JMRI.4.9.1.Rc0c8f0b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.1/JMRI.4.9.1.Rc0c8f0b.tgz</a><br/>
+   sha256: 4f29e9fc353eee3027fdb06c775c942291c06ce51cdcecab03a6497d08e48fce</p>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -229,36 +229,18 @@ on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.6/">CI project page</a>.
  -->
 
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- 
+-->
+
 <h2>Changes since <a href="jmri4.8.shtml">Production release 4.8</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.1+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h3>DecoderPro</h3>
-
-        <ul>
-          <li></li>
-        </ul>
-           
     <h3>Hardware Support</h3>
-
-        <ul>
-          <li></li>
-        </ul>
-
-	    <h4>Bachrus Speedo</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-        <h4>C/MRI</h4>
-            <ul>
-                <li></li>
-            </ul>
 
         <h4>DCC++</h4>
             <ul>
@@ -273,164 +255,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </li>
             </ul>
 
-        <h4>JMRI Simple Server/JMRI Client</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LocoNet</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MERG CBUS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RFID</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Roco z21/Z21</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SPROG</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TMCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Zimo MXULF</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZTC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
     <h3>New / Updated decoder definitions</h3>
-      <ul>
-        <li></li>
-     </ul>
-
-        <h4>Arnold</h4>
-            <ul>
-                <li></li>
-            </ul>
 
         <h4>BLI</h4>
             <ul>
                 <li>Michael Mosher updated BLI decoders</li>
-            </ul>
-
-        <h4>Bachmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Doehler &amp; Haas</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ESU</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Hornby</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Kuehn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LaisDCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Lenz</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MGP</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>MTH</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Norsk Modelljernbane (NJM)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>QSI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RR-CirKits</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SoundTraxx</h4>
-            <ul>
-                <li></li>
             </ul>
 
         <h4>TCS</h4>
@@ -438,71 +267,26 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Michael Mosher updated some decoder definitions: add new CV from V1.5 Eco manual and TSU-4400 models</li>
             </ul>
 
-        <h4>Technologistic (train-O-matic)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Viessmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Wangrow</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>ZIMO</h4>
             <ul>
                 <li>Peter Ulvestad fixed some spelling errors in decoder definitions</li>
             </ul>
 
-        <h4>Miscellaneous</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-
    <h3>Dispatcher</h3>
-        <ul>
-             <li></li>
-        </ul>
-
     <h3>Layout Editor</h3>
         <ul>
 	        <li>Some of the text boxes for entering input (e.g. names of items to add)
 	            have been updated to selection boxes.</li>
         </ul>
 
-    <h3>Logix</h3>
-        <ul>
-          <li></li>
-        </ul>
-
-    <h3>Operations</h3>
-       <ul>
-          <li></li>
-       </ul>
-
    <h3>Panel Editors</h3>
         <ul>
             <li>A problem with reading really old panel files (pre-JMRI 4.0) was fixed.
         </ul>
 
-    <h3>Preferences</h3>
-        <ul>
-            <li></li>
-        </ul>
-
     <h3>Resources</h3>
         <ul>
             <li>Chuck Catania added some ATSF CTC icons</li>
-        </ul>
-
-    <h3>Roster</h3>
-        <ul>
-            <li></li>
         </ul>
 
     <h3>Turnouts, Lights and other elements</h3>
@@ -522,29 +306,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Signals</h3>
-        <ul>
-            <li></li>
-        </ul>
-        <h4>Signal Systems</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Heads</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Masts</h4>
-            <ul>
-                <li></li>
-            </ul>
-            
-    	<h4>Signal Groups</h4>
-            <ul>
-                <li></li>
-            </ul>
-
     	<h4>Simple Signal Logic</h4>
             <ul>
                 <li>SSL now has a "Restricting Speed" option that limits the 
@@ -553,20 +314,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 for e.g. permission to switch on a lead.</li>
             </ul>
 
-	    <h4>NX Entry/Exit Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
 	    <h4>USS CTC Logic</h4>
             <ul>
                 <li>Added Route and Traffic lock capabilities.</a>.
                 </li>
             </ul>
-   <h3>Warrants</h3>
-        <ul>
-            <li></li>
-        </ul>
 
    <h3>Web Access</h3>
         <ul>
@@ -585,11 +337,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Sonnys Hansen updated the Danish translation</li>
         </ul>
         
-   <h3>Virtual Sound Decoder</h3>
-        <ul>
-            <li></li>
-        </ul>
-
     <h3>Miscellaneous</h3>
         <ul>
             <li>Made some changes to how JMRI validates panel files to accept how AnyRail writes the files.</li>
