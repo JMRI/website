@@ -96,11 +96,19 @@ their library references:
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None
+    <li>JMRI 4.9.1 will sometimes refuse to create a new profile.  This can
+        hit when creating a new profile in addition to existing ones, or 
+        when creating a new profile as part of an initial install.  
+        There is, unfortunately, no workaround for this.  Since it can
+        hit new users, we recommend that completely new users <b>not</b>
+        use JMRI 4.9.1, but rather should <b>stick with
+        <a href="jmri4.8.shtml">JMRI 4.8</a></b>. We hope to have a fix
+        before JMRI 4.9.2 in mid-August.
     </li>
 </ul>
 <!--
-If any of those effect you, please either wait for
+If any of those effect you, please either 
+wait for
 <a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
