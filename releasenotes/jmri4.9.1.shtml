@@ -107,9 +107,9 @@ their library references:
     </li>
 </ul>
 <!--
-If any of those effect you, please either 
+If any of those affect you, please either 
 wait for
-<a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
+<a href="jmri4.9.2.shtml">JMRI 4.9.2</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -175,24 +175,24 @@ These may be relevant to you if you're updating from an earlier version.
         pane in the Preferences window and make sure that the 
         TMCC connection is selected for the appropriate device types.
 
-<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
-    operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> This and future releases of JMRI may not function on macOS / OS X if the Java SE 6 provided by Apple is installed. macOS
+    operating system updates routinely remove this version of Java SE 6, but it may be reinstalled with other software programs. Please raise any issues concerning this on the
     user's group.
-    To remove Java SE 6 from OS X, follow these steps (these steps assume
-      JMRI is installed in the folder <em>/Applications/JMRI</em>, if not,
+    To remove Java SE 6 from macOS / OS X, follow these steps (these steps assume
+      JMRI is installed in the folder <em>/Applications/JMRI</em>; if you've installed it in a different location,
       adjust the following paths as needed):</p>
     <ol>
       <li>Open <em>Terminal.app</em>.
-        <p><em>El Capitan only:</em> Reboot into Recovery Mode by restarting your
+        <p><em>OS X El Capitan only:</em> Reboot into Recovery Mode by restarting your
           Mac and pressing Cmd-R until the Apple logo appears. Once in Recovery Mode,
           select Terminal from the Utilities menu.</p>
         </li>
-      <li>Run the command <code>/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh</code> It can take
+      <li>Run the command <code>/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh</code><br>It can take
         up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.
-        <p><em>El Capitan only:</em> Run the command <code>bash /Volumes/Macintosh\ HD/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh /Volumes/Macintosh\ HD</code>
-          It can take up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.</p>
+        <p><em>OS X El Capitan only:</em> Run the command <code>bash /Volumes/Macintosh\ HD/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh /Volumes/Macintosh\ HD</code>
+         <br>It can take up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.</p>
         </li>
-      <li><em>El Capitan only:</em> Restart your Mac.</li>
+      <li><em>OS X El Capitan only:</em> Restart your Mac.</li>
     </ol>
   
 <p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> Support for directly executing AppleScript within JMRI has been removed
@@ -218,7 +218,7 @@ If that doesn't work for you, the files are also still available from the
 Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
-<li>OS X / macOS: <a
+<li>macOS / OS X: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.1/JMRI.4.9.1.Rc0c8f0b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.1/JMRI.4.9.1.Rc0c8f0b.dmg</a><br/>
   sha256: 6dc8714493ad04026491c455c8e4158dc86bf681d7452167231b144752116087 </p>
 
@@ -245,11 +245,21 @@ These are development files, and might not be working at any particular time.</p
 
 <h2>Changes since <a href="jmri4.8.shtml">Production release 4.8</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.1+">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.1">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>Hardware Support</h3>
 
+        <h4>CAN</h4>
+            <ul>
+                <li>The CAN tools were updated for display and support of translations.</li>
+            </ul>
+        
+        <h4>C/MRI</h4>
+            <ul>
+                <li>The C/MRI tools were updated for display and support of translations.</li>
+            </ul>
+                        
         <h4>DCC++</h4>
             <ul>
                 <li>Kevin Dickerson did some work on the DCC++ support structure</li>
@@ -263,6 +273,27 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </li>
             </ul>
 
+            <h4>ECoS</h4>
+            <ul>
+                <li>The ECoS tools were updated for display and support of translations.</li>
+            </ul>
+                
+            <h4>Lenz</h4>
+            <ul>
+                <li>The Lenz tools were updated for display and support of translations.</li>
+                <li>The Command Monitor can show translated descriptions.</li>
+            </ul>
+                         
+            <h4>M&auml;rklin</h4>
+            <ul>
+                <li>The M&auml;rklin tools were updated for display and support of translations.</li>
+            </ul>
+
+            <h4>Roco</h4>
+            <ul>
+                <li>The Roco tools were updated for display and support of translations.</li>
+            </ul>           
+                 
     <h3>New / Updated decoder definitions</h3>
 
         <h4>BLI</h4>
@@ -341,6 +372,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Internationalization</h3>
         <ul>
+            <li>CAN, M&auml;rklin, C/MRI, ECoS, Roco and Lenz tools were slightly updated and fully support translations (Egbert Broerse)</li>
             <li>Egbert Broerse updated the German and Dutch translations</li>
             <li>Sonnys Hansen updated the Danish translation</li>
         </ul>
@@ -348,10 +380,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h3>Miscellaneous</h3>
         <ul>
             <li>Made some changes to how JMRI validates panel files to accept how AnyRail writes the files.</li>
-	        <li>USB support has been redone with a new USB browser window. (<a href="https://github.com/JMRI/JMRI/pull/3679">#3679</a>)</li>
-            <li>Quite a bit of code that has been deprecated since JMRI 4.2 or before was removed.
-            <li>A problem with validating XML panel files created by XtrkCadReader was bypassed.
-            <li>The USB library has been <a href="https://github.com/JMRI/JMRI/pull/3679">updated to usb4java</a> and a new USB browser added.
+            <li>Quite a bit of code that has been deprecated since JMRI 4.2 or before was removed.</li>
+            <li>A problem with validating XML panel files created by XtrkCadReader was bypassed.</li>
+            <li>USB support using the USB library has been <a href="https://github.com/JMRI/JMRI/pull/3679">updated to usb4java</a> and a new USB browser added.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
