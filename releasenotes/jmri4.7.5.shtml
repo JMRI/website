@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.7.4
+ JMRI: Release Notes for 4.7.5
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.7.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.7.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -22,27 +22,30 @@
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
-      <h2>
-      Release Notes for JMRI 4.7.4 release
-      </h2>
+      <h1>
+      Release Notes for JMRI 4.7.5 release
+      </h1>
 
-    <p>Date: May 28, 2017</p>
+    <p>Date: June 8, 2017</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.7.4 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.7.5 of JMRI/DecoderPro is available for download.</p>
 
 <!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
-<h3>Notes:</h3>
+<h2>Notes:</h2>
 
 <p>This is a test release.  Please post a note if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the next in a series of test releases. We expect this series
-to end in the next JMRI production release around the middle of 2017.
-(See the <a href="https://github.com/JMRI/JMRI/milestones?state=open"><em>tentative</em> release schedule</a>)</p>
+<p>This is the fifth in a series of test releases.
+We expect this series to end in the next JMRI production release around the middle of 2017.
+(See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
+This test release is the last in the series to contain big, new features and changes;
+the next few tests releases (up until the production release) will contain just incremental fixes and improvements.
+</p>
 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
@@ -53,34 +56,6 @@ JMRI is now only available under the
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
-
-<h3>Known problems with this release</h3>
-
-<ul>
-    <li><span class="since">Since <a href="jmri4.7.3.shtml">JMRI 4.7.3</a></span>
-        The buttons to start the LocoNet Over TCP server
-        may not be set properly if the server
-        has already been started with the program (e.g. if the
-        preferences are set to start the server). 
-    </li>
-</ul>
-
-<ul>
-    <li><span class="since">Since <a href="jmri4.7.3.shtml">JMRI 4.7.4</a></span>
-        If the NCE Command Monitor window is open,
-        messages of the form
-        "ERROR - Unhandled (command/reply type); code: &#8230;"
-        will appear in the JMRI System console.
-        The NCE Command Monitor still seems to be functioning correctly.
-    </li>
-</ul>
-
-If any of those effect you, please either wait for
-<a href="jmri4.7.5.shtml">JMRI 4.7.5</a>, due out shortly after this one,
-or (once there's a fix for the problem) pick up a
-<a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
-from
-<a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
 
 <a href="images/jmri-4.7.4-B.png"><img src="images/jmri-4.7.4-B.png" alt="after image" align="right" height="173" width="293"></a>
 <a href="images/jmri-4.7.4-A.png"><img src="images/jmri-4.7.4-A.png" alt="before image" align="right" height="173" width="295"></a>
@@ -119,36 +94,35 @@ their library references:
     </ul>
 </ul>
 
+<a id="problems" name="problems"></a>
+<h3>Known problems with this release</h3>
+
+<ul>
+    <li>None at release time
+    </li>
+</ul>
+
+<!--
+If any of those effect you, please either wait for
+<a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
+or (once there's a fix for the problem) pick up a
+<a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
+from
+<a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
+ -->
+
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>This version of JMRI uses a new library to access serial ports, including
-        USB serial ports.  This is a major migration for JMRI, so 
-        please let us know if you encounter any problems connecting to 
-        your layout. See the migration note above for steps you might have to take.
-            <ul>
-            <li>Windows users only: this version only, fixed in JMRI 4.7.5, you 
-                might have to manually remove a lib\jna-4.2.2.jar 
-                file if it's present. If the program starts OK for you, don't 
-                worry about this.</li>
     <li>This version of JMRI (and all later) writes a slightly streamlined
         version of panel file contents.  
         Older files should still be readable by this version of JMRI, 
         but files written by this version may not be readable by versions
-        before JMRI 4.7.4 depending on their contents.</li>
-    <li>The LocoNetOverTCP server has changes that may require users to take action:
-        <ul>
-        <li>If you have set the JMRI Preferences to start the LocoNetOverTCP
-            server when JMRI starts, or you have selected a port other 
-            that 1234, you need to go back to the Preferences window
-            and reconfigure that. The previously-stored preferences 
-            won't work with this version.
-        <li>Scripts refering to
-            the class jmri.jmrix.loconet.loconetovertcp.Server need to 
-            be changed to refer instead to
-            jmri.jmrix.loconet.loconetovertcp.LnTcpServer.</li>
-        </ul>
+        before JMRI 4.2 depending on their contents.</li>
+    <li>The LocoNetOverTCP server has changes that may break scripts that reference it. Scripts refering to
+        the class jmri.jmrix.loconet.loconetovertcp.Server need to refer instead to
+        jmri.jmrix.loconet.loconetovertcp.LnTcpServer.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -167,15 +141,19 @@ These may be relevant to you if you're updating from an earlier version.
         not load until changed using an external editor. Paths starting with <code>file:</code>
         cannot be automatically flagged because JMRI allows file: URLs.
         
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
+        The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
+        in this version of JMRI doesn't properly interoperate with 
+        <a href="jmri4.7.1.shtml">JMRI 4.7.1</a> through <a href="jmri4.7.4.shtml">JMRI 4.7.4</a>.
+        It does work fine with <a href="jmri4.6.shtml">JMRI version 4.6</a> or before.
+        If you encounter a problem with version compatibility, you'll see an error
+        message that includes "<code>local class incompatible</code>".
+        The workaround is to update both client and server JMRI machines to the same
+        JMRI version. 
+        
 <p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
 	    explanations remain a work in progress.)
-
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
-        The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
-        in this version of JMRI doesn't properly interoperate with JRMI 4.6 or before.
-        The workaround is to update both client and server JMRI machines to the same
-        JMRI version.  We expect this will be fixed in <a href="jmri4.7.1.shtml">JMRI 4.7.5</a>.
 
 <p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
         As part of fixing the 
@@ -244,195 +222,127 @@ These may be relevant to you if you're updating from an earlier version.
     <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
     for help converting them, or just drop them and use the current definitions.</p>
 
-
+<a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-
 Please note that the download links in this and future JMRI releases link to 
-<a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.4">Github servers</a>.
+<a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.5">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.dmg</a><br/>
-  sha256: fb25c02f9445a8861289b98ac69de7f8180c90c1c26b2f8d8ce78747d848a0f8 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.dmg</a><br/>
+  sha256: 28dabe5c5b6911b96b72abe634b996dd20505de193b612120d780e9c6115ac78 </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.exe</a><br/>
-   sha256: b5997fba814210425ba771f81589bf5e78afb2956a3aa76e05e8a023cbba1a3a</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.exe</a><br/>
+   sha256: 4b9a05b340ce8a5979cfba52bbb5599f9e5d06b8961562c87c96b7b4b8949bdd</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.tgz</a><br/>
-   sha256: 929dd018afa4734d64504e7e3c896969a1bc89e85c159d5110a1e1579b54da66</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.tgz</a><br/>
+   sha256: 2b4865f4012eb9bccb7fd2c503c139e7ff2e55d2202741679ca8128fa4699752</p>
 </ul>
-
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.4/">CI project page</a>.
- -->
- 
-<!-- 
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.5/">CI project page</a>.
+
+
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
- 
-<p>Note that this release was made by a different process which is detailed 
-    <a href="https://github.com/JMRI/JMRI/issues/3404">in its GitHub build history</a>.
+-->
+  
+<h2>Changes since <a href="jmri4.7.4.shtml">test release 4.7.4</a>:</h2>
 
-<h3>Changes since <a href="jmri4.7.3.shtml">test release 4.7.3</a>:</h3>
-
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.4+">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.5+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h4>Hardware Support</h4>
+    <h3>DecoderPro</h3>
 
-        <h5>C/MRI</h5>
-            <ul>
-            <li>This release has improved support for multiple C/MRI connections. Working now:
-                <ul>
-                <li>Multiple connections, with the extra ones either identified by
-                    a new letter ('K', etc) or a suffix ('C2', 'C3', etc). Each 
-                    connection has to have its own nodes defined via the preferences screen.
-                <li>The connections
-                    can be of mixed type:  Multiple serial, or multiple network, or 
-                    a mix of serial and network.
-                <li>Sensors, Turnouts and Lights can be defined in all the 
-                    C/MRI connections through the respective tables.
-                </ul>
-                    
-            <li>Not yet in this release:
-                <ul>
-                <li>You can't (yet) configure start-up actions to work with 
-                    the 2nd and later C/MRI connections. E.g. if you open a 
-                    C/MRI monitor in the startup, it'll be using the 1st connection.
-                <li>Some of the labeling and documentation needs to be updated.
-                </ul>
-            </ul>
-
-        <h5>Digitrax</h5>
-            <ul>
-                <li>Contains a fix for the "Looping" behavior with 
-                    SE8c SignalHeads seen in <a href="jmri4.7.3.shtml">JMRI 4.7.3</a>.</li>
-		        <li></li>
-            </ul>
-
-        <h5>LocoNet</h5>
-            <ul>
-                <li>The LocoNet over TCP server has been refactored with the following changes (<a href="https://github.com/JMRI/JMRI/pull/3498">#3498</a>):
-		            <ul>
-                        <li>The server can now be started automatically using the Startup preferences.</li>
-                        <li>Server preferences are set in the application preferences window.</li>
-                        <li>The server classname has changed to jmri.jmrix.loconet.loconetovertcp.LnTcpServer
-                            (any scripts referencing the server will need to be changed).
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-
-
-        <h5>ZTC</h5>
-            <ul>
-                <li>Added Support for the ZTC611 Command Station's internal USB connection</li>
-                <li>Added a ZTC611 specific implementation of XPressNet Turnouts</li>
-            </ul>
-
-    <h4>New / Updated decoder definitions</h4>
-
-        <h5>Hornby</h5>
-            <ul>
-                <li>Dave Heap made the following changes:
-                <ul>
-                    <li>Added the "Hornby TTS 9F 2-10-0".</li>
-                    <li>Improved Hornby model identification.</li>
-                    <li>
-                        Replace the incorrectly named "Hornby TTS A4 4-6-0" definition with "Hornby TTS A4 4-6-2".
-                        <br>
-                        ("Update Decoder Definitions" from the "Actions" menu will fix existing roster entries.)
-                    </li>
-                </ul>
-                </li>
-            </ul>
-
-    <h4>Logix</h4>
         <ul>
-          <li>Logix conditionals are now directly related
-              to a parent Logix.  When an existing XML file is
-              loaded, any <strong>conditional references</strong>
-              are automatically converted.  A review of the 
-              system console for any messages is recommended.  There
-              are two possible messages:
-              <ul>
-                <li>Conditional has no parent Logix</li>
-                <li>Conditional is not in the Logix index</li>
-              </ul>
-              Both of these were caused by errors in previous versions
-              or manual changes to the panel xml file.  After saving the
-              xml file, the errors will not occur.<br>
-              Use <strong>Help &gt;&gt; System Console...</strong> to 
-              display the system console.
-          </li>
-          <li>When creating a conditional reference, the input
-              field has been replaced by two drop down combo boxes.
-              The first one is used to select a Logix and the
-              second one to select the Conditional within the
-              selected Logix.
-          </li>
+            <li>
+                The Single CV Programmer now supports Ops Mode Accessory Programming
+                (Program Accessory Decoder on the Main).
+                <br>This should work with most DCC systems<sup>*</sup>,
+                but only with Accessory Decoders that support this programming mode.
+                (Dave Heap)
+                <br><br><sup>*</sup>Please advise if your system does not work,
+                preferably by creating a
+                <a href="https://github.com/JMRI/JMRI/issues/" target="_blank">new issue on GitHub</a>.
+                We may be able to help.
+            </li>
         </ul>
 
-    <h4>Operations</h4>
-   <ul>
-    <li>Train and route departure times can now be set to one minute intervals. Previously, the
-        menus only allowed departure times to within five minute intervals.</li>
-     <li>The option to make backup copies of manifests now also makes backup copies of switch lists.</li>
-   </ul>
-
-   <h4>Panel Editors</h4>
-        <ul>
-            <li>Fixed initial size and position of new Switchboards</li>
-        </ul>
-
-    <h4>Turnouts, Lights and other elements</h4>
-        <ul>
-            <li>Egbert Broerse added the option to display the current state of Turnouts, Lights, Sensors and Blocks as graphics instead of text.
-                It can be enabled in the Preferences &gt; Display &gt; GUI tab.</li>
-        </ul>
-
-    <h4>Signals</h4>
-        <h5>Signal Heads</h5>
+    <h3>Hardware Support</h3>
+		
+        <h4>C/MRI</h4>
             <ul>
-                <li>Contains a fix for the "Looping" behavior with 
-                    SE8c SignalHeads seen in <a href="jmri4.7.3.shtml">JMRI 4.7.3</a>.
-                    This most commonly hit LocoNet systems, but as SE8c boards
-                    can be used with any DCC system, it was a general problem.</li>
+            <li>Some additional work on the multi-connection support.  JMRI should be 
+                able to support mixed sets of cable connected (e.g. serial) C/MRI and 
+                network connected C/MRI by defining multiple connections.</li>
             </ul>
 
-   <h4>Web Access</h4>
-        <ul>
-            <li>Operations, Trains web page now auto-updates as trains are added, deleted or changed.</li>
-        </ul>
+        <h4>Digitrax</h4>
+            <ul>
+                <li>The LocoNet Download Firmware tool has been updated to report an error when reading a 
+                firmware download file which is for a device which requires special LocoNet message timings
+                which are not supported by this tool.  Using the wrong protocol would corrupt the device's
+                firmware and require factory repair of the unit.  This change prevents this tool from 
+                corrupting the firmware of devices including the DCS210, DCS210, DB210, DB210-Opto, and DB220.
+                The Digitrax program <em>DigiIPLII.exe</em> may be used to perform firmware updates for these devices.</li>
 
-   <h4>Internationalization</h4>
+                <li>The LocoNet Download Firmware tool has been updated to provide slower timings which 
+                improve the success-rate of firmware updates, including the UR92.  The tool was also improved
+                to prevent other GUI operations from inadvertently interrupting a progressing firmware update.</li>
+		
+                <li>LocoBuffer, LocoBuffer-II, and LocoBuffer-USB connections may be configured as "Standalone LocoNet" 
+		            connections.</li>
+
+		        <li>LocoStats Monitor was corrected to display only "interface status" LocoNet messages.</li>
+            </ul>
+
+        <h4>SPROG</h4>
+            <ul>
+                <li>The SPROG command station code has been updated to fix an issue whereby users had observed
+		            very slow packet update rates on the rails causing locos to become unresponsive.</li>
+            </ul>
+
+        <h4>Signal Heads</h4>
+            <ul>
+                <li>In <a href="jmri4.7.3.shtml ">JMRI 4.7.3</a>, we added support for SE8c Signal Heads
+                    listening to the layout and (attempting to) follow messages that are
+                    happening there, so that if something other than JMRI changed 
+                    the SE8c-shown color, the JMRI icon(s) would follow.  That 
+                    didn't work right, so we fixed it in 4.7.4, and fixed it again.
+                    But we now understand that it can never really work right, 
+                    there's not enough information in the SE8c hardware messages.
+                    To prevent this from causing problems, we've removed that message-following, so the
+                    SE8c SignalHead in JMRI itself is now back to as it was in JMRI 4.7.2
+                    and before.  But in case somebody is willing to work through
+                    the imperfections to do something like this our their own layout, 
+                    we've added a new 
+                    <a href="http://jmri.org/jython/FollowSE8c.py">jython/FollowSE8c.py sample script</a>,
+                    along with a 
+                    <a href="http://jmri.org/jython/test/FollowSE8cTest.py">test case</a>
+                    that shows you how it works.</li>
+            </ul>
+
+   <h3>Internationalization</h3>
         <ul>
-            <li>Sonnys Hansen improved the Danish translation</li>
+            <li>Sonnys Hansen provided updates to the Danish translation</li>
+            <li>Egbert Broerse updated the Dutch translation</li>
         </ul>
         
-    <h4>Miscellaneous</h4>
+    <h3>Miscellaneous</h3>
         <ul>
-            <li>This version of JMRI (and all later) writes a slightly streamlined
-                version of panel file contents.  
-                Older files should still be readable by this version of JMRI, 
-                but files written by this version may not be readable by versions
-                before JMRI 4.7.4 if they contain definitions of Blocks or OBlocks.</li>
-            <li>This version of JMRI uses a new library to access serial ports, including
-                USB serial ports.  This is a major migration for JMRI, so 
-                please let us know if you encounter any problems connecting to 
-                your layout. See above for some steps you will have to take to 
-                update settings in the preferences.
+            <li>This version writes a slightly more verbose version of 
+                panel files to (attempt to) have them readable all the
+                way back to JMRI 4.2.  (JMRI 4.7.4 wrote files that
+                could only be read by JMRI 4.7.4 and later)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->

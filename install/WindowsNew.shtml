@@ -42,6 +42,10 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
 	<li><a href="#debugging">Debugging</a></li>
 		<ul>
 		<li><a href="#errors">Error Messages</a></li>
+		    <ul>
+		    <li><a href="#stoppedworking">"The JAVA SE Platform binary has stopped working"</a></li>
+		    <li><a href="#registry">".. prefs root node Software\JavaSoft\Prefs .. Windows RegCreateKeyEx(...)..."</a></li>
+		    </ul>
 		<li><a href="#logscreen">The Log Screen</a></li>
 		<li><a href="#startupissues">Startup issues</a></li>
 		<li><a href="#shutdownissues">Shutdown issues</a></li>
@@ -231,9 +235,17 @@ the folder "JMRI_backup" to "JMRI".
 
 <a name="errors"><h3>Error messages</h3></a>
 	<ul>
-	<li>The JAVA SE Platform binary has stopped working<br>
+	<li><a name="stoppedworking" id="stoppedworking"></a>
+	<code>The JAVA SE Platform binary has stopped working</code><br>
 	There is a <a href="WindowsSeStoppedWorking.shtml">separate Help page</a>
 	for debugging the "The JAVA SE Platform binary has stopped working" error message.</li>
+	<li><a name="registry" id="registry"></a>
+	<code>WARN - Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5</code><br>
+	You can ignore this one. This is an internal warning from Java itself. Certain combinations of 
+	Windows configuration and Java 8 version emit it, but it doesn't have any adverse 
+	impact on JMRI or the computer.  Oracle has said they'll fix it in Java 9, i.e. 
+	<a href="http://www.catb.org/jargon/html/R/Real-Soon-Now.html">Real Soon Now</a>.
+	
 	</ul>
 
 <a name="installtest"><h3>Run InstallTest</h3></a>
