@@ -252,6 +252,18 @@ This section gives some debugging hints.
     </ol>
 <p>Source: <a href="../releasenotes/jmri4.5.2.shtml"> JMRI 4.5.2 Release notes</a>.</p>
 
+<h3>Vector3f issue</h3>
+
+Sometimes Macs have an older "vecsub.jar" library installed in a place that
+will cause problems for JMRI.  It happens more often when you're compiling your
+own version, but it can also happen when just running a download. If you get messages about
+<code><pre>
+error: cannot find symbol getX()
+</pre></code>
+or getY() or getZ(), the solution is to copy the JMRI/lib/vecmath-1.5.2.jar file from 
+within the JMRI distribution directory to the  ~/Library/Java/Extensions/ directory.
+(You might have to create that directory)
+
 <h3>Communications and Mac OS X 10.4</h3>
 
 Mac OS X 10.4 was a transitional version, with lots of 
