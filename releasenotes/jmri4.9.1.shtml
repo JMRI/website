@@ -69,7 +69,7 @@ correct for your serial device(s).</em> Be sure to save the changes.
 In general, previous versions used serial device names like 
 "/dev/cu.usbserial-ABC123FG". This version will generally omit the prefix, and
 use serial device names like "cu.usbserial-ABC123FG".
-(If given the choice if a name starting with "tty" and one starting with "cu", 
+(If given the choice between a name starting with "tty" and one starting with "cu", 
 pick the "cu" one). See the before and after images to the right.
 <li>
 If you are using Linux and have previously used the "JMRI_SERIAL_PORTS"
@@ -78,7 +78,7 @@ to change that to use the "purejavacomm.portnamepattern" option instead.
 See the 
 <a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
 <li>
-If you have your own JMRI scripts to access a serial device, you'll have to update
+If you use your own JMRI scripts to access a serial device, you'll have to update
 their library references:
     <ul>
     <li>Any 
@@ -270,8 +270,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h4>Digitrax</h4>
             <ul>
                 <li>Added a jython/SendReceiveLocoNetPeerXfrMessage.py sample script for communication between
-                two computers using LocoNet Peer Transfer messages.
-                </li>
+                two computers using LocoNet Peer Transfer messages.</li>
+                <li>Traffic explanations in the LocoNet Console changed slightly to improve reading and allow localization.</li>
             </ul>
 
             <h4>ECoS</h4>
@@ -299,17 +299,17 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>BLI</h4>
             <ul>
-                <li>Michael Mosher updated BLI decoders</li>
+                <li>Michael Mosher updated BLI decoders.</li>
             </ul>
 
         <h4>TCS</h4>
             <ul>
-                <li>Michael Mosher updated some decoder definitions: add new CV from V1.5 Eco manual and TSU-4400 models</li>
+                <li>Michael Mosher updated some decoder definitions: add new CV from V1.5 Eco manual and TSU-4400 models.</li>
             </ul>
 
         <h4>ZIMO</h4>
             <ul>
-                <li>Peter Ulvestad fixed some spelling errors in decoder definitions</li>
+                <li>Peter Ulvestad fixed some spelling errors in decoder definitions.</li>
             </ul>
 
    <h3>Dispatcher</h3>
@@ -326,13 +326,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Resources</h3>
         <ul>
-            <li>Chuck Catania added some ATSF CTC icons</li>
+            <li>Chuck Catania added some ATSF CTC icons.</li>
         </ul>
 
     <h3>Turnouts, Lights and other elements</h3>
         <ul>
             <li>The Turnout Table now makes it clear(er) which turnouts can 
-                use the turnout locking feature and which don't have it available.
+                use the turnout locking feature and which Connections don't have it available.
                 </li>
             <li>Improved the turnout locking GUI in the Turnout Table to make it
                 clearer what's going on.
@@ -362,7 +362,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Web Access</h3>
         <ul>
-            <li>Update to how roster entry IDs are handled:
+            <li>Improved handling of roster entry IDs:
                 <ul>
                 <li>URL-encode roster entry Ids in URL paths and only in URL paths.
                 <li>Accept URL-encoded roster entry Ids in request paths in the Roster servlet.
@@ -374,8 +374,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <h3>Internationalization</h3>
         <ul>
             <li>CAN, M&auml;rklin, C/MRI, ECoS, Roco and Lenz tools were slightly updated and fully support translations (Egbert Broerse)</li>
-            <li>Egbert Broerse updated the German and Dutch translations</li>
-            <li>Sonnys Hansen updated the Danish translation</li>
+            <li>Egbert Broerse expanded the German and Dutch translations</li>
+            <li>Sonnys Hansen expanded the Danish translation</li>
         </ul>
         
     <h3>Miscellaneous</h3>
@@ -388,6 +388,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
-  </div> <!-- closes #mBody-->
+  </div><!-- closes #mBody-->
 </body>
 </html>

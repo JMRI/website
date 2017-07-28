@@ -34,9 +34,9 @@
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
-We are very pleased to announce that the 4.7 series of JMRI test releases has resulted in a
+<p>We are very pleased to announce that the 4.7 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
-We're therefore making that version, "Production Release 4.8" available for download today.
+We're therefore making that version, "Production Release 4.8" available for download today.</p>
 
 <h2>Notes:</h2>
 
@@ -60,7 +60,7 @@ correct for your serial device(s).</em> Be sure to save the changes.
 In general, previous versions used serial device names like 
 "/dev/cu.usbserial-ABC123FG". This version will generally omit the prefix, and
 use serial device names like "cu.usbserial-ABC123FG".
-(If given the choice if a name starting with "tty" and one starting with "cu", 
+(If given the choice between a name starting with "tty" and one starting with "cu", 
 pick the "cu" one). See the before and after images to the right.
 <li>
 If you are using Linux and have previously used the "JMRI_SERIAL_PORTS"
@@ -69,7 +69,7 @@ to change that to use the "purejavacomm.portnamepattern" option instead.
 See the 
 <a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
 <li>
-If you have your own JMRI scripts to access a serial device, you'll have to update
+If you use your own JMRI scripts to access a serial device, you'll have to update
 their library references:
     <ul>
     <li>Any 
@@ -152,12 +152,12 @@ from
 	    <em>before</em> JMRI loads your panel file;
 	    <li>Or finally, ask for help fixing the file on the JMRIusers list.
 	    </ul>
-	    It's a good idea to keep a copy of the original file as you work on this, just in case.
+	    <p>It's a good idea to keep a copy of the original file as you work on this, just in case.</p>
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for more warnings predating the 4.6 development series.
-These may be relevant to you if you're updating from an earlier version.
+<p>See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for more warnings predating the 4.6 development series.
+These may be relevant to you if you're updating from an earlier version.</p>
 
 <p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
         As part of fixing the 
@@ -232,11 +232,11 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+<p>Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v4.8">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/production%20files">SourceForge.net servers</a>. 
-Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
+Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.</p>
 
 <ul>
 <li>macOS / OS X: <a
@@ -266,8 +266,8 @@ These are development files, and might not be working at any particular time.</p
 
 <h2>Changes since <a href="jmri4.6.shtml">production release 4.6</a>:</h2>
 
-The full lists of changes in each of the preceding test releases (
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.1+">4.7.1<a>,
+<p>The full lists of changes in each of the preceding test releases 
+(<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.1+">4.7.1<a>,
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.2+">4.7.2<a>,
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.3+">4.7.3<a>,
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.4+">4.7.4<a>,
@@ -276,14 +276,15 @@ The full lists of changes in each of the preceding test releases (
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.7+">4.7.7<a>,
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.8+">4.7.8<a>)
 are available in our 
-<a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
+<a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.</p>
 
     <h3>DecoderPro</h3>
+         <ul>
             <li>DecoderPro now has two additional options for 
-               how it handles CV reads and writes.  These are set via the
+               how it handles CV reads and writes. These are set via the
                <a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#programmer">Programmer section of the Roster preferences panel</a>.
                <ul>
-              <li>"Allow caching when writing index CVs for read or write 
+               <li>"Allow caching when writing index CVs for read or write 
                     operations": Some decoders require that specific values
                     be written to "index" CVs before certain other locations can be 
                     read or written. QSI and ESU decoders use this extensively.
@@ -295,7 +296,7 @@ are available in our
                     Don't use this (or use it only in combination with the
                     following operation) if you have reliability problems
                     writing decoders, as proper operation of this option depends on reliable writes.
-                    <p>
+                    <br>
                     More detail:  A single bad write with this option off trashes
                     one CV; writing a bad index with this option off trashes the CV that was supposed 
                     to be written and the wrong one addressed by the bad write,
@@ -303,7 +304,7 @@ are available in our
                     redundant next write of the index; writing a bad
                     index with this option on leaves that badly-written index value in place, so writes a sequence 
                     of bad CV values. Bottom line:  If working with a complicated
-                    decoder with lots of CVs, you need a reliable programming connection, see next option.
+                    decoder with lots of CVs, you need a reliable programming connection, see next option.</li>
                 
               <li>"When possible, confirm CV writes by following this with a read": 
                    When selected, DecoderPro will read each CV after writing it.
@@ -326,11 +327,10 @@ are available in our
                    the decoder. Most DCC systems can't read during ops mode 
                    programming, for example. Some command stations (Digitrax DB150)
                    can't read from the decoder. In those cases, this option 
-                   just asks the command station to write without reading back.
+                   just asks the command station to write without reading back.</li>
               </ul>
               These options are stored with the preferences for future use.  A new DecoderPro Roster window
               will pick up new values of the options, without having to close and restart the program.
-
             </li>
             <li>
                 The Single CV Programmer now supports Ops Mode Accessory Programming
@@ -393,13 +393,15 @@ are available in our
                     <li>Sensors, Turnouts and Lights can be defined in all the 
                         C/MRI connections through the respective tables.
                     </ul>
-                <p>Not yet in this release:
+                Not yet in this release:
                     <ul>
                     <li>You can't (yet) configure start-up actions to work with 
                         the 2nd and later C/MRI connections. E.g. if you open a 
                         C/MRI monitor in the startup, it'll be using the 1st connection.
                     <li>Some of the labeling and documentation needs to be updated.
                     </ul>
+                </li>
+                <li>The C/MRI menu and tools were updated for screen layout and translations (German and Dutch provided).</li>
             </ul>
 
         <h4>DCC++</h4>
@@ -456,6 +458,7 @@ are available in our
         <h4>MERG CBUS</h4>
             <ul>
                 <li>Fixed a crash when printing</li>
+                <li>MERG tools were updated for screen layout and translations (German and Dutch provided).</li>
             </ul>
 
         <h4>Roco z21/Z21</h4>
@@ -621,8 +624,9 @@ are available in our
 
    <h3>Dispatcher</h3>
         <ul>
-             <li>Modify auto allocation operation of Dispatcher to allow via a selection made when creating a train 
-             that will override the default practice of allocating no more than three sections in front of the train. 
+             <li>Modify auto allocation operation of Dispatcher to allow overriding the default
+             practice of allocating no more than three sections in front of the train - this is 
+             configurable when creating a train. 
              The override allows Dispatcher to allocate all the way to the designated end 
              block barring other criteria such as occupation. (Jason Janzen)</li>
         </ul>
@@ -728,22 +732,17 @@ are available in our
 
     <h3>Operations</h3>
 			<ul>
-				<li>The Timetable table order can now be readjusted if needed.
+				<li>The Timetable sorting order can now be readjusted if needed.
 					Simply reorder the table and the next time you open the Timetable
 					window, the table order will be restored.</li>
                 <li>Train and route departure times can now be set to one minute intervals. Previously, the
                     menus only allowed departure times to within five minute intervals.</li>
                 <li>The option to make backup copies of manifests now also makes backup copies of switch lists.</li>
-                <li>Some improvements to the UK locale.  Fixed several references to "cars" rather than "wagons".</li>
-                <li>Fixed some train manifest "time" reference bugs where the option to use 12 hour format was ignored. Also fixed
-                a couple "time" bugs in the CSV file generation. Thanks to Dan Foltz for bring these to our attention.</li>
-                <li>Some improvements to the route windows, now if a route is assigned to a train, and a train is built, you won't be
+                <li>Some improvements to the UK locale. Fixed several references to "cars" rather than "wagons".</li>
+                <li>Improvements to the Route windows. Now if a route is assigned to a train, and a train is built, you won't be
                 able to modify the route until the train is either reset or terminated.</li>
-                <li>Some improvements to the UK locale.  Fixed several references to "cars" rather than "wagons".</li>
                 <li>Fixed some train manifest "time" reference bugs where the option to use 12 hour format was ignored. Also fixed
-                a couple "time" bugs in the CSV file generation. Thanks to Dan Foltz for bring these to our attention.</li>
-                <li>Some improvements to the route windows, now if a route is assigned to a train, and a train is built, you won't be
-                able to modify the route until the train is either reset or terminated.</li>
+                a couple "time" bugs in the CSV file generation. Thanks to Dan Foltz for bringing these to our attention.</li>
 			</ul>
 
    <h3>Panel Editors</h3>
@@ -830,8 +829,8 @@ are available in our
 
         <h4>Signal Masts</h4>
             <ul>
-                <li>Per user request, the Output Matrix Signal Mast connection can be configured using up to 6 outputs instead of 5.</li>
                 <li>Output Matrix Signal Mastst are stored as a separate class in your configuration. Existing masts are automatically updated once resaved.</li>
+                <li>Per user request, the Output Matrix Signal Mast connection can be configured using up to 6 outputs instead of 5.</li>
                 <li>Editing of Signal Mast Logic from the Signal Mast Table has been improved. The Signal Mast Pairs panel refreshes to immediately show newly created source-destination pairs. The lists to set up Control items and their Conditions now look and operate like real comboBoxes.</li>
             </ul>
             
@@ -860,7 +859,7 @@ are available in our
             </li>
             <li>Warrants normally grant rights of track access solely to only one train.
                 It now is possible to allow several warrants to share portions of their route.
-                A 'Clearance to Share Route' checkbox has been added.
+                A 'Clearance to Share Route' checkbox has been added for this.
             </li>		
             <li>The NXWarrant window now is populated with defaults configured in Preferences.
                 Users depending on the default 'throttle speed factor' may notice
@@ -914,7 +913,7 @@ are available in our
                 unable to access the log file, a dialog box will appear to inform the user of 
                 the problem.  Monitor log files will default to be placed in the configuration 
                 profile directory, where in some cases, previous versions of JMRI could attempt 
-                place the log file in the program directory.  As before, the user may select
+                to place the log file in the program directory.  As before, the user may select
                 a directory other than the configuration profile directory for storing the
                 log file.  This improvement affects the monitoring tools for many connection 
                 types.</li>
