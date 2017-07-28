@@ -5,7 +5,7 @@
  JMRI: Release Notes for 4.8
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.7.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -53,7 +53,7 @@ see our
 JMRI was updated in JMRI 4.7.4 to use a new serial library. Depending on your exact
 circumstances, you may need to do some migrations:
 <ul>
-<li>If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
+<li>If you are using JMRI on Linux or macOS / OS X and are updating from an older JMRI version,
 <em>you must open the JMRI preferences and make sure that the selections are 
 correct for your serial device(s).</em> Be sure to save the changes.
 <p>
@@ -169,24 +169,25 @@ These may be relevant to you if you're updating from an earlier version.
         TMCC connection is selected for the appropriate device types.
 
 <p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
-    This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+    This and future releases of JMRI may not function on MacOS / OS X if the Java SE 6 provided by Apple is installed,
+    but it may be reinstalled with other software programs. macOS
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
-    To remove Java SE 6 from OS X, follow these steps (these steps assume
-      JMRI is installed in the folder <em>/Applications/JMRI</em>, if not,
+    To remove Java SE 6 from macOS / OS X, follow these steps (these steps assume
+      JMRI is installed in the folder <em>/Applications/JMRI</em>. If you've installed it in a different location,
       adjust the following paths as needed):</p>
     <ol>
       <li>Open <em>Terminal.app</em>.
-        <p><em>El Capitan only:</em> Reboot into Recovery Mode by restarting your
+        <p><em>OS X El Capitan only:</em> Reboot into Recovery Mode by restarting your
           Mac and pressing Cmd-R until the Apple logo appears. Once in Recovery Mode,
           select Terminal from the Utilities menu.</p>
         </li>
-      <li>Run the command <code>/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh</code> It can take
+      <li>Run the command <code>/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh</code><br>It can take
         up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.
-        <p><em>El Capitan only:</em> Run the command <code>bash /Volumes/Macintosh\ HD/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh /Volumes/Macintosh\ HD</code>
-          It can take up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.</p>
+        <p><em>OS X El Capitan only:</em> Run the command <code>bash /Volumes/Macintosh\ HD/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh /Volumes/Macintosh\ HD</code>
+      <br>It can take up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.</p>
         </li>
-      <li><em>El Capitan only:</em> Restart your Mac.</li>
+      <li><em>OS X El Capitan only:</em> Restart your Mac.</li>
     </ol>
   
 <p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
@@ -238,7 +239,7 @@ If that doesn't work for you, the files are also still available from the
 Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
-<li>OS X / macOS: <a
+<li>macOS / OS X: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.dmg">https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.dmg</a><br/>
   sha256: 0cc00f0a676e659bedd871c1a2dd4517de22a159bb3a47cb2815aa0d3ff17d31 </p>
 
@@ -374,7 +375,7 @@ are available in our
 
         <h4>C/MRI</h4>
             <ul>
-                <li>Much work on the reliability of the C/MRI support, fixing
+                <li>Much work was done on the reliability of the C/MRI support, fixing
                     bugs in both setting preferences and normal running.</li>
                 <li>Having multiple C/MRI connections should now basically work,
                     although there may still be some issues when starting up
@@ -467,6 +468,7 @@ are available in our
             <ul>
                 <li>The SPROG command station code has been updated to fix an issue whereby users had observed
 		            very slow packet update rates on the rails causing locos to become unresponsive.</li>
+		        <li>The SPROG tools can be fully translated</li>
             </ul>
 
         <h4>ZTC</h4>
@@ -749,7 +751,7 @@ are available in our
             <li>Bug that disabled operation of zoomed multisensors is fixed.</li>
             <li>Egbert Broerse added a new type of panel, <a href="http://jmri.org/help/en/package/jmri/jmrit/display/SwitchboardEditor.shtml">Switchboards</a>. 
                 They provide a grid of buttons to control turnouts, lights or sensors. Existing items will show their current state and allow you to toggle their state. 
-                This first edition include German and Dutch translations.</li>
+                This first edition includes German and Dutch translations.</li>
             <li>Fixed initial size and position of new Switchboards</li>
             <li>George Warner improved the rendering of rotated text.</li>
         </ul>
@@ -764,8 +766,8 @@ are available in our
 
     <h3>Turnouts, Lights and other elements</h3>
         <ul>
-            <li>The pane to create new objects was modernized, with tooltips and a handy JSpinner to set the number of items to add (see the <a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/beantable/TurnoutAddEdit.shtml">Turnout Add/Edit help</a>.</li>
-            <li>The Cmd column in the Turnout table was renamed State to align with the other tables.</li>
+            <li>The pane to create new objects was modernized, with tooltips and a handy JSpinner to set the number of items to add (see the <a href="http://jmri.sourceforge.net/help/en/package/jmri/jmrit/beantable/TurnoutAddEdit.shtml">Turnout Add/Edit help</a>, Egbert Broerse).</li>
+            <li>The <em>Cmd</em> column in the Turnout table, showing Closed/Thrown, was renamed <em>State</em> to align with the other tables.</li>
             <li>Egbert Broerse added the option to display the current state of Turnouts, Lights, Sensors and Blocks as graphics instead of text.
                 It can be enabled in the Preferences &gt; Display &gt; GUI tab.</li>
             <li>Turnouts now have a DELAYED feedback mode. In this mode, when you
@@ -808,8 +810,7 @@ are available in our
                 <li>In the Signal Heads table, pick any of the valid Appearances from a combobox instead having to follow a fixed order.<br>
                 This change aligns the interface with the Signal Mast table. For developers, this interface element is reusable.</li>
                 <li>The panes to add or edit a Signal Head were updated, with more tooltips and (translatable) warning dialogs.<br>
-                Now uses JSpinners to set IDs for a DCC Head.<br>
-                Translators, please review your language.</li>
+                Now uses JSpinners to set IDs for a DCC Head.</li>
                 <li>The function of Turnouts in use as outputs for a Signal Head are now stored as localized Comments in the Turnout table.<br>
                 Existing comments are retained until they are manually deleted, after which a change in outputs will be stored.</li>
                 <li>After adding a new Head, the Name fields on the pane are emptied to help prevent using the same name again and receiving an error.</li>
@@ -830,6 +831,7 @@ are available in our
         <h4>Signal Masts</h4>
             <ul>
                 <li>Per user request, the Output Matrix Signal Mast connection can be configured using up to 6 outputs instead of 5.</li>
+                <li>Output Matrix Signal Mastst are stored as a separate class in your configuration. Existing masts are automatically updated once resaved.</li>
                 <li>Editing of Signal Mast Logic from the Signal Mast Table has been improved. The Signal Mast Pairs panel refreshes to immediately show newly created source-destination pairs. The lists to set up Control items and their Conditions now look and operate like real comboBoxes.</li>
             </ul>
             
@@ -872,6 +874,12 @@ are available in our
             <li>The Create/Edit Warrants help file was updated to explain the "Share Route" and "Don't Ramp" options.</li>
             <li>Implementation of these options was completed.</li>
             <li>A bug preventing restarts of cleared occupancy was fixed.</li>
+
+            <li>Warrants uses the RosterSpeedProfile whenever possible to get track speeds, distance traveled and time of travel.
+            If a speed profile was created using measurements from one direction only, data requested for the other direction 
+            is unreliable. This affects NXWarrants ability to generate a throttle command script.  If multiple error messages are
+            posted to the console from the RosterSpeedProfile it may be preferable to delete the Speed Profile for that locomotive. 
+            When no speed profile is available, warrants uses the 'throttle factor' to determine track speeds, distance traveled etc.</li>
         </ul>
 
    <h3>Web Access</h3>
@@ -882,20 +890,20 @@ are available in our
 
    <h3>Internationalization</h3>
         <ul>
-            <li>Expanded translations in Catalan, Danish and German for many of the tools.</li>
-            <li>Starting JMRI after changing Locale (language) gives a more informative warning in the Console.</li>
-            <li>The first Dutch translation of the main PP interface, Preferences and Throttles was written by Egbert Broerse. 
-                He would like to receive feedback from Dutch language users on the chosen wording and which modules to add next. </li>
-            <li>Much more Danish translation from Sonnys Hansen.</li>
+            <li>Expanded translations in
+                <ul>
+                <li>Catalan (Joan de Castro)</li>
+                <li>Danish (Sonnys Hansen)</li>
+                <li>German and Dutch (Egbert Broerse).</li>
+                </ul>
+            <li>Starting JMRI after changing Locale (language) in Preferences &gt; Display gives a more informative warning in the Console.</li>
             <li>Print outs of roster reports from DecoderPro were updated by Egbert Broerse to use translatable headings (don't translate the word 'CV')</li>
-            <li>Sonnys Hansen provided updates to the Danish translation</li>
-            <li>Egbert Broerse improved the German and Dutch translations.</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
         <ul>
             <li>VSDecoder Manager can now be auto-launched at startup through preferences.</li>
-            <li>New location for sound sets was added at <a href="https://github.com/JMRI/vsdecoder"">https://github.com/JMRI/vsdecoder</a>.</li>
+            <li>New location for sound sets was added at <a href="https://github.com/JMRI/vsdecoder">https://github.com/JMRI/vsdecoder</a>.</li>
             <li>New steam engine sound set Class64.vsd was added (provided by Klaus Killinger).</li>
         </ul>
 

@@ -5,7 +5,7 @@
  JMRI: Release Notes for 4.9.2
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.9.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.9.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -94,18 +94,10 @@ their library references:
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>JMRI 4.9.1 will sometimes refuse to create a new profile.  This can
-        hit when creating a new profile in addition to existing ones, or 
-        when creating a new profile as part of an initial install.  
-        There is, unfortunately, no workaround for this.  Since it can
-        hit new users, we recommend that completely new users <b>not</b>
-        use JMRI 4.9.1, but rather should <b>stick with
-        <a href="jmri4.8.shtml">JMRI 4.8</a></b>. We hope to have a fix
-        before JMRI 4.9.2 in mid-August.
-    </li>
+    <li>None</li>
 </ul>
 <!--
-If any of those effect you, please either 
+If any of those affect you, please either 
 wait for
 <a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
@@ -243,7 +235,7 @@ These are development files, and might not be working at any particular time.</p
  
 <h2>Changes since <a href="jmri4.8.shtml">Production release 4.8</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.2+">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.2">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>DecoderPro</h3>
@@ -476,7 +468,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Layout Editor</h3>
         <ul>
-	        <li></li>
+	        <li>Fixed a problem with validation of layout panel files
+	            containing certain kinds of slip definitions.</li>
         </ul>
 
     <h3>Logix</h3>
@@ -580,7 +573,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li></li>
+            <li>Fixed a problem, new in JMRI 4.9.1, that 
+                prevented creating new profiles.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->

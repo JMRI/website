@@ -195,8 +195,10 @@
 		font-size: large;
 	}
 
+/* small [Since JMRI 1.2.3] sticker to mark  introductory version number in Release Notes */
 	span.since {
 		color: #fff;
+		font-weight: normal;
 		float: right;
 		background: #222696;
 	    background-size: 100% 100%;
