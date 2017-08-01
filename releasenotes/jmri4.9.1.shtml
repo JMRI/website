@@ -96,14 +96,23 @@ their library references:
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>JMRI 4.9.1 will sometimes refuse to create a new profile.  This can
+    <li><span class="since">Since <a href="jmri4.9.1.shtml">JMRI 4.9.1</a>, fixed <a href="jmri4.9.2.shtml">4.9.2</a></span>
+        JMRI 4.9.1 will sometimes refuse to create a new profile.  This can
         hit when creating a new profile in addition to existing ones, or 
         when creating a new profile as part of an initial install.  
         There is, unfortunately, no workaround for this.  Since it can
         hit new users, we recommend that completely new users <b>not</b>
         use JMRI 4.9.1, but rather should <b>stick with
         <a href="jmri4.8.shtml">JMRI 4.8</a></b>. This has been fixed for JMRI 4.9.2.
-        You can also pick up a <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
+        You can also pick up a 
+        <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
+        in the meantime.
+    </li>
+    <li><span class="since">Since <a href="jmri4.9.1.shtml">JMRI 4.9.1</a>, fixed <a href="jmri4.9.2.shtml">4.9.2</a></span>
+        If you have very large panels (lots and lots of items), JMRI PanelPro can 
+        start to slow down.  This has been fixed for JMRI 4.9.2.
+        You can also pick up a 
+        <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
         in the meantime.
     </li>
 </ul>
