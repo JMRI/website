@@ -586,15 +586,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <h3>Warrants</h3>
         <ul>
             <li>Help files have been edited to document the following feature additions:</li>
-	    <li>Warrants compute track speeds while running when OPath lengths are known and throttle settings are known.</li>
+	    <li>When created, warrant throttle command scripts record the track speeds of the recording power address,
+	        if a speed profile exists for the power. On playback, when possible, they use 
+	        this track speed and look up the corresponding throttle settings rather than the directly recorded 
+		throttle setting. The intention is to have the warrant run at the same speeds regardless of changes 
+		in DCC address or size of the train load.</li>
+	    <li>Warrants compute the track speeds for the DCC address on playback of the warrant when OPath lengths
+	        are known and throttle settings are known. These are saved in Session Speed Profiles.</li>
 	    <li>Session Speed Profiles are kept for all DCC addresses running in warrants during a layout session.</li>
 	    <li>Session Speed Profiles can be merged into Roster Speed Profiles when layout sessions end.</li>
-	    <li>Warrant Preferences provides choices for how to handle speed profile merging at shutdown.</li>
-	    <li>Warrant throttle command scripts record track speed and, when possible, use track speed to make throttle 
-	        settings on warrant playback.</li>
-	    <li>Speed profiles are viewable when creating or editing warrants or nxwarrants</li>
-	    <li>Speed profiles are checked for monotoneicity, when not, provide an editing facility.</li>
-	    <li>NXWarrant GUi is split into two successive windows: selecting the route and setting the run parameters</li>
+	    <li>Warrant Preferences provides three choices for how to handle speed profile merging at shutdown.</li>
+	    <li>Speed profiles are viewable when creating or editing warrants or nxwarrants.</li>
+	    <li>Speed profiles are checked to be monotonic increasing, and when not, an editing facility is provided.</li>
+	    <li>The NXWarrant GUi is split into two successive windows: selecting the route and setting the run parameters</li>
         </ul>
 
    <h3>Web Access</h3>
