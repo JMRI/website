@@ -585,7 +585,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
    <h3>Warrants</h3>
         <ul>
-            <li></li>
+            <li>Help files have been edited to document the following feature additions:</li>
+	    <li>Warrants compute track speeds while running when OPath lengths are known and throttle settings are known.</li>
+	    <li>Session Speed Profiles are kept for all DCC addresses running in warrants during a layout session.</li>
+	    <li>Session Speed Profiles can be merged into Roster Speed Profiles when layout sessions end.</li>
+	    <li>Warrant Preferences provides choices for how to handle speed profile merging at shutdown.</li>
+	    <li>Warrant throttle command scripts record track speed and, when possible, use track speed to make throttle 
+	        settings on warrant playback.</li>
+	    <li>Speed profiles are viewable when creating or editing warrants or nxwarrants</li>
+	    <li>Speed profiles are checked for monotoneicity, when not, provide an editing facility.</li>
+	    <li>NXWarrant GUi is split into two successive windows: selecting the route and setting the run parameters</li>
         </ul>
 
    <h3>Web Access</h3>
