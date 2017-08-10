@@ -1,12 +1,13 @@
 January 13, 2017 Egbert Broerse (C)
 
 In cloc.pl, after line 5290 insert:
-     <code>'shtml' => 'HTML' ,</code>
+            'shtml'        => 'HTML'                  ,
 to include our flavor of html.
 
 cd to folder containing your JMRI repo
 In the Console type:
-<code>perl cloc.pl JMRI/java --csv --by-file --report-file=java.cloc</code>
+
+perl cloc.pl JMRI/java --csv --by-file --report-file=java.cloc
 
 [counting]
    12546 text files.
@@ -15,12 +16,21 @@ In the Console type:
 Wrote jmri.cloc
 
 Paste contents into field (Origins: clog) on http://www.redotheweb.com/CodeFlower/
-Click the [Convert] button (Optionally, click [Update] to see the new data displayed on the page).
-Copy the JSON data from the Input Data Format field into a separate file.
-Follow further instructions on the page:
+
+Click Convert button
+
+Click Update button
+
+[Update date JMRI codeflower:]
+Copy JSON data from the Input Data Format field into a separate file named: jmri.json
+Copy this file to a new branch of JMRI/Website/Community/codeflower.js
+
+Follow the instructions on the page:
+
 To create a CodeFlower, include the CodeFlower.js file together with d3.js, just like in this page. Create a new CodeFlower instance using a CSS selector (of the div where the flower should be inserted), and the width and height of the desired visualization. Then, bind JSON data to the flower using CodeFlower.update(), and you're done.
-<code>var myFlower = new CodeFlower("#visualization", 300, 200);</code>
-<code>myflower.update(jsonData);</code>
+
+var myFlower = new CodeFlower("#visualization", 300, 200);
+myflower.update(jsonData);
 
 Credits:
 <h2>Licence</h2>
@@ -71,15 +81,16 @@ Page source essence:
       });
     </script>
 
-Copy these scripts to the folder on your web server:
+Copy the mentioned scripts to the folder on your web server:
 - CodeFlower.js
 - d3.js
 
-<h2>Licence</h2>
-<p>CodeFlower is open-source, published by <a href="https://twitter.com/francoisz">François Zaninotto</a> under the MIT license. That means that nothing prevents you from growing as many CodeFlowers as you want!</p>
+        <h2>Licence</h2>
+        <p>CodeFlower is open-source, published by <a href="https://twitter.com/francoisz">François Zaninotto</a> under the MIT license. That means that nothing prevents you from growing as many CodeFlowers as you want!</p>
+        <a href="https://github.com/fzaninotto/CodeFlower"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 
-I had to make some changes to CodeFlower.js to show the late code set of JMRI inside a reasonable square:
-line 19:  .charge(function(d) { return d._children ? -d.size / 100 : -40; }) // change 100:-40 to 100:-4 // -4 slows down the action but keeps the elements away from the edge
-line 20:  .linkDistance(function(d) { return d.target._children ? 80 : 25; }) // change 80:25 to 8:25 // 8 keeps the items closer in the final state
-line 40:  .gravity(Math.atan(total / 500) / Math.PI * 0.4) // change total/50 to /500 makes it more compact in equilibrium
+Made some changes to CodeFlower.js to show the late code set of JMRI inside a reasonable square:
+line 19:  .charge(function(d) { return d._children ? -d.size / 100 : -40; }) // change 100:-40 to 80:4
+line 20:  .linkDistance(function(d) { return d.target._children ? 80 : 25; }) // change 80:25 to 8:25
+line 40:  .gravity(Math.atan(total / 50) / Math.PI * 0.4) // 
 line 72:  .attr("r", function(d) { return d.children ? 3.5 : Math.pow(d.size, 2/5) || 1; }) // change 2/5 to 1/5 (or use log for pow?) !keep the same as line 66
