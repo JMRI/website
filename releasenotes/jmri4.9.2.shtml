@@ -257,7 +257,39 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		
         <h4>C/MRI</h4>
             <ul>
-                <li></li>
+                <li>Chuck Catania made multiple updates:
+                <ul>
+                    <li>Created NodeConfigManager - Opened from the CMRI menu by selecting the Configure Nodes menu item. 
+                        Creates a table view of configured nodes for the selected Connection Memo with node UA, node type, 
+                        input/output card and bit counts displayed. 
+                        Nodes can be added from this window. Nodes are loaded into an Arraylist for function processing. 
+                        From the Select column, nodes can be edited and deleted, bit assignments displayed window. 
+                        A printed listing of nodes can be done. Only NodeConfigManagerBundle.properties created.
+
+                    <li>The existing NodeConfig tool will be retained during the development cycle and deprecated at the appropriate later time.
+
+                    <li>SerialNode data items added: Text Description, CMRInet Options, Node Options. 
+                        Node option "Enable Polling at Startup" which is enabled as default, 
+                        provides for selective node polling control when launching PanelPro.
+
+                    <li>Node configuration window format updated with additional data items.
+
+                    <li>Multiple CMRI connection memo added to new and updated classes.
+
+                    <li>ConnectionConfigXml updated to load and store additional node fields. 
+                        Backward compatibility is maintained with existing configuration XML files. 
+                        Checks for new configuration data fields is implemented. 
+                        Loading an existing connection config profile and not doing a Save from the preferences
+                        will not update the connection profile with the new data fields.
+
+                    <li>Added support for the MRCS cpNode.
+                        A cpNode is defined as node type CPNODE = 3, NDP "C", 8 bit cards, two input cards, two output cards.
+                        Input/Output Expander (IOX) card assignment is supported. 
+                        cpNode initialize(I) message conforms to NMRA LCS 9.10.1. 
+                        Node type 4 is reserved for a future Open Source Node (OSN) offering.
+
+                    <li>Bit Assignment listing function has Comment field added. Assignment listing can be printed.        
+                </ul>    
             </ul>
 
         <h4>DCC++</h4>
@@ -553,7 +585,20 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
    <h3>Warrants</h3>
         <ul>
-            <li></li>
+            <li>Help files have been edited to document the following feature additions:</li>
+	    <li>When created, warrant throttle command scripts record the track speeds of the recording power address,
+	        if a speed profile exists for the power. On playback, when possible, they use 
+	        this track speed and look up the corresponding throttle settings rather than the directly recorded 
+		throttle setting. The intention is to have the warrant run at the same speeds regardless of changes 
+		in DCC address or size of the train load.</li>
+	    <li>Warrants compute the track speeds for the DCC address on playback of the warrant when OPath lengths
+	        are known and throttle settings are known. These are saved in Session Speed Profiles.</li>
+	    <li>Session Speed Profiles are kept for all DCC addresses running in warrants during a layout session.</li>
+	    <li>Session Speed Profiles can be merged into Roster Speed Profiles when layout sessions end.</li>
+	    <li>Warrant Preferences provides three choices for how to handle speed profile merging at shutdown.</li>
+	    <li>Speed profiles are viewable when creating or editing warrants or nxwarrants.</li>
+	    <li>Speed profiles are checked to be monotonic increasing, and when not, an editing facility is provided.</li>
+	    <li>The NXWarrant GUi is split into two successive windows: selecting the route and setting the run parameters</li>
         </ul>
 
    <h3>Web Access</h3>
