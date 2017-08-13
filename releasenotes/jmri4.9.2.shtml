@@ -109,9 +109,14 @@ from
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
 
-<ul>
-    <li></li>
-</ul>
+<p><span class="since">Since <a href="jmri4.9.2.shtml">JMRI 4.9.2</a></span>
+    The build process for JMRI software has changed. (This won't affect you
+    if you're just downloading and running a pre-built installer.) 
+    If you're building your own version of the JMRI software, this should continue to 
+    just work from the command line or if you're using NetBeans. 
+    If you're using Eclipse, you must use the Ant-based process
+    <a href="http://jmri.org/help/en/html/doc/Technical/Eclipse.shtml">our Eclipse instructions page</a>.
+    Using Eclipse in other modes currently doesn't work.
 
 <h3>Older warnings</h3>
 
@@ -152,9 +157,19 @@ These may be relevant to you if you're updating from an earlier version.
         The workaround is to update both client and server JMRI machines to the same
         JMRI version. 
         
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI applications will not load a panel file that fails XML validation; an error will be
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> 
+        JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
-	    explanations remain a work in progress.)
+	    explanations remain a work in progress.) If you have a problem loading a
+	    panel file, please
+	    <ul>
+	        <li>Configure your JMRI startup to first run the 
+	            <a href="http://jmri.org/jython/TurnOffXmlValidation.py">jython/TurnOffXmlValidation.py</a>
+	            script which will suppress the error.
+	        <li>Write out a new version of the panel file (after saving a backup!)
+	        <li>Use that new version from now on.
+	        <li>And drop use of the jython/TurnOffXmlValidation.py script.
+	    </li>
 
 <p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
         As part of fixing the 
@@ -292,9 +307,26 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </ul>    
             </ul>
 
+        <h4>CTI</h4>
+            <ul>
+                <li>Egbert Broerse and Ken Cameron fixed a problem with startup 
+                    for the Acela system.</li>
+            </ul>
+
         <h4>DCC++</h4>
             <ul>
-                <li></li>
+                <li>Kevin Dickerson made several improvements to improve the robustness the DCC-4-PC support:
+                    <ul>
+                    <li>Reader board discovery is now in its own class so that the message/reply sequence no longer interferes with the polling messages.
+
+                    <li>Solicited replies now contain the original message. 
+                    As the reply contains no information as to its source 
+                    this removes the requirement for the message sender to try and keep track of
+                    what messages it has sent and had or missed replies for. 
+                    This information can now be retrieved from the reply and, 
+                    removes any issues of sender getting out of sync with board 
+                    poll status requests and the replies.</li>
+                    </ul></li>
             </ul>
 
         <h4>Digitrax</h4>
@@ -309,7 +341,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>LocoNet</h4>
             <ul>
-                <li></li>
+                <li>Work by Paul Bender and Bob Milhaupt on improving how "throttle stealing"
+                    is handled.</li>
             </ul>
 
         <h4>MERG CBUS</h4>
@@ -329,7 +362,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4><a href="http://openlcb.org">OpenLCB</a></h4>
             <ul>
-                <li></li>
+                <li>Balazs Racz updated the OpenLCB support:
+                    Ensures that set of sensor state generates an outgoing bus message, 
+                    even if the new state is the same as the previous. 
+                    This is desired by advanced users in order to be able to 
+                    write scripts that initialize the entire system to a known state.</li>
             </ul>
 
         <h4>RFID</h4>
@@ -469,7 +506,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>TCS</h4>
             <ul>
-                <li></li>
+                <li>Micheal Mosher updated the TCS WOW 4 decoder</li>
             </ul>
 
         <h4>Technologistic (train-O-matic)</h4>
@@ -500,23 +537,56 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Dispatcher</h3>
         <ul>
-             <li></li>
+             <li>Craig48 fixed a bug in in the startup of Dispatcher: If a user name is '
+                defined for the transit or starting block or destination block, 
+                the validation process fails. The validation code expects either the 
+                system name or the user name, but not both. 
+                The createActiveTrain method is using a concatenated string of both, causing the validation failure.</li>
         </ul>
 
     <h3>Layout Editor</h3>
         <ul>
 	        <li>Fixed a problem with validation of layout panel files
 	            containing certain kinds of slip definitions.</li>
-        </ul>
+	        <li>George Warner make a number of improvements:
+             <ul>
+                <li>TrackSegments now support Bezier curves… (flex-track!)</li>
+                <li>Added setDefaultButton(okButton) in a lot (but not 100%) of dialogs.</li>
+                <li>Disable popup menu items that just show info (no actions).</li>
+                <li>Alt-(Option-) scroll wheel zooms in/out (centered on cursor!).</li>
+                <li>Added “Zoom to Fit”.</li>
+                <li>More normalize[System|User]Names.</li>
+                <li>TrackSegment width bug fixed.</li>
+                <li>Added secondary grid size.</li>
+                <li>Added antialiasing rendering hint for macOS and Windows.</li>
+                <li>Convert more (all?) JTextField's to JmriBeanComboBox's.</li>
+                <li>Removing orthogonal requirements for adding signal heads!</li>
+                <li>Added per-PositionableLabel font support.</li>
+                <li>Rotated PositionableLabel's are drawn correctly (and looks NICE!)!</li>
+                <li>Alt key inverts Add and Drag "align to grid" behavior</li>
+                <li>Added Rotation Menu info and set items.</li>
+                <li>Add Signal Head Info to popup menus</li>
+                <li>Added (de-)select All checkboxes to Layout Editor Tools</li>
+                <li>Selection rect can now go up/left.</li>
+                <li>Turnout comboboxes edit field now highlight (background color: exists=green, valid=yellow, invalid=red)</li>
+                <li>Turnout comboboxes drop down lists now highlight (green = available, red = assigned to this layout)</li>
+            </ul></li>
+       </ul>
 
     <h3>Logix</h3>
         <ul>
-          <li></li>
+          <li>Dave Sand added a tree-based editor for Logix Conditionals:
+            The new editor uses a tree to represent the conditional structure of a Logix. 
+            The pane is split, with the tree on the left side and an edit pane on the right side. 
+            The contents of the edit pane change depending on the current tree node selection.
+            <p>
+            The traditional list-based conditional editor is the default editor in the new structure.
+          </li>
         </ul>
 
     <h3>Operations</h3>
        <ul>
-          <li></li>
+          <li>Daniel Boudreau fixed a problem with cars not being loaded at initialization</li>
        </ul>
 
    <h3>Panel Editors</h3>
@@ -541,17 +611,23 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Turnouts, Lights and other elements</h3>
         <ul>
-            <li></li>
+            <li>Egbert Broerse added tooltips and validation to the 
+            field where you supply the hardware address when creating new
+            Sensors, Turnouts and Lights.  This should make it much
+            easier for users to figure out what to put there.</li>
         </ul>
 
     <h3>Scripting</h3>
         <ul>
-            <li></li>
+            <li>Provides a new getTextArea() method to allow scripts access to the display area in protocol-monitor windows. 
+            This follows from a JMRIusers discussion.</li>
         </ul>
 
     <h3>Signals</h3>
         <ul>
-            <li></li>
+            <li>The Siglet class, used by Simple Signal Logic and some user scripts for
+            signal logic, was reimplemented to avoid a (small) change of missing
+            a signal operation.</li>
         </ul>
         <h4>Signal Systems</h4>
             <ul>
@@ -575,7 +651,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     	<h4>Simple Signal Logic</h4>
             <ul>
-                <li></li>
+                <li>Simple Signal Logic now has a "restricting" option.</li>
             </ul>
 
 	    <h4>NX Entry/Exit Logic</h4>
@@ -585,7 +661,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
 	    <h4>USS CTC Logic</h4>
             <ul>
-                <li></a>.
+                <li>Several updates to make the USS CTC support appear more realistic.
                 </li>
             </ul>
    <h3>Warrants</h3>
@@ -613,7 +689,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Internationalization</h3>
         <ul>
-            <li></li>
+            <li>Ronald Kuhn improved the German translation</li>
+            <li>Sonnys Hansen improved the Danish translation</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
@@ -623,8 +700,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li>Fixed a problem, new in JMRI 4.9.1, that 
-                prevented creating new profiles.</li>
+            <li>Fixed a problem, new in JMRI 4.9.1, that prevented creating new profiles.</li>
+            <li>Many improvements to the internal tests and technical documentation.</li>
+            <li>A number of internal classes have had their singletons (i.e. 'instance()' 
+                methods) put onto the instanceManager.  This might have a tiny chance of 
+                impacting certain esoteric user scripts.
         </ul>
 
    <!--#include virtual="/Footer" -->
