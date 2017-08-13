@@ -136,36 +136,48 @@ These may be relevant to you if you're updating from an earlier version.
     and <em>jackson-databind-2.0.6.jar</em> from the <em>lib</em> directory within the previous installation directory to resolve
     this.
 
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
-        were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
-        if the panel contains a path that starts with <code>resource:</code> and the panel will
-        not load until changed using an external editor. Paths starting with <code>file:</code>
-        cannot be automatically flagged because JMRI allows file: URLs.
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
+    JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
+    were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
+    if the panel contains a path that starts with <code>resource:</code> and the panel will
+    not load until changed using an external editor. Paths starting with <code>file:</code>
+    cannot be automatically flagged because JMRI allows file: URLs.
         
 <p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
-        The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
-        in this version of JMRI doesn't properly interoperate with 
-        <a href="jmri4.7.1.shtml">JMRI 4.7.1</a> through <a href="jmri4.7.4.shtml">JMRI 4.7.4</a>.
-        It does work fine with <a href="jmri4.6.shtml">JMRI version 4.6</a> or before.
-        If you encounter a problem with version compatibility, you'll see an error
-        message that includes "<code>local class incompatible</code>".
-        The workaround is to update both client and server JMRI machines to the same
-        JMRI version. 
+    The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
+    in this version of JMRI doesn't properly interoperate with 
+    <a href="jmri4.7.1.shtml">JMRI 4.7.1</a> through <a href="jmri4.7.4.shtml">JMRI 4.7.4</a>.
+    It does work fine with <a href="jmri4.6.shtml">JMRI version 4.6</a> or before.
+    If you encounter a problem with version compatibility, you'll see an error
+    message that includes "<code>local class incompatible</code>".
+    The workaround is to update both client and server JMRI machines to the same
+    JMRI version. 
         
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI applications will not load a panel file that fails XML validation; an error will be
-        shown that should explains the error, allowing it to be fixed using an editor. (The
-	    explanations remain a work in progress.)
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> 
+    JMRI applications will not load a panel file that fails XML validation; an error will be
+    shown that should explains the error, allowing it to be fixed using an editor. (The
+    explanations remain a work in progress.) If you have a problem loading a
+    panel file, please
+    <ul>
+        <li>Configure your JMRI startup to first run the 
+            <a href="http://jmri.org/jython/TurnOffXmlValidation.py">jython/TurnOffXmlValidation.py</a>
+            script which will suppress the error.
+        <li>Write out a new version of the panel file (after saving a backup!)
+        <li>Use that new version from now on.
+        <li>And drop use of the jython/TurnOffXmlValidation.py script.
+    </li>
 
 <p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
-        As part of fixing the 
-        <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
-        the handling of TMCC preferences was changed.  If you have a TMCC
-        connection configured, please go to the 
-        "<a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#Connection">Defaults</a>"
-        pane in the Preferences window and make sure that the 
-        TMCC connection is selected for the appropriate device types.
+    As part of fixing the 
+    <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
+    the handling of TMCC preferences was changed.  If you have a TMCC
+    connection configured, please go to the 
+    "<a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#Connection">Defaults</a>"
+    pane in the Preferences window and make sure that the 
+    TMCC connection is selected for the appropriate device types.
 
-<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
+    This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
     To remove Java SE 6 from OS X, follow these steps (these steps assume
@@ -185,7 +197,8 @@ These may be relevant to you if you're updating from an earlier version.
       <li><em>El Capitan only:</em> Restart your Mac.</li>
     </ol>
   
-<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> Support for directly executing AppleScript within JMRI has been removed
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
+    Support for directly executing AppleScript within JMRI has been removed
     due to changes in macOS and Java outside our control. If you require the
     ability to use AppleScript, you may be able to add this capability on your
     own by visiting <a href="https://jmri.github.io/applescript">JMRI
