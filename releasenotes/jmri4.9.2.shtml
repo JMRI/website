@@ -96,17 +96,23 @@ their library references:
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None</li>
+    <li>Some users are reporting the program is incredibly slow to start, even
+        crashing during startup. 
+        <p>This version has a problem processing a <code>decoderIndex.xml</code> file in the profile 
+        directory that can cause this.  The work-around is to go to the profile directory
+        and remove that file.  JMRI will recreate it if it needs it.
+    </li>
 </ul>
-<!--
-If any of those affect you, please either 
+
+If this affects you, please either 
 wait for
-<a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
-or (once there's a fix for the problem) pick up a
+<a href="jmri4.7.6.shtml">JMRI 4.9.3</a>, due out shortly after this one,
+or pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
+(which now include the fix)
 from
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
+
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
