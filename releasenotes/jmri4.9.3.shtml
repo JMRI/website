@@ -591,7 +591,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li></li>
+            <li>The Windows installer has been updated to a new version of the
+                NSIS tool.  This shouldn't be visible to users.</li>
+            <li>The Windows installer in JMRI 4.9.3 is compatible with current
+                Java 9 versions.  (Some of the initial early-access Java 9 versions
+                had problems that you can avoid by keeping up to date with Java 9
+                updates if you want to use Java 9)
         </ul>
 
    <!--#include virtual="/Footer" -->
