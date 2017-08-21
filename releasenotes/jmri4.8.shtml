@@ -103,6 +103,17 @@ from
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
 
+<p><span class="since">Since <a href="jmri4.7.6.shtml">JMRI 4.7.6</a></span>
+    If you're having trouble getting your DCC programmer to work, try
+    checking that the "Defaults" under "Preferences" are set to your
+    hardware system.
+    The reason: This version of JMRI (and all later) provides more options for
+    "default systems": If you have multiple sets of hardware attached, which
+    should be used for throttles, for programming, etc.  JMRI tries to 
+    guess the right settings for these when you upgrade to this version, but 
+    apparently it sometimes gets that wrong (we haven't been able to track
+    that down yet). Setting them manually fixes any wrong guesses.
+
 <p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
     This version of JMRI (and all later) writes a slightly streamlined
     version of panel file contents.  

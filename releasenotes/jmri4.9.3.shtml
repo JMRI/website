@@ -112,13 +112,34 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li></li>
+    <li>
+    For Windows users only: This version of JMRI (and all later) has a new 
+    version of the "LaunchJMRI.exe" program.  It's used to set options as
+    JMRI is starting up, and is a completely normal part of JMRI.  Because it's
+    new and different, however, your anti-virus program may reject it. 
+    You might get a message about "file removed" or "file quarantined" or similar
+    and then JMRI might not start.
+    The solution is to make sure that your anti-virus program doesn't interfere
+    with JMRI's installation and running. There are so many of those, unfortunately,
+    that we can't really provide useful instructions beyond that.
+    </li>
 </ul>
 
 <h3>Older warnings</h3>
 
 See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.8 development series.
 These may be relevant to you if you're updating from an earlier version.
+
+<p><span class="since">Since <a href="jmri4.7.6.shtml">JMRI 4.7.6</a></span>
+    If you're having trouble getting your DCC programmer to work, try
+    checking that the "Defaults" under "Preferences" are set to your
+    hardware system.
+    The reason: This version of JMRI (and all later) provides more options for
+    "default systems": If you have multiple sets of hardware attached, which
+    should be used for throttles, for programming, etc.  JMRI tries to 
+    guess the right settings for these when you upgrade to this version, but 
+    apparently it sometimes gets that wrong (we haven't been able to track
+    that down yet). Setting them manually fixes any wrong guesses.
 
 <p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
     This version of JMRI (and all later) writes a slightly streamlined
