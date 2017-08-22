@@ -613,7 +613,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li></li>
+            <li>The <kbd>--profile</kbd> command line argument to start a JMRI application with a specific profile
+	    now takes the profile ID or the path to the profile directory as an argument (<a href="https://github.com/JMRI/JMRI/pull/3968">#3968</a>).</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
