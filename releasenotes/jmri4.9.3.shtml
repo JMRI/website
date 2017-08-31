@@ -96,7 +96,7 @@ their library references:
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None</li>
+    <li>This release can sometimes throw a StackOverflow error when opening a profile (<a href="https://github.com/JMRI/JMRI/issues/3999">3999</a>).</li>
 </ul>
 <!--
 If any of those affect you, please either 
