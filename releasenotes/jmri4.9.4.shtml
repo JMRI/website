@@ -110,7 +110,9 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li></li>
+    <li>Due to changes in the capitolization of some method and property names, some scripts may fail until
+    adjusted to use the new capitolization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
+    JMRI class will list the correct capitolization.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -616,6 +618,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>The <kbd>--profile</kbd> command line argument to start a JMRI application with a specific profile
 	    now takes the profile ID or the path to the profile directory as an argument (<a href="https://github.com/JMRI/JMRI/pull/3968">#3968</a>).</li>
 	    <li>Excessive work and potential StackOverflow errors opening a profile have been fixed (<a href="https://github.com/JMRI/JMRI/pull/4005">#4005</a>).</li>
+	    <li>The capitolization of many method and property names in JMRI has been changed to be internally
+	    consistent within JMRI and to adhere to standard Java naming principles (<a href="https://github.com/JMRI/JMRI/pull/4034">#4034</a>).</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
