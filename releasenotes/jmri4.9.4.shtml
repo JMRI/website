@@ -595,7 +595,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
    <h3>Warrants</h3>
         <ul>
-            <li></li>
+            <li>The range of automatically Recorded track speeds is much wider than was anticipated.  The feature
+	    introduced in 4.9.2 using the throttle setting corresponding to the desired track speed is disabled. 
+	    Warrants use the throttle setting as stated in the script.</li>
+	    <li>The option to not use ramps for speed changes required by signals, blocks or rogue occupation is
+	    added to the NXWarrant windows.</li>
+	    <li>NXWarrants use power series for start and end ramps.  Start ramp throttle increments are incresed
+	    by 8% at each time interval. End ramp throttle increments are decreased by 8% at each interval.</li>
         </ul>
 
    <h3>Web Access</h3>
