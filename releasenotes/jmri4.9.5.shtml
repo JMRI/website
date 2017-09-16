@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.9.4
+ JMRI: Release Notes for 4.9.5
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.9.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.9.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,12 +23,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.9.4 release
+      Release Notes for JMRI 4.9.5 release
       </h1>
 
     <p>Date: mmm dd, 2017</p>
     <p>From: (pumpkin)</p>
-    <p>Subject: Test Release 4.9.4 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.9.5 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -110,9 +110,6 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>Due to changes in the capitalization of some method and property names, some scripts may fail until
-    adjusted to use the new capitolization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
-    JMRI class will list the correct capitolization.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -120,7 +117,12 @@ from
 See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.8 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><span class="since">Since <a href="jmri4.9.3.shtml">JMRI 4.9.3</a></span>
+<p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
+    Due to changes in the capitalization of some method and property names, some scripts may fail until
+    adjusted to use the new capitolization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
+    JMRI class will list the correct capitolization.</li>
+
+<p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     For Windows users only: <a href="jmri4.9.3.shtml">JMRI 4.9.3</a> (and all later) has a new 
     version of the "LaunchJMRI.exe" program.  It's used to set options as
     JMRI is starting up, and is a completely normal part of JMRI.  Because it's
@@ -272,7 +274,7 @@ These are development files, and might not be working at any particular time.</p
  
 <h2>Changes since <a href="jmri4.8.shtml">Production release 4.8</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.4">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.5">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>DecoderPro</h3>
