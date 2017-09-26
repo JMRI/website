@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.9.4
+ JMRI: Release Notes for 4.9.5
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.9.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.9.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,16 +23,14 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.9.4 release
+      Release Notes for JMRI 4.9.5 release
       </h1>
 
-    <p>Date: September 17, 2017</p>
-    <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.9.4 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: mmm dd, 2017</p>
+    <p>From: (pumpkin)</p>
+    <p>Subject: Test Release 4.9.5 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h2>Notes:</h2>
 
@@ -112,9 +110,6 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>Due to changes in the capitalization of some method and property names, some scripts may fail until
-    adjusted to use the new capitalization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
-    JMRI class will list the correct capitalization.</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -122,7 +117,12 @@ from
 See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.8 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><span class="since">Since <a href="jmri4.9.3.shtml">JMRI 4.9.3</a></span>
+<p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
+    Due to changes in the capitalization of some method and property names, some scripts may fail until
+    adjusted to use the new capitolization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
+    JMRI class will list the correct capitolization.</li>
+
+<p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     For Windows users only: <a href="jmri4.9.3.shtml">JMRI 4.9.3</a> (and all later) has a new 
     version of the "LaunchJMRI.exe" program.  It's used to set options as
     JMRI is starting up, and is a completely normal part of JMRI.  Because it's
@@ -237,9 +237,22 @@ These may be relevant to you if you're updating from an earlier version.
     "IT12" is fine, but just "IT" is not. Most panel files that contain these should
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
 
+<p><span class="since">Since <a href="jmri4.9.2.shtml">JMRI 4.9.2</a></span>
+    JMRI saves the Uhlenbrock connection's "baud" rate as an Internationalized string, 
+    and, upon loading a configuration profile, requires an Internationalized "baud" 
+    rate in the .XML file.  JMRI will fail to properly configure the serial port if the
+    "baud" rate from the configuration profile does not match one of the baud rate 
+    strings for the current Internationalization "locale".  If you experience problems 
+    where JMRI start-up of a Uhlenbrock-based connection does not configure the serial 
+    port, it may be necessary to edit the connection's preferences, select the 
+    appropriate "baud" rate, save the connection.  This updates the configuration profile 
+    .XML file to use one of the "baud" rate strings expected by the Uhlenbrock-specific 
+    code in JMRI.  It is necessary to re-start JMRI for this change to take effect.
+
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.4">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
@@ -248,17 +261,18 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.dmg</a><br/>
-  sha256: 0df154ca0586a89253d709a01a03da51f50089f66dbed837c09d7ed2438119f3 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg</a><br/>
+  sha256: f0eb649a303c76303bb5ecf79b6fcd1c9ffba2421aaf32c09354b5ce93ac98c3 </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.exe">https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.exe</a><br/>
-   sha256: 23100d7b8a44270511d15e9300ab8a82d94b5e2848fc343617aa29569dee2ca7</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe</a><br/>
+   sha256: d04f9e2e108ce058c0de3e406f49893b4374ad013762425aeac2bdfeaf0f5dd6</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.tgz</a><br/>
-   sha256: 76118da1fb380f7eed529aba97015c34b5aee5d2da4a4205e606acddba162438</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz</a><br/>
+   sha256: 891ae78c024f35aa2b5e0b43554df61720dc61006c2e1913b8affddac2b2fb6f</p>
 </ul>
+ -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -266,33 +280,353 @@ on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.6/">CI project page</a>.
  -->
 
-<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
  
 <h2>Changes since <a href="jmri4.8.shtml">Production release 4.8</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.4">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.5">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
+    <h3>DecoderPro</h3>
+
+        <ul>
+          <li></li>
+        </ul>
+           
     <h3>Hardware Support</h3>
+
+        <ul>
+          <li></li>
+        </ul>
+
+	    <h4>Bachrus Speedo</h4>
+            <ul>
+                <li></li>
+            </ul>
+		
+        <h4>C/MRI</h4>
+            <ul>
+                <li></li>        
+                </ul>    
+            </ul>
+
+        <h4>DCC++</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Digitrax</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>JMRI Simple Server/JMRI Client</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>MERG CBUS</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>MRC</h4>
+            <ul>
+                <li><li>
+            </ul>
+
+        <h4>NCE</h4>
+            <ul>
+                <li><li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
+            <ul>
+                <li></li>
+            </ul>
 
         <h4>RFID</h4>
             <ul>
                 <li>Support for the Olimex MOD-RFID1356MIFARE has been added.</li>
             </ul>
 
+        <h4>Roco z21/Z21</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>SPROG</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>TMCC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Uhlenbrock Intellibox</h4>
+            <ul>
+                <li>Initial creation of a JMRI conneciton to a Uhlenbrock command station now saves
+		the default serial port "baud" rate in a format which can be properly read by the 
+		Uhlenbrock connection.</li>
+            </ul>
+
+        <h4>Zimo MXULF</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>ZTC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+      <ul>
+        <li></li>
+     </ul>
+
+        <h4>Arnold</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>BLI</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Bachmann</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Digitrax</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Doehler &amp; Haas</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>ESU</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Hornby</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Kuehn</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>LaisDCC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Lenz</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>MGP</h4>
+             <ul>
+                <li></li>
+             </ul>
+
+        <h4>MTH</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>MRC</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>NCE</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Norsk Modelljernbane (NJM)</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>QSI</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Rautenhaus</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>RR-CirKits</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>TCS</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Technologistic (train-O-matic)</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Viessmann</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Wangrow</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Miscellaneous</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+
+   <h3>Dispatcher</h3>
+        <ul>
+             <li></li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <ul>
+	        <li></li>
+        </ul>
+
+    <h3>Logix</h3>
+        <ul>
+          <li></li>
+        </ul>
+
+    <h3>Operations</h3>
+       <ul>
+          <li></li>
+       </ul>
+
+   <h3>Panel Editors</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Preferences</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Resources</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Roster</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Turnouts, Lights and other elements</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Signals</h3>
+        <ul>
+            <li></li>
+        </ul>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Signal Heads</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Signal Masts</h4>
+            <ul>
+                <li></li>
+            </ul>
+            
+    	<h4>Signal Groups</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+    	<h4>Simple Signal Logic</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+	    <h4>NX Entry/Exit Logic</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+	    <h4>USS CTC Logic</h4>
+            <ul>
+                <li></a>.
+                </li>
+            </ul>
    <h3>Warrants</h3>
         <ul>
-            <li>The range of automatically Recorded track speeds is much wider than was anticipated.  The feature
-	    introduced in 4.9.2 using the throttle setting corresponding to the desired track speed is disabled. 
-	    Warrants use the throttle setting as stated in the script.</li>
-	    <li>The option to not use ramps for speed changes required by signals, blocks or rogue occupation is
-	    added to the NXWarrant windows.</li>
-	    <li>NXWarrants use power series for start and end ramps.  Start ramp throttle increments are incresed
-	    by 8% at each time interval. End ramp throttle increments are decreased by 8% at each interval.</li>
+            <li></li>
+        </ul>
+
+   <h3>Web Access</h3>
+        <ul>
+            <li> </li>
+        </ul>
+
+   <h3>Internationalization</h3>
+        <ul>
+            <li></li>
+        </ul>
+        
+   <h3>Virtual Sound Decoder</h3>
+        <ul>
+            <li></li>
         </ul>
 
     <h3>Miscellaneous</h3>
@@ -300,7 +634,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>The <kbd>--profile</kbd> command line argument to start a JMRI application with a specific profile
 	    now takes the profile ID or the path to the profile directory as an argument (<a href="https://github.com/JMRI/JMRI/pull/3968">#3968</a>).</li>
 	    <li>Excessive work and potential StackOverflow errors opening a profile have been fixed (<a href="https://github.com/JMRI/JMRI/pull/4005">#4005</a>).</li>
-	    <li>The capitalization of many method and property names in JMRI has been changed to be internally
+	    <li>The capitolization of many method and property names in JMRI has been changed to be internally
 	    consistent within JMRI and to adhere to standard Java naming principles (<a href="https://github.com/JMRI/JMRI/pull/4034">#4034</a>).</li>
         </ul>
 
