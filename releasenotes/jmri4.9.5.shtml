@@ -374,7 +374,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Uhlenbrock Intellibox</h4>
             <ul>
-                <li>Initial creation of a JMRI conneciton to a Uhlenbrock command station now saves
+                <li>Initial creation of a JMRI connection to a Uhlenbrock command station now saves
 		the default serial port "baud" rate in a format which can be properly read by the 
 		Uhlenbrock connection.</li>
             </ul>
@@ -391,7 +391,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>New / Updated decoder definitions</h3>
       <ul>
-        <li></li>
+        <li>
+          The <code>&lt;functionlabel&gt;</code> and <code>&lt;soundlabel&gt;</code>
+          element names in decoder definitions can now be internationalized by using
+          <code>&lt;text&gt;</code> elements instead of raw text.
+        </li>
      </ul>
 
         <h4>Arnold</h4>
