@@ -26,8 +26,8 @@
       Release Notes for JMRI 4.9.5 release
       </h1>
 
-    <p>Date: mmm dd, 2017</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: October 7, 2017</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.9.5 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
@@ -252,32 +252,31 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
-<a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.4">Github servers</a>.
+<a href="https://github.com/JMRI/JMRI/releases">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg</a><br/>
-  sha256: f0eb649a303c76303bb5ecf79b6fcd1c9ffba2421aaf32c09354b5ce93ac98c3 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Rf44b784.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Rf44b784.dmg</a><br/>
+  sha256: b21a9408c79160b8caec3cc6367c4be1cb3139ca1e80514fa3299e9fe90518dd </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe</a><br/>
-   sha256: d04f9e2e108ce058c0de3e406f49893b4374ad013762425aeac2bdfeaf0f5dd6</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Rf44b784.exe">https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Rf44b784.exe</a><br/>
+   sha256: 5a04598791def0b37a43d0fc4685d3e4ffb4720046756e6b6c0c1b467fa42dcf</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz</a><br/>
-   sha256: 891ae78c024f35aa2b5e0b43554df61720dc61006c2e1913b8affddac2b2fb6f</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Rf44b784.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Rf44b784.tgz</a><br/>
+   sha256: bcab51a2c389998a56a50775c549b8e9da237c952021d47cae0bef640dca63d5</p>
 </ul>
- -->
 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.9.5/">CI project page</a>.
-
+-->
 <!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
@@ -289,23 +288,8 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.5">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h3>DecoderPro</h3>
-
-        <ul>
-          <li></li>
-        </ul>
-           
     <h3>Hardware Support</h3>
 
-        <ul>
-          <li></li>
-        </ul>
-
-	    <h4>Bachrus Speedo</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
         <h4>C/MRI</h4>
             <ul>
                 <li></li>        
@@ -314,12 +298,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>DCC++</h4>
             <ul>
-                <li></li>
+                <li>Paul Bender improved the output of the command monitor</li>
+                <li>Paul Bender improved how raw packets (used for consisting) are sent</li>
             </ul>
 
         <h4>Digitrax</h4>
             <ul>
-                <li></li>
+                <li>Lionel Jeanson provided documentation on how to connect a Digikeijs DR5000 to JMRI using Loconet over TCP/IP</li>
             </ul>
 
         <h4>JMRI Simple Server/JMRI Client</h4>
@@ -332,31 +317,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h4>MERG CBUS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RFID</h4>
-            <ul>
-                <li>Support for the Olimex MOD-RFID1356MIFARE has been added.</li>
-            </ul>
-
         <h4>Roco z21/Z21</h4>
             <ul>
                 <li></li>
@@ -364,17 +324,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>SPROG</h4>
             <ul>
-                <li></li>
-            </ul>
-
-        <h4>TMCC</h4>
-            <ul>
-                <li></li>
+                <li>Egbert Broerse updated the SPROG support for system prefixes</li>
             </ul>
 
         <h4>Uhlenbrock Intellibox</h4>
             <ul>
                 <li>Initial creation of a JMRI connection to a Uhlenbrock command station now saves
+<<<<<<< Updated upstream
 		the default serial port "baud" rate in a format which can be properly read by the 
 		Uhlenbrock connection.</li>
             </ul>
@@ -382,83 +338,37 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h4>Zimo MXULF</h4>
             <ul>
                 <li></li>
+=======
+		        the default serial port "baud" rate in a format which can be properly read by the 
+		        Uhlenbrock connection.</li>
+>>>>>>> Stashed changes
             </ul>
 
-        <h4>ZTC</h4>
-            <ul>
-                <li></li>
-            </ul>
 
     <h3>New / Updated decoder definitions</h3>
       <ul>
+<<<<<<< Updated upstream
         <li>
           The <code>&lt;functionlabel&gt;</code> and <code>&lt;soundlabel&gt;</code>
           element names in decoder definitions can now be internationalized by using
           <code>&lt;text&gt;</code> elements instead of raw text.
         </li>
+=======
+        <li>Randall Wood improved the speed of rebuilding the decoder index.</li>
+>>>>>>> Stashed changes
      </ul>
-
-        <h4>Arnold</h4>
-            <ul>
-                <li></li>
-            </ul>
 
         <h4>BLI</h4>
             <ul>
                 <li></li>
             </ul>
 
-        <h4>Bachmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Doehler &amp; Haas</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>ESU</h4>
             <ul>
-                <li></li>
+                <li>Ronald Huhn provided small corrections for ESU LokSound v3.5 definition</li>
             </ul>
 
         <h4>Hornby</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Kuehn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LaisDCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Lenz</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MGP</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>MTH</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
             <ul>
                 <li></li>
             </ul>
@@ -498,16 +408,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h4>Technologistic (train-O-matic)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Viessmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>Wangrow</h4>
             <ul>
                 <li></li>
@@ -531,7 +431,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Layout Editor</h3>
         <ul>
-	        <li></li>
+	        <li>George Warner did a lot of work on the Layout Editor</li>
         </ul>
 
     <h3>Logix</h3>
@@ -549,29 +449,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li></li>
         </ul>
 
-    <h3>Preferences</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Resources</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Roster</h3>
-        <ul>
-            <li></li>
-        </ul>
-
     <h3>Turnouts, Lights and other elements</h3>
         <ul>
-            <li></li>
+            <li>Egbert Broerse has done a lot of work to add hints and validity checks when entering
+                the hardware address to create a new Turnout, Light or Sensor.</li>
         </ul>
 
     <h3>Scripting</h3>
         <ul>
-            <li></li>
+            <li>Gerald Wolfson provided a ython/ClearFileHistory.py sample script to empty the file history before writing out an XML file</li>
         </ul>
 
     <h3>Signals</h3>
@@ -590,7 +476,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Signal Masts</h4>
             <ul>
-                <li></li>
+                <li>George Warner fixed a problem that could cause signal masts to not display</li>
             </ul>
             
     	<h4>Signal Groups</h4>
@@ -620,26 +506,31 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Web Access</h3>
         <ul>
-            <li> </li>
+            <li>Several components were updated to current versions.</li>
         </ul>
 
    <h3>Internationalization</h3>
         <ul>
-            <li></li>
+            <li>Dave Heap and Ronald Kuhn arranged for translation of locomotive function and sound labels.</li>
+            <li>Hervé Blorec provided an updated French translation of the help pages.</li>
+            <li>Ronald Kuhn translated ESU decoder definitions</li>
+            <li>Ronald Kuhn translated the ZIMO MX600 decoder definitions</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
         <ul>
-            <li></li>
+            <li>Klaus Killinger provided additional user help pages and documentation</li>
+            <li>Klaus Killinger fixed a problem when shutting down sound use</li>
         </ul>
 
     <h3>Miscellaneous</h3>
         <ul>
             <li>The <kbd>--profile</kbd> command line argument to start a JMRI application with a specific profile
-	    now takes the profile ID or the path to the profile directory as an argument (<a href="https://github.com/JMRI/JMRI/pull/3968">#3968</a>).</li>
-	    <li>Excessive work and potential StackOverflow errors opening a profile have been fixed (<a href="https://github.com/JMRI/JMRI/pull/4005">#4005</a>).</li>
-	    <li>The capitolization of many method and property names in JMRI has been changed to be internally
-	    consistent within JMRI and to adhere to standard Java naming principles (<a href="https://github.com/JMRI/JMRI/pull/4034">#4034</a>).</li>
+	        now takes the profile ID or the path to the profile directory as an argument (<a href="https://github.com/JMRI/JMRI/pull/3968">#3968</a>).</li>
+	        <li>Excessive work and potential StackOverflow errors opening a profile have been fixed (<a href="https://github.com/JMRI/JMRI/pull/4005">#4005</a>).</li>
+	        <li>The capitalization of many method and property names in JMRI has been changed to be internally
+	        consistent within JMRI and to adhere to standard Java naming principles (<a href="https://github.com/JMRI/JMRI/pull/4034">#4034</a>).</li>
+            <li>Lionel Jeanson provided bug fixes and improvements for the throttle window toolbar Jynstruments (Wiimote and dccthrottle)</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
