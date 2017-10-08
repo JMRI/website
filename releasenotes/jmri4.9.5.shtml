@@ -110,6 +110,7 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
+    <li>None</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -258,6 +259,7 @@ If that doesn't work for you, the files are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
+<!--
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Rf44b784.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Rf44b784.dmg</a><br/>
@@ -271,12 +273,11 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Rf44b784.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Rf44b784.tgz</a><br/>
    sha256: bcab51a2c389998a56a50775c549b8e9da237c952021d47cae0bef640dca63d5</p>
 </ul>
-
-<!--
+-->
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.9.5/">CI project page</a>.
--->
+
 <!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
@@ -292,7 +293,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>C/MRI</h4>
             <ul>
-                <li></li>        
+                <li>Chuck Catania updated the C/MRI menu and improved the C/MRI serial monitor.</li>        
                 </ul>    
             </ul>
 
@@ -330,32 +331,24 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h4>Uhlenbrock Intellibox</h4>
             <ul>
                 <li>Initial creation of a JMRI connection to a Uhlenbrock command station now saves
-<<<<<<< Updated upstream
-		the default serial port "baud" rate in a format which can be properly read by the 
-		Uhlenbrock connection.</li>
+		        the default serial port "baud" rate in a format which can be properly read by the 
+		        Uhlenbrock connection.</li>
             </ul>
 
         <h4>Zimo MXULF</h4>
             <ul>
                 <li></li>
-=======
-		        the default serial port "baud" rate in a format which can be properly read by the 
-		        Uhlenbrock connection.</li>
->>>>>>> Stashed changes
             </ul>
 
 
     <h3>New / Updated decoder definitions</h3>
       <ul>
-<<<<<<< Updated upstream
         <li>
           The <code>&lt;functionlabel&gt;</code> and <code>&lt;soundlabel&gt;</code>
           element names in decoder definitions can now be internationalized by using
           <code>&lt;text&gt;</code> elements instead of raw text.
         </li>
-=======
         <li>Randall Wood improved the speed of rebuilding the decoder index.</li>
->>>>>>> Stashed changes
      </ul>
 
         <h4>BLI</h4>
@@ -368,54 +361,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Ronald Huhn provided small corrections for ESU LokSound v3.5 definition</li>
             </ul>
 
-        <h4>Hornby</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Norsk Modelljernbane (NJM)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>QSI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Rautenhaus</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RR-CirKits</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SoundTraxx</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TCS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Wangrow</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>ZIMO</h4>
             <ul>
-                <li></li>
+                <li>Ronald Kuhn translated the ZIMO MX600 decoder definitions</li>
             </ul>
 
         <h4>Miscellaneous</h4>
@@ -446,7 +394,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Panel Editors</h3>
         <ul>
-            <li></li>
+            <li>Pete Cressman did some work on the Control Panel Editor</li>
         </ul>
 
     <h3>Turnouts, Lights and other elements</h3>
@@ -469,26 +417,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h4>Signal Heads</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>Signal Masts</h4>
             <ul>
                 <li>George Warner fixed a problem that could cause signal masts to not display</li>
             </ul>
             
-    	<h4>Signal Groups</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    	<h4>Simple Signal Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
 	    <h4>NX Entry/Exit Logic</h4>
             <ul>
                 <li></li>
@@ -501,7 +434,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
    <h3>Warrants</h3>
         <ul>
-            <li></li>
+            <li>Pete Cressman did some work on Warrants</li>
         </ul>
 
    <h3>Web Access</h3>
