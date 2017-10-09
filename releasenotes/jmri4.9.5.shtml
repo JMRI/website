@@ -379,7 +379,28 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Layout Editor</h3>
         <ul>
-	        <li>George Warner did a lot of work on the Layout Editor</li>
+	        <li>George Warner did a lot of work on the Layout Editor:
+	            <ul>
+	            <li>Popup menu for Edge Connector now shows linked layout and edge connector.</li>
+                <li>Turnout control circles are now drawn for turnout controlled turntable rays.</li>
+                <li>LayoutEditorTools now lazy loaded to speed up LayoutEditor panel loading.</li>
+                <li>EntryExitPairs colors can now be parsed as hex values as well as named colors</li>
+                <li>LayoutEditorAux now lazy loaded to speed up LayoutEditor panel loading.</li>
+                <li>ColorUtil.colorToString used instead of .nameToString (since it didn’t parse hex color string).</li>
+                <li>Layout turnout (& slip) hidden, disabled and disableWhenOccupied attributes now save/load property</li>
+                <li>Turnout and slip loading code optimized for speed</li>
+                <li>Colors (including blocks and tracks) can now be parsed as hex values as well as named colors</li>
+                <li>All track editors lazy load to speed up LayoutEditor panel loading.</li>
+                <li>All track editors are now one per-layout instead of one per track (saves memory!).</li>
+                <li>Layout slip editor now rotates editor slip to match layout slip being edited</li>
+                <li>Tracks now draw at layer 3 (so Labels, train icons, etc. can be drawn behind or in front of tracks).</li>
+                <li>Zoom now goes to x8 max (x7 & x8 menu choices added).</li>
+                <li>Slips now correctly display slip state on load (based on the assigned turnout states).</li>
+                <li>Layout turnout, slip and turntable popups include state info with turnout assignments</li>
+                <li>Unconnected layout track end points now highlight while dragging to connect a track segment.</li>
+                <li>Default window size is now the screen size.</li>
+                </ul>
+	        </li>
         </ul>
 
     <h3>Logix</h3>
@@ -424,7 +445,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             
 	    <h4>NX Entry/Exit Logic</h4>
             <ul>
-                <li></li>
+                <li>George Warner updated EntryExitPairs colors so they can now be parsed as hex values as well as named colors</li>
             </ul>
 
 	    <h4>USS CTC Logic</h4>
