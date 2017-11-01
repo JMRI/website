@@ -1,7 +1,21 @@
 <?php
 
-include('Mail.php');
-include_once('include/settings.php');
+/**
+ * Used by jmri.jmrit.mailreporter to file 
+ * problem information onto a mailing list.
+ */
+
+
+/* Redirect access if not running on defined host 
+ * This is used because jmri.org can't send email
+ * any more.
+ */
+$intended_host = "signer.jmri.org:50080";
+
+if ($_SERVER['HTTP_HOST'] != $intended_host) {
+    header("Location: http://".$intended_host."/problem-report.php", true, 307);
+    exit;
+}
 
 /**
  * Process an HTTP POST request based on the following fields:
@@ -16,16 +30,16 @@ include_once('include/settings.php');
 if((strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') 
         && (!empty($_POST['reporter']))) {
 
+    $destination = "jmri-reports@lists.sourceforge.net";
+    
     // Set-up basic headers
-    $headers['From'] = test_input($_POST['reporter']);
-    $headers['To'] = join(', ', $recipients);
-    $headers['Subject'] = test_input($_POST['summary']);
+    $headers = "";
+    $headers = 'From: '.$_POST['reporter']."\r\n";
 
     // If requested, add sender to the recipents
     if (!empty($_POST['sendcopy'])) {
         if (test_input($_POST['sendcopy']) == 'yes') {
-            $headers['Cc'] = test_input($_POST['reporter']);
-            $recipients[] = test_input($_POST['reporter']);
+            $headers = $headers.'Cc: '.test_input($_POST['reporter'])."\r\n";
         }
     }
 
@@ -39,8 +53,8 @@ if((strtoupper($_SERVER['REQUEST_METHOD']) == 'POST')
         $mimeBoundary = "==Multipart_Boundary_x{$randomVal}x";
 
         // Define MIME header
-        $headers['MIME-Version'] = "1.0";
-        $headers['Content-Type'] = "multipart/mixed;\n boundary=\"{$mimeBoundary}\"";
+        $headers = $headers.'MIME-Version: 1.0'."\r\n";
+        $headers = $headers.'Content-Type: '."multipart/mixed;\n boundary=\"{$mimeBoundary}\""."\r\n";
 
         // Start Multipart Boundary above message
         $body = "This is a multi-part message in MIME format.\n\n" .
@@ -89,24 +103,14 @@ if((strtoupper($_SERVER['REQUEST_METHOD']) == 'POST')
         $body .= "--{$mimeBoundary}\n";
     }
 
-    // Generate a mail object
-    $mail_object =& Mail::factory('smtp',
-            array(
-                'host' => $settings['host'],
-                'port' => $settings['port'],
-                'auth' => $settings['auth'],
-                'username' => $settings['username'],
-                'password' => $settings['password'],
-            ));
-
     // Now send it
-    $status = $mail_object->send($recipients, $headers, $body);
+    $status = mail($destination, test_input($_POST['summary']), $body, $headers);
 
+    print "status ".$status;
+    
     // Check for errors
-    if (PEAR::isError($status)) {
-        echo '<p>Message NOT sent:</p>\n'
-            . '<p>' . $status->getMessage() . '</p>\n'
-            . '<p>' . $status->getDebugInfo() . '</p>';
+    if (! $status) {
+        echo '<p>Message NOT sent</p>\n';
     } else {
         echo '<p>Message successfully sent!</p>';
     }

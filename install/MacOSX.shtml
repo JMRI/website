@@ -24,43 +24,50 @@
 <div id="mainContent">
   <h1>JMRI Install Guide: Mac OS X</h1>
 
-	<p class="important">Note: These directions are for installing the latest 
-	3.x/4.x releases of JMRI on OS X.<br>
-  If you need to install an earlier release (such as 2.8, or
-  even earlier), please see these 
-  <a href="MacOSXRetro.html">Mac install instructions for old JMRI releases</a>.</p>
-
 		<ul class="snav"><!-- TOC -->
 		<li><a href="#installation">Installation</a>
 		<li><a href="#startup">Starting JMRI</a>
 		<li><a href="#debug">Debugging</a>
 		<li><a href="#notes">Notes</a>
 		</ul>
+
+    <p>
+    Please note:
+    
+	<p class="important">These directions are for installing the latest 
+	4.x releases of JMRI&reg; on current MacOS X computers.<br>
+    If you have an older machine and need to install an earlier release (such as JMRI 
+    <a href="../releasenotes/jmri3.10.1.shtml">3.10.1</a>, 
+    <a href="../releasenotes/jmri2.8.shtml">2.8</a>, or
+    even earlier), please see these 
+    <a href="MacOSXRetro.html">Mac install instructions for old JMRI releases</a>.</p>
+
   <p>Now, on to the show:</p>
 
       <a id="installation"><h2>Installing JMRI on your Mac OS X computer</h2></a>
 
       <ol>
-       <li>Determine if your system software supports JMRI:
+       <li><a name="sysreq"></a>
+       Determine if your system software is compatible with the current releases of JMRI:
        Find the current Mac OS X version number by choosing "About this Mac" from the Apple menu.</li>
        
-        <a name="sysreq"></a><h3>JMRI System Requirements</h3>
-        <p>Using JMRI <a href="">requires a combination</a> of hardware (in this case a Mac), Java software and a JMRI download for a specific version.
-        <p>JMRI&reg; version 4.2 requires Java 1.8.<br>
-        Version 3.10.1 requires Java 1.6 or later.<br>
-        Version 2.14.1 requires Java 1.5 (or 1.6 if you wish for drag &amp; drop).<br>
-        Version 2.12 requires Java 1.5 or later.
-        </p>
-
-        <p>MacOS 10.12 "Sierra" and Mac OS X versions 10.8.3 "Mountain Lion"/10.9 "Maverick/10.10 "Yosemite"/10.11 "El Capitan" can run the <a href="http://jmri.org/download/index.shtml">current JMRI test and production releases</a> with Java 8.
-        If your computer runs one of these OS versions, just go to the next step.<br>
-        Mac OS X version 10.7.3 "Lion" can run <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7.<br>
-        Mac OS X version 10.5.8 "Leopard" can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.<br>
-        Mac OS X version 10.4 "Tiger" through 10.5.7
-        can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a>,
-        because that's the last JMRI version that can run on Java 1.5, the last JVM available for "Tiger".
-
-        <p>The JMRI install will take up about 120&nbsp;MB of disk space, mostly for the Help pages.
+       <p>
+       JMRI 4.2 and later will work on any MacOS X version back to 10.7.3 Lion (2012).  
+       Note: MacOS X Lion 10.7.1 and 10.7.2 will have to be updated to 10.7.3.
+       
+       <p>
+       If your Mac hardware doesn't let you update MacOS X to a recent enough version, 
+       you can still use older versions of JMRI:
+       <ul>
+        <li>Mac OS X version 10.7.2 "Lion" through 10.6 "Mountain Lion" can run <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7.
+            (The youngest Mac that can't run Mountain Lion was shipped in 2009)
+        <li>Mac OS X version 10.5 "Leopard" through 10.4 "Tiger" can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.
+            (The youngest Mac that can't run Tiger was shipped in 2003)
+        <li>For even older hardware, see a <a href="MacOSXRetro.html">separate page</a>.
+        </ul>
+        
+        <p>The JMRI install will take up about 180&nbsp;MB of disk space, mostly for the Help pages
+        and decoder definitions.
         
         <li>Determine if you have the needed hardware drivers:
                 
@@ -98,16 +105,6 @@
         chipset (you can check in the USB tab of System Profiler), 
         this driver will make it available as /dev/cu.PL2303-xxx.</p>
          
-        <p>Note that because of baud rate limitations in Mac OS X
-        itself, it is currently <b>not</b> possible to use a Digitrax MS100.
-        Use a <a
-         href="http://rrcirkits.com/">RR-CirKits
-        LocoBuffer-USB</a> or <a
-         href="http://www.digitrax.com/prd_compint_pr3.php">Digitrax
-        PR3</a> instead.  Please see our page on <a
-         href="/help/en/html/hardware/USBtoSerial.shtml">USB
-        adapters</a> for more information.</p>
-
        <li>Get the JMRI software...</li>
 
         <p><a href="../download/index.shtml#prod-rel">Download</a> a
@@ -159,10 +156,6 @@
                 Older Java installations typically are removed by a MacOS update. However, older Java
                 applications are known to try and reinstall old stuff that might cause conflicts while running JMRI.
                 See the <a href="#javase6">instructions</a> on how to check if this applies to your installation.
-             <li>If your Mac OS X version is so old that Oracle does not provide an installer, you can try to
-             <a href="http://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US">download an installer from Apple</a>.
-                In this case, you can not run the most recent JMRI versions (see <a href="#top">table</a>).
-                Please refer to <a href="MacOSXRetro.html">Mac install instructions for old JMRI releases</a>.
             </ul>
       <li>Congratulations! Installation is complete.</li>
 
@@ -212,11 +205,12 @@
        More on this on the <a href="../help/en/html/setup/index.shtml">JMRI Setup help page</a>. 
        Go there next to complete your setup.</p>
 
-       <p> Mac OS X uses names like "<tt>/dev/cu.SomeName</tt>" and
-       "<tt>/dev/tty.SomeName</tt>" for devices, including
+       <p> Mac OS X uses names like "<tt>cu.SomeName</tt>" and
+       "<tt>tty.SomeName</tt>" for devices, including
        USB-attached devices like USB-serial converters,
        LocoBuffer-USBs and similar.  Generally, you'll want to use the
-       one that starts with "<tt>/dev/cu</tt>" if it's present, but
+       one that starts with "<tt>cu.</tt>" if both 
+       <tt>cu.</tt> and <tt>tty.</tt> are present, but
        see the specific installation page for your particular type of
        device.  Sometimes you can recognize your interface from the
        right-hand part of the name.  If not, the easiest way to find
@@ -252,20 +246,17 @@ This section gives some debugging hints.
     </ol>
 <p>Source: <a href="../releasenotes/jmri4.5.2.shtml"> JMRI 4.5.2 Release notes</a>.</p>
 
-<h3>Communications and Mac OS X 10.4</h3>
+<h3>Vector3f issue</h3>
 
-Mac OS X 10.4 was a transitional version, with lots of 
-different structures in it depending on the specific sub-version (10.4.1 vs 10.4.2 vs 10.4.3).
-Certain combinations of sub-version and processor cause aren't properly 
-handled by the standard libraries distributed with JMRI.
-<p>
-We handle this by making available some alternative libraries, at least
-one of which is going to make JMRI work.
-<p>
-If you've got Mac OS X 10.4 and are having a problem either getting JMRI
-to start, or to see the attached layout hardware from within the program, 
-please see this 
-<a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/messages/61242">description of how to debug this</a>.
+Sometimes Macs have an older "vecsub.jar" library installed in a place that
+will cause problems for JMRI.  It happens more often when you're compiling your
+own version, but it can also happen when just running a download. If you get messages about
+<code><pre>
+error: cannot find symbol getX()
+</pre></code>
+or getY() or getZ(), the solution is to copy the JMRI/lib/vecmath-1.5.2.jar file from 
+within the JMRI distribution directory to the  ~/Library/Java/Extensions/ directory.
+(You might have to create that directory)
 
 <a name="#notes"><h2>Notes</h2></a>
 

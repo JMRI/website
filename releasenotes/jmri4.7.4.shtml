@@ -84,24 +84,40 @@ from
 
 <a href="images/jmri-4.7.4-B.png"><img src="images/jmri-4.7.4-B.png" alt="after image" align="right" height="173" width="293"></a>
 <a href="images/jmri-4.7.4-A.png"><img src="images/jmri-4.7.4-A.png" alt="before image" align="right" height="173" width="295"></a>
-
 <a id="migration" name="migration"></a>
 <h3>Required Migration Step<span class="since">Since <a href="jmri4.7.4.shtml">JMRI 4.7.4</a></span></h3>
-If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
+JMRI was updated in JMRI 4.7.4 to use a new serial library. Depending on your exact
+circumstances, you may need to do some migrations:
+<ul>
+<li>If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
 <em>you must open the JMRI preferences and make sure that the selections are 
-correct for your serial device(s).</em>
+correct for your serial device(s).</em> Be sure to save the changes.
 <p>
 In general, previous versions used serial device names like 
 "/dev/cu.usbserial-ABC123FG". This version will generally omit the prefix, and
 use serial device names like "cu.usbserial-ABC123FG".
 (If given the choice if a name starting with "tty" and one starting with "cu", 
 pick the "cu" one). See the before and after images to the right.
-<p>
+<li>
 If you are using Linux and have previously used the "JMRI_SERIAL_PORTS"
 option to make sure your serial device is visible to JMRI, you'll have 
 to change that to use the "purejavacomm.portnamepattern" option instead.
 See the 
 <a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
+<li>
+If you have your own JMRI scripts to access a serial device, you'll have to update
+their library references:
+    <ul>
+    <li>Any 
+        <code>import gnu.io</code> statements will have to be replaced by 
+        <code>import purejavacomm</code> statements.
+    <li>More generally, any reference to 
+        <code>gnu.io</code>, e.g. a reference to a class like 
+        <code>gnu.io.SerialPort</code>, statements will have to be replaced by 
+        a reference to the corresponding 
+        <code>purejavacomm</code> class.
+    </ul>
+</ul>
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
@@ -110,7 +126,12 @@ See the
     <li>This version of JMRI uses a new library to access serial ports, including
         USB serial ports.  This is a major migration for JMRI, so 
         please let us know if you encounter any problems connecting to 
-        your layout.
+        your layout. See the migration note above for steps you might have to take.
+            <ul>
+            <li>Windows users only: this version only, fixed in JMRI 4.7.5, you 
+                might have to manually remove a lib\jna-4.2.2.jar 
+                file if it's present. If the program starts OK for you, don't 
+                worry about this.</li>
     <li>This version of JMRI (and all later) writes a slightly streamlined
         version of panel file contents.  
         Older files should still be readable by this version of JMRI, 
@@ -149,6 +170,12 @@ These may be relevant to you if you're updating from an earlier version.
 <p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
 	    explanations remain a work in progress.)
+
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
+        The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
+        in this version of JMRI doesn't properly interoperate with JRMI 4.6 or before.
+        The workaround is to update both client and server JMRI machines to the same
+        JMRI version.  We expect this will be fixed in <a href="jmri4.7.1.shtml">JMRI 4.7.5</a>.
 
 <p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
         As part of fixing the 
@@ -218,7 +245,7 @@ These may be relevant to you if you're updating from an earlier version.
     for help converting them, or just drop them and use the current definitions.</p>
 
 
-<h3>Download links:</h3>
+<h2>Download links:</h2>
 
 
 Please note that the download links in this and future JMRI releases link to 
@@ -376,7 +403,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h4>Signals</h4>
-=        <h5>Signal Heads</h5>
+        <h5>Signal Heads</h5>
             <ul>
                 <li>Contains a fix for the "Looping" behavior with 
                     SE8c SignalHeads seen in <a href="jmri4.7.3.shtml">JMRI 4.7.3</a>.

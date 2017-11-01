@@ -71,6 +71,12 @@ see our
     <li>The NXFrame window is not populated with defaults making it more difficult to use.  
         The lack of defaults also makes the status message of the train always report 0 mph (or 0 kmph).
     </li>
+    <li>
+        The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
+        in this version of JMRI doesn't properly interoperate with JRMI 4.6 or before.
+        The workaround is to update both client and server JMRI machines to the same
+        JMRI version.  We expect this will be fixed in <a href="jmri4.7.1.shtml">JMRI 4.7.5</a>.
+    </li>
 </ul>
 
 <!--

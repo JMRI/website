@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.7.5
+ JMRI: Release Notes for 4.7.8
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.7.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.7.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,12 +23,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.7.5 release
+      Release Notes for JMRI 4.7.8 release
       </h1>
 
-    <p>Date: June 8, 2017</p>
+    <p>Date: July 13, 2017</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.7.5 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.7.8 of JMRI/DecoderPro is available for download.</p>
 
 <!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
@@ -40,16 +40,18 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the fifth in a series of test releases.
+<p>This is the eighth in a series of test releases.
 We expect this series to end in the next JMRI production release around the middle of 2017.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
-This test release is the last in the series to contain big, new features and changes;
-the next few tests releases (up until the production release) will contain just incremental fixes and improvements.
+This test release is close to the final feature set for that production release.  
+We'd appreciate you testing and using it.
 </p>
 
+<!-- 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.</p>
+ -->
 
 <p><b>
 JMRI is now only available under the
@@ -98,13 +100,13 @@ their library references:
 <h3>Known problems with this release</h3>
 
 <ul>
-    <li>None at release time
+    <li>None
     </li>
 </ul>
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
+<a href="jmri4.7.8.shtml">JMRI 4.7.8</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -112,25 +114,33 @@ from
  -->
 
 <a id="warnings" name="warnings"></a>
+<!-- 
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>This version of JMRI (and all later) writes a slightly streamlined
-        version of panel file contents.  
-        Older files should still be readable by this version of JMRI, 
-        but files written by this version may not be readable by versions
-        before JMRI 4.2 depending on their contents.</li>
-    <li>The LocoNetOverTCP server has changes that may break scripts that reference it. Scripts refering to
-        the class jmri.jmrix.loconet.loconetovertcp.Server need to refer instead to
-        jmri.jmrix.loconet.loconetovertcp.LnTcpServer.</li>
+    <li></li>
 </ul>
+ -->
 
 <h3>Older warnings</h3>
 
 See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for warnings predating the 4.6 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><span class="since">Since <a href="jmri4.7.3.shtml">JMRI 4.7.3</a></span> This release will not start cleanly if installed over earlier versions of JMRI (the Windows installer ensures
+<p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
+    This version of JMRI (and all later) writes a slightly streamlined
+    version of panel file contents.  
+    Older files should still be readable by this version of JMRI, 
+    but files written by this version may not be readable by versions
+    before JMRI 4.2 depending on their contents.
+
+<p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
+    The LocoNetOverTCP server has changes that may break scripts that reference it. Scripts refering to
+    the class jmri.jmrix.loconet.loconetovertcp.Server need to refer instead to
+    jmri.jmrix.loconet.loconetovertcp.LnTcpServer.
+
+<p><span class="since">Since <a href="jmri4.7.3.shtml">JMRI 4.7.3</a></span> 
+    This release will not start cleanly if installed over earlier versions of JMRI (the Windows installer ensures
     this is not an issue). Remove the JAR files <em>jackson-annotations-2.0.6.jar</em>, <em>jackson-core-2.0.6.jar</em>,
     and <em>jackson-databind-2.0.6.jar</em> from the <em>lib</em> directory within the previous installation directory to resolve
     this.
@@ -151,7 +161,8 @@ These may be relevant to you if you're updating from an earlier version.
         The workaround is to update both client and server JMRI machines to the same
         JMRI version. 
         
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI applications will not load a panel file that fails XML validation; an error will be
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> 
+        JMRI applications will not load a panel file that fails XML validation; an error will be
         shown that should explains the error, allowing it to be fixed using an editor. (The
 	    explanations remain a work in progress.)
 
@@ -164,7 +175,8 @@ These may be relevant to you if you're updating from an earlier version.
         pane in the Preferences window and make sure that the 
         TMCC connection is selected for the appropriate device types.
 
-<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
+    This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
     operating system updates routinely remove this version of Java SE 6. Please raise any issues concerning this on the
     user's group.
     To remove Java SE 6 from OS X, follow these steps (these steps assume
@@ -184,7 +196,8 @@ These may be relevant to you if you're updating from an earlier version.
       <li><em>El Capitan only:</em> Restart your Mac.</li>
     </ol>
   
-<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span> Support for directly executing AppleScript within JMRI has been removed
+<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
+    Support for directly executing AppleScript within JMRI has been removed
     due to changes in macOS and Java outside our control. If you require the
     ability to use AppleScript, you may be able to add this capability on your
     own by visiting <a href="https://jmri.github.io/applescript">JMRI
@@ -226,123 +239,77 @@ These may be relevant to you if you're updating from an earlier version.
 <h2>Download links:</h2>
 
 Please note that the download links in this and future JMRI releases link to 
-<a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.5">Github servers</a>.
+<a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.4">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.dmg</a><br/>
-  sha256: 28dabe5c5b6911b96b72abe634b996dd20505de193b612120d780e9c6115ac78 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.dmg</a><br/>
+  sha256: 688b6da8a2e66ad77ef6499d34381e82eb4eba88ad37477de6b24a11906cdf21 </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.exe</a><br/>
-   sha256: 4b9a05b340ce8a5979cfba52bbb5599f9e5d06b8961562c87c96b7b4b8949bdd</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.exe</a><br/>
+   sha256: 071d54f1ce97b8bf701567a0c44f63104462f7966bcc5319112f320cf133da8c</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.tgz</a><br/>
-   sha256: 2b4865f4012eb9bccb7fd2c503c139e7ff2e55d2202741679ca8128fa4699752</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.tgz</a><br/>
+   sha256: 804a8b715cb11983cad287fb58356644f36482ec2f02563f83ecbaff63f3f07e</p>
 </ul>
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.5/">CI project page</a>.
-
-
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.6/">CI project page</a>.
+Please note that this test release is being built up incrementally, 
+and the files there are not likely to be final versions.
+ -->
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
 -->
-  
-<h2>Changes since <a href="jmri4.7.4.shtml">test release 4.7.4</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.5+">list of included commits</a> is available from our
+<h2>Changes since <a href="jmri4.7.7.shtml">test release 4.7.7</a>:</h2>
+
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.8+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h3>DecoderPro</h3>
-
-        <ul>
-            <li>
-                The Single CV Programmer now supports Ops Mode Accessory Programming
-                (Program Accessory Decoder on the Main).
-                <br>This should work with most DCC systems<sup>*</sup>,
-                but only with Accessory Decoders that support this programming mode.
-                (Dave Heap)
-                <br><br><sup>*</sup>Please advise if your system does not work,
-                preferably by creating a
-                <a href="https://github.com/JMRI/JMRI/issues/" target="_blank">new issue on GitHub</a>.
-                We may be able to help.
-            </li>
-        </ul>
-
     <h3>Hardware Support</h3>
-		
-        <h4>C/MRI</h4>
+
+        <h4>MERG CBUS</h4>
             <ul>
-            <li>Some additional work on the multi-connection support.  JMRI should be 
-                able to support mixed sets of cable connected (e.g. serial) C/MRI and 
-                network connected C/MRI by defining multiple connections.</li>
+                <li>Fixed a crash when printing</li>
             </ul>
 
-        <h4>Digitrax</h4>
+    <h3>New / Updated decoder definitions</h3>
+        <h4>BLI</h4>
             <ul>
-                <li>The LocoNet Download Firmware tool has been updated to report an error when reading a 
-                firmware download file which is for a device which requires special LocoNet message timings
-                which are not supported by this tool.  Using the wrong protocol would corrupt the device's
-                firmware and require factory repair of the unit.  This change prevents this tool from 
-                corrupting the firmware of devices including the DCS210, DCS210, DB210, DB210-Opto, and DB220.
-                The Digitrax program <em>DigiIPLII.exe</em> may be used to perform firmware updates for these devices.</li>
-
-                <li>The LocoNet Download Firmware tool has been updated to provide slower timings which 
-                improve the success-rate of firmware updates, including the UR92.  The tool was also improved
-                to prevent other GUI operations from inadvertently interrupting a progressing firmware update.</li>
-		
-                <li>LocoBuffer, LocoBuffer-II, and LocoBuffer-USB connections may be configured as "Standalone LocoNet" 
-		            connections.</li>
-
-		        <li>LocoStats Monitor was corrected to display only "interface status" LocoNet messages.</li>
+                <li>Mike Mosher updated some BLI definitions</li>
             </ul>
 
-        <h4>SPROG</h4>
+        <h4>TCS</h4>
             <ul>
-                <li>The SPROG command station code has been updated to fix an issue whereby users had observed
-		            very slow packet update rates on the rails causing locos to become unresponsive.</li>
+                <li>Michael Mosher updated some TCS WOW definitions</li>
             </ul>
 
-        <h4>Signal Heads</h4>
-            <ul>
-                <li>In <a href="jmri4.7.3.shtml ">JMRI 4.7.3</a>, we added support for SE8c Signal Heads
-                    listening to the layout and (attempting to) follow messages that are
-                    happening there, so that if something other than JMRI changed 
-                    the SE8c-shown color, the JMRI icon(s) would follow.  That 
-                    didn't work right, so we fixed it in 4.7.4, and fixed it again.
-                    But we now understand that it can never really work right, 
-                    there's not enough information in the SE8c hardware messages.
-                    To prevent this from causing problems, we've removed that message-following, so the
-                    SE8c SignalHead in JMRI itself is now back to as it was in JMRI 4.7.2
-                    and before.  But in case somebody is willing to work through
-                    the imperfections to do something like this our their own layout, 
-                    we've added a new 
-                    <a href="http://jmri.org/jython/FollowSE8c.py">jython/FollowSE8c.py sample script</a>,
-                    along with a 
-                    <a href="http://jmri.org/jython/test/FollowSE8cTest.py">test case</a>
-                    that shows you how it works.</li>
-            </ul>
+    <h3>Operations</h3>
+       <ul>
+            <li>Some improvements to the UK locale.  Fixed several references to "cars" rather than "wagons".</li>
+            <li>Fixed some train manifest "time" reference bugs where the option to use 12 hour format was ignored. Also fixed
+            a couple "time" bugs in the CSV file generation. Thanks to Dan Foltz for bring these to our attention.</li>
+            <li>Some improvements to the route windows, now if a route is assigned to a train, and a train is built, you won't be
+            able to modify the route until the train is either reset or terminated.</li>
+       </ul>
 
-   <h3>Internationalization</h3>
+   <h3>Warrants</h3>
         <ul>
-            <li>Sonnys Hansen provided updates to the Danish translation</li>
-            <li>Egbert Broerse updated the Dutch translation</li>
-        </ul>
-        
-    <h3>Miscellaneous</h3>
-        <ul>
-            <li>This version writes a slightly more verbose version of 
-                panel files to (attempt to) have them readable all the
-                way back to JMRI 4.2.  (JMRI 4.7.4 wrote files that
-                could only be read by JMRI 4.7.4 and later)</li>
+            <li>Warrants uses the RosterSpeedProfile whenever possible to get track speeds, distance traveled and time of travel.
+            If a speed profile was created using measurements from one direction only, data requested for the other direction 
+            is unreliable. This affects NXWarrants ability to generate a throttle command script.  If multiple error messages are
+            posted to the console from the RosterSpeedProfile it may be preferable to delete the Speed Profile for that locomotive. 
+            When no speed profile is available, warrants uses the 'throttle factor' to determine track speeds, distance traveled etc.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
