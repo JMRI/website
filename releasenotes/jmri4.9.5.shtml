@@ -405,6 +405,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Layout turnout, slip and turntable popups include state info with turnout assignments</li>
                 <li>Unconnected layout track end points now highlight while dragging to connect a track segment.</li>
                 <li>Default window size is now the screen size.</li>
+                <li>Signal masts and sensors can now be added to Edge Connectors. <strong>Note:</strong> The position and rotation will need adjusting.</li>
                 </ul>
 	        </li>
         </ul>
@@ -455,6 +456,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 	    <h4>NX Entry/Exit Logic</h4>
             <ul>
                 <li>George Warner updated EntryExitPairs colors so they can now be parsed as hex values as well as named colors</li>
+                <li>Dave Sand added support for cross-panel Entry/Exit when Edge Connectors are use to join Layout Editor panels. 
+                    <ul>
+                        <li>Use <strong>Auto Generate Entry-Exit Pairs</strong> to create pairs.  <strong>Add Pair</strong> cannot be used to create a pair that spans the Edge Connector boundary.</li>
+                        <li>When setting routes using the sensors, a route can only go to the first sensor in the next panel.</li>
+                    </ul>
+                </li>
             </ul>
 
 	    <h4>USS CTC Logic</h4>
