@@ -372,6 +372,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Unconnected layout track end points now highlight while dragging to connect a track segment.</li>
                 <li>Default window size is now the screen size.</li>
                 <li>Signal masts and sensors can now be added to Edge Connectors. <strong>Note:</strong> The position and rotation will need adjusting.</li>
+                <li>You can now right click on a track segment and split it into two (JMRI adds a new anchor point).</li>
+                <li>You can now right click on an anchor point and merge the track segments either side (both must be in the same block).</li>
+                <li>New Tools->check menu for unconnected tracks, unblocked tracks and non-contiguous blocks.</li>
+                <li>The "Highlight selected block" has moved into the tool palette, next to the block dropdown list.</li>
+                <li>Buffer stops now display an end bar.</li>
+                <li>Edge connectors now display as an "X".</li>
+                <li>Right click on an anchor point, buffer stop or edge connector and you can now change it into any of the other two.</li>
+                <li>Re-organisation of the main layout editor options menu to make things easier to find for new users.</li>    
+                <li>More use of drop down combo-boxes so you can choose from a list instead of having to type or paste.</li>
                 </ul>
 	        </li>
         </ul>
