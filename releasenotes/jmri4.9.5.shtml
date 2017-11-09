@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.9.5 release
       </h1>
 
-    <p>Date: October 7, 2017</p>
+    <p>Date: November 7, 2017</p>
     <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.9.5 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -133,6 +135,18 @@ These may be relevant to you if you're updating from an earlier version.
     The solution is to make sure that your anti-virus program doesn't interfere
     with JMRI's installation and running. There are so many of those, unfortunately,
     that we can't really provide useful instructions beyond that.
+
+<p><span class="since">Since <a href="jmri4.9.2.shtml">JMRI 4.9.2</a></span>
+    JMRI saves the Uhlenbrock connection's "baud" rate as an Internationalized string, 
+    and, upon loading a configuration profile, requires an Internationalized "baud" 
+    rate in the .XML file.  JMRI will fail to properly configure the serial port if the
+    "baud" rate from the configuration profile does not match one of the baud rate 
+    strings for the current Internationalization "locale".  If you experience problems 
+    where JMRI start-up of a Uhlenbrock-based connection does not configure the serial 
+    port, it may be necessary to edit the connection's preferences, select the 
+    appropriate "baud" rate, save the connection.  This updates the configuration profile 
+    XML file to use one of the "baud" rate strings expected by the Uhlenbrock-specific 
+    code in JMRI.  It is necessary to re-start JMRI for this change to take effect.
 
 <p><span class="since">Since <a href="jmri4.7.6.shtml">JMRI 4.7.6</a></span>
     If you're having trouble getting your DCC programmer to work, try
@@ -238,18 +252,6 @@ These may be relevant to you if you're updating from an earlier version.
     "IT12" is fine, but just "IT" is not. Most panel files that contain these should
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
 
-<p><span class="since">Since <a href="jmri4.9.2.shtml">JMRI 4.9.2</a></span>
-    JMRI saves the Uhlenbrock connection's "baud" rate as an Internationalized string, 
-    and, upon loading a configuration profile, requires an Internationalized "baud" 
-    rate in the .XML file.  JMRI will fail to properly configure the serial port if the
-    "baud" rate from the configuration profile does not match one of the baud rate 
-    strings for the current Internationalization "locale".  If you experience problems 
-    where JMRI start-up of a Uhlenbrock-based connection does not configure the serial 
-    port, it may be necessary to edit the connection's preferences, select the 
-    appropriate "baud" rate, save the connection.  This updates the configuration profile 
-    .XML file to use one of the "baud" rate strings expected by the Uhlenbrock-specific 
-    code in JMRI.  It is necessary to re-start JMRI for this change to take effect.
-
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
@@ -259,7 +261,6 @@ If that doesn't work for you, the files are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
-<!--
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.dmg</a><br/>
@@ -273,10 +274,12 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.tgz</a><br/>
    sha256: 9e22b0dd001c8c541ad6899058d3e25140ddd3dac229098eece1899ff064dbfc</p>
 </ul>
--->
+
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.9.5/">CI project page</a>.
+-->
 
 <!--
 <p>During development leading to the actual release, you can find test download files on the
@@ -308,21 +311,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Lionel Jeanson provided documentation on how to connect a Digikeijs DR5000 to JMRI using Loconet over TCP/IP</li>
             </ul>
 
-        <h4>JMRI Simple Server/JMRI Client</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LocoNet</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Roco z21/Z21</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>SPROG</h4>
             <ul>
                 <li>Egbert Broerse updated the SPROG support for system prefixes</li>
@@ -334,12 +322,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		        the default serial port "baud" rate in a format which can be properly read by the 
 		        Uhlenbrock connection.</li>
             </ul>
-
-        <h4>Zimo MXULF</h4>
-            <ul>
-                <li></li>
-            </ul>
-
 
     <h3>New / Updated decoder definitions</h3>
       <ul>
@@ -357,11 +339,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </li>
      </ul>
 
-        <h4>BLI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>ESU</h4>
             <ul>
                 <li>Ronald Huhn provided small corrections for ESU LokSound v3.5 definition</li>
@@ -371,17 +348,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>Ronald Kuhn translated the ZIMO MX600 decoder definitions</li>
             </ul>
-
-        <h4>Miscellaneous</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-
-   <h3>Dispatcher</h3>
-        <ul>
-             <li></li>
-        </ul>
 
     <h3>Layout Editor</h3>
         <ul>
@@ -415,11 +381,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
           <li>The content of a Logix Conditional Browser window can be saved to a text file.</li>
         </ul>
 
-    <h3>Operations</h3>
-       <ul>
-          <li></li>
-       </ul>
-
    <h3>Panel Editors</h3>
         <ul>
             <li>Pete Cressman did some work on the Control Panel Editor:
@@ -440,14 +401,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Signals</h3>
-        <ul>
-            <li></li>
-        </ul>
-        <h4>Signal Systems</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>Signal Masts</h4>
             <ul>
                 <li>George Warner fixed a problem that could cause signal masts to not display</li>
@@ -464,11 +417,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </li>
             </ul>
 
-	    <h4>USS CTC Logic</h4>
-            <ul>
-                <li></a>.
-                </li>
-            </ul>
    <h3>Warrants</h3>
         <ul>
             <li>Pete Cressman did some work on Warrants</li>

@@ -133,6 +133,18 @@ These may be relevant to you if you're updating from an earlier version.
     with JMRI's installation and running. There are so many of those, unfortunately,
     that we can't really provide useful instructions beyond that.
 
+<p><span class="since">Since <a href="jmri4.9.2.shtml">JMRI 4.9.2</a></span>
+    JMRI saves the Uhlenbrock connection's "baud" rate as an Internationalized string, 
+    and, upon loading a configuration profile, requires an Internationalized "baud" 
+    rate in the .XML file.  JMRI will fail to properly configure the serial port if the
+    "baud" rate from the configuration profile does not match one of the baud rate 
+    strings for the current Internationalization "locale".  If you experience problems 
+    where JMRI start-up of a Uhlenbrock-based connection does not configure the serial 
+    port, it may be necessary to edit the connection's preferences, select the 
+    appropriate "baud" rate, save the connection.  This updates the configuration profile 
+    XML file to use one of the "baud" rate strings expected by the Uhlenbrock-specific 
+    code in JMRI.  It is necessary to re-start JMRI for this change to take effect.
+
 <p><span class="since">Since <a href="jmri4.7.6.shtml">JMRI 4.7.6</a></span>
     If you're having trouble getting your DCC programmer to work, try
     checking that the "Defaults" under "Preferences" are set to your
@@ -236,18 +248,6 @@ These may be relevant to you if you're updating from an earlier version.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
     "IT12" is fine, but just "IT" is not. Most panel files that contain these should
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
-
-<p><span class="since">Since <a href="jmri4.9.2.shtml">JMRI 4.9.2</a></span>
-    JMRI saves the Uhlenbrock connection's "baud" rate as an Internationalized string, 
-    and, upon loading a configuration profile, requires an Internationalized "baud" 
-    rate in the .XML file.  JMRI will fail to properly configure the serial port if the
-    "baud" rate from the configuration profile does not match one of the baud rate 
-    strings for the current Internationalization "locale".  If you experience problems 
-    where JMRI start-up of a Uhlenbrock-based connection does not configure the serial 
-    port, it may be necessary to edit the connection's preferences, select the 
-    appropriate "baud" rate, save the connection.  This updates the configuration profile 
-    .XML file to use one of the "baud" rate strings expected by the Uhlenbrock-specific 
-    code in JMRI.  It is necessary to re-start JMRI for this change to take effect.
 
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
@@ -374,9 +374,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Uhlenbrock Intellibox</h4>
             <ul>
-                <li>Initial creation of a JMRI conneciton to a Uhlenbrock command station now saves
-		the default serial port "baud" rate in a format which can be properly read by the 
-		Uhlenbrock connection.</li>
+                <li></li>
             </ul>
 
         <h4>Zimo MXULF</h4>
@@ -631,11 +629,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li>The <kbd>--profile</kbd> command line argument to start a JMRI application with a specific profile
-	    now takes the profile ID or the path to the profile directory as an argument (<a href="https://github.com/JMRI/JMRI/pull/3968">#3968</a>).</li>
-	    <li>Excessive work and potential StackOverflow errors opening a profile have been fixed (<a href="https://github.com/JMRI/JMRI/pull/4005">#4005</a>).</li>
-	    <li>The capitolization of many method and property names in JMRI has been changed to be internally
-	    consistent within JMRI and to adhere to standard Java naming principles (<a href="https://github.com/JMRI/JMRI/pull/4034">#4034</a>).</li>
+            <li></li>
         </ul>
 
    <!--#include virtual="/Footer" -->
