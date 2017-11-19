@@ -1,5 +1,9 @@
 production:
  versions:
+  4.8:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.exe"
   4.6:
    tgz: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.tgz/download"
    dmg: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.dmg/download"
@@ -14,14 +18,14 @@ production:
    exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.exe/download"
 test:
  versions:
-  4.7.6:
-   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz"
-   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.dmg"
-   exe: "https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.exe"
-  4.7.5:
-   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.tgz"
-   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.dmg"
-   exe: "https://github.com/JMRI/JMRI/releases/download/v4.7.5/JMRI.4.7.5.R187bd9e.exe"
+  4.9.5:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.exe"
+  4.9.4:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.exe"
 
 # This file contains information about the last few JMRI (http://jmri.org) releases.
 # JMRI is distributed under license. More information is at http://jmri.org/Copyright.html

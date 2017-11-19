@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.7.6
+ JMRI: Release Notes for 4.7.8
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.7.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.7.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,12 +23,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.7.6 release
+      Release Notes for JMRI 4.7.8 release
       </h1>
 
-    <p>Date: June 17, 2017</p>
+    <p>Date: July 13, 2017</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.7.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.7.8 of JMRI/DecoderPro is available for download.</p>
 
 <!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
@@ -40,11 +40,11 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the sixth in a series of test releases.
+<p>This is the eighth in a series of test releases.
 We expect this series to end in the next JMRI production release around the middle of 2017.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
-This test release contains just incremental fixes and improvements as we get closer 
-to the production release.  We'd appreciate you using and testing it.
+This test release is close to the final feature set for that production release.  
+We'd appreciate you testing and using it.
 </p>
 
 <!-- 
@@ -106,7 +106,7 @@ their library references:
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
+<a href="jmri4.7.8.shtml">JMRI 4.7.8</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -114,11 +114,13 @@ from
  -->
 
 <a id="warnings" name="warnings"></a>
+<!-- 
 <h3>New warnings for this release:</h3>
 
 <ul>
     <li></li>
 </ul>
+ -->
 
 <h3>Older warnings</h3>
 
@@ -244,16 +246,16 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.dmg</a><br/>
-  sha256: b9f3f06c744837d4d82b3412a786732a91e7b434493d2dd695fc71f50a6145c7 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.dmg</a><br/>
+  sha256: 688b6da8a2e66ad77ef6499d34381e82eb4eba88ad37477de6b24a11906cdf21 </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.exe</a><br/>
-   sha256: 3a7d6340c10c0ec764a2e50e509a175b0227699565b79bca5de46bc552161ed0</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.exe</a><br/>
+   sha256: 071d54f1ce97b8bf701567a0c44f63104462f7966bcc5319112f320cf133da8c</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz</a><br/>
-   sha256: b9135a2680cc9da24336635b92de00024ea155e6a85160d12e13b338c27ce8df</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.tgz</a><br/>
+   sha256: 804a8b715cb11983cad287fb58356644f36482ec2f02563f83ecbaff63f3f07e</p>
 </ul>
 
 <!-- 
@@ -263,30 +265,51 @@ on the
 Please note that this test release is being built up incrementally, 
 and the files there are not likely to be final versions.
  -->
-
-
-<!-- 
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
-  
-<h2>Changes since <a href="jmri4.7.5.shtml">test release 4.7.5</a>:</h2>
+-->
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">list of included commits</a> is available from our
+<h2>Changes since <a href="jmri4.7.7.shtml">test release 4.7.7</a>:</h2>
+
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.8+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>Hardware Support</h3>
 
-	    <h4>Bachrus Speedo</h4>
+        <h4>MERG CBUS</h4>
             <ul>
-                <li>Added custom scale selection</li>
+                <li>Fixed a crash when printing</li>
             </ul>
-		
-    <h3>Layout Editor</h3>
+
+    <h3>New / Updated decoder definitions</h3>
+        <h4>BLI</h4>
+            <ul>
+                <li>Mike Mosher updated some BLI definitions</li>
+            </ul>
+
+        <h4>TCS</h4>
+            <ul>
+                <li>Michael Mosher updated some TCS WOW definitions</li>
+            </ul>
+
+    <h3>Operations</h3>
+       <ul>
+            <li>Some improvements to the UK locale.  Fixed several references to "cars" rather than "wagons".</li>
+            <li>Fixed some train manifest "time" reference bugs where the option to use 12 hour format was ignored. Also fixed
+            a couple "time" bugs in the CSV file generation. Thanks to Dan Foltz for bring these to our attention.</li>
+            <li>Some improvements to the route windows, now if a route is assigned to a train, and a train is built, you won't be
+            able to modify the route until the train is either reset or terminated.</li>
+       </ul>
+
+   <h3>Warrants</h3>
         <ul>
-	    <li>Dave Sand <a href="https://github.com/JMRI/JMRI/pull/3623">fixed</a>
-	        an issue with duplicate block connections when edge connectors are used.</li>
+            <li>Warrants uses the RosterSpeedProfile whenever possible to get track speeds, distance traveled and time of travel.
+            If a speed profile was created using measurements from one direction only, data requested for the other direction 
+            is unreliable. This affects NXWarrants ability to generate a throttle command script.  If multiple error messages are
+            posted to the console from the RosterSpeedProfile it may be preferable to delete the Speed Profile for that locomotive. 
+            When no speed profile is available, warrants uses the 'throttle factor' to determine track speeds, distance traveled etc.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->

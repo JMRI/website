@@ -40,32 +40,32 @@
     </div><!-- closes #teaser-->
 	<h1>Latest News</h1>
 	<dl>
-		<dt>Production release 4.6 available</dt>
+		<dt>Production release 4.8 available</dt>
 	    <dd>
-	    <p>On December 17, 2016 production release 4.6 was made available.</p>
+	    <p>On July 23, 2017 production release 4.8 was made available.</p>
 	    
 	    <p>
-	    Release 4.6 is the current "production" release, recommended
+	    Release 4.8 is the current "production" release, recommended
 	    for first-time users.
 	    Please see the 
 	    <a href="#prod-rel">next section</A> for download and install
 	    information. 
 	    
-	    <dt>Test release 4.7.6 available</dt>
+	    <dt>Test release 4.9.5 available</dt>
 	    <dd>
-	    <p>Test release 4.7.6 was made available on June 17, 2017.
+	    <p>Test release 4.9.5  was made available on November 8, 2017.
 
-        <p>JMRI 4.7.6 is the next test release in the current development series, containing the latest
+        <p>JMRI 4.9.5 is the next test release of the current development series, containing the latest
         and greatest JMRI updates. 
         <p>
-        The series is working toward the next JMRI production release, probably in June 2017.
+        The series is working toward the next JMRI production release, probably in December 2017.
         <p>
         For more
 	    information, including the links to download a copy,
 	    please see the
-	    <a href="../releasenotes/jmri4.7.6.shtml">release note</a>.
+	    <a href="../releasenotes/jmri4.9.5.shtml">release note</a>.
 	  
-	    <a href="#prod-rel">Release 4.6</a> is the current "production" release, recommended
+	    <a href="#prod-rel">Release 4.8</a> is the current "production" release, recommended
 	    for first-time users. 
 
 		<dt>Production release 3.10.1 available</dt>
@@ -92,7 +92,7 @@
 
   <div class="list">
     <a id="prod-rel"></a>
-    <h2>JMRI 4.6 - Production release</h2>
+    <h2>JMRI 4.8 - Production release</h2>
     <dl>
     <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
     <dd>
@@ -116,22 +116,22 @@
 	<a id="prod-download"></a><p class="dl">Download: 
 	<ul>
         <li>Mac OS X: <a
-            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.dmg/download</a><br>
-            sha256: 778086e641ef8d9c85d5f57f68fcccd60d721520dc3fc6eb54ed197f48f4b016</li>
+            href="https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.dmg">https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.dmg</a><br>
+            sha256: 0cc00f0a676e659bedd871c1a2dd4517de22a159bb3a47cb2815aa0d3ff17d31</li>
 
         <li>Windows: <a
-            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.exe/download</a><br>
-            sha256: af9847a7dc9e62ec44a70fbae1cdea2c291ad8e31422c8f3c648186862c54442</li>
+            href="https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.exe">https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.exe</a><br>
+            sha256: 734e2c73f7f9de654bfe2b417dd87a777f6e4e65ca5bf7f048c6d71c13972fa8</li>
 
         <li>Linux: <a
-            href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.tgz/download</a><br>
-            sha256: 81c642347dc1bf8c4abf93c19385845e637ce801be68ab6aaf1d5fd9a5eded37</li>
+            href="https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.tgz">https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.tgz</a><br>
+            sha256: 4492e3466d35c2c4685e9173a252b8d0f09cb5e871d9fa0af50780ef47786756</li>
       </ul>
       </p>
 
     <strong>Notes:</strong><br>
     <p>For more information on the release contents, please see the
-    <a href="../releasenotes/jmri4.6.shtml">release note</a>.
+    <a href="../releasenotes/jmri4.8.shtml">release note</a>.
     </p>
     <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
     <p>
@@ -152,9 +152,9 @@
 	    are announced in the
 	    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group.</p>
     <p>
-        The most current test release is JMRI 4.7.6.  More information on it, 
+        The most current test release is JMRI 4.9.5.  More information on it, 
         including the links to download a copy, can be found in
-        <a href="../releasenotes/jmri4.7.6.shtml">release note</a>.
+        <a href="../releasenotes/jmri4.9.5.shtml">release note</a>.
 	<p>
 	   For more information on the rough development schedule, please see the 
 	   <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">JMRI road map</a>

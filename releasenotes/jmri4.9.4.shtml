@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.7.6
+ JMRI: Release Notes for 4.9.4
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.7.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.9.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,12 +23,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.7.6 release
+      Release Notes for JMRI 4.9.4 release
       </h1>
 
-    <p>Date: June 17, 2017</p>
+    <p>Date: September 17, 2017</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.7.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.9.4 of JMRI/DecoderPro is available for download.</p>
 
 <!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
@@ -40,18 +40,14 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the sixth in a series of test releases.
-We expect this series to end in the next JMRI production release around the middle of 2017.
+<p>This is the next in a series of test releases.
+We expect this series to end in the next JMRI production release around the end of 2017.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
-This test release contains just incremental fixes and improvements as we get closer 
-to the production release.  We'd appreciate you using and testing it.
 </p>
 
-<!-- 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.</p>
- -->
 
 <p><b>
 JMRI is now only available under the
@@ -96,16 +92,15 @@ their library references:
     </ul>
 </ul>
 
+
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
-
 <ul>
-    <li>None
-    </li>
+    <li>None</li>
 </ul>
-
 <!--
-If any of those effect you, please either wait for
+If any of those affect you, please either 
+wait for
 <a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
@@ -117,16 +112,40 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li></li>
+    <li>Due to changes in the capitalization of some method and property names, some scripts may fail until
+    adjusted to use the new capitalization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
+    JMRI class will list the correct capitalization.</li>
 </ul>
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.6.shtml#warnings">JMRI 4.6 release note</a> for warnings predating the 4.6 development series.
+See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.8 development series.
 These may be relevant to you if you're updating from an earlier version.
 
+<p><span class="since">Since <a href="jmri4.9.3.shtml">JMRI 4.9.3</a></span>
+    For Windows users only: <a href="jmri4.9.3.shtml">JMRI 4.9.3</a> (and all later) has a new 
+    version of the "LaunchJMRI.exe" program.  It's used to set options as
+    JMRI is starting up, and is a completely normal part of JMRI.  Because it's
+    new and different, however, your anti-virus program may reject it. 
+    You might get a message about "file removed" or "file quarantined" or similar
+    and then JMRI might not start.
+    The solution is to make sure that your anti-virus program doesn't interfere
+    with JMRI's installation and running. There are so many of those, unfortunately,
+    that we can't really provide useful instructions beyond that.
+
+<p><span class="since">Since <a href="jmri4.7.6.shtml">JMRI 4.7.6</a></span>
+    If you're having trouble getting your DCC programmer to work, try
+    checking that the "Defaults" under "Preferences" are set to your
+    hardware system.
+    The reason: This version of JMRI (and all later) provides more options for
+    "default systems": If you have multiple sets of hardware attached, which
+    should be used for throttles, for programming, etc.  JMRI tries to 
+    guess the right settings for these when you upgrade to this version, but 
+    apparently it sometimes gets that wrong (we haven't been able to track
+    that down yet). Setting them manually fixes any wrong guesses.
+
 <p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
-    This version of JMRI (and all later) writes a slightly streamlined
+    <a href="jmri4.7.5.shtml">JMRI 4.7.5</a> (and all later) writes a slightly streamlined
     version of panel file contents.  
     Older files should still be readable by this version of JMRI, 
     but files written by this version may not be readable by versions
@@ -143,35 +162,45 @@ These may be relevant to you if you're updating from an earlier version.
     and <em>jackson-databind-2.0.6.jar</em> from the <em>lib</em> directory within the previous installation directory to resolve
     this.
 
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
-        were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
-        if the panel contains a path that starts with <code>resource:</code> and the panel will
-        not load until changed using an external editor. Paths starting with <code>file:</code>
-        cannot be automatically flagged because JMRI allows file: URLs.
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
+    JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
+    were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
+    if the panel contains a path that starts with <code>resource:</code> and the panel will
+    not load until changed using an external editor. Paths starting with <code>file:</code>
+    cannot be automatically flagged because JMRI allows file: URLs.
         
 <p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
-        The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
-        in this version of JMRI doesn't properly interoperate with 
-        <a href="jmri4.7.1.shtml">JMRI 4.7.1</a> through <a href="jmri4.7.4.shtml">JMRI 4.7.4</a>.
-        It does work fine with <a href="jmri4.6.shtml">JMRI version 4.6</a> or before.
-        If you encounter a problem with version compatibility, you'll see an error
-        message that includes "<code>local class incompatible</code>".
-        The workaround is to update both client and server JMRI machines to the same
-        JMRI version. 
+    The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
+    in this version of JMRI doesn't properly interoperate with 
+    <a href="jmri4.7.1.shtml">JMRI 4.7.1</a> through <a href="jmri4.7.4.shtml">JMRI 4.7.4</a>.
+    It does work fine with <a href="jmri4.6.shtml">JMRI version 4.6</a> or before.
+    If you encounter a problem with version compatibility, you'll see an error
+    message that includes "<code>local class incompatible</code>".
+    The workaround is to update both client and server JMRI machines to the same
+    JMRI version. 
         
 <p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> 
-        JMRI applications will not load a panel file that fails XML validation; an error will be
-        shown that should explains the error, allowing it to be fixed using an editor. (The
-	    explanations remain a work in progress.)
+    JMRI applications will not load a panel file that fails XML validation; an error will be
+    shown that should explains the error, allowing it to be fixed using an editor. (The
+    explanations remain a work in progress.) If you have a problem loading a
+    panel file, please
+    <ul>
+        <li>Configure your JMRI startup to first run the 
+            <a href="http://jmri.org/jython/TurnOffXmlValidation.py">jython/TurnOffXmlValidation.py</a>
+            script which will suppress the error.
+        <li>Write out a new version of the panel file (after saving a backup!)
+        <li>Use that new version from now on.
+        <li>And drop use of the jython/TurnOffXmlValidation.py script.
+    </li>
 
 <p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
-        As part of fixing the 
-        <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
-        the handling of TMCC preferences was changed.  If you have a TMCC
-        connection configured, please go to the 
-        "<a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#Connection">Defaults</a>"
-        pane in the Preferences window and make sure that the 
-        TMCC connection is selected for the appropriate device types.
+    As part of fixing the 
+    <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
+    the handling of TMCC preferences was changed.  If you have a TMCC
+    connection configured, please go to the 
+    "<a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#Connection">Defaults</a>"
+    pane in the Preferences window and make sure that the 
+    TMCC connection is selected for the appropriate device types.
 
 <p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
     This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
@@ -208,85 +237,71 @@ These may be relevant to you if you're updating from an earlier version.
     "IT12" is fine, but just "IT" is not. Most panel files that contain these should
     automatically migrate them to new names when saved, but in some cases you might need to manually update them.
 
-<p><span class="since">Since <a href="jmri4.3.3.shtml">JMRI 4.3.3</a></span>
-    You can now set the order of your startup items: If you're opening panel files, running scripts, etc as
-    the program starts up, there's a preferences pane that lets you easily set the order in which those happen.
-    If you've set the order manually (e.g. by editing configuration files) in the past, please check this
-    preference to make sure it's set the way you want.</p>
-
-<p><span class="since">Since <a href="jmri4.1.2.shtml">JMRI 4.1.2</a></span>
-    Jython has been upgraded to version 2.7.0 with the following potentially breaking changes:</p>
-    <ul>
-      <li>The decodeJmriFilename() function is no longer available by default. Use the  FileUtil.getExternalFilename() method instead.</li>
-      <li>The simple propertyListener object is no longer available by default. Create your own, following the examples provided in the jython folder in the JMRI distribution.</li>
-      <li>jmri_defaults.py included in the JMRI distribution is no longer executed by default, but will be executed before any other Jython scipts if included in your User Files location.</li>
-      <li>The default behavior of python.cachedir.skip is now true. If using a custom python.properties file, include "python.cachedir.skip=false" in that file.</li>
-      <li>Certain Python scripts are too large to be evaluated in Jython. If a script fails with the <code>java.io.IOException: Mark invalid</code> error, set "jython.exec=true" in a custom python.properties file or rewrite the script to be less than 100,000 characters per file. Note that when using "jython.exec=true" it may be desirable to run the included script jmri_bindings.py as a startup action to emulate the evaluation environment used when jython.exec=false.</li>
-    </ul>
-
-<p><span class="since">Since <a href="jmri4.1.1.shtml">JMRI 4.1.1</a></span>
-    Decoder definitions that use the "ivariable" form are now deprecated.  Definitions
-    included with this release have been converted to the new form.
-    If you have decoder definitions with the older "ivariable" form, they will no longer
-    validate, but can still be used for the first couple of test releases in this series.
-    Please ask on the
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
-    for help converting them, or just drop them and use the current definitions.</p>
-
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
 Please note that the download links in this and future JMRI releases link to 
-<a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.4">Github servers</a>.
+<a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.dmg</a><br/>
-  sha256: b9f3f06c744837d4d82b3412a786732a91e7b434493d2dd695fc71f50a6145c7 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.dmg</a><br/>
+  sha256: 0df154ca0586a89253d709a01a03da51f50089f66dbed837c09d7ed2438119f3 </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.exe</a><br/>
-   sha256: 3a7d6340c10c0ec764a2e50e509a175b0227699565b79bca5de46bc552161ed0</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.exe">https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.exe</a><br/>
+   sha256: 23100d7b8a44270511d15e9300ab8a82d94b5e2848fc343617aa29569dee2ca7</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz</a><br/>
-   sha256: b9135a2680cc9da24336635b92de00024ea155e6a85160d12e13b338c27ce8df</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.4/JMRI.4.9.4.R3bcfc65.tgz</a><br/>
+   sha256: 76118da1fb380f7eed529aba97015c34b5aee5d2da4a4205e606acddba162438</p>
 </ul>
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.6/">CI project page</a>.
-Please note that this test release is being built up incrementally, 
-and the files there are not likely to be final versions.
  -->
 
-
-<!-- 
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
  -->
-  
-<h2>Changes since <a href="jmri4.7.5.shtml">test release 4.7.5</a>:</h2>
+ 
+<h2>Changes since <a href="jmri4.9.3.shtml">Production release 4.9.3</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.4">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>Hardware Support</h3>
 
-	    <h4>Bachrus Speedo</h4>
+        <h4>RFID</h4>
             <ul>
-                <li>Added custom scale selection</li>
+                <li>Support for the Olimex MOD-RFID1356MIFARE has been added.</li>
             </ul>
-		
-    <h3>Layout Editor</h3>
+
+   <h3>Warrants</h3>
         <ul>
-	    <li>Dave Sand <a href="https://github.com/JMRI/JMRI/pull/3623">fixed</a>
-	        an issue with duplicate block connections when edge connectors are used.</li>
+            <li>The range of automatically Recorded track speeds is much wider than was anticipated.  The feature
+	    introduced in 4.9.2 using the throttle setting corresponding to the desired track speed is disabled. 
+	    Warrants use the throttle setting as stated in the script.</li>
+	    <li>The option to not use ramps for speed changes required by signals, blocks or rogue occupation is
+	    added to the NXWarrant windows.</li>
+	    <li>NXWarrants use power series for start and end ramps.  Start ramp throttle increments are incresed
+	    by 8% at each time interval. End ramp throttle increments are decreased by 8% at each interval.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <ul>
+            <li>The <kbd>--profile</kbd> command line argument to start a JMRI application with a specific profile
+	    now takes the profile ID or the path to the profile directory as an argument (<a href="https://github.com/JMRI/JMRI/pull/3968">#3968</a>).</li>
+	    <li>Excessive work and potential StackOverflow errors opening a profile have been fixed (<a href="https://github.com/JMRI/JMRI/pull/4005">#4005</a>).</li>
+	    <li>The capitalization of many method and property names in JMRI has been changed to be internally
+	    consistent within JMRI and to adhere to standard Java naming principles (<a href="https://github.com/JMRI/JMRI/pull/4034">#4034</a>).</li>
         </ul>
 
    <!--#include virtual="/Footer" -->

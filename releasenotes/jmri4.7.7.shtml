@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.7.6
+ JMRI: Release Notes for 4.7.7
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.7.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.7.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,12 +23,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.7.6 release
+      Release Notes for JMRI 4.7.7 release
       </h1>
 
-    <p>Date: June 17, 2017</p>
+    <p>Date: July 4, 2017</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.7.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.7.7 of JMRI/DecoderPro is available for download.</p>
 
 <!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
@@ -40,18 +40,16 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the sixth in a series of test releases.
+<p>This is the seventh in a series of test releases.
 We expect this series to end in the next JMRI production release around the middle of 2017.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
-This test release contains just incremental fixes and improvements as we get closer 
-to the production release.  We'd appreciate you using and testing it.
+This test release is close to the final feature set for that production release.  
+We'd appreciate you testing and using it.
 </p>
 
-<!-- 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.</p>
- -->
 
 <p><b>
 JMRI is now only available under the
@@ -106,7 +104,7 @@ their library references:
 
 <!--
 If any of those effect you, please either wait for
-<a href="jmri4.7.6.shtml">JMRI 4.7.6</a>, due out shortly after this one,
+<a href="jmri4.7.8.shtml">JMRI 4.7.8</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -244,49 +242,150 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.dmg</a><br/>
-  sha256: b9f3f06c744837d4d82b3412a786732a91e7b434493d2dd695fc71f50a6145c7 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.dmg</a><br/>
+  sha256: e98de5ccec57fe895a4cee0f56f3a641c08ffea185b031dc1b1d2b6574322e99 </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.exe</a><br/>
-   sha256: 3a7d6340c10c0ec764a2e50e509a175b0227699565b79bca5de46bc552161ed0</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.exe</a><br/>
+   sha256: a096201c2216e9666e791a24a2f4c3631c53c9c25364f4efbe8ce089f7338a96</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.6/JMRI.4.7.6.R570b2bc.tgz</a><br/>
-   sha256: b9135a2680cc9da24336635b92de00024ea155e6a85160d12e13b338c27ce8df</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.tgz</a><br/>
+   sha256: 6586160914ed3c145583151f6132315d37afc2faa6657b558b27db4d982dc498</p>
 </ul>
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.6/">CI project page</a>.
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.7.7/">CI project page</a>.
 Please note that this test release is being built up incrementally, 
 and the files there are not likely to be final versions.
- -->
+-->
 
 
 <!-- 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
+-->
   
-<h2>Changes since <a href="jmri4.7.5.shtml">test release 4.7.5</a>:</h2>
+<h2>Changes since <a href="jmri4.7.6.shtml">test release 4.7.6</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.7+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
+    <h3>DecoderPro</h3>
+
+        <ul>
+            <li>
+                The Single CV Programmer now also supports:
+                <ul>
+                    <li>Ops Mode Accessory Programming (Program Accessory Decoder on the Main)</li>
+                    <li>Ops Mode Extended Accessory Programming (Program Signal Decoder on the Main)</li>
+                </ul>
+                (Dave Heap &amp Alex Shepherd)
+            </li>
+        </ul>
+           
     <h3>Hardware Support</h3>
 
-	    <h4>Bachrus Speedo</h4>
+        <ul>
+          <li>Turnouts now have a DELAYED feedback mode. In this mode, when you
+            command a turnout to move, it first goes to INCONSISTENT state for 
+            a few seconds (to give the points time to move), before finishing up
+            in the commanded state.  This is intended for cases where you don't have any
+            hardware to specifically read back point position from the layout.</li>
+        </ul>
+        
+        <h4>DCC++</h4>
             <ul>
-                <li>Added custom scale selection</li>
+                <li>Fixed a problem loading and storing Sensors to panel files.</li>
             </ul>
-		
+
+
+        <h4>Roco z21/Z21</h4>
+            <ul>
+                <li>Paul Bender fixed an addressing problem with Roco Handheld throttles.</li>
+                <li>Paul Bender improved the Z21 support.</li>
+            </ul>
+
+
+    <h3>New / Updated decoder definitions</h3>
+        <ul>
+            <li>
+                Programming of both Accessory & Signal (Extended Accessory) Decoders on the Main
+                (<a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
+                target="_blank">Accessory Decoder Ops Mode</a>)
+                is now possible, if supported by the decoder.
+                You will need to configure your definition to enable this, as per
+                <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
+                target="_blank">this link</a>.
+                (Dave Heap)
+            </li>
+        </ul>
+
+
+        <h4>ESU</h4>
+            <ul>
+                <li>Added Drive Hold (Logical Function) for LokPilot. (Dave Heap)</li>
+                <li>Added/updated some models and Product IDs. (Dave Heap)</li>
+            </ul>
+
     <h3>Layout Editor</h3>
         <ul>
-	    <li>Dave Sand <a href="https://github.com/JMRI/JMRI/pull/3623">fixed</a>
-	        an issue with duplicate block connections when edge connectors are used.</li>
+            <li>George Warner improved the rendering of rotated text.<li>
+        </ul>
+
+    <h3>Operations</h3>
+       <ul>
+            <li>Some improvements to the UK locale.  Fixed several references to "cars" rather than "wagons".</li>
+            <li>Fixed some train manifest "time" reference bugs where the option to use 12 hour format was ignored. Also fixed
+            a couple "time" bugs in the CSV file generation. Thanks to Dan Foltz for bring these to our attention.</li>
+            <li>Some improvements to the route windows, now if a route is assigned to a train, and a train is built, you won't be
+            able to modify the route until the train is either reset or terminated.</li>
+       </ul>
+
+   <h3>Panel Editors</h3>
+        <ul>
+            <li>George Warner improved the rendering of rotated text.<li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <ul>
+            <li>Add two new script-based tools 
+                <a href="http://jmri.org/jython/CombineTurnouts.py">CombineTurnouts</a> and 
+                <a href="http://jmri.org/jython/CombineSensors.py">CombineSensors</a> 
+                for mapping a single Turnout or Sensor onto multiple pieces of hardware. 
+                Includes test routines which can serve as further examples.
+            </li>
+        </ul>
+
+    <h3>Signals</h3>
+        <ul>
+            <li>There are new 
+                <a href="http://jmri.org/jython/SignalFollower.py">SignalFollower.py</a> (for SignalHeads) and
+                <a href="http://jmri.org/jython/SignalMastFollower.py">SignalMastFollower.py</a> (for SignalMasts)
+                that lets you have one mast or head follow another's state.  This can be useful,
+                for example, if you have a repeated signal on the fascia.             
+            </li>
+        </ul>
+
+	    <h4>USS CTC Logic</h4>
+            <ul>
+                <li>Added a new package of 
+                <a href="http://jmri.org/help/en/html/tools/uss/index.shtml">tools for implementing USS CTC panels</a>.
+                </li>
+            </ul>
+
+   <h3>Internationalization</h3>
+        <ul>
+            <li>Egbert Broerse improved the German and Dutch translations.</li>
+        </ul>
+        
+    <h3>Miscellaneous</h3>
+        <ul>
+            <li>Improved the speed of loading panel files with lots of Sensors, Turnouts or Lights.</li>
+            <li>Fixed some links in the help pages</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
