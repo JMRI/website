@@ -291,6 +291,27 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Hardware Support</h3>
 
+        <ul>
+          <li>Paul Bender improved consist management.</li>
+        </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>Egbert Broerse improved the command station configuration tools</li>
+            </ul>
+
+        <h4>DCC++</h4>
+            <ul>
+                <li>Paul Bender updated the DCC++ support with
+                    several corrections to message and reply formats for DCC++, 
+                    and to fix sending of raw DCC packets.</li>
+            </ul>
+
+        <h4>DMX512</h4>
+            <ul>
+                <li>George Warner added support for DMX512 lights</li>
+            </ul>
+
         <h4>RFID</h4>
             <ul>
                 <li>Support for the Olimex MOD-RFID1356MIFARE has been added.</li>
@@ -298,11 +319,86 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>New / Updated decoder definitions</h3>
 
+        <ul>
+            <li>Dave Head reenabled loading of soundlabels from a roster entry</li>
+        </ul>
+            
+        <h4>ESU</h4>
+            <ul>
+                <li>Alain Carasso added a ESU LokPilot V1.0 definition</li>
+            </ul>
+
+        <h4>LaisDCC</h4>
+            <ul>
+                <li>Updated xml file for LAISDCC family decoders to fix problem in CV15/CV7/CV8
+                    and update the model numbers and the function numbers of new models 860015/16/19</li>
+            </ul>
+
+        <h4>NCE</h4>
+            <ul>
+                <li>Micheal Mosher updated the definition for version 3.8 and added  new models</li>
+            </ul>
+
         <h4>SoundTraxx</h4>
             <ul>
                 <li>Michael Mosher updated the Soundtraxx TSU2 diesel to add Poppet Valves select 
                     and more PM to Baldwin and other decoders</li>
             </ul>
+
+    <h3>Operations</h3>
+       <ul>
+          <li>Daniel Boudreau fixed a switch list bug when running in consolidation mode</li>
+       </ul>
+
+    <h3>Signals</h3>
+        <ul>
+            <li></li>
+        </ul>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Signal Heads</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Signal Masts</h4>
+            <ul>
+                <li>Dave Heap fixed a problem with the aspect range in DCC signal heads</li>
+            </ul>
+            
+    	<h4>Signal Groups</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+    	<h4>Simple Signal Logic</h4>
+            <ul>
+                <li>Egbert Broerse improved the Simple Signal Logic GUI</li>
+            </ul>
+
+	    <h4>NX Entry/Exit Logic</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+	    <h4>USS CTC Logic</h4>
+            <ul>
+                <li></a>.
+                </li>
+            </ul>
+
+   <h3>Internationalization</h3>
+        <ul>
+            <li>Egbert Broerse improved the German and Dutch translations</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <ul>
+            <li>Daniel Bergqvist updated the shutdown processing to allow it to terminate partway through.</li>
+        </ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
