@@ -324,7 +324,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Digitrax</h4>
             <ul>
-                <li></li>
+                <li>JMRI now supports Roster-based programming of BDL16/BDL162/BDL168, DS64, 
+		PM4/PM42, and SE8C devices.  This makes programming of these devices very
+		much like programming a mobile decoder!  Some limitations apply:
+		<p>Some device features are not accessible via Roster entries, including
+		DS64 output addresses, DS64 routes, and SE8C "alternate" addressing (i.e. 
+		SE8C address programming via OpSw17).  These configurable features will
+		not be saved, restored, or modified when using a Roster entry.
+		<p>Each device type has limitations on which Board ID (or Board Address) values
+		may be used.
+		<p>The "old" tools, in the LocoNet menu item, are still in-place.  Those tools
+		provide access to some aspects of device configuration which the Roster-based
+		mechiansm does not.
+		</li>
             </ul>
 
         <h4>JMRI Simple Server/JMRI Client</h4>
