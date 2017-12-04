@@ -291,8 +291,27 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>DecoderPro</h3>
 
+        Dave Heap made the following changes:
         <ul>
-          <li></li>
+          <li>
+            Added "altsignal" as another possible "Address Type" in
+            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
+            target="_blank">Accessory Decoder Ops Mode</a>.
+          </li>
+          <li>
+            Added "Delay" as a new optional parameter in 
+            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
+            target="_blank">Accessory Decoder Ops Mode</a>.
+          </li>
+          <li>
+            Added a new
+            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#opsdelayed"
+            target="_blank">Ops Mode Delayed Programming</a>
+            mode to throttle the Program on Main rate for those decoders that need it.
+            You will need to configure your definition to enable this, as per
+            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#opsdelayed"
+            target="_blank">this link</a>.
+          </li>
         </ul>
            
     <h3>Hardware Support</h3>
@@ -476,7 +495,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>NCE</h4>
             <ul>
-                <li></li>
+                <li>Support for the new Light-It and Illuminator multipurpose mobile/accessory/signal decoders. (Dave Heap)</li>
             </ul>
 
         <h4>Norsk Modelljernbane (NJM)</h4>
@@ -596,7 +615,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Signal Heads</h4>
             <ul>
-                <li></li>
+                <li>
+                  Corrected the Aspect used when "Lit" is unchecked from
+                  Aspect 8 to the Aspect specified by the "Dark" appearance.
+                  (Dave Heap)
+                </li>
             </ul>
 
         <h4>Signal Masts</h4>
