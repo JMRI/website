@@ -284,15 +284,34 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
  
-<h2>Changes since <a href="jmri4.9.5.shtml">Test release 4.9.6</a>:</h2>
+<h2>Changes since <a href="jmri4.9.6.shtml">Test release 4.9.6</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.7">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>DecoderPro</h3>
 
+        Dave Heap made the following changes:
         <ul>
-          <li></li>
+          <li>
+            Added "altsignal" as another possible "Address Type" in
+            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
+            target="_blank">Accessory Decoder Ops Mode</a>.
+          </li>
+          <li>
+            Added "Delay" as a new optional parameter in 
+            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
+            target="_blank">Accessory Decoder Ops Mode</a>.
+          </li>
+          <li>
+            Added a new
+            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#opsdelayed"
+            target="_blank">Ops Mode Delayed Programming</a>
+            mode to throttle the Program on Main rate for those decoders that need it.
+            You will need to configure your definition to enable this, as per
+            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#opsdelayed"
+            target="_blank">this link</a>.
+          </li>
         </ul>
            
     <h3>Hardware Support</h3>
@@ -317,9 +336,26 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h4>Digitrax</h4>
+        <h4>DMX512</h4>
             <ul>
                 <li></li>
+            </ul>
+
+        <h4>Digitrax</h4>
+            <ul>
+                <li>JMRI now supports Roster-based programming of BDL16/BDL162/BDL168, DS64, 
+		PM4/PM42, and SE8C devices.  This makes programming of these devices very
+		much like programming a mobile decoder!  Some limitations apply:
+		<p>Some device features are not accessible via Roster entries, including
+		DS64 output addresses, DS64 routes, and SE8C "alternate" addressing (i.e. 
+		SE8C address programming via OpSw17).  These configurable features will
+		not be saved, restored, or modified when using a Roster entry.
+		<p>Each device type has limitations on which Board ID (or Board Address) values
+		may be used.
+		<p>The "old" tools, in the LocoNet menu item, are still in-place.  Those tools
+		provide access to some aspects of device configuration which the Roster-based
+		mechiansm does not.
+		</li>
             </ul>
 
         <h4>JMRI Simple Server/JMRI Client</h4>
@@ -459,7 +495,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>NCE</h4>
             <ul>
-                <li></li>
+                <li>Support for the new Light-It and Illuminator multipurpose mobile/accessory/signal decoders. (Dave Heap)</li>
             </ul>
 
         <h4>Norsk Modelljernbane (NJM)</h4>
@@ -579,7 +615,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Signal Heads</h4>
             <ul>
-                <li></li>
+                <li>
+                  Corrected the Aspect used when "Lit" is unchecked from
+                  Aspect 8 to the Aspect specified by the "Dark" appearance.
+                  (Dave Heap)
+                </li>
             </ul>
 
         <h4>Signal Masts</h4>
@@ -607,6 +647,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></a>.
                 </li>
             </ul>
+            
    <h3>Warrants</h3>
         <ul>
             <li></li>
