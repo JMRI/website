@@ -303,7 +303,28 @@ are available in our
             in a user's existing roster.
         </li>
         <li>Dave Heap reenabled loading of soundlabels from a roster entry</li>
-     </ul>
+        <li>Dave Heap made the following changes:
+            <ul>
+              <li>
+                Added "altsignal" as another possible "Address Type" in
+                <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
+                target="_blank">Accessory Decoder Ops Mode</a>.
+              </li>
+              <li>
+                Added "Delay" as a new optional parameter in 
+                <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
+                target="_blank">Accessory Decoder Ops Mode</a>.
+              </li>
+              <li>
+                Added a new
+                <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#opsdelayed"
+                target="_blank">Ops Mode Delayed Programming</a>
+                mode to throttle the Program on Main rate for those decoders that need it.
+                You will need to configure your definition to enable this, as per
+                <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#opsdelayed"
+                target="_blank">this link</a>.
+              </li>
+            </ul>
            
     <h3>Hardware Support</h3>
         <ul>
@@ -801,36 +822,6 @@ are available in our
             <li>Daniel Bergqvist updated the shutdown processing to allow it to terminate partway through.</li>
         </ul>
 
-
-<!-- from 4.9.7 ---------------------------------------------------------------- -->
-
-    <h3>DecoderPro</h3>
-
-        Dave Heap made the following changes:
-        <ul>
-          <li>
-            Added "altsignal" as another possible "Address Type" in
-            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
-            target="_blank">Accessory Decoder Ops Mode</a>.
-          </li>
-          <li>
-            Added "Delay" as a new optional parameter in 
-            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#accessoryops"
-            target="_blank">Accessory Decoder Ops Mode</a>.
-          </li>
-          <li>
-            Added a new
-            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#opsdelayed"
-            target="_blank">Ops Mode Delayed Programming</a>
-            mode to throttle the Program on Main rate for those decoders that need it.
-            You will need to configure your definition to enable this, as per
-            <a href="../help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#opsdelayed"
-            target="_blank">this link</a>.
-          </li>
-        </ul>
-           
-
-<!-- -------------------------------------------------------------------------- -->
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
