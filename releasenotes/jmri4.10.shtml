@@ -636,6 +636,8 @@ are available in our
                 <ul>
                     <li>The image palette is now a single window shared by all CPE panel windows</li>
                 </ul>
+            <li>Paul Bender provided a partial fix for a problem where 
+                changing text label properties font size or bold changes background color
 
     <h3>Preferences</h3>
         <ul>
@@ -665,6 +667,8 @@ are available in our
                 easier for users to figure out what to put there.</li>
             <li>Egbert Broerse has done a lot of work to add hints and validity checks when entering
                 the hardware address to create a new Turnout, Light or Sensor.</li>
+            <li>Fixed a problem where Simple Signal Logic make it not
+                possible to delete a Turnout from the Turnout Table</li>
         </ul>
 
     <h3>Scripting</h3>
@@ -716,7 +720,9 @@ are available in our
                 for e.g. permission to switch on a lead.</li>
                 <li>Simple Signal Logic now has a "restricting" option.</li>
                 <li>Egbert Broerse improved the Simple Signal Logic GUI</li>
-            </ul>
+                <li>Fixed a problem where Simple Signal Logic make it not
+                    possible to delete a Turnout from the Turnout Table</li>
+</ul>
 
 	    <h4>NX Entry/Exit Logic</h4>
             <ul>
