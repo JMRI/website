@@ -157,18 +157,6 @@ These may be relevant to you if you're updating from an earlier version.
     apparently it sometimes gets that wrong (we haven't been able to track
     that down yet). Setting them manually fixes any wrong guesses.
 
-<p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
-    <a href="jmri4.7.5.shtml">JMRI 4.7.5</a> (and all later) writes a slightly streamlined
-    version of panel file contents.  
-    Older files should still be readable by this version of JMRI, 
-    but files written by this version may not be readable by versions
-    before JMRI 4.2 depending on their contents.
-
-<p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
-    The LocoNetOverTCP server has changes that may break scripts that reference it. Scripts refering to
-    the class jmri.jmrix.loconet.loconetovertcp.Server need to refer instead to
-    jmri.jmrix.loconet.loconetovertcp.LnTcpServer.
-
 <p><span class="since">Since <a href="jmri4.7.3.shtml">JMRI 4.7.3</a></span> 
     This release will not start cleanly if installed over earlier versions of JMRI (the Windows installer ensures
     this is not an issue). Remove the JAR files <em>jackson-annotations-2.0.6.jar</em>, <em>jackson-core-2.0.6.jar</em>,
@@ -180,17 +168,8 @@ These may be relevant to you if you're updating from an earlier version.
     were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
     if the panel contains a path that starts with <code>resource:</code> and the panel will
     not load until changed using an external editor. Paths starting with <code>file:</code>
-    cannot be automatically flagged because JMRI allows file: URLs.
-        
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
-    The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
-    in this version of JMRI doesn't properly interoperate with 
-    <a href="jmri4.7.1.shtml">JMRI 4.7.1</a> through <a href="jmri4.7.4.shtml">JMRI 4.7.4</a>.
-    It does work fine with <a href="jmri4.6.shtml">JMRI version 4.6</a> or before.
-    If you encounter a problem with version compatibility, you'll see an error
-    message that includes "<code>local class incompatible</code>".
-    The workaround is to update both client and server JMRI machines to the same
-    JMRI version. 
+    cannot be automatically flagged because JMRI allows file: URLs; these will have to 
+    be changed manually.
         
 <p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> 
     JMRI applications will not load a panel file that fails XML validation; an error will be
@@ -205,15 +184,6 @@ These may be relevant to you if you're updating from an earlier version.
         <li>Use that new version from now on.
         <li>And drop use of the jython/TurnOffXmlValidation.py script.
     </ul>
-
-<p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
-    As part of fixing the 
-    <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
-    the handling of TMCC preferences was changed.  If you have a TMCC
-    connection configured, please go to the 
-    "<a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#Connection">Defaults</a>"
-    pane in the Preferences window and make sure that the 
-    TMCC connection is selected for the appropriate device types.
 
 <p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
     This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
