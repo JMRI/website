@@ -60,34 +60,34 @@ see our
 JMRI was updated in JMRI 4.7.4 to use a new serial library. Depending on your exact
 circumstances, you may need to do some migrations:
 <ul>
-<li>If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
-<em>you must open the JMRI preferences and make sure that the selections are 
-correct for your serial device(s).</em> Be sure to save the changes.
-<p>
-In general, previous versions used serial device names like 
-"/dev/cu.usbserial-ABC123FG". This version will generally omit the prefix, and
-use serial device names like "cu.usbserial-ABC123FG".
-(If given the choice if a name starting with "tty" and one starting with "cu", 
-pick the "cu" one). See the before and after images to the right.
-<li>
-If you are using Linux and have previously used the "JMRI_SERIAL_PORTS"
-option to make sure your serial device is visible to JMRI, you'll have 
-to change that to use the "purejavacomm.portnamepattern" option instead.
-See the 
-<a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
-<li>
-If you have your own JMRI scripts to access a serial device, you'll have to update
-their library references:
-    <ul>
-    <li>Any 
-        <code>import gnu.io</code> statements will have to be replaced by 
-        <code>import purejavacomm</code> statements.
-    <li>More generally, any reference to 
-        <code>gnu.io</code>, e.g. a reference to a class like 
-        <code>gnu.io.SerialPort</code>, statements will have to be replaced by 
-        a reference to the corresponding 
-        <code>purejavacomm</code> class.
-    </ul>
+    <li>If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
+        <em>you must open the JMRI preferences and make sure that the selections are 
+        correct for your serial device(s).</em> Be sure to save the changes.
+        <p>
+        In general, previous versions used serial device names like 
+        "/dev/cu.usbserial-ABC123FG". This version will generally omit the prefix, and
+        use serial device names like "cu.usbserial-ABC123FG".
+        (If given the choice if a name starting with "tty" and one starting with "cu", 
+        pick the "cu" one). See the before and after images to the right.
+    <li>
+        If you are using Linux and have previously used the "JMRI_SERIAL_PORTS"
+        option to make sure your serial device is visible to JMRI, you'll have 
+        to change that to use the "purejavacomm.portnamepattern" option instead.
+        See the 
+        <a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
+    <li>
+        If you have your own JMRI scripts to access a serial device, you'll have to update
+        their library references:
+            <ul>
+            <li>Any 
+                <code>import gnu.io</code> statements will have to be replaced by 
+                <code>import purejavacomm</code> statements.
+            <li>More generally, any reference to 
+                <code>gnu.io</code>, e.g. a reference to a class like 
+                <code>gnu.io.SerialPort</code>, statements will have to be replaced by 
+                a reference to the corresponding 
+                <code>purejavacomm</code> class.
+            </ul>
 </ul>
 
 
@@ -110,11 +110,12 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
+    <li>None</li>
 </ul>
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.8 development series.
+See the <a href="jmri4.10.shtml#warnings">JMRI 4.10 release note</a> for more warnings predating the 4.11 development series.
 These may be relevant to you if you're updating from an earlier version.
 
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
@@ -277,7 +278,7 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.9.6/">CI project page</a>.
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.11.1/">CI project page</a>.
  -->
 
 <p>During development leading to the actual release, you can find test download files on the
@@ -287,12 +288,11 @@ These are development files, and might not be working at any particular time.</p
 <!-- <h2>Changes since <a href="jmri4.9.6.shtml">Test release 4.9.6</a>:</h2>  -->
 <h2>Changes since <a href="jmri4.10.shtml">Production release 4.10</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.7">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.1">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>DecoderPro</h3>
 
-        Dave Heap made the following changes:
         <ul>
           <li></li>
         </ul>
