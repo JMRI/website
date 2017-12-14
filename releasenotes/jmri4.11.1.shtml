@@ -602,6 +602,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Miscellaneous</h3>
         <ul>
+            <li>Improved logging when errors happen on a SwingWorker thread</li>
+            <li>Fixed the RosterCsvExport script so it works without referenced (removed) IndexedCV support</li>
             <li></li>
         </ul>
 
