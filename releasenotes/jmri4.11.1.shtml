@@ -261,12 +261,6 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.1">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h3>DecoderPro</h3>
-
-        <ul>
-          <li></li>
-        </ul>
-           
     <h3>Hardware Support</h3>
 
         <ul>
@@ -275,7 +269,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
 	    <h4>Bachrus Speedo</h4>
             <ul>
-                <li></li>
+                <li>Andrew Crosland added persistance to the console</li>
             </ul>
 		
         <h4>C/MRI</h4>
@@ -305,7 +299,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>LocoNet</h4>
             <ul>
-                <li></li>
+                <li>Randall Wood fixed an occasional error reading slots</li>
             </ul>
 
         <h4>MERG CBUS</h4>
@@ -340,7 +334,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>SPROG</h4>
             <ul>
-                <li></li>
+                <li>Andrew Crosland improved appearance and performance</li>
             </ul>
 
         <h4>TMCC</h4>
@@ -395,7 +389,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>ESU</h4>
             <ul>
-                <li></li>
+                <li>Ronald Kuhn and Dave Heap made improvements to the ESU V4 decoder definitions</li>
             </ul>
 
         <h4>Hornby</h4>
@@ -435,7 +429,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>NCE</h4>
             <ul>
-                <li></li>
+                <li>Dave Heap improved the support for the NCE Light-It</li>
             </ul>
 
         <h4>Norsk Modelljernbane (NJM)</h4>
@@ -460,7 +454,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>SoundTraxx</h4>
             <ul>
-                <li></li>
+                <li>Added Walthers OEM SoundCar decoders and some other minor updates:
+                    <ul>
+                        <li>minor label changes to aftermarket SoundCar function map
+                        <li>tooltips for SoundTraxx CV105/106 (used for version number)
+                        <li>tooltip for Econami CV218; formula has been fixed in Econami manuals tech ref 1.6 - now same as Tsunami2
+                    </ul>
+                </li>
             </ul>
 
         <h4>TCS</h4>
@@ -494,6 +494,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
 
+    <h3>DecoderPro</h3>
+        <ul>
+          <li>Dave Heap improved the support for infoOnly & opsOnly mode variables</li>
+        </ul>     
+
    <h3>Dispatcher</h3>
         <ul>
              <li></li>
@@ -501,7 +506,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Layout Editor</h3>
         <ul>
-	        <li></li>
+	        <li>Dave Sand improved the Entry/Exit support</li>
         </ul>
 
     <h3>Logix</h3>
@@ -516,7 +521,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Panel Editors</h3>
         <ul>
-            <li></li>
+            <li>Egbert Broerse improved how icons are previewed in the catalog</li>
         </ul>
 
     <h3>Preferences</h3>
@@ -536,7 +541,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Turnouts, Lights and other elements</h3>
         <ul>
-            <li></li>
+            <li>Fixed a problem where some items would not be displayed 
+                in the table when sorted by system name</li>
         </ul>
 
     <h3>Scripting</h3>
@@ -575,7 +581,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
 	    <h4>NX Entry/Exit Logic</h4>
             <ul>
-                <li></li>
+                <li>Dave Sand improved the Entry/Exit support</li>
             </ul>
 
 	    <h4>USS CTC Logic</h4>
@@ -596,7 +602,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Internationalization</h3>
         <ul>
-            <li></li>
+            <li>Joan de Castro improved the Catalan translation with help from David Heap and Randall Wood</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
@@ -608,7 +614,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>Improved logging when errors happen on a SwingWorker thread</li>
             <li>Fixed the RosterCsvExport script so it works without referenced (removed) IndexedCV support</li>
-            <li></li>
+            <li>A ChangePanelFont.py script was provided to let a user change the panel font script</li>
+            <li>Fixed a problem with ComboBox (selection box) background coloring on Windows</li>
+            <li>Some improvements to logging when internal errors happen on a deferred action</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
