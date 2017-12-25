@@ -320,10 +320,27 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Layout Editor</h3>
         <ul>
-	        <li>Dave Sand improved the Entry/Exit support</li>
+          <li>Dave Sand improved the Entry/Exit support.  It is now possible to
+              create routes that span panel boundaries if edge connectors have
+              been used to the link the panels.</li>
         </ul>
 
-   <h3>Panel Editors</h3>
+    <h3>Logix</h3>
+        <ul>
+          <li>Three new Conditional Actions have been added for Entry/Exit.
+            <ul>
+              <li>Set NX Pair Enabled &mdash; Enable a NX Pair. When enabled, it can used
+                  to create a route.</li>
+              <li>Set NX Pair Disabled &mdash; Disable a NX Pair. This will prevent the
+                  use of the pair to create a route.</li>
+              <li>Set NX Pair Segment Active / Inactive &mdash; If the route is not active,
+                  create the route, otherwise clear down, cancel or stack the route depending
+                  on the default actions or user response.</li>
+            </ul>
+          </li>
+        </ul>
+
+    <h3>Panel Editors</h3>
         <ul>
             <li>Egbert Broerse improved how icons are previewed in the catalog</li>
         </ul>
@@ -336,9 +353,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Signals</h3>
 
-	    <h4>NX Entry/Exit Logic</h4>
+            <h4>NX Entry/Exit Logic</h4>
             <ul>
-                <li>Dave Sand improved the Entry/Exit support</li>
+                <li>Dave Sand improved the Entry/Exit support.  Entry/Exit sensor
+                pairs can be on different Layout Editor panels that have been linked
+                using edge connectors.</li>
             </ul>
             
    <h3>Internationalization</h3>
