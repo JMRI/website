@@ -135,7 +135,7 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.8 development series.
+See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.9 development series.
 These may be relevant to you if you're updating from an earlier version.
 
 <p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
@@ -326,14 +326,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Peter Ulvestad fixed some spelling errors in decoder definitions.</li>
             </ul>
 
-   <h3>Dispatcher</h3>
     <h3>Layout Editor</h3>
         <ul>
 	        <li>Some of the text boxes for entering input (e.g. names of items to add)
 	            have been updated to selection boxes.</li>
         </ul>
 
-   <h3>Panel Editors</h3>
+    <h3>Panel Editors</h3>
         <ul>
             <li>A problem with reading really old panel files (pre-JMRI 4.0) was fixed.
         </ul>

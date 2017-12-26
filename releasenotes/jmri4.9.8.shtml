@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.9.8 release
       </h1>
 
-    <p>Date: mmm dd, 2017</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: December 15, 2017</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.9.8 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -114,13 +116,13 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.8 development series.
+See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.9 development series.
 These may be relevant to you if you're updating from an earlier version.
 
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     Due to changes in the capitalization of some method and property names, some scripts may fail until
-    adjusted to use the new capitolization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
-    JMRI class will list the correct capitolization.</li>
+    adjusted to use the new capitalization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
+    JMRI class will list the correct capitalization.</li>
 
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     For Windows users only: <a href="jmri4.9.3.shtml">JMRI 4.9.3</a> (and all later) has a new 
@@ -252,7 +254,7 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
+
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
@@ -261,18 +263,18 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg</a><br/>
-  sha256: f0eb649a303c76303bb5ecf79b6fcd1c9ffba2421aaf32c09354b5ce93ac98c3 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.dmg</a><br/>
+  sha256: 22b110d09d49b6ce62570b98a757315cf70ad4dd9cdf333456925dfe666f087a </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe</a><br/>
-   sha256: d04f9e2e108ce058c0de3e406f49893b4374ad013762425aeac2bdfeaf0f5dd6</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.exe">https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.exe</a><br/>
+   sha256: fff8695cac8172c49d798eb72e2eb35fdcf2bb5c6a239d1f95b29a2d5b8716ae</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz</a><br/>
-   sha256: 891ae78c024f35aa2b5e0b43554df61720dc61006c2e1913b8affddac2b2fb6f</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.tgz</a><br/>
+   sha256: 00c155b21b026afc4563c922388f354469554022be5b041cb35d693f02ca4426</p>
 </ul>
- -->
+
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -280,364 +282,36 @@ on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.9.6/">CI project page</a>.
  -->
 
+<!-- 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
  
 <h2>Changes since <a href="jmri4.9.7.shtml">Test release 4.9.7</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.8">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h3>DecoderPro</h3>
-
-        <ul>
-          <li>
-          </li>
-        </ul>
-           
-    <h3>Hardware Support</h3>
-
-        <ul>
-          <li></li>
-        </ul>
-
-	    <h4>Bachrus Speedo</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-        <h4>C/MRI</h4>
-            <ul>
-                <li></li>        
-                </ul>    
-            </ul>
-
-        <h4>DCC++</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>DMX512</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>JMRI Simple Server/JMRI Client</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LocoNet</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MERG CBUS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RFID</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Roco z21/Z21</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SPROG</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TMCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Zimo MXULF</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZTC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    <h3>New / Updated decoder definitions</h3>
-      <ul>
-        <li></li>
-     </ul>
-
-        <h4>Arnold</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>BLI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Bachmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Doehler &amp; Haas</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ESU</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Hornby</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Kuehn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LaisDCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Lenz</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MGP</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>MTH</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Norsk Modelljernbane (NJM)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>QSI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Rautenhaus</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RR-CirKits</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SoundTraxx</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TCS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Technologistic (train-O-matic)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Viessmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Wangrow</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZIMO</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Miscellaneous</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-
-   <h3>Dispatcher</h3>
-        <ul>
-             <li></li>
-        </ul>
-
-    <h3>Layout Editor</h3>
-        <ul>
-	        <li></li>
-        </ul>
-
-    <h3>Logix</h3>
-        <ul>
-          <li></li>
-        </ul>
-
-    <h3>Operations</h3>
-       <ul>
-          <li></li>
-       </ul>
-
    <h3>Panel Editors</h3>
         <ul>
-            <li></li>
-        </ul>
-
-    <h3>Preferences</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Resources</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Roster</h3>
-        <ul>
-            <li></li>
+            <li>Paul Bender provided a partial fix for a problem where 
+                changing text label properties font size or bold changes background color
         </ul>
 
     <h3>Turnouts, Lights and other elements</h3>
         <ul>
-            <li></li>
+            <li>Fixed a problem where Simple Signal Logic make it not
+                possible to delete a Turnout from the Turnout Table</li>
         </ul>
-
-    <h3>Scripting</h3>
-        <ul>
-            <li></li>
-        </ul>
-
     <h3>Signals</h3>
-        <ul>
-            <li></li>
-        </ul>
-        <h4>Signal Systems</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Heads</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Masts</h4>
-            <ul>
-                <li></li>
-            </ul>
-            
-    	<h4>Signal Groups</h4>
-            <ul>
-                <li></li>
-            </ul>
 
     	<h4>Simple Signal Logic</h4>
             <ul>
-                <li></li>
+                <li>Fixed a problem where Simple Signal Logic make it not
+                    possible to delete a Turnout from the Turnout Table</li>
             </ul>
 
-	    <h4>NX Entry/Exit Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-	    <h4>USS CTC Logic</h4>
-            <ul>
-                <li></a>.
-                </li>
-            </ul>
-            
-   <h3>Warrants</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h3>Web Access</h3>
-        <ul>
-            <li> </li>
-        </ul>
-
-   <h3>Internationalization</h3>
-        <ul>
-            <li></li>
-        </ul>
-        
-   <h3>Virtual Sound Decoder</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Miscellaneous</h3>
-        <ul>
-            <li></li>
-        </ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->
