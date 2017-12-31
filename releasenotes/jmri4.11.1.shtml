@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.9.6
+ JMRI: Release Notes for 4.11.1
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.9.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.11.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,14 +23,16 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.9.6 release
+      Release Notes for JMRI 4.11.1 release
       </h1>
 
-    <p>Date: November 21, 2017</p>
+    <p>Date: December 24, 2017</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.9.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.11.1 of JMRI/DecoderPro is available for download.</p>
 
-<!-- <p><b>This is a draft release note only; the download links do not yet work</b></p>  -->
+<!-- 
+<p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -38,8 +40,8 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the next in a series of test releases.
-We expect this series to end in the next JMRI production release around the end of 2017.
+<p>This is the first in a series of test releases.
+We expect this series to end in the next JMRI production release around the middle of 2018.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
@@ -60,34 +62,34 @@ see our
 JMRI was updated in JMRI 4.7.4 to use a new serial library. Depending on your exact
 circumstances, you may need to do some migrations:
 <ul>
-<li>If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
-<em>you must open the JMRI preferences and make sure that the selections are 
-correct for your serial device(s).</em> Be sure to save the changes.
-<p>
-In general, previous versions used serial device names like 
-"/dev/cu.usbserial-ABC123FG". This version will generally omit the prefix, and
-use serial device names like "cu.usbserial-ABC123FG".
-(If given the choice if a name starting with "tty" and one starting with "cu", 
-pick the "cu" one). See the before and after images to the right.
-<li>
-If you are using Linux and have previously used the "JMRI_SERIAL_PORTS"
-option to make sure your serial device is visible to JMRI, you'll have 
-to change that to use the "purejavacomm.portnamepattern" option instead.
-See the 
-<a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
-<li>
-If you have your own JMRI scripts to access a serial device, you'll have to update
-their library references:
-    <ul>
-    <li>Any 
-        <code>import gnu.io</code> statements will have to be replaced by 
-        <code>import purejavacomm</code> statements.
-    <li>More generally, any reference to 
-        <code>gnu.io</code>, e.g. a reference to a class like 
-        <code>gnu.io.SerialPort</code>, statements will have to be replaced by 
-        a reference to the corresponding 
-        <code>purejavacomm</code> class.
-    </ul>
+    <li>If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
+        <em>you must open the JMRI preferences and make sure that the selections are 
+        correct for your serial device(s).</em> Be sure to save the changes.
+        <p>
+        In general, previous versions used serial device names like 
+        "/dev/cu.usbserial-ABC123FG". This version will generally omit the prefix, and
+        use serial device names like "cu.usbserial-ABC123FG".
+        (If given the choice if a name starting with "tty" and one starting with "cu", 
+        pick the "cu" one). See the before and after images to the right.
+    <li>
+        If you are using Linux and have previously used the "JMRI_SERIAL_PORTS"
+        option to make sure your serial device is visible to JMRI, you'll have 
+        to change that to use the "purejavacomm.portnamepattern" option instead.
+        See the 
+        <a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
+    <li>
+        If you have your own JMRI scripts to access a serial device, you'll have to update
+        their library references:
+            <ul>
+            <li>Any 
+                <code>import gnu.io</code> statements will have to be replaced by 
+                <code>import purejavacomm</code> statements.
+            <li>More generally, any reference to 
+                <code>gnu.io</code>, e.g. a reference to a class like 
+                <code>gnu.io.SerialPort</code>, statements will have to be replaced by 
+                a reference to the corresponding 
+                <code>purejavacomm</code> class.
+            </ul>
 </ul>
 
 
@@ -99,7 +101,7 @@ their library references:
 <!--
 If any of those affect you, please either 
 wait for
-<a href="jmri4.9.7.shtml">JMRI 4.9.7</a>, due out shortly after this one,
+<a href="jmri4.11.2.shtml">JMRI 4.11.2</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -110,11 +112,12 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
+    <li>None</li>
 </ul>
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.9 development series.
+See the <a href="jmri4.10.shtml#warnings">JMRI 4.10 release note</a> for more warnings predating the 4.11 development series.
 These may be relevant to you if you're updating from an earlier version.
 
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
@@ -156,18 +159,6 @@ These may be relevant to you if you're updating from an earlier version.
     apparently it sometimes gets that wrong (we haven't been able to track
     that down yet). Setting them manually fixes any wrong guesses.
 
-<p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
-    <a href="jmri4.7.5.shtml">JMRI 4.7.5</a> (and all later) writes a slightly streamlined
-    version of panel file contents.  
-    Older files should still be readable by this version of JMRI, 
-    but files written by this version may not be readable by versions
-    before JMRI 4.2 depending on their contents.
-
-<p><span class="since">Since <a href="jmri4.7.5.shtml">JMRI 4.7.5</a></span>
-    The LocoNetOverTCP server has changes that may break scripts that reference it. Scripts refering to
-    the class jmri.jmrix.loconet.loconetovertcp.Server need to refer instead to
-    jmri.jmrix.loconet.loconetovertcp.LnTcpServer.
-
 <p><span class="since">Since <a href="jmri4.7.3.shtml">JMRI 4.7.3</a></span> 
     This release will not start cleanly if installed over earlier versions of JMRI (the Windows installer ensures
     this is not an issue). Remove the JAR files <em>jackson-annotations-2.0.6.jar</em>, <em>jackson-core-2.0.6.jar</em>,
@@ -179,17 +170,8 @@ These may be relevant to you if you're updating from an earlier version.
     were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
     if the panel contains a path that starts with <code>resource:</code> and the panel will
     not load until changed using an external editor. Paths starting with <code>file:</code>
-    cannot be automatically flagged because JMRI allows file: URLs.
-        
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
-    The LocoNet Server (the LocoNetRMI service; not the LocoNetOverTcp service)
-    in this version of JMRI doesn't properly interoperate with 
-    <a href="jmri4.7.1.shtml">JMRI 4.7.1</a> through <a href="jmri4.7.4.shtml">JMRI 4.7.4</a>.
-    It does work fine with <a href="jmri4.6.shtml">JMRI version 4.6</a> or before.
-    If you encounter a problem with version compatibility, you'll see an error
-    message that includes "<code>local class incompatible</code>".
-    The workaround is to update both client and server JMRI machines to the same
-    JMRI version. 
+    cannot be automatically flagged because JMRI allows file: URLs; these will have to 
+    be changed manually.
         
 <p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> 
     JMRI applications will not load a panel file that fails XML validation; an error will be
@@ -204,15 +186,6 @@ These may be relevant to you if you're updating from an earlier version.
         <li>Use that new version from now on.
         <li>And drop use of the jython/TurnOffXmlValidation.py script.
     </ul>
-
-<p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
-    As part of fixing the 
-    <a href="https://github.com/JMRI/JMRI/issues/2081">TMCC throttle issue</a>,
-    the handling of TMCC preferences was changed.  If you have a TMCC
-    connection configured, please go to the 
-    "<a href="http://jmri.org/help/en/package/apps/TabbedPreferences.shtml#Connection">Defaults</a>"
-    pane in the Preferences window and make sure that the 
-    TMCC connection is selected for the appropriate device types.
 
 <p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
     This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
@@ -260,117 +233,145 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.dmg</a><br/>
-  sha256: 23210ec68cc5dbbc85b015dc642fc61c7b6f5206a72af6bfeadfda026c30be90 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.11.1/JMRI.4.11.1.Rfe44680.dmg">https://github.com/JMRI/JMRI/releases/download/v4.11.1/JMRI.4.11.1.Rfe44680.dmg</a><br/>
+  sha256: 7f9f4de7e7c5e0d23f1aad30c216c2e8af6be0b069dce99bfaec4ef85efb4966 </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.exe">https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.exe</a><br/>
-   sha256: f16e77aa35e1f00818838803c834bc6c88043467af57d7e057344774666639d2</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.11.1/JMRI.4.11.1.Rfe44680.exe">https://github.com/JMRI/JMRI/releases/download/v4.11.1/JMRI.4.11.1.Rfe44680.exe</a><br/>
+   sha256: f99b23da4c53c961d666981b1148585f7badcf296cef46a3e47d8f7f253197f6</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.tgz</a><br/>
-   sha256: 1aa2a2e78f53976e9793b25a7cfbca350dd92ee7e7edb513ca74f9926388ab9c</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.11.1/JMRI.4.11.1.Rfe44680.tgz">https://github.com/JMRI/JMRI/releases/download/v4.11.1/JMRI.4.11.1.Rfe44680.tgz</a><br/>
+   sha256: e638a99fabb431a2ee1ee0558b088ff119efe477c310c23739e71265d32f2b9c</p>
 </ul>
+
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.9.6/">CI project page</a>.
+<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.11.1/">CI project page</a>.
  -->
-
+ 
 <!-- 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
+-->
   
-<h2>Changes since <a href="jmri4.9.5.shtml">Test release 4.9.5</a>:</h2>
+<!-- <h2>Changes since <a href="jmri4.9.6.shtml">Test release 4.9.6</a>:</h2>  -->
+<h2>Changes since <a href="jmri4.10.shtml">Production release 4.10</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.6">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.1">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>Hardware Support</h3>
 
-        <ul>
-          <li>Paul Bender improved consist management.</li>
-        </ul>
-
-        <h4>LocoNet</h4>
+	    <h4>Bachrus Speedo</h4>
             <ul>
-                <li>Egbert Broerse improved the command station configuration tools</li>
+                <li>Andrew Crosland added persistance to the console</li>
             </ul>
-
+		
         <h4>DCC++</h4>
             <ul>
-                <li>Paul Bender updated the DCC++ support with
-                    several corrections to message and reply formats for DCC++, 
-                    and to fix sending of raw DCC packets.</li>
+                <li>Mike Dunston provided
+                    support for the 
+                    <a href="https://github.com/atanisoft/BaseStation">DCC++ ESP (WiFi enabled) base station</a>
+                    and DCC++ESP32 base station.
+                </li>
             </ul>
 
-        <h4>DMX512</h4>
+        <h4>SPROG</h4>
             <ul>
-                <li>George Warner added support for DMX512 lights</li>
-            </ul>
-
-        <h4>RFID</h4>
-            <ul>
-                <li>Support for the Olimex MOD-RFID1356MIFARE has been added.</li>
+                <li>Andrew Crosland improved appearance and performance</li>
             </ul>
 
     <h3>New / Updated decoder definitions</h3>
 
-        <ul>
-            <li>Dave Heap reenabled loading of soundlabels from a roster entry</li>
-        </ul>
-            
-        <h4>ESU</h4>
+        <h4>DigiRails</h4>
             <ul>
-                <li>Alain Carasso added a ESU LokPilot V1.0 definition</li>
+                <li>Cees Baarda and Egbert Broerse added a definition for the Digirails DR4018 decoder</li>
             </ul>
 
-        <h4>LaisDCC</h4>
+        <h4>ESU</h4>
             <ul>
-                <li>Updated xml file for LAISDCC family decoders to fix problem in CV15/CV7/CV8
-                    and update the model numbers and the function numbers of new models 860015/16/19</li>
+                <li>Ronald Kuhn and Dave Heap made improvements to the ESU V4 decoder definitions</li>
             </ul>
 
         <h4>NCE</h4>
             <ul>
-                <li>Micheal Mosher updated the definition for version 3.8 and added  new models</li>
+                <li>Dave Heap improved the support for the NCE Light-It</li>
             </ul>
 
         <h4>SoundTraxx</h4>
             <ul>
-                <li>Michael Mosher updated the Soundtraxx TSU2 diesel to add Poppet Valves select 
-                    and more PM to Baldwin and other decoders</li>
+                <li>Added Walthers OEM SoundCar decoders and some other minor updates:
+                    <ul>
+                        <li>minor label changes to aftermarket SoundCar function map
+                        <li>tooltips for SoundTraxx CV105/106 (used for version number)
+                        <li>tooltip for Econami CV218; formula has been fixed in Econami manuals tech ref 1.6 - now same as Tsunami2
+                    </ul>
+                </li>
             </ul>
 
-    <h3>Operations</h3>
-       <ul>
-          <li>Daniel Boudreau fixed a switch list bug when running in consolidation mode</li>
-       </ul>
+    <h3>DecoderPro</h3>
+        <ul>
+          <li>Dave Heap improved the support for infoOnly & opsOnly mode variables</li>
+        </ul>     
+
+    <h3>Layout Editor</h3>
+        <ul>
+          <li>Dave Sand improved the Entry/Exit support.  It is now possible to
+              create routes that span panel boundaries if edge connectors have
+              been used to the link the panels.</li>
+        </ul>
+
+    <h3>Logix</h3>
+        <ul>
+          <li>Three new Conditional Actions have been added for Entry/Exit.
+            <ul>
+              <li>Set NX Pair Enabled &mdash; Enable a NX Pair. When enabled, it can used
+                  to create a route.</li>
+              <li>Set NX Pair Disabled &mdash; Disable a NX Pair. This will prevent the
+                  use of the pair to create a route.</li>
+              <li>Set NX Pair Segment Active / Inactive &mdash; If the route is not active,
+                  create the route, otherwise clear down, cancel or stack the route depending
+                  on the default actions or user response.</li>
+            </ul>
+          </li>
+        </ul>
+
+    <h3>Panel Editors</h3>
+        <ul>
+            <li>Egbert Broerse improved how icons are previewed in the catalog</li>
+        </ul>
+
+    <h3>Turnouts, Lights and other elements</h3>
+        <ul>
+            <li>Fixed a problem where some items would not be displayed 
+                in the table when sorted by system name</li>
+        </ul>
 
     <h3>Signals</h3>
 
-        <h4>Signal Masts</h4>
+            <h4>NX Entry/Exit Logic</h4>
             <ul>
-                <li>Dave Heap fixed a problem with the aspect range in DCC signal heads</li>
+                <li>Dave Sand improved the Entry/Exit support.  Entry/Exit sensor
+                pairs can be on different Layout Editor panels that have been linked
+                using edge connectors.</li>
             </ul>
             
-
-    	<h4>Simple Signal Logic</h4>
-            <ul>
-                <li>Egbert Broerse improved the Simple Signal Logic GUI</li>
-            </ul>
-
    <h3>Internationalization</h3>
         <ul>
-            <li>Egbert Broerse improved the German and Dutch translations</li>
+            <li>Joan de Castro improved the Catalan translation with help from David Heap and Randall Wood</li>
         </ul>
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li>Daniel Bergqvist updated the shutdown processing to allow it to terminate partway through.</li>
+            <li>Improved logging when errors happen on a SwingWorker thread</li>
+            <li>Fixed the RosterCsvExport script so it works without referenced (removed) IndexedCV support</li>
+            <li>A ChangePanelFont.py script was provided to let a user change the panel font script</li>
+            <li>Fixed a problem with ComboBox (selection box) background coloring on Windows</li>
+            <li>Some improvements to logging when internal errors happen on a deferred action</li>
         </ul>
 
    <!--#include virtual="/Footer" -->

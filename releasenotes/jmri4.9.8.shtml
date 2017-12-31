@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.9.6
+ JMRI: Release Notes for 4.9.8
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.9.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.9.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,14 +23,16 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.9.6 release
+      Release Notes for JMRI 4.9.8 release
       </h1>
 
-    <p>Date: November 21, 2017</p>
+    <p>Date: December 15, 2017</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.9.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.9.8 of JMRI/DecoderPro is available for download.</p>
 
-<!-- <p><b>This is a draft release note only; the download links do not yet work</b></p>  -->
+<!-- 
+<p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -99,7 +101,7 @@ their library references:
 <!--
 If any of those affect you, please either 
 wait for
-<a href="jmri4.9.7.shtml">JMRI 4.9.7</a>, due out shortly after this one,
+<a href="jmri4.9.9.shtml">JMRI 4.9.9</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -252,6 +254,7 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
@@ -260,17 +263,18 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.dmg</a><br/>
-  sha256: 23210ec68cc5dbbc85b015dc642fc61c7b6f5206a72af6bfeadfda026c30be90 </p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.dmg</a><br/>
+  sha256: 22b110d09d49b6ce62570b98a757315cf70ad4dd9cdf333456925dfe666f087a </p>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.exe">https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.exe</a><br/>
-   sha256: f16e77aa35e1f00818838803c834bc6c88043467af57d7e057344774666639d2</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.exe">https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.exe</a><br/>
+   sha256: fff8695cac8172c49d798eb72e2eb35fdcf2bb5c6a239d1f95b29a2d5b8716ae</p>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.tgz</a><br/>
-   sha256: 1aa2a2e78f53976e9793b25a7cfbca350dd92ee7e7edb513ca74f9926388ab9c</p>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.tgz</a><br/>
+   sha256: 00c155b21b026afc4563c922388f354469554022be5b041cb35d693f02ca4426</p>
 </ul>
+
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -283,95 +287,31 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
  -->
-  
-<h2>Changes since <a href="jmri4.9.5.shtml">Test release 4.9.5</a>:</h2>
+ 
+<h2>Changes since <a href="jmri4.9.7.shtml">Test release 4.9.7</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.6">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.8">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h3>Hardware Support</h3>
-
+   <h3>Panel Editors</h3>
         <ul>
-          <li>Paul Bender improved consist management.</li>
+            <li>Paul Bender provided a partial fix for a problem where 
+                changing text label properties font size or bold changes background color
         </ul>
 
-        <h4>LocoNet</h4>
-            <ul>
-                <li>Egbert Broerse improved the command station configuration tools</li>
-            </ul>
-
-        <h4>DCC++</h4>
-            <ul>
-                <li>Paul Bender updated the DCC++ support with
-                    several corrections to message and reply formats for DCC++, 
-                    and to fix sending of raw DCC packets.</li>
-            </ul>
-
-        <h4>DMX512</h4>
-            <ul>
-                <li>George Warner added support for DMX512 lights</li>
-            </ul>
-
-        <h4>RFID</h4>
-            <ul>
-                <li>Support for the Olimex MOD-RFID1356MIFARE has been added.</li>
-            </ul>
-
-    <h3>New / Updated decoder definitions</h3>
-
+    <h3>Turnouts, Lights and other elements</h3>
         <ul>
-            <li>Dave Heap reenabled loading of soundlabels from a roster entry</li>
+            <li>Fixed a problem where Simple Signal Logic make it not
+                possible to delete a Turnout from the Turnout Table</li>
         </ul>
-            
-        <h4>ESU</h4>
-            <ul>
-                <li>Alain Carasso added a ESU LokPilot V1.0 definition</li>
-            </ul>
-
-        <h4>LaisDCC</h4>
-            <ul>
-                <li>Updated xml file for LAISDCC family decoders to fix problem in CV15/CV7/CV8
-                    and update the model numbers and the function numbers of new models 860015/16/19</li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li>Micheal Mosher updated the definition for version 3.8 and added  new models</li>
-            </ul>
-
-        <h4>SoundTraxx</h4>
-            <ul>
-                <li>Michael Mosher updated the Soundtraxx TSU2 diesel to add Poppet Valves select 
-                    and more PM to Baldwin and other decoders</li>
-            </ul>
-
-    <h3>Operations</h3>
-       <ul>
-          <li>Daniel Boudreau fixed a switch list bug when running in consolidation mode</li>
-       </ul>
-
     <h3>Signals</h3>
-
-        <h4>Signal Masts</h4>
-            <ul>
-                <li>Dave Heap fixed a problem with the aspect range in DCC signal heads</li>
-            </ul>
-            
 
     	<h4>Simple Signal Logic</h4>
             <ul>
-                <li>Egbert Broerse improved the Simple Signal Logic GUI</li>
+                <li>Fixed a problem where Simple Signal Logic make it not
+                    possible to delete a Turnout from the Turnout Table</li>
             </ul>
 
-   <h3>Internationalization</h3>
-        <ul>
-            <li>Egbert Broerse improved the German and Dutch translations</li>
-        </ul>
-
-    <h3>Miscellaneous</h3>
-        <ul>
-            <li>Daniel Bergqvist updated the shutdown processing to allow it to terminate partway through.</li>
-        </ul>
 
    <!--#include virtual="/Footer" -->
   </div><!-- closes #mainContent-->

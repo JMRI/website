@@ -127,7 +127,7 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.8 development series.
+See the <a href="jmri4.8.shtml#warnings">JMRI 4.8 release note</a> for more warnings predating the 4.9 development series.
 These may be relevant to you if you're updating from an earlier version.
 
 <p><span class="since">Since <a href="jmri4.7.6.shtml">JMRI 4.7.6</a></span>
@@ -188,7 +188,7 @@ These may be relevant to you if you're updating from an earlier version.
         <li>Write out a new version of the panel file (after saving a backup!)
         <li>Use that new version from now on.
         <li>And drop use of the jython/TurnOffXmlValidation.py script.
-    </li>
+    </ul>
 
 <p><span class="since">Since <a href="jmri4.5.6.shtml">JMRI 4.5.6</a></span>  
     As part of fixing the 
@@ -285,240 +285,14 @@ These are development files, and might not be working at any particular time.</p
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.3">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
-
-    <h3>DecoderPro</h3>
-
-        <ul>
-          <li></li>
-        </ul>
            
-    <h3>Hardware Support</h3>
-
-        <ul>
-          <li></li>
-        </ul>
-
-	    <h4>Bachrus Speedo</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-        <h4>C/MRI</h4>
-            <ul>
-                <li></li>        
-                </ul>    
-            </ul>
-
-        <h4>DCC++</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>JMRI Simple Server/JMRI Client</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LocoNet</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MERG CBUS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RFID</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Roco z21/Z21</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SPROG</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TMCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Zimo MXULF</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZTC</h4>
-            <ul>
-                <li></li>
-            </ul>
 
     <h3>New / Updated decoder definitions</h3>
-      <ul>
-        <li></li>
-     </ul>
-
-        <h4>Arnold</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>BLI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Bachmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Doehler &amp; Haas</h4>
-            <ul>
-                <li></li>
-            </ul>
 
         <h4>ESU</h4>
             <ul>
                 <li>David Heap made the ESU definitions less confusing by hiding some older ones.</li>
             </ul>
-
-        <h4>Hornby</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Kuehn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LaisDCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Lenz</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MGP</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>MTH</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Norsk Modelljernbane (NJM)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>QSI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Rautenhaus</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RR-CirKits</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SoundTraxx</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TCS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Technologistic (train-O-matic)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Viessmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Wangrow</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZIMO</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Miscellaneous</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-
-   <h3>Dispatcher</h3>
-        <ul>
-             <li></li>
-        </ul>
 
     <h3>Layout Editor</h3>
         <ul>
@@ -526,105 +300,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 	        was showing wouldn't validate properly when loaded.</li>
         </ul>
 
-    <h3>Logix</h3>
-        <ul>
-          <li></li>
-        </ul>
-
-    <h3>Operations</h3>
-       <ul>
-          <li></li>
-       </ul>
-
-   <h3>Panel Editors</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Preferences</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Resources</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Roster</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Turnouts, Lights and other elements</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Scripting</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Signals</h3>
-        <ul>
-            <li></li>
-        </ul>
-        <h4>Signal Systems</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Heads</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Masts</h4>
-            <ul>
-                <li></li>
-            </ul>
-            
-    	<h4>Signal Groups</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    	<h4>Simple Signal Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-	    <h4>NX Entry/Exit Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-	    <h4>USS CTC Logic</h4>
-            <ul>
-                <li></a>.
-                </li>
-            </ul>
-   <h3>Warrants</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h3>Web Access</h3>
-        <ul>
-            <li> </li>
-        </ul>
-
    <h3>Internationalization</h3>
         <ul>
             <li>Ronald Kuhn improved the German translation</li>
         </ul>
         
-   <h3>Virtual Sound Decoder</h3>
-        <ul>
-            <li></li>
-        </ul>
-
     <h3>Miscellaneous</h3>
         <ul>
             <li>The Windows installer has been updated to a new version of the
