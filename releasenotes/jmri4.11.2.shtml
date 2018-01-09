@@ -379,7 +379,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Digitrax</h4>
             <ul>
-                <li></li>
+                <li>Digitrax Command Station "Operation Switches" (OpSws) may 
+		now be configured and saved via a Roster Entry.  The OpSw 
+		configuration information may be saved to the Roster Entry.
+		Command stations supported include the Digitrax DB150, DCS50, 
+		DCS51, DCS100, DCS200, DCS210 and DCS240.  Additional information
+		may be found at the <a href="http://http://jmri.org/help/en/html/hardware/loconet/CommandStationConfig.shtml">
+		Digitrax Command Station Configuration</a> page.
+		<span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span></li>
             </ul>
 
         <h4>Doehler &amp; Haas</h4>
@@ -529,7 +536,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Roster</h3>
         <ul>
-            <li></li>
+            <li>Digitrax Command Station Operations Switches may now be managed via a Roster entry.
+	    <span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span></li>
         </ul>
 
     <h3>Turnouts, Lights and other elements</h3>
