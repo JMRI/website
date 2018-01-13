@@ -110,7 +110,14 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>None</li>
+    <li><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
+    The system connection preferences (i.e. hardware preferences) are now
+    enforcing the <A href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
+    for system prefixes:  One upper case letter, 
+    optionally followed by a number (one or more digits, e.g. "L12").
+    Existing prefixes in existing configurations are unchanged, but
+    new ones will have to have the correct form.</li>
+
 </ul>
 
 <h3>Older warnings</h3>
@@ -121,7 +128,7 @@ These may be relevant to you if you're updating from an earlier version.
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     Due to changes in the capitalization of some method and property names, some scripts may fail until
     adjusted to use the new capitalization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
-    JMRI class will list the correct capitalization.</li>
+    JMRI class will list the correct capitalization.
 
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     For Windows users only: <a href="jmri4.9.3.shtml">JMRI 4.9.3</a> (and all later) has a new 
@@ -263,9 +270,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h3>Hardware Support</h3>
 
         <ul>
-          <li></li>
+          <li>The system connection preferences (i.e. hardware preferences) are now
+                enforcing the <A href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
+                for system prefixes:  One upper case letter, 
+                optionally followed by a number (one or more digits, e.g. "L12").
+                Existing prefixes in existing configurations are unchanged, but
+                new ones will have to have the correct form.</li>
         </ul>
 
+	    <h4>Anyma DMX512</h4>
+            <ul>
+                <li>The default system prefix was shortened to "D"</li>
+            </ul>
+		
 	    <h4>Bachrus Speedo</h4>
             <ul>
                 <li></li>
@@ -279,12 +296,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>DCC++</h4>
             <ul>
-                <li></li>
+                <li>The default system prefix was shortened to "D"</li>
             </ul>
 
-        <h4>DMX512</h4>
+        <h4>DCC4pc</h4>
             <ul>
-                <li></li>
+                <li>The default system prefix was shortened to "D"</li>
             </ul>
 
         <h4>JMRI Simple Server/JMRI Client</h4>
@@ -302,9 +319,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
+        <h4>Marklin CS2</h4>
+            <ul>
+                <li>The default system prefix was shortened to "M"</li>
+            </ul>
+
         <h4>MRC</h4>
             <ul>
-                <li><li>
+                <li>The default system prefix was shortened to "M"</li>
             </ul>
 
         <h4>NCE</h4>
@@ -334,7 +356,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>TMCC</h4>
             <ul>
-                <li></li>
+                <li>The default system prefix was shortened to "T"</li>
             </ul>
 
         <h4>Uhlenbrock Intellibox</h4>
@@ -380,13 +402,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h4>Digitrax</h4>
             <ul>
                 <li>Digitrax Command Station "Operation Switches" (OpSws) may 
-		now be configured and saved via a Roster Entry.  The OpSw 
-		configuration information may be saved to the Roster Entry.
-		Command stations supported include the Digitrax DB150, DCS50, 
-		DCS51, DCS100, DCS200, DCS210 and DCS240.  Additional information
-		may be found at the <a href="http://http://jmri.org/help/en/html/hardware/loconet/CommandStationConfig.shtml">
-		Digitrax Command Station Configuration</a> page.
-		<span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span></li>
+                now be configured and saved via a Roster Entry.  The OpSw 
+                configuration information may be saved to the Roster Entry.
+                Command stations supported include the Digitrax DB150, DCS50, 
+                DCS51, DCS100, DCS200, DCS210 and DCS240.  Additional information
+                may be found at the <a href="http://http://jmri.org/help/en/html/hardware/loconet/CommandStationConfig.shtml">
+                Digitrax Command Station Configuration</a> page.
+		        </li>
             </ul>
 
         <h4>Doehler &amp; Haas</h4>
