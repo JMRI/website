@@ -23,12 +23,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.11.2 release
+      Release Notes for JMRI 4.11.3 release
       </h1>
 
     <p>Date: mmm dd, 2017</p>
     <p>From: (pumpkin)</p>
-    <p>Subject: Test Release 4.11.2 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.11.3 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -286,8 +286,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		
         <h4>C/MRI</h4>
             <ul>
-                <li></li>        
-                </ul>    
+                <li>Chuck Catania fixed a
+                    <a href="https://github.com/JMRI/JMRI/issues/4616">formatting problem</a>
+                    with user names on the "List Assignments" window</li>  
+                <li>Chuck Catania added a 
+                    <a href="https://github.com/JMRI/JMRI/issues/4624">save reminder dialog</a>
+                    upon exiting the C/MRI Node Configuration Manager.</li>
             </ul>
 
         <h4>DCC++</h4>
@@ -347,7 +351,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>SPROG</h4>
             <ul>
-                <li></li>
+                <li>Egbert Broerse improved the documentation</li>
             </ul>
 
         <h4>TMCC</h4>
@@ -390,9 +394,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h4>DigiRails</h4>
+        <h4>Digikeijs (Digirails)</h4>
             <ul>
-                <li></li>
+                <li>Egbert Broerse improved the documentation</li>
             </ul>
 
         <h4>Digitrax</h4>
@@ -472,12 +476,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>SoundTraxx</h4>
             <ul>
-                <li></li>
+                <li>Michael Mosher added the GP35 Tsunami decoder</li>
             </ul>
 
         <h4>TCS</h4>
             <ul>
-                <li></li>
+                <li>Michael Mosher updated the TCS WOW diesel definitions</li>
             </ul>
 
         <h4>Technologistic (train-O-matic)</h4>
@@ -542,7 +546,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Resources</h3>
         <ul>
-            <li></li>
+            <li>Chuck Catania added <a href="http:/jmri.org/resources/icons/USS/plate/base-plates/misc/">lock plate icons</a></li>
         </ul>
 
     <h3>Roster</h3>
@@ -566,7 +570,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
         <h4>Signal Systems</h4>
             <ul>
-                <li></li>
+                <li>Egbert Broerse improved the documentation, including the index pages for the individual systems</li>
             </ul>
 
         <h4>Signal Heads</h4>
@@ -586,23 +590,22 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     	<h4>Simple Signal Logic</h4>
             <ul>
-                <li></li>
+                <li>Egbert Broerse improved the documentation</li>
             </ul>
 
 	    <h4>NX Entry/Exit Logic</h4>
             <ul>
-                <li></li>
+                <li>Egbert Broerse improved the documentation</li>
             </ul>
 
 	    <h4>USS CTC Logic</h4>
             <ul>
-                <li>
-                </li>
+                <li></li>
             </ul>
             
    <h3>Warrants</h3>
         <ul>
-            <li></li>
+            <li>Egbert Broerse improved the documentation</li>
         </ul>
 
    <h3>Web Access</h3>
@@ -612,17 +615,21 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Internationalization</h3>
         <ul>
-            <li></li>
+            <li>Egbert Broerse internationalized the "check for new version" tool and added a NL translation</li>
+            <li>Sonnys Hansen improved the Danish translation for some LocoNet tools</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
         <ul>
-            <li></li>
+            <li>Klaus Killinger
+                <a href="https://github.com/JMRI/JMRI/pull/4826">improved the AudioUtil support</a> 
+                of VSDecoder</li>
         </ul>
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li></li>
+            <li>Balazs Racz added support for properties in the NamedBean tables, including a 
+                new NamedBeanPropertyDescriptor class.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
