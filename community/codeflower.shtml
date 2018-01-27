@@ -49,7 +49,7 @@
     
     <h3>Introduction</h3>
     <p>The JMRI CodeFlower animation gives a lively perspective on the JMRI structure and how incredibly diverse the current state of work is.<br>
-    Choose from a subset or let your browser crunch on the fulle JMRI repo using the drop down over the image.<br>
+    Choose from a subset or let your browser crunch on the full JMRI repo using the drop down over the image.<br>
     Enjoy!</p>
     
       <label>Extent of items in flower:</label>
@@ -61,7 +61,7 @@
       </select>
 
     <div id="visualization"><noscript>Drop down is disabled and a static image shown because JavaScript is not running in this window.<br>
-    <img src="codeflower_js/javaflower.png" alt="Javascript not enabled" width="770" height="774" />
+    <img src="codeflower_js/javaflower.png" alt="Javascript not enabled" width="761" height="751" />
 </noscript></div>
     <!--javascript code for this div is below-->
         
@@ -73,7 +73,7 @@
     <h3>Technical Details</h3>
     <p>This CodeFlower was created using:
         <ul>
-        <li>a local GitHub repository (4.7.1ish)</li>
+        <li>a local GitHub repository (4.9.2ish)</li>
         <li>a modified <code>cloc</code> Python script</li>
         <li>functions embedded in the <a href="http://www.redotheweb.com/CodeFlower/">CodeFlower</a> page to convert the information into a json format</li>
         </ul>

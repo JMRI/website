@@ -1,5 +1,9 @@
 production:
  versions:
+  4.10:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.exe"
   4.8:
    tgz: "https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.tgz"
    dmg: "https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.dmg"
@@ -8,28 +12,20 @@ production:
    tgz: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.tgz/download"
    dmg: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.dmg/download"
    exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.exe/download"
-  4.4:
-   tgz: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.4-R1ccf76b.tgz/download"
-   dmg: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.4-R1ccf76b.dmg/download"
-   exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.4-R1ccf76b.exe/download"
-  4.2.1:
-   tgz: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.tgz/download"
-   dmg: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download"
-   exe: "https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.exe/download"
 test:
  versions:
-  4.9.1:
-   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.9.1/JMRI.4.9.1.Rc0c8f0b.tgz"
-   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.9.1/JMRI.4.9.1.Rc0c8f0b.dmg"
-   exe: "https://github.com/JMRI/JMRI/releases/download/v4.9.1/JMRI.4.9.1.Rc0c8f0b.exe"
-  4.7.8:
-   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.tgz"
-   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.dmg"
-   exe: "https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.exe"
-  4.7.7:
-   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.tgz"
-   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.dmg"
-   exe: "https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.exe"
+  4.11.2:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.exe"
+  4.11.1:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.11.1/JMRI.4.11.1.Rfe44680.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.11.1/JMRI.4.11.1.Rfe44680.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v4.11.1/JMRI.4.11.1.Rfe44680.exe"
+  4.9.8:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.exe"
 
 # This file contains information about the last few JMRI (http://jmri.org) releases.
 # JMRI is distributed under license. More information is at http://jmri.org/Copyright.html
