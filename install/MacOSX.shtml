@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Mac OS X Install Guide 
+ JMRI: macOS Install Guide
  </title>
-	<meta name="Author" content="Bob Jacobsen, Egbert Broerse">
-	<meta name="keywords" content="java model railroad JMRI install MacOSX Mac OS X">
+	<meta name="author" content="Bob Jacobsen, Egbert Broerse">
+	<meta name="keywords" content="java model railroad JMRI install MacOSX macOS">
 
 <!-- Style -->
   <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
@@ -22,7 +22,7 @@
 
 <!--#include virtual="/download/Sidebar" -->
 <div id="mainContent">
-  <h1>JMRI Install Guide: Mac OS X</h1>
+  <h1>JMRI Install Guide: macOS</h1>
 
 		<ul class="snav"><!-- TOC -->
 		<li><a href="#installation">Installation</a>
@@ -33,30 +33,30 @@
 
     <p>
     Please note:
-    
-	<p class="important">These directions are for installing the latest 
-	4.x releases of JMRI&reg; on current MacOS X computers.<br>
-    If you have an older machine and need to install an earlier release (such as JMRI 
-    <a href="../releasenotes/jmri3.10.1.shtml">3.10.1</a>, 
+
+	<p class="important">These directions are for installing the latest
+	4.x releases of JMRI&reg; on current MacOS computers.<br>
+    If you have an older machine and need to install an earlier release (such as JMRI
+    <a href="../releasenotes/jmri3.10.1.shtml">3.10.1</a>,
     <a href="../releasenotes/jmri2.8.shtml">2.8</a>, or
-    even earlier), please see these 
+    even earlier), please see these
     <a href="MacOSXRetro.html">Mac install instructions for old JMRI releases</a>.</p>
 
   <p>Now, on to the show:</p>
 
-      <a id="installation"><h2>Installing JMRI on your Mac OS X computer</h2></a>
+      <a id="installation"></a><h2>Installing JMRI on your MacOS computer</h2>
 
       <ol>
        <li><a name="sysreq"></a>
        Determine if your system software is compatible with the current releases of JMRI:
-       Find the current Mac OS X version number by choosing "About this Mac" from the Apple menu.</li>
+       Find the current MacOS version number by choosing "About this Mac" from the Apple menu.</li>
        
        <p>
-       JMRI 4.2 and later will work on any MacOS X version back to 10.7.3 Lion (2012).  
+       JMRI 4.2 and later will work on any MacOS version back to 10.7.3 Lion (2012).
        Note: MacOS X Lion 10.7.1 and 10.7.2 will have to be updated to 10.7.3.
-       
+
        <p>
-       If your Mac hardware doesn't let you update MacOS X to a recent enough version, 
+       If your Mac hardware doesn't let you update MacOS X to a recent enough version,
        you can still use older versions of JMRI:
        <ul>
         <li>Mac OS X version 10.7.2 "Lion" through 10.6 "Mountain Lion" can run <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7.
@@ -65,20 +65,20 @@
             (The youngest Mac that can't run Tiger was shipped in 2003)
         <li>For even older hardware, see a <a href="MacOSXRetro.html">separate page</a>.
         </ul>
-        
+
         <p>The JMRI install will take up about 180&nbsp;MB of disk space, mostly for the Help pages
         and decoder definitions.
         
         <li>Determine if you have the needed hardware drivers:
                 
-        <p>No Macintosh that runs Mac OS X has built-in Serial
+        <p>No Macintosh that runs MacOS has built-in Serial
         Ports, so if your layout hardware needs a serial connection,
         you'll have to use a <a href="../help/en/html/hardware/USBtoSerial.shtml">USB-to-Serial adapter</a>.</p>
 
         <p>No matter if you have a USB-to-Serial adapter, or a device with a direct 
-        USB connection, you will need Mac OS X drivers (system software) for the hardware you're using.
+        USB connection, you will need MacOS drivers (system software) for the hardware you're using.
         Most hardware won't need a separate driver;
-        they're already present in Mac OS X.  In some cases you will need to install a special driver, though, 
+        they're already present in MacOS.  In some cases you will need to install a special driver, though,
         so check the manufacturer's web site to make sure.</p>
       
         <p><em>Note: Mac OS X 10.11 El Capitan and later MacOS versions generally require
@@ -98,13 +98,13 @@
         must select the one that starts with "cu", e.g.
         "/dev/cu.KeyUSA19181.1".</p>
           
-        <p>There's a Mac OS X driver for USB-serial adapters
+        <p>There's a MacOS driver for USB-serial adapters
         based on the Prolific PL2303 chipset 
         <a href="http://osx-pl2303.sourceforge.net/">available here</a>.
         If you can't access your USB dongle and it seems to use that
         chipset (you can check in the USB tab of System Profiler), 
         this driver will make it available as /dev/cu.PL2303-xxx.</p>
-         
+
        <li>Get the JMRI software...</li>
 
         <p><a href="../download/index.shtml#prod-rel">Download</a> a
@@ -205,11 +205,11 @@
        More on this on the <a href="../help/en/html/setup/index.shtml">JMRI Setup help page</a>. 
        Go there next to complete your setup.</p>
 
-       <p> Mac OS X uses names like "<tt>cu.SomeName</tt>" and
+       <p> Mac OS uses names like "<tt>cu.SomeName</tt>" and
        "<tt>tty.SomeName</tt>" for devices, including
        USB-attached devices like USB-serial converters,
        LocoBuffer-USBs and similar.  Generally, you'll want to use the
-       one that starts with "<tt>cu.</tt>" if both 
+       one that starts with "<tt>cu.</tt>" if both
        <tt>cu.</tt> and <tt>tty.</tt> are present, but
        see the specific installation page for your particular type of
        device.  Sometimes you can recognize your interface from the
@@ -223,7 +223,7 @@
 
 JMRI supports many different Mac computers, 
 with several different kinds of processors,
-multiple Mac OS X versions,
+multiple MacOS versions,
 and various layout hardware.  
 Some combinations can cause trouble. 
 This section gives some debugging hints.
@@ -269,7 +269,7 @@ have a configuration that doesn't use a layout connection so you can
 work with the program on a laptop away from the layout.
 
 <p>
-With Mac OS X, JMRI makes this easy to do.  PanelPro and DecoderPro save
+With MacOS, JMRI makes this easy to do. PanelPro and DecoderPro save
 their Preferences separately, so they can be configured independently.
 
 <p>

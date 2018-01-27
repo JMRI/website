@@ -5,9 +5,9 @@
     <title>
  	JMRI Gallery
     </title>
-		<meta name="Author" content="Bob Jacobsen, Egbert Broerse">
+		<meta name="author" content="Bob Jacobsen, Egbert Broerse">
 		<meta name="Date.Modified" content="20150923"/>
-    <meta name="keywords" content="JMRI PanelPro control panel DCC C/MRI signals">
+        <meta name="keywords" content="JMRI PanelPro control panel DCC C/MRI signals">
 
     <!-- The combination of "Define" and {Header,Style, Logo and Footer} comments -->
     <!-- are an arbitrary design pattern used by the update.pl script to -->
@@ -32,14 +32,11 @@
     <div class="nomenu" id="mBody">
 	<div id="mainContent">
 
-	    <!-- ------------- -->
-	    <!-- Page Contents --> <!-- Required -->
-	    <!-- ------------- -->
-
-	    <H1>JMRI Gallery</H1>
+	    <h1>JMRI Gallery</h1>
 
 
-<p>This page highlights some of the neat things people have done with <a href="#panelpro">JMRI Panelpro</a> and <a href="#libraries">JMRI Libraries</a>.</p>
+<p>This page highlights some of the neat things people have done with <a href="#panelpro">JMRI
+    Panelpro</a> and <a href="#libraries">JMRI Libraries</a>.</p>
 
 <H2><a name="panelpro">PanelPro applications</a></H2>
 <p>Many PanelPro users have each come up with their own PanelPro application, ranging from simple to complex: </p>
@@ -86,12 +83,12 @@ He's created a very nice series of web pages on
 <h3>Alan Huberty's Bloomfield &amp; Oakland RR</h3>
 
 Alan Huberty created a multi-screen control panel for his Bloomfield &amp; Oakland Railroad.
-<a HREF="images/BORRCTCPanel.gif"><IMG SRC="images/BORRCTCPanel.gif" width="512" height="192"></a>
+<a href="images/BORRCTCPanel.gif"><img src="images/BORRCTCPanel.gif" width="512" height="192"></a>
 
 <h3>Otis McGee's SP Shasta Route</h3>
 
-<a HREF="http://spshastaroute.org/images/22.jpg">
-<IMG SRC="http://spshastaroute.org/images/thumb_22_jpg.gif" WIDTH="200" HEIGHT="150" align="right">
+<a href="http://spshastaroute.org/images/22.jpg">
+<img src="http://spshastaroute.org/images/thumb_22_jpg.gif" width="200" height="150" align="right">
 </a>
 
 <p>The goal of 
@@ -104,28 +101,46 @@ on his railroad (see below).
 <a href="SPShasta.shtml">PanelPro controls the machine and provides CTC control</a> for the layout
 via a large seven-node C/MRI installation.</p>
 
-<a HREF="http://spshastaroute.org/c/3.JPG">
-<IMG SRC="http://spshastaroute.org/c/thumb_3_JPG.gif" WIDTH="200" HEIGHT="150">
+<a href="http://spshastaroute.org/c/3.JPG">
+<img src="http://spshastaroute.org/c/thumb_3_JPG.gif" width="200" height="150">
 </a>
 <a href="images/ShastaCTTMachine.jpg">
-<IMG SRC="images/ShastaCTTMachine.jpg" width="200" height="150" alt="Picture of real CTC machine"/>
+<img src="images/ShastaCTTMachine.jpg" width="200" height="150" alt="Picture of real CTC machine"/>
 </a>
 <br/>
-<a HREF="http://spshastaroute.org/c/14.JPG">
-<IMG SRC="http://spshastaroute.org/c/thumb_14_JPG.gif" WIDTH="200" HEIGHT="150">
+<a href="http://spshastaroute.org/c/14.JPG">
+<img src="http://spshastaroute.org/c/thumb_14_JPG.gif" width="200" height="150">
 </a>
-<a HREF="http://www.spshastaroute.org/e/4.jpg">
-<IMG SRC="http://www.spshastaroute.org/e/thumb_4_jpg.gif" WIDTH="200" HEIGHT="150">
+<a href="http://www.spshastaroute.org/e/4.jpg">
+<img src="http://www.spshastaroute.org/e/thumb_4_jpg.gif" width="200" height="150">
 </a>
 
 <h3>Durenver &amp; Silverton RR</h3>
-	<p>Egbert Broerse's <a href="http://www.ebroerse.nl/railroading.html#dcc">Durenver &amp; Silverton Railroad</a> panel was made using Panel Editor and is displayed on a compact LCD monitor by <a href="http://jmri.org/help/en/html/apps/PanelPro/PanelPro.shtml">JMRI PanelPro 2.4.1</a> on OSX 10.4.6, the last version supported by the MacMini hardware.The graphics on the panel match a generic (US-built) Entrance-Exit (NX) CTC machine, in use from 1950 until the mid nineties. However, most turnouts are operated with an Individual Function Switch (IFS); see the <a href="https://en.wikipedia.org/wiki/Signalling_control">Signaling Wiki</a>.</p>
-<img src="http://www.nicospilt.com/scans/nx-tableau_eindhoven.JPG" WIDTH="300" HEIGHT="200" ALT="NX-panel Eindhoven/NL"</img><br/>
-The NX CTC machine in Eindhoven, The Netherlands (photo &copy; <a href="http://www.nicospilt.com/index_seinhuizen.htm">Nico Spilt<a>)
-<p>Egbert started by drawing a compact track schematic in 4 pt white lines on a black background. Location names and block boundaries were added to help in the orientation of the dispatcher. Icons from the Small LED schematics group were added to show track occupancy and Medium LED icons display and control the current state of lighting etc. Turnouts in hidden trackage are monitored using Infrared detectors, shown on the panel, supported bij audio signals produced by JMRI. Later, signals were added on the layout as well as to the panel (below, center). All logic is controlled as Signal Mast Logic following a customized <a href="http://jmri.org/xml/signals/RG-1965/index.shtml">Rio Grande 1965 Rule Book</a> signal definition. Physical control panels on the layout fascia sport the same graphic style, be it black on yellow (below, right; 3 images &copy; <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.ebroerse.nl" property="cc:attributionName" rel="cc:attributionURL">EJB</a> as <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a>)).</p>
-<img src="DSRR_Panel_Background.png" WIDTH="349" HEIGHT="162" ALT="DSRR background"</img>&nbsp;
-<img src="DSRR_Panel_Screen.png" WIDTH="311" HEIGHT="163" ALT="DSRR screenshot w/icons"</img>&nbsp;
-<img src="IMG_3536_D_SNGRR_panel.jpg" WIDTH="371" HEIGHT="163" ALT="DSRR physical panel"</img>
+	<p>Egbert Broerse's <a href="http://www.ebroerse.nl/railroading.html#dcc">Durenver &amp; Silverton Railroad</a>
+    panel was made using Panel Editor and is displayed on a compact LCD monitor by <a href=
+    "http://jmri.org/help/en/html/apps/PanelPro/PanelPro.shtml">JMRI PanelPro 2.4.1</a> on OSX 10.4.6,
+    the last version supported by the MacMini hardware.The graphics on the panel match a generic (US-built)
+    Entrance-Exit (NX) CTC machine, in use from 1950 until the mid nineties. However, most turnouts are
+    operated with an Individual Function Switch (IFS); see the
+    <a href="https://en.wikipedia.org/wiki/Signalling_control">Signaling Wiki</a>.</p>
+<img src="http://www.nicospilt.com/scans/nx-tableau_eindhoven.JPG" width="300" height="200" alt="NX-panel Eindhoven/NL"><br/>
+The NX CTC machine in Eindhoven, The Netherlands (photo &copy; <a
+            href="http://www.nicospilt.com/index_seinhuizen.htm">Nico Spilt</a>)
+<p>Egbert started by drawing a compact track schematic in 4 pt white lines on a black background.
+Location names and block boundaries were added to help in the orientation of the dispatcher.
+Icons from the Small LED schematics group were added to show track occupancy and Medium LED
+icons display and control the current state of lighting etc. Turnouts in hidden trackage are
+monitored using Infrared detectors, shown on the panel, supported bij audio signals produced by JMRI.
+Later, signals were added on the layout as well as to the panel (below, center). All logic is controlled as Signal
+Mast Logic following a customized <a href=
+"http://jmri.org/xml/signals/RG-1965/index.shtml">Rio Grande 1965 Rule Book</a> signal definition.
+Physical control panels on the layout fascia sport the same graphic style, be it black on yellow
+(below, right; 3 images &copy; <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.ebroerse.nl"
+property="cc:attributionName" rel="cc:attributionURL">EJB</a> as
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a>)).</p>
+<img src="DSRR_Panel_Background.png" width="349" height="162" alt="DSRR background">&nbsp;
+<img src="DSRR_Panel_Screen.png" width="311" height="163" alt="DSRR screenshot w/icons">&nbsp;
+<img src="IMG_3536_D_SNGRR_panel.jpg" width="371" height="163" alt="DSRR physical panel">
 	
 <h2><a name="libraries">Innovative uses of the JMRI Libraries</a></h2>
 
@@ -133,7 +148,7 @@ The NX CTC machine in Eindhoven, The Netherlands (photo &copy; <a href="http://w
 
 The Cedar River and Iowa Central Railway (Crandic) has
 a great 
-<a HREF="http://www.danook.com/crandic/ ">"Dispatching on the Crandic"</a> 
+<a href="http://www.danook.com/crandic/ ">"Dispatching on the Crandic"</a>
 video, along with several others, available
 for download. The Crandic's control program and dispatcher panel
 called 
@@ -153,7 +168,7 @@ for their
 <h3>Model Railroad Manager</h3>
 
 The
-<A HREF="http://www.modelrailroadmanager.com">Model Railroad Manager</A>
+<a href="http://www.modelrailroadmanager.com">Model Railroad Manager</a>
 software provides inventory, operations, maintenance and layout control
 programs for model railroads.  The layout-related parts are 
 <a href="http://www.modelrailroadmanager.com/MRRM_Advanced_Edition/Software_Architecture.html">based on the JMRI libraries</a>.
@@ -164,4 +179,3 @@ programs for model railroads.  The layout-related parts are
 	</div> <!-- closes #mBody-->
 </body>
 </html>
-
