@@ -59,69 +59,72 @@
 		<dd>Use JMRI to automate parts of your layout, from simply controlling a crossing gate
 		to running trains in the background.
 		    <ul>
-        <li><dfn><a href="/help/en/html/tools/signaling/index.shtml">Signaling</a></dfn>
-  			<li><dfn><a href="/help/en/html/tools/EntryExit.shtml">Entry Exit (NX)</a></dfn>
-        <li><dfn><a href="/help/en/html/tools/Routes.shtml">Routes</a></dfn>
-        <li><dfn><a href="/help/en/html/tools/fastclock/index.shtml">Fast Clocks</a></dfn>
-        <li><dfn><a href="/help/en/html/tools/scripting/index.shtml">Scripting</a></dfn>		    
-        </ul>
+                <li><dfn><a href="/help/en/html/tools/signaling/index.shtml">Signaling</a></dfn>
+  			    <li><dfn><a href="/help/en/html/tools/EntryExit.shtml">Entry Exit (NX)</a></dfn>
+  			    <li><dfn><a href="/help/en/package/jmri/jmrit/logix/Warrant.shtml">Warrants</a></dfn>
+                <li><dfn><a href="/help/en/package/jmri/jmrit/dispatcher/Dispatcher.shtml">Dispatcher</a></dfn>
+                <li><dfn><a href="/help/en/html/tools/Routes.shtml">Routes</a></dfn>
+                <li><dfn><a href="/help/en/html/tools/fastclock/index.shtml">Fast Clocks</a></dfn>
+                <li><dfn><a href="/help/en/html/tools/scripting/index.shtml">Scripting</a></dfn>
+            </ul>
 		</dd>
 
 		<div style="clear: both"></div>
 		<dt><h3><a href="./help/en/html/hardware/index.shtml">Supported Hardware</a></h3></dt>
 		<dd> 
-		<ul>
-      <!-- copy this list to /download and /install sidebar, compare with /help/en/html/index.shtml, checked 12/2015 -->
-      <li> <a href="/help/en/html/hardware/XPressNet/index.shtml">Atlas Commander</a>
-      <li> <a href="/help/en/html/hardware/bachrus/index.shtml">Bachrus</a>
-      <li> <a href="/help/en/html/hardware/cmri/CMRI.shtml">C/MRI</a>
-      <li> <a href="/help/en/html/hardware/acela/index.shtml">CTI Electronics</a>
-      <li> <a href="/help/en/html/hardware/easydcc/EasyDCC.shtml">CVP EasyDCC</a>
-	    <li> <a href="/help/en/html/hardware/dccpp/index.shtml">DCC++</a>
-	    <li> <a href="/help/en/html/hardware/misc/DccSpecialties.shtml">DCC Specialities</a>
-	    <li> <a href="/help/en/html/hardware/XBee/index.shtml">Digi XBee</a>
-	    <li> <a href="/help/en/html/hardware/loconet/Digitrax.shtml">Digitrax</a>
-	    <li> <a href="/help/en/html/hardware/ecos/index.shtml">ESU ECoS</a>
-      <li> <a href="/help/en/html/hardware/loconet/Fleischmann.shtml">Fleischmann</a>
-      <li> <a href="/help/en/html/hardware/XPressNet/index.shtml">Hornby</a>
-      <li> <a href="/help/en/html/hardware/XPressNet/index.shtml">Lenz</a>
-      <li> <a href="/help/en/html/hardware/tmcc/index.shtml">Lionel TMCC</a>
-	    <li> <a href="/help/en/html/hardware/loconet/Digitrax.shtml">LocoNet</a>
-	    <li> <a href="/help/en/html/hardware/maple/index.shtml">Maple Systems</a>
-	    <li> <a href="/help/en/html/hardware/marklin/index.shtml">M&auml;rklin CS2</a>
-	    <li> <a href="/help/en/html/hardware/modbus/index.shtml">Modbus</a>
-	    <li> <a href="/help/en/html/hardware/can/cbus/index.shtml">MERG CBUS</a>
-	    <li> <a href="/help/en/html/hardware/mrc/index.shtml">MRC</a>
-	    <li> <a href="/help/en/html/hardware/rps/index.shtml">NAC Services RPS</a>
-      <li> <a href="/help/en/html/hardware/nce/NCE.shtml">NCE</a>
-      <li> <a href="/help/en/html/hardware/oaktree/OakTree.shtml">Oak Tree Systems</a>
-      <li> <a href="/help/en/html/hardware/openlcb/index.shtml">OpenLCB</a>
-      <li> <a href="/help/en/html/hardware/grapevine/index.shtml">Protrak Grapevine</a>
-	    <li> <a href="/help/en/html/hardware/qsi/index.shtml">QSI Quantum Programmer</a>
-	    <li> <a href="/help/en/html/hardware/raildriver/index.shtml">Pi Engineering RailDriver</a>
-	    <li> <a href="/help/en/html/hardware/pi/index.shtml">Raspberry Pi</a>
-	    <li> <a href="/help/en/html/hardware/XPressNet/index.shtml">Roco</a>
-	    <li> <a href="/help/en/html/hardware/sprog/SPROG.shtml">SPROG</a>
-	    <li> <a href="/help/en/html/hardware/SRCP/index.shtml">SRCP server</a>
-      <li> <a href="/help/en/html/hardware/tams/index.shtml">TAMS Master Control</a>
-	    <li> <a href="/help/en/html/hardware/loconet/Digitrax.shtml">Uhlenbrock Intellibox</a>
-      <li> <a href="/help/en/html/hardware/XPressNet/index.shtml">Viessmann Commander</a>
-      <li> <a href="/help/en/html/hardware/nce/Wangrow.shtml">Wangrow System One</a>
-      <li> <a href="/help/en/html/hardware/powerline/index.shtml">X10</a>
-      <li> <a href="/help/en/html/hardware/zimo/Zimo.shtml">Zimo MX-1</a>
-      <li> <a href="/help/en/html/hardware/XPressNet/index.shtml">ZTC</a>
-    </ul>
+            <ul>
+                <!-- copy this list to /download and /install sidebar, compare with /help/en/html/index.shtml, checked 12/2015 -->
+                <li> <a href="/help/en/html/hardware/XPressNet/index.shtml">Atlas Commander</a>
+                <li> <a href="/help/en/html/hardware/bachrus/index.shtml">Bachrus</a>
+                <li> <a href="/help/en/html/hardware/cmri/CMRI.shtml">C/MRI</a>
+                <li> <a href="/help/en/html/hardware/acela/index.shtml">CTI Electronics</a>
+                <li> <a href="/help/en/html/hardware/easydcc/EasyDCC.shtml">CVP EasyDCC</a>
+                <li> <a href="/help/en/html/hardware/dccpp/index.shtml">DCC++</a>
+                <li> <a href="/help/en/html/hardware/misc/DccSpecialties.shtml">DCC Specialities</a>
+                <li> <a href="/help/en/html/hardware/XBee/index.shtml">Digi XBee</a>
+                <li> <a href="/help/en/html/hardware/digirails/index.shtml">Digikeijs</a>
+                <li> <a href="/help/en/html/hardware/loconet/Digitrax.shtml">Digitrax</a>
+                <li> <a href="/help/en/html/hardware/ecos/index.shtml">ESU ECoS</a>
+                <li> <a href="/help/en/html/hardware/loconet/Fleischmann.shtml">Fleischmann</a>
+                <li> <a href="/help/en/html/hardware/XPressNet/index.shtml">Hornby</a>
+                <li> <a href="/help/en/html/hardware/XPressNet/index.shtml">Lenz</a>
+                <li> <a href="/help/en/html/hardware/tmcc/index.shtml">Lionel TMCC</a>
+                <li> <a href="/help/en/html/hardware/loconet/Digitrax.shtml">LocoNet</a>
+                <li> <a href="/help/en/html/hardware/maple/index.shtml">Maple Systems</a>
+                <li> <a href="/help/en/html/hardware/marklin/index.shtml">M&auml;rklin CS2</a>
+                <li> <a href="/help/en/html/hardware/modbus/index.shtml">Modbus</a>
+                <li> <a href="/help/en/html/hardware/can/cbus/index.shtml">MERG CBUS</a>
+                <li> <a href="/help/en/html/hardware/mrc/index.shtml">MRC</a>
+                <li> <a href="/help/en/html/hardware/rps/index.shtml">NAC Services RPS</a>
+                <li> <a href="/help/en/html/hardware/nce/NCE.shtml">NCE</a>
+                <li> <a href="/help/en/html/hardware/oaktree/OakTree.shtml">Oak Tree Systems</a>
+                <li> <a href="/help/en/html/hardware/openlcb/index.shtml">OpenLCB</a>
+                <li> <a href="/help/en/html/hardware/grapevine/index.shtml">Protrak Grapevine</a>
+                <li> <a href="/help/en/html/hardware/qsi/index.shtml">QSI Quantum Programmer</a>
+                <li> <a href="/help/en/html/hardware/raildriver/index.shtml">Pi Engineering RailDriver</a>
+                <li> <a href="/help/en/html/hardware/pi/index.shtml">Raspberry Pi</a>
+                <li> <a href="/help/en/html/hardware/XPressNet/index.shtml">Roco</a>
+                <li> <a href="/help/en/html/hardware/sprog/SPROG.shtml">SPROG</a>
+                <li> <a href="/help/en/html/hardware/SRCP/index.shtml">SRCP server</a>
+                <li> <a href="/help/en/html/hardware/tams/index.shtml">TAMS Master Control</a>
+                <li> <a href="/help/en/html/hardware/loconet/Digitrax.shtml">Uhlenbrock Intellibox</a>
+                <li> <a href="/help/en/html/hardware/XPressNet/index.shtml">Viessmann Commander</a>
+                <li> <a href="/help/en/html/hardware/nce/Wangrow.shtml">Wangrow System One</a>
+                <li> <a href="/help/en/html/hardware/powerline/index.shtml">X10</a>
+                <li> <a href="/help/en/html/hardware/zimo/Zimo.shtml">Zimo MX-1</a>
+                <li> <a href="/help/en/html/hardware/XPressNet/index.shtml">ZTC</a>
+            </ul>
 		</dd>
 
 		<div style="clear: both"></div>
 		<dt><h3>Supported Computers</h3></dt>
 		<dd> 
-		<ul>
-        <li><a href="/install/WindowsNew.shtml">Windows</a>
-        <li><a href="/install/MacOSX.shtml">Mac OS X</a>
-        <li><a href="/install/Linux.shtml">Linux</a>
-	      <li><a href="/help/en/html/setup/index.shtml">Setup</a>
-		</ul>
+		    <ul>
+                <li><a href="/install/WindowsNew.shtml">Windows</a>
+                <li><a href="/install/MacOSX.shtml">Mac OS X</a>
+                <li><a href="/install/Linux.shtml">Linux</a>
+	            <li><a href="/help/en/html/setup/index.shtml">Setup</a>
+		    </ul>
 		</dd>
 
 	    </dl>
