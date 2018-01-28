@@ -241,15 +241,15 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.dmg">https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.dmg</a><br/>
-  sha256: 27c0df735d19229c0ae6247fc43f2c71eecc23526aba2d8eeba7588b50d40805 </p>
+  sha256: 27c0df735d19229c0ae6247fc43f2c71eecc23526aba2d8eeba7588b50d40805 </li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.exe">https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.exe</a><br/>
-   sha256: 52d93f7ba210f74e339ed74faab92e07d12d396a857e794d693112c32060e1b7</p>
+   sha256: 52d93f7ba210f74e339ed74faab92e07d12d396a857e794d693112c32060e1b7</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.tgz">https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.tgz</a><br/>
-   sha256: 04750479ca093b99e6f973f7aac3ed236718b85757bbc2b75650d0d1536b1f2c</p>
+   sha256: 04750479ca093b99e6f973f7aac3ed236718b85757bbc2b75650d0d1536b1f2c</li>
 </ul>
 
 <!-- 
@@ -292,8 +292,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		
         <h4>C/MRI</h4>
             <ul>
-                <li></li>        
-                </ul>    
+                <li></li>
             </ul>
 
         <h4>DCC++</h4>
@@ -353,6 +352,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>SPROG</h4>
             <ul>
+                <li>Improved SPROG Command Station mode
+                fixes a reported issue to turn Track Power on</li>
                 <li>A SPROG Simulator connection type was added</li>
             </ul>
 
