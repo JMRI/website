@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
  <title>
- JMRI: Release Notes for 4.11.2
+ JMRI: Release Notes for 4.11.3
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.11.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.11.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,16 +23,14 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.11.2 release
+      Release Notes for JMRI 4.11.3 release
       </h1>
 
-    <p>Date: January 22, 2017</p>
+    <p>Date: mmm dd, 2017</p>
     <p>From: (pumpkin)</p>
-    <p>Subject: Test Release 4.11.2 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.11.3 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h2>Notes:</h2>
 
@@ -40,7 +38,7 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the second in a series of test releases.
+<p>This is the third in a series of test releases.
 We expect this series to end in the next JMRI production release around the middle of 2018.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
@@ -112,20 +110,21 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
-    The system connection preferences (i.e. hardware preferences) are now
-    enforcing the <A href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
-    for system prefixes:  One upper case letter, 
-    optionally followed by a number (one or more digits, e.g. "L12").
-    Existing prefixes in existing configurations are unchanged, but
-    new ones will have to have the correct form.</li>
-
+    <li>None
 </ul>
 
 <h3>Older warnings</h3>
 
 See the <a href="jmri4.10.shtml#warnings">JMRI 4.10 release note</a> for more warnings predating the 4.11 development series.
 These may be relevant to you if you're updating from an earlier version.
+
+<p><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
+    The system connection preferences (i.e. hardware preferences) are now
+    enforcing the <A href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
+    for system prefixes:  One upper case letter, 
+    optionally followed by a number (one or more digits, e.g. "L12").
+    Existing prefixes in existing configurations are unchanged, but
+    new ones will have to have the correct form.
 
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     Due to changes in the capitalization of some method and property names, some scripts may fail until
@@ -232,6 +231,7 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
@@ -240,49 +240,43 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.dmg">https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.dmg</a><br/>
-  sha256: 27c0df735d19229c0ae6247fc43f2c71eecc23526aba2d8eeba7588b50d40805 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg</a><br/>
+  sha256: f0eb649a303c76303bb5ecf79b6fcd1c9ffba2421aaf32c09354b5ce93ac98c3 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.exe">https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.exe</a><br/>
-   sha256: 52d93f7ba210f74e339ed74faab92e07d12d396a857e794d693112c32060e1b7</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe</a><br/>
+   sha256: d04f9e2e108ce058c0de3e406f49893b4374ad013762425aeac2bdfeaf0f5dd6</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.tgz">https://github.com/JMRI/JMRI/releases/download/v4.11.2/JMRI.4.11.2.Rb400a47.tgz</a><br/>
-   sha256: 04750479ca093b99e6f973f7aac3ed236718b85757bbc2b75650d0d1536b1f2c</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz</a><br/>
+   sha256: 891ae78c024f35aa2b5e0b43554df61720dc61006c2e1913b8affddac2b2fb6f</li>
 </ul>
+ -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.11.1/">CI project page</a>.
  -->
- 
-<!--
+
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-  -->
-  
-<h2>Changes since <a href="jmri4.11.1.shtml">Test release 4.11.1</a>:</h2>  -->
+ 
+<h2>Changes since <a href="jmri4.11.2.shtml">Test release 4.11.2</a>:</h2>  -->
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.2">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.3">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>Hardware Support</h3>
 
         <ul>
-          <li>The system connection preferences (i.e. hardware preferences) are now
-                enforcing the <A href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
-                for system prefixes:  One upper case letter, 
-                optionally followed by a number (one or more digits, e.g. "L12").
-                Existing prefixes in existing configurations are unchanged, but
-                new ones will have to have the correct form.</li>
+          <li></li>
         </ul>
 
 	    <h4>Anyma DMX512</h4>
             <ul>
-                <li>The default system prefix was shortened to "D"</li>
+                <li></li>
             </ul>
 		
 	    <h4>Bachrus Speedo</h4>
@@ -292,17 +286,22 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		
         <h4>C/MRI</h4>
             <ul>
-                <li></li>
+                <li>Chuck Catania fixed a
+                    <a href="https://github.com/JMRI/JMRI/issues/4616">formatting problem</a>
+                    with user names on the "List Assignments" window</li>  
+                <li>Chuck Catania added a 
+                    <a href="https://github.com/JMRI/JMRI/issues/4624">save reminder dialog</a>
+                    upon exiting the C/MRI Node Configuration Manager.</li>
             </ul>
 
         <h4>DCC++</h4>
             <ul>
-                <li>The default system prefix was shortened to "D"</li>
+                <li></li>
             </ul>
 
         <h4>DCC4pc</h4>
             <ul>
-                <li>The default system prefix was shortened to "D"</li>
+                <li></li>
             </ul>
 
         <h4>JMRI Simple Server/JMRI Client</h4>
@@ -322,12 +321,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Marklin CS2</h4>
             <ul>
-                <li>The default system prefix was shortened to "M"</li>
+                <li></li>
             </ul>
 
         <h4>MRC</h4>
             <ul>
-                <li>The default system prefix was shortened to "M"</li>
+                <li></li>
             </ul>
 
         <h4>NCE</h4>
@@ -352,14 +351,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>SPROG</h4>
             <ul>
-                <li>Improved SPROG Command Station mode
-                fixes a reported issue to turn Track Power on</li>
-                <li>A SPROG Simulator connection type was added</li>
+                <li>Egbert Broerse improved the documentation</li>
             </ul>
 
         <h4>TMCC</h4>
             <ul>
-                <li>The default system prefix was shortened to "T"</li>
+                <li></li>
             </ul>
 
         <h4>Uhlenbrock Intellibox</h4>
@@ -397,21 +394,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h4>DigiRails</h4>
+        <h4>Digikeijs (Digirails)</h4>
             <ul>
-                <li></li>
+                <li>Egbert Broerse improved the documentation</li>
             </ul>
 
         <h4>Digitrax</h4>
             <ul>
-                <li>Digitrax Command Station "Operation Switches" (OpSws) may 
-                now be configured and saved via a Roster Entry.  The OpSw 
-                configuration information may be saved to the Roster Entry.
-                Command stations supported include the Digitrax DB150, DCS50, 
-                DCS51, DCS100, DCS200, DCS210 and DCS240.  Additional information
-                may be found at the <a href="http://jmri.org/help/en/html/hardware/loconet/CommandStationConfig.shtml">
-                Digitrax Command Station Configuration</a> page.
-		        </li>
+                <li></li>
             </ul>
 
         <h4>Doehler &amp; Haas</h4>
@@ -486,12 +476,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>SoundTraxx</h4>
             <ul>
-                <li></li>
+                <li>Michael Mosher added the GP35 Tsunami decoder</li>
             </ul>
 
         <h4>TCS</h4>
             <ul>
-                <li></li>
+                <li>Michael Mosher updated the TCS WOW diesel definitions</li>
             </ul>
 
         <h4>Technologistic (train-O-matic)</h4>
@@ -556,12 +546,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Resources</h3>
         <ul>
-            <li></li>
+            <li>Chuck Catania added <a href="http:/jmri.org/resources/icons/USS/plate/base-plates/misc/">lock plate icons</a></li>
         </ul>
 
     <h3>Roster</h3>
         <ul>
-            <li>Digitrax Command Station Operations Switches may now be managed via a Roster entry.
+            <li></li>
         </ul>
 
     <h3>Turnouts, Lights and other elements</h3>
@@ -580,7 +570,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
         <h4>Signal Systems</h4>
             <ul>
-                <li></li>
+                <li>Egbert Broerse improved the documentation, including the index pages for the individual systems</li>
             </ul>
 
         <h4>Signal Heads</h4>
@@ -600,27 +590,22 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     	<h4>Simple Signal Logic</h4>
             <ul>
-                <li></li>
+                <li>Egbert Broerse improved the documentation</li>
             </ul>
 
 	    <h4>NX Entry/Exit Logic</h4>
             <ul>
-                <li>The cross-checking between Layout Editor and Entry/Exit has been improved
-		to prevent broken relationships that can lead to errors.
-		<a href="http://jmri.org/help/en/html/tools/EntryExit.shtml">Entry/Exit Help</a>
-		has been updated.
-		</li>
+                <li>Egbert Broerse improved the documentation</li>
             </ul>
 
 	    <h4>USS CTC Logic</h4>
             <ul>
-                <li>
-                </li>
+                <li></li>
             </ul>
             
    <h3>Warrants</h3>
         <ul>
-            <li>The Warrants Help pages were edited (with extra screen shots)</li>
+            <li>Egbert Broerse improved the documentation</li>
         </ul>
 
    <h3>Web Access</h3>
@@ -630,21 +615,21 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Internationalization</h3>
         <ul>
-            <li>Sonnys Hanson added more Danish translation</li>
+            <li>Egbert Broerse internationalized the "check for new version" tool and added a NL translation</li>
+            <li>Sonnys Hansen improved the Danish translation for some LocoNet tools</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
         <ul>
-            <li>Klaus Killinger added a new VSD file.
-            For a download go to 
-            <a href="https://github.com/JMRI/vsdecoder/blob/master/Class94.vsd">
-            JMRI VSDecoder</a> and click on "Download".
-            </li>
+            <li>Klaus Killinger
+                <a href="https://github.com/JMRI/JMRI/pull/4826">improved the AudioUtil support</a> 
+                of VSDecoder</li>
         </ul>
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li></li>
+            <li>Balazs Racz added support for properties in the NamedBean tables, including a 
+                new NamedBeanPropertyDescriptor class.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->

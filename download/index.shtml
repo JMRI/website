@@ -3,7 +3,7 @@
 
 <head>
  <title>JMRI: Downloads</title>
-    <meta content="John Plocher" name="Author">
+    <meta name="author" content="John Plocher">
     <meta name="keywords" content="java model railroad JMRI download binaries binary code jar install">
 
 <!-- Style -->
@@ -51,11 +51,11 @@
 	    <a href="#prod-rel">next section</A> for download and install
 	    information. 
 	    
-	    <dt>Test release 4.11.1available</dt>
+	    <dt>Test release 4.11.2 is available</dt>
 	    <dd>
-	    <p>Test release 4.11.1 was made available on December 24, 2017.
+	    <p>Test release 4.11.2 was made available on January 22, 2018.
 
-        <p>JMRI 4.11.1 is the first test release of the current development series, containing the latest
+        <p>JMRI 4.11.2 is the second test release of the current development series, containing the latest
         and greatest JMRI updates. 
         <p>
         The series is working toward the next JMRI production release, probably in early summer 2018.
@@ -63,7 +63,7 @@
         For more
 	    information, including the links to download a copy,
 	    please see the
-	    <a href="../releasenotes/jmri4.11.1.shtml">release note</a>.
+	    <a href="../releasenotes/jmri4.11.2.shtml">release note</a>.
 	  
 	    <a href="#prod-rel">Release 4.10</a> is the current "production" release, recommended
 	    for first-time users. 
@@ -117,15 +117,15 @@
         <ul>
         <li>OS X / macOS: <a
             href="https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.dmg">https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.dmg</a><br/>
-          sha256: c78aca9f75cc94a9db285ecbb075702c015aed59cbc7403549a51380e445a91c </p>
+          sha256: c78aca9f75cc94a9db285ecbb075702c015aed59cbc7403549a51380e445a91c </li>
 
         <li>Windows: <a
             href="https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.exe">https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.exe</a><br/>
-           sha256: 856cd800c6b54c8dd6d64f87d35ee951810ad4ba8f54c65d31d4139e08e23200</p>
+           sha256: 856cd800c6b54c8dd6d64f87d35ee951810ad4ba8f54c65d31d4139e08e23200</li>
 
         <li>Linux: <a
             href="https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.tgz">https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.tgz</a><br/>
-           sha256: 7da8d6f95acfb95be1a6c6a6f1bc0220a532596eb95363adc4d0c26910a1f91a</p>
+           sha256: 7da8d6f95acfb95be1a6c6a6f1bc0220a532596eb95363adc4d0c26910a1f91a</li>
         </ul>
       </p>
 
@@ -152,9 +152,9 @@
 	    are announced in the
 	    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group.</p>
     <p>
-        The most current test release is JMRI 4.11.1.  More information on it, 
+        The most current test release is JMRI 4.11.2.  More information on it,
         including the links to download a copy, can be found in
-        <a href="../releasenotes/jmri4.11.1.shtml">release note</a>.
+        <a href="../releasenotes/jmri4.11.2.shtml">release note</a>.
 	<p>
 	   For more information on the rough development schedule, please see the 
 	   <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">JMRI road map</a>
@@ -163,13 +163,6 @@
 
 <h2>Related Items</h2>
 <dl>
-
-<!-- 	<dt class="im"><a href="CD.html"><img src="CDROM.gif" width="32" height="30" alt="Java"></a></dt> -->
-<!-- 	<dt><a href="CD.html">JMRI CD</a></dt> -->
-<!-- 	<dd> -->
-<!-- 	    <p>The JMRI software suite is also available on CD -->
-<!-- 	    <a href="CD.html">[More]</a></p> -->
-<!-- 	</dd> -->
 
 	<dt class="im">
         <a href="http://www.java.com" target="_blank"><img src="http://download.oracle.com/technetwork/java/get-java/getjavasoftware-88x31.png" alt="Get Java Software" border="0" width="88" height="31" /></a>
