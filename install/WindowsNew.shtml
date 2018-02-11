@@ -68,13 +68,27 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
 		Windows2000 SP3 and XP systems can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.<br>
 		Windows98 and ME can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.8</a>.
                 <p>Note: It is possible to install Java 1.8 onto machines running Windows XP or Vista SP1, 
-                but this is <em>unsupported</em> by Oracle and may break at any time. To proceed, visit
-                the <a href="http://www.java.com/en/download/manual.jsp">Manual Java Downloads page</a> and
-                choose the Offline Installer for Windows. The installer will complain that it is unsupported,
-                but should allow you to continue with the installation. Assuming that this is successful, proceed with
-                installation of <a href="http://jmri.org/download/index.shtml">current JMRI test and production releases</a>.
-	  <p>We recommend you have at least 256&nbsp;MB of memory for Windows 98, 512&nbsp;MB of memory for Windows 2000 and 2&nbsp;GB for the newer W7-W10 systems. We have had a report that a 330&nbsp;MHz Pentium II running W2000 is fine, but it's important to have enough memory and free hard disk space.
-	  For the more complicated DecoderPro screens, a display with a resolution of 800x600 or larger is strongly recommended. 
+                but this is <em>unsupported</em> by Oracle. 
+                <ul>
+                <li>To do this for Windows XP, visit
+                    the <a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html">Java Releases Archive page</a> 
+                    and choose the "Java SE Runtime Environment 8u151" installer for "Windows x86 Offline".
+                    The file name is <code>jre-8u151-windows-i586.exe</code>.
+                    This is the last installer that worked for Windows XP; if you later get prompted to do a Java
+                    Update to a newer version than 151, cancel it instead of applying it (if you do apply the update, you'll have to reinstall
+                    the 151 version of Java as described here.)
+                    The installer will complain that it is unsupported,
+                    but should allow you to continue with the installation. Assuming that this is successful, proceed with
+                    installation of <a href="http://jmri.org/download/index.shtml">current JMRI test and production releases</a>.
+                <li>To do this for Windows Vista SP1, visit
+                    the <a href="http://www.java.com/en/download/manual.jsp">Manual Java Downloads page</a> and
+                    choose the Offline Installer for Windows. The installer will complain that it is unsupported,
+                    but should allow you to continue with the installation. Assuming that this is successful, proceed with
+                    installation of <a href="http://jmri.org/download/index.shtml">current JMRI test and production releases</a>.
+                </ul>
+	  <p>
+	  It's important to have enough memory and free hard disk space.
+	  We recommend you have at least 256&nbsp;MB of memory for Windows 98, 512&nbsp;MB of memory for Windows 2000 and 2&nbsp;GB for the newer W7-W10 systems. 
 	  Note that used PC hardware is available for very little money; it might be cheaper to buy a used computer than to update your existing one.</p>
 	</li>
 	
