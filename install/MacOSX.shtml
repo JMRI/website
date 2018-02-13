@@ -174,7 +174,14 @@
           </ul>
           <p>Your existing configuration information, Panel files, etc will
           continue to be used with the new version.
-      
+
+          <h3>Clean Install</h3>
+          <p>If for any reason you wish to start totally clean and discard all previously stored Connections, Roster
+          entries and Panels, delete the JMRI settings folder before starting the program. You will find it by choosing
+          "Go to Folder..." from the Finder's <b>Go</b> menu (or &#8984;+Shift+G). In the pane that appears, enter
+          "~/Library/Preferences/", click "Go". If a "JMRI" folder is present in Preferences, move it to the Trash.
+          </p>
+
       <a id="startup"></a><h2>Starting JMRI</h2>
       
       <p>Connect your computer to your <a
@@ -247,7 +254,7 @@ This section gives some debugging hints.
 <p>Source: <a href="../releasenotes/jmri4.5.2.shtml"> JMRI 4.5.2 Release notes</a>.</p>
 
 <h3>Vector3f issue</h3>
-
+<p>
 Sometimes Macs have an older "vecsub.jar" library installed in a place that
 will cause problems for JMRI.  It happens more often when you're compiling your
 own version, but it can also happen when just running a download. If you get messages about
@@ -284,6 +291,7 @@ Let's say you want one called "CoolNewOne".
 	<li>Double click your new icon, and off you go.  
 	</ul>
 
+<p>
 It won't work to drag one of the JMRI application icons out of the 
 JMRI folder, since they need the other files that can be found there.
 If you want an icon in some other place, like on your desktop:
@@ -294,6 +302,7 @@ If you want an icon in some other place, like on your desktop:
 	<li>Drag that new alias icon to it's new location, and optionally rename it.
 	</ul>
 
+<p>
 Note that renaming the alias alone does not cause the application icon to be renamed, so the alias will be using the
 same Preferences as the original.
 
