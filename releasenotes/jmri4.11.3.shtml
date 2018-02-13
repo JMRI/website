@@ -536,7 +536,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Panel Editors</h3>
         <ul>
-            <li></li>
+            <li>Switchboard panels were improved to open without an Editor and with unconnected switches hidden when
+            saved in that state. The turnout icons were fixed to match the state shown in the Turnout Table.<br>
+            You can prevent a Switchboard from operating the layout via the Editor's Option menu.<br>
+            Operating a Switchboard over JMRI Web Server and in WiThrottle has been restored.</li>
         </ul>
 
     <h3>Preferences</h3>

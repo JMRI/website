@@ -153,7 +153,7 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
 	<p>(The following instructions assume that you are setting up a blank removable flash drive - creation of a CD will be similar but may depend on the capabilities of your CD authoring software)</p>	
 		<ol>
 		<li>Copy the <a href="../download/index.shtml#prod-rel">previously downloaded</a> JMRI installer onto the root of the flash drive.
-		<li>Create a directory in the root of the flash drive called:
+		<li>Create a directory in the root of the flash drive and name it:
 		<ul>
 		<li>JRE
 		<p>The following image shows the resulting structure:
@@ -162,7 +162,13 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
 		<li>In the JRE directory, place a copy of the Java offline installer for Windows 2000 or later. If required, the latest version can be <a href="http://java.com/winoffline_installer/">downloaded from Sun Microsystems here</a>. A typical name for this file is 'jre-8u66-windows-i586.exe'.
 		</ol>
 	<p>Setup of the JMRI offline installation media is now complete.</p>
-	
+
+	<h3>Clean Install</h3>
+	<p>If for any reason you wish to start totally clean and discard all previously stored Connections, Roster entries
+	and Panels, run "Uninstall JMRI", found in the Windows Start Menu &gt; All Programs &gt; JMRI &gt; Tools and Demos
+	before
+	reinstalling a new version of JMRI.</p>
+
  <a id="startup"><h2>Starting JMRI</h2></a>
  <ul>
   <li>Connect your computer to your <a
