@@ -231,7 +231,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
@@ -240,28 +239,28 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg</a><br/>
-  sha256: f0eb649a303c76303bb5ecf79b6fcd1c9ffba2421aaf32c09354b5ce93ac98c3 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.11.3/JMRI.4.11.3.R80b3ab3.dmg">https://github.com/JMRI/JMRI/releases/download/v4.11.3/JMRI.4.11.3.R80b3ab3.dmg</a><br/>
+  sha256: 908de121aa641e2860cf18177319934023a5e48ffe48bd0294c4624a43b7d4d8 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe</a><br/>
-   sha256: d04f9e2e108ce058c0de3e406f49893b4374ad013762425aeac2bdfeaf0f5dd6</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.11.3/JMRI.4.11.3.R80b3ab3.exe">https://github.com/JMRI/JMRI/releases/download/v4.11.3/JMRI.4.11.3.R80b3ab3.exe</a><br/>
+   sha256: 290fe3a42e44f8145d3fb77cc8255f8469c1916ee30a1a4076c8a2e870971a76</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz</a><br/>
-   sha256: 891ae78c024f35aa2b5e0b43554df61720dc61006c2e1913b8affddac2b2fb6f</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.11.3/JMRI.4.11.3.R80b3ab3.tgz">https://github.com/JMRI/JMRI/releases/download/v4.11.3/JMRI.4.11.3.R80b3ab3.tgz</a><br/>
+   sha256: ca22b950dd49e9867b0c3d148c8944aea51111620d4585176c8c956c1b481a43</li>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.11.1/">CI project page</a>.
- -->
+
 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
  
 <h2>Changes since <a href="jmri4.11.2.shtml">Test release 4.11.2</a>:</h2>  -->
 
@@ -336,7 +335,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4><a href="http://openlcb.org">OpenLCB</a></h4>
             <ul>
-                <li></li>
+                <li>Processing addresses in Node IDs and Event IDs
+                    has been speeded-up, which will reduce (but not remove)
+                    delays in table scrolling seen on some large layouts.
+                </li>
             </ul>
 
         <h4>RFID</h4>
@@ -635,6 +637,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>Balazs Racz added support for properties in the NamedBean tables, including a 
                 new NamedBeanPropertyDescriptor class.</li>
+            <li>A problem that prevented Drag and Drop from working on some systems was corrected.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
