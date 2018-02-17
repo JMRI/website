@@ -26,11 +26,13 @@
       Release Notes for JMRI 4.11.3 release
       </h1>
 
-    <p>Date: mmm dd, 2017</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: Feb 15, 2017</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.11.3 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -269,20 +271,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Hardware Support</h3>
 
-        <ul>
-          <li></li>
-        </ul>
-
-	    <h4>Anyma DMX512</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-	    <h4>Bachrus Speedo</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
         <h4>C/MRI</h4>
             <ul>
                 <li>Chuck Catania fixed a
@@ -293,46 +281,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                     upon exiting the C/MRI Node Configuration Manager.</li>
             </ul>
 
-        <h4>DCC++</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>DCC4pc</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>JMRI Simple Server/JMRI Client</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LocoNet</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MERG CBUS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Marklin CS2</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li><li>
-            </ul>
-
         <h4><a href="http://openlcb.org">OpenLCB</a></h4>
             <ul>
                 <li>Processing addresses in Node IDs and Event IDs
@@ -341,139 +289,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </li>
             </ul>
 
-        <h4>RFID</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Roco z21/Z21</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>SPROG</h4>
             <ul>
                 <li>Egbert Broerse improved the documentation</li>
             </ul>
 
-        <h4>TMCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Zimo MXULF</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZTC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
     <h3>New / Updated decoder definitions</h3>
-      <ul>
-        <li></li>
-     </ul>
-
-        <h4>Arnold</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>BLI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Bachmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>Digikeijs (Digirails)</h4>
             <ul>
                 <li>Egbert Broerse improved the documentation</li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Doehler &amp; Haas</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ESU</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Hornby</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Kuehn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LaisDCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Lenz</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MGP</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>MTH</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Norsk Modelljernbane (NJM)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>QSI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Rautenhaus</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RR-CirKits</h4>
-            <ul>
-                <li></li>
             </ul>
 
         <h4>SoundTraxx</h4>
@@ -486,55 +310,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Michael Mosher updated the TCS WOW diesel definitions</li>
             </ul>
 
-        <h4>Technologistic (train-O-matic)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Viessmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Wangrow</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZIMO</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Miscellaneous</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    <h3>DecoderPro</h3>
-        <ul>
-          <li></li>
-        </ul>
-
-   <h3>Dispatcher</h3>
-        <ul>
-             <li></li>
-        </ul>
-
-    <h3>Layout Editor</h3>
-        <ul>
-	        <li></li>
-        </ul>
-
-    <h3>Logix</h3>
-        <ul>
-          <li></li>
-        </ul>
-
-    <h3>Operations</h3>
-       <ul>
-          <li></li>
-       </ul>
 
    <h3>Panel Editors</h3>
         <ul>
@@ -544,53 +319,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             Operating a Switchboard over JMRI Web Server and in WiThrottle has been restored.</li>
         </ul>
 
-    <h3>Preferences</h3>
-        <ul>
-            <li></li>
-        </ul>
-
     <h3>Resources</h3>
         <ul>
             <li>Chuck Catania added <a href="http:/jmri.org/resources/icons/USS/plate/base-plates/misc/">lock plate icons</a></li>
         </ul>
 
-    <h3>Roster</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Turnouts, Lights and other elements</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Scripting</h3>
-        <ul>
-            <li></li>
-        </ul>
 
     <h3>Signals</h3>
-        <ul>
-            <li></li>
-        </ul>
         <h4>Signal Systems</h4>
             <ul>
                 <li>Egbert Broerse improved the documentation, including the index pages for the individual systems</li>
-            </ul>
-
-        <h4>Signal Heads</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Masts</h4>
-            <ul>
-                <li></li>
-            </ul>
-            
-    	<h4>Signal Groups</h4>
-            <ul>
-                <li></li>
             </ul>
 
     	<h4>Simple Signal Logic</h4>
@@ -602,20 +340,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>Egbert Broerse improved the documentation</li>
             </ul>
-
-	    <h4>USS CTC Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
             
    <h3>Warrants</h3>
         <ul>
             <li>Egbert Broerse improved the documentation</li>
-        </ul>
-
-   <h3>Web Access</h3>
-        <ul>
-            <li> </li>
         </ul>
 
    <h3>Internationalization</h3>
