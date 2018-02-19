@@ -366,6 +366,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Balazs Racz added support for properties in the NamedBean tables, including a 
                 new NamedBeanPropertyDescriptor class.</li>
             <li>A problem that prevented Drag and Drop from working on some systems was corrected.</li>
+            <li>Randall Wood improved how fonts are scanned as JMRI starts. This fixed a problem 
+                with slow program startup on some Windows machines.</li>
         </ul>
 
    <!--#include virtual="/Footer" -->
