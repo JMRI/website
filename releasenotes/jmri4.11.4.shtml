@@ -516,7 +516,28 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Layout Editor</h3>
         <ul>
-	        <li></li>
+	        <li>George Warner made a number of changes and improvements to the Layout Editor.
+                <ul>
+                    <li>Fix a problem with turntable rays</li>
+                    <li>Change drawing options for the track lines</li>
+                    <li>Add new kinds of decorations to points, tracks and track ends</li>
+                    <li>Fix an issue with unnecessary anchors</li>
+                    <li>Draw tracks as tracks!</li>
+                </ul>
+	            For more information, please see the individual change notes:
+	            <a href="https://github.com/JMRI/JMRI/pull/4386">PR-4386</a>, 
+	            <a href="https://github.com/JMRI/JMRI/pull/4430">PR-4430</a>, 
+	            <a href="https://github.com/JMRI/JMRI/pull/4433">PR-4433</a>, 
+	            <a href="https://github.com/JMRI/JMRI/pull/4457">PR-4457</a>, 
+	            <a href="https://github.com/JMRI/JMRI/pull/4513">PR-4513</a>, 
+	            <a href="https://github.com/JMRI/JMRI/pull/4530">PR-4530</a>, 
+	            <a href="https://github.com/JMRI/JMRI/pull/4553">PR-4553</a>, 
+	            <a href="https://github.com/JMRI/JMRI/pull/4554">PR-4554</a>, 
+	            <a href="https://github.com/JMRI/JMRI/pull/4578">PR-4578</a>, 
+	            <a href="https://github.com/JMRI/JMRI/pull/4594">PR-4594</a>, 
+	            <a href="https://github.com/JMRI/JMRI/pull/4613">PR-4613</a>, and
+	            <a href="https://github.com/JMRI/JMRI/pull/4735">PR-4735</a>.
+	            </li>
         </ul>
 
     <h3>Logix</h3>
