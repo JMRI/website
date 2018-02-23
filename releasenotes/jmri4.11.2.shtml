@@ -346,7 +346,20 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>SoundTraxx</h4>
             <ul>
-                <li></li>
+                <li>Alain Le Marchand  made some updates:
+                    <ul>
+                        <li>Steam and Diesel Econami UK version as described on Soundtraxx UK website</li>
+                        <li>Rework of existing Econami and Tsunami2 files in order to accommodate UK specifics. Notably variable labels have been moved from Econami/Tsunami 2 extended function map pane (ECOenumFnMap.xml) to each individual Econami/Tsunami 2 file, 
+                            in order to be used in a generic way by US or UK variants that differ on certain function naming.</li>
+                        <li>references:
+                            <ul>
+                                <li>Econami_Diesel_Users_Guide 1.6 Ref.F
+                                <li>Econami-Diesel-Tech-Reference 1.6 Rev.E 
+                                <li>Econami_Steam_Users_Guide 1.6 Ref.G
+                                <li>Econami-Steam-Tech-Reference 1.6 Rev.H </li>
+                            </ul>
+                    </ul>
+                </li>
             </ul>
 
         <h4>Technologistic (train-O-matic)</h4>
