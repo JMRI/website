@@ -110,7 +110,11 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>None
+    <li><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
+    The <a href="jmri4.11.4.shtml#LE">additions to Layout Editor in JMRI 4.11.4</a> mean that
+    files containing Layout Editor panels written by JMRI 4.11.4 or later will fail a 
+    validation check in JMRI 4.11.3 or earlier. To get past this, 
+    <a href="#validate">bypass validation</a>.
 </ul>
 
 <h3>Older warnings</h3>
@@ -179,19 +183,22 @@ These may be relevant to you if you're updating from an earlier version.
     cannot be automatically flagged because JMRI allows file: URLs; these will have to 
     be changed manually.
         
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span> 
-    JMRI applications will not load a panel file that fails XML validation; an error will be
-    shown that should explains the error, allowing it to be fixed using an editor. (The
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span><a id="validate" name="validate"/>
+    When loading a panel file, JMRI applications now check the file's syntax and contents.
+    This process is called "XML validation"
+    If validation fails, an error message is shown
+    that should explain the error, allowing it to be fixed using an editor. (The
     explanations remain a work in progress.) If you have a problem loading a
     panel file, please
-    <ul>
+    <ol>
         <li>Configure your JMRI startup to first run the 
             <a href="http://jmri.org/jython/TurnOffXmlValidation.py">jython/TurnOffXmlValidation.py</a>
-            script which will suppress the error.
+            script which will suppress the error. This script needs to be run
+            before your panel is loaded.
         <li>Write out a new version of the panel file (after saving a backup!)
         <li>Use that new version from now on.
         <li>And drop use of the jython/TurnOffXmlValidation.py script.
-    </ul>
+    </ol>
 
 <p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
     This and future releases of JMRI may not function on OS X if the Java SE 6 provided by Apple is installed. OS X
@@ -515,6 +522,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Layout Editor</h3>
+        <a id="LE" name="LE"/>
         <ul>
 	        <li>George Warner made a number of changes and improvements to the Layout Editor.
                 <ul>
