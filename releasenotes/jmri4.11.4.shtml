@@ -493,7 +493,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Umelec</h4>
             <ul>
-                <li>Thurgau Schweiz updated the ATL2064 and ATL2066 definitions.</li>
+                <li>Thurgau Schweiz updated the ATL2051, ATL2064 and ATL2066 definitions.</li>
             </ul>
 
         <h4>Viessmann</h4>
@@ -508,7 +508,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>ZIMO</h4>
             <ul>
-                <li></li>
+                <li>Alain Carasso improved the definitions of CV372-399 in the Zimo decoders</li>
             </ul>
 
         <h4>Miscellaneous</h4>
@@ -587,7 +587,25 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Turnouts, Lights and other elements</h3>
         <ul>
-            <li></li>
+            <li>
+                Steve Rawlinson improved the block tracking:
+                <ul>
+                    <li>When a block becomes occupied JMRI attempts to copy the value of an adjacent occupied block.
+                    <li>When a block's sensor becomes active 'out of nowhere' JMRI restores its previous value, 
+                        if there is one. This makes sense but only in the following circumstances:
+                        <ul>
+                            <li>if the block went unoccupied very recently 
+                                (to allow for sensor flicker or other momentary loss of contact)
+                            <li>if power to the layout has just been restored
+                        </ul>
+                        Otherwise, the new value of the block is probably not the same as it was previously. 
+                    <li>Previously, JMRI always set the value, but in this release that
+                        changed such that the last value is not restored unless one of 
+                        the above criteria are met. 
+                        It is better, particularly on automated layouts, 
+                        not to have a value than to have the wrong value.     
+                </ul>       
+            </li>
         </ul>
 
     <h3>Scripting</h3>
@@ -646,7 +664,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Internationalization</h3>
         <ul>
-            <li></li>
+            <li>Petr Šídlo added to the Czech translation</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
@@ -656,7 +674,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li></li>
+            <li>Fixed a problem where the JMRI installer for Windows 
+                was leaving some old libraries in place, 
+                which could result in problems when installing JMRI 4.11.1 through 
+                4.11.3 over older versions (as opposed to a remove-and-install)
+                on Windows. This didn't affect the macOS Linux versions. </li>
         </ul>
 
    <!--#include virtual="/Footer" -->
