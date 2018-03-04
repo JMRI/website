@@ -1,5 +1,4 @@
-<!-- Footer -->
-    <!-- obsolete now, see Footer.shtml -->
+<!-- Footer.shtml -->
     <hr class="hide">
     <div id="footer">
 	<ul id="bn">
@@ -14,8 +13,7 @@
 	<p>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, TrainPro&trade;, DispatcherPro&trade;, OperationsPro&trade; and associated logos are our trademarks.
 	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
     
-       <br>Site hosted by:<br><!-- SSI require .shtml suffix, so this file can't include the following as Icon via SSI -->
-        <A href="http://sourceforge.net"> 
-        <IMG src="http://sourceforge.net/sflogo.php?group_id=26788&amp;type=13" border="0" alt="SourceForge Logo"> </A> 
+    <!--#include virtual="/SiteCredit.shtml" -->
+
     </div>
-<!-- /Footer -->
+<!-- /Footer.shtml -->
