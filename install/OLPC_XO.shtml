@@ -19,7 +19,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="/download/Sidebar" -->
 
 <div id="mainContent">
@@ -471,7 +471,7 @@ cp .xsession-example .xsession-xfce</pre>
 		<p>Robert Myers, April 2008
 		</p>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
  	  </div> <!-- closes #mainContent-->
  </div> <!-- closes #mBody-->
 </body>

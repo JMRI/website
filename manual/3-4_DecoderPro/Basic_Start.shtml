@@ -12,7 +12,7 @@
 <link rel="home" title="Home" href="/"><!-- /Style --></head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -132,5 +132,5 @@ Details about the <strong><a href="Main_Roster.shtml">Roster Menu</a></strong></
   <p><a href="index.shtml#Basic%20Programmer">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div></body></html>

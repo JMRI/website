@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -174,7 +174,7 @@ Some timing fixes have been made in test code and base classes to fix operation 
 <p>
 On Linux, the startup scripts now properly handle extra options in the JMRI_OPTIONS environment variable.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

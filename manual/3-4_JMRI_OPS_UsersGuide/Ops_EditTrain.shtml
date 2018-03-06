@@ -9,7 +9,7 @@
 <link type="image/png" href="/images/jmri.ico" rel="icon">
 <link href="/" title="Home" rel="home"><!-- /Style --></head>
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent"><a name="Top"></a>
 <h1>Using JMRI� to Operate Trains</h1>
@@ -96,6 +96,6 @@ is pressed. </p>
 <p><a href="Ops_Trains.shtml">Back</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div>
 </body></html>

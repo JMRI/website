@@ -12,7 +12,7 @@
 <link rel="home" title="Home" href="/"><!-- /Style --></head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -52,5 +52,5 @@ programmed in Direct Byte Mode.</p>
 </div>
 
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div></body></html>

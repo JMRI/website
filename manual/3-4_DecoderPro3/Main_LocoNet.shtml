@@ -12,7 +12,7 @@
 <link rel="home" title="Home" href="/"><!-- /Style --></head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -327,5 +327,5 @@ using as the control lea</li>
 <p><a href="dp3_menubar.shtml">Back to Index</a><a href="index.shtml"></a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div></body></html>

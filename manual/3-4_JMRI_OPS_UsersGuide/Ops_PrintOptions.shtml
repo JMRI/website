@@ -11,7 +11,7 @@
 <link rel="icon" href="/images/jmri.ico" type="image/png">
 <link rel="home" title="Home" href="/"><!-- /Style --></head>
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -118,5 +118,5 @@ and select a file with the image you want to display. Each train in your roster 
 <p><a href="Ops_Trains.shtml">Back to Trains</a><a href="index.shtml#Main"></a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div></body></html>

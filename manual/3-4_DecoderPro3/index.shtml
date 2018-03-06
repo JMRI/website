@@ -9,7 +9,7 @@
 <link rel="icon" href="/images/jmri.ico" type="image/png">
 <link rel="home" title="Home" href="/"><!-- /Style --></head>
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent"><a name="Top"></a>
 <h1>DecoderPro3&reg; Version 3.4</h1>
@@ -248,6 +248,6 @@ version 3.4</td>
 <div align="right">Go to the
 <a href="http://groups.yahoo.com/group/jmriusers/">JMRI
 Users home page on Yahoo Groups</a></div>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div>
 </body></html>

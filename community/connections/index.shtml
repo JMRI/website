@@ -26,7 +26,7 @@
 </head>
 
 
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 
 	<div id="mainContent">
@@ -52,7 +52,7 @@ Tom Stack's
 is integrated system for model railroad inventory, operations, control, dispatching and
 automation.  It can access local or remote JMRI-connected layouts.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->

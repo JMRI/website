@@ -20,7 +20,7 @@
 <div id="container">
   <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <hr class="hide">
 
@@ -127,7 +127,7 @@ Fixed a bad bug in JMRI 2.1.2 that caused newly written roster files to not be r
 The fix both writes files properly now, and can also read the improperly written ones from 2.1.2.
 
 <hr class="hide">
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

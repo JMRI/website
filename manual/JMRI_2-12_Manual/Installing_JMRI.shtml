@@ -13,7 +13,7 @@
 <link rel="home" title="Home" href="/">
 <!-- /Style -->
 </head>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -78,8 +78,8 @@ This site is hosted by
 <br>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </html>

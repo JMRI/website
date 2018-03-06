@@ -9,7 +9,7 @@
 <link rel="icon" href="/images/jmri.ico" type="image/png">
 <link rel="home" title="Home" href="/"><!-- /Style --></head>
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent"><a name="Top"></a>
 <h1>Using JMRI� to Operate Trains</h1>
@@ -323,5 +323,5 @@ destination track name, owner name, consist name, car comment, RFID.</p>
 </div>
 <p>.</p>
 </div>
-<!--#include virtual="/Footer" --></div>
+<!--#include virtual="/Footer.shtml" --></div>
 </body></html>

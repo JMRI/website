@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -235,7 +235,7 @@ Ken Cameron fixed a problem in the X10 support that was preventing the 16th devi
 Dan Boudreau fixed a problem in the operations code that could cause lots of additional
 entries in various operations tables.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

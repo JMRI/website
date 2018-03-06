@@ -19,7 +19,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -227,7 +227,7 @@ A problem with programming-on-the-main (Ops Mode programming) of
 decoders with a long address less than 100 and NCE command stations has been
 fixed.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

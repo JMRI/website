@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -156,7 +156,7 @@ it in the JMRI users Yahoo group.
 <li>Added the Signal Mast specific appearances and mapping to the basic set of Signal Masts</li>
 <li>Added the Signal Mast Logic facility for controlling Signal Masts, more info can be found <a href="/help/en/html/tools/signaling/SignalMastLogic.shtml">here<a></li>
 </ul>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

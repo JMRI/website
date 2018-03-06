@@ -11,7 +11,7 @@
 <link rel="icon" href="/images/jmri.ico" type="image/png">
 <link rel="home" title="Home" href="/"><!-- /Style --></head>
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -108,5 +108,5 @@ day you created the backup. For example, if today was November 21,
     <p>.</p>
 </div>
 	  
-  <!--#include virtual="/Footer" -->
+  <!--#include virtual="/Footer.shtml" -->
 </div></body></html>

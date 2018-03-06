@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="/download/Sidebar" -->
 
 <div id="mainContent">
@@ -77,7 +77,7 @@ For more information follow these links:
 <a href="http://jmri.org/apps/DecoderPro/RosterFile.html">Roster</a>,
 <a href="http://jmri.org/apps/DecoderPro/NetworkFiles.html">Network files</a>.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 	  </div> <!-- closes #mainContent-->
 </div> <!-- closes #mBody-->
 </body>

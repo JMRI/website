@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="/download/Sidebar" -->
 
 <div id="mainContent">
@@ -181,7 +181,7 @@ JMRI: Debugging Your Installation
 	a clue (see step 3 for info on how to do that)
 	</dl>
 	
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 	 </div> <!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
  </body>
