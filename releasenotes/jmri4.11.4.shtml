@@ -1,19 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
  JMRI: Release Notes for 4.11.4
  </title>
     <meta content="Bob Jacobsen" name="author">
     <meta name="keywords" content="java model railroad JMRI 4.11.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+<!--#include virtual="/Style.shtml" -->
+
 </head>
 
 <body>
@@ -113,8 +109,18 @@ from
     <li><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     The <a href="jmri4.11.4.shtml#LE">additions to Layout Editor in JMRI 4.11.4</a> mean that
     files containing Layout Editor panels written by JMRI 4.11.4 or later will fail a 
-    validation check in JMRI 4.11.3 or earlier. To get past this, 
+    validation check in JMRI 4.11.3 or earlier. 
+    If you back-date your JMRI version and need to to get past this, please
     <a href="#validate">bypass validation</a>.
+
+    <li><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
+    If you are running a local web site with a copy of the JMRI content, as
+    <a href="http://jmri.org/help/en/html/doc/Technical/WebSite.shtml#local">described here</a>,
+    please repeat 
+    <a href="http://jmri.org/help/en/html/doc/Technical/WebSite.shtml#locallink">the "setSymLinks.sh" step</a>
+    near the bottom of those instructions
+    after installing JMRI 4.11.4 (or later).  This will make some new formatting available
+    on your local site.
 </ul>
 
 <h3>Older warnings</h3>
@@ -270,7 +276,7 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
  
-<h2>Changes since <a href="jmri4.11.3.shtml">Test release 4.11.3</a>:</h2>  -->
+<h2>Changes since <a href="jmri4.11.3.shtml">Test release 4.11.3</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.4">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
@@ -304,6 +310,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h4>DCC4pc</h4>
             <ul>
                 <li></li>
+            </ul>
+
+        <h4>ESU</h4>
+            <ul>
+                <li>Direction changes when running at speed no longer set speed to zero. For further information see:
+                    <a href="https://github.com/JMRI/JMRI/pull/4945">PR-4945, 
+                    <a href="https://github.com/JMRI/JMRI/pull/4964">PR-4964</a>, and 
+                    <a href="https://github.com/JMRI/JMRI/pull/4965">PR-4965</a>.
+                </li>
             </ul>
 
         <h4>JMRI Simple Server/JMRI Client</h4>
@@ -582,7 +597,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Roster</h3>
         <ul>
-            <li></li>
+            <li>John O'Duffy improved low speed operation during speed profiling.</li>
         </ul>
 
     <h3>Turnouts, Lights and other elements</h3>
