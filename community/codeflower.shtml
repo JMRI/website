@@ -41,7 +41,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
   <div class="nomenu" id="mBody">
     <div id="mainContent" width="1000" height="1000">
 
@@ -112,7 +112,7 @@
     <h4>Source Data</h4>
    Take a look at the data inside <a href="codeflower_js/jmri.json" target="_blank">jmri.json</a>.
     
-    <!--#include virtual="/Footer" -->
+    <!--#include virtual="/Footer.shtml" -->
     </div> <!-- closes mainContent -->
   </div> <!-- closes mBody -->
   

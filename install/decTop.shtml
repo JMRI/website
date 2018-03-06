@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="/download/Sidebar" -->
 <div id="mainContent">
@@ -305,7 +305,7 @@ in the Linux instructions.
 <p>
 <a href="https://jdk-distros.dev.java.net/ubuntu.html">More on Java distributions for Linux</a>.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
   </div> <!-- closes #mainContent-->
  </div> <!-- closes #mBody-->
 </body>

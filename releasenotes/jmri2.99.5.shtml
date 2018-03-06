@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -230,7 +230,7 @@ Martin Pischky improved the LocoNet firmware downloader and fixed some bugs.
 <p>
 Steve Lowens added the Con-cor Zephyr (HO &amp; N) definitions to the Digitrax sound decoder definitions.
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

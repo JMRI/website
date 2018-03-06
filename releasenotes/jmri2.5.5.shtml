@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -209,7 +209,7 @@ Dick Bronson updated the signal icons for USS CTC machine schematic panels.
 Ken Cameron added a new "FileLogging.py" script, which logs sensor changes to a 
 comma-separated-variable (CSV) for later examination.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

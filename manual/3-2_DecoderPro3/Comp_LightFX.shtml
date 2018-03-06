@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -84,6 +84,6 @@ from a single momentary activation.
 <p><a href="Comp_Consist.shtml"></a><a href="Comp_FMap.shtml">Previous | </a> <a href="Comp_Analog.shtml">Next</a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a> </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </body>
 </html>

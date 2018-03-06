@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="/download/Sidebar" -->
 <div id="mainContent">
@@ -306,7 +306,7 @@ If you want an icon in some other place, like on your desktop:
 Note that renaming the alias alone does not cause the application icon to be renamed, so the alias will be using the
 same Preferences as the original.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

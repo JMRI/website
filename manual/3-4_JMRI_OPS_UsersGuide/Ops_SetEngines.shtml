@@ -11,7 +11,7 @@
 <!-- /Style -->
 </head>
 <body>
-<!--#include virtual="/Header" -->BackB
+<!--#include virtual="/Header.shtml" -->BackB
 <!--#include virtual="Sidebar" -->
 <div id="mainContent"><a name="Top"></a>
 <h1>Using JMRI� to Operate Trains</h1>
@@ -72,6 +72,6 @@ locomotive locations that you have set.</p>
 <p><a href="Ops_Engines_menu.shtml">Back </a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div>
 </body></html>

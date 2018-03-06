@@ -8,13 +8,13 @@
     <meta name="author" content="YOUR NAME HERE">
     <meta name="keywords" content="SOME KEYWORDS">
 
-<!--#include virtual="/Style" -->
+<!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
-<!--#include virtual="/Sidebar" --> <!-- select the local or global Sidebar file -->
+<!--#include virtual="/Sidebar.shtml" --> <!-- select the local or global Sidebar file -->
 <div id="mainContent">
 
 	    <!-- -------- -->
@@ -160,7 +160,7 @@ foreach $f (@files) {
 		</dl>
 		</div> <!-- closes #list -->
     
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
 </div><!-- closes #mainContent-->
 </div> <!-- closes #mBody, was opened by Sidebar -->

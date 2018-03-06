@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -177,7 +177,7 @@ He also provided a new decoder definition for the CML Electronics DAC 20 decoder
 
 <p>Steve Todd added protocol to send MiniWebServer port to Wi-Fi devices.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

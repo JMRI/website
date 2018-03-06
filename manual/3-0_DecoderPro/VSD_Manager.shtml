@@ -17,7 +17,7 @@ DecoderPro&reg; Main Window
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -121,6 +121,6 @@ href="Main_VSD.shtml#preferences">VSDecoder Preferences</a> for details.</p>
 <p><a href="Main_Debug.shtml#vsdecoder">Back </a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </body>
 </html>

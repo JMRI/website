@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -107,6 +107,6 @@ The first is method is <strong>
   <p><a href="index.shtml#Basic Programmer">Back to Index</a><a href="index.shtml#Basic Programmer"></a> </p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </body>
 </html>

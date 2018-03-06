@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <h2>Signal Mast Logic - Adding Turnouts and Sensors to JMRI</h2>
 <p>The first stage of constructing our layout within JMRI is to make entries in 
   the Turnout Table and the Sensor Table. These define the turnouts and the occupancy 
@@ -54,7 +54,7 @@
 <p>&nbsp;</p>
 <p><a href="layout_editor.shtml">Move on to Part 5</a> </p>
 <p><a href="index.shtml">Back to Introduction</a></p>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

@@ -18,7 +18,7 @@
 
 <body>
 
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -304,7 +304,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 	    consistent within JMRI and to adhere to standard Java naming principles (<a href="https://github.com/JMRI/JMRI/pull/4034">#4034</a>).</li>
         </ul>
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

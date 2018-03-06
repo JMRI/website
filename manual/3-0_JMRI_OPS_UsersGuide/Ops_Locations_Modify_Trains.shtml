@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
@@ -65,6 +65,6 @@
 <p><img src="images/Ops_Preview_TrainsbyCars.png" width="675" height="360" alt="preview"></p>
 <p><strong><a href="#Top">Back</a></strong></p>
 <hr>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </body>
 </html>

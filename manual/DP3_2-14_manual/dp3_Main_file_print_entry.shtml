@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -44,6 +44,6 @@ The <strong>Select Items to Print</strong> is opened from the DecoderPro3 Main W
 <div align=right>
 <p><a href="dp3_menubar.html">Back</a> </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </body>
 </html>

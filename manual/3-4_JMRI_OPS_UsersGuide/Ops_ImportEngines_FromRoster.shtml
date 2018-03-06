@@ -9,7 +9,7 @@
 <link rel="icon" href="/images/jmri.ico" type="image/png">
 <link rel="home" title="Home" href="/"><!-- /Style --></head>
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent"><a name="Top"></a>
 <h1>Using JMRI� to Operate Trains</h1>
@@ -42,6 +42,6 @@ edit them to set the correct length, Consist, Location as required.<br>&nbsp;<a 
 <p><a href="Ops_Engines_menu.shtml">Back </a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div>
 </body></html>

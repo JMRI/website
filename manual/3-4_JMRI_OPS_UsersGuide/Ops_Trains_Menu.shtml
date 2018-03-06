@@ -11,7 +11,7 @@
 <!-- /Style -->
 </head>
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 <h1>Using JMRI� to Operate Trains</h1>
@@ -100,6 +100,6 @@ format.</li>
 <p><a href="Ops_Trains.shtml">Back</a><a href="Ops_TripThruOperations.shtml"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div>
 </body></html>

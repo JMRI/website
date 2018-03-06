@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -183,7 +183,7 @@ Group.</p>
     <li>ECOS - Update some of the back end code relating to the turnout and throttle control</li>
     <li>NCE USB - Updated the throttle so that speed step 1 (as shown in the GUI) actually sets the loco speed.</li>
 </ul>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <h2>Extending JMRI with rules in Logix - creating Junction Indicators (Feathers)</h2>
 <p>So far, we've built the signalling with the automatic rules within JMRI. But, 
   sometimes it will be necessary to step outside the standard rules and make local 
@@ -47,7 +47,7 @@
 <p>&nbsp;</p>
 <p><a href="semaphores.shtml">Move on to Part 10</a> </p>
 <p><a href="index.shtml">Back to Introduction</a></p>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

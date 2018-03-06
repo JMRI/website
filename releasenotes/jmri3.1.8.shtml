@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -99,7 +99,7 @@ Dan Boudreau fixed a problem with window size on Mac OS X
 Added RailStars Limited to the list of decoder manufacturers (company has been around for a while,
 but the NMRA hasn't bothered to update their list in more than 18 months).
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

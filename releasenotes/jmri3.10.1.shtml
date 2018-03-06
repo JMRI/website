@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -95,7 +95,7 @@ and make any necessary changes.
 JMRI 3.10 had a problem programming CVs greater than 127 using the MRC command stations.
 That problem is fixed in this version. (SVN revision r28276)
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

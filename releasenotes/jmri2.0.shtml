@@ -20,7 +20,7 @@
 <div id="container">
   <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <hr class="hide">
 
@@ -356,7 +356,7 @@ Dan Boudreau updated the NCE packet sniffer interface to add some more capabilit
 Dan Boudreau added a "Confirm" button to the CV panel, for checking whether a value is correct in the decoder
 
 <hr class="hide">
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

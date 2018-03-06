@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -362,7 +362,7 @@ Jim Betz added the Z2 TCS decoder
 Ken Cameron added CmriNodeTool.py, a sample script that acts as 
 an interactive tool to enable/disable polling of CMRI nodes.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 <h1>DecoderPro&reg; Main Window</h1>
@@ -109,6 +109,6 @@ message to the log file.</p>
 <hr>
 <a href="dp3_menubar.shtml">Back to Index</a>
 <div align="right"> </div>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div>
 </body></html>

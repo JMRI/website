@@ -17,7 +17,7 @@ DecoderPro&reg; Main Window
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -190,6 +190,6 @@ disabled in JMRI 3.1.6 but will be re-enabled in 3.1.7.
 <p><a href="Main_Debug.shtml#pricom">Back </a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </body>
 </html>
