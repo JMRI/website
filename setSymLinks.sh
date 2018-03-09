@@ -32,7 +32,7 @@ ln -sf $2/favicon.ico .
 ln -sf $2/hardware .
 ln -sf $2/images .
 ln -sf $2/include-list .
-ln -sf $2/index.html .
+ln -sf $2/index.shtml .
 ln -sf $2/info.txt .
 ln -sf $2/install .
 ln -sf $2/manual .

@@ -2,3 +2,7 @@ AddType text/html .shtml
 AddHandler server-parsed .shtml
 Options Indexes FollowSymLinks Includes
 #DirectoryIndex index.html index.htm index.php index.shtml index.shtm
+
+# Provide redirects for removed pages
+RewriteEngine on
+RewriteRule "index.html" "/index.shtml" [R=302,L]
