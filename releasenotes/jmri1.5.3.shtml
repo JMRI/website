@@ -147,25 +147,7 @@
 
 <p>The process for building distributions has been split for Macintosh Classic and other systems.  Mac Classic will continue to be built using the Java 1.1 compiler (though there were also some changes there); other platforms will now be using the Java 1.3 compiler.  This should generate some small speed improvements, and will improve compatibility for people basing their projects on the jmri.jar file.  As part of this, the Macintosh Classic distribution will include a different jmri.jar than the rest of the distributions.  The Mac Classic version will work on all platforms, but the jmri.jar from other platforms will not work on Mac Classic.
 
-<!-- Footer -->
-    <hr class="hide">
-    <div id="footer">
-	<ul id="bn">
-	<li>Contact us via the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group</li>
-	</ul>
-
-	<p>Thanks and congratulations to
-	   <a href="../help/en/Acknowledgements.shtml" title="Who is JMRI">
-	   	all who contributed</a>! </p>
-
-	<p>Copyright &copy; 1997 - 2015 JMRI Community. 
-	<p>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, TrainPro&trade;, DispatcherPro&trade;, OperationsPro&trade; and associated logos are our trademarks.
-	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
-    
-       <br>Site hosted by: <br>
-<a href="http://sourceforge.net/projects/jmri/"><img src="https://sourceforge.net/sflogo.php?group_id=26788&type=12" width="120" height="30" border="0" alt="Get JMRI Model Railroad Interface at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
-    </div>
-<!-- /Footer -->
+   <!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </div> <!-- closes #container -->

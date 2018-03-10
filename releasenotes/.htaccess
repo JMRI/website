@@ -1,0 +1,4 @@
+# Provide redirects for removed pages
+RewriteEngine on
+RewriteBase /releasenotes
+RewriteRule (*)\.html $1.shtml [R=301,L]
