@@ -367,9 +367,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
         <h4>SPROG</h4>
+            There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
             <ul>
-                <li></li>
+                <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
+                <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
+                <li>Do not open the SPROG console window</li><br>
+                <li>Disable power conversion (CV 29) in all locos</li><br>
+                <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
             </ul>
+            Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
+            open to inform the user of this. The track power will be turned off and must be turned on again using the power control.<br>
 
         <h4>TMCC</h4>
             <ul>
@@ -684,7 +691,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         
    <h3>Virtual Sound Decoder</h3>
         <ul>
-            <li></li>
+            <li>Klaus Killinger added functionality to configure a throttle
+                button for starting and stopping an engine.
+                For more information, please see the
+                <a href="http://jmri.org/help/en/manual/DecoderPro/VSD_File_and_Config.shtml#engine-startstop">
+                new VSDecoder documentation page</a> to this option.
+             </li>
         </ul>
 
     <h3>Miscellaneous</h3>
