@@ -189,7 +189,7 @@ These may be relevant to you if you're updating from an earlier version.
     cannot be automatically flagged because JMRI allows file: URLs; these will have to 
     be changed manually.
         
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span><a id="validate" name="validate">
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span><a id="validate" name="validate"></a>
     When loading a panel file, JMRI applications now check the file's syntax and contents.
     This process is called "XML validation"
     If validation fails, an error message is shown
@@ -556,7 +556,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Layout Editor</h3>
-        <a id="LE" name="LE">
+        <a id="LE" name="LE"></a>
         <ul>
 	        <li>George Warner made a number of changes and improvements to the Layout Editor.
                 <ul>
@@ -585,7 +585,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Logix</h3>
-    <a id="logix" name="logix">
+        <a id="logix" name="logix"></a>
         <ul>
             <li>Logix may now be shared across different Locales (languages) without losing the Mixed logic
             definition, e.g. english "(R1 or R2) and R3" will display and work as "(R1 oder R2) und R3" in german.
