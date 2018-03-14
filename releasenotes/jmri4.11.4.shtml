@@ -189,7 +189,7 @@ These may be relevant to you if you're updating from an earlier version.
     cannot be automatically flagged because JMRI allows file: URLs; these will have to 
     be changed manually.
         
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span><a id="validate" name="validate"/>
+<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span><a id="validate" name="validate"></a>
     When loading a panel file, JMRI applications now check the file's syntax and contents.
     This process is called "XML validation"
     If validation fails, an error message is shown
@@ -356,6 +356,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
+        <h4>ProTrak (Grapevine)</h4>
+            <ul>
+                <li>Egbert Broerse added a <a
+                 href="http://jmri.org/help/en/html/hardware/grapevine/index.shtml">Grapevine Simulator</a>
+                connection. Under Additional Options, users can set to receive Node initialization reply messages.</li>
+            </ul>
+
         <h4>RFID</h4>
             <ul>
                 <li></li>
@@ -399,9 +406,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
     <h3>New / Updated decoder definitions</h3>
-      <ul>
-        <li></li>
-     </ul>
+        <ul>
+            <li>Wouter from Thurgau, Schweiz added Dutch translations to the NMRA CV tabs</li>
+        </ul>
 
         <h4>Arnold</h4>
             <ul>
@@ -515,7 +522,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Umelec</h4>
             <ul>
-                <li>Thurgau Schweiz updated the ATL2051, ATL2064 and ATL2066 definitions.</li>
+                <li>Wouter from Thurgau, Schweiz updated the ATL2051, ATL2064 and ATL2066 definitions.</li>
             </ul>
 
         <h4>Viessmann</h4>
@@ -543,13 +550,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
           <li></li>
         </ul>
 
-   <h3>Dispatcher</h3>
+    <h3>Dispatcher</h3>
         <ul>
              <li></li>
         </ul>
 
     <h3>Layout Editor</h3>
-        <a id="LE" name="LE"/>
+        <a id="LE" name="LE"></a>
         <ul>
 	        <li>George Warner made a number of changes and improvements to the Layout Editor.
                 <ul>
@@ -578,11 +585,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Logix</h3>
+        <a id="logix" name="logix"></a>
         <ul>
           <li>Variable State and Action references to Entry/Exit Pairs now use the Entry/Exit system name.
           This prevents broken references caused by Entry/Exit user name changes.  The conversion may
           find missing references which will be displayed in the system log.
           The affected Variable State or Action row will be deleted.</li>
+        </ul>
+        <ul>
+            <li>Logix may now be shared across different Locales (languages) without losing the Mixed logic
+            definition, e.g. english "(R1 or R2) and R3" will display and work as "(R1 oder R2) und R3" in german.
+            To apply this on existing Logix Conditionals, open each in the original Locale and click "Update" to update
+            the logic to the universal format. Don't forget to save the new configuration to a (new) xml file.</li>
         </ul>
 
     <h3>Operations</h3>
@@ -608,6 +622,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h3>Roster</h3>
         <ul>
             <li>John O'Duffy improved low speed operation during speed profiling.</li>
+            <li>The Loco Address label on the Roster Summary Print-out was corrected.</li>
         </ul>
 
     <h3>Turnouts, Lights and other elements</h3>
@@ -692,6 +707,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <h3>Internationalization</h3>
         <ul>
             <li>Petr Šídlo added to the Czech translation</li>
+            <li>Logix may now be shared across different Locales (see note under <a href="#logix">Logix</a>).</li>
+            <li>Translations files for Logix and Conditional editing have been cleaned up. Users might see some english
+            phrases. Translators please review.</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
