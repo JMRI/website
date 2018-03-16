@@ -660,6 +660,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li><strong>YetAnotherAutoTrain.py</strong> &mdash; Another script for running trains that
             uses English like phrases to describe the train actions.</li>
+            <li>Scripts that access the <strong>Connection List</strong> may need to be modified.  An
+            <strong>AttributeError</strong> may occur: <em>javax.script.ScriptException: AttributeError:
+            type object 'jmri.InstanceManager' has no attribute 'configureManagerInstance' in
+            &lt;script&gt; at line number 14</em>.  Use <strong><em>connectionList =
+            jmri.InstanceManager.getDefault(jmri.jmrix.ConnectionConfigManager).getConnections()</em></strong></li>
         </ul>
 
     <h3>Signals</h3>
