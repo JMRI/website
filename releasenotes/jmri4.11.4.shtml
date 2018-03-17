@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.11.4 release
       </h1>
 
-    <p>Date: mmm dd, 2017</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: March 17, 2017</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.11.4 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -121,6 +123,19 @@ from
     near the bottom of those instructions
     after installing JMRI 4.11.4 (or later).  This will make some new formatting available
     on your local site.
+
+    <li><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
+    There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
+    <ul>
+        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
+        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
+        <li>Do not open the SPROG console window</li><br>
+        <li>Disable power conversion (CV 29) in all locos</li><br>
+        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+    </ul>
+    Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
+    open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
+
 </ul>
 
 <h3>Older warnings</h3>
@@ -244,7 +259,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
@@ -253,18 +267,17 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.dmg</a><br/>
-  sha256: f0eb649a303c76303bb5ecf79b6fcd1c9ffba2421aaf32c09354b5ce93ac98c3 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.11.4/JMRI.4.11.4.R4534304.dmg">https://github.com/JMRI/JMRI/releases/download/v4.11.4/JMRI.4.11.4.R4534304.dmg</a><br/>
+  sha256: 8f7ec596dc0d3b78155e1224dc00da3186f352aeec4904c473c69aa9936e981f </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.exe</a><br/>
-   sha256: d04f9e2e108ce058c0de3e406f49893b4374ad013762425aeac2bdfeaf0f5dd6</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.11.4/JMRI.4.11.4.R4534304.exe">https://github.com/JMRI/JMRI/releases/download/v4.11.4/JMRI.4.11.4.R4534304.exe</a><br/>
+   sha256: 25c7c0ff2cb7861a695c74d985270c1bf4a6b15766fcaf1e11544028c366eed1</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4+R8e0d8bb.tgz</a><br/>
-   sha256: 891ae78c024f35aa2b5e0b43554df61720dc61006c2e1913b8affddac2b2fb6f</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.11.4/JMRI.4.11.4.R4534304.tgz">https://github.com/JMRI/JMRI/releases/download/v4.11.4/JMRI.4.11.4.R4534304.tgz</a><br/>
+   sha256: e483295a4636b70c95052bffe4f38b35cdc9960a778df35f774b473fff66e61f</li>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -272,45 +285,18 @@ on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.11.1/">CI project page</a>.
  -->
 
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- 
+-->
+
 <h2>Changes since <a href="jmri4.11.3.shtml">Test release 4.11.3</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.4">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>Hardware Support</h3>
-
-        <ul>
-          <li></li>
-        </ul>
-
-	    <h4>Anyma DMX512</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-	    <h4>Bachrus Speedo</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-        <h4>C/MRI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>DCC++</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>DCC4pc</h4>
-            <ul>
-                <li></li>
-            </ul>
 
         <h4>ESU</h4>
             <ul>
@@ -321,56 +307,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </li>
             </ul>
 
-        <h4>JMRI Simple Server/JMRI Client</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LocoNet</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MERG CBUS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Marklin CS2</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>ProTrak (Grapevine)</h4>
             <ul>
                 <li>Egbert Broerse added a <a
                  href="http://jmri.org/help/en/html/hardware/grapevine/index.shtml">Grapevine Simulator</a>
                 connection. Under Additional Options, users can set to receive Node initialization reply messages.</li>
-            </ul>
-
-        <h4>RFID</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Roco z21/Z21</h4>
-            <ul>
-                <li></li>
             </ul>
 
         <h4>SPROG</h4>
@@ -385,80 +326,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
             open to inform the user of this. The track power will be turned off and must be turned on again using the power control.<br>
 
-        <h4>TMCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Zimo MXULF</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZTC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
     <h3>New / Updated decoder definitions</h3>
         <ul>
             <li>Wouter from Thurgau, Schweiz added Dutch translations to the NMRA CV tabs</li>
         </ul>
-
-        <h4>Arnold</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>BLI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Bachmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digikeijs (Digirails)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Doehler &amp; Haas</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ESU</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Hornby</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Kuehn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LaisDCC</h4>
-            <ul>
-                <li></li>
-            </ul>
 
         <h4><a href-"http://www.ldhtrenes.com.ar">LDH</a></h4>
             <ul>
@@ -468,100 +339,20 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                     and LDH 4F1.5 v55 Motor y Sonido </li>
             </ul>
 
-        <h4>Lenz</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MGP</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>MTH</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Norsk Modelljernbane (NJM)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>QSI</h4>
             <ul>
                 <li>Dave Heap added the FX-U 40 Class (Eureka).</li>
             </ul>
-
-        <h4>Rautenhaus</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RR-CirKits</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SoundTraxx</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TCS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Technologistic (train-O-matic)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
+    
         <h4>Umelec</h4>
             <ul>
                 <li>Wouter from Thurgau, Schweiz updated the ATL2051, ATL2064 and ATL2066 definitions.</li>
-            </ul>
-
-        <h4>Viessmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Wangrow</h4>
-            <ul>
-                <li></li>
             </ul>
 
         <h4>ZIMO</h4>
             <ul>
                 <li>Alain Carasso improved the definitions of CV372-399 in the Zimo decoders</li>
             </ul>
-
-        <h4>Miscellaneous</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    <h3>DecoderPro</h3>
-        <ul>
-          <li></li>
-        </ul>
-
-    <h3>Dispatcher</h3>
-        <ul>
-             <li></li>
-        </ul>
 
     <h3>Layout Editor</h3>
         <a id="LE" name="LE"></a>
@@ -607,26 +398,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             the logic to the universal format. Don't forget to save the new configuration to a (new) xml file.</li>
         </ul>
 
-    <h3>Operations</h3>
-       <ul>
-          <li></li>
-       </ul>
-
-   <h3>Panel Editors</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Preferences</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Resources</h3>
-        <ul>
-            <li></li>
-        </ul>
-
     <h3>Roster</h3>
         <ul>
             <li>John O'Duffy improved low speed operation during speed profiling.</li>
@@ -668,55 +439,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Signals</h3>
-        <ul>
-            <li></li>
-        </ul>
-        <h4>Signal Systems</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Heads</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Masts</h4>
-            <ul>
-                <li></li>
-            </ul>
-            
-    	<h4>Signal Groups</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    	<h4>Simple Signal Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
 
 	    <h4>NX Entry/Exit Logic</h4>
             <ul>
                 <li>The Entry/Exit system name now complies with the system name standard.
                 The migration is automatic.</li>
             </ul>
-
-	    <h4>USS CTC Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
             
-   <h3>Warrants</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h3>Web Access</h3>
-        <ul>
-            <li> </li>
-        </ul>
-
    <h3>Internationalization</h3>
         <ul>
             <li>Petr Šídlo added to the Czech translation</li>

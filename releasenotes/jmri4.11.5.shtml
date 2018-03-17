@@ -106,14 +106,22 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
+    <li>None</li>
+</ul>
+
+<h3>Older warnings</h3>
+
+See the <a href="jmri4.10.shtml#warnings">JMRI 4.10 release note</a> for more warnings predating the 4.11 development series.
+These may be relevant to you if you're updating from an earlier version.
+
+<p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     The <a href="jmri4.11.4.shtml#LE">additions to Layout Editor in JMRI 4.11.4</a> mean that
     files containing Layout Editor panels written by JMRI 4.11.4 or later will fail a 
     validation check in JMRI 4.11.3 or earlier. 
     If you back-date your JMRI version and need to to get past this, please
     <a href="#validate">bypass validation</a>.
 
-    <li><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
+<p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     If you are running a local web site with a copy of the JMRI content, as
     <a href="http://jmri.org/help/en/html/doc/Technical/WebSite.shtml#local">described here</a>,
     please repeat 
@@ -121,12 +129,18 @@ from
     near the bottom of those instructions
     after installing JMRI 4.11.4 (or later).  This will make some new formatting available
     on your local site.
-</ul>
 
-<h3>Older warnings</h3>
-
-See the <a href="jmri4.10.shtml#warnings">JMRI 4.10 release note</a> for more warnings predating the 4.11 development series.
-These may be relevant to you if you're updating from an earlier version.
+<p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
+    There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
+    <ul>
+        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
+        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
+        <li>Do not open the SPROG console window</li><br>
+        <li>Disable power conversion (CV 29) in all locos</li><br>
+        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+    </ul>
+    Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
+    open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
 
 <p><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
     The system connection preferences (i.e. hardware preferences) are now
@@ -363,16 +377,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
         <h4>SPROG</h4>
-            There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
             <ul>
-                <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
-                <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
-                <li>Do not open the SPROG console window</li><br>
-                <li>Disable power conversion (CV 29) in all locos</li><br>
-                <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+                <li></li>
             </ul>
-            Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
-            open to inform the user of this. The track power will be turned off and must be turned on again using the power control.<br>
 
         <h4>TMCC</h4>
             <ul>
