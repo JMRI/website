@@ -397,6 +397,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             To apply this on existing Logix Conditionals, open each in the original Locale and click "Update" to update
             the logic to the universal format. Don't forget to save the new configuration to a (new) xml file.</li>
         </ul>
+        
+   <h3>Control Panel Editor</h3>
+        <ul>
+            <h4>The following problems were fixed in the Item Palette:</h4>
+	    <li>Text panel lost afte 2nd opening of Palette</li>
+ 	    <li>Background color chooser disabled after 2nd opening of Palette</li>
+	    <li>Multiple family button panels displayed after adding icons</li>
+	    <li>Inability to create new icon family sets for IndicatorTO items</li>
+	    <li>Drag icon disappears after editing existing IndicatorTO icons</li>
+	    <li>Panel background colors not shared among all Palette tabs when editors are changed</li>
+	    <li>Incorrect placement of dragged items to a zoomed panel.</li>
+        </ul>
 
     <h3>Roster</h3>
         <ul>
@@ -446,12 +458,27 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 The migration is automatic.</li>
             </ul>
             
+   <h3>Warrants</h3>
+        <ul>
+            <li>Fix default MaxBlocks from Preferences now being used in the create warrant form.</li>
+	        <li>when running, a warrant will not allocate or throw turnouts beyond signal's stop aspect or 
+	    	    past an occupied block.  Once cleared to proceede, the warrant will set the turnouts to 
+	    	    continue its route</li>
+            <li>A hidden column was added to the OBlock table enabling a block to be allocated/deAllocated 
+	    	    to a warrrant. (Reminder- "right click" the column header to make columns visible)</li>
+        </ul>
+
+   <h3>Web Access</h3>
+        <ul>
+            <li></li>
+        </ul>
+
    <h3>Internationalization</h3>
         <ul>
             <li>Petr Šídlo added to the Czech translation</li>
             <li>Logix may now be shared across different Locales (see note under <a href="#logix">Logix</a>).</li>
             <li>Translations files for Logix and Conditional editing have been cleaned up. Users might see some english
-            phrases. Translators please review.</li>
+                phrases. Translators please review.</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
