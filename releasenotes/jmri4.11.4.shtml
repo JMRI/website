@@ -387,20 +387,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <a id="logix" name="logix"></a>
         <ul>
           <li>Variable State and Action references to Entry/Exit Pairs now use the Entry/Exit system name.
-          This prevents broken references caused by Entry/Exit user name changes.  The conversion may
-          find missing references which will be displayed in the system log.
-          The affected Variable State or Action row will be deleted.</li>
-        </ul>
-        <ul>
-            <li>Logix may now be shared across different Locales (languages) without losing the Mixed logic
+            This prevents broken references caused by Entry/Exit user name changes.  The conversion may
+            find missing references which will be displayed in the system log.
+            The affected Variable State or Action row will be deleted.</li>
+          <li>Logix may now be shared across different Locales (languages) without losing the Mixed logic
             definition, e.g. english "(R1 or R2) and R3" will display and work as "(R1 oder R2) und R3" in german.
             To apply this on existing Logix Conditionals, open each in the original Locale and click "Update" to update
             the logic to the universal format. Don't forget to save the new configuration to a (new) xml file.</li>
         </ul>
         
    <h3>Control Panel Editor</h3>
+        The following problems were fixed in the Item Palette:
         <ul>
-            <h4>The following problems were fixed in the Item Palette:</h4>
 	    <li>Text panel lost afte 2nd opening of Palette</li>
  	    <li>Background color chooser disabled after 2nd opening of Palette</li>
 	    <li>Multiple family button panels displayed after adding icons</li>
