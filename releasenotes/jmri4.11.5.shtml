@@ -403,7 +403,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>New / Updated decoder definitions</h3>
       <ul>
-        <li></li>
+        <li>
+            The use of
+            <a href=
+             "/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#conditional"
+            target="_blank">"include" and "exclude"</a>
+            attributes is now possible with
+            &lt;enumChoice&gt; and &lt;enumChoiceGroup&gt; elements.
+            (Dave Heap)
+        </li>
      </ul>
 
         <h4>Arnold</h4>
