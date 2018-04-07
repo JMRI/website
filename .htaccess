@@ -5,4 +5,5 @@ Options Indexes FollowSymLinks Includes
 
 # Provide redirects for removed pages
 # RewriteEngine on
+# can't do following as javadoc writes an index.html file
 # RewriteRule "index.html" "/index.shtml" [R=302,L]
