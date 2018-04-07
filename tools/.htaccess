@@ -1,3 +1,0 @@
-# Provide redirects for removed pages
-RewriteEngine on
-RewriteRule "index.html" "/index.shtml" [R=302,L]
