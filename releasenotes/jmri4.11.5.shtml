@@ -326,6 +326,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
+        <h4>Direct</h4>
+        <ul>
+            <li>Simulator connection type added. Please test and compare if you have the hardware.</li>
+        </ul>
+
         <h4>ESU</h4>
             <ul>
                 <li></li>
@@ -346,6 +351,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
+        <h4>Maple</h4>
+        <ul>
+            <li>Simulator connection type added. Please test and compare if you have the hardware.</li>
+        </ul>
+
         <h4>Marklin CS2</h4>
             <ul>
                 <li></li>
@@ -361,6 +371,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li><li>
             </ul>
 
+        <h4>Oak Tree</h4>
+        <ul>
+            <li>Simulator connection type added. Please test and compare if you have the hardware.</li>
+        </ul>
+
         <h4><a href="http://openlcb.org">OpenLCB</a></h4>
             <ul>
                 <li></li>
@@ -375,6 +390,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
+
+        <h4>Secsi</h4>
+        <ul>
+            <li>Simulator connection type added. Please test and compare if you have the hardware.<br>
+            Secsi messages proved rather difficult to analyze.</li>
+        </ul>
 
         <h4>SPROG</h4>
             <ul>
@@ -464,7 +485,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h4><a href-"http://www.ldhtrenes.com.ar">LDH</a></h4>
+        <h4><a href="http://www.ldhtrenes.com.ar">LDH</a></h4>
             <ul>
                 <li></li>
             </ul>
@@ -572,7 +593,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Logix</h3>
         <ul>
-          <li></li>
+          <li>Fix for nested Conditionals that would break when edited in 4.11.4 (Dave Sand).</li>
         </ul>
 
     <h3>Operations</h3>
