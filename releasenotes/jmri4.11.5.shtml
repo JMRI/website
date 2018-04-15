@@ -587,12 +587,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h3>Layout Editor</h3>
         <a id="LE" name="LE"/>
         <ul>
-	        <li></li>
+            <li>Text labels with alternate font assignments retain their formatting. (Dave Sand)</li>
+            <li>The column widths for the Valid Paths section of the routing table adapt to the content. (Dave Sand)</li>
         </ul>
 
     <h3>Logix</h3>
         <ul>
-          <li>Fix for nested Conditionals that would break when edited in 4.11.4 (Dave Sand).</li>
+            <li>Fix for nested antecedent Conditionals that would break when edited in 4.11.4. (Dave Sand)</li>
+            <li>Antecedents are localized for display and editing but stored in English.
+                This faciliates portability between languages. (Dave Sand)</li>
         </ul>
 
     <h3>Operations</h3>
@@ -602,7 +605,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Panel Editors</h3>
         <ul>
-            <li></li>
+            <li>Text labels with alternate Font assignments retain their formatting. (Dave Sand)</li>
         </ul>
 
     <h3>Preferences</h3>
@@ -646,7 +649,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Signal Masts</h4>
             <ul>
-                <li></li>
+                <li>Signal mast logic pair discovery improved to handle complex Layout Editor track plans. (Dave Sand)</li>
             </ul>
             
     	<h4>Signal Groups</h4>
@@ -661,7 +664,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
 	    <h4>NX Entry/Exit Logic</h4>
             <ul>
-                <li></li>
+                <li>Entry/Exit pair discovery improved to handle complex Layout Editor track plans. (Dave Sand)</li>
             </ul>
 
 	    <h4>USS CTC Logic</h4>
@@ -686,7 +689,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         
    <h3>Virtual Sound Decoder</h3>
         <ul>
-            <li></li>
+            <li>Klaus Killinger added some formal checks to avoid issues with VSDecoder Preferences.</li>
         </ul>
 
     <h3>Miscellaneous</h3>
