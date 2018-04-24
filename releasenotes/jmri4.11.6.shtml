@@ -619,7 +619,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Turnouts, Lights and other elements</h3>
         <ul>
-            <li></li>
+            <li>Fixed a bug where deleting an element from a table (e.g. Light, Turnout, Sensor, etc) 
+                would cause problems during subsequent store and load of the configuration.</li>
         </ul>
 
     <h3>Scripting</h3>
