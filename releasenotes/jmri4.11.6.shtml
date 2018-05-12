@@ -625,7 +625,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Scripting</h3>
         <ul>
-            <li></li>
+            <li>Dave Sand's 
+                <a href="http://jmri.org/scripts/RaspberryPiShutdown.py">RaspberryPiShutdown.py</a> 
+                sample script can shutdown both
+                JMRI and the Raspberry Pi (or other Linux machine) it's running on.
+                You can invoke via a Logix or other controls when you want to shutdown
+                power on your layout.</li>
         </ul>
 
     <h3>Signals</h3>
