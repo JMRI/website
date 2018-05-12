@@ -107,11 +107,16 @@ from
 
 <ul>
     <li>Due to a new bug in this release, deleting a Sensor, Turnout, Light, etc, will
-        cause problems when you subsequently store the configuration.  This has
-        been fixed for JMRI 4.11.6.
-        If you delete items from the Tables, you should avoid this release.
+        cause problems when you subsequently store the configuration.  
+        This has been fixed for JMRI 4.11.6.
+        <p>If you delete items from the Tables, you should avoid this release.
         (Lots of people don't have a need to delete items, and this bug won't
         cause them any problems)</li>
+    <li>Due to a new bug in this release, opening a locomotive in DecoderPro "Edit mode" (not connected to the layout)
+        might not work.  
+        This has been fixed for JMRI 4.11.6.
+        <p>The workaround is to open it in as if using the
+        programming track, even if there's not one connected.
 </ul>
 
 <h3>Older warnings</h3>
