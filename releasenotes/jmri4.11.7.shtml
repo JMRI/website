@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
- JMRI: Release Notes for 4.11.6
+ JMRI: Release Notes for 4.11.7
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.11.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.11.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!--#include virtual="/Style.shtml" -->
 
@@ -19,12 +19,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.11.6 release
+      Release Notes for JMRI 4.11.7 release
       </h1>
 
     <p>Date: mmm dd, 2017</p>
     <p>From: (pumpkin)</p>
-    <p>Subject: Test Release 4.11.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.11.7 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -290,7 +290,7 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
  
-<h2>Changes since <a href="jmri4.11.5.shtml">Test release 4.11.5</a>:</h2>
+<h2>Changes since <a href="jmri4.11.6.shtml">Test release 4.11.6</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.6">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
@@ -619,18 +619,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Turnouts, Lights and other elements</h3>
         <ul>
-            <li>Fixed a bug where deleting an element from a table (e.g. Light, Turnout, Sensor, etc) 
-                would cause problems during subsequent store and load of the configuration.</li>
+            <li></li>
         </ul>
 
     <h3>Scripting</h3>
         <ul>
-            <li>Dave Sand's 
-                <a href="http://jmri.org/scripts/RaspberryPiShutdown.py">RaspberryPiShutdown.py</a> 
-                sample script can shutdown both
-                JMRI and the Raspberry Pi (or other Linux machine) it's running on.
-                You can invoke via a Logix or other controls when you want to shutdown
-                power on your layout.</li>
+            <li></li>
         </ul>
 
     <h3>Signals</h3>
