@@ -343,7 +343,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>LocoNet</h4>
             <ul>
-                <li></li>
+                <li>The LocoNet code was updated to fully support multiple hardware connections. Some deprecated
+                methods were removed, so please update any code relying on those.</li>
             </ul>
 
         <h4>MERG CBUS</h4>
@@ -511,6 +512,14 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
+        <h4>Public Domain</h4>
+        <ul>
+            <li>The DecoderPro LocoIO programmer was renamed to match the spelling of
+            the author's surname. You might see a message to this effect in the Consol.</li>
+            <li>Some panes were added but the LocoIO programmer is as yet incomplete and only
+            experimental.</li>
+        </ul>
+
         <h4>QSI</h4>
             <ul>
                 <li></li>
@@ -573,7 +582,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>DecoderPro</h3>
         <ul>
-          <li></li>
+          <li>Fixed an error when opening an existing Roster entry in Edit mode.</li>
         </ul>
 
    <h3>Dispatcher</h3>
@@ -584,7 +593,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h3>Layout Editor</h3>
         <a id="LE" name="LE"/>
         <ul>
-	        <li></li>
+            <li>Now displays hidden mainline track sections while in edit mode.</li>
+            <li>Fixed the View Block Routing selection list for cross-overs to use the actual block name
+            instead of the same name for each entry.</li>
         </ul>
 
     <h3>Logix</h3>
@@ -594,12 +605,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Operations</h3>
        <ul>
-          <li></li>
+          <li>Minor improvements to the Operations Build Report, GUI and Help pages.</li>
+          <li>Added a check that trains can pull car types for a track.</li>
+           <li>The "Show Trains Serving Location" tool now shows train direction for each location
+           serviced.</li>
        </ul>
 
    <h3>Panel Editors</h3>
         <ul>
-            <li></li>
+            <li>Fixed display of the icon tree chooser and drag-n-drop during icon edit in
+                the classic Panel Editor.</li>
         </ul>
 
     <h3>Preferences</h3>
@@ -621,16 +636,22 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>Fixed a bug where deleting an element from a table (e.g. Light, Turnout, Sensor, etc) 
                 would cause problems during subsequent store and load of the configuration.</li>
+            <li>Fixed the index numbers added to the name when adding a new range of Blocks.</li>
         </ul>
 
     <h3>Scripting</h3>
         <ul>
             <li>Dave Sand's 
                 <a href="http://jmri.org/scripts/RaspberryPiShutdown.py">RaspberryPiShutdown.py</a> 
-                sample script can shutdown both
-                JMRI and the Raspberry Pi (or other Linux machine) it's running on.
-                You can invoke via a Logix or other controls when you want to shutdown
+                sample script can shutdown both JMRI and the Raspberry Pi (or other Linux machine)
+                it's running on. You can invoke via a Logix or other controls when you want to shutdown
                 power on your layout.</li>
+            <li>The LocoNet Scripting examples were updated to support multiple LocoNet connections.
+                If you are using your own scripts with LocoNet, update lines of code that read
+            <pre>jmri.jmrix.loconet.LnTrafficController.instance()</pre> to
+            <pre>jmri.InstanceManager.getList(jmri.jmrix.loconet.LocoNetSystemConnectionMemo).get(0).getLnTrafficController()</pre>
+            See <a href="http://jmri.org/help/en/html/hardware/loconet/LocoNetClasses.shtml">LocoNetClasses
+                Help</a>.</li>
         </ul>
 
     <h3>Signals</h3>
@@ -639,7 +660,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
         <h4>Signal Systems</h4>
             <ul>
-                <li></li>
+                <li>Petr Šídlo added five sets of definitions for Czechoslovak State Railways
+                <a href="http://jmri.org/xml/signals/CSD-1962-zakladni/index.shtml">1962/2015 ČSD</a>
+                aspect signaling.</li>
             </ul>
 
         <h4>Signal Heads</h4>
@@ -674,7 +697,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             
    <h3>Warrants</h3>
         <ul>
-            <li></li>
+            <li>The loco speed ramp algorithm was improved to make use of CV23 &amp; CV24 in momentum
+            determination.</li>
         </ul>
 
    <h3>Web Access</h3>
@@ -684,17 +708,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Internationalization</h3>
         <ul>
-            <li></li>
+            <li>More Catalan, Czech and Danish translations were added.</li>
+            <li>More LocoNet tools have been prepared for translating and got Dutch translations.</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
         <ul>
-            <li></li>
+            <li>Updates were made to engine type "steam".</li>
         </ul>
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li></li>
+            <li>Again, more behind the scenes code tests, plus stability as well as memory handling enhancements.</li>
         </ul>
 
    <!--#include virtual="/Footer.shtml" -->
