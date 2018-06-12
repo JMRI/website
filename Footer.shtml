@@ -1,19 +1,23 @@
 <!-- Footer.shtml -->
     <hr class="hide">
     <div id="footer">
-	<ul id="bn">
-	    <li>Contact us via the <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io group. 
-	        Check the <a href="http://status.jmri.org">site status page</a>.</li>
-	</ul>
+	<ul id="bn"></ul><!-- seems necessary to the formatting? -->
 
 	<p>Thanks and congratulations to
 	   <a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
 	   	all who contributed</a>!</p>
+
 	<p>Copyright &copy; 1997 - 2018 JMRI Community. 
 	<p>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, TrainPro&trade;, DispatcherPro&trade;, OperationsPro&trade; and associated logos are our trademarks.
 	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
     
-    <!--#include virtual="/SiteCredit.shtml" -->
+    <p></p>
+ 	<p>Contact us via the <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io group.</p>
 
+    <p>Site hosted by:<br><!-- SSI require .shtml suffix, so this file can't include the following as Icon via SSI -->
+        <A href="http://www.tagadab.com"> 
+        <IMG src="https://www.tagadab.com/sites/default/files/logo-tagadab-nostrap.png" height="28" width="103" border="0" alt="Tagadab Logo"> </A> 
+     <br>See also the <a href="http://status.jmri.org">site status page</a>.
+     </p>
     </div>
 <!-- /Footer.shtml -->
