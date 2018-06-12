@@ -37,6 +37,10 @@
         if you want quick access to some particular fix, but please note that they're
         not fully tested. Test releases get more testing as part of the release process.
     </ul>
+    For more information on the (intended) release schedule, see the 
+    <a href="https://github.com/JMRI/JMRI/milestones">current list of milestones</a>
+    and the 
+    <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">development roadmap</a>.
     </div><!-- closes #teaser-->
 	<h1>Latest News</h1>
 	<dl>
@@ -68,26 +72,7 @@
 	    <a href="#prod-rel">Release 4.10</a> is the current "production" release, recommended
 	    for first-time users. 
 
-		<dt>Production release 3.10.1 available</dt>
-	    <dd>
-	    <p>On January 11, 2015 production release 3.10.1 was made available.</p>
-	    
-	    <p>
-	    Release 3.10.1 is recommended for JMRI users with computers that can only
-	    run Java 1.6. Please see the 
-	    <a href="../releasenotes/jmri3.10.1.shtml">release note</A> for download and install
-	    information. 
- 
-		<dt>Production release 2.14.1 available</dt>
-	    <dd>
-	    <p>On July 15, 2012 production release 2.14.1 was made available.</p>
-	    
-	    <p>
-	    Release 2.14.1 is recommended for JMRI users with computers that can only
-	    run Java 1.5. Please see the 
-	    <a href="../releasenotes/jmri2.14.1.shtml">release note</A> for download and install
-	    information. 
- 
+	      
 	</dl>
 
   <div class="list">
@@ -140,7 +125,40 @@
     application, see the 
     <a href="http://cats4ctc.org"><!-- was http://home.comcast.net/~kb0oys/ --> CATS download page</a>.
     </p>
-    
+
+	<div style="clear: both"></div>
+    </dd>
+    </dl>
+
+    <h2>JMRI 3.10.1 - Production release for Java 1.6</h2>
+    <dl>
+    <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
+    <dd>
+
+	    <p>
+	    Release 3.10.1 is recommended for JMRI users with computers that can only
+	    run Java 1.6. Please see the 
+	    <a href="../releasenotes/jmri3.10.1.shtml">release note</A> for download and install
+	    information. 
+	    <p>Production release 3.10.1 was made available onn January 11, 2015.</p>
+
+	<div style="clear: both"></div>
+    </dd>
+    </dl>
+
+    <h2>JMRI 2.14.1 - Production release for Java 1.5</h2>
+    <dl>
+    <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
+    <dd>
+	    
+	    <p>
+	    Release 2.14.1 is recommended for JMRI users with computers that can only
+	    run Java 1.5. Please see the 
+	    <a href="../releasenotes/jmri2.14.1.shtml">release note</A> for download and install
+	    information. 
+	    <p>Production release 2.14.1 was made available on July 15, 2012.</p>
+
+  
 	<div style="clear: both"></div>
     </dd>
     </dl>
