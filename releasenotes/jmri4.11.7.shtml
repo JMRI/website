@@ -314,7 +314,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		
         <h4>C/MRI</h4>
             <ul>
-                <li></li>
+                <li>Chuck Catania improved the CMR/I support:
+                <ul>
+                    <li>Added cpNode 8 bit card support.
+                    <li>Changed Test Type from radio buttons to Test Suite combo box.
+                    <li>Added required test hardware description for each test suite.
+                    <li>Moved poll node and send command functions to Diagnostics. PacketGen class will be deprecated in the future.
+                    <li>Created Test Set Up panels for each test suite with appropriate test configuration parameter fields.
+                    <li>Changed bit pattern displays to have bits move from low order (right) to high order (left).
+                    <li>Updated Loopback test selection to include input and output card selection with optional bit state inversion.
+                    <li>Updated Send Commands test setup to include Initialize Node, Poll Node, and Write Bytes functions.
+                </ul>
+                </li>
             </ul>
 
         <h4>DCC++</h4>
@@ -334,7 +345,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>ESU</h4>
             <ul>
-                <li></li>
+                <li>Karl Lisby added Ops-mode programming (POM - Programming on Main) for ECoS firmware version 4.2.3</li>
             </ul>
 
         <h4>JMRI Simple Server/JMRI Client</h4>
@@ -402,6 +413,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
+        <h4>TAMS</h4>
+            <ul>
+                <li>Jan Boen fixed a major bug in how Senors were handled</li>
+            </ul>
+
         <h4>TMCC</h4>
             <ul>
                 <li></li>
@@ -424,15 +440,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>New / Updated decoder definitions</h3>
       <ul>
-        <li></li>
+        <li>Petr Šídlo fixed a bug on the PD/DIY UNI16ARD decoder definition</li>
      </ul>
 
         <h4>Arnold</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>BLI</h4>
             <ul>
                 <li></li>
             </ul>
@@ -442,9 +453,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h4>Digikeijs (Digirails)</h4>
+        <h4>BLI</h4>
             <ul>
                 <li></li>
+            </ul>
+
+        <h4>BNM Hobbies</h4>
+            <ul>
+                <li>Stuart Brorson provided the decoder definition for the SDD-001</li>
+            </ul>
+
+        <h4>Digikeijs (Digirails)</h4>
+            <ul>
+                <li>Egbert Broerse fixed a problem with CV7</li>
             </ul>
 
         <h4>Digitrax</h4>
@@ -574,18 +595,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>DecoderPro</h3>
         <ul>
-          <li></li>
+          <li>Petr Šídlo fixed the decoding logic for "Public Domain and DIY" decoders</li>
         </ul>
 
    <h3>Dispatcher</h3>
         <ul>
-             <li></li>
+             <li>Steve G refactored the Dispatcher LoadAtStartUp to allow jython access to dispatcher load</li>
         </ul>
 
     <h3>Layout Editor</h3>
         <a id="LE" name="LE"/>
         <ul>
-	        <li></li>
+	        <li>Dave Sand fixed a problem where the wrong default value was assigned to an unoccupied block</li>
         </ul>
 
     <h3>Logix</h3>
@@ -595,7 +616,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Operations</h3>
        <ul>
-          <li></li>
+          <li>Dan Boudreau made improvements.
+          <ul>
+            <li>Fix bug where cars in a kernel weren't redirected from alternate track.
+            <li>Check for &quot;&amp;&quot; characters in car's load name
+            <li>Add 'Copy Track" tool to Locations window
+            <li>Print or Preview all items in a Schedule
+            <li>Improved export cars, added more attributes
+            <li>Fix bug with clear and select all
+            <li>Enhanced edit track loads by locations
+            <li>Add car status to print car roster
+            <li>Bug fix for import cars.
+          </ul>
+          </li>
        </ul>
 
    <h3>Panel Editors</h3>
@@ -630,7 +663,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Signals</h3>
         <ul>
-            <li></li>
+            <li>The set masts at slip process was displaying a dialog about a missing combo box block selection when
+                 the block has already been assigned to the slip switch.
+                 This made it impossible to assign signal masts to block boundaries at slip switches.
+                 Dave Sand fixed it.</li>
         </ul>
         <h4>Signal Systems</h4>
             <ul>
@@ -674,12 +710,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
    <h3>Web Access</h3>
         <ul>
-            <li> </li>
+            <li>Steve Tood improved handling of disabled flag and disable-when-occupied on turnouts in web panel</li>
+            <li>The web server is providing directory listings again</li>
         </ul>
 
    <h3>Internationalization</h3>
         <ul>
-            <li></li>
+            <li>Luis Zamora added a lot of Catalan translations</li>
+            <li>Petr Šídlo improved the Czech translation</li>
+            <li>Egbert Broerse improved how Warrants are internationalized</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
@@ -692,7 +731,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li></li>
+            <li>Add debug menu item to install <a href="http://jmri.org/help/en//html/apps/TrainCrew/index.shtml">TrainCrew application</a></li>
+            <li>Add help page for Manifest Creator
+            <li>Improved, but perhaps didn't entirely fix, a problem that caused JMRI to hang during startup
+            <li>Egbert Broerse improves transit action signal labels
+            <li>Many updated help pages
         </ul>
 
    <!--#include virtual="/Footer.shtml" -->
