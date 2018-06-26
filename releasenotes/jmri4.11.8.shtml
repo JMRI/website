@@ -346,11 +346,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h4>MERG CBUS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>Maple</h4>
         <ul>
             <li></li>
@@ -359,6 +354,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h4>Marklin CS2</h4>
             <ul>
                 <li></li>
+            </ul>
+
+        <h4>MERG CBUS</h4>
+            <ul>
+                <li>Steve Young improved the documentation</li>
             </ul>
 
         <h4>MRC</h4>
@@ -403,7 +403,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>TAMS</h4>
             <ul>
-                <li></li>
+                <li>Jan Boen improved the sensor handling</li>
             </ul>
 
         <h4>TMCC</h4>
@@ -643,7 +643,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
         <h4>Signal Systems</h4>
             <ul>
-                <li></li>
+                <li>Dick Bronson provided a new <a href="jmri.org/xml/signals/PRR-1956">PRR 1956 signal system</a></li>
             </ul>
 
         <h4>Signal Heads</h4>
@@ -698,7 +698,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Miscellaneous</h3>
         <ul>
-            <li></li>
+            <li>Steve Young fixes links to the JMRIusers mailing list, now on groups.io</li>
+            <li>Tom Gretton improved the logging documentation</li>
+            <li>Dave Heap fixed some technical issues in the Node Identity process</li>
         </ul>
 
    <!--#include virtual="/Footer.shtml" -->
