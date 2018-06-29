@@ -106,7 +106,21 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>None</li>
+<li><span class="since">Since <a href="jmri4.11.8.shtml">JMRI 4.11.8</a></span>
+    Some new display capabilities were recently introduced into Layout Editor.
+    This release changes some of the defaults in this area, which might 
+    change the appearance of some track segments on your panels if they're 
+    still using default values. If you select them and change their properties,
+    then save your panel file(s), you can restore their previous appearance.
+    We apologize for the inconvenience.
+<li><span class="since">Since <a href="jmri4.11.8.shtml">JMRI 4.11.8</a></span>
+    Because of changes to the "node identification" algorithm used to tell 
+    one computer running JMRI from another, you might receive a warning message
+    about the "Node Identity" the first time you run this JMRI version. (If you 
+    have more than one profile, this can happen with each).  There's no permanent
+    problem here, but you might have to reset your window preferences (i.e. position
+    and size, column layout, etc) in this case.
+    We apologize for the inconvenience.
 </ul>
 
 <h3>Older warnings</h3>
