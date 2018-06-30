@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.11.8 release
       </h1>
 
-    <p>Date: mmm dd, 2017</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: June 30, 2018</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.11.8 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -323,6 +325,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Jan Boen improved the sensor handling</li>
             </ul>
 
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"/>
+        <ul>
+	        <li>Changed some of the Layout Editor appearance defaults, which might 
+                change the appearance of some track segments on your panels if they're 
+                still using default values. If you select them and change their properties,
+                then save your panel file(s), you can restore their previous appearance.
+            </li>
+        </ul>
+
     <h3>Signals</h3>
 
         <h4>Signal Systems</h4>
@@ -332,6 +344,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Miscellaneous</h3>
         <ul>
+            <li>Changed the "node identification" algorithm used to tell 
+                one computer running JMRI from another. (See warning above)
             <li>Steve Young fixes links to the JMRIusers mailing list, now on groups.io</li>
             <li>Tom Gretton improved the logging documentation</li>
             <li>Dave Heap fixed some technical issues in the Node Identity process</li>
