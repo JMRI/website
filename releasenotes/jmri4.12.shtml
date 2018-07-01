@@ -105,6 +105,9 @@ These may be relevant to you if you're updating from a version earlier than JMRI
     change the appearance of some track segments on your panels if they're 
     still using default values. If you select them and change their properties,
     then save your panel file(s), you can restore their previous appearance.
+    There's a 
+    <a href="../community/LayoutEditorTrackChanges.pdf">PDF document</a>
+    with more details.
     We apologize for the inconvenience.
 
 <p><span class="since">Since <a href="jmri4.11.8.shtml">JMRI 4.11.8</a></span>
@@ -633,6 +636,13 @@ are available in our
             <li>Fixed the View Block Routing selection list for cross-overs to use the actual block name
             instead of the same name for each entry.</li>
 	        <li>Dave Sand fixed a problem where the wrong default value was assigned to an unoccupied block</li>
+	        <li>Changed some of the Layout Editor appearance defaults, which might 
+                change the appearance of some track segments on your panels if they're 
+                still using default values. If you select them and change their properties,
+                then save your panel file(s), you can restore their previous appearance.
+                There's a 
+                <a href="../community/LayoutEditorTrackChanges.pdf">PDF document</a>
+                with more details.</li>
         </ul>
 
     <h3>Logix</h3>
