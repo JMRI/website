@@ -10,7 +10,8 @@ User discussions are on the [JMRI users Groups.io group](https://groups.io/g/jmr
 
 Infrastructure status available at [status.jmri.org](http://status.jmri.org)
 
-Most recent [![GitHub version](https://badge.fury.io/gh/JMRI%2FJMRI.svg)](https://badge.fury.io/gh/JMRI%2FJMRI)
+Most recent release: [![GitHub version](https://badge.fury.io/gh/JMRI%2FJMRI.svg)](https://badge.fury.io/gh/JMRI%2FJMRI)
+![Test release](https://shields.io/github/release/JMRI/JMRI.svg)
 
 Jenkins: [![Build Status](http://jmri.tagadab.com/jenkins/buildStatus/icon?job=Development/Builds)](http://jmri.tagadab.com/jenkins/job/Development/job/Builds/)
 [![Build Status](http://jmri.tagadab.com/jenkins/buildStatus/icon?job=Development/Packages)](http://jmri.tagadab.com/jenkins/job/Development/job/Packages/)
