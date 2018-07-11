@@ -365,6 +365,7 @@ are available in our
                     should more accurately reflect the layout state.</li>
                 <li>The LocoNet code was updated to fully support multiple hardware connections. Some deprecated
                 methods were removed, so please update any code relying on those.</li>
+                <li>Fixed a crash when configuring certain LocoNet boards</li>
             </ul>
 
         <h4>Maple</h4>
@@ -693,6 +694,8 @@ are available in our
 	    <li>Drag icon disappears after editing existing IndicatorTO icons</li>
 	    <li>Panel background colors not shared among all Palette tabs when editors are changed</li>
 	    <li>Incorrect placement of dragged items to a zoomed panel.</li>
+        <li>Fixed a problem when selecting Sensors, Turnouts and other 
+            items to add to a Control Panel Editor panel after sorting the items.
         </ul>
 
     <h3>Turnouts, Lights and other elements</h3>
