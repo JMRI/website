@@ -385,30 +385,27 @@ JMRI: A Java Model Railroad Interface
 		    	controlling and operating a model railroad. There's
 		    	more information on the
 		    <a href="http://cats4ctc.org">CATS web site</a>.
-		    <p/>
 		   </dd>
 	        </dl>
 
-		<h2><a href="community/connections/XtrkCadReader/index.shtml">XTrkCad and JMRI</a></h2>
+		<h2><a href="community/connections/XtrkCadReader/index.shtml">XTrackCAD and JMRI</a></h2>
 		<dl>
-		    <dt class="im">
-			<a href="community/connections/XtrkCadReader/index.shtml"><img src="http://home3.swipnet.se/~w-31080/Pics/lower.gif" width="90" height="90" alt="XtrkCad and JMRI"></a>
-		    </dt>
-		    <dd>
-			<a href="http://www.xtrkcad.org">XTrkCad</a>
-			is a great, free tool for designing your layout
-			that's being developed by a 
-			<a href="">group of model railroaders</a>.
-			<p>
-			<a href="community/connections/XtrkCadReader/index.shtml">XtrkCadReader</a> 
-			is a new JMRI tool built by Giorgio Terdina to 
-			take layout information created by XTrkCad (XTC files) and convert it to 
-			a form that JMRI can read (XML files).  
-			<p>This tool lets you import your physical
-			layout design from XTrkCad directly into JMRI so you can easily
-			set up controls for the layout you've built.
-		    </dd>
-	        </dl>
+			<dt class="im">
+				<a href="community/connections/XtrkCadReader/index.shtml"><img src="images/xtracadreader.png"
+				width="147" height="53" alt="XTrackCAD and JMRI"></a>
+			</dt>
+			<dd>
+				<a href="http://www.xtrkcad.org">XTrackCAD</a>
+				is a great, free tool for designing your layout,
+				developed by a group of model railroaders.
+				<p>
+				<a href="community/connections/XtrkCadReader/index.shtml">XtrkCadReader</a>
+				is a JMRI tool built by Giorgio Terdina to take layout information created
+				by XTrackCAD (XTC files) and convert it to a form that JMRI can read (XML files).
+				<p>This tool lets you import your physical layout design from XTrkCad directly
+				into JMRI so you can easily set up controls for the layout you've built.
+			</dd>
+		</dl>
 
 		<h2><a href="./xml/XSLT/">Decoder ID pages</a></h2>
 		<dl>
@@ -418,7 +415,7 @@ JMRI: A Java Model Railroad Interface
 			Automagically created from the current DecoderPro definitions,
 			it provides easy access to all sorts of information about decoders. 
 			<p>
-			Contribute more information to our decoder definitions, and help these pages become even more useful!</li>
+			Contribute more information to our decoder definitions, and help these pages become even more useful!</p>
 			
 			<div style="clear: both"></div>
 		   </dd>
