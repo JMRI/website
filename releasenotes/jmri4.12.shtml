@@ -20,7 +20,7 @@
       Release Notes for JMRI 4.12 release
       </h1>
 
-    <p>Date: December 19, 2017</p>
+    <p>Date: July 13, 2018</p>
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 4.12 of JMRI/DecoderPro is available for download.</p>
 
@@ -250,25 +250,26 @@ People are welcome to distribute the download files further via other websites, 
 If you want to check that you've received original, unmodified versions, please
 check the files against the checksums shown below.
 
+<!-- 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.dmg">https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.dmg</a><br/>
-  sha256: c78aca9f75cc94a9db285ecbb075702c015aed59cbc7403549a51380e445a91c </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12.Rb6a9bb1.dmg">https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12.Rb6a9bb1.dmg</a><br/>
+  sha256: c90f239d458ed537fa723d99ea14c48a56cd29afb87b8d54357add5af8bb007b </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.exe">https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.exe</a><br/>
-   sha256: 856cd800c6b54c8dd6d64f87d35ee951810ad4ba8f54c65d31d4139e08e23200</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12.Rb6a9bb1.exe">https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12.Rb6a9bb1.exe</a><br/>
+   sha256: 1faed91f8ee38958959f543276943e42bc0b6325bf88463561f35c1cae543327</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.tgz">https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.tgz</a><br/>
-   sha256: 7da8d6f95acfb95be1a6c6a6f1bc0220a532596eb95363adc4d0c26910a1f91a</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12.Rb6a9bb1.tgz">https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12.Rb6a9bb1.tgz</a><br/>
+   sha256: 7dcd6004df52a2d608cea6f1ef77b0c685de37afb33e3ba42ef1d57e505f59e6</li>
 </ul>
+ -->
 
-<!-- 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
+
 
 <h2>Changes since <a href="jmri4.8.shtml">production release 4.8</a>:</h2>
 
@@ -307,14 +308,14 @@ are available in our
 
         <h4>C/MRI</h4>
             <ul>
-                <li>Chuck Catania fixed a
-                    <a href="https://github.com/JMRI/JMRI/issues/4616">formatting problem</a>
-                    with user names on the "List Assignments" window</li>  
-                <li>Chuck Catania added a 
-                    <a href="https://github.com/JMRI/JMRI/issues/4624">save reminder dialog</a>
-                    upon exiting the C/MRI Node Configuration Manager.</li>
                 <li>Chuck Catania improved the CMR/I support:
                 <ul>
+                    <li>Fixed a
+                        <a href="https://github.com/JMRI/JMRI/issues/4616">formatting problem</a>
+                        with user names on the "List Assignments" window</li>  
+                    <li>Added a 
+                        <a href="https://github.com/JMRI/JMRI/issues/4624">save reminder dialog</a>
+                        upon exiting the C/MRI Node Configuration Manager.</li>
                     <li>Added cpNode 8 bit card support.
                     <li>Changed Test Type from radio buttons to Test Suite combo box.
                     <li>Added required test hardware description for each test suite.
@@ -323,8 +324,29 @@ are available in our
                     <li>Changed bit pattern displays to have bits move from low order (right) to high order (left).
                     <li>Updated Loopback test selection to include input and output card selection with optional bit state inversion.
                     <li>Updated Send Commands test setup to include Initialize Node, Poll Node, and Write Bytes functions.
+                    <li>Added multiple connection CMRInet metrics and error data collector, CMRInetMetricsCollector
+                    <li>Created CMRInetMetrics class to display and monitor data
+                    <li>Added CMRInet metrics tests.
+                    <li>Added connection memo name to all window titles " - Connection <_memo>".
+                    <li>Changed Diagnosics frame layout.  
+                    <li>Added node address popup selection to restrict diags to configured nodes
+                    <li>Test Setup panel shows options for selected test
+                    <li>Added Inverted option checkbox to Test Setup panel
+                    <li>Renamed Run Diagnostic menu item to Run Diagnostics
+                    <li>Fixed multiple connection Diagnostic bug. 
+                    <li>Deleted redundant properties from Diagnostic bundle.  Parent has primary properties.
+                    <li>Changed test node selection to ComboBox, only configured node addresses are displayed.
+                    <li>Added cpNode 8 bit card support.
+                    <li>Changed Test Type from radio buttons to Test Suite combo box.
+                    <li>Added required test hardware description for each test suite.
+                    <li>Moved poll node and send command functions to Diagnostics.  PacketGen class will be deprecated in the future.
+                    <li>Created Test Set Up panels for each test suite with appropriate test configuration parameter fields.
+                    <li>Changed bit pattern displays to have bits move from low order (right) to high order (left).
+                    <li>Updated Loopback test selection to include input and output card selection with optional bit state inversion.
+                    <li>Updated Send Commands test setup to include Initialize Node, Poll Node, and Write Bytes functions.
+                    <li>Added Card number to cpNode IOX card assignment pane.
+                    <li>@Deprecated NodeConfigAction and NodeConfigFrame classes.  These were replaced by NodeConfigManager class.
                 </ul>
-                </li>
             </ul>
 
         <h4>DCC++</h4>
@@ -769,7 +791,8 @@ are available in our
 
     <h3>Resources</h3>
         <ul>
-            <li>Chuck Catania added <a href="http:/jmri.org/resources/icons/USS/plate/base-plates/misc/">lock plate icons</a></li>
+            <li>Chuck Catania added <a href="http:/jmri.org/resources/icons/USS/plate/base-plates/misc/">icons</a>
+                for CTC lock plates, switch heater plates, model board tower and stations.</li>
         </ul>
     
     <h3>Roster</h3>
