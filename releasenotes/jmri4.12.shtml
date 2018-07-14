@@ -24,7 +24,9 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 4.12 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <p>We are very pleased to announce that the 4.11 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
@@ -250,7 +252,6 @@ People are welcome to distribute the download files further via other websites, 
 If you want to check that you've received original, unmodified versions, please
 check the files against the checksums shown below.
 
-<!-- 
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12.Rb6a9bb1.dmg">https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12.Rb6a9bb1.dmg</a><br/>
@@ -264,11 +265,12 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12.Rb6a9bb1.tgz">https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12.Rb6a9bb1.tgz</a><br/>
    sha256: 7dcd6004df52a2d608cea6f1ef77b0c685de37afb33e3ba42ef1d57e505f59e6</li>
 </ul>
- -->
 
+<!-- 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
 
 
 <h2>Changes since <a href="jmri4.10.shtml">production release 4.10</a>:</h2>
