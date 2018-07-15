@@ -26,9 +26,17 @@
 <h1>Using JMRI and XTrackCAD Together</h1>
 
 <img src="../../../images/xtracadreader.png" width="147" height="53" alt="XtrkCad and JMRI" align="right">
-XtrkCadReader is a tool that can take a layout file created with the
+XtrkCadReader is a java tool that can take a layout file created with the
 <a href="http://www.xtrkcad.org/">XTrackCAD layout design program</a>
 and convert it to a panel file JMRI can use.
+
+<p>
+It can be downloaded from the
+<a href="https://github.com/JMRI/XTrkCadReader/releases">Releases page</a> on GitHub.
+<br>
+A <a href="XtrkCadReader.pdf">Manual (PDF)</a> describing how to run XtrkCadReader, including the
+options and limitations, is include in the download together with several example files.
+<span class="since">Since XtrkCadReader 2.2.2</span>
 
 <p>
 When you design a layout with XTrackCAD, the information about track, turnouts,
@@ -40,17 +48,9 @@ You can then read that XML file into JMRI PanelPro to create a
 that represents your trackwork.
 
 <p>
-XtrkCadReader can be downloaded via
-<a href="https://sourceforge.net/projects/jmri/files/XtrkCadReader/XtrkCadReader-2017-05-06.zip/download">this link</a>.
-
-<p>
-A manual describing how to run XtrkCadReader, including the options
-and limitations, is available as a
-<a href="XtrkCadReader.pdf">PDF file</a>.
-
-<p>
-XtrkCadReader was created by Giorgio Terdina from 2008. It was updated and tested in 2018 to
-work with both JMRI 4.12 and XTrackCAD 5.1.1.
+XtrkCadReader was created by Giorgio Terdina from 2008. It was updated since.<br>
+Release 2.2.2 works with both JMRI 4.12
+and XTrackCAD 5.1.1.<br>
 XtrkCadReader is part of the JMRI project and is available under the
 GNU General Public License. For additional information about
 licensing terms, kindly refer to 
