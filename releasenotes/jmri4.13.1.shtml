@@ -49,42 +49,19 @@ JMRI is now only available under the
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
-<a href="images/jmri-4.7.4-B.png"><img src="images/jmri-4.7.4-B.png" alt="after image" align="right" height="173" width="293"></a>
-<a href="images/jmri-4.7.4-A.png"><img src="images/jmri-4.7.4-A.png" alt="before image" align="right" height="173" width="295"></a>
-<a id="migration" name="migration"></a>
-<h3>Required Migration Step<span class="since">Since <a href="jmri4.7.4.shtml">JMRI 4.7.4</a></span></h3>
-JMRI was updated in JMRI 4.7.4 to use a new serial library. Depending on your exact
-circumstances, you may need to do some migrations:
-<ul>
-    <li>If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
-        <em>you must open the JMRI preferences and make sure that the selections are 
-        correct for your serial device(s).</em> Be sure to save the changes.
-        <p>
-        In general, previous versions used serial device names like 
-        "/dev/cu.usbserial-ABC123FG". This version will generally omit the prefix, and
-        use serial device names like "cu.usbserial-ABC123FG".
-        (If given the choice if a name starting with "tty" and one starting with "cu", 
-        pick the "cu" one). See the before and after images to the right.
-    <li>
-        If you are using Linux and have previously used the "JMRI_SERIAL_PORTS"
-        option to make sure your serial device is visible to JMRI, you'll have 
-        to change that to use the "purejavacomm.portnamepattern" option instead.
-        See the 
-        <a href="http://jmri.org/install/FAQLinux.shtml#usb">JMRI Linux install page</a> for more information.
-    <li>
-        If you have your own JMRI scripts to access a serial device, you'll have to update
-        their library references:
-            <ul>
-            <li>Any 
-                <code>import gnu.io</code> statements will have to be replaced by 
-                <code>import purejavacomm</code> statements.
-            <li>More generally, any reference to 
-                <code>gnu.io</code>, e.g. a reference to a class like 
-                <code>gnu.io.SerialPort</code>, statements will have to be replaced by 
-                a reference to the corresponding 
-                <code>purejavacomm</code> class.
-            </ul>
-</ul>
+<h3>Update From Older JMRI Versions</h3>
+<p>If you are currently using JMRI 4.9.6 or earlier, we strongly recommend that you update to 
+        <a href="jmri4.12.shtml">JMRI 4.12</a> and make sure that's running OK before
+        updating to this test release.  There have been a number of 
+        changes in serial port support, panel file format and configuration options since those earlier releases, 
+        and moving to the stable <a href="jmri4.12.shtml">JMRI 4.12</a> release
+        is a good way to work through any possible problems.
+        </p>
+<p>If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this), 
+    you <u>must</u> 
+    update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
+    carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
+    before updating to this release.
 
 
 <a id="problems" name="problems"></a>
@@ -106,7 +83,7 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>None</li>
+    <li>None currently</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -164,22 +141,6 @@ These may be relevant to you if you're updating from an earlier version.
     Existing prefixes in existing configurations are unchanged, but
     new ones will have to have the correct form.
 
-<p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
-    Due to changes in the capitalization of some method and property names, some scripts may fail until
-    adjusted to use the new capitalization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
-    JMRI class will list the correct capitalization.
-
-<p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
-    For Windows users only: <a href="jmri4.9.3.shtml">JMRI 4.9.3</a> (and all later) has a new 
-    version of the "LaunchJMRI.exe" program.  It's used to set options as
-    JMRI is starting up, and is a completely normal part of JMRI.  Because it's
-    new and different, however, your anti-virus program may reject it. 
-    You might get a message about "file removed" or "file quarantined" or similar
-    and then JMRI might not start.
-    The solution is to make sure that your anti-virus program doesn't interfere
-    with JMRI's installation and running. There are so many of those, unfortunately,
-    that we can't really provide useful instructions beyond that.
-
 <p><span class="since">Since <a href="jmri4.7.6.shtml">JMRI 4.7.6</a></span>
     If you're having trouble getting your DCC programmer to work, try
     checking that the "Defaults" under "Preferences" are set to your
@@ -190,46 +151,7 @@ These may be relevant to you if you're updating from an earlier version.
     guess the right settings for these when you upgrade to this version, but 
     apparently it sometimes gets that wrong (we haven't been able to track
     that down yet). Setting them manually fixes any wrong guesses.
-
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
-    JMRI no longer supports the portable paths <code>resource:</code> or <code>file:</code> that
-    were deprecated in JMRI 2.13. When loading a panel, an error message will be displayed
-    if the panel contains a path that starts with <code>resource:</code> and the panel will
-    not load until changed using an external editor. Paths starting with <code>file:</code>
-    cannot be automatically flagged because JMRI allows file: URLs; these will have to 
-    be changed manually.
-        
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span><a id="validate" name="validate"/>
-    When loading a panel file, JMRI applications now check the file's syntax and contents.
-    This process is called "XML validation"
-    If validation fails, an error message is shown
-    that should explain the error, allowing it to be fixed using an editor. (The
-    explanations remain a work in progress.) If you have a problem loading a
-    panel file, please
-    <ol>
-        <li>Configure your JMRI startup to first run the 
-            <a href="http://jmri.org/jython/TurnOffXmlValidation.py">jython/TurnOffXmlValidation.py</a>
-            script which will suppress the error. This script needs to be run
-            before your panel is loaded.
-        <li>Write out a new version of the panel file (after saving a backup!)
-        <li>Use that new version from now on.
-        <li>And drop use of the jython/TurnOffXmlValidation.py script.
-    </ol>
-  
-<p><span class="since">Since <a href="jmri4.5.2.shtml">JMRI 4.5.2</a></span>
-    Support for directly executing AppleScript within JMRI has been removed
-    due to changes in macOS and Java outside our control. If you require the
-    ability to use AppleScript, you may be able to add this capability on your
-    own by visiting <a href="https://jmri.github.io/applescript">JMRI
-      AppleScript Support</a>, but please be aware that this may not work
-    on upcoming releases of macOS or Java.
-
-<p><span class="since">Since <a href="jmri4.5.1.shtml">JMRI 4.5.1</a></span> 
-    Internal turnouts and sensors need to have complete, individual system names.
-    The names "IT" and "IS" (without any suffix) are no longer permitted:
-    "IT12" is fine, but just "IT" is not. Most panel files that contain these should
-    automatically migrate them to new names when saved, but in some cases you might need to manually update them.
-
+      
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
