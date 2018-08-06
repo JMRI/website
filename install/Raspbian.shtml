@@ -146,6 +146,11 @@ Anytime you need to shutdown the Raspberry Pi, use the line command:
 <code>sudo poweroff</code>
 and then switch the power off once the shutdown is complete. <a href="#david">[4]</a>
 
+<h3>Turn off your Pi remotely from your 'phone</h3>
+E.g., on Android install the free SSH button app. Configure it to send the command <code>sudo shutdown -h now</code> using the
+Pi's IP address and your username and password for SSH. Switch the power off once the shutdown is complete. You must enable SSH 
+on the PI for this to work. See <code>raspi-config</code>
+
 <a id="notes"></a>
 <h2>Notes</h2>
 
@@ -161,6 +166,15 @@ and then switch the power off once the shutdown is complete. <a href="#david">[4
 
 	<dt>MERG CBUS</dt>
 	<dd>The MERG CANUSB interface is detected automatically (Matt H.).</dd>
+	
+	<dt>SPROG II and SPROG 3</dt>
+	<dd>Check in /dev or dmesg for the device that is created when connecting. This is the device you should connect to in
+	the JMRI connection.</dd>
+	
+	<dt>Pi-SPROG One</dt>
+	<dd>Connects directly to the Pi GPIO pins (unused pins passed through). Requires external power supply. With a Pi 3
+	Model B (recommended) you can use the on-board WiFi an AP (Access Point) mode to create a wireless command station.
+	See the <a href="https://www.sprog-dcc.co.uk">SPROG DCC website</a> for details of creating a suitable OS image. </dd>
 	
 	<dt>XPressNet</dt>
 	<dd>[please report your results]</dd>
