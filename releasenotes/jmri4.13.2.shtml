@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
- JMRI: Release Notes for 4.13.1
+ JMRI: Release Notes for 4.13.2
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.13.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.13.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!--#include virtual="/Style.shtml" -->
 
@@ -19,16 +19,14 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.13.1 release
+      Release Notes for JMRI 4.13.2 release
       </h1>
 
-    <p>Date: July 29, 2017</p>
+    <p>Date: MMM DD, 2018</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.13.1 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.13.2 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h2>Notes:</h2>
 
@@ -165,16 +163,16 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.13.1/JMRI.4.13.1+R9341f13.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.1/JMRI.4.13.1+R9341f13.dmg</a><br/>
-  sha256: bd16ea307535837eebbff6df3fe264932b5d0cac38e4a8fdcee4fea9cdd14c10 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.13.2/JMRI.4.13.2+R8a2b21d.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.2/JMRI.4.13.2+R8a2b21d.dmg</a><br/>
+  sha256: 742ef5f86f836f0e488d65e345d452c21fa5b1adb50ca05a4b935b5926809c65 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.13.1/JMRI.4.13.1+R9341f13.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.1/JMRI.4.13.1+R9341f13.exe</a><br/>
-   sha256: b955acbcfa392dc9f216e7a839ba8bb093516a342eaab1c144c2f05d8786bee5</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.13.2/JMRI.4.13.2+R8a2b21d.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.2/JMRI.4.13.2+R8a2b21d.exe</a><br/>
+   sha256: abf3d5b2aa5484f9bedb6e8e11163040206839db7341b03989243bb3d5881cc8</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.13.1/JMRI.4.13.1+R9341f13.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.1/JMRI.4.13.1+R9341f13.tgz</a><br/>
-   sha256: f856f313f6875417ecd3f978075d148f697f59dbfefd56cd57f1bc65f0a0668c</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.13.2/JMRI.4.13.2+R8a2b21d.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.2/JMRI.4.13.2+R8a2b21d.tgz</a><br/>
+   sha256: 66c6dd78bd4e4134117c8281877b3fbed2c69919e3f979ae0ed9a8c12b0d3b13</li>
 </ul>
 
 <!-- 
@@ -189,10 +187,10 @@ on the
 These are development files, and might not be working at any particular time.</p>
  -->
  
-<!-- <h2>Changes since <a href="jmri4.11.7.shtml">Test release 4.11.7</a>:</h2> -->
-<h2>Changes since <a href="jmri4.12.shtml">Production release 4.12</a>:</h2>
+<h2>Changes since <a href="jmri4.13.1.shtml">Test release 4.13.1</a>:</h2>
+<!-- <h2>Changes since <a href="jmri4.12.shtml">Production release 4.12</a>:</h2>  -->
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.13.1">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.13.2">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>Hardware Support</h3>
