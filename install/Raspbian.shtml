@@ -21,6 +21,7 @@
 <h1>Installing JMRI on Raspbian</h1>
 
 <ul class="snav"><!-- TOC -->
+<li><a href="#prebuilt_image">PreBuilt Image</a>
 <li><a href="#installation">Installation</a>
 <li><a href="#startup">Starting JMRI</a>
 <li><a href="#notes">Notes</a>
@@ -31,6 +32,12 @@ on a Raspberry Pi system running the Raspbian OS. There's also a Install help pa
 <p>The Raspberry Pi is becoming increasingly popular as a small and cheap computer.
 Raspbian is based on Debian and is recognized as being a very user friendly distribution.<br>
 JMRI installation consists of two stages: install Java and install JMRI.
+
+<a id="prebuilt_image"/>
+<h2>Pre-Built Image Available</h2>
+<ul>
+  <li>A free RaspberryPi image, completely configured with JMRI, auto-identify logic for many popular DCC systems, and its own wifi access point, is available for download <a href="https://mstevetodd.com/rpi" target=_new>[here]</a>.
+</ul> 
 
 <a id="installation"/>
 <h2>Installation Steps</h2>
@@ -46,6 +53,9 @@ JMRI installation consists of two stages: install Java and install JMRI.
 	Before starting the install, make sure your Pi has a working
 	internet connection (for downloads etc.) via either Wifi or a UTP cable to your Router.
 
+	<h4>Raspbian 4.14 Stretch</h4>
+	<p>A fresh JMRI install on a Raspberry Pi 3 Model B+ running Stretch is straightforward, as this OS includes Java 1.8 and the JMRI Linux install is ready for Arm. Follow the steps outlined below (skip steps 3 and 4).</p>
+	
 	<h4>Raspbian 4.1 Jessy</h4>
 	<p>A fresh JMRI install on a Raspberry Pi B 2 running Jessy is straightforward, as this OS includes Java 1.8 and the JMRI Linux install is ready for Arm. Follow the steps outlined below (skip steps 3 and 4).</p>
 	
