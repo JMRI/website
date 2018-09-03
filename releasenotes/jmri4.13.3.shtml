@@ -500,7 +500,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h3>Layout Editor</h3>
         <a id="LE" name="LE"/>
         <ul>
-	        <li></li>
+	        <li>George Warner constrained bridge, bumper (buffer stop) and tunnel line widths
+	            to be at least 1 to avoid problems encountered with negative widths.
+	        </li>
         </ul>
 
     <h3>Logix</h3>
@@ -542,7 +544,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h3>Turnouts, Lights, Sensors and other elements</h3>
         <a id="TLae" name="TLae"/>
         <ul>
-            <li></li>
+            <li>George Warner updated how the "Add" operation will
+                form the system names when asked to add multiple
+                Blocks, Lights, Memories, Reporters, Sensors, and Turnouts.
+                Basically, it looks for the last number-like part of the
+                system name and increments it.  Note that some
+                types do not allow creation of multiple objects,
+                and that this method may not work for some types.
+                See
+                <A href="https://github.com/JMRI/JMRI/pull/5639">PR #5639 for discussion</a>.</li>
         </ul>
 
     <h3>Scripting</h3>
