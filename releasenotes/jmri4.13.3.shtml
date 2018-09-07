@@ -256,7 +256,20 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>MERG CBUS</h4>
             <ul>
-                <li></li>
+                <li>Steve Young made a number of updates to the
+                    MERG CBUS support:
+                    <a href="https://github.com/JMRI/JMRI/pull/5653">CBUS Event Table Update</a>,
+                    <a href="https://github.com/JMRI/JMRI/pull/5667">MERG CBUS Event Table Updates </a>,
+                    <a href="https://github.com/JMRI/JMRI/pull/5678">Merg cbus event table Java bugs + CAN frame send + test OPC to bundle move </a>,
+                    <a href="https://github.com/JMRI/JMRI/pull/5693">cbus swing bugfixes </a>,
+                    <a href="https://github.com/JMRI/JMRI/pull/5701">Merg Cbus bundle transfer </a>,
+                    <a href="https://github.com/JMRI/JMRI/pull/5712">MERG CBUS Console Improvements </a>,
+                    <a href="https://github.com/JMRI/JMRI/pull/5719">CBUS Console Spotbugs </a>,
+                    <a href="https://github.com/JMRI/JMRI/pull/5753">MERG CBUS Event Table Updates </a>,
+                    <a href="https://github.com/JMRI/JMRI/pull/5655">Send CAN Frame Tool CBUS Priority </a>,
+                    <a href="https://github.com/JMRI/JMRI/pull/5758">MERG CBUS Event Table tweak </a>,
+                    <a href="https://github.com/JMRI/JMRI/pull/5761">MERG CBUS EVTable Fixes </a>
+                    </li>
             </ul>
 
         <h4>MRC</h4>
@@ -326,7 +339,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>New / Updated decoder definitions</h3>
       <ul>
-        <li></li>
+        <li>The decoder definition file structure was updated with a new "defaultItem" element.</li>
      </ul>
 
         <h4>Arnold</h4>
@@ -399,6 +412,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
              </ul>
 
+        <h4>Mistral Train Models</h4>
+             <ul>
+                <li>Alain Carasso added a definition for the XR Trailer decoder</li>
+             </ul>
+
         <h4>MTH</h4>
             <ul>
                 <li></li>
@@ -431,12 +449,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>RR-CirKits</h4>
             <ul>
-                <li></li>
+                <li>Dick Bronson updated the MotorMan2 decoder definition</li>
             </ul>
 
         <h4>SoundTraxx</h4>
             <ul>
-                <li></li>
+                <li>Michael Mosher added an SD60 definition</li>
             </ul>
 
         <h4>TCS</h4>
@@ -476,7 +494,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Miscellaneous</h4>
             <ul>
-                <li></li>
+                <li>Petr Sidlo provided a definition for the UNI16ARD NAV MX decoder</li>
             </ul>
 
     <h3>DecoderPro</h3>
@@ -494,15 +512,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <h3>Internationalization</h3>
         <a id="I18N" name="I18N"/>
         <ul>
-            <li></li>
+            <li>Petr Sidlo improved the Czech translation</li>
         </ul>
 
     <h3>Layout Editor</h3>
         <a id="LE" name="LE"/>
         <ul>
-	        <li>George Warner constrained bridge, bumper (buffer stop) and tunnel line widths
-	            to be at least 1 to avoid problems encountered with negative widths.
-	        </li>
+	        <li></li>
         </ul>
 
     <h3>Logix</h3>
@@ -544,15 +560,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
     <h3>Turnouts, Lights, Sensors and other elements</h3>
         <a id="TLae" name="TLae"/>
         <ul>
-            <li>George Warner updated how the "Add" operation will
-                form the system names when asked to add multiple
-                Blocks, Lights, Memories, Reporters, Sensors, and Turnouts.
-                Basically, it looks for the last number-like part of the
-                system name and increments it.  Note that some
-                types do not allow creation of multiple objects,
-                and that this method may not work for some types.
-                See
-                <A href="https://github.com/JMRI/JMRI/pull/5639">PR #5639 for discussion</a>.</li>
+            <li></li>
         </ul>
 
     <h3>Scripting</h3>
@@ -578,7 +586,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h4>Signal Masts</h4>
             <ul>
-                <li></li>
+                <li>Egbert Broerse improved the setup page for the matrix signal mast.</li>
             </ul>
             
     	<h4>Signal Groups</h4>
@@ -622,7 +630,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <h3>Virtual Sound Decoder</h3>
         <a id="VSD" name="VSD"/>
         <ul>
-            <li>Steam1: acceleration and deceleration rates are now adjustable. Added throttle key functions like Brake key and Coast key (Klaus Killinger).</li>
+            <li>Steam1: acceleration and deceleration rates are now adjustable. 
+                Added throttle key functions like Brake key and Coast key (Klaus Killinger).</li>
         </ul>
 
     <h3>Miscellaneous</h3>
