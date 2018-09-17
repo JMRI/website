@@ -448,6 +448,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
+	    
+	<h4>Team Digital</h4>
+            <ul>
+                <li>Definitions for several Team Digital devices have been updated.  
+                These changes remove the restriction which required setting the 
+		LocoNet "Connection Preferences" to indicate that "Transponding is Present"
+		in order to work aroud a problem when attempting to read CVs from a Team 
+		Digital device when performing "Programming on the Main".  That problem
+		was introduced by changes made in JMRI 4.11.5.  As of JMRI 4.13.4, JMRI 
+		no longer equires the LocoNet connection "Transponding Present" feature to be 
+		enabled in order to read CVs from LocoNet-connected Team Digital device when
+		"Programming on the Main".</li>
+            <ul>
 
         <h4>Technologistic (train-O-matic)</h4>
             <ul>
