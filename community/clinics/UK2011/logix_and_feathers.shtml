@@ -7,17 +7,19 @@
     <META content="Nigel Cliffe" name=Author>
     <META name="keywords" content="clinics java model railroad JMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra signalling UK British">
 
-<!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+<!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
+<p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
+
 <!--#include virtual="/Header.shtml" -->
+
+    <hr class="hide">
+
+    <div class="nomenu" id="mBody">
+	<div id="mainContent">
+
 <h2>Extending JMRI with rules in Logix - creating Junction Indicators (Feathers)</h2>
 <p>So far, we've built the signalling with the automatic rules within JMRI. But, 
   sometimes it will be necessary to step outside the standard rules and make local 
