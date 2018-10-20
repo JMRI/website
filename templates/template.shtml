@@ -12,10 +12,11 @@
 </head>
 
 <body>
-<!--#include virtual="/Header.shtml" -->
-
-<!--#include virtual="/Sidebar.shtml" --> <!-- select the local or global Sidebar file -->
-<div id="mainContent">
+    <!--#include virtual="/Header.shtml" -->
+    
+    <div id="mBody">
+        <!--#include virtual="/Sidebar.shtml" --> <!-- select the local or global Sidebar file -->
+    <div id="mainContent">
 
 	    <!-- -------- -->
 	    <!--  Teaser  --> <!-- Optional -->
@@ -160,9 +161,9 @@ foreach $f (@files) {
 		</dl>
 		</div> <!-- closes #list -->
     
-<!--#include virtual="/Footer.shtml" -->
+    <!--#include virtual="/Footer.shtml" -->
 
-</div><!-- closes #mainContent-->
-</div> <!-- closes #mBody, was opened by Sidebar -->
+    </div><!-- closes #mainContent-->
+    </div> <!-- closes #mBody, from before Sidebar -->
 </body>
 </html>
