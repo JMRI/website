@@ -471,6 +471,22 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
+        <h4>Uhlenbrock</h4>
+        <ul>
+            <li>New decoder definitions were added for:
+            <ul>
+                <li>the IntelliSound4 Module 325x</li>
+                <li>the IntelliSound3 multi-protocol decoders 363x</li>
+                <li>the IntelliSound4 multi-protocol decoders 365x</li>
+            </ul>
+            The programmer for these mobile decoders shows an additional IntelliSound tab for configuration of the
+            embedded and SUSI connected modules.<br>
+            The advanced sound functions are grouped logically, so select a SUSI range, than a Bank (or <i>Normal</i>
+            to disable sound programming). The CVs follow the full manufacturer's documentation. Test feedback is
+            appreciated, especially on the associated software version numbers (read from CV7).</li>
+            <li>Behind the scenes, common xml code has been combined in one place to ease work on translations.</li>
+        </ul>
+
         <h4>Viessmann</h4>
             <ul>
                 <li></li>
@@ -531,6 +547,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <a id="PE" name="PE"/>
         <ul>
             <li></li>
+        </ul>
+
+   <h3>Switchboard Editor</h3>
+        <a id="SW" name="SW"/>
+        <ul>
+            <li>A new "Auto Range" option allows you to release the fixed range of items and fill in any start and end
+            address between 1 and 10,000. When a range over 250 is entered, a confirmation dialog pops up.<br>
+            The actual range limit is 400 items, unless the <i>Hide unconnected items"</i> box is checked.</li>
+            <li>The spinner to set the number of items was renamed <i>Number of Rows</i>.</li>
         </ul>
 
     <h3>Preferences</h3>
