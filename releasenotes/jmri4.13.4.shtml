@@ -454,7 +454,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Definitions for several Team Digital devices have been updated 
                 to indicate that they use Programming-on-the-Main mode even when
                 they are only connected to the LocoNet.  </li>
-            <ul>
+            </ul>
 
         <h4>Technologistic (train-O-matic)</h4>
             <ul>
@@ -599,16 +599,25 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-	    <h4>NX Entry/Exit Logic</h4>
+	<h4>NX Entry/Exit Logic</h4>
             <ul>
                 <li></li>
             </ul>
 
-	    <h4>USS CTC Logic</h4>
+        <h4>USS CTC Logic</h4>
             <ul>
                 <li></li>
             </ul>
             
+
+    <h3>Timetable</h3>
+        <a id="Timetable" name="Timetable"/>
+        <span class="since">since 4.13.4</span>
+        <ul>
+            <li>The Timetable tool uses layout and train information to create train graphs.  
+	    See <a href="http://jmri.org/help/en/html/tools/TimeTable.shtml">Timetable Help</a> for details.</li>
+        </ul>
+	
    <h3>Warrants</h3>
         <a id="Wt" name="Wt"/>
         <ul>
