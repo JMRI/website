@@ -49,7 +49,7 @@
 <!-- /Header -->
 
   <div class="nomenu" id="mBody">
-    <div id="mainContent">
+    <li id="mainContent">
    <h1>JMRI Install Guide: Mac OS X</h1>
  
       <h2> 
@@ -63,24 +63,24 @@ we recommend this for users connecting to Lenz systems (LI100, LI101, etc),
 for those having certain types of problems with USB to serial adapters,
 and everybody who has an Intel-powered Mac.
 <p>
-This is unfortunately a long, detailed process.  Once we're sure
+This is unfortunately a long, detailed process. Once we're sure
 it's actually working, we hope to find somebody to build an installer
 that does all of this automagically.
 
 <p>
-      <ol>
+  <ol>
       
     <li>If you have installed the old version of the 
     program, you have to remove it manually.
     <p>
     These steps only undo the actions of installer you used earlier to
     install these libraries; they should have no other effect on
-    your system.
+    your system.</p>
     <p>
     To do this, open the Terminal application (from 
     the Utilities folder in the Applications folder)
     and in the resulting window type the lines (you will probably
-    be prompted for an administrator password):
+    be prompted for an administrator password):</p>
 <code>
 <pre>
 
@@ -90,7 +90,7 @@ sudo rm /usr/lib/java/libSerial.jnilib
 
 </pre>
 </code>
-You might get a message about "No such file or directory"; that can be ignored.
+        You might get a message about "No such file or directory"; that can be ignored.</li>
 
 	<li>Install the new Java serial communications library
     <p>
@@ -103,17 +103,16 @@ You might get a message about "No such file or directory"; that can be ignored.
 	You now have to copy it from the directory to which it was 
 	downloaded to it's correct location.  To do this:
 	<ol>
-	<li>Drag the downloaded comm.jar file to the Desktop so we can find it
-	<li>Open a 
-	Terminal window (see above) and type:
-<code>
-<pre>
+		<li>Drag the downloaded comm.jar file to the Desktop so we can find it</li>
+		<li>Open a Terminal window (see above) and type:
+		<code>
+		<pre>
 
-sudo cp ~/Desktop/comm.jar /Library/Java/Extensions/
+	sudo cp ~/Desktop/comm.jar /Library/Java/Extensions/
 
-</pre>
-</code>
-    </ol>
+		</pre>
+		</code></li>
+    </ol></li>
     
     <li>Install the new RXTX libraries.
     <p>
@@ -128,8 +127,8 @@ sudo cp ~/Desktop/comm.jar /Library/Java/Extensions/
 	 by the installer and the previous steps.
 	 <p>
 	 When the installer is complete, restart your computer.
-	
-	 </ol>
+	 </p></li>
+</ol>
 	 <p>
 	 At this point, you should be able to start any of the JMRI
 	 applications (or other Java programs) and communicate
@@ -141,20 +140,21 @@ sudo cp ~/Desktop/comm.jar /Library/Java/Extensions/
     <hr class="hide">
     <div id="footer">
 	<ul id="bn">
-	<li>Contact us via the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> mailing list</li>
+		<li>Contact us via the JMRI Users</a> mailing list</li>
 	</ul>
 
 	<p>Thanks and congratulations to
 	   <a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
 	   	all who contributed</a>!</p>
 
-	<p>Copyright &copy; 1997 - 2016 JMRI Community. 
+	<p>Copyright &copy; 1997 - 2018 JMRI Community.
 	<p>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, TrainPro&trade;, DispatcherPro&trade;, OperationsPro&trade; and associated logos are our trademarks.
 	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
     
        <br>Site hosted by:<br><!-- SSI require .shtml suffix, so this file can't include the following as Icon via SSI -->
-        <A href="http://www.tagadab.com"> 
-        <IMG src="https://www.tagadab.com/sites/default/files/logo-tagadab-nostrap.png" height="28" width="103" border="0" alt="Tagadab Logo"> </A> 
+        <a href="http://www.tagadab.com">
+        <img src="https://www.tagadab.com/sites/default/files/logo-tagadab-nostrap.png" height="28" width="103"
+		   border="0" alt="Tagadab Logo"></a>
     </div>
 <!-- /Footer -->
 

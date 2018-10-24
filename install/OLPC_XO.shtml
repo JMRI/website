@@ -161,14 +161,12 @@ cp .xsession-example .xsession-xfce</pre>
 		needs to be added to go from commapi's abstract support to 
 		actually supporting physical serial ports.</p>
 		<p></p>
-		<p>Get the rxtx.tar.gz file from the JMRIUsers list on Yahoo 
-		
+		<p>Get the rxtx.tar.gz file from the JMRI Users files
 		<a href="http://groups.yahoo.com/group/jmriusers/files/Linux/RxTx%20Stuff/">here</a>.</p>
 		<p>This has all the files you need for installing commapi and rxtx. I believe the 'comm.jar'
 		file is Sun commapi version 2. The rxtx libraries are 2.0.7pre2, which work. The properties 
 		files provide the proper links from Java to the rxtx libraries from the rxtx libraries to
-		your serial port.
-		</p>
+		your serial port.</p>
 
 		<p>Place this file in your home (/home/olpc) folder.</p>
 		<p>Despite being called 'rxtx.tar.gz' this is not a gzip file, but is simply a tar archive.
@@ -413,7 +411,7 @@ cp .xsession-example .xsession-xfce</pre>
 			
 			<h3>commapi version</h3>
 			<p>I ended up installing the commapi version that was included in the rxtx lib posted 
-			to the JMRI Users Yahoo group. I don't know its provenance. commapi 3.0 is the only 
+			to the JMRI Users group. I don't know its provenance. commapi 3.0 is the only
 			version actively supported by Sun. Some sources have complained about the stability 
 			of version 3 of the Sun commapi.</p>
 			
