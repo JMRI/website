@@ -20,7 +20,7 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>JMRI&reg; v3.0 Manual</h1>
 <h3>12/28/2012</h3>
 <p><strong>JMRI is a Java-based cross-platform application for model railroaders. JMRi contains applications for:</strong></p>
@@ -33,8 +33,7 @@
     Creating train manifests for duplicating railroad  operations, Operations<br>
     Controlling the signals on the layout<br>
     Controlling&nbsp;  lighting and sound in the room, and so forth. (SoundPro&reg;)</strong></p>
-<p>All this capability is contained in one program (JMRI) which has  several &ldquo;start-up&rdquo; screens for the various applications. </p>
-<p>&nbsp;</p>
+<p>All this capability is contained in one program (JMRI) which has  several &ldquo;start-up&rdquo; screens for the various applications.</p>
 
 <hr>
 &nbsp;JMRI&reg; can  run on any computer system that will run Java 1.6.0 or later, whether it is  Macintosh, Windows, or Linux based. It does require that Java be installed on  the computer. You can get Java as a free (but very large...) download at:
@@ -51,7 +50,7 @@
 <li><a href="Installing_JMRI.shtml#InstallJMRI">Installing JMRI Software</a>
 </ul>
 <h4>
-  <a NAME="GettingStarted" id="GettingStarted"></a>Getting
+  <a name="GettingStarted" id="GettingStarted"></a>Getting
     started</h4>
 <ul>
 <li>
@@ -86,7 +85,7 @@
   <li><a href="Programmer_Multi_Decoder.shtml">Multi Decoder Control (Programming)</a></li>
 </ul>
 <h4>
-  <a NAME="Basic Programmer"></a>
+  <a name="Basic Programmer"></a>
 The Basic Programmer</h4>
 <ul>
   <li><a href="Basic_Start.shtml">Entering locomotives in
@@ -101,7 +100,7 @@ The Basic Programmer</h4>
   <li><a href="Basic_BasicPane.shtml#Do More">What if I need to do more?</a></li>
 </ul>
 <h4>
-<a NAME="Advanced Programmer"></a>The Comprehensive Programmer</h4>
+<a name="Advanced Programmer"></a>The Comprehensive Programmer</h4>
 <ul>
   <li><a href="Comp_Setup_Roster.shtml">Set-up and Roster Panes</a></li>
   <li><a href="Comp_Basic.shtml">Expanded Basic Pane</a></li>
@@ -352,7 +351,7 @@ The Basic Programmer</h4>
     </ul>
   </li>
 </ul>
-<h4><a NAME="DecoderDefinition"></a>Creating a Decoder Definition </h4>
+<h4><a name="DecoderDefinition"></a>Creating a Decoder Definition </h4>
 <ul>
   <li><a href="Dcode_Start.shtml">Getting Started</a></li>
   <li><a href="Dcode_Format.shtml">Format</a></li>
@@ -365,8 +364,9 @@ The Basic Programmer</h4>
 </ul>
 <hr>
 <p>The <a href="http://jmri.org/download/index.shtml">JMRI download page</a>
-is hosted by <A href="http://sourceforge.net">
-<img src="images/sflogo.png" width="88" height="31" border="0" alt="SourceForge Logo" align="middle" hspace="10">sourceforge.net</A>.</p>
+is hosted by <a href="http://www.tagadab.com">
+  <img src="https://www.tagadab.com/sites/default/files/logo-tagadab-nostrap.png" height="28" width="103"
+       border="0" alt="Tagadab Logo"> </a></p>
 <p>
 To give feedback on this HTML manual, ask questions about things not
 covered, or make suggestions for improvements to the manual or the software,
@@ -447,12 +447,12 @@ are best submitted to the
     <td align="left" valign="top">Updated from JMRI 2.14.1 and JMRI Operations Program separated into separate user's guide</td>
   </tr>
 </table>
-<p>
+
 <hr>
 <div align=right>Go to the
 <a href="http://groups.yahoo.com/group/jmriusers/">
 JMRI Users home page on Yahoo Groups</a></div>
-
+</div>
 <!--#include virtual="/Footer.shtml" -->
 </body>
 </html>

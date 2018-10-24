@@ -55,7 +55,7 @@ Command Control (DCC) decoders, (DecoderPro&reg;).</li>
 <li><a href="Installing_JMRI.shtml#InstallJMRI">Installing JMRI Software</a>
 </ul>
 <h4>
-  <a NAME="GettingStarted" id="GettingStarted"></a>Getting
+  <a name="GettingStarted" id="GettingStarted"></a>Getting
     started</h4>
 <ul>
 <li>
@@ -75,7 +75,7 @@ Command Control (DCC) decoders, (DecoderPro&reg;).</li>
 </ul>
 
 <h4>
-<a NAME="Setting up"></a>Using DecoderPro&reg;</h4>
+<a name="Setting up"></a>Using DecoderPro&reg;</h4>
 <ul>
   <li><a href="Programmer_Setup.shtml">How do I set up to program
     a decoder?</a></li>
@@ -90,7 +90,7 @@ Command Control (DCC) decoders, (DecoderPro&reg;).</li>
   <li><a href="Programmer_Multi_Decoder.shtml">Multi Decoder Control (Programming)</a></li>
 </ul>
 <h4>
-  <a NAME="Basic Programmer"></a>
+  <a name="Basic Programmer"></a>
 The Basic Programmer</h4>
 <ul>
   <li><a href="Basic_Start.shtml">Entering locomotives in
@@ -105,7 +105,7 @@ The Basic Programmer</h4>
   <li><a href="Basic_BasicPane.shtml#Do More">What if I need to do more?</a></li>
 </ul>
 <h4>
-<a NAME="Advanced Programmer"></a>The Comprehensive Programmer</h4>
+<a name="Advanced Programmer"></a>The Comprehensive Programmer</h4>
 <ul>
   <li><a href="Comp_Setup_Roster.shtml">Set-up and Roster Panes</a></li>
   <li><a href="Comp_Basic.shtml">Expanded Basic Pane</a></li>
@@ -406,7 +406,7 @@ The Basic Programmer</h4>
   </li>
   <li><a href="Ops_TripThruOperations.shtml">A Trip Through Operations</a></li>
 </ul>
-<h4><a NAME="DecoderDefinition"></a>Creating a Decoder Definition </h4>
+<h4><a name="DecoderDefinition"></a>Creating a Decoder Definition </h4>
 <ul>
   <li><a href="Dcode_Start.shtml">Getting Started</a></li>
   <li><a href="Dcode_Format.shtml">Format</a></li>
@@ -418,9 +418,6 @@ The Basic Programmer</h4>
   <li><a href="Error.shtml">Decoder Programmer Error Messages</a></li>
 </ul>
 <hr>
-<p>The <a href="http://jmri.org/Download/index.html">JMRI download page</a>
-is hosted by <A href="http://sourceforge.net">
-<img src="images/sflogo.png" width="88" height="31" border="0" alt="SourceForge Logo" align="middle" hspace="10">sourceforge.net</A>.</p>
 <p>
 To give feedback on this HTML manual, ask questions about things not
 covered, or make suggestions for improvements to the manual or the software,
@@ -497,10 +494,8 @@ are best submitted to the
   </tr>
 </table>
 
-<hr>
 <!--#include virtual="/Footer.shtml" -->
 
       </div><!-- closes #mainContent-->
-    </div> <!-- closes #mBody-->
     </body>
 </html>
