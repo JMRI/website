@@ -1,8 +1,9 @@
-<HTML xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
-<HEAD>
-		<TITLE>JMRI Hardware - QSI</TITLE>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+		<title>JMRI Hardware - QSI</title>
 		
-		<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
         <link rel="File-List" href="jmri_files/filelist.xml">
 
         <!--[if !mso]>
@@ -14,23 +15,17 @@ o\:*         { behavior: url(#default#VML) }
         <![endif]--><!--[if gte mso 9]>
         <xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
         </xml><![endif]-->
-</HEAD>
-<BODY bgcolor="#FFFFFF" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" text="#000000" alink="#000080">
+</head>
+<body bgcolor="#FFFFFF" text="#000000" alink="#000080">
 		<div align="center">
-			<br>
-			
 
-			<img src="images/rule.gif" width="850" height="1" border="0"></div>
-		<div align="center">
+			<img src="images/rule.gif" width="850" height="1" border="0">
                   <p align="center">
-			<b><font face="Arial">
-            Use QSI Quantum Programmer <br>
+			<b>
+            Use QSI Quantum Programmer<br>
             with<br>
-            JMRI Decoder Pro - NB: Windows Only</font></b>
-        </div>
-		<div align="center">
-			&nbsp;<div align="center">
-              <center>
+                JMRI DecoderPro - NB: Windows Only</b></p>
+
               <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" id="AutoNumber3" width="300">
                 <tr>
                   <td width="300">
@@ -52,68 +47,57 @@ o\:*         { behavior: url(#default#VML) }
                   <p align="center"><span style="text-decoration: underline">
                   <font size="2"><span style="font-family: Arial">
                   <a href="http://qsisolutions.com/products/q-programmer.html"  target="_empty">
-                  Download Latest versions of QSI Programs</a></span></font></span><br>
-&nbsp;</p>
+                  Download Latest versions of QSI Programs</a></span></font></span></p>
                   </td>
                 </tr>
               </table>
-              </center>
-            </div>
-            <div align="center">
-              <center>
+
               <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" id="AutoNumber4" width="359">
                 <tr>
-                  <td width="359">
-                  <p align="center"><b>
-                  <span style="font-size:11.0pt;font-family:Arial">Installing 
-                  SiLabs VCP Drivers for QSI Programmer <br>
-                  &nbsp;for the JMRI Decoder Pro Version 2.2 using Windows<br>
-&nbsp;</span></b></td>
+                  <td width="359" align="center"><b>
+                  Installing SiLabs VCP Drivers for QSI Programmer<br>
+                  for the JMRI DecoderPro Version 2.2 using Windows</b></td>
                 </tr>
               </table>
-              </center>
-            </div>
-            <div align="center">
-              <center>
+
               <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="80%" id="AutoNumber1" height="854">
                 <tr>
                   <td width="100%" height="131">
-                  <span style="font-size: 10.0pt; font-family: Arial">The SiLabs 
+                  The SiLabs
                   Virtual Com Port Drivers (VCP) can be used with the QSI 
-                  Programmer so that the JMRI Decoder Pro will recognize the Com 
-                  Port the Programmer is on.&nbsp; To accomplish this, the best 
+                  Programmer so that the JMRI DecoderPro will recognize the Com
+                  Port the Programmer is on. To accomplish this, the best
                   method is to remove the SiLabs USBXpress Drivers required by 
                   the QSI Solutions Programs and REPLACE them with the SiLabs 
-                  VCP Drivers entirely!&nbsp; <b>Warning</b>!&nbsp; Make sure you have the 
-                  latest versions of &nbsp;<br>
+                  VCP Drivers entirely! <b>Warning</b>! Make sure you have the
+                  latest versions of <br>
                   Q1A and Q2 Upgrade Programs and the Quantum CV Manager 
-                  Programs so you can use these with the VCP Drivers.&nbsp; These 
+                  Programs so you can use these with the VCP Drivers. These
                   Programs will NOW work with both the SiLabs USBXpress USB 
-                  drivers and the SiLabs VCP drivers&nbsp; This means that you can 
+                  drivers and the SiLabs VCP drivers This means that you can
                   replace the USB Drivers and now using one set of drivers for 
-                  BOTH QSI Program AND JMRI Programs.&nbsp; Use following steps to 
+                  BOTH QSI Program AND JMRI Programs. Use following steps to
                   uninstall USBXpress Drivers, Reconfigure the VCP Drivers Setup 
                   File, Install and Configure the VCP Drivers and Setup JMRI 
-                  Decoder Pro and the QSI Programs for use with the QSI 
-                  Programmer. </span>
-                  <span style="font-size:10.0pt;font-family:Arial"> <br>
-&nbsp;</span></td>
+                  DecoderPro and the QSI Programs for use with the QSI
+                  Programmer.
+                  </td>
                 </tr>
                 <tr>
                   <td width="100%" height="115" align="left">
                   <p class="MsoNormal" style="text-autospace: none">
-                  <span style="font-size:10.0pt;font-family:Arial">1.)&nbsp; <u>
+                  <span style="font-size:10.0pt;font-family:Arial">1.) <u>
                   Remove USBXpress Drivers for QSI Programmer</u>. Using the Add 
-                  / Remove Programs from Control Panel, remove any&nbsp;&nbsp; 
+                  / Remove Programs from Control Panel, remove any
                   SiLabs USB drivers or USBXpress Drivers installed for the QSI 
                   Programmer. If no drivers are present in the Control Panel, 
                   but the QSI Programmer is still working, then Uninstall QSI 
-                  Programmer from Device Manager.&nbsp; To Open the Device Manager, 
+                  Programmer from Device Manager. To Open the Device Manager,
                   right click on My Computer, choose Properties. Choose the 
                   Hardware Tab. Then Click the Device Manager Button. (Also 
                   available from the Control Panel, System Icon.)With the QSI 
                   Programmer powered and connected with the USB cable, right 
-                  click and choose uninstall.&nbsp; Then unplug the QSI Programmer 
+                  click and choose uninstall. Then unplug the QSI Programmer
                   USB cable.</span></td>
                 </tr>
                 <tr>
@@ -150,7 +134,7 @@ src="jmri_files/image002.jpg" v:shapes="_x0000_s1058"><![endif]><br>
 src="jmri_files/image004.jpg" v:shapes="_x0000_s1057"><![endif]><br>
                   </span><span style="font-size:10.0pt;font-family:Arial">Figure 
                   1 - Add/Remove Programs<br>
-&nbsp;</span></td>
+</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="69">
@@ -161,7 +145,7 @@ src="jmri_files/image004.jpg" v:shapes="_x0000_s1057"><![endif]><br>
 </v:shape><![endif]--><![if !vml]><img border=0 width=721 height=467
 src="jmri_files/image006.jpg" v:shapes="_x0000_s1059"><![endif]><br>
                   Figure 2 - Device Manager<br>
-&nbsp;</span></td>
+</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -172,7 +156,7 @@ src="jmri_files/image006.jpg" v:shapes="_x0000_s1059"><![endif]><br>
 </v:shape><![endif]--><![if !vml]><img border=0 width=722 height=430
 src="jmri_files/image008.jpg" v:shapes="_x0000_s1060"><![endif]><br>
                   Figure 3 - Quantum Programmer after right click<br>
-&nbsp;</span></td>
+</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -183,7 +167,7 @@ src="jmri_files/image008.jpg" v:shapes="_x0000_s1060"><![endif]><br>
 </v:shape><![endif]--><![if !vml]><img border=0 width=720 height=422
 src="jmri_files/image010.jpg" v:shapes="_x0000_s1061"><![endif]><br>
                   Figure 4 - Confirm Removal of Quantum Programmer<br>
-&nbsp;</span></td>
+</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -195,47 +179,46 @@ src="jmri_files/image010.jpg" v:shapes="_x0000_s1061"><![endif]><br>
 src="jmri_files/image012.jpg" v:shapes="_x0000_s1062"><![endif]><br>
                   </span><span style="font-size:10.0pt;font-family:Arial">Figure 
                   5 - Device Manager with Programmer Removed<br>
-&nbsp;</span></td>
+</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
                   <p class="MsoNormal" style="text-autospace: none">
-                  <span style="font-size:10.0pt;font-family:Arial">2.)&nbsp;&nbsp; <u>
+                  <span style="font-size:10.0pt;font-family:Arial">2.) <u>
                   Download and Unzip CP210x_VCP_Win2K_XP_S2K3.zip</u> from
                   <a href="http://www.silabs.com/" style="text-decoration: underline; text-underline: single" target="_empty">
-                  http://www.silabs.com</a><a href="http://www.silabs.com/" style="color: blue; text-decoration: underline; text-underline: single">&nbsp;&nbsp;
+                  http://www.silabs.com</a><a href="http://www.silabs.com/" style="color: blue; text-decoration: underline; text-underline: single">
                   </a><br>
                   From the CP210x_VCP_Win2K_XP_S2K3 folder run 
-                  CP210x_VCP_Win2K_XP_S2K3.exe&nbsp; using the default settings. Open 
-                  the SiLabs folder created by the install.&nbsp; Expand the MCU 
-                  folder, and then expand the CP210X folder.&nbsp; Click on the 
-                  folder named Windows_2K_XP_S2K3_Vista.&nbsp; In this folder is a 
-                  file named slabvcp.inf.&nbsp; </span></p>
+                  CP210x_VCP_Win2K_XP_S2K3.exe using the default settings. Open
+                  the SiLabs folder created by the install. Expand the MCU
+                  folder, and then expand the CP210X folder. Click on the
+                  folder named Windows_2K_XP_S2K3_Vista. In this folder is a
+                  file named slabvcp.inf. </span></p>
                   <p align="center">
                   <span style="font-size:10.0pt;font-family:Arial"><!--[if gte vml 1]><v:shape
  id="_x0000_s1063" type="#_x0000_t75" style='width:538.5pt;height:117.75pt'>
  <v:imagedata src="jmri_files/image013.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=718 height=157
 src="jmri_files/image014.jpg" v:shapes="_x0000_s1063"><![endif]><br>
-                  Figure 6 - Location of slabvcp.inf<br>
-&nbsp;</span></td>
+                  Figure 6 - Location of slabvcp.inf</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
                   <p class="MsoNormal" style="text-autospace: none; margin-left: .25in">
                   <span style="font-size:10.0pt;font-family:Arial">Open this 
-                  file with notepad.&nbsp; This can be done by right clicking on the 
+                  file with notepad. This can be done by right clicking on the
                   file and choosing Open.<br>
                   Using edit / find from the menu, you can type in the Find What 
-                  box:&nbsp; PID<br>
-                  You will find 5 entries with the following:&nbsp; PID_EA60<br>
-                  Change EA60 to 8208 on all five entries.&nbsp; All 5 instances 
+                  box: PID<br>
+                  You will find 5 entries with the following: PID_EA60<br>
+                  Change EA60 to 8208 on all five entries. All 5 instances
                   should now look like this: PID_8208<br>
                   Be careful not to change or remove any other entries that PID 
                   is part of.</span></p>
                   <p class="MsoNormal" style="text-autospace: none; margin-left: .25in" align="left">
                   <span style="font-size:10.0pt;font-family:Arial">Click file, 
-                  save on the open notepad.&nbsp; Close notepad.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                  save on the open notepad. Close notepad. <br>
                   This change will allow the VCP drivers to see the SiLabs Chip 
                   inside of the Programmer.<br>
                   (A copy of this file can be downloaded from the link above.. 
@@ -247,18 +230,17 @@ src="jmri_files/image014.jpg" v:shapes="_x0000_s1063"><![endif]><br>
  <v:imagedata src="jmri_files/image015.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=688 height=415
 src="jmri_files/image016.jpg" v:shapes="_x0000_s1065"><![endif]></span><span style="font-size:10.0pt;font-family:Arial"><br>
-                  Figure 7 - Modification of slabvcp.inf<br>
-&nbsp;</span></td>
+                  Figure 7 - Modification of slabvcp.inf</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
                   <span style="font-size:
-10.0pt;font-family:Arial">3.)&nbsp; Execute CP210xVCPInstaller.exe from the same 
-                  folder that slabvcp.inf is in. Use the default settings &nbsp;&nbsp;and 
+10.0pt;font-family:Arial">3.) Execute CP210xVCPInstaller.exe from the same
+                  folder that slabvcp.inf is in. Use the default settings and
                   click install from the CP210X USB to UART Bridge Driver 
-                  install Window.&nbsp; Choose 'Continue Anyway' button, IF you get 
+                  install Window. Choose 'Continue Anyway' button, IF you get
                   the Windows Driver Warning &quot;...has not passed the Hardware 
-                  Compatibility Logo &nbsp;&nbsp;Testing&quot;.</span><p align="center">
+                  Compatibility Logo Testing&quot;.</span><p align="center">
                   <span style="font-size: 10.0pt; font-family: Arial"><!--[if gte vml 1]><v:shape
  id="_x0000_s1066" type="#_x0000_t75" style='width:542.25pt;height:311.25pt'>
  <v:imagedata src="jmri_files/image017.png" o:title=""/>
@@ -266,8 +248,7 @@ src="jmri_files/image016.jpg" v:shapes="_x0000_s1065"><![endif]></span><span sty
 src="jmri_files/image018.jpg" v:shapes="_x0000_s1066"><![endif]></span><span style="font-size:
 10.0pt;font-family:Arial"><br>
                   </span><span style="font-size: 10.0pt; font-family: Arial">
-                  Figure 8 - CP210X Installer<br>
-&nbsp;</span></td>
+                  Figure 8 - CP210X Installer</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -277,16 +258,15 @@ src="jmri_files/image018.jpg" v:shapes="_x0000_s1066"><![endif]></span><span sty
  <v:imagedata src="jmri_files/image019.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=720 height=407
 src="jmri_files/image020.jpg" v:shapes="_x0000_s1067"><![endif]><br>
-                  Figure 9 - Windows Logo Warning<br>
-&nbsp;</span></td>
+                  Figure 9 - Windows Logo Warning</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
-                  <span style="font-size: 10.0pt; font-family: Arial">4.)<span style="font:7.0pt 'Times New Roman';">&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span style="font-size: 10.0pt; font-family: Arial">4.)<span style="font:7.0pt 'Times New Roman';">
                   </span></span>
                   <span style="font-size:10.0pt;font-family:Arial">The Virtual 
                   Com Port will NOT show up in the device manager until you plug 
-                  in the QSI Programmer &nbsp;&nbsp;and configure it to use the SiLabs VCP 
+                  in the QSI Programmer and configure it to use the SiLabs VCP
                   Drivers.</span><p align="center">
                   <span style="font-size:10.0pt;font-family:Arial"><!--[if gte vml 1]><v:shape
  id="_x0000_s1068" type="#_x0000_t75" style='width:534.75pt;height:305.25pt'>
@@ -294,24 +274,22 @@ src="jmri_files/image020.jpg" v:shapes="_x0000_s1067"><![endif]><br>
 </v:shape><![endif]--><![if !vml]><img border=0 width=713 height=407
 src="jmri_files/image022.jpg" v:shapes="_x0000_s1068"><![endif]><br>
                   </span><span style="font-size: 10.0pt; font-family: Arial">
-                  Figure 10 - Device Manager with Quantum Programmer Removed<br>
-&nbsp;</span></td>
+                  Figure 10 - Device Manager with Quantum Programmer Removed</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
                   <p class="MsoNormal" style="text-indent: -13.5pt; text-autospace: none; margin-left: .25in; margin-right: -45.0pt; margin-top: 0in; margin-bottom: .0001pt" align="left">
                   <span style="font-size:
-10.0pt;font-family:Arial">&nbsp;With the Power Cable connected and powering the QSI 
-                  Programmer, plug it in to the USB port of your &nbsp;computer.</span></p>
+10.0pt;font-family:Arial">With the Power Cable connected and powering the QSI
+                  Programmer, plug it in to the USB port of your computer.</span></p>
                   <p class="MsoNormal" style="text-indent: -13.5pt; text-autospace: none; margin-left: .25in; margin-right: -45.0pt; margin-top: 0in; margin-bottom: .0001pt" align="left">
                   <span style="font-size:
-10.0pt;font-family:Arial">&nbsp;</span><span style="font-size:10.0pt;font-family:Arial">The 
+10.0pt;font-family:Arial"></span><span style="font-size:10.0pt;font-family:Arial">The
                   &quot;Found New Hardware Window&quot; should open, if you have 
                   successfully removed all of the USBXpress Drivers.</span></p>
                   <p class="MsoNormal" style="text-indent: -13.5pt; text-autospace: none; margin-left: .25in; margin-right: -45.0pt; margin-top: 0in; margin-bottom: .0001pt" align="left">
-                  <font size="2"><span style="font-family: Arial">&nbsp;</span></font><span style="font-size:10.0pt;font-family:Arial">Choose 
-                  &quot;NO&quot; to search Update Site for Drivers.&nbsp; Then Click Next.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
-&nbsp;</span></p>
+                  <font size="2"><span style="font-family: Arial"></span></font><span style="font-size:10.0pt;font-family:Arial">Choose
+                  &quot;NO&quot; to search Update Site for Drivers. Then Click Next.</span></p>
                   </td>
                 </tr>
                 <tr>
@@ -322,8 +300,7 @@ src="jmri_files/image022.jpg" v:shapes="_x0000_s1068"><![endif]><br>
  <v:imagedata src="jmri_files/image023.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=716 height=404
 src="jmri_files/image024.jpg" v:shapes="_x0000_s1089"><![endif]><br>
-                  Figure 11 - New Hardware Found<br>
-&nbsp;</span></td>
+                  Figure 11 - New Hardware Found</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -331,8 +308,8 @@ src="jmri_files/image024.jpg" v:shapes="_x0000_s1089"><![endif]><br>
                   default &quot;Install Software Automatically&quot; (recommended) setting 
                   and click Next. Choose Continue Anyway Button if you get the 
                   Windows Driver Warning &quot;...has not passed the Hardware 
-                  Compatibility Logo Testing&quot;. Drivers will finish installing.&nbsp; 
-                  Choose Finish when drivers are installed.&nbsp; You might get an 
+                  Compatibility Logo Testing&quot;. Drivers will finish installing.
+                  Choose Finish when drivers are installed. You might get an
                   information &quot;balloon&quot; from the notification area, by the clock 
                   that the Hardware is installed and ready to use.</span><p align="center">
                   <span style="font-size:10.0pt;font-family:Arial"><!--[if gte vml 1]><v:shape
@@ -349,17 +326,16 @@ src="jmri_files/image026.jpg" v:shapes="_x0000_s1071"><![endif]><br>
 </v:shape><![endif]--><![if !vml]><img border=0 width=718 height=399
 src="jmri_files/image028.jpg" v:shapes="_x0000_s1073"><![endif]><br>
                   </span><span style="font-size:10.0pt;font-family:Arial">Figure 
-                  13 - Windows Logo Warning<br>
-&nbsp;</span></td>
+                  13 - Windows Logo Warning</span></td>
                 </tr>
                 <tr>
-                  <td width="100%" height="19"><font face="Arial" size="2">5.)&nbsp; 
+                  <td width="100%" height="19"><font face="Arial" size="2">5.)
                   Open Device Manager and confirm that the SiLabs Virtual Com 
                   Port is installed in the ports section. The driver will assume 
-                  the first available Com Port. (Normally 2 or 3)&nbsp; (On this test 
+                  the first available Com Port. (Normally 2 or 3) (On this test
                   machine it found Port 8 as the first Available.) What Ever 
                   port is found should show up in the Preferences Window of the 
-                  JMRI Decoder Pro.</font><p align="center">
+                  JMRI DecoderPro.</font><p align="center">
                   <span style="font-size:10.0pt;font-family:Arial"><!--[if gte vml 1]><v:shape
  id="_x0000_s1076" type="#_x0000_t75" style='width:536.25pt;height:299.25pt'>
  <v:imagedata src="jmri_files/image029.png" o:title=""/>
@@ -399,14 +375,13 @@ src="jmri_files/image036.jpg" v:shapes="_x0000_s1079"><![endif]><br>
  <v:imagedata src="jmri_files/image037.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=717 height=384
 src="jmri_files/image038.jpg" v:shapes="_x0000_s1080"><![endif]><br>
-                  Figure 18 - Com Port Settings<br>
-                  &nbsp;</span></td>
+                  Figure 18 - Com Port Settings</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
                   <p class="MsoNormal" style="text-indent: -.25in; text-autospace: none; margin-left: .25in">
                   <span style="font-size:
-10.0pt;font-family:Arial">6.)&nbsp; Using the preferences option of JMRI Decoder Pro, 
+10.0pt;font-family:Arial">6.) Using the preferences option of JMRI DecoderPro,
                   choose QSI Programmer and the Com Port that the VCP is using.</span></p>
                   <p class="MsoNormal" style="text-indent: -.25in; text-autospace: none; margin-left: .25in" align="center">
                   <span style="font-size: 10.0pt; font-family: Arial"><!--[if gte vml 1]><v:shape
@@ -415,8 +390,7 @@ src="jmri_files/image038.jpg" v:shapes="_x0000_s1080"><![endif]><br>
 </v:shape><![endif]--><![if !vml]><img border=0 width=718 height=384
 src="jmri_files/image040.jpg" v:shapes="_x0000_s1081"><![endif]><br>
                   </span><span style="font-size:10.0pt;font-family:Arial">Figure 
-                  19 - Decoder Pro Preferences with QSI chosen<br>
-&nbsp;</span></td>
+                  19 - DecoderPro Preferences with QSI chosen</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -427,8 +401,7 @@ src="jmri_files/image040.jpg" v:shapes="_x0000_s1081"><![endif]><br>
 </v:shape><![endif]--><![if !vml]><img border=0 width=721 height=289
 src="jmri_files/image042.jpg" v:shapes="_x0000_s1082"><![endif]><br>
                   </span></b><span style="font-size:10.0pt;font-family:Arial">
-                  Figure 20 - Reading Loco Address from QSI version 7 Chip<br>
-&nbsp;</span></td>
+                  Figure 20 - Reading Loco Address from QSI version 7 Chip</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -438,9 +411,8 @@ src="jmri_files/image042.jpg" v:shapes="_x0000_s1082"><![endif]><br>
  <v:imagedata src="jmri_files/image043.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=718 height=293
 src="jmri_files/image044.jpg" v:shapes="_x0000_s1083"><![endif]><br>
-                  </span></b><span style="font-size:10.0pt;font-family:Arial">
-                  Figure 21 - Idle before Read to Locate Loco in Roster</span><b><span style="font-size:9.0pt;font-family:Arial"><br>
-&nbsp;</span></b></td>
+                  </span></b>
+                  Figure 21 - Idle before Read to Locate Loco in Roster</td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -451,8 +423,7 @@ src="jmri_files/image044.jpg" v:shapes="_x0000_s1083"><![endif]><br>
 </v:shape><![endif]--><![if !vml]><img border=0 width=718 height=310
 src="jmri_files/image046.jpg" v:shapes="_x0000_s1084"><![endif]><br>
                   </span></b><span style="font-size:10.0pt;font-family:Arial">
-                  Figure 22 - Reading Loco and searching Roster<br>
-&nbsp;</span></td>
+                  Figure 22 - Reading Loco and searching Roster</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -463,8 +434,7 @@ src="jmri_files/image046.jpg" v:shapes="_x0000_s1084"><![endif]><br>
 </v:shape><![endif]--><![if !vml]><img border=0 width=714 height=317
 src="jmri_files/image048.jpg" v:shapes="_x0000_s1087"><![endif]></span><span style="font-size:9.0pt;font-family:Arial"><br>
                   </span></b><span style="font-size:10.0pt;font-family:Arial">
-                  Figure 23 - Loco found in Roster and Identified<br>
-&nbsp;</span></td>
+                  Figure 23 - Loco found in Roster and Identified</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -475,8 +445,7 @@ src="jmri_files/image048.jpg" v:shapes="_x0000_s1087"><![endif]></span><span sty
                   <td width="100%" height="19">
                   <p align="center"><font size="2" face="Arial">Figure 24 </font>
                   <span style="font-size: 10.0pt; font-family: Arial">- Choose 
-                  Menu from Icon at top left corner</span><font size="2" face="Arial"><br>
-&nbsp;</font></td>
+                  Menu from Icon at top left corner</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -490,8 +459,7 @@ src="jmri_files/image048.jpg" v:shapes="_x0000_s1087"><![endif]></span><span sty
                   clicking Quantum Programmer, choose option button<br>
                   and configure choice of VCP Driver and Port Number<br>
                   <![if !supportLineBreakNewLine]><br>
-                  <![endif]></span><font size="2" face="Arial"><br>
-&nbsp;</font></td>
+                  <![endif]></span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -503,8 +471,7 @@ src="jmri_files/image048.jpg" v:shapes="_x0000_s1087"><![endif]></span><span sty
                   <p align="center"><font size="2" face="Arial">Figure 26 </font>
                   <span style="font-size: 10.0pt; font-family: Arial">- Choose 
                   Command Station, Command Station Options then <br>
-                  Choose Quantum Programmer Options</span><font size="2" face="Arial"><br>
-&nbsp;</font></td>
+                  Choose Quantum Programmer Options</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
@@ -515,61 +482,55 @@ src="jmri_files/image048.jpg" v:shapes="_x0000_s1087"><![endif]></span><span sty
                   <td width="100%" height="19">
                   <p align="center"><font size="2" face="Arial">Figure 27 </font>
                   <span style="font-size: 10.0pt; font-family: Arial">- 
-                  Configure Choice of&nbsp; Virtual Driver and Port Number</span><font size="2" face="Arial"><br>
-&nbsp;</font></td>
+                  Configure Choice of Virtual Driver and Port Number</span></td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
                   <p class="MsoNormal" style="text-indent: -.25in; text-autospace: none; margin-left: .25in" align="left">
-                  <span style="font-size: 10.0pt; font-family: Arial"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                  By using these Instructions and steps, YOU are </b></span><b><span style="font-size:9.0pt;font-family:Arial">accepting 
+                  <b>
+                  By using these Instructions and steps, YOU are accepting
                   ALL responsibility for any damages and issues; use this 
                   project at your own risk as these instructions come with no 
-                  warranty, express or implied. &nbsp;These instructions are limited 
-                  to adapting SiLabs VCP Drivers</span><span style="font-size:
-9.0pt;font-family:Arial">&nbsp; for use with the QSI Programmer.&nbsp; Suitability for use 
-                  with JMRI Decoder Pro is neither Implied or guaranteed.&nbsp; 
-                  Nothing in this article is meant to imply that Decoder Pro 
-                  will work properly with this SiLabs VCP Adaptation.&nbsp; Contact 
-                  JMRI for issues and questions regarding Decoder Pro.</span><span style="font-size:9.0pt;font-family:Arial"><br>
+                  warranty, express or implied. These instructions are limited
+                  to adapting SiLabs VCP Drivers for use with the QSI Programmer. Suitability for use
+                  with JMRI DecoderPro is neither Implied or guaranteed.
+                  Nothing in this article is meant to imply that DecoderPro
+                  will work properly with this SiLabs VCP Adaptation. Contact
+                  JMRI for issues and questions regarding DecoderPro.<br>
                   <br>
                   My permission is given to include any or all of these steps 
-                  and graphics for use on JMRI Decoder Pro Instructions&nbsp; 
+                  and graphics for use on JMRI DecoderPro Instructions
                   and/or Help Files and/or JMRI websites; for use on QSI/QSI 
                   Solutions instructions and/or Help Files and/or QSI/QSI 
-                  websites.&nbsp; Additionally, you may download this 
+                  websites. Additionally, you may download this
                   article for your personal use and research. You may also make 
                   copies and distribute them to other individuals providing that 
                   the article is copied in its entirety, including the email 
-                  address and site link, &nbsp;that no fee is charged, and this 
-                  notice remains intact.&nbsp; You may link to the web page this 
+                  address and site link, that no fee is charged, and this
+                  notice remains intact. You may link to the web page this
                   article is on or the Web Site, provided you do not incorporate 
                   it in a frame or other method that would lead the average user 
                   to believe that it is part of another Internet site. You may 
                   not 'mirror' this article or this site without permission of 
-                  the owner</span></b><span style="font-size:9.0pt;
-font-family:Arial">.&nbsp;&nbsp;&nbsp; </span></p>
+                  the owner</b></p>
                   <p class="MsoNormal" style="text-indent: -.25in; text-autospace: none; margin-left: .25in">
-                  <b><span style="font-size:
-10.0pt;font-family:Arial">Contact Email:&nbsp;
-                  <a style="text-decoration: underline; text-underline: single" href="mailto:maxrob@mindspring.com?subject=Model RailRoad-Decoder Pro">
-                  maxrob@mindspring.com</a>&nbsp;
+                  <b>Contact Email:
+                  <a style="text-decoration: underline; text-underline: single"
+                     href="mailto:maxrob@mindspring.com?subject=Model RailRoad-DecoderPro">
+                  maxrob@mindspring.com</a>
                   <a href="http://maxrob.home.comcast.net/" style="text-decoration: underline; text-underline: single">
-                  http://maxrob.home.comcast.net</a></span></b></p>
+                  http://maxrob.home.comcast.net</a></b></p>
                   </td>
                 </tr>
                 <tr>
                   <td width="100%" height="19">
 		<div align="center">
-			<font face="Arial">
-            <b><font size="1">(updated July 23, 2008)
-            </font>
-            </b></font>
-            </div>
-			</td>
-                </tr>
-              </table>
-              </center>
-            </div>
-	</BODY>
-</HTML>
+			(updated July 23, 2008)
+        </div>
+		</td>
+        </tr>
+        </table>
+
+        </div>
+	</body>
+</html>

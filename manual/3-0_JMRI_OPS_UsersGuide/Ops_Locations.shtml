@@ -20,12 +20,12 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Locations Window</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Settings.shtml">Previous </a> | <a href="Ops_Cars.shtml">Next</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -33,7 +33,7 @@
 <hr>
 <p>The Operations Tool, Locations opens the Locations window as shown. Locations are places on your railroad that trains visit to pickup or  drop off cars and engines. Locations can be cities, towns, or just  places where trains need to work cars. To enter a new location press 
   <input type="submit" name="button9" id="button9" value="Add">
-, which will open the <strong>Add  Location </strong>window which we will discuss in a moment.&nbsp; But first let&rsquo;s discuss the &ldquo;Locations&rdquo;  window itself. </p>
+, which will open the <strong>Add  Location </strong>window which we will discuss in a moment. But first let's discuss the &ldquo;Locations&rdquo;  window itself. </p>
 <p><img src="images/Ops_locations01.png" width="670" height="245" alt="ops locations"></p>
 <p><strong>menu bar</strong>
 </p>
@@ -41,7 +41,7 @@
   <li><strong>  Tools</strong></li>
   <ul>
     <li><a href="Ops_schedule.shtml"><strong>Schedules</strong></a><br>
-      Opens the <strong>Schedules</strong> panel. &nbsp;If you would like to see  cars delivered in a particular sequence, or with a specific load for delivery  or shipping, the program allows you to apply a schedule to a siding. This is an  optional feature and shouldn't be used until you become very familiar with how  the program generates manifests and switch lists. <br>
+      Opens the <strong>Schedules</strong> panel. If you would like to see  cars delivered in a particular sequence, or with a specific load for delivery  or shipping, the program allows you to apply a schedule to a siding. This is an  optional feature and shouldn't be used until you become very familiar with how  the program generates manifests and switch lists. <br>
       <br>
     </li>
     <li><a href="Ops_Locations_byCar.shtml"><strong>Modify Locations by Car Type</strong></a><br>
@@ -113,7 +113,7 @@
   <input name="radio" type="radio" id="radio" value="radio" checked> 
   Name  
   <input type="radio" name="radio2" id="radio2" value="radio2"> 
-Id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>Sets the sort order for the locations</p>
+Id </strong>Sets the sort order for the locations</p>
 <p>
   <input type="submit" name="button" id="button" value="Add"> 
 Press to add a location</p>
@@ -184,16 +184,17 @@ To add a location, press the "Add ... Track" button. Now enter the name of  the 
 Press the 
 <input type="submit" name="button8" id="button8" value="Save Location">
 to save your work. The program will create a  file (OperationsLocationRoster.xml) in your JMRI directory in a folder  called "operations". The program will also create a backup file  containing the last settings for all of your locations. <a name="Sidings"></a>
-<h3>&nbsp;</h3>
+<h3></h3>
 <p>Spurs are very similar  to <a href="Ops_AddYard.shtml">Yards</a>, so see above for more information.  You can if  you wish schedule the order that cars will be delivered to a spur.  See <a href="Ops_schedule.shtml">Schedules</a> below for more information.
 </p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Settings.shtml">Previous </a> | <a href="Ops_Cars.shtml">Next</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

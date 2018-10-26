@@ -1,15 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head><!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Main_VSD.shtml 18193 2011-08-16 23:19:17Z dat7719 $ -->
-
-
-
-
-
-<title>DecoderPro&reg; Main Window</title><!-- Style --><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<html lang="en">
+<head><!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Main_VSD.shtml 18193 2011-08-16 23:19:17Z dat7719 $ -->
+<title>DecoderPro&reg; Main Window</title>
+  <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
 <link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/"><!-- /Style --></head>
+<link rel="home" title="Home" href="/">
+  <!-- /Style -->
+</head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
@@ -32,21 +32,21 @@ satisfied with the hardware sound decoder options in smaller scales)
 to enjoy throttle-controlled locomotive sounds from their computer
 speakers.</span></p>
 <h4>How it works</h4>
-<p><span id="product-desc">Locomotive sound "Profiles" are stored in a file
+<p>Locomotive sound "Profiles" are stored in a file
 called a "VSD File".  When the Virtual Sound Decoder ("VSDecoder" or
 "VSD") is launched, the user chooses the desired Profile, and then
 assigns the VSDecoder an address.  When the operator then controls the engine by
 pressing function buttons or changing the speed, the Virtual Sound
 Decoder responds just like a hardware sound decoder installed in the
 locomotive would by playing sounds through the computer
-speakers.</span></p>
+speakers.</p>
 <h4>OpenAL Required</h4>
 <p>Virtual Sound Decoder requires that your system have the OpenAL
 audio lbirary installed.  OpenAL is included by default on the Mac, but
 must be installed on Windows.</p>
 <p>OpenAL is available free from Creative Labs.
-You can <a target="_blank" href="http://jmri.org/help/en/package/jmri/jmrit/vsdecoder/VSDecoderFrame.shtml">download the installer for your operating system</a> from the
-OpenAL site.</p>
+You can <a target="_blank" href="http://jmri.org/help/en/package/jmri/jmrit/vsdecoder/VSDecoderFrame.shtml">download
+the installer for your operating system</a> from the OpenAL site.</p>
 <p>If you do not have OpenAL installed, Virtual Sound Decoder will
 <i>seem</i> to work, except you will get no sound output.</p>
 <p>Please NOTE:  OpenAL is a separate project from JMRI and is neither
@@ -198,10 +198,11 @@ or of the room.
 <p> Choose Save to save changes to the Preferences</p>
 
 
-
 <div align="right">
 <p><a href="Main_Debug.shtml#pricom">Back </a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div></body></html>
+</div>
+</body>
+</html>

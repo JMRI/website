@@ -16,7 +16,6 @@
 <!-- /Style -->
 
 </head>
-
 <body>
 <!--#include virtual="/Header.shtml" -->
 
@@ -265,7 +264,7 @@ or getY() or getZ(), the solution is to copy the JMRI/lib/vecmath-1.5.2.jar file
 within the JMRI distribution directory to the  ~/Library/Java/Extensions/ directory.
 (You might have to create that directory)
 
-<a name="#notes"><h2>Notes</h2></a>
+<a name="#notes"></a><h2>Notes</h2>
 
 <h3>Customizing your JMRI Installation</h3>
 
@@ -308,6 +307,5 @@ same Preferences as the original.
 
 <!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
-  </div> <!-- closes #mBody-->
 </body>
 </html>

@@ -1,15 +1,16 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head><!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Programmer_Start.shtml 18120 2011-08-07 11:49:22Z dat7719 $ -->
-
-
-
-
-
-<title>Using DecoderPro</title><!-- Style --><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<html lang="en">
+<head>
+  <!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Programmer_Start.shtml 18120 2011-08-07 11:49:22Z dat7719 $ -->
+<title>Using DecoderPro</title>
+  <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
 <link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/"><!-- /Style --></head>
+<link rel="home" title="Home" href="/">
+  <!-- /Style -->
+</head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
@@ -21,7 +22,7 @@
   <img src="images/Logo.gif" alt="JMRI DecoderPro Logo" border="10" height="117" vspace="15" width="163">
   
 </div>
-<h1>Using DecoderPro�</h1>
+<h1>Using DecoderPro&reg;</h1>
 <h1><a name="Setting Up"></a>What are the Programming
 Modes?</h1>
 
@@ -96,7 +97,7 @@ then select the desired locomotive from the list.&nbsp; An alternative
 is to be lazy and click the<strong>
   <input name="Ident" id="Ident" value="Ident" type="button">
 </strong>.&nbsp; The program will then query the locomotive to get it&#8217;s
-address which is linked to the roster entry.&nbsp; The Decoder Pro
+address which is linked to the roster entry.&nbsp; The DecoderPro
 roster entry includes the decoder type used when it programmed the
 locomotive.&nbsp; If it gets a valid address, but there is no roster
 entry with that address, then you will get an error message.</p>
@@ -131,11 +132,11 @@ be the best and fastest way if you know for sure &#8220;What&#8217;s in there&#8
 
 <p>If you have a decoder that doesn&#8217;t appear in the listing, you may
 want to check to be sure that you are using the most up to date version
-of Decoder Pro, because manufacturers are adding models almost faster
+of DecoderPro, because manufacturers are adding models almost faster
 than the team can enter the new decoder definitions into the
 files.&nbsp; You can choose a manufacturer's version which is as close
 as you can find, or if you&#8217;re only interested in basic programming
-functions, use the NMRA� decoder which is a generic file of the CV&#8217;s
+functions, use the NMRA&reg; decoder which is a generic file of the CV&#8217;s
 contained in their standards.</p>
 
 <p>The last item on this pane is the Programmer Format entry.&nbsp; It
@@ -143,7 +144,7 @@ is preset by your Preferences entry, but you can select other
 programmers using the drop down arrow. &nbsp;For now use the <strong>Basic </strong>programmer,
 because you won&#8217;t be able to do much damage if you make mistakes.&nbsp;
 We&#8217;ll get into the other programmers later on.</p>
-<p>Once you have  selected a decoder, or Decoder Pro has done it for you, the <strong>
+<p>Once you have  selected a decoder, or DecoderPro has done it for you, the <strong>
   <input name="button9" id="button9" value="Open Programmer" type="button">
 </strong>will become activated and you&#8217;ll be able to move on with Service Mode  Programming.&nbsp; </p>
 
@@ -160,4 +161,6 @@ Basic, Comprehensive and Advanced, open to the Roster Entry pane.</p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div></body></html>
+</div>
+</body>
+</html>

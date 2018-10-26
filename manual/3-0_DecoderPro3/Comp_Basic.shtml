@@ -19,12 +19,12 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 
 <h1>DecoderPro3&reg; Comprehensive Programmer</h1>
 <h1>Expanded Basic Pane</h1>
 
-<div align=right>
+<div align="right">
   <p align="right">Comprehensive Programmer  
     <a href="Comp_Setup_Roster.shtml">Previous</a> | <a href="Comp_Motor.shtml">Next <br>
   </a><a href="Comp_Motor.shtml"> </a></p>
@@ -55,7 +55,7 @@ as &quot;forward&quot; (no disassembling and rewiring). </p>
   control) Enable Analog Operation with caution, as some       decoders will jump to full speed resulting in a &ldquo;Runaway locomotive&rdquo; if       they are enabled for Analog Operation and encounter power spikes on a DCC       digital signal.&nbsp; They seem to get       confused, and revert to Analog operation and use the full track voltage       DCC power to take off and GO!&nbsp; There       is no stopping them without removing layout power.&nbsp; Very disturbing to your operating mates,       but better than  running into them at full tilt. </p>
 <p>To enable Analog (old style DC, some vendors refer  to this as dual mode) Operation select the appropriate entry from the drop-down  list. </p>
 <p><strong>User ID #1</strong>&quot; and <strong>User ID #2</strong> (off  to the right} there are two CVs that have nothing to do with any function of  the decoder. They simply provide you with a method of electronically marking  your equipment. Use these CVs, even though you may have custom-painted  equipment for your own freelanced railroad - it provides one more way to  identify your decoders if they  are removed from the loco. </p>
-<div align=right></div>
+<div align="right"></div>
 <h2>The Read and Write Buttons</h2>
 <p>
 At the bottom of all the programmer panes you will find three rows of buttons, as shown :
@@ -64,7 +64,7 @@ At the bottom of all the programmer panes you will find three rows of buttons, a
 The top row operates <span class="ACCENT"><strong>ONLY</strong></span> on the currently visible pane. These buttons are:</p>
 
 <ol>
-     <li><b>Read changes on sheet</b> - an "Oops!" button that lets you recover data from the decoder if you've changed it accidentally on the computer (and don't remember what the values were!), but only if       you haven&rsquo;t written it yet.
+     <li><b>Read changes on sheet</b> - an "Oops!" button that lets you recover data from the decoder if you've changed it accidentally on the computer (and don't remember what the values were!), but only if you haven't written it yet.
      <li><b>Write changes on sheet</b> - faster than writing all the data on the sheet, and ideal for tweaking changes in <b>Ops mode</b>, programming on the main track.
   <li><b>Read full sheet</b> - read all data in this pane from the decoder.
      Note this may take a great deal of time, depending upon the speed of your computer and the controller station in use.<li><b>Write full sheet</b> - writes all data in this pane to the decoder.
@@ -77,12 +77,13 @@ Below the two rows of buttons is a text line that shows what the current <b>prog
 Finally, the bottom line of the pane is a status bar that tells you exactly what the system is doing. It shows <strong>idle</strong> in these screen shots  because the system was  not actively programming decoders when they were made. </p>
 <p>Now Lets go to the Motor TAB.</p>
 <hr>
-<div align=right>
+<div align="right">
   <p><a href="Comp_Motor.shtml"></a><a href="Comp_Setup_Roster.shtml">Previous | </a><a href="Comp_Motor.shtml">Next <br>
   </a></p>
 <p> <a href="index.shtml#Advanced Programmer">Back to Index</a> </p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

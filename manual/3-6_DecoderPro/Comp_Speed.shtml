@@ -1,17 +1,16 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head><!-- Copyright ($Author: dat7719 $) 2009, 2010 --><!-- $Id: Comp_Speed.shtml 18138 2011-08-08 07:37:28Z dat7719 $ --><title>Comprehensive Programmer - Speed Control Pane</title><!-- Style -->
-
-
-
-
-
-
-
+<html lang="en">
+<head>
+    <!-- Copyright ($Author: dat7719 $) 2009, 2010 --><!-- $Id: Comp_Speed.shtml 18138 2011-08-08 07:37:28Z dat7719 $ -->
+    <title>Comprehensive Programmer - Speed Control Pane</title>
+    <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
 <link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/"><!-- /Style --></head><body>
+<link rel="home" title="Home" href="/"><!-- /Style -->
+</head>
+<body>
 <!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
@@ -41,8 +40,8 @@ decoder will be the method used for speed control. To select this pane:
 </p><p>Three important CVs are programmed in this pane Vstart, Vmid and
 Vhigh. They work together to make a very basic three point speed table.
 On some decoders these settings may be labeled differently and all
-three may not be available. Decoder Pro will show the correct options
-for your selected decoder. </p><p>
+three may not be available. DecoderPro will show the correct options
+for your selected decoder.</p><p>
 <b>Vstart</b>(<strong>Start Voltage</strong>) is the voltage at the first speed step. If your locomotive
 didn't start moving until there were three volts on the track with analog
 power, this lets you set up the decoder to give it 2.99 volts right away,
@@ -61,7 +60,8 @@ fine control in a useful speed range.
 locomotives, check these settings. Sometimes, one or more of these
 settings have been changed accidentally (usually due to an error in
 programming CV&#8217;s with a throttle), leading to very odd speed
-performance. In particular, if the <strong>Vmid</strong> is  lower than <strong>Vstart</strong> or higher than <strong>Vhigh</strong>, results can be highly  unpredictable. Decoder Pro will not let you make this mistake. 
+performance. In particular, if the <strong>Vmid</strong> is  lower than <strong>Vstart</strong> or higher than
+<strong>Vhigh</strong>, results can be highly  unpredictable. DecoderPro will not let you make this mistake.
 </p><p><b>Forward Trim</b> and <b>Reverse
     Trim</b> allow you to
 compensate for differences in the forward speed and reverse speed of
@@ -93,7 +93,7 @@ down! </p><p> Finally, set the <b>Mid Volts</b> value about half-way between <b>
 are no hard and fast rules for the exact numbers to use. Even identical
 locomotives with identical decoders will need different numbers, due to
 variances in motors and drive trains. Experiment with the settings -
-Decoder Pro makes it easy! </p><p>Note: Not all decoders will have Start, Mid and Max Volts,
+DecoderPro makes it easy! </p><p>Note: Not all decoders will have Start, Mid and Max Volts,
 but will have some version of this which will be displayed by Decoder
 Pro for the specific decoder.
 </p></div>
@@ -108,4 +108,6 @@ Pro for the specific decoder.
 </p></div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div></body></html>
+</div>
+</body>
+</html>
