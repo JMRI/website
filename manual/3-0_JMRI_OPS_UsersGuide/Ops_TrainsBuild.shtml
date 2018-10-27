@@ -127,12 +127,13 @@ and all the Reports and Train Manifest are previewed, then you may print the des
   will terminate the train. Once a train  is terminated, you can build it again. </p>
 <p>Each time an engine or car is moved a count associated with them  is incremented. The program uses this to determine which cars haven't  moved recently and tries to select cars with the least number of moves  when building new trains. Each time a location has a car picked up or  dropped, the program increments a count associated with that location.  The program tries to move cars to locations that have experienced the  least number of car operations.</p>
 <hr/>
-<p>&nbsp;</p>
+
 <div align=right>
 <p><a href="Ops_Trains.shtml">Badk</a><a href="Ops_TripThruOperations.shtml"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

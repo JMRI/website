@@ -3,9 +3,9 @@
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
 <!-- $Id: Main_ConsistControl.shtml 18167 2011-08-13 11:22:06Z dat7719 $ -->
-<TITLE>
+<title>
 Tool Menu
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -97,7 +97,7 @@ Tool Menu
 <input type="button" name="button6" id="button6" value="Delelte"> 
 deletes the entire consist.
 <p><a href="Main_Throttle.shtml">    <input type="button" name="button5" id="button5" value="Throttle"></a>
-</a>opens a<strong><a href="dp3_Main_Throttle.shtml"> throttle </a></strong>for the consist.
+opens a<strong><a href="dp3_Main_Throttle.shtml"> throttle </a></strong>for the consist.</p>
 <p>
 <input type="button" name="button7" id="button7" value="Reverse"> 
 reverses the direction of the consist.
@@ -109,5 +109,6 @@ reverses the direction of the consist.
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

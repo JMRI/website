@@ -20,7 +20,7 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Edit Car Attributes</h1>
 
@@ -73,7 +73,6 @@ or
 option.  Enter the new road "UPS" in the text box, select "UP" in the menu  box, and press 
 <input type="submit" name="button12" id="button12" value="Replace">
 . All cars with "UP" as their road will now have  "UPS" as their road name.</p>
-<p>&nbsp;</p>
 
 <hr>
 
@@ -83,5 +82,6 @@ option.  Enter the new road "UPS" in the text box, select "UP" in the menu  box,
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

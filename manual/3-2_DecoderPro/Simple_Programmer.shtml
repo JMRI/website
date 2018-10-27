@@ -3,9 +3,9 @@
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
 <!-- $Id: Simple_Programmer.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<TITLE>
+<title>
 JMRI: Simple Programmer
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -37,7 +37,7 @@ JMRI: Simple Programmer
 <p>On the left side of the window you can select the Programming Mode. Any mode not supported by your command station will be grayed out.</p>
 <p>If you select the<strong> Ops</strong> mode, which programs on the main track, you need to enter the address of the decoder (locomotive) that you are programming. Your DCC system may require you to check the <strong>Long address </strong>check box if the address is a long address. Most DCC systems do not allow you to read on the main, if so, the <strong>Read CV </strong>button will be disabled.</p>
 <p>Now that you have everything  setup, you may read the current  value in the decoder's memory from the CV by clicking on the<strong> Read CV </strong>button  or write your new value to  the CV by clicking on the <strong>Write CV</strong> button.</p>
-<p>
+
 <hr>
 
 <div align="right">
@@ -46,5 +46,6 @@ JMRI: Simple Programmer
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>
