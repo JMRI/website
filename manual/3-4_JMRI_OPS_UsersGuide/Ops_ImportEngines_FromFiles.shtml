@@ -22,12 +22,12 @@
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 <hr>
-<h4>Import locomotives
-from a File&nbsp;</h4><h4 style="font-weight: normal;">The import from file function requires an ACSII text file, with one
+<h4>Import locomotives from a File</h4>
+<p>The import from file function requires an ACSII text file, with one
 line for each locomotive. The import order is locomotive number,
 locomotive road name, locomotive model, and locomotive length. The
-following shows two examples of the correct format:
-</h4><p>236 UP RS4 40 <br>
+following shows two examples of the correct format:</p>
+    <p>236 UP RS4 40 <br>
 5578 SP SW1200 42</p>
 <p>Each line can start with a space and multiple spaces between
 fields
@@ -56,9 +56,16 @@ the program's locomotive roster. If the locomotive already exists, it
 will be skipped by the program.</p>
 <p>After importing your locomotives, you must save them if you
 want to
-keep them as part of your roster then edit themto add missing attributes.</p><p><img style="width: 799px; height: 256px;" alt="engine roster" src="images/Ops_EngineRoster.png"> </p><p>These engines were imported from your file, so we will need
-to
-edit them to set&nbsp;missing attribute that are required: &nbsp;Length , Consist, Location as required.<br>&nbsp;<a href="Ops_EditEngines.shtml"><strong>Edit button</strong></a> in the Edit column will open the Edit Locomotives window &nbsp;and allow you to edit locomotive attributes..</p><p><a style="font-weight: bold;" href="Ops_SetEngines.shtml">Set button</a> in the Set&nbsp;column for each locomotive in the &nbsp;roster will allow you to set the location.</p><hr><p></p>
+keep them as part of your roster then edit themto add missing attributes.</p>
+    <p><img style="width: 799px; height: 256px;" alt="engine roster" src="images/Ops_EngineRoster.png"></p>
+    <p>These engines were imported from your file,
+    so we will need to edit them to set missing attribute that are required: Length , Consist, Location as required.<br>
+    <a href="Ops_EditEngines.shtml"><strong>Edit button</strong></a> in the Edit column will open the Edit Locomotives
+    window and allow you to edit locomotive attributes..</p>
+    <p><a style="font-weight: bold;" href="Ops_SetEngines.shtml">Set button</a> in the Set column for each
+    locomotive in the roster will allow you to set the location.</p>
+    <hr>
+
 <hr>
 <div align="right">
 <p><a href="Ops_Engines_menu.shtml">Back </a></p>
