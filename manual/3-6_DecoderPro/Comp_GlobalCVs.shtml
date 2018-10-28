@@ -37,26 +37,26 @@ of the CV listings.</p>
 <h4>Decoder Locking
 </h4>
 <p> You tried to read a CV value and get &#8220;Error 308, No Acknowledgement
-from Decoder&#8221;, well the decoder may be locked.&nbsp; CV 15 and 16 deal
+from Decoder&#8221;, well the decoder may be locked. CV 15 and 16 deal
 with locking, if your manufacturer implements this feature (and
 manufacturers have slight differences as to how they implement
-it).&nbsp; If the decoder is locked, then you will not be able to read
-data from it or write to it.&nbsp; To unlock the decoder, you must
+it). If the decoder is locked, then you will not be able to read
+data from it or write to it. To unlock the decoder, you must
 enter a value into CV15 (the only CV that can be written when the
 decoder is locked), that is equal to the value that is currently in
-CV16.&nbsp; Now I hear you thinking &#8220;but I can&#8217;t read CV16 to know what
-to put into CV15&#8221;.&nbsp; Well, you&#8217;ll have to try all possible
-values,&nbsp; which isn&#8217;t that hard since it can only have 8 possible
-values 0 thru 7.&nbsp; After each write, try to read CV16.&nbsp; It&#8217;s
-the fastest read since it can only have 8 possible values.&nbsp; If
-JMRI responds with the no-ack error, then try the next value.&nbsp; If
+CV16. Now I hear you thinking &#8220;but I can&#8217;t read CV16 to know what
+to put into CV15&#8221;. Well, you&#8217;ll have to try all possible
+values, which isn&#8217;t that hard since it can only have 8 possible
+values 0 thru 7. After each write, try to read CV16. It&#8217;s
+the fastest read since it can only have 8 possible values. If
+JMRI responds with the no-ack error, then try the next value. If
 it returns the value in CV16, you&#8217;ve unlocked the decoder and you&#8217;re
-in.&nbsp; If you have unsuccessfully tried all the 8 possibilities,
+in. If you have unsuccessfully tried all the 8 possibilities,
 then check your layout connection and the loco&#8217;s wheels for poor
-connections and try again.&nbsp; Now you say, &#8220;I&#8217;ve looked thru the
-list several times and CV 15 doesn&#8217;t appear&#8221;.&nbsp; That&#8217;s on purpose,
-to minimize inadvertent locking by a Write All Sheets.&nbsp; You will
-have to use the<u> </u><a href="Simple_Programmer.shtml">Single CV Programmer </a>to write CV15.&nbsp;
+connections and try again. Now you say, &#8220;I&#8217;ve looked thru the
+list several times and CV 15 doesn&#8217;t appear&#8221;. That&#8217;s on purpose,
+to minimize inadvertent locking by a Write All Sheets. You will
+have to use the<u> </u><a href="Simple_Programmer.shtml">Single CV Programmer </a>to write CV15.
 It can be found in the Tools menu on the Main  Page, under Programmers.</p>
 <p>If you have more than one decoder in your locomotive, you probably
 have a decoder locking scheme implemented to be able to access each one

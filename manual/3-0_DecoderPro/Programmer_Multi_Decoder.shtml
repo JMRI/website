@@ -38,7 +38,7 @@
   <li>function only decoder value of 3</li>
   <li>other uses values of 4 thru 7</li>
 </ul>
-<p>Decoders should ship with the value of 0 in both CV15 and CV16, You can only perform a read or write operation on the decoder if CV15 and CV16 are the same value. In effect, CV16 is a lock and CV15 is the key. Once the decoder is locked  in this way, the ONLY CV that can be programmed is CV15 (you do need to be able  to unlock it).&nbsp; </p>
+<p>Decoders should ship with the value of 0 in both CV15 and CV16, You can only perform a read or write operation on the decoder if CV15 and CV16 are the same value. In effect, CV16 is a lock and CV15 is the key. Once the decoder is locked  in this way, the ONLY CV that can be programmed is CV15 (you do need to be able  to unlock it). </p>
 <p><br>
   So now you have two  decoders with the same address (both of them locked) and you want to unlock one  of them. The Multi Decoder Control is the tool for that.</p>
 <table width="90%" border="1" cellspacing="1" cellpadding="1">
@@ -48,7 +48,7 @@
 <p>DecoderPro then reads back the value in CV16 to confirm that the decoder has successfully unlocked.</p>
 <p>Once you are done with  your programming the tool can again be used to insert a zero into CV15, thereby  locking this decoder.</p>
 <p>The<strong> Legacy</strong> button writes a 7 to CV15, which is a special case. Many decoders, especially older models, do not have this locking mechanism present. In some cases, specifically a Digitrax FX3 or later decoder and an early SoundTraxx decoder, it's possible to emulate the lock using sequential writing of the CVs. Clicking the <strong>Legacy </strong>button activates this procedure. Unfortunately, it's not an entirely reliable method.</p>
-<p>But, what if you didn't follow the recommendations? The<strong> Search</strong> button sequentially works through the possible values and marks values found to be present.&nbsp; If you're dealing with a single decoder to  unlock, than you're home free.&nbsp; If we're  talking about multiple decoders with the same address we're probably going to  get more than one value marked.&nbsp; It's up  to you to figure which is which. One way is by changing the address of one and  then testing to see what action changed with the new address.</p>
+<p>But, what if you didn't follow the recommendations? The<strong> Search</strong> button sequentially works through the possible values and marks values found to be present. If you're dealing with a single decoder to  unlock, than you're home free. If we're  talking about multiple decoders with the same address we're probably going to  get more than one value marked. It's up  to you to figure which is which. One way is by changing the address of one and  then testing to see what action changed with the new address.</p>
     <p><strong>Search</strong> button sequentially works through the possible addresses and marking those decoder addresses that are found to be present.</p>
     <p><strong>Reset</strong> button looks for possible combinations to unlock a decoder that has been inadvertently locked. <span class="ACCENT">Only use this option if you have just one decoder in the locomotive. If you have more than one , it will unlock all of them, which may cause confusion later.</span></p>
     <p><strong>Init DH163 + SoundTraxx</strong> button configures the <strong>Legacy</strong> mode discussed above.</p>

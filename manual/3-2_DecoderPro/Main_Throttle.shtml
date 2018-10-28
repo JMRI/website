@@ -35,8 +35,9 @@
   <tr>
     <td width="38%" align="left" valign="top"><img src="images/Main_Throttle01.png" width="501" height="544" alt="throttle"></td>
     <td width="62%" align="left" valign="top"><p>(color shading added to show functional areas of throttle panels)</p>
-    <p>The Throttle Window contains <a href="#MenuBar"><strong>Menu Bar</strong></a>, <a href="#Toolbar"><strong>Toolbar</strong></a> and three panels which may be enabled or disabled via check box in the View menu. Each panel has a title bar with windows controls to minimize, maximize and exit:&nbsp;&nbsp; </p>
-    <p><strong>Warning!!! </strong>Be careful with the left  hand (minimize) buttons.&nbsp;In Windows, if the little guy is clicked it  will minimize the panel, which means it is no longer visible but the restore  button is lost behind the rest of the panels.&nbsp;  The  way to easily get it back, is to go into the view menu, uncheck  it there,  then go back again and re-check it.&nbsp; You may also drag the panels out of the way to uncover the Maximize icon for a minimized panel.</p>
+    <p>The Throttle Window contains <a href="#MenuBar"><strong>Menu Bar</strong></a>, <a href="#Toolbar"><strong>Toolbar</strong></a> and three panels which may be enabled or disabled via check box in the View menu. Each panel has a title bar with windows controls to minimize, maximize and exit: </p>
+    <p><strong>Warning!!! </strong>Be careful with the left  hand (minimize) buttons. In Windows, if the little guy
+    is clicked it  will minimize the panel, which means it is no longer visible but the restore  button is lost behind the rest of the panels.  The  way to easily get it back, is to go into the view menu, uncheck  it there,  then go back again and re-check it. You may also drag the panels out of the way to uncover the Maximize icon for a minimized panel.</p>
 <p><a href="#AddressPanel"><strong>Address Panel </strong></a>(green shading) facilitates setting the address of the locomotive you wish to control with the throttle.</p>
     <p><a href="#ControlPanel"><strong>Control Panel</strong></a> (blue shading) contains the controls for applying power to the locomotive that is addressed and controlling speed</p>
     <p><a href="#FunctionPanel"><strong>Function Panel</strong></a>(yellow shading) contains all the function buttons used to control the addressed locomotives functions. If function names are assigned to the functions and stored in the roster, they will be displayed.</p></td>
@@ -124,14 +125,14 @@
         Function Panel</strong></li>
   </ul>
   <blockquote>
-    <p>You  may ask yourself, &ldquo;Why would I want to turn off any of these panels?&rdquo;&nbsp; As only one example, let's say we have an  observation car at the rear of a passenger train.&nbsp; We could equip this car with a function only  decoder to control:</p>
+    <p>You  may ask yourself, &ldquo;Why would I want to turn off any of these panels?&rdquo; As only one example, let's say we have an  observation car at the rear of a passenger train. We could equip this car with a function only  decoder to control:</p>
     <ol>
       <li> Interior lights, </li>
       <li> Rear marker lights, and</li>
-      <li>A rear  Drum light.&nbsp; </li>
+      <li>A rear  Drum light. </li>
     </ol>
-    <p>We have no need for the  speed control pane and only need three function buttons for this  &ldquo;Throttle&rdquo;.&nbsp; <br>
-      With  a whole passenger train equipped like this, lots of screen space can be  conserved by using the throttle set-up files to optimize the <strong>Throttle</strong> windows.  Then you could turn off the lights in the kitchen and lower the lights in the  dining area so the passengers can enjoy the sunset as they transit the Rockies  enjoying the beautiful sunset sipping Cognac&hellip;. but I digress.&nbsp; You get the idea.</p>
+    <p>We have no need for the  speed control pane and only need three function buttons for this  &ldquo;Throttle&rdquo;. <br>
+      With  a whole passenger train equipped like this, lots of screen space can be  conserved by using the throttle set-up files to optimize the <strong>Throttle</strong> windows.  Then you could turn off the lights in the kitchen and lower the lights in the  dining area so the passengers can enjoy the sunset as they transit the Rockies  enjoying the beautiful sunset sipping Cognac&hellip;. but I digress. You get the idea.</p>
   </blockquote>
   <ul>
     <li><strong>Reset function futtons</strong></li>
@@ -176,7 +177,7 @@
   <li><strong>Window</strong>
 <ul>
   <li><strong>Minimize</strong></li>
-  <li>Lists all open DecoderPro windows.&nbsp; If one of the windows        is clicked it will be brought to the front so that you can minimize it to        the system tray. </li>
+  <li>Lists all open DecoderPro windows. If one of the windows        is clicked it will be brought to the front so that you can minimize it to        the system tray. </li>
 </ul>
 <strong>Help</strong>
 <ul>
@@ -197,7 +198,7 @@
 <div>
   <div align="right"><a href="#Top">Top</a></div>
 </div>
-<h4>&nbsp;</h4>
+
 <h4><a name="Toolbar"></a>Toolbar<br>
   <img src="images/Main_Throttle_toolbar.png" width="515" height="118" alt="throttle toolbar"></h4>
 <p>The Throttle toolbar is enabled from the <a href="Main_Tool.shtml#Preferences" target="_blank">Throttles Preferences Pane</a></p>
@@ -205,7 +206,7 @@
   <p>Use Throttles preferences window to set the desired preferences.</p>
   <p align="center"><img src="images/Main_Tool01.png" width="700" height="427" alt="Throttle pref"></p>
 </ul>
-<p>&nbsp;</p>
+
 <p>When it is enabled, a Throttle Window can host a set of Throttles. You can browse through these throttles: Add a new Throttle in that Throttle Window. Once the number of Throttles in a Throttle Window is greater than one, Next and Previous Icons are enabled. </p>
 <ul>
   <li>
@@ -225,11 +226,11 @@
 <div>
   <div align="right"><a href="#Top">Top</a></div>
 </div>
-<p>&nbsp;</p>
+
 <h4><a name="Frame"></a>Frame Properties</h4>
 <p><img src="images/Main_Throttle_Frame.png" alt="Frame Edit" width="425" height="188" border="4"></p>
 <p><strong>Frame Title:</strong>Type the title of your choice for  the Throttle frame. This is referred to below  as&rdquo;text&rdquo;.</p>
-<p><strong>Frame Title Components:</strong> Select the text component desired. There are two components  which can be in the title bar of the throttle &ldquo;Text&rdquo; and &ldquo;Address&rdquo;&nbsp; The selections allow either or both to be in  the title (in the order they appear in the selection), or one can opt for the  description in the locomotive Roster Entry</p>
+<p><strong>Frame Title Components:</strong> Select the text component desired. There are two components  which can be in the title bar of the throttle &ldquo;Text&rdquo; and &ldquo;Address&rdquo; The selections allow either or both to be in  the title (in the order they appear in the selection), or one can opt for the  description in the locomotive Roster Entry</p>
 <blockquote>
   <p><strong>Address </strong>--Automatically display the address of whatever locomotive is selected. (default)</p>
   <p><strong>Text</strong> -- Display the text that you enter in the field as the title at the top of this window</p>
@@ -243,7 +244,7 @@
 <p class="ACCENT"><strong>
   <input type="checkbox" name="checkbox6" id="checkbox6">
 Frame Decorations</strong>: </p>
-<p>This will remove the  individual control bars for the separate panes of the throttle.&nbsp; This is advised for Windows users, as  clicking the minimize buttons causes the restore button to be lost behind the  rest of the panels.&nbsp; Recovery entails  using the view menus to remove and then restore the panel in question. </p>
+<p>This will remove the  individual control bars for the separate panes of the throttle. This is advised for Windows users, as  clicking the minimize buttons causes the restore button to be lost behind the  rest of the panels. Recovery entails  using the view menus to remove and then restore the panel in question. </p>
 <p><strong>
   <input type="submit" name="button" id="button" value="OK">
 </strong>  adds the edits</p>
@@ -282,12 +283,12 @@ aborts the operation</p>
 <div>
   <div align="right"><a href="#Top">Top</a></div>
 </div>
- <p>&nbsp;</p>
+
 <h4><a name="AddressPanel"></a>Throttle Address Panel</h4>
 <table width="90%" border="0" cellspacing="1" cellpadding="1">
   <tr>
     <td width="46%" align="left" valign="top"><img src="images/Main_Throttle_Address.png" width="277" height="134" alt="Throttle address frame"></td>
-    <td width="54%" align="left" valign="top"><p>Primary use is to identify the decoders address, and to dispatch or release the identified address. Locomotive address may be entered by one of two methods: typed into text box or use drop-down list to select locomotive from your roster. .&nbsp; If you&nbsp;  have added <a href="Comp_FunctionLabel.shtml">Function labels,</a> to your Roster, the label text from the Roster will be displayed  on the throttle function buttons.</p>
+    <td width="54%" align="left" valign="top"><p>Primary use is to identify the decoders address, and to dispatch or release the identified address. Locomotive address may be entered by one of two methods: typed into text box or use drop-down list to select locomotive from your roster. If you  have added <a href="Comp_FunctionLabel.shtml">Function labels,</a> to your Roster, the label text from the Roster will be displayed  on the throttle function buttons.</p>
     <p>Click on the
       <input type="submit" name="button5" id="button5" value="Set">
 to  send the address to your system to  make this throttle active.</p>
@@ -373,7 +374,8 @@ through 0%</h4></td>
     <td width="56%" align="left" valign="top"><p>The <strong>Throttle Function Panel</strong> allows you to select the decoder functions from F0 through F15 on first overlay and F16 through F28 on second overlay. Many new Sound decoders use up to 28 functions.. use the
 <input type="submit" name="button11" id="button11" value="*">
     to toggle between the two overlays</p>
-    <p>If you&nbsp;have entered <a href="Comp_FunctionLabel.shtml">Function labels, using the Advanced  Programmer,</a> the label text will  appear on the throttle Function buttons.</p>
+    <p>If you have entered <a href="Comp_FunctionLabel.shtml">Function labels, using the Advanced  Programmer,</a>
+    the label text will  appear on the throttle Function buttons.</p>
 <p>Another way to change the labels on the function buttons, is to right click on the button that you want to edit, the word <strong>Properties..</strong> is displayed and when clicked on, an <strong>Edit Function Button</strong> dialog box will be displayed.</p>
     <p>&nbsp;</p></td>
   </tr>
@@ -407,7 +409,7 @@ through 0%</h4></td>
     <p>You can use the <strong>Save</strong> button on the <a href="#AddressPanel">Address Panel </a>to save the edited functions to your locomotives Roster entry.</p></td>
   </tr>
 </table>
-<p>The descriptions shown  above are only a small part of what the <strong>Throttle</strong> Window can do. The author(s)  of the <strong>Throttle</strong> Window have created an extensive set of Help files to help you  customize Throttle Windows to your way of operating.&nbsp; To access Help, just open a New <strong>Throttle</strong>. Then,  click on <strong>Help</strong> and select <strong>Window Help</strong> from the dropdown box.&nbsp; There's lots of good stuff in there.</p>
+<p>The descriptions shown  above are only a small part of what the <strong>Throttle</strong> Window can do. The author(s)  of the <strong>Throttle</strong> Window have created an extensive set of Help files to help you  customize Throttle Windows to your way of operating. To access Help, just open a New <strong>Throttle</strong>. Then,  click on <strong>Help</strong> and select <strong>Window Help</strong> from the dropdown box. There's lots of good stuff in there.</p>
 <div>
   <div align="right"><a href="#Top">Top</a></div>
 </div>

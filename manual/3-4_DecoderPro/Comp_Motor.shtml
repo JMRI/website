@@ -27,11 +27,11 @@
 </p><p><a href="index.shtml#Advanced%20Programmer">Back to Index</a></p></div>
 
 <hr>
-<p>Motor  control is divided into three separate panes.&nbsp;  The<strong> Motor Control pane</strong> deals with CV&#8217;s for simulating locomotive weight or  inertia.&nbsp; The <a href="Comp_Speed.shtml" target="_parent"><strong>Basic Speed Control pane</strong></a><a href="Comp_Basic.shtml" target="_parent"></a> deals with basic  motor control CV&#8217;s and the third <a href="Comp_Speed_Talble.shtml" target="_parent"><strong>Speed Table pane</strong></a><a href="Comp_Speed.shtml" target="_parent"></a>
+<p>Motor  control is divided into three separate panes.  The<strong> Motor Control pane</strong> deals with CV&#8217;s for simulating locomotive weight or  inertia. The <a href="Comp_Speed.shtml" target="_parent"><strong>Basic Speed Control pane</strong></a><a href="Comp_Basic.shtml" target="_parent"></a> deals with basic  motor control CV&#8217;s and the third <a href="Comp_Speed_Talble.shtml" target="_parent"><strong>Speed Table pane</strong></a><a href="Comp_Speed.shtml" target="_parent"></a>
 covers those dealing with the Speed Table method of controlling the
-motor.&nbsp; These last two methods of motor control are mutually
-exclusive.&nbsp; The selection is made with a radio button at the top
-of each of those two panes.&nbsp; The default selection is Basic Speed
+motor. These last two methods of motor control are mutually
+exclusive. The selection is made with a radio button at the top
+of each of those two panes. The default selection is Basic Speed
 Control.
 </p><p><strong>The  Motor Pane </strong></p>
 <h1><img style="width: 801px; height: 372px;" alt="motor" src="images/Comp_03_Motor.png"><br></h1>
@@ -47,7 +47,7 @@ locomotive stop and cycle through the acceleration curve again! On the
 latest Tsunami Diesel sound decoders the firmware has been changed. The
 decoder now returns to the last speed setting before the power
 interruption but it has no knowledge of where it was in the
-acceleration curve.&nbsp; So if you have been in the habit of using
+acceleration curve. So if you have been in the habit of using
 lots of momentum and setting speed to maximum to get the sound of a
 notch 8 motor, be aware that if the loco loses power for just an
 instant from a dirt spot on the rails, it will resume at the top speed
