@@ -22,7 +22,7 @@
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Help Menu </h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Window.shtml"> Previous</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -60,12 +60,13 @@
 <p><img src="images/Main_Help_05.png" width="242" height="299" alt="About"></p>
 <hr>
 
-<div align=right>
+<div align="right">
   <p><a href="Main_Window.shtml">Previous</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

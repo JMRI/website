@@ -22,14 +22,12 @@
 
 <a name="Top"></a>
 <h1>
-<img SRC="images/Logo.gif" ALT="JMRI DecoderPro Logo" BORDER=10 height=117 width=163 vspace="15"></h1>
-
-
+<img src="images/Logo.gif" alt="JMRI DecoderPro Logo" border="10" height="117" width="163" vspace="15"></h1>
 
 <h1>DecoderPro3&reg; Main Window</h1>
 <h1>Simple Programmer</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml">Back</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -44,12 +42,13 @@
 
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml">Back</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

@@ -25,7 +25,7 @@ DecoderPro&reg; Main Window
 <h1>DecoderPro&reg; Debug Menu</h1>
 <h1>VSDecoder Manager</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Debug.shtml#vsdecoder">Back </a></p>
 </div>
 
@@ -114,11 +114,12 @@ is the same action as the "load VSD File" button on the Config Dialog.</p>
 <p>Set preferences for VSDecoder operation. See <a
 href="Main_VSD.shtml#preferences">VSDecoder Preferences</a> for details.</p>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Debug.shtml#vsdecoder">Back </a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

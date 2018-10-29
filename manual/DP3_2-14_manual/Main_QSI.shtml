@@ -25,7 +25,7 @@ DecoderPro&reg; Main Window
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>QSI Menu</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
@@ -38,11 +38,13 @@ DecoderPro&reg; Main Window
   .
 </p>
 <p><img src="images/Main_QSI_01.png" alt="Send Command" width="226" height="99"></p>
-<div align=right>
+
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

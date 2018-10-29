@@ -25,7 +25,7 @@ DecoderPro&reg; Main Window
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Powerline Menu</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
@@ -40,11 +40,13 @@ type in a <strong>Command </strong>and
 <input type="button" name="button" id="button" value="Send">
 it to the powerline device. </p>
 <p><img src="images/Main_PowerControl_01.png" alt="Send Command" width="325" height="143"></p>
-<div align=right>
+
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

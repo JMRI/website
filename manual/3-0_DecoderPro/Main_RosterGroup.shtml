@@ -24,7 +24,7 @@
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Roster Menu - Roster Groups</h1>
 
-<div align=right>
+<div align="right">
   <p><a href="Main_Roster.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -202,12 +202,13 @@ if you do not want to associate an engine to a roster Group</p>
     </table>
   </blockquote>
 </ul>
-<div align=right>
+<div align="right">
   <p><a href="Main_Roster.shtml">Back</a></p>
   <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

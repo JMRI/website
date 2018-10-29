@@ -24,7 +24,7 @@ DecoderPro&reg; Main Window
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Window Menu</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Debug.shtml">Previous</a> | <a href="Main_Help.shtml">Next </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -45,12 +45,13 @@ DecoderPro&reg; Main Window
 
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Help.shtml"></a><a href="Main_Debug.shtml">Previous</a> | <a href="Main_Help.shtml">Next </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

@@ -18,6 +18,10 @@
 
 <body>
 <!--#include virtual="/Header.shtml" -->
+<hr class="hide">
+
+<div class="nomenu" id="mBody">
+    <div id="mainContent">
 <h2>Signal Mast Logic - The Layout</h2>
 <p>The track arrangement chosen for the tutorial is shown in the illustration 
   below. Being a UK prototype, trains run on the left hand line of a double track. 
@@ -44,9 +48,7 @@
 <p><a href="index.shtml">Back to Introduction</a></p>
 
 <!--#include virtual="/Footer.shtml" -->
-
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

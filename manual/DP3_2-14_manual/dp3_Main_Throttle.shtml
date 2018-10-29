@@ -24,7 +24,7 @@
 <h1>DecoderPro3&reg; Main Menu Bar</h1>
 <h1>JMRI&reg; Throttle Window</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_Main_Main.shtml">Back</a></p>
 </div>
 
@@ -42,11 +42,12 @@ clicked it  will minimize the panel, which means it is no longer visible but the
 
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_Main_Main.shtml">Back</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

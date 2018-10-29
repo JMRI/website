@@ -13,7 +13,6 @@
 </head>
 
 <body>
-<div id="mBody">
 <!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="/download/Sidebar" -->
@@ -214,6 +213,6 @@ on the PI for this to work. See <code>raspi-config</code>
 
 <!-- /Footer -->
     </div><!-- closes #mainContent-->
-  </div> <!-- closes #mBody-->
+  </div> <!-- closes #mBody, started in sidebar->
 </body>
 </html>

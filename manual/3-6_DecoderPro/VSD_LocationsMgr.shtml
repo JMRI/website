@@ -25,7 +25,7 @@ DecoderPro&reg; Main Window
 <h1>DecoderPro&reg; Debug Menu</h1>
 <h1>Virtual Sound Decoder</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Debug.shtml#pricom">Back </a></p>
 </div>
 
@@ -177,11 +177,12 @@ move to the next location on the Route.</p>
 <p><em>Note:</em> Operations Locations following is temporarily
 disabled in JMRI 3.1.6 but will be re-enabled in 3.1.7.</p>
 
-<div align=right>
-<p><a href="Main_Debug.shtml#pricom">Back </a></p>
+<div align="right">
+<p><a href="Main_Debug.shtml#pricom">Back</a></p>
 </div>
 
-<!--#include virtual="/Footer.shtml" -->
-</div>
+  <!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

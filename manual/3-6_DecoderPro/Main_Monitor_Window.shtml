@@ -102,8 +102,11 @@ the <strong>Add Message</strong> button to add your
 message to the log file.</p>
 
 <hr>
-<div style="text-align: right;"><p><a href="Main_LocoNet.shtml">Back</a></p><a href="dp3_menubar.shtml">Back to Index</a></div>
-<div align="right"> </div>
-<!--#include virtual="/Footer.shtml" -->
+<div style="text-align: right;"><p><a href="Main_LocoNet.shtml">Back</a></p><a href="dp3_menubar.shtml">Back to Index</a>
 </div>
-</body></html>
+
+<!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
+</body>
+</html>

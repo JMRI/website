@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Main_Help.shtml 18157 2011-08-11 10:37:44Z dat7719 $ -->
-  <title>Help Menu</title>
+  <title>
+    Help Menu
+  </title>
   <!-- Style -->
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
@@ -67,6 +69,7 @@ scheme.</p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

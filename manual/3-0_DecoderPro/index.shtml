@@ -441,10 +441,11 @@ is hosted by <a href="http://www.tagadab.com">
 </table>
 
 <hr>
-<div align=right>Go to the
+<div align="right">Go to the
 <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io group</div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

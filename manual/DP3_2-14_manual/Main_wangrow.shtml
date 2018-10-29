@@ -23,7 +23,7 @@
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Wangrow Menu</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
@@ -49,11 +49,13 @@
     <p>Text box at bottom of dialog can be used to override the number of bytes sent.</p></td>
   </tr>
 </table>
-<div align=right>
+
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

@@ -30,7 +30,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 <h1>Getting Started with DecoderPro&reg;</h1>
 <h1>How do I set up my preferences?</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Start_DecoderPro.shtml">Previous</a>
 <p><a href="index.shtml#GettingStarted">Back to Index</a> </div>
 
@@ -265,12 +265,14 @@ removes the item from the Start Up sequence. All of the panes are of the same fo
   <input type="submit" name="button8" id="button8" value="Save">
 button to save all your selections.</h2>
 <h2 align="center">You must restart DecoderPro for preferences to take effect</h2>
+
 <hr>
-<div align=right>
+<div align="right">
 <p><a href="Start_DecoderPro.shtml">Previous</a>
 <p><a href="index.shtml#GettingStarted">Back to Index</a> </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

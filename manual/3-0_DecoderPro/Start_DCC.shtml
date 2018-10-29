@@ -26,14 +26,12 @@
 <h1>Getting Started with DecoderPro&reg;</h1>
 <h1>What is DCC?</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Start_DCC_Systems.shtml">Next</a>
 <p><a href="index.shtml#GettingStarted">Back to Index</a>
 </div>
 
 <hr>
-
-<h3>&nbsp;</h3>
 
 <p>
 In short, DCC is Digital Command Control, a system for operating model
@@ -56,12 +54,13 @@ Programming panel designs are written in <b>XML</b>, (a close relative
 of HTML) and can be modified or even created from scratch by users with
 even a passing familiarity with the format without previous XML experience. 
 <hr>
-<div align=right>
+<div align="right">
 <p><a href="Start_DCC_Systems.shtml">Next</a><a href="Basic_Programming.shtml"></a>
 <p><a href="index.shtml#GettingStarted">Back to Index</a>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

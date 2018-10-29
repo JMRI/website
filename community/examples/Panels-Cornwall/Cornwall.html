@@ -5,7 +5,7 @@
     <title>
  	JMRI: Creating the Cornwall Panel
     </title>
-    <META content="Bob Jacobsen" name=Author>
+    <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="JMRI PanelPro CMRI DCC Cornwall">
 
     <!-- The combination of "Define" and {Header,Style, Logo and Footer} comments -->
@@ -13,7 +13,7 @@
     <!-- easily replace the common header/footer code for all the web pages -->
 
 <!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -36,7 +36,7 @@
 	   <li><a href="/help/en/html/hardware/index.shtml"  title="What hardware does JMRI support">Hardware</a></li>
 	   <li><a href="/help/en/DecoderProManual/index.shtml"   title="Trouble-shooting, and FAQs">Manual</a></li>
 	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
-	   <li><a href="/community/" title="Who is JMRI">Acknowledgements</a></li>
+	   <li><A href="/community/" title="Who is JMRI">Acknowledgements</a></li>
 	</ul>
 
 	<div id="searchform"> <!--  Search Form -->
@@ -54,13 +54,10 @@
 
     <hr class="hide">
 
-    <div class="nomenu" id="mBody">
+	<div class="nomenu" id="mBody">
 	<div id="mainContent">
-	    <!-- ------------- -->
-	    <!-- Page Contents --> <!-- Required -->
-	    <!-- ------------- -->
 
-	    <H1>JMRI: Creating the Cornwall Panel</H1>
+	<h1>JMRI: Creating the Cornwall Panel</h1>
 
 JMRI was used to create the dispatcher control panel for Nick Kulp's
 <a href="http://kc.pennsyrr.com/layouts/kulp/index.html">Cornwall RR</a>.
@@ -110,7 +107,7 @@ You can do this with any paint program you happen to have, but this picture
 was drawn with "GraphicConvertor" on a Macintosh.
 <br>
 <img src="./images/cornwallmainpanel.gif" WIDTH="500" HEIGHT="300" HSPACE="0" VSPACE="0">
-<P>
+<p>
 To save screen space, the schematic was split into "over" and "under" 
 parts.  This is not very prototypical, but certainly works well.  Since the
 GIF file only uses three colors, it was made much smaller by storing it in 
@@ -171,7 +168,7 @@ There are "left" and "right" sets for the two basic types
 of turnouts used; they can be rotated via the popup menu to work with the various
 turnout orientations on the schematic.
 
-<P>
+<p>
 Next, we start adding the turnout controls.  These are attached to DCC turnouts, 
 not C/MRI sensors, so that they will send a DCC message when clicked.  The 
 show two different images depending on whether the turnout has been commanded
@@ -189,7 +186,7 @@ by adding two sensor icons there.  The one on the left would show
 would do the reverse, showing 
 <img src="./images/gray.gif"> if the turnout was closed, and
 <img src="./images/red.gif"> if it was thrown.
-<P>
+<p>
 Finally, the turnout number over the switch plate was added as part of the background picture,
 and the control panel was ready to go.
 
@@ -199,18 +196,18 @@ part of the normal distribution. Nick wanted a couple more
 things, though:
 <img src="./images/cornwall_logo.gif" align="right" WIDTH="210" HEIGHT="44" >
 
-<UL>
-	<LI>Automatically open the panel when the program starts
+<ul>
+	<li>Automatically open the panel when the program starts
 	(<a href="CornwallDetails.html#open">Details...)</a>
-	<LI>Customize the menus somewhat
-	<LI>Show a Cornwall RR logo instead of the normal JMRI one
-	<LI>Drive the layout signals (see below)
-</UL>
+	<li>Customize the menus somewhat
+	<li>Show a Cornwall RR logo instead of the normal JMRI one
+	<li>Drive the layout signals (see below)
+</ul>
 It was easiest to do these by copying the start-up code for the JmriDemo program,
 and producing a special version for Nick.  If you're interested, it can 
 be found as "apps.cornwall.CorwallRR" in 
 <a href="../../../doc/Technical/index.html#cvs">CVS</a>.
-<P>
+<p>
 Since all of the JMRI source is openly available, its quite easy to 
 create a version customized to your own desires.
 
@@ -219,7 +216,7 @@ Signaling is a vital part of the Cornwall Railroad's operations.  If JMRI
 was going to drive the railroad, it had to properly handle the signals.
 (There's no way to share the C/MRI system between the existing program for
 driving signals, and a new program for the dispatcher panel).
-<P>
+<p>
 Like input sensors and turnouts, JMRI can display signal icons on the screen
 that follow the aspect of a signal head. The Cornwall panel was setup to 
 use small graphics for this to avoid making it too busy:
@@ -228,7 +225,7 @@ yellow <img src="./images/right-yellow-short-white.gif">,
 flashing yellow <img src="./images/right-flashyellow-short-white.gif">,
 green <img src="./images/right-green-short-white.gif">.
 
-<P>
+<p>
 To actually drive the signal aspects from the turnout and occupancy status,
 Java code was written based on JMRI's 
 automation classes. (Today, we would almost certainly do this using 
@@ -253,13 +250,13 @@ signal 13B:
         else if (value == GREEN && tu9 && si90)
             value = YELLOW;
 </code></pre>
-<P>
+<p>
 Note that although prototype signals use logic that "starts with red, and see
 if you can find a reason to turn it green", the existing Cornwall logic was
 written the other way around.  Rather than change that, we wanted to get that
 same logic into the new program with as little change as possible.
 
-<P>
+<p>
 JMRI makes it very easy to debug this logic, as the program doesn't
 have to be connected to the layout to let you test it.  You can change the
 state of an occupancy detector or turnout sensor on the display (though clearly not
@@ -267,7 +264,7 @@ on the layout itself!) by clicking on it, and then see whether the signals
 respond appropriately.  Even complicated interlocking logic can be 
 checked out quickly using this.
 
-<h2>Summary</H2>
+<h2>Summary</h2>
 The process to create the Cornwall signaling and dispatcher panel was 
 straightforward, if a little long.
 
@@ -280,17 +277,17 @@ straightforward, if a little long.
 	</ul>
 
 	<p>Thanks and congratulations to
-	   <a href="/community/" title="Who is JMRI">
-	   	all who contributed</a>! </p>
+	   <A href="/community/" title="Who is JMRI">
+	   	all who contributed</A>! </p>
 
-	<p>Copyright &copy; 1997 - 2004 JMRI Community. 
-	<P>JMRI, DecoderPro, PanelPro, DispatcherPro and associated logos are our trademarks.
-	<P><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
-    
-       <br>Site hosted by:<br><!-- SSI require .shtml suffix, so this file can't include the following as Icon via SSI -->
-        <a href="http://sourceforge.net">
-        <img src="http://sourceforge.net/sflogo.php?group_id=26788&amp;type=13" border="0" alt="SourceForge Logo"> </a>
+	<p>Copyright &copy; 1997 - 2004 JMRI Community.
+	<p>JMRI, DecoderPro, PanelPro, DispatcherPro and associated logos are our trademarks.
+	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
 
+        <br>Site hosted by:<br><!-- SSI require .shtml suffix, so this file can't include the following as Icon via SSI -->
+        <a href="http://www.tagadab.com">
+            <img src="https://www.tagadab.com/sites/default/files/logo-tagadab-nostrap.png" height="28" width="103"
+                 border="0" alt="Tagadab Logo"> </a>
     </div>
 <!-- /Footer -->
 

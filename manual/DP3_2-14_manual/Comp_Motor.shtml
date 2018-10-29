@@ -47,7 +47,8 @@ locomotive stop and cycle through the acceleration curve  again!  On the latest 
 <p><strong>Back EMF </strong>or <strong>Speed stabilization</strong> is implemented differently by  each manufacturer.. See your 
 decoder documentation for the best ways to implement these variables,  and be prepared to 
 do a lot of experimenting! However they do it and whatever they call it,  you should find it 
-in this pane. </p>
+in this pane.</p>
+
 <hr>
 <div align="right">
 <p><a href="Comp_Speed.shtml"></a>
@@ -55,6 +56,7 @@ in this pane. </p>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a></div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

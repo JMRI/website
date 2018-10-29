@@ -29,7 +29,6 @@
 <p><a href="index.shtml#Basic Programmer">Back to Index</a></p>
 </div>
 
-
 <hr>
 <p>You may have noticed that at the  top of the window are Two tabs: <strong>Roster Entry</strong> and <strong>Basic</strong>.  We have completed the <strong>Roster Entry</strong> pane of the Program window, now,  click on the <strong>Basic</strong> tab to change panes to continue with programming your  decoder. The Basic pane will be displayed and look similar to the following illustration: 
 Many panes in the programmer contain decoder dependent features,  as a result what you see may not exactly agree with what you see here.  Only those variables that your decoder can implement will be shown. </p>
@@ -117,6 +116,7 @@ So now we've narrowed our &ldquo;real&rdquo; choices down to<strong>Advanced</st
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

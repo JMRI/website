@@ -5,7 +5,7 @@
  <title>
  JMRI: Release Notes for 4.13.3
  </title>
-    <meta content="Bob Jacobsen" name="author">
+    <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.13.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!--#include virtual="/Style.shtml" -->
@@ -126,11 +126,11 @@ These may be relevant to you if you're updating from an earlier version.
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
     <ul>
-        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
-        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
-        <li>Do not open the SPROG console window</li><br>
-        <li>Disable power conversion (CV 29) in all locos</li><br>
-        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
+        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li>
+        <li>Do not open the SPROG console window</li>
+        <li>Disable power conversion (CV 29) in all locos</li>
+        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
     </ul>
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
@@ -263,7 +263,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Operations</h3>
-        <a id="Operations" name="Operations"/>
+        <a id="Operations" name="Operations"></a>
        <ul>
           <li></li>
        </ul>
@@ -321,20 +321,20 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
             
    <h3>WiThrottle Server</h3>
-        <a id="WS" name="WS"/>
+        <a id="WS" name="WS"></a>
         <ul>
             <li>Return client message for invalid loco address, turnout and route requests</li>
         </ul>
         
    <h3>Virtual Sound Decoder</h3>
-        <a id="VSD" name="VSD"/>
+        <a id="VSD" name="VSD"></a>
         <ul>
             <li>Steam1: acceleration and deceleration rates are now adjustable. 
                 Added throttle key functions like Brake key and Coast key (Klaus Killinger).</li>
         </ul>
 
     <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"/>
+        <a id="Misc" name="Misc"></a>
         <ul>
             <li></li>
         </ul>

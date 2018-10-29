@@ -18,6 +18,10 @@
 
 <body>
 <!--#include virtual="/Header.shtml" -->
+<hr class="hide">
+
+<div class="nomenu" id="mBody">
+  <div id="mainContent">
 <h2>Describe the Layout with the Layout Editor</h2>
 <p>Within JMRI there are a number of editors which can produce graphical representations 
   for controlling a layout. In this tutorial, we are using the Layout Editor. 
@@ -25,14 +29,14 @@
   layout from the track diagram, so it will &quot;know&quot; which turnouts, track 
   segments, blocks, etc.. are connected in which order. From this logical representation 
   it can construct further rules for running your signals (and other aspects of 
-  your layout). </p>
+  your layout).</p>
 <p>The other common editor is the &quot;Panel Editor&quot;. This is excellent 
   for constructing a graphical control panel, you are able to use any graphical 
   arrangement. One typical use of the Panel Editor might be to construct a representation 
   of a prototype signal/turnout control desk or lever frame. In practise, both 
   the Layout Editor and the Panel Editor are used, the Layout Editor gives the 
   logical representation and the Panel Editor produces graphically pleasing control 
-  panels for operating the layout. </p>
+  panels for operating the layout.</p>
 <p>With the Layout Editor, begin by positioning the Turnouts and some Anchor Points 
   for plain track. The Name of the Turnout (the User-Name defined in the Turnout 
   Table) to be positioned is entered into the &quot;Name&quot; field before placing 
@@ -83,10 +87,9 @@
 
 <p><a href="signalheads_and_masts.shtml">Move on to Part 6</a> </p>
 <p><a href="index.shtml">Back to Introduction</a></p>
-<!--#include virtual="/Footer.shtml" -->
 
+<!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

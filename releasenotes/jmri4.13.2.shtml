@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
 <!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
@@ -219,7 +218,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
 
     <h3>Layout Editor</h3>
-        <a id="LE" name="LE"/>
+        <a id="LE" name="LE"></a>
         <ul>
 	        <li>A problem that caused the Scale Track Tool to not work with Beziers was fixed</li>
 	        <li>The Color Chooser was updated and fixed</li>

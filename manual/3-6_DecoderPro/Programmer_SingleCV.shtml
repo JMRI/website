@@ -39,7 +39,7 @@
 <p>On the left side of the window you can select the Programming Mode. Any mode not supported by your command station will be grayed out.</p>
 <p>If you select the<strong> Ops</strong> mode, which programs on the main track, you need to enter the address of the decoder (locomotive) that you are programming. Your DCC system may require you to check the <strong>Long address </strong>check box if the address is a long address. Most DCC systems do not allow you to read on the main, if so, the <strong>Read CV </strong>button will be disabled.</p>
 <p>Now that you have everything  setup, you may read the current  value in the decoder's memory from the CV by clicking on the<strong> Read CV </strong>button  or write your new value to  the CV by clicking on the <strong>Write CV</strong> button.</p>
-<p>
+
 <hr>
 
 <div align="right">
@@ -48,6 +48,7 @@
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

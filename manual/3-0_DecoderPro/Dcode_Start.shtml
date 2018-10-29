@@ -24,7 +24,7 @@
 <h1>Decoder Definition</h1>
 <h1>Getting Started</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Dcode_Format.shtml">Next</a></p>
 <p><a href="index.shtml#DecoderDefinition">Back to Index</a></p>
 </div>
@@ -40,12 +40,13 @@ and the section on what the configuration files contain
 <p>To get started, locate a decoder definition XML file that is close to the new decoder that you would like to define. If you don't know what is &ldquo;close&rdquo;, well don't sweat it. Let's just move on to looking at a definition  file and you'll get a feel about what we're talking about.</p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Dcode_Format.shtml">Next</a></p>
 <p><a href="index.shtml#DecoderDefinition">Back to Index</a><a href="index.shtml#Main"></a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>
