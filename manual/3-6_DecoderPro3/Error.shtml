@@ -3,9 +3,9 @@
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
 <!-- $Id: Error.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<TITLE>
+<title>
 Error Messages
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -25,7 +25,7 @@ Error Messages
 <h1>DecoderPro&reg; Error Messages</h1>
 <h1>Decoder Programmer Common Error Messages</h1>
 <h1></h1>
-<div align=right>
+<div align="right">
   <p><a href="index.shtml#Error">Back to Index</a></p>
 </div>
 
@@ -84,7 +84,7 @@ This page lists the error message that can result, and   describes what they mea
   </dd>
    <dt><strong>308 &#8212; No acknowledge from locomotive</strong></dt>
   <dd>
-    <p> At the end of a CV read or write operation, the locomotive  replies ("acknowledges") to the command station using a pulse   of current. </p>
+    <p> At the end of a CV read or write operation, the locomotive  replies ("acknowledges") to the command station using a pulse of current.</p>
   </dd>
   <dd>
     <p> If that pulse isn't seen, some command stations provide this error  message. It could be due to poor electrical connections to the programming   track or within the locomotive.  It could also be that the decoder  doesn't support readback. </p>
@@ -92,9 +92,9 @@ This page lists the error message that can result, and   describes what they mea
   </dd>
   <dt><strong>309 &#8212; Short Circuit on Programming Track</strong></dt>
   <dd>
-    <p> The command station has reported seeing a short circuit  on the programming track.  That prevents programming  operations.    </p>
+    <p> The command station has reported seeing a short circuit  on the programming track.  That prevents programming  operations.</p>
  
-    <p> Check the electrical connections to the programming track, and  also within the locomotive. </p>
+    <p> Check the electrical connections to the programming track, and  also within the locomotive.</p>
   </dd>
  <dt><strong>310 &#8212; Sequence Error</strong></dt>
  <dd>
@@ -102,15 +102,17 @@ This page lists the error message that can result, and   describes what they mea
         before it should have.</p>
  
   <p> This is an unusual error, which might indicate that you've selected the wrong command station type in the preferences. Check that.
-        If that's correct and it's still happening, ask for help on the JMRI users list. </p>
+        If that's correct and it's still happening, ask for help on the JMRI users list.</p>
  </dd>
-
 </dl>
+
 <hr>
-<div align=right>
+<div align="right">
 <p><a href="index.shtml#Error">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+  ,/
+</div>
 </body>
 </html>

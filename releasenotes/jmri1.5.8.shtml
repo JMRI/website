@@ -103,7 +103,7 @@
 
 <p>Fixed problem writing multiple CVs in ops mode on LocoNet (bug 1218980 and also feature request 1083398)
 
-<p>Fixed problem with Decoder Pro "read all panes" and "write all panes", which would only do the 1st pane (new in 1.5.7).  Also, fixed problem with certain errors during read/write of CVs not being retried.
+<p>Fixed problem with DecoderPro "read all panes" and "write all panes", which would only do the 1st pane (new in 1.5.7).  Also, fixed problem with certain errors during read/write of CVs not being retried.
 
 <p>Includes updates by Walter Thompson so that custom programmers aren't needed for certain decoders.
 

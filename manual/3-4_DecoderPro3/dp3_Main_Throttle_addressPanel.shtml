@@ -1,15 +1,16 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head><!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Main_Throttle.shtml 18167 2011-08-13 11:22:06Z dat7719 $ -->
-
-
-
-
-
-<title>DecoderPro Throttle</title><!-- Style --><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<html lang="en">
+<head>
+    <!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Main_Throttle.shtml 18167 2011-08-13 11:22:06Z dat7719 $ -->
+<title>DecoderPro Throttle</title>
+    <!-- Style -->
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
 <link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/"><!-- /Style --></head>
+<link rel="home" title="Home" href="/">
+    <!-- /Style -->
+</head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
@@ -18,8 +19,8 @@
 <div id="mainContent">
 
 <a name="Top"></a>
-<h1>DecoderPro3� Main Window</h1>
-<h1>JMRI� Throttle Window - Address Panel</h1>
+<h1>DecoderPro3&reg; Main Window</h1>
+<h1>JMRI&reg; Throttle Window - Address Panel</h1>
 
 <div align="right">
 <p><a href="dp3_Main_Throttle.shtml">Back </a></p>
@@ -35,8 +36,8 @@
 use is to identify the decoders address, and to Set, Dispatch or
 Release the identified address in your DCC Controller. Locomotive
 addresses may be entered by one of two methods: typed into text box or
-use drop-down list to select locomotive from your roster. .&nbsp; If
-you&nbsp; have added<strong> <a href="Adv_FunctionLabel.shtml">Function labels</a></strong><a href="Adv_FunctionLabel.shtml">,</a> to your Roster, the label text from the Roster will be displayed  on the throttle function buttons.</p>
+use drop-down list to select locomotive from your roster. If
+you have added<strong> <a href="Adv_FunctionLabel.shtml">Function labels</a></strong><a href="Adv_FunctionLabel.shtml">,</a> to your Roster, the label text from the Roster will be displayed  on the throttle function buttons.</p>
       <p>Click on the
         <input name="button" id="button" value="Set" type="submit">
         to  send the address to your system to  make this throttle active for the selected locomotive..</p>
@@ -59,8 +60,6 @@ active when roster entry is used to select the address for the throttle.</p>
   <div align="right"><a href="#Top"></a></div>
 </div>
 
-<div> </div>
-<div> </div>
 <hr>
 
 <div align="right">
@@ -68,4 +67,6 @@ active when roster entry is used to select the address for the throttle.</p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div></body></html>
+</div>
+</body>
+</html>

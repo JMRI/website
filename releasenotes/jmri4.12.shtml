@@ -151,7 +151,7 @@ These may be relevant to you if you're updating from a version earlier than JMRI
 
 <p><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
     The system connection preferences (i.e. hardware preferences) are now
-    enforcing the <A href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
+    enforcing the <a href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
     for system prefixes:  One upper case letter, 
     optionally followed by a number (one or more digits, e.g. "L12").
     Existing prefixes in existing configurations are unchanged, but
@@ -272,18 +272,17 @@ check the files against the checksums shown below.
 These are development files, and might not be working at any particular time.</p>
  -->
 
-
 <h2>Changes since <a href="jmri4.10.shtml">production release 4.10</a>:</h2>
 
 <p>The full lists of changes in each of the preceding test releases 
-(<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.1+">4.11.1<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.2+">4.11.2<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.3+">4.11.3<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.4+">4.11.4<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.5+">4.11.5<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.6+">4.11.6<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.7+">4.11.7<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.8+">4.11.8<a>)
+(<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.1+">4.11.1</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.2+">4.11.2</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.3+">4.11.3</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.4+">4.11.4</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.5+">4.11.5</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.6+">4.11.6</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.7+">4.11.7</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.8+">4.11.8</a>)
 are available in our 
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.</p>
 
@@ -291,7 +290,7 @@ are available in our
 
         <ul>
           <li>The system connection preferences (i.e. hardware preferences) are now
-                enforcing the <A href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
+                enforcing the <a href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
                 for system prefixes:  One upper case letter, 
                 optionally followed by a number (one or more digits, e.g. "L12").
                 Existing prefixes in existing configurations are unchanged, but
@@ -374,13 +373,13 @@ are available in our
         <h4>ESU</h4>
             <ul>
                 <li>Direction changes when running at speed no longer set speed to zero. For further information see:
-                    <a href="https://github.com/JMRI/JMRI/pull/4945">PR-4945, 
+                    <a href="https://github.com/JMRI/JMRI/pull/4945">PR-4945</a>,
                     <a href="https://github.com/JMRI/JMRI/pull/4964">PR-4964</a>, and 
                     <a href="https://github.com/JMRI/JMRI/pull/4965">PR-4965</a>.
                 </li>
                 <li>Karl Lisby added Ops-mode programming (POM - Programming on Main) for ECoS firmware version 4.2.3</li>
             </ul>
-            
+
         <h4>LocoNet</h4>
             <ul>
                 <li>Fixed a problem where fast clock messages would sometimes change track power settings.</li>
@@ -447,19 +446,20 @@ are available in our
                 <li>Egbert Broerse improved the documentation</li>
             <li>There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
                 <ul>
-                <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
-                <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
-                <li>Do not open the SPROG console window</li><br>
-                <li>Disable power conversion (CV 29) in all locos</li><br>
-                <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+                <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
+                <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><
+                <li>Do not open the SPROG console window</li>
+                <li>Disable power conversion (CV 29) in all locos</li>
+                <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
                 </ul>
             Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
-            open to inform the user of this. The track power will be turned off and must be turned on again using the power control.<br>
+            open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
             </li>
+            </ul>
 
         <h4>TAMS</h4>
             <ul>
-                <li>Jan Boen fixed a major bug in how Senors were handled</li>
+                <li>Jan Boen fixed a major bug in how Sensors were handled</li>
                 <li>Jan Boen improved the sensor handling</li>
             </ul>
 
@@ -469,19 +469,18 @@ are available in our
             </ul>
 
     <h3>New / Updated decoder definitions</h3>
-      <ul>
+        <ul>
             <li>Wouter from Thurgau, Schweiz added Dutch translations to the NMRA CV tabs</li>
-        <li>
+            <li>
             The use of
             <a href=
              "/help/en/html/apps/DecoderPro/CreateDecoderAdvanced.shtml#conditional"
             target="_blank">"include" and "exclude"</a>
             attributes is now possible with
             &lt;enumChoice&gt; and &lt;enumChoiceGroup&gt; elements.
-            (Dave Heap)
-        </li>
-        <li>Petr &#352;&#237;dlo fixed a bug on the PD/DIY UNI16ARD decoder definition</li>
-     </ul>
+            (Dave Heap)</li>
+            <li>Petr &#352;&#237;dlo fixed a bug on the PD/DIY UNI16ARD decoder definition</li>
+        </ul>
 
         <h4>BNM Hobbies</h4>
             <ul>
@@ -516,10 +515,10 @@ are available in our
                 <li>Ronald Kuhn and Dave Heap made improvements to the ESU V4 decoder definitions</li>
             </ul>
 
-         <h4><a href-"http://www.ldhtrenes.com.ar">LDH</a></h4>
+         <h4><a href="http://www.ldhtrenes.com.ar">LDH</a></h4>
             <ul>
                 <li>Osvaldo Hojvat provided definitions for several
-                    <a href-"http://www.ldhtrenes.com.ar">LDH</a>
+                    <a href="http://www.ldhtrenes.com.ar">LDH</a>
                     decoders: models 4F1.5 v27, 2F-7F v26, 4F1.5 v55 
                     and LDH 4F1.5 v55 Motor y Sonido </li>
             </ul>
@@ -796,7 +795,7 @@ are available in our
             <li>Chuck Catania added <a href="http:/jmri.org/resources/icons/USS/plate/base-plates/misc/">icons</a>
                 for CTC lock plates, switch heater plates, model board tower and stations.</li>
         </ul>
-    
+
     <h3>Roster</h3>
         <ul>
             <li>Digitrax Command Station Operations Switches may now be managed via a Roster entry.
@@ -846,7 +845,6 @@ are available in our
             See <a href="http://jmri.org/help/en/html/hardware/loconet/LocoNetClasses.shtml">LocoNetClasses
                 Help</a>.</li>
         </ul>
-
 
    <h3>Web Access</h3>
         <ul>
@@ -920,7 +918,7 @@ are available in our
                 was leaving some old libraries in place, 
                 which could result in problems when installing JMRI 4.11.1 through 
                 4.11.3 over older versions (as opposed to a remove-and-install)
-                on Windows. This didn't affect the macOS Linux versions. </li>
+                on Windows. This didn't affect the macOS Linux versions.</li>
         </ul>
 
    <!--#include virtual="/Footer.shtml" -->

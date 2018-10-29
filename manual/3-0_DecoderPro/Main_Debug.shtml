@@ -20,11 +20,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Debug Menu </h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Panels.shtml"> Previous</a> | <a href="Main_Window.shtml">Next </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -174,14 +174,16 @@
 <div>
   <div align="right"><a href="#memory">Back</a></div>
 </div>
-<h4>&nbsp;</h4>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Window.shtml"></a><a href="Main_Panels.shtml">Previous</a> | <a href="Main_Window.shtml">Next </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

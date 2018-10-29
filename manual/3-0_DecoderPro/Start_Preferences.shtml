@@ -30,7 +30,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 <h1>Getting Started with DecoderPro&reg;</h1>
 <h1>How do I set up my preferences?</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Start_DecoderPro.shtml">Previous</a>
 <p><a href="index.shtml#GettingStarted">Back to Index</a> </div>
 
@@ -40,11 +40,11 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
  Click on the Edit menu and then Preferences... option
 in the screen below, which opens the Preferences window. (This window may open automatically the first time you
 run the program.) 
-<p>As a first time user the most  important information is the <strong>Connections</strong> screen where you describe how the  computer will talk to the command station.&nbsp;  Most of rest you can leave at the initial or &ldquo;default&rdquo; settings until  you find a need to change things to suit your fancy.
+<p>As a first time user the most  important information is the <strong>Connections</strong> screen where you describe how the  computer will talk to the command station.  Most of rest you can leave at the initial or &ldquo;default&rdquo; settings until  you find a need to change things to suit your fancy.
 <p><strong>Most importantly, you must click  
   <input type="button" name="button9" id="button9" value="Save">
    to finalize your settings and then re-start the program to have them  take effect.</strong>
-<p>The Preferences window provides  access to the basic  configuration information to connect your computer to your DCC system.&nbsp; You will be using that system to  actually&nbsp; program and operate  trains equipped with DCC decoders. 
+<p>The Preferences window provides  access to the basic  configuration information to connect your computer to your DCC system. You will be using that system to  actually program and operate  trains equipped with DCC decoders.
 <p>The window is split into two panes, on the left side is a list of   preference groups that may be set. Clicking on one of the items opens   the options that may be set in the right side pane. No selection have been made
 <h1><img src="images/Preferences.png" width="755" height="432" alt="preferences"></h1>
 
@@ -265,11 +265,14 @@ removes the item from the Start Up sequence. All of the panes are of the same fo
   <input type="submit" name="button8" id="button8" value="Save">
 button to save all your selections.</h2>
 <h2 align="center">You must restart DecoderPro for preferences to take effect</h2>
+
 <hr>
-<div align=right>
+<div align="right">
 <p><a href="Start_DecoderPro.shtml">Previous</a>
 <p><a href="index.shtml#GettingStarted">Back to Index</a> </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

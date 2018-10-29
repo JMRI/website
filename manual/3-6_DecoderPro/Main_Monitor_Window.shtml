@@ -25,9 +25,9 @@ program and the layout hardware.</p>
 all traffic on the communications link.</p>
 <p>The Title bar will display the<em> name</em> of
 your DCC systems communications link.</p>
-<p align="center"><img style="width: 739px; height: 215px;" alt="monitor window" src="images/Main_MonitorWindow.png"><br>
+<p align="center"><img style="width: 739px; height: 215px;" alt="monitor window" src="images/Main_MonitorWindow.png">
 </p>
-<p align="left">&nbsp;</p>
+
 <p align="left">The messages that are sent and received
 over the communications link are displayed in the main pane of the
 window.</p>
@@ -52,9 +52,8 @@ Always displays the Monitor window.</p>
 scroll </span>-- Scrolls the data in the window continuously.</p>
 <p align="left"><span style="font-weight: bold;">Filter
 Bytes: <input size="40" name="c"></span>
-&nbsp; </p>
-<div class="nomenu" id="mBody">
-<div id="mainContent">
+</p>
+
 <dl>
 <dd> You can filter unwanted messages from the window by
 entering each message's first hex value into the "Filter Bytes" field.
@@ -64,8 +63,7 @@ example will suppress any messages whose raw data starts with "B0",
 "D0" or "CC" You can determine the available hex values by turning on
 "Show raw data." </dd>
 </dl>
-</div>
-</div>
+
 <p align="left"><span style="font-weight: bold;">Choose
 log file </span>button -- Log monitor data to a file for
 recovery for diagnostics, and sharing data with others.</p>
@@ -73,7 +71,7 @@ recovery for diagnostics, and sharing data with others.</p>
 logging </span>button -- Starts sending data in <span style="font-weight: bold;">Monitor Window</span> to
 selected file.</p>
 <h4 align="left"><span style="font-weight: normal;"><span style="font-weight: bold;">Stop logging</span> button
--- &nbsp;Stops sending data &nbsp;in <span style="font-weight: bold;">Monitor Window</span> to
+-- Stops sending data in <span style="font-weight: bold;">Monitor Window</span> to
 selected file.</span><br>
 </h4>
 <h4 style="font-weight: normal;" align="left">Logging
@@ -98,14 +96,17 @@ on the monitor window.</li>
 <li>When done, click the <strong>Stop logging</strong>
 button to store the data and close the file.</li>
 </ol>
-<h4>Adding Message&nbsp;</h4> button&nbsp;<input size="50" name="v">
+<h4>Adding Message</h4> button&nbsp;<input size="50" name="v">
 <p>Type your message in the Add Messge text box, then clidk on
 the <strong>Add Message</strong> button to add your
 message to the log file.</p>
-<p align="left">&nbsp;</p>
+
 <hr>
-<div style="text-align: right;"><p><a href="Main_LocoNet.shtml">Back</a></p><a href="dp3_menubar.shtml">Back to Index</a></div>
-<div align="right"> </div>
-<!--#include virtual="/Footer.shtml" -->
+<div style="text-align: right;"><p><a href="Main_LocoNet.shtml">Back</a></p><a href="dp3_menubar.shtml">Back to Index</a>
 </div>
-</body></html>
+
+<!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
+</body>
+</html>

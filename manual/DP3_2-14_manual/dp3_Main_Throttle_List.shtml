@@ -20,11 +20,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro3&reg; Main Window</h1>
 <h1>JMRI&reg; Throttle Window - Local JMRI&reg; Throttles</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_Main_Throttle.shtml">Back </a></p>
 </div>
 
@@ -54,17 +54,14 @@
   </tr>
 </table>
 
-<p>&nbsp;</p>
-<div>
-  <div align="right"></div>
-</div>
-<div> </div>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_Main_Throttle.shtml">Back </a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

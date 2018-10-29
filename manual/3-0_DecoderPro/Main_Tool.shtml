@@ -24,7 +24,7 @@
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Tools Menu </h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Edit.shtml">Previous | </a><a href="Main_Roster.shtml">Next</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -177,11 +177,13 @@
 <p align="center"><img src="images/Main_Debug03.png" width="428" height="70" alt="mini server"></p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Roster.shtml"></a><a href="Main_Edit.shtml">Previous | </a><a href="Main_Roster.shtml">Next</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

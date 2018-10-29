@@ -20,11 +20,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro3&reg; Main Window</h1>
 <h1>Menu bar</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_Main_Main.shtml">Main Window</a></p>
 </div>
 
@@ -245,15 +245,15 @@
     <li><a href="dp3_Main_TurnoutControl.shtml"><strong>Turnout Control</strong></a></li>
     <li>Power Control
       <br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/Main_04_PwrCntr.png" width="207" height="114" alt="power"></li>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/Main_04_PwrCntr.png" width="207" height="114" alt="power"></li>
     <li><strong><a href="dp3_Main_Speedometer.shtml">Speedometer</a></strong></li>
     <li><a name="Single"></a><a href="Programmer_SingleCV.shtml"><strong>Single CV Programmer</strong></a><br>
       <br>
       <img src="images/separator.png" width="340" height="4" alt="s"></li>
     <li>Start WiThrottle Server<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/dp3_WiThrottle.png" width="321" height="267" alt="wi Throttle"></li>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/dp3_WiThrottle.png" width="321" height="267" alt="wi Throttle"></li>
     <li>Start  Web Server<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      <img src="images/dp3_mimiServer.png" width="414" height="70" alt="mini server"><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/dp3_mimiServer.png" width="414" height="70" alt="mini server"><br>
       <img src="images/separator.png" width="340" height="4" alt="s"></li>
     <li><strong>Recreate Roster Index</strong><br>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recreates the Roster Index when adding new XML roster files.</li>
@@ -278,7 +278,7 @@
     <li><a href="Main_CMRI.shtml">CMRI</a></li>
     <li><a href="Main_EasyDCC.shtml">EasyDCC</a></li>
     <li><a href="Main_GrapeVine.shtml">Grapevine</a></li>
-    <li><a href="Main_LocoNet.shtml">LocoNet </a>&nbsp;&nbsp;&nbsp;</li>
+    <li><a href="Main_LocoNet.shtml">LocoNet</a></li>
     <li><a href="Main_NCE.shtml">NCE</a></li>
     <li><a href="Main_OakTreeSystems.shtml">OakTreeSystems</a></li>
     <li><a href="Main_Powerline.shtml">Powerline</a></li>
@@ -328,8 +328,9 @@
     <img src="images/dp3_About.png" width="255" height="333" alt="about"></li>
   </ul>
 </ul>
-<div align=right><a href="dp3_Main_Main.shtml">Main Window</a> </div>
+<div align="right"><a href="dp3_Main_Main.shtml">Main Window</a> </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

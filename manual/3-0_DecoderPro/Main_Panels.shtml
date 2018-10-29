@@ -20,11 +20,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Panels Menu </h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Roster.shtml">Previous | </a><a href="Main_Menu.shtml#System">Next</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -67,7 +67,7 @@ DecoderPro main window that allows access to some of the PanelPro functions.</p>
 <blockquote>
   <p>Opens the <strong>Find desired script file</strong> dialog, you can select the script that you would like to open.</p>
 </blockquote>
-<p><strong><a name="Thead"></a>Thread Monitor</strong></p>
+<p><strong><a name="Thread"></a>Thread Monitor</strong></p>
 <blockquote>
   <p>Opens the <a href="#ThreadMonitor">Thread Monitor</a> pane.</p>
 </blockquote>
@@ -84,7 +84,6 @@ DecoderPro main window that allows access to some of the PanelPro functions.</p>
   <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 <hr>
-
 
 <h4><a name="PanelEditor"></a> Panel and Panel Editor</h4>
 <table width="90%" border="0" align="center" cellpadding="1" cellspacing="1">
@@ -109,16 +108,18 @@ DecoderPro main window that allows access to some of the PanelPro functions.</p>
 <h4 align="left"><a name="ThreadMonitor"></a>Thread Monitor</h4>
 <p align="center"><img src="images/Main_PanelMenu_04.png" alt="Thread Monitor" width="461" height="477" border="4"></p>
 <div>
-  <div align="right"><a href="#Thead">Back</a></div>
+  <div align="right"><a href="#Thread">Back</a></div>
 </div>
-<p align="center">&nbsp;</p>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Debug.shtml"></a><a href="Main_Roster.shtml">Previous | </a><a href="Main_Operations.shtml">Next</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

@@ -5,7 +5,7 @@
  <title>
  JMRI: Release Notes for 4.11.9
  </title>
-    <meta content="Bob Jacobsen" name="author">
+    <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.11.9 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!--#include virtual="/Style.shtml" -->
@@ -58,7 +58,7 @@ see our
 JMRI was updated in JMRI 4.7.4 to use a new serial library. Depending on your exact
 circumstances, you may need to do some migrations:
 <ul>
-    <li>If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
+    <li>If you are using JMRI on Linux or macOS and are updating from an older JMRI version,
         <em>you must open the JMRI preferences and make sure that the selections are 
         correct for your serial device(s).</em> Be sure to save the changes.
         <p>
@@ -108,7 +108,7 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-<li><None
+    <li>None</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -154,18 +154,18 @@ These may be relevant to you if you're updating from an earlier version.
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
     <ul>
-        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
-        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
-        <li>Do not open the SPROG console window</li><br>
-        <li>Disable power conversion (CV 29) in all locos</li><br>
-        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
+        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li>
+        <li>Do not open the SPROG console window</li>
+        <li>Disable power conversion (CV 29) in all locos</li>
+        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
     </ul>
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
 
 <p><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
     The system connection preferences (i.e. hardware preferences) are now
-    enforcing the <A href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
+    enforcing the <a href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
     for system prefixes:  One upper case letter, 
     optionally followed by a number (one or more digits, e.g. "L12").
     Existing prefixes in existing configurations are unchanged, but
@@ -330,7 +330,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>Jan Boen improved the sensor handling</li>
             </ul>
 
-        <a id="LE" name="LE"/>
+        <a id="LE" name="LE"></a>
         <ul>
             <li>
                 Fix to Layout Editor's Track Drawing Options window.
@@ -339,10 +339,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             
             
     <h3>Control Panel Editor</h3>
-	        <li>Fixed a problem when selecting Sensors, Turnouts and other 
+	    <ul>
+            <li>Fixed a problem when selecting Sensors, Turnouts and other
 	            items to add to a Control Panel Editor panel after sorting the items.
             </li>
- 
+        </ul>
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->

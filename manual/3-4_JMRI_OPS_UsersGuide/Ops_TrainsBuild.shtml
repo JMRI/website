@@ -1,22 +1,22 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head><!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Ops_Trains.shtml 18290 2011-08-25 09:06:42Z dat7719 $ -->
-
-
-
-
-
-<title>Operations-Build Trains</title><!-- Style --><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<html lang="en">
+<head>
+<title>Operations-Build Trains</title>
+<!-- Style -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
 <link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/"><!-- /Style --></head>
+<link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
 <body>
 <!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<h1>Using JMRI� to Operate Trains</h1>
+<h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Trains Build</h1>
 
 <div align="right">
@@ -50,14 +50,14 @@ in charge of a yard or a location with many spurs or industries.</p>
   <input name="button18" id="button19" value="Print" type="submit"> 
   or 
   <input name="button52" id="button52" value="Preview" type="button">
-  .</p><p>You may select the &nbsp;Action that you want to perform on &nbsp;all trains that are selected.</p><p><img style="width: 422px; height: 126px;" alt="action" src="images/Ops_Trains_action.png">
+  .</p><p>You may select the Action that you want to perform on all trains that are selected.</p><p><img style="width: 422px; height: 126px;" alt="action" src="images/Ops_Trains_action.png">
 </p>
 <p><img style="width: 1016px; height: 146px;" alt="Trains build" src="images/Ops_TrainsBuild01.png"><br></p>
 <p>If you want to review how the train was built,  select the
   <input name="checkbox5" id="checkbox5" checked="checked" type="checkbox">
   <strong>Build Reports</strong> before pressing
   <input name="button19" id="button20" value="Preview" type="submit">
-  for the desired train.&nbsp;</p><p><img style="width: 635px; height: 148px;" alt="trains build" src="images/Ops_trainsBuild03.png"></p><p>If the
+  for the desired train.</p><p><img style="width: 635px; height: 148px;" alt="trains build" src="images/Ops_trainsBuild03.png"></p><p>If the
   <input name="checkbox5" id="checkbox6" checked="checked" type="checkbox">
   <strong>Preview Manifest </strong>is  selected, the program will generate the build report and manifest and  present them in preview windows.</p>
 <p><img style="width: 319px; height: 126px;" alt="trains build" src="images/Ops_TrainsBuild02.png"><br></p>
@@ -83,7 +83,7 @@ disable this feature deselect the checkbox <input name="checkbox5" id="checkbox8
   <a href="Ops_ManifestPreview.shtml">Preview Manifest</a> press
   <input name="button24" id="button25" value="Preview" type="submit">
   and the Train Manifest is displayed using your system printer's preview window.</p>
-<p>&nbsp;</p>
+
 <p>With
   <input name="checkbox6" id="checkbox10" checked="checked" type="checkbox">
   <strong>Preview Manifest</strong>,
@@ -158,11 +158,13 @@ dropped, the program increments a count associated with that location.
 The program tries to move cars to locations that have experienced the
 least number of car operations.</p>
 <hr>
-<p>&nbsp;</p>
+
 <div align="right">
 <p><a href="Ops_Trains.shtml">Back</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div></body></html>
+</div>
+</body>
+</html>

@@ -20,11 +20,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro3&reg; Comprehensive Programmer</h1>
 <h1>Advanced Features Pane</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_Consist.shtml">Previous | </a>
   <a href="Comp_SoundFX.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
@@ -42,15 +42,17 @@ Loconet.
 <p>There  may be one or several of these panes, depending on how complex the decoder  programming is and the style of the person who wrote the definition file for  your particular decoder.
 
 <h1><img src="images/Comp_08_Advanced.png" width="923" height="800" alt="Advanced pane"></h1>
-<p>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_SoundFX.shtml"></a>
   <a href="Comp_Consist.shtml">Previous | </a> <a href="Comp_SoundFX.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

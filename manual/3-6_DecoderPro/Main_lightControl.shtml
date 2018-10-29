@@ -3,8 +3,9 @@
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
 <!-- $Id: Main_lightControl.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<TITLE>DecoderPro&reg; Tool Menu</TITLE>
-
+<title>
+  DecoderPro&reg; Tool Menu
+</title>
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
@@ -23,7 +24,7 @@
 <h1>Tool Menu</h1>
 <h1>Light Control</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml#Light">Back </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -56,11 +57,13 @@
 <p><strong>Off</strong> button turns off the light.</p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml#Light">Back </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

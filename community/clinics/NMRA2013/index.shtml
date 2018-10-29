@@ -2,12 +2,13 @@
 <!-- $Id: index.shtml,v 1.2 2011-07-10 20:29:42 jacobsen Exp $ -->
 <html lang="en">
 <head>
- <TITLE>JMRI: NMRA 2013 Clinics</TITLE>
-    <META content="Bob Jacobsen" name="Author">
-    <META name="keywords" content="clinics java model railroad JMRI CMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+ <title>JMRI: NMRA 2013 Clinics</title>
+    <meta name="author" content="Bob Jacobsen">
+    <meta name="keywords"
+       content="clinics java model railroad JMRI CMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -18,8 +19,12 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+<hr class="hide">
 
-<H2>JMRI: NMRA 2013 Clinics</H2>
+<div class="nomenu" id="mBody">
+    <div id="mainContent">
+
+<h2>JMRI: NMRA 2013 Clinics</h2>
 
 <a href="http://www.nmra2013.org/">
 <img src="http://www.nmra2013.org/sites/all/themes/nmra2013_flex/logo.png" alt="Convention logo" align="right" ></a>
@@ -53,9 +58,7 @@ More information on the convention can be found on the
 
    <!--#include virtual="/Footer.shtml" -->
 
-
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

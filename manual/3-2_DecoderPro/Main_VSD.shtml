@@ -3,9 +3,9 @@
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
 <!-- $Id: Main_VSD.shtml 18193 2011-08-16 23:19:17Z dat7719 $ -->
-<TITLE>
+<title>
 DecoderPro&reg; Main Window
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -25,7 +25,7 @@ DecoderPro&reg; Main Window
 <h1>DecoderPro&reg; Debug Menu</h1>
 <h1>Virtual Sound Decoder</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Debug.shtml#pricom">Back </a></p>
 </div>
 
@@ -105,10 +105,9 @@ throttles include:</p>
 </ul>
 <p>*Support for these systems is expected but not confirmed.  If you
 have one of these systems and can confirm that VSD responds to
-throttle changes, please mention this on the <a href="http://groups.yahoo.com/group/jmriusers/">JMRIUsers
-Yahoo! Group</a>
+throttle changes, please mention this on the JMRI Users group.
 <p>Notably missing from this list is the popular NCE PowerCab
-system.</li>
+system.</p>
 <p>VSD is <strong>not</strong> compatible with the following systems
 because they do not send throttle information to JMRI.</p>
 <ul>
@@ -139,8 +138,7 @@ supports the following tracking systems:
 
 <p>If you have one of the systems noted as "not tested", and would like
 to help with testing and debug of this feature, please contact me on
-the <a href="http://groups.yahoo.com/group/jmriusers/">JMRIUsers
-Yahoo! Group</a>.  More systems will be added in the future.</p>
+the JMRI Users group. More systems will be added in the future.</p>
 <p>For details on setting up Location Following, see the <a
 href="VSD_LocationsMgr.shtml">Manage VSD Locations</a> instructions.</p>
 
@@ -181,10 +179,10 @@ available to any currently running or newly launched VSDecoder.</p>
 <h6>Edit->VSDecoder Preferences</h6>
 <p>Set preferences for VSDecoder operation.  See below for details.</p>
 
-
 <a name="preferences"></a><h4>VSDecoder Preferences</h4>
 <p>The VSDecoder Preferences pane allows the user to change various
 preferences in how the VSDecoder works.</p>
+
 <h5>Auto Start Engine</h5>
 <p>If checked, the Engine sounds will react immediately to Throttle
 changes, without the Engine Start button first having to be
@@ -193,6 +191,7 @@ pressed.</p>
 <p>If checked, the VSD File listed in the Default VSD File Path field
 will be automatically loaded on start-up.  This can save a step for
 frequently used VSD Files.</p>
+
 <h5>Listener Position</h5>
 These entries allow the Listener Position to be set relative to the
 user-chosen Origin of the sound field.  This allows you to place the
@@ -203,12 +202,11 @@ or of the room.
 <p> Choose Apply to apply changes to the Preferences</p>
 <p> Choose Save to save changes to the Preferences</p>
 
-
-
-<div align=right>
+<div align="right">
 <p><a href="Main_Debug.shtml#pricom">Back </a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

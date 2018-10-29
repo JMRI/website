@@ -21,10 +21,10 @@
 <h1>Installing JMRI on Raspbian</h1>
 
 <ul class="snav"><!-- TOC -->
-<li><a href="#prebuilt_image">PreBuilt Image</a>
-<li><a href="#installation">Installation</a>
-<li><a href="#startup">Starting JMRI</a>
-<li><a href="#notes">Notes</a>
+	<li><a href="#prebuilt_image">PreBuilt Image</a>
+	<li><a href="#installation">Installation</a>
+	<li><a href="#startup">Starting JMRI</a>
+	<li><a href="#notes">Notes</a>
 </ul>
 
 <p class="important">These instructions describe the installation of JMRI
@@ -33,18 +33,18 @@ on a Raspberry Pi system running the Raspbian OS. There's also a Install help pa
 Raspbian is based on Debian and is recognized as being a very user friendly distribution.<br>
 JMRI installation consists of two stages: install Java and install JMRI.
 
-<a id="prebuilt_image"/>
+<a id="prebuilt_image"></a>
 <h2>Pre-Built Image Available</h2>
 <ul>
-  <li>A free RaspberryPi image, completely configured with JMRI, auto-identify logic for many popular DCC systems, and its own wifi access point, is available for download <a href="https://mstevetodd.com/rpi" target=_new>[here]</a>.
+  <li>A free RaspberryPi image, completely configured with JMRI, auto-identify logic for many popular DCC systems
+  and its own wifi access point, is available for download <a href="https://mstevetodd.com/rpi" target=_new>[here]</a>.
 </ul> 
 
-<a id="installation"/>
+<a id="installation"></a>
 <h2>Installation Steps</h2>
 
-	<ol>
-	<li>Determine if your system software supports JMRI:</li>
-	
+<ol>
+	<li>Determine if your system software supports JMRI:
 	<a name="sysreq"></a><h3>JMRI System Requirements</h3>
 	<p>These instructions deal with installing
 	JMRI on a <a href="https://www.raspberrypi.org/products/raspberry-pi-2-model-b/">Raspberry Pi model 2 B</a> running the latest Raspbian OS.</p>
@@ -82,19 +82,19 @@ JMRI installation consists of two stages: install Java and install JMRI.
 	Some messages will appear and when the prompt returns, type 
 	<code>sudo apt-get update</code>. 
 	The update command might take a few minutes to complete. This insures you have the latest version of Raspbian and any included software.<br>
-	Since Java is already installed, the next step is to install JMRI.
+	Since Java is already installed, the next step is to install JMRI.</p></li>
 		
   <li>Depending on how your Pi is set up, you might need to install <strong>Java</strong>:
 	<p>For current JMRI releases (version 3.10 and up) you need "Java 8" or "Java 1.8". Raspbian Jessy already has a suitable Java Runtime (Oracle 1.8) as part of the distribution.
 	<p>To check which Java version is installed, open LXTerminal window and type 'java -version'. This will return something like:
 	<pre>Java 1.x</pre>
 	<p>If it is not at least 1.8, or if you get a "java: not found" error, you will need to install Java from the repositories or <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">java.com</a>.</p>
-	<p>[please report exact instructions to update Java]</p>
+  <p>[please report exact instructions to update Java]</p></li>
 
-  <li>Get the JMRI software...</li>
-	<p><a href="http://jmri.org/download/index.shtml">Download JMRI</a> (choose the Linux edition).</p>
+  <li>Get the JMRI software...
+	<p><a href="http://jmri.org/download/index.shtml">Download JMRI</a> (choose the Linux edition).</p></li>
 
-  <li>...and install it.</li>
+  <li>...and install it.
 	<p>
 	Uncompress/untar the file your download. Double click on the .tgz file to open the Tar, then click Extract. This will create a new "JMRI" folder.
 	<p class="note">Each JMRI release is an independent set of files: It's intended to be used as a whole. Each release provides new files, and sometimes removes old files. You should therefore not expand the download into the same place as an existing JMRI installation. Instead, expand it into a separate location, and move in to it's final destination, completely replacing any previous version of JMRI.
@@ -104,28 +104,31 @@ JMRI installation consists of two stages: install Java and install JMRI.
 	<p>JMRI 3.10.1 did not, which required some startup script changes as the Pi2 runs an ARM7 processor. An installation script
 	was written by Matthew Macdonald-Wallace to modify certain libraries so that JMRI would run.
 	He provides a <a href="https://github.com/proffalken/JMR-Pi">Pi install script</a> on GitHub.</p>
-		
-	<a id="rxtx">
-	<li>Copy RxTx</li></a>
+	</li>
+
+	<a id="rxtx"></a>
+	<li>Copy RxTx
 	<p>Matt Harris reported July 2015: The comms libraries fix is no longer necessary with JMRI development releases 3.11.1 and up as the Linux start-up script has been updated to better detect the ARM architecture. Move on to step 7.</p> 
 	
 	<p>The RxTx library used to be a problem requiring modifications to enable JMRI to run. JMRI requires a package called RXTXcomm.
 	The version that was included with JMRI 3.5 and earlier did not work on the Raspberry Pi.
 	So, if you are using or updating a version of JMRI prior to 3.8 then the RxTx library in JMRI must be
- replaced by the original. There is a script to do this in the JMRI users Yahoo group "Files" area if you wish to run JMRI 3.8 on Raspbian 3.18 Wheezy. Since JMRI version 3.8 this is no longer required.</p>
+ replaced by the original. There is a script to do this in the JMRI Users group "Files" area if you wish to run JMRI
+	3.8 on Raspbian 3.18 Wheezy. Since JMRI version 3.8 this is no longer required.</p>
 	
 	<p>The following script will fix the PanelPro etc. comms libraries not working due to incorrectly recognized processor. Type: 
 		<code>sudo cp -v /opt/JMRI/lib/linux/armv6l/* /opt/JMRI/lib/linux/armv7l/</code>
 		Note that this step is no longer required on a fresh install of JMRI 3.8 and up.
-		
+	</li>
+
   <li>Installation is complete.</li>
-	</ol>
+</ol>
 
 <a id="startup"></a><h2>Starting JMRI</h2>
 <p>Connect your computer to your <a
    href="../help/en/html/hardware/index.shtml">Command Station hardware</a>.
   
-  <p>To start JMRI using the CLI open LXTerminal and enter: 
+<p>To start JMRI using the CLI open LXTerminal and enter:
 <pre>cd /opt/JMRI</pre> followed by either
 <pre>./PanelPro 
 ./DecoderPro</pre>
@@ -195,20 +198,21 @@ on the PI for this to work. See <code>raspi-config</code>
   </dl>
   <p>The JMRI <a href="http://jmri.org/help/en/html/hardware/index.shtml">Hardware help page</a> lists the various types of layout equipment that JMRI can connect to, and gives links to instruction pages. Go there next to complete your setup.</p>
   
-</a><h3>Errors</h3>
-<p>If you have any problems, get back to the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group.</p>
+<h3>Errors</h3>
+<p>If you have any problems, get back to the <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io.</p>
 
 <a name="documentation"></a><h2>Documentation</h2>
 <h3>JMRI Help</h3>
-<li><a href="https://groups.yahoo.com/neo/groups/jmriusers/files/Raspberry%20Pi/">JMRI Users Raspberry Pi Files area (member login required)</a>
+<a href="https://groups.yahoo.com/neo/groups/jmriusers/files/Raspberry%20Pi/">JMRI Users Raspberry Pi Files area (member login required)</a>
 <h3>Third Party info</h3>
-<li><a href="https://www.raspberrypi.org/help/">Raspberrypi.org online Help</a>.</p>
+<a href="https://www.raspberrypi.org/help/">Raspberrypi.org online Help</a>.</p>
 
-<p>(Rev 4.2, updated 21 Jan 2016 based on tips from [1] <a id="suzie">Suzie Tall</a>, [2] <a id="dave">Dave Sand</a>, [3] <a id="scott">Scott Jay</a> and [4] <a id="david">David McMorran<a>).
+<p>(Rev 4.2, updated 21 Jan 2016 based on tips from [1] <a id="suzie">Suzie Tall</a>, [2] <a id="dave">Dave Sand</a>,
+[3] <a id="scott">Scott Jay</a> and [4] <a id="david">David McMorran</a>).
 </p>
 
 <!-- /Footer -->
     </div><!-- closes #mainContent-->
-  </div> <!-- closes #mBody-->
+  </div> <!-- closes #mBody, started in sidebar->
 </body>
 </html>

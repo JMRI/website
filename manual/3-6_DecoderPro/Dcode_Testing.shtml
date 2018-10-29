@@ -1,11 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head><!-- Copyright ($Author: zoo $) 2009 --><!-- $Id: Dcode_Testing.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-
-
-
-
-
-<title>Decoder Definition</title><!-- Style --><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<html lang="en">
+<head>
+    <!-- Copyright ($Author: zoo $) 2009 --><!-- $Id: Dcode_Testing.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
+<title>
+    Decoder Definition
+</title>
+    <!-- Style -->
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
 <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -34,19 +35,18 @@
 you'll get a completely incomprehensible error message. About the only
 useful part of that message is the line number. Re-open the editor to
 that line and try to see what's wrong with the syntax. </p>
-<p>Once you have a decoder definition file that checks out&nbsp; for
-syntax, you need to try it in DecoderPro.&nbsp; &nbsp;Your new file
+<p>Once you have a decoder definition file that checks out  for
+syntax, you need to try it in DecoderPro. Your new file
 should copied into the jmri decoders folder (windows C:\Program
 Files\JMRI\xml\decoders).</p>
 <ul>
   <li>Now start up DecoderPro, and open the <a href="Main_Debug.shtml">Debug menu</a>. Select the <strong>Recreate Decoder Index </strong>option. </li>
-  <li>The
-computer will run for a minute or two with the selection highlighted.
+  <li>The computer will run for a minute or two with the selection highlighted.
 As soon as that goes away, the new decoder index should be created and
 your new definition should be available to use.</li>
 </ul>After including in your decoder definitions for DecoderPro&reg;
-&nbsp;you will want to test the definition on an actual decoder
-installation using the Programmers available to you. &nbsp;When
+ you will want to test the definition on an actual decoder
+installation using the Programmers available to you.  When
 satisfied that it works as expected, then follow the next step.
 <p>When you are happy with your definition, you&#8217;ll probably want to
 share it with the JMRI world, so next we&#8217;ll look at submitting the
@@ -59,4 +59,7 @@ definition to JMRI for inclusion in the next release.</p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div></body></html>
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
+</body>
+</html>

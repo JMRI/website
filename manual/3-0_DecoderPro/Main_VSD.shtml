@@ -3,9 +3,9 @@
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
 <!-- $Id: Main_VSD.shtml 18193 2011-08-16 23:19:17Z dat7719 $ -->
-<TITLE>
+  title<title>
 DecoderPro&reg; Main Window
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -25,7 +25,7 @@ DecoderPro&reg; Main Window
 <h1>DecoderPro&reg; Debug Menu</h1>
 <h1>Virtual Sound Decoder</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Debug.shtml#pricom">Back </a></p>
 </div>
 
@@ -37,7 +37,7 @@ satisfied with the hardware sound decoder options in smaller scales)
 to enjoy throttle-controlled locomotive sounds from their computer
 speakers.</span></p>
 <h4>How it works</h4>
-<p><span id="product-desc">Locomotive sound "Profiles" are stored in a file
+<p>Locomotive sound "Profiles" are stored in a file
 called a "VSD File".  When the Virtual Sound Decoder ("VSDecoder" or
 "VSD") is launched, the user chooses the desired Profile, and then
 assigns the VSDecoder an address.  When the operator then controls the engine by
@@ -45,7 +45,7 @@ pressing function buttons or changing the speed on his throttle of
 choice (hardware, software or smartphone), the Virtual Sound
 Decoder responds just like a hardware sound decoder installed in the
 locomotive would by playing sounds through the computer
-speakers.</span></p>
+speakers.</p>
 <h4>OpenAL Required</h4>
 <p>Virtual Sound Decoder requires that your system have the OpenAL
 audio lbirary installed.  OpenAL is included by default on the Mac, but
@@ -106,8 +106,7 @@ throttles include:</p>
 </ul>
 <p>*Support for these systems is expected but not confirmed.  If you
 have one of these systems and can confirm that VSD responds to
-throttle changes, please mention this on the <a href="http://groups.yahoo.com/group/jmriusers/">JMRIUsers
-Yahoo! Group</a>
+throttle changes, please mention this on the JMRI Users group.</a>
 <p>Notably missing from this list is the popular NCE PowerCab
 system.</li>
 <p>VSD is <strong>not</strong> compatible with the following systems
@@ -140,8 +139,7 @@ supports the following tracking systems:
 
 <p>If you have one of the systems noted as "not tested", and would like
 to help with testing and debug of this feature, please contact me on
-the <a href="http://groups.yahoo.com/group/jmriusers/">JMRIUsers
-Yahoo! Group</a>.  More systems will be added in the future.</p>
+the JMRI Users group</a>.  More systems will be added in the future.</p>
 <p>For details on setting up Location Following, see the <a
 href="VSD_LocationsMgr.shtml">Manage VSD Locations</a> instructions.</p>
 
@@ -205,12 +203,12 @@ or of the room.
 <p> Choose Apply to apply changes to the Preferences</p>
 <p> Choose Save to save changes to the Preferences</p>
 
-
-
-<div align=right>
+<div align="right">
 <p><a href="Main_Debug.shtml#pricom">Back </a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

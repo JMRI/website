@@ -20,17 +20,17 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro3 Advanced Feature</h1>
 <h1>Function Labels Pane</h1>
 
-<div align=right>
+<div align="right">
   <p><a href="index.shtml">Back to Index</a></p>
 </div>
 
 <hr>
 <p>This pane is opened from the button the DecoderPro3 main window.</p>
-<p>This  pane is more than a scratch pad to keep track of what happens when function  buttons are pushed.&nbsp; It also interacts  with the <a href="Main_Throttle.shtml">JMRI throttle</a>. </p>
+<p>This  pane is more than a scratch pad to keep track of what happens when function  buttons are pushed. It also interacts  with the <a href="Main_Throttle.shtml">JMRI throttle</a>. </p>
 <p wrap="">The <strong>Function Label</strong>s Tab makes settings for the Software Throttles within JMRI.  Primarily the on-screen throttles, but some of the settings are mirrored on smart-phones (iPhone/Android) using the WiThrottle interface.</p>
 <p>When you  use the roster pull-down on the JMRI throttle to select a loco from your  roster, the function buttons will be marked with the descriptions you have  entered for those functions in this pane. </p>
 <p>In this example, the Function keys on the Throttle will be labeled for the locomotives sounds and lighting functions.</p>
@@ -60,12 +60,14 @@
 <p>You  may also edit the function button text in the <strong><a href="dp3_Main_Throttle.shtml">JMRI Throttle</a></strong> and save those changes to the selected Roster entry. To use these changed entries in the future, make  sure you click on the
   <input type="submit" name="button" id="button" value="Save to Roster"> 
   to save these values into the Roster entry that is in use.
-<hr>
 
-<div align=right>
+<hr>
+<div align="right">
 <p><a href="Comp_LightFX.shtml"></a><a href="index.shtml">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer.shtml" -->
+  <!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

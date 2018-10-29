@@ -20,11 +20,11 @@
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Settings Window</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Start.shtml">Previous </a> | <a href="Ops_Locations.shtml">Next</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -33,42 +33,31 @@
 <h3>Menus</h3>
 <p><img src="images/Ops_Setting_tool_menu.png" width="900" height="199" alt="ops setting window"></p>
 
-
 <h3>Tools</h3>
   <ul>
     <li><strong name="OptionsMenu"><a name="OptionsMenu"></a>Options</strong></li>
 	    
     Opens the<a href="#Options"> Options </a>Window           
 	    
-	    
-	    
-	    
   <li><strong>Print Options</strong></li>
     Opens the <a href="Ops_PrintOptions.shtml">Print Options </a>Window
+
+    <li><strong>Backup</strong><br>
+    Opens the system <strong>Save </strong>dialog</li>
 	    
-	    
-	    
-    <li><strong>Backup</strong></li>
-    Opens the system <strong>Save </strong>dialog	  
-	    
-    <li><strong>Restore</strong></li>
-    Opens the system <strong>Open</strong> dialog
-	    
-	    
-	    
-    <li><strong>Load Demo Files</strong></li>
-	    
-    <p>Opens the <strong>Demo load successful </strong>dialog box</p>
-    <p> <img src="images/Ops_Setting03.png" alt="Demo load" width="409" height="122" align="baseline">
-      
-      
-      
-    </p>
-    <li><strong>Reset Databases</strong></li>
-	    
-    <p>Opens the <strong>Reset Databases </strong>dialog box</p>
-    <p><img src="images/Ops_Setting04.png" width="445" height="122" alt="reset database"></p>
+    <li><strong>Restore</strong><br>
+    Opens the system <strong>Open</strong> dialog</li>
+
+    <li><strong>Load Demo Files</strong><br>
+	Opens the <strong>Demo load successful </strong>dialog box
+    <p><img src="images/Ops_Setting03.png" alt="Demo load" width="409" height="122" align="baseline"></p>
+    </li>
+
+    <li><strong>Reset Databases</strong><br>
+    Opens the <strong>Reset Databases </strong>dialog box
+    <p><img src="images/Ops_Setting04.png" width="445" height="122" alt="reset database"></p></li>
   </ul>
+
 <h3>Operations</h3>
   <ul>
     <li><strong>Settings</strong>
@@ -77,14 +66,14 @@
       </blockquote>
     </li>
   
-    <li><strong>Locations</strong>    </li>
+    <li><strong>Locations</strong>
     <blockquote>
       <p>Opens <strong><a href="Ops_Locations.shtml">Locations</a></strong> window.</p>
-    </blockquote>
-    <li><strong>Cars</strong>    </li>
+    </blockquote></li>
+    <li><strong>Cars</strong>
     <blockquote>
       <p>Opens <strong><a href="Ops_Cars.shtml">Cars</a></strong> window.</p>
-    </blockquote>
+    </blockquote></li>
     <li><strong>:Locomotives</strong>
       <blockquote>
         <p>Opens <strong><a href="Ops_Engines.shtml">Locomotives</a></strong> window.</p>
@@ -103,14 +92,16 @@
       </blockquote>
     </li>
   </ul>
-<h3>      Windows      </h3>
+
+<h3>Windows</h3>
   <blockquote>
     <p>JMRI normal window menu</p>
   </blockquote>
+
   <h3>Help</h3>
   <blockquote>
     <p>JMRI normal help menu</p>
-  .</blockquote>
+  </blockquote>
   <table width="100%" border="0" cellspacing="1" cellpadding="2">
     <tr>
       <td width="62%" align="left" valign="top"><p><img src="images/Ops_Setting01.png" width="778" height="608" alt="ops setting"></p></td>
@@ -420,16 +411,14 @@ you would like the program to ask you which track a train should Arrive to stagi
       <td width="34%" valign="top">&nbsp;</td>
     </tr>
   </table>
-<p>&nbsp;</p>
+
   <p align="right"><a href="#OptionsMenu">Back</a></p>
-  <div align=right>
     <div align=right>
       <p><a href="Ops_Start.shtml">Previous </a> | <a href="Ops_Locations.shtml">Next</a></p>
       <p><a href="index.shtml#Operations">Back to Index</a></p>
     </div>
-    <p>.</p>
-</div>
 	  
   <!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

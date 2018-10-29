@@ -6,7 +6,6 @@
  </title>
 	<meta name="author" content="Bob Jacobsen, Egbert Broerse">
 	<meta name="keywords" content="java model railroad JMRI install MacOSX macOS">
-
 <!-- Style -->
   <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
@@ -14,7 +13,6 @@
   <link rel="icon" href="/images/jmri.ico" type="image/png">
   <link rel="home" title="Home" href="/">
 <!-- /Style -->
-
 </head>
 
 <body>
@@ -265,7 +263,7 @@ or getY() or getZ(), the solution is to copy the JMRI/lib/vecmath-1.5.2.jar file
 within the JMRI distribution directory to the  ~/Library/Java/Extensions/ directory.
 (You might have to create that directory)
 
-<a name="#notes"><h2>Notes</h2></a>
+<a name="#notes"></a><h2>Notes</h2>
 
 <h3>Customizing your JMRI Installation</h3>
 
@@ -308,6 +306,6 @@ same Preferences as the original.
 
 <!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
-  </div> <!-- closes #mBody-->
+  </div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

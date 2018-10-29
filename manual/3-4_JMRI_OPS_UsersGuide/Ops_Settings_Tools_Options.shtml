@@ -1,18 +1,22 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head><!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Ops_Settings.shtml 18473 2011-09-14 07:01:17Z dat7719 $ -->
+<html lang="en">
+<head>
 
-
-
-<title>Operations-Settings Menu Bar</title><!-- Style --><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Operations-Settings Menu Bar</title>
+<!-- Style -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
 <link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/"><!-- /Style --></head>
+<link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
 <body>
 <!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent"><a name="Top"></a>
-<h1>Using JMRI� to Operate Trains</h1>
+
+<h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Settings Options Window</h1>
 <div align="right">
 <p><a href="Ops_Settings_menubar.shtml"><span style="text-decoration: underline;">Back</span></a></p>
@@ -156,7 +160,6 @@ RFID to be renamed to anything you like and set the values that you
 want.</p>
 <p> <input name="checkbox10" id="checkbox10" type="checkbox"> <strong>Enable physical locations
 for Virtual Sound Decoder -</strong></p>
-<p>&nbsp;</p>
 </td>
 </tr>
 <tr>
@@ -306,7 +309,7 @@ parameters for pick up (PL) and set out loco (SL) are road, number,
 model, length, type, hp, location name, track name, destination name,
 destination track name, owner name, consist name, car comment, RFID.</p>
 <p><a href="http://groups.yahoo.com/group/jmriusers/files/Operations" target="_blank">Examples of custom manifests</a>
-(requires that you have Yahoo ID and Password to JMRI Groups)</p>
+(requires that you have Yahoo ID and Password)</p>
 </td>
 </tr>
 </tbody>
@@ -317,11 +320,9 @@ destination track name, owner name, consist name, car comment, RFID.</p>
 </tbody>
 </table>
 <div align="right">
-<div align="right">
 <p><a href="Ops_Settings_menubar.shtml">Back</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
-<p>.</p>
+<!--#include virtual="/Footer.shtml" -->
 </div>
-<!--#include virtual="/Footer.shtml" --></div>
 </body></html>

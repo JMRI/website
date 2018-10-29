@@ -401,7 +401,7 @@
 
 <p>Under some circumstances, writing to CV 1 (short address)  would leave the decoder set for "short adddressing", even  though DecoderPro was showing long addressing selected. This has  been fixed.
 
-<p>Fixed problem with Decoder Pro "read all panes" and  "write all panes", which would only do the 1st pane (new  in 1.5.7). Also, fixed problem with certain errors during read/write of CVs not being retried.
+<p>Fixed problem with DecoderPro "read all panes" and  "write all panes", which would only do the 1st pane (new  in 1.5.7). Also, fixed problem with certain errors during read/write of CVs not being retried.
 
 <p>Includes updates by Walter Thompson so that custom  programmers aren't needed for certain decoders.
 

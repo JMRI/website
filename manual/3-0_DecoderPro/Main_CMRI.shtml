@@ -1,12 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
-<!-- Copyright ($Author: zoo $) 2009 -->
-<!-- $Id: Main_CMRI.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<head>
-<TITLE>
+<title>
 CMRI Menu
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -26,7 +23,7 @@ CMRI Menu
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>CMRI Menu</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
@@ -50,26 +47,28 @@ CMRI Menu
 <p align="center"><img src="images/Main_CMRI_04.png" alt="Assignment" width="357" height="181" border="4">
 <hr>
 
-<h4><a name="RunDiagnostices"></a>Run CMRI Diagnostic window</h4>
+<a name="RunDiagnostices"></a><h4>Run CMRI Diagnostic window</h4>
 <p>Provides a tool for testing your CMRI serial cards in the system using either an Output Test or a Wraparound Test.</p>
 <p align="center"><img src="images/Main_CMRI_02.png" alt="Run Diagnostics" width="428" height="353" border="4"></p>
-<div>
+
   <div align="right">
     <p><a href="#Diagnostics">Back</a></p>
   </div>
-</div>
-<h4 align="left"><a name="ConfigureNodes"></a>Configure C/MRI Nodes Window</h4>
+
+<a name="ConfigureNodes"></a><h4 align="left">Configure C/MRI Nodes Window</h4>
 <p align="left">Tool the allows you to configure your C/MRI system Nodes.</p>
 <p align="center"><img src="images/Main_CMRI_03.png" alt="Configure Nodes" width="390" height="425" border="4"></p>
 <div>
   <div align="right"><a href="#Nodes">Back</a></div>
 </div>
-<p align="center">&nbsp;</p>
+
 <hr>
-<div align=right>
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

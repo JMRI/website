@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en"><head>
-<!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Ops_ImportEngines.shtml 18278 2011-08-23 19:50:23Z dat7719 $ --><title>Operations Edit Locomotive</title>
+    <title>Operations Edit Locomotive</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -14,8 +14,8 @@
 <!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent"><a name="Top"></a>
-<h1>Using JMRI� to Operate Trains</h1>
-<h1>Edit Locomotives&nbsp; </h1>
+<h1>Using JMRI&reg; to Operate Trains</h1>
+<h1>Edit Locomotives</h1>
 <div align="right">
 <p><a href="Ops_Engines_menu.shtml">Back </a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
@@ -31,16 +31,17 @@
 was in the roster as Union Pacific <a style="font-weight: bold;" href="Ops_EngineAttributes.shtml">Edit button</a></p>
 <p><strong>Road Number</strong> was imported
 correctly.</p>
-<p><strong>Model</strong> was imported correctly&nbsp;<a style="font-weight: bold;" href="Ops_EngineAttributes.shtml">Edit button</a></p>
-<p><strong>Type </strong>was not in Roster so
-set to
+<p><strong>Model</strong> was imported correctly <a style="font-weight: bold;" href="Ops_EngineAttributes.shtml">Edit
+    button</a></p>
+<p><strong>Type </strong>was not in Roster so set to
 <select name="select10" id="select10"><option>Diesel</option></select><a style="font-weight: bold;" href="Ops_EngineAttributes.shtml"></a></p><p><a style="font-weight: bold;" href="Ops_EngineAttributes.shtml">Edit button</a>
 </p>
 <p><strong>Length</strong> was set to default
 <select name="select11" id="select11"><option>50</option></select>
 so edit to
 <select name="select12" id="select12"><option>95</option></select>
-which is the correct length of body not including couplers. &nbsp;<a style="font-weight: bold;" href="Ops_EngineAttributes.shtml">Edit button</a></p><p style="font-weight: bold;"><strong>Location and Track</strong></p><p style="font-weight: bold;"><strong>Location</strong> is not imported
+which is the correct length of body not including couplers.<br><a style="font-weight: bold;"
+                                                               href="Ops_EngineAttributes.shtml">Edit button</a></p><p style="font-weight: bold;"><strong>Location and Track</strong></p><p style="font-weight: bold;"><strong>Location</strong> is not imported
 from the Roster, So I located the locomotive at
 <select name="select13" id="select13"><option>North Yard</option></select>
 and set on
@@ -51,7 +52,7 @@ imported, so set to <input name="textfield5" id="textfield5" value="1600" size="
 two 2500 HP units on a single frame.</p>
 
 <p><strong>Optional </strong></p>
-<p><strong>Consist </strong>not set. &nbsp;<a style="font-weight: bold;" href="Ops_EngineAttributes.shtml">Edit button</a></p>
+<p><strong>Consist </strong>not set. <a style="font-weight: bold;" href="Ops_EngineAttributes.shtml">Edit button</a></p>
 <p><strong>Built </strong>not entered.</p>
 <p><strong>Owner</strong> is not imported, so
 selected
@@ -79,6 +80,8 @@ Continue until all editing is completed, Save and exit window.<br>
 <p><a href="Ops_Engines_menu.shtml">Back </a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
+
 <!--#include virtual="/Footer.shtml" -->
 </div>
-</body></html>
+</body>
+</html>

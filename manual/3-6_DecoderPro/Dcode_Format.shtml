@@ -1,15 +1,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head><!-- Copyright ($Author: dat7719 $) 2009, 2010 --><!-- $Id: Dcode_Format.shtml 18386 2011-09-07 08:33:40Z dat7719 $ -->
-
-
-
-
-
-<title>Formating the Decoder Definition</title><!-- Style --><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<html lang="en">
+<head>
+  <!-- Copyright ($Author: dat7719 $) 2009, 2010 --><!-- $Id: Dcode_Format.shtml 18386 2011-09-07 08:33:40Z dat7719 $ -->
+<title>
+  Formating the Decoder Definition
+</title>
+  <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
 <link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/"><!-- /Style --></head>
+<link rel="home" title="Home" href="/">
+  <!-- /Style -->
+</head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
@@ -30,12 +33,12 @@
 <h4>Formatting the decoder definition</h4>
 <p>The easiest way to create a new decoder definition is to edit one
 that already exists that has parameters similar to your new
-decoder.&nbsp; Hundreds of decoder definitions are available in JMRI,
+decoder. Hundreds of decoder definitions are available in JMRI,
 so you should be able to find one that is similar as a starting
-point.&nbsp; Don&#8217;t feel bad about standing on someone else&#8217;s shoulders,
-that&#8217;s the spirit of JMRI and open source software in general.&nbsp;
+point. Don&#8217;t feel bad about standing on someone else&#8217;s shoulders,
+that&#8217;s the spirit of JMRI and open source software in general.
 Although you can call this new file anything you like, it will work
-best if you use the same convention as the provided files. That is "<strong>manufacturer  name</strong>"_"<strong>decoder family</strong>".xml, for example: <strong>Digitrax_1x2.xml</strong>  and <strong>Atlas_DualMode.xml</strong>.&nbsp; </p>
+best if you use the same convention as the provided files. That is "<strong>manufacturer  name</strong>"_"<strong>decoder family</strong>".xml, for example: <strong>Digitrax_1x2.xml</strong>  and <strong>Atlas_DualMode.xml</strong>. </p>
 <p>Now that you have located a Decoder Definition file as a starting point  open the file with an XML editor 
 (editors recommended by jmri are discussed on a  
 <a target="_blank" href="http://jmri.org/help/en/html/doc/Technical/XmlDtdUsage.shtml">separate page)</a>  or your favorite text editor.
@@ -50,8 +53,8 @@ Use a basic text file editor like  Notepad, or an XML editor, XML Marker is a go
 <p><img src="images/Dcode03.png" alt="Programming Modes" border="2" height="62" width="426"></p>
 <p>The next part of the file consists of a set of 'variable' elements
 defining specific variables, nested inside a 'variables' (note the
-extra "s") element.&nbsp; Here&#8217;s where the real definition is
-determined.&nbsp; </p>
+extra "s") element. Here&#8217;s where the real definition is
+determined. </p>
 <p>Each variable represents one thing to configure. They can represent
 a single CV, e.g. address, or a few bits that can be configured to
 control a particular function. If some of these aren't appropriate to
@@ -68,4 +71,7 @@ element from the <span class="ACCENT">&lt;variable&gt;</span> to the matching <s
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div></body></html>
+</div>
+</div>
+</body>
+</html>

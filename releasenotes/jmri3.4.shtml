@@ -4,7 +4,7 @@
  <title>
  JMRI: Release Notes for 3.4
  </title>
-    <meta content="Bob Jacobsen" name="Author">
+    <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 3.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
@@ -255,7 +255,7 @@ is version 7.x.x and your PowerCab must be version 1.65 or newer.
         <li>Allow multiple protecting blocks for a single NX Source located at the throat of a turnout.</li>
     </ul></li>
 
-    <li>Decoder Pro<br>
+    <li>DecoderPro<br>
     <ul>
         <li>Decoder Selection - Added a Show/Hide facility on matched decoders after the decoder has been read</li>
         <li>DP3 - The new Loco window, now allows you to create a basic roster entry without having to open a separate window</li>
