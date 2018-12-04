@@ -449,10 +449,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 	    
-	    <h4>Team Digital</h4>
+	<h4>Team Digital</h4>
             <ul>
                 <li></li>
-            <ul>
+            </ul>
 
         <h4>Technologistic (train-O-matic)</h4>
             <ul>
@@ -498,7 +498,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <h3>Dispatcher</h3>
         <a id="Dispatcher" name="Dispatcher"/>
         <ul>
-             <li></li>
+             <li>Minor changes to use the new standard scale process.</li>
         </ul>
 
    <h3>Internationalization</h3>
@@ -605,7 +605,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <a id="Timetable" name="Timetable"/>
         <span class="since">since 4.13.4</span>
         <ul>
-            <li></li>
+            <li>Replace the timetable package layout scale enum with the new standard scale process.</li>
+            <li>Implement custom scale support for the new scale process.</li>
         </ul>
 
    <h3>Warrants</h3>
@@ -634,6 +635,26 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Miscellaneous</h3>
         <a id="Misc" name="Misc"/>
+	<h4>New Layout Scale process</h4>
+	  <ul>
+	    <li>A default scale set is distributed with JMRI as an XML file rather than hardcoded lists.</li>
+            <li>A jmri.Scale instance is a constrained bean:
+              <ul>
+                <li>The user name defaults to the scale name and can be changed.
+                    The toString() method uses the user name and scale ratio, e.g. N (160).</li>
+                <li>The scale ratio can be changed.</li>
+                <li>The scale factor is automatically calculated from the scale ratio.</li>
+                <li>Vetoable listeners can be notified of changes and can prevent changes
+                    that might impact application stability.</li>
+              </ul>
+            </li>
+            <li>jmri.ScaleManager manages access to the Scale instances.</li>
+            <li>jA CUSTOM scale entry is included which an application can implement if desired.</li>
+            <li>Any changes result in the default list being copied to the user file location.
+	        This makes it possible for users to create their own scale list.
+		The distributed list is not used if the user file location list is present.</li>
+          </ul>
+	<h4>Other Misc</h4>
         <ul>
             <li></li>
         </ul>
