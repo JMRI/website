@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -57,10 +57,9 @@ will require Java 1.6.
 
 <h3>Known problems with this release</h3>
 There are currently some connectivity issues for Users running Windows v7 64-bit and a Digitrax PR3 interface.
-If you are experiencing issues, then please raise a question on the yahoo group for assistance.
+If you are experiencing issues, then please raise a question on the JMRI Users group for assistance.
 
 <h3>Download links:</h3>
-
 
 <p>Please use these links for downloading:</p>
 
@@ -100,7 +99,7 @@ on the
 <p>
 This release includes all decoder definitions up to the release build date.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

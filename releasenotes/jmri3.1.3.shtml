@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -141,7 +141,7 @@ Loconet Slot monitor will refresh if cmd station ops sw 36, 37, 38, or 39 is set
 The Loconet Slot monitor function Key were active for System Slots. This could have caused Command Station configuration issues. As a result of this change Function Keys F1-F8, E Stop button, and Free button will not longer work for the reserved system slots which are above slot 120.
 </ul>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

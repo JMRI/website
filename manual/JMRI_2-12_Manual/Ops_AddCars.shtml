@@ -15,15 +15,15 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>How to Use JMRI&reg; to Operate Trains</h1>
 <h1>Add Cars (Edit Cars) Window</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Cars.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -237,11 +237,12 @@ when pressed, opens the Set Car Location panel and allows you to override the pr
 <p align="left">Now that you have your cars stored in the roster, you will probably want to add some <a href="Ops_Engines.shtml">Engines </a>to move your cars about the layout.</p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Cars.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

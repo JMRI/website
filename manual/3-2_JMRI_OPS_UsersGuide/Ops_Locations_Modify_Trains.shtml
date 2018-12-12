@@ -15,16 +15,14 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Modify Trains by Car Type Window</h1>
-<p>&nbsp;</p>
-
 
 <hr>
 <p align="right"><a name="top" ></a>  <a href="Ops_Cars.shtml"><strong>Back</strong></a></p>
@@ -65,7 +63,10 @@
 <p><img src="images/Ops_Preview_TrainsbyCars.png" width="675" height="360" alt="preview"></p>
 <p><strong><a href="#Top">Back</a></strong></p>
 <p align="right"><a href="Ops_Cars.shtml"><strong>Back</strong></a></p>
+
 <hr>
-<!--#include virtual="/Footer" -->
+
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

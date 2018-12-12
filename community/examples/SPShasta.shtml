@@ -2,10 +2,10 @@
 <!-- $Id: SPShasta.shtml,v 1.3 2008/06/04 14:02:17 jacobsen Exp $ -->
 <html lang="en">
 <head>
-    <TITLE>
+    <title>
  	JMRI: PanelPro on the SP Shasta Route
-    </TITLE>
-    <META name="Author" content="Bob Jacobsen">
+    </title>
+    <meta name="author" content="Bob Jacobsen">
  		<meta name="Date.Modified" content="20150923"/>
     <meta name="keywords" content="JMRI PanelPro control panel DCC C/MRI signals">
 
@@ -14,7 +14,7 @@
     <!-- easily replace the common header/footer code for all the web pages -->
 
 <!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -25,29 +25,24 @@
 <body>
     <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
-<!--#include virtual="/Header" -->
-
+<!--#include virtual="/Header.shtml" -->
     <hr class="hide">
 
     <div class="nomenu" id="mBody">
 	<div id="mainContent">
 
-	    <!-- ------------- -->
-	    <!-- Page Contents --> <!-- Required -->
-	    <!-- ------------- -->
-
-	    <H1>JMRI: PanelPro on the SP Shasta Route</H1>
+	    <h1>JMRI: PanelPro on the SP Shasta Route</h1>
 
 <p>This page describes how PanelPro is used to control 
 	<a href="http://www.spshastaroute.org/">Otis McGee's SP Shasta Route</a> layout.</p>
 <h3>The Layout</h3>
 <p>The SP Shasta Route layout is a model of the Southern Pacific's
 Shasta Division, Black Butte Subdivision in 1952. There's 
-an extensive <a HREF="http://spshastaroute.org/">web site</a> describing it.
+an extensive <a href="http://spshastaroute.org/">web site</a> describing it.
 </p>
 		
-<a HREF="http://spshastaroute.org/images/22.jpg">
-<IMG SRC="http://spshastaroute.org/images/thumb_22_jpg.gif" WIDTH="200" HEIGHT="150" align="right">
+<a href="http://spshastaroute.org/images/22.jpg">
+<img src="http://spshastaroute.org/images/thumb_22_jpg.gif" WIDTH="200" HEIGHT="150" align="right">
 </a>
 
 <p>Otis's main goal is operations with prototypical fidelity. 
@@ -67,7 +62,7 @@ let us install and operate signals on the layout, and use them for
 	collision avoidance during the initial operating sessions.</p>
 
 <a href="http://spshastaroute.org/e/4.jpg">
-<IMG SRC="http://spshastaroute.org/e/thumb_4_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT">
+<img src="http://spshastaroute.org/e/thumb_4_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT">
 </a>
 
 	<p>After some research, Otis decided to use C/MRI for layout control,
@@ -82,13 +77,13 @@ All turnouts on the layout are operated by Tortoise slow-motion switch motors,
 operated through C/MRI Switch Motor Controller (SMC) boards and
 slide switches on the facia (this method was originally
 perfected on 
-<a HREF="http://www.lwmweb.com/sw&sf/">Rick Fortin's Sierra Western & Santa Fe Railroad</a>.)
+<a href="http://www.lwmweb.com/sw&sf/">Rick Fortin's Sierra Western & Santa Fe Railroad</a>.)
 Locally operated turnouts have the slide switch directly
 connected to the SMC board, operating the turnout without
 	going through the computer.</p>
 
-<a HREF="http://spshastaroute.org/e/12.jpg">
-<IMG SRC="http://spshastaroute.org/e/thumb_12_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT">
+<a href="http://spshastaroute.org/e/12.jpg">
+<img src="http://spshastaroute.org/e/thumb_12_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT">
 </a>
 
 	<p>Mainline turnouts are controlled through PanelPro, because it needs
@@ -154,17 +149,17 @@ the panel, the beginning of the roughly one thousand connections needed
 to the C/MRI system, and the final panel with the 
 	first few indicators lit.</p>
 	
-<a HREF="http://spshastaroute.org/c/3.JPG">
-<IMG SRC="http://spshastaroute.org/c/thumb_3_JPG.gif" WIDTH="200" HEIGHT="150">
+<a href="http://spshastaroute.org/c/3.JPG">
+<img src="http://spshastaroute.org/c/thumb_3_JPG.gif" WIDTH="200" HEIGHT="150">
 </a>
-<a HREF="http://spshastaroute.org/c/8.JPG">
-<IMG SRC="http://spshastaroute.org/c/thumb_8_JPG.gif" WIDTH="200" HEIGHT="150">
+<a href="http://spshastaroute.org/c/8.JPG">
+<img src="http://spshastaroute.org/c/thumb_8_JPG.gif" WIDTH="200" HEIGHT="150">
 </a>
-<a HREF="http://spshastaroute.org/c/14.JPG">
-<IMG SRC="http://spshastaroute.org/c/thumb_14_JPG.gif" WIDTH="200" HEIGHT="150">
+<a href="http://spshastaroute.org/c/14.JPG">
+<img src="http://spshastaroute.org/c/thumb_14_JPG.gif" WIDTH="200" HEIGHT="150">
 </a>
 <a href="images/ShastaCTTMachine.jpg">
-<IMG SRC="images/ShastaCTTMachine.jpg" width="200" height="150" alt="Picture of real CTC machine"/></a>
+<img src="images/ShastaCTTMachine.jpg" width="200" height="150" alt="Picture of real CTC machine"/></a>
 
 <p>
 PanelPro is providing USS signal logic to drive the panel, and this
@@ -172,8 +167,8 @@ CTC panel is providing an excellent test-bed for that logic.  They're
 	evolving together.</p>
 
 <h3>Third Stage: Automated Staging Assistance</h3>
-<a HREF="http://spshastaroute.org/e/15.jpg">
-<IMG SRC="http://spshastaroute.org/e/thumb_15_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT"></a>
+<a href="http://spshastaroute.org/e/15.jpg">
+<img src="http://spshastaroute.org/e/thumb_15_jpg.gif" WIDTH="200" HEIGHT="150" ALIGN="RIGHT"></a>
 
 Although we've not started on this yet, 
 in the long run we'd like to have PanelPro
@@ -188,7 +183,7 @@ throat turnouts and orients the power for entrance or exit in the loops.
 It also reads the track occupancy status and lights indicators on
 the panels to show which tracks are occupied.  All of this is
 done with a total of about 48 JMRI
-<a HREF="http://jmri.org/help/en/html/tools/Routes.shtml">Routes</a>.
+<a href="http://jmri.org/help/en/html/tools/Routes.shtml">Routes</a>.
 
 <p>
 The next step, which we probably won't work on until
@@ -200,13 +195,11 @@ finished their run, and then the operator will
 have the computer run the train into staging while the crew goes off to their
 next assignment.  This removes the unprototypical part of staging
 from the crew's experience, without adding too much 
-unprototypical workload to the 
-	operator.</p>
+unprototypical workload to the operator.</p>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->
 </body>
 </html>
-

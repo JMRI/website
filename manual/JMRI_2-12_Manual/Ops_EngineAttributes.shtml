@@ -15,16 +15,16 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Edit Locomotive Attributes</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_AddEngine.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -65,14 +65,15 @@ the available attributes for an locomotive.</p>
   option.  Enter the new road "UPS" in the text box, select "UP" in the menu  box, and press
   <input type="submit" name="button12" id="button12" value="Replace">
   . All cars with "UP" as their road will now have  "UPS" as their road name.</p>
-<p></p>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_AddEngine.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

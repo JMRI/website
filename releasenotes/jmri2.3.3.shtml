@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -91,8 +91,7 @@ If so, you can fix it by moving aside those extra
 .jar files from the JMRI program directory.
 For more information on this, please see this
 <a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/topics/35065">discussion</a>
-on the 
-<a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>.
+on the JMRI Users group.
 
 <h3>Warnings from older versions:</h3>
 
@@ -246,7 +245,7 @@ Ken Cameron updated his
 <a href="http://jmri.org/jython/RobotThrottle.py">RobotThrottle.py</a>
 sample script.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

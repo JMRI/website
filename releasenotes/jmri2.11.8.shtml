@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -154,7 +154,7 @@ The initial display of the CBUS console was fixed so that the buttons show prope
     <li>Added the CSX-1998 Signal Masts</li>
     <li>Updated the AAR-1946 Signal Masts to work with the Signaling Logic.</li>
 </ul>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

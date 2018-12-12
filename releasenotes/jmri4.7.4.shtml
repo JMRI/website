@@ -18,7 +18,7 @@
 
 <body>
 
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -240,8 +240,7 @@ These may be relevant to you if you're updating from an earlier version.
     included with this release have been converted to the new form.
     If you have decoder definitions with the older "ivariable" form, they will no longer
     validate, but can still be used for the first couple of test releases in this series.
-    Please ask on the
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
+    Please ask on the JMRI Users group
     for help converting them, or just drop them and use the current definitions.</p>
 
 
@@ -257,15 +256,15 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.dmg</a><br/>
-  sha256: fb25c02f9445a8861289b98ac69de7f8180c90c1c26b2f8d8ce78747d848a0f8 </p>
+  sha256: fb25c02f9445a8861289b98ac69de7f8180c90c1c26b2f8d8ce78747d848a0f8</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.exe</a><br/>
-   sha256: b5997fba814210425ba771f81589bf5e78afb2956a3aa76e05e8a023cbba1a3a</p>
+   sha256: b5997fba814210425ba771f81589bf5e78afb2956a3aa76e05e8a023cbba1a3a</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.tgz</a><br/>
-   sha256: 929dd018afa4734d64504e7e3c896969a1bc89e85c159d5110a1e1579b54da66</p>
+   sha256: 929dd018afa4734d64504e7e3c896969a1bc89e85c159d5110a1e1579b54da66</li>
 </ul>
 
 
@@ -435,7 +434,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 update settings in the preferences.
         </ul>
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

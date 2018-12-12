@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -567,7 +567,7 @@ not need to up date to 3.10.1.</p>
     <p>Removed the activation.jar library, along with various references to loading it.
     This is no longer needed since JMRI now requires Java 1.6 or later.</p>
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

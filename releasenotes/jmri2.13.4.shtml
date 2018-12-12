@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -128,6 +128,7 @@ None at the time of this release.
 <ul>
 	<li>The mini web server now displays Open Windows from /frame as well as /panel. In a future release, /panel will no longer be usable to remotely display Open Windows. (Randall Wood)</li>
 	<li>The XMLIO protocol recognizes the <em>frame</em> type as well as the <em>panel</em> type to list Open Windows. In a future release, <em>panel</em> will no longer be usable to list Open Windows.(Randall Wood)</li>
+</ul>
 
 <p>Mac OS X usability:</p>
 <ul>
@@ -139,8 +140,8 @@ None at the time of this release.
 <ul>
 	<li><b>DecoderPro3</b></li>
     <ul>
-        <li>Provided a "first" start" configuration Wizard to help guide users through the initial configuration of Decoder Pro 3</li>
-        <li>When Decoder Pro 3 opens with a blank roster, an introduction screen shows the user how to create their first entry.</li>
+        <li>Provided a "first" start" configuration Wizard to help guide users through the initial configuration of DecoderPro 3</li>
+        <li>When DecoderPro 3 opens with a blank roster, an introduction screen shows the user how to create their first entry.</li>
         <li>When a loco is found via the identify button, the roster table will scroll so that the identified loco will be visible</li>
         <li>Added the ability to launch the comprehensive programmer by double clicking on a roster entry in the table</li>
         <li>Provided the right click pop-up menu in the roster table.</li>
@@ -185,7 +186,7 @@ None at the time of this release.
 	<li>Added pref for disallowed frames and prevent them from being served by frame server.</li>
 </ul>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

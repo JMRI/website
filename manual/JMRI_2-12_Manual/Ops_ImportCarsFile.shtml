@@ -15,15 +15,15 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Importing Cars from a File</h1>
-<div align=right>
+<div align="right">
   <p><a href="Ops_Cars.shtml">Back </a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -48,11 +48,12 @@ that can be found at the bottom right  of the <strong>Edit Car</strong> window. 
 <p>You need to be very careful with spaces when importing a comma  delimitated file. The program will include leading and trailing spaces  if they exist between the commas.</p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Cars.shtml">Back </a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

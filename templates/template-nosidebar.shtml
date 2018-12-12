@@ -7,13 +7,13 @@
     <meta name="author" content="YOUR NAME HERE">
     <meta name="keywords" content="JMRI decoderpro dcc nmra">
 
-<!--#include virtual="/Style" -->
+<!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
 <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
     <hr class="hide">
 
@@ -162,7 +162,7 @@ foreach $f (@files) {
 		</dl>
 		</div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->

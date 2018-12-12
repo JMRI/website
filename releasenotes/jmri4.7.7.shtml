@@ -18,7 +18,7 @@
 
 <body>
 
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -64,7 +64,7 @@ see our
 JMRI was updated in JMRI 4.7.4 to use a new serial library. Depending on your exact
 circumstances, you may need to do some migrations:
 <ul>
-<li>If you are using JMRI on Linux or Mac OS X and are updating from an older JMRI version,
+<li>If you are using JMRI on Linux or macOS and are updating from an older JMRI version,
 <em>you must open the JMRI preferences and make sure that the selections are 
 correct for your serial device(s).</em> Be sure to save the changes.
 <p>
@@ -228,7 +228,7 @@ These may be relevant to you if you're updating from an earlier version.
     If you have decoder definitions with the older "ivariable" form, they will no longer
     validate, but can still be used for the first couple of test releases in this series.
     Please ask on the
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
+    <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io group
     for help converting them, or just drop them and use the current definitions.</p>
 
 <a id="download" name="download"></a>
@@ -243,15 +243,15 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.dmg</a><br/>
-  sha256: e98de5ccec57fe895a4cee0f56f3a641c08ffea185b031dc1b1d2b6574322e99 </p>
+  sha256: e98de5ccec57fe895a4cee0f56f3a641c08ffea185b031dc1b1d2b6574322e99</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.exe</a><br/>
-   sha256: a096201c2216e9666e791a24a2f4c3631c53c9c25364f4efbe8ce089f7338a96</p>
+   sha256: a096201c2216e9666e791a24a2f4c3631c53c9c25364f4efbe8ce089f7338a96</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.7/JMRI.4.7.7.R177ca31.tgz</a><br/>
-   sha256: 6586160914ed3c145583151f6132315d37afc2faa6657b558b27db4d982dc498</p>
+   sha256: 6586160914ed3c145583151f6132315d37afc2faa6657b558b27db4d982dc498</li>
 </ul>
 
 <!-- 
@@ -388,7 +388,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Fixed some links in the help pages</li>
         </ul>
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

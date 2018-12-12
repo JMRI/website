@@ -1,23 +1,15 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id: index.shtml,v 1.8 2010-04-20 15:28:08 jacobsen Exp $ -->
 <html lang="en">
 <head>
-    <TITLE>
- 	Using JMRI and XTrkCad Together
-    </TITLE>
-    <META content="Giorgio Terdina" name=Author>
-    <META content="Bob Jacobsen" name=Author>
-    <meta name="keywords" content="JMRI XTrkCad ">
-
-    <!-- The combination of "Define" and {Header,Style, Logo and Footer} comments -->
-    <!-- are an arbitrary design pattern used by the update.pl script to -->
-    <!-- easily replace the common header/footer code for all the web pages -->
-
-    <!-- delete the following 2 Defines if you want to use the default JMRI logo -->
-    <!-- or change them to reflect your alternative logo -->
+    <title>
+ 	Using JMRI and XTrackCAD
+    </title>
+    <meta name="author" content="Giorgio Terdina">
+    <meta name="author" content="Bob Jacobsen">
+    <meta name="keywords" content="JMRI XTrackCad XtrkCadReader">
 
 <!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -25,45 +17,42 @@
 <!-- /Style -->
 </head>
 
-
-<!--#include virtual="/Header" -->
+<body>
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="../Sidebar" -->
 
 	<div id="mainContent">
 
-<H1>Using JMRI and XTrkCad Together</H1>
+<h1>Using JMRI and XTrackCAD Together</h1>
 
-
-<img src="http://home3.swipnet.se/~w-31080/Pics/lower.gif" width="240" height="240" alt="XtrkCad and JMRI" align="right">
-XTrkCadReader is a tool that can take a
-layout file created with the 
-<a href="http://www.xtrkcad.org/">XTrkCad layout design program</a>
+<img src="../../../images/xtracadreader.png" width="147" height="53" alt="XtrkCad and JMRI" align="right">
+XtrkCadReader is a java tool that can take a layout file created with the
+<a href="http://www.xtrkcad.org/">XTrackCAD layout design program</a>
 and convert it to a panel file JMRI can use.
 
 <p>
-When you design a layout with XTrkCad, the information about track, turnouts,
-and their connections are stored in a "XTC" file.  
-When you run XtrkCadRead with an XTC file as input, it creates
-an "XML" file for JMRI that contains 
-the corresponding information. 
-You can then read that XML file into JMRI to create a 
-<a href="../../../help/en/package/jmri/jmrit/display/LayoutEditor.shtml">layout editor</a> panel
+It can be downloaded from the
+<a href="https://github.com/JMRI/XTrkCadReader/releases">Releases page</a> on GitHub.
+<br>
+A <a href="XtrkCadReader.pdf">Manual (PDF)</a> describing how to run XtrkCadReader, including the
+options and limitations, is include in the download together with several example files.
+<span class="since">Since XtrkCadReader 2.2.2</span>
+
+<p>
+When you design a layout with XTrackCAD, the information about track, turnouts,
+and their connections is stored in an "XTC" file.
+When you run XtrkCadReader with an XTC file as input, it creates
+an "XML" file for JMRI that contains the corresponding information.<br>
+You can then read that XML file into JMRI PanelPro to create a
+<a href="../../../help/en/package/jmri/jmrit/display/LayoutEditor.shtml">Layout Editor</a> panel
 that represents your trackwork.
 
 <p>
-XTrkCadReader can be downloaded via 
-<a href="https://sourceforge.net/projects/jmri/files/XtrkCadReader/XtrkCadReader-2017-05-06.zip/download">this link</a>.
-
-<p>
-A manual describing how to run XTrkCadReader, including the options
-and limitations, is available as a
-<a href="XtrkCadReader.pdf">PDF file</a>.
-
-
-<P>
-XTrkCadReader was created by Giorgio Terdina.
-It is part of the JMRI project and is available under the 
-GNU General Public License.  For additional information about 
+XtrkCadReader was created by Giorgio Terdina from 2008. It was updated since.<br>
+Release 2.2.2 works with both JMRI 4.12
+and XTrackCAD 5.1.1.<br>
+XtrkCadReader is part of the JMRI project and is available under the
+GNU General Public License. For additional information about
 licensing terms, kindly refer to 
 <a href="http://jmri.org/Copyright.html#license">our license page</a>.
 
@@ -71,12 +60,12 @@ licensing terms, kindly refer to
 
 The code for XTrkCadReader is available in the 
 <a href="http://jmri.org/help/en/html/doc/Technical/getgitcode.shtml">JMRI code Repository</a>. 
-<P>
+<p>
 If you'd like a complete copy of the code, for example to modify or improve it,
 you can check it out from its
-<a href="https://github.com/JMRI/XTrkCadReader">JMRI GitHub code repository<a/>.
+<a href="https://github.com/JMRI/XTrkCadReader">JMRI GitHub code repository</a>.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->

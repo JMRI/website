@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -47,7 +47,7 @@ Therefore, this test version should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -91,14 +91,14 @@ None at the time of this release.
 
 <p>Please use these links for downloading:</p>
 
-<p>Mac OS X: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.dmg/download</a></p>
+<p>Mac OS X: <a
+        href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.dmg/download</a></p>
 
-<p>Windows: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.exe/download</a></p>
+<p>Windows: <a
+        href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.exe/download</a></p>
 
-<p>Linux: <A
-	HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.tgz/download</a></p>
+<p>Linux: <a
+        href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.7-r19529.tgz/download</a></p>
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -116,14 +116,14 @@ on the
 <p>Fix a bug that prevented a Signal Mast logic from being created when the source mast was already known.
 <p>Fixed an issue relating to the loading of Signal Mast logics when "auto discover conflicting Signal Masts" was selected.
 
-<p><b>Decoder Pro 3</b>
+<p><b>DecoderPro 3</b>
 <p>Fix a bug that is caused when multiple items are dragged into the roster group pane which then prevents items from being selected and displayed correctly in the bottom of the panel.
 
 <p>Pete Cressman fixed a problem preventing Lights on panels from being stored and loaded.
 
 <p>Paul Bender (with help from Kevin Dickerson) added support for the new LI-USB-Ethernet in Ethernet mode.
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

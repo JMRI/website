@@ -2,8 +2,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
-<!-- Copyright ($Author: dat7719 $) 2009 -->
-<!-- $Id: Main_Help.shtml 18157 2011-08-11 10:37:44Z dat7719 $ -->
 <title>Help Menu</title>
 
 <!-- Style -->
@@ -16,15 +14,15 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Help Menu </h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Window.shtml"> Previous</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -57,16 +55,18 @@
 <p>Opens the <strong>Upload Debugging Info</strong> Window
 <p><img src="images/Main_Help_04.png" width="577" height="311" alt="help">
 <hr>
-<p><strong>About Decoder Pro</strong></p>
+<p><strong>About DecoderPro</strong></p>
 <p>Opens the Credits and Version Window.</p>
 <p><img src="images/Main_Help_05.png" width="242" height="299" alt="About"></p>
 <hr>
-<p>&nbsp;</p>
-<div align=right>
+
+<div align="right">
   <p><a href="Main_Window.shtml">Previous</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

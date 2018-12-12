@@ -18,7 +18,7 @@
 
 <body>
 
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -149,26 +149,23 @@ These may be relevant to you if you're updating from an earlier version.
     included with this release have been converted to the new form.
     If you have decoder definitions with the older "ivariable" form, they will no longer
     validate, but can still be used for the first couple of test releases in this series.
-    Please ask on the
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
+    Please ask on the JMRI Users group
     for help converting them, or just drop them and use the current definitions.</p>
 
-
 <h3>Download links:</h3>
-
 
 <ul>
 <li>OS X / macOS: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.dmg/download</a><br/>
-  sha256: 15e44de8b83cdb7b828d22d67fb338dba9db579442b94029d0a18490f1774882 </p>
+  sha256: 15e44de8b83cdb7b828d22d67fb338dba9db579442b94029d0a18490f1774882 </li>
 
 <li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.exe/download</a><br/>
-   sha256: d04ed98199786f41dda380859c3f230c0374483bd42a412a89a1efd3842c3afa</p>
+   sha256: d04ed98199786f41dda380859c3f230c0374483bd42a412a89a1efd3842c3afa</li>
 
 <li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.7.0-R9ec1310.tgz/download</a><br/>
-   sha256: fd84d712152f9367b08ec81824ff9d8158a455c9359603b79b1f5fc372e941a5</p>
+   sha256: fd84d712152f9367b08ec81824ff9d8158a455c9359603b79b1f5fc372e941a5</li>
 </ul>
 
 <!--
@@ -186,7 +183,7 @@ similar to JMRI 4.6.
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.0+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

@@ -1,20 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id: index.shtml,v 1.2 2008-05-23 17:24:47 jacobsen Exp $ -->
 <html lang="en">
 <head>
     <title>
  	JMRI Partners
     </title>
-    <meta content="Giorgio Terdina" name=Author>
-    <meta content="Bob Jacobsen" name=Author>
-    <meta name="keywords" content="JMRI XTrkCad ">
-
-    <!-- The combination of "Define" and {Header,Style, Logo and Footer} comments -->
-    <!-- are an arbitrary design pattern used by the update.pl script to -->
-    <!-- easily replace the common header/footer code for all the web pages -->
-
-    <!-- delete the following 2 Defines if you want to use the default JMRI logo -->
-    <!-- or change them to reflect your alternative logo -->
+    <meta name="author" content="Giorgio Terdina">
+    <meta name="author" content="Bob Jacobsen">
+    <meta name="keywords" content="JMRI XtrkCadReader CATS Model Railroad Manager">
 
 <!-- Style -->
   <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
@@ -25,8 +17,8 @@
 <!-- /Style -->
 </head>
 
-
-<!--#include virtual="/Header" -->
+<body>
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 
 	<div id="mainContent">
@@ -37,9 +29,9 @@ JMRI works with other software in various ways.
 
 <p>
 For example, Giorgio Terdina has written the
-<a href="XtrkCadReader/index.shtml">XTrkCadReader</a> 
-tool to let you use your XTrkCad layout designs to create 
-JMRI layout panels.
+<a href="XtrkCadReader/index.shtml">XtrkCadReader</a>
+tool to let you use your XTrackCAD layout designs to create
+JMRI Layout Editor panels.
 
 <p>
 Rodney Black's <a href="CATS.shtml">CATS</a>
@@ -49,10 +41,10 @@ with JMRI to connect to the layout.
 <p>
 Tom Stack's
 <a href="http://www.modelrailroadmanager.com/">Model Railroad Manager</a>
-is integrated system for model railroad inventory, operations, control, dispatching and
-automation.  It can access local or remote JMRI-connected layouts.
+is an integrated system for model railroad inventory, operations, control, dispatching and
+automation. It can access local or remote JMRI-connected layouts.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->

@@ -18,7 +18,7 @@
 
 <body>
 
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -236,8 +236,7 @@ These may be relevant to you if you're updating from an earlier version.</p>
     included with this release have been converted to the new form.
     If you have decoder definitions with the older "ivariable" form, they will no longer
     validate, but can still be used for the first couple of test releases in this series.
-    Please ask on the
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
+    Please ask on the JMRI Users group
     for help converting them, or just drop them and use the current definitions.</p>
 
 <a id="download" name="download"></a>
@@ -252,15 +251,15 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.</p>
 <ul>
 <li>macOS / OS X: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.dmg">https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.dmg</a><br/>
-  sha256: 0cc00f0a676e659bedd871c1a2dd4517de22a159bb3a47cb2815aa0d3ff17d31 </p>
+  sha256: 0cc00f0a676e659bedd871c1a2dd4517de22a159bb3a47cb2815aa0d3ff17d31</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.exe">https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.exe</a><br/>
-   sha256: 734e2c73f7f9de654bfe2b417dd87a777f6e4e65ca5bf7f048c6d71c13972fa8</p>
+   sha256: 734e2c73f7f9de654bfe2b417dd87a777f6e4e65ca5bf7f048c6d71c13972fa8</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.tgz">https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.tgz</a><br/>
-   sha256: 4492e3466d35c2c4685e9173a252b8d0f09cb5e871d9fa0af50780ef47786756</p>
+   sha256: 4492e3466d35c2c4685e9173a252b8d0f09cb5e871d9fa0af50780ef47786756</li>
 </ul>
 
 <!-- 
@@ -976,7 +975,7 @@ are available in our
             <li>Fixed some links in the help pages</li>
         </ul>
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

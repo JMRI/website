@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -356,7 +356,7 @@ Team Digital updated the SIC_24AD definition to include toggle option to inputs 
 Phil Klein provided "LocoNetSensorInit.py", a script to cause LocoNet sensors to send their state
 so that JMRI will update.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

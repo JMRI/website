@@ -19,7 +19,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -93,8 +93,7 @@ If so, you can fix it by moving aside those extra
 before rerunning the installer.
 For more information on this, please see this
 <a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/topics/35065">discussion</a>
-on the 
-<a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group</li>.
+on the JMRI Users group.
 
 <p>JMRI is moving toward requiring Java 1.5 or later.  Certain new features may not work if you are using an earlier
 version of Java.  To see JMRI's future plans for this and other compatibility issues, please see the JMRI
@@ -227,7 +226,7 @@ A problem with programming-on-the-main (Ops Mode programming) of
 decoders with a long address less than 100 and NCE command stations has been
 fixed.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

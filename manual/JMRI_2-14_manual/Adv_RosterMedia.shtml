@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -64,7 +64,7 @@
   </blockquote>
   <p>
  To remove either image from the Roster, Right click and click remove in the context that displays, however, it will not remove the image from the Resources folder.</p>
-  <p align="left"><strong>Image to be used as icon for that roster, head to the right:</strong> similarly, there is a  small black box which can be filled with a picture to be used as an icon for  roster entry identification.&nbsp; The  instructions are the also similar:</p>
+  <p align="left"><strong>Image to be used as icon for that roster, head to the right:</strong> similarly, there is a  small black box which can be filled with a picture to be used as an icon for  roster entry identification. The  instructions are the also similar:</p>
 </blockquote>
 <ol>
   <ol>
@@ -110,7 +110,7 @@ After adding images to the image boxes for main image and icon, click on this bu
 <p><a href="index.shtml">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
       </div><!-- closes #mainContent-->
     </div> <!-- closes #mBody-->

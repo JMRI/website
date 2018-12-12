@@ -1,31 +1,21 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head>
-<!-- Copyright ($Author: zoo $) 2009 --><!-- $Id: Ops_Locations.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-  <title>Operations-Locations by Car</title>
+<html lang="en">
+<head>
+<title>Operations-Locations by Car</title>
 
-  
 <!-- Style -->
-  
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
-  
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-
-  
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-
-  
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-
-  
-  <link rel="home" title="Home" href="/">
-
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+<link rel="icon" href="/images/jmri.ico" type="image/png">
+<link rel="home" title="Home" href="/">
 <!-- /Style -->
-</head><body>
-<!--#include virtual="/Header" -->
+</head>
+<body>
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent"><a name="Top"></a>
-<h1>Using JMRI� to Operate Trains</h1>
+<h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Modify Locations by Car Type Window</h1>
 <div align="right">
 <p><a href="Ops_Locations_Menu.shtml">Back </a></p>
@@ -72,14 +62,13 @@ car types serviced by the same locations and tracks. </p>
     </tr>
   </tbody>
 </table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
 <hr>
 <div align="right">
 <p><a href="Ops_Locations_Menu.shtml">Back </a></p>
 </div>
-<!--#include virtual="/Footer" -->
-</div>
 
-</body></html>
+<!--#include virtual="/Footer.shtml" -->
+</div>
+</body>
+</html>

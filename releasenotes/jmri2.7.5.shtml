@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -65,7 +65,7 @@ Therefore, this test version should be considered experimental.
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -103,13 +103,13 @@ as the program will update them to the new format upon storing them.
 <p>Please use these links for downloading:
 
 <p>Mac OS X:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.dmg/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.dmg/download</a>
 
 <p>Windows:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.exe/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.exe/download</a>
 
 <p>Linux:
-     <A HREF="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.tgz/download</a>
+     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.tgz/download</a>
 
 <h3>Changes since test version 2.7.4</h3>
 
@@ -295,7 +295,7 @@ He also improved the CT Elektronik DCX decoder definitions.
 <p>
 Ilidio Serra provided a decoder definition for the Rapido TurboTrain.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

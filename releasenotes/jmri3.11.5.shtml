@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -221,7 +221,7 @@ These are development files, and might not be working at any particular time.</p
 		emergency stops with LocoNet and CBUS systems. (<a href="https://sourceforge.net/p/jmri/bugs/516/">Bug 516</a>) - Randall Wood</li>
 	</ul>
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

@@ -3,9 +3,9 @@
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
 <!-- $Id: Main_Speedometer.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<TITLE>
+<title>
 DecoderPro&reg; Main Window
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -17,7 +17,7 @@ DecoderPro&reg; Main Window
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -25,7 +25,7 @@ DecoderPro&reg; Main Window
 <h1>DecoderPro3&reg; Main Window</h1>
 <h1>The Roster Table</h1>
 
-<div align=right>
+<div align="right">
   <p><a href="dp3_Main_Main.shtml">Back </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -60,15 +60,15 @@ Owner
 </table>
 <p><strong>Column sequence</strong> may be modified and Saved. Just Drag and Drop the column header to the desired position.</p>
 <p><strong>Column Width </strong>may be changed by grabbing the divider between the column until the double headed arrow shows and move the arrows to the desired column width.</p>
-<p>You may use the same technique to resize panes or the main window.<br>
-</p>
+<p>You may use the same technique to resize panes or the main window.</p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_Main_Main.shtml">Back </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

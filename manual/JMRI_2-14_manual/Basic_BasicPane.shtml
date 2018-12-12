@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -73,7 +73,7 @@ To read the actual settings  for these options (and  IF your system and installe
 <input type="button" name="button" id="button" value="Read full sheet">
 </strong>. The individual settings  will turn red while they are in the process of 
   being read (clever, eh?), and will turn white once the  values have been read successfully 
-  from the decoder. Once again, Decoder Pro must play  &quot;Twenty Questions&quot; to get this 
+  from the decoder. Once again, DecoderPro must play  &quot;Twenty Questions&quot; to get this
 information, and sometimes even has to ask a couple of  times. 
   <p> Be patient, especially with older computers. At the very  bottom of the pane (where it says  &quot;idle&quot;) you will see a running account of  exactly what DecoderPro is doing, for example, the 
   specific CV being read. </p>
@@ -83,12 +83,12 @@ information, and sometimes even has to ask a couple of  times.
   </strong>functions are  dependant on your command station. If 
   your system does not have the capability to read CVs,  then these buttons will not be 
   available. </p>
-<p><a name="Enter/Edit data"></a>If you wish to change the address  of the locomotive, type in the new address. To turn on or off 4 digit  addressing, select the desired radio button. .&nbsp;  Be sure that the address  type agrees with the number of characters in the address. &nbsp;</p>
+<p><a name="Enter/Edit data"></a>If you wish to change the address  of the locomotive, type in the new address. To turn on or off 4 digit  addressing, select the desired radio button. Be sure that the address  type agrees with the number of characters in the address. </p>
 <p>To enable Analog (old style DC, some vendors refer to this as dual mode)  Operation select the appropriate entry from the drop-down list. </p>
 <p> When you are finished, click on 
   <input type="button" name="button4" id="button4" value="Write full sheet">
 to  write the new values in the decoder. </p>
-  <p><a name="Write Data"></a>Writing usually takes much less time than reading,  because the value   can be sent directly.     As the write operation proceeds, the data will change  from yellow to   white. If there is     difficulty writing to the decoder, the data will change  to red. The   software will automatically   keep trying until the write operation is successful. In some instances   the  system will &ldquo;time-out&rdquo; after a certain number of tries without an    acknowledgement from the decoder.&nbsp; This  does not necessarily mean that   the values have not been written, just that the  program has not   received an acknowledgement.&nbsp;  This can be due to &nbsp;the locomotive    moving and getting on dirty track so that it can&rsquo;t pulse back, or   possibly  because the command station or decoder cannot read back.&nbsp; Try   moving the loco and try again.&nbsp; If it is a command station or decoder    read-back issue, try the loco on the mainline and see if the programming   was  successful. </p>
+  <p><a name="Write Data"></a>Writing usually takes much less time than reading,  because the value   can be sent directly.     As the write operation proceeds, the data will change  from yellow to   white. If there is     difficulty writing to the decoder, the data will change  to red. The   software will automatically   keep trying until the write operation is successful. In some instances   the  system will &ldquo;time-out&rdquo; after a certain number of tries without an    acknowledgement from the decoder. This  does not necessarily mean that   the values have not been written, just that the  program has not   received an acknowledgement.  This can be due to the locomotive    moving and getting on dirty track so that it can't pulse back, or   possibly  because the command station or decoder cannot read back. Try   moving the loco and try again. If it is a command station or decoder    read-back issue, try the loco on the mainline and see if the programming   was  successful. </p>
   <p><a name="Save Data"></a>
   To finish this &quot;basic&quot; programming of a  decoder, click once more on the <strong>Roster Entry</strong> tab, You will see that the  address field has now been filled in, so  you can now 
   click on the <strong>
@@ -96,25 +96,25 @@ to  write the new values in the decoder. </p>
 </strong>. Your new decoder  settings have now been written not only 
   to the decoder, but also saved to a computer file where  they may be recalled in the future. . </p>
 <a name="Do More"></a>
-But you  say...&quot;I want to change more than what's shown on the Basic decoder pane.&quot; Well&hellip; there are other programmers that  are available.&nbsp; But&hellip; first we need to  look at the various options.&nbsp; In  fact there are so many options the programmers had to use a slider to get them  all to show.&nbsp; Here are the option  windows.&nbsp; Don&rsquo;t panic&hellip;.Most are of no use  to the average user.
+But you  say...&quot;I want to change more than what's shown on the Basic decoder pane.&quot; Well&hellip; there are other programmers that  are available. But&hellip; first we need to  look at the various options. In  fact there are so many options the programmers had to use a slider to get them  all to show. Here are the option  windows. Don't panic&hellip;.Most are of no use  to the average user.
 <p align="center"><img src="images/Basic_programmers.png" width="568" height="341" alt="Basic Programmers"><br>
 </p>
-<p><strong>Comprehensive </strong>and Advanced are the only other programmers &quot;<strong><em>Normal Users</em>&quot; </strong>will ever need, because it  is, well&hellip;<strong>Comprehensive</strong> and the <strong>Advanced</strong> adds features that are optional..&nbsp; So why all the  others?</p>
-<p>First of all eliminate the Manufacturer  specific programmers (unless of course you have a <strong>Zimo</strong> or <strong>ESU</strong> system).&nbsp; </p>
-<p>We can also eliminate the <strong>Tutorial</strong> and <strong>Custom</strong> programmers. They were put in to show folks that want to <strong>write their own</strong>&nbsp; programmer (not you right?) 
+<p><strong>Comprehensive </strong>and Advanced are the only other programmers &quot;<strong><em>Normal Users</em>&quot; </strong>will ever need, because it  is, well&hellip;<strong>Comprehensive</strong> and the <strong>Advanced</strong> adds features that are optional. So why all the  others?</p>
+<p>First of all eliminate the Manufacturer  specific programmers (unless of course you have a <strong>Zimo</strong> or <strong>ESU</strong> system). </p>
+<p>We can also eliminate the <strong>Tutorial</strong> and <strong>Custom</strong> programmers. They were put in to show folks that want to <strong>write their own</strong> programmer (not you right?)
 all the possible ways to gather input and to have a common  starting point in the roster pane. 
 Now if you wish to pursue writing a custom programmer go to this 
 <a href="../html/apps/DecoderPro/Programmer.shtml" target="_blank"><strong>site</strong></a>.</p>
-<p>If you have need for a special situation programmer  you might want to look at <strong>Sample Club</strong> or <strong>TrainShowBasic</strong> to see what panes can  be taken out of Comprehensive to make an intermediate complexity, special  purpose programmer.&nbsp; Again, how to do this  is a subject for another manual.</p>
-<p>And that leaves us with the <strong>Advanced</strong> and <strong>Registers</strong> programmers.&nbsp; The <strong>Advanced</strong> programmer has a couple of  sophisticated features added on top of the <strong>Comprehensive</strong> programmer and a name  was needed.&nbsp; Well, why not call it  <strong>Advanced</strong>? We&rsquo;ll cover the additional features once we get through with  <strong>Comprehensive</strong>.<br>
-  So what about the  <strong>Registers</strong> programmer?&nbsp; If you have an old or  bargain basement decoder that only programs using registers, then of course  you&rsquo;ll be interested in <strong>Registers.</strong><br>
-So now we&rsquo;ve narrowed our &ldquo;real&rdquo; choices down to&nbsp;<strong>Advanced</strong>, <strong>Basic</strong> and <strong>Comprehensive</strong>. Since we&rsquo;ve already  covered <strong>Basic</strong>, let's explore the <a href="Comp_Setup_Roster.shtml">Comprehensive Programmer</a>! </p>
+<p>If you have need for a special situation programmer  you might want to look at <strong>Sample Club</strong> or <strong>TrainShowBasic</strong> to see what panes can  be taken out of Comprehensive to make an intermediate complexity, special  purpose programmer. Again, how to do this  is a subject for another manual.</p>
+<p>And that leaves us with the <strong>Advanced</strong> and <strong>Registers</strong> programmers. The <strong>Advanced</strong> programmer has a couple of  sophisticated features added on top of the <strong>Comprehensive</strong> programmer and a name  was needed. Well, why not call it  <strong>Advanced</strong>? We'll cover the additional features once we get through with  <strong>Comprehensive</strong>.<br>
+  So what about the  <strong>Registers</strong> programmer? If you have an old or  bargain basement decoder that only programs using registers, then of course  you'll be interested in <strong>Registers.</strong><br>
+So now we've narrowed our &ldquo;real&rdquo; choices down to <strong>Advanced</strong>, <strong>Basic</strong> and <strong>Comprehensive</strong>. Since we've already  covered <strong>Basic</strong>, let's explore the <a href="Comp_Setup_Roster.shtml">Comprehensive Programmer</a>! </p>
 <div align="right">
   <p><a href="Basic_Start.shtml">Previous | </a><a href="Comp_Setup_Roster.shtml">Next</a><a href="Comp_Setup_Roster.shtml"></a></p>
 <p><a href="index.shtml#Basic Programmer">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
       </div><!-- closes #mainContent-->
     </div> <!-- closes #mBody-->

@@ -1,5 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head>
+<html lang="en">
+<head>
 <!-- Copyright ($Author: dat7719 $) 2009, 2010 --><!-- $Id: Adv_RosterMedia.shtml 18142 2011-08-08 11:30:48Z dat7719 $ --><title>Wi Throttle</title>
 
 <!-- Style -->
@@ -12,10 +13,12 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
-<div id="mainContent"><a name="Top"></a>
-<h1>DecoderPro�</h1>
+<div id="mainContent">
+
+    <a name="Top"></a>
+<h1>DecoderPro&reg;</h1>
 <h1>Wi Throttle</h1>
 <div align="right">
 <p><a href="Main_Throttle_menubar.shtml">Back</a></p>
@@ -47,7 +50,7 @@ Wi/Throttle Pane.</p>
 <blockquote>
 <p style="margin-left: 40px;"><img style="width: 669px; height: 209px;" src="images/ThrottleWi_ControlsFilter.png" alt="filter"></p>
 <p>Set up Turnouts and Routes that can be controlled by
-DecoderPro3� for control by WiThrottle.</p>
+DecoderPro3&reg; for control by WiThrottle.</p>
 </blockquote>
 <ul>
 <li>Preferences...</li>
@@ -65,6 +68,7 @@ DecoderPro3� for control by WiThrottle.</p>
 <p><a href="Main_Throttle_menubar.shtml">Back</a></p>
 <p><a href="index.shtml">Back to Index</a></p>
 </div>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div>
-</body></html>
+</body>
+</html>

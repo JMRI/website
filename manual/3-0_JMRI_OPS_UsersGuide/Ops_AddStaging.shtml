@@ -15,12 +15,12 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Add Staging Only</h1>
 
@@ -194,13 +194,12 @@ and the <strong>Edit Staging Track</strong> window will open.</p>
   </tr>
 </table>
 <p>
-  <T>T</t>he Locations window shows all the locations in your database.</p>
+  <t>T</t>he Locations window shows all the locations in your database.</p>
 <p>You may Edit any one of them, which opens the<strong> Edit Location</strong> window, which is the same as the <a href="Ops_Locations.shtml"><strong>Add Location</strong></a> window except it contains the info for the location you are editing.</p>
 <p>
   <input type="image" name="staging3" id="staging3" src="images/Ops_Staging07.png">
 </p>
 <p>You may add as many locations and track as you need to complete the description of your layout.</p>
-<p>&nbsp;</p>
 
 <hr>
 
@@ -209,6 +208,7 @@ and the <strong>Edit Staging Track</strong> window will open.</p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

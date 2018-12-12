@@ -20,7 +20,7 @@
 <div id="container">
   <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <hr class="hide">
 
@@ -189,7 +189,7 @@ He also added a warning to the program when loading panels with existing names; 
 A bug that would cause the editor for Digitrax SPJ files to occasionally crash and write zero-length output files was fixed.
 
 <hr class="hide">
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

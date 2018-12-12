@@ -15,12 +15,12 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Decoder Definition</h1>
 <h1>Submitting to JMRI</h1>
 
@@ -33,11 +33,11 @@
 <h4>Submitting to JMRI</h4>
 <p><strong>How do I go about getting these approved and into the next release?</strong></p>
 
-<p>&nbsp;If you're happy with them, you can contribute them to the next &nbsp;release by creating a &quot;Patch&quot; for the project. &nbsp;</p>
-<p><strong>To do this: &nbsp;</strong></p>
+<p>If you're happy with them, you can contribute them to the next release by creating a &quot;Patch&quot; for the project. </p>
+<p><strong>To do this: </strong></p>
 <ol>
-  <li> If you have a SourceForge account (they're free!), log on.&nbsp; <br> 
-  If &nbsp;not, don't worry about it. Go to the <a href="http://sourceforge.net/tracker/?group_id=26788&atid=388315">patch web site</a> on SourceForge:<br>
+  <li> If you have a SourceForge account (they're free!), log on. <br> 
+  If not, don't worry about it. Go to the <a href="http://sourceforge.net/tracker/?group_id=26788&atid=388315">patch web site</a> on SourceForge:<br>
   <br>
   </li>
   <li>Click on <strong>Add new  </strong>on left side of the screen as shown<br>
@@ -67,14 +67,6 @@
   </li>
 </ol>
 
-
-
-
-
-
-
-
-
 <hr>
 
 <div align=right>
@@ -82,6 +74,7 @@
 <p><a href="index.shtml#DecoderDefinition">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

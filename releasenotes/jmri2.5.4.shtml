@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -195,7 +195,7 @@ add tools to Section Table to automatically add direction sensors to signal logi
 Dan Boudreau changed the Panel Editor info message when closing a panel.  You can now decide to hide or delete
 the panel when closing.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

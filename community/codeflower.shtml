@@ -41,7 +41,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
   <div class="nomenu" id="mBody">
     <div id="mainContent" width="1000" height="1000">
 
@@ -79,7 +79,8 @@
         </ul>
         
     <h4>How To</h4>
-    <p>Download the <code>cloc</code> script (Count Lines Of Code) from <A href="https://github.com/AlDanial/cloc">github.com/AlDanial/cloc</a> and save it somewhere close to your local GitHub folder.<br>
+    <p>Download the <code>cloc</code> script (Count Lines Of Code) from <a href="https://github.com/AlDanial/cloc">
+        github.com/AlDanial/cloc</a> and save it somewhere close to your local GitHub folder.<br>
     Make the following adjustment to the script, using a suitable editor:
         <ul>
         <li>After line 5290 insert <code>'shtml' => 'HTML' ,</code> to include our flavor of html in the analysis.</li>
@@ -112,7 +113,7 @@
     <h4>Source Data</h4>
    Take a look at the data inside <a href="codeflower_js/jmri.json" target="_blank">jmri.json</a>.
     
-    <!--#include virtual="/Footer" -->
+    <!--#include virtual="/Footer.shtml" -->
     </div> <!-- closes mainContent -->
   </div> <!-- closes mBody -->
   

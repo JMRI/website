@@ -15,12 +15,12 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Build Report Print<br>
 </h1>
@@ -31,17 +31,17 @@
 </div>
 
 <hr>
-<blockquote>
-  <p>&nbsp;</p>
+
   <blockquote>
     <p><img src="images/Ops_BuildReportPreview.png" width="900" height="1473"></p>
   </blockquote>
-</blockquote>
+
 <div align=right>
   <p><a href="Ops_Trains.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

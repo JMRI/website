@@ -22,10 +22,10 @@
 
 <!-- /Style -->
 </head><body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent"><a name="Top"></a>
-<h1>Using JMRI� to Operate Trains</h1>
+<h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Cars Window</h1>
 <div align="right">
 <div align="right">
@@ -35,10 +35,10 @@
 
 </div>
 <hr>
-<p>This window is opened from the DecoderPro� Tools Menu, or Operations
+<p>This window is opened from the DecoderPro&reg; Tools Menu, or Operations
 Menu; and alternatively from <strong>Location</strong> Window <strong>Tools</strong>
 menu, <strong>Show Cars: and various Windows Opertions Menus.</strong></p>
-<p>The cars window allows you to view,&nbsp; edit your car roster. or add a car by
+<p>The cars window allows you to view, edit your car roster. or add a car by
 entering a car's number, road, type, length. The program will
 automatically calculate the car's weight based on length and the scale
 you are modeling. Optionally the car's color, build date, load and
@@ -87,7 +87,7 @@ each time pressed the next car with the 345 ending will be displayed..
 <p><a href="Ops_Locations.shtml">Previous </a> | <a href="Ops_Engines.shtml">Next</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div>
 
 </body></html>

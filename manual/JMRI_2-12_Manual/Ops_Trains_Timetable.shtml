@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -44,7 +44,7 @@
   <li><strong>Window</strong> - standard JMRI&reg; menu</li>
   <li><strong>Help</strong> - standard JMRI &reg;menu</li>
 </ul>
-<p>&nbsp;</p>
+
 <hr>
 
 <div align=right>
@@ -52,6 +52,7 @@
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

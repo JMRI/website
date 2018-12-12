@@ -18,7 +18,7 @@
 
 <body>
 
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -57,7 +57,7 @@ None at release time.
 
 <!--
 If any of those effect you, please either wait for
-<A href="jmri3.11.9.shtml">JMRI 3.11.9</a>, due out shortly after this one,
+<a href="jmri3.11.9.shtml">JMRI 3.11.9</a>, due out shortly after this one,
 or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -186,8 +186,7 @@ These are development files, and might not be working at any particular time.</p
          and hybrid (semaphore with lower searchlight head) masts.
          <br>
          Does not reference the rulebook as web link because I cannot find it
-         hosted anywhere. There is a PDF of the rulebook in the Yahoo user group files area
-         if a place can be found to host it. Mast files contain page references for
+         hosted anywhere. Mast files contain page references for
          the aspect appearances in the 1969 rulebook.
          <br>
          Provided by Suzie Tall, patch 1067
@@ -257,7 +256,7 @@ These are development files, and might not be working at any particular time.</p
                 enable/disable Sensor icons on a Layout Editor panel.
         </ul>
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

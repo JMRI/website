@@ -15,16 +15,16 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Roster Menu </h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml"> Previous | </a><a href="Main_Panels.shtml">Next </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -89,7 +89,7 @@ will only contain locomotives that are in that specific list.</p>
 <p>Opens the Save dialog box to allow you to select directory and name the file.</p>
 <p><a name="CreateRoster"></a>New Roster Setup Pane</p>
 <p align="center"><img src="images/Main_RosterMenu01.png" alt="Create Roster" width="391" height="483" border="4"></p>
-<p>Select a decoder that matches the one installed in your locomotive. The Open Programmer button will now become activated and you&rsquo;ll be  able to move on with the Programmer selected from the drop-down list, then &nbsp;click on the <strong>Open Programmer</strong> button, the selected Programmer window will open. All programmers,  Basic and Comprehensive, open to the <a href="Comp_Setup_Roster.shtml">Roster Entry pane</a>.</p>
+<p>Select a decoder that matches the one installed in your locomotive. The Open Programmer button will now become activated and you'll be  able to move on with the Programmer selected from the drop-down list, then click on the <strong>Open Programmer</strong> button, the selected Programmer window will open. All programmers,  Basic and Comprehensive, open to the <a href="Comp_Setup_Roster.shtml">Roster Entry pane</a>.</p>
 <div>
   <div align="right"><a href="#Create">Back</a></div>
 </div>
@@ -105,7 +105,7 @@ will only contain locomotives that are in that specific list.</p>
 <div>
   <div align="right"><a href="#copy">Back</a></div>
 </div>
-<p align="left">&nbsp;</p>
+
 <h4 align="left"><a name="InputDialog"></a>Input prompt</h4>
 <p align="center"><img src="images/Main_RosterMenu04.png" alt="input dialog" width="299" height="127" border="4"></p>
 <p align="left">Type the name of the new roster you wish to process then click on the <strong>OK</strong> button. Click <strong>Cancel</strong> button if you wish to abort this function.</p>
@@ -113,7 +113,7 @@ will only contain locomotives that are in that specific list.</p>
   <div align="right"><a href="#copy">Back</a></div>
 </div>
 <h4 align="left"><a name="DeleteRoster"></a>Delete roster entry prompt</h4>
-<p align="center">&nbsp;</p>
+
 <p align="left">Select the roster from the drop-down list that you wish to delete from DecoderPro. Click <strong>OK</strong> and the Confirmation box <strong>Delete entry <em>fileName</em>? </strong>is displayed.. Click <strong>Cancel</strong> button if you wish to abort this function.</p>
 <p align="center"><img src="images/Main_RosterMenu06.png" alt="confirm delete" width="432" height="122" border="4"></p>
 <p align="left"><strong>Yes </strong>button deletes file, <strong>No</strong> button aborts the operation.</p>
@@ -121,18 +121,20 @@ will only contain locomotives that are in that specific list.</p>
   <div align="right"><a href="#Delete">Back</a></div>
 </div>
 <h4 align="left"><a name="PrintOutput"></a>Print and Print Preview</h4>
-<p align="left">Both generate a printout that looks like this.&nbsp; The difference is that preview is only on  your screen, whereas print summary prints it onto paper. (HINT: Print to pdf file and review. Then you can print anytime or print selected pages.)</p>
+<p align="left">Both generate a printout that looks like this. The difference is that preview is only on  your screen, whereas print summary prints it onto paper. (HINT: Print to pdf file and review. Then you can print anytime or print selected pages.)</p>
 <p align="center"><img src="images/Main_RosterMenu07.png" alt="pritned page" width="610" height="674" border="4"></p>
 <div>
   <div align="right"><a href="#Print">Back</a></div>
 </div>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Panels.shtml"></a><a href="Main_Tool.shtml">Previous | </a><a href="Main_Panels.shtml">Next </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

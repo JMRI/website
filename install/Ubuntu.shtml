@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="/download/Sidebar" -->
 <div id="mainContent">
@@ -147,7 +147,7 @@ Java needs to me "unmodified".</p>
 <p>RxTx used to be a problem requiring modifications to Java to
 enable JMRI to run. Since JMRI version 3 this is no longer required. However, if
 you are using a version of JMRI prior to 2.9.2 then Java must be
-"unmodified". There is a script to do this in the JMRI users Yahoo Group
+"unmodified". There is a script to do this in the JMRI Users group
 Files area, or one can work back from the following:</p>
 
 <p>For those who
@@ -237,9 +237,8 @@ relevant Config2.xml file from this directory should fix it.</p>
 	RxTx information is left behind in the old directory.<br>
 	The solution is to run the install script again.</dd>
 	</dl>
-<p>If you have any problems get back to the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group.</p>
+<p>If you have any problems get back to the <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io group.</p>
 
- 
 <a id="notes"/>
 <h2>Notes</h2>
 
@@ -303,6 +302,6 @@ on the "<a href="FAQLinux.html">JMRI Linux FAQ page</a>".
 
 <!-- /Footer -->
     </div><!-- closes #mainContent-->
-  </div> <!-- closes #mBody-->
+  </div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

@@ -3,9 +3,9 @@
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
 <!-- $Id: Main_Powerline.shtml 18244 2011-08-20 03:32:09Z dat7719 $ -->
-<TITLE>
+<title>
 DecoderPro&reg; Main Window
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -17,7 +17,7 @@ DecoderPro&reg; Main Window
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -25,22 +25,19 @@ DecoderPro&reg; Main Window
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Bachrus Speedo</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_menubar.shtml">Back to Index</a></p>
 </div>
 <h4>Speedo Console</h4>
 <blockquote>
-  <blockquote>
-    <blockquote>
       <p><img src="images/BackrusSpeedo.png" width="414" height="314" alt="speedo"></p>
       <p>Setup Speedo using the controls on the console.</p>
-    </blockquote>
-  </blockquote>
 </blockquote>
-<div align=right>
+<div align="right">
   <p><a href="dp3_menubar.shtml">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

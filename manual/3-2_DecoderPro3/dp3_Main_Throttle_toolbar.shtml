@@ -15,16 +15,16 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro3&reg; Main Window</h1>
 <h1>JMRI&reg; Throttle Window - Toolbar</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_Main_Throttle.shtml">Back </a></p>
 </div>
 
@@ -36,7 +36,7 @@
   <p>Use Throttles preferences window to set the desired preferences.</p>
   <p align="center"><img src="images/Main_Tool01.png" width="700" height="427" alt="Throttle pref"></p>
 </ul>
-<p>&nbsp;</p>
+
 <p>When it is enabled, a Throttle Window can host a set of Throttles. You can browse through these throttles: Add a new Throttle in that Throttle Window. Once the number of Throttles in a Throttle Window is greater than one, Next and Previous Icons are enabled. </p>
 <ul>
   <li> <img src="images/Main_Throttle_toolbar_new.png" width="51" height="45" alt="new"> Open a new Throttle Window</li>
@@ -50,17 +50,14 @@
   <li><img src="images/Main_Throttle_toolbar_edit.png" width="50" height="49" alt="edit">Switch to or revert from Edit Throttle mode.</li>
   <li><img src="images/Main_Throttle_toolbar_list.png" width="48" height="51" alt="listr"> Opens the <a href="dp3_Main_Throttle_List.shtml">Local JMRI Window</a></li>
 </ul>
-<p>&nbsp;</p>
-<div>
-  <div align="right"></div>
-</div>
-<div> </div>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_Main_Throttle.shtml">Back </a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

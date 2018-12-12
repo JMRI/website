@@ -6,7 +6,6 @@
  </title>
 	<meta name="author" content="Bob Jacobsen, Egbert Broerse">
 	<meta name="keywords" content="java model railroad JMRI install MacOSX macOS">
-
 <!-- Style -->
   <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
@@ -14,11 +13,10 @@
   <link rel="icon" href="/images/jmri.ico" type="image/png">
   <link rel="home" title="Home" href="/">
 <!-- /Style -->
-
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="/download/Sidebar" -->
 <div id="mainContent">
@@ -118,8 +116,8 @@
         fixes, examples and tutorials to the release, and so a new
         "test" version appears every month or so.  You may find one of
         these has features that you really want.  These are announced
-        in the JMRI users Yahoo group at <a
-         href="https://groups.yahoo.com/neo/groups/jmriusers/info">https://groups.yahoo.com/neo/groups/jmriusers/info</a>.
+        in the JMRI users Groups.io group at <a
+         href="https://groups.io/g/jmriusers">https://groups.io/g/jmriusers</a>.
         </p>
 
        <li>...and install it.</li>
@@ -174,7 +172,14 @@
           </ul>
           <p>Your existing configuration information, Panel files, etc will
           continue to be used with the new version.
-      
+
+          <h3>Clean Install</h3>
+          <p>If for any reason you wish to start totally clean and discard all previously stored Connections, Roster
+          entries and Panels, delete the JMRI settings folder before starting the program. You will find it by choosing
+          "Go to Folder..." from the Finder's <b>Go</b> menu (or &#8984;+Shift+G). In the pane that appears, enter
+          "~/Library/Preferences/", click "Go". If a "JMRI" folder is present in Preferences, move it to the Trash.
+          </p>
+
       <a id="startup"></a><h2>Starting JMRI</h2>
       
       <p>Connect your computer to your <a
@@ -247,7 +252,7 @@ This section gives some debugging hints.
 <p>Source: <a href="../releasenotes/jmri4.5.2.shtml"> JMRI 4.5.2 Release notes</a>.</p>
 
 <h3>Vector3f issue</h3>
-
+<p>
 Sometimes Macs have an older "vecsub.jar" library installed in a place that
 will cause problems for JMRI.  It happens more often when you're compiling your
 own version, but it can also happen when just running a download. If you get messages about
@@ -258,7 +263,7 @@ or getY() or getZ(), the solution is to copy the JMRI/lib/vecmath-1.5.2.jar file
 within the JMRI distribution directory to the  ~/Library/Java/Extensions/ directory.
 (You might have to create that directory)
 
-<a name="#notes"><h2>Notes</h2></a>
+<a name="#notes"></a><h2>Notes</h2>
 
 <h3>Customizing your JMRI Installation</h3>
 
@@ -284,6 +289,7 @@ Let's say you want one called "CoolNewOne".
 	<li>Double click your new icon, and off you go.  
 	</ul>
 
+<p>
 It won't work to drag one of the JMRI application icons out of the 
 JMRI folder, since they need the other files that can be found there.
 If you want an icon in some other place, like on your desktop:
@@ -294,11 +300,12 @@ If you want an icon in some other place, like on your desktop:
 	<li>Drag that new alias icon to it's new location, and optionally rename it.
 	</ul>
 
+<p>
 Note that renaming the alias alone does not cause the application icon to be renamed, so the alias will be using the
 same Preferences as the original.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
-  </div> <!-- closes #mBody-->
+  </div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

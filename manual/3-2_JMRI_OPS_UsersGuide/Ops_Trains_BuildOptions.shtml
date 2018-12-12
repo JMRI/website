@@ -15,12 +15,12 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Build Options for Trains</h1>
 
@@ -84,8 +84,6 @@ Note that once you've built a train, the build option can not be changed until a
     <td valign="top">&nbsp;</td>
   </tr>
 </table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 
 <hr>
 
@@ -94,6 +92,7 @@ Note that once you've built a train, the build option can not be changed until a
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

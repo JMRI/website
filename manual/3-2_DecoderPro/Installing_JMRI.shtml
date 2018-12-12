@@ -13,19 +13,17 @@
 <link rel="home" title="Home" href="/">
 <!-- /Style -->
 </head>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>
-<img SRC="images/logo.gif" ALT="JMRI DecoderPro Logo" BORDER=0 height=135 width=160 vspace="15"></h1>
-
-
+<img src="images/logo.gif" alt="JMRI DecoderPro Logo" border="0" height="135" width="160" vspace="15"></h1>
 
 <h1>Installing JMRI&reg;</h1>
-<div align=right>
+<div align="right">
   <p><a href="index.shtml#Installing">Back to Index</a></p>
 </div>
 
@@ -63,24 +61,20 @@
     </ul>
   </li>
 </ul>
-<p>&nbsp;</p>
 
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="index.shtml#Installing">Back to Index</a></p>
 </div>
 
-
-This site is hosted by
-<br>
-<a href="http://sourceforge.net">
-<IMG src="images/sflogo.png" width="120" height="30" border="0" alt="SourceForge Logo" hspace="10" vspace="5" align="top"></a>
-<br>
+<p>This site is hosted by<br>
+  <a href="http://www.tagadab.com">
+    <img src="https://www.tagadab.com/sites/default/files/logo-tagadab-nostrap.png" height="28" width="103"
+         border="0" alt="Tagadab Logo"> </a>
+</p>
 </div>
 
-<!--#include virtual="/Footer" -->
-</div>
+<!--#include virtual="/Footer.shtml" -->
 
-<!--#include virtual="/Footer" -->
 </html>

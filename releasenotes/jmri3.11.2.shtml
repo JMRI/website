@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -150,7 +150,7 @@ These are development files, and might not be working at any particular time.</p
     <h5>ESU</h5>
         <p>Dave Heap fixed a problem with strange sound slot names displayed in LokSound Select.</p>
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

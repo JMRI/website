@@ -3,9 +3,9 @@
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
 <!-- $Id: Main_VSD.shtml 18193 2011-08-16 23:19:17Z dat7719 $ -->
-<TITLE>
+<title>
 DecoderPro&reg; Main Window
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -17,7 +17,7 @@ DecoderPro&reg; Main Window
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -25,7 +25,7 @@ DecoderPro&reg; Main Window
 <h1>DecoderPro&reg; Debug Menu</h1>
 <h1>Virtual Sound Decoder</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Debug.shtml#pricom">Back </a></p>
 </div>
 
@@ -35,11 +35,11 @@ DecoderPro&reg; Main Window
 window provides a consolidated location to manage and set the apparent
 physical location of sounds for trains using Virtual Sound Decoder</span></p>
 
-The <strong>Manage VSD Locations</strong> window has three tabs:
+<p>The <strong>Manage VSD Locations</strong> window has three tabs:
 Reporters, Operations Locations, and Listeners.  Each tab shows a list
 of objects, each with a check-box to enable/disable use (for VSD
 purposes, not for other JMRI purposes), and entry cells for X, Y, and
-Z location coordinates.
+Z location coordinates.</p>
 
 <h5>Reporters</h5>
 <img src="images/VSD_Locations01.png" alt="Manage Reporter Locations" width="560" height="340" border="4">
@@ -62,11 +62,11 @@ facing.</p>
 <a name="VSDLocations"></a><h4>Location Following</h4>
 <p>With input from locomotive tracking hardware, Virtual Sound Decoder is
 able to move the apparent source of the locomotive sound to follow the
-locomotive's position on the layout.
+locomotive's position on the layout.</p>
 <h5>Location Following Setup</h5>
-To enable location following you will need a hardware method of
+<p>To enable location following you will need a hardware method of
 tracking the locomotive's position on the layout.  VSD currently
-supports the following tracking systems:
+supports the following tracking systems:</p>
 <ul>
   <li>Digitrax Transponding (tested) </li>
   <li>ESU ECoS (not tested)</li>
@@ -75,13 +75,11 @@ supports the following tracking systems:
   <li>RailCom / DCC4PC (not tested)</li>
 </ul>
 
-If you have one of the systems noted as "not tested", and would like
+<p>If you have one of the systems noted as "not tested", and would like
 to help with testing and debug of this feature, please contact me on
-the <a href="http://groups.yahoo.com/group/jmriusers/">JMRIUsers
-Yahoo! Group</a>.  More systems will be added in the future.
-
-To enable VSD Location Following, follow these steps:
-</p>
+the JMRIUsers Group. More systems will be added in the future.
+<br>
+To enable VSD Location Following, follow these steps:</p>
 <ol>
   <li>Follow the directions appropriate to your hardware system for
   <!-- link below should point to the HELP page for Reporters -->
@@ -154,7 +152,7 @@ around the layout, the sound will follow the locomotive's reported
 position.</p>
 <p><em>Note:</em> The sound will appear to "jump" from location to
 location as the locomotive's reported location changes.  This effect
-will be smaller with additional and more closely spaced reporters.
+will be smaller with additional and more closely spaced reporters.</p>
 
 <h5>Location Following using JMRI Operations</h5>
 <p>If you do not have a hardware tracking system, you can use the
@@ -177,13 +175,14 @@ move to the next location on the Route.</p>
 <p>For more information on Operations, see the JMRI&reg; Operations User's Guide</p>
 
 <p><em>Note:</em> Operations Locations following is temporarily
-disabled in JMRI 3.1.6 but will be re-enabled in 3.1.7.
+disabled in JMRI 3.1.6 but will be re-enabled in 3.1.7.</p>
 
-
-<div align=right>
-<p><a href="Main_Debug.shtml#pricom">Back </a></p>
+<div align="right">
+<p><a href="Main_Debug.shtml#pricom">Back</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+  <!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

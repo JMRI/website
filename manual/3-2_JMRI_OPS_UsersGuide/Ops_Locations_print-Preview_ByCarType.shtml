@@ -15,12 +15,12 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Print Preview: Locations Serving Car Types Window</h1>
@@ -34,9 +34,7 @@
 <p>The Modify Locations by Car Type Tool menu , opens the Print Preview: Locations Servicing Car Types window as shown. Locations are places on your railroad that trains visit to pickup or  drop off cars and engines.</p>
 <blockquote>
   <blockquote>
-    <blockquote>
-      <p><img src="images/Ops_Locations_printLocationsbyCarType.png" width="660" height="957" alt="preview"></p>
-    </blockquote>
+    <p><img src="images/Ops_Locations_printLocationsbyCarType.png" width="660" height="957" alt="preview"></p>
   </blockquote>
 </blockquote>
 <hr>
@@ -46,6 +44,7 @@
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

@@ -15,16 +15,16 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>LocoNet Menu </h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
@@ -81,7 +81,7 @@
 <p>Opens the <strong>LocoNetOver Tcp Server</strong> dialog.</p>
 <p><img src="images/Main_Loconet09.png" alt="LocoNet server" width="361" height="120" border="4"></p>
 <p>.</p>
-<div align=right>
+<div align="right">
   <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 <hr>
@@ -277,13 +277,15 @@ Because of the way the DS64 board works, this tool can't change  the basic addre
 <div>
   <div align="right"><a href="#Sounds">Back</a></div>
 </div>
-<p>&nbsp; </p>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

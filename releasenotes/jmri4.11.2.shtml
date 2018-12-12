@@ -7,18 +7,12 @@
     <meta content="Bob Jacobsen" name="author">
     <meta name="keywords" content="java model railroad JMRI 4.11.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+<!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
 
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -114,7 +108,7 @@ from
 <ul>
     <li><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
     The system connection preferences (i.e. hardware preferences) are now
-    enforcing the <A href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
+    enforcing the <a href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
     for system prefixes:  One upper case letter, 
     optionally followed by a number (one or more digits, e.g. "L12").
     Existing prefixes in existing configurations are unchanged, but
@@ -264,7 +258,7 @@ on the
 These are development files, and might not be working at any particular time.</p>
   -->
   
-<h2>Changes since <a href="jmri4.11.1.shtml">Test release 4.11.1</a>:</h2>  -->
+<h2>Changes since <a href="jmri4.11.1.shtml">Test release 4.11.1</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.11.2">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
@@ -273,7 +267,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <ul>
           <li>The system connection preferences (i.e. hardware preferences) are now
-                enforcing the <A href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
+                enforcing the <a href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
                 for system prefixes:  One upper case letter, 
                 optionally followed by a number (one or more digits, e.g. "L12").
                 Existing prefixes in existing configurations are unchanged, but
@@ -285,16 +279,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>The default system prefix was shortened to "D"</li>
             </ul>
 		
-	    <h4>Bachrus Speedo</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-        <h4>C/MRI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>DCC++</h4>
             <ul>
                 <li>The default system prefix was shortened to "D"</li>
@@ -310,16 +294,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h4>LocoNet</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MERG CBUS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>Marklin CS2</h4>
             <ul>
                 <li>The default system prefix was shortened to "M"</li>
@@ -328,26 +302,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h4>MRC</h4>
             <ul>
                 <li>The default system prefix was shortened to "M"</li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RFID</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Roco z21/Z21</h4>
-            <ul>
-                <li></li>
             </ul>
 
         <h4>SPROG</h4>
@@ -362,45 +316,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li>The default system prefix was shortened to "T"</li>
             </ul>
 
-        <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Zimo MXULF</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZTC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
     <h3>New / Updated decoder definitions</h3>
       <ul>
         <li></li>
      </ul>
-
-        <h4>Arnold</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>BLI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Bachmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>DigiRails</h4>
-            <ul>
-                <li></li>
-            </ul>
 
         <h4>Digitrax</h4>
             <ul>
@@ -414,84 +333,27 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		        </li>
             </ul>
 
-        <h4>Doehler &amp; Haas</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>ESU</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Hornby</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Kuehn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LaisDCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Lenz</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MGP</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>MTH</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Norsk Modelljernbane (NJM)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>QSI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Rautenhaus</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RR-CirKits</h4>
             <ul>
                 <li></li>
             </ul>
 
         <h4>SoundTraxx</h4>
             <ul>
-                <li></li>
-            </ul>
-
-        <h4>TCS</h4>
-            <ul>
-                <li></li>
+                <li>Alain Le Marchand  made some updates:
+                    <ul>
+                        <li>Steam and Diesel Econami UK version as described on Soundtraxx UK website</li>
+                        <li>Rework of existing Econami and Tsunami2 files in order to accommodate UK specifics. Notably variable labels have been moved from Econami/Tsunami 2 extended function map pane (ECOenumFnMap.xml) to each individual Econami/Tsunami 2 file, 
+                            in order to be used in a generic way by US or UK variants that differ on certain function naming.</li>
+                        <li>references:
+                            <ul>
+                                <li>Econami_Diesel_Users_Guide 1.6 Ref.F
+                                <li>Econami-Diesel-Tech-Reference 1.6 Rev.E 
+                                <li>Econami_Steam_Users_Guide 1.6 Ref.G
+                                <li>Econami-Steam-Tech-Reference 1.6 Rev.H </li>
+                            </ul>
+                    </ul>
+                </li>
             </ul>
 
         <h4>Technologistic (train-O-matic)</h4>
@@ -499,109 +361,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 
-        <h4>Viessmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Wangrow</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZIMO</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Miscellaneous</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    <h3>DecoderPro</h3>
-        <ul>
-          <li></li>
-        </ul>
-
-   <h3>Dispatcher</h3>
-        <ul>
-             <li></li>
-        </ul>
-
-    <h3>Layout Editor</h3>
-        <ul>
-	        <li></li>
-        </ul>
-
-    <h3>Logix</h3>
-        <ul>
-          <li></li>
-        </ul>
-
-    <h3>Operations</h3>
-       <ul>
-          <li></li>
-       </ul>
-
-   <h3>Panel Editors</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Preferences</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Resources</h3>
-        <ul>
-            <li></li>
-        </ul>
-
     <h3>Roster</h3>
         <ul>
             <li>Digitrax Command Station Operations Switches may now be managed via a Roster entry.
         </ul>
 
-    <h3>Turnouts, Lights and other elements</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Scripting</h3>
-        <ul>
-            <li></li>
-        </ul>
-
     <h3>Signals</h3>
-        <ul>
-            <li></li>
-        </ul>
-        <h4>Signal Systems</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Heads</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Masts</h4>
-            <ul>
-                <li></li>
-            </ul>
-            
-    	<h4>Signal Groups</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    	<h4>Simple Signal Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
 
 	    <h4>NX Entry/Exit Logic</h4>
             <ul>
@@ -611,21 +376,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 		has been updated.
 		</li>
             </ul>
-
-	    <h4>USS CTC Logic</h4>
-            <ul>
-                <li>
-                </li>
-            </ul>
             
    <h3>Warrants</h3>
         <ul>
             <li>The Warrants Help pages were edited (with extra screen shots)</li>
-        </ul>
-
-   <h3>Web Access</h3>
-        <ul>
-            <li> </li>
         </ul>
 
    <h3>Internationalization</h3>
@@ -642,12 +396,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </li>
         </ul>
 
-    <h3>Miscellaneous</h3>
-        <ul>
-            <li></li>
-        </ul>
-
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

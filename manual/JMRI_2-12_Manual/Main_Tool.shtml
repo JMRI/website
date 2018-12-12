@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -24,7 +24,7 @@
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Tools Menu </h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Edit.shtml">Previous | </a><a href="Main_Roster.shtml">Next</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -173,11 +173,12 @@
 </ul>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Roster.shtml"></a><a href="Main_Edit.shtml">Previous | </a><a href="Main_Roster.shtml">Next</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

@@ -12,13 +12,13 @@
 <link rel="home" title="Home" href="/"><!-- /Style --></head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
 <a name="Top"></a>
-<h1>DecoderPro� Main Window</h1>
+<h1>DecoderPro&reg; Main Window</h1>
 <h1>File Menu </h1>
 
 <div align="right">
@@ -30,7 +30,7 @@
 <h4 class="style1">Print Decoder Definitions...  </h4>
 <p>Opens your computer Print dialog to print the installed decoder
 definitions. The complete list may be more than 25 printed pages. The
-format is shown below. &nbsp;My suggestion is to print out as pdf file
+format is shown below. My suggestion is to print out as pdf file
 to save paper.</p>
 <p align="center"><img style="width: 728px; height: 587px;" alt="printout" src="images/Main_file_01.png"><br></p>
 <h4><span class="style1">Print Preview Decoder Definitions..</span>. </h4>
@@ -49,5 +49,5 @@ decide whether to print the pages.</p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div></body></html>

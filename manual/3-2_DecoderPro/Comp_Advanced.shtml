@@ -15,16 +15,16 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Comprehensive Programmer</h1>
 <h1>Advanced Features Pane</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_Consist.shtml">Previous | </a>
   <a href="Comp_SoundFX.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
@@ -43,15 +43,16 @@ Loconet.
 
 <p>Note that the Tsunami decoder has advanced, Tsunami Lighting, Equalizer, Reverb, and ASC TAB that are unique to this deocoder and will not be discussed in this manual.
 <h1><img src="images/Comp_08_Advanced.png" width="932" height="792" alt="advanced"></h1>
-<p>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_SoundFX.shtml"></a>
   <a href="Comp_Consist.shtml">Previous | </a> <a href="Comp_SoundFX.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

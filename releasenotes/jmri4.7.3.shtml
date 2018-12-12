@@ -18,7 +18,7 @@
 
 <body>
 
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -164,8 +164,7 @@ These may be relevant to you if you're updating from an earlier version.
     included with this release have been converted to the new form.
     If you have decoder definitions with the older "ivariable" form, they will no longer
     validate, but can still be used for the first couple of test releases in this series.
-    Please ask on the
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
+    Please ask on the JMRI Users group
     for help converting them, or just drop them and use the current definitions.</p>
 
 
@@ -180,15 +179,15 @@ Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.dmg</a><br/>
-  sha256: c4ca7d32789de60a1764cc0c50cf2b73e2357ecd8e407a79b2c229193487858f </p>
+  sha256: c4ca7d32789de60a1764cc0c50cf2b73e2357ecd8e407a79b2c229193487858f</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.exe">https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.exe</a><br/>
-   sha256: 4fe5b78e96444939bf9933ad2c0d486a36ec40a472b2dcf1de30c8ffe6edb03b</p>
+   sha256: 4fe5b78e96444939bf9933ad2c0d486a36ec40a472b2dcf1de30c8ffe6edb03b</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.tgz</a><br/>
-   sha256: 87a1cf58c3c39a47cdc22a29ce24469051ee4ae559b804df66dbbe274e520e47</p>
+   sha256: 87a1cf58c3c39a47cdc22a29ce24469051ee4ae559b804df66dbbe274e520e47</li>
 </ul>
 
 <!-- 
@@ -392,7 +391,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 	    Access. (<a href="https://github.com/JMRI/JMRI/pull/3353">#3353</a>)</li>
         </ul>
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

@@ -1,18 +1,20 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head><!-- Copyright ($Author: dat7719 $) 2009, 2010 --><!-- $Id: Basic_BasicPane.shtml 18120 2011-08-07 11:49:22Z dat7719 $ --><title>Basic Programming</title><!-- Style -->
-
-
-
-
-
-
-
+<html lang="en">
+<head>
+  <!-- Copyright ($Author: dat7719 $) 2009, 2010 --><!-- $Id: Basic_BasicPane.shtml 18120 2011-08-07 11:49:22Z dat7719 $ -->
+  <title>
+    Basic Programming
+  </title>
+  <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
 <link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/"><!-- /Style --></head><body>
-<!--#include virtual="/Header" -->
+<link rel="home" title="Home" href="/">
+  <!-- /Style -->
+</head>
+<body>
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -25,8 +27,7 @@
   <p><a href="Basic_Start.shtml"> Previous | </a><a href="Comp_Setup_Roster.shtml">Next</a></p>
 <p><a href="index.shtml#Basic%20Programmer">Back to Index</a></p>
 </div>
-
-
+  
 <hr>
 <p>You may have noticed that at the  top of the window are Two tabs: <strong>Roster Entry</strong> and <strong>Basic</strong>.  We have completed the <strong>Roster Entry</strong> pane of the Program window, now,  click on the <strong>Basic</strong>
 tab to change panes to continue with programming your decoder. The
@@ -78,7 +79,7 @@ installed decoder will allow readback of decoder values), click on the <strong>
 <input name="button" id="button" value="Read full sheet" type="button">
 </strong>. The individual settings  will turn red while they are in the process of 
   being read (clever, eh?), and will turn white once the  values have been read successfully 
-  from the decoder. Once again, Decoder Pro must play  "Twenty Questions" to get this 
+  from the decoder. Once again, DecoderPro must play  "Twenty Questions" to get this
 information, and sometimes even has to ask a couple of  times. 
   <p>
 Be patient, especially with older computers. At the very bottom of the
@@ -92,8 +93,8 @@ what DecoderPro is doing, for example, the specific CV being read. </p>
   available. </p>
 <p><a name="Enter/Edit data"></a>If you wish to change the address of
 the locomotive, type in the new address. To turn on or off 4 digit
-addressing, select the desired radio button. .&nbsp; Be sure that the
-address type agrees with the number of characters in the address. &nbsp;</p>
+addressing, select the desired radio button. Be sure that the
+address type agrees with the number of characters in the address. </p>
 <p>To enable Analog (old style DC, some vendors refer to this as dual
 mode) Operation select the appropriate entry from the drop-down list. </p>
 <p> When you are finished, click on 
@@ -106,12 +107,12 @@ from yellow to white. If there is difficulty writing to the decoder,
 the data will change to red. The software will automatically keep
 trying until the write operation is successful. In some instances the
 system will &#8220;time-out&#8221; after a certain number of tries without an
-acknowledgement from the decoder.&nbsp; This does not necessarily mean
+acknowledgement from the decoder. This does not necessarily mean
 that the values have not been written, just that the program has not
-received an acknowledgement.&nbsp; This can be due to &nbsp;the
+received an acknowledgement. This can be due to the
 locomotive moving and getting on dirty track so that it can&#8217;t pulse
 back, or possibly because the command station or decoder cannot read
-back.&nbsp; Try moving the loco and try again.&nbsp; If it is a command
+back. Try moving the loco and try again. If it is a command
 station or decoder read-back issue, try the loco on the mainline and
 see if the programming was successful. </p>
   <p><a name="Save Data"></a>
@@ -119,34 +120,39 @@ see if the programming was successful. </p>
   click on the <strong>
   <input name="button5" id="button5" value="Save to roster" type="button">
 </strong>. Your new decoder  settings have now been written not only 
-  to the decoder, but also saved to a computer file where  they may be recalled in the future. . </p>
+  to the decoder, but also saved to a computer file where  they may be recalled in the future.</p>
 <a name="Do More"></a>
 But you say..."I want to change more than what's shown on the Basic
 decoder pane." Well&#8230; there are other programmers that are
-available.&nbsp; But&#8230; first we need to look at the various
-options.&nbsp; In fact there are so many options the programmers had to
-use a slider to get them all to show.&nbsp; Here are the option
-windows.&nbsp; Don&#8217;t panic&#8230;.Most are of no use to the average user.
+available. But&#8230; first we need to look at the various
+options. In fact there are so many options the programmers had to
+use a slider to get them all to show. Here are the option
+windows. Don&#8217;t panic&#8230;.Most are of no use to the average user.
 <p align="center"><img src="images/Basic_programmers.png" alt="Basic Programmers" height="341" width="568"><br>
 </p>
-<p><strong>Comprehensive </strong>and Advanced are the only other programmers "<strong><em>Normal Users</em>" </strong>will ever need, because it  is, well&#8230;<strong>Comprehensive</strong> and the <strong>Advanced</strong> adds features that are optional..&nbsp; So why all the  others?</p>
-<p>First of all eliminate the Manufacturer  specific programmers (unless of course you have a <strong>Zimo</strong> or <strong>ESU</strong> system).&nbsp; </p>
-<p>We can also eliminate the <strong>Tutorial</strong> and <strong>Custom</strong> programmers. They were put in to show folks that want to <strong>write their own</strong>&nbsp; programmer (not you right?) 
+<p><strong>Comprehensive </strong>and Advanced are the only other programmers "<strong><em>Normal Users</em>" </strong>will ever need, because it  is, well&#8230;<strong>Comprehensive</strong> and the <strong>Advanced</strong> adds features that are optional.. So why all the  others?</p>
+<p>First of all eliminate the Manufacturer  specific programmers (unless of course you have a <strong>Zimo</strong> or <strong>ESU</strong> system). </p>
+<p>We can also eliminate the <strong>Tutorial</strong> and <strong>Custom</strong> programmers. They were put in to show folks that want to <strong>write their own</strong> programmer (not you right?) 
 all the possible ways to gather input and to have a common  starting point in the roster pane. 
-Now if you wish to pursue writing a custom programmer go to jmri� website.</p>
+Now if you wish to pursue writing a custom programmer, go to the <a href="http://jmri.org">JMRI&reg;</a> website.</p>
 <p>If you have need for a special situation programmer  you might want to look at <strong>Sample Club</strong> or <strong>TrainShowBasic</strong>
 to see what panes can be taken out of Comprehensive to make an
-intermediate complexity, special purpose programmer.&nbsp; Again, how
+intermediate complexity, special purpose programmer. Again, how
 to do this is a subject for another manual.</p>
-<p>And that leaves us with the <strong>Advanced</strong> and <strong>Registers</strong> programmers.&nbsp; The <strong>Advanced</strong> programmer has a couple of  sophisticated features added on top of the <strong>Comprehensive</strong> programmer and a name  was needed.&nbsp; Well, why not call it  <strong>Advanced</strong>? We&#8217;ll cover the additional features once we get through with  <strong>Comprehensive</strong>.<br>
+<p>And that leaves us with the <strong>Advanced</strong> and <strong>Registers</strong> programmers. The <strong>Advanced</strong> programmer has a couple of  sophisticated features added on top of the <strong>Comprehensive</strong> programmer and a name  was needed. Well, why not call it  <strong>Advanced</strong>? We&#8217;ll cover the additional features once we get through with  <strong>Comprehensive</strong>.<br>
   So what about the  <strong>Registers</strong>
-programmer?&nbsp; If you have an old or bargain basement decoder that
+programmer? If you have an old or bargain basement decoder that
 only programs using registers, then of course you&#8217;ll be interested in <strong>Registers.</strong><br>
-So now we&#8217;ve narrowed our &#8220;real&#8221; choices down to&nbsp;<strong>Advanced</strong>, <strong>Basic</strong> and <strong>Comprehensive</strong>. Since we&#8217;ve already  covered <strong>Basic</strong>, let's explore the <a href="Comp_Setup_Roster.shtml">Comprehensive Programmer</a>! </p>
-<div align="right">
+So now we&#8217;ve narrowed our &#8220;real&#8221; choices down to <strong>Advanced</strong>, <strong>Basic</strong> 
+and <strong>Comprehensive</strong>. Since we&#8217;ve already  covered <strong>Basic</strong>, let's explore the <a href="Comp_Setup_Roster.shtml">Comprehensive Programmer</a>! </p>
+
+  <div align="right">
   <p><a href="Basic_Start.shtml">Previous | </a><a href="Comp_Setup_Roster.shtml">Next</a><a href="Comp_Setup_Roster.shtml"></a></p>
 <p><a href="index.shtml#Basic%20Programmer">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
-</div></body></html>
+<!--#include virtual="/Footer.shtml" -->
+</div>
+</div>
+</body>
+</html>

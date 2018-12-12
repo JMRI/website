@@ -11,15 +11,14 @@
 <link rel="icon" href="/images/jmri.ico" type="image/png">
 <link rel="home" title="Home" href="/"><!-- /Style --></head>
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
 <a name="Top"></a>
-<h1>Using JMRI� to Operate Trains</h1>
-<h1>Build Report Print<br>
-</h1>
+<h1>Using JMRI&reg; to Operate Trains</h1>
+<h1>Build Report Print</h1>
 
 <div align="right">
 <p><a href="Ops_EditTrain.shtml">Back</a><a href="#"></a></p>
@@ -29,14 +28,13 @@
 <hr>
 <blockquote>
   <p><img style="width: 714px; height: 779px;" alt="Build report" src="images/Ops_BuildReportPrint.png"><br></p>
-  <blockquote>
-    <p>&nbsp;</p>
-  </blockquote>
 </blockquote>
 <div align="right">
   <p><a href="Ops_EditTrain.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
-</div></body></html>
+<!--#include virtual="/Footer.shtml" -->
+</div>
+</body>
+</html>

@@ -1,22 +1,23 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head>
-<!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Ops_schedule.shtml 18386 2011-09-07 08:33:40Z dat7719 $ --><title>Operations-Schedules</title><!-- Style -->
-
-
-
-
-
+<html lang="en">
+<head>
+<!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Ops_schedule.shtml 18386 2011-09-07 08:33:40Z dat7719 $ -->
+<title>Operations-Schedules</title>
+<!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
 <link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/"><!-- /Style --></head><body>
-<!--#include virtual="/Header" -->
+<link rel="home" title="Home" href="/">
+<!-- /Style -->
+</head>
+<body>
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<h1>Using JMRI� to Operate Trains</h1>
+<h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Manifest Schedule</h1>
 
 <div align="right">
@@ -43,17 +44,17 @@ table also allows you the edit a schedule once its been assigned to a
 spur. </p>
 
 <p style="text-align: center;"><img src="images/Ops_Schedule07.png" alt="schedule" height="218" width="900"></p>
-<p> </p>
 
 <h4>Creating a Schedule</h4>
-<p>First open the<a style="font-weight: bold;" href="Ops_Locations.shtml"> Locations&nbsp;</a> window.</p>
-
+<p>First open the<a style="font-weight: bold;" href="Ops_Locations.shtml"> Locations</a> window.</p>
 
 <p>Then press 
   <input name="button" id="button" value="Edit" type="submit"> 
-in the column to the right of the location that you desire to schedule and the&nbsp; <strong>Edit Location </strong>window will &nbsp;open.</p><p><img src="images/Ops_Schedule02.png" alt="schedule" height="544" width="777"></p>
+in the column to the right of the location that you desire to schedule and the <strong>Edit Location</strong>
+window will open.</p><p><img src="images/Ops_Schedule02.png" alt="schedule" height="544" width="777"></p>
 <p>To schedule a location, select 
-  <input name="button2" id="button2" value="Edit" type="button"> in the column to the right to schedule the specific track at a location, then the&nbsp;<strong>Edit (Spur or other type of track) Track</strong> window will open.. </p>
+  <input name="button2" id="button2" value="Edit" type="button"> in the column to the right to schedule the specific
+track at a location, then the <strong>Edit (Spur or other type of track) Track</strong> window will open.</p>
 <table border="0" cellpadding="2" cellspacing="1" width="90%">
   <tbody><tr>
     <td width="44%"><input name="schedule" id="schedule" src="images/Ops_Schedule03.png" type="image"></td>
@@ -65,7 +66,8 @@ should open the <strong>Add Schedule</strong> panel. </p>
     <p>&nbsp;</p></td>
   </tr>
 </tbody></table>
-<p>The <strong>Edit Schedule for <em>spur</em></strong>---- window opens if the schedule exists and you want to modify it. If no schedule is selected, then when 
+<p>The <strong>Edit Schedule for <em>spur</em></strong>---- window opens if the schedule
+exists and you want to modify it. If no schedule is selected, then when
   <input name="button8" id="button8" value="Edit" type="button"> 
 is pressed the <strong>Add Schedule for <em>Spur</em>----</strong> window opens. </p>
 <p><img src="images/Ops_Schedule04.png" alt="schedule" height="281" width="900"></p>
@@ -88,14 +90,16 @@ You can also specify the car load received and shipped. Also a
 Timetable may be specified. All with the use of the drop-down menus</p>
 <p> If you wanted more than one car type to be delivered consecutively,
 increase the count to the number that you wish. The maximum count is 10
-and the minimum is 1. Repeat selecting the car types and pressing <input name="button6" id="button6" value="Add car type" type="submit">
+and the minimum is 1. Repeat selecting the car types and pressing
+<input name="button6" id="button6" value="Add car type" type="submit">
 until your have a delivery schedule you like. Press
 <input name="button7" id="button7" value="Save Schedule" type="submit">
 and close the schedule panel when you are done. </p>
 <p>Note only car types and roads that are accepted by this siding are
 available. If a car type or road isn't available, check the car types
 and roads for this siding and location. </p>
-<p>If you want a specific load for your cars,  you can create them using the <a href="Ops_CarAttributes.shtml">Edit Car  Attributes</a> for car <strong>Load</strong>.
+<p>If you want a specific load for your cars,  you can create them using the
+<a href="Ops_CarAttributes.shtml">Edit Car  Attributes</a> for car <strong>Load</strong>.
 Each new load is associated with the car type. For example you can have
 "Screws" for a boxcar, and "Oil" for a tank car. The program will only
 deliver cars with a "Schedule" load to a spur that has a Schedule that
@@ -110,5 +114,7 @@ using staging tracks. </p><hr>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
-</div></body></html>
+<!--#include virtual="/Footer.shtml" -->
+</div>
+</body>
+</html>

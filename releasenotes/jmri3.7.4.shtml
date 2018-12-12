@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -200,7 +200,7 @@ to improve reliability of sensor readout.
 
 <p>Alain Le Marchand provided multiple updates to the Digitrax decoder definitions (<a href="https://sourceforge.net/p/jmri/patches/979/">patch 979</a>). 
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
