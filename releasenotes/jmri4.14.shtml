@@ -28,9 +28,9 @@
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
-<p>We are very pleased to announce that the 4.11 series of JMRI test releases has resulted in a
+<p>We are very pleased to announce that the 4.13 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
-We're therefore making that version, "Production Release 4.12" available for download today.</p>
+We're therefore making that version, "Production Release 4.14" available for download today.</p>
 
 <h2>Notes:</h2>
 
@@ -75,7 +75,7 @@ from
 
 <ul>
             <li>This test release changes how "Internal" Throttles, Consisting, CV Programmers and Command Station
-                references are configured.  This is done to avoid <u>accidentally</a> getting
+                references are configured.  This is done to avoid <u>accidentally</u> getting
                 one of these configured as a default instead of using your attached hardware device
                 (the dreaded "programmer always reads 123" condition). 
                 Most JMRI users will not have to do anything.
