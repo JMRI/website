@@ -301,6 +301,51 @@ are available in our
         <h4><a href="http://openlcb.org">OpenLCB</a></h4>
             <ul>
                 <li>Jeff Collell added Light support</li>
+                <li>There is a new dialog for configuring parameters of various
+                OpenLCB protocols, reachable from the Preferences
+                dialog->Connection, selecting the appropriate OpenLCB
+                connection and clicking the button "Protocol settings".
+                <li>The JMRI computer can now have it's node identity (Node ID,
+                user name, user description) configurable in the Protocol
+                Settings dialog. This will make the JMRI computer(s) attached
+                to the layout appear in the Configure Nodes tree with their
+                appropriate descriptions.
+                <li>Added support for Fast Clock using the Broadcast Time
+                Protocol draft. Enable it either in Clock Master or Clock Slave
+                mode in the Protocol Settings dialog. Each layout must have
+                exactly one generator. Not all features of the standard are
+                supported yet. Both Master and Slave mode allows setting the
+                time & rate in PanelPro main window -> Tools -> Clocks -> Setup
+                Fast Clock menu. For clock slave JMRIs it is advisable to set
+                in the Start Up options "Start with fast clock:" to "Don't
+                change" and untick the "Set Fast Clock Time" and "Set Clock
+                Rate" check boxes to avoid restarting JMRI from re-setting your
+                clock master.
+                <li>The Connection name for an OpenLCB connection can now be
+                changed in the connection preferences dialog. This allows
+                renaming it to "LCC" if a user prefers that name.
+                <li>In the connection preferences dialog the manufacturer list
+                now contains "LCC" as an alias to OpenLCB. There are no
+                differences between choosing one or the other, just the label.
+                <li>Internal bugfixes will make some rarely seen Java errors go
+                away. The sequencing of loopback operations will be more
+                deterministic, but Logix that were set up in a race condition
+                might behave differently due to the sequential execution. A
+                typical example that might change would be having a Sensor and
+                a Turnout object both be set to the same pair of event IDs,
+                then having a Logix change the sensor, and another Logix have
+                both that Sensor and that Turnout be in the antecedents but the
+                Turnout be non-triggering. The behavior of this setup used to
+                be non-deterministic in multi-processor computers.
+                <li>The CAN Send Frame can now accept dotted-hex format Event
+                IDs.
+                <li>The Firmware Upgrade dialog shows the Node list in sorted
+                order, also displaying User names and Descriptions for easier
+                selection of which node to upgrade.
+                <li>Firmware upgrade via the Stream protocol draft is now
+                operational (at the time of this writing no commercial hardware
+                is available that uses this variant). The protocol to use is
+                auto-detected.
             </ul>
 
         <h4>RFID</h4>
