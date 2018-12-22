@@ -164,16 +164,16 @@ check the files against the checksums shown below.
 <!-- 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.13.7/JMRI.4.13.7+R3c19855.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.7/JMRI.4.13.7+R3c19855.dmg</a><br/>
-  sha256: 76742edcd2a37f6fea3b829f111c998ea4c8cc06fb8f542617694e2356d51856 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.dmg</a><br/>
+  sha256: 3efa5322ab034063bc277371585086cf7fd328d8c335467760ae77c892f07a01 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.13.7/JMRI.4.13.7+R3c19855.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.7/JMRI.4.13.7+R3c19855.exe</a><br/>
-   sha256: b6983924657a2344db8cd30f47abead5343c0d56d4acb5f2d9e8354dcb94d242</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.exe">https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.exe</a><br/>
+   sha256: 2b040677d4bb4138e1474ad2f07866d0494877a352aa9771db7dc170b1e0bbca</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.13.7/JMRI.4.13.7+R3c19855.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.7/JMRI.4.13.7+R3c19855.tgz</a><br/>
-   sha256: 18d3daf83ddee257c1673acec3e31c9de19b68bd557bb7f55406dfd79b73e0c2</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.tgz</a><br/>
+   sha256: 78e53c0fb4f806b8e26951f27d5027c150c935ba12d7c401a7b1505bd5298978</li>
 </ul>
 
 -->
@@ -558,6 +558,7 @@ are available in our
         <ul>
 	        <li>A problem that caused the Scale Track Tool to not work with Beziers was fixed</li>
 	        <li>The Color Chooser was updated and fixed</li>
+	        <li>Rotating animated GIFs should now work</li>
         </ul>
 
     <h3>Logix</h3>
@@ -575,7 +576,7 @@ are available in our
    <h3>Panel Editors</h3>
         <a id="PE" name="PE"/>
         <ul>
-            <li></li>
+	        <li>Rotating animated GIFs should now work</li>
         </ul>
 
     <h3>Preferences</h3>
