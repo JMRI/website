@@ -25,7 +25,7 @@
 
  <hr class="hide"> 
  <div id="mainContent">
-    <div id="teaser">
+
     This page describes JMRI releases.  Briefly, we have three kinds:
     <ul>
     <li>"<a href="#prod-rel">Production releases</a>" about twice a year.  These are the ones we recommend to general users.
@@ -41,7 +41,23 @@
     <a href="https://github.com/JMRI/JMRI/milestones">current list of milestones</a>
     and the 
     <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">development roadmap</a>.
-    </div><!-- closes #teaser-->
+    
+    <p>If you've never installed a version of this program before, 
+    please read the installation guide (on the left) for your computer type and layout hardware. 
+    They will show you how to install the things that are needed before the program will run. 
+    These additional preliminary steps are one-time only and not necessary when updating. 
+    If you've previously installed a working version of the program, you
+	only need to download and install one of the files
+	listed below to update.</p>
+        
+    <p>Installation guides:
+	<a href="../install/WindowsNew.shtml">Windows</a>,
+	<a href="../install/MacOSX.shtml">Mac OS X</a>,
+	<a href="../install/Linux.shtml">Linux</a>
+
+    <p>See also the page of 
+        <a href="/help/en/html/hardware/index.shtml">layout connections</a>.
+
 	<h1>Latest News</h1>
 	<dl>
 		<dt>Production release 4.14 available</dt>
@@ -52,8 +68,8 @@
 	    Release 4.14 is the current "production" release, recommended
 	    for first-time users.
 	    Please see the 
-	    <a href="#prod-rel">next section</A> for download and install
-	    information. 
+	    <a href="../releasenotes/jmri4.14.shtml">release note</a>
+	    for additional information.
 	    
 	    <dt>Test release 4.13.7 is available</dt>
 	    <dd>
@@ -81,25 +97,6 @@
     <dl>
     <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
     <dd>
-
-    <p>If you've never installed a version of this program before, 
-    please read the installation guide (on the left) for your computer type and layout hardware. 
-    They will show you how to install the things that are needed before the program will run. 
-    These additional preliminary steps are one-time only and not necessary when updating. 
-    If you've previously installed a working version of the program, you
-	only need to download and install one of the files
-	listed below to update.</p>
-        
-    <p>Installation guides:
-	<a href="../install/WindowsNew.shtml">Windows</a>,
-	<a href="../install/MacOSX.shtml">Mac OS X</a>,
-	<a href="../install/Linux.shtml">Linux</a>
-
-    <p>See also the page of 
-        <a href="/help/en/html/hardware/index.shtml">layout connections</a>.
-
-    <p>The JMRI download files listed below can be used for either a new installation or updating an existing installation.	</p>
-
 	<a id="prod-download"></a><p class="dl">Download: 
         <ul>
         <li>OS X / macOS: <a
@@ -120,6 +117,7 @@
     <p>For more information on the release contents, please see the
     <a href="../releasenotes/jmri4.14.shtml">release note</a>.
     </p>
+    <p>These files can be used for either a new installation or updating an existing installation.</p>
     <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
     <p>
     If you're looking to download Rodney Black's 
