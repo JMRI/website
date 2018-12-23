@@ -74,9 +74,9 @@ If any of those affect you, please either
 wait for
 <a href="jmri4.11.3.shtml">JMRI 4.11.3</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
-<a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
+<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
-<a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
+<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
  -->
 
 <a id="warnings" name="warnings"></a>
@@ -180,7 +180,7 @@ check the files against the checksums shown below.
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.15.1/">CI project page</a>.
+<a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.1/">CI project page</a>.
  -->
 
 <p>During development leading to the actual release, you can find test download files on the
@@ -451,7 +451,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 <li></li>
             </ul>
 	    
-	<h4>Team Digital</h4>
+	    <h4>Team Digital</h4>
             <ul>
                 <li></li>
             </ul>
@@ -462,6 +462,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
         <h4>Trix Modelleisenbahn</h4>
+            <ul>
+                <li></li>
+            </ul>
+
+        <h4>Uhlenbrock</h4>
             <ul>
                 <li></li>
             </ul>
@@ -602,7 +607,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li></li>
             </ul>
-            
+
+   <h3>Switchboard Editor</h3>
+        <a id="SW" name="SW"/>
+        <ul>
+            <li></li>
+        </ul>
+
     <h3>Timetable</h3>
         <a id="Timetable" name="Timetable"/>
         <span class="since">since 4.13.4</span>

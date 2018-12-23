@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.13.7 release
       </h1>
 
-    <p>Date: mmm dd, 2018</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: December 17, 2018</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.13.7 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -83,7 +85,15 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-            <li></li>
+            <li>This test release changes how "Internal" Throttles, Consisting, CV Programmers and Command Station
+                references are configured.  This is done to avoid <u>accidentally</a> getting
+                one of these configured as a default instead of using your attached hardware device
+                (the dreaded "programmer always reads 123" condition). 
+                Most JMRI users will not have to do anything.
+                If you do need to use 
+                an internal version of these, please go to preferences and add an internal "None"
+                connection in addition to the ones you already have, then set defaults.  
+            </li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -155,7 +165,7 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
+
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -164,30 +174,30 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.13.7/JMRI.4.13.7+R3c19855.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.7/JMRI.4.13.7+R3c19855.dmg</a><br/>
+  sha256: 76742edcd2a37f6fea3b829f111c998ea4c8cc06fb8f542617694e2356d51856 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.13.7/JMRI.4.13.7+R3c19855.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.7/JMRI.4.13.7+R3c19855.exe</a><br/>
+   sha256: b6983924657a2344db8cd30f47abead5343c0d56d4acb5f2d9e8354dcb94d242</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.13.7/JMRI.4.13.7+R3c19855.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.7/JMRI.4.13.7+R3c19855.tgz</a><br/>
+   sha256: 18d3daf83ddee257c1673acec3e31c9de19b68bd557bb7f55406dfd79b73e0c2</li>
 </ul>
- -->
+
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.13.4/">CI project page</a>.
- -->
 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- 
-<h2>Changes since <a href="jmri4.13.5.shtml">Test release 4.13.6</a>:</h2>
+  -->
+
+<h2>Changes since <a href="jmri4.13.6.shtml">Test release 4.13.6</a>:</h2>
 <!-- <h2>Changes since <a href="jmri4.12.shtml">Production release 4.12</a>:</h2> -->
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.13.7">list of included commits</a> is available from our
