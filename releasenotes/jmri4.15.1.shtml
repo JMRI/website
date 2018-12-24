@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.15.1 release
       </h1>
 
-    <p>Date: mmm dd, 2018</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: December 23, 2018</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.15.1 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -35,7 +37,7 @@ And please back up your JMRI files before installing this, in case you want to g
 back to an earlier version.</p>
 
 <p>This is the next in a series of test releases.
-We expect this series to end in the next JMRI production release around the end of 2018.
+We expect this series to end in the next JMRI production release during early Summer 2019.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
@@ -88,38 +90,8 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.10.shtml#warnings">JMRI 4.10 release note</a> for more warnings predating the 4.11 development series.
+See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
 These may be relevant to you if you're updating from an earlier version.
-
-<p><span class="since">Since <a href="jmri4.11.8.shtml">JMRI 4.11.8</a></span>
-    Some new display capabilities were introduced into Layout Editor
-    during JMRI 4.11-series development.   
-    This release changes some of the defaults in this area, which might 
-    change the appearance of some track segments on your panels if they're 
-    still using default values. If you select them and change their properties,
-    then save your panel file(s), you can restore their previous appearance.
-    There's a 
-    <a href="../community/LayoutEditorTrackChanges.pdf">PDF document</a>
-    with more details.
-    We apologize for the inconvenience.
-
-<p><span class="since">Since <a href="jmri4.11.8.shtml">JMRI 4.11.8</a></span>
-    Because of changes to the "node identification" algorithm used to tell 
-    one computer running JMRI from another, you might receive a warning message
-    about the "Node Identity" the first time you run JMRI version 4.11.8 or newer. (If you 
-    have more than one profile, this can happen with each).  There's no permanent
-    problem here, but you might have to reset your window preferences (i.e. position
-    and size, column layout, etc) in this case.
-    We apologize for the inconvenience.
-
-<p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
-    If you are running a local web site with a copy of the JMRI content, as
-    <a href="http://jmri.org/help/en/html/doc/Technical/WebSite.shtml#local">described here</a>,
-    please repeat 
-    <a href="http://jmri.org/help/en/html/doc/Technical/WebSite.shtml#locallink">the "setSymLinks.sh" step</a>
-    near the bottom of those instructions
-    after installing JMRI 4.11.4 (or later).  This will make some new formatting available
-    on your local site.
 
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
@@ -139,23 +111,14 @@ These may be relevant to you if you're updating from an earlier version.
     for system prefixes:  One upper case letter, 
     optionally followed by a number (one or more digits, e.g. "L12").
     Existing prefixes in existing configurations are unchanged, but
-    new ones will have to have the correct form.
-
-<p><span class="since">Since <a href="jmri4.7.6.shtml">JMRI 4.7.6</a></span>
-    If you're having trouble getting your DCC programmer to work, try
-    checking that the settings on the Defaults pane under Preferences window point to your
-    hardware system.
-    The reason: This version of JMRI (and all later) provides more options for
-    picking the default system when you have more than one set of hardware attached
-    The default is then used for throttles, for programming, etc.  JMRI tries to 
-    guess the right settings for these when you upgrade to this version, but 
-    apparently it sometimes gets that wrong (we haven't been able to track
-    that down yet). Setting them manually fixes any wrong guesses.
-      
+    new ones will have to have the correct form. If your layout uses 
+    a non-compliant prefix, i.e. "DX", "DCCPP", "DP", "MR", "MC", "PI", or "TM"
+    please contact us for help in getting it migrated to a proper form.
+    JMRI 4.16 will <u>require</u> that this have been fixed.
+          
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -175,7 +138,6 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
    sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -183,9 +145,11 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.1/">CI project page</a>.
  -->
 
+<!-- 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
  
 <!-- 
 <h2>Changes since <a href="jmri4.13.5.shtml">Test release 4.13.6</a>:</h2>
@@ -197,463 +161,86 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Hardware Support</h3>
 
-        <ul>
-          <li></li>
-        </ul>
-
-	    <h4>Anyma DMX512</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-	    <h4>Bachrus Speedo</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-        <h4>C/MRI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>DCC++</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>DCC4pc</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Direct</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ESU</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>JMRI Simple Server/JMRI Client</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LocoNet</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Maple</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Marklin CS2</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>MERG CBUS</h4>
             <ul>
-                <li></li>
-            </ul>
-
-        <h4>MQTT</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4>Oak Tree</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RFID</h4>
-            <ul>
-                <li></li>
+                <li>Steve Young made multiple improvements</li>
             </ul>
 
         <h4>Roco z21/Z21</h4>
             <ul>
-                <li></li>
-            </ul>
-
-        <h4>Secsi</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SPROG</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TAMS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TMCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Zimo MXULF</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZTC</h4>
-            <ul>
-                <li></li>
+                <li>Paul Bender added support for RMBus sensors</li>
             </ul>
 
     <h3>New / Updated decoder definitions</h3>
       <ul>
-        <li></li>
+        <li>Dave Heap improved how the decoder identification process handles optional CVs</li>
      </ul>
-
-        <h4>Arnold</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Bachmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>BLI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>BNM Hobbies</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digikeijs (Digirails)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Doehler &amp; Haas</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ESU</h4>
-            <ul>
-                <li></li>
-            </ul>
 
         <h4>Hornby</h4>
             <ul>
-                <li></li>
+                <li>Brian Jackson updated the Hornby TTS definition</li>
             </ul>
 
         <h4>Kuehn</h4>
             <ul>
-                <li></li>
-            </ul>
-
-        <h4>LaisDCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4><a href="http://www.ldhtrenes.com.ar">LDH</a></h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Lenz</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MGP</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>Mistral Train Models</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>MTH</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Norsk Modelljernbane (NJM)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>QSI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Rautenhaus</h4>
-            <ul>
-                <li></li>
+                <li>The Kuehn N025/N45 definition was updated</li>
             </ul>
 
         <h4>RR-CirKits</h4>
             <ul>
-                <li></li>
-            </ul>
-
-        <h4>SoundTraxx</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TCS</h4>
-            <ul>
-                <li></li>
-            </ul>
-	    
-	    <h4>Team Digital</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Technologistic (train-O-matic)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Trix Modelleisenbahn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Uhlenbrock</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Umelec</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Viessmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Wangrow</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZIMO</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Miscellaneous</h4>
-            <ul>
-                <li></li>
+                <li>The RR-CirKits Motorman definition was updated</li>
             </ul>
 
     <h3>DecoderPro</h3>
         <a id="DecoderPro" name="DecoderPro"/>
         <ul>
-          <li></li>
-        </ul>
-
-   <h3>Dispatcher</h3>
-        <a id="Dispatcher" name="Dispatcher"/>
-        <ul>
-             <li></li>
-        </ul>
-
-   <h3>Internationalization</h3>
-        <a id="I18N" name="I18N"/>
-        <ul>
-            <li></li>
+          <li>Added "Accept All" button to roster import</li>
+          <li>Dave Heap improved how the decoder identification process handles optional CVs</li>
         </ul>
 
     <h3>Layout Editor</h3>
         <a id="LE" name="LE"/>
         <ul>
-	        <li></li>
-        </ul>
-
-    <h3>Logix</h3>
-        <a id="Logix" name="Logix"/>
-        <ul>
-          <li></li>
-        </ul>
-
-    <h3>Operations</h3>
-        <a id="Operations" name="Operations"/>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h3>Panel Editors</h3>
-        <a id="PE" name="PE"/>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Preferences</h3>
-        <a id="Preferences" name="Preferences"/>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Resources</h3>
-        <a id="Resources" name="Resources"/>
-        <ul>
-            <li></li>
+	        <li>Dave Sand improved tooltip handling</li>
         </ul>
 
     <h3>Roster</h3>
         <a id="Roster" name="Roster"/>
         <ul>
-            <li></li>
-        </ul>
-
-    <h3>Turnouts, Lights, Sensors and other elements</h3>
-        <a id="TLae" name="TLae"/>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Scripting</h3>
-        <a id="Scripting" name="Scripting"/>
-        <ul>
-            <li></li>
+            <li>Added "Accept All" button to roster import operation</li>
+            <li>Improved handling of timestamps for the last run and running duration features</li>
         </ul>
 
     <h3>Signals</h3>
         <a id="Signals" name="Signals"/>
-        <ul>
-            <li></li>
-        </ul>
         <h4>Signal Systems</h4>
             <ul>
-                <li></li>
+                <li>Petr Šídlo updated the Czechoslovak state railway Elektrosignal Praga (CSD ESP) definition</li>
             </ul>
-
-        <h4>Signal Heads</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Masts</h4>
-            <ul>
-                <li></li>
-            </ul>
-            
-    	<h4>Signal Groups</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    	<h4>Simple Signal Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-	    <h4>NX Entry/Exit Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-	    <h4>USS CTC Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-   <h3>Switchboard Editor</h3>
-        <a id="SW" name="SW"/>
-        <ul>
-            <li></li>
-        </ul>
 
     <h3>Timetable</h3>
         <a id="Timetable" name="Timetable"/>
         <span class="since">since 4.13.4</span>
         <ul>
-            <li></li>
+            <li>Dave Sand made multiple updates to the Timetable support</li>
         </ul>
 
    <h3>Warrants</h3>
         <a id="Wt" name="Wt"/>
         <ul>
-            <li></li>
+            <li>Pete Cressman updated how Warrants interact</li>
         </ul>
 
    <h3>Web Access</h3>
         <a id="WA" name="WA"/>
         <ul>
-            <li> </li>
-        </ul>
-
-   <h3>WiThrottle Server</h3>
-        <a id="WS" name="WS"/>
-        <ul>
-            <li></li>
-        </ul>
-        
-   <h3>Virtual Sound Decoder</h3>
-        <a id="VSD" name="VSD"/>
-        <ul>
-            <li></li>
+            <li>Multiple updates to the JSON service</li>
         </ul>
 
     <h3>Miscellaneous</h3>
         <a id="Misc" name="Misc"/>
         <ul>
-            <li></li>
+            <li>Fixed a compatibility problem when reading files containing timebase information</li>
         </ul>
 
    <!--#include virtual="/Footer.shtml" -->
