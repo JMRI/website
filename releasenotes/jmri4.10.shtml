@@ -81,7 +81,12 @@ their library references:
 <h3>Known problems with this release</h3>
 
 <ul>
-    <li>None
+    <li>This release will occasionally set the default connection
+        to internal, which prevents programming decoders.  One 
+        symptom is getting 123 every time you read a CV.
+        This is fixed in 
+        <a href="jmri4.14.shtml">JMRI 4.14</a>.
+        We recommend you update to that version.
     </li>
 </ul>
 
