@@ -33,24 +33,24 @@
     Please note:
 
 	<p class="important">These directions are for installing the latest
-	4.x releases of JMRI&reg; on current MacOS computers.<br>
+	4.x releases of JMRI&reg; on current macOS computers.<br>
     If you have an older machine and need to install an earlier release (such as JMRI
     <a href="../releasenotes/jmri3.10.1.shtml">3.10.1</a>,
     <a href="../releasenotes/jmri2.8.shtml">2.8</a>, or
     even earlier), please see these
-    <a href="MacOSXRetro.html">Mac install instructions for old JMRI releases</a>.</p>
+    <a href="MacOSXRetro.html">MacOS X install instructions for older JMRI releases</a>.</p>
 
   <p>Now, on to the show:</p>
 
-      <a id="installation"></a><h2>Installing JMRI on your MacOS computer</h2>
+      <a id="installation"></a><h2>Installing JMRI on your macOS computer</h2>
 
       <ol>
        <li><a name="sysreq"></a>
        Determine if your system software is compatible with the current releases of JMRI:
-       Find the current MacOS version number by choosing "About this Mac" from the Apple menu.</li>
+       Find the current macOS version number by choosing "About this Mac" from the Apple menu.</li>
        
        <p>
-       JMRI 4.2 and later will work on any MacOS version back to 10.7.3 Lion (2012).
+       JMRI 4.2 and later will work on any macOS or MacOS X version back to 10.7.3 Lion (2012).
        Note: MacOS X Lion 10.7.1 and 10.7.2 will have to be updated to 10.7.3.
 
        <p>
@@ -69,17 +69,17 @@
         
         <li>Determine if you have the needed hardware drivers:
                 
-        <p>No Macintosh that runs MacOS has built-in Serial
+        <p>No Macintosh that runs macOS has built-in Serial
         Ports, so if your layout hardware needs a serial connection,
         you'll have to use a <a href="../help/en/html/hardware/USBtoSerial.shtml">USB-to-Serial adapter</a>.</p>
 
         <p>No matter if you have a USB-to-Serial adapter, or a device with a direct 
-        USB connection, you will need MacOS drivers (system software) for the hardware you're using.
+        USB connection, you will need macOS drivers (system software) for the hardware you're using.
         Most hardware won't need a separate driver;
-        they're already present in MacOS.  In some cases you will need to install a special driver, though,
+        they're already present in macOS.  In some cases you will need to install a special driver, though,
         so check the manufacturer's web site to make sure.</p>
       
-        <p><em>Note: Mac OS X 10.11 El Capitan and later MacOS versions generally require
+        <p><em>Note: Mac OS X 10.11 El Capitan and later macOS versions generally require
         signed drivers.  If you installed drivers for a previous version,
         particularly drivers that don't say they support Mac OS X 10.10 Yosemite,
         those older drivers may not work with 10.11 El Capitan.  Go to the 
@@ -88,7 +88,12 @@
         trying to run JMRI.</em>
         
         <p>
-        We tested using a Keyspan PDA Adapter; those drivers are available at
+        For more instructions on USB connection debugging and testing for correct
+        drivers, see the 
+        <a href="#usb">USB section</a> further down on this page.
+        
+        <p>
+        We test using a Keyspan PDA Adapter; those drivers are available at
         <a href="http://www.keyspan.com/downloads/">
         http://www.keyspan.com/downloads/</a>. Some device drivers will list
         each port under several names, e.g. starting with "/dev/tty" or
@@ -96,13 +101,16 @@
         must select the one that starts with "cu", e.g.
         "/dev/cu.KeyUSA19181.1".</p>
           
-        <p>There's a MacOS driver for USB-serial adapters
+        <p>macOS drivers for FTDI chipsets are available at
+        <a href="http://www.ftdichip.com/Drivers/VCP.htm">http://www.ftdichip.com/Drivers/VCP.htm</a>.
+
+        <p>There's a macOS driver for USB-serial adapters
         based on the Prolific PL2303 chipset 
         <a href="http://osx-pl2303.sourceforge.net/">available here</a>.
         If you can't access your USB dongle and it seems to use that
         chipset (you can check in the USB tab of System Profiler), 
         this driver will make it available as /dev/cu.PL2303-xxx.</p>
-
+        
        <li>Get the JMRI software...</li>
 
         <p><a href="../download/index.shtml#prod-rel">Download</a> a
@@ -146,12 +154,12 @@
                 to install Java, or takes you to the Java
                 install web site, just follow those instructions.
             <li>If that doesn't work, and you have a current
-                MacOS version, you can get the latest Java JRE installer as a free download at: 
+                macOS version, you can get the latest Java JRE installer as a free download at: 
                 <a href="http://java.com/download/" target="_blank">java.com/download</a>.<br>
                 After that download is complete, follow the included instructions to run the Java installer.<br>
                 More on <a href="https://www.java.com/en/download/help/sysreq.xml">Java versions and
                 hardware requirements</a> (prompts for Java in your browser).<br>
-                Older Java installations typically are removed by a MacOS update. However, older Java
+                Older Java installations typically are removed by a MmcOS update. However, older Java
                 applications are known to try and reinstall old stuff that might cause conflicts while running JMRI.
                 See the <a href="#javase6">instructions</a> on how to check if this applies to your installation.
             </ul>
@@ -228,10 +236,54 @@
 
 JMRI supports many different Mac computers, 
 with several different kinds of processors,
-multiple MacOS versions,
+multiple macOS versions,
 and various layout hardware.  
 Some combinations can cause trouble. 
 This section gives some debugging hints.
+
+<a name="usb"></a><h3>USB Serial Issues</h3>
+
+Irrespective of DCC system, there are some basic rules for troubleshooting any USB-attached device to a Mac.
+<ul>
+<li>Plug your device into your Mac.
+
+<li>Go to "System Information" from Apple Menu->About This Mac->More Info->System information.
+
+<li>Look in the USB section, expand all sections under controllers 
+    and hubs and see what devices are present.
+
+<li>Unplug your device, select Refresh from the System Information menus and see what 
+    device has disappeared. Plug your device back in, refresh again and see what reappears. 
+    Repeat until you see what is changing. If there is no change, there must be a hardware 
+    problem external to your Mac, such as a faulty USB cable, connector or device and 
+    there is no point going any further until your Mac can see the physical device.
+
+<li>Once you have seen the device in System Information, (it should report the Manufacturer
+     name so you know where to go to get drivers) you will quite likely have to install 
+     Mac drivers for it (although some do not need extra drivers, see your documentation). 
+     If unsure, try the next step anyway.
+
+<li>In High Sierra and above, you must open System Preferences->Privacy and Security and 
+    allow the kernel extensions (drivers) you installed to be loaded, or they will not be used.
+
+<li>Unplug your device. Open a window of the  Terminal utility (from /Applications/Utilities), 
+    copy and paste the following command in EXACTLY (including spaces and punctuation) then press Enter.
+    <p>
+    <code>while : ;do clear;ls -lt /dev|head;i=$((i+1));echo $i;sleep 1;done</code>
+    <p>
+    This command should show about 10 lines of output and then sit looping, with a counter incrementing every second.
+
+<li>Plug your device back in and wait a few seconds. Two new items with names like  cu.xxx and tty.xxx should appear in the list. 
+    They should disappear if you unplug your device. If this does not happen, 
+    you do not have the correct drivers installed for your device and you will 
+    need to solve that before proceeding further. Once you have found your device, write down the name you see.
+    You want the cu.xxx version not the tty.xxx version.
+
+<li>If you have got this far you know your device is be being seen by the Mac, 
+    that it has a matching driver installed and the name of the connection port "cu.xxx" you need 
+    to select in JMRI. If you cannot get this far, 
+    there's no way JMRI can find your device until the driver issue is resolved.
+</ul>
 
 <a name="javase6"></a><h3>Java SE 6</h3>
     <p>To check for Java SE 6, JMRI 4.5.2 and up include a script. Follow these steps (assuming
@@ -253,7 +305,7 @@ This section gives some debugging hints.
 
 <h3>Vector3f issue</h3>
 <p>
-Sometimes Macs have an older "vecsub.jar" library installed in a place that
+Sometimes very old Macs have an older "vecsub.jar" library installed in a place that
 will cause problems for JMRI.  It happens more often when you're compiling your
 own version, but it can also happen when just running a download. If you get messages about
 <code><pre>
@@ -262,6 +314,7 @@ error: cannot find symbol getX()
 or getY() or getZ(), the solution is to copy the JMRI/lib/vecmath-1.5.2.jar file from 
 within the JMRI distribution directory to the  ~/Library/Java/Extensions/ directory.
 (You might have to create that directory)
+<u>Do not do this unless you have seen that symptom</u>.
 
 <a name="#notes"></a><h2>Notes</h2>
 
@@ -274,7 +327,7 @@ have a configuration that doesn't use a layout connection so you can
 work with the program on a laptop away from the layout.
 
 <p>
-With MacOS, JMRI makes this easy to do. PanelPro and DecoderPro save
+With macOS, JMRI makes this easy to do. PanelPro and DecoderPro save
 their Preferences separately, so they can be configured independently.
 
 <p>
