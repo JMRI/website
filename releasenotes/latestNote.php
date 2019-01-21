@@ -7,16 +7,9 @@
 <META 
      HTTP-EQUIV="Refresh"
      CONTENT="0; URL=<?php
-// find and insert most recent 
-$d = dir(".");
-while (false !== ($entry = $d->read())) {
-   if (substr($entry,0,4) == 'jmri' && substr($entry,-6) == '.shtml' ) {
-     $list[] = $entry;
-   }
-}
-$d->close();
-sort($list);
-print $list[count($list)-1]
+     
+include_once "parseRelease.php";
+print latestFilename();
 
 ?>">
 </head>
@@ -26,17 +19,8 @@ release note for the latest (in progress) JMRI test release.
 <p>
 If it hasn't, please 
 <a href="<?php
-// find and insert most recent 
-$d = dir(".");
-while (false !== ($entry = $d->read())) {
-   if (substr($entry,0,4) == 'jmri' && substr($entry,-6) == '.shtml' ) {
-     $list[] = $entry;
-   }
-}
-$d->close();
-sort($list);
-print $list[count($list)-1]
-
+include_once "parseRelease.php";
+print latestFilename();
 ?>">click here</a>.
 
 </body>
