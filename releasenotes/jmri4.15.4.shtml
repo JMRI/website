@@ -91,6 +91,19 @@ from
 See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
 These may be relevant to you if you're updating from an earlier version.
 
+<p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.15.3</a></span>
+        The prefix that identifies a layout connection should be a single letter, like "N" or "L",
+        or a letter and some digits, like "K2" or "D3". Some older systems used to have
+        longer "legacy system prefixes" like "DX", "DCCPP", "DP", "MR", "MC", "PI", and "TM".
+        Those <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">legacy system prefixes</a>
+        will now cause JMRI to issues a warning at startup. In this release, JMRI will
+        still work with those prefixes, but they will need to be migrated to the proper form soon.
+        Therefore, this warning can't be suppressed
+        without migrating the prefix in the connection configuration (and any associated
+        panel files and scripts).
+        If you're getting this warning and therefore need to do that migration,
+        <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">migration page</a>.</li>
+
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
     <ul>
@@ -155,7 +168,7 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.4">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- while this is a draft, the content is in -->
+   <!-- while this release is in development, the content is in -->
    <!-- help/en/releasenotes/current-draft-note.shtml -->
    <!-- in the JMRI/JMRI repository -->
 
