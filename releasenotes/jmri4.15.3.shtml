@@ -69,7 +69,9 @@ see our
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None</li>
+    <li>If running on 64-bit Microsoft Windows with a 32-bit Java installation, JMRI will fail to launch.
+        A workaround is to install a 64-bit Java (it's not required to uninstall the existing 32-bit Java).
+        This problem is being tracked via <a href="https://github.com/JMRI/JMRI/issues/6568">GitHub issue 6568</a>.</li>
 </ul>
 <!--
 If any of those affect you, please either 
