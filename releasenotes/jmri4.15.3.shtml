@@ -71,6 +71,10 @@ see our
 <ul>
     <li>If running on 64-bit Microsoft Windows with a 32-bit Java installation, JMRI will fail to launch.
         A workaround is to install a 64-bit Java (it's not required to uninstall the existing 32-bit Java).
+        If you are unable to install a 64-bit Java, an alternate workaround is to modify the Start Menu shortcut Target
+        by changing <pre>"C:\Program Files (x86)\JMRI\LaunchJMRI.exe" apps....</pre> to
+        <pre>"C:\Program Files (x86)\JMRI\LaunchJMRI.exe" /32bit apps....</pre>
+        This forces the launcher to only look for a 32-bit Java installation.
         This problem is being tracked via <a href="https://github.com/JMRI/JMRI/issues/6568">GitHub issue 6568</a>.</li>
 </ul>
 <!--
