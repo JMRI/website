@@ -96,7 +96,8 @@ from
         longer "legacy system prefixes" like "DX", "DCCPP", "DP", "MR", "MC", "PI", and "TM".
         Those <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">legacy system prefixes</a>
         will now cause JMRI to issues a warning at startup. In this release, JMRI will
-        still work with those prefixes, but they will need to be migrated to the proper form soon.
+        still work with those prefixes, but they will need to be migrated to the proper form soon;
+        JMRI 4.17.1 and later will <u>require</u> that this have been fixed.
         Therefore, this warning can't be suppressed
         without migrating the prefix in the connection configuration (and any associated
         panel files and scripts).
@@ -120,17 +121,6 @@ These may be relevant to you if you're updating from an earlier version.
     </ul>
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
-
-<p><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
-    The system connection preferences (i.e. hardware preferences) are now
-    enforcing the <a href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
-    for system prefixes:  One upper case letter, 
-    optionally followed by a number (one or more digits, e.g. "L12").
-    Existing prefixes in existing configurations are unchanged, but
-    new ones will have to have the correct form. If your layout uses 
-    a non-compliant prefix, i.e. "DX", "DCCPP", "DP", "MR", "MC", "PI", or "TM"
-    please contact us for help in getting it migrated to a proper form.
-    JMRI 4.16 will <u>require</u> that this have been fixed.
       
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
