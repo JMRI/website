@@ -1,28 +1,10 @@
 <!-- tiny fragment to include the next release number and a link to its note -->
 
 <a href="http://jmri.org/releasenotes/<?php
-// find and insert most recent 
-$d = dir(".");
-while (false !== ($entry = $d->read())) {
-   if (substr($entry,0,4) == 'jmri' && substr($entry,-6) == '.shtml' ) {
-     $list[] = $entry;
-   }
-}
-$d->close();
-sort($list);
-print $list[count($list)-1]
-
+include_once "parseRelease.php";
+print latestFilename();
 ?>"><?php
-// find and insert most recent 
-$d = dir(".");
-while (false !== ($entry = $d->read())) {
-   if (substr($entry,0,4) == 'jmri' && substr($entry,-6) == '.shtml' ) {
-     $list[] = $entry;
-   }
-}
-$d->close();
-sort($list);
-print substr($list[count($list)-1],4,-6)
-
+include_once "parseRelease.php";
+print latestFilename();
 ?></a>
 

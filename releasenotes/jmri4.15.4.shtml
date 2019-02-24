@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
- JMRI: Release Notes for 4.15.1
+ JMRI: Release Notes for 4.15.4
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.15.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.15.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!--#include virtual="/Style.shtml" -->
 
@@ -19,16 +19,14 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.15.1 release
+      Release Notes for JMRI 4.15.4 release
       </h1>
 
-    <p>Date: December 23, 2018</p>
-    <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.15.1 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: mmm dd, 2019</p>
+    <p>From: (pumpkin)</p>
+    <p>Subject: Test Release 4.15.4 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h2>Notes:</h2>
 
@@ -36,7 +34,7 @@
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the first in a series of test releases.
+<p>This is the next in a series of test releases.
 We expect this series to end in the next JMRI production release during early Summer 2019.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
@@ -93,6 +91,20 @@ from
 See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
 These may be relevant to you if you're updating from an earlier version.
 
+<p><span class="since">Since <a href="jmri4.15.3.shtml">JMRI 4.15.3</a></span>
+        The prefix that identifies a layout connection should be a single letter, like "N" or "L",
+        or a letter and some digits, like "K2" or "D3". Some older systems used to have
+        longer "legacy system prefixes" like "DX", "DCCPP", "DP", "MR", "MC", "PI", and "TM".
+        Those <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">legacy system prefixes</a>
+        will now cause JMRI to issues a warning at startup. In this release, JMRI will
+        still work with those prefixes, but they will need to be migrated to the proper form soon;
+        JMRI 4.17.1 and later will <u>require</u> that this have been fixed.
+        Therefore, this warning can't be suppressed
+        without migrating the prefix in the connection configuration (and any associated
+        panel files and scripts).
+        If you're getting this warning and therefore need to do that migration,
+        <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">migration page</a>.</li>
+
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
     <ul>
@@ -104,21 +116,11 @@ These may be relevant to you if you're updating from an earlier version.
     </ul>
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
-
-<p><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
-    The system connection preferences (i.e. hardware preferences) are now
-    enforcing the <a href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
-    for system prefixes:  One upper case letter, 
-    optionally followed by a number (one or more digits, e.g. "L12").
-    Existing prefixes in existing configurations are unchanged, but
-    new ones will have to have the correct form. If your layout uses 
-    a non-compliant prefix, i.e. "DX", "DCCPP", "DP", "MR", "MC", "PI", or "TM"
-    please contact us for help in getting it migrated to a proper form.
-    JMRI 4.16 will <u>require</u> that this have been fixed.
-          
+      
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -127,122 +129,41 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.1/JMRI.4.15.1+R4a42841.dmg">https://github.com/JMRI/JMRI/releases/download/v4.15.1/JMRI.4.15.1+R4a42841.dmg</a><br/>
-  sha256: 8adad0b425fb552154b585582665dd14b341507380275b36acd871f40755ae82 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
+  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.1/JMRI.4.15.1+R4a42841.exe">https://github.com/JMRI/JMRI/releases/download/v4.15.1/JMRI.4.15.1+R4a42841.exe</a><br/>
-   sha256: c4c6a4121f3c10c8f82d2d83a96f3f6cb36343fe4d904f3a200617fb1d38cebd</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
+   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.1/JMRI.4.15.1+R4a42841.tgz">https://github.com/JMRI/JMRI/releases/download/v4.15.1/JMRI.4.15.1+R4a42841.tgz</a><br/>
-   sha256: b7be1ebf1579b6904a82ec099e5012802b83b751a6d7c1164cb8a1047c126350</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
+   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
 </ul>
+ -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.1/">CI project page</a>.
+<a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.4/">CI project page</a>.
  -->
 
-<!-- 
-<p>During development leading to the actual release, you can find test download files on the
+During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
-
+ 
 <a id="changes" name="changes"></a>
-<!-- 
-<h2>Changes since <a href="jmri4.13.5.shtml">Test release 4.13.6</a>:</h2>
- -->
-<h2>Changes since <a href="jmri4.14.shtml">Production release 4.14</a>:</h2>
-
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.1">list of included commits</a> is available from our
+<h2>Changes since <a href="jmri4.15.3.shtml">Test release 4.15.3</a>:</h2>
+ 
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.4">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h3>Hardware Support</h3>
+   <!-- while this release is in development, the content is in -->
+   <!-- help/en/releasenotes/current-draft-note.shtml -->
+   <!-- in the JMRI/JMRI repository -->
 
-        <h4>MERG CBUS</h4>
-            <ul>
-                <li>Steve Young made multiple improvements</li>
-            </ul>
-
-        <h4>Roco z21/Z21</h4>
-            <ul>
-                <li>Paul Bender added support for RMBus sensors</li>
-            </ul>
-
-    <h3>New / Updated decoder definitions</h3>
-      <ul>
-        <li>Dave Heap improved how the decoder identification process handles optional CVs</li>
-     </ul>
-
-        <h4>Hornby</h4>
-            <ul>
-                <li>Brian Jackson updated the Hornby TTS definition</li>
-            </ul>
-
-        <h4>Kuehn</h4>
-            <ul>
-                <li>The Kuehn N025/N45 definition was updated</li>
-            </ul>
-
-        <h4>RR-CirKits</h4>
-            <ul>
-                <li>The RR-CirKits Motorman definition was updated</li>
-            </ul>
-
-    <h3>DecoderPro</h3>
-        <a id="DecoderPro" name="DecoderPro"/>
-        <ul>
-          <li>Added "Accept All" button to roster import</li>
-          <li>Dave Heap improved how the decoder identification process handles optional CVs</li>
-        </ul>
-
-    <h3>Layout Editor</h3>
-        <a id="LE" name="LE"/>
-        <ul>
-	        <li>Dave Sand improved tooltip handling</li>
-        </ul>
-
-    <h3>Roster</h3>
-        <a id="Roster" name="Roster"/>
-        <ul>
-            <li>Added "Accept All" button to roster import operation</li>
-            <li>Improved handling of timestamps for the last run and running duration features</li>
-        </ul>
-
-    <h3>Signals</h3>
-        <a id="Signals" name="Signals"/>
-        <h4>Signal Systems</h4>
-            <ul>
-                <li>Petr Šídlo updated the Czechoslovak state railway Elektrosignal Praga (CSD ESP) definition</li>
-            </ul>
-
-    <h3>Timetable</h3>
-        <a id="Timetable" name="Timetable"/>
-        <span class="since">since 4.13.4</span>
-        <ul>
-            <li>Dave Sand made multiple updates to the Timetable support</li>
-        </ul>
-
-   <h3>Warrants</h3>
-        <a id="Wt" name="Wt"/>
-        <ul>
-            <li>Pete Cressman updated how Warrants interact</li>
-        </ul>
-
-   <h3>Web Access</h3>
-        <a id="WA" name="WA"/>
-        <ul>
-            <li>Multiple updates to the JSON service</li>
-        </ul>
-
-    <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"/>
-        <ul>
-            <li>Fixed a compatibility problem when reading files containing timebase information</li>
-        </ul>
+   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+   
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->

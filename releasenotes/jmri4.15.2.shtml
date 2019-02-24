@@ -6,7 +6,7 @@
  JMRI: Release Notes for 4.15.2
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.15.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.15.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!--#include virtual="/Style.shtml" -->
 
@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.15.2 release
       </h1>
 
-    <p>Date: mmm dd, 2018</p>
-    <p>From: (pumpkin)</p>
+    <p>Date:January 11, 2019</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.15.2 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -117,7 +119,7 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
+
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -126,18 +128,18 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.2/JMRI.4.15.2+Rfda0762.dmg">https://github.com/JMRI/JMRI/releases/download/v4.15.2/JMRI.4.15.2+Rfda0762.dmg</a><br/>
+  sha256: 3a9bf1dc406e9e22a49dad149d9eda5f514bde046730e2de6f78bc391827bddd </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.2/JMRI.4.15.2+Rfda0762.exe">https://github.com/JMRI/JMRI/releases/download/v4.15.2/JMRI.4.15.2+Rfda0762.exe</a><br/>
+   sha256: 9ef30f469a5390dfa9586c3a8c7174f5a224f2091f2e95011c80dd8a603856a4</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.2/JMRI.4.15.2+Rfda0762.tgz">https://github.com/JMRI/JMRI/releases/download/v4.15.2/JMRI.4.15.2+Rfda0762.tgz</a><br/>
+   sha256: e03646519f020ad1421bc78c22ed85ce082191b8f91c40d7d722105d1d6f0633</li>
 </ul>
- -->
+
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -145,474 +147,23 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.2/">CI project page</a>.
  -->
 
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- 
+ -->
+  
+<a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.15.1.shtml">Test release 4.15.1</a>:</h2>
  
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.2">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h3>Hardware Support</h3>
-
-        <ul>
-          <li></li>
-        </ul>
-
-	    <h4>Anyma DMX512</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-	    <h4>Bachrus Speedo</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-        <h4>C/MRI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>DCC++</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>DCC4pc</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Direct</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ESU</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>JMRI Simple Server/JMRI Client</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LocoNet</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Maple</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Marklin CS2</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MERG CBUS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MQTT</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li><li>
-            </ul>
-
-        <h4>Oak Tree</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a></h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RFID</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Roco z21/Z21</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Secsi</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SPROG</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TAMS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TMCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Zimo MXULF</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZTC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    <h3>New / Updated decoder definitions</h3>
-      <ul>
-        <li></li>
-     </ul>
-
-        <h4>Arnold</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Bachmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>BLI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>BNM Hobbies</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digikeijs (Digirails)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Doehler &amp; Haas</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ESU</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Hornby</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Kuehn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LaisDCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4><a href="http://www.ldhtrenes.com.ar">LDH</a></h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Lenz</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MGP</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>Mistral Train Models</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>MTH</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Norsk Modelljernbane (NJM)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>QSI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Rautenhaus</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RR-CirKits</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SoundTraxx</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TCS</h4>
-            <ul>
-                <li></li>
-            </ul>
-	    
-	    <h4>Team Digital</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Technologistic (train-O-matic)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Trix Modelleisenbahn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Uhlenbrock</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Umelec</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Viessmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Wangrow</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZIMO</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Miscellaneous</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    <h3>DecoderPro</h3>
-        <a id="DecoderPro" name="DecoderPro"/>
-        <ul>
-          <li></li>
-        </ul>
-
-   <h3>Dispatcher</h3>
-        <a id="Dispatcher" name="Dispatcher"/>
-        <ul>
-             <li></li>
-        </ul>
-
-   <h3>Internationalization</h3>
-        <a id="I18N" name="I18N"/>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Layout Editor</h3>
-        <a id="LE" name="LE"/>
-        <ul>
-	        <li></li>
-        </ul>
-
-    <h3>Logix</h3>
-        <a id="Logix" name="Logix"/>
-        <ul>
-          <li></li>
-        </ul>
-
-    <h3>Operations</h3>
-        <a id="Operations" name="Operations"/>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h3>Panel Editors</h3>
-        <a id="PE" name="PE"/>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Preferences</h3>
-        <a id="Preferences" name="Preferences"/>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Resources</h3>
-        <a id="Resources" name="Resources"/>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Roster</h3>
-        <a id="Roster" name="Roster"/>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Turnouts, Lights, Sensors and other elements</h3>
-        <a id="TLae" name="TLae"/>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Scripting</h3>
-        <a id="Scripting" name="Scripting"/>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Signals</h3>
-        <a id="Signals" name="Signals"/>
-        <ul>
-            <li></li>
-        </ul>
-        <h4>Signal Systems</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Heads</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Masts</h4>
-            <ul>
-                <li></li>
-            </ul>
-            
-    	<h4>Signal Groups</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    	<h4>Simple Signal Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-	    <h4>NX Entry/Exit Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-	    <h4>USS CTC Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-   <h3>Switchboard Editor</h3>
-        <a id="SW" name="SW"/>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Timetable</h3>
-        <a id="Timetable" name="Timetable"/>
-        <span class="since">since 4.13.4</span>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h3>Warrants</h3>
-        <a id="Wt" name="Wt"/>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h3>Web Access</h3>
-        <a id="WA" name="WA"/>
-        <ul>
-            <li> </li>
-        </ul>
-
-   <h3>WiThrottle Server</h3>
-        <a id="WS" name="WS"/>
-        <ul>
-            <li></li>
-        </ul>
-        
    <h3>Virtual Sound Decoder</h3>
         <a id="VSD" name="VSD"/>
         <ul>
-            <li></li>
-        </ul>
-
-    <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"/>
-        <ul>
-            <li></li>
+            <li>Klaus Killinger added "headless" mode, i.e. running VSD without a graphical user interface.
+	     See the <a href="http://jmri.org/help/en/manual/DecoderPro/VSD_Headless.shtml">documentation</a> for details.</li>
         </ul>
 
    <!--#include virtual="/Footer.shtml" -->
