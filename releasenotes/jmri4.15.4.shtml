@@ -158,11 +158,56 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.4">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- while this release is in development, the content is in -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository -->
 
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>"PR3 Standalone Programmer" mode has been updated so that only one LocoNet menu will be displayed, instead of displaying two menus.</li>
+                <li>Digitrax connections now support PR4, DCS240 and DCS210 via uniquely named connection types. <span class="since">Since JMRI 4.15.4</span></li>
+                <li>Addresses a problem when track power status is changed on the DCS52 which can cause a JMRI code failure. <span class="since">Since JMRI 4.15.4</span></li>
+            </ul>
+
+        <h4>Roco z21/Z21</h4>
+            <ul>
+                <li>Fixed Delay in throttle message processing</li>
+            </ul>
+
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>Michael Mosher fixed a bug in GP35 SP CV54</li>
+		        <li>Michael Mosher added more models to Athearn ECO OEM file</li>
+		        <li>Michael Mosher added more models to Athearn Genesis TSU2 OEM file</li>
+            </ul>
+
+        <h4>Uhlenbrock</h4>
+            <ul>
+                <li>A new definition was added for the 73xx5 IntelliDrive2 decoders. It also works on two Piko 4.1
+                sound decoder models.<br>
+                The definition is still under development and not complete. Please report read test results on
+                your hardware.</li>
+            </ul>
+
+    <h3>DecoderPro</h3>
+    <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>Decoder definitions for indexed-access CVs can now use a "81=23.40" (cvFirst = false) /
+            "40.81=23" (cvFirst = true) syntax to specify an alternate PI and/or SI CV.<br>
+            The previous syntax continues to work unchanged.
+            </li>
+            <li>"output" definition elements can now be included in the "family" element, or
+                via including a fragment file.  The 0NMRA.xml file has an example of this.
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Fix bug with launcher on Windows introduced when adding JDK 11 support in 4.15.3. This caused JMRI to not launch on certain 64-bit Windows systems that had only a 32-bit Java installation.</li>
+        </ul>
+
    
 
    <!--#include virtual="/Footer.shtml" -->
