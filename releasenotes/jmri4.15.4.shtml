@@ -83,7 +83,18 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>None</li>
+    <li>
+        The calculation of Turnout Addresses for the
+        <a href="/help/en/html/hardware/dccpp/Turnouts.shtml" target="_blank">
+            Direct DCC Accessory Command ("a" command)</a> mode
+        has been fixed (commands are now sent to the correct accessory address rather
+        than 4 less than the nominated hardware address). For pre-existing panels,
+        changes will need to be made to either the actual decoder address or the panel.
+        If help is required, ask on the
+        <a href="https://groups.io/g/jmriusers/" target="_blank">
+            jmriusers</a> group.
+        <span class="since">Since JMRI 4.15.4</span>
+    </li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -161,7 +172,22 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h3>Hardware Support</h3>
 
-        <h4>LocoNet</h4>
+    <h4>DCC++</h4>
+    <ul>
+        <li>
+            The calculation of Turnout Addresses for the
+            <a href="/help/en/html/hardware/dccpp/Turnouts.shtml" target="_blank">
+                Direct DCC Accessory Command ("a" command)</a> mode
+            has been fixed. Commands are now sent to the accessory address entered in
+            the JMRI Turnout Table. (Dave Heap)
+             <span class="since">Since JMRI 4.15.4</span>
+        </li>
+        <li>
+            The DCC++ Traffic Monitor no longer crashes when attempting to display some commands.
+        </li>
+    </ul>
+
+    <h4>LocoNet</h4>
             <ul>
                 <li>"PR3 Standalone Programmer" mode has been updated so that only one LocoNet menu will be displayed, instead of displaying two menus.</li>
                 <li>Digitrax connections now support PR4, DCS240 and DCS210 via uniquely named connection types. <span class="since">Since JMRI 4.15.4</span></li>
