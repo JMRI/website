@@ -86,16 +86,15 @@ from
 
 <ul>
     <li>
+        <span class="since">Since JMRI 4.15.4</span>
         The calculation of Turnout Addresses for the
         <a href="/help/en/html/hardware/dccpp/Turnouts.shtml" target="_blank">
-            Direct DCC Accessory Command ("a" command)</a> mode
+        Direct DCC Accessory Command ("a" command)</a> mode
         has been fixed (commands are now sent to the correct accessory address rather
         than 4 less than the nominated hardware address). For pre-existing panels,
         changes will need to be made to either the actual decoder address or the panel.
         If help is required, ask on the
-        <a href="https://groups.io/g/jmriusers/" target="_blank">
-            jmriusers</a> group.
-        <span class="since">Since JMRI 4.15.4</span>
+        <a href="https://groups.io/g/jmriusers/" target="_blank">jmriusers</a> group.
     </li>
 </ul>
 
@@ -232,6 +231,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <a id="Misc" name="Misc"></a>
         <ul>
             <li>Fix bug with launcher on Windows introduced when adding JDK 11 support in 4.15.3. This caused JMRI to not launch on certain 64-bit Windows systems that had only a 32-bit Java installation.</li>
+            <li>Fixed occasional problem where an item in the Turnout, Sensor, Memory or Light table couldn't be deleted.
         </ul>
 
    

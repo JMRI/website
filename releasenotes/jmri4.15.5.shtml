@@ -91,6 +91,17 @@ from
 See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
 These may be relevant to you if you're updating from an earlier version.
 
+<p><span class="since">Since <a href="jmri4.15.4.shtml">JMRI 4.15.4</a></span>
+        The calculation of Turnout Addresses for the
+        <a href="/help/en/html/hardware/dccpp/Turnouts.shtml" target="_blank">
+        Direct DCC Accessory Command ("a" command)</a> mode
+        has been fixed (commands are now sent to the correct accessory address rather
+        than 4 less than the nominated hardware address). For pre-existing panels,
+        changes will need to be made to either the actual decoder address or the panel.
+        If help is required, ask on the
+        <a href="https://groups.io/g/jmriusers/" target="_blank">
+        jmriusers</a> group.
+
 <p><span class="since">Since <a href="jmri4.15.3.shtml">JMRI 4.15.3</a></span>
         The prefix that identifies a layout connection should be a single letter, like "N" or "L",
         or a letter and some digits, like "K2" or "D3". Some older systems used to have

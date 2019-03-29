@@ -240,7 +240,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>All the PackageList test files were updated to JUnit4 form, without a separate main()</li>
             <li>The Windows "installer" and "launcher" have been updated to support 
                 Oracle's Java JDK 11 installation mechanisms on Windows platforms.</li>
-            <li>Starting with the release, 
+            <li>Starting with this release, 
                 <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">legacy system prefixes</a>
                 will cause JMRI to issues a warning at startup.  This warning can't be suppressed
                 without migrating the prefix in the connection configuration (and any associated
