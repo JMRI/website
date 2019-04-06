@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -283,7 +283,7 @@ Because of the way the DS64 board works, this tool can't change  the basic addre
 <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
       </div><!-- closes #mainContent-->
     </div> <!-- closes #mBody-->

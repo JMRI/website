@@ -11,7 +11,7 @@
 <link rel="icon" href="/images/jmri.ico" type="image/png">
 <link rel="home" title="Home" href="/"><!-- /Style --></head>
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -100,16 +100,20 @@ forward. Will be grayed out until the lead locomotive is selected.</p><p>The <bi
 <input name="button6" id="button6" value="Delelte" type="button"> 
 deletes the entire consist.
 </p><p><a href="Main_Throttle.shtml">    <input name="button5" id="button5" value="Throttle" type="button"></a>
-opens a<strong><a href="dp3_Main_Throttle.shtml"> throttle </a></strong>for the consist. &nbsp;Each time that yoiu select throttle the locomotive will be added to the consist.
+opens a<strong><a href="dp3_Main_Throttle.shtml"> throttle </a></strong>for the consist. Each time that yoiu select throttle the locomotive will be added to the consist.
 </p><p>
 <input name="button7" id="button7" value="Reverse" type="button"> 
-reverses the direction of the consist.
-</p><hr>
+reverses the direction of the consist.</p>
+
+<hr>
 
 <div align="right">
 <p><a href="dp3_menubar.shtml">Back</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
-</div></body></html>
+<!--#include virtual="/Footer.shtml" -->
+</div>
+</div>
+</body>
+</html>

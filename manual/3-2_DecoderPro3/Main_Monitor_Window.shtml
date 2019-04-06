@@ -3,9 +3,9 @@
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
 <!-- $Id: Main_Monitor_Window.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<TITLE>
+<title>
 DecoderPro&reg; Main Window
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -17,14 +17,14 @@ DecoderPro&reg; Main Window
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Communications Monitor Window</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_menubar.shtml">Back to Index</a><a href="index.shtml#Main"></a></p>
 </div>
 
@@ -33,7 +33,7 @@ DecoderPro&reg; Main Window
 <p>When the monitor window opens, it will automatically display all traffic on the communications link.</p>
 <p>The Title bar will display the<em> name</em> of your DCC systems communications link.</p>
 <p align="center"><img src="images/Main_MonitorWindow.png" alt="Communication Monitor Window" width="538" height="228" border="4"></p>
-<p align="left">&nbsp;</p>
+
 <p align="left">The messages that are sent and received over the communictions link are displayed in the main pane of the window.</p>
 <h4 align="left">Controls  at the bottom of the window.</h4>
 <p align="left"><strong>Clear screen </strong>button&#8212; Erases the log area of the screen where the messages are displayed.</p>
@@ -54,11 +54,12 @@ DecoderPro&reg; Main Window
 </ol>
 <h4>Adding Messages to Log File</h4>
 <p>Type your message in the Add Messge text box, then clidk on the <strong>Add Message</strong> button to add your message to the log file.</p>
-<p align="left">&nbsp;</p>
+
 <hr>
 <a href="dp3_menubar.shtml">Back to Index</a>
-<div align=right> </div>
+<div align="right"> </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

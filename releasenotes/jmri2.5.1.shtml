@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -219,7 +219,7 @@ He also updated the TCS BEMF decoders definition to complete BEMF and Decoder Lo
 <p>
 Bob Coleman fixed a bug in the CTI Acela support that sometimes resulted in reversed turnout operation.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

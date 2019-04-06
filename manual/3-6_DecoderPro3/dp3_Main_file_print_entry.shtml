@@ -3,7 +3,7 @@
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
 <!-- $Id: Start_DecoderPro.shtml 18193 2011-08-16 23:19:17Z dat7719 $ -->
-<title>Decoder Pro Manual: Getting Started</title>
+<title>DecoderPro Manual: Getting Started</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -15,16 +15,16 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro3&reg; Main Window</h1>
 <h1>Print/Preview Roster Entry</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_menubar.shtml">Back </a> </div>
 
 <hr>
@@ -40,10 +40,14 @@ The <strong>Select Items to Print</strong> is opened from the DecoderPro3 Main W
 <p><img src="images/dp3_rosterEntry_labels.png" width="800" height="704"></p>
 <p>Example of Print Preview with both Basic and Speed Table selected.</p>
 <p><img src="images/dp3_printPreview.png" width="665" height="744" alt="preview"></p>
-<hr>
-<div align=right>
-<p><a href="dp3_menubar.shtml">Back</a> </div>
 
-<!--#include virtual="/Footer" -->
+<hr>
+<div align="right">
+<p><a href="dp3_menubar.shtml">Back</a>
+</div>
+
+<!--#include virtual="/Footer.shtml" -->
+</div>
+</div>
 </body>
 </html>

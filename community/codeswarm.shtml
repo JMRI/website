@@ -16,14 +16,14 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
   <div class="nomenu" id="mBody">
     <div id="mainContent">
 
     <h2>JMRI Code Swarm</h2>
     
     <h3>Download the Video</h3>
-    <p>You can download the JMRI Code Swarm <a href="/images/jmricodeswarm.zip">here</a>. 
+    <p>You can download the 2009 JMRI Code Swarm <a href="/images/jmricodeswarm.zip">here</a>. 
     Note that this is a large file (~15M) and is in zip format.  After downloading, you 
     will need to unzip it to extract the mpeg file, then play it in your favorite video 
     player.  It has been tested on Windows XP with Windows Media Player(V9) and Irfanview, 
@@ -64,19 +64,21 @@
     very evident and is an order of magnitude higher than any other developer. Knowing 
     how quick Bob is to highlight others' contributions, I'm sure he 
     would be the first to point out that his commits also include those of many others 
-    on the <A href="/help/en/Acknowledgements.shtml" title="Acknowledgements">Acknowledgements</a> 
+    on the <a href="/help/en/Acknowledgements.shtml" title="Acknowledgements">Acknowledgements</a>
     list who submit files or patches and don't commit directly. Unfortunately, the code swarm 
     can't separate out these contributions and attribute them to the true originators, but even
     if it could, Bob's own contributions are still huge.
     
-    <p>Enjoy!
+    <p>Enjoy!</p>
+    
+    <p>Also view our <a href="codeflower.shtml">2017 CodeFlower</a>.</p>
     
     <h3>Technical Details</h3>
     <p><b>Warning!</b> Any non-Geeks who have wandered into this section by mistake should stop now 
     before any permanent damage is done to your intellect or personality. Proceeding further may result 
     in glazed eyes, confusion and disorientation.  Serious cases could result in an all-consuming interest in 
     programming with the accompanying loss of social skills and deterioration in personal hygiene.  Do not read
-    while operating heavy machinery.  Reader discretion is advised. 
+    while operating heavy machinery.  Reader discretion is advised. </p>
     
     <h4>Data Source</h4>
     <ul>
@@ -209,10 +211,11 @@
     improves quality but increases file size).  For a high quality but
     much larger file, change <code>-qmax 15</code> to <code>-sameq</code></li>
     </ul>
-    
-<!--#include virtual="/Footer" -->
+
+    <p>Also view our <a href="codeflower.shtml">2017 CodeFlower</a>.</p>
+
+<!--#include virtual="/Footer.shtml" -->
     </div> <!-- closes mainContent -->
   </div> <!-- closes mBody -->
 </body>
 </html>
-

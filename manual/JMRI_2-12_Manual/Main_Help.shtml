@@ -16,16 +16,16 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Help Menu </h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Window.shtml"> Previous</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -59,11 +59,12 @@
 <p><img src="images/Main_Help_04.png" width="577" height="311" alt="debugging">
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Window.shtml">Previous</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

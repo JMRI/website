@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -23,7 +23,7 @@
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Trains Window</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Routes.shtml">Previous | </a><a href="Ops_TripThruOperations.shtml">Next</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
@@ -244,11 +244,12 @@ and all the Reports and Train Manifest are previewed, then you may print the des
 <p><strong><a href="#buildbtn">Back</a></strong></p>
 <hr/>
 <p>&nbsp;</p>
-<div align=right>
+<div align="right">
 <p><a href="Ops_Routes.shtml">Previous | </a><a href="Ops_TripThruOperations.shtml">Next</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

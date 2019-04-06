@@ -10,19 +10,18 @@
 </head>
 <body>
 
-
-<IMG SRC="../images/logo.gif" ALIGN=RIGHT WIDTH="160" HEIGHT="135" HSPACE="0" VSPACE="0">
-<P>TODO</p>
+<div class="nomenu" id="mBody">
+    <div id="mainContent">
 
 JMRI was used to create the dispatcher control panel for Nick Kulp's
-<A href="http://kc.pennsyrr.com/layouts/kulp/index.html">Cornwall RR</a>.
-<A HREF="Cornwall.html">Another page</a>
+<a href="http://kc.pennsyrr.com/layouts/kulp/index.html">Cornwall RR</a>.
+<a href="Cornwall.html">Another page</a>
 briefly describes how it was done.  
 This page includes additional detail on some topics.
 
-<A ID="occ"><h2>Putting occupancy sensors on the panel</h2></a>
+<a id="occ"><h2>Putting occupancy sensors on the panel</h2></a>
 
-<A ID="edit"><h2>Editing the configuration file</h2></a>
+<a id="edit"><h2>Editing the configuration file</h2></a>
 
 The configuration file is in "XML". They look familiar to the HTML 
 codes used in web pages.  
@@ -31,23 +30,22 @@ if you'd like to read more about it, but it's pretty self-explanatory.
 Your favorite editor program should be able to work with these files, 
 as they are just text.
 
-<P>
+<p>
 The files are stored in different places on different types of computers.
 It might be fastest to just search for the name you gave the file when you saved it.
 The usual locations for preference information (if you don't change directory when
 saving) is:
-<UL>
-<LI>Linux - in ~/.jmri/
-<LI>Mac OS X - in the Library/Preferences/JMRI directory in your home directory
-<LI>Macintosh - in the JMRI folder within the Preferences folder within the System Folder
-<LI>Windows - in C:\Program Files\JMRI, or MyDocuments\JMRI
+<ul>
+    <li>Linux - in ~/.jmri/
+    <li>Mac OS X - in the Library/Preferences/JMRI directory in your home directory
+    <li>Macintosh - in the JMRI folder within the Preferences folder within the System Folder
+    <li>Windows - in C:\Program Files\JMRI, or MyDocuments\JMRI
 </ul>
 
-<P>
+<p>
+<a id="turnout"><h2>Setting turnout icons</h2></a>
 
-<A ID="turnout"><h2>Setting turnout icons</h2></a>
-
-<A ID="open"><h2>Opening a panel at program startup</h2></a>
+<a id="open"><h2>Opening a panel at program startup</h2></a>
 The CornwallRR program was modified to automatically open the dispatcher
 panel at startup.  This was an OK solution because that was a custom
 program anyway.  But it's also possible to edit the configuration file so 
@@ -55,15 +53,15 @@ that a panel is automatically opened.
 
 <h2>Acknowledgements</h2>
 
-<A HREF="../Acknowledgements.html">Many people</a>
+<a href="../Acknowledgements.html">Many people</a>
 have contributed to this effort, and we thank 
-<A HREF="../Acknowledgements.html">all of them</a>.
+<a href="../Acknowledgements.html">all of them</a>.
 
-<HR>
-<BR>Site hosted by: <BR>
-<A href="http://sourceforge.net"> 
-<IMG src="http://sourceforge.net/sflogo.php?group_id=26788&type=1" width="88" height="31" border="0" alt="SourceForge Logo"> </A>
- 
+<hr>
+        <br>Site hosted by:<br><!-- SSI require .shtml suffix, so this file can't include the following as Icon via SSI -->
+        <a href="http://www.tagadab.com">
+            <img src="https://www.tagadab.com/sites/default/files/logo-tagadab-nostrap.png" height="28" width="103"
+                 border="0" alt="Tagadab Logo"> </a>
 
 <script language=javascript 
 src="http://ss.webring.com/navbar?f=j;y=bob_jacobsen15;u=100088115910095949">
@@ -76,8 +74,10 @@ Here</a>.</font></td></tr></table></td></tr></table>
 </center></noscript>
 
 <hr>
-Bob Jacobsen<BR>
+Bob Jacobsen<br>
 jake@physics.berkeley.edu
 
+    </div>
+</div>
 </body>
 </html>

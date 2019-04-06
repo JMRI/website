@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -77,8 +77,7 @@ being working on, and we have to remove it.  Starting with this version,
 JMRI requires that you enter consistent system names, including using the right case.
 If you use system names, and haven't been using consistent names, you'll
 probably have to practice a little to get in the habit. If you have any problems
-reading old files, etc, please post a note on the 
-<a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
+reading old files, etc, please post a note on the JMRI Users group
 and somebody will help you.
 
 <p>
@@ -95,8 +94,7 @@ deleted and re-entered before they will work.
 The communications libraries for Mac OS X have been updated.  
 We've tested these extensively, but there may be combinations of 
 hardware and software versions that still aren't right.  If the program
-can't see your layout connection, please post to the 
-<a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
+can't see your layout connection, please post to the JMRI Users group
 with what type of Mac you're using (PowerBook, PowerMac, MacBook, etc), 
 processor type (PPC G3, G4, G5 or Intel) and Mac OS X version (10.4, 10.5, 
 etc; names like Leopard are OK) too.  We've got several library versions 
@@ -404,7 +402,7 @@ Pete Cressman made some internal improvements to the throttle implementation cla
 <p>
 Pete Cressman implemented following signal mast and head indications.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

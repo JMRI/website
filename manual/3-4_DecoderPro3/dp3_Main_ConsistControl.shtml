@@ -1,23 +1,24 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head><!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Main_ConsistControl.shtml 18167 2011-08-13 11:22:06Z dat7719 $ -->
-
-
-
-
-
-<title>Tool Menu</title><!-- Style --><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<html lang="en">
+<head>
+  <!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Main_ConsistControl.shtml 18167 2011-08-13 11:22:06Z dat7719 $ -->
+<title>Tool Menu</title>
+  <!-- Style -->
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
 <link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/"><!-- /Style --></head>
+<link rel="home" title="Home" href="/">
+  <!-- /Style -->
+</head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<h1>DecoderPro3� Main Window</h1>
+<h1>DecoderPro3&reg; Main Window</h1>
 <h1>Menu Bar - Consisting Control Window</h1>
 
 <div align="right">
@@ -64,7 +65,8 @@ Command Station Assisted Consists go by the trade names listed below.<br>
     </tbody></table>
     <br>
   </li>
-  <li>A <em><strong>Decoder Assisted Consist (</strong></em>DAC), often referred to as Advanced Consist. The NMRA<sup>�</sup>
+  <a>A <em><strong>Decoder Assisted Consist (</strong></em>DAC), often referred to as Advanced Consist. The <a
+          href="http://nmra.org">NMRA</a>
 has set aside CV19 as a dedicated location for consist addresses. If
 CV19 contains a value other than 0, the locomotive will respond to
 speed and direction instructions sent to the address in CV19. If CV19
@@ -101,7 +103,7 @@ forward. Will be grayed out until the lead locomotive is selected.
 <input name="button6" id="button6" value="Delelte" type="button"> 
 deletes the entire consist.
 </p><p><a href="Main_Throttle.shtml">    <input name="button5" id="button5" value="Throttle" type="button"></a>
-opens a<strong><a href="dp3_Main_Throttle.shtml"> throttle </a></strong>for the consist. &nbsp;Each time that yoiu select throttle the locomotive will be added to the consist.
+opens a<strong><a href="dp3_Main_Throttle.shtml"> throttle </a></strong>for the consist. Each time that yoiu select throttle the locomotive will be added to the consist.
 </p><p>
 <input name="button7" id="button7" value="Reverse" type="button"> 
 reverses the direction of the consist.
@@ -112,5 +114,7 @@ reverses the direction of the consist.
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
-</div></body></html>
+<!--#include virtual="/Footer.shtml" -->
+</div>
+</body>
+</html>

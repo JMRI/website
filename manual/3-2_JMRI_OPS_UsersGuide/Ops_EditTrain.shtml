@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent"><a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
@@ -93,12 +93,12 @@ The program will create a file (OperationsTrainRoster.xml) in your JMRI
 directory in a folder called "operations". A backup file with the last
 settings for all of your trains is also created each time the <input name="button9" id="button9" value="Save Train" type="submit">
 is pressed. </p>
-<p>Note that the edited&nbsp; train is now shown in the<a href="Ops_Trains.shtml">Trains</a> window.</p>
+<p>Note that the edited train is now shown in the<a href="Ops_Trains.shtml">Trains</a> window.</p>
 <hr>
 <div align="right">
 <p><a href="Ops_Trains.shtml">Back</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div>
 </body></html>

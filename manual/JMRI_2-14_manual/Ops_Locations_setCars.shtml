@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
@@ -93,7 +93,7 @@ found for each car in the <strong><a href="Ops_Cars.shtml">Cars</a></strong> win
 <p><a href="Ops_Cars.shtml">Back </a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
       </div><!-- closes #mainContent-->
     </div> <!-- closes #mBody-->

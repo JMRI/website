@@ -18,7 +18,7 @@
 
 <body>
 
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -134,8 +134,7 @@ These may be relevant to you if you're updating from an earlier version.
     included with this release have been converted to the new form.
     If you have decoder definitions with the older "ivariable" form, they will no longer
     validate, but can still be used for the first couple of test releases in this series.
-    Please ask on the
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users Yahoo group</a>
+    Please ask on the JMRI Users group
     for help converting them, or just drop them and use the current definitions.</p>
 
 
@@ -443,7 +442,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             (<a href="https://github.com/JMRI/JMRI/pull/1828">#1828</a>)</li>
         </ul>
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

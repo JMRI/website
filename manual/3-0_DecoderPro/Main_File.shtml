@@ -15,16 +15,16 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>File Menu </h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Edit.shtml">Next </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -39,14 +39,16 @@
 <p><img src="images/separator.png" alt="sep" width="340" height="4"></p>
 <h4 class="style1">Quit </h4>
 <p>Closes DecoderPro and all associated functions, same as clicking on the Quit button</p>
-<p>
+
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Edit.shtml"> Next </a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

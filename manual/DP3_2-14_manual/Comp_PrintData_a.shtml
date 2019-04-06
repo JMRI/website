@@ -3,9 +3,9 @@
 <head>
 <!-- Copyright ($Author: zoo $) 2009, 2010 -->
 <!-- $Id: Comp_PrintData_a.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<TITLE>
+<title>
 DecoderPro&reg; Comprehensive Programmer
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -17,17 +17,19 @@ DecoderPro&reg; Comprehensive Programmer
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<h1><a NAME="Top"><img src="images/Comp_09a_PrintData.png" alt="Comprehensive Programmer - Advanced Features"  border=5 height=494 width=382 hspace="20"></a></h1>
+<h1><a name="Top"><img src="images/Comp_09a_PrintData.png" alt="Comprehensive Programmer - Advanced Features"  border=5 height=494 width=382 hspace="20"></a></h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Comp_PrintData.shtml#Print">Back</a>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

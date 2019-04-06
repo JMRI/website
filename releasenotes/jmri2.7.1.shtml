@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -147,7 +147,7 @@ Dan Boudreau made some internal changes to the operations support
 <p>
 And some more help page updates...
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

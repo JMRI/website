@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
@@ -35,7 +35,7 @@
 <p><a href="Ops_Locations_ShowCars.shtml">Back </a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
       </div><!-- closes #mainContent-->
     </div> <!-- closes #mBody-->

@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -353,7 +353,7 @@ Paul Bender made a fix to the Lenz momentary function support.
 Pete Cressman made numerous small changes to Logix and panel support.
 
 <p>
-Matt Harris added the "RosterCsvExport.py" script to export Roster details to a .csv (comma-separated variables) file
+Matt Harris added the "RosterCsvExport.py" script to export Roster details to a .csv (comma-separated values) file
 
 <p>
 Oscar Moutinho updated the inControl web throttle, and added inControl.jar, a Java MIDlet for 'Not So Smart' phones.
@@ -370,7 +370,7 @@ Matt Harris improved the audio implementation, particularly for Mac OS X.
 <p>
 Kevin Dickerson added F12-28 to the SPROG throttle.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
 </div> <!-- closes #mBody-->
 </body>

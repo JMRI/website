@@ -15,11 +15,11 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Add Locomotive</h1>
 
@@ -155,7 +155,7 @@ where you may enter the owner's name. Then select the Owner name from the drop-d
     <p></p></td>
   </tr>
 </table>
-<p>&nbsp;</p>
+
 <p>Now that you have your engines stored in the roster, you will need to add  <a href="Ops_Routes.shtml">Routes  </a> that your trains will use to  operate on your layout.</p>
 <hr>
 
@@ -164,6 +164,7 @@ where you may enter the owner's name. Then select the Owner name from the drop-d
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

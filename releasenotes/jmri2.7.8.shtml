@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -77,7 +77,7 @@ see our
 
 XML input processing has been reworked.  This shouldn't have any impact
 on users, but might effect people who have written scripts to 
-read or write XML files. See the XmlFile JavaDoc for more information.
+read or write XML files. See the XmlFile Javadoc for more information.
 
 <p>
 Linux users might encounter a problem with certain "Look and Feel" 
@@ -173,7 +173,7 @@ Randy McKenzie contributed some additional background images for CTC panels.
 <p>
 XML input processing has been reworked.  This shouldn't have any impact
 on users, but might effect people who have written scripts to 
-read or write XML files. See the XmlFile JavaDoc for more information.
+read or write XML files. See the XmlFile Javadoc for more information.
 
 <p>
 Kevin Dickerson added features to add locos to the roster from an Ecos
@@ -286,7 +286,7 @@ Although intended to operate with block detection, warrants can run trains witho
 however in this case, there is no protection against misaligned turnouts or cornfield meets.  Detailed information can be found in the Help files on the Occupancy Block Table menu.
 
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

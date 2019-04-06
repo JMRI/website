@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -113,7 +113,7 @@ These are development files, and might not be working at any particular time.
   <li>Adjustments to the way that final speed step is in a calculation is handled.
   <li>Set JSON protocol version for 3.4
   
-  </ul> <!--#include virtual="/Footer" --></div><!-- closes #mainContent-->
+  </ul> <!--#include virtual="/Footer.shtml" --></div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>
 </html>

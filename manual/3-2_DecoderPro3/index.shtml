@@ -3,7 +3,7 @@
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
 <!-- $Id: index.shtml 18500 2011-09-16 08:22:48Z dat7719 $ -->
-<title>Decoder Pro Manual: Index</title>
+<title>DecoderPro Manual: Index</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -15,11 +15,11 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro3&reg; Version 3.2</h1>
 
 <h3>Revised 1/12/2013</h3>
@@ -43,7 +43,7 @@ DecoderPro3
 </strong>
 </ul>
 <h4>
-  <a NAME="GettingStarted" id="GettingStarted"></a>Getting
+  <a name="GettingStarted" id="GettingStarted"></a>Getting
     started</h4>
 <ul>
 <li>
@@ -64,7 +64,7 @@ DecoderPro3
 </ul>
 
 <h4>
-<a NAME="Setting up"></a>Using DecoderPro3&reg;</h4>
+<a name="Setting up"></a>Using DecoderPro3&reg;</h4>
 <ul>
   <li><a href="Programmer_Setup.shtml"><strong>How do I set up to program
     a decoder?</strong></a></li>
@@ -76,7 +76,7 @@ DecoderPro3
   <li><strong><a href="Programmer_OpsMode.shtml">Ops Mode Programming</a></strong></li>
 </ul>
 <h4>
-  <a NAME="Basic Programmer"></a>
+  <a name="Basic Programmer"></a>
 The Basic Programmer</h4>
 <ul>
   <li><a href="Basic_Start.shtml"><strong>Entering locomotives in
@@ -91,7 +91,7 @@ The Basic Programmer</h4>
   <li><strong><a href="Basic_BasicPane.shtml#DoMore">What if I need to do more?</a></strong></li>
 </ul>
 <h4>
-<a NAME="Advanced Programmer"></a>The Comprehensive Programmer</h4>
+<a name="Advanced Programmer"></a>The Comprehensive Programmer</h4>
 <ul>
   <li><a href="Comp_Setup_Roster.shtml"><strong>Set-up and Roster Panes</strong></a></li>
   <li><strong><a href="Adv_FunctionLabel.shtml">Function Labels Pane</a></strong></li>
@@ -186,6 +186,7 @@ The Basic Programmer</h4>
 </table>
 <hr>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

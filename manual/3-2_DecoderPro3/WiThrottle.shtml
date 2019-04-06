@@ -15,16 +15,16 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro3&reg;</h1>
 <h1>WiThrottle</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_Main_Throttle_menubar.shtml#Wi">Back</a></p>
 <p><a href="index.shtml">Back to Index</a></p>
 </div>
@@ -66,11 +66,12 @@
     </ul>
   </blockquote>
 </blockquote>
-<div align=right>
+<div align="right">
   <p><a href="Comp_LightFX.shtml"></a><a href="dp3_Main_Throttle_menubar.shtml#Wi">Back</a></p>
 <p><a href="index.shtml">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

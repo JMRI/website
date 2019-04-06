@@ -19,7 +19,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -110,7 +110,7 @@ Updated the "New title" dialog for the layout editor to become a "Edit Title" an
 <p>
 All JMRI applications now have an <b>About <i>Application Name</i> Help</b> menu item that displays an About dialog. On OS X, this menu item is in the <i>Application Name</i> menu.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

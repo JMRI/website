@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -657,7 +657,7 @@ It displays the same information as the old Windows Console, is easy to resize a
 <li>Fixed bug when importing decoder definition from user preference location (thanks to Greg Watkins for finding this)
 <li>Enabled Blocks data to be populated via Reporters
 <li>Fixed a bug where Layout Editor and Control Panel Editor Panels were not being deleted when 'Delete' was picked from the 'File' menu.
-<li>Fixed a bug in the implementation of Reporters and updated the JavaDoc.
+<li>Fixed a bug in the implementation of Reporters and updated the Javadoc.
 <li>Added a new test case for Reporter objects.
 <li>Added a new object and test case that holds the current JMRI application name.
 <li>Improved some documentation.
@@ -691,7 +691,7 @@ rather than after dragging by using the SliderSnap class provided by Michael Kne
 <ul>
 <li>Improved the script output window allowing configurable automatic scrolling.
 <li>Added an example script to enable persistence of turnout states between sessions.
-<li>Added the "RosterCsvExport.py" script to export Roster details to a .csv (comma-separated variables) file.
+<li>Added the "RosterCsvExport.py" script to export Roster details to a .csv (comma-separated values) file.
 <li>Provided the ComPortEnumeration.py sample script, for getting a list of available ports.
 <li>Updated SerialPortRFID script - as per patch #3152534 from Nigel Cliffe and MERG member Ian King
 <li>Fixed some problems with custom programming scripts
@@ -1097,7 +1097,7 @@ startup splash screen gives you more information when you disable at startup.
 </ul>
 
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

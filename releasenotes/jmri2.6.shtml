@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -58,7 +58,7 @@ Among the enhancements since the last production release, JMRI 2.4, are:
 
 <b><p>
 JMRI is now only available under the 
-<A HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</p></b>
 
@@ -134,13 +134,13 @@ are using a Linux computer.
 <p>Please use these links for downloading:
 
 <p>Mac OS X:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.6.dmg">http://downloads.sourceforge.net/jmri/JMRI.2.6.dmg</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.6.dmg">http://downloads.sourceforge.net/jmri/JMRI.2.6.dmg</a>
 
 <p>Windows:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.6.exe">http://downloads.sourceforge.net/jmri/JMRI.2.6.exe</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.6.exe">http://downloads.sourceforge.net/jmri/JMRI.2.6.exe</a>
 
 <p>Linux:
-     <A HREF="http://downloads.sourceforge.net/jmri/JMRI.2.6.tgz">http://downloads.sourceforge.net/jmri/JMRI.2.6.tgz</a>
+     <a href="http://downloads.sourceforge.net/jmri/JMRI.2.6.tgz">http://downloads.sourceforge.net/jmri/JMRI.2.6.tgz</a>
 
  -->
 
@@ -841,7 +841,7 @@ Added "lights" alias for scripting
 Improvements to the Hornby DCC support.
 
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

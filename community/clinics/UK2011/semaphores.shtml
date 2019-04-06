@@ -2,10 +2,10 @@
 <!-- $Id: index.shtml,v 1.2 2011-07-10 20:29:42 jacobsen Exp $ -->
 <html lang="en">
 <head>
- <TITLE>JMRI: UK Signalling, Semaphore Signals</TITLE>
-    <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <META content="Nigel Cliffe" name=Author>
-    <META name="keywords" content="clinics java model railroad JMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra signalling UK British">
+ <title>JMRI: UK Signalling, Semaphore Signals</title>
+    <meta content="Nigel Cliffe" name=Author>
+    <meta name="keywords"
+       content="clinics java model railroad JMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra signalling UK British">
 
 <!-- Style -->
   <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
@@ -17,7 +17,11 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
+<hr class="hide">
+
+<div class="nomenu" id="mBody">
+    <div id="mainContent">
 <h2>Using Semaphore Signals rather than Colour Lights</h2>
 <p>So far, this tutorial has used colour light signals. However, semaphore signals 
   can be used in place of colour lights. </p>
@@ -44,12 +48,11 @@
   can be downloaded below:</p>
 <p>[ <a href="jmri_files/Demo%20Signal%208.xml">Link to download panel file</a> 
   ]</p>
-<p>&nbsp;</p>
-<p><a href="index.shtml">Back to Introduction</a></p>
-<!--#include virtual="/Footer" -->
 
+<p><a href="index.shtml">Back to Introduction</a></p>
+
+<!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

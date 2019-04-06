@@ -16,12 +16,12 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Add Spurs </h1>
 
@@ -207,8 +207,8 @@ and the <strong>Edit Spur Track</strong> window will open.</p>
 to save the changes. You may also
   <input type="submit" name="button16" id="button16" value="Delete Siding Track">
 from your data base.</p>
-<p>When done with editing close the window. </p>
-<p>&nbsp; </p>
+<p>When done with editing close the window.</p>
+
 <p>The Locations window shows all the locations in your database.</p>
 <p>You may Edit any one of them, which opens the<strong> Edit Location</strong> window, which is the same as the <a href="Ops_Locations.shtml"><strong>Add Location</strong></a> window except it contains the info for the location you are editing.</p>
 <p><img src="images/Ops_Location02.png" width="670" height="278" alt="locations"></p>
@@ -221,6 +221,7 @@ from your data base.</p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

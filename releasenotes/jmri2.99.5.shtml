@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -152,7 +152,7 @@ indexed variables.</p>
             <li>Fixed a problem introduced in 2.99.4 with the saving/loading of a layout panel that had a
                 level crossing included.</li>
             <li>Made some changes to the internal workings of the new Slips in the Layout Editor, this means that any added 
-                in 2.99.4 will have to be re-created or put a request up on the Yahoo group for assistance</li>
+                in 2.99.4 will have to be re-created or put a request up on the JMRI Users group for assistance.</li>
             <li>Updated the memory icon in the panels so that if a roster entry is allocated against it, 
                 the roster media icon is displayed (if available) or the roster title. If an icon and throttle is available the icon will flip to match the direction</li>
             <li>Added in ability to the layout editor to hide turnouts when not in editing mode</li>
@@ -230,7 +230,7 @@ Martin Pischky improved the LocoNet firmware downloader and fixed some bugs.
 <p>
 Steve Lowens added the Con-cor Zephyr (HO &amp; N) definitions to the Digitrax sound decoder definitions.
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

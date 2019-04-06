@@ -15,12 +15,12 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro3&reg; Comprehensive Programmer</h1>
 <h1>Advanced Features Pane</h1>
 
@@ -53,6 +53,8 @@ Loconet.
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
+</div>
 </body>
 </html>

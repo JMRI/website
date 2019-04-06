@@ -3,7 +3,7 @@
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
 <!-- $Id: Start_DecoderPro.shtml 18193 2011-08-16 23:19:17Z dat7719 $ -->
-<title>Decoder Pro Manual: Getting Started</title>
+<title>DecoderPro Manual: Getting Started</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -15,12 +15,12 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro3&reg; Main Window</h1>
 <h1>Print/Preview Roster Entry</h1>
 
@@ -44,6 +44,7 @@ The <strong>Select Items to Print</strong> is opened from the DecoderPro3 Main W
 <div align=right>
 <p><a href="dp3_menubar.shtml">Back</a> </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -164,7 +164,7 @@ Dick Bronson improved the NS-2008 signal set.
 
 <p> Paul Bender fixed a bug in the JMRIClient implementation that prevented the names of CBUS turnouts and sensors from being passed to the server.</p>
       
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

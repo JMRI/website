@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -45,7 +45,7 @@ to end in a JMRI 3.10 production release around the end of 2014.</p>
 
 <p><b>
 JMRI is now only available under the 
-<A href="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -185,7 +185,7 @@ on the
     </ul>
 
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

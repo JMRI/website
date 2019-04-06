@@ -15,12 +15,12 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Settings Window</h1>
 
@@ -335,17 +335,17 @@
       <td valign="top">To create your own custom manifest using a comma separated value (.csv) file, select this option. You can use a program like Excel to create a manifest to your liking. The manifest is located in the operations directory in a directory called <strong>csvManifests. </strong>Each line of the file starts with a two or three letter code, followed by the code's description, and then any parameters associated with the code. </td>
     </tr>
   </table>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
+
   <p align="right"><a href="#OptionsMenu">Back</a></p>
   <div align=right>
     <div align=right>
       <p><a href="Ops_Start.shtml">Previous </a> | <a href="Ops_Locations.shtml">Next</a></p>
       <p><a href="index.shtml#Operations">Back to Index</a></p>
     </div>
-    <p>.</p>
+
   </div>
 	  
-  <!--#include virtual="/Footer" -->
+  <!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

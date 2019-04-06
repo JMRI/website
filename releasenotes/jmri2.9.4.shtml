@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -335,7 +335,7 @@ the "auto" checkbox will only show valid tracks for that car.
 A new preferences dialog is available for testing.  If people
 think it better, perhaps after some changes, we'll replace the current one
 with it.  To use it, select "New Tabbed Prefs" under the "Edit" menu.
-Please give feedback on the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group</li> if you try it!
+Please give feedback on the JMRI Users group if you try it!
 Note: you should only attempt to use one preference panel or the other
 during a single run of the program, don't switch back and forth.
 
@@ -368,7 +368,7 @@ Jack Shall updated the Tsunami Diesel definition.
 Andrew Berridge added an optional "speed limit", which can be set by locomotive in the roster,
 when using JMRI throttles. Great for running with grand kids!
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->

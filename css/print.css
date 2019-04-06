@@ -1,7 +1,7 @@
 /* mozilla.com print css
 by dave shea, http://www.mezzoblue.com/ */
 
-/*html elements*/
+/* html elements */
 body {
 	background: #fff;
 	font: 12pt Verdana,Sans-serif;
@@ -76,9 +76,13 @@ dt.im {
 	content: " (http://www.mozilla.org" attr(href) ") ";
 }
 
+/* do not print sidebar, navbar and other web page stuff */
 #tools, #search, #side, #ad, #bn, #int, .skipLink, #brd {
 	display: none;
 }
 #header {
 	display: none;
 }
+ span.since {
+	display: none;
+ }

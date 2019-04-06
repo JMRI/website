@@ -15,12 +15,12 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Main Window</h1>
 <h1>Debug Menu </h1>
 
@@ -172,7 +172,7 @@
 <div>
   <div align="right"><a href="#memory">Back</a></div>
 </div>
-<h4>&nbsp;</h4>
+
 <hr>
 
 <div align=right>
@@ -180,6 +180,7 @@
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

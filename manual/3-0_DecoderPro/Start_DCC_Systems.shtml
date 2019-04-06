@@ -3,7 +3,7 @@
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
 <!-- $Id: Start_DCC_Systems.shtml 18193 2011-08-16 23:19:17Z dat7719 $ -->
-<title>Decoder Pro Manual: Getting Started</title>
+<title>DecoderPro Manual: Getting Started</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -15,26 +15,25 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1><img src="images/Logo.gif" alt="JMRI DecoderPro Logo" width=163 height=117 vspace="15" border=10 class="BOXIT"></h1>
 
 <h1>Getting Started with DecoderPro&reg;</h1>
-<h1>What DCC systems will Decoder Pro work with?</h1>
+<h1>What DCC systems will DecoderPro work with?</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Basic_Programming.shtml"> </a><a href="Start_DCC.shtml">Previous</a> <a href="Start_DCC_Hardware.shtml">| Next</a>
 <p><a href="index.shtml#GettingStarted">Back to Index</a>
 </div>
 
 <hr>
-<h3>&nbsp;</h3>
 <p>
-Decoder Pro will work with the following DCC systems:
+DecoderPro will work with the following DCC systems:
 <ul>
 <li>Atlas</li>
 <li>Bachrus</li>
@@ -81,10 +80,12 @@ interface may be required.
   <br>
 <a href="http://jmri.org/help/en/html/hardware/index.shtml" target="_blank">JMRI Hardware Support</a>
 <hr>
-<div align=right>
+<div align="right">
 <p><a href="Start_DCC.shtml">Previous</a> <a href="Start_DCC_Hardware.shtml">| Next</a>
 <p><a href="index.shtml#GettingStarted">Back to Index</a> </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div> <!-- closes #mBody, started in sidebar-->
 </body>
 </html>

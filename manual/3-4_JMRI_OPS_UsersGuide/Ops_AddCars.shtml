@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
@@ -22,12 +22,11 @@
 <h1>How to Use JMRI&reg; to Operate Trains</h1>
 <h1>Add Cars (Edit Cars) Window</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Cars.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<p>&nbsp;</p>
 <hr>
 <p>The <strong>Add Car</strong> window or <strong>Edit Car</strong> window is opened. Window are identical except for title.</p>
 <table width="90%" border="0" align="center" cellpadding="2" cellspacing="1">
@@ -275,19 +274,18 @@ when pressed, opens the <strong>Set Car Location</strong> panel and allows you t
     <p>
       <input type="submit" name="button17" id="button17" value="Save">
     press to save the car locations that you have set.</p>
-    <p>&nbsp;</p>
     <p>Close the window when completed.</p></td>
   </tr>
 </table>
 <p align="left">Now that you have your cars stored in the roster, you will probably want to add some <a href="Ops_Engines.shtml">Engines </a>to move your cars about the layout.</p>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Ops_Cars.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
     </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
   </body>

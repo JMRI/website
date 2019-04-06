@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -71,12 +71,13 @@
 <p><img src="images/Ops_PrintPreview.png" width="660" height="933" alt="preview"></p>
 <p><strong><a href="#PreviewTop">Back</a></strong></p>
 <hr>
-<p>&nbsp;</p>
+
 <div align=right>
 <p><a href="Ops_Trains.shtml">Back</a><a href="#"></a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

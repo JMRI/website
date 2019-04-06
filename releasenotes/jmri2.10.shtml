@@ -18,7 +18,7 @@
 
 <body>
   
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent" style=" width : 692px;">
@@ -64,8 +64,7 @@ being working on, and we have to remove it.  This version of
 JMRI requires that you enter consistent system names, including using the right case.
 If you use system names, and haven't been using consistent names, you'll
 probably have to practice a little to get in the habit. If you have any problems
-reading old files, etc, please post a note on the 
-<a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group</li>
+reading old files, etc, please post a note on the JMRI users group</li>
 and somebody will help you.
 
 <p>
@@ -96,8 +95,7 @@ may have to remove a communications library, see the
 The communications libraries for Mac OS X have been updated.  
 We've tested these extensively, but there may be combinations of 
 hardware and software versions that still aren't right.  If the program
-can't see your layout connection, please post to the 
-<a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> Yahoo group</li>
+can't see your layout connection, please post to the JMRI Users group</li>
 with what type of Mac you're using (PowerBook, PowerMac, MacBook, etc), 
 processor type (PPC G3, G4, G5 or Intel) and Mac OS X version (10.4, 10.5, 
 etc; names like Leopard are OK) too.  We've got several library versions 
@@ -936,11 +934,11 @@ Paul Bender improved the way that turnout control timing is done for the Lenz pr
 
 
 <p>
-The Ant javadoc-uml target now generates JavaDoc pages with UML class diagrams.
+The Ant javadoc-uml target now generates Javadoc pages with UML class diagrams.
 To show the diagram, click the "Show UML class diagram" link at the top of each page.
 Note that the process of generating these is quite resource-intensive, and requires a 
 Java 1.6 runtime be present.  
-We make the JavaDocs for the most recent release
+We make the Javadocs for the most recent release
 <a href="http://jmri.org/JavaDoc/doc/">available</a>
 in the 
 <a href="http://jmri.org/help/en/html/doc/Technical/index.shtml">developer section</a>
@@ -1043,7 +1041,7 @@ Lionel Jeanson added support for lockable/non lockable functions from roster ent
 <p>
 Kevin Dickerson updated the editors to handle the setting of borders and margins better, by using a compounded border, 
 the inner covering the margin, the outer covering the outline border.  
-Fixes an issue seen by a user on the yahoo group
+Fixes an issue seen by a user on the JMRI Users group.
 
 <p>
 Kevin Dickerson updated the editor icons so that they always save the justification position. 
@@ -1100,7 +1098,7 @@ Fixed a problem with French translation of roster.
 <p>
 Kevin Dickerson fixed a problem with selecting certain layout editor icons.
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
 </div> <!-- closes #mBody-->
 </body>

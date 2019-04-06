@@ -15,16 +15,16 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro3&reg; Main Window</h1>
 <h1>JMRI&reg; Throttle Window - Address Panel</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_Main_Throttle.shtml">Back </a></p>
 </div>
 
@@ -34,7 +34,8 @@
 <table width="90%" border="0" cellspacing="1" cellpadding="1">
   <tr>
     <td width="46%" align="left" valign="top"><img src="images/Main_Throttle_Address.png" width="277" height="134" alt="Throttle address frame"></td>
-    <td width="54%" align="left" valign="top"><p>Primary use is to identify the decoders address, and to dispatch or release the identified address. Locomotive address may be entered by one of two methods: typed into text box or use drop-down list to select locomotive from your roster. .&nbsp; If you&nbsp;  have added<strong> <a href="Adv_FunctionLabel.shtml">Function labels</a></strong><a href="Adv_FunctionLabel.shtml">,</a> to your Roster, the label text from the Roster will be displayed  on the throttle function buttons.</p>
+    <td width="54%" align="left" valign="top"><p>Primary use is to identify the decoders address, and to dispatch or
+    release the identified address. Locomotive address may be entered by one of two methods: typed into text box or use drop-down list to select locomotive from your roster. If you have added <strong><a href="Adv_FunctionLabel.shtml">Function labels</a></strong> to your Roster, the label text from the Roster will be displayed  on the throttle function buttons.</p>
       <p>Click on the
         <input type="submit" name="button" id="button" value="Set">
         to  send the address to your system to  make this throttle active.</p>
@@ -54,14 +55,13 @@
   <div align="right"><a href="#Top"></a></div>
 </div>
 
-<div> </div>
-<div> </div>
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="dp3_Main_Throttle.shtml">Back </a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

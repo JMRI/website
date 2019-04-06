@@ -15,11 +15,11 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Add Route Window<br>
 </h1>
@@ -167,6 +167,7 @@ on any route and the <strong><a href="Ops_RoutesEdit.shtml">Edit Route </a></str
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

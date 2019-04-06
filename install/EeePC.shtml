@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 <!--#include virtual="/download/Sidebar" -->
 
 <div id="mainContent">
@@ -282,7 +282,7 @@ Once restarted, icons for Decoder Pro and Panel Pro should exist on the Play tab
 <li>Some Asus updates will cause the icons to be removed. In that case, redo the 'Modify AsusLauncher menu' steps.
 </ol>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
 	 </div> <!-- closes #mainContent-->
  </div> <!-- closes #mBody-->

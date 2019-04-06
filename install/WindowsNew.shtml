@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="/download/Sidebar" -->
 <div id="mainContent">
@@ -42,6 +42,10 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
 	<li><a href="#debugging">Debugging</a></li>
 		<ul>
 		<li><a href="#errors">Error Messages</a></li>
+		    <ul>
+		    <li><a href="#stoppedworking">"The JAVA SE Platform binary has stopped working"</a></li>
+		    <li><a href="#registry">".. prefs root node Software\JavaSoft\Prefs .. Windows RegCreateKeyEx(...)..."</a></li>
+		    </ul>
 		<li><a href="#logscreen">The Log Screen</a></li>
 		<li><a href="#startupissues">Startup issues</a></li>
 		<li><a href="#shutdownissues">Shutdown issues</a></li>
@@ -64,13 +68,27 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
 		Windows2000 SP3 and XP systems can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.<br>
 		Windows98 and ME can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.8</a>.
                 <p>Note: It is possible to install Java 1.8 onto machines running Windows XP or Vista SP1, 
-                but this is <em>unsupported</em> by Oracle and may break at any time. To proceed, visit
-                the <a href="http://www.java.com/en/download/manual.jsp">Manual Java Downloads page</a> and
-                choose the Offline Installer for Windows. The installer will complain that it is unsupported,
-                but should allow you to continue with the installation. Assuming that this is successful, proceed with
-                installation of <a href="http://jmri.org/download/index.shtml">current JMRI test and production releases</a>.
-	  <p>We recommend you have at least 256&nbsp;MB of memory for Windows 98, 512&nbsp;MB of memory for Windows 2000 and 2&nbsp;GB for the newer W7-W10 systems. We have had a report that a 330&nbsp;MHz Pentium II running W2000 is fine, but it's important to have enough memory and free hard disk space.
-	  For the more complicated DecoderPro screens, a display with a resolution of 800x600 or larger is strongly recommended. 
+                but this is <em>unsupported</em> by Oracle. 
+                <ul>
+                <li>To do this for Windows XP, visit
+                    the <a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html">Java Releases Archive page</a> 
+                    and choose the "Java SE Runtime Environment 8u151" installer for "Windows x86 Offline".
+                    The file name is <code>jre-8u151-windows-i586.exe</code>.
+                    This is the last installer that worked for Windows XP; if you later get prompted to do a Java
+                    Update to a newer version than 151, cancel it instead of applying it (if you do apply the update, you'll have to reinstall
+                    the 151 version of Java as described here.)
+                    The installer will complain that it is unsupported,
+                    but should allow you to continue with the installation. Assuming that this is successful, proceed with
+                    installation of <a href="http://jmri.org/download/index.shtml">current JMRI test and production releases</a>.
+                <li>To do this for Windows Vista SP1, visit
+                    the <a href="http://www.java.com/en/download/manual.jsp">Manual Java Downloads page</a> and
+                    choose the Offline Installer for Windows. The installer will complain that it is unsupported,
+                    but should allow you to continue with the installation. Assuming that this is successful, proceed with
+                    installation of <a href="http://jmri.org/download/index.shtml">current JMRI test and production releases</a>.
+                </ul>
+	  <p>
+	  It's important to have enough memory and free hard disk space.
+	  We recommend you have at least 256&nbsp;MB of memory for Windows 98, 512&nbsp;MB of memory for Windows 2000 and 2&nbsp;GB for the newer W7-W10 systems. 
 	  Note that used PC hardware is available for very little money; it might be cheaper to buy a used computer than to update your existing one.</p>
 	</li>
 	
@@ -79,7 +97,9 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
 	
 	    <p>JMRI also supports an offline installation - to setup,  refer to the <a href="#offline">Offline Installation</a> section below.
 	
-	    <p>The JMRI project is continuously adding features, bug fixes, examples and tutorials to the release, and so new "test" versions appear every couple of weeks.  You may find one of these has features that you really want.  These are announced in the JMRI users Yahoo group at <a href="https://groups.yahoo.com/neo/groups/jmriusers/">https://groups.yahoo.com/neo/groups/jmriusers/</a>.</p>
+	    <p>The JMRI project is continuously adding features, bug fixes, examples and tutorials to the release, and so
+	new "test" versions appear every couple of weeks.  You may find one of these has features that you really want.
+	These are announced in the <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io group.</p>
 	</li>
 	
   <a id="update"></a>
@@ -135,7 +155,7 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
 	<p>(The following instructions assume that you are setting up a blank removable flash drive - creation of a CD will be similar but may depend on the capabilities of your CD authoring software)</p>	
 		<ol>
 		<li>Copy the <a href="../download/index.shtml#prod-rel">previously downloaded</a> JMRI installer onto the root of the flash drive.
-		<li>Create a directory in the root of the flash drive called:
+		<li>Create a directory in the root of the flash drive and name it:
 		<ul>
 		<li>JRE
 		<p>The following image shows the resulting structure:
@@ -144,7 +164,13 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
 		<li>In the JRE directory, place a copy of the Java offline installer for Windows 2000 or later. If required, the latest version can be <a href="http://java.com/winoffline_installer/">downloaded from Sun Microsystems here</a>. A typical name for this file is 'jre-8u66-windows-i586.exe'.
 		</ol>
 	<p>Setup of the JMRI offline installation media is now complete.</p>
-	
+
+	<h3>Clean Install</h3>
+	<p>If for any reason you wish to start totally clean and discard all previously stored Connections, Roster entries
+	and Panels, run "Uninstall JMRI", found in the Windows Start Menu &gt; All Programs &gt; JMRI &gt; Tools and Demos
+	before
+	reinstalling a new version of JMRI.</p>
+
  <a id="startup"><h2>Starting JMRI</h2></a>
  <ul>
   <li>Connect your computer to your <a
@@ -231,9 +257,17 @@ the folder "JMRI_backup" to "JMRI".
 
 <a name="errors"><h3>Error messages</h3></a>
 	<ul>
-	<li>The JAVA SE Platform binary has stopped working<br>
+	<li><a name="stoppedworking" id="stoppedworking"></a>
+	<code>The JAVA SE Platform binary has stopped working</code><br>
 	There is a <a href="WindowsSeStoppedWorking.shtml">separate Help page</a>
 	for debugging the "The JAVA SE Platform binary has stopped working" error message.</li>
+	<li><a name="registry" id="registry"></a>
+	<code>WARN - Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5</code><br>
+	You can ignore this one. This is an internal warning from Java itself. Certain combinations of 
+	Windows configuration and Java 8 version emit it, but it doesn't have any adverse 
+	impact on JMRI or the computer.  Oracle has said they'll fix it in Java 9, i.e. 
+	<a href="http://www.catb.org/jargon/html/R/Real-Soon-Now.html">Real Soon Now</a>.
+	
 	</ul>
 
 <a name="installtest"><h3>Run InstallTest</h3></a>
@@ -265,7 +299,7 @@ the folder "JMRI_backup" to "JMRI".
 	
 	<li>Click the button "Copy to clipboard".
 	
-	<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad,
+	<li>In your e-mail client, Notepad, Wordpad,
 	favorite word processor, etc. position your cursor and left-click on Edit and
 	then Paste, or press the "Ctrl" and "V" keys.
 	</ol>
@@ -286,7 +320,7 @@ the folder "JMRI_backup" to "JMRI".
 	<p>When launched, the following window will appear showing various useful information:
 	<br><img src="images/WinDebug-03_LauncherDebugWindow.png" height="295" width="426" alt="launcher debug window"></p>
 	<p>Copy the contents of this window by 'right-clicking' and then choosing 'Copy Details to Clipboard'
-	<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad,
+	<li>In your e-mail client, Notepad, Wordpad,
 	favorite word processor, etc, position your cursor and left-click on Edit and
 	then Paste, or press the "Ctrl" and "V" keys.
 	</ol>
@@ -325,15 +359,15 @@ start menu shortcut used to launch JMRI.</p>
 	and choosing 'Edit > Copy':
 	<br><img src="images/WinExitDebug-06_ConsoleCopyToClipboard.png" height="338" width="669" alt="java thread dump">
 	
-	<li>In your e-mail client, the Yahoo! "Post Message" pane, Notepad, Wordpad,
+	<li>In your e-mail client, Notepad, Wordpad,
 	favorite word processor, etc, position your cursor and left-click on Edit and
 	then Paste, or press the "Ctrl" and "V" keys.
 	</ol>
 
 <p>For further information on the JMRI shortcuts, see the <a href="/help/en/html/doc/Technical/StartUpScripts.shtml#windows">Help page outlining the start-up procedure on Windows</a>.</p>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
-  </div> <!-- closes #mBody-->
+  </div> <!-- closes #mBody, started in sidebar-->
  </body>
 </html>

@@ -2,13 +2,13 @@
 <!-- $Id: index.shtml,v 1.2 2011-07-10 20:29:42 jacobsen Exp $ -->
 <html lang="en">
 <head>
- <TITLE>JMRI: UK Signalling, Placing Signals on Layout</TITLE>
-    <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-    <META content="Nigel Cliffe" name=Author>
-    <META name="keywords" content="clinics java model railroad JMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra signalling UK British">
+ <title>JMRI: UK Signalling, Placing Signals on Layout</title>
+    <meta name="author" content="Nigel Cliffe">
+    <meta name="keywords"
+       content="clinics java model railroad JMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra signalling UK British">
 
 <!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -17,7 +17,11 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
+<hr class="hide">
+
+<div class="nomenu" id="mBody">
+    <div id="mainContent">
 <h2>Adding Signal Masts to the Layout, and creating Signal Mast Rules</h2>
 <p>Signal Mast Rules work from signal to signal. If we consider our layout, and 
   the down line, there is a signal controlling access to platform 2 or into the 
@@ -39,23 +43,19 @@
   Buffer Stop, the positioning of Masts, and the creation of Rules between them. 
 </p>
 <iframe width="640" height="480" src="http://www.youtube.com/embed/eNfmfuSMYxk" frameborder="0" allowfullscreen></iframe>
-<p>&nbsp;</p>
+
 <p>The Panel file for the layout at the end of this stage of the tutorial can 
   be downloaded here </p>
 <p>[ <a href="jmri_files/Demo%20Signal%204.xml">Link to Panel file 4</a> (masts 
   positioned)]</p>
 <p>[ <a href="jmri_files/Demo%20Signal%205.xml">Link to Panel file 5</a> (masts 
   rules added)]</p>
-<p></p>
-<p>&nbsp; </p>
+
 <p><a href="permissive_working.shtml">Move on to Part 8</a> </p>
 <p><a href="index.shtml">Back to Introduction</a></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<!--#include virtual="/Footer" -->
 
+<!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
 </body>
 </html>

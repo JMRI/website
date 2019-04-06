@@ -1,11 +1,10 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id$ -->
 <html lang="en">
 <head>
-    <TITLE>
+    <title>
  	JMRI: Information for Older Releases
-    </TITLE>
-    <META content="YOUR NAME HERE" name=Author>
+    </title>
+    <meta name="author" content="YOUR NAME HERE">
     <meta name="keywords" content="JMRI decoderpro dcc nmra">
 
     <!-- The combination of "Define" and {Header,Style, Logo and Footer} comments -->
@@ -13,7 +12,7 @@
     <!-- easily replace the common header/footer code for all the web pages -->
 
 <!-- Style -->
-  <META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="icon" href="/images/jmri.ico" type="image/png">
@@ -22,7 +21,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
     <hr class="hide">
 
@@ -35,7 +34,7 @@
 
 	    <H1>Information for Older JMRI Releases</H1>
 
-		<div class=para>
+		<div class="para">
 		<p>This page provides access to help and manual information
 		from older versions of JMRI.  You can find the most 
 		current information directly from the 
@@ -43,7 +42,7 @@
 		<a href="../download/index.shtml">JMRI downloads page</a>.</p>
 		</div>
 
-		<div class=list>
+		<div class="list">
 		<h1>PDF Versions of DecoderPro Manual</h1>
 		<p>This section contains links to older versions
 		of the PDF version of the <a href="http://jmri.org/manual">DecoderPro Manual</a>.</p>
@@ -61,19 +60,19 @@
 		</dl>
 		</div>
 
-		<div class=list>
+		<div class="list">
 		<h1>JMRI Help Files</h1>
 		<p>This section contains links to older versions
 		of the  <a href="http://jmri.org/help/en">JMRI help files</a>.</p>
 		<dl>
 		    <dt class="left">JMRI 2.12</dt>
-		    <dd class=first>
+		    <dd class="first">
 			<p><a href="http://jmri.org/releases/releases/2.12/help/en/webtoc.shtml">Table of Contents</a></p>
 			<p><a href="http://jmri.org/releases/releases/2.12/help/en/webindex.shtml">Index</a></p>
 		    </dd>
 
 		    <dt class="left">JMRI 2.13.1</dt>
-		    <dd class=first>
+		    <dd class="first">
 			<p><a href="http://jmri.org/releases/releases/2.13.1/help/en/webtoc.shtml">Table of Contents</a></p>
 			<p><a href="http://jmri.org/releases/releases/2.13.1/help/en/webindex.shtml">Index</a></p>
 		    </dd>
@@ -81,10 +80,9 @@
 		</dl>
 		</div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->
 </body>
 </html>
-

@@ -3,9 +3,9 @@
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
 <!-- $Id: Main_ConsistControl.shtml 18167 2011-08-13 11:22:06Z dat7719 $ -->
-<TITLE>
+<title>
 Tool Menu
-</TITLE>
+</title>
 
 <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -17,7 +17,7 @@ Tool Menu
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -25,7 +25,7 @@ Tool Menu
 <h1>Tool Menu </h1>
 <h1>Consisting Control Window</h1>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml#Consist">Back</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
@@ -103,11 +103,12 @@ deletes the entire consist.
 reverses the direction of the consist.
 <hr>
 
-<div align=right>
+<div align="right">
 <p><a href="Main_Tool.shtml#Consist">Back</a></p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

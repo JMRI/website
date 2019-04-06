@@ -18,7 +18,7 @@
 
 <body>
 
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
   <div class="nomenu" id="mBody">
     <div id="mainContent">
@@ -41,7 +41,7 @@ We're therefore making that version, "Production version 4.0.1" available for do
 
 <p><b>
 JMRI is now only available under the
-<a HREF="/COPYING">GNU General Public License</a>. For more information, please
+<a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
@@ -274,8 +274,7 @@ To use this or any later JMRI test or production releases, you'll have to
              and hybrid (semaphore with lower searchlight head) masts.
              <br>
              Does not reference the rulebook as web link because I cannot find it
-             hosted anywhere. There is a PDF of the rulebook in the Yahoo user group files area
-             if a place can be found to host it. Mast files contain page references for
+             hosted anywhere. Mast files contain page references for
              the aspect appearances in the 1969 rulebook.
              <br>
              Provided by Suzie Tall, patch 1067
@@ -639,7 +638,7 @@ To use this or any later JMRI test or production releases, you'll have to
             <li>Howard Watkins, Matt Harris and Randall Wood wrote the
                 <a href="http://jmri.org/jython/DisableLayoutEditorSensorIcon.py">DisableLayoutSensorIcon</a>
                 sample script code to enable/disable Sensor icons on a Layout Editor panel.</li>
-            <li>JavaDoc errors in the AbstractOperationsServer were fixed</li>
+            <li>Javadoc errors in the AbstractOperationsServer were fixed</li>
             <li>Update to use the correct JOAL libraries for ARMv6</li>
             <li>Fixed a minor issue with the JoalAudioFactory</li>
             <li>Use RosterSpeedProfile for speed calibration in Warrants.
@@ -650,7 +649,7 @@ To use this or any later JMRI test or production releases, you'll have to
             <li>Pete Cressman fixed the Portal/Signal tables to now conform with Speed Profiling.</li>
         </ul>
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
 </body>

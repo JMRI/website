@@ -11,10 +11,8 @@
   <link rel="icon" href="/images/jmri.ico" type="image/png">
   <link rel="home" title="Home" href="/">
 <!-- /Style -->
-
-    <meta content="Bob Jacobsen" name="Author">
-    <meta name="keywords" content="java model railroad JMRI install MacOSX">
-
+  <meta name="author" content="Bob Jacobsen">
+  <meta name="keywords" content="java model railroad JMRI install MacOSX">
 </head>
 
 <body>
@@ -56,110 +54,105 @@
       New Comm Library for Mac OS X 
       </h2>
 
-This page describes how to install a new version of the Java
+<p>This page describes how to install a new version of the Java
 communications library for JMRI.  This is <em>experimental</em>
 and we would greatly appreciate your feedback. Currently (Spring 2006),
 we recommend this for users connecting to Lenz systems (LI100, LI101, etc),
 for those having certain types of problems with USB to serial adapters,
-and everybody who has an Intel-powered Mac.
+and everybody who has an Intel-powered Mac.</p>
 <p>
-This is unfortunately a long, detailed process.  Once we're sure
+This is unfortunately a long, detailed process. Once we're sure
 it's actually working, we hope to find somebody to build an installer
-that does all of this automagically.
+that does all of this automagically.</p>
 
-<p>
-      <ol>
-      
-    <li>If you have installed the old version of the 
+  <ol>
+    <li>If you have installed the old version of the
     program, you have to remove it manually.
-    <p>
+    <br>
     These steps only undo the actions of installer you used earlier to
     install these libraries; they should have no other effect on
     your system.
-    <p>
+    <br>
     To do this, open the Terminal application (from 
     the Utilities folder in the Applications folder)
     and in the resulting window type the lines (you will probably
-    be prompted for an administrator password):
+    be prompted for an administrator password):<br>
 <code>
 <pre>
-
 sudo rm /System/Library/Frameworks/JavaVM.framework/Home/lib/ext/comm.jar
 sudo rm /System/Library/Frameworks/JavaVM.framework/Versions/1.3.1/Home/lib/javax.comm.properties
 sudo rm /usr/lib/java/libSerial.jnilib
-
 </pre>
 </code>
-You might get a message about "No such file or directory"; that can be ignored.
+        You might get a message about "No such file or directory"; that can be ignored.</li>
 
-	<li>Install the new Java serial communications library
-    <p>
-	 Download the new library archive from
+	<li>Install the new Java serial communications library<br>
+     Download the new library archive from
 	 <a
 	 href="http://prdownloads.sourceforge.net/jmri/comm.jar?download">
-	 http://prdownloads.sourceforge.net/jmri/comm.jar?download</a>.
+	 http://prdownloads.sourceforge.net/jmri/comm.jar?download</a>.<br>
 	
-	<p>
-	You now have to copy it from the directory to which it was 
-	downloaded to it's correct location.  To do this:
+	You now have to copy it from the directory to which it was
+	downloaded to it's correct location. To do this:
 	<ol>
-	<li>Drag the downloaded comm.jar file to the Desktop so we can find it
-	<li>Open a 
-	Terminal window (see above) and type:
-<code>
-<pre>
+		<li>Drag the downloaded comm.jar file to the Desktop so we can find it</li>
+		<li>Open a Terminal window (see above) and type:<br>
+		<code>
+		<pre>
 
-sudo cp ~/Desktop/comm.jar /Library/Java/Extensions/
+	sudo cp ~/Desktop/comm.jar /Library/Java/Extensions/
 
-</pre>
-</code>
+		</pre>
+		</code>
+		</li>
     </ol>
+	</li>
     
-    <li>Install the new RXTX libraries.
-    <p>
-	 Download the new library archive from
+    <li>Install the new RXTX libraries.<br>
+     Download the new library archive from
 	 <a
 	 href="http://prdownloads.sourceforge.net/jmri/RXTX_Jag_4.pkg.sit.hqx?download">
 	 http://prdownloads.sourceforge.net/jmri/RXTX_Jag_4.pkg.sit.hqx?download</a>.
-	 <p>
+	 <br>
 	 Unpack and run that installer.  It might mention 
 	 various things that you have to check about the "uucp group" and
 	 similar.  You can just ignore those, as they're being handled 
 	 by the installer and the previous steps.
-	 <p>
+	 <br>
 	 When the installer is complete, restart your computer.
-	
-	 </ol>
+	</li>
+</ol>
 	 <p>
 	 At this point, you should be able to start any of the JMRI
 	 applications (or other Java programs) and communicate
 	 via serial ports.  Please 
 	 <a href="mailto:jmri@pacbell.net">send feedback</a> 
-	 to let us know whether it worked or not!
-    
+	 to let us know whether it worked or not!</p>
+
 <!-- Footer -->
     <hr class="hide">
     <div id="footer">
 	<ul id="bn">
-	<li>Contact us via the <a href="https://groups.yahoo.com/neo/groups/jmriusers/info">JMRI users</a> mailing list</li>
+		<li>Contact us via the JMRI Users mailing list</li>
 	</ul>
 
 	<p>Thanks and congratulations to
 	   <a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
 	   	all who contributed</a>!</p>
 
-	<p>Copyright &copy; 1997 - 2016 JMRI Community. 
+	<p>Copyright &copy; 1997 - 2018 JMRI Community.
 	<p>JMRI&reg;, DecoderPro&reg;, PanelPro&trade;, SignalPro&trade;, TrainPro&trade;, DispatcherPro&trade;, OperationsPro&trade; and associated logos are our trademarks.
 	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
     
-       <br>Site hosted by:<br>
-<a href="http://sourceforge.net/projects/jmri/"><img src="https://sourceforge.net/sflogo.php?group_id=26788&type=12" width="120" height="30" border="0" alt="Get JMRI Model Railroad Interface at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a>
+       <br>Site hosted by:<br><!-- SSI require .shtml suffix, so this file can't include the following as Icon via SSI -->
+        <a href="http://www.tagadab.com">
+        <img src="https://www.tagadab.com/sites/default/files/logo-tagadab-nostrap.png" height="28" width="103"
+		   border="0" alt="Tagadab Logo"></a>
     </div>
 <!-- /Footer -->
 
    </div><!-- closes #mainContent-->
-  </div> <!-- closes #mBody-->
+  </div> <!-- closes #mBody, started in sidebar-->
 </div> <!-- closes #container -->
 </body>
 </html>
-

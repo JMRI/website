@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
@@ -252,13 +252,15 @@ and all the Reports and Train Manifest are previewed, then you may print the des
   will terminate the train. Once a train  is terminated, you can build it again. </p>
 <p>Each time an engine or car is moved a count associated with them  is incremented. The program uses this to determine which cars haven't  moved recently and tries to select cars with the least number of moves  when building new trains. Each time a location has a car picked up or  dropped, the program increments a count associated with that location.  The program tries to move cars to locations that have experienced the  least number of car operations.</p>
 <p><strong><a href="#buildbtn">Back</a></strong></p>
-<hr/>
-<p>&nbsp;</p>
+<hr>
+
 <div align=right>
 <p><a href="Ops_Routes.shtml">Previous | </a><a href="Ops_TripThruOperations.shtml">Next</a></p>
 <p><a href="index.shtml#Operations">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div><!-- closes #mainContent-->
+</div><!-- closes #mBody, started in sidebar-->
 </body>
 </html>

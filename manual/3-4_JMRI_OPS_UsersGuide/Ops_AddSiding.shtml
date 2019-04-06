@@ -1,24 +1,24 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head>
-<!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Ops_AddSiding.shtml 18257 2011-08-22 08:50:56Z dat7719 $ --><title>Operations-Add Siding</title><!-- Style -->
-
-
-
-
-
-
+<html lang="en">
+<head>
+<!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Ops_AddSiding.shtml 18257 2011-08-22 08:50:56Z dat7719 $ -->
+  <title>Operations-Add Siding</title>
+  <!-- Style -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
 <link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/"><!-- /Style --></head><body>
-<!--#include virtual="/Header" -->
+<link rel="home" title="Home" href="/">
+  <!-- /Style -->
+</head>
+<body>
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
 <a name="Top"></a>
-<h1>Using JMRI� to Operate Trains</h1>
+<h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Add Spurs </h1>
 
 <div align="right">
@@ -49,7 +49,7 @@ remove the hyphen and number when printing manifests and switch lists.</p>
 unloaded. For a train to service a location, there must be at least one
 track for that location. </p>
 <p>This opens the <strong>Add Location</strong> window with all the options enabled.</p>
-<p align="left">&nbsp;</p>
+
 <p align="center"><img src="images/Ops_AddSiding.png" alt="adds spur" height="624" width="764"></p>
 <h4>Add Spur Menu</h4>
 <p><img src="images/Ops_AddSidingMenu.png" alt="menu" height="213" width="758"></p>
@@ -112,7 +112,7 @@ or
 <p>Press 
   <input name="button9" id="button9" value="Add Spur Track" type="button"> 
 then the <strong>Add Spur Track</strong> window is displayed, so that you can detail the spur</p>
-<p>&nbsp;</p>
+
 <table border="0" cellpadding="2" cellspacing="1" width="90%">
   <tbody><tr>
     <td align="left" valign="top" width="48%"><img src="images/Ops_AddSiding.png" alt="add spur track" height="624" width="764"></td>
@@ -250,8 +250,8 @@ to save the changes. You may also
   <input name="button16" id="button16" value="Delete Siding Track" type="submit">
 from your data base.</p>
 <p>Note we changed the length of the spur to 200 scale feet.</p>
-<p>When done with editing close the window. </p>
-<p>&nbsp; </p>
+<p>When done with editing close the window.</p>
+
 <p>The Locations window shows all the locations in your database.</p>
 <p>You may Edit any one of them, which opens the<strong> Edit Location</strong> window, which is the same as the <a href="Ops_Locations.shtml"><strong>Add Location</strong></a> window except it contains the info for the location you are editing.</p>
 <p><img style="width: 808px; height: 283px;" alt="location" src="images/Ops_Location02.png"><br>
@@ -265,5 +265,7 @@ from your data base.</p>
 <p><a href="index.shtml#Main">Back to Index</a></p>
 </div>
 
-<!--#include virtual="/Footer" -->
-</div></body></html>
+<!--#include virtual="/Footer.shtml" -->
+</div>
+</body>
+</html>

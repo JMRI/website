@@ -15,17 +15,17 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="Sidebar" -->
 <div id="mainContent">
 
-<a NAME="Top"></a>
+<a name="Top"></a>
 <h1>DecoderPro&reg; Comprehensive Programmer</h1>
 <h1>Basic Speed Control Pane</h1>
 
-<div align=right>
-<p><a href="Comp_Motor.shtml">Previous &nbsp;| </a>
+<div align="right">
+<p><a href="Comp_Motor.shtml">Previous</a> |
   <a href="Comp_Speed_Talble.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
@@ -54,15 +54,15 @@ level.
 and <b>Vhigh</b> a bit, so that if your locomotive reaches full speed
 at 5 volts, you can stretch out the lower end of the curve to get more
 fine control in a useful speed range.
-<p>If you are having problems with  unpredictable speeds with your locomotives, check these settings. Sometimes, one or more of these  settings have been changed accidentally (usually due to an error in programming  CV&rsquo;s with a throttle),  leading to very odd speed performance. In particular, if the <strong>Vmid</strong> is  lower than <strong>Vstart</strong> or higher than <strong>Vhigh</strong>, results can be highly  unpredictable. Decoder Pro will not let you make this mistake. 
+<p>If you are having problems with  unpredictable speeds with your locomotives, check these settings. Sometimes, one or more of these  settings have been changed accidentally (usually due to an error in programming  CVs with a throttle),  leading to very odd speed performance. In particular, if the <strong>Vmid</strong> is  lower than <strong>Vstart</strong> or higher than <strong>Vhigh</strong>, results can be highly  unpredictable. Decoder Pro will not let you make this mistake.
 <p><b>Forward Trim</b> and <b>Reverse
     Trim</b> allow you to compensate for differences in the forward speed and reverse speed of the locomotive. Most model locomotives do not run at exactly the
 same speed forward and backward due to the motor mechanics and the gear train to the wheels. 
-<p>The settings for these controls  are not as intuitive as you might think. A setting of 0 in these CVs turns them  off. However, a setting of 128 in either of them will have no visible effect!  To make the forward and reverse trim effective, raise the value above 128 to  increase speed, and lower it below 128 to decrease speed in this pane. The Forward and Reverse Trim does not  work the same for all decoders, with variations between manufacturers.
+<p>The settings for these controls  are not as intuitive as you might think. A setting of 0 in these CVs turns them
+off. However, a setting of 128 in either of them will have no visible effect!  To make the forward and reverse trim
+effective, raise the value above 128 to  increase speed, and lower it below 128 to decrease speed in this pane. The Forward and Reverse Trim does not  work the same for all decoders, with variations between manufacturers.</p>
 <div class="BOXIT">
-  <h3>Some suggestions on using the basic motor controls and programming on the main.<br>
-  </h3
->
+  <h3>Some suggestions on using the basic motor controls and programming on the main.</h3>
   <p> Unless you want to get into some precision speed matching, you probably won't need to use the <b>Speed Tables</b> you'll see on the <a href="Comp_Speed_Talble.shtml" target="_parent"><strong>Speed Table pane</strong></a>- you'll be able to accomplish much of what you want using just <b>Kick start</b> (<a href="Comp_Motor.shtml">previous  pane</a>), and <b>Start Volts</b>, <b>Mid Volts</b>, and <b>Max Volts</b> if  they are available in this pane...  but how to do this?
   <p> Start with the <b>Kick start</b> value, and <a href="Basic_Programming.shtml#OpsMode">Programming on the main</a> rather than the programming track. Set the locomotive to be programmed on throttle step 1. If it moves <span class="ACCENT">at all</span>, don't change the <b>Kick start</b> value. If it doesn't move, slowly step up the throttle until it does. Then, turn the throttle down. If the locomotive stops at the same setting it started, you won't need to set the <b>Kick start</b> value. However, if it continues to run at a slower speed than it would start, then increase the <b>Kick start</b> value until it will start and run at its slowest possible speed.
   <p> Now, if the locomotive isn't running at throttle step 1, increase the <b>Start Volts</b> value (and  write it) without changing the throttle until the locomotive <span class="ACCENT">barely</span> crawls... you can usually get this down to a speed of a tie a minute or so if you like! Remember, you are doing this in "<b>ops mode</b>",  so you can make these changes while the locomotive is actually running. Don't forget to write the value changes to the decoder - they won't take effect unless you do.
@@ -72,15 +72,17 @@ same speed forward and backward due to the motor mechanics and the gear train to
   <p>Note: Not all decoders will have Start, Mid and Max Volts, but will have some version of this which will be displayed by Decoder Pro for the specific decoder.
 </div>
 <hr>
-<p>If you select <a href="Comp_Speed_Talble.shtml"><strong>Speed Table </strong></a>all of the settings in this pane are ignored. 
-   <br>
+<p>If you select <a href="Comp_Speed_Talble.shtml"><strong>Speed Table </strong></a>all of the settings in this pane
+are ignored.</p>
+
 <hr>
-<div align=right>
+<div align="right">
 <p><a href="Comp_Speed_Talble.shtml"></a>
-  <a href="Comp_Motor.shtml">Previous &nbsp;| </a> <a href="Comp_Speed_Talble.shtml">Next </a>
+  <a href="Comp_Motor.shtml">Previous</a> | <a href="Comp_Speed_Talble.shtml">Next </a>
 <p><a href="index.shtml#Advanced Programmer">Back to Index</a>
 </div>
 
-<!--#include virtual="/Footer" -->
+<!--#include virtual="/Footer.shtml" -->
+</div>
 </body>
 </html>

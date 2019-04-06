@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<!--#include virtual="/Header" -->
+<!--#include virtual="/Header.shtml" -->
 
 <!--#include virtual="/download/Sidebar" -->
 <div id="mainContent">
@@ -55,7 +55,7 @@ Installing JMRI on a Linux Mint
 8) It will ask you to restart JMRI. After the restart of JMRI, if all goes well, you should be running JMRI.
 </pre>
 
-   <!--#include virtual="/Footer" -->
+   <!--#include virtual="/Footer.shtml" -->
 
 	 </div> <!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
