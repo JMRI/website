@@ -190,7 +190,32 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.7+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
+ <h4>Hardware Support</h4>		
 
+          <h5>OpenLCB</h5>		
+             <ul>		
+                 <li>User interface improvements in the Configuration		
+                 dialog. The dialog will now use an advanced and much faster		
+                 algorithm to load the initial values of the configuration from		
+                 the hardware. Users should not need to use the "Read All"		
+                 button anymore. Changed values are now highlighted in similar		
+                 way as DecoderPro does. The configuration dialog opens		
+                 immediately and shows the progress as the XML data is		
+                 downloaded via the network. It is also possible to re-try		
+                 loading if the first load fails. A cache allows opening the		
+                 same dialog instantly for the second time.</li>		
+                 <li>Fixed a software problem that lead to multiple issues when		
+                 CPU load is high, such as failed firmware downloads or		
+                 inability to open the configuration dialog. On some systems it		
+                 was enough to have the OpenLCB Monitor window open to trigger		
+                 the problem.</li>		
+             </ul>
+
+    <h4>Layout Editor</h4>		
+         <ul>		
+             <li>Fixed a problem with adding Train/loco icons to the panel</li>		
+          </ul>
+          
     <h4>Signals</h4>
         <ul>
             <li>Fixed an issue to set aspects in the Signal Mast Table using the combobox. Sorting rows or moving columns in the table is fully supported.</li>
@@ -200,11 +225,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>A bug when Calibrating a throttle speed factor in NXWarrants has been fixed.</li>
             <li>SCWarrants are converted to regular Warrants with a "No Ramping" flag set.  Such warrants change speed as before upon entering
-
             	the approach block. Now they use the speeds specified by the signals rather than one hard coded value. The new "No Ramping" flag
             	may be turned off and on in the Warrant Editing window.</li>
         </ul>
--->
+        
     <h4>Miscellaneous</h4>
         <ul>
             <li>The MS Windows launcher has had a number of updates including:
