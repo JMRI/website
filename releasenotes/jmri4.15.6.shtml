@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
- JMRI: Release Notes for 4.15.4
+ JMRI: Release Notes for 4.15.6
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.15.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.15.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!--#include virtual="/Style.shtml" -->
 
@@ -19,16 +19,14 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.15.4 release
+      Release Notes for JMRI 4.15.6 release
       </h1>
 
-    <p>Date: March 12, 2019</p>
-    <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.15.4 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: mmm dd, 2019</p>
+    <p>From: (pumpkin)</p>
+    <p>Subject: Test Release 4.15.6 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h2>Notes:</h2>
 
@@ -85,8 +83,31 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>
-        <span class="since">Since JMRI 4.15.4</span>
+            <li><span class="since">Since <a href="jmri4.15.5.shtml">JMRI 4.15.5</a></span>
+                The handling of Turnout system names has been updated
+                to be (more, hopefully completely) consistent with the
+                <a href="/help/en/html/doc/Technical/Names.shtml">planned approach</a>.
+                Specifically, case now (generally) matters in system names:
+                <ul>
+                    <li>You can now have an internal turnout named "ITsome lower case name".
+                    <li>But note you can no longer refer to "ITSOME LOWER CASE NAME" or
+                        "ITSome LoWeR cAse Name" and get the same one.
+                </ul>
+                This should not require any migration for stored configurations or 
+                panel files, as they have been automatically been being kept consistent 
+                since JMRI 4.8.  But you might have case errors in i.e. scripts which
+                will fixing inconsistent references in your scripts.
+                <p>Of course, bugs are always possible. If you find a place where 
+                names seem to be handled inconsistently, please let us know!
+                </li>
+</ul>
+
+<h3>Older warnings</h3>
+
+See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
+These may be relevant to you if you're updating from an earlier version.
+
+<p><span class="since">Since <a href="jmri4.15.4.shtml">JMRI 4.15.4</a></span>
         The calculation of Turnout Addresses for the
         <a href="/help/en/html/hardware/dccpp/Turnouts.shtml" target="_blank">
         Direct DCC Accessory Command ("a" command)</a> mode
@@ -94,14 +115,8 @@ from
         than 4 less than the nominated hardware address). For pre-existing panels,
         changes will need to be made to either the actual decoder address or the panel.
         If help is required, ask on the
-        <a href="https://groups.io/g/jmriusers/" target="_blank">jmriusers</a> group.
-    </li>
-</ul>
-
-<h3>Older warnings</h3>
-
-See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
-These may be relevant to you if you're updating from an earlier version.
+        <a href="https://groups.io/g/jmriusers/" target="_blank">
+        jmriusers</a> group.
 
 <p><span class="since">Since <a href="jmri4.15.3.shtml">JMRI 4.15.3</a></span>
         The prefix that identifies a layout connection should be a single letter, like "N" or "L",
@@ -132,6 +147,7 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -140,22 +156,23 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.4/JMRI.4.15.4+R0d44598.dmg">https://github.com/JMRI/JMRI/releases/download/v4.15.4/JMRI.4.15.4+R0d44598.dmg</a><br/>
-  sha256: 58e54b96da61d87bb19597cc20a3d78475a5016a1fb7a0ca23bd4c76a0e43ef1 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
+  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.4/JMRI.4.15.4+R0d44598.exe">https://github.com/JMRI/JMRI/releases/download/v4.15.4/JMRI.4.15.4+R0d44598.exe</a><br/>
-   sha256: d29a79874e5a183b132ff3fb9348d77315a8a5ad36b32aa683cc9043981dbc0b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
+   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.4/JMRI.4.15.4+R0d44598.tgz">https://github.com/JMRI/JMRI/releases/download/v4.15.4/JMRI.4.15.4+R0d44598.tgz</a><br/>
-   sha256: f162bc608365e80c62b6c9f69e1fe9e9ccbf1ba24a68233a19a4012e67adb53a</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
+   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
 </ul>
+ -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.4/">CI project page</a>.
+<a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.6/">CI project page</a>.
  -->
 
 During development leading to the actual release, you can find test download files on the
@@ -163,77 +180,18 @@ During development leading to the actual release, you can find test download fil
 These are development files, and might not be working at any particular time.</p>
  
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri4.15.3.shtml">Test release 4.15.3</a>:</h2>
+<h2>Changes since <a href="jmri4.15.5.shtml">Test release 4.15.5</a>:</h2>
  
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.4">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.15.6+is%3Amerged">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
+   <!-- While this release is in development, the     -->
+   <!-- list of changed content is kept in     -->
+   <!-- help/en/releasenotes/current-draft-note.shtml -->
+   <!-- in the JMRI/JMRI repository. Please edit your -->
+   <!-- there.  Changes to this file won't be merged. -->
 
-    <h3>Hardware Support</h3>
-
-    <h4>DCC++</h4>
-    <ul>
-        <li>
-            The calculation of Turnout Addresses for the
-            <a href="/help/en/html/hardware/dccpp/Turnouts.shtml" target="_blank">
-                Direct DCC Accessory Command ("a" command)</a> mode
-            has been fixed. Commands are now sent to the accessory address entered in
-            the JMRI Turnout Table. (Dave Heap)
-             <span class="since">Since JMRI 4.15.4</span>
-        </li>
-        <li>
-            The DCC++ Traffic Monitor no longer crashes when attempting to display some commands.
-        </li>
-    </ul>
-
-    <h4>LocoNet</h4>
-            <ul>
-                <li>"PR3 Standalone Programmer" mode has been updated so that only one LocoNet menu will be displayed, instead of displaying two menus.</li>
-                <li>Digitrax connections now support PR4, DCS240 and DCS210 via uniquely named connection types. <span class="since">Since JMRI 4.15.4</span></li>
-                <li>Addresses a problem when track power status is changed on the DCS52 which can cause a JMRI code failure. <span class="since">Since JMRI 4.15.4</span></li>
-            </ul>
-
-        <h4>Roco z21/Z21</h4>
-            <ul>
-                <li>Fixed Delay in throttle message processing</li>
-            </ul>
-
-
-    <h3>New / Updated decoder definitions</h3>
-
-        <h4>SoundTraxx</h4>
-            <ul>
-                <li>Michael Mosher fixed a bug in GP35 SP CV54</li>
-		        <li>Michael Mosher added more models to Athearn ECO OEM file</li>
-		        <li>Michael Mosher added more models to Athearn Genesis TSU2 OEM file</li>
-            </ul>
-
-        <h4>Uhlenbrock</h4>
-            <ul>
-                <li>A new definition was added for the 73xx5 IntelliDrive2 decoders. It also works on two Piko 4.1
-                sound decoder models.<br>
-                The definition is still under development and not complete. Please report read test results on
-                your hardware.</li>
-            </ul>
-
-    <h3>DecoderPro</h3>
-    <a id="DecoderPro" name="DecoderPro"></a>
-        <ul>
-            <li>Decoder definitions for indexed-access CVs can now use a "81=23.40" (cvFirst = false) /
-            "40.81=23" (cvFirst = true) syntax to specify an alternate PI and/or SI CV.<br>
-            The previous syntax continues to work unchanged.
-            </li>
-            <li>"output" definition elements can now be included in the "family" element, or
-                via including a fragment file.  The 0NMRA.xml file has an example of this.
-        </ul>
-
-    <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"></a>
-        <ul>
-            <li>Fix bug with launcher on Windows introduced when adding JDK 11 support in 4.15.3. This caused JMRI to not launch on certain 64-bit Windows systems that had only a 32-bit Java installation.</li>
-            <li>Fixed occasional problem where an item in the Turnout, Sensor, Memory or Light table couldn't be deleted.
-        </ul>
-
+   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
    
 
    <!--#include virtual="/Footer.shtml" -->
