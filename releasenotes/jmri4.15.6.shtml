@@ -83,29 +83,31 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-            <li><span class="since">Since <a href="jmri4.15.5.shtml">JMRI 4.15.5</a></span>
-                The handling of Turnout system names has been updated
-                to be (more, hopefully completely) consistent with the
-                <a href="/help/en/html/doc/Technical/Names.shtml">planned approach</a>.
-                Specifically, case now (generally) matters in system names:
-                <ul>
-                    <li>You can now have an internal turnout named "ITsome lower case name".
-                    <li>But note you can no longer refer to "ITSOME LOWER CASE NAME" or
-                        "ITSome LoWeR cAse Name" and get the same one.
-                </ul>
-                This should not require any migration for stored configurations or 
-                panel files, as they have been automatically been being kept consistent 
-                since JMRI 4.8.  But you might have case errors in i.e. scripts which
-                will fixing inconsistent references in your scripts.
-                <p>Of course, bugs are always possible. If you find a place where 
-                names seem to be handled inconsistently, please let us know!
-                </li>
+    <li>None yet</li>
 </ul>
 
 <h3>Older warnings</h3>
 
 See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
 These may be relevant to you if you're updating from an earlier version.
+
+<p><span class="since">Since <a href="jmri4.15.5.shtml">JMRI 4.15.5</a></span>
+        The handling of Turnout system names has been updated
+        to be (more, hopefully completely) consistent with the
+        <a href="/help/en/html/doc/Technical/Names.shtml">planned approach</a>.
+        Specifically, case now (generally) matters in system names:
+        <ul>
+            <li>You can now have an internal turnout named "ITsome lower case name".
+            <li>But note you can no longer refer to "ITSOME LOWER CASE NAME" or
+                "ITSome LoWeR cAse Name" and get the same one.
+        </ul>
+        This should not require any migration for stored configurations or 
+        panel files, as they have been automatically been being kept consistent 
+        since JMRI 4.8.  But you might have case errors in i.e. scripts which
+        will fixing inconsistent references in your scripts.
+        <p>Of course, bugs are always possible. If you find a place where 
+        names seem to be handled inconsistently, please let us know!
+        </li>
 
 <p><span class="since">Since <a href="jmri4.15.4.shtml">JMRI 4.15.4</a></span>
         The calculation of Turnout Addresses for the
