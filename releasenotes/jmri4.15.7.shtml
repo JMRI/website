@@ -86,12 +86,23 @@ from
     <li>None yet</li>
 </ul>
 
+
 <h3>Older warnings</h3>
 
 See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><span class="since">Since <a href="jmri4.15.5.shtml">JMRI 4.15.5</a></span>
+<ul>
+<li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
+        Remembering the location and size of layout panels created and maintained
+        using Layout Editor, Panel Editor, Control Panel Editor, and Switchboard
+        Editor is no longer dependent on saving the panel.  The location and size
+        values are retained using the same processes used by other JMRI windows.  This
+        makes the window management behavior consistent.  To continue using the
+        old behavior, go to <strong>Preferences >> Display</strong> and enable
+        <strong>Use old location and size logic for editor panels</strong>.
+
+<li><span class="since">Since <a href="jmri4.15.5.shtml">JMRI 4.15.5</a></span>
         The handling of Turnout system names has been updated
         to be (more, hopefully completely) consistent with the
         <a href="/help/en/html/doc/Technical/Names.shtml">planned approach</a>.
@@ -105,11 +116,10 @@ These may be relevant to you if you're updating from an earlier version.
         panel files, as they have been automatically been being kept consistent 
         since JMRI 4.8.  But you might have case errors in i.e. scripts which
         will fixing inconsistent references in your scripts.
-        <p>Of course, bugs are always possible. If you find a place where 
+        Of course, bugs are always possible. If you find a place where 
         names seem to be handled inconsistently, please let us know!
-        </li>
 
-<p><span class="since">Since <a href="jmri4.15.4.shtml">JMRI 4.15.4</a></span>
+<li><span class="since">Since <a href="jmri4.15.4.shtml">JMRI 4.15.4</a></span>
         The calculation of Turnout Addresses for the
         <a href="/help/en/html/hardware/dccpp/Turnouts.shtml" target="_blank">
         Direct DCC Accessory Command ("a" command)</a> mode
@@ -120,7 +130,7 @@ These may be relevant to you if you're updating from an earlier version.
         <a href="https://groups.io/g/jmriusers/" target="_blank">
         jmriusers</a> group.
 
-<p><span class="since">Since <a href="jmri4.15.3.shtml">JMRI 4.15.3</a></span>
+<li><span class="since">Since <a href="jmri4.15.3.shtml">JMRI 4.15.3</a></span>
         The prefix that identifies a layout connection should be a single letter, like "N" or "L",
         or a letter and some digits, like "K2" or "D3". Some older systems used to have
         longer "legacy system prefixes" like "DX", "DCCPP", "DP", "MR", "MC", "PI", and "TM".
@@ -134,18 +144,20 @@ These may be relevant to you if you're updating from an earlier version.
         If you're getting this warning and therefore need to do that migration,
         <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">migration page</a>.</li>
 
-<p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
+<li><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
     <ul>
-        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
-        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
-        <li>Do not open the SPROG console window</li><br>
-        <li>Disable power conversion (CV 29) in all locos</li><br>
-        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
+        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li>
+        <li>Do not open the SPROG console window</li>
+        <li>Disable power conversion (CV 29) in all locos</li>
+        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
     </ul>
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
-      
+
+</ul>   
+
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 

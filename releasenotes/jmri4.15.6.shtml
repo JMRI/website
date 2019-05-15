@@ -83,7 +83,18 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
+<!-- 
     <li>None yet</li>
+ -->
+    <li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
+        Remembering the location and size of layout panels created and maintained
+        using Layout Editor, Panel Editor, Control Panel Editor, and Switchboard
+        Editor is no longer dependent on saving the panel.  The location and size
+        values are retained using the same processes used by other JMRI windows.  This
+        makes the window management behavior consistent.  To continue using the
+        old behavior, go to <strong>Preferences >> Display</strong> and enable
+        <strong>Use old location and size logic for editor panels</strong>.
+    </li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -91,7 +102,8 @@ from
 See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><span class="since">Since <a href="jmri4.15.5.shtml">JMRI 4.15.5</a></span>
+<ul>
+<li><span class="since">Since <a href="jmri4.15.5.shtml">JMRI 4.15.5</a></span>
         The handling of Turnout system names has been updated
         to be (more, hopefully completely) consistent with the
         <a href="/help/en/html/doc/Technical/Names.shtml">planned approach</a>.
@@ -105,11 +117,11 @@ These may be relevant to you if you're updating from an earlier version.
         panel files, as they have been automatically been being kept consistent 
         since JMRI 4.8.  But you might have case errors in i.e. scripts which
         will fixing inconsistent references in your scripts.
-        <p>Of course, bugs are always possible. If you find a place where 
+        Of course, bugs are always possible. If you find a place where 
         names seem to be handled inconsistently, please let us know!
         </li>
 
-<p><span class="since">Since <a href="jmri4.15.4.shtml">JMRI 4.15.4</a></span>
+<li><span class="since">Since <a href="jmri4.15.4.shtml">JMRI 4.15.4</a></span>
         The calculation of Turnout Addresses for the
         <a href="/help/en/html/hardware/dccpp/Turnouts.shtml" target="_blank">
         Direct DCC Accessory Command ("a" command)</a> mode
@@ -120,7 +132,7 @@ These may be relevant to you if you're updating from an earlier version.
         <a href="https://groups.io/g/jmriusers/" target="_blank">
         jmriusers</a> group.
 
-<p><span class="since">Since <a href="jmri4.15.3.shtml">JMRI 4.15.3</a></span>
+<li><span class="since">Since <a href="jmri4.15.3.shtml">JMRI 4.15.3</a></span>
         The prefix that identifies a layout connection should be a single letter, like "N" or "L",
         or a letter and some digits, like "K2" or "D3". Some older systems used to have
         longer "legacy system prefixes" like "DX", "DCCPP", "DP", "MR", "MC", "PI", and "TM".
@@ -134,18 +146,20 @@ These may be relevant to you if you're updating from an earlier version.
         If you're getting this warning and therefore need to do that migration,
         <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">migration page</a>.</li>
 
-<p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
+<li><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
     <ul>
-        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
-        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
-        <li>Do not open the SPROG console window</li><br>
-        <li>Disable power conversion (CV 29) in all locos</li><br>
-        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
+        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li>
+        <li>Do not open the SPROG console window</li>
+        <li>Disable power conversion (CV 29) in all locos</li>
+        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
     </ul>
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
-      
+  
+</ul>
+    
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
@@ -187,13 +201,84 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.15.6+is%3Amerged">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- list of changed content is kept in     -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit your -->
-   <!-- there.  Changes to this file won't be merged. -->
 
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+
+        <h4>MERG CBUS</h4>
+            <ul>
+                <li><a href="http://jmri.org/help/en/html/hardware/can/cbus/Names.shtml#reporters"
+                >CBUS Reporters</a> are no longer automatically created when hearing a DDES or ACDAT CBUS OPC.
+                    <br>New CBUS Reporters can now be created in a sequential range.
+                </li>
+            </ul>
+
+
+        <h4>XpressNet</h4>
+            <ul>
+                <li>Added support for Idle mode to the power manager.  
+                    This indicates a global emergency stop (track power on, all locomotives stopped)</li>
+            </ul>
+
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>ESU</h4>
+            <ul>
+                <li>Added the Essential Sound Unit (an OEM-only decoder).</li>
+                <li>Added the LokSound 5 family.</li>
+                <li>Added the SUSI Map to those V4/5 decoders that support it.</li>
+                <li>Split the Sound Pane into two panes - &quot;Sound&quot; and &quot;Sound Levels&quot;.</li>
+                <li>Improved the speed of Import-&gt;LokProgrammer CV list file.</li>
+            </ul>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li>Ronald Kuhn did a lot of work on the Zimo definitions, including adding V37 definitions</li>
+            </ul>
+
+   <h3>Internationalization</h3>
+        <a id="I18N" name="I18N"></a>
+        <ul>
+            <li>Petr Šídlo improved the Czech translation</li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+          <li>The <strong>Save Location and Size</strong> Options menu item is
+          not displayed when automatic location and size behavior is active.
+          See the above warning.</li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li><strong>Custom scripts that release throttles may need to be modified.</strong><br>
+            <ul>
+                <li>AutoDispatcher2</li>
+                <li>RobotThrottle2</li>
+                <li>RobotThrottle3</li>
+                <li>RocoCrane</li>
+                <li>Zimo Programmers</li>
+            </ul>
+            <br>
+            Old syntax: <code>self.throttle.release()</code> <br>
+            New syntax assuming no throttle listeners in script: <code>self.throttle.release(None)</code>
+            </li>
+        </ul>
+
+   <h3>Warrants</h3>
+        <a id="Wt" name="Wt"></a>
+        <ul>
+            <li>Circuit Builder has more error help and ease of use features. The help page is updated.</li>
+            <li>40 scale feet has been added to the ramp down distance.</li> 
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Add new <code>TestWaitsForever</code> test class to allow end-of-job debug.</li>
+        </ul>
    
 
    <!--#include virtual="/Footer.shtml" -->
