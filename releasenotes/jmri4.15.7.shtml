@@ -102,6 +102,24 @@ These may be relevant to you if you're updating from an earlier version.
         old behavior, go to <strong>Preferences >> Display</strong> and enable
         <strong>Use old location and size logic for editor panels</strong>.
 
+<li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
+        Starting in <a href="jmri4.15.6.shtml">JMRI 4.15.6</a>, Memories
+        must have valid system names of the form "IM" folllowed by something.
+        "IM123" and "IMEAST" are both valid. 
+        The system name "IM", all by itself, has never been valid, but JMRI 
+        will now be enforcing that:
+        <ul>
+            <li>You won't be able to create a memory with that name via
+                the Memory table or scripts
+            <li>If you have that name in a panel file, an error will be 
+                logged and the panel file won't load. You'll have to 
+                remove it from he file or rename it in the file
+                before loading it.
+        </ul>
+        JMRI needs to start enforcing this in preparation for some
+        future code that will appear later this year.
+</li>
+
 <li><span class="since">Since <a href="jmri4.15.5.shtml">JMRI 4.15.5</a></span>
         The handling of Turnout system names has been updated
         to be (more, hopefully completely) consistent with the

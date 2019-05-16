@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.15.6 release
       </h1>
 
-    <p>Date: mmm dd, 2019</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: May 16, 2019</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.15.6 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -94,6 +96,23 @@ from
         makes the window management behavior consistent.  To continue using the
         old behavior, go to <strong>Preferences >> Display</strong> and enable
         <strong>Use old location and size logic for editor panels</strong>.
+    </li>
+    <li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
+        Starting in <a href="jmri4.15.6.shtml">JMRI 4.15.6</a>, Memories
+        must have valid system names of the form "IM" folllowed by something.
+        "IM123" and "IMEAST" are both valid. 
+        The system name "IM", all by itself, has never been valid, but JMRI 
+        will now be enforcing that:
+        <ul>
+            <li>You won't be able to create a memory with that name via
+                the Memory table or scripts
+            <li>If you have that name in a panel file, an error will be 
+                logged and the panel file won't load. You'll have to 
+                remove it from he file or rename it in the file
+                before loading it.
+        </ul>
+        JMRI needs to start enforcing this in preparation for some
+        future code that will appear later this year.
     </li>
 </ul>
 
@@ -163,7 +182,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -172,23 +190,23 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.dmg">https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.dmg</a><br/>
+  sha256: e27da2d2fd402e30cf462c79cbcb0d70a1f629ab59faaacd6fa2480a92c3105c </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.exe">https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.exe</a><br/>
+   sha256: 96bbd3d90037cf7e35f5340e04f48931474c7a427b03f91030ce48a277c09a96</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.tgz">https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.tgz</a><br/>
+   sha256: b2e8c106f0945de6f912234c0fb16e17834ad50f69f1484d06063bed0a86ea67</li>
 </ul>
- -->
 
+<!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.6/">CI project page</a>.
-
+ -->
 <!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
