@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+ <title>
+ JMRI: Release Notes for 4.16
+ </title>
+    <meta content="Bob Jacobsen" name="author">
+    <meta name="keywords" content="java model railroad JMRI 4.14 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+
+<!--#include virtual="/Style.shtml" -->
+
+</head>
+
+<body>
+
+<!--#include virtual="/Header.shtml" -->
+
+  <div class="nomenu" id="mBody">
+    <div id="mainContent">
+      <h1>
+      Release Notes for JMRI 4.16 release
+      </h1>
+
+    <p>Date: MM, DD 2019</p>
+    <p>From:(pumpkin)</p>
+    <p>Subject: Production Release 4.14 of JMRI/DecoderPro is available for download.</p>
+
+<!-- 
+<p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
+
+<p>We are very pleased to announce that the 4.15 series of JMRI test releases has resulted in a
+version that's good enough to be recommended for general use, including by new users.
+We're therefore making that version, "Production Release 4.16" available for download today.</p>
+
+<h2>Notes:</h2>
+
+<p><b>
+JMRI is now only available under the
+<a href="/COPYING">GNU General Public License</a>. For more information, please
+see our
+<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<h3>Update From Older JMRI Versions</h3>
+<p>If you are currently using JMRI 4.9.6 or earlier, we strongly recommend that you update to 
+        <a href="jmri4.12.shtml">JMRI 4.12</a> and make sure that's running OK before
+        updating to this release release.  There have been a number of 
+        changes in serial port support, panel file format and configuration options since those earlier releases, 
+        and moving to the stable <a href="jmri4.12.shtml">JMRI 4.12</a> release
+        is a good way to work through any possible problems.
+        </p>
+<p>If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this), 
+    you <u>must</u> 
+    update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
+    carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
+    before updating to this release.
+
+
+<a id="problems" name="problems"></a>
+<h3>Known problems with this release</h3>
+<ul>
+    <li>None</li>
+</ul>
+<!--
+If any of those affect you, please either 
+wait for
+<a href="jmri4.15.1.shtml">JMRI 4.15.1</a>, due out shortly after this one,
+or (once there's a fix for the problem) pick up a
+<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
+from
+<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
+ -->
+
+<a id="warnings" name="warnings"></a>
+<h3>New warnings for this production release:</h3>
+
+<ul>
+    <li></li>>
+</ul>
+
+<h3>Older warnings</h3>
+
+See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
+These may be relevant to you if you're updating from an earlier version.
+
+<ul>
+</ul>
+      
+<a id="download" name="download"></a>
+<h2>Download links:</h2>
+
+Please note that the download links in this and future JMRI releases link to 
+<a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
+People are welcome to distribute the download files further via other websites, etc.
+If you want to check that you've received original, unmodified versions, please
+check the files against the checksums shown below.
+
+<!-- 
+<ul>
+<li>OS X / macOS: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.dmg</a><br/>
+  sha256: 3efa5322ab034063bc277371585086cf7fd328d8c335467760ae77c892f07a01 </li>
+
+<li>Windows: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.exe">https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.exe</a><br/>
+   sha256: 2b040677d4bb4138e1474ad2f07866d0494877a352aa9771db7dc170b1e0bbca</li>
+
+<li>Linux: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.tgz</a><br/>
+   sha256: 78e53c0fb4f806b8e26951f27d5027c150c935ba12d7c401a7b1505bd5298978</li>
+</ul>
+ -->
+
+<h2>Changes since <a href="jmri4.14.shtml">production release 4.14</a>:</h2>
+
+<p>The full lists of changes in each of the preceding test releases 
+(
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.1+">4.15.1</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.2+">4.15.2</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.3+">4.15.3</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.4+">4.15.4</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.5+">4.15.5</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.6+">4.15.6</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.7+">4.15.7</a>)
+are available in our 
+<a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.</p>
+
+
+<!-- the follow are concatenated contents of the prior release notes, which should be cleaned up and merged -->
+
+
+
+
+
+
+   <!--#include virtual="/Footer.shtml" -->
+  </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+</body>
+</html>
