@@ -97,6 +97,15 @@ See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more wa
 These may be relevant to you if you're updating from an earlier version.
 
 <ul>
+<li><<span class="since">Since <a href="jmri4.15.7.shtml">JMRI 4.15.7</a></span>
+    The version of the JSON protocol used for JMRI web access has been bumped to version 5.0 due to backwards incompatible
+    changes to make different JSON objects more internally consistent and to accomodate the ability to remove some
+    objects. See the <a href="http://jmri.org/JavaDoc/doc/jmri/server/json/package-summary.html#history">JSON Version
+    History</a> for more details.
+    Specifically, due to underlying changes in the Operations web access, 
+    train manifests will need to rebuilt before web access to train manifests works.
+    </li>
+
 <li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
         Remembering the location and size of layout panels created and maintained
         using Layout Editor, Panel Editor, Control Panel Editor, and Switchboard
@@ -122,7 +131,7 @@ These may be relevant to you if you're updating from an earlier version.
         </ul>
         JMRI needs to start enforcing this in preparation for some
         future code that will appear later this year.
-</li>
+        </li>
 
 <li><span class="since">Since <a href="jmri4.15.5.shtml">JMRI 4.15.5</a></span>
         The handling of Turnout system names has been updated
