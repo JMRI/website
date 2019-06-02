@@ -24,7 +24,7 @@
 
     <p>Date: MM, DD 2019</p>
     <p>From:(pumpkin)</p>
-    <p>Subject: Production Release 4.14 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Production Release 4.16 of JMRI/DecoderPro is available for download.</p>
 
 <!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
@@ -76,16 +76,7 @@ from
 <h3>New warnings for this production release:</h3>
 
 <ul>
-    <li></li>>
-</ul>
-
-<h3>Older warnings</h3>
-
-See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
-These may be relevant to you if you're updating from an earlier version.
-
-<ul>
-<li><<span class="since">Since <a href="jmri4.15.7.shtml">JMRI 4.15.7</a></span>
+<li><span class="since">Since <a href="jmri4.15.7.shtml">JMRI 4.15.7</a></span>
     The version of the JSON protocol used for JMRI web access has been bumped to version 5.0 due to backwards incompatible
     changes to make different JSON objects more internally consistent and to accomodate the ability to remove some
     objects. See the <a href="http://jmri.org/JavaDoc/doc/jmri/server/json/package-summary.html#history">JSON Version
@@ -162,6 +153,14 @@ These may be relevant to you if you're updating from an earlier version.
         panel files and scripts).
         If you're getting this warning and therefore need to do that migration,
         <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">migration page</a>.</li>
+</ul>
+
+<h3>Older warnings</h3>
+
+See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
+These may be relevant to you if you're updating from an earlier version.
+
+<ul>
 
 <li><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
@@ -203,21 +202,11 @@ check the files against the checksums shown below.
 
 <h2>Changes since <a href="jmri4.14.shtml">production release 4.14</a>:</h2>
 
-<p>The full lists of changes in each of the preceding test releases 
-(
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.1+">4.15.1</a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.2+">4.15.2</a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.3+">4.15.3</a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.4+">4.15.4</a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.5+">4.15.5</a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.6+">4.15.6</a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.15.7+">4.15.7</a>)
-are available in our 
-<a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.</p>
-
-
-<!-- the follow are concatenated contents of the prior release notes, which should be cleaned up and merged -->
-
+<p>
+This production version is made from test releases 4.15.1 through 4.15.7.  The 
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2018-12-14">full list of changes</a>
+in those is 
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2018-12-14">available from our code repository</a>.
 
     <h3>Hardware Support</h3>
 
@@ -229,7 +218,6 @@ are available in our
                     Direct DCC Accessory Command ("a" command)</a> mode
                 has been fixed. Commands are now sent to the accessory address entered in
                 the JMRI Turnout Table. (Dave Heap)
-                 <span class="since">Since JMRI 4.15.4</span>
             </li>
             <li>
                 The DCC++ Traffic Monitor no longer crashes when attempting to display some commands.
@@ -239,12 +227,11 @@ are available in our
         <h4>LocoNet</h4>
             <ul>
                 <li>"PR3 Standalone Programmer" mode has been updated so that only one LocoNet menu will be displayed, instead of displaying two menus.</li>
-                <li>Digitrax connections now support PR4, DCS240 and DCS210 via uniquely named connection types. <span class="since">Since JMRI 4.15.4</span></li>
-                <li>Addresses a problem when track power status is changed on the DCS52 which can cause a JMRI code failure. <span class="since">Since JMRI 4.15.4</span></li>
+                <li>Digitrax connections now support PR4, DCS240 and DCS210 via uniquely named connection types.</li>
+                <li>Addresses a problem when track power status is changed on the DCS52 which can cause a JMRI code failure.</li>
                 <li><p>JMRI's support for the Digitrax PR4 has been updated to
                     reflect the PR4's inability to provide
-                    "LocoNet Data Signal termination". <span class="since">since
-                    4.15.5</span></p>
+                    "LocoNet Data Signal termination". </p>
 
                     <p>This is a correction to JMRI's previous implementation of
                     PR4 functionality.  It reflects a a more-accurate understanding
@@ -282,7 +269,7 @@ are available in our
             <ul>
                 <li>Steve Young made multiple improvements</li>
                 <li>Turnouts now accept DIRECT and DELAYED feedback.</li>
-                <li>Querying a turnout will also query any feedback sensors for that turnout.<li>
+                <li>Querying a turnout will also query any feedback sensors for that turnout.</li>
                 <li>Event Request monitoring has moved from the Event Table to a stand-alone request monitoring table.</li>
                 <li>The CBUS console will attempt to lookup event ( and node ) names from the Event Table.</li>
                 <li><a
@@ -293,8 +280,7 @@ are available in our
                 <li>Track Current meter avaiable for supported Command Stations via
                 PanelPro > Tools > Track Current Meter</li>
                 <li>Fixed issue with Roster speed-profiling</li>
-                <li><a href="http://jmri.org/help/en/html/hardware/can/cbus/Names.shtml#reporters"
-                >CBUS Reporters</a> are no longer automatically created when hearing a DDES or ACDAT CBUS OPC.
+                <li><a href="http://jmri.org/help/en/html/hardware/can/cbus/Names.shtml#reporters">CBUS Reporters</a> are no longer automatically created when hearing a DDES or ACDAT CBUS OPC.
                     <br>New CBUS Reporters can now be created in a sequential range.
                 </li>
                 <li>Increased support for stealing / sharing command station sessions, see
@@ -354,7 +340,7 @@ are available in our
                 <li>
                     ESU LokSound decoder users can now read the loaded Sound Project Name
                     (and other decoder information) on the Information Pane.
-                    <br><br>
+                    <br>
                     This allows cross-referencing to the ESU website
                     (copy the "Loco Name" to search the Projects section) in order to
                     find the ESU bulletin and hence determine
@@ -485,9 +471,6 @@ are available in our
 
     <h3>Panel Editors</h3>
         <a id="PE" name="PE"></a>
-        <ul>
-            <li></li>
-        </ul>
         <h4>CTC Tool</h4>
             <a id="PE-CTC" name="PE-CTC"></a>
             <ul>
@@ -548,21 +531,21 @@ are available in our
             <a href="http://jmri.org/jython/serialinput/Sensor_Channel_To_JMRI/Sensor_Channels_Readme.md">sensor channels</a>
             and
             <a href="http://jmri.org/jython/serialinput/Turnout_Channel_from_JMRI/Turnout_Channels_Readme.md">turnout channels</a>
-            via USB between JMRI Sensor and Turnout Tables and Arduino interfaces to hardware.</li>.
-            For more information, see the Readme files linked just above.
-            <li><strong>Custom scripts that release throttles may need to be modified.</strong><br>
-            <ul>
-                <li>AutoDispatcher2</li>
-                <li>RobotThrottle2</li>
-                <li>RobotThrottle3</li>
-                <li>RocoCrane</li>
-                <li>Zimo Programmers</li>
-            </ul>
-            <br>
-            Old syntax: <code>self.throttle.release()</code> <br>
-            New syntax assuming no throttle listeners in script: <code>self.throttle.release(None)</code>
-            </li>
-            <li><strong>2 lines in scripts that use the
+            via USB between JMRI Sensor and Turnout Tables and Arduino interfaces to hardware.
+            For more information, see the Readme files linked in the previous sentence.
+            <li>The handling of how throttles are released has changed.
+                <br>
+                Old syntax: <code>self.throttle.release()</code> <br>
+                New syntax assuming no throttle listeners in script: <code>self.throttle.release(None)</code><br>
+                <strong>Custom scripts that release throttles may need to be modified.</strong><br>
+                <ul>
+                    <li>AutoDispatcher2</li>
+                    <li>RobotThrottle2</li>
+                    <li>RobotThrottle3</li>
+                    <li>RocoCrane</li>
+                    <li>Zimo Programmers</li>
+                </ul>
+            <strong>2 lines in scripts that use the
             <a href="https://github.com/JMRI/JMRI/blob/master/jython/Jynstruments/ThrottleWindowToolBar/DCCThrottle.jyn/DCCThrottle.py"
             >DCCThrottle.py</a> Jynstrument may need to be added,</strong><br>
             Insert after line 141<br>
@@ -605,7 +588,6 @@ are available in our
 
     <h3>Timetable</h3>
         <a id="Timetable" name="Timetable"/>
-        <span class="since">since 4.13.4</span>
         <ul>
             <li>Dave Sand made multiple updates to the Timetable support</li>
             <li>New menu item: <strong>Export CSV File</strong> &mdash; Create a
@@ -666,18 +648,21 @@ are available in our
    <h3>Web Access</h3>
         <a id="WA" name="WA"/>
         <ul>
-            <li>Multiple updates to the JSON service</li>
-            <li>JSON clients can now add, edit, or remove Blocks, IdTags, LayoutBlocks, Operations Locations, Operations Cars,
-                Operations Engines, Operations Tracks, Reporters, and Sensors.</li>
-            <li>JSON clients using WebSockets can now include an <code>id</code> property in the message to match a direct response
-                to a message to the original message.</li>
-            <li>The JSON protocol version has been bumped to version 5.0 due to backwards incompatible
-                changes to make different JSON objects more internally consistent and to accomodate the ability to remove some
-                objects. See the <a href="http://jmri.org/JavaDoc/doc/jmri/server/json/package-summary.html#history">JSON Version
-                    History</a> for more details.</li>
-            <li>JSON schema are, with the exception of consists, usable, even when JMRI is running on a computer not connected to
-                the internet. See the <a href="http://jmri.org/JavaDoc/doc/jmri/server/json/package-summary.html#schema">JSON
-                    Schema</a> for more details.</li>
+            <li>Multiple updates to the JSON service:
+                <ul>
+                <li>JSON clients can now add, edit, or remove Blocks, IdTags, LayoutBlocks, Operations Locations, Operations Cars,
+                    Operations Engines, Operations Tracks, Reporters, and Sensors.</li>
+                <li>JSON clients using WebSockets can now include an <code>id</code> property in the message to match a direct response
+                    to a message to the original message.</li>
+                <li>The JSON protocol version has been bumped to version 5.0 due to backwards incompatible
+                    changes to make different JSON objects more internally consistent and to accomodate the ability to remove some
+                    objects. See the <a href="http://jmri.org/JavaDoc/doc/jmri/server/json/package-summary.html#history">JSON Version
+                        History</a> for more details.</li>
+                <li>JSON schema are, with the exception of consists, usable, even when JMRI is running on a computer not connected to
+                    the internet. See the <a href="http://jmri.org/JavaDoc/doc/jmri/server/json/package-summary.html#schema">JSON
+                        Schema</a> for more details.</li>
+                </ul>
+            </li>
         </ul>
 
     <h3>Miscellaneous</h3>
@@ -707,7 +692,7 @@ are available in our
                 <code>IllegalArgumentException</code> if unable to turn a String into a Color instead of returning the Color Black.
             </li>
             <li>The Help Index and Table Of Contents were updated and expanded to include the current Hardware
-                systems.<br>
+                systems.
                 In the process we discovered that additional instructions for many of the new tools are welcome.
             </li>
         </ul>
