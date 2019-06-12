@@ -230,14 +230,46 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.15.8+is%3Amerged">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- list of changed content is kept in     -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit your -->
-   <!-- there.  Changes to this file won't be merged. -->
+    <h3>Hardware Support</h3>
 
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
-   
+        <h4>Hornby</h4>
+            <ul>
+                <li>Improve the sequence of messages used when programming with the Hornby Elite</li>
+            </ul>
+
+        <h4>MERG CBUS</h4>
+            <ul>
+                <li>Update some node identification information</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>TCS</h4>
+            <ul>
+                <li>Fix FN ditch light</li>
+            </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+	        <li>When an edge connector or end bumper does not have an attached track segment, 
+	            creating a context menu fails with a NPE. This prevents deleting the EC or EB 
+	            using the Delete option in the context menu. 
+	            The EB or EC can be deleted by adding a track segment 
+	            and then the context menu works.</li>
+        </ul>
+
+   <h3>Panel Editors</h3>
+        <a id="PE" name="PE"></a>
+        <ul>
+            <li>Fixed problem with dragging in Control Panel Editor</li>
+        </ul>
+
+   <h3>Web Access</h3>
+        <a id="WA" name="WA"></a>
+        <ul>
+            <li>Fixed an issue where null could be returned for some information (from 4.15.7)</li>
+        </ul>
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
