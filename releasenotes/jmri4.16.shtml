@@ -224,6 +224,11 @@ in those is
             </li>
         </ul>
 
+        <h4>Hornby</h4>
+            <ul>
+                <li>Improve the sequence of messages used when programming with the Hornby Elite</li>
+            </ul>
+
         <h4>LocoNet</h4>
             <ul>
                 <li>"PR3 Standalone Programmer" mode has been updated so that only one LocoNet menu will be displayed, instead of displaying two menus.</li>
@@ -285,6 +290,7 @@ in those is
                 </li>
                 <li>Increased support for stealing / sharing command station sessions, see
                     <a href="http://jmri.org/help/en/html/hardware/can/cbus/index.shtml#dcc">CBUS Hardware Support</a></li>
+                <li>Update some node identification information</li>
             </ul>
 
         <h4>MQTT</h4>
@@ -383,9 +389,10 @@ in those is
         <h4>TCS</h4>
             <ul>
                 <li>
-		            Add Trim CV to Basic Speed Control pane
-		            Add WOW Ver 4 Prime decoder (Michael Mosher)
-		        </li>
+		            Add Trim CV to Basic Speed Control pane</li>
+		        <li>
+		            Add WOW Ver 4 Prime decoder (Michael Mosher)</li>
+                <li>Fix FN ditch light</li>
             </ul>
 
         <h4>Uhlenbrock</h4>
@@ -467,6 +474,11 @@ in those is
             <li>Turnouts, level crossings, track segments and positional points (A/EB/EC) cannot
             be deleted if signal heads, signal masts or sensors have been assigned to the item.
             Also, an edge connector cannot be deleted if the link is defined.</li>
+	        <li>When an edge connector or end bumper does not have an attached track segment, 
+	            creating a context menu fails with a NPE. This prevents deleting the EC or EB 
+	            using the Delete option in the context menu. 
+	            The EB or EC can be deleted by adding a track segment 
+	            and then the context menu works.</li>
         </ul>
 
     <h3>Panel Editors</h3>
