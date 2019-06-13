@@ -60,20 +60,20 @@
 	<h1>JMRI: Creating the Cornwall Panel</h1>
 
 JMRI was used to create the dispatcher control panel for Nick Kulp's
-<a href="http://kc.pennsyrr.com/layouts/kulp/index.html">Cornwall RR</a>.
-This page briefly describes how it was done.  
-Links to other pages with more detail are included, but many of those pages
-do not exist yet or are still under contruction.
+Cornwall RR. This page briefly describes how it was done.
+
+<p class="important">Note this was all done from 2004 staring with JMRI version 1.1.13.<br>
+But the approach still works with recent versions.</p>
 
 <p>
 <a href="./images/CornwallPanelLit.gif"><img src="./images/SmallCornwallPanel.gif" WIDTH="502" HEIGHT="302"
 											 HSPACE="0" VSPACE="0"></A>
 
-<h2><a href="http://kc.pennsyrr.com/layouts/kulp/index.html">The layout</a></h2>
+<h2>The layout</h2>
 Nick's layout uses a mixture of
 C/MRI and DCC.  The block detectors, turnout position sensors, and 
 signals are all attached to a C/MRI serial system.  The locomotives
-are run using DIgitrax DCC.  Some turnouts are thrown manually, and
+are run using Digitrax DCC.  Some turnouts are thrown manually, and
 some are operated by Tortoise motors connected to SwitchIt DCC decoders
 and thrown via the Digitrax system.
 <p>
@@ -91,7 +91,7 @@ The most recent version of Nick's program is included as an example
 in each JMRI download.  You can install and run it yourself if you'd
 like to see what it really looks like and play with the signals, etc.
 For more information, see the page on
-<a href="CornwallRunning.html">"Running Nick Kulp's Cornwall RR Program"</a>.
+<a href="CornwallRunning.html">Running Nick Kulp's Cornwall RR Program</a>.
 
 <h2>Creating the panel</h2>
 Nick wanted a computer-based panel for his dispatcher that would
@@ -112,7 +112,7 @@ To save screen space, the schematic was split into "over" and "under"
 parts.  This is not very prototypical, but certainly works well.  Since the
 GIF file only uses three colors, it was made much smaller by storing it in 
 4-color mode.
-<P>
+<p>
 To turn this picture into a control panel, you have JMRI display it, and
 then place "icons" in front of it that are redisplayed as the layout status
 changes.  For example, there are icons for lit 
@@ -128,10 +128,7 @@ To actually do this:
 <ul>
 	<li>Start the JmriDemo program, and make sure it's talking to the layout
 	<li>Select "New panel" from the "Panels" menu item.
-	<li>(Need a bunch more text here; for now, see
-	<a href="../Panels.html">the earlier panels page</a>; the new details
-	will be
-	<a href="CornwallDetails.html#occ">here</a>.
+	<li>See <a href="CornwallDetails.html#occ">Details</a>.
 </ul>
 Be sure to save the panel to a file when you're done using "Store..." under
 the panels menu.
@@ -150,7 +147,7 @@ to icons line up on a horizontal line, you might find it easier to position the
 first item perfectly by hand, and then edit the rest of the lines to have the
 same y= coordinates.
 
-<P>
+<p>
 A similar technique is used for the turnouts on the schematic.  The indicators
 on the schematic are meant to show the actual positions of the turnouts, not
 just the last status sent by the DCC system, so they respond to the C/MRI sensors
@@ -176,7 +173,7 @@ to be "Closed/Normal"
 <img src="./images/plateSwitchN.gif">
 or "Thrown/Reversed"
 <img src="./images/plateSwitchR.gif">.
-<P>
+<p>
 <img src="./images/turnout.gif" align="right">
 Nick also wanted the turnout controls to look like they had small indicator
 lamps over each side to show the actual status of the turnout.  This was done
@@ -265,8 +262,8 @@ respond appropriately.  Even complicated interlocking logic can be
 checked out quickly using this.
 
 <h2>Summary</h2>
-The process to create the Cornwall signaling and dispatcher panel was 
-straightforward, if a little long.
+The process to create the Cornwall <a href="SamplePanel.html">signaling
+and dispatcher panel</a> was straightforward, if a little long.
 
 <!-- Footer -->
     <hr class="hide">
@@ -276,18 +273,14 @@ straightforward, if a little long.
 	<li><a href="/contact/">Contact Us</a></li>
 	</ul>
 
-	<p>Thanks and congratulations to
-	   <A href="/community/" title="Who is JMRI">
-	   	all who contributed</A>! </p>
+    <p>Thanks and congratulations to
+    <a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
+        all who contributed</a>!</p>
 
-	<p>Copyright &copy; 1997 - 2004 JMRI Community.
+	<p>Copyright &copy; 1997 - 2019 JMRI Community.
 	<p>JMRI, DecoderPro, PanelPro, DispatcherPro and associated logos are our trademarks.
-	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a></p>
-
-        <br>Site hosted by:<br><!-- SSI require .shtml suffix, so this file can't include the following as Icon via SSI -->
-        <a href="http://www.tagadab.com">
-            <img src="https://www.tagadab.com/sites/default/files/logo-tagadab-nostrap.png" height="28" width="103"
-                 border="0" alt="Tagadab Logo"> </a>
+	<p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a>
+    <br>Site hosted by: <a href="https://www.simplyhosting.cloud">Simply Cloud</a></p>
     </div>
 <!-- /Footer -->
 

@@ -6,12 +6,12 @@
 	  <div id="side"> <!-- Block of text on left side of page -->
 	    <div style="text-align: center">JMRI&reg; is...</div>
 	    <dl>
-		<dt><h3><a href="./apps/DecoderPro">DecoderPro&reg;</a></h3></dt>
+		<dt><h3><a href="./apps/DecoderPro/index.shtml">DecoderPro&reg;</a></h3></dt>
 		<dd>
 		    A better tool for programming decoders, simplifying the job of configuring DCC decoders from your computer
 		</dd>
 
-		<dt><h3><a href="./apps/PanelPro/PanelPro.html">PanelPro&trade;</a></h3></dt>
+		<dt><h3><a href="./apps/PanelPro/index.shtml">PanelPro&trade;</a></h3></dt>
 		<dd>
 		    Design and Operate CRT based CTC control panels that reflect the real-time
 		    state of your railroad <em>and</em> let you control it
@@ -66,6 +66,7 @@
                 <li><dfn><a href="/help/en/package/jmri/jmrit/dispatcher/Dispatcher.shtml">Dispatcher</a></dfn>
                 <li><dfn><a href="/help/en/html/tools/Routes.shtml">Routes</a></dfn>
                 <li><dfn><a href="/help/en/html/tools/fastclock/index.shtml">Fast Clocks</a></dfn>
+                <li><dfn><a href="/help/en/package/jmri/jmrit/ctc/CTC.shtml">US&amp;S CTC</a></dfn>
                 <li><dfn><a href="/help/en/html/tools/scripting/index.shtml">Scripting</a></dfn>
             </ul>
 		</dd>
@@ -93,8 +94,9 @@
                 <li> <a href="/help/en/html/hardware/loconet/Digitrax.shtml">LocoNet</a>
                 <li> <a href="/help/en/html/hardware/maple/index.shtml">Maple Systems</a>
                 <li> <a href="/help/en/html/hardware/marklin/index.shtml">M&auml;rklin CS2</a>
-                <li> <a href="/help/en/html/hardware/modbus/index.shtml">Modbus</a>
                 <li> <a href="/help/en/html/hardware/can/cbus/index.shtml">MERG CBUS</a>
+                <li> <a href="/help/en/html/hardware/modbus/index.shtml">Modbus</a>
+                <li> <a href="/help/en/html/hardware/mqtt/index.shtml">MQTT</a>
                 <li> <a href="/help/en/html/hardware/mrc/index.shtml">MRC</a>
                 <li> <a href="/help/en/html/hardware/rps/index.shtml">NAC Services RPS</a>
                 <li> <a href="/help/en/html/hardware/nce/NCE.shtml">NCE</a>
