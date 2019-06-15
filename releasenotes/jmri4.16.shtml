@@ -77,6 +77,19 @@ from
 
 <ul>
 <li><span class="since">Since <a href="jmri4.15.7.shtml">JMRI 4.15.7</a></span>
+    In some cases, existing C/MRI, TMCC, Oaktree, and Maple users
+    might have to reset the connection rate in the preferences before a 
+    serial connection will work with this version.  You only have to do this once, and only
+    if the connection doesn't start up OK after updating from an earlier JMRI version.  In that 
+    case, open the Preferences, go to the Connection pane, check the box for Advanced Preferences
+    so they're visible, set the baud rate (connection speed) to some <u>other</ul> value,
+    then set it back to the correct one (this is so JMRI sees a change and stores it properly),
+    then Save and restart. For example, if you want your C/MRI serial line to run at 19.200,
+    you should open the Preferences, change the speed selection (in Advanced Preferences) to 9,600
+    then back to 19,200, then save your preferences and restart. 
+    </li>
+
+<li><span class="since">Since <a href="jmri4.15.7.shtml">JMRI 4.15.7</a></span>
     The version of the JSON protocol used for JMRI web access has been bumped to version 5.0 due to backwards incompatible
     changes to make different JSON objects more internally consistent and to accomodate the ability to remove some
     objects. See the <a href="http://jmri.org/JavaDoc/doc/jmri/server/json/package-summary.html#history">JSON Version
