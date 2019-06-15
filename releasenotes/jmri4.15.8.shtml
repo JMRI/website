@@ -98,6 +98,16 @@ These may be relevant to you if you're updating from an earlier version.
 
 <ul>
 <li><span class="since">Since <a href="jmri4.15.7.shtml">JMRI 4.15.7</a></span>
+    In some cases, you might have to reset the connection rate in your preferences before a 
+    serial connection will work with this version.  You only have to do this once, and only
+    if the connection doesn't start up OK after updating from an earlier JMRI version.  In that 
+    case, open the Preferences, go to the Connection pane, check the box for Advanced Preferences
+    so they're visible, set the baud rate (connection speed) to some <u>other</ul> value,
+    then set it back to the correct one (this is so JMRI sees a change and stores it properly),
+    then Save and restart.
+    </li>
+
+<li><span class="since">Since <a href="jmri4.15.7.shtml">JMRI 4.15.7</a></span>
     The version of the JSON protocol used for JMRI web access has been bumped to version 5.0 due to backwards incompatible
     changes to make different JSON objects more internally consistent and to accomodate the ability to remove some
     objects. See the <a href="http://jmri.org/JavaDoc/doc/jmri/server/json/package-summary.html#history">JSON Version
@@ -201,16 +211,16 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.8/JMRI.4.15.8+R6d09260.dmg">https://github.com/JMRI/JMRI/releases/download/v4.15.8/JMRI.4.15.8+R6d09260.dmg</a><br/>
+  sha256: 02be066f341ebf6c269be2011215533fecd88f2af8fab82f4c293e95288d0dd4 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.8/JMRI.4.15.8+R6d09260.exe">https://github.com/JMRI/JMRI/releases/download/v4.15.8/JMRI.4.15.8+R6d09260.exe</a><br/>
+   sha256: 1ee05ed0e46f4dfcc383366e9259dcb62223e7502d42156093a98823b684fe9f</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.8/JMRI.4.15.8+R6d09260.tgz">https://github.com/JMRI/JMRI/releases/download/v4.15.8/JMRI.4.15.8+R6d09260.tgz</a><br/>
+   sha256: 3f1cfc9e693c1bcc63dff7f68c81e702145ce75683e93a91b444095e1c9d66ec</li>
 </ul>
  -->
 
