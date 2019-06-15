@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.15.8 release
       </h1>
 
-    <p>Date: mmm dd, 2019</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: June 15, 2019</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.15.8 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -87,16 +89,6 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>None yet</li>
-</ul>
-
-
-<h3>Older warnings</h3>
-
-See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
-These may be relevant to you if you're updating from an earlier version.
-
-<ul>
 <li><span class="since">Since <a href="jmri4.15.7.shtml">JMRI 4.15.7</a></span>
     In some cases, existing C/MRI, TMCC, Oaktree, and Maple users
     might have to reset the connection rate in the preferences before a 
@@ -109,6 +101,15 @@ These may be relevant to you if you're updating from an earlier version.
     you should open the Preferences, change the speed selection (in Advanced Preferences) to 9,600
     then back to 19,200, then save your preferences and restart. 
     </li>
+</ul>
+
+
+<h3>Older warnings</h3>
+
+See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
+These may be relevant to you if you're updating from an earlier version.
+
+<ul>
 
 <li><span class="since">Since <a href="jmri4.15.7.shtml">JMRI 4.15.7</a></span>
     The version of the JSON protocol used for JMRI web access has been bumped to version 5.0 due to backwards incompatible
@@ -205,7 +206,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -225,11 +225,12 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.15.8/JMRI.4.15.8+R6d09260.tgz">https://github.com/JMRI/JMRI/releases/download/v4.15.8/JMRI.4.15.8+R6d09260.tgz</a><br/>
    sha256: 3f1cfc9e693c1bcc63dff7f68c81e702145ce75683e93a91b444095e1c9d66ec</li>
 </ul>
- -->
 
+<!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.8/">CI project page</a>.
+ -->
 
 <!-- 
 During development leading to the actual release, you can find test download files on the
