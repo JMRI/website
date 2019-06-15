@@ -95,7 +95,7 @@ from
     serial connection will work with this version.  You only have to do this once, and only
     if the connection doesn't start up OK after updating from an earlier JMRI version.  In that 
     case, open the Preferences, go to the Connection pane, check the box for Advanced Preferences
-    so they're visible, set the baud rate (connection speed) to some <u>other</ul> value,
+    so they're visible, set the baud rate (connection speed) to some <u>other</u> value,
     then set it back to the correct one (this is so JMRI sees a change and stores it properly),
     then Save and restart. For example, if you want your C/MRI serial line to run at 19.200,
     you should open the Preferences, change the speed selection (in Advanced Preferences) to 9,600
