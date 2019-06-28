@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.17.1 release
       </h1>
 
-    <p>Date: mmm dd, 2019</p>
-    <p>From: (pumpkin)</p>
+    <p>Date:  June 27, 2019</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.17.1 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -41,11 +43,9 @@ We expect this series to end in the next JMRI production release late in 2019.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
-<!-- 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.</p>
- -->
 
 <p><b>
 JMRI is now only available under the
@@ -87,16 +87,8 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-   
-   <!-- While this release is in development, the     -->
-   <!-- list of new warnings is kept in               -->
-   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
+    <li>None</li>
 </ul>
-
 
 <h3>Older warnings</h3>
 
@@ -190,7 +182,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -199,18 +190,17 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.1/JMRI.4.17.1+R4f9f3e1.dmg">https://github.com/JMRI/JMRI/releases/download/v4.17.1/JMRI.4.17.1+R4f9f3e1.dmg</a><br/>
+  sha256: 8052dc257f5e1ea5d2ebda4722523fd1e8ce8ff3f30c2e4bebf7697421801220 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.1/JMRI.4.17.1+R4f9f3e1.exe">https://github.com/JMRI/JMRI/releases/download/v4.17.1/JMRI.4.17.1+R4f9f3e1.exe</a><br/>
+   sha256: c21c6ac56410fc79120f3c63a31e26acd2fb22febf4a9ca09094c900cd7d6b63</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.1/JMRI.4.17.1+R4f9f3e1.tgz">https://github.com/JMRI/JMRI/releases/download/v4.17.1/JMRI.4.17.1+R4f9f3e1.tgz</a><br/>
+   sha256: dc987de70150c8a3c1a7ef133d8b1c43a7df45aad0094cff17092815779d579e</li>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -218,9 +208,11 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.8/">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
  
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.16.shtml">Production release 4.16</a>:</h2>
