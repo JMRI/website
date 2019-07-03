@@ -477,19 +477,16 @@ in those is
     <h3>Layout Editor</h3>
         <a id="LE" name="LE"/>
         <ul>
-	        <li>Dave Sand improved tooltip handling</li>
-              <li>The <strong>Save Location and Size</strong> Options menu item is
+	   <li>Dave Sand improved tooltip handling</li>
+           <li>The <strong>Save Location and Size</strong> Options menu item is
               not displayed when automatic location and size behavior is active.
               See the above warning.</li>
-            <li>Color for new tracks is now consistent within a single Layout Editor.</li>
-            <li>Turnouts, level crossings, track segments and positional points (A/EB/EC) cannot
-            be deleted if signal heads, signal masts or sensors have been assigned to the item.
-            Also, an edge connector cannot be deleted if the link is defined.</li>
-	        <li>When an edge connector or end bumper does not have an attached track segment, 
-	            creating a context menu fails with a NPE. This prevents deleting the EC or EB 
-	            using the Delete option in the context menu. 
-	            The EB or EC can be deleted by adding a track segment 
-	            and then the context menu works.</li>
+           <li>Color for new tracks is now consistent within a single Layout Editor.</li>
+           <li>Turnouts, level crossings, track segments and positional points (A/EB/EC) cannot
+              be deleted if signal heads, signal masts or sensors have been assigned to the item.
+              Also, an edge connector cannot be deleted if the link is defined.</li>
+	   <li>Fixed a problem with deleting edge connectors or end bumpers that did not
+              have an attached track segment.</li>
         </ul>
 
     <h3>Panel Editors</h3>
@@ -613,6 +610,8 @@ in those is
         <a id="Timetable" name="Timetable"/>
         <ul>
             <li>Dave Sand made multiple updates to the Timetable support</li>
+	    <li>Added the ability to print a train graph.  An item has been
+	    added to the Timetable menu to print the graph using two pages.</li>
             <li>New menu item: <strong>Export CSV File</strong> &mdash; Create a
             CSV file that can be imported into a spreadsheet program.  This can
             be used to create a traditional timetable.</li>
