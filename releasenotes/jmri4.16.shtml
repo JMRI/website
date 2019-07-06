@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.16 release
       </h1>
 
-    <p>Date: MM, DD 2019</p>
-    <p>From:(pumpkin)</p>
+    <p>Date: July 6, 2019</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 4.16 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <p>We are very pleased to announce that the 4.15 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
@@ -63,7 +65,7 @@ see our
 <!--
 If any of those affect you, please either 
 wait for
-<a href="jmri4.15.1.shtml">JMRI 4.15.1</a>, due out shortly after this one,
+<a href="jmri4.17.2.shtml">JMRI 4.17.2</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
@@ -194,27 +196,25 @@ Please note that the download links in this and future JMRI releases link to
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
 check the files against the checksums shown below.
-
-<!-- 
+ 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.dmg</a><br/>
-  sha256: 3efa5322ab034063bc277371585086cf7fd328d8c335467760ae77c892f07a01 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.dmg">https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.dmg</a><br/>
+  sha256: 0e5172155ab02e5d67016c5338665736e4ffcc33e8a2ae6dc5bdd84e83ef11e0 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.exe">https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.exe</a><br/>
-   sha256: 2b040677d4bb4138e1474ad2f07866d0494877a352aa9771db7dc170b1e0bbca</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.exe">https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.exe</a><br/>
+   sha256: 3ce4ca2f734bd8c3221705878bd82c3e8774a5db828a4ed397b8737290818e8d</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.tgz</a><br/>
-   sha256: 78e53c0fb4f806b8e26951f27d5027c150c935ba12d7c401a7b1505bd5298978</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.tgz">https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.tgz</a><br/>
+   sha256: 9e9123ffca62f488b7bf7ce16143eaf00565eba8017b85afde914d8e382183cb</li>
 </ul>
- -->
 
 <h2>Changes since <a href="jmri4.14.shtml">production release 4.14</a>:</h2>
 
 <p>
-This production version is made from test releases 4.15.1 through 4.15.7.  The 
+This production version is made from test releases 4.15.1 through 4.15.9.  The 
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2018-12-14">full list of changes</a>
 in those is 
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2018-12-14">available from our code repository</a>.

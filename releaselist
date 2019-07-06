@@ -1,5 +1,9 @@
 production:
  versions:
+  4.16:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.exe"
   4.14:
    tgz: "https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.tgz"
    dmg: "https://github.com/JMRI/JMRI/releases/download/v4.14/JMRI.4.14+Rd060e0b.dmg"
