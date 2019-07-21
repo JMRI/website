@@ -185,32 +185,6 @@ These are development files, and might not be working at any particular time.</p
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.15.4.shtml">Test release 4.15.4</a>:</h2>
 
-   <h3>Warrants</h3>
-        <a id="Wt" name="Wt"/>
-        <ul>
-            <li>The throttle settings generated for down ramps used by NXWarrants or speed changes required by signals, occupancy 
-            	conditions or user interventions has been modified. The last throttle interval now is always the throttle
-            	interval as specified in Warrant Preferences. Accuracy of the position where the train stops should be improved.
-            </li>
-            <li>A bug where looped routes ending at an adjacent block could be missed by the Find Route algorithm has been fixed.
-            </li>
-            <li>A stop button to halt execution of the Find Route Operation has been added.
-            </li>
-            <li>The dynamic recording of speeds during sessions has been extended. A weighted average of the speed over a block is recorded to
-            	the session speed profile. 
-            </li>
-            <li>A bug where a Halt at zero speed would not restart has been fixed. Scripts now resume at any command where the user does a Halt.
-            </li>
-            <li>The "Run Warrant" command linking warrants now executes for all cases.
-            </li>
-            <li>A bug when dragging an unnamed Portal icon in CircuitBuilder might cause a freeze has been fixed.
-            </li>
-            <li>Deleting an OBlock will also delete all other elements (Portals and Paths using the block). Previously when saved after such editing, 
-		warrants referencing the block would re-register the OBlock when the panel was re-loaded. Now such warrants are loaded, but 
-		will indicate that editing is needed to establish a correct route for them.  
-            </li>
-        </ul>
- 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.15.5+is%3Amerged">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
@@ -343,7 +317,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.15.5+i
             <ul>
                 <li>A new CTC tool has been added to JMRI.  An Editor component uses
                 a set of screens to define the CTC system.  The resulting data can
-                be used to create a USS CTC Panel (Panel Editor) with all of the
+                be used to create a US&amp;S CTC Panel (Panel Editor) with all of the
                 levers, indicators, and a minimal track plan with turnouts and
                 signals.  A run time component uses the configuration to implement
                 prototype CTC logic with no scripting or Logix.</li>
@@ -391,6 +365,30 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.15.5+i
    <h3>Warrants</h3>
         <a id="Wt" name="Wt"></a>
         <ul>
+            <li>The throttle settings generated for down ramps used by NXWarrants or speed changes required by signals, occupancy
+            conditions or user interventions has been modified. The last throttle interval now is always the throttle
+            interval as specified in Warrant Preferences. Accuracy of the position where the train stops should be improved.
+            </li>
+            <li>A bug where looped routes ending at an adjacent block could be missed by the Find Route algorithm has been fixed.
+            </li>
+            <li>A stop button to halt execution of the Find Route Operation has been added.
+            </li>
+            <li>The dynamic recording of speeds during sessions has been extended. A weighted average of the speed over a block is recorded to
+            the session speed profile.
+            </li>
+            <li>A bug where a Halt at zero speed would not restart has been fixed. Scripts now resume at any command where the user does a Halt.
+            </li>
+            <li>The "Run Warrant" command linking warrants now executes for all cases.
+            </li>
+            <li>A bug when dragging an unnamed Portal icon in CircuitBuilder might cause a freeze has been fixed.
+            </li>
+            <li>Deleting an OBlock will also delete all other elements (Portals and Paths using the block). Previously when saved after such editing,
+            warrants referencing the block would re-register the OBlock when the panel was re-loaded. Now such warrants are loaded, but
+            will indicate that editing is needed to establish a correct route for them.
+            </li>
+        </ul>
+
+        <ul>
             <li>Down ramps used by NXWarrants and are also used when speed changes required by signals, occupancy 
             	conditions or user interventions occur. The throttle settings generated for down ramps have been modified. 
             	The throttle setting is increased by 10% at each time interval. Also, the last throttle interval now is always the throttle
@@ -429,7 +427,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.15.5+i
             <li>JSON services no longer automatically listen for changes to objects provided to a client unless the client explicitly requests the object. (<a href="https://github.com/JMRI/JMRI/pull/6777">#6777</a>)</li>
             <li>NamedBeans now allow property change listeners to listen only to specified properties. (<a href="https://github.com/JMRI/JMRI/pull/6777">#6777</a>)</li>
         </ul>
-   
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->

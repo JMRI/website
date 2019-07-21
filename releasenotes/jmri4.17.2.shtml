@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
- JMRI: Release Notes for 4.15.6
+ JMRI: Release Notes for 4.17.2
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.15.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.17.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!--#include virtual="/Style.shtml" -->
 
@@ -19,16 +19,14 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.15.6 release
+      Release Notes for JMRI 4.17.2 release
       </h1>
 
-    <p>Date: May 16, 2019</p>
-    <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.15.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: mmm dd, 2019</p>
+    <p>From: (pumpkin)</p>
+    <p>Subject: Test Release 4.17.2 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h2>Notes:</h2>
 
@@ -39,7 +37,7 @@ And please back up your JMRI files before installing this, in case you want to g
 back to an earlier version.</p>
 
 <p>This is the next in a series of test releases.
-We expect this series to end in the next JMRI production release during early Summer 2019.
+We expect this series to end in the next JMRI production release late in 2019.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
@@ -87,10 +85,24 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-<!-- 
-    <li>None yet</li>
- -->
-    <li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
+   
+   <!-- While this release is in development, the     -->
+   <!-- list of new warnings is kept in               -->
+   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
+   <!-- in the JMRI/JMRI repository. Please edit      -->
+   <!-- there.  Changes to this file won't be merged. -->
+   
+   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
+</ul>
+
+
+<h3>Older warnings</h3>
+
+See the <a href="jmri4.16.shtml#warnings">JMRI 4.16 release note</a> for more warnings predating the 4.17 development series.
+These may be relevant to you if you're updating from an earlier version.
+
+<ul>
+<li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
         Remembering the location and size of layout panels created and maintained
         using Layout Editor, Panel Editor, Control Panel Editor, and Switchboard
         Editor is no longer dependent on saving the panel.  The location and size
@@ -98,8 +110,8 @@ from
         makes the window management behavior consistent.  To continue using the
         old behavior, go to <strong>Preferences >> Display</strong> and enable
         <strong>Use old location and size logic for editor panels</strong>.
-    </li>
-    <li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
+
+<li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
         Starting in <a href="jmri4.15.6.shtml">JMRI 4.15.6</a>, Memories
         must have valid system names of the form "IM" folllowed by something.
         "IM123" and "IMEAST" are both valid. 
@@ -115,15 +127,8 @@ from
         </ul>
         JMRI needs to start enforcing this in preparation for some
         future code that will appear later this year.
-    </li>
-</ul>
+</li>
 
-<h3>Older warnings</h3>
-
-See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
-These may be relevant to you if you're updating from an earlier version.
-
-<ul>
 <li><span class="since">Since <a href="jmri4.15.5.shtml">JMRI 4.15.5</a></span>
         The handling of Turnout system names has been updated
         to be (more, hopefully completely) consistent with the
@@ -140,7 +145,6 @@ These may be relevant to you if you're updating from an earlier version.
         will fixing inconsistent references in your scripts.
         Of course, bugs are always possible. If you find a place where 
         names seem to be handled inconsistently, please let us know!
-        </li>
 
 <li><span class="since">Since <a href="jmri4.15.4.shtml">JMRI 4.15.4</a></span>
         The calculation of Turnout Addresses for the
@@ -178,12 +182,13 @@ These may be relevant to you if you're updating from an earlier version.
     </ul>
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
-  
-</ul>
-    
+
+</ul>   
+
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -192,114 +197,42 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.dmg">https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.dmg</a><br/>
-  sha256: e27da2d2fd402e30cf462c79cbcb0d70a1f629ab59faaacd6fa2480a92c3105c </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
+  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.exe">https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.exe</a><br/>
-   sha256: 96bbd3d90037cf7e35f5340e04f48931474c7a427b03f91030ce48a277c09a96</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
+   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.tgz">https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.tgz</a><br/>
-   sha256: b2e8c106f0945de6f912234c0fb16e17834ad50f69f1484d06063bed0a86ea67</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
+   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
 </ul>
+ -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.6/">CI project page</a>.
+<a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.8/">CI project page</a>.
  -->
-<!-- 
+
 During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
  
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri4.15.5.shtml">Test release 4.15.5</a>:</h2>
+<h2>Changes since <a href="jmri4.17.1.shtml">Test Release 4.17.1</a>:</h2>
  
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.15.6+is%3Amerged">list of included commits</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.17.2+is%3Amerged">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-
-    <h3>Hardware Support</h3>
-
-        <h4>MERG CBUS</h4>
-            <ul>
-                <li><a href="http://jmri.org/help/en/html/hardware/can/cbus/Names.shtml#reporters"
-                >CBUS Reporters</a> are no longer automatically created when hearing a DDES or ACDAT CBUS OPC.
-                    <br>New CBUS Reporters can now be created in a sequential range.
-                </li>
-            </ul>
-
-
-        <h4>XpressNet</h4>
-            <ul>
-                <li>Added support for Idle mode to the power manager.  
-                    This indicates a global emergency stop (track power on, all locomotives stopped)</li>
-            </ul>
-
-
-    <h3>New / Updated decoder definitions</h3>
-
-        <h4>ESU</h4>
-            <ul>
-                <li>Added the Essential Sound Unit (an OEM-only decoder).</li>
-                <li>Added the LokSound 5 family.</li>
-                <li>Added the SUSI Map to those V4/5 decoders that support it.</li>
-                <li>Split the Sound Pane into two panes - &quot;Sound&quot; and &quot;Sound Levels&quot;.</li>
-                <li>Improved the speed of Import-&gt;LokProgrammer CV list file.</li>
-            </ul>
-
-        <h4>ZIMO</h4>
-            <ul>
-                <li>Ronald Kuhn did a lot of work on the Zimo definitions, including adding V37 definitions</li>
-            </ul>
-
-   <h3>Internationalization</h3>
-        <a id="I18N" name="I18N"></a>
-        <ul>
-            <li>Petr Šídlo improved the Czech translation</li>
-        </ul>
-
-    <h3>Layout Editor</h3>
-        <a id="LE" name="LE"></a>
-        <ul>
-          <li>The <strong>Save Location and Size</strong> Options menu item is
-          not displayed when automatic location and size behavior is active.
-          See the above warning.</li>
-        </ul>
-
-    <h3>Scripting</h3>
-        <a id="Scripting" name="Scripting"></a>
-        <ul>
-            <li><strong>Custom scripts that release throttles may need to be modified.</strong><br>
-            <ul>
-                <li>AutoDispatcher2</li>
-                <li>RobotThrottle2</li>
-                <li>RobotThrottle3</li>
-                <li>RocoCrane</li>
-                <li>Zimo Programmers</li>
-            </ul>
-            <br>
-            Old syntax: <code>self.throttle.release()</code> <br>
-            New syntax assuming no throttle listeners in script: <code>self.throttle.release(None)</code>
-            </li>
-        </ul>
-
-   <h3>Warrants</h3>
-        <a id="Wt" name="Wt"></a>
-        <ul>
-            <li>Circuit Builder has more error help and ease of use features. The help page is updated.</li>
-            <li>40 scale feet has been added to the ramp down distance.</li> 
-        </ul>
-
-    <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"></a>
-        <ul>
-            <li>Add new <code>TestWaitsForever</code> test class to allow end-of-job debug.</li>
-        </ul>
+   <!-- While this release is in development, the     -->
+   <!-- new release note items are kept in            -->
+   <!-- help/en/releasenotes/current-draft-note.shtml -->
+   <!-- in the JMRI/JMRI repository. Please edit      -->
+   <!-- there.  Changes to this file won't be merged. -->
    
+   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->

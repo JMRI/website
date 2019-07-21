@@ -1,25 +1,38 @@
 January 13, 2017 Egbert Broerse (C)
+Updated May 2019
 
 In cloc.pl, after line 5290 insert:
             'shtml'        => 'HTML'                  ,
 to include our flavor of html.
 
+To prepare the local JMRI repo, do a 'cleanall' so we don't count the javadoc files.
+
+Open Terminal:
 cd to folder containing your JMRI repo
-In the Console type:
+Type the command:
 
 perl cloc.pl JMRI/java --csv --by-file --report-file=java.cloc
+
+(JMRI/java is the path to start analysing; java.cloc is the file name)
+See progress, ending in:
 
 [counting]
    12546 text files.
    11295 unique files.                                          
     3803 files ignored.
-Wrote jmri.cloc
+Wrote java.cloc
 
-Paste contents into field (Origins: clog) on http://www.redotheweb.com/CodeFlower/
+(note that in 2017 the java code contained 12,5k files, compared to 24k in 2019)
+Repeat for the following paths: JMRI (all, too large for the script?), JMRI/java, JMRI/xml and JMRI/help
 
-Click Convert button
+In a browser open http://www.redotheweb.com/CodeFlower/
 
-Click Update button
+Paste the contents of each of the files into field over [Convert] button.
+Select from the pop-up: (Origins: clog)
+
+Click [Convert] button
+
+Click [Update] button
 
 [Update date JMRI codeflower:]
 Copy JSON data from the Input Data Format field into a separate file named: jmri.json
@@ -93,4 +106,4 @@ Made some changes to CodeFlower.js to show the late code set of JMRI inside a re
 line 19:  .charge(function(d) { return d._children ? -d.size / 100 : -40; }) // change 100:-40 to 80:4
 line 20:  .linkDistance(function(d) { return d.target._children ? 80 : 25; }) // change 80:25 to 8:25
 line 40:  .gravity(Math.atan(total / 50) / Math.PI * 0.4) // 
-line 72:  .attr("r", function(d) { return d.children ? 3.5 : Math.pow(d.size, 2/5) || 1; }) // change 2/5 to 1/5 (or use log for pow?) !keep the same as line 66
+line 72:  .attr("r", function(d) { return d.children ? 3.5 : Math.pow(d.size, 2/5) || 1; }) // change 2/5 to 1/5 (or use .log for .pow?) !keep the same as line 66
