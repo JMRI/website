@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.17.2 release
       </h1>
 
-    <p>Date: mmm dd, 2019</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: July 26, 2019</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.17.2 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -191,7 +193,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -200,18 +201,17 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.2/JMRI.4.17.2+Re9dde08.dmg">https://github.com/JMRI/JMRI/releases/download/v4.17.2/JMRI.4.17.2+Re9dde08.dmg</a><br/>
+  sha256: 7b42a549476c8af8b109e568eb77eecbddc730433bfade208559d7f88271b8d2 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.2/JMRI.4.17.2+Re9dde08.exe">https://github.com/JMRI/JMRI/releases/download/v4.17.2/JMRI.4.17.2+Re9dde08.exe</a><br/>
+   sha256: d8215c1b1051c591e43306d7f250170ceb0e3e3c428677cf567c8b05a9ad30a5</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.2/JMRI.4.17.2+Re9dde08.tgz">https://github.com/JMRI/JMRI/releases/download/v4.17.2/JMRI.4.17.2+Re9dde08.tgz</a><br/>
+   sha256: 8248b66466b063e5b9b0e0c3e989aae57f265712554516e501f107137ec1ce9e</li>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -219,9 +219,11 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.8/">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
  
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.17.1.shtml">Test Release 4.17.1</a>:</h2>
@@ -245,6 +247,27 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.17.2+i
                 name used elsewhere, and JMRI used to change these to be the same.
                 Users may have to modify scripts and panel files to ensure system
                 names match in all places.</li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+            <li>Layout Editor combo boxes have been changed to support the migration
+                from JmriBeanComboBox to NamedBeanComboBox.  The affects the Toolbar,
+                the Edit context menu, Set Signal Heads, Set Signal Masts, and Set Sensors.
+                <ul>
+                    <li>Typing a name into the combo box field no longer works.  The
+                    items have to be selected from the combo box drop down.</li>
+                    <li>Typing a letter or two will position the selection.</li>
+                    <li>Positioning is based on both the user name and the system name.
+                    For example, typing <strong>i</strong> will select items with user names starting
+                    with the letter i/I as well as internal items using the system name which starts with i/I.</li>
+                    <li>With this release, it is not possible to create new Block entries
+                    using the Edit context item.</li>
+                    <li>If a block is selected that does not have a user name, a
+                    dialog will prompt for a user name.</li>
+                </ul>
+            </li>
         </ul>
 
     <h3>Miscellaneous</h3>
