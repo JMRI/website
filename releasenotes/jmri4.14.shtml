@@ -92,6 +92,11 @@ from
 See the <a href="jmri4.12.shtml#warnings">JMRI 4.12 release note</a> for more warnings predating the 4.13 development series.
 These may be relevant to you if you're updating from an earlier version.
 
+<p>When running JMRI using Java 9 or Java 10,
+    the script import statements need to be fully-qualified:
+    in addition to 'import java', you might need 'import java.beans'
+    and others. 
+
 <p><span class="since">Since <a href="jmri4.11.8.shtml">JMRI 4.11.8</a></span>
     Some new display capabilities were introduced into Layout Editor
     during JMRI 4.11-series development.   
