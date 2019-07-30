@@ -9,8 +9,6 @@ addons:
     - ant
     - graphviz
     - tidy
-  firefox: latest
-  chrome: beta
 
 script: travis_wait ant checklineends
 
