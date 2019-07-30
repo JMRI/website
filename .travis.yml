@@ -1,7 +1,23 @@
 language: java
 
+jdk:
+  - openjdk8
+
+addons:
+  apt:
+    packages:
+    - graphviz
+    - libalut0
+    - dbus-x11
+    - tidy
+    - pulseaudio-module-x11
+  firefox: latest
+  chrome: beta
+
 script: travis_wait ant checklineends
 
 os:
   - linux
 #  - osx # Travis OS X support does not include Java
+
+sudo: required
