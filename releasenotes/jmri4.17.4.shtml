@@ -89,13 +89,12 @@ from
 
 <ul>
    
-   <!-- While this release is in development, the     -->
-   <!-- list of new warnings is kept in               -->
-   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
+    <li><span class="since">Since <a href="jmri4.17.4.shtml">JMRI 4.17.4</a></span>
+        Panel file NamedBean items such as Turnouts, Sensors, etc are now written to panel
+        files in order by their Manager system prefix and system name.
+        Previously, they had (roughly) been written in the order they'd be 
+        read from the earlier file(s). This will result in a big change to the order
+        the first time a file is re-written, but after that it should be much more stable.</li>
 </ul>
 
 
@@ -229,13 +228,39 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.17.4+is%3Amerged">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- new release note items are kept in            -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>TSU2 Genesis add SD70ACe model</li>
+                <li>ECO Athearn RTR add new SD40 models</li>
+            </ul>
+
+        <h4>TCS</h4>
+            <ul>
+                <li>WestAust55 -Motor Pane Restructured plus CV182 for Special BEMF and Keep-Alive added</li>
+                <li>WestAust55 -CV104 added for third Private User ID purposes</li>
+            </ul>
+	    
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li>Added a new SetUnknownTurnoutsClosed script that does what it says on the tin</li>
+            <li>Added script tests for SetUnknownTurnoutsClosed and SetAllTurnoutsClosed
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Removed <code>Manager.getSystemNameAddedOrderList()</code>, deprecated in JMRI 4.11.1</li>
+            <li>Panel file NamedBean items such as Turnouts, Sensors, etc are now written to panel
+                files in order by their Manager system prefix and system name.
+                Previously, they had (roughly) been written in the order they'd be 
+                read from the earlier file(s). This will result in a big change to the order
+                the first time a file is re-written, but after that it should be much more stable.
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->

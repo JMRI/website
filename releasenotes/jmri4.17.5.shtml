@@ -105,6 +105,13 @@ See the <a href="jmri4.16.shtml#warnings">JMRI 4.16 release note</a> for more wa
 These may be relevant to you if you're updating from an earlier version.
 
 <ul>
+<li><span class="since">Since <a href="jmri4.17.4.shtml">JMRI 4.17.4</a></span>
+        Panel file NamedBean items such as Turnouts, Sensors, etc are now written to panel
+        files in order by their Manager system prefix and system name.
+        Previously, they had (roughly) been written in the order they'd be 
+        read from the earlier file(s). This will result in a big change to the order
+        the first time a file is re-written, but after that it should be much more stable.</li>
+        
 <li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
         Remembering the location and size of layout panels created and maintained
         using Layout Editor, Panel Editor, Control Panel Editor, and Switchboard
