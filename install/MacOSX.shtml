@@ -316,8 +316,30 @@ within the JMRI distribution directory to the  ~/Library/Java/Extensions/ direct
 (You might have to create that directory)
 <u>Do not do this unless you have seen that symptom</u>.
 
-<a name="#notes"></a><h2>Notes</h2>
+<a name="notes"></a><h2>Notes</h2>
 
+<a name="catalina"></a><h3>macOS 10.15 Catalina</h3>
+
+Starting in early Fall 2019, macOS 10.15 Catalina greatly increased the security checks
+that macOS applications must pass before running.
+<p>
+Some issues:
+<ul>
+    <li>If you upgrade to Catalina on a computer with a working JMRI installation,
+        it should continue to work. (If not, please let us know on the
+        <a href="https://groups.io/g/jmriusers">jmriusers group</a>.)   
+    <li>If you installed Oracle's Java 8 before upgrading to Catalina, it'll still work.  
+        If you want to install Java 8 from Oracle onto a Catalina system, 
+        there are some 
+        <a href="https://www.oracle.com/technetwork/java/javase/using-jdk-jre-macos-catalina-5781620.html">instructions on the Oracle web site</a>.
+        The Oracle Java 11 installer is an easier installation, and works fine with 
+        JMRI, so we recommend you do that instead.
+    <li>We hope to have JMRI 4.17.15 fully compatible with Catalina for new installs,
+        but we're not there yet.
+    <li>JMRI versions before 4.17.5 are very hard to properly install on Catalina, and
+        we don't recommend trying.
+</ul>
+ 
 <h3>Customizing your JMRI Installation</h3>
 
 You might want to have more than one Configuration for DecoderPro
