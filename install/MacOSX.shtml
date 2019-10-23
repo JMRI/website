@@ -334,10 +334,12 @@ Some issues:
         <a href="https://www.oracle.com/technetwork/java/javase/using-jdk-jre-macos-catalina-5781620.html">instructions on the Oracle web site</a>.
         The Oracle Java 11 installer is an easier installation, and works fine with 
         JMRI, so we recommend you do that instead.
-    <li>We hope to have JMRI 4.17.5 fully compatible with Catalina for new installs,
-        but we're not there yet.
     <li>JMRI versions before 4.17.5 are very hard to properly install on Catalina, and
         we don't recommend trying.
+    <li>We hope to have JMRI 4.17.5 fully compatible with Catalina for new installs.
+        To install JMRI 4.17.5 or later on Catalina, please drag the JMRI folder to the
+        Applications folder.  Depending on your system security settings, dragging it to
+        Downloads, Documents or Desktop might not work.
 </ul>
  
 <h3>Customizing your JMRI Installation</h3>
