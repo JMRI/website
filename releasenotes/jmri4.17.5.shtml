@@ -257,8 +257,20 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.17.5+i
                     JMRI connection is configured for DCS240, DCS210, or DCS52 
                     acting as the command station.</li>
             </ul>
-
-           </ul>
+        
+        <h4>OpenLCB / LCC</h4>
+            <ul>
+                <li><span class="since">Since <a href="jmri4.17.5.shtml">JMRI
+                    4.17.5</a></span> The Traffic Monitor window has additional
+                    options to make reading the log easier. A checkbox allows
+                    showing the Node Name of the sender of a message. Another
+                    checkbox allows showing for Event messages the name(s) that
+                    JMRI can deduce about the specific Event ID. These are the
+                    same names as shown in the CDI window, usually Sensor and
+                    Turnout User Names, as well as references to currently open
+                    CDI editor windows that contain the given Event ID.
+                  </li>
+            </ul>
 
     <h3>Scripting</h3>
         <a id="Scripting" name="Scripting"></a>
