@@ -524,7 +524,10 @@ hr {
 	/* background: transparent url(../images/w6.gif) top left no-repeat; */
 	padding: 0 0 0.3em 11px;
 }
-
+#side li.here {
+	/* highlight current page */
+	background-color: #99D;
+}
 
 
 /*header*/

@@ -8,7 +8,6 @@ JMRI: A Java Model Railroad Interface
     <meta name="author" content="Bob Jacobsen">
     <meta name="author" content="John Plocher">
     <meta name="keywords" content="java model railroad JMRI decoderpro panelpro operationspro signalpro loconet DCC NMRA">
-
     <!--#include virtual="/Style.shtml" -->
 </head>
 
@@ -61,7 +60,7 @@ JMRI: A Java Model Railroad Interface
 		<dd>JMRI provides powerful tools for working with your
 		layout.
 		    <ul>
-				<li><dfn><a href="./help/en/html/tools/Turnouts.shtml">Turnouts</a></dfn>
+				<li class="here"><dfn><a href="./help/en/html/tools/Turnouts.shtml">Turnouts</a></dfn>
 				<li><dfn><a href="./help/en/html/tools/Lights.shtml">Lights</a></dfn>
 				<li><dfn><a href="./help/en/html/tools/Sensors.shtml">Sensors</a></dfn>
 				<li><dfn><a href="./help/en/html/tools/throttle/ThrottleMain.shtml">Throttles</a></dfn>
@@ -117,10 +116,14 @@ JMRI: A Java Model Railroad Interface
 
 	  </dl>
 
-<a href="/donations.shtml">
- <img src="https://sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" align="right" alt="Donate to JMRI">
-</a> 
+    <a href="/donations.shtml">
+     <img src="https://sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" align="right" alt="Donate to JMRI">
+    </a>
 
+    <!-- Sidebar-Tail -->
+    <script type="text/javascript" src="/web/js/here.js">
+    </script>
+    <!-- /Sidebar-Tail -->
 	</div> <!-- closes #side -->
 	
 	<!-- end sidebar -->
@@ -477,7 +480,7 @@ JMRI: A Java Model Railroad Interface
 			The award was presented at the
 			annual JavaOne conference on May 14th by James Gosling.
 			<p>
-			JMRI won for it's community, it's use of Java technology to empower people all over the world to contribute,
+			JMRI won for its community, its use of Java technology to empower people all over the world to contribute,
 			and for the impact it's had.
 		   </dd>
 	        </dl>
