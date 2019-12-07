@@ -74,7 +74,12 @@ see our
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>MERG CBUS - Throttle direction changes are not always sent to the Layout, resolved in 4.17.2</li>
+    <li>MERG CBUS - Throttle direction changes are not always sent to the Layout, resolved in 
+        <a href="jmri4.17.2.shtml">JMRI 4.17.2</a></li>
+    <li>LocoNet connections - New and updated LocoNet connections with this release might 
+        end up with the wrong baud rate, which will cause them to not function.  
+        This is resolved in  
+        <a href="jmri4.17.3.shtml">JMRI 4.17.3</a></li>
 </ul>
 <!--
 If any of those affect you, please either 

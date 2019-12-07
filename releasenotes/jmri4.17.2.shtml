@@ -74,7 +74,10 @@ see our
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None</li>
+    <li>LocoNet connections - New and updated LocoNet connections with this release might 
+        end up with the wrong baud rate, which will cause them to not function.  
+        This is resolved in  
+        <a href="jmri4.17.3.shtml">JMRI 4.17.3</a></li>
 </ul>
 <!--
 If any of those affect you, please either 
@@ -91,13 +94,7 @@ from
 
 <ul>
    
-   <!-- While this release is in development, the     -->
-   <!-- list of new warnings is kept in               -->
-   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
+   <li>None<li>
 </ul>
 
 
