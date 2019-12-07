@@ -22,7 +22,7 @@
       Release Notes for JMRI 4.18 release
       </h1>
 
-    <p>Date: July 6, 2019</p>
+    <p>Date: MMM nn, 2019</p>
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 4.18 of JMRI/DecoderPro is available for download.</p>
 
@@ -207,6 +207,7 @@ People are welcome to distribute the download files further via other websites, 
 If you want to check that you've received original, unmodified versions, please
 check the files against the checksums shown below.
  
+<!-- 
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.dmg">https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.dmg</a><br/>
@@ -220,6 +221,17 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.tgz">https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.tgz</a><br/>
    sha256: 9e9123ffca62f488b7bf7ce16143eaf00565eba8017b85afde914d8e382183cb</li>
 </ul>
+ -->
+
+<!-- 
+Preliminary build files (not the final released files) can be found
+on the
+<a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.18/">CI project page</a>.
+ -->
+
+During development leading to the actual release, you can find test download files on the
+<a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
+These are development files, and might not be working at any particular time.</p>
 
 <h2>Changes since <a href="jmri4.14.shtml">production release 4.14</a>:</h2>
 
