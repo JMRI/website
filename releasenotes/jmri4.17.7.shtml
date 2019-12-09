@@ -261,6 +261,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.17.7+i
             the disabled Warrants. The user may decide to remove these warrants and 
             continue or to cancel the deletions.</li>
         </ul>
+   <h3>Web Access</h3>
+        <a id="WA" name="WA"></a>
+        <ul>
+            <li>The JSON protocol version bumped to version 5.2.0 due to changes to memory, block, networkService, configProfile,
+	        and systemConnection. See the <a href="http://jmri.org/JavaDoc/doc/jmri/server/json/package-summary.html#history">
+		JSON Version History</a> for details.</li>
+        </ul>
 
 
    <!--#include virtual="/Footer.shtml" -->
