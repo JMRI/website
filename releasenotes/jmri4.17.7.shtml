@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.17.7 release
       </h1>
 
-    <p>Date: mmm dd, 2019</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: December 10, 2019</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.17.7 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -72,17 +74,18 @@ see our
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None</li>
+    <li><span class="since">Since <a href="jmri4.17.7.shtml">JMRI 4.17.7</a></span>
+        When storing panel files, the program doesn't always properly remember the
+        last file name used.  You'll have to manually enter it each time.</li>
 </ul>
-<!--
+
 If any of those affect you, please either 
 wait for
-<a href="jmri4.11.3.shtml">JMRI 4.11.3</a>, due out shortly after this one,
+<a href="jmri4.11.8.shtml">JMRI 4.11.8</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
- -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
@@ -211,7 +214,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -220,22 +222,23 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R7411860.dmg">https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R7411860.dmg</a><br/>
-  sha256: ad8c38aa7d3758302b071357f6d5e5ce85dc445407fa54785082755bd71c1a43 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R5bc91de.dmg">https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R5bc91de.dmg</a><br/>
+  sha256: d93de57b61488563a1bff831dd68f83ec0e542d72bbfac9619d9d89be4a011de </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R7411860.exe">https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R7411860.exe</a><br/>
-   sha256: 54a7746febee8476e4f0167bf42d54e22bdf36dc4b3dbedf467212e6022d5cfe</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R5bc91de.exe">https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R5bc91de.exe</a><br/>
+   sha256: a278ed11b6f5e77efb6ae738e57ede1cdeb90f8722bde4a4567f045a039f9e4a</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R7411860.tgz">https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R7411860.tgz</a><br/>
-   sha256: cc856922e907a81b01953ba6c9bd22d0b80f1883cf06c5c1e75f25112ec9832d</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R5bc91de.tgz">https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R5bc91de.tgz</a><br/>
+   sha256: 1f4d07293f4fbef222e56b1e7ebdaf46ad1afc4803a0c80e46a1893158f555be</li>
 </ul>
- -->
 
+<!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.17.7/">CI project page</a>.
+ -->
 
 <!-- 
 During development leading to the actual release, you can find test download files on the
@@ -248,6 +251,13 @@ These are development files, and might not be working at any particular time.</p
  
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.17.7+is%3Amerged">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>Fixed a problem with SplitVal variables that prevented
+            data entry.</li>
+        </ul>
 
    <h3>Warrants</h3>
         <a id="Wt" name="Wt"></a>

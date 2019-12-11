@@ -74,7 +74,10 @@ see our
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None</li>
+    <li><span class="since">Since <a href="jmri4.17.5.shtml">JMRI 4.17.5</a></span>
+        Certain decoder definitions, particularly complex ones, have trouble 
+        with data entry.  Please use 
+        <a href="jmri4.17.7.shtml">JMRI 4.17.7</a> or later to avoid this problem.</li>
 </ul>
 <!--
 If any of those affect you, please either 
