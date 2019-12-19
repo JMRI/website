@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.17.8 release
       </h1>
 
-    <p>Date: mmm dd, 2019</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: December 19, 2019</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.17.8 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -88,14 +90,7 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-   
-   <!-- While this release is in development, the     -->
-   <!-- list of new warnings is kept in               -->
-   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
+ <li>None yet</li>
 </ul>
 
 
@@ -218,7 +213,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -227,18 +221,17 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.8/JMRI.4.17.8+R7c13c6b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.17.8/JMRI.4.17.8+R7c13c6b.dmg</a><br/>
+  sha256: 68792c4cb0291be7c9d0c0ff48b0d39159830ce25769befef2a0078bdb2719b0 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.8/JMRI.4.17.8+R7c13c6b.exe">https://github.com/JMRI/JMRI/releases/download/v4.17.8/JMRI.4.17.8+R7c13c6b.exe</a><br/>
+   sha256: 5b02962294e6b8a79fbbedd51773d3cc37a4ec0c75c04249426df1a012b0346c</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.8/JMRI.4.17.8+R7c13c6b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.17.8/JMRI.4.17.8+R7c13c6b.tgz</a><br/>
+   sha256: 89cbacd4ea66b106833a11aa42f971efb3252ba8babec8c2136e52932e3afa6e</li>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -246,9 +239,11 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.17.8/">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
  
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.17.7.shtml">Test Release 4.17.7</a>:</h2>
@@ -256,13 +251,16 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.17.8+is%3Amerged">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- new release note items are kept in            -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
+    <h3>New / Updated decoder definitions</h3>
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>TSU2 Steam fix legacy function names</li>
+            </ul>
+
+        <h4>TCS</h4>
+            <ul>
+                <li>WOW fix bug in CV22</li>
+            </ul>
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
