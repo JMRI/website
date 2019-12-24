@@ -22,7 +22,7 @@
       Release Notes for JMRI 4.18 release
       </h1>
 
-    <p>Date: MMM nn, 2019</p>
+    <p>Date: December 23, 2019</p>
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 4.18 of JMRI/DecoderPro is available for download.</p>
 
@@ -207,21 +207,19 @@ People are welcome to distribute the download files further via other websites, 
 If you want to check that you've received original, unmodified versions, please
 check the files against the checksums shown below.
  
-<!-- 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.dmg">https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.dmg</a><br/>
-  sha256: 0e5172155ab02e5d67016c5338665736e4ffcc33e8a2ae6dc5bdd84e83ef11e0 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.18/JMRI.4.18+R37ad3d0.dmg">https://github.com/JMRI/JMRI/releases/download/v4.18/JMRI.4.18+R37ad3d0.dmg</a><br/>
+  sha256: 8b4fcd4306be2fdadb7fc06fc6451ffda7d7358c5701564efd5eecf3d82fda30 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.exe">https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.exe</a><br/>
-   sha256: 3ce4ca2f734bd8c3221705878bd82c3e8774a5db828a4ed397b8737290818e8d</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.18/JMRI.4.18+R37ad3d0.exe">https://github.com/JMRI/JMRI/releases/download/v4.18/JMRI.4.18+R37ad3d0.exe</a><br/>
+   sha256: 58aee8be31846eadfe77fee8ebf59071f0909cc09ecc3c7fe54a47fbf046978a</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.tgz">https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.tgz</a><br/>
-   sha256: 9e9123ffca62f488b7bf7ce16143eaf00565eba8017b85afde914d8e382183cb</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.18/JMRI.4.18+R37ad3d0.tgz">https://github.com/JMRI/JMRI/releases/download/v4.18/JMRI.4.18+R37ad3d0.tgz</a><br/>
+   sha256: 2f7dfdde1ee193d6e9cfe2e9251a88e5cb2086786413bf65ece205acd0917f4d</li>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -229,69 +227,22 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.18/">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
 
 <h2>Changes since <a href="jmri4.14.shtml">production release 4.14</a>:</h2>
 
 <p>
 This production version is made from test releases 4.17.1 through 4.17.9.  The 
-<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2019-12-05">full list of changes</a>
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2019-07-05">full list of changes</a>
 in those is 
-<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2019-12-05">available from our code repository</a>.
-
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2019-07-05">available from our code repository</a>.
 
 
     <h3>Hardware Support</h3>
-        <ul>
-          <li></li>
-        </ul>
-
-	    <h4>Anyma DMX512</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-	    <h4>Bachrus Speedo</h4>
-            <ul>
-                <li></li>
-            </ul>
-		
-        <h4>C/MRI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>DCC++</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>DCC4pc</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Direct</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ESU</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Hornby</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>JMRI Simple Server/JMRI Client</h4>
-            <ul>
-                <li></li>
-            </ul>
 
         <h4>LocoNet</h4>
             <ul>
@@ -303,42 +254,12 @@ in those is
                     acting as the command station.</li>
             </ul>
 
-        <h4>Maple</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Marklin CS2</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>MERG CBUS</h4>
             <ul>
                 <li>Fixed issue with Throttle Direction Changes ( while moving ) not being sent to Command Station</li>
                 <li>The event status of JMRI Turnouts can be queried via CBUS commands AREQ / ASRQ.</li>
                 <li>CBUS Node Manager - CMDERR5 support for CANMIO U and general improvements.</li>
                 <li>CBUS Reporters now respond to relevant outgoing CBUS messages.</li>
-            </ul>
-
-        <h4>MQTT</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Oak Tree</h4>
-            <ul>
-                <li></li>
             </ul>
 
         <h4><a href="http://openlcb.org">OpenLCB</a></h4>
@@ -357,50 +278,6 @@ in those is
                   </li>
             </ul>
 
-        <h4>RFID</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Roco z21/Z21</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Secsi</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>SPROG</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TAMS</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>TMCC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Zimo MXULF</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZTC</h4>
-            <ul>
-                <li></li>
-            </ul>
 
     <h3>New / Updated decoder definitions</h3>
         <ul>
@@ -411,120 +288,15 @@ in those is
           <li>The list of DCC manufacturers and ID numbers has been updated.</li>
         </ul>
 
-        <h4>Arnold</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Bachmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>BLI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>BNM Hobbies</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>CT Elektronik</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digikeijs (Digirails)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li></li>
-            </ul>
-
         <h4>Doehler &amp; Haas</h4>
             <ul>
                 <li>Alain Le Marchand updated some definitions</li>
-            </ul>
-
-        <h4>ESU</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Hornby</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Kuehn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>LaisDCC</h4>
-            <ul>
-                <li></li>
             </ul>
 
         <h4><a href="http://www.ldhtrenes.com.ar">LDH</a></h4>
             <ul>
                 <li>Fixed some duplicate definitions of "Motor Output 2"</li>
                 <li>Updated from DTD to Schema checks</li>
-            </ul>
-
-        <h4>Lenz</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MGP</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>Mistral Train Models</h4>
-             <ul>
-                <li></li>
-             </ul>
-
-        <h4>MTH</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>MRC</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>NCE</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Norsk Modelljernbane (NJM)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>QSI</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Rautenhaus</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>RR-CirKits</h4>
-            <ul>
-                <li></li>
             </ul>
 
         <h4>SoundTraxx</h4>
@@ -548,69 +320,12 @@ in those is
                 <li>WOW add CV 177-181 and new bit in CV182</li>
                 <li>WOW fix bug in CV22</li>
             </ul>
-	    
-	    <h4>Team Digital</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Technologistic (train-O-matic)</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Trix Modelleisenbahn</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Uhlenbrock</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Umelec</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Viessmann</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Wangrow</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>ZIMO</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Miscellaneous</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    <h3>DecoderPro</h3>
-        <a id="DecoderPro" name="DecoderPro"></a>
-        <ul>
-            <li></li>
-        </ul>
 
    <h3>Dispatcher</h3>
         <a id="Dispatcher" name="Dispatcher"></a>
         <ul>
              <li>When a train is scheduled to re-start every X minutes this behaviour now continues over midnight times.<br>
 	        Eg. a train which restarts every 10 minutes and completes the route at 23:55 will resume at 00:05.</li>
-        </ul>
-
-   <h3>Internationalization</h3>
-        <a id="I18N" name="I18N"></a>
-        <ul>
-            <li></li>
         </ul>
 
     <h3>Layout Editor</h3>
@@ -636,45 +351,10 @@ in those is
  	        <li>Blocks can be automatically created when assigned to track components in the edit dialogs.</li>
         </ul>
 
-    <h3>Logix</h3>
-        <a id="Logix" name="Logix"></a>
-        <ul>
-          <li></li>
-        </ul>
-
-    <h3>Operations</h3>
-        <a id="Operations" name="Operations"></a>
-        <ul>
-            <li></li>
-        </ul>
-
-   <h3>Panel Editors</h3>
-        <a id="PE" name="PE"></a>
-        <ul>
-            <li></li>
-        </ul>
-        <h4>CTC Tool</h4>
-            <a id="PE-CTC" name="PE-CTC"></a>
-            <ul>
-                <li></li>
-            </ul>
-
     <h3>Preferences</h3>
         <a id="Preferences" name="Preferences"></a>
         <ul>
             <li>Updated saved window positions to cope with multiple screen setups (<a href="https://github.com/JMRI/JMRI/pull/7616">PR #7616</a>)</li>
-        </ul>
-
-    <h3>Resources</h3>
-        <a id="Resources" name="Resources"></a>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Roster</h3>
-        <a id="Roster" name="Roster"></a>
-        <ul>
-            <li></li>
         </ul>
 
     <h3>Turnouts, Lights, Sensors and other elements</h3>
@@ -718,52 +398,6 @@ in those is
                 configuration and panel files.
             </li>
         </ul>
-        <h4>Signal Systems</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Heads</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-        <h4>Signal Masts</h4>
-            <ul>
-                <li></li>
-            </ul>
-            
-    	<h4>Signal Groups</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-    	<h4>Simple Signal Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-	    <h4>NX Entry/Exit Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-	    <h4>USS CTC Logic</h4>
-            <ul>
-                <li></li>
-            </ul>
-
-   <h3>Switchboard Editor</h3>
-        <a id="SW" name="SW"></a>
-        <ul>
-            <li></li>
-        </ul>
-
-    <h3>Timetable</h3>
-        <a id="Timetable" name="Timetable"></a>
-        <ul>
-            <li></li>
-        </ul>
 
    <h3>Tracker</h3>
         <a id="Tr" name="Tr"></a>
@@ -782,24 +416,20 @@ in those is
             <li>Configuring signals for use with warrants has been added to CircuitBuilder.</li>
             <li>Several checks for errors and omissions have been added to CircuitBuilder.
             See the updated help page for details on this and the new features.</li>
+            <li>Changes made in either the OBlock Tables tool or the CircuitBuilder tool
+            are reflected in the other tool - i.e. each updates the other.</li>
+            <li>When the names of OBlocks, Portals or Paths are made, Warrants are
+            updated to run as they did with the previous names.</li>
+            <li>If an OBlock, Portal or Path is deleted, a Warrant using one of these 
+            elements will be broken. When this occurs, a dialog is displayed listing
+            the disabled Warrants. The user may decide to remove these warrants and 
+            continue or to cancel the deletions.</li>
         </ul>
 
    <h3>Web Access</h3>
         <a id="WA" name="WA"></a>
         <ul>
             <li>Certain Tables menu items now support changing state by clicking on state in list</li>
-        </ul>
-
-   <h3>WiThrottle Server</h3>
-        <a id="WS" name="WS"></a>
-        <ul>
-            <li></li>
-        </ul>
-        
-   <h3>Virtual Sound Decoder</h3>
-        <a id="VSD" name="VSD"></a>
-        <ul>
-            <li></li>
         </ul>
 
     <h3>Miscellaneous</h3>
@@ -841,25 +471,6 @@ in those is
         </ul>
 
         
-
-
-<!- 4.17.7 ->
-
-   <h3>Warrants</h3>
-        <a id="Wt" name="Wt"></a>
-        <ul>
-            <li>Changes made in either the OBlock Tables tool or the CircuitBuilder tool
-            are reflected in the other tool - i.e. each updates the other.</li>
-            <li>When the names of OBlocks, Portals or Paths are made, Warrants are
-            updated to run as they did with the previous names.</li>
-            <li>If an OBlock, Portal or Path is deleted, a Warrant using one of these 
-            elements will be broken. When this occurs, a dialog is displayed listing
-            the disabled Warrants. The user may decide to remove these warrants and 
-            continue or to cancel the deletions.</li>
-        </ul>
-
-<!- 4.17.8 if needed ->
-
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
