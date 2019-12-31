@@ -87,22 +87,44 @@ from
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
 
-<ul>
-   
-   <!-- While this release is in development, the     -->
-   <!-- list of new warnings is kept in               -->
-   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
+    <li>JMRI 4.19.1 and later enforce the standard form of system names,
+        where the system is denoted by a single letter or a letter plus digits.
+        Some users of JMRI 4.18 or earlier might have incompatible values.
+        If you have one of these hardware connections:
+        <ul>
+            <li>Anyma DX512 using “DX”
+            <li>DCC++ using “DCCPP"
+            <li>DCC4PC using “DP"
+            <li>JSON client using “json”
+            <li>MRC using “MR"
+            <li>Marklin CS2 using “MC"
+            <li>Raspberry PI using “PI"
+            <li>TAMS using “TM”
+        </ul>
+        you may have to migrate. Please update to JMRI 4.18 prior 
+        to installing JMRI 4.19.1 (or later) and check the JMRI Console to
+        see if there are any instructions there. See the 
+        <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">migration page</a>
+        for additional information.
+    </li>
+    <li>
+        The <code>getBeanByUserName<code> and <code>getBeanBySystemName<code> 
+        calls in the various <code>Manager<code> classes
+        are no longer needed with Java 8 and have been deprecated for eventual
+        removal.  Their replacements are 
+        <code>getByUserName<code> and <code>getBySystemName<code> 
+        respectively. 
+        If you use <code>getBeanByUserName<code> and <code>getBeanBySystemName<code> 
+        in script or Java code you've written, please 
+        switch to the new names.
+    </li>
 </ul>
 
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.18.shtml#warnings">JMRI 4.18 release note</a> for more warnings predating the 4.18 development series,
-including its pointers to earlier versions.
+See the <a href="jmri4.18.shtml#warnings">JMRI 4.18 release note</a> for more warnings predating the 4.19 development series,
+including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version.
 
 <ul>
@@ -133,75 +155,6 @@ These may be relevant to you if you're updating from an earlier version.
         read from the earlier file(s). This will result in a big change to the order
         the first time a file is re-written, but after that it should be much more stable.</li>
         
-<li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
-        Remembering the location and size of layout panels created and maintained
-        using Layout Editor, Panel Editor, Control Panel Editor, and Switchboard
-        Editor is no longer dependent on saving the panel.  The location and size
-        values are retained using the same processes used by other JMRI windows.  This
-        makes the window management behavior consistent.  To continue using the
-        old behavior, go to <strong>Preferences >> Display</strong> and enable
-        <strong>Use old location and size logic for editor panels</strong>.
-
-<li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
-        Starting in <a href="jmri4.15.6.shtml">JMRI 4.15.6</a>, Memories
-        must have valid system names of the form "IM" folllowed by something.
-        "IM123" and "IMEAST" are both valid. 
-        The system name "IM", all by itself, has never been valid, but JMRI 
-        will now be enforcing that:
-        <ul>
-            <li>You won't be able to create a memory with that name via
-                the Memory table or scripts
-            <li>If you have that name in a panel file, an error will be 
-                logged and the panel file won't load. You'll have to 
-                remove it from he file or rename it in the file
-                before loading it.
-        </ul>
-        JMRI needs to start enforcing this in preparation for some
-        future code that will appear later this year.
-</li>
-
-<li><span class="since">Since <a href="jmri4.15.5.shtml">JMRI 4.15.5</a></span>
-        The handling of Turnout system names has been updated
-        to be (more, hopefully completely) consistent with the
-        <a href="/help/en/html/doc/Technical/Names.shtml">planned approach</a>.
-        Specifically, case now (generally) matters in system names:
-        <ul>
-            <li>You can now have an internal turnout named "ITsome lower case name".
-            <li>But note you can no longer refer to "ITSOME LOWER CASE NAME" or
-                "ITSome LoWeR cAse Name" and get the same one.
-        </ul>
-        This should not require any migration for stored configurations or 
-        panel files, as they have been automatically been being kept consistent 
-        since JMRI 4.8.  But you might have case errors in i.e. scripts which
-        will fixing inconsistent references in your scripts.
-        Of course, bugs are always possible. If you find a place where 
-        names seem to be handled inconsistently, please let us know!
-
-<li><span class="since">Since <a href="jmri4.15.4.shtml">JMRI 4.15.4</a></span>
-        The calculation of Turnout Addresses for the
-        <a href="/help/en/html/hardware/dccpp/Turnouts.shtml" target="_blank">
-        Direct DCC Accessory Command ("a" command)</a> mode
-        has been fixed (commands are now sent to the correct accessory address rather
-        than 4 less than the nominated hardware address). For pre-existing panels,
-        changes will need to be made to either the actual decoder address or the panel.
-        If help is required, ask on the
-        <a href="https://groups.io/g/jmriusers/" target="_blank">
-        jmriusers</a> group.
-
-<li><span class="since">Since <a href="jmri4.15.3.shtml">JMRI 4.15.3</a></span>
-        The prefix that identifies a layout connection should be a single letter, like "N" or "L",
-        or a letter and some digits, like "K2" or "D3". Some older systems used to have
-        longer "legacy system prefixes" like "DX", "DCCPP", "DP", "MR", "MC", "PI", and "TM".
-        Those <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">legacy system prefixes</a>
-        will now cause JMRI to issues a warning at startup. In this release, JMRI will
-        still work with those prefixes, but they will need to be migrated to the proper form soon;
-        JMRI 4.17.1 and later will <u>require</u> that this have been fixed.
-        Therefore, this warning can't be suppressed
-        without migrating the prefix in the connection configuration (and any associated
-        panel files and scripts).
-        If you're getting this warning and therefore need to do that migration,
-        <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">migration page</a>.</li>
-
 <li><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
     <ul>
@@ -257,13 +210,56 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.1+is%3Amerged">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- new release note items are kept in            -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
+
+    <h3>Hardware Support</h3>
+        <ul>
+          <li>JMRI 4.19.1 and later enforce the standard form of system names,
+                where the system is denoted by a single letter or a letter plus digits.
+                Some users of JMRI 4.18 or earlier might have incompatible values.
+                See warnings above.</li>
+        </ul>
+
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <ul>
+            <li></li>
+        </ul>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li>Improved how the XML files defining a signal system
+                    are validated.  Unfortunately, some files are already inconsistent.
+                    Fixed a number of files with invisible appearance definitions
+                    by duplicating the appearance file (i.e. adding a -b version with
+                    the different appearances).  Temporarily commented out 
+                    some of the 
+                    <a href="http://jmri.org/xml/schema/appearancetable.xsd">schema checks</a>
+                    until the existing files can be resolved.
+                    </li>
+                <li>Bob Milhaupt and Greg McCarthy updated the 
+                    B&O semaphore,
+                    NW-1981,
+                    SOU-1981 and 
+                    WM-1980 signal systems to correct some internal inconsistencies.
+                    </li>
+            </ul>
+
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>The <code>getBeanByUserName<code> and <code>getBeanBySystemName<code> 
+                calls in the various <code>Manager<code> classes
+                are no longer needed with Java 8 and have been deprecated for eventual
+                removal.  Their replacements are 
+                <code>getByUserName<code> and <code>getBySystemName<code> 
+                respectively.
+                If you use <code>getBeanByUserName<code> and <code>getBeanBySystemName<code> 
+                in script or Java code you've written, please 
+                switch to the new names.
+            </li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
