@@ -26,7 +26,9 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.19.1 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -108,13 +110,13 @@ from
         for additional information.
     </li>
     <li>
-        The <code>getBeanByUserName<code> and <code>getBeanBySystemName<code> 
-        calls in the various <code>Manager<code> classes
+        The <code>getBeanByUserName</code> and <code>getBeanBySystemName</code> 
+        calls in the various <code>Manager</code> classes
         are no longer needed with Java 8 and have been deprecated for eventual
         removal.  Their replacements are 
-        <code>getByUserName<code> and <code>getBySystemName<code> 
+        <code>getByUserName</code> and <code>getBySystemName</code> 
         respectively. 
-        If you use <code>getBeanByUserName<code> and <code>getBeanBySystemName<code> 
+        If you use <code>getBeanByUserName</code> and <code>getBeanBySystemName</code> 
         in script or Java code you've written, please 
         switch to the new names.
     </li>
