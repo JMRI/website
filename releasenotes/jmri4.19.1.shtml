@@ -235,12 +235,16 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.1+i
                 See warnings above.</li>
         </ul>
 
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+	        <li>George Warner added "Align to grid" options</li>
+	        <li>George Warner added the ability to rotate the Layout Editor display</li>
+        </ul>
+
 
     <h3>Signals</h3>
         <a id="Signals" name="Signals"></a>
-        <ul>
-            <li></li>
-        </ul>
         <h4>Signal Systems</h4>
             <ul>
                 <li>Improved how the XML files defining a signal system
@@ -264,13 +268,15 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.1+i
     <h3>Miscellaneous</h3>
         <a id="Misc" name="Misc"></a>
         <ul>
-            <li>The <code>getBeanByUserName<code> and <code>getBeanBySystemName<code> 
-                calls in the various <code>Manager<code> classes
+            <li>The JMRI Demo shortcut has been removed from Windows installs</li>
+            <li>
+                The <code>getBeanByUserName</code> and <code>getBeanBySystemName</code> 
+                calls in the various <code>Manager</code> classes
                 are no longer needed with Java 8 and have been deprecated for eventual
                 removal.  Their replacements are 
-                <code>getByUserName<code> and <code>getBySystemName<code> 
-                respectively.
-                If you use <code>getBeanByUserName<code> and <code>getBeanBySystemName<code> 
+                <code>getByUserName</code> and <code>getBySystemName</code> 
+                respectively. 
+                If you use <code>getBeanByUserName</code> and <code>getBeanBySystemName</code> 
                 in script or Java code you've written, please 
                 switch to the new names.
             </li>
