@@ -63,7 +63,10 @@ see our
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>MERG CBUS - Throttle direction changes are not always sent to the Layout, resolved in 4.17.2</li>
+    <li>The program might fail to start if there's a consist.xml
+        file in the preferences directory.  The workaround is to remove
+        that file.  This is fixed in the 
+        <a href="jmri4.19.2.shtml">JMRI 4.19.2 test release</a>.</li>
 </ul>
 <!--
 If any of those affect you, please either 
