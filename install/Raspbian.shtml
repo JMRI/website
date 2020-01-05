@@ -97,9 +97,18 @@ JMRI installation consists of two stages: install Java and install JMRI.
   <li>...and install it.
 	<p>
 	Uncompress/untar the file your download. Double click on the .tgz file to open the Tar, then click Extract. This will create a new "JMRI" folder.
-	<p class="note">Each JMRI release is an independent set of files: It's intended to be used as a whole. Each release provides new files, and sometimes removes old files. You should therefore not expand the download into the same place as an existing JMRI installation. Instead, expand it into a separate location, and move in to it's final destination, completely replacing any previous version of JMRI.
+	<p class="note">Each JMRI release is an independent set of files: It's intended to be used as a whole. 
+	Each release provides new files, and sometimes removes old files. 
+	You should therefore not expand the download into the same place as an existing JMRI installation. 
+	
+	Instead, expand it into a separate location, 
+	backup any user created files in the JMRI directory and delete the JMRI directory. 
+	Then move the extracted JMRI directory and its contents in to it's final destination, 
+	completely replacing any previous version of JMRI.
 	<p>
-	To install, you just have to move that new JMRI folder to where you want it on your computer.The latest test releases of JMRI include support for the ARM v7 processor, so extracting is all you need to do. <a href="#dave">[2]</a>
+	To install, you just have to move that new JMRI folder to where you want it on your computer.
+	The latest test releases of JMRI include support for the ARM v7 processor, 
+	so extracting is all you need to do. <a href="#dave">[2]</a>
 	
 	<p>JMRI 3.10.1 did not, which required some startup script changes as the Pi2 runs an ARM7 processor. An installation script
 	was written by Matthew Macdonald-Wallace to modify certain libraries so that JMRI would run.
