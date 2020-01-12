@@ -102,13 +102,26 @@ from
 
 <ul>
    
-   <!-- While this release is in development, the     -->
-   <!-- list of new warnings is kept in               -->
-   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
+    <li>The system names for Routes are required to start with "IO" to avoid
+    	ambiguity or confusion with Reporters (the system names of which start
+    	with "IR"). JMRI 4.19.2 or later should automatically rename Routes
+    	correctly, but it is possible that references to those Routes will need
+    	to be updated.
+	  </li>
+    <li>The Logix system names for LRoutes (RTX*) and Sensor Groups (SYS) now start with
+    "IX:".  These changes are <strong>NOT</strong> backward compatible.  Once a panel
+    xml file has been saved with the new names, opening it in previous versions of JMRI will
+    result in errors.
+      <ul>
+        <li>The RTXINITIALIZER Logix will fail with an error message.</li>
+        <li>The Sensor groups will not be active.  Attempting to edit them will result
+        in a Java null pointer exception.</li>
+      </ul>
+    To recover, delete IX:SYS and/or IX:RTXINITIALIZER from the Logix table and re-create
+    them.  Hint:  Use the Logix table Select >> Browse feature to get the current contents
+    before deleting them.
+    </li>
+
 </ul>
 
 
@@ -235,13 +248,100 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.2+is%3Amerged">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- new release note items are kept in            -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
+    <h3>Hardware Support</h3>
+        <ul>
+          <li>Fixed a problem introduced in JMRI 4.19.1 that
+          prevented the function buttons in the on-screen throttles
+          from working on some types of computers.</li>
+          <li>Fixed a problem introduced in JMRI 4.17.7 that
+          causes a partial crash when reading in historical
+          consist data from the consist.xml file.
+        </ul>
+
+    <h3>Logix</h3>
+        <a id="Logix" name="Logix"></a>
+        <ul>
+          <li>The system names for generated Logix definitions created by Sensor Groups (SYS),
+          LRoutes (RTX*), Route Exports (RTX*), USS CTC and LE Slips now have a standard Logix
+          prefix of "IX:".  The existing names in panel xml files will be automatically
+          migrated during panel loading.  A dialog box will be displayed with the results.
+          The details of the affected Logix renames will be displayed in the JMRI System
+          console.  The migration will also apply to any other Logix which has a system
+          name that does not start with IX.
+          </li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+
+        <h4>Signal Masts</h4>
+            <ul>
+                <li>Matrix Signal Masts can now drive up to 10 outputs.</li>
+            </ul>
+
+   <h3>Web Access</h3>
+        <a id="WA" name="WA"></a>
+        <ul>
+            <li>The RESTful API end point
+				<a href="http://127.0.0.1:12080/json/version">/json/version</a>
+				has been added to provide a list of JMRI JSON API versions
+				supported by the running JMRI instance.</li>
+			<li>The JSON services have been rewritten to potentially support
+				multiple version of the JMRI JSON API in a future release.</li>
+            <li>JSON services now optionally take a version number as part of
+				the URL. See the
+				<a href="https://www.jmri.org/JavaDoc/doc/jmri/server/json/package-summary.html#package.description">JSON Server JavaDocs</a>
+				for details of this change. This should have no impact on
+				existing clients.</li>
+            <li>The JMRI JSON API version has been incremented to 5.3.0 to
+            	reflect the above changes.</li>
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>In the
+            <a href="https://groups.io/g/jmriusers/message/165236">jmriusers forum</a>
+            it has been suggested to open a JMRI throttle
+            automatically when a VSDecoder via Roster Entry is added.
+            VSD does already save the Path and the Profile of a VSDecoder in the Roster Media.
+            This PR adds a new attribute: VSDecoder_LaunchThrottle = yes launches
+            a JMRI throttle automatically.
+            The new attribute is stored when the user clicks the "Save to Roster" button.
+            The new attribute can be changed manually or by a Jython script.</li>
+            <li>Rework on Auto-Load, see
+            <a href="https://jmri.org/help/en/manual/DecoderPro/Main_VSD.shtml#auto-load">the details</a>.</li>
+            <li>Added a further action "STOP_AT_ZERO" for the "ENGINE_STARTSTOP" trigger. See the
+            <a href="https://jmri.org/help/en/manual/DecoderPro/VSD_File_and_Config.shtml#engine-startstop">VSD documentation</a></li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Petr Sidlo added a Pragotron clock, which is digital clock
+                found in many European train stations.</li>
+            <li>The <code>getBeanByUserName<code> and <code>getBeanBySystemName<code>
+                calls in the various <code>Manager<code> classes
+                are no longer needed with Java 8 and have been deprecated for eventual
+                removal.  Their replacements are
+                <code>getByUserName<code> and <code>getBySystemName<code>
+                respectively.
+                If you use <code>getBeanByUserName<code> and <code>getBeanBySystemName<code>
+                in script or Java code you've written, please
+                switch to the new names.
+            </li>
+		    <li>The system names for Routes are required to start with "IO" to avoid
+		    	ambiguity or confusion with Reporters (the system names of which start
+		    	with "IR"). JMRI 4.19.2 or later should automatically rename Routes
+		    	correctly, but it is possible that references to those Routes will need
+		    	to be updated.
+			    </li>
+			<li>Daniel Bergqvist provided information on
+			    <a href="jmri.org/help/en/html/doc/Technical/githubdesktopinto.shtml">how to use the GitHub Desktop tool</a>
+			    for JMRI development.
+			<li>Updated the JDOM library from 2.0.5 to 2.0.6. Removed the unused JDOM 1 support.</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
