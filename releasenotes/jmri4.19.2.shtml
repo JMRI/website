@@ -320,13 +320,13 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.2+i
         <ul>
             <li>Petr Sidlo added a Pragotron clock, which is digital clock
                 found in many European train stations.</li>
-            <li>The <code>getBeanByUserName<code> and <code>getBeanBySystemName<code>
-                calls in the various <code>Manager<code> classes
+            <li>The <code>getBeanByUserName</code> and <code>getBeanBySystemName</code>
+                calls in the various <code>Manager</code> classes
                 are no longer needed with Java 8 and have been deprecated for eventual
                 removal.  Their replacements are
-                <code>getByUserName<code> and <code>getBySystemName<code>
+                <code>getByUserName</code> and <code>getBySystemName</code>
                 respectively.
-                If you use <code>getBeanByUserName<code> and <code>getBeanBySystemName<code>
+                If you use <code>getBeanByUserName</code> and <code>getBeanBySystemName</code>
                 in script or Java code you've written, please
                 switch to the new names.
             </li>
