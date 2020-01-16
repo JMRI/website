@@ -5,31 +5,34 @@
     <div id="mBody">
 
 	<div id="side"> <!-- Block of text on left side of page -->
-	    <div style="text-align: center">Info on JMRI:</div>
+	    <div style="text-align: center">Working with JMRI&reg;</div>
 	    <dl>
 
-		<dt>Software with JMRI Connections</dt>
+		<dt><h3>Applications with JMRI Connections</h3></dt>
 		<dd>
 			<ul>
-			  <li><a href="/community/connections/XtrkCadReader/index.shtml">XtrkCadReader</a>
-			  <li><a href="/community/connections/CATS.shtml">CATS</a>
+			  
+			  <li><a href="XtrkCadReader/index.shtml">XtrkCadReader</a>
+			  <li><a href="CATS/CATS.shtml">CATS</a>
 			  <li><a href="http://www.modelrailroadmanager.com/">Model Railroad Manager</a>
+			  <li><a href="ManifestCreator/index.shtml">Manifest Creator</a></li>
+                          <li><a href="TrainCrew/index.shtml">TrainCrew</a></li>
 			</ul>
 		</dd>
 
-		<dt>Other Info</dt>
+		<dt><h3>Examples of JMRI Use</h3></dt>
 		<dd>
 			<ul>
-			  <li><a href="/community/examples/Gallery.shtml">Examples of PanelPro Uses</a>
+			  <li><a href="/community/examples/Gallery.shtml">PanelPro Use Examples</a>
 			</ul>
 		</dd>
+
+                <!--#include virtual="/help/en/parts/SidebarApplications.shtml" -->    
 
 	    </dl>
-	</div>
 
-    <!-- Sidebar-Tail -->
-    <script type="text/javascript" src="/web/js/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="/web/js/here.js"></script>
-    <!-- /Sidebar-Tail -->
+    <!--#include virtual="/help/en/parts/SidebarTail.shtml" -->    
+    
+    </div>
 
 <!-- /Sidebar.shtml -->
