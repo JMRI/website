@@ -4,32 +4,46 @@
 
     <div id="mBody">
 
-	<div id="side"> <!-- Block of text on left side of page -->
-	    <div style="text-align: center">Working with JMRI&reg;</div>
-	    <dl>
+    <div id="side"> <!-- Block of text on left side of page -->
+        <div style="text-align: center">Working with JMRI&reg;</div>
+        <dl>
 
-		<dt><h3>Applications with JMRI Connections</h3></dt>
-		<dd>
-			<ul>
-			  
-			  <li><a href="XtrkCadReader/index.shtml">XtrkCadReader</a>
-			  <li><a href="CATS/CATS.shtml">CATS</a>
-			  <li><a href="http://www.modelrailroadmanager.com/">Model Railroad Manager</a>
-			  <li><a href="ManifestCreator/index.shtml">Manifest Creator</a></li>
-                          <li><a href="TrainCrew/index.shtml">TrainCrew</a></li>
-			</ul>
-		</dd>
+        <dt><h3><a href="/community/connections/CommunityConnectionsIndex.shtml"></a>Apps with JMRI Connections...</a></h3></dt>
+        <dd>
+          <ul>            
+            <li><a href="CATS/index.shtml">Crandic Automated Traffic System - CATS</a></li>
+            <li><a href="ManifestCreator/index.shtml">Manifest Creator</a></li>
+            <li><a href="TrainCrew/index.shtml">TrainCrew</a></li>
+            <li><a href="/help/en/packages/jmri/jmrit/withrottle/UserInterface.shtml">WiFi connected throttles</a></li>     
+            <li><a href="XtrkCadReader/index.shtml">XtrkCadReader</a> </li>
+          </ul>
+        </dd>
+        
+              <dt><h3>External Web Sites for Apps with JMRI Connections...</h3></dt>
+        <dd> YOU ARE LEAVING THE JMRI WEB SITE TO POSSIBLY UNSECURE WEB SITES...
+          <ul>        
+            <li><a href="http://www.anyrail.com" target="_blank">AnyRail export to JMRI</a></li>
+            <li><a href="http://cats4ctc.org" target="_blank">Crandic Automated Traffic System - CATS</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=digitrainspro.digitrainspro.hu&hl=en_US" target="_blank">DigiTrainsPro Throttle (Android)</li>
+            <li><a href="https://manifestcreator.weebly.com/" target="_blank">Mainfest Creator</a></li>     
+            <li><a href="http://www.modelrailroadmanager.com" target="_blank">Model Railroad Manager</a></li>
+            <li><a href="http://traincrew.conrail1285.com/" target="_blank">TrainCrew</a></li>
+            <li><a href="https://www.microsoft.com/en-us/p/train-throttle/9nblggh4vf5j?activetab=pivot:overviewtab" target="_blank">Train Throttle (Windows)</a></li>
+            <li><a href="https://apps.apple.com/app/id344172578" target="_blank">WiThrottle App (IOS)</a></li>
+            <li><a href="http://www.xtrkcad.org" target="_blank">XTrackCAD/XtrkCadReader</a></li>
+          </ul>
+        </dd>
 
-		<dt><h3>Examples of JMRI Use</h3></dt>
-		<dd>
-			<ul>
-			  <li><a href="/community/examples/Gallery.shtml">PanelPro Use Examples</a>
-			</ul>
-		</dd>
+        <dt><h3>Examples of JMRI Use</h3></dt>
+        <dd>
+            <ul>
+              <li><a href="/community/examples/Gallery.shtml">PanelPro Use Examples</a>
+            </ul>
+        </dd>
 
-                <!--#include virtual="/help/en/parts/SidebarApplications.shtml" -->    
+       <!--#include virtual="/help/en/parts/SidebarApplications.shtml" -->    
 
-	    </dl>
+        </dl>
 
     <!--#include virtual="/help/en/parts/SidebarTail.shtml" -->    
     
