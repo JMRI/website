@@ -22,7 +22,7 @@
 <body>
   <!--#include virtual="/Header" -->
   <div id="mBody">
-    <!--#include virtual="Sidebar.shtml" -->
+    <!--#include virtual="../Sidebar.shtml" -->
     <div id="mainContent">
       <!-- Page Body -->
 
@@ -47,6 +47,10 @@
      Run as Administrator) to install.
      <br>it is not recommended to run JMRI as Administrator
      all of the time, just to install TrainCrew.</p>
+     
+     
+     <p>TrainCrew code is available on <a href="https://github.com/ekapus/TrainCrew">GitHub here.</a>
+     </p>
      
       <!--#include virtual="/Footer" -->
     </div><!-- close #mainContent -->
