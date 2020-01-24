@@ -18,19 +18,13 @@
 </head>
 
 <body>
-  <!--#include virtual="../../../Header.shtml" -->
+  <!--#include virtual="/Header" -->
   <div id="mBody">
     <!--#include virtual="../Sidebar.shtml" -->
     <div id="mainContent">
       <!-- Page Body -->
 
         <h1>JMRI: Manifest Creator</h1>
-        
-       <p class="important">
-       This software is no longer for sale but author (Tom Stack) will discuss features and techniques
-       used with interested persons.
-       </p> <!-- Per Tom Stack 01-20-2020 by @jerryg -->
-        
         Manifest Creator is an Excel-based add-on to JMRI that can provide
         train manifests and switch lists in a number of formats.
      
