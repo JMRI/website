@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <!--#include virtual="/Header" -->
+  <!--#include virtual="../../Header.shtml" -->
   <div id="mBody">
     <!--#include virtual="Sidebar.shtml" -->
     <div id="mainContent">
@@ -85,7 +85,9 @@
      <dt><h2><a href="http://www.modelrailroadmanager.com" target="_blank">Model Railroad Manager</a> [...]</h2></dt>
        <dd>Written by Tom Stack, Model Railroad Manager is an integrated system for model 
        railroad inventory, operations, control, dispatching and
-       automation. It can access local or remote JMRI-connected layouts.
+       automation. It can access local or remote JMRI-connected layouts. 
+       [This software is no longer for sale but the author will discuss features and techniques
+       used with interested persons.] <!-- Per Tom Stack 01-20-2020 by @jerryg2003 -->
        </dd>
  
            
