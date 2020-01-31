@@ -3,18 +3,17 @@
 
 <html lang="en">
 <head>
-  <meta name="generator" content=
-  "HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.17), see www.w3.org">
+  <meta name="author" content="jerryg2003">
 
   <title>JMRI: Applications That Connect with JMRI</title>
   <!-- Style -->
   <meta http-equiv="Content-Type" content=
   "text/html; charset=us-ascii">
-  <link rel="stylesheet" type="text/css" href="/css/default.css"
+  <link rel="stylesheet" type="text/css" href="../../css/default.css"
   media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css"
+  <link rel="stylesheet" type="text/css" href="../../css/print.css"
   media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
+  <link rel="icon" href="../../images/jmri.ico" type="image/png">
   <link rel="home" title="Home" href="/">
   <!-- /Style -->
 </head>
@@ -31,6 +30,8 @@
     <p> 
        Hobbyists have created applications that work with JMRI to provide extra capabilities.
        Many of them are listed here with links to their external web sites and further information on how to use them with JMRI.
+       [Information is believed to be correct as of time of last update.  Please report any changes or additions so JMRI community members
+       may make updates.]
     </p>   
 
     <dl>     
@@ -71,9 +72,23 @@
             You can download it from 
             <a href="https://play.google.com/store/apps/details?id=digitrainspro.digitrainspro.hu&hl=en_US" target="_blank">Google play</a>
             or get more information from 
-            the <a href="help/en/package/jmri/jmrit/withrottle/UserInterface.shtml" target="_blank">JMRI help</a>.     
+            the <a href="../../help/en/package/jmri/jmrit/withrottle/UserInterface.shtml" target="_blank">JMRI help</a>.     
             </dd>
-    
+   
+          <dt><h2><a href="https://play.google.com/store/apps/details?id=jmri.enginedriver&hl=en_US" target="_blank">
+            EngineDriver (Throttle) Android App</a> [No charge] </h2></dt>
+            <dd class="im">
+            <a href="https://play.google.com/store/apps/details?id=jmri.enginedriver&hl=en_US" target="_blank"><img src="https://lh3.googleusercontent.com/tnHQoGheqnxuTQup0a3FEjZRVUh_P0pvFNNH3lR0Rzbapq-27ln0WDOHE721wuC4HCQ=s180-rw" width="60" height="60"  alt="Engine Driver on Android Phone"></a>
+            The 
+            <a href="https://play.google.com/store/apps/details?id=jmri.enginedriver&hl=en_US" target="_blank">Engine Driver Android app</a>
+            allows you to control your locomotives and your entire model railroad. Speed, direction, and up to 29 DCC
+            functions are supported for one to six locomotives or consists. You can also control layout power, turnouts, routes, 
+            and access JMRI web panels and windows.from Android phones and tablets. You can download it from 
+            <a href="https://play.google.com/store/apps/details?id=jmri.enginedriver&hl=en_US" target="_blank">Google play</a>
+            or get more information from 
+            the <a href="../../help/en/package/jmri/jmrit/withrottle/UserInterface.shtml" target="_blank">JMRI help</a>.     
+            </dd>
+ 
     
     <dt><h2><a href="https://manifestcreator.weebly.com/" target="_blank">Mainfest Creator</a> [No charge]</h2></dt>
        <dd>Manifest Creator is an Excel-based add-on to JMRI that can provide
@@ -115,11 +130,11 @@
         <dt><h2><a href="https://apps.apple.com/app/id344172578" target="_blank">WiThrottle App for IOS Devices</a>[Free and fee versions]</h2></dt>
             <dd class="im">
             <a href="https://apps.apple.com/app/id344172578" target="_blank">
-            <img src="/help/en/package/jmri/jmrit/withrottle/images/WiT150x250.png" height="125" width="75"
+            <img src="../../help/en/package/jmri/jmrit/withrottle/images/WiT150x250.png" height="125" width="75"
             alt="WiThrottle for Apple devices" title="WiThrottle for Apple devices"></a>
-           An easy-to-use interface to allow iPhone®, iPad®, and iPod touch® users to link to their model railroad with JMRI 
+           An easy-to-use interface to allow iPhone&reg;, iPad&reg;, and iPod touch&reg; users to link to their model railroad with JMRI 
            and other train control applications. More information about its use with JMRI available
-           <a href="/help/en/packages/jmri/jmrit/withrottle/UserInterface.shtml">here.</a>  A free version for controlling one 
+           <a href="../../help/en/packages/jmri/jmrit/withrottle/UserInterface.shtml">here.</a>  A free version for controlling one 
            locomotive can be <a href="https://apps.apple.com/us/app/withrottle-lite/id344190130" target="_blank">
            downloaded from the Apple Store.</a>
            </dd>
@@ -139,7 +154,7 @@
      </dl>
 
      
-   ><!--#include virtual="/Footer" -->
+    <!--#include virtual="../../Footer.shtml" -->
     </div><!-- close #mainContent -->
   </div><!-- close #mBody -->
 </body>
