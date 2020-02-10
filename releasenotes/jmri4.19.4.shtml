@@ -119,6 +119,24 @@ including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version.
 
 <ul>
+<li><span class="since">Since <a href="jmri4.19.3.shtml">JMRI 4.19.3</a></span>
+    <code>Manager.getSystemNameArray()</code> has been removed after being 
+    deprecated for two years. Please migrate to using
+    <code>Manager.getNamedBeanSet()</code> instead.  If you really
+    must have an array, use <code>Manager.getNamedBeanSet().toArray()</code>;
+    see <a href="https://www.techiedelight.com/convert-set-to-array-java/">this tutorial</a> for examples.
+</li>
+<li><span class="since">Since <a href="jmri4.19.3.shtml">JMRI 4.19.3</a></span>
+    The JavaCSV API has been replaced with the Apache Commons CSV API.
+    This may impact some scripts. See
+    <a href="https://github.com/JMRI/JMRI/blob/master/jython/TurnoutStatePersistence.py">TurnoutStatePersistence.py</a>
+    for an example of how to use the new CSV parsing API. If unable to
+    use the new API, the JAR for the old API can be
+    <a href="https://repo1.maven.org/maven2/net/sourceforge/javacsv/javacsv/2.0/javacsv-2.0.jar">downloaded</a>
+    and added to jmri.conf using the
+    <em><a href="https://www.jmri.org/help/en/html/doc/Technical/StartUpScripts.shtml">--cp:a=path/to/javacsv.jar</a></em>
+    parameter.</li>
+</li>
 <li><span class="since">Since <a href="jmri4.19.1.shtml">JMRI 4.19.1</a></span>
         JMRI now enforces the standard form of system names,
         where the system is denoted by a single letter or a letter plus digits.
@@ -151,7 +169,6 @@ These may be relevant to you if you're updating from an earlier version.
         in script or Java code you've written, please 
         switch to the new names.
     </li>
-
 
 <li><span class="since">Since <a href="jmri4.17.5.shtml">JMRI 4.17.5</a></span>
         JMRI's scripting support now defaults to the UTF-8 character encoding for all
