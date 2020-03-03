@@ -221,7 +221,21 @@ JMRI: A Java Model Railroad Interface
 		    </dd>
 	    </dl>
 
-	    <h2><a href="help/en/webindex.shtml">Help Pages Online</a></h2>
+       
+       <h2><a href="./install/Raspbian.shtml">JMRI on a Raspberry Pi!</a></h2>
+		<dl>
+		    <dt class="im">
+			<a href="./install/Raspbian.shtml"><img src="./images/ico-jmri.gif" width="44" height="44" alt="Raspberry Pi"></a>
+		    </dt>
+		    <dd>
+		    The Raspberry Pi is becoming increasingly popular as a small and cheap computer. 
+            JMRI will operate under the Raspbian operating system (Debian version of Linux).
+		    See here for <a href="./install/Raspbian.shtml">installation instructions.</a>.
+		   </dd>
+	    </dl>
+	 
+
+        <h2><a href="help/en/webindex.shtml">Help Pages Online</a></h2>
 		<dl>
 		    <dt class="im">
 			<a href="./download/index.shtml"><img src="./images/ico-jmri.gif" width="44" height="44" alt="JMRI Help System"></a>
