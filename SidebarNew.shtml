@@ -27,19 +27,17 @@
 		Also, there are <a href="./community/connections/CommunityConnectionsIndex.shtml">many apps with JMRI connections.</a>		
         </dd>
 		
-	    <!--#include virtual="./help/en/parts/SidebarTools.shtml" -->
+	    <!--#include virtual="./help/en/parts/SidebarToolsNew.shtml" -->
 
-        <!--#include virtual="./help/en/parts/SidebarLayoutAutomation.shtml" -->
+            <!--#include virtual="./help/en/parts/SidebarLayoutAutomationNew.shtml" -->
 		
-		<dt><h3><a href="./help/en/html/hardware/index.shtml">Supported hardware</a></h3></dt>
-        <dd>JMRI supports a wide range of DCC systems, command stations and protocols.</dd>
-	    <!-- If someday we want to show the whole list, use #include virtual="./help/en/parts/SidebarSupportedHardware.shtml" -->    
+	    <!--#include virtual="./help/en/parts/SidebarSupportedHardwareNew.shtml" -->    
 
-	    <!--#include virtual="./help/en/parts/SidebarInstall.shtml" -->    
+	    <!--#include virtual="./help/en/parts/SidebarInstallNew.shtml" -->    
 
 	  </dl>
 
-	 <!--#include virtual="./help/en/parts/SidebarTail.shtml" -->     
+	 <!--#include virtual="./help/en/parts/SidebarTailNew.shtml" -->     
 
 	</div> <!-- closes #side -->
 	
