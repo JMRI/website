@@ -101,14 +101,12 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-   
-   <!-- While this release is in development, the     -->
-   <!-- list of new warnings is kept in               -->
-   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
+    <li>
+        <code>Manager.getSystemNameArray()</code> has been removed after being 
+        deprecated for two years. Please migrate to using
+        <code>Manager.getNamedBeanSet()</code> instead.  If you really
+        must have an array, use <code>Manager.getNamedBeanSet().toSet()</code>
+    </li>
 </ul>
 
 
@@ -252,13 +250,62 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.4+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- new release note items are kept in            -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
+
+    <h3>Hardware Support</h3>
+
+        <h4>MERG CBUS</h4>
+            <ul>
+                <li>Track Current Meter + Command Station Steal / Share are available unless proved otherwise.</li>
+                <li>Node Manager and Event Table no longer auto-start on JMRI startup.
+                <br>These can be added as Startup Actions in JMRI Preferences to enable
+                <br>Event or Node name translation in CBUS console, and other CBUS Tools.</li>
+                <li>Refactoring of CBUS OPC's, Filters and Node Manger functions for future maintainability.</li>
+                <li>Bootloader client for CBUS node firmware update.</li>
+                <li>Support for SPROG Generation 5 hardware using MERG CBUS and Gridconnect.</li>
+            </ul>
+
+        <h4>SPROG</h4>
+            <ul>
+                <li>Connection methods for SPROG Generation 5 hardware using MERG CBUS/Gridconnect.</li>
+            </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+	    <h4>Cab Signals</h4>
+            <ul>
+                <li>Better set row height in table.</li>
+            </ul>
+
+
+
+    <h3>Where Used</h3>
+        <a id="WhereUsed" name="WhereUsed"></a>
+        <ul>
+            <li>The new <strong>Where Used</strong> tool is used to search JMRI for references to a
+                selected item.</li>
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>Included the VSDecoderID instead of the file name to make the AudioBuffer system names unique for Diesel3Sound.</li>
+            <li>Made the VSD loop-player more robust. Another change concerns the timing. Depending on the speed of the
+	      computer hardware, the timing of the loop-player (sleep-interval) can now be adjusted.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>The toString() method is NamedBeans has been standardized to return the system name.
+            There's an extension mechanism to add additional information if needed.</li>
+            <li>An internal library used for compilation has been updated from the NetBeans 11.0 version
+                to the NetBeans 11.3 (current) version.</li>
+            <li>The internal SMTP classes have been removed. Any users who depended on that capability
+                should manually add smtp.jar from <a href="https://javaee.github.io/javamail/">JavaMail</a>
+                to the JMRI classpath
+                (see <a href="/help/en/html/doc/Technical/StartUpScripts.shtml">Startup Scripts</a>)
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->

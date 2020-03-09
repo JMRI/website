@@ -119,6 +119,12 @@ including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version.
 
 <ul>
+<li><span class="since">Since <a href="jmri4.19.4.shtml">JMRI 4.19.4</a></span>
+    <code>Manager.getSystemNameArray()</code> has been removed after being 
+    deprecated for two years. Please migrate to using
+    <code>Manager.getNamedBeanSet()</code> instead.  If you really
+    must have an array, use <code>Manager.getNamedBeanSet().toSet()</code>
+</li>
 <li><span class="since">Since <a href="jmri4.19.3.shtml">JMRI 4.19.3</a></span>
     <code>Manager.getSystemNameArray()</code> has been removed after being 
     deprecated for two years. Please migrate to using
