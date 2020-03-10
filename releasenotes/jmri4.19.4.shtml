@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.19.4 release
       </h1>
 
-    <p>Date: mmm dd, 2020</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: March 10, 2020</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.19.4 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -212,7 +214,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -221,35 +222,34 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.19.4/JMRI.4.19.4+R4abda5deb.dmg">https://github.com/JMRI/JMRI/releases/download/v4.19.4/JMRI.4.19.4+R4abda5deb.dmg</a><br/>
+  sha256: 5e2b1316b540c7b27e8d5f86a1b9d688631ad3042f0bbd0777a0e77578a02494 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.19.4/JMRI.4.19.4+R4abda5deb.exe">https://github.com/JMRI/JMRI/releases/download/v4.19.4/JMRI.4.19.4+R4abda5deb.exe</a><br/>
+   sha256: 66d34a27e41237c05c6ad25f8fdacc34e53f5c3c554b50ada0c146e40afa3150</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.19.4/JMRI.4.19.4+R4abda5deb.tgz">https://github.com/JMRI/JMRI/releases/download/v4.19.4/JMRI.4.19.4+R4abda5deb.tgz</a><br/>
+   sha256: ffa2c02d17f5f350ee96fb78fb96d9e302537b2d02c68da53800e86fabd8f04e</li>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.19.3/">CI project page</a>.
- -->
+
 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- 
+ -->
+  
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.19.3.shtml">Test Release 4.19.3</a>:</h2>
  
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.4+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
-
 
     <h3>Hardware Support</h3>
 
@@ -275,8 +275,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.4+i
             <ul>
                 <li>Better set row height in table.</li>
             </ul>
-
-
 
     <h3>Where Used</h3>
         <a id="WhereUsed" name="WhereUsed"></a>
@@ -305,7 +303,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.4+i
                 to the JMRI classpath
                 (see <a href="/help/en/html/doc/Technical/StartUpScripts.shtml">Startup Scripts</a>)
         </ul>
-
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
