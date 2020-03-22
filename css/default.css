@@ -132,6 +132,23 @@
 
 /* Comments and other Asides */
 
+	/* AsciiDoctor styles */
+	.admonitionblock>table {
+		border-collapse:separate;
+		border:0;
+		background:none;
+		width:100%
+	}
+	.admonitionblock>table td.content {
+		padding-left:1.125em;
+		padding-right:1.25em;
+		border-left:1px solid #dddddf;
+		color:rgba(0,0,0,.6)
+	}
+	.admonitionblock.note:before {
+		content: ""; /* nothing */
+	}
+
 	.note {
 		font-style: italic;
 	}
@@ -349,6 +366,10 @@
 	.incorrect-code {
 		border: solid red;
 	}
+
+	.right { float:right!important }
+
+	.image.right { margin-left:.625em }
 
 /* Q and A (FAQ) */
 
