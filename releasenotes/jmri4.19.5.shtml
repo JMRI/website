@@ -102,13 +102,10 @@ from
 
 <ul>
    
-   <!-- While this release is in development, the     -->
-   <!-- list of new warnings is kept in               -->
-   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
+    <li>
+        None.
+    </li>
+
 </ul>
 
 
@@ -258,13 +255,141 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.5+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- new release note items are kept in            -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
+
+    <h3>Hardware Support</h3>
+
+        <h4>MERG CBUS</h4>
+            <ul>
+                <li>CBUS Console - Translation of Bootloading ( Firmware Update ) CAN Frames.</li>
+                <li>CBUS Console - Display JMRI Turnout, Sensor and Light status from CBUS On / Off Events.</li>
+                <li>CBUS Event Table - Improvements to UI</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+        <h4>BLI</h4>
+            <ul>
+                <li>Blueline change version range</li>
+            </ul>
+
+        <h4>ESU</h4>
+            <ul>
+                <li>Added LokPilot 5 family.</li>
+                <li>Updated LokSound 5 <strong>Consist</strong> and <strong>Sound Levels</strong> panes to handle latest firmware updates.</li>
+            </ul>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>DSD-100LC steam & diesel add CV59</li>
+            </ul>
+
+   <h3>Control Panel Editor</h3>
+        <a id="CPE" name="CPE"></a>
+        <ul>
+            <li>The <strong>Palette</strong> and <strong>Circuit Builder</strong>
+             windows make a "best effort" to open at a position minimizing 
+             any area that may obscure the panel display.</li>
+        <h4>Circuit Builder</h4>
+            <a id="CPE-CB" name="CPE-CB"></a>
+            <ul>
+            <li>The system name is auto generated when the<strong>Add New Detector Circuit
+             </strong> window is opened. This name may be changed before the Occupancy
+             Block is created. After creating, the field is removed from the window
+             since the system name can no longer be edited.</li>
+            </ul>
+        <h4>Palette</h4>
+            <a id="CPE-P" name="CPE-P"></a>
+            <ul>
+            <li>Each tab resizes to display itself with its preferred dimensions.</li>
+            <li>The <strong>Memory</strong> Tab has been modified to display generic 
+             forms of their respective devices.  Dragging is best accomplished by 
+             mouse down within the <strong>Drag to Panel</strong> box, but outside
+             of the device icon itself.</li>
+            <li>Bugs in the <strong>Signal Mast</strong> and <strong>Background</strong>
+             tabs have been fixed.</li>
+            <li>The <strong>Text</strong> tab items have been rearranged.</li>
+            </ul>
+        </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>The displayed names in the <strong>Section</strong> and <strong>Transit</strong>
+             tables, along with the transit selection and block selections in the
+             <strong>Activate New Train</strong> Dispatcher window, now behave like other
+             JMRI tools.  Instead of the <strong>system name (user name)</strong> format,
+             the names use the <strong>display name</strong> format.  The display name format
+             uses the <strong>user name</strong>.  If not available, the system name is used.</li>
+             <li>The list size for the dropdown combo boxes use the content size instead of
+             the default 8 rows.</li>
+             <li>The Section, Transit, and Dispatcher help documents have been updated.  The
+             Section and Transit help have been cleaned up to reduce redundant verbiage.</li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li>Jython has been updated to version 2.7.2</li>
+            <li>Long deprecated <code>instance()</code> methods to get the default
+                instance of a manager have been removed. Use
+                <code>InstanceManager.getDefault(NameOfManager.class)</code>
+                instead.</li>
+            <li><a href="https://github.com/JMRI/JMRI/pull/8286">PR 8286 revised the way 
+                that JMRI code should fire and catch events.  If you have code (Java or script)
+                of your own that implements event firing or tricky listening, you
+                should review those changes to see if they will or should affect your code.</li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li>Eckart Meyer updated the DB HV 1969 system to have proper aspect control.</li>
+            </ul>
+
+   <h3>Throttle</h3>
+        <a id="throttle" name="throttle"></a>
+        <ul>
+            <li>Add a speed step dropdown to the extended throttle;
+                this makes it easier to select the speed step mode and
+                makes it possible to select the less common speed step modes
+                exposed by some systems.
+            </li>
+            <li>Consolidated the throttle layout code,
+                centralized the logic for determining if throttle icons should be shown,
+                and added unit tests for the control panel layout and some preferences.
+            </li>
+        </ul>
+
+   <h3>Warrants</h3>
+        <a id="Wt" name="Wt"></a>
+        <ul>
+            <li>The <strong>Warrant List</strong> now responds to changes in window size.
+            The length of the status field varies as needed and keeps the
+            <strong>Stop All Trains</strong> button visible even on small screens.</li>
+        </ul>
+        <ul>
+            <li>When creating a new warrant the system name is auto generated. This name may be
+            changed before the warrant is saved. After saving the field can not be edited.</li>
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>The VSD old graphical user interface (GUI) was removed. For users who call VSD
+            from JMRI PanelPro, nothing changes. For users who call VSD from a Jython script,
+            theoretically the script can fail. Please see also
+            <a href="https://jmri.org/help/en/package/jmri/jmrit/vsdecoder/VSDecoderFrame.shtml">here</a>.
+            </li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Windows Installer updated to support OpenJDK 8 from <a 
+            href="https://adoptopenjdk.net">AdoptOpenJDK.net</a>.</li>
+                
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
