@@ -119,6 +119,12 @@ including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version.
 
 <ul>
+<li><span class="since">Since <a href="jmri4.19.5.shtml">JMRI 4.19.5</a></span>
+    Layout Editor files that are stored with version 4.19.5 and later will not 
+    generally be readable by versions earlier than 4.19.5.  Version 4.19.5 and later
+    continue to be able to read files written by releases
+    back to 4.12 and in many cases even older.
+</li>
 <li><span class="since">Since <a href="jmri4.19.4.shtml">JMRI 4.19.4</a></span>
     <code>Manager.getSystemNameArray()</code> has been removed after being 
     deprecated for two years. Please migrate to using
