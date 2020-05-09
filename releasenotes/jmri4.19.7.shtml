@@ -119,6 +119,17 @@ including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version.
 
 <ul>
+<li><span class="since">Since <a href="jmri4.19.6.shtml">JMRI 4.19.6</a></span>
+    Layout Editor files stored by 4.19.6 may not be loadable 
+    by JMRI 4.19.5 and before. This is in addition to the 
+    changed in 4.19.5 that raised a similar issue for 4.19.4.
+</li>
+<li><span class="since">Since <a href="jmri4.19.6.shtml">JMRI 4.19.6</a></span>
+    A default instance of <code>jmri.jmrit.display.PanelMenu</code> is no
+    longer maintained by the InstanceManager for the purposes of maintaining
+    a list of open Editors or LayoutEditors. Use the default instance of
+    <code>jmri.jmrit.display.EditorManager</code> in scripts instead.
+</li>
 <li><span class="since">Since <a href="jmri4.19.5.shtml">JMRI 4.19.5</a></span>
     Layout Editor files that are stored with version 4.19.5 and later will not 
     generally be readable by versions earlier than 4.19.5.  Version 4.19.5 and later
