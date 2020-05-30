@@ -119,6 +119,13 @@ including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version.
 
 <ul>
+<li><span class="since">Since <a href="jmri4.19.7.shtml">JMRI 4.19.7</a></span>
+    A number of hardware-specific actions now require the system
+    connection be associated with them when used as a startup action.
+    In many cases, these actions will continue to "just work", but it is
+    recommended that actions be verified to be associated with the
+    correct connection in the Startup Actions Preferences.</li>
+
 <li><span class="since">Since <a href="jmri4.19.6.shtml">JMRI 4.19.6</a></span>
     Layout Editor files stored by 4.19.6 may not be loadable 
     by JMRI 4.19.5 and before. This is in addition to the 

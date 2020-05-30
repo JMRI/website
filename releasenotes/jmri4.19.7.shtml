@@ -102,13 +102,12 @@ from
 
 <ul>
    
-   <!-- While this release is in development, the     -->
-   <!-- list of new warnings is kept in               -->
-   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
+    <li>A number of hardware-specific actions now require the system
+        connection be associated with them when used as a startup action.
+        In many cases, these actions will continue to "just work", but it is
+        recommended that actions be verified to be associated with the
+        correct connection in the Startup Actions Preferences.</li>
    
-   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
 </ul>
 
 
@@ -262,7 +261,7 @@ check the files against the checksums shown below.
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.19.6``/">CI project page</a>.
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.19.7``/">CI project page</a>.
  -->
 
 During development leading to the actual release, you can find test download files on the
@@ -275,13 +274,41 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.7+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- new release note items are kept in            -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
+
+    <h3>Hardware Support</h3>
+        <ul>
+          <li>A number of hardware-specific actions now require the system
+          connection be associated with them when used as a startup action.
+          In many cases, these actions will continue to "just work", but it is
+          recommended that actions be verified to be associated with the
+          correct connection in the Startup Actions Preferences.</li>
+        </ul>
+
+    <h3>Throttle</h3>
+        <a id="throttle" name="throttle"></a>
+        <ul>
+            <li>Added key shortcuts to the throttle window. Hold the shift
+                down, press and release key
+            <ul>
+                <li>A to switch to the "Address" section
+                <li>F to switch to the "Functions" section
+                <li>C to switch to the "Control" section which sets speed
+            </ul>
+                This is in addition to left arrow and right arrow, which 
+                move from one throttle to the next if you have more than one open.
+                Please note that this act when the key is released.
+            </li>
+            <li>
+                Chris Why fixed a bug in the speed-profiling support.
+            </li>
+            
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>Documentation updated regarding "VSD headless mode", "steam1 top speed reverse" and "sleep interval".</li>
+        </ul>
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
