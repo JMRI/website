@@ -188,12 +188,17 @@
 
 	/* em, strong */
 	
-	strong.stronger {
+        interest  {
+               font-style: italic;
+               font-weight: normal;
+        }
+    
+        strong.stronger {
 		font-style: italic;
 		font-weight: bold;
 	}
 	
-	strong.very-strong {
+        strong.very-strong {
 		font-weight: bold;
 		text-transform: uppercase;
 	}
