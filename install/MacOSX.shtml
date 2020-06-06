@@ -291,16 +291,16 @@ Irrespective of DCC system, there are some basic rules for troubleshooting any U
       JMRI is installed in the folder <em>/Applications/JMRI</em>; if it's installed in a different location, adjust the paths as needed):</p>
     <ol>
       <li>Open <em>Terminal.app</em>.
-        <p><em>El Capitan only:</em> Reboot into Recovery Mode by restarting your
+        <p><em>El Capitan and later:</em> Reboot into Recovery Mode by restarting your
           Mac and pressing Cmd-R until the Apple logo appears. Once in Recovery Mode,
           select Terminal from the Utilities menu.</p>
         </li>
       <li>Run the command <code>/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh</code> It can take
         up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.
-        <p><em>El Capitan only:</em> Run the command <code>bash /Volumes/Macintosh\ HD/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh /Volumes/Macintosh\ HD</code>
+        <p><em>El Capitan and later:</em> Run the command <code>bash /Volumes/Macintosh\ HD/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh /Volumes/Macintosh\ HD</code>
           It can take up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.</p>
         </li>
-      <li><em>El Capitan only:</em> Restart your Mac.</li>
+      <li><em>El Capitan and later:</em> Restart your Mac.</li>
     </ol>
 <p>Source: <a href="../releasenotes/jmri4.5.2.shtml"> JMRI 4.5.2 Release notes</a>.</p>
 
