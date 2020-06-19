@@ -282,13 +282,34 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.8+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- new release note items are kept in            -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>BLI</h4>
+            <ul>
+                <li>
+                    Marc Fourier updated a "Service Mode PWM Duty" slider
+                </li>
+            </ul>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>Marc Fournier added 
+                    the Alco PA-PB and F7A-B to the
+                    SoundTraxx SndVal Diesel Walthers Mainline
+                    decoder definition.
+                </li>
+            </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li>Greg McCartney provided a 
+                    <a href="https:/jmri.org/xml/signals/C&O-1980/index.shtml">C&O 1980 signal system</a>.
+                </li>
+            </ul>
+
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
