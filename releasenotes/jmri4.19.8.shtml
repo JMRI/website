@@ -300,6 +300,23 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.8+i
                 </li>
             </ul>
 
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+    		<li>If you have a script that uses the AbstractShutDownTask class, you
+    			need to rename the "execute()" routine to "run()", and change the
+    			return statement from "return True" to just "return"               
+            <li>The jython/AC_PowerControl.py,
+                    jython/AutoDispatcher2.py,
+                    jython/IoT/JMRI_TcpPeripheral.py,
+                    jython/ShutDownExample.py, and
+                    jython/TurnoutStatePersistence.py    
+                    scripts have been updated to handle the change
+                    listed just above.  If you have your own version of these
+                    scripts, you should either copy the distributed ones
+                    or update your own.          
+        </ul>
+
     <h3>Signals</h3>
         <a id="Signals" name="Signals"></a>
         <h4>Signal Systems</h4>

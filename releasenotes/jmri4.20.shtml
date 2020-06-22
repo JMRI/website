@@ -510,8 +510,17 @@ in those is
                 <code>jmri.jmrit.display.EditorManager</code> in scripts instead. All
                 sample scripts have been updated to reflect this.
             </li>
-        </ul>
-
+            <li>The jython/AC_PowerControl.py,
+                    jython/AutoDispatcher2.py,
+                    jython/IoT/JMRI_TcpPeripheral.py,
+                    jython/ShutDownExample.py, and
+                    jython/TurnoutStatePersistence.py    
+                    scripts have been updated to handle the change
+                    listed just above.  If you have your own version of these
+                    scripts, you should either copy the distributed ones
+                    or update your own.          
+		</ul>
+		
     <h3>Signals</h3>
         <a id="Signals" name="Signals"></a>
 	    <h4>Cab Signals</h4>
@@ -710,8 +719,7 @@ in those is
             <li>Windows Installer updated to support OpenJDK 8 from <a 
                 href="https://adoptopenjdk.net">AdoptOpenJDK.net</a>.</li>
             <li>Andrew Crosland fixed some nasty flickering in the Nixie clock and 
-            ammeter frames.</li>
-                
+            	ammeter frames.</li>
         </ul>
 
 <!-- Older notes above, for merging above -->       
