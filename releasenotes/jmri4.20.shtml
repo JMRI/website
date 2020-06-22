@@ -340,7 +340,7 @@ in those is
         <h4>Circuit Builder</h4>
             <a id="CPE-CB" name="CPE-CB"></a>
             <ul>
-            <li>The system name is auto generated when the<strong>Add New Detector Circuit
+            <li>The system name is auto generated when the <strong>Add New Detector Circuit
              </strong> window is opened. This name may be changed before the Occupancy
              Block is created. After creating, the field is removed from the window
              since the system name can no longer be edited.</li>
@@ -499,7 +499,7 @@ in those is
                 instance of a manager have been removed. Use
                 <code>InstanceManager.getDefault(NameOfManager.class)</code>
                 instead.</li>
-            <li><a href="https://github.com/JMRI/JMRI/pull/8286">PR 8286 revised the way 
+            <li><a href="https://github.com/JMRI/JMRI/pull/8286">PR 8286</a> revised the way 
                 that JMRI code should fire and catch events.  If you have code (Java or script)
                 of your own that implements event firing or tricky listening, you
                 should review those changes to see if they will or should affect your code.</li>
@@ -510,6 +510,9 @@ in those is
                 <code>jmri.jmrit.display.EditorManager</code> in scripts instead. All
                 sample scripts have been updated to reflect this.
             </li>
+    		<li>If you have a script that uses the AbstractShutDownTask class, you
+    			need to rename the "execute()" routine to "run()", and change the
+    			return statement from "return True" to just "return"               
             <li>The jython/AC_PowerControl.py,
                     jython/AutoDispatcher2.py,
                     jython/IoT/JMRI_TcpPeripheral.py,
