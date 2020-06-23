@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.19.8 release
       </h1>
 
-    <p>Date: mmm dd, 2020</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: June 23, 2020</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.19.8 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -36,14 +38,9 @@ if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the next in a series of test releases.
-We expect this series to end in the next JMRI production release in early summer 2020.
-(See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
+<p>This is (intended to be) the last test release before the JMRI 4.20 production release.
+We would really appreciate feedback on it!
 </p>
-
-<p>Some of the changes involved are quite extensive.
-They may require a certain amount of experience before they are working well.
-Therefore, this test release should be considered experimental.</p>
 
 <p><b>
 JMRI is now only available under the
@@ -244,7 +241,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -253,29 +249,29 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.19.8/JMRI.4.19.8+Rbab3d0f33.dmg">https://github.com/JMRI/JMRI/releases/download/v4.19.8/JMRI.4.19.8+Rbab3d0f33.dmg</a><br/>
+  sha256: 18a2e69d2aadce903a6eceab5edcb2cb95da0870434e7e7977beface3bc26347 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.19.8/JMRI.4.19.8+Rbab3d0f33.exe">https://github.com/JMRI/JMRI/releases/download/v4.19.8/JMRI.4.19.8+Rbab3d0f33.exe</a><br/>
+   sha256: 14e784bd5eab03f6c91fbba75a441d6a124b2e39705d9a81b7284a862862c4c5</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.19.8/JMRI.4.19.8+Rbab3d0f33.tgz">https://github.com/JMRI/JMRI/releases/download/v4.19.8/JMRI.4.19.8+Rbab3d0f33.tgz</a><br/>
+   sha256: 10fc17166c2789694d114c1221efa36321242e043f570a37f96502b379257678</li>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.19.8``/">CI project page</a>.
- -->
+
 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- 
+-->
+  
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.19.7.shtml">Test Release 4.19.7</a>:</h2>
  
