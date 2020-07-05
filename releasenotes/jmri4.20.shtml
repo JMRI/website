@@ -273,6 +273,7 @@ in those is
                 <li>Petr Šídlo added a timeout for SV2-mode programming.</li>
                 <li>You can now set the number of simulated command station
                 slots in the LocoNet simulator, courtesy Steve Todd.</li>
+                <li>Fixed problems acquiring and releasing LocoNet throttles.</li>
             </ul>
 
         <h4>MERG CBUS</h4>
@@ -308,6 +309,9 @@ in those is
         <h4>BLI</h4>
             <ul>
                 <li>Blueline change version range</li>
+                <li>
+                    Marc Fourier updated a "Service Mode PWM Duty" slider
+                </li>
             </ul>
 
         <h4>ESU</h4>
@@ -329,6 +333,11 @@ in those is
         <h4>SoundTraxx</h4>
             <ul>
                 <li>DSD-100LC steam & diesel add CV59</li>
+                <li>Marc Fournier added 
+                    the Alco PA-PB and F7A-B to the
+                    SoundTraxx SndVal Diesel Walthers Mainline
+                    decoder definition.
+                </li>
             </ul>
 
    <h3>Control Panel Editor</h3>
@@ -481,6 +490,18 @@ in those is
                 </li>
         </ul>
 
+    <h3>Routes</h3>
+        <a id="Routes" name="Routes"></a>
+        <ul>
+		    <li>The system names for Routes are required to start with "IO" to avoid
+		    	ambiguity or confusion with Reporters (the system names of which start
+		    	with "IR"). JMRI 4.19.2 or later should automatically rename Routes
+		    	correctly, but it is possible that references to those Routes will need
+		    	to be updated.
+			    </li>
+            <li>Fixed a problem setting up turnouts on a Lenz or DCC++ connection.</li>
+        </ul>
+
     <h3>Scripting</h3>
         <a id="Scripting" name="Scripting"></a>
         <ul>
@@ -620,6 +641,7 @@ in those is
             <li>The JMRI JSON API version has been incremented to 5.3.0 to
             	reflect the above changes.</li>
             <li>Fixed a problem preventing JMRI application web services from working with iOS 9.3.6</li>
+            <li>Fixed a problem that could prevent opening a web throttle.</li>
         </ul>
 
     <h3>Where Used</h3>
