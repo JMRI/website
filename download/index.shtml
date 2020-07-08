@@ -61,18 +61,19 @@
 
 	<h1>Latest News</h1>
 	<dl>
-		<dt>Production release 4.18 available</dt>
+		<dt>Production release 4.20 available</dt>
 	    <dd>
-	    <p>On December 23, 2019 production release 4.18 was made available.</p>
+	    <p>On July 8, 2020 production release 4.20 was made available.</p>
 	    
 	    <p>
-	    Release 4.18 is the current "production" release, recommended
+	    Release 4.20 is the current "production" release, recommended
 	    for first-time users.
 	    Please see the 
-	    <a href="../releasenotes/jmri4.18.shtml">release note</a>
+	    <a href="../releasenotes/jmri4.20.shtml">release note</a>
 	    for additional information.
 	    
-	    <dt>Test release 4.19.9 is available</dt>
+<!-- 
+	    <dt>Test release 4.21.1 is available</dt>
 	    <dd>
 	    <p>Test release 4.19.9 was made available on July 2, 2020.
 
@@ -88,35 +89,36 @@
 	  
 	    <a href="#prod-rel">Release 4.18</a> is the current "production" release, recommended
 	    for first-time users. 
+ -->
 
 	      
 	</dl>
 
   <div class="list">
     <a id="prod-rel"></a>
-    <h2>JMRI 4.18 - Production release</h2>
+    <h2>JMRI 4.20 - Production release</h2>
     <dl>
     <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
     <dd>
 	<a id="prod-download"></a><p class="dl">Download: 
-        <ul>
-        <li>OS X / macOS: <a
-            href="https://github.com/JMRI/JMRI/releases/download/v4.18/JMRI.4.18+R37ad3d0.dmg">https://github.com/JMRI/JMRI/releases/download/v4.18/JMRI.4.18+R37ad3d0.dmg</a><br/>
-          sha256: 8b4fcd4306be2fdadb7fc06fc6451ffda7d7358c5701564efd5eecf3d82fda30 </li>
+            <ul>
+            <li>OS X / macOS: <a
+                href="https://github.com/JMRI/JMRI/releases/download/v4.20/JMRI.4.20+Rc7ba8249b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.20/JMRI.4.20+Rc7ba8249b.dmg</a><br/>
+              sha256: b9ccc8c7d27637c9b7caaa1e985a866fe245365110d4a3629841bf134d02af85 </li>
 
-        <li>Windows: <a
-            href="https://github.com/JMRI/JMRI/releases/download/v4.18/JMRI.4.18+R37ad3d0.exe">https://github.com/JMRI/JMRI/releases/download/v4.18/JMRI.4.18+R37ad3d0.exe</a><br/>
-           sha256: 58aee8be31846eadfe77fee8ebf59071f0909cc09ecc3c7fe54a47fbf046978a</li>
+            <li>Windows: <a
+                href="https://github.com/JMRI/JMRI/releases/download/v4.20/JMRI.4.20+Rc7ba8249b.exe">https://github.com/JMRI/JMRI/releases/download/v4.20/JMRI.4.20+Rc7ba8249b.exe</a><br/>
+               sha256: 025d1b380d206ac827bfcc3610eaca33c79e20db8da3b83b62b3cc5fe5e83e49</li>
 
-        <li>Linux: <a
-            href="https://github.com/JMRI/JMRI/releases/download/v4.18/JMRI.4.18+R37ad3d0.tgz">https://github.com/JMRI/JMRI/releases/download/v4.18/JMRI.4.18+R37ad3d0.tgz</a><br/>
-           sha256: 2f7dfdde1ee193d6e9cfe2e9251a88e5cb2086786413bf65ece205acd0917f4d</li>
-        </ul>
+            <li>Linux: <a
+                href="https://github.com/JMRI/JMRI/releases/download/v4.20/JMRI.4.20+Rc7ba8249b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.20/JMRI.4.20+Rc7ba8249b.tgz</a><br/>
+               sha256: f4019e3fa65801e7732ce99684d9fd8a05ba1bc47a17352e9fc3944bb6e8b68b</li>
+            </ul>
       </p>
 
     <strong>Notes:</strong><br>
     <p>For more information on the release contents, please see the
-    <a href="../releasenotes/jmri4.18.shtml">release note</a>.
+    <a href="../releasenotes/jmri4.20.shtml">release note</a>.
     </p>
     <p>These files can be used for either a new installation or updating an existing installation.</p>
     <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
@@ -170,10 +172,12 @@
 	    want to try these, as new features will show up in them first. They
 	    are announced in the
 	    <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io group.</p>
+<!-- 
     <p>
         The most current test release is JMRI 4.19.9.  More information on it,
         including the links to download a copy, can be found in
         <a href="../releasenotes/jmri4.19.9.shtml">release note</a>.
+ -->
 	<p>
 	   For more information on the rough development schedule, please see the 
 	   <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">JMRI road map</a>
