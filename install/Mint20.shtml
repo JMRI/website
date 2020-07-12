@@ -28,103 +28,59 @@
 	<li><a href="#notes">Notes</a>
 	</ul>
 
-<p>Mint 20 (Linux/GNU) is based on Debian and is recognized as being
+<p>Mint 20 (GNU/Linux) is based on Ubuntu/Debian and is recognized as being
 a very user friendly distribution.<br>
 Is it free and it is also suitable for loading onto older machines
 which may no longer have a viable commercial OS. It is also far less
-resource hungry than current Windows distributions and this is particularly
-true of <a href="http://xubuntu.org">Xubuntu</a> and <a href="http://lubuntu.net">Lubuntu</a>.</p>
+resource hungry than current Windows distributions.</p>
 
 <p>This instruction deals with installing
-JMRI on a Mint 20 Cinnamon desktop using only Point and click GUI commands (no command line use needed)
+JMRI on a Mint 20 Cinnamon desktop, which has Java installed by default,
+using only Point and click GUI commands (no command line use needed)
 .</p>
 
 <a id="installation">
 <h2>Installation Procedure</h2></a>
 
 	<ol>
-	<li>Determine if your hardware supports Java and JMRI</li>
-	  
-	<a name="sysreq"></a><h3>JMRI System Requirements</h3>
-	<p>Using JMRI requires a combination of hardware (in this case running Linux),
-	Java software and a JMRI download for a specific version.
-	<p>JMRI&reg; version 4.2 requires Java 1.8.</p>
-	<p>
-	You'll need the correct serial port or USB port to attach to your layout hardware.
-	JMRI is compatible with USB-to-Serial adapters, so long as they have Linux drivers that make them look like regular serial ports.</p>
-	
-	<li>Get and Install Java (if needed)</li>
-	
-	<p>See if you have a version of Java already installed:<p>
-	<p class="example"> sh> java -version</p>
-	<p>
-	If the Java version is 1.8 or later, you may be fine, but be aware that if you did not install Java on your system yourself,
-	some systems have Java only partially installed. They will respond correctly to the above command, but still are not complete.
-	If your system does not have Java in the environment variable PATH, the install is probably not complete.
-	Check with the system manager or do a fresh Java installation anyway.<br>
-	If your version is not at least 1.8, or if you get a "java: not found" error, you will need to install it.<br>
-	<p>Most Linux distributions can get an automated install download
-	from Oracle by clicking on this button:<br>
-	<a href="http://www.java.com" target="_blank">
-	<img src="https://download.oracle.com/technetwork/java/get-java/getjavasoftware-88x31.png" alt="Get Java Software" border="0" width="88" height="31" />
-	</a>
-	<p>
-	You arrive at a page like this one:</p>
-	<p><img src="images/UbInstall1.png" width="482" height="237">
-	<p>
-	Next you download the Java software package that suits your computer and operating system.<br>
-	When the download finishes, you will be asked where to store the Java install archive:</p>
-	<p><img src="images/UbInstall2.png" width="404" height="291">
-	
-	<p>If that doesn't work or you need to manually install Java,
-	you can find further information on the 
-	<a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle Java downloads page</a>.  
-		<ul>
-		<li>Java comes in several forms: 
-		JMRI needs the Standard Edition (SE) version, but
-		Java EE is also OK;<br>
-		neither Java ME or Java Embedded are sufficient.
-		<li>There are also different Java SE installers: JMRI can
-		run with either a proper SDK (Software Development Kit, for compiling and running Java)
-		or JRE (Java Runtime Environment, for just running Java) installation.
-		</ul>
-	</p>
-	
-	<li>After running the Java installer, give user-level application access to your serial ports:<br>
-	    <p>
-	    <tt>chmod 666 /dev/ttyS0</tt><br>
-	    <tt>chmod 666 /dev/ttyS1</tt></p>
-	    </li>
-	
-	<li>Get JMRI</li>
-	
-	<p>
-	Just to be safe, before installing a new version of JMRI, rename your existing JMRI folder to "JMRI-1":
-	<p>
-	<img src="images/UbInstall4.png" width="465" height="155">
-	</p>
-	<p><a href="../download/index.shtml#prod-rel">Download</a> a version of JMRI, either the
+	<p><a href="../download/index.shtml#prod-rel">Download</a> a Linux version of JMRI, either the
 	latest production version, or a "test version".
 	<br>
-	<img src="images/UbInstall3.png" width="94" height="73">
+	<img src="images/Mint20install_1.png" width="500" height="250">
+	<p>
 	
 	<li>Installing JMRI</li>
+	
+	<p>Select Save File and OK</p>
+	<p><img src="images/Mint20install_2.png" width="417" height="203"></p>
 	<p>
-	Uncompress/untar the file you just downloaded. This will create a new "JMRI" folder so you should copy/move the installation file to the Home folder to create the JMRI folder there.</p>
-	<p><img src="images/UbInstall5.png" width="417" height="204"></p>
+	Open the containing (Downloads) folder</p>
+	<p><img src="images/Mint20install_3.png" width="417" height="204"></p>
 	
-	<p>Note: Each JMRI release is an independent set of files: It's intended to be used as a whole. Each release provides new files, and sometimes removes old files.<br>
-	You should therefore not expand the download into the same place as an existing JMRI installation. Instead, expand it into a separate location, and move in to it's final destination, completely replacing any previous version of JMRI.
-	<p>
-	To complete the install, just move that new JMRI folder to where you want it on your computer.
-	<p><img src="images/UbInstall6.png" width="417" height="203"></p>
+	<p>Right click on a blank area in the folder.</p>
+	<p><img src="images/Mint20install_4.png" width="409" height="337"></p>
+      
+	<p>Select 'Open as Root' in the popup menu.</p>
+	<p><img src="images/Mint20install_5.png" width="409" height="337"></p>
+      
+    <p>This will ask for a password then open the folder with Elevated Privileges.<br>Double click on downloaded JMRI file.</p> 
+    <p><img src="images/Mint20install_6.png" width="409" height="337"></p>
+      
+    <p>Click the Extract button.</p>
+    <p><img src="images/Mint20install_7.png" width="409" height="337"></p>
+      
+    <p>Select 'Filesystem root' in the left pane.<br>Use the right pane to navigateto where you want to install it (I have used 'usr'). </p>
+    <p><img src="images/Mint20install_8.png" width="409" height="337"></p>
+      
+    <p>click the 'Extract' button.</p>
+	<p><img src="images/Mint20install_9.png" width="409" height="337"></p>
+      
+    <p>close the Extraction completed popup.<br>Close all the open windows.</p>
+	<p><img src="images/Mint20install_10.png" width="409" height="337"></p>
 	
-	<p>You may have special icons or other files that you want to copy from the previous JMRI-1 folder now to the new installation.<br>
-	Copy them from the JMRI-1/resources folder.</p>
-	<p><img src="images/UbInstall7.png" width="409" height="337"></p>
-	
-	<li>Finishing up</li>
-	<p>Next we make a start-up launcher icon from the PanelPro script.</p>
+	<li>Start icons</li>
+      
+	<p>Next we make a start-up launcher icon.<br>Right click on the desktop, Select 'Create Launcher Here'.</p>
 	<p><img src="images/UbInstall8.png" height="175" width="396"></p>
 	<p>With the mouse middle button you launch the Create Launcher, give it a name, browse to the Command file and add an informative Comment.</p>
 	
