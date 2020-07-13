@@ -91,83 +91,13 @@ using only Point and click GUI commands (no command line use needed)
 	<p>Installation is complete.<br>
 	You can run the program by using the "DecoderPro", "PanelPro", or "JmriDemo" scripts in the JMRI folder. Change directory there, and invoke a script by typing e.g. "./DecoderPro" in Terminal.
 	</p>
-	
+
+	<li>USB access</li>
+      
 	</ol>
 
 <h2>JMRI version 2.9.2 and earlier</h2>
 
-<p>If you are updating from a JMRI version prior to 2.9.2 then
-Java needs to me "unmodified".</p>
-
-<a id="rxtx">
-<h3>RxTx</h3></a>
-
-<p>RxTx used to be a problem requiring modifications to Java to
-enable JMRI to run. Since JMRI version 3 this is no longer required. However, if
-you are using a version of JMRI prior to 2.9.2 then Java must be
-"unmodified". There is a script to do this in the JMRI Users group
-Files area, or one can work back from the following:</p>
-
-<p>For those who
-do not wish to use the new version, the instructions for modifying Java
-are given below. If one wishes to run both, then this is simply a
-matter of unmodifying or modifying Java using the scripts.
-
-<p>The problem was that the RxTx in the Ubuntu
-repositories would not work with JMRI! RXTX 2.1 uses a different structure than
-RXTX 2.0; JMRI requires the RXTX 2.0 structure.
-The "2.0.7pre2" is known to work well
-and that is what is included in the automated script which can currently be downloaded from
-<a href="http://downloads.sourceforge.net/jmri/RXTX-install-5.tar.gz">Download RXTX-Install</a>
-and placed
-in a spare directory. Unpack it by double clicking, and then
-extracting (select: "Extract") the file. 
-The script is run by opening a Terminal and giving the command: <code>./RXTXinstall</code>
-
-<p>The script will do the following:
-	<ul>
-	<li>Checks that the correct java version is installed, then copies the RXTX files to the following directories:
-		<ul>
-		<li>javax.comm.properties,&nbsp;ext/javax.comm.rxtx.properties, ext/comm.jar and ext/RXTXcomm.jar to
-		/usr/lib/jvm/java-6-sun-??/jre/lib/ and lib/ext</li>
-		<li>i386/* to /usr/lib/jvm/java-6-sun-???/jre/lib/i386/</li>
-		</ul>
-	</li>
-	
-	<li>Makes a symbolic link in /i386/ so the program finds the correct
-	RxTx (ln -s librxtxSerial-2.0.7pre2.so librxtxSerial.so).</li>
-	
-	<li>Alters the permission on dev/ttyS0 and ttyS1.</li>
-	
-	<li>Backs up /etc/group and adds the user to it.</li>
-	</ul>
-<p>
-The above description is brief, but the script itself can be opened in a text editor and studied at leisure.
-
-<h3>The Environment</h3>
-<p>On a fresh install the environment is OK <code>java -version</code> will return something like:</p>
-<code>java version "1.6.0_15"<br>
-Java(TM) SE Runtime Environment (build 1.6.0_15-b03)<br>
-Java HotSpot(TM) Client VM (build 14.1-b02, mixed mode, sharing)</code><br>
-or<br>
-<code>java version "1.6.0_0"<br>
-OpenJDK Runtime Environment (IcedTea6 1.6.1) (6b16-1.6.1-3ubuntu1)<br>
-OpenJDK Client VM (build 14.0-b16, mixed mode, sharing)</code>
-
-<p>However, upgrading Ubuntu may create problems for JMRI releases prior to 2.9.2 as the upgrade may now point at the
-"wrong" java. In this case simply run the reinstall script.
-
-<h3>USB Ports</h3>
-<p>Currently the start up scripts work "out of the box". However, some versions may need altering to get the computer to "see" a USB
-port by adding "-Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0" as follows:</p>
-<example>java -noverify -Djavax.comm.rxtx.SerialPorts=/dev/ttyUSB0 -Djava.security.policy</example>
-<p>Please see the <a href="http://jmri.org/install/FAQLinux.html">FAQ</a> for more details.</p>
-
-<a id="startup"><h2>Starting JMRI</h2></a>
-<p>To start JMRI, open a terminal and enter <code>./DecoderPro</code> or double click the icon.</p>
-<p>After a clean install, the JMRI Preferences pane will open. Select your Connection and USB port, click "Save"  and restart.</p>
-More on this on the <a href="../help/en/html/setup/index.shtml">JMRI Setup help page</a>.
-<p>The JMRI <a href="http://jmri.org/help/en/html/hardware/index.shtml">Hardware help page</a> lists the various types of layout equipment that JMRI can connect to, and gives links to instruction pages. Go there next to complete your setup.</p>
 
 <p>When PanelPro and DecoderPro are first run, they look
 for a hidden directory ".jmri" in the home directory.  
