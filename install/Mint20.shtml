@@ -19,14 +19,15 @@
 <ul class="snav"><!-- TOC -->
 <li><a href="#installation">Installation</a></li>
 <li><a href="#startup">Start Icons</a></li>
-<li><a href="#debug">Debugging</a></li>
 <li><a href="#notes">Notes</a></li>
 </ul>
 <p>Mint 20 (GNU/Linux) is based on Ubuntu/Debian and is recognized
 as being a very user friendly distribution.<br>
-Is it free and it is also suitable for loading onto older machines
+Is it free and it is also suitable for loading onto older 64bit machines
 which may no longer have a viable commercial OS. It is also far
 less resource hungry than current Windows distributions.</p>
+<p><a href=
+"http://linuxmint.com/download.php">Download Linux Mint.</a></p>
 <p>This instruction deals with installing JMRI on a Mint 20
 Cinnamon desktop (which has Java 11 installed by default), using only
 Point and click GUI commands (no command line use needed) .</p>
@@ -153,14 +154,11 @@ difficulties with JMRI failing to start up, removing the relevant
 Config2.xml file from this directory should fix it.</p>
 <a id="notes">
 <h2>Notes</h2>
-<h3>Installing Ubuntu</h3>
-<p>Details on installing Ubuntu can be found at <a href=
-"http://www.ubuntu.com/getubuntu/download">Ubuntu Downloads</a><br>
-Follow the Path "Download" and read up on the Help page which gives
-advice on how to download the ISO image and then create a bootable
-CD to install Ubuntu.</p>
-JMRI Help also has details for <a href=
-"http://jmri.org/install/decTop.shtml">installing Xubuntu</a>.
+<h3>Installing Mint 20</h3>
+<p>Details on installing Mint can be found at <a href=
+"http://linuxmint.com/documentation.php">Mint Documents</a><br>
+Which gives advice on how to download the ISO image and then create a bootable
+DVD or USB stick to install Ubuntu.</p>
 <h3>More info</h3>
 <p>You can find some more specific information on the "<a href=
 "FAQLinux.html">JMRI Linux FAQ page</a>".</p>
