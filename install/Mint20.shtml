@@ -66,30 +66,55 @@ using only Point and click GUI commands (no command line use needed)
     <p>Click the Extract button.</p>
     <p><img src="images/Mint20install_6.png" width="409" height="337"></p>
 
-    <p>Select 'Filesystem root' in the left pane.<br>Use the right pane to navigateto where you want to install it (I have used 'usr'). </p>
+    <p>Select 'Filesystem root' in the left pane.<br>Use the right pane to navigate to where you want to install JMRI (I have used 'usr'). </p>
     <p><img src="images/Mint20install_7.png" width="409" height="337"></p>
 
     <p>click the 'Extract' button.</p>
-	<p><img src="images/Mint20install_9.png" width="409" height="337"></p>
+	  <p><img src="images/Mint20install_8.png" width="409" height="337"></p>
 
     <p>close the Extraction completed popup.<br>Close all the open windows.</p>
-	<p><img src="images/Mint20install_10.png" width="409" height="337"></p>
-
-    <p>close the Extraction completed popup.<br>Close all the open windows.</p>
-	<p><img src="images/Mint20install_11.png" width="409" height="337"></p>
+	  <p><img src="images/Mint20install_9.png" width="409" height="337"></p>
 
 	<li>Start Icons</li>
 
-    <p>close the Extraction completed popup.<br>Close all the open windows.</p>
-	<p><img src="images/Mint20install_11.png" width="409" height="337"></p>
+	  <p>Next we make a start-up launcher icon.<br>Right click on the desktop, Select 'Create Launcher Here'.</p>
+	  <p><img src="images/Mint20install_10.png" height="175" width="396"></p>
 
-	<p>Next we make a start-up launcher icon.<br>Right click on the desktop, Select 'Create Launcher Here'.</p>
-	<p><img src="images/Mint20install_11.png" height="175" width="396"></p>
-	<p>With the mouse middle button you launch the Create Launcher, give it a name, browse to the Command file and add an informative Comment.</p>
+    <p>Select 'Other Locations' in the left pane.</p>
+	  <p><img src="images/Mint20install_11.png" width="409" height="337"></p>
 
-	<p>To give your launcher an icon too, click the launching spring and pick up an icon from the resources folder (normally stored in the main JMRI folder).<br>
-	Now your PanelPro as well as the other JMRI SoundPro, Throttles, DecoderPro etc. launchers look like the one below:</p>
-	<p><img src="images/Mint20install_12.png" height="174" width="379"></p>
+    <p>Open the folder where you installed JMRI (usr).</p>
+	  <p><img src="images/Mint20install_12.png" width="409" height="337"></p>
+
+    <p>Open the JMRI folder.</p>
+	  <p><img src="images/Mint20install_13.png" width="409" height="337"></p>
+
+    <p>Seclect one of the files with a 'type' of program, 'DecoderPro' or 'PanelPro' most commonly.<br>Click OK.</p>
+	  <p><img src="images/Mint20install_14.png" width="409" height="337"></p>
+
+    <p>Open the JMRI folder.</p>
+	  <p><img src="images/Mint20install_15.png" width="409" height="337"></p>
+
+	  <p>To give your launcher an icon too, click on the icon.</p>
+	  <p><img src="images/Mint20install_16.png" height="174" width="379"></p>
+
+    <p>Click the Browse button, Browse to the JMRI folder as before.</p>
+	  <p><img src="images/Mint20install_17.png" width="409" height="337"></p>
+
+    <p>Open the Resources folder.</p>
+	  <p><img src="images/Mint20install_18.png" width="409" height="337"></p>
+
+    <p>Select one of the .gif files (I suggest one of the 48x48 pixel versions).</p>
+	  <p><img src="images/Mint20install_19.png" width="409" height="337"></p>
+
+    <p>Open the JMRI folder.</p>
+	  <p><img src="images/Mint20install_20.png" width="409" height="337"></p>
+
+    <p>Click OK.</p>
+	  <p><img src="images/Mint20install_21.png" width="409" height="337"></p>
+
+    <p>You will then be asked if you want to add this to the Menu as well, make your choice.</p>
+	  <p><img src="images/Mint20install_22.png" width="409" height="337"></p>
 
 	<p>Installation is complete.<br>
 	You can run the program by using the "DecoderPro", "PanelPro", or "JmriDemo" scripts in the JMRI folder. Change directory there, and invoke a script by typing e.g. "./DecoderPro" in Terminal.
