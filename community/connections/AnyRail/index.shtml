@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- $Id: CATS.shtml,v 1.1 2008-05-23 16:39:46 jacobsen Exp $ -->
+<html lang="en">
+<head>
+    <title>
+ 	AnyRail with JMRI
+    </title>
+    <meta name="author" content="Bob Jacobsen">
+    <meta name="keywords" content="JMRI AnyRails ">
+
+<!--#include virtual="/Style.shtml" -->
+</head>
+
+<!--#include virtual="/Header.shtml" -->
+  <div id="mBody">
+    <!--#include virtual="../Sidebar.shtml" -->
+
+<div id="mainContent">
+
+<h1>AnyRail with JMRI</h1>
+<a href="http://www.anyrail.com">
+        <img src="https://www.anyrail.com/img/AR6Logo.svg" alt="AnyRail logo" height="33" width="120"></a>
+
+    The <a href="http://www.anyrail.com" target="_blank">AnyRail layout planning software</a>
+    can now export a layout design as a JMRI panel file that can be imported to Layout Editor.
+    See the <a href="https://www.anyrail.com/help_en/index.html" target="_blank">AnyRail documentation</a>.  
+
+    <h2>Hints for using AnyRail's export files</h2>
+    
+    When you do the export from AnyRail, it creates two files:  An XML panel file
+    and an image that provides the background.  You should have AnyRail export
+    those directly to the JMRI profile directory so that they stay linked together.
+    
+    
+    
+
+    <!--#include virtual="/Footer.shtml" -->
+
+	  </div><!-- closes #mainContent-->
+	</div> <!-- closes #mBody-->
+</body>
+</html>
