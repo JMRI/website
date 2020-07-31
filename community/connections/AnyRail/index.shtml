@@ -21,18 +21,29 @@
 <a href="http://www.anyrail.com">
         <img src="https://www.anyrail.com/img/AR6Logo.svg" alt="AnyRail logo" height="33" width="120"></a>
 
-    The <a href="http://www.anyrail.com" target="_blank">AnyRail layout planning software</a>
+    <p>The <a href="http://www.anyrail.com" target="_blank">AnyRail layout planning software</a>
     can now export a layout design as a JMRI panel file that can be imported to Layout Editor.
-    See the <a href="https://www.anyrail.com/help_en/index.html" target="_blank">AnyRail documentation</a>.  
+    See the <a href="https://www.anyrail.com/help_en/index.html" target="_blank">AnyRail documentation</a>.</p>
 
     <h2>Hints for using AnyRail's export files</h2>
-    
-    When you do the export from AnyRail, it creates two files:  An XML panel file
+
+    <p>When you do the export from AnyRail, it creates two files:  An XML panel file
     and an image that provides the background.  You should have AnyRail export
-    those directly to the JMRI profile directory so that they stay linked together.
-    
-    
-    
+    those directly to the JMRI profile directory so that they stay linked together.</p>
+
+    <p>The export file is a minimal PanelPro data file.  It contains a turnout
+    table, a block table and the layout editor panel.  By default, the user names for the
+    turnout table and the block table entries will be the panel internal name.  If the
+    AnyRail labels have been used for turnouts and sections (JMRI blocks) the label value
+    will be used for the user name.  This will help understand the layout since the
+    internal names are very cryptic.</p>
+
+    <p>Since the exported PanelPro file is minimal, most people will need to do additonal
+    editing using Layout Editor.  For people new to JMRI, or new to PanelPro and Layout Editor,
+    reading the <a href= "https://www.jmri.org/help/en/html/apps/PanelPro/GettingStarted.shtml">
+    Getting Started with PanelPro</a> tutorial is recommended.  This will provide an introduction
+    to PanelPro tables and creating a simple Layout Editor panel.
+
 
     <!--#include virtual="/Footer.shtml" -->
 
