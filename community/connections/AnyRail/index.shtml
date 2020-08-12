@@ -36,14 +36,17 @@
 
     <h2>Create the AnyRail design</h2>
     <p>Create the layout design using the AnyRail tools</p>
-    <p>Use the Label feature to assign names to turnouts and sections.</p>
+    <p>Use the Label feature to assign names to turnouts because those labels will be used as User Names in JMRI which 
+    will be easier to understand than the automatically generated names. 
+    Also, if Blocks will be used in PanelPro, use the Label feature to assign names to sections because those labels will 
+    be used as Block User Names in JMRI.</p>
 
     <h2>Export the AnyRail design as a JMRI PanelPro file</h2>
       <h3>JMRI</h3>
       <ol>
         <li>Start PanelPro.</li>
         <li>Select <strong>Help &rArr; Locations</strong> from the PanelPro menu.</li>
-        <li>The <strong>User Files Location</strong> entry will be used during the AnyRail export.</li>
+        <li>The <strong>User Files Location</strong> entry will be used during the AnyRail export. Make a note of it.</li>
         <li>If desired, click on the <strong>Open User Files Location</strong> button.
         This will open the operating system file manager at that location.</li>
         <li>Quit PanelPro.</li>
@@ -55,26 +58,28 @@
         <li>Select <strong>File &rArr; Export as</strong>; select <strong>JMRI Layout file</strong>.</li>
         <li>In the <strong>Save as</strong> dialog, navigate to the <strong>user files location</strong>
         noted earlier. The exported file name will default to the AnyRail file name with
-        <strong>.xml</strong> replacing <strong>.any</strong>.</li>
+        <strong>.xml</strong> replacing <strong>.any</strong>, but the name can be changed to something more
+	descriptive if desired.</li>
         <li>Click on <strong>Save</strong>.  Two files will be created:
           <ul>
             <li>The PanelPro file which contains a <strong>Layout Editor</strong> panel
             and the related tables.</li>
-            <li>A jpg image of the AnyRail layout design.</li>
+            <li>A jpg image of the AnyRail layout design (including the background and scenery).</li>
           </ul>
         </li>
       </ol>
 
     <h2>Using the exported PanelPro file</h2>
       <ol>
-        <li>Start PanelPro.</li>
+        <li>Start PanelPro. Unless specifically desired, it is best to not load any other Panels in PanelPro when
+	loading an AnyRail export file.</li>
         <li>Select <strong>Help &rArr; System Console...</strong> from the PanelPro menu.
-        This is important for the first load of the exported PanelPro file.</li>
+        This may be important for the first load of the exported PanelPro file to see any errors when loading.</li>
         <li>Select <strong>Panels &rArr; Load Panels...</strong> from the PanelPro menu.</li>
         <li>In the <strong>Load Panel File</strong> dialog, select the exported panel
         name and click on <strong>Load</strong>.</li>
         <li>Review the system console for warnings or errors during the load step.  If errors
-        or warnings have occurred and they don't have any meaning, use the <strong>Copy to clipboard</strong>
+        or warnings have occurred and they don't have any meaning (to you), use the <strong>Copy to clipboard</strong>
         button and paste the clipboard contents into a message to the JMRI User Group.</li>
         <li>The following content is now available in PanelPro:
           <ul>
@@ -85,7 +90,7 @@
             <li>The exported jpg image file is loaded with the xml file and acts as a background
             for the track plan.</li>
             <li>The <strong>Turnout</strong> table:  <strong>Tools &rArr; Tables &rArr; Turnouts</strong> will
-            have the list of turnouts.  If labels have been assigned to the turnouts they
+            have the list of turnouts.  If labels had been assigned to the turnouts in AnyRail they
             will be used for the <strong>user name</strong>.  If not, a cryptic user name will be
             assigned.</li>
             <li>The <strong>Block</strong> table:  <strong>Tools &rArr; Tables &rArr; Blocks</strong> will
@@ -108,12 +113,13 @@
 
       <h3>Missing jpg image file</h3>
         <p>If the exported PanelPro file and its related jpg file are manually moved to a different
-        location, the jpg image will not be found during the first PanelPro load.
+        location (or if exported to a different location than the <strong>User Files Location</strong>), the jpg image
+	will not be found during the first PanelPro load.
         A <strong>Icon Not Found</strong> dialog will be displayed.  There are two optons:
         <ul>
-          <li>Type the correct location of the jpg file in the location field and click on
+          <li>Either type the correct location of the jpg file in the location field and click on
           <strong>Continue</strong>.</li>
-          <li>Click on <strong>Delete</strong> or <strong>Ignore Errors</strong> to skip loading
+          <li>Or click on <strong>Delete</strong> or <strong>Ignore Errors</strong> to skip loading
           the jpg image.  When the PanelPro file is stored, the reference to the jpg will be removed.</li>
         </ul>
 
