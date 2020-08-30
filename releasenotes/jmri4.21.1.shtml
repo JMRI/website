@@ -433,6 +433,19 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.21.1+i
             The reconnectMaxInterval is in seconds, reconnectMaxAttempts is infinite if -1, else the value.</li>
         </ul>
 
+    <h3>Routes</h3>    
+        <a id="Routes" name="Routes"></a>
+       <ul>
+            <li>A configurable (minimum) interval for all turnout outputs that are part of a Route on the same
+                connection can be set in Preferences &gt; Connection &gt; Additional Connection Settings (serial connections
+                only).
+                Default is 250 milliseconds. Up to now this delay was fixed to 250 ms in the code so this new option
+                will only be noticeable if you change it. No restart is required.
+                Use the [Reset] button to restore the default.
+                The same setting is applied to Turnout Outputs, for example as Signal Mast outputs.
+            </li>
+       </ul>
+
     <h3>Scripting</h3>
         <a id="Scripting" name="Scripting"></a>
         <ul>
@@ -450,6 +463,18 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.21.1+i
                     errors and to include masts which can be used to protect a 
                     block of "short braking distance".
                 </li>
+            </ul>
+        <h4>Signal Masts</h4>
+            <ul>
+                <li>A configurable (minimum) interval for all outputs on the same connection can be set in
+                    Preferences &gt; Connection &gt; Additional Connection Settings (serial connections only).
+                    Default is 250 milliseconds. Use the [Reset] button to restore the
+                    default. The same setting is applied to turnout outputs in a Routes.
+                </li>
+            </ul>
+	    <h4>Cab Signals</h4>
+            <ul>
+                <li>Better set row height in table.</li>
             </ul>
 
    <h3>Virtual Sound Decoder</h3>
