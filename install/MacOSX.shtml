@@ -133,16 +133,24 @@
 
         <p>Normally, the download will open a new Finder window showing a
         JMRI folder.  If not, double-click the file you downloaded
-        above.  This should open a window with the "JMRI" folder.
+        above.  This should open a window with the JMRI folder.
         If that still doesn't open a window, look for a newly-mounted 
         disk image (e.g. in Finder) and open that manually.</p>
         
         <p>To install, you just have to move the downloaded JMRI folder to where
-        you want it on your computer. Many people put it in
-        "Applications", which is the standard location for this.  To
+        you want it on your computer. We recommend you put it in
+        Applications, which is the standard location for this.  To
         do that, just drag the JMRI folder onto the "Applications"
-        icon.  If you want to keep it somewhere else, just drag the
+        icon.</p>
+        
+        <p>If you want to keep it somewhere else, just drag the
         folder to the desired location.</p>
+        
+        <p>Note that on macOS Catalina and later, you won't be able
+        to run JMRI from within the Downloads, Desktop or Documents 
+        folder, so we strongly recommend you drag the JMRI folder to 
+        Applications and run it from there.
+        </p>
 
       <li>Depending on how your Mac is set up, you might need to 
         install <strong>Java</strong>:
@@ -164,7 +172,9 @@
                 applications are known to try and reinstall old stuff that might cause conflicts while running JMRI.
                 See the <a href="#javase6">instructions</a> on how to check if this applies to your installation.
             </ul>
-      <li>Congratulations! Installation is complete.</li>
+      <li>Congratulations! Installation is complete. Click on the DecoderPro icon in the
+          JMRI folder to get started.
+      </li>
 
       </ol>
       
