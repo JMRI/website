@@ -2,27 +2,132 @@
   <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
   <div id="header">
-	<!-- Logo -->
-	<a href="/" title="Return to home page" accesskey="1">
-	    <img src="/images/logo-jmri.gif" width="160" height="135" alt="JMRI Logo"> </a>
-	<!-- /Logo -->
-	<ul id="mainNav"> <!-- Top tool bar -->
-	   <li><a href="/download/index.shtml"  title="Get the latest software">Download</a></li>
-	   <li><a href="/help/en/html/apps/index.shtml"      title="Learn about JMRI applications">Applications</a></li>
-	   <li><a href="/help/en/html/hardware/index.shtml"  title="What hardware does JMRI support">Hardware</a></li>
-	   <li><a href="/help/en/webtoc.shtml"   title="JMRI Help Screens">Help</a></li>
-	   <li><a href="/help/en/manual/index.shtml"   title="JMRI Manuals">Manuals</a></li>
-	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
-	   <li><a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">Acknowledgements</a></li>
-	</ul>
+      <!-- Top tool bar -->
+      <div id="mainNav" class="w3-left w3-bar">
+          <a class="w3-bar-item w3-button w3-xlarge" id="show-side"
+              onclick="w3_open()" href="javascript:void(0)"><i class="fa fa-bars"></i>
+          </a>
 
-	<div id="searchform"> <!--  Search Form -->
-          <form method="get" action="https://www.google.com/search">
-            <label for="q" title="Search JMRI.org">search JMRI: </label>
-            <input type="hidden" name="sitesearch" value="jmri.org">
-            <input type="text" id="q" name="q" accesskey="s" size="30">
-	    <input type="submit" id="submit" value="go">
-          </form>
-    </div> <!--  End #searchform -->
+          <div class="w3-left w3-bar-item">
+              <!-- Logo -->
+              <a href="/" title="Return to home page" accesskey="1">
+                  <picture style="align: top">
+                      <source srcset="images/logo-jmri-61x40-inv.png" media="(max-width: 650px)">
+                      <source srcset="images/logo-jmri.gif">
+                      <img src="images/logo-jmri-61x40-inv.png" alt="JMRI Logo">
+                  </picture>
+              </a>
+              <!-- /Logo -->
+          </div>
+
+          <div id="hor-nav"> <!-- show/hide by mediaquery -->
+            <div id="nav_dl" class="w3-bar-item w3-hover-white"><a href="/download/index.shtml"
+                       title="Get the latest software">Download</a></div>
+            <div id="nav_apps" class="w3-bar-item w3-hover-white"><a href="/help/en/html/apps/index.shtml"
+                       title="Learn about JMRI applications">Applications</a></div>
+            <div id="nav_hw" class="w3-bar-item w3-hover-white w3-hover-text-black"><a href="/help/en/html/hardware/index.shtml"
+                       title="What hardware does JMRI support">Hardware</a></div>
+            <div id="nav_help" class="w3-bar-item w3-hover-white w3-hover-text-black"><a href="/help/en/webtoc.shtml"
+                       title="JMRI Help Screens">Help</a></div>
+            <div id="nav_manuals" class="w3-bar-item w3-hover-white w3-hover-text-black"><a href="/help/en/manual/index.shtml"
+                       title="JMRI Manuals">Manuals</a></div>
+            <div id="nav_dev" class="w3-bar-item w3-hover-white w3-hover-text-black"><a href="/help/en/html/doc/Technical/index.shtml"
+                       title="Developing and extending JMRI">Developers</a></div>
+            <div id="nav_ack" class="w3-bar-item w3-hover-white w3-hover-text-black"><a href="/help/en/Acknowledgements.shtml"
+                       title="Who is JMRI">Acknowledgements</a></div>
+          </div>
+
+          <div id="drop-nav" class="w3-bar-item w3-dropdown-hover"> <!-- show/hide by mediaquery -->
+              <button id="navbtn_more" class="w3-button w3-hover-white">Help &amp; More</button>
+              <div class="w3-dropdown-content w3-bar-block">
+                  <a class="w3-bar-item w3-button w3-text-black w3-hover-white" href="/download/index.shtml"
+                     title="Get the latest software">
+                      Download</a>
+                  <a class="w3-bar-item w3-button w3-text-black w3-hover-white"
+                     href="/help/en/html/apps/index.shtml"
+                     title="Learn about JMRI applications">Applications</a>
+                  <a class="w3-bar-item w3-button w3-text-black w3-hover-white"
+                     href="/help/en/html/hardware/index.shtml"
+                     title="What hardware does JMRI support">Hardware</a>
+                  <a class="w3-bar-item w3-button w3-text-black w3-hover-white" href="/help/en/webtoc.shtml"
+                     title="JMRI Help Screens">Help</a>
+                  <a class="w3-bar-item w3-button w3-text-black w3-hover-white" href="/help/en/manual/index.shtml"
+                     title="JMRI Manuals">Manuals</a>
+                  <a class="w3-bar-item w3-button w3-text-black w3-hover-white"
+                     href="/help/en/html/doc/Technical/index.shtml"
+                     title="Developing and extending JMRI">Developers</a>
+                  <a class="w3-bar-item w3-button w3-text-black w3-hover-white"
+                     href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
+                      Acknowledgements</a>
+              </div>
+          </div>
+
+
+<!--      <nav id="nav_more" class="w3-light-grey w3-hide-small navex" style="display: none;">-->
+<!--          <span onclick="w3_close_nav('more')" class="w3-button w3-xlarge w3-display-right barex">×</span><br>-->
+<!--          <div class="w3-row-padding w3-bar-block">-->
+<!--              <a class="w3-bar-item w3-hover-white" href="/download/index.shtml" title="Get the latest software">-->
+<!--                  Download</a>-->
+<!--              <a class="w3-bar-item w3-hover-white" href="/help/en/html/apps/index.shtml"-->
+<!--                                        title="Learn about JMRI applications">Applications</a>-->
+<!--              <a class="w3-bar-item w3-hover-white" href="/help/en/html/hardware/index.shtml"-->
+<!--                                        title="What hardware does JMRI support">Hardware</a>-->
+<!--              <a class="w3-bar-item w3-hover-white" href="/help/en/webtoc.shtml"   title="JMRI Help Screens">Help</a>-->
+<!--              <a class="w3-bar-item w3-hover-white" href="/help/en/manual/index.shtml"   title="JMRI Manuals">Manuals</a>-->
+<!--              <a class="w3-bar-item w3-hover-white" href="/help/en/html/doc/Technical/index.shtml"-->
+<!--                                        title="Developing and extending JMRI">Developers</a>-->
+<!--              <a class="w3-bar-item w3-hover-white" href="/help/en/Acknowledgements.shtml" title="Who is JMRI">-->
+<!--                  Acknowledgements</a>-->
+<!--          </div>-->
+<!--      </nav>-->
+
+          <a class="w3-bar-item w3-button w3-hover-white w3-right w3-xlarge" href="javascript:void(0)"
+             onclick="open_search(this)" title="Search JMRI"><i class="fa fa-search"></i></a>
+
+          <div id="searchform" class="w3-bar-item w3-card" style="display:none"> <!--  Search Form -->
+              <form method="get" action="https://www.google.com/search">
+                <label for="q" title=" Search JMRI.org">Search JMRI: </label>
+                <input type="hidden" name="sitesearch" value="jmri.org">
+                <input type="text" id="q" name="q" accesskey="s" size="30">
+                <input type="submit" id="submit" class="w3-button" value="Go">
+              </form>
+          </div> <!--  End #searchform -->
+
+      </div>
   </div> <!-- closes #header-->
 <!-- /Header.shtml -->
+
+<script type="text/javascript">
+function w3_openSearch() {
+  document.getElementById("searchform").style.display = "block";
+}
+
+function w3_closeSearch() {
+  document.getElementById("searchform").style.display = "none";
+}
+
+function open_search(elmnt) {
+  var a = document.getElementById("searchform");
+  if (a.style.display == "") {
+    document.getElementById("hor-nav").style.visibility = "visible";
+    document.getElementById("drop-nav").style.visibility = "visible";
+    a.style.display = "none";
+    elmnt.innerHTML = "<i class='fa fa-search'></i>";
+  } else {
+    a.style.display = "";
+    if (window.innerWidth > 1000) {
+      a.style.width = "40%";
+    } else if (window.innerWidth >768) {
+      document.getElementById("hor-nav").style.visibility = "hidden";
+      document.getElementById("drop-nav").style.visibility = "hidden";
+      a.style.width = "60%";
+    } else {
+      a.style.width = "60%";
+    }
+    <!-- set cursor in search field (opens keyboard on mobile) -->
+    if (document.getElementById("q")) {document.getElementById("q").focus(); }
+
+    elmnt.innerHTML = "<i class='fa fa-close'></i>";
+  }
+}
+</script>

@@ -43,6 +43,9 @@
 	}
 
 /* General Structure */
+    * {
+      box-sizing: border-box;
+    }
 
 	.subtitle {
 		font-style: italic;
@@ -75,6 +78,37 @@
 	blockquote address:before {
 		content: "\2015";
 	}
+
+/* flex: blocks that try to fit on a row, or wrap. Collapse to full width on smaller screens */
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .flex-item-30 {
+      padding: 1px;
+      flex: 30%;
+    }
+    .flex-item-50 {
+      padding: 1px;
+      flex: 50%;
+    }
+    .flex-item-70 {
+      padding: 1px;
+      flex: 70%;
+    }
+    /* Responsive layout - makes a one column-layout instead of a two-column layout */
+    @media (max-width: 800px) {
+      .flex-item-30, .flex-item-50, .flex-item-70 {
+        flex: 100%;
+      }
+    }
+
+/* group several items in a div, responsive, replaces table */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 
 /* Navigation */
 
@@ -166,23 +200,24 @@
 		content: "]";
 	}
 
-	.sidebar {
+/*	.sidebar {
 		clear: both;
 		margin: .75em .5em;
 		padding: .2em;
 		border: 1px solid;
 		background: white;
-
+*/
 		/* Block NS4 from floating */ /*/*/
-		float: right;
+/*		float: right;
 		width: 30%;
 		min-width: 15em;
-		/* */
 	}
+*/
 	/* Reduce main header sizes */
-	.sidebar h1 {font-size: 1.40em;}
+/*	.sidebar h1 {font-size: 1.40em;}
 	.sidebar h2 {font-size: 1.25em;}
 	.sidebar h3 {font-size: 1.10em;}
+*/
 
 /* Emphasis */
 
@@ -219,7 +254,7 @@
 		font-size: large;
 	}
 
-/* small [Since JMRI 1.2.3] sticker to mark  introductory version number in Release Notes */
+/* small [Since JMRI 1.2.3] sticker to mark introductory version number in Release Notes */
 	span.since {
 		color: #fff;
 		font-weight: normal;
@@ -434,14 +469,13 @@ label, input {
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 1em 0 0.5em 0;
-	border: dotted 1px #BEBFD7;
 	border-right: 0;
 	border-left: 0;
-	background-color: #EEECF6;
+	background-color: Lavender;
 }
-h1 { font-size: 150%; color: #222696; padding: 9px; padding-left: 1em; }
-h2 { font-size: 120%; color: #1D24ED; padding: 7px; padding-left: 3em; }
-h3 { font-size: 100%; color: #383DB3; padding: 5px; padding-left: 5em; }
+h1 { font-size: 140%; color: Black; padding: 9px; padding-left: 1em; }
+h2 { font-size: 120%; color: Black; padding: 7px; padding-left: 3em; }
+h3 { font-size: 100%; color: #383DB3; padding: 5px; padding-left: 5em; } /* better colors */
 h4 { font-size: 100%; color: #666666; padding: 3px; padding-left: 7em; }
 h5 { font-size: 90%;  color: #222696; padding: 2px; padding-left: 9em; }
 h6 { font-size: 90%;  color: #1D24ED; padding: 1px; padding-left: 11em; }
@@ -464,6 +498,9 @@ img {
 :link:hover, :visited:hover {
 	color: #5B52CB;
 }
+h1 :link, h2 :link, h3 :link, h4 :link, h1 :visited {
+	font-weight: normal;
+}
 hr {
 	padding: 0;
 	height: 4px;
@@ -474,40 +511,101 @@ hr {
 .floatLeft {
 	float: left;
 	margin: 5px 10px 5px 0;
-	border: dotted 1px #BEBFD7;
 }
 .floatRight {
 	float: right;
 	margin: 5px 0 5px 10px;
-	border: dotted 1px #BEBFD7;
 }
 
 /* page structure*/
+/* Use a media query to add a breakpoint at 650px, same point as small logo is shown (see /Header */
+@media only screen and (max-width: 650px) {
+  div#hor-nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  div#drop-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+    .searchform {
+      width: 100%; /* The width is 100%, when the viewport is 1024px or smaller */
+    }
+}
+
+/*2 Column Layout*/
+@media only screen and (min-width: 1024px) {
+	.mBody {
+		margin: 0 auto;
+	}
+	#mainContent {
+		width: 75%;
+		float: left;
+		top: 0;
+	}
+	#side {
+		width: 25%;
+		float: left;
+		top: 200px;
+	}
+    #show-side {
+      display: none;
+    }
+}
+
+/*Base Mobile Layout*/
 #mBody {
-	background: #EEF;
+	width: 90%;
+	margin: 0 auto;
 	position: absolute;
-	top: 146px;
+	top: 80px;
 	left: 0;
-	margin: 0;
 	padding: 0;
-	width:100%
 }
 .nomenu #mBody {
 	background: #EEF;
 }
 
+/*Move sidebar Position over to the left*/
+@media only screen and (min-width: 1024px) {
+	.mBody, #mainContent, #side {
+		position: relative;
+	}
+	#mainContent, #side {
+	}
+	#side {
+		left: -75%; /* = Width of #mainContent*/
+		top: 0px;
+	}
+	#mainContent {
+		left: 25%; /* = Width of #side(bar)*/
+		top: 0px;
+	}
+}
+
 /*sidebar menus and links*/
 #side {
-	background: #EEF;
-	position: absolute;
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much */
+	width: 100%;
+    float: left;
 	left: 0;
-	top: 0;
+	top: 100px;
 	padding: 10px 15px;
-	width: 174px;
 	voice-family: inherit;
-	border-top: solid 2px #CCF;
-	border-bottom: solid 2px #AAB;
-	border-right:  solid 2px #AAB;
+}
+
+.w3-sidebar {
+    height:100%;
+    width:200px;
+    background-color:#fff;
+    position:fixed!important;
+    z-index:1;
+    overflow:auto
 }
 
 .nomenu #side {
@@ -521,7 +619,7 @@ hr {
 #side h3 {
 	color: #333;
 	margin: 2em 0 0 0;
-	padding-left: 2em
+	padding-left: 1em
 }
 #side h4 {
 	color: #999;
@@ -530,7 +628,7 @@ hr {
 	margin-bottom: 0.5em;
 }
 #side p {
-	margin: 0 0 2em 0;
+	margin: 0 0 1em 0;
 	font-size: 87%;
 }
 #side dl {
@@ -553,37 +651,28 @@ hr {
 }
 #side li {
 	list-style: none;
-	/* background: transparent url(../images/w6.gif) top left no-repeat; */
 	padding: 0 0 0.3em 11px;
 }
 #side li.here {
 	/* highlight current page */
-	background-color: #99D;
+	background-color: LightSlateGray;
 }
 
 
 /*header*/
 #header {
-	background: #AAC;
+	background: LightPurple;
 }
 #header img {			/* Used for the JMRI logo */
 	float: left;
 	margin: 0;
-	width:  170px;
-	height: 135px;
-	padding: 5px 20px 5px 16px;
-	background: #AAC;	/* light purple */
+	padding: 0px 5px 5px 0px;
 }
 #mainNav { /* top row of top-of-page navbar */
-	background: #99D;	/* light purple */
-	margin: 0 3px 0 205px;	/* Size of background box */
-	padding:20px 0 0 0;	/* location of text in the box */
-	width: auto;		/* resize with window width */
-	height: 89px;		/* how much box below the text? */
-	text-align: right;	/* memu aligns to the right */
-	border: solid 3px #AAE;
-	border-bottom-color: #88E;
-	border-right-color: #88E;
+	background: LightSlateGray;	/* light purple */
+	width: 100%;		/* resize with window width */
+	height: 130px;		/* how much box below the text? */
+	text-align: left;	/* menu aligns to the right */
 }
 #mainNav li {			/* list items are used for navbar menu choices */
 	white-space: nowrap;
@@ -591,63 +680,56 @@ hr {
 	display: inline;
 	padding-right: 0.6em;
 }
-#mainNav :link, #mainNav :visited {
+#mainNav :link, #mainNav :visited, #navbtn_more {
 				/* list items are usually links ... */
 	font-size: 90%;
 	text-transform: lowercase;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: normal;
 	color: #fff;
 }
 #mainNav :link:hover, #mainNav :visited:hover {
 				/* give them some animation ... */
-	padding-bottom: 4px;
-	border-bottom: solid 3px #33F;
+	color: LightSlateGray;
 }
 
 /* Search Form constructs */
 
 #sf, #searchform {	/* search form */
-	border: solid 2px #CCF;
-	border-bottom-color: #AAB;
-	border-right-color: #AAB;
-	background: #BBD;
-	margin: 0 6px 0 295px;
+	background: Lavender;
+	margin: 10px 5px 10px 5px;
 	position: relative;
 	top: -16px;
-	text-align: right;
+    text-align: right;
 	padding: 5px 15px 0 0;
 	voice-family: inherit;
-	height: 22px;	/* bottom "reveal" */
+	height: 45px;
+	class: w3-bar-block w3-collapse w3-card w3-right
+	z-index: 6;
+	right: 60px;
 }
 
 #sf label, #searchform label {
 	font-size: 80%;
-	color: #77B;
+	color: Black;
 }
 
 #q {			/* Search query text box */
 	font-size: 70%;
 	font-weight: normal;
-	background: #EEF;
-	border: solid 1px #AAC;
-	border-bottom-color: #CCD;
-	border-right-color: #CCD;
+	background: White;
+	color: Black;
 	padding: 2px;
 }
 #q:hover, #q:focus {
-	background: white;
+	background: White;
 }
 #submit {
-	background-color: #99D;
-	color: #FFF;
-	border: solid 1px #AAC;
-	border-top-color: #CCD;
-	border-left-color: #CCD;
+	background-color: LightSlateGray;
+	color: Black;
 }
 #submit:hover, #submit:focus {
-	padding-bottom: 2px;
-	border-bottom: solid 3px #33F;
+	background-color: White;
 }
 
 /* End of search form */
@@ -678,16 +760,20 @@ hr {
 	color:#FFF;
 }
 
+}
 /*body*/
 #mainContent {
 	background: #fff;
 	line-height: 1.3; /* value other than 'normal' needed for WinIE */
-	margin-left: 206px;
+	/*margin-left: 260px;*/
+	margin-left: 10px;
+	margin-right: 10px;
 	padding: 20px 30px;
+    width: 100%;
+    float: left;
 	voice-family: inherit;
 }
 .nomenu #mainContent {
-	/* margin-left: 0; */
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;
@@ -715,27 +801,6 @@ hr {
 	}
 .list {
 	margin: 2em 0 0 0;
-}
-.list h1 {
-	color: #554FA0;
-	background-color: #EEECF6;
-	background-position: center left;
-	padding: 2px;
-	border: dotted 1px #BEBFD7;
-	border-right: 0;
-	border-left: 0;
-	margin-bottom: 0;
-	clear:left;
-}
-.list h2 {
-	color: #554FA0;
-	background-color: #EEECF6;
-	background-position: center left;
-	padding: 7px;
-	border: dotted 1px #BEBFD7;
-	border-right: 0;
-	border-left: 0;
-	margin-bottom: 0;
 }
 .list dl {
 	margin: 0;
@@ -773,13 +838,11 @@ hr {
 	padding: 0.25em 0 0.25em 0;
 	}
 .list dd.first {
-	border-top: dotted 1px #BEBFD7;
 }
 .list dd {
 	margin: 0 0 0 10em;
 	padding: 1px 0 0.4em 0.7em;
-	border-bottom: dotted 1px #BEBFD7;
-	border-left: dotted 1px #BEBFD7;
+	border-bottom: solid 1px LightSlateGrey;
 }
 .list dd p, .list dd ul {
 	margin-top: 0.2em;
