@@ -2,9 +2,9 @@
 <!-- This is the common sidebar definition for main (root) pages -->
 
 	  <hr class="hide">
-	  <div id="side" class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:250px;" > <!-- Block of text on
-	   left side of page -->
-      <button class="w3-right w3-button w3-hide-large fa fa-close" onclick="w3_close()"></button>
+	  <div id="side" class="w3-bar-block card-1">
+      <!-- Block of text on left side of page -->
+      <button class="w3-right button w3-hide-large fa fa-close" onclick="side_close()"></button>
 	  <div style="text-align: center">JMRI&reg; is...</div>
 
 	  <dl class="doc">
@@ -49,22 +49,22 @@
 	<!-- /Sidebar.shtml -->
 
 <script type="text/javascript">
-        function w3_open() {
-          var a = document.getElementById("side");
-          var b = document.getElementById("show-side");
-          if (a.style.display == "block") {
-            a.style.display = "none";
-            b.innerHTML = "<i class='fa fa-bars'></i>";
-          } else {
-            a.style.display = "block";
-            b.innerHTML = "<i class='fa fa-close'></i>";
-          }
-        }
+    function side_open() {
+      var a = document.getElementById("side");
+      var b = document.getElementById("show-side");
+      if (a.style.display == "block") {
+        a.style.display = "none";
+        b.innerHTML = "<i class='fa fa-bars'></i>";
+      } else {
+        a.style.display = "block";
+        b.innerHTML = "<i class='fa fa-close'></i>";
+      }
+    }
 
-        function w3_close() {
-          var a = document.getElementById("side");
-          var b = document.getElementById("show-side");
-          b.innerHTML = "<i class='fa fa-bars'></i>";
-          a.style.display = "none";
-        }
-    </script>
+    function side_close() {
+      var a = document.getElementById("side");
+      var b = document.getElementById("show-side");
+      b.innerHTML = "<i class='fa fa-bars'></i>";
+      a.style.display = "none";
+    }
+</script>

@@ -3,15 +3,15 @@
 
 <hr class="hide">
 
- <div id="side"> <!-- Block of text on left side of page -->
- Download and install JMRI&reg;
- <dl>
- 
-   <!--#include virtual="/help/en/parts/SidebarInstall.shtml" -->
+<div id="side" class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left">
+    <!-- Block of text on left side of page -->
+    <button class="w3-right w3-button w3-hide-large fa fa-close" onclick="side_close()"></button>
+    <div style="text-align: center">Download and install JMRI&reg;</div>
 
+    <dl>
+    <!--#include virtual="/help/en/parts/SidebarInstall.shtml" -->
 
    <!--#include virtual="/help/en/parts/SidebarSupportedHardware.shtml" -->    
-	
 
   <dt><h3><a href="../releasenotes/">Release Notes</a></h3></dt>
   <dd>
@@ -41,20 +41,22 @@
 
 	    <li><a href="/download/older.shtml">Older releases</a>
 	    </ul></li>
-	<li>(Tentative) Next Test Release:</li>
+	<li>(Tentative) Next Test Release:
 	    <ul>
-	    <li><a href="../releasenotes/jmri4.19.4.shtml">JMRI 4.19.4</a>
-      </ul>
+            <li><a href="../releasenotes/jmri4.19.4.shtml">JMRI 4.19.4</a></li>
+        </ul></li>
   </ul>
   </dd>
 
   <dt><h3>Source Code</h3></dt>
+  <dd>
 	<ul>
 	<li><a href="/help/en/html/doc/Technical/getcode.shtml">Get the Code</a>
 	</ul>
   </dd>
 
   <dt><h3>Issues</h3></dt>
+  <dd>
 	<ul>
 	<li><a href="https://github.com/JMRI/JMRI/issues">JMRI Issues</a></li>
 	<li><a href="https://github.com/JMRI/website/issues">JMRI Site Issues</a></li>
@@ -64,7 +66,6 @@
  </dl>
 
     <!--#include virtual="/help/en/parts/SidebarTail.shtml" -->
-
 
  </div> <!-- closes #side --> 
 <!-- Sidebar.shtml -->
