@@ -1,143 +1,28 @@
 <!-- Header.shtml -->
   <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
-  <div id="header">
-      <!-- Top tool bar -->
-      <div id="mainNav" class="bar-1">
+  <div id="header" class="w3-bar w3-border w3-card-4">
+	<!-- Logo -->
+	<a href="/" title="Return to home page" accesskey="1">
+	    <img src="/images/logo-jmri.gif" width="160" height="135" alt="JMRI Logo"> </a>
+	<!-- /Logo -->
+	<ul id="mainNav"> <!-- Top tool bar -->
+	   <li><a href="/download/index.shtml"  title="Get the latest software">Download</a></li>
+	   <li><a href="/help/en/html/apps/index.shtml"      title="Learn about JMRI applications">Applications</a></li>
+	   <li><a href="/help/en/html/hardware/index.shtml"  title="What hardware does JMRI support">Hardware</a></li>
+	   <li><a href="/help/en/webtoc.shtml"   title="JMRI Help Screens">Help</a></li>
+	   <li><a href="/help/en/manual/index.shtml"   title="JMRI Manuals">Manuals</a></li>
+	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
+	   <li><a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">Acknowledgements</a></li>
+	</ul>
 
-          <div id="show-side" class="button inline w3-xlarge"
-              onclick="side_open()"><i class="fa fa-bars"></i>
-          </div>
-
-          <div class="inline">
-              <a class="button" href="/" title="Return to JMRI.org home page" accesskey="1">
-                  <img src="images/jmri-small.svg" alt="JMRI Logo" width="60" height=auto>
-              </a>
-          </div>
-
-          <div id="hor-nav" class="inline"><!-- "hor-nav" show/hide by mediaquery -->
-              <div id="nav_dl" class="hor-nav button"><a
-                        href="/download/index.shtml"
-                        title="Get the latest software">Download</a></div>
-              <div id="nav_apps" class="hor-nav button"><a
-                        href="/help/en/html/apps/index.shtml"
-                        title="Learn about JMRI applications">Applications</a></div>
-              <div id="nav_hw" class="hor-nav button"><a
-                        href="/help/en/html/hardware/index.shtml"
-                        title="What hardware does JMRI support">Hardware</a></div>
-              <div id="nav_help" class="hor-nav button"><a
-                        href="/help/en/webtoc.shtml"
-                        title="JMRI Help Screens">Help</a></div>
-              <div id="nav_manuals" class="hor-nav button"><a
-                        href="/help/en/manual/index.shtml"
-                        title="JMRI Manuals">Manuals</a></div>
-              <div id="nav_dev" class="hor-nav button"><a
-                        href="/help/en/html/doc/Technical/index.shtml"
-                        title="Developing and extending JMRI">Developers</a></div>
-              <div id="nav_ack" class="hor-nav button"><a
-                        href="/help/en/Acknowledgements.shtml"
-                        title="Who is JMRI">Acknowledgements</a></div>
-          </div>
-
-          <div id="drop-nav" class="dropdown inline">
-              <!-- show/hide by mediaquery -->
-              <div id="navbtn-more" class="button">Help &amp; More <i
-                  class="fa fa-caret-down"></i>
-              </div>
-              <div class="dropdown-content">
-                  <a class="button"
-                     href="/download/index.shtml"
-                     title="Get the latest software">Download</a>
-                  <a class="button"
-                     href="/help/en/html/apps/index.shtml"
-                     title="Learn about JMRI applications">Applications</a>
-                  <a class="button"
-                     href="/help/en/html/hardware/index.shtml"
-                     title="What hardware does JMRI support">Hardware</a>
-                  <a class="button"
-                     href="/help/en/webtoc.shtml"
-                     title="JMRI Help Screens">Help</a>
-                  <a class="button"
-                     href="/help/en/manual/index.shtml"
-                     title="JMRI Manuals">Manuals</a>
-                  <a class="button"
-                     href="/help/en/html/doc/Technical/index.shtml"
-                     title="Developing and extending JMRI">Developers</a>
-                  <a class="button"
-                     href="/help/en/Acknowledgements.shtml"
-                     title="Who is JMRI">Acknowledgements</a>
-              </div>
-          </div>
-
-          <div class="button inline w3-xlarge floatRight">
-              <a onclick="open_search(this)"
-              href="javascript:void(0)" title="Search JMRI.org"><i class="fa fa-search"></i></a>
-          </div>
-      </div>
-
-      <!--  Search Form -->
-      <div id="searchform" class="card-1">
+	<div id="searchform"> <!--  Search Form -->
           <form method="get" action="https://www.google.com/search">
-            <label for="q" title=" Search JMRI.org">Search JMRI: </label>
+            <label for="q" title="Search JMRI.org">search JMRI: </label>
             <input type="hidden" name="sitesearch" value="jmri.org">
             <input type="text" id="q" name="q" accesskey="s" size="30">
-            <input type="submit" id="submit" class="button" value="Go">
+	    <input type="submit" id="submit" value="go">
           </form>
-      </div> <!--  End #searchform -->
-
+    </div> <!--  End #searchform -->
   </div> <!-- closes #header-->
 <!-- /Header.shtml -->
-
-<script type="text/javascript">
-function openSearch() {
-  document.getElementById("searchform").style.display = "block";
-}
-
-function closeSearch() {
-  document.getElementById("searchform").style.display = "none";
-}
-
-function open_search(elmnt) {
-  var a = document.getElementById("searchform");
-  if (a.style.display == "") {
-    document.getElementById("hor-nav").style.visibility = "visible";
-    document.getElementById("drop-nav").style.visibility = "visible";
-    a.style.display = "none";
-    elmnt.innerHTML = "<i class='fa fa-search'></i>";
-  } else {
-      document.getElementById("hor-nav").style.visibility = "hidden";
-      document.getElementById("drop-nav").style.visibility = "hidden";
-    a.style.display = "";
-    if (window.innerWidth > 1000) {
-      a.style.width = "40%";
-    } else if (window.innerWidth > 768) {
-      a.style.width = "60%";
-    } else {
-      a.style.width = "60%";
-    }
-    <!-- set cursor in search field (opens keyboard on mobile) -->
-    if (document.getElementById("q")) {document.getElementById("q").focus(); }
-
-    elmnt.innerHTML = "<i class='fa fa-close'></i>";
-  }
-}
-
-// When the user scrolls the page, execute stickyFunction
-window.onscroll = function() {
-    stickyFunction()
-};
-
-// Get the navbar
-var navbar = document.getElementById("mainNav");
-// Get the offset position of the navbar
-var sticky = mainNav.offsetTop;
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function stickyFunction() {
-  if (window.pageYOffset >= sticky) {
-    mainNav.classList.add("sticky")
-  } else {
-    mainNav.classList.remove("sticky");
-  }
-}
-
-</script>

@@ -2,15 +2,13 @@
 <!-- This is the common sidebar definition for main (root) pages -->
 
 	  <hr class="hide">
-	  <div id="side" class="w3-bar-block card-1">
-      <!-- Block of text on left side of page -->
-      <button class="w3-right button w3-hide-large fa fa-close" onclick="side_close()"></button>
-	  <div style="text-align: center">JMRI&reg; is...</div>
 
+	  <div id="side"> <!-- Block of text on left side of page -->
+	  <div style="text-align: center">JMRI&reg; is...</div>
 	  <dl class="doc">
+
 		<dt><h3><a href="./help/en/html/apps/DecoderPro/index.shtml">DecoderPro&reg;</a></h3></dt>
-		<dd>A great tool for programming decoders, simplifying the job of configuring DCC decoders from your
-            computer</dd>
+		<dd>A better tool for programming decoders, simplifying the job of configuring DCC decoders from your computer</dd>
 
 		<dt><h3><a href="./help/en/html/apps/PanelPro/index.shtml">PanelPro&trade;</a></h3></dt>
 		<dd>Design and Operate CRT based CTC control panels that reflect the real-time state of your railroad <em>and</em> let you control it</dd>
@@ -29,42 +27,22 @@
 		Our <a href="./community/examples/Gallery.shtml">Gallery page</a> highlights some of these.<br>
 		Also, there are <a href="./community/connections/CommunityConnectionsIndex.shtml">many apps with JMRI connections.</a>		
         </dd>
+		
+	    <!--#include virtual="./help/en/parts/SidebarTools.shtml" -->
 
-	    <!--#include virtual="./help/en/parts/SidebarToolsNew.shtml" -->
+      <!--#include virtual="./help/en/parts/SidebarLayoutAutomation.shtml" -->
+		
+		<dt><h3><a href="./help/en/html/hardware/index.shtml">Supported hardware</a></h3></dt>
+        <dd>JMRI supports a wide range of DCC systems, command stations and protocols.</dd>
+	    <!-- If someday we want to show the whole list, use #include virtual="./help/en/parts/SidebarSupportedHardware.shtml" -->    
 
-        <!--#include virtual="./help/en/parts/SidebarLayoutAutomationNew.shtml" -->
-
-	    <!--#include virtual="./help/en/parts/SidebarSupportedHardwareNew.shtml" -->
-
-	    <!--#include virtual="./help/en/parts/SidebarInstallNew.shtml" -->    
+	    <!--#include virtual="./help/en/parts/SidebarInstall.shtml" -->    
 
 	  </dl>
 
-	  <!--#include virtual="./help/en/parts/SidebarTailNew.shtml" -->
+	 <!--#include virtual="./help/en/parts/SidebarTail.shtml" -->     
 
 	</div> <!-- closes #side -->
-
-    <!-- button is in /Header -->
-
+	
 	<!-- /Sidebar.shtml -->
 
-<script type="text/javascript">
-    function side_open() {
-      var a = document.getElementById("side");
-      var b = document.getElementById("show-side");
-      if (a.style.display == "block") {
-        a.style.display = "none";
-        b.innerHTML = "<i class='fa fa-bars'></i>";
-      } else {
-        a.style.display = "block";
-        b.innerHTML = "<i class='fa fa-close'></i>";
-      }
-    }
-
-    function side_close() {
-      var a = document.getElementById("side");
-      var b = document.getElementById("show-side");
-      b.innerHTML = "<i class='fa fa-bars'></i>";
-      a.style.display = "none";
-    }
-</script>

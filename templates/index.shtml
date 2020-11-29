@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+
+<head>
+    <title>
+        JMRI: Website templates
+    </title>
+    <meta name="author" content="Egbert Broerse">
+    <meta name="keywords" content="java model railroad JMRI web site html css javascript">
+    <!--#include virtual="../Style.shtml" -->
+</head>
+
+<body>
+    <div id="container">
+    <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
+
+    <!--#include virtual="../Header2020.shtml" -->
+	<div id="mBody">
+
+	<hr class="hide">	<!-- only shows up on printouts -->
+    <!--#include virtual="../Sidebar2020.shtml" -->
+    <!-- load last to see mainContent on top of small screen, block is moved via css -->
+	<div id="mainContent">	<!-- Body of page -->
+
+        <div id="teaser">
+            <h1>JMRI Web page styles and templates</h1>
+
+            <p>To demonstrate some of the current html and css options built into the jmri.org site, this page
+            describes the most important ones.</p>
+            <p>You can also study the comments in the html code of the main page templates:</p>
+            <ul>
+                <li>For pages with a sidebar "menu" to the left: <a href="template.shtml">template.shtml</a></li>
+                <li>For pages without a sidebar: <a href="template-nosidebar.shtml">template-nosidebar.shtml</a></li>
+            </ul>
+            <p>When you include a link to <code>/Sidebar.shtml</code> you will see the one currently shown (see
+            <em>Responsive HTML</em> note).</p>
+
+            <h2>Color scheme</h2>
+            <p>Three main colors:</p>
+            <ul>
+                <li style="color: LightSlateGray;">LightSlateGray;</li>
+                <li style="color: #554FA0;">XX purple</li>
+                <li class="box-1" style="color: #ffffcc;">Sand/orange = attention</li>
+            </ul>
+            <p class="important">Fine lines, fade shadows for floating/box, graphic weight in headers/color only.</p>
+            <p>To guarantee <a href="https://www.w3.org/standards/webdesign/accessibility">accessibility</a>:
+            sufficient contrast, information (read, or text-to-speech...)</p>
+            <p>For <a href="https://www.w3.org/People/Bos/DesignGuide/maintainability.html">maintainability</a>:
+            please focus your contributions on contents, and follow along with the available style guide.<br>
+            Avoid adding your own custom formatting, empty &lt;p&gt; tags to add space around other elements or
+            make an effort to align stuff on a page by embeddding it inside html tables etc.</p>
+
+            <div class="flex-container"><!-- flex is a set for responsive positioning on different screen sizes -->
+                <div id="icon-large" class="flex-item-30">
+                    <img src="images/ios_prev1.png" alt="JMRI site viewed on iphone" style="object-fit: scale-down;">
+                </div>
+
+                <div class="flex-item-70">
+                    <h2>Responsive HTML</h2>
+                    <p>To present the optimum viewing experience on different screen sizes, sonce fall 2020 jmri.org
+                    supports so called 'responsive' page layout and matching css style sheets.</p>
+                    <p>An obvious example of this is the collapsed Sidebar when you view this page on a mobile device
+                    (portrait mode). Instead of filling part of the screen, you will find a hamburger menu on the top left.
+                    Click it to see the Sidebar slide in from the left.</p>
+                </div>
+            </div>
+            <p>Subjects to be added:</p>
+                <ul>
+                    <li>#side (width 250px)
+                    <li>#main
+                    <li>images: flex/100% width/420px view, caption + alt
+                    <li>3 columns > flex
+                    <li>h1,h2
+                    <li>p
+                    <li>p important (warnings)
+                    <li>Display List dl
+                    <li>button
+                    <li>bar-1
+                    <li>flex-30/-70
+                    <li>Javascripts included in Header file or in the js directory?
+                    <li>Breakpoints (max width to fit): 420/800/1040/1500px
+                    <li>Header collapsing menu/420px
+                    <li>Searchform width/floating/breakpoint 420px
+                    <li>i18n</li>
+                </ul>
+        </div> <!-- closes #teaser-->
+
+        <h2><a name="download">Download a Release</a></h2>
+        <!-- Accordions -->
+        <div class="flex-container">
+            <div class="flex-item-50">
+                <h4 onclick="collapse('id-1')" class="button card-1">flex-item-50, style: card-1</h4>
+                <div id="id-1" class="hidden">
+                    <p>Opens and collapses on clicking the header</p>
+                </div>
+            </div>
+
+            <div class="flex-item-50">
+                <h4 onclick="collapse('id-2')" class="button card-1">flex-item-50, style: card-1</h4>
+                <div id="id-2" class="hidden">
+                    <p>Another one, filling the right half of the screen on large displays. Flows into a single
+                    column, bbelow the first item on narrow screens &lt; 400 pixels.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--#include virtual="../Footer.shtml" -->
+	  </div> <!-- closes #mainContent-->
+
+    </div> <!-- closes #mBody-->
+</div> <!-- closes #container -->
+</body>
+</html>
+
+<!-- Javascript to open/collapse the Download Accordions, since 11-2020 -->
+<script type="text/javascript">
+function collapse(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("block-show") == -1) {
+    x.className += " block-show";
+  } else {
+    x.className = x.className.replace(" block-show", "");
+  }
+}
+</script>
