@@ -50,6 +50,21 @@
             Avoid adding your own custom formatting, empty &lt;p&gt; tags to add space around other elements or
             make an effort to align stuff on a page by embeddding it inside html tables etc.</p>
 
+            <h3>Screen parts</h3>
+            <h4>main</h4>
+
+            <h4>sidebar</h4>
+
+            <h4>header</h4>
+
+            <h4>Footer</h4>
+
+            <h4>Includes</h4>
+            <p>Style: </p>
+            <p>Scripts: </p>
+
+            <h3>Standard Components</h3>
+            <p>Flex is a set for responsive positioning on different screen sizes. We provide 4 of them:</p>
             <div class="flex-container"><!-- flex is a set for responsive positioning on different screen sizes -->
                 <div id="icon-large" class="flex-item-30">
                     <img src="images/ios_prev1.png" alt="JMRI site viewed on iphone" style="object-fit: scale-down;">
@@ -57,7 +72,7 @@
 
                 <div class="flex-item-70">
                     <h2>Responsive HTML</h2>
-                    <p>To present the optimum viewing experience on different screen sizes, sonce fall 2020 jmri.org
+                    <p>To present the optimum viewing experience on different screen sizes, since fall 2020 jmri.org
                     supports so called 'responsive' page layout and matching css style sheets.</p>
                     <p>An obvious example of this is the collapsed Sidebar when you view this page on a mobile device
                     (portrait mode). Instead of filling part of the screen, you will find a hamburger menu on the top left.
@@ -85,7 +100,7 @@
                 </ul>
         </div> <!-- closes #teaser-->
 
-        <h2><a name="download">Download a Release</a></h2>
+        <h3>Accordions</h3>
         <!-- Accordions -->
         <div class="flex-container">
             <div class="flex-item-50">
@@ -99,7 +114,7 @@
                 <h4 onclick="collapse('id-2')" class="button card-1">flex-item-50, style: card-1</h4>
                 <div id="id-2" class="hidden">
                     <p>Another one, filling the right half of the screen on large displays. Flows into a single
-                    column, bbelow the first item on narrow screens &lt; 400 pixels.</p>
+                    column, below the first item on narrow screens &lt; 400 pixels.</p>
                 </div>
             </div>
         </div>
@@ -111,15 +126,3 @@
 </div> <!-- closes #container -->
 </body>
 </html>
-
-<!-- Javascript to open/collapse the Download Accordions, since 11-2020 -->
-<script type="text/javascript">
-function collapse(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("block-show") == -1) {
-    x.className += " block-show";
-  } else {
-    x.className = x.className.replace(" block-show", "");
-  }
-}
-</script>

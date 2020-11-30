@@ -39,12 +39,12 @@
                         title="Who is JMRI">Acknowledgements</a></div>
           </div>
 
-          <div id="drop-nav" class="dropdown inline">
+          <div id="drop-nav" class="dropdown inline" aria-haspopup="true">
               <!-- show/hide by mediaquery -->
-              <div id="navbtn-more" class="button inline">Help &amp; More <i
+              <div id="navbtn-more" onclick="open_more(this)" class="button inline">Help &amp; More <i
                   class="fa fa-caret-down"></i>
               </div>
-              <div id="more" class="dropdown-content"><!-- style="display:none">-->
+              <div id="more" class="dropdown-content" style="display:none">
                   <a class="dropdown-menuitem button"
                      href="/download/index.shtml"
                      title="Get the latest software">Download</a>
@@ -85,6 +85,7 @@
 
       </div>
   </div> <!-- closes #header-->
+<!--website2020 javascript includes for dropdown menu-item and GoogleSearch form-->
 <script async src="https://cse.google.com/cse.js?cx=ec997d9b2c290dd18"></script>
 <script src="js/header.js"></script>
 <!-- /Header.shtml -->

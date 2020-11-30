@@ -692,7 +692,7 @@ hr {
 	width: 100%;		/* resize with window width */
 	height: auto;		/* how much box below the text? 51px */
 	vertical-align: middle;
-	/* position: relative; // must be off for sticky! */
+	/* position: relative; // must be off for sticky */
     z-index: 3;
     overflow: visible; /* ! required to see More... the dropdown */
 }
@@ -703,7 +703,7 @@ hr {
 	padding-right: 0.6em;
 }
 #mainNav :link, #mainNav :visited, #navbtn-more {
-	/* list items are usually links ... */
+				/* list items are usually links ... */
 	font-size: 100%;
 	text-transform: lowercase;
 	text-decoration: none;
@@ -721,29 +721,19 @@ hr {
 .sticky + .mainContent {
     padding-top: 60px;
 }
-
 .hor-nav {
     padding: 8px 16px;
     display: inline-block;
 }
-/* 2020 dropdown from w3c*/
+
+/* 2020 dropdown from w3c, used in collapsed menu */
 .dropdown {
     position: relative;
     top: 100%;
-    z-index: 5;
 }
 .dropdown ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-}
-li.dropdown a:hover, {
-  background-color: LightGray;
-  color: White;
-  position: relative;
-  display: inline-block;
-  cursor: pointer
 }
 .dropdown-content {
   position: absolute;
@@ -763,17 +753,15 @@ li.dropdown a:hover, {
   text-decoration: none;
   text-align: left;
 }
-#navbtn-more:hover > .dropdown-content {
+.dropdown:hover > .dropdown-content {
   visibility: visible;
   transition: visibility 0ms 0ms, opacity 83.33333333ms 0ms, transform .25s 0ms, box-shadow 83.33333333ms 62.5ms;
   opacity: 1;
-  color: Black;
 }
 .dropdown-menuitem {
     display: block;
     position: relative;
     white-space: nowrap;
-    color: #000;
     width: 100%;
 }
 
@@ -782,12 +770,12 @@ li.dropdown a:hover, {
 }
 
 /* Search Form constructs */
-#sf, #searchform {	/* search form */
-	padding: 1px;
+#searchform {	/* search form */
 	left: 100px;
+	top: 5px;
 	z-index: 4;
 }
-/* #sf label, #searchform label {
+/* #searchform label {
 	font-size: 80%;
 	color: Black;
 }
