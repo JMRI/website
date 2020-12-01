@@ -1,19 +1,20 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
  <title>Donating to JMRI</title>
-    <meta name="keywords" content="JMRI Jacobsen open-source patent defense copyright trademark">
+    <meta name="keywords" content="JMRI Jacobsen open-source donations copyright">
     <!--#include virtual="/Style.shtml" -->
 </head>
 <body>
 <div id="container">
 <!--#include virtual="/Header.shtml" -->
-<!--#include virtual="Sidebar.shtml" -->
+    <div id="mBody">
 
-<hr class="hide">
+    <hr class="hide">	<!-- only shows up on printouts -->
+    <!--#include virtual="Sidebar.shtml" -->
+    <div id="mainContent">
 
- <div id="mainContent">
     <h1>Donating to JMRI</h1>
  
     JMRI runs entirely on volunteer labor. We have an
@@ -67,12 +68,12 @@
 
         </tr>
         <tr>
-            <td align=center>Donate $10</td>
-            <td align=center>Donate $20</td>
-            <td align=center>Donate $50</td>
-            <td align=center>Donate $100</td>
-            <td align=center>Donate $250</td>
-            <td align=center>Pick Amount</td>
+            <td align="center">Donate $10</td>
+            <td align="center">Donate $20</td>
+            <td align="center">Donate $50</td>
+            <td align="center">Donate $100</td>
+            <td align="center">Donate $250</td>
+            <td align="center">Pick Amount</td>
         </tr>
         </table>
     <p>
@@ -82,9 +83,10 @@
     If you don't want to use PayPal, please
     <a href="mailto:jmri.@jmri.net">contact us directly via email</a>
     and we can make other arrangements.</p>
-    <!--#include virtual="/Footer.shtml" -->
 
- </div> <!-- closes #mainContent-->
-</div> <!-- closes #mBody--> 
+        <!--#include virtual="/Footer.shtml" -->
+    </div> <!-- closes #mainContent-->
+    </div> <!-- closes #mBody-->
+</div> <!-- closes #container -->
 </body>
 </html>

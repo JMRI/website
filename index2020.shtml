@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -62,7 +62,13 @@
                     <!-- Photograph on home landing page -->
                     <img src="images/Home_Fireman1940PD_cropflip_purple.jpg"
                          style="max-width:100%; height:auto; float:right;"
-                         alt="fireman on the NYC" longdesc="Public Domain image of a fireman on the NYC Chicago to Glacier Park Empire Builder, ca. 1940, original image by Charles O'Rear, 1941-, Photographer (NARA record: 3403717) (U.S. National Archives and Records Administration) [Public domain], via Wikimedia Commons from Wikimedia Commons, url = https://commons.wikimedia.org/wiki/File%3AFIREMAN_ON_THE_EMPIRE_BUILDER_PASSENGER_TRAIN_ENROUTE_FROM_CHICAGO_TO_EAST_GLACIER_PARK%2C_MONTANA%2C_AND_SEATTLE..._-_NARA_-_556083.jpg, flipped and recolored 2016 by EBR for JMRI">
+                         alt="fireman on the NYC">
+                         <!-- Public Domain image of a fireman on the NYC Chicago to Glacier Park Empire Builder, ca.
+                                 1940, original image by Charles O'Rear, 1941-, Photographer (NARA record: 3403717)
+                                 (U.S. National Archives and Records Administration) [Public domain], via Wikimedia
+                                 Commons from Wikimedia Commons, url = https://commons.wikimedia
+                                 .org/wiki/File%3AFIREMAN_ON_THE_EMPIRE_BUILDER_PASSENGER_TRAIN_ENROUTE_FROM_CHICAGO_TO_EAST_GLACIER_PARK%2C_MONTANA%2C_AND_SEATTLE..._-_NARA_-_556083.jpg,
+                                 flipped and recolored 2016 by EBR for JMRI"-->
                 </div>
             </div>
             <p>
@@ -112,7 +118,7 @@
             </p>
         </div> <!-- closes #teaser-->
 
-        <h2><a name="download">Download a Release</a></h2>
+        <h2><a id="download">Download a Release</a></h2>
         <!-- Accordions -->
         <div class="flex-container">
             <div class="flex-item-50">
@@ -356,7 +362,7 @@
             <h2>Where our visitors live</h2>
 		<!-- Cluster map code -->
   		<!-- this is JMRI.org; earlier it had been jmri.sf.net, see if it's still updating properly, fine 2019-05-->
-  		<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?u=6Nhd&d=7lrUgf6WLRPiXnALEuchzS1qu7aRROg9aknhvnFo5Zo"></script>
+  		<script id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?u=6Nhd&d=7lrUgf6WLRPiXnALEuchzS1qu7aRROg9aknhvnFo5Zo"></script>
 
         </div> <!-- closes .list -->
 
@@ -365,5 +371,6 @@
 
     </div> <!-- closes #mBody-->
 </div> <!-- closes #container -->
+<script src="js/main.js"></script>
 </body>
 </html>

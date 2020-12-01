@@ -2,7 +2,7 @@
 /* which was written by dave shea, http://www.mezzoblue.com/ */
 /* Modified L. David Baron. */
 /* Modified and simplified for use by JMRI by John Plocher. */
-/* vim:ts=4:noet: 
+/* Updated for responsive/accessibility JMRI 2020 Egbert Broerse */
 */
 
 
@@ -24,6 +24,7 @@
    Q and A (FAQ)
    Tables
    Meta
+   Animation via css
 */
 
 /* Random HTML Styles */
@@ -206,25 +207,25 @@
 		display: block;
 		margin-right: 0;
 		text-align: right;
-		border: thin solid red;
+		border: thin solid #FFD700; /* Orange */
 	}
 
 /* Comments and other Asides */
 
 	/* AsciiDoctor styles */
-	.admonitionblock>table {
-		border-collapse:separate;
-		border:0;
-		background:none;
-		width:100%
+	.admonitionblock > table {
+		border-collapse: separate;
+		border: 0;
+		background: none;
+		width: 100%
 	}
-	.admonitionblock>table td.content {
-		padding-left:1.125em;
-		padding-right:1.25em;
-		border-left:1px solid #dddddf;
-		color:rgba(0,0,0,.6)
+	.admonitionblock > table td.content {
+		padding-left: 1.125em;
+		padding-right: 1.25em;
+		border-left: 1px solid #dddddf;
+		color: rgba(0,0,0,.6)
 	}
-	.admonitionblock.note:before {
+	.admonitionblock.note :before {
 		content: ""; /* nothing */
 	}
 
@@ -287,22 +288,22 @@
 		color: White;
 		font-weight: normal;
 		float: right;
-		background: #222696;
+		background: #FFD700; /* Orange */
 	    background-size: 100% 100%;
 	    border-radius: 4px;
 	    margin: 2px 2px 2px 2px;
 	    padding: .2em .3em;
 	}
 	.since a:link {
-			color: #fff;
+			color: White;
 			font-weight: normal;
 	}
 	.since a:visited {
-			color: #fff;
+			color: White;
 			font-weight: normal;
 	}
 	.since a:link:hover, :visited:hover {
-			color: #fff;
+			color: White;
 			font-weight: normal;
 	}
 
@@ -488,7 +489,7 @@ body {
 	margin: 0;
 	background: White;
 	color: Black;
-	font-family: Verdana,Sans-serif;
+	font-family: Verdana, Sans-serif;
 	font-size: 90%;
 	position: relative;
 	min-height: 100%;
@@ -505,7 +506,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: Black;
 }
 h3, h4, h5, h6 {
-    background-color: #554FA0;
+    background-color: #554FA0; /* Purple*/
 }
 h1 { font-size: 140%; padding: 9px; padding-left: 1em; }
 h2 { font-size: 120%; padding: 3px; padding-left: 1em; }
@@ -522,7 +523,7 @@ img {
 	height: auto;
 }
 :link {
-	color: #554FA0;
+	color: #554FA0; /* Purple*/
 	font-weight: bold;
 }
 :visited {
@@ -542,6 +543,7 @@ hr {
 	margin: 2em 0;
 }
 
+/* alignment */
 .floatLeft {
 	float: left;
 	margin: 5px 10px 5px 0;
@@ -552,7 +554,7 @@ hr {
 }
 
 /* page structure*/
-/* Use a media query to add a breakpoint at 1024px, same point as small logo is shown (see /Header */
+/* Use a media query to add a breakpoint at 1024px, same point as top menus collapse into a dropdown (see /Header) */
 @media only screen and (max-width: 1024px) {
   #hor-nav {
     display: none;
@@ -565,7 +567,7 @@ hr {
   }
 }
 
-/*2 Column Layout*/
+/*2 Column Layout on bigger screens */
 @media only screen and (min-width: 1025px) {
 	.mBody, #mainContent, #side {
 		position: absolute;
@@ -576,7 +578,7 @@ hr {
 	#mainContent {
 		width: 75%;
 		float: left;
-		left: 25%; /* = Width of #side(bar)*/
+		left: 25%; /* = #mainContent is loaded before sidebar, so shift to right for width of #side(bar)*/
 	}
 	#side {
 	    display: block;
@@ -585,10 +587,7 @@ hr {
 		left: -75%; /* = Width of #mainContent*/
 		animation: animate-left 0.4s;
 	}
-	#drop-nav {
-        display: none;
-    }
-    #show-side {
+	#drop-nav, #show-side, #close-side {
         display: none;
     }
     .list dd {
@@ -633,10 +632,13 @@ hr {
 
 #side h2 {
 	margin-top: 0.5em;
+	background-color: inherit;
 }
-#side h3 {
+#side h3, #side h3:link {
 	margin: 0.5em 0 0 0;
 	padding-left: 1em
+	background-color: inherit;
+	color: Black;
 }
 #side h4 {
 	font-size: 90%;
@@ -650,10 +652,10 @@ hr {
 #side dl {
 	margin-top: 0;
 }
-#side dt {
+#side dt, #side dt :link {
 	font-weight: bold;
-	display: inline;
 	font-size: 87%;
+	color: #554FA0; /* Purple*/
 }
 #side dd {
 	padding: 0 0 0.3em 0.3em;
@@ -674,11 +676,11 @@ hr {
 	color: White;
 }
 #side :link, #side :visited {
-    color: White; /*#554FA0; purple*/
+    color: #554FA0; /* Purple*/
 }
 
 /*header*/
-#header {
+#header { /* No longer used for the JMRI website */
 	background: LightPurple;
 }
 #header img {			/* No longer used for the JMRI logo */
@@ -771,7 +773,7 @@ hr {
 
 /* Search Form constructs */
 #searchform {	/* search form */
-	left: 100px;
+	left: 50px;
 	top: 5px;
 	z-index: 4;
 }
@@ -819,7 +821,7 @@ hr {
 	font-size: 120%;
 	font-weight: bold;
 	background: #99D;	/* light purple */
-	color:#FFF;
+	color: White;
 }
 
 }
@@ -856,7 +858,7 @@ hr {
     vertical-align: top
 }
 .image100w h2 {
-    color: #554FA0;
+    color: #554FA0; /* Purple*/
     background-color: #EEECF6;
     background-position: center left;
     padding: 7px;
@@ -1014,6 +1016,7 @@ hr {
 	left: -999px;
 	width: 990px;
 }
+
 hr.hide {
 	display: none;
 }
