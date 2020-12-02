@@ -307,6 +307,17 @@
 			font-weight: normal;
 	}
 
+	span.donate {
+		background: #FFD700; /* Orange */
+		border-radius: 10px;
+		font-weight: normal;
+		padding: 2px 5px 2px 5px;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3),0 2px 10px 0 rgba(0,0,0,0.3);
+	}
+    .donate a:visited {
+        font-weight: normal;
+    }
+
 /* Computers - General */
 
 	span.application {
@@ -652,9 +663,8 @@ hr {
 #side dl {
 	margin-top: 0;
 }
-#side dt, #side dt :link {
+#side dt {
 	font-weight: bold;
-	font-size: 87%;
 	color: #554FA0; /* Purple*/
 }
 #side dd {
@@ -773,7 +783,8 @@ hr {
 
 /* Search Form constructs */
 #searchform {	/* search form */
-	left: 50px;
+    position: absolute;
+	left: 100px;
 	top: 5px;
 	z-index: 4;
 }
