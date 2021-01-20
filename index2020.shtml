@@ -9,23 +9,28 @@
     <meta name="author" content="John Plocher">
     <meta name="author" content="Egbert Broerse">
     <meta name="keywords" content="java model railroad JMRI decoderpro panelpro operationspro signalpro loconet DCC NMRA">
-    <!--#include virtual="Style.shtml" -->
+    <!--#include virtual="./Style.shtml" -->
 </head>
 
 <body>
     <div id="container">
     <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
-    <!--#include virtual="Header2020.shtml" -->
+    <!--#include virtual="./Header2020.shtml" -->
 	<div id="mBody">
 
 	<hr class="hide">	<!-- only shows up on printouts -->
-    <!--#include virtual="Sidebar2020.shtml" -->
+    <!--#include virtual="./Sidebar2020.shtml" -->
     <!-- load last to see mainContent on top of small screen, block is moved via css -->
 	<div id="mainContent">	<!-- Body of page -->
 
         <div id="teaser">
-            <h1>Welcome to JMRI</h1>
+            <h1>Welcome to JMRI !!!!!! CSS DEMO !!!!!</h1>
+
+            <ul class="hor-nav">
+                <li><a href="templates/index.shtml">CSS Samples and Docs</a></li>
+                <li><a href="donations.shtml">JMRI Web example page</a></li>
+            </ul>
 
             <div class="flex-container"><!-- flex is a set for responsive positioning on different screen sizes -->
                 <div id="icon-large" class="flex-item-30">
@@ -106,11 +111,25 @@
                 </ul>
                 <li><a href="/donations.shtml">Make a small donation</a> to help defray the costs of keeping JMRI
             going.
-            <span class="donate"><a href="/donations.shtml">
-                        Donate...
-                    </a></span>
+            <span class="donate"><a href="donations.shtml">Donate...</a></span>
                 </li>
             </ul>
+
+            And this is how we show a bit of code:
+            <pre><code class="block">
+// Get the navbar
+var navbar = document.getElementById("mainNav");
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+// Add the "sticky" class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyFunction() {
+  if (window.pageYOffset >= sticky) {
+    mainNav.classList.add("sticky")
+  } else {
+    mainNav.classList.remove("sticky");
+  }
+}
+            </code></pre>
 
             <p> Whatever it is that you choose to do with JMRI, and however you get involved,
             <strong>welcome to our community!</strong>
@@ -365,7 +384,7 @@
 
         </div> <!-- closes .list -->
 
-        <!--#include virtual="Footer.shtml" -->
+        <!--#include virtual="./Footer.shtml" -->
 	  </div> <!-- closes #mainContent-->
 
     </div> <!-- closes #mBody-->

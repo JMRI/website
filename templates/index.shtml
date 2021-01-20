@@ -7,23 +7,31 @@
     </title>
     <meta name="author" content="Egbert Broerse">
     <meta name="keywords" content="java model railroad JMRI web site html css javascript">
-    <!--#include virtual="../Style.shtml" -->
+    <!--#include virtual="StyleCopy.shtml" -->
 </head>
 
 <body>
     <div id="container">
     <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
-    <!--#include virtual="../Header2020.shtml" -->
-	<div id="mBody">
+    <!--#include virtual="Header2020Copy.shtml" -->
+	<div class="nomenu" id="mBody">
 
 	<hr class="hide">	<!-- only shows up on printouts -->
-    <!--#include virtual="../Sidebar2020.shtml" -->
     <!-- load last to see mainContent on top of small screen, block is moved via css -->
-	<div id="mainContent">	<!-- Body of page -->
+        <div id="mainContent">	<!-- Body of page -->
+
+        <ul class="hor-nav">
+            <li><a href="../index2020.shtml">Return to Test Landing Page</a></li>
+        </ul>
 
         <div id="teaser">
             <h1>JMRI Web page styles and templates</h1>
+
+            As you se here, we ignore a noside (formerly nomenu) #mBody page. TODO: add some small Sidebar on all
+            pages so the Hamburger menu always has work to do.<br>
+            And note that if you do not wrap text in a &lt;p&gt; (like the next paragraphs) it will flow up to the
+            sides. A quick test!
 
             <p>To demonstrate some of the current html and css options built into the jmri.org site, this page
             describes the most important ones.</p>
@@ -38,10 +46,19 @@
             <h2>Color scheme</h2>
             <p>Three main colors:</p>
             <ul>
-                <li style="color: LightSlateGray;">LightSlateGray;</li>
-                <li style="color: #554FA0;">XX purple</li>
-                <li class="box-1" style="color: #ffffcc;">Sand/orange = attention</li>
+                <li style="color: #554FA0;">var(--primary-color1) = #554FA0; /* Purple */</li>
+                <li style="color: #FFD700;">var(--primary-color2) = #FFD700; /* Orange */ =
+                attention</li>
+                <li style="color: #778899;">var(--primary-color3) = #778899; /* LightSlateGray */ = navigation,
+                boxes</li>
             </ul>
+
+            <p>Two supporting background colors, light enough to read black/purple text:</p>
+            <ul>
+                <li style="background-color: #B695C0;">var(--background-color1) = #B695C0; /* LightPurple */</li>
+                <li style="background-color: #F5F5DC;">var(--background-color2) = #F5F5DC; /* Sand Beige */</li>
+            </ul>
+
             <p class="important">Fine lines, fade shadows for floating/box, graphic weight in headers/color only.</p>
             <p>To guarantee <a href="https://www.w3.org/standards/webdesign/accessibility">accessibility</a>:
             sufficient contrast, information (read, or text-to-speech...)</p>
@@ -50,20 +67,20 @@
             Avoid adding your own custom formatting, empty &lt;p&gt; tags to add space around other elements or
             make an effort to align stuff on a page by embeddding it inside html tables etc.</p>
 
-            <h3>Screen parts</h3>
-            <h4>main</h4>
+            <h2>Screen parts</h2>
+            <h3>main</h3>
 
-            <h4>sidebar</h4>
+            <h3>sidebar</h3>
 
-            <h4>header</h4>
+            <h3>header</h3>
 
-            <h4>Footer</h4>
+            <h3>Footer</h3>
 
             <h4>Includes</h4>
             <p>Style: </p>
             <p>Scripts: </p>
 
-            <h3>Standard Components</h3>
+            <h2>Standard Components</h2>
             <p>Flex is a set for responsive positioning on different screen sizes. We provide 4 of them:</p>
             <div class="flex-container"><!-- flex is a set for responsive positioning on different screen sizes -->
                 <div id="icon-large" class="flex-item-30">
@@ -97,6 +114,23 @@
                     <li>Header collapsing menu/420px
                     <li>Searchform width/floating/breakpoint 420px
                     <li>i18n</li>
+                    <li>code:<br>
+                    Use the tag <code>&lt;code&gt;</code> to show short pieces of code (will scrolling box)<br>
+                    Use the tag <code class="block">&lt;code class="block"&gt;</code> to show multi-line code:
+                    <pre><code class="block">
+// Get the navbar
+var navbar = document.getElementById("mainNav");
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+// Add the "sticky" class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyFunction() {
+  if (window.pageYOffset >= sticky) {
+    mainNav.classList.add("sticky")
+  } else {
+    mainNav.classList.remove("sticky");
+  }
+}
+            </code></pre></li>
                 </ul>
         </div> <!-- closes #teaser-->
 
@@ -124,5 +158,6 @@
 
     </div> <!-- closes #mBody-->
 </div> <!-- closes #container -->
+    <script src="../js/main.js"></script>
 </body>
 </html>

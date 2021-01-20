@@ -27,6 +27,16 @@
    Animation via css
 */
 
+/* Style Colors css vars */
+    :root {
+        --primary-color1: #554FA0; /* Purple */
+        --primary-color2: #FFD700; /* Orange */
+        --primary-color3: #778899; /* LightSlateGray */
+        --hover-color: #C0C0C0; /* LightGray */
+        --background-color1: #B695C0; /* LightPurple */
+        --background-color2: #F5F5DC; /* Sand Beige */
+    }
+
 /* Random HTML Styles */
 
 	body {
@@ -59,8 +69,8 @@
 		white-space: nowrap
 	}
 	.button:hover {
-      background-color: LightGray;
-      color: LightSlateGray;
+      background-color: #C0C0C0; /*var(--hover-color);*/
+      color: #778899; /*var(--primary-color3);*/
       position: relative;
       display: inline-block;
       cursor: pointer
@@ -74,7 +84,7 @@
 	}
 	.card-1 {
 		display: block;
-		background-color: LightSlateGray;
+		background-color: #778899; /*var(--primary-color3);*/
 		color: White;
     	width: 95%;
 	    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
@@ -217,7 +227,7 @@
 		border-collapse: separate;
 		border: 0;
 		background: none;
-		width: 100%
+		width: 100%;
 	}
 	.admonitionblock > table td.content {
 		padding-left: 1.125em;
@@ -347,9 +357,18 @@
 	code {
 		font-family: monospace;
 		white-space: nowrap;
+		background-color: #F5F5DC; /*var(--background-color2);*/ /* Sand Beige */
+		color: #554FA0; /*var(--primary-color1);*/
 	}
 
-	pre.incorrect-code { color:red; }
+	code.block {
+		display: block;
+		overflow: scroll;
+		padding: .2em;
+		white-space: pre;
+	}
+
+	pre.incorrect-code { color: red; }
 
 	pre.code,
 	pre.incorrect-code {
@@ -516,8 +535,8 @@ h1, h2, h3, h4, h5, h6 {
 	border-left: 0;
 	color: Black;
 }
-h3, h4, h5, h6 {
-    background-color: #554FA0; /* Purple*/
+h4, h5, h6 {
+    background-color: #B695C0; /* var(--background-color1);*/
 }
 h1 { font-size: 140%; padding: 9px; padding-left: 1em; }
 h2 { font-size: 120%; padding: 3px; padding-left: 1em; }
@@ -534,7 +553,7 @@ img {
 	height: auto;
 }
 :link {
-	color: #554FA0; /* Purple*/
+	color: #554FA0; /*var(--primary-color1);*/
 	font-weight: bold;
 }
 :visited {
@@ -589,7 +608,7 @@ hr {
 	#mainContent {
 		width: 75%;
 		float: left;
-		left: 25%; /* = #mainContent is loaded before sidebar, so shift to right for width of #side(bar)*/
+		left: 25%; /* = #mainContent is loaded before sidebar following guidelines (more important), so shift to right for width of #side(bar)*/
 	}
 	#side {
 	    display: block;
@@ -616,9 +635,8 @@ hr {
 	padding: 0;
 }
 .nomenu #mBody {
-	background: #EEF;
+	background: #EEF; /*what color is this?*/
 }
-
 
 /*sidebar menus and links*/
 #side {
@@ -633,8 +651,8 @@ hr {
     width: 250px;
     position: fixed;
     z-index: 2;
-    background-color: #F5F5DC; /* Beige */
-    color: LightSlateGray;
+    background-color: #F5F5DC; /*var(--primary-color2); Sand Beige */
+    color: #778899; /*var(--primary-color3);*/
 }
 
 .nomenu #side {
@@ -665,7 +683,7 @@ hr {
 }
 #side dt {
 	font-weight: bold;
-	color: #554FA0; /* Purple*/
+	color: #554FA0; /*var(--primary-color1);*/
 }
 #side dd {
 	padding: 0 0 0.3em 0.3em;
@@ -682,16 +700,16 @@ hr {
 }
 #side li.here {
 	/* highlight current page */
-	background-color: LightSlateGray;
+	background-color: #778899; /*var(--primary-color3);*/
 	color: White;
 }
 #side :link, #side :visited {
-    color: #554FA0; /* Purple*/
+    color: #554FA0; /*var(--primary-color1);*/
 }
 
 /*header*/
 #header { /* No longer used for the JMRI website */
-	background: LightPurple;
+	background: var(--background-color1);
 }
 #header img {			/* No longer used for the JMRI logo */
 	float: left;
@@ -699,7 +717,7 @@ hr {
 	padding: 0px 5px 5px 0px;
 }
 #mainNav { /* top row of top-of-page navbar */
-	background: LightSlateGray;	/* light purple */
+	background: #778899; /*var(--primary-color3);*/
 	color: White;
 	width: 100%;		/* resize with window width */
 	height: auto;		/* how much box below the text? 51px */
@@ -723,7 +741,7 @@ hr {
 	color: White;
 }
 #mainNav :link:hover, #mainNav :visited:hover {
-	color: LightSlateGray;
+	color: #778899; /*var(--primary-color3);*/
 }
 .sticky { /* sticky navigation */
     position: fixed;
@@ -751,7 +769,7 @@ hr {
   position: absolute;
   top: 100%;
   opacity: 0;
-  background-color: LightSlateGray;
+  background-color: #778899; /*var(--primary-color3);*/
   color: #000;
   transition: box-shadow 125ms 0ms, transform 125ms 0ms, opacity 125ms 0ms, visibility 0ms .25s;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -803,7 +821,7 @@ hr {
 	background: White;
 }
 #submit {
-	background-color: LightSlateGray;
+	background-color: #778899; /*var(--primary-color3);*/
 	color: Black;
 }
 #submit:hover, #submit:focus {
@@ -831,7 +849,7 @@ hr {
 	text-align: center;
 	font-size: 120%;
 	font-weight: bold;
-	background: #99D;	/* light purple */
+	background: var(--background-color1);
 	color: White;
 }
 
@@ -869,7 +887,7 @@ hr {
     vertical-align: top
 }
 .image100w h2 {
-    color: #554FA0; /* Purple*/
+    color: #554FA0; /*var(--primary-color1);*/
     background-color: #EEECF6;
     background-position: center left;
     padding: 7px;
