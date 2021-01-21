@@ -2,7 +2,7 @@
 <!-- This is the common sidebar definition for main (root) pages -->
 
 	  <hr class="hide">
-	  <div id="side" class="card-1">
+	  <div class="card-1" id="side" >
       <!-- Block of text on left side of page -->
       <div id="close-side" class="floatRight button fa fa-close" style="display:none;" onclick="side_close()"></div>
 	  <div style="text-align: center;">JMRI&reg; is...</div>

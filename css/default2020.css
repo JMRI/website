@@ -70,7 +70,7 @@
 	}
 	.button:hover {
       background-color: #C0C0C0; /*var(--hover-color);*/
-      color: #778899; /*var(--primary-color3);*/
+      color: #778899; /*var(--primary-color3); LightSlateGray */
       position: relative;
       display: inline-block;
       cursor: pointer
@@ -84,7 +84,7 @@
 	}
 	.card-1 {
 		display: block;
-		background-color: #778899; /*var(--primary-color3);*/
+		background-color: #778899; /*var(--primary-color3); LightSlateGray */
 		color: White;
     	width: 95%;
 	    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
@@ -587,7 +587,7 @@ hr {
 	height: 4px;
 	border: 0;
 	margin: 2em 0;
-	color: #778899; /*var(--primary-color3);*/
+	color: #778899; /*var(--primary-color3); LightSlateGray */
 }
 
 /* alignment */
@@ -628,11 +628,11 @@ hr {
 		left: 25%; /* = #mainContent is loaded before sidebar following guidelines (more important), so shift to right for width of #side(bar)*/
 	}
 
-	.nomenu #mainContent, /* .nomenu @deprecated 4.21.3/Jan 2021 as it describes sidebar no menu = top */
-	.no-sidebar #mainContent {
+	/*.nomenu #mainContent, /* .nomenu @deprecated 4.21.3/Jan 2021 as it describes sidebar no menu = top */
+	/*.no-sidebar #mainContent {
         width: 100%; // inside a div.no-sidebar use all the space, no sidebar
         left: 0%;
-	}
+	}*/
 	#side {
 	    display: block;
 		width: 25%;
@@ -658,9 +658,9 @@ hr {
 	padding: 0;
 }
 
-/*.nomenu #mBody {
+.nomenu #mBody {
 	background: #EEF; /*what color is this?*/
-}*/
+}
 
 /*sidebar menus and links*/
 #side {
@@ -675,8 +675,8 @@ hr {
     width: 250px;
     position: fixed;
     z-index: 2;
-    background-color: #F5F5DC; /*var(--primary-color2); Sand Beige */
-    color: #778899; /*var(--primary-color3);*/
+    background-color: #F5F5DC; /*--background-color2: Sand Beige */
+    color: #778899; /*var(--primary-color3); LightSlateGray */
 }
 
 .nomenu #side,
@@ -725,7 +725,7 @@ hr {
 }
 #side li.here {
 	/* highlight current page */
-	background-color: #778899; /*var(--primary-color3);*/
+	background-color: #778899; /*var(--primary-color3); LightSlateGray */
 	color: White;
 }
 #side :link, #side :visited {
@@ -742,7 +742,7 @@ hr {
 	padding: 0px 5px 5px 0px;
 }
 #mainNav { /* top row of top-of-page navbar */
-	background: #778899; /*var(--primary-color3);*/
+	background: #778899; /*var(--primary-color3); LightSlateGray */
 	color: White;
 	width: 100%;		/* resize with window width */
 	height: auto;		/* how much box below the text? 51px */
@@ -766,7 +766,7 @@ hr {
 	color: White;
 }
 #mainNav :link:hover, #mainNav :visited:hover {
-	color: #778899; /*var(--primary-color3);*/
+	color: #778899; /*var(--primary-color3); LightSlateGray */
 }
 .sticky { /* sticky navigation */
     position: fixed;
@@ -794,7 +794,7 @@ hr {
   position: absolute;
   top: 100%;
   opacity: 0;
-  background-color: #778899; /*var(--primary-color3);*/
+  background-color: #778899; /*var(--primary-color3); LightSlateGray */
   color: #000;
   transition: box-shadow 125ms 0ms, transform 125ms 0ms, opacity 125ms 0ms, visibility 0ms .25s;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
@@ -846,7 +846,7 @@ hr {
 	background: White;
 }
 #submit {
-	background-color: #778899; /*var(--primary-color3);*/
+	background-color: #778899; /*var(--primary-color3); LightSlateGray */
 	color: Black;
 }
 #submit:hover, #submit:focus {
@@ -874,7 +874,7 @@ hr {
 	text-align: center;
 	font-size: 120%;
 	font-weight: bold;
-	background: var(--background-color1);
+	background: #554FA0; /* primary-color1: Purple */
 	color: White;
 }
 

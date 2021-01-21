@@ -492,7 +492,9 @@ hr {
 	padding: 0;
 	width:100%
 }
-.nomenu #mBody {
+
+.nomenu #mBody, /* .nomenu @deprecated, replaced by .no-sidebar since 4.2.23 because that's what is means */
+.no-sidebar #mBody {
 	background: #EEF;
 }
 
@@ -510,7 +512,8 @@ hr {
 	border-right:  solid 2px #AAB;
 }
 
-.nomenu #side {
+.nomenu #side,
+.no-sidebar #side {
 	display: none;
 	}
 
@@ -686,7 +689,9 @@ hr {
 	padding: 20px 30px;
 	voice-family: inherit;
 }
-.nomenu #mainContent {
+
+.nomenu #mainContent,
+.no-sidebar #mainContent {
 	/* margin-left: 0; */
 	margin-left: 10px;
 	margin-right: 10px;

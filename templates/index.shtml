@@ -7,14 +7,14 @@
     </title>
     <meta name="author" content="Egbert Broerse">
     <meta name="keywords" content="java model railroad JMRI web site html css javascript">
-    <!--#include virtual="Style2020.shtml" -->
+    <!--#include virtual="../Style2020.shtml" -->
 </head>
 
 <body>
     <div id="container">
     <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
-    <!--#include virtual="Header2020.shtml" -->
+    <!--#include virtual="../Header2020.shtml" -->
 	<div class="no-sidebar" id="mBody">
 
 	<hr class="hide">	<!-- only shows up on printouts -->
@@ -75,13 +75,15 @@
             <h2>Screen parts</h2>
             <h3>main</h3>
 
-            <h3>sidebar</h3>
+            <h3>Sidebar</h3>
 
-            <h3>header</h3>
+            <h3>Header</h3>
 
             <h3>Footer</h3>
 
             <h4>Includes</h4>
+            <p>Note the h4 header before this line uses a color as a var. Please report your browser and
+            version if the above title is <em>not</em> displayed on a light purple colored band.</p>
             <p>Style: </p>
             <p>Scripts: </p>
 
