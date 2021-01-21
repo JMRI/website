@@ -2,14 +2,14 @@
 /* which was written by dave shea, http://www.mezzoblue.com/ */
 /* Modified L. David Baron. */
 /* Modified and simplified for use by JMRI by John Plocher. */
-/* Updated for responsive/accessibility JMRI 2020 Egbert Broerse */
-*/
+/* Updated for responsiveness/accessibility and colors JMRI 2020 Egbert Broerse */
 
 
 /* JMRI web site Base Styles
  * maintained by John Plocher and Egbert Broerse 2020
  * (Original Mozilla classes are defined in the Markup Guide
  *   http://fantasai.inkedblade.net/mozilla/web/guide/markup)
+ * and W3CSS https://www.w3schools.com/w3css/default.asp
  */
 
 /* TOC:
@@ -217,7 +217,7 @@
 		display: block;
 		margin-right: 0;
 		text-align: right;
-		border: thin solid #FFD700; /* Orange */
+		border: thin solid #FFD700; /* --primary-color2 - Orange */
 	}
 
 /* Comments and other Asides */
@@ -275,7 +275,7 @@
 	p.important {
 		margin: 1em;
 		padding: 0.1em;
-		border: solid #FFD700; /* Orange */
+		border: solid #FFD700; /* --primary-color2 - Orange */
 	}
 
     p.noted {
@@ -298,7 +298,7 @@
 		color: White;
 		font-weight: normal;
 		float: right;
-		background: #FFD700; /* Orange */
+		background: #FFD700; /* --primary-color2 - Orange */
 	    background-size: 100% 100%;
 	    border-radius: 4px;
 	    margin: 2px 2px 2px 2px;
@@ -318,7 +318,7 @@
 	}
 
 	span.donate {
-		background: #FFD700; /* Orange */
+		background: #FFD700; /* --primary-color2 - Orange */
 		border-radius: 10px;
 		font-weight: normal;
 		padding: 2px 5px 2px 5px;
@@ -363,7 +363,7 @@
 
 	code.block {
 		display: block;
-		overflow: scroll;
+		overflow-x: scroll;
 		padding: .2em;
 		white-space: pre;
 	}
@@ -478,6 +478,21 @@
 
 /* Tables */
 
+    .wide-table {
+        overflow-x: scroll;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+	table.tr {
+        white-space: nowrap;
+        background-color: #F5F5DC; /*var(--background-color2);*/ /* Sand Beige */
+        color: #554FA0; /*var(--primary-color1);*/
+        overflow: scroll;
+	}
+
 	table.data {
 		border-collapse: collapse;
 		margin: 0.5em auto;
@@ -495,6 +510,7 @@
 	table.data td {
 		padding: 0.2em;
 		border: 1px solid;
+		vertical-align: top;
 	}
 
 /* Meta */
@@ -536,7 +552,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: Black;
 }
 h4, h5, h6 {
-    background-color: #B695C0; /* var(--background-color1);*/
+	background-color: var(--background-color1); /* LightPurple #B695C0 test browsers display color as var*/
 }
 h1 { font-size: 140%; padding: 9px; padding-left: 1em; }
 h2 { font-size: 120%; padding: 3px; padding-left: 1em; }
@@ -571,6 +587,7 @@ hr {
 	height: 4px;
 	border: 0;
 	margin: 2em 0;
+	color: #778899; /*var(--primary-color3);*/
 }
 
 /* alignment */
@@ -610,6 +627,12 @@ hr {
 		float: left;
 		left: 25%; /* = #mainContent is loaded before sidebar following guidelines (more important), so shift to right for width of #side(bar)*/
 	}
+
+	.nomenu #mainContent, /* .nomenu @deprecated 4.21.3/Jan 2021 as it describes sidebar no menu = top */
+	.no-sidebar #mainContent {
+        width: 100%; // inside a div.no-sidebar use all the space, no sidebar
+        left: 0%;
+	}
 	#side {
 	    display: block;
 		width: 25%;
@@ -634,9 +657,10 @@ hr {
 	left: 0;
 	padding: 0;
 }
-.nomenu #mBody {
+
+/*.nomenu #mBody {
 	background: #EEF; /*what color is this?*/
-}
+}*/
 
 /*sidebar menus and links*/
 #side {
@@ -655,7 +679,8 @@ hr {
     color: #778899; /*var(--primary-color3);*/
 }
 
-.nomenu #side {
+.nomenu #side,
+.no-sidebar #side {
 	display: none;
 	}
 
@@ -868,7 +893,9 @@ hr {
     float: left;
 	voice-family: inherit;
 }
-.nomenu #mainContent {
+
+.nomenu #mainContent,
+.no-sidebar #mainContent {
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 10px;

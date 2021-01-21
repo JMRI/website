@@ -7,15 +7,15 @@
     </title>
     <meta name="author" content="Egbert Broerse">
     <meta name="keywords" content="java model railroad JMRI web site html css javascript">
-    <!--#include virtual="StyleCopy.shtml" -->
+    <!--#include virtual="Style2020.shtml" -->
 </head>
 
 <body>
     <div id="container">
     <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
-    <!--#include virtual="Header2020Copy.shtml" -->
-	<div class="nomenu" id="mBody">
+    <!--#include virtual="Header2020.shtml" -->
+	<div class="no-sidebar" id="mBody">
 
 	<hr class="hide">	<!-- only shows up on printouts -->
     <!-- load last to see mainContent on top of small screen, block is moved via css -->
@@ -28,8 +28,8 @@
         <div id="teaser">
             <h1>JMRI Web page styles and templates</h1>
 
-            As you se here, we ignore a noside (formerly nomenu) #mBody page. TODO: add some small Sidebar on all
-            pages so the Hamburger menu always has work to do.<br>
+            As you see here, we ignore a no-sidebar (formerly nomenu) #mBody page.<br>
+            TODO: add some small Sidebar on all pages so the Hamburger menu always has work to do.<br>
             And note that if you do not wrap text in a &lt;p&gt; (like the next paragraphs) it will flow up to the
             sides. A quick test!
 
@@ -38,12 +38,15 @@
             <p>You can also study the comments in the html code of the main page templates:</p>
             <ul>
                 <li>For pages with a sidebar "menu" to the left: <a href="template.shtml">template.shtml</a></li>
-                <li>For pages without a sidebar: <a href="template-nosidebar.shtml">template-nosidebar.shtml</a></li>
+                <li>For pages without a sidebar: <a href="template-no-sidebar.shtml">template-nosidebar.shtml</a></li>
             </ul>
             <p>When you include a link to <code>/Sidebar.shtml</code> you will see the one currently shown (see
             <em>Responsive HTML</em> note).</p>
 
             <h2>Color scheme</h2>
+            <p>In the jmri.org cascading stylesheet (CSS) we manage tho color scheme and all other styling used on our
+            web site and help pages.</p>
+
             <p>Three main colors:</p>
             <ul>
                 <li style="color: #554FA0;">var(--primary-color1) = #554FA0; /* Purple */</li>
@@ -52,6 +55,8 @@
                 <li style="color: #778899;">var(--primary-color3) = #778899; /* LightSlateGray */ = navigation,
                 boxes</li>
             </ul>
+
+            Button hover color is LightGray. This is applied in the menu buttons along the top.
 
             <p>Two supporting background colors, light enough to read black/purple text:</p>
             <ul>
@@ -114,9 +119,56 @@
                     <li>Header collapsing menu/420px
                     <li>Searchform width/floating/breakpoint 420px
                     <li>i18n</li>
+
+                    <li>
+                    Tables:<br>
+                    No special class tags required for simple, small tables:
+                    <br>
+                    Wrap wide tables in a <code>&lt;div class="wide-table"<&gt;</code> so they will scroll:
+                    <div class="wide-table">
+                        <table>
+                            <tbody><tr>
+                                <th>Connection</th>
+                                <th>In/Out</th>
+                                <th>Entry</th>
+                                <th>Meaning</th>
+                                <th>makes System Name</th>
+                                <th>Mask</th>
+                                <th>Equivalent</th>
+                                <th>Minimum</th>
+                                <th>Maximum</th>
+                            </tr>
+                            <tr>
+                                <td>C/MRI</td>
+                                <td>i/o</td>
+                                <td>1003</td>
+                                <td>Node 1, Input 3</td>
+                                <td>CS1003</td>
+                                <td>n digits (node) + 3 digit (pin)</td>
+                                <td>1:3</td>
+                                <td>node: 1; pin: 1</td>
+                                <td>node: 127; pin: 999</td>
+                            </tr>
+                            <tr>
+                                <td>C/MRI</td>
+                                <td>o</td>
+                                <td>3</td>
+                                <td>Node 0, Output 3</td>
+                                <td>CT3</td>
+                                <td> </td>
+                                <td> </td>
+                                <td>1</td>
+                                <td>999</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </li>
+
                     <li>code:<br>
                     Use the tag <code>&lt;code&gt;</code> to show short pieces of code (will scrolling box)<br>
-                    Use the tag <code class="block">&lt;code class="block"&gt;</code> to show multi-line code:
+                    Use the tag <code>&lt;code class="block"&gt;</code> to show multi-line code (it will display
+                    every whitespace in those lines, so start at the left margin):
                     <pre><code class="block">
 // Get the navbar
 var navbar = document.getElementById("mainNav");
