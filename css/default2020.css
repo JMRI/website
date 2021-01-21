@@ -478,23 +478,40 @@
 
 /* Tables */
 
-    .wide-table {
+    .wide {
         overflow-x: scroll;
     }
 
     table {
         border-collapse: collapse;
+		margin-top: 1em;
+		margin-bottom: 1em;
     }
 
-	table.tr {
+    th {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      text-align: left;
+      background-color: #FFD700; /* --primary-color2 - Orange */
+      color: white;
+    }
+
+	tr {
         white-space: nowrap;
-        background-color: #F5F5DC; /*var(--background-color2);*/ /* Sand Beige */
-        color: #554FA0; /*var(--primary-color1);*/
-        overflow: scroll;
+        color: #554FA0; /*var(--primary-color1); Purple */
+	}
+
+    tr:nth-child(odd) {
+        background-color: #F5F5DC; /*var(--background-color2); Sand Beige */
+    }
+
+	td {
+		padding: 0.2em;
+		border: 1px solid #778899; /* --primary-color3: LightSlateGray */
+		vertical-align: top;
 	}
 
 	table.data {
-		border-collapse: collapse;
 		margin: 0.5em auto;
 		border: 1px solid;
 	}
@@ -504,13 +521,6 @@
 		font-size: small;
 		font-style: italic;
 		text-align: center;
-	}
-
-	table.data th,
-	table.data td {
-		padding: 0.2em;
-		border: 1px solid;
-		vertical-align: top;
 	}
 
 /* Meta */
