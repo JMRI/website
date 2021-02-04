@@ -2,7 +2,7 @@
 /* which was written by dave shea, http://www.mezzoblue.com/ */
 /* Modified L. David Baron. */
 /* Modified and simplified for use by JMRI by John Plocher. */
-/* vim:ts=4:noet: 
+/* vim:ts=4:noet:
 */
 
 
@@ -27,7 +27,7 @@
 */
 
 /* Random HTML Styles */
-	
+
 	dt {
 		font-weight: bold;
 	}
@@ -187,12 +187,12 @@
 /* Emphasis */
 
 	/* em, strong */
-	
+
 	strong.stronger {
 		font-style: italic;
 		font-weight: bold;
 	}
-	
+
 	strong.very-strong {
 		font-weight: bold;
 		text-transform: uppercase;
@@ -206,11 +206,12 @@
 		border: solid #F00;
 	}
 
-        p.noted {
+        p.noted,
+        div.noted {
 		margin: 1em;
 		padding: 0.1em;
 		border: 2px solid blue;
-	}	
+	}
 
 
 	span.important,
@@ -299,7 +300,7 @@
 	pre.incorrect-code .note:before {
 		content: "";
 	}
-	
+
 
 /* Examples and Figures */
 
