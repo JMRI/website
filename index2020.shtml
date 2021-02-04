@@ -25,7 +25,7 @@
 	<div id="mainContent">	<!-- Body of page -->
 
         <div id="teaser">
-            <h1>Welcome to JMRI !!!!!! CSS DEMO !!!!!</h1>
+            <h1>Welcome to JMRI (CSS DEMO)</h1>
 
             <ul class="hor-nav">
                 <li><a href="templates/index.shtml">CSS Samples and Docs</a></li>
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="flex-item-70">
-                <p>The JMRI&reg; project is building tools for model railroad computer control.
+                <p>The JMRI project is building tools for model railroad computer control.
                 We want it to be usable to as many people as possible,
                 so we're building it in Java to run anywhere,
                 and we're trying to make it independent of specific hardware systems.</p>
@@ -115,22 +115,6 @@
                 </li>
             </ul>
 
-            And this is how we show a bit of code:
-            <pre><code class="block">
-// Get the navbar
-var navbar = document.getElementById("mainNav");
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
-// Add the "sticky" class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function stickyFunction() {
-  if (window.pageYOffset >= sticky) {
-    mainNav.classList.add("sticky")
-  } else {
-    mainNav.classList.remove("sticky");
-  }
-}
-            </code></pre>
-
             <p> Whatever it is that you choose to do with JMRI, and however you get involved,
             <strong>welcome to our community!</strong>
             </p>
@@ -154,16 +138,16 @@ function stickyFunction() {
             </div>
 
             <div class="flex-item-50">
-                <h4 onclick="collapse('download2')" class="button card-1">JMRI 4.21.2 Test Release</h4>
+                <h4 onclick="collapse('download2')" class="button card-1">JMRI 4.21.4 Test Release</h4>
                 <div id="download2" class="hidden">
-                    <p><a href="releasenotes/jmri4.21.2.shtml"></a></p>
-                    Released on October 3 2020.
+                    <p><a href="releasenotes/jmri4.21.4.shtml"></a></p>
+                    Released on January 29, 2021.
                     <p>
                     This is the next in a series working toward the next JMRI production release 4.22
-                    toward the end of 2020.</p>
+                    in early 2021.
                     <p>
                     For more information on this test release, see the
-                    <a href="releasenotes/jmri4.21.2.shtml">JMRI 4.21.2 Release Note</a>,
+                    <a href="releasenotes/jmri4.21.4.shtml">JMRI 4.21.4 Release Note</a>,
                     which also contains the download links.</p>
                     <p><a href="#download">Release 4.20</a> is the current "production" release, recommended
                     for first-time users.</p>
@@ -247,7 +231,7 @@ function stickyFunction() {
                     created applications that work with, add data to, or take data from JMRI.
                     See the <a href="./community/connections/CommunityConnectionsIndex.shtml">
                     community/connections directory</a> for a list and links.
-                    New applications can be added at any time!
+                    New applications can be added at any time, so share your stories!
                 </dd>
             </dl>
 
@@ -268,7 +252,7 @@ function stickyFunction() {
                     Imagine friends visiting your layout and running trains from their mobile device,
                     without having to bring throttles.
                     <p>
-                    For more information, please see the
+                    For more information, see the
                     <a href="./help/en/package/jmri/jmrit/withrottle/UserInterface.shtml">feature page</a>.
                 </dd>
             </dl>
@@ -342,7 +326,7 @@ function stickyFunction() {
                     JMRI is an informal open-source software group.
                     We do this for the joy of model railroading, and don't produce anything for profit.
                     <p>
-                    One of our members has spent the past four years in the Federal Courts
+                    One of our members has spent four years in the Federal Courts
                     <a href="/k/summary.shtml">defending our right to continue</a>
                     against an individual who has attacked us with
                     bogus patent threats, cybersquatting, copyright infringement and other illegal acts.
