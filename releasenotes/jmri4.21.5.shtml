@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
- JMRI: Release Notes for 4.21.4
+ JMRI: Release Notes for 4.21.5
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.21.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.21.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!--#include virtual="/Style.shtml" -->
 
@@ -19,16 +19,14 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.21.4 release
+      Release Notes for JMRI 4.21.5 release
       </h1>
 
-    <p>Date: January 29, 2021</p>
-    <p>From: Bob Jacobsen</p>
+    <p>Date: mmm dd, 2021</p>
+    <p>From: (pumpkin)</p>
     <p>Subject: Test Release 4.21.4 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h2>Notes:</h2>
 
@@ -103,9 +101,14 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>
-        None yet
-    </li>
+   
+   <!-- While this release is in development, the     -->
+   <!-- list of new warnings is kept in               -->
+   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
+   <!-- in the JMRI/JMRI repository. Please edit      -->
+   <!-- there.  Changes to this file won't be merged. -->
+   
+   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
 </ul>
 
 
@@ -166,6 +169,7 @@ installing this test release.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -174,17 +178,18 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.21.4/JMRI.4.21.4+Rbe2a13592.dmg">https://github.com/JMRI/JMRI/releases/download/v4.21.4/JMRI.4.21.4+Rbe2a13592.dmg</a><br/>
-  sha256: fe2c22c2497067e0b66586b34af9d4344c66c6d10ae0eccf151b8a9779433ff9 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
+  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.21.4/JMRI.4.21.4+Rbe2a13592.exe">https://github.com/JMRI/JMRI/releases/download/v4.21.4/JMRI.4.21.4+Rbe2a13592.exe</a><br/>
-   sha256: 1a86bfec16e324c018666dff4d31e6d6ce01a06f8201c53789a3a10560decf5e</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
+   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.21.4/JMRI.4.21.4+Rbe2a13592.tgz">https://github.com/JMRI/JMRI/releases/download/v4.21.4/JMRI.4.21.4+Rbe2a13592.tgz</a><br/>
-   sha256: ba70a89345ecdfc2bce4d0e68e1f6e7529f3b42aa6b0c89683c20d9a4bb764d7</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
+   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
 </ul>
+ -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -192,136 +197,23 @@ on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.21.4``/">CI project page</a>.
  -->
 
-<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
  
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri4.21.3.shtml">Test Release 4.21.3</a>:</h2>
+<h2>Changes since <a href="jmri4.21.4.shtml">Test Release 4.21.4</a>:</h2>
  
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.21.4+is%3Amerged">list of included changes</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.21.5+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-
-    <h3>Hardware Support</h3>
-
-        <h4>DCC-EX</h4>
-            <ul>
-                <li>messaging enhancements and cleanup, retry some failed messages</li>
-                <li>allow user to define meters in DCC-EX that display in JMRI</li>
-            </ul>
-
-        <h4>LocoNet</h4>
-            <ul>
-                <li>New LNCV Programming tool (Uhlenbrock protocol), available from LocoNet menu, with window
-                  specific help.</li>
-            </ul>
-
-        <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li>Added hardware connection support for the (LocoNet) Uhlenbrock USB Adapter part #63120.
-                  Manufacturer states their USB drivers only support Windows OS.</li>
-            </ul>
-
-
-    <h3>New / Updated decoder definitions</h3>
-
-        <h4>Digikeijs (Digirails)</h4>
-            <ul>
-                <li>Added DR5033 LocoBoost configuration support, using the new LNCV service mode programming.<br>
-                You can access the DecoderPro programming panes from the LNCV Tool table matched by article number
-                  (5033 in this case).</li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li>Allow configuration of more function outputs for FX3 decoders.</li>
-            </ul>
-
-        <h4>Uhlenbrock</h4>
-            <ul>
-                <li>New Switch Module 63410 decoder support, using the new LNCV service mode programming.<br>
-                You can access the DecoderPro programming panes from the LNCV Tool table matched by article number
-                (6341 in this case).</li>
-            </ul>
-
-    <h3>Dispatcher System</h3>
-        <a id="Dispatcher_System" name="Dispatcher_System"></a>
-        <ul>
-             <li>In addition to running trains by Signal Masts or Signal Heads you may now run trains by No Signals
-             This is most useful for Automatic engineer, and works best with fast throw switchs, such as snap switchs, as
-             it works solely on whether a section is allocated. If you need to check switch sensors for position you must
-             continue to use SSL or SML signals.</li>
-        </ul>
-
-    <h3>Meters and MeterFrames</h3>
-        <a id="Meters" name="Meters"></a>
-        <ul>
-            <li>default meter digits based on max and resolution of defined meter</li>
-        </ul>
-
-    <h3>Operations</h3>
-        <a id="Operations" name="Operations"></a>
-        <ul>
-            <li>New feature for cars, Return When Loaded. Now you can set a load name and destination for a car when
-            it's load status changes to loaded. See operations help for more details.</li>
-        </ul>
-
-    <h3>Preferences</h3>
-        <a id="Preferences" name="Preferences"></a>
-        <ul>
-            <li>The rules for the system connection prefix (one capital followed only by a number, for example D78)
-            are now protected in the Connection Preference panel. Invalid entries are highlighted in red.</li>
-            <li>A bug that could make connection tabs disappear has been fixed.</li>
-        </ul>
-
-    <h3>Signals</h3>
-        <a id="Signals" name="Signals"></a>
-
-	    <h4>Cab Signals</h4>
-            <ul>
-                <li>Better set row height in table.</li>
-            </ul>
-
-   <h3>Switchboard Editor</h3>
-        <a id="SW" name="SW"></a>
-        <ul>
-            <li>Slider and Key switch shapes are drawn on screen instead of loading image files.
-              This increased redraw speed and allows using your custom colors and scaling the size of
-              the graphics to the space available. The old images files for these have been removed.</li>
-          <li>Symbol shapes are still drawn by swapping 2 image files. We added the option to scale them
-            in the Option menu. (Hint: You can replace the supplied image files with your own images as
-            long as they carry identical file names).</li>
-        </ul>
-    <h3>Timetable</h3>
-        <a id="Timetable" name="Timetable"></a>
-        <ul>
-            <li>Set the default start time for a new train to match the schedule start time.</li>
-        </ul>
-
-   <h3>Warrants</h3>
-        <a id="Wt" name="Wt"></a>
-        <ul>
-            <li>A button to translate the throttle settings to track speed in inches/sec
-            	or millimeters/sec or scale speed on miles/hr or kilometers/hr has been
-            	added to the windows used for editing Warrants or creating NXWarrants.</li>
-        </ul>
-
-    <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"></a>
-        <ul>
-            <li>YetAnotherAutoTrain.py (YAAT) has been updated to version 2.2.  This version
-            includes support for compiling train definitions for faster startup.  It also includes
-            the ability to create extensions to the command language.  A Help document has been
-            added to the JMRI Help pages.</li>
-            <li>The Comments columns in Tools &rArr; Tables have support for multi-line comments.
-            The <strong>Edit Comment</strong> option has been added to the right click pop-up
-            menu that is normally used to move user names.  A tooltip will be displayed with
-            the comment content.</li>
-        </ul>
-
+   <!-- While this release is in development, the     -->
+   <!-- new release note items are kept in            -->
+   <!-- help/en/releasenotes/current-draft-note.shtml -->
+   <!-- in the JMRI/JMRI repository. Please edit      -->
+   <!-- there.  Changes to this file won't be merged. -->
+   
+   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
