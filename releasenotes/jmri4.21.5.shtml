@@ -24,7 +24,7 @@
 
     <p>Date: mmm dd, 2021</p>
     <p>From: (pumpkin)</p>
-    <p>Subject: Test Release 4.21.4 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.21.5 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -100,17 +100,9 @@ from
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
 
-<ul>
-   
-   <!-- While this release is in development, the     -->
-   <!-- list of new warnings is kept in               -->
-   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
-</ul>
-
+    <li>
+        None yet
+    </li>
 
 <h3>Older warnings</h3>
 
@@ -207,13 +199,117 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.21.5+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- new release note items are kept in            -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
+
+    <h3>Hardware Support</h3>
+
+        <h4>CBUS</h4>
+            <ul>
+                <li>
+                    Andrew Crosland added a second current meter instance for SPROG Generation 5 hardware.
+                </li>
+                <li>
+                    Corrected links to images on SPROG Generation 5 hardware help page.
+                </li>
+                <li>
+                    Changed trademark recognition to &reg; for register trademarks, rather than &trade;.
+                </li>
+            </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+              <li>When connected to the LocoNet HexFile Simulator, simulated replies from selected devices are
+                sent to the monitor (select the "Simulate replies" checkbox on the HexFile pane).</li>
+            </ul>
+            
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>Tam Valley Depot</h4>
+            <ul>
+                <li>Updated the QuadLN_S template to support the 16 servo capability in the Version 3 software</li>
+            </ul>
+
+        <h4>Uhlenbrock</h4>
+            <ul>
+                <li>New definitions to program Power4, Power8 (boosters) and IntelliLight 28x0 modules.</li>
+                <li>For Uhlenbrock Track-Control modules a Direct Message type was added to the LNCV protocol.
+                  The Lncv Programming tool has a new checkbox 'Direct Mode', allowing to set LEDs etc.</li>
+                <li>Two new Track-Control definitions (art. 69220 Turnout and 69230 Signal Module)</li>
+                <li>When connected to the LocoNet HexFile Simulator, simulated replies from LNCV devices are
+                  sent to the monitor (select the "Simulate replies" checkbox on the HexFile pane).</li>
+            </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+   <h3>Internationalization</h3>
+        <a id="I18N" name="I18N"></a>
+        <ul>
+            <li>Dutch translations added for the Where Used, Meters and Issue Reporting tools.</li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+	        <li>A problem storing and reading LE controlpoint values for users with a non-default Locale has been fixed
+            .</li>
+        </ul>
+
+    <h3>Meters and MeterFrames</h3>
+        <a id="Meters" name="Meters"></a>
+        <ul>
+          <li>The Settings menu was slightly reorganized with submenus for each value.</li>
+          <li>When no meters are available, both Meters menus and the Units Settings menu show a short explanation.</li>
+          <li>Meters will honor the JMRI Locale/regional setting for the decimal separator (. or ,))</li>
+          <li>Meters now use meter max and resolution to default integer and decimal digits</li>
+        </ul>
+
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>Turnouts with 1 Sensor Feedback update to Inconsistent state when the Sensor being followed enters an Unknown or Inconsistent state.
+            <br>See <a href="https://www.jmri.org/help/en/package/jmri/jmrit/beantable/TurnoutTable.shtml#Turnout_Feedback">Turnout Feedback</a></li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+
+	    <h4>Cab Signals</h4>
+            <ul>
+                <li>Better set row height in table.</li>
+            </ul>
+
+   <h3>Switchboard Editor</h3>
+        <a id="SW" name="SW"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Throttle</h3>
+        <a id="throttle" name="throttle"></a>
+        <ul>
+            <li>Fix Jynstrument instantiation on Windows (cleaner URI to path method). <a href="https://groups.io/g/jmriusers/topic/the_jynstruments/78674589"> User message 78674589</a></li>
+            <li>Added local and global preferences to show/hide speed step selector. <a href="https://groups.io/g/jmriusers/topic/change_background_color_and/80665867"> User message 80665867</a></li>
+            <li>Added global throttle preference to use or not large speed slider. <a href="https://groups.io/g/jmriusers/topic/change_background_color_and/80665867"> User message 80665867</a></li>
+            <li>Refactored VideoView Jynstrument for camera view in Throttle, reworked using <a href="https://github.com/sarxos/webcam-capture"> a new third party library.</a></li>
+        </ul>
+
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Improved how JavaHelp handles non-HTML files on some platforms.</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
