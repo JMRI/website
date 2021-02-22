@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.21.5 release
       </h1>
 
-    <p>Date: mmm dd, 2021</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: February 20, 2021</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.21.5 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -161,7 +163,6 @@ installing this test release.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -170,18 +171,17 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.21.5/JMRI.4.21.5+R9c40019f7.dmg">https://github.com/JMRI/JMRI/releases/download/v4.21.5/JMRI.4.21.5+R9c40019f7.dmg</a><br/>
+  sha256: 84fc78a02c78c88d8bc661f2c5b43bd1d69661975a0a9eb65ac6e457945af2dd </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.21.5/JMRI.4.21.5+R9c40019f7.exe">https://github.com/JMRI/JMRI/releases/download/v4.21.5/JMRI.4.21.5+R9c40019f7.exe</a><br/>
+   sha256: ca77944e39d96dfde9df7a87169001aa3745d96858f9aea9a42287ebb089975c</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.21.5/JMRI.4.21.5+R9c40019f7.tgz">https://github.com/JMRI/JMRI/releases/download/v4.21.5/JMRI.4.21.5+R9c40019f7.tgz</a><br/>
+   sha256: ca254edfe6993f5008f66399d6ac1b083253fde6e329f145d785dc008dd721d2</li>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -189,9 +189,11 @@ on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.21.4``/">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
  
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.21.4.shtml">Test Release 4.21.4</a>:</h2>
@@ -238,12 +240,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.21.5+i
                   sent to the monitor (select the "Simulate replies" checkbox on the HexFile pane).</li>
             </ul>
 
-    <h3>DecoderPro</h3>
-        <a id="DecoderPro" name="DecoderPro"></a>
-        <ul>
-            <li></li>
-        </ul>
-
    <h3>Internationalization</h3>
         <a id="I18N" name="I18N"></a>
         <ul>
@@ -274,12 +270,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.21.5+i
             <br>See <a href="https://www.jmri.org/help/en/package/jmri/jmrit/beantable/TurnoutTable.shtml#Turnout_Feedback">Turnout Feedback</a></li>
         </ul>
 
-    <h3>Scripting</h3>
-        <a id="Scripting" name="Scripting"></a>
-        <ul>
-            <li></li>
-        </ul>
-
     <h3>Signals</h3>
         <a id="Signals" name="Signals"></a>
 
@@ -287,12 +277,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.21.5+i
             <ul>
                 <li>Better set row height in table.</li>
             </ul>
-
-   <h3>Switchboard Editor</h3>
-        <a id="SW" name="SW"></a>
-        <ul>
-            <li></li>
-        </ul>
 
     <h3>Throttle</h3>
         <a id="throttle" name="throttle"></a>
