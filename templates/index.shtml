@@ -3,18 +3,18 @@
 
 <head>
     <title>
-        JMRI: Website templates
+        JMRI: Website templates 2021
     </title>
     <meta name="author" content="Egbert Broerse">
     <meta name="keywords" content="java model railroad JMRI web site html css javascript">
-    <!--#include virtual="../Style2020.shtml" -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
     <div id="container">
     <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
-    <!--#include virtual="../Header2020.shtml" -->
+    <!--#include virtual="/Header.shtml" -->
 	<div class="no-sidebar" id="mBody">
 
 	<hr class="hide">	<!-- only shows up on printouts -->
@@ -22,7 +22,7 @@
         <div id="mainContent">	<!-- Body of page -->
 
         <ul class="hor-nav">
-            <li><a href="../index2020.shtml">Return to Test Landing Page</a></li>
+            <li><a href="/index.shtml">Return to JMRI Landing Page</a></li>
         </ul>
 
         <div id="teaser">

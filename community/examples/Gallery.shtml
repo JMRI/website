@@ -1,6 +1,6 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id: Gallery.shtml,v 1.6 2011/04/27 14:18:32 jacobsen Exp $ -->
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>
  	JMRI Gallery
@@ -8,27 +8,14 @@
 		<meta name="author" content="Bob Jacobsen, Egbert Broerse">
 		<meta name="Date.Modified" content="20150923"/>
         <meta name="keywords" content="JMRI PanelPro control panel DCC C/MRI signals">
-
-    <!-- The combination of "Define" and {Header,Style, Logo and Footer} comments -->
-    <!-- are an arbitrary design pattern used by the update.pl script to -->
-    <!-- easily replace the common header/footer code for all the web pages -->
-
-<!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
-    <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
-
 <!--#include virtual="/Header.shtml" -->
     <hr class="hide">
 
-    <div class="nomenu" id="mBody">
+    <div class="no-sidebar" id="mBody">
 	<div id="mainContent">
 
 	    <h1>JMRI Gallery</h1>
@@ -66,7 +53,7 @@ Watch this <a href="https://www.youtube.com/watch?v=oke5ea869FY">YouTube Video</
 
 <h3>Cornwall RR</h3>
 Well over a decade ago, Nick Kulp already created a program to drive his
-<a href="Panels-Cornwall/Cornwall.html">Cornwall RR</a>
+<a href="Panels-Cornwall/Cornwall.shtml">Cornwall RR</a>
 
 <h3>Quaker Valley</h3>
 <a href="http://www.quaker-valley.com/CTC/JMRI_QV_CTC.gif"/>
@@ -201,7 +188,7 @@ CATS is also used on John Parker's
 <a href="http://www.bnsfrr.net/">BNSF Fall River Division</a>
 for their
 <a href="http://www.bnsfrr.net/operations.html">dispatcher's panel</a>.
-</p>
+
 <a href="http://www.bnsfrr.net/uploads/3/2/2/4/32241659/5667722_orig.jpg"><img
         src="http://www.bnsfrr.net/uploads/3/2/2/4/32241659/5667722_orig.jpg" width="400" height="300"
         alt="BNSF Fall River panel"/></a>
@@ -218,5 +205,6 @@ programs for model railroads.  The layout-related parts are
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->
+  <script src="/js/main.js"></script>
 </body>
 </html>

@@ -6,12 +6,7 @@
     <meta name="Date.Modified" content="20170116">
     <meta name="keywords" content="codeflower code d3 java model railroad JMRI decoderpro panelpro dcc">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
+    <!--#include virtual="/Style.shtml" -->
     <!--styles for codeflower-->
     <style type="text/css">
         circle.node {
@@ -42,10 +37,10 @@
 
 <body>
 <!--#include virtual="/Header.shtml" -->
-  <div class="nomenu" id="mBody">
+  <div class="no-sidebar" id="mBody">
     <div id="mainContent" width="1000" height="1000">
 
-    <h2>JMRI CodeFlower 2017</h2>
+    <h1>JMRI CodeFlower 2017</h1>
     
         <p>Compare to the latest <a href="codeflower.shtml">CodeFlower</a></p>
     
@@ -97,5 +92,6 @@
         d3.json(this.value, createCodeFlower);
       });
     </script>
+<script src="/js/main.js"></script>
 </body>
 </html>

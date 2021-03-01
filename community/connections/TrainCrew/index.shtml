@@ -1,22 +1,9 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
   <title>JMRI: TrainCrew connection</title>
-  <!-- Style -->
-  <meta http-equiv="Content-Type" content=
-  "text/html; charset=us-ascii">
-    <meta name="keywords" content=
-  "JMRI install host traincrew">
-  <link rel="stylesheet" type="text/css" href="/css/default.css"
-  media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css"
-  media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-  <!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
@@ -26,7 +13,7 @@
     <div id="mainContent">
       <!-- Page Body -->
 
-      <h1>JMRI: TrainCrew connection</h1>
+     <h1>JMRI: TrainCrew connection</h1>
 
      The JMRI web server can host the 
      <a href="http://traincrew.conrail1285.com">TrainCrew application</a>
@@ -48,12 +35,12 @@
      <br>it is not recommended to run JMRI as Administrator
      all of the time, just to install TrainCrew.</p>
      
-     
      <p>TrainCrew code is available on <a href="https://github.com/ekapus/TrainCrew">GitHub here.</a>
      </p>
      
       <!--#include virtual="/Footer.shtml" -->
     </div><!-- close #mainContent -->
   </div><!-- close #mBody -->
+  <script src="/js/main.js"></script>
 </body>
 </html>

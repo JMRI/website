@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -16,7 +16,7 @@
 
 <!--#include virtual="/Header.shtml" -->
 
-  <div class="nomenu" id="mBody">
+  <div class="no-sidebar" id="mBody">
     <div id="mainContent">
       <h1>
       Release Notes for JMRI 4.22 release
@@ -40,7 +40,7 @@ We're therefore making that version, "Production Release 4.22" available for dow
 JMRI is now only available under the
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
-<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <a id="update" name="update"></a>
 <h3>Update From Older JMRI Versions</h3>
@@ -923,6 +923,7 @@ in those is
             menu that is normally used to move user names.  A tooltip will be displayed with
             the comment content.</li>
             <li>Improved how JavaHelp handles non-HTML files on some platforms.</li>
+
         <h4>AbstractProxyManager</h4>
             <a id="Proxy" name="Proxy"></a>
             <ul>

@@ -1,26 +1,19 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id: index.shtml,v 1.2 2011-07-10 20:29:42 jacobsen Exp $ -->
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
  <title>JMRI: UK Signalling, Layout Editor</title>
     <meta name="author" content="Nigel Cliffe">
     <meta name="keywords"
        content="clinics java model railroad JMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra signalling UK British">
-
-<!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
 <hr class="hide">
 
-<div class="nomenu" id="mBody">
+<div class="no-sidebar" id="mBody">
   <div id="mainContent">
 <h2>Describe the Layout with the Layout Editor</h2>
 <p>Within JMRI there are a number of editors which can produce graphical representations 
@@ -56,18 +49,18 @@
   which will help to produce a tidy diagram. In the illustration below, some of 
   the track segments have been declared as &quot;MainLine&quot; and thus are bold, 
   with other segments being ordinary weight. </p>
-<p><img src="screendumps/screenshot.2.jpeg" width="922" height="424"></p>
+<p><img src="images/screenshot.2.jpeg" width="922" height="424"></p>
 <p>Having drawn the track diagram, the next step is to give track segments block 
   names, and attach sensors to those blocks. </p>
 <p>Select a track segment, and with the context menu (right click) bring up the 
   option to &quot;Edit&quot; the piece of track. </p>
-<p><img src="screendumps/track_seg1.jpg" width="533" height="355"></p>
+<p><img src="images/track_seg1.jpg" width="533" height="355"></p>
 <p>In the &quot;Edit Track Segment&quot; window, it is possible to change the 
   track style to &quot;Mainline&quot;, and give the track a Block Name. This name 
   can be either a new one (and the Block will be created) or one produced earlier. 
   Type in a new name, then use the &quot;Create/Edit Block&quot; button to bring 
   up further editing options.</p>
-<p><img src="screendumps/track_seg2.jpg" width="597" height="520"></p>
+<p><img src="images/track_seg2.jpg" width="597" height="520"></p>
 <p>In the &quot;Create/Edit Block&quot; window, the sensor used for this block 
   can be defined (from items in the Sensor Table), and also the colour of the 
   track when occupied set. When this window, and its parent &quot;Edit Track Segment&quot; 
@@ -91,5 +84,6 @@
 <!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
+<script src="/js/main.js"></script>
 </body>
 </html>

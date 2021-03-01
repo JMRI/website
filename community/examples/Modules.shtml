@@ -1,33 +1,20 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id: Modules.shtml,v 1.1 2008/04/06 06:41:49 jacobsen Exp $ -->
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>
  	JMRI on a Modular Railroad
     </title>
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="JMRI PanelPro control panel DCC Modular">
-
-    <!-- The combination of "Define" and {Header,Style, Logo and Footer} comments -->
-    <!-- are an arbitrary design pattern used by the update.pl script to -->
-    <!-- easily replace the common header/footer code for all the web pages -->
-
-<!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
-    <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
-
 <!--#include virtual="/Header.shtml" -->
     <hr class="hide">
 
-    <div class="nomenu" id="mBody">
+    <div class="no-sidebar" id="mBody">
 	<div id="mainContent">
 
 <h1>JMRI on a Modular Railroad</h1>

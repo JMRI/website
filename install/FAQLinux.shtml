@@ -1,23 +1,17 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
  <title>
  JMRI: Linux FAQ
  </title>
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI install Linux">
-
     <!--#include virtual="/Style.shtml" -->
-
-<!-- FAQ-Head -->
-  <script type="text/javascript">/*<![CDATA[*/document.documentElement.className="hasJS";/*]]>*/</script>
-  <link rel="stylesheet" type="text/css" href="/web/css/faq.css" media="screen">
-<!-- /FAQ-Head -->
 </head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
-
 <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
   <div id="mainContent">
@@ -172,6 +166,6 @@ Certainly, check out the JMRI  <a href="Raspbian.shtml">Install Help on Raspberr
 <!-- FAQ-Tail -->
 <script type="text/javascript" src="/js/faq.js"></script>
 <!-- /FAQ-Tail -->
-
+<script src="js/main.js"></script>
  </body>
 </html>
