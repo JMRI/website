@@ -1,10 +1,10 @@
 <!-- Sidebar.shtml -->
-<!-- This is the common sidebar definition for /download pages -->
+<!-- This is the 'responsive common sidebar definition for /download pages -->
 
-<hr class="hide">
-
- <div id="side"> <!-- Block of text on left side of page -->
- Download and install JMRI&reg;
+<div class="card-1" id="side" >
+    <!-- Block of text on left side of page -->
+    <div id="close-side" class="floatRight button fa fa-close" style="display:none;" onclick="side_close()"></div>
+    <div style="text-align: center;">Download and install JMRI&reg;</>
  
  <dl>
  
@@ -12,8 +12,7 @@
  
  <!--#include virtual="../help/en/parts/SidebarSupportedHardware.shtml" -->
 
-
-  <dt><h3><a href="../releasenotes/">Release Notes</a></h3></dt>
+  <dt><a href="../releasenotes/">Release Notes</a></dt>
   <dd>
 	<ul>
 	<li>Production Releases:
@@ -46,20 +45,22 @@
 
 	    <li><a href="/download/older.shtml">Older releases</a>
 	    </ul></li>
-	<li>(Tentative) Next Test Release:</li>
+	<li>(Tentative) Next Test Release:
 	    <ul>
-	    <li><a href="../releasenotes/jmri4.23.1.shtml">JMRI 4.23.1</a>
-      </ul>
+            <li><a href="../releasenotes/jmri4.23.1.shtml">JMRI 4.23.1</a></li>
+        </ul></li>
   </ul>
   </dd>
 
-  <dt><h3>Source Code</h3></dt>
+  <dt>Source Code</dt>
+  <dd>
 	<ul>
-	<li><a href="../help/en/html/doc/Technical/getcode.shtml">Get the Code</a>
+        <li><a href="../help/en/html/doc/Technical/getcode.shtml">Get the Code</a></li>
 	</ul>
   </dd>
 
-  <dt><h3>Issues</h3></dt>
+  <dt>Issues</dt>
+  <dd>
 	<ul>
 	<li><a href="https://github.com/JMRI/JMRI/issues">JMRI Issues</a></li>
 	<li><a href="https://github.com/JMRI/website/issues">JMRI Site Issues</a></li>
@@ -70,5 +71,7 @@
 
  <!--#include virtual="../help/en/parts/SidebarTail.shtml" -->
 
- </div> <!-- closes #side --> 
+ </div> <!-- closes #side -->
+<!-- button is in /Header -->
+<script src="/js/side.js"></script>
 <!-- Sidebar.shtml -->

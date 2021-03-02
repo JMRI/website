@@ -1,11 +1,14 @@
 <!-- Sidebar.shtml -->
-<!-- This is the common sidebar definition for JMRI 2.14 Manual pages -->
+<!-- This is the 'responsive' common sidebar definition for JMRI 2.14 Manual pages -->
 <hr class="hide">
 
 <div id="mBody">
 
-<div id="side"> <!-- Block of text at top -->
-    <div style="text-align: center"><strong>The JMRI Manual</strong></div>
+    <div class="card-1" id="side" >
+        <!-- Block of text on left side of page -->
+        <div id="close-side" class="floatRight button fa fa-close" style="display:none;" onclick="side_close()"></div>
+
+        <div style="text-align: center">The JMRI Manual</div>
 
     <div style="text-align: right">
       <a href="http://jmri.org/manual/pdf/jmri_Man_2_14.pdf">Download</a>
@@ -157,4 +160,6 @@
 
 </dl>
 </div>
+    <!-- button is in /Header -->
+    <script src="/js/side.js"></script>
 <!-- Sidebar.shtml -->
