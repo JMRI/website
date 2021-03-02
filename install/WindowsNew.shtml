@@ -20,29 +20,31 @@ JMRI Install Guide: Windows
 for earlier versions (2012 and before), <a href="Windows.html">refer to the old Windows Install Guide</a>.</p>
 
 	<ul>
-	<li><a href="#installation">Installation procedure</a></li>
+	<li><a href="#installation">Installation procedure</a>
 	  <ul>
 	  <li><a href="#offline">Offline installation</a></li>
-		</ul>
+      </ul></li>
 	<li><a href="#startup">Starting JMRI</a></li>
-	<li><a href="#notes">Notes</a></li>
+	<li><a href="#notes">Notes</a>
 		<ul>
 		<li><a href="#serialconfig">Serial Port configuration</a></li>
 		<li><a href="#largewindow">Large Windows</a></li>
 		<li><a href="#themes">Windows Themes and Skins</a></li>
 		<li><a href="#revert">Reverting to an earlier version</a></li>
 		</ul>
-	<li><a href="#debugging">Debugging</a></li>
+	<li><a href="#debugging">Debugging</a>
 		<ul>
-		<li><a href="#errors">Error Messages</a></li>
+		<li><a href="#errors">Error Messages</a>
 		    <ul>
 		    <li><a href="#stoppedworking">"The JAVA SE Platform binary has stopped working"</a></li>
 		    <li><a href="#registry">".. prefs root node Software\JavaSoft\Prefs .. Windows RegCreateKeyEx(...)..."</a></li>
 		    </ul>
+        </li>
 		<li><a href="#logscreen">The Log Screen</a></li>
 		<li><a href="#startupissues">Startup issues</a></li>
 		<li><a href="#shutdownissues">Shutdown issues</a></li>
 		</ul>
+    </li>
 	</ul>
 
 <a id="installation"></a>
@@ -97,10 +99,9 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
 	new "test" versions appear every couple of weeks.  You may find one of these has features that you really want.
 	These are announced in the <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io group.</p>
 	</li>
-	
-  <a id="update"></a>
-  <li>Run the JMRI installer
-  <p>When the JMRI download is ready, you will be asked to either save it to disk or directly run the installer.</p></li>
+
+  <li><a id="update"></a>Run the JMRI installer
+  <p>When the JMRI download is ready, you will be asked to either save it to disk or directly run the installer.</p>
     <ol type="i">
       <li>Installer start-up
         <p><img src="images/WinInstall02.png" height="489" width="597" alt="installer welcome page"></p></li>
@@ -176,8 +177,9 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
     <br>(This shows the Start menu following a 'Typical' install - a 'Full' install will place additional icons in this menu)
 
   <li>Configure the program to connect to your layout. The Connections Preferences will open automatically on first run, or you can open the Preferences pane from the Edit menu. More on this on the <a href="../help/en/html/setup/index.shtml">JMRI Setup help page</a>.
-    <p>The JMRI <a href="http://jmri.org/help/en/html/hardware/index.shtml">Hardware help page</a> lists the various types of layout equipment that JMRI can connect to, and gives links to instruction pages</p>
-  <li>When you start DecoderPro 3.8 or later on Windows for the first time, the <strong>JMRI StartUp Wizard</strong> displays a series of screens to guide you through the setup proces:</p>
+    <br>The JMRI <a href="http://jmri.org/help/en/html/hardware/index.shtml">Hardware help page</a> lists the various
+        types of layout equipment that JMRI can connect to, and gives links to instruction pages</li>
+  <li>When you start DecoderPro 3.8 or later on Windows for the first time, the <strong>JMRI StartUp Wizard</strong> displays a series of screens to guide you through the setup proces:
     <ol type="i">
     <li>Welcome Screen:<br>
     <img src="images/InstallWin1.png" height="271" width="469" alt="JMRI Start Wizard">
@@ -190,7 +192,8 @@ for earlier versions (2012 and before), <a href="Windows.html">refer to the old 
     <li>That's all!<br>
     <img src="images/InstallWin5Finished.png" height="271" width="469" alt="JMRI Start Wizard Finished">
     </ol>
-	</ul>
+  </li>
+  </ul>
 
 <a id="notes"></a>
 <h2>Notes</h2>	<a id="serialconfig"></a>
