@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -91,7 +91,8 @@
             <p>Flex is a set for responsive positioning on different screen sizes. We provide 4 of them:</p>
             <div class="flex-container"><!-- flex is a set for responsive positioning on different screen sizes -->
                 <div id="icon-large" class="flex-item-30">
-                    <img src="images/ios_prev1.png" alt="JMRI site viewed on iphone" style="object-fit: scale-down;">
+                    <img src="images/ios_prev1_Rel4_22.png" alt="JMRI site viewed on iphone"
+                         style="object-fit: scale-down;">
                 </div>
 
                 <div class="flex-item-70">
@@ -168,7 +169,7 @@
                     </li>
 
                     <li>code:<br>
-                    Use the tag <code>&lt;code&gt;</code> to show short pieces of code (will scrolling box)<br>
+                    Use the tag <code>&lt;code&gt;</code> to show short pieces of code (will fit in a scrolling box)<br>
                     Use the tag <code>&lt;code class="block"&gt;</code> to show multi-line code (it will display
                     every whitespace in those lines, so start at the left margin):
                     <pre><code class="block">
@@ -176,7 +177,6 @@
 var navbar = document.getElementById("mainNav");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
-// Add the "sticky" class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyFunction() {
   if (window.pageYOffset >= sticky) {
     mainNav.classList.add("sticky")
