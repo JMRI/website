@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
- JMRI: Release Notes for 4.23.1
+ JMRI: Release Notes for 4.23.3
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.23.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.23.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!--#include virtual="/Style.shtml" -->
 
@@ -19,12 +19,12 @@
   <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.23.1 release
+      Release Notes for JMRI 4.23.3 release
       </h1>
 
     <p>Date: mmm dd, 2021</p>
     <p>From: (pumpkin)</p>
-    <p>Subject: Test Release 4.23.1 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.23.3 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -36,7 +36,7 @@ if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the first in a series of test releases.
+<p>This is the next in a series of test releases.
 We expect this series to end in the next JMRI production release in Summer 2021.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
@@ -190,53 +190,18 @@ During development leading to the actual release, you can find test download fil
 These are development files, and might not be working at any particular time.</p>
  
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri4.22.shtml">Production Release 4.22</a>:</h2>
+<h2>Changes since <a href="jmri4.23.2.shtml">Test Release 4.23.2</a>:</h2>
  
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.23.1+is%3Amerged">list of included changes</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.23.2+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-
-    <h3>Hardware Support</h3>
- 
-         <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li>LNCV Programing of the Daisy II manual throttle and FunkMaster Wireless Hub was added.<br>
-                  Use a DecoderPro definition with a Ops Mode roster entry.</li>
-            </ul>
-
-    <h3>New / Updated decoder definitions</h3>
-
-        <h4>ZIMO</h4>
-            <ul>
-                <li>Zimo Swiss Mapping was updated bi Nigel Cliffe to V36+, adding features to select the dimming
-                  group for each output in the table and to set the dimming levels.</li>
-            </ul>
-
-
-    <h3>Preferences</h3>
-        <a id="Preferences" name="Preferences"></a>
-        <ul>
-            <li>Added an option to <strong>Preferences &rArr; Display</strong> to limit the
-            number of rows when a combo box is using the <strong>setupComboBoxMaxRows</strong>
-            feature.  This is useful for large screens.
-            </li>
-        </ul>
-
-    <h3>Signals</h3>
-        <a id="Signals" name="Signals"></a>
-
-	    <h4>Cab Signals</h4>
-            <ul>
-                <li>Better set row height in table.</li>
-            </ul>
-
-
-    <h3>Throttle</h3>
-        <a id="throttle" name="throttle"></a>
-        <ul>
-            <li>Under the hood code clean up for  throttles (all systems), safe release of throttles.</li>
-        </ul>
-
+   <!-- While this release is in development, the     -->
+   <!-- new release note items are kept in            -->
+   <!-- help/en/releasenotes/current-draft-note.shtml -->
+   <!-- in the JMRI/JMRI repository. Please edit      -->
+   <!-- there.  Changes to this file won't be merged. -->
+   
+   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
