@@ -47,8 +47,8 @@
                 <p>You can manage your locomotive rosters and easily program your decoders using
                 <a href="./help/en/html/apps/DecoderPro/index.shtml">DecoderPro&reg;</a>.</p>
                 <p>You can build control panels and control your layout using
-                <a href="./help/en/html/apps/PanelPro/index.shtml">PanelPro&trade;</a> to set up signaling.
-                <a href="./help/en/package/jmri/jmrit/operations/Operations.shtml">OperationsPro&trade;</a>
+                <a href="./help/en/html/apps/PanelPro/index.shtml">PanelPro&trade;</a> to set up signaling and other functions.
+                <a href="./help/en/html/apps/OperationsPro/index.shtml">OperationsPro&trade;</a>
                 lets you create manifests that route cars across your railroad from shipper to receiver,
                 and provide train crews with operating instructions.</p>
                 <p>Going beyond the basics, you can use <a href="./help/en/html/tools/Logix.shtml">Logix</a> to
@@ -78,7 +78,8 @@
                 <li> <strong>Learn about JMRI:</strong>
                 <ul>
                     <li>check out the
-                    <a href="help/en/webindex.shtml">online Help</a>
+                    <a href="help/en/webindex.shtml">online Help</a> and
+                    <a href="help/en/html/FAQ.shtml">FAQs</a>,
                     <li>follow the <a href="/help/en/manual/index.shtml" title="DecoderPro Manual">DecoderPro manual</a>
                     <li>study the <a href="help/en/html/apps/PanelPro/FAQ.shtml">FAQs</a>
                     and <a href="community/clinics/">Clinics</a>)</li>
@@ -132,22 +133,26 @@
                 </div>
             </div>
 
-<!--            <div class="flex-item-50">-->
-<!--                <h4 onclick="collapse('download2')" class="button card-1">JMRI 4.23.1 Test Release</h4>-->
-<!--                <div id="download2" class="hidden">-->
-<!--                    <p><a href="releasenotes/jmri4.23.1.shtml"></a></p>-->
-<!--                    Released on ?????, 2021.-->
-<!--                    <p>-->
-<!--                    This is the next in a series working toward the next JMRI production release 4.24-->
-<!--                    in late 2021.-->
-<!--                    <p>-->
-<!--                    For more information on this test release, see the-->
-<!--                    <a href="releasenotes/jmri4.21.4.shtml">JMRI 4.23.1 Release Note</a>,-->
-<!--                    which also contains the download links.</p>-->
-<!--                    <p><a href="#download">Release 4.20</a> is the current "production" release, recommended-->
-<!--                    for first-time users.</p>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="flex-item-50">
+                <h4 onclick="collapse('download2')" class="button card-1">JMRI 4.23.2 Test Release</h4>
+                <div id="download2" class="hidden">
+                    <p><a href="releasenotes/jmri4.23.2.shtml"></a></p>
+                    Released on March 9, 2021.
+                    <!--
+                <p>
+                This is the next in a series working toward the next JMRI production release 4.24
+                probably in early summer 2021.
+                    -->
+                    <p>
+                    JMRI 4.23.2 is a special release to make LogixNG available for testing.
+                    <p>
+                    For more information on this test release, please read the
+                    <a href="releasenotes/jmri4.23.2.shtml">JMRI 4.23.2 Release Note</a>,
+                    which also contains the download links.</p>
+                    <p><a href="#download">Release 4.20</a> is the current "production" release, recommended
+                    for first-time users.</p>
+                </div>
+            </div>
 
             <div class="flex-item-50">
                 <h4 onclick="collapse('download3')" class="button card-1">JMRI 3.10.1 Production

@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
- JMRI: Release Notes for 4.23.1
+ JMRI: Release Notes for 4.23.3
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.23.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.23.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!--#include virtual="/Style.shtml" -->
 
@@ -16,20 +16,18 @@
 
 <!--#include virtual="/Header.shtml" -->
 
-  <div class="no-sidebar" id="mBody">
+  <div class="nomenu" id="mBody">
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.23.1 release
+      Release Notes for JMRI 4.23.3 release
       </h1>
 
-    <p>Date: March 7, 2021</p>
-    <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.23.1 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: mmm dd, 2021</p>
+    <p>From: (pumpkin)</p>
+    <p>Subject: Test Release 4.23.3 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
- 
+
 <h2>Notes:</h2>
 
 <p>This is a test release.  Please 
@@ -38,7 +36,7 @@ if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the first in a series of test releases.
+<p>This is the next in a series of test releases.
 We expect this series to end in the next JMRI production release in Summer 2021.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
@@ -51,7 +49,7 @@ Therefore, this test release should be considered experimental.</p>
 JMRI is now only available under the
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
-<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
+<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
 
 <a id="update" name="update"></a>
 <h3>Update From Older JMRI Versions</h3>
@@ -103,7 +101,14 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>None</li>
+   
+   <!-- While this release is in development, the     -->
+   <!-- list of new warnings is kept in               -->
+   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
+   <!-- in the JMRI/JMRI repository. Please edit      -->
+   <!-- there.  Changes to this file won't be merged. -->
+   
+   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
 </ul>
 
 
@@ -152,6 +157,7 @@ installing this test release.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -160,17 +166,18 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.23.1/JMRI.4.23.1+Rebbe5e366.dmg">https://github.com/JMRI/JMRI/releases/download/v4.23.1/JMRI.4.23.1+Rebbe5e366.dmg</a><br/>
-  sha256: f4b3c5ceaa11b8ca485a0470353cd02ec9e212ec5744507d7b8763edd6e8fe88 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
+  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.23.1/JMRI.4.23.1+Rebbe5e366.exe">https://github.com/JMRI/JMRI/releases/download/v4.23.1/JMRI.4.23.1+Rebbe5e366.exe</a><br/>
-   sha256: d8b64e3fb78ac1044632de383a5a712d80b98d8af7d5462d610d46b2b6f85370</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
+   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.23.1/JMRI.4.23.1+Rebbe5e366.tgz">https://github.com/JMRI/JMRI/releases/download/v4.23.1/JMRI.4.23.1+Rebbe5e366.tgz</a><br/>
-   sha256: 77fee6267e6509f4c056ff03931ce13bdf268f14ed3fa54a982e4f1ba78aa04c</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
+   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
 </ul>
+ -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -178,60 +185,23 @@ on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.23.1``/">CI project page</a>.
  -->
 
-<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
  
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri4.22.shtml">Production Release 4.22</a>:</h2>
+<h2>Changes since <a href="jmri4.23.2.shtml">Test Release 4.23.2</a>:</h2>
  
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.23.1+is%3Amerged">list of included changes</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.23.2+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-
-    <h3>Hardware Support</h3>
- 
-         <h4>Uhlenbrock Intellibox</h4>
-            <ul>
-                <li>LNCV Programing of the Daisy II manual throttle and FunkMaster Wireless Hub was added.<br>
-                  Use a DecoderPro definition with a Ops Mode roster entry.</li>
-            </ul>
-
-    <h3>New / Updated decoder definitions</h3>
-
-        <h4>ZIMO</h4>
-            <ul>
-                <li>Zimo Swiss Mapping was updated bi Nigel Cliffe to V36+, adding features to select the dimming
-                  group for each output in the table and to set the dimming levels.</li>
-            </ul>
-
-
-    <h3>Preferences</h3>
-        <a id="Preferences" name="Preferences"></a>
-        <ul>
-            <li>Added an option to <strong>Preferences &rArr; Display</strong> to limit the
-            number of rows when a combo box is using the <strong>setupComboBoxMaxRows</strong>
-            feature.  This is useful for large screens.
-            </li>
-        </ul>
-
-    <h3>Signals</h3>
-        <a id="Signals" name="Signals"></a>
-
-	    <h4>Cab Signals</h4>
-            <ul>
-                <li>Better set row height in table.</li>
-            </ul>
-
-
-    <h3>Throttle</h3>
-        <a id="throttle" name="throttle"></a>
-        <ul>
-            <li>Under the hood code clean up for  throttles (all systems), safe release of throttles.</li>
-        </ul>
-
+   <!-- While this release is in development, the     -->
+   <!-- new release note items are kept in            -->
+   <!-- help/en/releasenotes/current-draft-note.shtml -->
+   <!-- in the JMRI/JMRI repository. Please edit      -->
+   <!-- there.  Changes to this file won't be merged. -->
+   
+   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
