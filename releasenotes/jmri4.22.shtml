@@ -26,7 +26,7 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 4.22 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
@@ -49,37 +49,39 @@ see our
 If you are currently using a version older than JMRI 4.20, please follow these instructions carefully:
 
 <ol>
-<li>Is your current version older than <a href="jmri4.12.shtml">JMRI 4.12</a>? 
+<li>Is your current version older than <a href="jmri4.12.shtml">JMRI 4.12</a>?
     If so, then update to <a href="jmri4.12.shtml">JMRI 4.12</a> first, and ensure everything works correctly: check
     start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
-    Store your configuration and panel files under a new name and use those from now on. 
+    Store your configuration and panel files under a new name and use those from now on.
     Then continue with step 2.
     <p>
-    If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this), 
-    then it's <u>very important</u> 
+    If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+    then it's <u>very important</u>
     that you update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
     carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
     before updating to any later relese.
     </li>
-    
-<li>Is your current version older than <a href="jmri4.20.shtml">JMRI 4.20</a>? 
+
+<li>Is your current version older than <a href="jmri4.20.shtml">JMRI 4.20</a>?
     Then update to <a href="jmri4.20.shtml">JMRI 4.20</a> first, and ensure that works correctly (check
     start-up, check things you need to be working, and check the JMRI log as well) before doing anything else
     Store your configuration and panel files under a new name and use those from now on.</li>
 
-<li>You can then install this release. 
+<li>You can then install this release.
 
-</ol>   
- 
-Following this multi-step order of updating via stable major releases safeguards you against possible migration issues 
+</ol>
+
+Following this multi-step order of updating via stable major releases safeguards you against possible migration issues
 that can arise from skipping these versions.
 
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None</li>
-</ul> 
- 
+    <li><strong>Logix definitions that have more than 1 conditional will invoke the conditionals in the wrong sequence</strong>.
+    This can lead to unpredictable results.  The affected releases are 4.21.5 thru 4.23.2.
+    For people using Logix, this upgrade is NOT recommended.</li>
+</ul>
+
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this production release:</h3>
 
@@ -90,10 +92,10 @@ that can arise from skipping these versions.
         require changes to scripts.  If you have a script that references
         jmri.jmrix.SystemConnectionMemo, please change it to either
         jmri.SystemConnectionMemo or jmri.jmrix.DefaultSystemConnectionMemo
-        (it's easier to have you just try the two than to explain which 
+        (it's easier to have you just try the two than to explain which
         one will work in which case)
     </li>
-    
+
     <li><span class="since">Since <a href="jmri4.21.1.shtml">JMRI 4.21.1</a></span>
         The way preferences are loaded at startup has been slightly
         modified.  There is no impact to JMRI applications, but Non-JMRI
@@ -102,7 +104,7 @@ that can arise from skipping these versions.
         preferences will no longer see preferences if an error occurs.  To
         restore the old behavior, use apps.AppsConfigurationManager instead.
     </li>
-        
+
 </ul>
 
 <h3>Older warnings</h3>
@@ -113,14 +115,14 @@ These may be relevant to you if you're updating from an earlier version.
 <ul>
 
     <li><span class="since">Since <a href="jmri4.19.1.shtml">JMRI 4.19.1</a></span>
-        The <code>getBeanByUserName</code> and <code>getBeanBySystemName</code> 
+        The <code>getBeanByUserName</code> and <code>getBeanBySystemName</code>
         calls in the various <code>Manager</code> classes
         are no longer needed with Java 8 and have been deprecated for eventual
-        removal.  Their replacements are 
-        <code>getByUserName</code> and <code>getBySystemName</code> 
-        respectively. 
-        If you use <code>getBeanByUserName</code> and <code>getBeanBySystemName</code> 
-        in script or Java code you've written, please 
+        removal.  Their replacements are
+        <code>getByUserName</code> and <code>getBySystemName</code>
+        respectively.
+        If you use <code>getBeanByUserName</code> and <code>getBeanBySystemName</code>
+        in script or Java code you've written, please
         switch to the new names.
     </li>
 
@@ -138,16 +140,16 @@ These may be relevant to you if you're updating from an earlier version.
     </li>
 
 </ul>
-      
+
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
 check the files against the checksums shown below.
- 
+
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.dmg">https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.dmg</a><br/>
@@ -162,13 +164,13 @@ check the files against the checksums shown below.
    sha256: a63b8a9722efa4743fd5c6fddb881f1175154df700e75bb1658658a512fcfa45</li>
 </ul>
 
-<!-- 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.22/">CI project page</a>.
  -->
 
-<!-- 
+<!--
 During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
@@ -178,9 +180,9 @@ These are development files, and might not be working at any particular time.</p
 <h2>Changes since <a href="jmri4.20.shtml">production release 4.20</a>:</h2>
 
 <p>
-This production version is made from test releases 4.21.1 through 4.21.5.  The 
+This production version is made from test releases 4.21.1 through 4.21.5.  The
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2020-07-04">full list of changes</a>
-in those is 
+in those is
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2020-07-04">available from our code repository</a>.
 
 
@@ -272,8 +274,8 @@ in those is
         <h4>LocoNet</h4>
             <ul>
                 <li><a href="https://www.jmri.org/help/en/html/hardware/loconet/Digitrax.shtml#deviceBoardId">
-                    Instructions</a> detailing how to change the Board ID (Board 
-                    Address) of certain Digitrax LocoNet-based devices using 
+                    Instructions</a> detailing how to change the Board ID (Board
+                    Address) of certain Digitrax LocoNet-based devices using
                     JMRI have been added to the Digitrax hardware page.</li>
                 <li>Fixed a problem in the PM4Announce script</li>
               <li>The legacy LocoIO programmer help points to the current <a href="diy">DIY decoder</a> method to
@@ -327,10 +329,10 @@ in those is
                     This will allow JMRI to have MQTT connections even when JMRI is installed
                     in a protected location.
                 <li>MQTT Turnouts now support MONITORING and EXACT feedback modes</li>
-                <li>When status UNKNOWN or INCONSISTENT is received from MQTT 
-                    and the turnout operating mode is MONITORING or EXACT, 
+                <li>When status UNKNOWN or INCONSISTENT is received from MQTT
+                    and the turnout operating mode is MONITORING or EXACT,
                     the layout is now updated with this status</li>
-                <li>When EXACT feedback mode is selected, 
+                <li>When EXACT feedback mode is selected,
                     two different MQTT topics will be used - one for commands and one for state</li>
                 <li>Added MQTT Sensors</li>
                 <li>MQTT connection configuration now lets you set the prefix for Turnouts, Sensors,
@@ -341,9 +343,9 @@ in those is
                         values you (had to) manually edit into preferences in the past.
                 <li>The new "jython/SendMqttMessage.py" sample script show how to
                     send across an existing MQTT connection.
-                <li>The new "jython/ReceiveMqttMessage.py" is simple demo of 
+                <li>The new "jython/ReceiveMqttMessage.py" is simple demo of
                     receiving MQTT messages into a script. It just prints the received messages,
-                    but you can build up from there. 
+                    but you can build up from there.
                 <li>Fixed a bug that caused an erroneous ERROR message on operating MQTT Lights</li>
                 <li>Added support for creating ranges of Turnouts and Lights.<br>
                 Sensor, Turnout and Light Address ranges do not have to be fully numeric,
@@ -363,7 +365,7 @@ in those is
             <ul>
                 <li>Default Output Interval reduced to 100ms.</li>
             </ul>
-            
+
         <h4>Pi</h4>
             <ul>
                 <li>Improved System Name validation for Turnouts and Sensors, numeric from 0 - 999</li>
@@ -393,7 +395,7 @@ in those is
             <ul>
                 <li>Improved System Name validation for Turnouts and Sensors, must contain at least 1 number.</li>
             </ul>
-            
+
         <h4>Uhlenbrock Intellibox</h4>
             <ul>
                 <li>The 73900 decoder definition was renamed 7x900, and updated to support decoder models:
@@ -460,11 +462,11 @@ in those is
             <li>The DecoderPro programming/editing screens now have a Find operation!
                 <p>
                 Ctrl-F or Cmd-F will open a small find bar at the bottom of the pane
-                where you can enter a search string.  Hitting Return will find the first 
+                where you can enter a search string.  Hitting Return will find the first
                 occurrence. There are right and left arrows to find the next occurrence forward
                 and backwards respectively.  Ctrl-G or Cmd-G will also find the next forward
                 occurrence. Shift-Ctrl-G or Shift-Cmd-G will find the next occurrence going backwards.
-                The "Done" button will dismiss the 
+                The "Done" button will dismiss the
                 bar, but you can leave it up without it interfering with anything.
             </li>
             <li>Added a new optional "maxFnNum" model-level attribute for Decoder Definitions.
@@ -549,7 +551,7 @@ in those is
               The 'Edit Turnout Icon' menu item of Indicator Track popups synchronizes
               paths with the 'Add/Edit Circuit Paths' window of Circuit Builder.
             </li>
-            <li>Icons of tracks indicators and signals in the style of the &#268;SD Czechoslovak State Railway 
+            <li>Icons of tracks indicators and signals in the style of the &#268;SD Czechoslovak State Railway
 	    - Unified Control Place - JOP style.</li>
         </ul>
         <h4>Circuit Builder</h4>
@@ -564,7 +566,7 @@ in those is
                 </li><li>
                 	Features added to the 'Add/Edit Signal Mast' window are;<br>
                 	1. A Signal list shows the signals that are configured to protect the block.<br>
-                	2. Buttons will open the Tables for creation, renaming and deletion of 
+                	2. Buttons will open the Tables for creation, renaming and deletion of
                 	both signal Masts and Signal Heads.<br>
                 	3. Signal icons can be dragged in the fashion of Item Palette from the window
                 	to the panel<br>
@@ -591,27 +593,27 @@ in those is
                   For the tabs having icon sets, i.e. turnouts, sensors, etc., should all icon sets be deleted,
                   a 'Restore Default' button is displayed to reinstall the default icons.
                 </li><li>
-                  The above restoration feature can be done at any time by holding keys CNTL A down while 
+                  The above restoration feature can be done at any time by holding keys CNTL A down while
                   clicking the 'New Icons' button.  All customized icon sets defined by the user are retained
                   and any missing default icons are added.
                 </li><li>
-                  The unused functions to create, delete, or restore the status states of Indicator Turnouts 
+                  The unused functions to create, delete, or restore the status states of Indicator Turnouts
                   are now only displayable by holding keys CNTL A down while clicking the 'Edit Icons' button.
                 </li><li>
-                  Several new checks and alerts will inform users when duplicate names are used for 
+                  Several new checks and alerts will inform users when duplicate names are used for
                   icon sets or when duplicate icon sets are found with different names.
                 </li><li>
                   The fixed set of Portal icons may be redefined by the user under the 'Portal' tab.
-                  Portal icon sets created by the user may be selected for panels by a new menu item, 
+                  Portal icon sets created by the user may be selected for panels by a new menu item,
                   'Change Portal Icon Set' in Circuit Builder. The new set is then used for Warrant displays.
                 </li><li>
-                  The drag and drop of icons under the 'Icon' and 'Background' tabs no longer requires naming 
+                  The drag and drop of icons under the 'Icon' and 'Background' tabs no longer requires naming
                   the icon first. The drop from the Icon catalog can be done directly into the panel.
                 </li><li>
-				  The tabs having tables now display the element's actual table editing window when the 
+				  The tabs having tables now display the element's actual table editing window when the
 				  'Add New Table Item' button is pressed.
                 </li><li>
-                  Editing an icon set for an Indicator Turnout now follows the same paradigm as the rest of 
+                  Editing an icon set for an Indicator Turnout now follows the same paradigm as the rest of
                   the tabs having icon sets. Defining new icon sets, changing icons, or renaming sets functions
                   the same for all such tab items.
                 </li>
@@ -702,7 +704,7 @@ in those is
             <li>A bug that could make connection tabs disappear has been fixed.</li>
         </ul>
 
-    <h3>Routes</h3>    
+    <h3>Routes</h3>
         <a id="Routes" name="Routes"></a>
        <ul>
             <li>A configurable (minimum) interval for all turnout outputs that are part of a Route on the same
@@ -736,7 +738,7 @@ in those is
         <h4>Signal Systems</h4>
             <ul>
                 <li>The B&amp;O-1980 signal system was updated to correct several
-                    errors and to include masts which can be used to protect a 
+                    errors and to include masts which can be used to protect a
                     block of "short braking distance".
                 </li>
             </ul>
@@ -804,7 +806,7 @@ in those is
         <a id="VSD" name="VSD"></a>
         <ul>
             <li>VSD now supports the "Location Following" (sound follows loco) with occupancy
-                sensors and JMRI Blocks. See the 
+                sensors and JMRI Blocks. See the
 				<a href="https://jmri.org/help/en/manual/DecoderPro/Main_VSD.shtml#VSDLocations">
                 documentation</a> for details.</li>
             <li>The "Location Following" (sound follows loco) with occupancy sensors and JMRI Blocks
@@ -826,27 +828,27 @@ in those is
             <li>The algorithm for executing speed changes due to track conditions for warrants
                 has been modified and is better able to restore the scripted speeds once the
                 track speed restrictions are lifted.</li>
-            <li>The constant used to approximate track speed of trains has been changed to 
+            <li>The constant used to approximate track speed of trains has been changed to
             	yield a scale speed of 100mph at full throttle. This change has <b>no effect</b>
             	on roster entries having Speed Profiles.</li>
             <li>The Address column of the Warrant Table list and the Address fields of the
             	NXWarrant or Create Warrant windows
             	now accept throttle protocol names and addresses of Markin and ESU ECoS.</li>
-            <li>When scripted speeds are overridden due to signals or obstructions ahead, the  
-            	non-speed script commands are executed at approximately the same elapsed times as  
+            <li>When scripted speeds are overridden due to signals or obstructions ahead, the
+            	non-speed script commands are executed at approximately the same elapsed times as
             	were written in the script.</li>
- 			<li>Track speeds of running warrants are recorded automatically and a SpeedProfile  
+ 			<li>Track speeds of running warrants are recorded automatically and a SpeedProfile
             	is built that can be seen by  pressing the <b>View Profile</b> button in the
             	edit warrant window. These profiles can be merged into the existing profiles
-            	for the Roster entry used by the loco of the warrant when the layout session 
+            	for the Roster entry used by the loco of the warrant when the layout session
             	is closed. (Recall that Warrant Preferences has 3 options for this merging.)</li>
             <li>An <b>Update Track Speeds</b> button is added to the window where warrant throttle
             	settings and commands are edited. This button updates the <b>Speed</b> column to
             	list the track speeds (mm/sec) for the current Speed Profile measurements of
-            	the locomotive address entered in the 'Engine Consist' box.</li>           	
-            <li>Bugs introduced during the past year to the 'Wait Sensor' command and merging of 
-            	speed profiles are fixed.</li>          	
-			<li>When OBlocks are imported from LayoutEditor blocks, the turnout settings of paths 
+            	the locomotive address entered in the 'Engine Consist' box.</li>
+            <li>Bugs introduced during the past year to the 'Wait Sensor' command and merging of
+            	speed profiles are fixed.</li>
+			<li>When OBlocks are imported from LayoutEditor blocks, the turnout settings of paths
             	are also added to the imported OPaths.</li>
             <li>A button to translate the throttle settings to track speed in inches/sec
             	or millimeters/sec or scale speed on miles/hr or kilometers/hr has been
@@ -880,7 +882,7 @@ in those is
                 require changes to scripts.  If you have a script that references
                 jmri.jmrix.SystemConnectionMemo, please change it to either
                 jmri.SystemConnectionMemo or jmri.jmrix.DefaultSystemConnectionMemo
-                (it's easier to have you just try the two than to explain which 
+                (it's easier to have you just try the two than to explain which
                 one will work in which case)</li>
             <li>Added PR automation to check for a comment in the release note when a PR
                 is opened, and to ensure that somebody has been assigned to the PR.</li>
@@ -890,12 +892,12 @@ in those is
             <li>"Display Message Log" has been removed from the Debug Menu. Use the
                 "System Console" from the Help Menu to view log messages.</li>
             <li>The older "Upload Debugging Information" item
-                in the help menu has been replaced by 
+                in the help menu has been replaced by
                 a "Report Issue..." item.  This walks you through creating a
-                <a href="https://github.com/JMRI/JMRI/issues">JMRI GitHub issue</a> and uploads information 
+                <a href="https://github.com/JMRI/JMRI/issues">JMRI GitHub issue</a> and uploads information
                 that will make debugging easier.  You need a (free)
                 GitHub account to do the final submission.
-                There's more info on the 
+                There's more info on the
                 <a href="https://jmri.org/help/en/package/apps/util/issuereporter/swing/IssueReporter.shtml">help page</a>.
             <li>The interface jmri.Light has been split into jmri.Light and jmri.VariableLight. Lights
                 that supports variable intensity must now implement the jmri.VariableLight interface.
