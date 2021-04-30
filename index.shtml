@@ -18,9 +18,9 @@
 
     <!--#include virtual="./Header.shtml" -->
 	<div id="mBody">
+      <!--#include virtual="Sidebar.shtml" -->
 
 	<hr class="hide">	<!-- only shows up on printouts -->
-    <!--#include virtual="./Sidebar.shtml" -->
     <!-- load last to see mainContent on top of small screen, block is moved via css -->
 	<div id="mainContent">	<!-- Body of page -->
 
@@ -203,6 +203,17 @@
                         </dd>
                         </dl>
             -->
+            <h2><a href="./manual/howtooperations">New "How To" Explanations for Operations</a></h2>
+            <dl>
+                <dt class="im">
+                    <a href="./manual/howtooperations"><img src="./images/ico-jmri.gif" width="44" height="44" alt="Operations docs"></a>
+                </dt>
+                <dd>
+                    There's a <a href="./manual/howtooperations">new series of introductory "How To" explanations</a> for JMRI Operations.
+                    These provide step-by-step instructions for doing the first things needed to get started with Operations.
+                </dd>
+            </dl>
+
             <h2><a href="./community/clinics/">JMRI Clinics</a></h2>
             <dl>
                 <dt class="im">
@@ -372,7 +383,7 @@
 	  </div> <!-- closes #mainContent-->
 
     </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
+  </div> <!-- closes #container -->
 <script src="js/main.js"></script>
 </body>
 </html>

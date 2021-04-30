@@ -4,13 +4,11 @@
 <div class="card-1" id="side" >
     <!-- Block of text on left side of page -->
     <div id="close-side" class="floatRight button fa fa-close" style="display:none;" onclick="side_close()"></div>
-    <div style="text-align: center;">Download and install JMRI&reg;</>
+    <div style="text-align: center;">Download and install JMRI&reg;</div>
  
  <dl>
- 
+
  <!--#include virtual="../help/en/parts/SidebarInstall.shtml" -->
- 
- <!--#include virtual="../help/en/parts/SidebarSupportedHardware.shtml" -->
 
   <dt><a href="../releasenotes/">Release Notes</a></dt>
   <dd>
@@ -32,6 +30,8 @@
 	    </ul></li>
 	<li>Test Releases:
 	    <ul>
+	    <li><a href="../releasenotes/jmri4.23.4.shtml">JMRI 4.23.4</a>
+	    <li><a href="../releasenotes/jmri4.23.3.shtml">JMRI 4.23.3</a>
 	    <li><a href="../releasenotes/jmri4.23.2.shtml">JMRI 4.23.2</a>
 	    <li><a href="../releasenotes/jmri4.23.1.shtml">JMRI 4.23.1</a>
 	    <li><a href="../releasenotes/jmri4.21.5.shtml">JMRI 4.21.5</a>
@@ -49,10 +49,12 @@
 	    </ul></li>
 	<li>(Tentative) Next Test Release:
 	    <ul>
-            <li><a href="../releasenotes/jmri4.23.3.shtml">JMRI 4.23.3</a></li>
+            <li><a href="../releasenotes/jmri4.23.5.shtml">JMRI 4.23.5</a></li>
         </ul></li>
   </ul>
   </dd>
+
+ <!--#include virtual="../help/en/parts/SidebarSupportedHardware.shtml" -->
 
   <dt>Source Code</dt>
   <dd>
@@ -68,7 +70,7 @@
 	<li><a href="https://github.com/JMRI/website/issues">JMRI Site Issues</a></li>
 	</ul>
   </dd>
-  
+
  </dl>
 
  <!--#include virtual="../help/en/parts/SidebarTail.shtml" -->

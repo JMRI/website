@@ -1,4 +1,3 @@
-<!-- Sidebar.shtml -->
 <!-- This is the 'responsive' common sidebar definition for /install pages -->
 
 <hr class="hide">
@@ -11,41 +10,8 @@
     <!--#include virtual="/help/en/parts/SidebarInstall.shtml" -->
 
    <!--#include virtual="/help/en/parts/SidebarSupportedHardware.shtml" -->    
-
-  <dt><a href="../releasenotes/">Release Notes</a></dt>
-  <dd>
-	<ul>
-	<li>Production Releases:
-	    <ul>
-	    <li><a href="../releasenotes/jmri4.18.shtml">JMRI 4.18</a>
-	    <li><a href="../releasenotes/jmri4.16.shtml">JMRI 4.16</a>
-	    <li><a href="../releasenotes/jmri4.14.shtml">JMRI 4.14</a>
-	    <li><a href="../releasenotes/jmri4.12.shtml">JMRI 4.12</a>
-	    <li><a href="../releasenotes/jmri4.10.shtml">JMRI 4.10</a>
-	    <li><a href="../releasenotes/jmri4.8.shtml">JMRI 4.8</a>
-	    <li><a href="../releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> <!-- keep -->
-	    <li><a href="../releasenotes/jmri3.8.shtml">JMRI 3.8</a>
-	    <li><a href="../releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> <!-- keep -->
-	    <li><a href="/download/older.shtml">Older releases</a>
-	    </ul></li>
-	<li>Test Releases:
-	    <ul>
-	    <li><a href="../releasenotes/jmri4.19.3.shtml">JMRI 4.19.3</a>
-	    <li><a href="../releasenotes/jmri4.19.2.shtml">JMRI 4.19.2</a>
-	    <li><a href="../releasenotes/jmri4.19.1.shtml">JMRI 4.19.1</a>
-	    <li><a href="../releasenotes/jmri4.17.8.shtml">JMRI 4.17.8</a>
-	    <li><a href="../releasenotes/jmri4.15.9.shtml">JMRI 4.15.9</a>
-	    <li><a href="../releasenotes/jmri4.13.7.shtml">JMRI 4.13.7</a>
-	    <li><a href="../releasenotes/jmri4.11.9.shtml">JMRI 4.11.9</a>
-
-	    <li><a href="/download/older.shtml">Older releases</a>
-	    </ul></li>
-	<li>(Tentative) Next Test Release:
-	    <ul>
-            <li><a href="../releasenotes/jmri4.19.4.shtml">JMRI 4.19.4</a></li>
-        </ul></li>
-  </ul>
-  </dd>
+	
+  <dt><h3><a href="../download/index.html">Release Notes</a></h3></dt>
 
   <dt>Source Code</dt>
   <dd>
