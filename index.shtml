@@ -16,7 +16,7 @@
     <div id="container">
     <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
-    <!--#include virtual="./Header.shtml" -->
+    <!--#include virtual="/Header.shtml" -->
 	<div id="mBody">
       <!--#include virtual="Sidebar.shtml" -->
 
@@ -134,23 +134,21 @@
             </div>
 
             <div class="flex-item-50">
-                <h4 onclick="collapse('download2')" class="button card-1">JMRI 4.23.2 Test Release</h4>
+                <h4 onclick="collapse('download2')" class="button card-1">JMRI 4.23.5 Test Release</h4>
                 <div id="download2" class="hidden">
-                    <p><a href="releasenotes/jmri4.23.2.shtml"></a></p>
-                    Released on March 9, 2021.
-                    <!--
-                <p>
-                This is the next in a series working toward the next JMRI production release 4.24
-                probably in early summer 2021.
-                    -->
+                    <p><a href="releasenotes/jmri4.23.5.shtml"></a></p>
+                    Released on May 12, 2021.
                     <p>
-                    JMRI 4.23.2 is a special release to make LogixNG available for testing.
+                    This is the next in a series working toward the next JMRI production release 4.24
+                    probably in early summer 2021.
+
                     <p>
                     For more information on this test release, please read the
-                    <a href="releasenotes/jmri4.23.2.shtml">JMRI 4.23.2 Release Note</a>,
-                    which also contains the download links.</p>
-                    <p><a href="#download">Release 4.20</a> is the current "production" release, recommended
-                    for first-time users.</p>
+                    <a href="releasenotes/jmri4.23.5.shtml">JMRI 4.23.5 Release Note</a>,
+                    which also contains the download links.
+                    </p>
+                    <a href="#download">Release 4.22</a> is the current "production" release, recommended
+                    for first-time users.
                 </div>
             </div>
 
@@ -186,65 +184,76 @@
         </div>
 
         <div class="list">
-            <!-- uncomment if clinics are planned, all events with a link are copied to /community/clinics/index.shtml
-             Jan 12 2016
-                   <h2>JMRI at NMRA 2016 Convention</h2>
-                        <dl>
-                        <dt class="im">
-                        <a href="http://www.nmra2016.org"><img src="https://static.wixstatic.com/media/401ff8_b71bad15b088301afab5520bfd20a1cf.jpg/v1/fill/w_226,h_175,al_c,q_75,usm_0.50_1.20_0.00/401ff8_b71bad15b088301afab5520bfd20a1cf.jpg" width="113" height="88"  alt="NMRA convention logo"></a>
-                        </dt>
-                        <dd>
-                        We're planning
-                        <a href="http://www.nmra2016.org/#!blank/c1gzh">JMRI clinics</a> at the
-                        <a <a href="http://www.nmra2016.org">NMRA 2016 National Convention</a>
-                        in Indianapolis, along with our traditional user get-together.
-                        <br>
-                        <a href="community/clinics/index.shtml#nmra2015">NMRA 2015 Clinic summary</a>
-                        </dd>
-                        </dl>
-            -->
-            <h2><a href="./manual/howtooperations">New "How To" Explanations for Operations</a></h2>
-            <dl>
-                <dt class="im">
-                    <a href="./manual/howtooperations"><img src="./images/ico-jmri.gif" width="44" height="44" alt="Operations docs"></a>
-                </dt>
-                <dd>
-                    There's a <a href="./manual/howtooperations">new series of introductory "How To" explanations</a> for JMRI Operations.
-                    These provide step-by-step instructions for doing the first things needed to get started with Operations.
-                </dd>
-            </dl>
+<!-- uncomment if clinics are planned, event is already on /community/clinics/index.html Jan 12 2016
+   	<h2>JMRI at NMRA 2016 Convention</h2>
+		    <dl>
+		    <dt class="im">
+			<a href="http://www.nmra2016.org"><img src="https://static.wixstatic.com/media/401ff8_b71bad15b088301afab5520bfd20a1cf.jpg/v1/fill/w_226,h_175,al_c,q_75,usm_0.50_1.20_0.00/401ff8_b71bad15b088301afab5520bfd20a1cf.jpg" width="113" height="88"  alt="NMRA convention logo"></a>
+		    </dt>
+		    <dd>
+			We're planning
+			<a href="http://www.nmra2016.org/#!blank/c1gzh">JMRI clinics</a> at the
+			<a <a href="http://www.nmra2016.org">NMRA 2016 National Convention</a>
+			in Indianapolis, along with our traditional user get-together.
+			<br>
+			<a href="community/clinics/index.shtml#nmra2015">NMRA 2015 Clinic summary</a>
+		    </dd>
+	        </dl>
+-->
+        <h2><a href="./community/connections/CommunityConnectionsIndex.shtml#mrslamf">MR SLAM Formatter: Another "JMRI Connections" Application</a></h2>
+        <dl>
+            <dt class="im">
+                <a href="./community/connections/CommunityConnectionsIndex.shtml#mrslamf"><img src="./images/ico-jmri.gif" width="44" height="44" alt="Community Connections"></a>
+            </dt>
+            <dd>
+                Tim Mann has created "Model Railroad Switch List and Manifest Formatter (MR SLAM Formatter)"
+                as an additional way to create custom railroad paperwork from JMRI information.
+                For more info, see our <a href="./community/connections/CommunityConnectionsIndex.shtml#mrslamf">Community Connections page</a>
+                or go directly to
+                <a href="https://mrslamf.com" target="_blank">the program's web site</a>
+            </dd>
+        </dl>
 
-            <h2><a href="./community/clinics/">JMRI Clinics</a></h2>
-            <dl>
-                <dt class="im">
-                    <a href="./community/clinics/"><img src="./images/ico-jmri.gif" width="44" height="44"
-                                                        alt="JMRI Clinics"></a>
-                </dt>
-                <dd>
-                    Several users have contributed their clinics for our
-                    <a href="./community/clinics/">Clinics page</a>.  There are both conventional handout
-                    and slides clinics, and also some neat interactive clinics for DecoderPro&reg;
-                    and PanelPro&trade;.
-                    <p>
-                    Some JMRI clinics from past NMRA national and other conventions are also included.
-                </dd>
-            </dl>
+   		<h2><a href="./manual/howtooperations">New "How To" Explanations for Operations</a></h2>
+		<dl>
+		    <dt class="im">
+			<a href="./manual/howtooperations"><img src="./images/ico-jmri.gif" width="44" height="44" alt="Operations docs"></a>
+		    </dt>
+		    <dd>
+            There's a <a href="./manual/howtooperations">new series of introductory "How To" explanations</a> for JMRI Operations.
+            These provide step-by-step instructions for doing the first things needed to get started with Operations.
+		   </dd>
+	    </dl>
 
-            <h2><a href="./community/connections/CommunityConnectionsIndex.shtml">Apps working with
-                JMRI</a></h2>
-            <dl>
-                <dt class="im">
-                    <a href="./community/connections/CommunityConnectionsIndex.shtml"><img src="./images/ico-jmri.gif" width="44" height="44" alt="Community Connections"></a>
-                </dt>
-                <dd>
-                    Hobbyists have created their own applications that work with JMRI
-                    to provide extra capabilities. In addition, some commercial vendors have
-                    created applications that work with, add data to, or take data from JMRI.
-                    See the <a href="./community/connections/CommunityConnectionsIndex.shtml">
-                    community/connections directory</a> for a list and links.
-                    New applications can be added at any time, so share your stories!
-                </dd>
-            </dl>
+   		<h2><a href="./community/clinics/">Check Out the "JMRI Clinics" page</a></h2>
+		<dl>
+		    <dt class="im">
+			<a href="./community/clinics/"><img src="./images/ico-jmri.gif" width="44" height="44" alt="JMRI clinics"></a>
+		    </dt>
+		    <dd>
+            Several users have contributed their clinics for our
+			<a href="./community/clinics/">Clinics page</a>.  There are both conventional handout
+			and slides clinics, and also some neat interactive clinics for DecoderPro&reg;
+			and PanelPro&trade;.
+			<p>
+			Some JMRI clinics from past NMRA national and other conventions are also included.
+		   </dd>
+	    </dl>
+
+        <h2><a href="./community/connections/CommunityConnectionsIndex.shtml">Additional Applications with JMRI Connections</a></h2>
+        <dl>
+           <dt class="im">
+           <a href="./community/connections/CommunityConnectionsIndex.shtml"><img src="./images/ico-jmri.gif" width="44" height="44" alt="Community Connections"></a>
+		   </dt>
+           <dd>
+           Hobbyists have created applications that work with JMRI
+           to provide extra capabilities. In addition, some commercial vendors have
+           created applications that work with, add data to, or take data from JMRI.
+           See the <a href="./community/connections/CommunityConnectionsIndex.shtml">
+           community/connections directory</a> for a list and links.
+           New applications can be added at any time!
+           </dd>
+        </dl>
 
             <h2><a href="help/en/package/jmri/jmrit/withrottle/UserInterface.shtml">Your Smart Phone as a
                 Throttle</a></h2>
