@@ -11,7 +11,7 @@
 
           <div class="button inline" style="padding:0;">
               <a href="/" title="Return to JMRI.org home page" accesskey="1">
-                  <img src="images/jmri-small.svg" alt="JMRI Logo" height="45">
+                  <img src="/images/jmri-small.svg" alt="JMRI Logo" height="45">
               </a>
           </div>
 
@@ -85,7 +85,8 @@
 
       </div>
   </div> <!-- closes #header-->
-<!--website2020 javascript includes for dropdown menu-item and GoogleSearch form-->
+<!--website2021 javascript includes for dropdown menu-item and GoogleSearch form-->
 <script async src="https://cse.google.com/cse.js?cx=ec997d9b2c290dd18"></script>
-<script src="js/header.js"></script>
+<!--website 2021 to collapse menu on narrow screens-->
+<script src="/js/header.js"></script>
 <!-- /Header2021.shtml -->
