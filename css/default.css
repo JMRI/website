@@ -278,10 +278,11 @@
 		border: solid #FFD700; /* --primary-color2 - Orange */
 	}
 
-    p.noted {
+    p.noted
+    div.noted {
 		margin: 1em;
 		padding: 0.1em;
-		border: 2px solid blue;
+		border: 2px solid #778899; /* --primary-color3: LightSlateGray */
 	}	
 
 	span.important,
@@ -293,9 +294,10 @@
     .xlarge {
         font-size:24px;
     }
+
 /* small [Since JMRI 1.2.3] sticker to mark introductory version number in Release Notes */
 	span.since {
-		color: White;
+		color: Black;
 		font-weight: normal;
 		float: right;
 		background: #FFD700; /* --primary-color2 - Orange */
@@ -305,11 +307,11 @@
 	    padding: .2em .3em;
 	}
 	.since a:link {
-			color: White;
+			color: Black
 			font-weight: normal;
 	}
 	.since a:visited {
-			color: White;
+			color: Black;
 			font-weight: normal;
 	}
 	.since a:link:hover, :visited:hover {
@@ -679,7 +681,7 @@ hr {
     float: left;
 	left: 0;
 	top: 64px;
-	padding: 0 0.3em 0 0.3em;
+	padding: 0 0.3em 1em 0.3em; /* try some extra padding at the bottom to display all contents (item 3: 1em) */
 	voice-family: inherit;
     max-height: 100%;
     width: 250px;
@@ -733,10 +735,12 @@ hr {
 	list-style: none;
 	padding: 0 0 0.3em 0.5em;
 }
-#side li.here {
-	/* highlight current page */
+#side li.here,
+#side li.here:link {
+	/* highlight current page in sidebar */
 	background-color: #778899; /*var(--primary-color3); LightSlateGray */
-	color: White;
+	color: #F5F5DC; /* Sand Beige = sidebar bg color */
+	font-weight: normal;
 }
 #side :link, #side :visited {
     color: #554FA0; /*var(--primary-color1);*/
