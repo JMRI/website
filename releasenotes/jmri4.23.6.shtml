@@ -22,11 +22,13 @@
       Release Notes for JMRI 4.23.6 release
       </h1>
 
-    <p>Date: mmm dd, 2021</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: May 12, 2021</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.23.6 of JMRI/DecoderPro is available for download.</p>
 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -101,14 +103,9 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-   <!-- While this release is in development, the     -->
-   <!-- list of new warnings is kept in               -->
-   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-
-   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
+    <li>
+        None yet
+    </li>
 </ul>
 
 
@@ -157,27 +154,19 @@ installing this test release.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!--
-Please note that the download links in this and future JMRI releases link to
-<a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
-People are welcome to distribute the download files further via other websites, etc.
-If you want to check that you've received original, unmodified versions, please
-check the files against the checksums shown below.
-
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.23.5/JMRI.4.23.5+R0e79567f8.dmg">https://github.com/JMRI/JMRI/releases/download/v4.23.5/JMRI.4.23.5+R0e79567f8.dmg</a><br/>
+  sha256: aac695b2ce1bfd15937135b6f77f6d1e18673d6f771493bdf56011dfaf50b876 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.23.5/JMRI.4.23.5+R0e79567f8.exe">https://github.com/JMRI/JMRI/releases/download/v4.23.5/JMRI.4.23.5+R0e79567f8.exe</a><br/>
+   sha256: c8b38c66f9bbe7d8262731e1ec40e79d99d5188f47b6469d3c5ccc2d47b29e4f</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.23.5/JMRI.4.23.5+R0e79567f8.tgz">https://github.com/JMRI/JMRI/releases/download/v4.23.5/JMRI.4.23.5+R0e79567f8.tgz</a><br/>
+   sha256: f48f7afb2869efd4cbc5630f4ce013ec986ba0f4c811e528b352fddeca2876d0</li>
 </ul>
- -->
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -185,23 +174,74 @@ on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.23.6``/">CI project page</a>.
  -->
 
+<!--
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
 
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri4.23.4.shtml">Test Release 4.23.4</a>:</h2>
+<h2>Changes since <a href="jmri4.23.5.shtml">Test Release 4.23.5</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.23.5+is%3Amerged">list of included changes</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.23.6+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- new release note items are kept in            -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
 
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>PIKO</h4>
+            <ul>
+                <li>Added support for Piko SmartDecoder 4.1 Next 18 Series used in N and TT scale engines.</li>
+            </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Create Train. Fix sort order in Transit Combo.</li>
+             <li>Create Train. Fix starting train outside of Transit..</li>
+             <li>Create Train. Use Roster selection combo.</li>
+             <li>Create Train. Allow user to select by roster, by train, or enter a dcc address without changing Dispatcher defaults. Allow override of DCC address for trains from Operations.</li>
+             <li>When allocating by Safe Sections corect a problem selecting Primary or Alternate Section.</li>
+             <li>Correct issue when running under No Signals that caused a train not to relize the next section was now available.</li>
+             <li>When stopping in a multi-block section, pull train as far into section as possible.</li>
+             <li>Do not mix stopping by speed profile and stopping by stopping sensor which was causing trains to run into the next section</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>Implement Clock Action and Expression</li>
+        </ul>
+
+    <h3>Roster</h3>
+        <a id="Roster" name="Roster"></a>
+        <ul>
+            <li>Function buttons icons, SVG file format now supported, allows for smooth scaling in JMRI native throttle window</li>
+        </ul>
+
+    <h3>Throttle</h3>
+        <a id="throttle" name="throttle"></a>
+        <ul>
+            <li>When "Large speed slider" mode is enabled (in throttle preferences), directions, stop and estop buttons will automatically resize and scale depending on the control panel inner window size : allows for high visibility from far away (for people using a wireless device combined with JMRI native throttles for instance)</li>
+            <li>Function buttons icons, SVG file format now supported, allows for smooth scaling</li>
+            <li>Throttle control panel button icons are now based on SVG files, allows better scaling</li>
+            <li>Throttle preferences are now be applied live, no need to reload the throttle windows or restart the application</li>
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>Audio buffers and sources now are removed when a VSDecoder is deleted.</li>
+            <li>Deprecated methods in VSDecoderManager: getVSDecoder(String profile_name, String path),
+            getNumberOfDecoders, setDefaultVSDecoder, getDefaultVSDecoder.
+            And in VSDecoder: setDefault, isDefault.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Luca Dentella contributed the new <a href="http://jmri.org/jython/CmdMapper.py">CmdMapper script</a>.</li>
+        </ul>
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
