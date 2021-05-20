@@ -1,4 +1,4 @@
-<!-- Header2021.shtml -->
+<!-- responsive Header.shtml since 2021-->
   <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
   <div id="header">
@@ -18,7 +18,7 @@
           <div id="hor-nav" class="inline"><!-- "hor-nav" show/hide by mediaquery -->
               <div id="nav_dl" class="button inline"><a
                         href="/download/index.shtml"
-                        title="Get the latest software">Download</a></div>
+                        title="Get the JMRI software">Releases</a></div><!-- menu renamed from Download (action?)-->
               <div id="nav_apps" class="button inline"><a
                         href="/help/en/html/apps/index.shtml"
                         title="Learn about JMRI applications">Applications</a></div>
@@ -47,7 +47,7 @@
               <div id="more" class="dropdown-content" style="display:none">
                   <a class="dropdown-menuitem button"
                      href="/download/index.shtml"
-                     title="Get the latest software">Download</a>
+                     title="Get the JMRI software">Releases</a><!-- menu renamed from Download (action?)-->
                   <a class="dropdown-menuitem button"
                      href="/help/en/html/apps/index.shtml"
                      title="Learn about JMRI applications">Applications</a>
@@ -89,4 +89,4 @@
 <script async src="https://cse.google.com/cse.js?cx=ec997d9b2c290dd18"></script>
 <!--website 2021 to collapse menu on narrow screens-->
 <script src="/js/header.js"></script>
-<!-- /Header2021.shtml -->
+<!-- /Header.shtml -->

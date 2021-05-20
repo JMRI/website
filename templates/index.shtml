@@ -18,7 +18,7 @@
 	<div class="no-sidebar" id="mBody">
 
 	<hr class="hide">	<!-- only shows up on printouts -->
-    <!-- load last to see mainContent on top of small screen, block is moved via css -->
+    <!-- load last to see mainContent on top of small screen, block is positioned via css -->
         <div id="mainContent">	<!-- Body of page -->
 
         <ul class="hor-nav">
@@ -127,7 +127,8 @@
                     Tables:<br>
                     No special class tags required for simple, small tables:
                     <br>
-                    Wrap wide tables in a <code>&lt;div class="wide-table"&gt;</code> so they will scroll:
+                    Wrap wide tables (or anything containing eg hyperlinks longer than 80 characters) in a
+                    <code>&lt;div class="wide"&gt;</code> so they will scroll:
                     <div class="wide">
                         <table>
                             <tbody><tr>
