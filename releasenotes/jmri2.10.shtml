@@ -14,7 +14,8 @@
   
 <!--#include virtual="/Header.shtml" -->
 
-  <div class="no-sidebar" id="mBody">
+  <div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent" style=" width : 692px;">
       <h2>
       Release Notes for JMRI 2.10 release

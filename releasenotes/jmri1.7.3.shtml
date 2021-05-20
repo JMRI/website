@@ -14,7 +14,8 @@
     <!--#include virtual="/Header.shtml" -->
   <hr class="hide">
 
-  <div class="no-sidebar" id="mBody">
+  <div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h2>
       Release Notes for JMRI 1.7.3 test release

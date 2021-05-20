@@ -20,7 +20,8 @@
 
 <!--#include virtual="/Header.shtml" -->
 
-  <div class="no-sidebar" id="mBody">
+  <div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h2>
       Release Notes for JMRI 4.7.2 release
