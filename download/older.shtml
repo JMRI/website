@@ -11,13 +11,13 @@
 <body>
     <!--#include virtual="/Header.shtml" -->
 
-<hr class="hide">
+    <div id="mBody">
+        <!--#include virtual="Sidebar.shtml" -->
+        <hr class="hide">
+        <div id="mainContent">
 
-<div id="mBody">
- <div id="mainContent">
-
-	<h2><a href="../releasenotes/">Older Release Notes</a></h2>
-	<p>Production Versions</p>
+        <h2><a href="../releasenotes/">Older Release Notes</a></h2>
+        <p>Production Versions</p>
 	    <ul>
 	        <li><a href="../releasenotes/jmri4.16.shtml">JMRI 4.16</a>
 	        <li><a href="../releasenotes/jmri4.14.shtml">JMRI 4.14</a>
@@ -302,8 +302,8 @@
             <li><a href="../releasenotes/jmri1.1.14.shtml">JMRI 1.1.14</a>
 	    </ul>
 
-  <hr class="hide">
-   <!--#include virtual="/Footer.shtml" -->
+    <hr class="hide">
+    <!--#include virtual="/Footer.shtml" -->
 
     </div> <!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
