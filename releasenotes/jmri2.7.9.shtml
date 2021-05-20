@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
  <title>
  JMRI: Release Notes for 2.7.9
  </title>
-    <meta content="Bob Jacobsen" name="Author">
+    <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="JMRI 2.7.9">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
@@ -215,5 +210,6 @@ Peter Ulvestad provided a decoder definition for the MRC Rapido Turbotrain.
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
+ <script src="/js/main.js"></script>
 </body>
 </html>
