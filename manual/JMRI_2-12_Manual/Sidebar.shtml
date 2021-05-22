@@ -1,32 +1,30 @@
 <!-- Sidebar.shtml -->
-<!-- This is the common sidebar definition for JMRI 2.12 Manual pages -->
+<!-- This is the 'responsive' common sidebar definition for JMRI 2.12 Manual pages -->
 <hr class="hide">
 
 <div id="mBody">
 
-<div id="side"> <!-- Block of text at top -->
-    <div style="text-align: center"><strong>The JMRI Manual</strong></div>
+    <div class="card-1" id="side" >
+        <!-- Block of text on left side of page -->
+        <div id="close-side" class="floatRight button fa fa-close" style="display:none;" onclick="side_close()"></div>
+
+        <div style="text-align: center">The JMRI Manual</div>
 
     <div style="text-align: right">
         <a href="http://jmri.org/manual/pdf/jmri_Man_2_12.pdf">Download</a>
     </div>
 
 <dl><!-- main table of contents -->
- <div style="text-align: center"><strong>Installing JMRI</strong></div>
- <dt></dt>
+
+<dt>Installing JMRI</dt>
     <dd>
     <ul>
     <li><a href="Installing_JMRI.shtml">Preparing to Install JMRI</a></li>
     <li><a href="Installing_JMRI.shtml#installJMRI">Installing JMRI Software</a></li>
-    </ul>
-    </dd>
- 
-<dt></dt>
-    <dd>
-    <ul>
+
     <li><a href="Start_DCC.shtml">What is DCC?</a>
-    <li><a href="Start_DCC_Systems.shtml">What DCC systems will DecoderPro&reg; work with?</a></dt>
-    <li>><a href="Start_DCC_Hardware.shtml">What hardware do I need?</a>
+    <li><a href="Start_DCC_Systems.shtml">What DCC systems will DecoderPro&reg; work with?</a>
+    <li><a href="Start_DCC_Hardware.shtml">What hardware do I need?</a>
     <li><a href="Start_DecoderPro.shtml">How do I start the program?</a>
     <li><a href="Start_Preferences.shtml">How do I set up my preferences?</a>
     </ul>
@@ -61,6 +59,7 @@
     <li><a href="Basic_Programming.shtml#Save Data">Saving the new data to a file</a></li>
     <li><a href="Basic_Programming.shtml#Do More">What if I need to do more?</a></li>
     </ul>
+    </dd>
 
 <dt><a name="Advanced Programmer"></a>The Comprehensive Programmer</dt>
     <dd>
@@ -120,4 +119,6 @@
 
 </dl>
 </div>
+    <!-- button is in /Header -->
+    <script src="/js/side.js"></script>
 <!-- Sidebar.shtml -->

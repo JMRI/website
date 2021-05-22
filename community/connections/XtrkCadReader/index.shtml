@@ -1,5 +1,6 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>
  	Using JMRI and XTrackCAD
@@ -8,14 +9,13 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="author" content="Egbert Broerse">
     <meta name="keywords" content="JMRI XTrackCad XtrkCadReader">
-
     <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
-<!--#include virtual="../Sidebar.shtml" -->
-
+<div id="mBody">
+    <!--#include virtual="../Sidebar.shtml" -->
 	<div id="mainContent">
 
 <h1>Using JMRI and XTrackCAD Together</h1>
@@ -51,7 +51,7 @@ Release 2.2.4 added the capability to import Bezier tracks.<span class="since">S
 XtrkCadReader is part of the JMRI project and is available under the
 GNU General Public License. For additional information about
 licensing terms, kindly refer to 
-<a href="/Copyright.html#license">our license page</a>.</p>
+<a href="/copyright.shtml#license">our license page</a>.</p>
 
 <h3>Technical Details</h3>
 
@@ -66,5 +66,6 @@ you can check it out from its
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->
+<script src="/js/main.js"></script>
 </body>
 </html>

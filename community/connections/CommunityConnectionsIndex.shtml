@@ -1,16 +1,14 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta name="author" content="jerryg2003">
-
   <title>JMRI: Applications That Connect with JMRI</title>
 <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
-  <!--#include virtual="../../Header.shtml" -->
+<!--#include virtual="/Header.shtml" -->
   <div id="mBody">
     <!--#include virtual="Sidebar.shtml" -->
     <div id="mainContent">
@@ -165,8 +163,9 @@
 
      </dl>
 
-    <!--#include virtual="../../Footer.shtml" -->
+    <!--#include virtual="/Footer.shtml" -->
     </div><!-- close #mainContent -->
   </div><!-- close #mBody -->
+<script src="/js/main.js"></script>
 </body>
 </html>

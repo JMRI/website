@@ -1,16 +1,16 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id: CATS.shtml,v 1.1 2008-05-23 16:39:46 jacobsen Exp $ -->
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>
- 	AnyRail with JMRI
+ 	  AnyRail with JMRI
     </title>
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="JMRI AnyRails ">
-
-<!--#include virtual="/Style.shtml" -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
+<body>
 <!--#include virtual="/Header.shtml" -->
   <div id="mBody">
     <!--#include virtual="../Sidebar.shtml" -->
@@ -131,5 +131,6 @@
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->
+<script src="/js/main.js"></script>
 </body>
 </html>

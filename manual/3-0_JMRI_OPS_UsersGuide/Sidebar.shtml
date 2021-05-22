@@ -1,11 +1,13 @@
 <!-- Sidebar.shtml -->
-<!-- This is the common sidebar definition for OpsPro 3.0 Manual pages -->
+<!-- This is the 'responsive' common sidebar definition for OpsPro 3.0 Manual pages -->
 <hr class="hide">
 
 <div id="mBody">
 
-<div id="side"> <!-- Block of text at top -->
-    <div style="text-align: center"><strong>The JMRI Manual</strong></div>
+    <div class="card-1" id="side" >
+        <!-- Block of text on left side of page -->
+        <div id="close-side" class="floatRight button fa fa-close" style="display:none;" onclick="side_close()"></div>
+    <div style="text-align: center">The JMRI Manual</div>
 
     <div style="text-align: right">
       <a href="http://jmri.org/manual/pdf/JMRI_3-0%20Operations_Users%20Guide.pdf">Download</a>
@@ -33,7 +35,7 @@
     <ul>
       <li><a href="Main_Main.shtml">Main Window</a></li>
       <li><a href="Main_Tool.shtml">Tools Menu</a></li>
- 	    <li><a href="Ops_Start.shtml">Operations</a>
+ 	  <li><a href="Ops_Start.shtml">Operations</a>
       <ul>
       <li><a href="Ops_Settings.shtml">Settings</a></li>
       <li><a href="Ops_Locations.shtml">Locations</a></li>
@@ -48,4 +50,7 @@
 
 </dl>
 </div>
+
+    <!-- button is in /Header -->
+    <script src="/js/side.js"></script>
 <!-- Sidebar.shtml -->
