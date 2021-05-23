@@ -259,12 +259,12 @@
 /* Emphasis */
 
 	/* em, strong */
-	
+
 	strong.stronger {
 		font-style: italic;
 		font-weight: bold;
 	}
-	
+
 	strong.very-strong {
 		font-weight: bold;
 		text-transform: uppercase;
@@ -283,7 +283,7 @@
 		margin: 1em;
 		padding: 0.1em;
 		border: 2px solid #778899; /* --primary-color3: LightSlateGray */
-	}	
+	}
 
 	span.important,
 	em.important,
@@ -395,7 +395,7 @@
 	pre.incorrect-code .note:before {
 		content: "";
 	}
-	
+
 
 /* Examples and Figures */
 
@@ -721,6 +721,9 @@ hr {
 #side dt {
 	font-weight: bold;
 	color: #554FA0; /*var(--primary-color1);*/
+}
+#side .dtheader {
+	color: black;
 }
 #side dd {
 	padding: 0 0 0.3em 0.3em;
