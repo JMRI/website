@@ -563,15 +563,13 @@ h1, h2, h3, h4, h5, h6 {
 	border-left: 0;
 	color: Black;
 }
-h4, h5, h6 {
-	background-color: var(--background-color1); /* LightPurple #B695C0 test browsers display color as var*/
-}
+
 h1 { font-size: 140%; padding: 9px; padding-left: 1em; }
-h2 { font-size: 120%; padding: 3px; padding-left: 1em; }
-h3 { font-size: 110%; padding: 1.5px; padding-left: 1em; }
-h4 { font-size: 100%; padding: 1px; padding-left: 1em; }
-h5 { font-size: 90%;  padding: 1px; padding-left: 1.5em; }
-h6 { font-size: 90%;  padding: 1px; padding-left: 2em; }
+h2 { font-size: 120%; padding: 3px; padding-left: 3em; border-bottom: solid thin  #778899;}  /*var(--primary-color3); LightSlateGray */
+h3 { font-size: 110%; padding: 1.5px; padding-left: 5em; border-bottom: solid thin  #778899; }
+h4 { font-size: 100%; padding: 1px; padding-left: 7em; border-bottom: solid thin  #778899;}
+h5 { font-size: 90%;  padding: 1px; padding-left: 9em; border-bottom: solid thin  #778899;}
+h6 { font-size: 90%;  padding: 1px; padding-left: 11em;  border-bottom: solid thin  #778899;}
 
 sup {
 	font-size: 70%;
