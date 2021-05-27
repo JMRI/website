@@ -24,121 +24,6 @@
     <!-- load last to see mainContent on top of small screen, block is moved via css -->
 	<div id="mainContent">	<!-- Body of page -->
 
-<<<<<<< HEAD
-	    <div id="teaser">
-		<h1>What is JMRI?</h1>
-
-		<!-- Photograph on home landing page -->
-		<img src="images/Home_Fireman1940PD_cropflip_purple.jpg" width="169" height="212" border="0" align="right" alt="fireman on the NYC" longdesc="Public Domain image of a fireman on the NYC Chicago to Glacier Park Empire Builder, ca. 1940, original image by Charles O'Rear, 1941-, Photographer (NARA record: 3403717) (U.S. National Archives and Records Administration) [Public domain], via Wikimedia Commons from Wikimedia Commons, url = https://commons.wikimedia.org/wiki/File%3AFIREMAN_ON_THE_EMPIRE_BUILDER_PASSENGER_TRAIN_ENROUTE_FROM_CHICAGO_TO_EAST_GLACIER_PARK%2C_MONTANA%2C_AND_SEATTLE..._-_NARA_-_556083.jpg, flipped and recolored 2016 by EBR for JMRI">
-
-		<p> The JMRI project is building tools for model railroad computer control.
-		    We want it to be usable to as many people as possible,
-		    so we're building it in Java to run anywhere,
-		    and we're trying to make it independent of specific hardware systems.</p>
-		<p> JMRI is intended as a jumping-off point for hobbyists
-		    who want to control their layouts with a computer
-		    without having to create an entire system from scratch.</p>
-		<p> You can manage your locomotive rosters and easily program your decoders using
-		    <a href="./help/en/html/apps/DecoderPro/index.shtml">DecoderPro&reg;</a>.
-		    You can build control panels and control
-		    your layout using
-		<a href="./help/en/html/apps/PanelPro/index.shtml">PanelPro&trade;</a> to set up signaling and other functions.
-		<a href="./help/en/html/apps/OperationsPro/index.shtml">OperationsPro&trade;</a>
-		    lets you create manifests that route cars across your railroad from shipper to receiver,
-		    and provide train crews with operating instructions.</p>
-		<p> Going beyond the basics, you can use <a href="./help/en/html/tools/Logix.shtml">Logix</a> to
-		    automate your layout's behavior, interface with X10 and Insteon systems to control your
-		    layout room's <a href="./help/en/html/tools/Lights.shtml">lights</a>
-		    and write
-		    <a href="./help/en/html/tools/scripting/index.shtml">scripts</a> to extend the capabilities
-		    of the system.</p>
-
-		<p>
-		<a href="/donations.shtml">
-            <img src="https://sourceforge.net/images/project-support.jpg" width="88" height="32" border="0" align="right" alt="Donate to JMRI">
-        </a>
-      As an open source project, JMRI is evolving in many directions at once. You can get
-			involved at many levels:</p>
-			<ul>
-			<li> <strong>Learn about JMRI</strong> (check out the
-			     <a href="help/en/webindex.shtml">online help</a>,
-				 <a href="help/en/html/FAQ.shtml">FAQs</a>,
-				 <a href="/help/en/manual/index.shtml" title="DecoderPro Manual">DecoderPro manual</a>,
-			     and <a href="community/clinics/">Clinics</a>)
-			<li> <strong>Kick the tires</strong>
-				 (<a href="/download/index.shtml" title="Get the latest software">download</a> JMRI,
-			install it on <a href="./install/WindowsNew.shtml">Windows</a>, <a href="./install/MacOSX.html">Mac OS X</a>
-			or <a href="./install/Linux.html">Linux</a>,
-				<a href="/help/en/html/hardware/index.shtml">connect it</a> to your layout)
-			<li> <strong>Share your experiences with others</strong>
-			    (<a href="https://groups.io/g/jmriusers/join" title="jmriusers groups.io group">join</a> or
-			    <a href="https://groups.io/g/jmriusers/topics">browse</a> the JMRI Users Groups.io Group)
-			<li> <strong>Help extend and develop it</strong> (look
-			    <a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">under the hood</a>,
-			    <a href="/help/en/html/doc/Technical/getcode.shtml">get the source code</a>,
-				<a href="https://jmri-developers.groups.io/g/jmri/join">join</a> or
-				<a href="https://jmri-developers.groups.io/g/jmri/topics">browse</a>
-				the JMRI-Developers mailing list)
-			<li>Or <a href="/donations.shtml">make a small donation</a> to help defray the costs of keeping this going.
-			</ul>
-
-			<p> Whatever it is that you choose to do with JMRI, and however you get involved,
-			<strong>welcome to our community!</strong>
-			</p>
-
-	    </div> <!-- closes #teaser-->
-
-	    <div class="list">
-        <table border=0>
-	    <tr><td width="50%" valign=top>
-
-			<h2><a name="download"></a><a href="/download/index.shtml#prod-rel">JMRI 4.22 Production Release</a></h2>
-				Released on March 1, 2021.
-				<p>
-				JMRI 4.22 is recommended for new users. It's the most
-				recent stable production release.
-			  </p>
-				<p class="dl">For more information, please read the
-				<a href="releasenotes/jmri4.22.shtml">JMRI 4.22 Release Note</a>,
-				which also contains the download links.</p>
-
-			<h2><a href="releasenotes/jmri3.10.1.shtml">JMRI 3.10.1 Production Release</a></h2>
-				Released on January 11, 2015.
-				<p>
-				JMRI 3.10.1 is recommended for JMRI users with computers
-                that can only run Java 1.6; later releases require Java 1.8.
-
-			    </p>
-				<p class="dl">For more information, please read the
-				<a href="releasenotes/jmri3.10.1.shtml">JMRI 3.10.1 Release Note</a>,
-				which also contains the download links.</p>
-
-			<h2><a href="releasenotes/jmri2.14.1.shtml">JMRI 2.14.1 Production Release</a></h2>
-				Released on July 15, 2012.
-				<p>
-				JMRI 2.14.1 is recommended for JMRI users with computers
-				that can only run Java 1.5; later releases require Java 1.6/1.8.
-
-			    </p>
-				<p class="dl">For more information, please read the
-				<a href="releasenotes/jmri2.14.1.shtml">JMRI 2.14.1 Release Note</a>,
-				which also contains the download links.</p>
-
-	    </td>
-
-	    <td width="50%" valign=top>
-
-            <h2><a href="releasenotes/jmri4.23.6.shtml">JMRI 4.23.6 Test Release</a></h2>
-                Released on May 26, 2021.
-
-                <p>
-                This is the next in a series working toward the next JMRI production release 4.24
-                probably in early summer 2021.
-
-                <p>
-                For more information on this test release, please read the
-               <a href="releasenotes/jmri4.23.6.shtml">JMRI 4.23.6 Release Note</a>,
-=======
         <div id="teaser">
             <h1>What is JMRI?</h1>
 
@@ -260,7 +145,6 @@
                     <p>
                     For more information on this test release, please read the
                     <a href="releasenotes/jmri4.23.5.shtml">JMRI 4.23.5 Release Note</a>,
->>>>>>> 3d54340f2d201fc473abb3f414ea26b311afcd80
                     which also contains the download links.
                     </p>
                     <a href="#download">Release 4.22</a> is the current "production" release, recommended
