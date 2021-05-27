@@ -1,25 +1,15 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
- <title>JMRI: Downloads</title>
+    <title>JMRI: Releases</title>
     <meta name="author" content="John Plocher">
     <meta name="keywords" content="java model railroad JMRI download binaries binary code jar install">
-
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
-<body class="secondlevel">
-<div id="container">
-
-<p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
-<!--#include virtual="/Header.shtml" -->
+<body>
+    <!--#include virtual="/Header.shtml" -->
 
 <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
@@ -27,7 +17,7 @@
  <hr class="hide">
  <div id="mainContent">
 
-    This page describes JMRI releases.  Briefly, we have three kinds:
+    <p>This page describes JMRI releases.  Briefly, we have three kinds:</p>
     <ul>
     <li>"<a href="#prod-rel">Production releases</a>" about twice a year.  These are the ones we recommend to general users.
     <li>"<a href="#test-rel">Test releases</a>", usually <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open">about monthly</a>.
@@ -100,20 +90,19 @@
     <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
     <dd>
 	<a id="prod-download"></a><p class="dl">Download:
-            <ul>
-            <li>OS X / macOS: <a
-                href="https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.dmg">https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.dmg</a><br/>
-              sha256: 55f9ac72f5452227a3949e363f9235f0d05e5a01d8d6224c90dc9dfbb87d0a0b </li>
+        <ul>
+        <li>OS X / macOS: <a
+            href="https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.dmg">https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.dmg</a><br/>
+          sha256: 55f9ac72f5452227a3949e363f9235f0d05e5a01d8d6224c90dc9dfbb87d0a0b </li>
 
-            <li>Windows: <a
-                href="https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.exe">https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.exe</a><br/>
-               sha256: ac71bfa05a13994e87ab5ba10f379ed77a8a1b5aad137afb9415f0ec23d10d52</li>
+        <li>Windows: <a
+            href="https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.exe">https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.exe</a><br/>
+           sha256: ac71bfa05a13994e87ab5ba10f379ed77a8a1b5aad137afb9415f0ec23d10d52</li>
 
-            <li>Linux: <a
-                href="https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.tgz">https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.tgz</a><br/>
-               sha256: a63b8a9722efa4743fd5c6fddb881f1175154df700e75bb1658658a512fcfa45</li>
-            </ul>
-      </p>
+        <li>Linux: <a
+            href="https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.tgz">https://github.com/JMRI/JMRI/releases/download/v4.22/JMRI.4.22+R4c4384d74.tgz</a><br/>
+           sha256: a63b8a9722efa4743fd5c6fddb881f1175154df700e75bb1658658a512fcfa45</li>
+        </ul>
 
     <strong>Notes:</strong><br>
     <p>For more information on the release contents, please see the
@@ -142,7 +131,7 @@
 	    run Java 1.6. Please see the
 	    <a href="../releasenotes/jmri3.10.1.shtml">release note</A> for download and install
 	    information.
-	    <p>Production release 3.10.1 was made available onn January 11, 2015.</p>
+	    <p>Production release 3.10.1 was made available on January 11, 2015.</p>
 
 	<div style="clear: both"></div>
     </dd>
@@ -181,7 +170,6 @@
 	   For more information on the rough development schedule, please see the
 	   <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">JMRI road map</a>
 	   (which is only occasionally updated).</p>
-</dl>
 
 <h2>Related Items</h2>
 <dl>
@@ -212,11 +200,11 @@
     </dl>
     </div> <!-- closes .list -->
 
-  <hr class="hide">
-<!--#include virtual="/Footer.shtml" -->
+   <hr class="hide">
+   <!--#include virtual="/Footer.shtml" -->
 
    </div> <!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
- </div> <!-- closes #container -->
+<script src="/js/main.js"></script>
 </body>
 </html>

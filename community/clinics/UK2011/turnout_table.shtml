@@ -1,32 +1,27 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id: index.shtml,v 1.2 2011-07-10 20:29:42 jacobsen Exp $ -->
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
  <title>JMRI: UK Signalling, Adding Turnouts and Sensors</title>
     <meta content="Nigel Cliffe" name=Author>
     <meta name="keywords"
        content="clinics java model railroad JMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra signalling UK British">
-
-<!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
 <hr class="hide">
 
-<div class="nomenu" id="mBody">
+<div class="no-sidebar" id="mBody">
     <div id="mainContent">
-<h2>Signal Mast Logic - Adding Turnouts and Sensors to JMRI</h2>
-<p>The first stage of constructing our layout within JMRI is to make entries in 
+
+<h1>Signal Mast Logic - Adding Turnouts and Sensors to JMRI</h1>
+
+<p>The first stage of constructing our layout within JMRI is to make entries in
   the Turnout Table and the Sensor Table. These define the turnouts and the occupancy 
-  sensors on the layout. </p>
-<p><img src="screendumps/turnouttable.jpg" width="948" height="411"></p>
+  sensors on the layout.</p>
+<p><img src="images/turnouttable.jpg" width="948" height="411"></p>
 <p>The above shows the turnout table with two entries. </p>
 <p>Turnouts can be added with the &quot;Add...&quot; button. Our finished turnout 
   table for the layout will have three entries, one for each of our turnouts. 
@@ -39,7 +34,7 @@
   correctly constructed !</p>
 
 <p>A similar set of entries are required for sensors in the Sensor Table. </p>
-<p><img src="screendumps/sensortable.jpg" width="627" height="266"></p>
+<p><img src="images/sensortable.jpg" width="627" height="266"></p>
 <p>In the extract above, we have four LocoNet sensors (prefixed LS) and four internal 
   sensors (prefixed IS). The LocoNet Sensors will show &quot;active&quot; when 
   the hardware sensor detects stock on the track. Where we don't have physical 
@@ -62,5 +57,6 @@
 <!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
+<script src="/js/main.js"></script>
 </body>
 </html>

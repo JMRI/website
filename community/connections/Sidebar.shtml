@@ -1,12 +1,15 @@
 <!-- Sidebar.shtml -->
-<!-- This is the common sidebar definition for Community Connections pages -->
-    <hr class="hide">
-    
-    <div id="side"> <!-- Block of text on left side of page -->
-        <div style="text-align: center">Working with JMRI&reg;</div>
+<!-- This is the 'responsive' common sidebar definition for Community Connections pages -->
+
+<hr class="hide">
+<div class="card-1" id="side" >
+<!-- Block of text on left side of page -->
+<div id="close-side" class="floatRight button fa fa-close" style="display:none;" onclick="side_close()"></div>
+
+    <div style="text-align: center">Working with JMRI&reg;</div>
         <dl>
 
-        <dt><h3><a href="/community/connections/CommunityConnectionsIndex.shtml">Apps with JMRI Connections...</a></h3></dt>
+        <dt><a href="/community/connections/CommunityConnectionsIndex.shtml">Apps with JMRI Connections...</a></dt>
         <dd>
           <ul>            
             <li><a href="/community/connections/AnyRail/index.shtml">AnyRail</a></li>
@@ -18,7 +21,7 @@
           </ul>
         </dd>
         
-              <dt><h3>External Web Sites for Apps with JMRI Connections...</h3></dt>
+        <dt>External Web Sites for Apps with JMRI Connections...</dt>
         <dd>
           <ul>        
             <li><a href="https://www.anyrail.com" target="_blank">AnyRail export to JMRI</a></li>
@@ -36,7 +39,7 @@
           </ul>
         </dd>
 
-        <dt><h3>Examples of JMRI Use</h3></dt>
+        <dt>Examples of JMRI Use</dt>
         <dd>
             <ul>
               <li><a href="/community/examples/Gallery.shtml">PanelPro Use Examples</a>
@@ -51,4 +54,6 @@
     
     </div>
 
+<!-- button is in /Header -->
+<script src="/js/side.js"></script>
 <!-- /Sidebar.shtml -->

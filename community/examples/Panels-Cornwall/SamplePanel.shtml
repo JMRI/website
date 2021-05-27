@@ -1,15 +1,18 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
    <meta name="Author" content="Bob Jacobsen">
    <meta name="GENERATOR" content="Mozilla/4.75C-CCK-MCD {C-UDP; EBM-APPLE} (Macintosh; U; PPC) [Netscape]">
    <meta name="Content-Type" content="text/html; charset=iso-8859-1">
    <title>Creating a Sample Panel</title>
+    <!--#include virtual="/Style.shtml" -->
 </head>
-<body>
 
-<div class="nomenu" id="mBody">
+<body>
+<!--#include virtual="/Header.shtml" -->
+<div class="no-sidebar" id="mBody">
     <div id="mainContent">
 
 This page walks you through creating a simple control 
@@ -18,9 +21,9 @@ Lickdale panel for Nick Kulp's Cornwall Railroad,
 but you should be able to create a panel for your own layout
 by following these instructions. More information is available
 on how to you can
-<a href="CornwallRunning.html">run Nick Kulp's Cornwall RR Program</a>
+<a href="CornwallRunning.shtml">run Nick Kulp's Cornwall RR Program</a>
 to see what it's like, and on 
-<a href="Cornwall.html">how his program was written</a>.
+<a href="Cornwall.shtml">how his program was written</a>.
 
 <a id="background"><h2>Step 1: Create the background image</h2></a>
 
@@ -313,7 +316,7 @@ They cover (with the little back blob) a bit of track on either the normal
 or diverging route, so that the screen displays only one line as complete.
 In this case, these icons were made by clipping a few pixels from the
 background drawing. 
-(<a href="CornwallDetails.html#turnout">Details...)</a>
+(<a href="CornwallDetails.shtml#turnout">Details...)</a>
 There are "left" and "right" sets for the two basic types
 of turnouts used; they can be rotated via the popup menu to work with the various
 turnout orientations on the schematic.
@@ -557,29 +560,11 @@ checked out quickly using this.
 The process to create the Cornwall signaling and dispatcher panel was 
 straightforward, if a little long.
 
+<p>Back to <a href="Cornwall.shtml">CornwallRR home</a></p>
 
-<p>Back to <a href="Cornwall.html">CornwallRR home</a></p>
-
-    <!-- Footer -->
-    <hr class="hide">
-    <div id="footer">
-        <ul id="bn">
-            <li><a href="/sitemap/">Site Map</a></li>
-            <li><a href="/contact/">Contact Us</a></li>
-        </ul>
-
-        <p>Thanks and congratulations to
-        <a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">
-            all who contributed</a>!</p>
-
-        <p>Copyright &copy; 1997 - 2019 JMRI Community.
-        <p>JMRI, DecoderPro, PanelPro, DispatcherPro and associated logos are our trademarks.
-        <p><a href="/Copyright.html">Additional information on copyright, trademarks and licenses is linked here.</a>
-        <br>Site hosted by: <a href="https://www.simplyhosting.cloud">Simply Cloud</a></p>
-    </div>
-    <!-- /Footer -->
-
+        <!--#include virtual="../../Footer.shtml" -->
 	</div>
 </div>
+<script src="/js/main.js"></script>
 </body>
 </html>

@@ -1,10 +1,13 @@
 <!-- Sidebar.shtml -->
-<!-- This is the common sidebar definition for DP 3.4 Manual pages -->
+<!-- This is the 'responsive' common sidebar definition for DP 3.4 Manual pages -->
 <hr class="hide">
 
 <div id="mBody">
 
-<div id="side"> <!-- Block of text at top -->
+    <div class="card-1" id="side" >
+        <!-- Block of text on left side of page -->
+        <div id="close-side" class="floatRight button fa fa-close" style="display:none;" onclick="side_close()"></div>
+
     <div style="text-align: center"><strong>The JMRI Manual</strong></div>
 
     <div style="text-align: right">
@@ -143,4 +146,6 @@
 
 </dl>
 </div>
+    <!-- button is in /Header -->
+    <script src="/js/side.js"></script>
 <!-- Sidebar -->

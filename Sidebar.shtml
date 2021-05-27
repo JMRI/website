@@ -1,48 +1,48 @@
-<!-- Sidebar.shtml -->
-<!-- This is the common sidebar definition for main (root) pages -->
+<!-- Sidebar2021.shtml -->
+<!-- This is the 'responsive' common sidebar definition for main (root) pages -->
 
 	  <hr class="hide">
+	  <div class="card-1" id="side" >
+      <!-- Block of text on left side of page -->
+      <div id="close-side" class="floatRight button fa fa-close" style="display:none;" onclick="side_close()"></div>
+	  <div style="text-align: center;">JMRI&reg; is...</div>
 
-	  <div id="side"> <!-- Block of text on left side of page -->
-	  <div style="text-align: center">JMRI&reg; is...</div>
-	  <dl class="doc">
+	  <dl>
+		<dt><a href="./help/en/html/apps/DecoderPro/index.shtml">DecoderPro&reg;</a></dt>
+		<dd>A great tool for programming decoders, simplifying the job of configuring DCC decoders from your
+            computer</dd>
 
-		<dt><h3><a href="./help/en/html/apps/DecoderPro/index.shtml">DecoderPro&reg;</a></h3></dt>
-		<dd>A better tool for programming decoders, simplifying the job of configuring DCC decoders from your computer</dd>
-
-		<dt><h3><a href="./help/en/html/apps/PanelPro/index.shtml">PanelPro&trade;</a></h3></dt>
+		<dt><a href="./help/en/html/apps/PanelPro/index.shtml">PanelPro&trade;</a></dt>
 		<dd>Design and Operate CRT based CTC control panels that reflect the real-time state of your railroad <em>and</em> let you control it</dd>
 
-		<dt><h3><a href="./help/en/html/apps/DispatcherPro/index.shtml">DispatcherPro&trade;</a></h3></dt>
+		<dt><a href="./help/en/html/apps/DispatcherPro/index.shtml">DispatcherPro&trade;</a></dt>
         <dd>A system for Dispatching, grouping your Roster and Throttles</dd>        
 
-		<dt><h3><a href="./help/en/html/apps/OperationsPro/index.shtml">OperationsPro&trade;</a></h3></dt>
+		<dt><a href="./help/en/html/apps/OperationsPro/index.shtml">OperationsPro&trade;</a></dt>
 		<dd>Build Trains from your Roster and print Train Manifests that detail the work your train crews will perform</dd>
 
-		<dt><h3><a href="./help/en/html/apps/SoundPro/SoundPro.shtml">SoundPro&trade;</a></h3></dt>
+		<dt><a href="./help/en/html/apps/SoundPro/SoundPro.shtml">SoundPro&trade;</a></dt>
         <dd>A set of tools for using Audio with JMRI</dd>
 
-		<dt><h3>Cool Uses</h3></dt>
-		<dd>See <a href="./community/examples/Gallery.shtml">some of the great things </a>being implemented by the model railroad
-		community using JMRI. There are also many <a href="./community/connections/CommunityConnectionsIndex.shtml">apps with JMRI
-		connections</a> and <a href="./help/en/html/tools/scripting/JythonApps.shtml">apps written using the Jython scripting language.</a>
+		<dt><a href="./community/examples/Gallery.shtml">Cool Uses</a></dt>
+		<dd>People have used JMRI to do some great things for the model railroad community.<br>
+		Our <a href="./community/examples/Gallery.shtml">Gallery page</a> highlights some of these.<br>
+		Also, there are <a href="./community/connections/CommunityConnectionsIndex.shtml">many apps with JMRI connections.</a>
         </dd>
-		
-	    <!--#include virtual="./help/en/parts/SidebarTools.shtml" -->
 
-      <!--#include virtual="./help/en/parts/SidebarLayoutAutomation.shtml" -->
-		
-		<dt><h3><a href="./help/en/html/hardware/index.shtml">Supported hardware</a></h3></dt>
-        <dd>JMRI supports a wide range of DCC systems, command stations and protocols.</dd>
-	    <!-- If someday we want to show the whole list, use #include virtual="./help/en/parts/SidebarSupportedHardware.shtml" -->    
+	    <!--#include virtual="./help/en/parts/SidebarToolsNew.shtml" -->
 
-	    <!--#include virtual="./help/en/parts/SidebarInstall.shtml" -->    
+        <!--#include virtual="./help/en/parts/SidebarLayoutAutomationNew.shtml" -->
+
+	    <!--#include virtual="./help/en/parts/SidebarSupportedHardwareNew.shtml" -->
+
+	    <!--#include virtual="./help/en/parts/SidebarInstallNew.shtml" -->
 
 	  </dl>
 
-	 <!--#include virtual="./help/en/parts/SidebarTail.shtml" -->     
+      <!--#include virtual="./help/en/parts/SidebarTail.shtml" -->
+      </div> <!-- closes #side -->
 
-	</div> <!-- closes #side -->
-	
-	<!-- /Sidebar.shtml -->
-
+    <!-- button is in /Header -->
+    <script src="js/side.js"></script>
+	<!-- /Sidebar2021.shtml -->

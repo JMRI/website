@@ -1,5 +1,6 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>
  	JMRI: Contact us
@@ -7,17 +8,16 @@
   <meta name="author" content="Bob Jacobsen">
   <meta name="keywords"
         content="java model railroad JMRI CMRI decoderpro panelpro loconet lenz nce easydcc dcc nmra">
-
-<!--#include virtual="/Style.shtml" -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
+<!--#include virtual="/Header.shtml" -->
   <div id="container">
     <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
-<!--#include virtual="/Header.shtml" -->
 
     <hr class="hide">
-    <div class="nomenu" id="mBody">
+    <div class="no-sidebar" id="mBody">
       <div id="mainContent">
 
   <h1>Contact Information</h1>
@@ -58,5 +58,6 @@
       </div><!-- closes #mainContent-->
     </div> <!-- closes #mBody-->
   </div> <!-- closes #container -->
+  <script src="/js/main.js"></script>
 </body>
 </html>

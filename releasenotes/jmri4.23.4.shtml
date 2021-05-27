@@ -1,22 +1,22 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
  JMRI: Release Notes for 4.23.4
  </title>
-    <meta content="Bob Jacobsen" name="author">
+    <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.23.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!--#include virtual="/Style.shtml" -->
-
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
-
 <!--#include virtual="/Header.shtml" -->
 
-  <div class="nomenu" id="mBody">
+<div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
+
     <div id="mainContent">
       <h1>
       Release Notes for JMRI 4.23.4 release
@@ -161,7 +161,7 @@ People are welcome to distribute the download files further via other websites, 
 If you want to check that you've received original, unmodified versions, please
 check the files against the checksums shown below.
 -->
-
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.23.4/JMRI.4.23.4+R203912efd.dmg">https://github.com/JMRI/JMRI/releases/download/v4.23.4/JMRI.4.23.4+R203912efd.dmg</a><br/>
@@ -175,6 +175,7 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.23.4/JMRI.4.23.4+R203912efd.tgz">https://github.com/JMRI/JMRI/releases/download/v4.23.4/JMRI.4.23.4+R203912efd.tgz</a><br/>
    sha256: 283e831035acb708efc17c25c09d9039d39d2bcb63db205b5c91ef73c2277973</li>
 </ul>
+</div>
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -280,5 +281,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.23.3+i
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
+ <script src="/js/main.js"></script>
 </body>
 </html>
