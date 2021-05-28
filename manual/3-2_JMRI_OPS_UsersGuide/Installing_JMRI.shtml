@@ -1,17 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
 <!-- $Id: Start_DCC.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
 <title>Installing JMRI</title>
 
-<!-- Style -->
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-<link rel="icon" href="/images/jmri.ico" TYPE="image/png">
-<link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 <body>
 <!--#include virtual="/Header.shtml" -->
@@ -75,6 +69,7 @@ This site is hosted by<br>
          border="0" alt="Tagadab Logo"> </a>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div> <!-- closes #container, started in sidebar -->
+<script src="/js/main.js"></script>
 </body>
 </html>

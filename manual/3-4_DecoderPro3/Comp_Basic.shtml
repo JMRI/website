@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Copyright ($Author: dat7719 $) 2009, 2010 --><!-- $Id: Comp_Basic.shtml 18193 2011-08-16 23:19:17Z dat7719 $ -->
@@ -116,6 +116,7 @@ Finally, the bottom line of the pane is a status bar that tells you exactly what
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div> <!-- closes #container, started in sidebar -->
+<script src="/js/main.js"></script>
 </body>
 </html>

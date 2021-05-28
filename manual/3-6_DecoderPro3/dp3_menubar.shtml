@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Main_Menu.shtml 18146 2011-08-09 11:51:16Z dat7719 $ -->
@@ -28,7 +28,7 @@
 </div>
 
 <hr>
-<p wrap="">Most of the DecoderPro3&reg; functions can be accessed via the menu bar.</p>
+<p>Most of the DecoderPro3&reg; functions can be accessed via the menu bar.</p>
 <p><img src="images/Main_05_MenuBar.png" alt="menu bar" height="87" width="425"></p>
 <ul>
   <li>
@@ -333,6 +333,7 @@ the selected roster entry in your roster. Select the <strong><a href="Adv_Functi
 
 <!--#include virtual="/Footer.shtml" -->
 </div>
-</div>
+</div> <!-- closes #container, started in sidebar -->
+<script src="/js/main.js"></script>
 </body>
 </html>

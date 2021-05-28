@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en"><head><!-- Copyright ($Author: zoo $) 2009 --><!-- $Id: Main_Monitor_Window.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
 
 
@@ -107,5 +107,6 @@ message to the log file.</p>
 <div style="text-align: right;"><p><a href="Main_LocoNet.shtml">Back</a></p><a href="dp3_menubar.shtml">Back to Index</a></div>
 <div align="right"> </div>
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div> <!-- closes #container, started in sidebar -->
+<script src="/js/main.js"></script>
 </body></html>
