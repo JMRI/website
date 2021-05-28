@@ -67,7 +67,7 @@
      <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.zip?download">http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.zip?download</a>
 
 
-<h3><a id="updates"/>Changes since test version 1.6:</h3>
+<h3><a id="updates"></a>Changes since test version 1.6:</h3>
 
 
 <p>Fixed problem where the program wouldn't start up if there was no configuration file, or would start up in an inconsistent state if the configured port could not be found (Dave Duchamp, Bob Jacobsen)
@@ -498,8 +498,8 @@
 
    <!--#include virtual="/Footer.shtml" -->
 
-   </div><!-- closes #mainContent-->
+    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div>
+  <script src="/js/main.js"></script>
 </body>
 </html>
