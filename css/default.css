@@ -639,10 +639,12 @@ hr {
 	}
 
 	/*.nomenu #mainContent, /* .nomenu @deprecated 4.21.3/Jan 2021 as it describes sidebar no menu = top */
-	/*.no-sidebar #mainContent {
-        width: 100%; // inside a div.no-sidebar use all the space, no sidebar
-        left: 0%;
-	}*/
+
+    #mainContent.no-sidebar {
+        width: 98%;
+        left: 1%;
+    }
+
 	#side {
 	    display: block;
 		width: 25%;
