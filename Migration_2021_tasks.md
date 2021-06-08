@@ -37,5 +37,5 @@ It describes the necessary steps to migrate jmr.org Help etc files to the CSS3 r
   
   <div class="flex-item-70">
 - [ ] Remove all `<p>` tags used as spacers. If they are used inside `<li>`, replace them by `<br`
-
+- [ ] convert all PRAGMA redirects to html5 replacement
     
