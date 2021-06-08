@@ -511,6 +511,7 @@
 		padding: 0.2em;
 		border: 1px solid #778899; /* --primary-color3: LightSlateGray */
 		vertical-align: top;
+		word-wrap: normal; /* fit long text block into a cell, alternatively add a td.wrap class
 	}
 
 	table.data {
