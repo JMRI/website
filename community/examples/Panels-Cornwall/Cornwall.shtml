@@ -193,7 +193,7 @@ Since Nick already had a QBASIC program to use as an example,
 the CrrSection class was created that would let the Java signal logic
 code look very similar.  For example, this is the logic for
 signal 13B:
-<pre><code>
+<code class="block">
         int value = GREEN;
         if ( !tu7 || bo15 || tu8 )
             value = RED;
@@ -206,7 +206,7 @@ signal 13B:
             value = YELLOW;
         else if (value == GREEN && tu9 && si90)
             value = YELLOW;
-</code></pre>
+</code>
 <p>
 Note that although prototype signals use logic that "starts with red, and see
 if you can find a reason to turn it green", the existing Cornwall logic was

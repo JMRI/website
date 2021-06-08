@@ -39,7 +39,7 @@ was drawn with "GraphicConvertor" on a Macintosh.
 If you want to follow along here, download that picture (right click on the picture
 and "Save As...") as "Lickdale.gif".
 
-<a id="initial"><h2>Step 2: Creating the initial panel</h2></a>>
+<h2><a id="initial">Step 2: Creating the initial panel</a></h2>
 
 To turn this picture into a control panel, you have JMRI create a 
 panel that displays this as a background.
@@ -97,7 +97,7 @@ when you stored it.
 Note that storing the panel layout saves all the control panels visible
 at that moment, even if you have more than one.
 
-<a id="autostart"><h2>Step 3: Have the panel show when the program starts</h2></a>
+<a id="autostart"></a><h2>Step 3: Have the panel show when the program starts</h2>
 
 Rather than manually loading the panel via the menu each time you
 start the program, you can have it loaded automatically.
@@ -217,7 +217,7 @@ to icons line up on a horizontal line, you might find it easier to position the
 first item perfectly by hand, and then edit the rest of the lines to have the
 same y= coordinates.
 
-<a id="turnouts"><h2>Step 5: Add turnout controls</h2></a>
+<a id="turnouts"></a><h2>Step 5: Add turnout controls</h2>
 
 Next, we add the turnout controls.  These send a message to the
 layout hardware when clicked, which changes the position of the 
@@ -279,7 +279,7 @@ The rest of this page discusses various ways to include additional
 neat features such as turnout sensing from the layout and signal 
 indicators.
 
-<a id="turnoutsensors"><h2>Step 6 (optional): Add turnout sensing</h2></a>
+<a id="turnoutsensors"></a><h2>Step 6 (optional): Add turnout sensing</h2>
 
 <img src="./images/turnout.gif" ALIGN=RIGHT>
 Nick also wanted the turnout controls to look like they had small indicator
@@ -368,7 +368,7 @@ Red, Yellow, Flashing Yellow, Green. (The available aspects and the order they
 are presented will vary from one type of signal to another)  The signals
 on the layout should follow along.
 
-<a id="signalindicators"><h2>Step 8 (Optional): Adding signals to your panel</h2></a>
+<a id="signalindicators"></a><h2>Step 8 (Optional): Adding signals to your panel</h2>
 
 Like input sensors and turnouts, JMRI can display signal icons on the screen
 that follow the appearance of a signal head. 
@@ -408,7 +408,7 @@ are several sets available with different backgrounds, different sizes, etc.
 You can also create your own icons using a paint program, and then use them.
 If you do that, please email them in so that we can add them to the program!
 
-<a id="simplelogic"><h2>Step 9:Adding signal logic</h2></a>
+<a id="simplelogic"></a><h2>Step 9:Adding signal logic</h2>
 
 At this point, you have signals defined, and can change their appearance
 by clicking on them.  But they don't change appearance automatically
@@ -478,7 +478,7 @@ You can test this logic by changing the sensors, turnouts and signals
 using either the various tables, or by clicking on a panel.  The signals
 on the layout and the signal icons on the panel should respond appropriately.
 
-<a id="scriptinglogic"><h2>Step 10:Adding signal scripts</h2></a>
+<a id="scriptinglogic"></a><h2>Step 10:Adding signal scripts</h2>
 
 If the "Simple Signal Logic" tool is too simple, you'll have to 
 write either a script or Java code to drive your signals.
@@ -528,7 +528,7 @@ Since Nick already had a QBASIC program to use as an example,
 the CrrSection class was created that would let the Java signal logic
 code look very similar.  For example, this is the logic for
 signal 13B:
-<pre><code>
+<code class="block">
         int value = GREEN;
         if ( !tu7 || bo15 || tu8 )
             value = RED;
@@ -541,7 +541,7 @@ signal 13B:
             value = YELLOW;
         else if (value == GREEN && tu9 && si90)
             value = YELLOW;
-</code></pre>
+</code>
 <p>
 Note that although prototype signals use logic that "starts with red, and see
 if you can find a reason to turn it green", the existing Cornwall logic was
