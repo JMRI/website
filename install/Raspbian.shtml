@@ -119,8 +119,12 @@ JMRI installation consists of two stages: install Java and install JMRI.
  replaced by the original. There is a script to do this in the JMRI Users group "Files" area if you wish to run JMRI
 	3.8 on Raspbian 3.18 Wheezy. Since JMRI version 3.8 this is no longer required.</p>
 	
-	<p>The following script will fix the PanelPro etc. comms libraries not working due to incorrectly recognized processor. Type: 
-		<code>sudo cp -v /opt/JMRI/lib/linux/armv6l/* /opt/JMRI/lib/linux/armv7l/</code>
+	<p>The following script will fix the PanelPro etc. comms libraries not working due to incorrectly recognized processor. Type:
+    <div class="wide">
+        <code>
+            sudo cp -v /opt/JMRI/lib/linux/armv6l/* /opt/JMRI/lib/linux/armv7l/
+        </code>
+    </div>
 		Note that this step is no longer required on a fresh install of JMRI 3.8 and up.
 	</li>
 

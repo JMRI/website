@@ -42,7 +42,7 @@
       <ol>
        <li><a name="sysreq"></a>
        Determine if your system software is compatible with the current releases of JMRI:
-       Find the current macOS version number by choosing "About this Mac" from the Apple menu.</li>
+       Find the current macOS version number by choosing "About this Mac" from the Apple menu.
 
        <p>
        JMRI 4.2 and later will work on any macOS or MacOS X version back to 10.7.3 Lion (2012).
@@ -53,14 +53,15 @@
        you can still use older versions of JMRI:
        <ul>
         <li>Mac OS X version 10.7.2 "Lion" through 10.6 "Snow Leopard" can run <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7.
-            (The youngest Mac that can't run Mountain Lion was shipped in 2009)
+        (The youngest Mac that can't run Mountain Lion was shipped in 2009)</li>
         <li>Mac OS X version 10.5 "Leopard" through 10.4 "Tiger" can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.
-            (The youngest Mac that can't run Tiger was shipped in 2003)
-        <li>For even older hardware, see a <a href="MacOSXRetro.html">separate page</a>.
-        </ul>
+        (The youngest Mac that can't run Tiger was shipped in 2003)</li>
+        <li>For even older hardware, see a <a href="MacOSXRetro.html">separate page</a>.</li>
+       </ul>
 
         <p>The JMRI install will take up about 180&nbsp;MB of disk space, mostly for the Help pages
-        and decoder definitions.
+        and decoder definitions.</p>
+       </li>
 
         <li>Determine if you have the needed hardware drivers:
 
@@ -105,8 +106,9 @@
         If you can't access your USB dongle and it seems to use that
         chipset (you can check in the USB tab of System Profiler),
         this driver will make it available as /dev/cu.PL2303-xxx.</p>
+       </li>
 
-       <li>Get the JMRI software...</li>
+       <li>Get the JMRI software...
 
         <p><a href="../download/index.shtml#prod-rel">Download</a> a
         version of JMRI, either the latest production version, or a
@@ -122,8 +124,9 @@
         in the JMRI users Groups.io group at <a
          href="https://groups.io/g/jmriusers">https://groups.io/g/jmriusers</a>.
         </p>
+       </li>
 
-       <li>...and install it.</li>
+       <li>...and install it.
 
         <p>Normally, the download will open a new Finder window showing a
         JMRI folder.  If not, double-click the file you downloaded
@@ -145,6 +148,7 @@
         folder, so we strongly recommend you drag the JMRI folder to
         Applications and run it from there.
         </p>
+      </li>
 
       <li>Depending on how your Mac is set up, you might need to
         install <strong>Java</strong>:
@@ -170,6 +174,7 @@
 	            but you may get a message about "WARNING: An illegal reflective access operation has occurred" and "WARNING: Please consider reporting this to the maintainers".
 	            We know about this, and it'll get fixed in due course; you can ignore the messages.
             </ul>
+      </li>
       <li>Congratulations! Installation is complete. Click on the DecoderPro icon in the
           JMRI folder to get started.
       </li>
@@ -214,13 +219,19 @@
         In that case, dismiss the dialog, then hold the Control key
         down and click the icon to get its contextual menu. Select
         the "Open" option. You'll be asked to confirm. Be sure
-        to click the "Open" button, and not accept the default "Cancel".
-        <table style="border:20px"><tr>
-        <td><img src="images/MacOsXWarn.tiff" width="305" height="143"></td>
-        <td><img src="images/MacOsXselect.jpg" width="166" height="200"></td>
-        <td><img src="images/MacOsXOpen.tiff" width="305" height="143"></td>
-        </tr>
-        </table>
+        to click the "Open" button, and not accept the default "Cancel".</p>
+
+    <div class="flex-container">
+        <div class="flex-item-30">
+            <img src="images/MacOsXWarn.tiff" width="305" height="143">
+        </div>
+        <div class="flex-item-30">
+            <img src="images/MacOsXselect.jpg" width="166" height="200">
+        </div>
+        <div class="flex-item-30">
+            <img src="images/MacOsXOpen.tiff" width="305" height="143">
+        </div>
+    </div>
 
        <p>
        Your next step will be to set the Preferences for your particular layout connection.
@@ -277,9 +288,11 @@ Irrespective of DCC system, there are some basic rules for troubleshooting any U
 
 <li>Unplug your device. Open a window of the  Terminal utility (from /Applications/Utilities),
     copy and paste the following command in EXACTLY (including spaces and punctuation) then press Enter.
-    <p>
-    <code>while : ;do clear;ls -lt /dev|head;i=$((i+1));echo $i;sleep 1;done</code>
-    <p>
+    <div class="wide">
+        <code>
+            while : ;do clear;ls -lt /dev|head;i=$((i+1));echo $i;sleep 1;done
+        </code>
+    </div>
     This command should show about 10 lines of output and then sit looping, with a counter incrementing every second.
 
 <li>Plug your device back in and wait a few seconds. Two new items with names like  cu.xxx and tty.xxx should appear in the list.
@@ -303,9 +316,20 @@ Irrespective of DCC system, there are some basic rules for troubleshooting any U
           Mac and pressing Cmd-R until the Apple logo appears. Once in Recovery Mode,
           select Terminal from the Utilities menu.</p>
         </li>
-      <li>Run the command <code>/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh</code> It can take
+      <li>Run the command
+      <div class="wide">
+          <code>
+              /Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh
+          </code>
+      </div>
+      It can take
         up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.
-        <p><em>El Capitan and later:</em> Run the command <code>bash /Volumes/Macintosh\ HD/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh /Volumes/Macintosh\ HD</code>
+        <p><em>El Capitan and later:</em> Run the command
+          <div class="wide">
+              <code>
+                  bash /Volumes/Macintosh\ HD/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh /Volumes/Macintosh\ HD
+              </code>
+          </div>
           It can take up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.</p>
         </li>
       <li><em>El Capitan and later:</em> Restart your Mac.</li>
@@ -317,9 +341,9 @@ Irrespective of DCC system, there are some basic rules for troubleshooting any U
 Sometimes very old Macs have an older "vecsub.jar" library installed in a place that
 will cause problems for JMRI.  It happens more often when you're compiling your
 own version, but it can also happen when just running a download. If you get messages about
-<code><pre>
+<code>
 error: cannot find symbol getX()
-</pre></code>
+</code>
 or getY() or getZ(), the solution is to copy the JMRI/lib/vecmath-1.5.2.jar file from
 within the JMRI distribution directory to the  ~/Library/Java/Extensions/ directory.
 (You might have to create that directory)
@@ -383,7 +407,7 @@ If you want an icon in some other place, like on your desktop:
 	<ul>
 	<li>Go to the JMRI folder and select the application icon.
 	<li>From the file menu, select "Make Alias"
-	<li>Drag that new alias icon to it's new location, and optionally rename it.
+	<li>Drag that new alias icon to its new location, and optionally rename it.
 	</ul>
 
 <p>
@@ -392,7 +416,7 @@ same Preferences as the original.
 
 <!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
-  </div> <!-- closes #mBody, started in sidebar-->
+  </div> <!-- closes #mBody -->
 <script src="/js/main.js"></script>
 </body>
 </html>
