@@ -119,11 +119,9 @@ export JMRI_OPTIONS="${JMRI_OPTIONS} -Dpurejavacomm.portnamepattern=ttyUSB0"
   <tt>.bashrc</tt> file (or equivalent for whatever shell you
   use):</p>
 
-<pre>
-<code>
+<code class="block">
   export JMRI_SERIAL_PORTS=/dev/nce:/dev/locobuffer
 </code>
-</pre>
 
   <p>You can also put this into <tt>/etc/profile.d/jmri.sh</tt> if you
   don't want to change your personal <tt>.bashrc</tt> file.</p>
@@ -139,12 +137,9 @@ export JMRI_OPTIONS="${JMRI_OPTIONS} -Dpurejavacomm.portnamepattern=ttyUSB0"
     you can force RxTx to recognize a specific serial port.
     <p>If you want to force the use of "/dev/ttyUSB0", you can do this by
     adding the following to the "javax.comm.properties":
-    <p>
-<pre>
-<code>
+<code class="block">
 javax.comm.rxtx.SerialPorts=/dev/ttyUSB0
 </code>
-</pre>
     <p> Multiple ports can be added to the list by using a colon separated
     list.</p>
 </li>

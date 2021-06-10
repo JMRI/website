@@ -240,7 +240,11 @@ relevant Config2.xml file from this directory should fix it.</p>
 Dave Heap provided the following instructions for setting up serial ports in JMRI under Ubuntu Linux (Feb 2016):
 <p>
 Open a Terminal window and put in the following command <strong>exactly</strong>:</p>
-<code>while : ;do clear;ls -lt /dev|head;i=$((i+1));echo $i;sleep 1;done</code>
+<div class="wide">
+<code class="block">
+    while : ;do clear;ls -lt /dev|head;i=$((i+1));echo $i;sleep 1;done
+</code>
+</div>
 <p>
 Press ENTER and watch the screen as you slowly plug/unplug the USB device, watching what device appears/disappears and record the name.<br>
 If nothing appears/disappears your device is not loading a driver.
