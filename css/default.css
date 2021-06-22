@@ -307,7 +307,7 @@
 	    padding: .2em .3em;
 	}
 	.since a:link {
-			color: Black
+			color: Black;
 			font-weight: normal;
 	}
 	.since a:visited {
@@ -702,7 +702,7 @@ hr {
 }
 #side h3, #side h3:link {
 	margin: 0.5em 0 0 0;
-	padding-left: 1em
+	padding-left: 1em;
 	background-color: inherit;
 	color: Black;
 }
@@ -848,6 +848,7 @@ hr {
 	top: 5px;
 	z-index: 4;
 }
+
 /* #searchform label {
 	font-size: 80%;
 	color: Black;
@@ -863,7 +864,7 @@ hr {
 	background: White;
 }
 #submit {
-	background-color: #778899; /*var(--primary-color3); LightSlateGray */
+	background-color: #778899; /*var(--primary-color3); LightSlateGray
 	color: Black;
 }
 #submit:hover, #submit:focus {
@@ -895,7 +896,7 @@ hr {
 	color: White;
 }
 
-}
+/* } */
 /*body*/
 #mainContent {
 	background: White;
