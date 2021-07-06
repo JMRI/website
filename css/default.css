@@ -485,6 +485,7 @@
     }
 
     table {
+        max-width: 99%;
         border-collapse: collapse;
 		margin-top: 1em;
 		margin-bottom: 1em;
@@ -499,7 +500,6 @@
     }
 
 	tr {
-        white-space: nowrap;
         color: #554FA0; /*var(--primary-color1); Purple */
 	}
 

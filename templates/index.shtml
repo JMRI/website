@@ -11,7 +11,6 @@
 </head>
 
 <body>
-    <div id="container">
     <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
     <!--#include virtual="/Header.shtml" -->
@@ -128,7 +127,7 @@
                     No special class tags required for simple, small tables:
                     <br>
                     Wrap wide tables (or anything containing eg hyperlinks longer than 80 characters) in a
-                    <code>&lt;div class="wide"&gt;</code> so they will scroll:
+                    <code>&lt;div class="wide"&gt;</code> so the block will scroll:
                     <div class="wide">
                         <table>
                             <tbody><tr>
@@ -166,7 +165,7 @@
                             </tr>
                             </tbody>
                         </table>
-                        </div>
+                    </div>
                     </li>
 
                     <li>code:<br>
@@ -211,9 +210,7 @@ function stickyFunction() {
 
         <!--#include virtual="../Footer.shtml" -->
 	  </div> <!-- closes #mainContent-->
-
     </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
     <script src="../js/main.js"></script>
 </body>
 </html>
