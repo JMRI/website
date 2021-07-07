@@ -631,6 +631,7 @@ hr {
 	}
 	#mainContent {
 		left: 250px; /* = #mainContent is loaded before sidebar following guidelines (more important), so shift to right for width of #side(bar)*/
+                bottom: 0px; /* ensure that mainContent does not extend below bottom of viewing pane */
 	}
 
 	/*.nomenu #mainContent, /* .nomenu @deprecated 4.21.3/Jan 2021 as it describes sidebar no menu = top */
@@ -673,6 +674,7 @@ hr {
     float: left;
 	left: 0;
 	top: 64px;
+        bottom: 0px; /* ensure that side does not extend below bottom of viewing pane */
 	padding: 0 0.3em 1em 0.3em; /* try some extra padding at the bottom to display all contents (item 3: 1em) */
 	voice-family: inherit;
     max-height: 100%;
