@@ -194,13 +194,29 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.25.1+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+
+        <h4>MERG</h4>
+            <ul>
+                <li>Fixed - Response Events are sometimes shown as normal Events in MERG CBUS Console ( from 4.13.4 ).</li>
+            </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li>For some hardware types, sensors.requestAll() can request a status update for any Sensors known to JMRI.
+            <br>This is not possible for many hardware types, eg. Internal Connections.
+            <br>For multiple hardware connections, sensors.updateAll() will query all connections.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>The JavaHelp system has been replaced by JmriHelp.
+            See the <a href="/help/en/html/doc/Technical/Help.shtml">Help page</a> for details.</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
