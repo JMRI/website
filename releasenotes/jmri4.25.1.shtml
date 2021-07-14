@@ -101,15 +101,15 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
-
+    <li><span class="since">Since <a href="jmri4.25.1.shtml">JMRI 4.25.1</a></span>
+        This test release
+        makes a major change to how the help information is
+        displayed by JMRI.  From now on, it will be displayed
+        in a browser on your computer, instead of within JMRI.
+        There's a new "Help" preference that lets you change
+        this to use the online JMRI help instead of the
+        help information that's distributed with JMRI itself.
+    </li>
 </ul>
 
 
