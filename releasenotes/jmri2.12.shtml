@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  
+
 <!--#include virtual="/Header.shtml" -->
 
   <div id="mBody">
@@ -25,8 +25,8 @@
 	<p>Date: July 10, 2011</p>
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: Production release 2.12 of JMRI/DecoderPro is available for download.</p>
- 
-<!-- 
+
+<!--
 <br><b>This is a draft release note only; the download links do not yet work</b>
  -->
 
@@ -37,18 +37,18 @@ version that's good enough to be recommended for general use, including by new u
 We're therefore making that version, "Production version 2.12" available for download today.
 
 <p><b>
-JMRI is now only available under the 
+JMRI is now only available under the
 <a href="/COPYING">GNU General Public License</a>. For more information, please
-see our 
+see our
 <a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 
 <h3>Warnings</h3>
 
-Development Version 2.11.4 contained significant improvements to the Powerline Interfaces. 
-Some of these improvements involved a complete restructuring of the underlying code. 
-As a result, previously working Preferences may now show no connections for some of the Powerline Interfaces. 
-If this occurs, go to Preferences and setup the Powerline Layout Connections again. 
+Development Version 2.11.4 contained significant improvements to the Powerline Interfaces.
+Some of these improvements involved a complete restructuring of the underlying code.
+As a result, previously working Preferences may now show no connections for some of the Powerline Interfaces.
+If this occurs, go to Preferences and setup the Powerline Layout Connections again.
 Then save the Preferences and restart JMRI.
 
 <p>In Development Version 2.11.3 JMRI instituted a more robust and
@@ -95,21 +95,21 @@ NCE turnout pushbutton lock does not work properly, solution is to upgrade to 2.
 <h3>Changes since production release 2.10</h3>
 
 <p>
-Robin Becker 
+Robin Becker
 <ul>
 <li>fixed the JmriJFrameServlet.sendClick support in the mini web server
-to properly support objects within Components such as Tables and Sliders. 
+to properly support objects within Components such as Tables and Sliders.
 <li>Added support for RadioButtons and CheckBoxes, tested with Turnout Table and Throttle tools on IE8 and Firefox.
 </ul>
 
 <p>
 Paul Bender
-<ul> 
+<ul>
 <li> updated the XPressNet adapter code to allow multiple connections.
 <li> Made bug fixes to the following XPressNet Throttles
 <li> updated EasyDCC consist support
-<li> made some internal improvements to the XPressNet support.  If you've 
-written scripts that directly use the XPressNet communications, you may 
+<li> made some internal improvements to the XPressNet support.  If you've
+written scripts that directly use the XPressNet communications, you may
 have to revisit them.
 <li> Added two new scripts:
 <ul>
@@ -133,7 +133,7 @@ to another consist.
 <p>
 
 <p>
-Leo Bicknell 
+Leo Bicknell
 <ul>
 <li>improved the LocoNet monitor:
 <ul>
@@ -411,21 +411,21 @@ Chris Bradshaw provided a decoder definition for the TCS Z2 and DP2x decoders.
 Graeme Brown provided updates for NCE decoders
 
 <p>
-Alain Carasso 
+Alain Carasso
 <ul>
 <li>contributed decoder definitions for Arnold - Rivarossi and Mistral Train GOLD decoders.
 <li>contributed a definition for the ESU Bachmann 3 function decoder
 and the ESU LokPilot Basic 2.0.
-<li>added the latest version of Roco 10745 decoder, 
+<li>added the latest version of Roco 10745 decoder,
 more sophisticated than Lokpilot Basic, but less than full Lokpilot one,
 and also a 10745 Roco decoder file (no long address settings).
 <li>provided a Version 7 decoder definition for the Mistral Gold decoder:
-some additional CV are made available starting with SW Version 7. 
-Additional or changed comments added. Decoders with SW version 7 or higher are detected as V7, 
+some additional CV are made available starting with SW Version 7.
+Additional or changed comments added. Decoders with SW version 7 or higher are detected as V7,
 if SW version is 5 or 6, they are detected as V6, using previous version included in JMRI2.11.1.
 </ul>
 
-<p>Chuck Catania contributed a new set of 
+<p>Chuck Catania contributed a new set of
 SPTCO-1930 signal aspects.
 
 <p>John Crellin</p>
@@ -441,11 +441,11 @@ Pete Cressman:
 <li>added a copy popup to the Control Panel Editor.
 <li>improved how icons are found in the computer's file system.
 <li>fixed a problem selecting groups on panels
-<li>added a new editor tool: Item Palette. He also updated the signal head icons to only show icons that 
+<li>added a new editor tool: Item Palette. He also updated the signal head icons to only show icons that
 are relevant to valid states.
-<li>fixed stacking of a multiple selection in the editors when moved 
+<li>fixed stacking of a multiple selection in the editors when moved
 beyond the left or top border of the panel
-<li>changed the editor's drag behavior from auto expand left &amp; 
+<li>changed the editor's drag behavior from auto expand left &amp;
 top border to stop move at left &amp; top border
 <li>changed icon selection in the editor so it's the top one that's selected.
 <li>added signal mast Lit and Held states and actions to Logix and Conditionals
@@ -454,16 +454,16 @@ top border to stop move at left &amp; top border
 <li>added an update of indicator track icons from the panel.
 <li>fixed a problem adding a clock to a panel.
 <li>made numerous small changes to Logix and panel support.
-<li>added support for invisible icons on panels.  The file "Invisible.gif" in the program icon directory can be selected 
+<li>added support for invisible icons on panels.  The file "Invisible.gif" in the program icon directory can be selected
 as a dimensionless icon.  This can be used when sensors are stacked amd allows "peeking through" a state of the top sensor
 to view the state of the sensor underneath.  For example. combining two sensors to depict a 3 state panel jewel.
 <li>added a dialog to correct or delete broken icon paths (bad url) when loading a panel.
 <li>added new Logix features
 <ul>
 <li>A dialog will display Logix errors if any occur during runtime</li>
-<li>Conditionals can be set to calculate the triggering of their actions whenever one of the state 
-variable changes state.  Until now Conditionals have only calculated the triggering of their actions  
-when the antecedent expression itself changed truth value.  In both cases, 
+<li>Conditionals can be set to calculate the triggering of their actions whenever one of the state
+variable changes state.  Until now Conditionals have only calculated the triggering of their actions
+when the antecedent expression itself changed truth value.  In both cases,
 actions are still triggered according to the truth value of the antecedent expression.</li>
 <li>State variables to test the status of Occupancy Blocks have been added.</li>
 <li>Actions for setting Occupancy Block conditions have been added.</li>
@@ -472,8 +472,8 @@ actions are still triggered according to the truth value of the antecedent expre
 <ul>
 <li>Clipboard Copy &amp; Paste can be done between two control panels.</li>
 <li>The Item Palette can hold multiple sets of icons for each item type.</li>
-<li>The Item Palette has "Indicator Track" and "Indicator Turnouts" that change color when their block sensor 
-shows occupancy.  When used with Occupancy Blocks and Warrants, indicator icons will show allocation, 
+<li>The Item Palette has "Indicator Track" and "Indicator Turnouts" that change color when their block sensor
+shows occupancy.  When used with Occupancy Blocks and Warrants, indicator icons will show allocation,
 path route, occupancy or error condition by color.</li>
 <li>Accelerator keys added for Item Palette and Table List.</li>
 <li>The Item Palette user interface has all tab items drag from a "Drag Panel" icon.  Dragging from a table
@@ -495,12 +495,12 @@ row places a text label in the panel.</li>
 <li>The Path list on the Indicator Track and Indicator Turnout tabs of the Item Palette have
 been replaced with checkboxes.  See the help page on the Item Palette.</li>
 <li>A help page has been added to the Item Palette.</li>
-<li>Warrant throttle command scripts editing improved. Commands may be added and deleted.  
+<li>Warrant throttle command scripts editing improved. Commands may be added and deleted.
 Scripts can be edited to trigger an external sensor to operate additional animation.
 <li>Internal improvements to Portals and OPaths</li>
 <li>Fixed bug that would hang scipts if Speed Table was not initialized.</li>
-<li>Fixed bug #3209940 Logix StateVariable for SignalHead Appearance and Mast Aspect did not report user errors.</li> 
-<li>Added Circuit Builder tool to Control Panel Editor.  This is an 
+<li>Fixed bug #3209940 Logix StateVariable for SignalHead Appearance and Mast Aspect did not report user errors.</li>
+<li>Added Circuit Builder tool to Control Panel Editor.  This is an
  alternative tool to the Occupancy Tables that creates OBlocks,
  Portals and OPaths through a "point and click" GUI. (features still in progress)</li>
 <li>Fix route finder and warrant recording bug introduced in ver 2.11.4</li>
@@ -515,17 +515,17 @@ Scripts can be edited to trigger an external sensor to operate additional animat
 <li>Add indirection to Logix actions for device names and action types.
  The '@' symbol before a memory location will use the value in that memory for
  the device name or its action string.</li>
-<li>Simplified LRoute GUI</li> 
+<li>Simplified LRoute GUI</li>
 <li>Added an LRoute "Initializer".  Creates a Logix guaranteed to execute first
  for initializing sensors, turnouts and signals, avoiding thrashing of
  enabling Logixes at panel load time.</li>
-<li>Help files updated for Warrants, ItemPalette, Control Panel Editor</li>   
-<li>All known problems with the Abort command to Auto or Manual warrants fixed.</li>   
+<li>Help files updated for Warrants, ItemPalette, Control Panel Editor</li>
+<li>All known problems with the Abort command to Auto or Manual warrants fixed.</li>
 <li>Two or more warrants can be allocated when they have blocks in common as long as each
- can acquire its first block.  (An allocated warrant must always have a starting block under its control.)</li>   
-<li>Dark blocks may used as starting and destination blocks.  They should be registered OBlocks without a sensor.</li>   
+ can acquire its first block.  (An allocated warrant must always have a starting block under its control.)</li>
+<li>Dark blocks may used as starting and destination blocks.  They should be registered OBlocks without a sensor.</li>
 <li>Speed sampling interval changed to 500ms instead of 200ms when recording auto train scripts</li>
-<li>Train name in loco icon follows progress on both record and playback of a warrant.<li>   
+<li>Train name in loco icon follows progress on both record and playback of a warrant.<li>
 <li>Occupancy Block Tables, PickLists, Palette bean tables are sortable.</li>
 <li>Fix bug where auto trains waited indefinitely when resynchronizing block entry.</li>
 <li>Fix bug intoduced in 2.11.5 where rotated SignalMasts were not stored properly.</li>
@@ -543,22 +543,22 @@ Scripts can be edited to trigger an external sensor to operate additional animat
 </ul>
 
 <p>
-Nigel Cliffe: 
+Nigel Cliffe:
 <ul>
 <li>contributed a decoder definition for the MERG ACC5 decoder
 and did a major update to the MERG ACC4 decoder definition.
 <li>Changes to CT SL51/SL75 Decoder Definitions file:
-Added "alt" function key to function mapping, 
-which opens up access to sound slots 9-16. 
-Minor changes to labels and other function mapping details 
+Added "alt" function key to function mapping,
+which opens up access to sound slots 9-16.
+Minor changes to labels and other function mapping details
 associated with this new discovery.
 <li><blockquote>
-Zimo sound decoders allow the end user to select the sounds played, and their volumes, from any of those stored on the decoder. As an example, this allows the user to change the horn, or brake noises, as well as set the sound levels for each element. This is done using a technique Zimo call "psuedo programming". An Ops-mode CV change to CV300 is made to enable pseudo programming, then function keys select various sounds. The throttle speed control acts as a volume control. Some function keys will end the programming (as will issuing a new Ops-Mode change of the CV). 
-The difficulty for end-users in this approach is that the initial selection of which ops-mode value to select is not obvious, the throttle function keys when mapped to the pseudo programming features are not intuitively laid out (may be OK on a Zimo handset) and pressing some functions can have unexpected consequences (turns sounds off for that aspect of the decoder!). 
+Zimo sound decoders allow the end user to select the sounds played, and their volumes, from any of those stored on the decoder. As an example, this allows the user to change the horn, or brake noises, as well as set the sound levels for each element. This is done using a technique Zimo call "psuedo programming". An Ops-mode CV change to CV300 is made to enable pseudo programming, then function keys select various sounds. The throttle speed control acts as a volume control. Some function keys will end the programming (as will issuing a new Ops-Mode change of the CV).
+The difficulty for end-users in this approach is that the initial selection of which ops-mode value to select is not obvious, the throttle function keys when mapped to the pseudo programming features are not intuitively laid out (may be OK on a Zimo handset) and pressing some functions can have unexpected consequences (turns sounds off for that aspect of the decoder!).
 <p>
-The new &quot;Zimo_pseudo_programmer.py&quot; script is an attempt to make Zimo Pseudo Programming a bit easier for the end user. It can be seen as complimenting my earlier CV61 Zimo function mapping tool. (And perhaps one day, I will bring them together into a general Zimo programming aid tool !). 
+The new &quot;Zimo_pseudo_programmer.py&quot; script is an attempt to make Zimo Pseudo Programming a bit easier for the end user. It can be seen as complimenting my earlier CV61 Zimo function mapping tool. (And perhaps one day, I will bring them together into a general Zimo programming aid tool !).
 <p>
-Its been tested by a couple of Zimo sound users, and we found a bug in the Zimo decoder firmware which resulted in one feature being temporarily removed from the script pending a decoder update from Zimo. 
+Its been tested by a couple of Zimo sound users, and we found a bug in the Zimo decoder firmware which resulted in one feature being temporarily removed from the script pending a decoder update from Zimo.
 </blockquote>
 <li>provided a new decoder definition for DCC Concepts loco decoder, developed using information from Richard Johnson of DCC Concepts.
 <li>provided a new decoder definition for the CML Electronics DAC 20 decoder.
@@ -569,18 +569,18 @@ Its been tested by a couple of Zimo sound users, and we found a bug in the Zimo 
 Andrew Crosland:
 <ul>
 <li>Improved the speed averaging for the Bachrus speedometer.
-<li>Improved the Bachrus speedometer readout to work more closely with the hardware, 
+<li>Improved the Bachrus speedometer readout to work more closely with the hardware,
 and to reject measurements that appear to suffer from jitter.
 <li>Updated the Bachrus speedometer to add dial type speed display, in both metric
 and English units, and to integrate with DCC system to capture loco speed profile.
-<li>Fixed conversion of metric/english units and added column headings to the 
+<li>Fixed conversion of metric/english units and added column headings to the
 Bachrus Speedometer exported .csv file.
 <li>Added help pages for the Bachrus speedometer.
-<li>Updated the SPROG support to make repeated ops mode CV writes appear consecutively 
+<li>Updated the SPROG support to make repeated ops mode CV writes appear consecutively
 rather than interleaved. Problem reported on developers list by Galen Seitz 22 July 2010
 <li>Improved the SPROG throttle to better handle fractional speeds.
 <li>Added support for SPROG 3.
-<li>Updated the MERG CBUS command station (CANCMD) support to respond to track off 
+<li>Updated the MERG CBUS command station (CANCMD) support to respond to track off
 message as well as emergency stop. Also made some internal changes.
 <li>Changed the defaults for the CBUS console to decimal, show events.
 <li>Added support for CBUS short events.
@@ -589,12 +589,12 @@ message as well as emergency stop. Also made some internal changes.
 <p>
 Kevin Dickerson:
 <ul>
-<li>updated the auto width justification of a memory label in LayoutEditor, around the x position, 
+<li>updated the auto width justification of a memory label in LayoutEditor, around the x position,
 ie the text will centre around position X, or be right justified to the value of X.
 Before the justification only really showed itself with fixed width memory labels.
 <li>improved the preferences:
-    By default 4 sets of jmrixconfigpanes are created at start up.  
-    However if there are more than 4 connections, the 5th and above connections do not have a jmrixconfigpane instance created and 
+    By default 4 sets of jmrixconfigpanes are created at start up.
+    However if there are more than 4 connections, the 5th and above connections do not have a jmrixconfigpane instance created and
     do not automatically get listed in the preference window.
 <li>improved the C/MRI sensor add process so that it now displays an error message when an invalid system name is entered.
 Sensor manager now allows for multiple sensors to be added.
@@ -610,11 +610,11 @@ Also added tools to return either a facing or protected blocks by signal heads, 
 </ul>
 
 <p>
-Team Digital: 
+Team Digital:
 <ul>
 <li>provided a decoder definition for their Team Digital BlocD8 board.
 <li>updated the definition for their SIC24AD decoder.
-<li>updated the BlocD8 definition file to correct input 5 primary address and default output 
+<li>updated the BlocD8 definition file to correct input 5 primary address and default output
 state and added unoccupied delay time CVs
 <li>updated the SIC_24AD definition to include toggle option to inputs and startup delay
 </ul>
@@ -642,11 +642,11 @@ Michael Greene updated the Lenz Ultradrive decoder definition.
 <li>Added support for general ID Tags and specific implementations for RFID readers that use the CORE-ID protocol in both stand-alone and MERG concentrator configurations.
 <li>Added test cases for Audio and ID Tag support.
 <li>Added 'Copy to clipboard' button in context window.
-<li>Added the new JMRI System Console which takes the place of the Windows Console. 
-The Windows Console didn't always auto-minimize properly 
-and would close JMRI without going through the normal shutdown procedures if someone accidentally clicked on the close button. 
+<li>Added the new JMRI System Console which takes the place of the Windows Console.
+The Windows Console didn't always auto-minimize properly
+and would close JMRI without going through the normal shutdown procedures if someone accidentally clicked on the close button.
 The JMRI System Console is available from the Help menu.
-As with most of the menu items, you can also set it up in Preference to autostart with JMRI. 
+As with most of the menu items, you can also set it up in Preference to autostart with JMRI.
 It displays the same information as the old Windows Console, is easy to resize and has a button to simplify the task of copying text to the clipboard.
 <li>Updated the system console window for multiple screens.
 <li>Fixed a problem during startup to delay the load of certain objects until after initial configuration loaded.
@@ -682,7 +682,7 @@ rather than after dragging by using the SliderSnap class provided by Michael Kne
 <li>Enabled default Speedometer settings to be saved.
 <li>Update context report to also include system manufacturer
 </ul>
-  
+
 <li><b>Script related</b>
 <ul>
 <li>Improved the script output window allowing configurable automatic scrolling.
@@ -707,7 +707,7 @@ David Heap updated the QSI Version 7 Steam definition to restore CV 51.5 for Eur
 
 <p>Bob Jacobsen:
 <ul>
-<li>fixed a bug in LocoNet message processing that kept the "Send LocoNet Message" tool from 
+<li>fixed a bug in LocoNet message processing that kept the "Send LocoNet Message" tool from
 sending multiple messages.
 <li>Updated the OpenLCB support
 <li>Added version ID for Zimo decoders.
@@ -719,8 +719,8 @@ DecoderPro
 <li>Updated <a href="http://openlcb.org">OpenLCB</a> library to version 0.3.
 <li>fixed an "issue"
 with sizing of indexed enum variables. Some decoder definitions
-may have been counting on the buggy behavior for their layouts, so 
-if you see any decoder definitions that look messy now, please mention 
+may have been counting on the buggy behavior for their layouts, so
+if you see any decoder definitions that look messy now, please mention
 it in the jmriusers group.
 <li>More work on compatibility with the Intellibox native serial port
 <li>When identifying a decoder type, DecoderPro is now smarter about displaying a partial match.
@@ -729,7 +729,7 @@ it in the jmriusers group.
 </ul>
 
 <p>
-Lionel Jeanson 
+Lionel Jeanson
 <ul>
 <li>made multiple improvements to throttles:
 <ul>
@@ -746,14 +746,14 @@ fixed a selection bug in throttles list window.
 </ul>
 <li>updated the JMRI mini web server
 index.html with entries to prefs/roster.xml and web/roster.html
-Also, added automatic creation of function buttons from the JMRI roster 
+Also, added automatic creation of function buttons from the JMRI roster
 to the web throttles application, including lockable buttons.
 <li>improved the Roster XSLT support so that it displays well via the mini web server,
-and shows a button for opening a throttle. 
+and shows a button for opening a throttle.
 <ul>
 <li><a href="http://localhost:12080/web/roster.html">http://localhost:12080/web/roster.html</a>
 now displays a simplified roster list in a clickable table, a click on an entry will open a matching inControl throttle in a new window.
-<li><a href="http://localhost:12080/prefs/roster.xml">http://localhost:12080/prefs/roster.xml</a> 
+<li><a href="http://localhost:12080/prefs/roster.xml">http://localhost:12080/prefs/roster.xml</a>
 displays the roster rendered in an html table with all attributes displayed and links to subreports like decoder details etc.
 (Requires update to roster file format; this will happen the first time you save a locomotive definition
 in the program, which rewrites the roster file)
@@ -765,11 +765,11 @@ one when it next starts.
 <li>improved the Jynstrument throttle support:
 <ul>
 <li>Added function control up to 28.
-<li>Removed filter on kind of acceptable devices so that any Jinput device 
+<li>Removed filter on kind of acceptable devices so that any Jinput device
     can be used for throttle control (Keyboard, mouse...).
 <li>Added a sample driver for keyboards.
 Note: once the keyboard driver is running, all keyboard inputs will be considered even if the JMRI window is not on the front
-<li>A "None" device was introduced in the device list accessible on right click, 
+<li>A "None" device was introduced in the device list accessible on right click,
     avoids to have all key inputs redirected to the Throttle.
 </ul>
 <li>Improved roster xslt files, roster.xml now better rendered in web browser when accessed through JMRI MiniWebServer.</li>
@@ -800,31 +800,31 @@ James LeFevre:
 <li>updated the help for TMCC
 </ul>
 
-<p>Stephen Lowens 
+<p>Stephen Lowens
 <ul>
 <li>updated the Digitrax SFX definition.</p>
 <li>provided an updated Digitrax SFX decoder definition that
-includes the most recent decoder definition coding techniques. 
-The file includes definition for new decoders: 
-SDN144PS, SDN144K0A, SDN144K1E, SDH164D &amp; SDH164K1A, B &amp; C, 
+includes the most recent decoder definition coding techniques.
+The file includes definition for new decoders:
+SDN144PS, SDN144K0A, SDN144K1E, SDH164D &amp; SDH164K1A, B &amp; C,
 as well as legacy decoders SDH104K1A, B &amp; C and SDH104T1. T
-he definition includes new CVs 60, 133, 134 &amp; 154 and 
+he definition includes new CVs 60, 133, 134 &amp; 154 and
 adds default values for all CVs where documented.
-He also compared the documented defaults with an actual decoder 
-and corrected errors where Digitrax documentation is incorrect. 
+He also compared the documented defaults with an actual decoder
+and corrected errors where Digitrax documentation is incorrect.
 </ul>
 
 <p>
-Peter Mansvelder 
+Peter Mansvelder
 <ul>
 <li>contributed a definition for the Fleischmann function decoder
 <li>provided info on the S88XpressNetLi XPressNet interface.
 </ul>
 
 <p>
-Bob Milhaupt 
+Bob Milhaupt
 <ul>
-<li>improved the LocoNet monitor to show system and user names, 
+<li>improved the LocoNet monitor to show system and user names,
 decode many more types of messages, and fixed some aspects of function and transponder messages.
 <li>fixed sensor reporting logic to properly display SE8c information
 </ul>
@@ -833,7 +833,7 @@ decode many more types of messages, and fixed some aspects of function and trans
 Dennis Miller fixed some help page links
 
 <p>
-Mike Mosher: 
+Mike Mosher:
 <ul>
 <li>updated the TCS V51+ decoder definition to add LL8 &amp; EU621 decoders
 <li>provided a "RosterMigrate2.py" script to allow users to migrate their "Soundtraxx OEM"
@@ -841,8 +841,8 @@ decoders to specific models.
 <li>provided a decoder definition for the ESU LS Select steam
 <li>fixed a minor bug in certain ESU decoder definitions.
 <li>did a major update to the QSI V7 definitions.
-<li>updated the BLI P2 steam decoder definition to 
-fix smoke control bug, CV116-117 bug, some pane tweeks, some default value changes, 
+<li>updated the BLI P2 steam decoder definition to
+fix smoke control bug, CV116-117 bug, some pane tweeks, some default value changes,
 add CV 121,122,203,204,205,206,207,211,234,235,236,237.
 <li>added a decoder definition for the MRC 1906 genset.
 <li>updated the DecoderPro consist pane to add F13-F28
@@ -856,10 +856,10 @@ version 3 to change SD70ACe model and add SD70M-2 model
 </ul>
 
 <p>
-Oscar Moutinho 
+Oscar Moutinho
 <ul>
 <li>provided
-<a href="http://jmri.org/web/inControl/inControl.txt">web-based throttles</a> 
+<a href="http://jmri.org/web/inControl/inControl.txt">web-based throttles</a>
 (version 1.1 of his inControl package)
 <li>updated the inControl web throttle, and added inControl.jar, a Java MIDlet for 'Not So Smart' phones.
 </ul>
@@ -867,21 +867,21 @@ Oscar Moutinho
 <p>Gert Muller fixed some issues with international characters and improved the layout of the throttle address field when running Linux.
 
 <p>
-Jack Shall added the EMD 710G3C-T2 and GE Gevo-12 to the Tsunami 
+Jack Shall added the EMD 710G3C-T2 and GE Gevo-12 to the Tsunami
 decoder definitions.
 
 <p>Giorgio Terdina:
 <ul>
 <li>fixed a problem with the XnTCP adapter code.
-<li>updated AutoDispatcher2 to version 2.3.4, 
+<li>updated AutoDispatcher2 to version 2.3.4,
 which copes with some changes in SignalHeadicon and is backwards compatible.
-<l>released a new version of AutoDispatcher, 
-supporting user-defined track colors and including new schedule commands to 
+<li>released a new version of AutoDispatcher,
+supporting user-defined track colors and including new schedule commands to
 test the held state of signal heads and to operate turnouts and accessories like level crossings.
 </ul>
 
 <p>
-Walt Thompson 
+Walt Thompson
 <ul>
 <li>added reset definitions to the TCS definitions.
 <li>contributed an improved SE8cSignalExample XML file</p>
@@ -889,12 +889,12 @@ Walt Thompson
 </ul>
 
 <p>
-Steve Todd 
+Steve Todd
 <ul>
-<li>added a button to the mini web server startup window that opens your local 
+<li>added a button to the mini web server startup window that opens your local
 web browser.
-<li>updated the xmlio server 
-to add roster list, complete with function labels. 
+<li>updated the xmlio server
+to add roster list, complete with function labels.
 Also changed turnout list to always use systemname as name, added username as additional value.
 Also fixed GET processing.
 <li>added readback of the speed, direction and functions for a throttle to the xmlio server.
@@ -908,7 +908,7 @@ He also added a few links to the generated index.html (delete existing file and 
 <li>greatly improved the speed
 <li>provided a favorite icon for the server
 <li>modified the miniserver fileservlet to return the appropriate status
-(i.e. 404, 403) instead of unhandled exception or blank 200 responses. 
+(i.e. 404, 403) instead of unhandled exception or blank 200 responses.
 <li>removed GetHost() which was causing timeouts on every access on some networks
 <li>set a 5-minute expiration on static files to avoid unneeded retrievals.
 <li>turned off caching on jframe images
@@ -944,17 +944,17 @@ and provided a definition for the Bachmann Soundtraxx decoder
 
 <p>Mark Waters provided a large group of Zimo Unified decoder definitions.
 
-<p>Randall Wood 
+<p>Randall Wood
 <ul>
 <li>updated the fast clock support so that it maintains a memory variable IMRATEFACTOR
 with the rate information.
-<li>updated the fast clock in memory variable support, and added some fixed memory 
+<li>updated the fast clock in memory variable support, and added some fixed memory
 values to the XMLIO support so that web browsers can inquire about the JMRI version, etc.
 </ul>
 
 
 <p>
-David Zuhn added support for exporting the entire roster to one file.  
+David Zuhn added support for exporting the entire roster to one file.
 Menu support (but a null implementation) for importing from an exported roster file.
 
 
@@ -1015,7 +1015,7 @@ setups.</li>
     </ul></li>
     <li>Panel Editor
      <ul>
-     <ul>Provided a "Properties" window for text based items, which allows the user to set various text based settings in the popup menu from a single window all at once, 
+     <ul>Provided a "Properties" window for text based items, which allows the user to set various text based settings in the popup menu from a single window all at once,
 (eg Font Size, Color, Background, style, border margins etc) and preview them prior to applying the changes. Also allows for the user to enter in font sizes that are not listed in the popup.
 For texted based sensors, it is possible to preview and configure the text for the four different states. Feature request 2958431 relates.(KD)</ul>
 
@@ -1031,7 +1031,7 @@ For texted based sensors, it is possible to preview and configure the text for t
 <b>Logixs</b>
 <ul>
 <li>Improved methods for disabling Logix when debugging.
-The selection in the Debug menu now shows the status, and the 
+The selection in the Debug menu now shows the status, and the
 startup splash screen gives you more information when you disable at startup.
 </li></ul>
 <b>Sensors</b>
@@ -1051,7 +1051,7 @@ startup splash screen gives you more information when you disable at startup.
     <li>SignalMast appearance files expanded to include mapping of advanced signal mast appearance to multiple potential local appearances. (KD)</li>
 
     <li>Added the signal mast logic facility for controlling signal masts, more info can be found <a href="/help/en/html/tools/signaling/SignalMastLogic.shtml">here<a> (KD)</li>
-    
+
     </ul>
 <b>SSL</b><ul>
     <li>Fixed an error in the loading of Simple Signaling Logic (SSL) where an invalid entry potentially causes all of the logic not be loaded and are lost on any subsequent stores. (KD)</li>
