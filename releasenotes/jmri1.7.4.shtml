@@ -14,15 +14,15 @@
 <body>
     <!--#include virtual="/Header.shtml" -->
   <hr class="hide">
-    <div class="no-sidebar" id="mBody">
-    <div id="mainContent">
+    <div id="mBody">
+    <div id="mainContent" class="no-sidebar">
       <h2>
       Release Notes for JMRI 1.7.4 test release
       </h2>
 
 	<p>Date: July 1, 2006</p>
 	<p>From: Bob Jacobsen</p>
-	<p>Subject: Test version 1.7.4 of JMRI/DecoderPro is 
+	<p>Subject: Test version 1.7.4 of JMRI/DecoderPro is
 	available for download.
 <!-- 	<br><b>This is a draft release note only; the download links do not yet work</b> -->
 
@@ -30,11 +30,11 @@
 
 <p>This is a test release.  Please post a note if you encounter any new or old bugs!  And please back up your JMRI files before installing this, in case you want to go back to an earlier version.
 
-<p>This is the next in a series of test versions that contain long-awaited new features, particularly 
-numerous decoder updates, 
-improvements to signaling logic, 
-tools for tracking trains around a layout via block occupancy, 
-and 
+<p>This is the next in a series of test versions that contain long-awaited new features, particularly
+numerous decoder updates,
+improvements to signaling logic,
+tools for tracking trains around a layout via block occupancy,
+and
 new support for boards from Oak Tree Systems and the Digitrax PR2 programmer.
 
 <p>Some of the changes involved are quite extensive, and may require a certain amount of experience before they are working well.  Therefore, this test version should be considered experimental.
@@ -54,11 +54,11 @@ new support for boards from Oak Tree Systems and the Digitrax PR2 programmer.
 <p>We have added additional information to the roster files in this version to help properly handle short/long addressing in systems that allow low addresses (e.g. 65) to be either short or long addresses. The only current system we support that has this capability is NCE.  If you have an NCE system, and you have locomotives with addresses of 127 or less, you should open their roster entries in DecoderPro, check that the proper short or long address is selected,  and save them again.
 
 <p>Indexed CVs will not be included in any printouts for this release.
- 
+
 <p>QSI CV 56.129 Engine ID Access is not supported in this release.
-  
+
 <p>While programming QSI decoders in Ops mode, it is necessary to disable CV 62 QSI Control (Verbal Acknowledgement), otherwise the writes will fail.
- 
+
 <p>QSI CV 64 CV Numeric Verbal Readout currently does not work for indexed CVs.
 
 <h3>Download links:</h3>
@@ -116,7 +116,7 @@ new support for boards from Oak Tree Systems and the Digitrax PR2 programmer.
 
 <p>David Duchamp added more protection against data-entry errors in the Light Table.
 
-<p>Paul Bender updated XPressNet (Lenz) turnout support to fix a problem with turnout outputs staying on for too long. Also, the program now resends the turnout command if the XPressNet system returns a "not-operated" message. On feedback replies for turnouts, make sure correct address is returned when neither turnout has been operated.  
+<p>Paul Bender updated XPressNet (Lenz) turnout support to fix a problem with turnout outputs staying on for too long. Also, the program now resends the turnout command if the XPressNet system returns a "not-operated" message. On feedback replies for turnouts, make sure correct address is returned when neither turnout has been operated.
 
 <p>David Duchamp updated the C/MRI support so that it can drive turnouts through two outputs.  Some layouts have Tortoise and similar switch motors wired to two C/MRI output pins.  By alternating which pin is enabled, the turnout can be driven one way or the other.  David also added support for configuring and printing these assignments.
 
@@ -134,9 +134,9 @@ new support for boards from Oak Tree Systems and the Digitrax PR2 programmer.
 
 <p>New sample scripts:
 <ul>
-    <li>TurnoutReset.py - listen to a turnout and reset it back to "closed" every time it's "thrown".  This be useful e.g. to 
+    <li>TurnoutReset.py - listen to a turnout and reset it back to "closed" every time it's "thrown".  This be useful e.g. to
         keep a turnout in one position waiting to control a route
-    <li>TwoOutputTurnouts.py - some wiring methods use two outputs acting alternately to control a turnout.  This 
+    <li>TwoOutputTurnouts.py - some wiring methods use two outputs acting alternately to control a turnout.  This
         script slaves one output to be the opposite of another.  Note that this is no longer needed
         for C/MRI systems, due to David Duchamp's updates
     <li>NSelectorExample.py - an example of an N-way icon on a panel

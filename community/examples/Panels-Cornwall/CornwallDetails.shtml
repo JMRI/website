@@ -12,8 +12,8 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
-<div class="no-sidebar" id="mBody">
-    <div id="mainContent">
+<div id="mBody">
+    <div id="mainContent" class="no-sidebar">
 
         <p>JMRI was used to create the <a href="SamplePanel.shtml">dispatcher control panel</a> for Nick Kulp's
         Cornwall RR. <a href="Cornwall.shtml">Another page</a>

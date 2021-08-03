@@ -14,25 +14,24 @@
 <!--#include virtual="/Header.shtml" -->
     <hr class="hide">
 
-	<div class="no-sidebar" id="mBody">
-		<div id="mainContent">
+	<div id="mBody">
+		<div id="mainContent" class="no-sidebar">
 
 	    <h1>JMRI: Running Nick Kulp's CornwallRR Program</h1>
 		<p class="subtitle">
 JMRI was used to create the dispatcher control panel for Nick Kulp's
 Cornwall RR.
-This page briefly describes how to run that so you can take a look 
+This page briefly describes how to run that so you can take a look
 at that.
 Links to other pages with more detail are included, but many of those pages
 do not exist yet or are still under contruction.
 
 <p>
-<a href="./images/CornwallPanelLit.gif"><img src="./images/SmallCornwallPanel.gif" WIDTH="502" HEIGHT="302"
-											 HSPACE="0" VSPACE="0"></A>
+<a href="./images/CornwallPanelLit.gif"><img src="./images/SmallCornwallPanel.gif" WIDTH="502" HEIGHT="302" alt="panel"></a>
 
 <h2>The layout</h2>
 Nick's layout uses a mixture of
-C/MRI and DCC.  The block detectors, turnout position sensors, and 
+C/MRI and DCC.  The block detectors, turnout position sensors, and
 signals are all attached to a C/MRI serial system.  The locomotives
 are run using Digitrax DCC.  Some turnouts are thrown manually, and
 some are operated by Tortoise motors connected to SwitchIt DCC decoders
@@ -62,7 +61,7 @@ like to see what it really looks like and play with the signals, etc.
 
 The CornwallRR sample program comes with all sufficiently-recent
 JMRI/DecoderPro free downloads.  To find out how to download a version
-for your specific type of computer, please see the 
+for your specific type of computer, please see the
 <a href="../../../download/index.shtml">download pages</a>.
 
 <h2>Starting the program</h2>
@@ -96,20 +95,20 @@ can click on the screen to change the program's idea of block occupancy
 and turnout positions, and watch how the signals will respond on the actual
 layout.
 <p>
-The occupancy indicators look like 
-<img src="./images/REDLED.gif"> if the section is occupied, and
-<img src="./images/GRAYLED.gif"> if it's not.  If you click on one of these,
+The occupancy indicators look like
+<img src="./images/REDLED.gif" alt="red"> if the section is occupied, and
+<img src="./images/GRAYLED.gif" alt="gray"> if it's not.  If you click on one of these,
 it will flip the state.  If you "hover" the mouse pointer over it,
 a tooltip will pop up that tells you it's exact name in Nick's
-terms (a human-readable "user name"), and in the programs 
-naming convention (a 
+terms (a human-readable "user name"), and in the programs
+naming convention (a
 <a href="/help/en/html/doc/Technical/Names.html">"System Name"</a>).
 
 <p>
 You can also click on many of the turnouts in the black and white
 schematic section to flip their state.  (Some of them are not
 connected to the C/MRI system yet, and so are inert on the panel).
-In some cases, there are several turnouts connected together to form a 
+In some cases, there are several turnouts connected together to form a
 crossing, so flipping one will cause the others to follow.
 <p>
 Note that the indicators by the levers in the green part of the panel
@@ -135,7 +134,7 @@ to make it easier for other people to create their own logic.
 <p>JMRI provides tools for creating custom control panels for a model
 railroad.  It's flexible enough to do whatever you want, or at least
 whatever you're willing to spend the time to create.  For more information
-on JMRI see the 
+on JMRI see the
 <a href="../../../">main web page</a>.  For links to download and
 install instructions for various computer types, see the
 <a href="../../../download">download pages</a>.
