@@ -18,7 +18,7 @@
 
     <hr class="hide">
     <div class="no-sidebar" id="mBody">
-      <div id="mainContent">
+      <div id="mainContent" class="no-sidebar">
 
   <h1>Contact Information</h1>
   <h2>Email discussion group</h2>
@@ -35,7 +35,7 @@
 	<li> <a href="https://groups.io/g/jmri-announce/topics">jmri-announce Archives</a>
 	(<a href="https://groups.io/g/jmri-announce/join">Subscribe</a>)
 	&nbsp;Announcements of new JMRI versions.</li>
-	
+
 	<li> <a href="https://jmri-developers.groups.io/g/commits/topics">jmri-commits Archives</a>
 	(<a href="https://jmri-developers.groups.io/g/commits/join">Subscribe</a>)
 	&nbsp;CVS/Git commit notifications.</li>
@@ -43,7 +43,7 @@
 	<li><a href="https://jmri-developers.groups.io/g/jmri/topics">jmri-developers Archives</a>
 	(<a href="https://jmri-developers.groups.io/g/jmri/join">Subscribe</a>)
 	&nbsp;Discussion of current and future development.</li>
-  </ul>	
+  </ul>
 
 	<p>
 	All of the JMRI code is maintained on GitHub. See the:</p>

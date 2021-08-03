@@ -14,11 +14,11 @@
     <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
     <!--#include virtual="/Header.shtml" -->
-	<div class="no-sidebar" id="mBody">
+	<div id="mBody">
 
 	<hr class="hide">	<!-- only shows up on printouts -->
     <!-- load last to see mainContent on top of small screen, block is positioned via css -->
-        <div id="mainContent">	<!-- Body of page -->
+        <div id="mainContent" class="no-sidebar">	<!-- Body of page -->
 
         <ul class="hor-nav">
             <li><a href="/index.shtml">Return to JMRI Landing Page</a></li>

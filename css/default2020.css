@@ -494,7 +494,7 @@ hr {
 }
 
 .nomenu #mBody, /* .nomenu @deprecated, replaced by .no-sidebar since 4.2.23 because that's what is means */
-.no-sidebar #mBody {
+.no-sidebar #mBody {    /* no-sidebar is actually applied to mainContent */
 	background: #EEF;
 }
 

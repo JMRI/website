@@ -13,12 +13,12 @@
 <body>
 <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
 
-<!--#include virtual="/Header.shtml" --> <!-- choose from local ("Sidebar.shtml") or global ("/Sidebar.shtml") -->
+<!--#include virtual="/Header.shtml" -->
 
     <hr class="hide">
 
-    <div class="no-sidebar" id="mBody">
-	<div id="mainContent">
+    <div id="mBody">
+	<div id="mainContent" class="no-sidebar">
 
 	    <div id="teaser"><!-- Optional -->
 		<h1>Optional Teaser</h1>
