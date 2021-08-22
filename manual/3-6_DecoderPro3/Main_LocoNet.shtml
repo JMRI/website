@@ -56,9 +56,9 @@ Technologies. The <a href="#ClockMonitor">  Monitor Clock</a> dialog allows you 
 <p>Opens the Configure Command Station window</p>
 <p><strong>Configure LocoNet ID</strong></p>
 <p>Opens the <strong>Configure LocoNet ID</strong> dialog that allows you to
-<input name="button5" id="button5" value="Read" type="submit"> 
-  or 
-  <input name="button6" id="button6" value="Set" type="submit"> 
+<input name="button5" id="button5" value="Read" type="submit">
+  or
+  <input name="button6" id="button6" value="Set" type="submit">
   the LocoNet ID <strong>Value:</strong></p>
 <p><img src="images/Main_Loconet08.png" alt="loconet if" height="145" width="245"></p>
 <p><strong>Configure Duplex Group</strong></p>
@@ -87,9 +87,6 @@ Technologies. The <a href="#ClockMonitor">  Monitor Clock</a> dialog allows you 
 <p>Opens the <strong>LocoNetOver Tcp Server</strong> dialog.</p>
 <p><img src="images/Main_Loconet09.png" alt="LocoNet server" border="4" height="120" width="361"></p>
 <p>.</p>
-<div align="right">
-  <p><a href="Main_Menu.shtml#System">Back to Index</a></p>
-</div>
 <hr>
 
 <h4><a name="SlotMonitor"></a>Monitor Slot Window</h4>
@@ -100,13 +97,13 @@ show all slots or just the ones being actively used.</p>
 <p align="center"><img src="images/Main_Loconet01.png" alt="slot monitor" height="274" width="800"></p>
 <p>The checkboxes at the top allow to select what slots are displayed.</p>
 <p>
-  <input name="checkbox" id="checkbox" type="checkbox"> 
+  <input name="checkbox" id="checkbox" type="checkbox">
   <strong>Show unused slots</strong></p>
 <p>
-  <input name="checkbox2" id="checkbox2" type="checkbox"> 
+  <input name="checkbox2" id="checkbox2" type="checkbox">
   <strong>Show system slots</strong></p>
 <p><strong>
-  <input name="button" id="button" value="estop all" type="submit"> 
+  <input name="button" id="button" value="estop all" type="submit">
   </strong>Executes an <strong>Emergency Stop </strong>for all locomotives.</p>
 <p>The columns are:</p>
 <table align="center" border="1" cellpadding="1" cellspacing="1" width="90%">
@@ -218,12 +215,12 @@ keeps better time. </p>
 </div>
 <h4><a name="DS64Programmer"></a>Configure DS64  Window</h4>
 <p>The DS64 programming tool lets you configure   the internal options of a DS64 directly from your computer. </p>
-<p>Type  the address of a DS64 board in the text field  and click 
+<p>Type  the address of a DS64 board in the text field  and click
   <input name="button3" id="button3" value="Read from DS64" type="submit">
 . The tool will read back the current state of the various options, and
 set the check boxes to correspond to their current values. </p>
-<p> You can then, if you wish, change the checkboxes and click 
-  <input name="button4" id="button4" value="Write to DS64" type="submit">   
+<p> You can then, if you wish, change the checkboxes and click
+  <input name="button4" id="button4" value="Write to DS64" type="submit">
 to make your changes permanent. </p>
 <h4>Limitations</h4>
 Because of the way the DS64 board works, this tool can't change  the basic address of the unit.
@@ -237,12 +234,12 @@ routes are more powerful and easier to use. </p>
 <h4><a name="SendPacket"></a>Send LocoNet Packet dialog</h4>
 <p style="text-align: center;"><img src="images/Main_Loconet11.png" alt="Send packet" border="4" height="311" width="468"></p>
 <p>LocoNet packets are sent in raw hexadecimal format, you may use the <a href="Main_Monitor_Window.shtml">Monitor Window</a> in the <strong>Show Raw Data</strong> option to monitor the packets.</p>
-<p>The top section lets you send a single LocoNet packet. Type the hexidecimal numbers and click 
-  <input name="button7" id="button7" value="Send" type="submit"> 
+<p>The top section lets you send a single LocoNet packet. Type the hexidecimal numbers and click
+  <input name="button7" id="button7" value="Send" type="submit">
 , you should include the byte for the  checksum at the end of the message.</p>
 <p>The bottom section lets you enter from one to four packets that will
 be repeatedly sent in sequence, with the user-defined delays in
-between. Press the <input name="button8" id="button8" value="Go" type="submit"> 
+between. Press the <input name="button8" id="button8" value="Go" type="submit">
   to start transmission sequence, and press again to stop the sequence.
 </p>
 <div>
@@ -257,16 +254,16 @@ expects.</p>
 <p style="text-align: center;"><img src="images/Main_Loconet12.png" alt="firmware downloader" height="473" width="425"></p>
 <p>To use this tool:</p>
 <ul>
-  <li>Click 
-    <input name="button9" id="button9" value="Select" type="submit"> 
+  <li>Click
+    <input name="button9" id="button9" value="Select" type="submit">
     and select the .dmf file you want to download.<br>
     <br>
 </li>
-  <li>Click 
+  <li>Click
     <input name="button10" id="button10" value="Read file" type="submit">
   to read the file into the program and verify its contents.</li>
   <li>Only if instructed to by Digitrax, change the various values in the control fields (this is usually not needed</li>
-  <li>Click 
+  <li>Click
     <input name="button11" id="button11" value="Download" type="submit">
     to load the firmware. This will take a little while.</li>
 </ul>

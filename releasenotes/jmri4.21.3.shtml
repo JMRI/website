@@ -28,13 +28,13 @@
     <p>From: (pumpkin)</p>
     <p>Subject: Test Release 4.21.3 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
 <h2>Notes:</h2>
 
-<p>This is a test release.  Please 
+<p>This is a test release.  Please
 <a href="https://groups.io/g/jmriusers">post a note</a>
 if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
@@ -61,29 +61,29 @@ see our
 If you are currently using a version older than JMRI 4.20, please follow these instructions carefully:
 
 <ol>
-<li>Is your current version older than <a href="jmri4.12.shtml">JMRI 4.12</a>? 
+<li>Is your current version older than <a href="jmri4.12.shtml">JMRI 4.12</a>?
     If so, then update to <a href="jmri4.12.shtml">JMRI 4.12</a> first, and ensure everything works correctly: check
     start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
-    Store your configuration and panel files under a new name and use those from now on. 
+    Store your configuration and panel files under a new name and use those from now on.
     Then continue with step 2.
     <p>
-    If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this), 
-    then it's <u>very important</u> 
+    If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+    then it's <u>very important</u>
     that you update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
     carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
     before updating to any later relese.
     </li>
-    
-<li>Is your current version older than <a href="jmri4.20.shtml">JMRI 4.20</a>? 
+
+<li>Is your current version older than <a href="jmri4.20.shtml">JMRI 4.20</a>?
     Then update to <a href="jmri4.20.shtml">JMRI 4.20</a> first, and ensure that works correctly (check
     start-up, check things you need to be working, and check the JMRI log as well) before doing anything else
     Store your configuration and panel files under a new name and use those from now on.</li>
 
-<li>You can then install this release. 
+<li>You can then install this release.
 
-</ol>   
- 
-Following this multi-step order of updating via stable major releases safeguards you against possible migration issues 
+</ol>
+
+Following this multi-step order of updating via stable major releases safeguards you against possible migration issues
 that can arise from skipping these versions.
 
 <a id="problems" name="problems"></a>
@@ -92,7 +92,7 @@ that can arise from skipping these versions.
     <li>None</li>
 </ul>
 <!--
-If any of those affect you, please either 
+If any of those affect you, please either
 wait for
 <a href="jmri4.19.6.shtml">JMRI 4.19.6</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
@@ -105,13 +105,13 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-   
+
     <li><span class="since">Since <a href="jmri4.21.3.shtml">JMRI 4.21.3</a></span>
         The Layout Editor code has been substantially restructured in this release.
         If you have scripts that reference the jmri.jmrit.display.layoutEditor package
-        please check them carefully, as new classes have been created and 
+        please check them carefully, as new classes have been created and
         some methods have moved.  Panel files containing Layout Editor panels
-        that are stored (written out) by this release may not be readable 
+        that are stored (written out) by this release may not be readable
         by earlier releases; this release should load older files just fine.
     </li>
 </ul>
@@ -126,16 +126,16 @@ we strongly recommend you update to <a href="jmri4.20.shtml">JMRI 4.20</a>
 installing this test release.
 
 <ul>
-    <li><span class="since">Since <a href="jmri4.21,1.shtml">JMRI 4.21.1</a></span>
+    <li><span class="since">Since <a href="jmri4.21.1.shtml">JMRI 4.21.1</a></span>
         The jmri.jmrix.SystemConnectionMemo class has become a jmri.SystemConnectionMemo
         interface and a jmri.jmrix.DefaultSystemConnectionMemo class. This may
         require changes to scripts.  If you have a script that references
         jmri.jmrix.SystemConnectionMemo, please change it to either
         jmri.SystemConnectionMemo or jmri.jmrix.DefaultSystemConnectionMemo
-        (it's easier to have you just try the two than to explain which 
+        (it's easier to have you just try the two than to explain which
         one will work in which case)
     </li>
-    
+
     <li><span class="since">Since <a href="jmri4.21.1.shtml">JMRI 4.21.1</a></span>
         The way preferences are loaded at startup has been slightly
         modified.  There is no impact to JMRI applications, but Non-JMRI
@@ -146,14 +146,14 @@ installing this test release.
     </li>
 
     <li><span class="since">Since <a href="jmri4.19.1.shtml">JMRI 4.19.1</a></span>
-        The <code>getBeanByUserName</code> and <code>getBeanBySystemName</code> 
+        The <code>getBeanByUserName</code> and <code>getBeanBySystemName</code>
         calls in the various <code>Manager</code> classes
         are no longer needed with Java 8 and have been deprecated for eventual
-        removal.  Their replacements are 
-        <code>getByUserName</code> and <code>getBySystemName</code> 
-        respectively. 
-        If you use <code>getBeanByUserName</code> and <code>getBeanBySystemName</code> 
-        in script or Java code you've written, please 
+        removal.  Their replacements are
+        <code>getByUserName</code> and <code>getBySystemName</code>
+        respectively.
+        If you use <code>getBeanByUserName</code> and <code>getBeanBySystemName</code>
+        in script or Java code you've written, please
         switch to the new names.
     </li>
 
@@ -169,12 +169,12 @@ installing this test release.
         Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
         open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
     </li>
-</ul>   
+</ul>
 
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
@@ -194,21 +194,21 @@ check the files against the checksums shown below.
    sha256: 057fa69849f5383def665dd9e7e84335ada9e39a5d8b60c5f1c39227f9ba40ae</li>
 </ul>
 
-<!-- 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.21.2``/">CI project page</a>.
  -->
 
-<!-- 
+<!--
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
  -->
- 
+
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.21.2.shtml">Test Release 4.21.2</a>:</h2>
- 
+
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.21.3+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
@@ -238,7 +238,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.21.3+i
 
         <h4>LocoNet</h4>
             <ul>
-              <li>The legacy LocoIO programmer help points to the current <a href="diy">DIY decoder</a> method to
+              <li>The legacy LocoIO programmer help points to the current method to
               configure these boards.</li>
               <li>LocoNet support for "Voltage/Current Meters" has been extended to
                   include support for multiple sources of meter information, and
@@ -363,7 +363,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.21.3+i
     <h3>Control Panel Editor</h3>
         <a id="CPE" name="CPE"></a>
         <ul>
-            <li>Icons of tracks indicators and signals in the style of the &#268;SD Czechoslovak State Railway 
+            <li>Icons of tracks indicators and signals in the style of the &#268;SD Czechoslovak State Railway
 	    - Unified Control Place - JOP style.</li>
         </ul>
         <h4>Circuit Builder</h4>
@@ -435,27 +435,27 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.21.3+i
             <li>The algorithm for executing speed changes due to track conditions for warrants
                 has been modified and is better able to restore the scripted speeds once the
                 track speed restrictions are lifted.</li>
-            <li>The constant used to approximate track speed of trains has been changed to 
+            <li>The constant used to approximate track speed of trains has been changed to
             	yield a scale speed of 100mph at full throttle. This change has <b>no effect</b>
             	on roster entries having Speed Profiles.</li>
             <li>The Address column of the Warrant Table list and the Address fields of the
             	NXWarrant or Create Warrant windows
             	now accept throttle protocol names and addresses of Markin and ESU ECoS.</li>
-            <li>When scripted speeds are overridden due to signals or obstructions ahead, the  
-            	non-speed script commands are executed at approximately the same elapsed times as  
+            <li>When scripted speeds are overridden due to signals or obstructions ahead, the
+            	non-speed script commands are executed at approximately the same elapsed times as
             	were written in the script.</li>
- 			<li>Track speeds of running warrants are recorded automatically and a SpeedProfile  
+ 			<li>Track speeds of running warrants are recorded automatically and a SpeedProfile
             	is built that can be seen by  pressing the <b>View Profile</b> button in the
             	edit warrant window. These profiles can be merged into the existing profiles
-            	for the Roster entry used by the loco of the warrant when the layout session 
+            	for the Roster entry used by the loco of the warrant when the layout session
             	is closed. (Recall that Warrant Preferences has 3 options for this merging.)</li>
             <li>An <b>Update Track Speeds</b> button is added to the window where warrant throttle
             	settings and commands are edited. This button updates the <b>Speed</b> column to
             	list the track speeds (mm/sec) for the current Speed Profile measurements of
-            	the locomotive address entered in the 'Engine Consist' box.</li>           	
-            <li>Bugs introduced during the past year to the 'Wait Sensor' command and merging of 
-            	speed profiles are fixed.</li>          	
-			<li>When OBlocks are imported from LayoutEditor blocks, the turnout settings of paths 
+            	the locomotive address entered in the 'Engine Consist' box.</li>
+            <li>Bugs introduced during the past year to the 'Wait Sensor' command and merging of
+            	speed profiles are fixed.</li>
+			<li>When OBlocks are imported from LayoutEditor blocks, the turnout settings of paths
             	are also added to the imported OPaths.</li>
         </ul>
 

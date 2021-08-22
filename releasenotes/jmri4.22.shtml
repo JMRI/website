@@ -86,7 +86,7 @@ that can arise from skipping these versions.
 <h3>New warnings for this production release:</h3>
 
 <ul>
-    <li><span class="since">Since <a href="jmri4.21,1.shtml">JMRI 4.21.1</a></span>
+    <li><span class="since">Since <a href="jmri4.21.1.shtml">JMRI 4.21.1</a></span>
         The jmri.jmrix.SystemConnectionMemo class has become a jmri.SystemConnectionMemo
         interface and a jmri.jmrix.DefaultSystemConnectionMemo class. This may
         require changes to scripts.  If you have a script that references
@@ -278,9 +278,9 @@ in those is
                     Address) of certain Digitrax LocoNet-based devices using
                     JMRI have been added to the Digitrax hardware page.</li>
                 <li>Fixed a problem in the PM4Announce script</li>
-              <li>The legacy LocoIO programmer help points to the current <a href="diy">DIY decoder</a> method to
+              <li>The legacy LocoIO programmer help points to the current <a href="#diy">DIY decoder</a> method to
               configure these boards.</li>
-              <li>The legacy LocoIO programmer help points to the current <a href="diy">DIY decoder</a> method to
+              <li>The legacy LocoIO programmer help points to the current <a href="#diy">DIY decoder</a> method to
               configure these boards.</li>
               <li>LocoNet support for "Voltage/Current Meters" has been extended to
                   include support for multiple sources of meter information, and

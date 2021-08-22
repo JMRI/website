@@ -29,8 +29,8 @@ DecoderPro&reg; Main Window
 <p><strong><a name="Info"></a>XpressNet System Information</strong></p>
 <p>Opens the <a href="#InfoDialog">XPressNet System Information</a> Dialog.</p>
 <p><strong>Send XpressNet Command</strong></p>
-<p>Opens the Send XpressNet Packet prompt so that you can type in a Packet: and click on the 
-  <input type="submit" name="button3" id="button3" value="Send"> 
+<p>Opens the Send XpressNet Packet prompt so that you can type in a Packet: and click on the
+  <input type="submit" name="button3" id="button3" value="Send">
   to transmit via XpressNet to your system.
 </p>
 <p><img src="images/Main_XpressNet_02.png" alt="Send Command" width="256" height="97"></p>
@@ -48,10 +48,10 @@ DecoderPro&reg; Main Window
 <hr>
 
 <h4><a name="InfoDialog"></a>XPressNet System Information Dialog</h4>
-<p>Click on the 
-  <input type="submit" name="button" id="button" value="Get System Info"> 
-  to query the system (Lenz or other) for system information that will be displayed in the dialog.  Click on 
-  <input type="submit" name="button2" id="button2" value="Close"> 
+<p>Click on the
+  <input type="submit" name="button" id="button" value="Get System Info">
+  to query the system (Lenz or other) for system information that will be displayed in the dialog.  Click on
+  <input type="submit" name="button2" id="button2" value="Close">
   to close the dialog.
 </p>
 <p><img src="images/Main_XpressNet_01.png" alt="System Information"></p>
@@ -59,8 +59,8 @@ DecoderPro&reg; Main Window
   <div align="right"><a href="#Info">Back</a></div>
 </div>
 <h4><a name="StackMonitor"></a>Command Station Stack Monitor</h4>
-<p>Click the 
-  <input type="submit" name="button4" id="button4" value="Refresh"> 
+<p>Click the
+  <input type="submit" name="button4" id="button4" value="Refresh">
   to update the display to the current information.</p>
 <p><img src="images/Main_XpressNet_03.png" alt="Database" width="523" height="186"></p>
 <div>
@@ -89,7 +89,7 @@ DecoderPro&reg; Main Window
 
 <hr>
 <div align="right">
-<p><a href="dp3_menubar.shtml">Back to Index</a><a href="Main_Menu.shtml#System"></a></p>
+<p><a href="dp3_menubar.shtml">Back to Index</a></p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
