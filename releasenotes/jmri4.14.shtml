@@ -27,7 +27,7 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 4.14 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
@@ -44,15 +44,15 @@ see our
 <a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>Update From Older JMRI Versions</h3>
-<p>If you are currently using JMRI 4.9.6 or earlier, we strongly recommend that you update to 
+<p>If you are currently using JMRI 4.9.6 or earlier, we strongly recommend that you update to
         <a href="jmri4.12.shtml">JMRI 4.12</a> and make sure that's running OK before
-        updating to this release release.  There have been a number of 
-        changes in serial port support, panel file format and configuration options since those earlier releases, 
+        updating to this release release.  There have been a number of
+        changes in serial port support, panel file format and configuration options since those earlier releases,
         and moving to the stable <a href="jmri4.12.shtml">JMRI 4.12</a> release
         is a good way to work through any possible problems.
         </p>
-<p>If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this), 
-    you <u>must</u> 
+<p>If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+    you <u>must</u>
     update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
     carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
     before updating to this release.
@@ -64,7 +64,7 @@ see our
     <li>None</li>
 </ul>
 <!--
-If any of those affect you, please either 
+If any of those affect you, please either
 wait for
 <a href="jmri4.15.1.shtml">JMRI 4.15.1</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
@@ -80,11 +80,11 @@ from
     <li>This release changes how "Internal" Throttles, Consisting, CV Programmers and Command Station
         references are configured.  This is done to avoid <u>accidentally</u> getting
         one of these configured as a default instead of using your attached hardware device
-        (the dreaded "programmer always reads 123" condition). 
+        (the dreaded "programmer always reads 123" condition).
         Most JMRI users will not have to do anything.
-        If you do need to use 
+        If you do need to use
         an internal version of these, please go to preferences and add an internal "None"
-        connection in addition to the ones you already have, then set defaults.  
+        connection in addition to the ones you already have, then set defaults.
     </li>
 </ul>
 
@@ -96,24 +96,24 @@ These may be relevant to you if you're updating from an earlier version.
 <p>When running JMRI using Java 9 or Java 10,
     the script import statements need to be fully-qualified:
     in addition to 'import java', you might need 'import java.beans'
-    and others. 
+    and others.
 
 <p><span class="since">Since <a href="jmri4.11.8.shtml">JMRI 4.11.8</a></span>
     Some new display capabilities were introduced into Layout Editor
-    during JMRI 4.11-series development.   
-    This release changes some of the defaults in this area, which might 
-    change the appearance of some track segments on your panels if they're 
+    during JMRI 4.11-series development.
+    This release changes some of the defaults in this area, which might
+    change the appearance of some track segments on your panels if they're
     still using default values. If you select them and change their properties,
     then save your panel file(s), you can restore their previous appearance.
-    There's a 
+    There's a
     <a href="../community/LayoutEditorTrackChanges.pdf">PDF document</a>
     with more details.
     We apologize for the inconvenience.
 
 <p><span class="since">Since <a href="jmri4.11.8.shtml">JMRI 4.11.8</a></span>
-    Because of changes to the "node identification" algorithm used to tell 
+    Because of changes to the "node identification" algorithm used to tell
     one computer running JMRI from another, you might receive a warning message
-    about the "Node Identity" the first time you run JMRI version 4.11.8 or newer. (If you 
+    about the "Node Identity" the first time you run JMRI version 4.11.8 or newer. (If you
     have more than one profile, this can happen with each).  There's no permanent
     problem here, but you might have to reset your window preferences (i.e. position
     and size, column layout, etc) in this case.
@@ -122,7 +122,7 @@ These may be relevant to you if you're updating from an earlier version.
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     If you are running a local web site with a copy of the JMRI content, as
     <a href="http://jmri.org/help/en/html/doc/Technical/WebSite.shtml#local">described here</a>,
-    please repeat 
+    please repeat
     <a href="http://jmri.org/help/en/html/doc/Technical/WebSite.shtml#locallink">the "setSymLinks.sh" step</a>
     near the bottom of those instructions
     after installing JMRI 4.11.4 (or later).  This will make some new formatting available
@@ -142,16 +142,16 @@ These may be relevant to you if you're updating from an earlier version.
 
 <p><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
     The system connection preferences (i.e. hardware preferences) are now
-    enforcing the <a href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
-    for system prefixes:  One upper case letter, 
+    enforcing the <a href="/help/en/html/doc/Technical/Names.shtml">correct form</a>
+    for system prefixes:  One upper case letter,
     optionally followed by a number (one or more digits, e.g. "L12").
     Existing prefixes in existing configurations are unchanged, but
     new ones will have to have the correct form.
-      
+
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
@@ -173,7 +173,7 @@ check the files against the checksums shown below.
 
 <h2>Changes since <a href="jmri4.12.shtml">production release 4.12</a>:</h2>
 
-<p>The full lists of changes in each of the preceding test releases 
+<p>The full lists of changes in each of the preceding test releases
 (<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.13.1+">4.13.1</a>,
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.13.2+">4.13.2</a>,
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.13.3+">4.13.3</a>,
@@ -181,7 +181,7 @@ check the files against the checksums shown below.
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.13.5+">4.13.5</a>,
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.13.6+">4.13.6</a>,
 <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.13.7+">4.13.7</a>)
-are available in our 
+are available in our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.</p>
 
 
@@ -198,8 +198,8 @@ are available in our
         <h4>LocoNet</h4>
             <ul>
                 <li>Fixed scrolling in the LocoNet configuration tool panels</li>
-                <li>Added the ability to see and select the DCC track signal "Idle" state within the Power Control tool.  
-                This enables JMRI users to know when the Digitrax command station has placed the track signal into the "Idle" state, 
+                <li>Added the ability to see and select the DCC track signal "Idle" state within the Power Control tool.
+                This enables JMRI users to know when the Digitrax command station has placed the track signal into the "Idle" state,
                 and enables JMRI users to select that "Idle" state.</li>
             </ul>
 
@@ -324,17 +324,17 @@ are available in our
         <h4>SoundTraxx</h4>
             <ul>
                 <li>Michael Mosher added an SD60 definition</li>
-                <li>Michael Mosher added definitions for several models</li>                
+                <li>Michael Mosher added definitions for several models</li>
             </ul>
 
         <h4>TCS</h4>
             <ul>
                 <li>Mike Mosher updated the WOW Steam V4 and various non-sound decoders</li>
             </ul>
-	    
+
 	    <h4>Team Digital</h4>
             <ul>
-                <li>Definitions for several Team Digital devices have been updated 
+                <li>Definitions for several Team Digital devices have been updated
                 to indicate that they use Programming-on-the-Main mode even when
                 they are only connected to the LocoNet.  </li>
             </ul>
@@ -458,7 +458,7 @@ are available in our
                 <li>The SignalMast definition and editing code has been refactored to
                     make it much easier to add new types</li>
             </ul>
-            
+
     	<h4>Signal Groups</h4>
             <ul>
                 <li>Fixes a bug which caused the system names of Signal Groups
@@ -478,12 +478,12 @@ are available in our
             The actual range limit is 400 items, unless the <i>Hide unconnected items"</i> box is checked.</li>
             <li>The spinner to set the number of items was renamed <i>Number of Rows</i>.</li>
         </ul>
-   
+
     <h3>Timetable</h3>
         <a id="Timetable" name="Timetable"/>
         <span class="since">since 4.13.4</span>
         <ul>
-            <li>The Timetable tool uses layout and train information to create train graphs.  
+            <li>The Timetable tool uses layout and train information to create train graphs.
 	        See <a href="http://jmri.org/help/en/html/tools/TimeTable.shtml">Timetable Help</a> for details.</li>
            <li>Replace the timetable package layout scale enum with the new standard scale process.</li>
             <li>Implement custom scale support for the new scale process.</li>
@@ -502,8 +502,8 @@ are available in our
         <a id="WA" name="WA"/>
         <ul>
             <li>New Preference to allow wifi throttles to create turnouts</li>
-            <li>Add new Tables menu and pages to JMRI web server</li>	    
-            <li>Most JSON WebSocket lists now send individual and list changes</li>	    
+            <li>Add new Tables menu and pages to JMRI web server</li>
+            <li>Most JSON WebSocket lists now send individual and list changes</li>
         </ul>
 
    <h3>WiThrottle Server</h3>
@@ -512,7 +512,7 @@ are available in our
             <li>New Preference to allow wifi throttles to create turnouts</li>
             <li>Return client message for invalid loco address, turnout and route requests</li>
         </ul>
-        
+
    <h3>Virtual Sound Decoder</h3>
         <a id="VSD" name="VSD"/>
         <ul>
@@ -520,7 +520,7 @@ are available in our
                <a href="http://jmri.org/help/en/manual/DecoderPro/Main_VSD.shtml#advanced_location_following">
                documentation website</a> for details.
             </li>
-            <li>Steam1: acceleration and deceleration rates are now adjustable. 
+            <li>Steam1: acceleration and deceleration rates are now adjustable.
                 Added throttle key functions like Brake key and Coast key (Klaus Killinger).</li>
             <li>Klaus Killinger added an option to set the top speed for reverse direction (engine type "steam1", tag "top-speed-reverse").</li>
         </ul>
@@ -530,15 +530,15 @@ are available in our
         <ul>
             <li><span class="since">since 4.13.4</span>
                 Starting with this release, JMRI will create new profile directories with the
-                suffix ".jmri".  This allows them to be more properly accessed in macOS/iOS 
+                suffix ".jmri".  This allows them to be more properly accessed in macOS/iOS
                 eco-system (we do it on all platforms for people who share profiles between
                 different types of computers). It also allows people to rename their
                 profiles (outside of JMRI, i.e. through their computer's file browser)
-                with a .jmri ending. 
-                For more background, please see 
+                with a .jmri ending.
+                For more background, please see
                 <a  href="https://github.com/JMRI/JMRI/pull/5777">PR 5777</a>.
                 </li>
-            <li>This release contains a significant update to how defaults are 
+            <li>This release contains a significant update to how defaults are
                 handled for the various system components like programming tools, throttle tools, etc.
                 Previously, the "internal" versions of those were often selected as defaults,
                 causing some confusion.  Now, unless you have explicitly created an internal connection

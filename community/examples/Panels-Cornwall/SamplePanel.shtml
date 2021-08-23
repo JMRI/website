@@ -135,7 +135,7 @@ panel.
 You'll need to know the JMRI names for your block sensors.
 You can figure these out from the wiring
 (see the
-<a href="../Technical/Names.html">JMRI naming pages</a> for info)
+<a href="/help/en/html/doc/Technical/Names.shtml">JMRI naming pages</a> for info)
 but it's usually easier to have the program do it if you're connected to
 your layout.
 <ol>
@@ -233,8 +233,6 @@ First, find the turnout number that controls the desired turnout. One way
 to do this:
 <ol>
 <li>Open the Turnout Control tool from the Tools menu on the main window.
-<br>
-<img src="../images/TurnoutControl.jpg" alt="Turnout control frame" width="223" height="136">
 <br>
 You can enter a turnout number, and click the Thrown and Closed buttons to
 see if it works right.
@@ -418,14 +416,12 @@ driving the signals.
 <p>
 The "Simple Signal Logic Tool" can provide logic for the most common
 cases.  It works particularly well for sidings and single-track blocks.
-A detailed example of it is
-<a href="../../Signalling/SimpleSignalExample.html">available on another page</a>.
 <p>
 
 To use this, open the tool from the "Tools" menu.  You should get a
 new window that looks like this:
-<a href="../images/SE8cExampleLogic.gif">
-<img src="../images/SE8cExampleLogic.gif" class="floatRight" WIDTH="345" HEIGHT="225" ALT="Demo screen with two trains"></a>
+<a href="/help/en/images/SE8cExampleLogic.png">
+<img src="/help/en/images/SE8cExampleLogic.png" class="floatRight" WIDTH="345" HEIGHT="225" ALT="Demo screen with two trains"></a>
 <p>
 To define what you want done, you just enter values on this form.
 <ul>
@@ -524,7 +520,7 @@ Below here is not revised yet!
 
 To actually drive the signal aspects from the turnout and occupancy status,
 Java code was written based on JMRI's
-<a href="../Automat.html">automation classes</a>.
+automation classes.
 Each of the 45 signals is driven by its own code snippet.
 Since Nick already had a QBASIC program to use as an example,
 the CrrSection class was created that would let the Java signal logic

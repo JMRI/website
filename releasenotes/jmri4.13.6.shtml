@@ -28,7 +28,7 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.13.6 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
@@ -54,15 +54,15 @@ see our
 <a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>Update From Older JMRI Versions</h3>
-<p>If you are currently using JMRI 4.9.6 or earlier, we strongly recommend that you update to 
+<p>If you are currently using JMRI 4.9.6 or earlier, we strongly recommend that you update to
         <a href="jmri4.12.shtml">JMRI 4.12</a> and make sure that's running OK before
-        updating to this test release.  There have been a number of 
-        changes in serial port support, panel file format and configuration options since those earlier releases, 
+        updating to this test release.  There have been a number of
+        changes in serial port support, panel file format and configuration options since those earlier releases,
         and moving to the stable <a href="jmri4.12.shtml">JMRI 4.12</a> release
         is a good way to work through any possible problems.
         </p>
-<p>If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this), 
-    you <u>must</u> 
+<p>If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+    you <u>must</u>
     update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
     carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
     before updating to this release.
@@ -74,7 +74,7 @@ see our
     <li>None</li>
 </ul>
 <!--
-If any of those affect you, please either 
+If any of those affect you, please either
 wait for
 <a href="jmri4.11.3.shtml">JMRI 4.11.3</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
@@ -97,20 +97,20 @@ These may be relevant to you if you're updating from an earlier version.
 
 <p><span class="since">Since <a href="jmri4.11.8.shtml">JMRI 4.11.8</a></span>
     Some new display capabilities were introduced into Layout Editor
-    during JMRI 4.11-series development.   
-    This release changes some of the defaults in this area, which might 
-    change the appearance of some track segments on your panels if they're 
+    during JMRI 4.11-series development.
+    This release changes some of the defaults in this area, which might
+    change the appearance of some track segments on your panels if they're
     still using default values. If you select them and change their properties,
     then save your panel file(s), you can restore their previous appearance.
-    There's a 
+    There's a
     <a href="../community/LayoutEditorTrackChanges.pdf">PDF document</a>
     with more details.
     We apologize for the inconvenience.
 
 <p><span class="since">Since <a href="jmri4.11.8.shtml">JMRI 4.11.8</a></span>
-    Because of changes to the "node identification" algorithm used to tell 
+    Because of changes to the "node identification" algorithm used to tell
     one computer running JMRI from another, you might receive a warning message
-    about the "Node Identity" the first time you run JMRI version 4.11.8 or newer. (If you 
+    about the "Node Identity" the first time you run JMRI version 4.11.8 or newer. (If you
     have more than one profile, this can happen with each).  There's no permanent
     problem here, but you might have to reset your window preferences (i.e. position
     and size, column layout, etc) in this case.
@@ -119,7 +119,7 @@ These may be relevant to you if you're updating from an earlier version.
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     If you are running a local web site with a copy of the JMRI content, as
     <a href="http://jmri.org/help/en/html/doc/Technical/WebSite.shtml#local">described here</a>,
-    please repeat 
+    please repeat
     <a href="http://jmri.org/help/en/html/doc/Technical/WebSite.shtml#locallink">the "setSymLinks.sh" step</a>
     near the bottom of those instructions
     after installing JMRI 4.11.4 (or later).  This will make some new formatting available
@@ -139,8 +139,8 @@ These may be relevant to you if you're updating from an earlier version.
 
 <p><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
     The system connection preferences (i.e. hardware preferences) are now
-    enforcing the <a href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
-    for system prefixes:  One upper case letter, 
+    enforcing the <a href="/help/en/html/doc/Technical/Names.shtml">correct form</a>
+    for system prefixes:  One upper case letter,
     optionally followed by a number (one or more digits, e.g. "L12").
     Existing prefixes in existing configurations are unchanged, but
     new ones will have to have the correct form.
@@ -151,15 +151,15 @@ These may be relevant to you if you're updating from an earlier version.
     hardware system.
     The reason: This version of JMRI (and all later) provides more options for
     picking the default system when you have more than one set of hardware attached
-    The default is then used for throttles, for programming, etc.  JMRI tries to 
-    guess the right settings for these when you upgrade to this version, but 
+    The default is then used for throttles, for programming, etc.  JMRI tries to
+    guess the right settings for these when you upgrade to this version, but
     apparently it sometimes gets that wrong (we haven't been able to track
     that down yet). Setting them manually fixes any wrong guesses.
-      
+
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
@@ -179,7 +179,7 @@ check the files against the checksums shown below.
    sha256: dfc165645ffc13b2b5f88b2c29a4510ec70204244a5a84b77a0e4425806ae38a</li>
 </ul>
 
-<!-- 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.13.6/">CI project page</a>.
@@ -188,7 +188,7 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
   -->
-  
+
 <h2>Changes since <a href="jmri4.13.5.shtml">Test release 4.13.5</a>:</h2>
 <!-- <h2>Changes since <a href="jmri4.12.shtml">Production release 4.12</a>:</h2> -->
 
@@ -200,7 +200,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
              <li>Minor changes to use the new standard scale process.</li>
         </ul>
-            
+
     <h3>Timetable</h3>
         <a id="Timetable" name="Timetable"/>
         <span class="since">since 4.13.4</span>
@@ -232,7 +232,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
           </ul>
 	<h4>Other Misc</h4>
         <ul>
-            <li>This release contains a significant update to how defaults are 
+            <li>This release contains a significant update to how defaults are
             handled for the various system components like programming tools, throttle tools, etc.
             Previously, the "internal" versions of those were often selected as defaults,
             causing some confusion.  Now, unless you have explicitly created an internal connection
