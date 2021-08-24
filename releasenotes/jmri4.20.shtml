@@ -26,7 +26,7 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 4.20 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
@@ -49,28 +49,28 @@ see our
 If you are currently using a version older than JMRI 4.18, please follow these instructions carefully:
 
 <ol>
-<li>Is your current version older than <a href="jmri4.12.shtml">JMRI 4.12</a>? 
+<li>Is your current version older than <a href="jmri4.12.shtml">JMRI 4.12</a>?
     If so, then update to <a href="jmri4.12.shtml">JMRI 4.12</a> first, and ensure everything works correctly: check
     start-up, check things you need to be working, and check the JMRI log as well.
-    Once all is well, store your configuration and panel files under a new name and use those from now on. 
+    Once all is well, store your configuration and panel files under a new name and use those from now on.
     Continue with step 2.
     <p>
-    If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this), 
-    then it's <u>very important</u> 
+    If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+    then it's <u>very important</u>
     that you update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
     carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
     before updating to any later relese.
     </li>
-    
-<li>Is your current version older than <a href="jmri4.18.shtml">JMRI 4.18</a>? 
+
+<li>Is your current version older than <a href="jmri4.18.shtml">JMRI 4.18</a>?
     Then update to <a href="jmri4.18.shtml">JMRI 4.18</a> first, and ensure that works correctly: check
     start-up, check things you need to be working, and check the JMRI log as well.
-    Once all is well, store your configuration and panel files under a new name and use those from now on. 
+    Once all is well, store your configuration and panel files under a new name and use those from now on.
 
-<li>You can then install this release. 
-</ol>   
- 
-Following this multi-step order of updating via stable major releases safeguards you against possible migration issues 
+<li>You can then install this release.
+</ol>
+
+Following this multi-step order of updating via stable major releases safeguards you against possible migration issues
 that can arise from skipping these versions.
 
 <a id="problems" name="problems"></a>
@@ -80,7 +80,7 @@ that can arise from skipping these versions.
      a bug and has been fixed in 4.21.1.</li>
    </ul>
    <!--
-If any of those affect you, please either 
+If any of those affect you, please either
 wait for
 <a href="jmri4.17.2.shtml">JMRI 4.17.2</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
@@ -108,18 +108,18 @@ from
         the final .dmg file is built, signed and notarized.  This was done to increase
         compatibility with macOS 10.15 Catalina.
         Please drag the JMRI icon to the Applications folder to install this release.
-        For more information on 
+        For more information on
         <a href="https://jmri.org/install/MacOSX.shtml#catalina">Catalina compatibility</a>,
-        see the 
+        see the
         <a href="https://jmri.org/install/MacOSX.shtml#catalina">JMRI web site</a>.
 
 <li><span class="since">Since <a href="jmri4.17.4.shtml">JMRI 4.17.4</a></span>
         Panel file NamedBean items such as Turnouts, Sensors, etc are now written to panel
         files in order by their Manager system prefix and system name.
-        Previously, they had (roughly) been written in the order they'd be 
+        Previously, they had (roughly) been written in the order they'd be
         read from the earlier file(s). This will result in a big change to the order
         the first time a file is re-written, but after that it should be much more stable.</li>
-        
+
 </ul>
 
 <h3>Older warnings</h3>
@@ -141,14 +141,14 @@ These may be relevant to you if you're updating from an earlier version.
 <li><span class="since">Since <a href="jmri4.15.6.shtml">JMRI 4.15.6</a></span>
         Starting in <a href="jmri4.15.6.shtml">JMRI 4.15.6</a>, Memories
         must have valid system names of the form "IM" folllowed by something.
-        "IM123" and "IMEAST" are both valid. 
-        The system name "IM", all by itself, has never been valid, but JMRI 
+        "IM123" and "IMEAST" are both valid.
+        The system name "IM", all by itself, has never been valid, but JMRI
         will now be enforcing that:
         <ul>
             <li>You won't be able to create a memory with that name via
                 the Memory table or scripts
-            <li>If you have that name in a panel file, an error will be 
-                logged and the panel file won't load. You'll have to 
+            <li>If you have that name in a panel file, an error will be
+                logged and the panel file won't load. You'll have to
                 remove it from he file or rename it in the file
                 before loading it.
         </ul>
@@ -166,11 +166,11 @@ These may be relevant to you if you're updating from an earlier version.
             <li>But note you can no longer refer to "ITSOME LOWER CASE NAME" or
                 "ITSome LoWeR cAse Name" and get the same one.
         </ul>
-        This should not require any migration for stored configurations or 
-        panel files, as they have been automatically been being kept consistent 
+        This should not require any migration for stored configurations or
+        panel files, as they have been automatically been being kept consistent
         since JMRI 4.8.  But you might have case errors in i.e. scripts which
         will fixing inconsistent references in your scripts.
-        Of course, bugs are always possible. If you find a place where 
+        Of course, bugs are always possible. If you find a place where
         names seem to be handled inconsistently, please let us know!
 
 <li><span class="since">Since <a href="jmri4.15.4.shtml">JMRI 4.15.4</a></span>
@@ -211,16 +211,16 @@ These may be relevant to you if you're updating from an earlier version.
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
 
 </ul>
-      
+
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
 check the files against the checksums shown below.
- 
+
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.20/JMRI.4.20+Rc7ba8249b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.20/JMRI.4.20+Rc7ba8249b.dmg</a><br/>
@@ -235,13 +235,13 @@ check the files against the checksums shown below.
    sha256: f4019e3fa65801e7732ce99684d9fd8a05ba1bc47a17352e9fc3944bb6e8b68b</li>
 </ul>
 
-<!-- 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.20/">CI project page</a>.
  -->
 
-<!-- 
+<!--
 During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
@@ -251,9 +251,9 @@ These are development files, and might not be working at any particular time.</p
 <h2>Changes since <a href="jmri4.16.shtml">production release 4.18</a>:</h2>
 
 <p>
-This production version is made from test releases 4.19.1 through 4.19.9.  The 
+This production version is made from test releases 4.19.1 through 4.19.9.  The
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2019-07-05">full list of changes</a>
-in those is 
+in those is
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2019-07-05">available from our code repository</a>.
 
 
@@ -346,7 +346,7 @@ in those is
         <h4>SoundTraxx</h4>
             <ul>
                 <li>DSD-100LC steam & diesel add CV59</li>
-                <li>Marc Fournier added 
+                <li>Marc Fournier added
                     the Alco PA-PB and F7A-B to the
                     SoundTraxx SndVal Diesel Walthers Mainline
                     decoder definition.
@@ -357,7 +357,7 @@ in those is
         <a id="CPE" name="CPE"></a>
         <ul>
             <li>The <strong>Palette</strong> and <strong>Circuit Builder</strong>
-             windows make a "best effort" to open at a position minimizing 
+             windows make a "best effort" to open at a position minimizing
              any area that may obscure the panel display.</li>
         <h4>Circuit Builder</h4>
             <a id="CPE-CB" name="CPE-CB"></a>
@@ -371,8 +371,8 @@ in those is
             <a id="CPE-P" name="CPE-P"></a>
             <ul>
             <li>Each tab resizes to display itself with its preferred dimensions.</li>
-            <li>The <strong>Memory</strong> Tab has been modified to display generic 
-             forms of their respective devices.  Dragging is best accomplished by 
+            <li>The <strong>Memory</strong> Tab has been modified to display generic
+             forms of their respective devices.  Dragging is best accomplished by
              mouse down within the <strong>Drag to Panel</strong> box, but outside
              of the device icon itself.</li>
             <li>Bugs in the <strong>Signal Mast</strong> and <strong>Background</strong>
@@ -409,7 +409,7 @@ in those is
         <ul>
 	        <li>George Warner added "Align to grid" options</li>
 	        <li>George Warner added the ability to rotate the Layout Editor display</li>
-            <li>Improved the output when 
+            <li>Improved the output when
                 <a href="https://www.jmri.org/help/en/html/apps/PanelPro/ShowPanel.shtml">displaying the contents of a panel file</a>
                 in a web browser.</li>
             <li>Restore ability to type in new Block name in toolbar panel </li>
@@ -422,7 +422,7 @@ in those is
 	            so that new features can be added more reliably. Please
 	            keep an eye out for any new issues!
 	            <p>
-	            Note that files written by 4.19.6 may not be readable 
+	            Note that files written by 4.19.6 may not be readable
 	            by JMRI 4.19.5 and before.
 	        </li>
             <li>
@@ -432,7 +432,7 @@ in those is
                 <code>jmri.jmrit.display.EditorManager</code> in scripts instead.
             </li>
             <li>
-                George Warner added the ability to assign a block 
+                George Warner added the ability to assign a block
                 to a turntable to represent the track on the turntable bridge.
                 You enter the block from the Edit pane in the turntable's popup menu.</li>
         </ul>
@@ -476,7 +476,7 @@ in those is
    <h3>Panel Editors</h3>
         <a id="PE" name="PE"></a>
         <ul>
-            <li>Improved the output when 
+            <li>Improved the output when
                 <a href="https://www.jmri.org/help/en/html/apps/PanelPro/ShowPanel.shtml">displaying the contents of a panel file</a>
                 in a web browser.</li>
         </ul>
@@ -484,7 +484,7 @@ in those is
     <h3>Resources</h3>
         <a id="Resources" name="Resources"></a>
         <ul>
-            <li>Konrad Malkowski added icons for 
+            <li>Konrad Malkowski added icons for
                 <a href="http://jmri.org/resources/icons/panels/DominoPanel">European domino-style</a>
                 panels.
             <li>Added several missing index pages to the resource
@@ -533,7 +533,7 @@ in those is
                 instance of a manager have been removed. Use
                 <code>InstanceManager.getDefault(NameOfManager.class)</code>
                 instead.</li>
-            <li><a href="https://github.com/JMRI/JMRI/pull/8286">PR 8286</a> revised the way 
+            <li><a href="https://github.com/JMRI/JMRI/pull/8286">PR 8286</a> revised the way
                 that JMRI code should fire and catch events.  If you have code (Java or script)
                 of your own that implements event firing or tricky listening, you
                 should review those changes to see if they will or should affect your code.</li>
@@ -546,18 +546,18 @@ in those is
             </li>
     		<li>If you have a script that uses the AbstractShutDownTask class, you
     			need to rename the "execute()" routine to "run()", and change the
-    			return statement from "return True" to just "return"               
+    			return statement from "return True" to just "return"
             <li>The jython/AC_PowerControl.py,
                     jython/AutoDispatcher2.py,
                     jython/IoT/JMRI_TcpPeripheral.py,
                     jython/ShutDownExample.py, and
-                    jython/TurnoutStatePersistence.py    
+                    jython/TurnoutStatePersistence.py
                     scripts have been updated to handle the change
                     listed just above.  If you have your own version of these
                     scripts, you should either copy the distributed ones
-                    or update your own.          
+                    or update your own.
 		</ul>
-		
+
     <h3>Signals</h3>
         <a id="Signals" name="Signals"></a>
 	    <h4>Cab Signals</h4>
@@ -574,15 +574,15 @@ in those is
                     are validated.  Unfortunately, some files are already inconsistent.
                     Fixed a number of files with invisible appearance definitions
                     by duplicating the appearance file (i.e. adding a -b version with
-                    the different appearances).  Temporarily commented out 
-                    some of the 
+                    the different appearances).  Temporarily commented out
+                    some of the
                     <a href="http://jmri.org/xml/schema/appearancetable.xsd">schema checks</a>
                     until the existing files can be resolved.
                     </li>
-                <li>Bob Milhaupt and Greg McCarthy updated the 
+                <li>Bob Milhaupt and Greg McCarthy updated the
                     B&O semaphore,
                     NW-1981,
-                    SOU-1981 and 
+                    SOU-1981 and
                     WM-1980 signal systems to correct some internal inconsistencies.
                     </li>
                <li>Eckart Meyer updated the DB HV 1969 system to have proper aspect control.</li>
@@ -608,7 +608,7 @@ in those is
                 <li>F to switch to the "Functions" section
                 <li>C to switch to the "Control" section which sets speed
             </ul>
-                This is in addition to left arrow and right arrow, which 
+                This is in addition to left arrow and right arrow, which
                 move from one throttle to the next if you have more than one open.
                 Please note that this act when the key is released.
             </li>
@@ -701,14 +701,14 @@ in those is
         <ul>
             <li>The JMRI Demo shortcut has been removed from Windows installs</li>
             <li>
-                The <code>getBeanByUserName</code> and <code>getBeanBySystemName</code> 
+                The <code>getBeanByUserName</code> and <code>getBeanBySystemName</code>
                 calls in the various <code>Manager</code> classes
                 are no longer needed with Java 8 and have been deprecated for eventual
-                removal.  Their replacements are 
-                <code>getByUserName</code> and <code>getBySystemName</code> 
-                respectively. 
-                If you use <code>getBeanByUserName</code> and <code>getBeanBySystemName</code> 
-                in script or Java code you've written, please 
+                removal.  Their replacements are
+                <code>getByUserName</code> and <code>getBySystemName</code>
+                respectively.
+                If you use <code>getBeanByUserName</code> and <code>getBeanBySystemName</code>
+                in script or Java code you've written, please
                 switch to the new names.
             </li>
             <li>Petr Sidlo added a Pragotron clock, which is digital clock
@@ -730,7 +730,7 @@ in those is
 		    	to be updated.
 			    </li>
 			<li>Daniel Bergqvist provided information on
-			    <a href="http://jmri.org/help/en/html/doc/Technical/githubdesktopinto.shtml">how to use the GitHub Desktop tool</a>
+			    <a href="http://jmri.org/help/en/html/doc/Technical/githubdesktopintro.shtml">how to use the GitHub Desktop tool</a>
 			    for JMRI development.
 			<li>Updated the JDOM library from 2.0.5 to 2.0.6. Removed the unused JDOM 1 support.</li>
             <li>Added a feature which lets you set the height of rows
@@ -739,7 +739,7 @@ in those is
                 so that signal icons can be made fully visible.</li>
             <li>Lots of updates to the organization of the web site so that the sidebars
                 provide better navigation.</li>
-            <li><code>Manager.getSystemNameArray()</code> has been removed after being 
+            <li><code>Manager.getSystemNameArray()</code> has been removed after being
                 deprecated for two years. Please migrate to using
                 <code>Manager.getNamedBeanSet()</code> instead.  If you really
                 must have an array, use <code>Manager.getNamedBeanSet().toArray()</code>;
@@ -754,13 +754,13 @@ in those is
                 should manually add smtp.jar from <a href="https://javaee.github.io/javamail/">JavaMail</a>
                 to the JMRI classpath
                 (see <a href="/help/en/html/doc/Technical/StartUpScripts.shtml">Startup Scripts</a>)
-            <li>Windows Installer updated to support OpenJDK 8 from <a 
+            <li>Windows Installer updated to support OpenJDK 8 from <a
                 href="https://adoptopenjdk.net">AdoptOpenJDK.net</a>.</li>
-            <li>Andrew Crosland fixed some nasty flickering in the Nixie clock and 
+            <li>Andrew Crosland fixed some nasty flickering in the Nixie clock and
             	ammeter frames.</li>
         </ul>
 
-<!-- Older notes above, for merging above -->       
+<!-- Older notes above, for merging above -->
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->

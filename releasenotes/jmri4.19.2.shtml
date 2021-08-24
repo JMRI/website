@@ -28,13 +28,13 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.19.2 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
 <h2>Notes:</h2>
 
-<p>This is a test release.  Please 
+<p>This is a test release.  Please
 <a href="https://groups.io/g/jmriusers">post a note</a>
 if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
@@ -57,30 +57,30 @@ see our
 
 <a id="update" name="update"></a>
 <h3>Update From Older JMRI Versions</h3>
-<p>If you are currently using JMRI 4.11.9 or earlier, we strongly recommend that you update to 
-        <a href="jmri4.12.shtml">JMRI 4.12</a> and make sure that's running without errors 
-        during startup or on the JMRI log.  
-        Once you have JMRI 4.12 running OK, 
+<p>If you are currently using JMRI 4.11.9 or earlier, we strongly recommend that you update to
+        <a href="jmri4.12.shtml">JMRI 4.12</a> and make sure that's running without errors
+        during startup or on the JMRI log.
+        Once you have JMRI 4.12 running OK,
         store your configuration and panel files and use those from then on.
         There have been
-        changes in serial port support, panel file format and configuration options since those earlier releases, 
+        changes in serial port support, panel file format and configuration options since those earlier releases,
         and moving to the stable <a href="jmri4.12.shtml">JMRI 4.12</a> release
         is a good way to work through any possible problems.
         </p>
-<p>If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this), 
-        you <u>must</u> 
+<p>If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+        you <u>must</u>
         update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
         carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
         before updating to this release.
 <p>If you are currently using JMRI 4.17.7 or earlier, including if the previous paragraphs
-        convinced you to update to JMRI 4.12, 
-        we strongly recommend that you update to 
-        <a href="jmri4.18.shtml">JMRI 4.18</a> and make sure that's running without errors 
+        convinced you to update to JMRI 4.12,
+        we strongly recommend that you update to
+        <a href="jmri4.18.shtml">JMRI 4.18</a> and make sure that's running without errors
         during startup or on the JMRI log.
-        Once you have JMRI 4.18 running OK, 
+        Once you have JMRI 4.18 running OK,
         store your configuration and panel files and use those from then on.
         There have been
-        changes panel file format and configuration options since earlier releases, 
+        changes panel file format and configuration options since earlier releases,
         and moving to the stable <a href="jmri4.18.shtml">JMRI 4.18</a> release
         is a good way to work through any possible problems.
         </p>
@@ -92,7 +92,7 @@ see our
     <li>None</li>
 </ul>
 <!--
-If any of those affect you, please either 
+If any of those affect you, please either
 wait for
 <a href="jmri4.11.3.shtml">JMRI 4.11.3</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
@@ -105,7 +105,7 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-   
+
     <li>The system names for Routes are required to start with "IO" to avoid
     	ambiguity or confusion with Reporters (the system names of which start
     	with "IR"). JMRI 4.19.2 or later should automatically rename Routes
@@ -151,21 +151,21 @@ These may be relevant to you if you're updating from an earlier version.
             <li>Raspberry PI using “PI"
             <li>TAMS using “TM”
         </ul>
-        you may have to migrate. Please update to JMRI 4.18 prior 
+        you may have to migrate. Please update to JMRI 4.18 prior
         to installing JMRI 4.19.1 (or later) and check the JMRI Console to
-        see if there are any instructions there. See the 
+        see if there are any instructions there. See the
         <a href="http://jmri.org/help/en/html/setup/MigrateSystemPrefixes.shtml">migration page</a>
         for additional information.
     </li>
 <li><span class="since">Since <a href="jmri4.19.1.shtml">JMRI 4.19.1</a></span>
-        The <code>getBeanByUserName</code> and <code>getBeanBySystemName</code> 
+        The <code>getBeanByUserName</code> and <code>getBeanBySystemName</code>
         calls in the various <code>Manager</code> classes
         are no longer needed with Java 8 and have been deprecated for eventual
-        removal.  Their replacements are 
-        <code>getByUserName</code> and <code>getBySystemName</code> 
-        respectively. 
-        If you use <code>getBeanByUserName</code> and <code>getBeanBySystemName</code> 
-        in script or Java code you've written, please 
+        removal.  Their replacements are
+        <code>getByUserName</code> and <code>getBySystemName</code>
+        respectively.
+        If you use <code>getBeanByUserName</code> and <code>getBeanBySystemName</code>
+        in script or Java code you've written, please
         switch to the new names.
     </li>
 
@@ -185,15 +185,15 @@ These may be relevant to you if you're updating from an earlier version.
         the final .dmg file is built, signed and notarized.  This was done to increase
         compatibility with macOS 10.15 Catalina.
         Please drag the JMRI icon to the Applications folder to install this release.
-        For more information on 
+        For more information on
         <a href="https://jmri.org/install/MacOSX.shtml#catalina">Catalina compatibility</a>,
-        see the 
+        see the
         <a href="https://jmri.org/install/MacOSX.shtml#catalina">JMRI web site</a>.
 
 <li><span class="since">Since <a href="jmri4.17.4.shtml">JMRI 4.17.4</a></span>
         Panel file NamedBean items such as Turnouts, Sensors, etc are now written to panel
         files in order by their Manager system prefix and system name.
-        Previously, they had (roughly) been written in the order they'd be 
+        Previously, they had (roughly) been written in the order they'd be
         read from the earlier file(s). This will result in a big change to the order
         the first time a file is re-written, but after that it should be much more stable.</li>
 
@@ -209,12 +209,12 @@ These may be relevant to you if you're updating from an earlier version.
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
 
-</ul>   
+</ul>
 
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
@@ -234,7 +234,7 @@ check the files against the checksums shown below.
    sha256: c442ab5cb146d8acdcf35dcbe0df0ae93b3e25160c26cc0c0580fa23d3f3556c</li>
 </ul>
 
-<!-- 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.17.8/">CI project page</a>.
@@ -243,10 +243,10 @@ During development leading to the actual release, you can find test download fil
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
  -->
-  
+
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.19.1.shtml">Test Release 4.19.1</a>:</h2>
- 
+
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.2+is%3Amerged">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
@@ -340,7 +340,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.19.2+i
 		    	to be updated.
 			    </li>
 			<li>Daniel Bergqvist provided information on
-			    <a href="http://jmri.org/help/en/html/doc/Technical/githubdesktopinto.shtml">how to use the GitHub Desktop tool</a>
+			    <a href="http://jmri.org/help/en/html/doc/Technical/githubdesktopintro.shtml">how to use the GitHub Desktop tool</a>
 			    for JMRI development.
 			<li>Updated the JDOM library from 2.0.5 to 2.0.6. Removed the unused JDOM 1 support.</li>
         </ul>
