@@ -1,85 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Copyright ($Author: dat7719 $) 2009 -->
-<title>DecoderPro Manual: Getting Started</title>
+  <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.8.0">
+  <!-- Copyright ($Author: dat7719 $) 2009 -->
 
-    <!--#include virtual="/Style.shtml" -->
+  <title>DecoderPro Manual: Getting Started</title><!--#include virtual="/Style.shtml" -->
+  <!-- DecoderPro Styles -->
+
+  <style>
+    .dp-center {text-align: center;}
+    .dp-right {text-align: right;}
+  </style>
 </head>
-
 <body>
-<!--#include virtual="/Header.shtml" -->
+  <!--#include virtual="/Header.shtml" -->
 
-<!--#include virtual="Sidebar.shtml" -->
-<div id="mainContent">
+  <div id="mBody">
+    <!--#include virtual="Sidebar.shtml" -->
 
-<a name="Top"></a>
-<h1><img src="images/Logo.gif" alt="JMRI DecoderPro Logo" width=163 height=117 vspace="15" border=10 class="BOXIT"></h1>
+    <div id="mainContent">
+      <h1 id="Top"><img src="images/Logo.gif" alt="JMRI DecoderPro Logo" width="163" height="117">
+      </h1>
 
-<h1>Getting Started with DecoderPro&reg;</h1>
-<h2>What DCC systems will DecoderPro work with?</h2>
+      <h1>Getting Started with DecoderPro®</h1>
 
-<div align="right">
-<p><a href="Basic_Programming.shtml"> </a><a href="Start_DCC.shtml">Previous</a> <a href="Start_DCC_Hardware.shtml">| Next</a>
-<p><a href="index.shtml#Getting Started">Back to Index</a>
-</div>
+      <h2>What DCC systems will DecoderPro work with?</h2>
 
-<hr>
-<p>
-DecoderPro 2.14 will work with the following DCC systems:
-<ul>
-<li>Atlas</li>
-<li>Bachrus</li>
-<li>C/MRI</li>
-<li>CTI Electronics Acela</li>
-<li>CVP Products Easy DCC</li>
-<li>DCC Specialties</li>
-<li>Digitrax (Loconet)
-  <ul>
-    <li>Digitrax PR3 interface</li>
-    <li>RR-CirKits LocoBuffer-USB</li>
-    <li>LocoBuffer-II (LocoBuffer)</li>
-  </ul>
-</li>
-<li>ESU</li>
-<li>Fleischmann</li>
-<li>Hornby</li>
-<li>Lenz</li>
-<li>Lionel TMCC</li>
-<li>Maple Systems</li>
-<li>MERG CBUS</li>
-<li>NCE</li>
-<li>Oak Tree Systems</li>
-<li>Open LGB</li>
-<li>Pro Trak Grapevine</li>
-<li>QSI Solutions</li>
-<li>PI Engineering RailDriver</li>
-<li>Roco</li>
-<li>RPS</li>
-<li>SPROG </li>
-<li>SRCP</li>
-<li>Uhlenbrock</li>
-<li>Viessmann</li>
-<li>Wangrow</li>
-<li>X10</li>
-<li>Zimo</li>
-<li>ZTC Controls</li>
-</ul>
+      <div class="dp-right">
+        <p><a href="Basic_Programming.shtml"></a><a href="Start_DCC.shtml">Previous</a> <a href=
+        "Start_DCC_Hardware.shtml">| Next</a></p>
 
-<p>
-Depending on the specifics of your system and computer, some type of hardware
-interface may be required.
+        <p><a href="index.shtml#GettingStarted">Back to Index</a>
+        </p>
+      </div>
 
-  <br>
-<a href="http://jmri.org/help/en/html/hardware/index.shtml" target="_blank">JMRI Hardware Support</a>
-<hr>
-<div align=right>
-<p><a href="Start_DCC.shtml">Previous</a> <a href="Start_DCC_Hardware.shtml">| Next</a>
-<p><a href="index.shtml#Getting Started">Back to Index</a> </div>
+      <hr>
 
-<!--#include virtual="/Footer.shtml" -->
+      <p>DecoderPro 2.14 will work with the following DCC systems:</p>
 
-      </div><!-- closes #mainContent-->
-    </div> <!-- closes #mBody-->
-    </body>
+      <ul>
+        <li>Atlas</li>
+
+        <li>Bachrus</li>
+
+        <li>C/MRI</li>
+
+        <li>CTI Electronics Acela</li>
+
+        <li>CVP Products Easy DCC</li>
+
+        <li>DCC Specialties</li>
+
+        <li>Digitrax (Loconet)
+          <ul>
+            <li>Digitrax PR3 interface</li>
+
+            <li>RR-CirKits LocoBuffer-USB</li>
+
+            <li>LocoBuffer-II (LocoBuffer)</li>
+          </ul>
+        </li>
+
+        <li>ESU</li>
+
+        <li>Fleischmann</li>
+
+        <li>Hornby</li>
+
+        <li>Lenz</li>
+
+        <li>Lionel TMCC</li>
+
+        <li>Maple Systems</li>
+
+        <li>MERG CBUS</li>
+
+        <li>NCE</li>
+
+        <li>Oak Tree Systems</li>
+
+        <li>Open LGB</li>
+
+        <li>Pro Trak Grapevine</li>
+
+        <li>QSI Solutions</li>
+
+        <li>PI Engineering RailDriver</li>
+
+        <li>Roco</li>
+
+        <li>RPS</li>
+
+        <li>SPROG</li>
+
+        <li>SRCP</li>
+
+        <li>Uhlenbrock</li>
+
+        <li>Viessmann</li>
+
+        <li>Wangrow</li>
+
+        <li>X10</li>
+
+        <li>Zimo</li>
+
+        <li>ZTC Controls</li>
+      </ul>
+
+      <p>Depending on the specifics of your system and computer, some type of hardware interface
+      may be required.<br>
+      <a href="http://jmri.org/help/en/html/hardware/index.shtml" target="_blank">JMRI Hardware
+      Support</a></p>
+
+      <hr>
+
+      <div class="dp-right">
+        <p><a href="Start_DCC.shtml">Previous</a> <a href="Start_DCC_Hardware.shtml">| Next</a></p>
+
+        <p><a href="index.shtml#GettingStarted">Back to Index</a>
+        </p>
+      </div>
+      <!--#include virtual="/Footer.shtml" -->
+    </div>
+    <!-- closes #mainContent-->
+  </div>
+  <!-- closes #mBody-->
+</body>
 </html>

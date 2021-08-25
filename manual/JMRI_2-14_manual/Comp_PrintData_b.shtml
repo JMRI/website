@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Copyright ($Author: zoo $) 2009, 2010 -->
-<!-- $Id: Comp_PrintData_b.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<title>
-DecoderPro&reg; Comprehensive Programmer
-</title>
+  <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.8.0">
+  <!-- Copyright ($Author: zoo $) 2009, 2010 -->
+  <!-- $Id: Comp_PrintData_b.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
 
-    <!--#include virtual="/Style.shtml" -->
+  <title>DecoderPro® Comprehensive Programmer</title><!--#include virtual="/Style.shtml" -->
+  <!-- DecoderPro Styles -->
+
+  <style>
+    .dp-center {text-align: center;}
+    .dp-right {text-align: right;}
+    .dp-lower-alpha {list-style-type: lower-alpha;}
+  </style>
 </head>
-
 <body>
-<!--#include virtual="/Header.shtml" -->
+  <!--#include virtual="/Header.shtml" -->
 
-<!--#include virtual="Sidebar.shtml" -->
-<div id="mainContent">
+  <div id="mBody">
+    <!--#include virtual="Sidebar.shtml" -->
 
-<h1><a name="Top">Print Preview 2</a></h1>
+    <div id="mainContent">
+      <h1 id="Top">Print Preview 2</h1>
 
-<p><img src="images/Comp_09b_PrintData.png" alt="Comprehensive Programmer - Advanced Features" height="494" width="382" hspace="20"></p>
+      <p><img src="images/Comp_09b_PrintData.png" alt=
+      "Comprehensive Programmer - Advanced Features" height="494" width="382">
+      </p>
 
-<div align="right">
-<p><a href="Comp_PrintData.shtml#Print">Back</a>
-</div>
-
-<!--#include virtual="/Footer.shtml" -->
-
-      </div><!-- closes #mainContent-->
-    </div> <!-- closes #mBody-->
-    </body>
+      <div class="dp-right">
+        <p><a href="Comp_PrintData.shtml#Print">Back</a>
+        </p>
+      </div>
+      <!--#include virtual="/Footer.shtml" -->
+    </div>
+    <!-- closes #mainContent-->
+  </div>
+  <!-- closes #mBody-->
+</body>
 </html>
