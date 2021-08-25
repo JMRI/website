@@ -13,6 +13,7 @@ DecoderPro&reg; Main Window
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -34,13 +35,13 @@ DecoderPro&reg; Main Window
 <p><img src="images/Main_PRICOM_02.png" alt="Pocket Tester Connection" width="430" height="209" border="4"></p>
 <p>The middle pane shows options to select the packets that you wish to view.</p>
 <p>
-  <input name="radio" type="radio" id="radio" value="radio" checked> 
+  <input name="radio" type="radio" id="radio" value="radio" checked>
   <strong>Show All</strong></p>
 <p>
-  <input type="radio" name="radio2" id="radio2" value="radio2"> 
+  <input type="radio" name="radio2" id="radio2" value="radio2">
   <strong>Only Show Accessory Decoder Packets</strong></p>
 <p>
-  <input type="radio" name="radio3" id="radio3" value="radio3"> 
+  <input type="radio" name="radio3" id="radio3" value="radio3">
   <strong>Only Show Mobile Decoder Packets</strong></p>
 <p><strong>Init </strong>button initializes the tester..</p>
 <p><strong>Get Version</strong> button queries the tester for its version information.</p>

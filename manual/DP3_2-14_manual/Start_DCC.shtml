@@ -11,6 +11,7 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -46,7 +47,7 @@ system by providing a clear, usable, user friendly <span class="ACCENT">open
 source</span> software solution for programming these on-board decoders.
 Programming panel designs are written in <b>XML</b>, (a close relative
 of HTML) and can be modified or even created from scratch by users with
-even a passing familiarity with the format without previous XML experience. 
+even a passing familiarity with the format without previous XML experience.
 <hr>
 
 <div align="right">

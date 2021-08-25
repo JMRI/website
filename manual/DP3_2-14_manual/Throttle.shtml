@@ -11,6 +11,7 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -53,7 +54,7 @@
       <li><strong>Load Throttle</strong>
         <p>Opens the Open dialog to allow you to select the desired Throttle XML file</p>
       </li>
-      
+
       <li><strong>Save Current Throttle</strong></li>
     </ul>
     <blockquote>
@@ -85,23 +86,23 @@
   </blockquote>
   <li>
     <h4><strong>View
-  --</strong></h4>  
-   
+  --</strong></h4>
+
       <p>Allows you to select which of the three       panels of the throttle are being shown. Place a check mark in each of the panels that your want to display. </p>
-   
+
     <ul>
       <li>
-        <input name="checkbox" type="checkbox" id="checkbox" checked>      
+        <input name="checkbox" type="checkbox" id="checkbox" checked>
         <strong>Address Panel</strong></li>
-      
+
       <li>
         <strong>
-        <input name="checkbox2" type="checkbox" id="checkbox2" checked> 
+        <input name="checkbox2" type="checkbox" id="checkbox2" checked>
         Control Panel
         </strong></li>
       <li>
         <strong>
-        <input name="checkbox3" type="checkbox" id="checkbox3" checked> 
+        <input name="checkbox3" type="checkbox" id="checkbox3" checked>
         Function Panel</strong></li>
     </ul>
     <blockquote>
@@ -118,9 +119,9 @@
       <li><strong>Reset All Function Buttons</strong></li>
     </ul>
     <blockquote>
-      <p>Resets all the Function buttons to the default settings, 
+      <p>Resets all the Function buttons to the default settings,
         <input type="button" name="button14" id="button14" value="F1">
-      , 
+      ,
       <input type="button" name="button15" id="button15" value="F2">
       , etc.</p>
     </blockquote>
@@ -183,7 +184,7 @@
   <li><img src="images/Main_Throttle_toolbar_power.png" width="45" height="48" alt="power"> Controls track power on or off, if supported.</li>
   <li><img src="images/Main_Throttle_toolbar_edit.png" width="50" height="49" alt="edit">Switch to or revert from Edit Throttle mode.</li>
   <li><img src="images/Main_Throttle_toolbar_list.png" width="48" height="51" alt="listr"> Opens the <a href="#List">Local JMRI Window</a></li>
- 
+
 </ul>
 <div>
   <div align="right"><a href="#Top">Top</a></div>
@@ -317,7 +318,7 @@ through 0%</h4></td>
       <input type="button" name="button3" id="button3" value="OK">
     Sets the selections</p>
     <p>
-      <input type="button" name="button4" id="button4" value="Cancel"> 
+      <input type="button" name="button4" id="button4" value="Cancel">
       Cancels any settings
     </p></td>
   </tr>
@@ -344,10 +345,10 @@ through 0%</h4></td>
 <p><strong>Text:</strong> the text you want displayed on the button.</p>
     <p><strong>Font Size:</strong> Select the font size in points.</p>
     <p>
-  <input name="checkbox4" type="checkbox" id="checkbox4" checked> 
+  <input name="checkbox4" type="checkbox" id="checkbox4" checked>
   <strong>Lockable</strong> - locks the function when button is clicked. eg makes the button a push  on / push off button.</p>
 <p>
-  <input name="checkbox5" type="checkbox" id="checkbox5" checked> 
+  <input name="checkbox5" type="checkbox" id="checkbox5" checked>
 <strong>Visible</strong> - makes the button visible.  When unchecked the button will not show in the panel. To restore use the <strong>View</strong> menu and select <strong>Show All Function Buttons</strong> option.</p>
 <p><strong>Function off icon</strong>:</p>
 <p>

@@ -11,6 +11,7 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -106,7 +107,7 @@
   </li>
   <ul>
     <li><strong>Hide/Show Summary Pane</strong><br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toggles the decoder information on/off, Part 4 of the main window 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Toggles the decoder information on/off, Part 4 of the main window
     <blockquote>
       <p>Show decoder summary pane<br>
         <img src="images/dp3_info_show.png" width="400" height="303" alt="show"></p>
@@ -114,7 +115,7 @@
       </p>
     </blockquote>
     </li>
-  
+
     <li><strong>Reset Window Sizes</strong><br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not available yet</li>
     <li><strong>Reset Column <u>W</u>idths</strong></li>
@@ -127,7 +128,7 @@
         <img src="images/dp3_noImage.png" width="388" height="243" alt="no image">      </p>
     </blockquote>
     </li>
-  
+
     <li><strong><a href="dp3_settings_rosterGroups.html">Hide/Show Roster Groups</a></strong><br>
       <img src="images/separator.png" width="340" height="4" alt="s"></li>
     <li>Programming <img src="images/arrow.gif" width="20" height="9"><br>
@@ -177,7 +178,7 @@
     </li>
     <li>Load Default Throttle Layout
       <blockquote>
-        <p>Opens the 
+        <p>Opens the
         default throttle that is set in preferences</p>
       </blockquote>
     </li>

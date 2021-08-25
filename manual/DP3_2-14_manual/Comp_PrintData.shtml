@@ -14,6 +14,7 @@ DecoderPro&reg; Comprehensive Programmer
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -31,13 +32,13 @@ DecoderPro&reg; Comprehensive Programmer
 
 <p><img src="images/Comp_09d_PrintData.png" width="254" height="459" alt="print items"><br>
   Select each or all of the decoder items that you want to print</p>
-<p>Click 
-  <input type="button" name="button" id="button" value="Okay"> 
+<p>Click
+  <input type="button" name="button" id="button" value="Okay">
   to print then Print dialog for your computer system is displayed.
 </p>
 <li><strong>Print CVs..., Preview CVs...</strong> Displays <strong>Select Items to Print</strong> Dialog box or
 Preview screen </li>
-</ul> 
+</ul>
 <p>These printouts show the variables by name in each category that is selectected.(as shown on the DecoderPro panes)  along with their CV number and Value. A  handy reference for the future.
 <p>Print preview will look like it's  about to print the list, and ask  for which printer to use. Don't  panic!, that's only to get the preview to work. Go ahead and select the  printer and you'll only get the preview.
 <p><strong>Import Data: </strong>You may import the list from another computer in the PR1  file format. Thus, the  Export and Import capability allows you to take the data from one  computer system to another.

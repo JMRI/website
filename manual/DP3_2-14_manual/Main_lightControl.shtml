@@ -11,6 +11,7 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -41,10 +42,10 @@
   <input type="checkbox" name="checkbox" id="checkbox">
   <strong> Enabled:</strong> The light will respond to its automatic control type.</p>
 <p>
-  <input type="checkbox" name="checkbox2" id="checkbox2"> 
+  <input type="checkbox" name="checkbox2" id="checkbox2">
   <strong>Variable:</strong> Light may be commanded to values between 0% and 100%.</p>
 <p>
-  <input type="checkbox" name="checkbox3" id="checkbox3"> 
+  <input type="checkbox" name="checkbox3" id="checkbox3">
   <strong>Transitional:</strong> Changes the intensity will use the transition time to step between current and target intensity.</p>
 <p><strong>On </strong>button turns on the light.</p>
 <p><strong>Off</strong> button turns off the light.</p>

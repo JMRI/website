@@ -13,6 +13,7 @@ DecoderPro&reg; Main Window
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -27,8 +28,8 @@ DecoderPro&reg; Main Window
 <p><strong>Command Monitor</strong></p>
 <p>Opens the <a href="Main_Monitor_Window.shtml">Communications  Monitor Window</a> and automatically displays the information that is being sent and  received on the communications link between your computer and your DCC  system.</p>
 <p><strong>Send Command</strong></p>
-<p>Opens the <strong>Send QSI command</strong> prompt to type in a <strong>Command:</strong> and click on 
-  <input type="submit" name="button" id="button" value="Send"> 
+<p>Opens the <strong>Send QSI command</strong> prompt to type in a <strong>Command:</strong> and click on
+  <input type="submit" name="button" id="button" value="Send">
   .
 </p>
 <p><img src="images/Main_QSI_01.png" alt="Send Command" width="226" height="99"></p>

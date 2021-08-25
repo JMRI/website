@@ -11,6 +11,7 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -46,9 +47,9 @@
 <p>Opens the Configure Command Station window</p>
 <p><strong>Configure LocoNet ID</strong></p>
 <p>Opens the <strong>Configure LocoNet ID</strong> dialog that allows you to
-<input type="submit" name="button5" id="button5" value="Read"> 
-  or 
-  <input type="submit" name="button6" id="button6" value="Set"> 
+<input type="submit" name="button5" id="button5" value="Read">
+  or
+  <input type="submit" name="button6" id="button6" value="Set">
   the LocoNet ID <strong>Value:</strong></p>
 <p><img src="images/Main_Loconet08.png" width="245" height="145" alt="loconet if"></p>
 <p><img src="images/separator.png" alt="sep" width="340" height="4"></p>
@@ -85,13 +86,13 @@
 <p align="center"><img src="images/Main_Loconet01.png" width="800" height="274" alt="slot monitor"></p>
 <p>The checkboxes at the top allow to select what slots are displayed.</p>
 <p>
-  <input type="checkbox" name="checkbox" id="checkbox"> 
+  <input type="checkbox" name="checkbox" id="checkbox">
   <strong>Show unused slots</strong></p>
 <p>
-  <input type="checkbox" name="checkbox2" id="checkbox2"> 
+  <input type="checkbox" name="checkbox2" id="checkbox2">
   <strong>Show system slots</strong></p>
 <p><strong>
-  <input type="submit" name="button" id="button" value="estop all"> 
+  <input type="submit" name="button" id="button" value="estop all">
   </strong>Executes an <strong>Emergency Stop </strong>for all locomotives.</p>
 <p>The columns are:</p>
 <table width="90%" border="1" align="center" cellpadding="1" cellspacing="1">
@@ -192,11 +193,11 @@
 </div>
 <h4><a name="DS64Programmer"></a>Configure DS64  Window</h4>
 <p>The DS64 programming tool lets you configure   the internal options of a DS64 directly from your computer. </p>
-<p>Type  the address of a DS64 board in the text field  and click 
+<p>Type  the address of a DS64 board in the text field  and click
   <input type="submit" name="button3" id="button3" value="Read from DS64">
 .  The tool will read back the current  state of the various options, and set the check boxes to correspond to   their current values. </p>
-<p> You can then, if you wish, change the checkboxes and click 
-  <input type="submit" name="button4" id="button4" value="Write to DS64">   
+<p> You can then, if you wish, change the checkboxes and click
+  <input type="submit" name="button4" id="button4" value="Write to DS64">
 to make your changes permanent. </p>
 <h4>Limitations</h4>
 Because of the way the DS64 board works, this tool can't change  the basic address of the unit.
@@ -208,11 +209,11 @@ Because of the way the DS64 board works, this tool can't change  the basic addre
 <h4><a name="SendPacket"></a>Send LocoNet Packet dialog</h4>
 <p><img src="images/Main_Loconet11.png" alt="Send packet" width="468" height="311" border="4"></p>
 <p>LocoNet packets are sent in raw hexadecimal format, you may use the <a href="Main_Monitor_Window.shtml">Monitor Window</a> in the <strong>Show Raw Data</strong> option to monitor the packets.</p>
-<p>The top section lets you send a single LocoNet packet. Type the hexidecimal numbers and click 
-  <input type="submit" name="button7" id="button7" value="Send"> 
+<p>The top section lets you send a single LocoNet packet. Type the hexidecimal numbers and click
+  <input type="submit" name="button7" id="button7" value="Send">
 , you should include the byte for the  checksum at the end of the message.</p>
-<p>The bottom section lets you enter from one to four packets that will be repeatedly sent in sequence, with the user-defined delays in between. Press the 
-  <input type="submit" name="button8" id="button8" value="Go"> 
+<p>The bottom section lets you enter from one to four packets that will be repeatedly sent in sequence, with the user-defined delays in between. Press the
+  <input type="submit" name="button8" id="button8" value="Go">
   to start transmission sequence, and press again to stop the sequence.
 </p>
 <div>
@@ -223,16 +224,16 @@ Because of the way the DS64 board works, this tool can't change  the basic addre
 <p><img src="images/Main_Loconet12.png" alt="firmware downloader" width="425" height="473"></p>
 <p>To use this tool:</p>
 <ul>
-  <li>Click 
-    <input type="submit" name="button9" id="button9" value="Select"> 
+  <li>Click
+    <input type="submit" name="button9" id="button9" value="Select">
     and select the .dmf file you want to download.<br>
     <br>
 </li>
-  <li>Click 
+  <li>Click
     <input type="submit" name="button10" id="button10" value="Read file">
   to read the file into the program and verify its contents.</li>
   <li>Only if instructed to by Digitrax, change the various values in the control fields (this is usually not needed</li>
-  <li>Click 
+  <li>Click
     <input type="submit" name="button11" id="button11" value="Download">
     to load the firmware. This will take a little while.</li>
 </ul>
@@ -240,7 +241,7 @@ Because of the way the DS64 board works, this tool can't change  the basic addre
 <h4><a name="SoundDownloader"></a>Download Sounds</h4>
 <p><img src="images/Main_Loconet13.png" alt="Sound Download" width="436" height="232"></p>
 <p>Digitrax sound decoders are loaded with "sound projects", stored in  "Sound Project" (.spj) files.  Those contain a number of "sound fragments"  in .wav format, plus some additional control information. </p>
-<p> The Decoder Sound Downloader tool lets you load a new .spj file into   a Digitrax sound decoder via a Digitrax PR2 or PR3 interface. If you're   using a PR3, it needs to be put into "Programmer mode" before   trying to download, see the main 
+<p> The Decoder Sound Downloader tool lets you load a new .spj file into   a Digitrax sound decoder via a Digitrax PR2 or PR3 interface. If you're   using a PR3, it needs to be put into "Programmer mode" before   trying to download, see the main
 <a href="../help/en/html/hardware/loconet/PR3.shtml">PR3 page</a>. </p>
 <p> Digitrax provides sample sound project files at their Sound Depot <a href="http://www.digitrax.com/sounddepot.php">(http://www.digitrax.com/sounddepot.php)</a> web site. You can also find links to documentation and additional tools there. </p>
 <p> JMRI also provides tools for <a href="../package/jmri/jmrix/loconet/soundloader/EditorFrame.shtml">editing sound project files</a> to include new sounds and even to <a href="../package/jmri/jmrix/loconet/sdfeditor/EditorFrame.shtml">change the sound logic</a>. When you first select the Download Sounds tool, it opens a dialog  with most of the controls disabled:<br>

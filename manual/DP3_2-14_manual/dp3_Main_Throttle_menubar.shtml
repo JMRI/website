@@ -11,6 +11,7 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -66,14 +67,14 @@
 </blockquote>
 <ul>
   <li>
-    <input name="checkbox" type="checkbox" id="checkbox" checked>      
+    <input name="checkbox" type="checkbox" id="checkbox" checked>
     <strong>Address Panel</strong></li>
   <li><strong>
-    <input name="checkbox2" type="checkbox" id="checkbox2" checked> 
+    <input name="checkbox2" type="checkbox" id="checkbox2" checked>
     Control Panel
   </strong></li>
   <li><strong>
-    <input name="checkbox3" type="checkbox" id="checkbox3" checked> 
+    <input name="checkbox3" type="checkbox" id="checkbox3" checked>
     Function Panel</strong><br>
     <img src="images/separator.png" width="340" height="4" alt="separator">      </li>
   <blockquote>
@@ -88,9 +89,9 @@
   </blockquote>
   <li><strong>Reset All Function Buttons</strong></li>
   <blockquote>
-    <p>Resets all the Function buttons to the default settings, 
+    <p>Resets all the Function buttons to the default settings,
       <input type="button" name="button14" id="button14" value="F1">
-      , 
+      ,
       <input type="button" name="button15" id="button15" value="F2">
     , etc.</p>
   </blockquote>

@@ -11,6 +11,7 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -51,7 +52,7 @@ so it will start moving when you advance your DCC throttle.
 <p>
 <b>Vhigh(Top Voltage, Max Voltage, Maximum Voltage)</b> is the maximum amount of power the locomotive will
 get from the decoder. If your locomotive looks like Chuck Yeager's X-1
-at full throttle, then you can trim the top speed down to a more reasonable scale 
+at full throttle, then you can trim the top speed down to a more reasonable scale
 level.
 A similar looking limit can be set on the Roster  Entry screen, but it only apples to JMRI Throttles.
 <p>
@@ -67,7 +68,7 @@ DecoderPro will not let you make this mistake.
 <p><b>Forward Trim</b> and <b>Reverse
     Trim</b> allow you to compensate for differences in the forward speed and reverse speed of the locomotive.
 Most model locomotives do not run at exactly the
-same speed forward and backward due to the motor mechanics and the gear train to the wheels. 
+same speed forward and backward due to the motor mechanics and the gear train to the wheels.
 <p>The settings for these controls  are not as intuitive as you might think. A setting of 0 in these CVs turns them off.
 However, a setting of 128 in either of them will have no visible effect!  To make the forward and reverse trim effective,
 raise the value above 128 to  increase speed, and lower it below 128 to decrease speed in this pane. The Forward and

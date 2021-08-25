@@ -13,6 +13,7 @@ DecoderPro&reg; Main Window
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -27,10 +28,10 @@ DecoderPro&reg; Main Window
 <p><strong>Communications Monitor</strong></p>
 <p>Opens the <a href="Main_Monitor_Window.shtml">Communications  Monitor Window</a> and automatically displays the information that is being sent and  received on the communications link between your computer and your DCC  system.</p>
 <p><strong>Send Command</strong></p>
-<p>Opens the Send Oak Tree serial command prompt, which will allow you to type in a <strong>Command: </strong>then click on 
-  <input type="submit" name="button" id="button" value="Send"> 
-  . You may also type in an <strong>Address: </strong>and poll the system by clicking on the 
-  <input type="submit" name="button2" id="button2" value="Send poll"> 
+<p>Opens the Send Oak Tree serial command prompt, which will allow you to type in a <strong>Command: </strong>then click on
+  <input type="submit" name="button" id="button" value="Send">
+  . You may also type in an <strong>Address: </strong>and poll the system by clicking on the
+  <input type="submit" name="button2" id="button2" value="Send poll">
   .
 </p>
 <p><img src="images/Main_OakTree01.png" alt="Send Command Oak Tree" width="303" height="133"></p>

@@ -11,6 +11,7 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -30,7 +31,7 @@
   of DecoderPro3&reg; has programmed. All of this information will be contained in the list on the DecoderPro3 main page. It includes the information seen in the screen
 below:</p>
 <div align="center"><img src="images/Basic_Roster.png" width="638" height="557" alt="basic roster"></div>
-<p>Most of these fields are self-explanatory.  However, note that the first field (<strong>ID</strong>) becomes the 
+<p>Most of these fields are self-explanatory.  However, note that the first field (<strong>ID</strong>) becomes the
 file name in the Roster for the locomotive you are programming. Set up a  schema to identify your locomotive to its decoder program. i.e. Mfr, Loco Type, and Address (Kato_SD40-2_5645). Spaces in the ID field will be  changed to underscores (_) when the file is written. In a club environment, often the ID begins  with the owner's name, or  member number. This way the Roster (which is sorted alphabetically) will keep  all of an owner's locomotives listed together. This is not as necessary with DecoderPro3 as it is in the classic DecoderPro&reg;, because it is now possible to sort the information on  the opening screen using any of the columns by clicking on the column  heading. DecoderPro3 also allows you to categorize roster  entries into Groups, so you could have a separate group for each member. </p>
 <p>We'll get to Groups and all the other neat  stuff that can be done with DecoderPro3 in a while.  I
 just thought I'd give you peek behind the curtain, and give you a  chance to mentally thank the JMRI developers
@@ -38,14 +39,14 @@ for all their work on DecoderPro3. Of course a message to that effect posted to 
 be warmly received.<br>
 
 The DCC address will be filled in automatically when  we get to programming the address. The  Decoder Family and Model are entered automatically from the Selection page we  just used to get here.</p>
-<p> The <strong>Decoder</strong> <strong>Comment</strong> field is a good place 
-  to add the date you purchased the locomotive, price, or  any other information you might 
+<p> The <strong>Decoder</strong> <strong>Comment</strong> field is a good place
+  to add the date you purchased the locomotive, price, or  any other information you might
 feel is important to record. </p>
 
-<p>The 
+<p>The
   <input type="submit" name="Save to Roster" id="Save to Roster" value="Save to Roster">
 button stores the  current decoder information to  your computer hard drive and folder where your roster file is located. The default storage is the same directory where the program is  installed. </p>
-<p>The 
+<p>The
   <input type="submit" name="button" id="button" value="Reset to Defaults">
 button can be used to return the Roster file to the condition of a new file for  the type and version of the decoder listed in the roster entry. It does NOT change the values in the roster  file on your hard disk, unless you specifically save it after using this reset  button. It also is not written to the decoder until you specifically select a  write operation. It was included in  DecoderPro so that if you get hopelessly confused in proceeding screen to  screen entering variables, you can return to the decoder manufacturers baseline default  set and start again. </p>
 <p><br>
@@ -60,11 +61,11 @@ button can be used to return the Roster file to the condition of a new file for 
 <div align="center"><img src="images/SetProgramMode.png" width="653" height="218" alt="set program mode"></div>
 <p>There are options for several <a href="Basic_Mode.shtml"><strong>programming modes</strong></a>. JMRI now selects the best mode for you.  It determines this from the command station type you are using and the decoder model you are attempting to program.  Usually this will be OK. If you find that you are having a problem with programming you may try a different mode.</p>
 
-<p>For most newer decoders, 
-stay with <strong>Paged mode</strong> or whichever Direct mode  your Command Station supports. Your 
-decoder documentation should let you know if programming  in some other mode is 
-necessary... but if you are having problems, experiment.  If a mode is not supported for the selected decoder and system, that option will be grayed out. 
-<p>When you make your selection, the programming mode should now display to the left of the 
+<p>For most newer decoders,
+stay with <strong>Paged mode</strong> or whichever Direct mode  your Command Station supports. Your
+decoder documentation should let you know if programming  in some other mode is
+necessary... but if you are having problems, experiment.  If a mode is not supported for the selected decoder and system, that option will be grayed out.
+<p>When you make your selection, the programming mode should now display to the left of the
   in the dropdown box.</p>
 <p>Below is a Basic Programming Roster setup for Burlington Zepher n scale with Digitrax DN143IP decoder.</p>
 <p><img src="images/Basic_Roster01.png" width="636" height="556" alt="Roster"></p>

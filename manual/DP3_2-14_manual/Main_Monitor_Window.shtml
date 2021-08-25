@@ -13,6 +13,7 @@ DecoderPro&reg; Main Window
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -35,7 +36,7 @@ DecoderPro&reg; Main Window
 <p align="left"><strong>Clear screen </strong>button&#8212; Erases the log area of the screen where the messages are displayed.</p>
 <p align="left"><strong>Freeze screen</strong> button&#8212;Stops acquiring new information, so that the captured information stops scrolling.</p>
 <p align="left">
-  <input type="checkbox" name="checkbox" id="checkbox"> 
+  <input type="checkbox" name="checkbox" id="checkbox">
   <strong>Show raw data</strong>&#8212;Normally, the monitor displays the program's interpretation of what it's seeing. If you want to see the raw bytes, check this box.</p>
 <p align="left">
   <input type="checkbox" name="checkbox2" id="checkbox2">

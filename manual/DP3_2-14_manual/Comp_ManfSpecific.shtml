@@ -10,6 +10,7 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -34,7 +35,7 @@ This pane will be manufacturer dependent and decoder family dependent<h1><img sr
 <p>These items will, by definition, vary greatly between manufacturers.
   Once again, your best resource is the documentation for the specific decoder
   you are programming and this pane in the programmer for that decoder.
-  
+
 
 <hr>
 <div align="right">

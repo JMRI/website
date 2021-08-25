@@ -13,6 +13,7 @@ DecoderPro&reg; Main Window
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -50,7 +51,7 @@ DecoderPro&reg; Main Window
   <tr>
     <td valign="top"><img src="images/btn_throttle_labels.png" width="201" height="30" alt="labels"></td>
     <td valign="top"><p>Opens the Labels &amp; Media Window for the selected roster member.</p>
-    <p><strong> <a href="Adv_FunctionLabel.shtml">Functions labels</a></strong> TAB opens the Function labels pane which allows you to label throttle function buttons</p>    
+    <p><strong> <a href="Adv_FunctionLabel.shtml">Functions labels</a></strong> TAB opens the Function labels pane which allows you to label throttle function buttons</p>
     <strong><a href="RosterMedia.shtml">Roster Media</a></strong> TAB opens the Roster Media pane which allows you to assign an image to the roster entry</td>
   </tr>
   <tr>

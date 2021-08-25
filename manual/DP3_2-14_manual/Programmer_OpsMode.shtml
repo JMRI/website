@@ -11,6 +11,7 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
+  <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
@@ -25,13 +26,13 @@
 </div>
 
 <hr>
-<p><b>Operations Mode (Main Track) Programmer</b> - 
-    or  <strong>Programming on the main(POM)</strong>. Opens the <strong>Operations Mode (Main Track)</strong> windowThis  lets you program a specific decoder on the layout, even while it is 
+<p><b>Operations Mode (Main Track) Programmer</b> -
+    or  <strong>Programming on the main(POM)</strong>. Opens the <strong>Operations Mode (Main Track)</strong> windowThis  lets you program a specific decoder on the layout, even while it is
 operating. However, because it addresses a specific  decoder address, some  decoders will not allow you to change the  decoder's address using this method!</p>
 <p><img src="images/Ops_Mode_setup.png" alt="Ops Mode setup window" border="5" class="BOXIT"></p>
-<p>Some  command stations will only &quot;broadcast&quot; programming commands,  which can mean every locomotive on 
+<p>Some  command stations will only &quot;broadcast&quot; programming commands,  which can mean every locomotive on
        the layout gets the same programming! The same is true if  you try to program a loco with address zero (or forget to enter an address when  you start). If in doubt, check  your documentation. </p>
-<blockquote>  
+<blockquote>
  <strong>Reading  from your Decoder on the main:</strong><br>
     <br>
 With a  few exceptions it is not possible to read from a CV on the Main.  If reading fails it usually reports as a 306 error (Timeout Talking to Command  Station.)<br>
