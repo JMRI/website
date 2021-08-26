@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<!-- Copyright ($Author: zoo $) 2009, 2010 -->
-<!-- $Id: Comp_FMap.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
-<title>Comprehensive Programmer - Function Mapping Pane</title>
+  <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.8.0">
+  <!-- Copyright ($Author: zoo $) 2009, 2010 -->
+  <!-- $Id: Comp_FMap.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
 
-    <!--#include virtual="/Style.shtml" -->
+  <title>Comprehensive Programmer - Function Mapping Pane</title>
+  <!--#include virtual="/Style.shtml" -->
+  <!-- DecoderPro Styles -->
+
+  <style>
+    .dp-center {text-align: center;}
+    .dp-right {text-align: right;}
+  </style>
 </head>
-
 <body>
-<!--#include virtual="/Header.shtml" -->
+  <!--#include virtual="/Header.shtml" -->
 
   <div id="mBody">
-<!--#include virtual="Sidebar.shtml" -->
-<div id="mainContent">
+    <!--#include virtual="Sidebar.shtml" -->
 
-<a name="Top"></a>
+    <div id="mainContent">
+      <h1 id="Top">DecoderPro3® Comprehensive Programmer</h1>
 
-<h1>DecoderPro3&reg; Comprehensive Programmer</h1>
-<h1>Function Mapping Pane</h1>
+      <h1>Function Mapping Pane</h1>
 
-<div align="right">
-<p><a href="Comp_Speed_Talble.shtml">Previous | </a>
-  <a href="Comp_LightFX.shtml">Next </a>
-<p><a href="index.shtml#Advanced Programmer">Back to Index</a>
-</div>
+      <div class="dp-right">
+        <p><a href="Comp_Speed_Talble.shtml">Previous |</a> <a href=
+        "Comp_LightFX.shtml">Next</a></p>
 
-<hr>
-<p>Some decoders allow you to change  the function assigned to each set of output wires (or pads). Multiple choices for function assignments  are shown by several check boxes. This is more common in decoders with more  than four functions, and in sound decoders.
-<p> Some of the new sound decoders may have up to 28 functions, and your throttle may have a limited  function capability. So, here's your opportunity to pick which ones you can  operate from your throttle.
-<p>When this capability is present,  the check boxes as shown in the window below are active and allow you to choose  to which function key on the throttle each output responds.
-<h1><img src="images/Comp_05_FMap.png" width="922" height="799" alt="function map"></h1>
-<p>If a checkbox is dimmed that indicates that  no changes in function assignments are possible. Not all decoders allow you to  remap the functions and others have very limited functions.
+        <p><a href="index.shtml#ComprehensiveProgrammer">Back to Index</a>
+        </p>
+      </div>
 
-  <hr>
+      <hr>
 
-<div align="right">
-<p><a href="Comp_FunctionLabel.shtml"></a>
-  <a href="Comp_Speed_Talble.shtml">Previous</a> | <a href="Comp_LightFX.shtml">Next </a>
-<p><a href="index.shtml#Advanced Programmer">Back to Index</a>
-</div>
+      <p>Some decoders allow you to change the function assigned to each set of output wires (or
+      pads). Multiple choices for function assignments are shown by several check boxes. This is
+      more common in decoders with more than four functions, and in sound decoders.</p>
 
-<!--#include virtual="/Footer.shtml" -->
-</div><!-- closes #mainContent-->
-</div><!-- closes #mBody, started in sidebar -->
-<script src="/js/main.js"></script>
+      <p>Some of the new sound decoders may have up to 28 functions, and your throttle may have a
+      limited function capability. So, here's your opportunity to pick which ones you can operate
+      from your throttle.</p>
+
+      <p>When this capability is present, the check boxes as shown in the window below are active
+      and allow you to choose to which function key on the throttle each output responds.</p>
+
+      <h1><img src="images/Comp_05_FMap.png" width="922" height="799" alt="function map">
+      </h1>
+
+      <p>If a checkbox is dimmed that indicates that no changes in function assignments are
+      possible. Not all decoders allow you to remap the functions and others have very limited
+      functions.</p>
+
+      <hr>
+
+      <div class="dp-right">
+        <p><a href="Comp_Speed_Talble.shtml">Previous</a> | <a href=
+        "Comp_LightFX.shtml">Next</a></p>
+
+        <p><a href="index.shtml#ComprehensiveProgrammer">Back to Index</a>
+        </p>
+      </div>
+      <!--#include virtual="/Footer.shtml" -->
+    </div>
+    <!-- closes #mainContent-->
+  </div>
+  <!-- closes #mBody, started in sidebar -->
+  <script src="/js/main.js"></script>
 </body>
 </html>
