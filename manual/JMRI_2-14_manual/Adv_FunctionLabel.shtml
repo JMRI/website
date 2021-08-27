@@ -1,68 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Copyright ($Author: dat7719 $) 2009, 2010 -->
-<!-- $Id: Adv_FunctionLabel.shtml 18202 2011-08-17 09:38:51Z dat7719 $ -->
-<title>Comprehensive Programmer - Advanced Features Pane</title>
+  <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.8.0">
+  <!-- Copyright ($Author: dat7719 $) 2009, 2010 -->
+  <!-- $Id: Adv_FunctionLabel.shtml 18202 2011-08-17 09:38:51Z dat7719 $ -->
 
-    <!--#include virtual="/Style.shtml" -->
+  <title>Comprehensive Programmer - Advanced Features Pane</title>
+  <!--#include virtual="/Style.shtml" -->
+  <!-- DecoderPro Styles -->
+
+  <style>
+    .dp-center {text-align: center;}
+    .dp-right {text-align: right;}
+    .dp-lower-alpha {list-style-type: lower-alpha;}
+  </style>
 </head>
-
 <body>
-<!--#include virtual="/Header.shtml" -->
+  <!--#include virtual="/Header.shtml" -->
 
-<!--#include virtual="Sidebar.shtml" -->
-<div id="mainContent">
+  <div id="mBody">
+    <!--#include virtual="Sidebar.shtml" -->
 
-<a name="Top"></a>
-<h1>DecoderPro&reg; Advanced Programmer</h1>
-<h1>Function Labels Pane</h1>
+    <div id="mainContent">
+      <h1 id="Top">DecoderPro® Advanced Programmer</h1>
 
-<div align=right>
-<p><a href="Adv_start.shtml">Previous | </a><a href="Adv_RosterMedia.shtml">Next </a></p>
-<p><a href="index.shtml">Back to Index</a></p>
-</div>
+      <h2>Function Labels Pane</h2>
 
-<hr>
-<p>This  pane is more than a scratch pad to keep track of what happens when function  buttons are pushed. It also interacts  with the <a href="Main_Throttle.shtml">JMRI throttle</a>. </p>
-<p>The <strong>Function Label</strong> Tab makes settings for the Software Throttles within JMRI.  Primarily the on-screen throttles, but some of the settings are mirrored on smart-phones (iPhone/Android) using the WiThrottle interface.</p>
-<p>When you  use the roster pull-down on the JMRI throttle to select a loco from your  roster, the function buttons will be marked with the descriptions you have  entered for those functions in this pane. </p>
-<p align="center"><img src="images/Adv_03_FunctionLabels.png" width="636" height="598" alt="function labels"></p>
-<p>Using the checkboxes,	space holders and the radio button to the right of each function may be set to:
-<table width="80%" border="1" cellspacing="1" cellpadding="2">
-  <tr>
-    <td width="13%"><strong>lock</strong></td>
-    <td width="87%"><p>Makes the function button &quot;latching&quot; or &quot;non-latching&quot;. When the box is checked the function is &quot;locked&quot; or &quot;latched&quot;.</p>
-    <p><strong>Latched Function </strong>when pressed  will stay on(down position) until pressed again i.e. Function button labeled &quot;Bell&quot; would ring until pressed again.</p>
-    <p><strong>Unlatched Function </strong>when pressed toggles on and then off. i.e. Function Button labled &quot;short horn&quot;, when pressed provides one blast of horn.</p></td>
-  </tr>
-  <tr>
-    <td><strong>off</strong></td>
-    <td>Place holder for icon that is displayed on Function Button when it is in off state.</td>
-  </tr>
-  <tr>
-    <td><strong>on</strong></td>
-    <td>Place holder for icon that is displayed on Function Button when it is in on state.</td>
-  </tr>
-  <tr>
-    <td><strong>shunt</strong></td>
-    <td>Sets &quot;virtual&quot; funtion key for software throttle. The &quot;lock&quot; option also needs to be set simultaneously with the &quot;shunt&quot; virtual function key activation. When this Function key is pressed the throttle speed slider on the software throttle changes to &quot;center off&quot; style for shunting, rather than the &quot;full-range with separate direction key&quot;</td>
-  </tr>
-</table>
-<p>You may drag and drop icons into the off or on space holder here or in the Throttle Function pane properties.
-<p>You  may also edit the function button text in the <strong><a href="Main_Throttle.shtml">JMRI Throttle</a></strong> and save those changes to the selected Roster entry. To use these changed entries in the future, make  sure you click on the
-  <input type="submit" name="button" id="button" value="Save to Roster"> 
-  to save these values into the Roster entry that is in use.
-<hr>
+      <div class="dp-right">
+        <p><a href="Adv_start.shtml">Previous |</a> <a href="Adv_RosterMedia.shtml">Next</a></p>
 
-<div align=right>
-<p><a href="Comp_LightFX.shtml"></a><a href="Adv_start.shtml">Previous | </a><a href="Adv_RosterMedia.shtml">Next </a></p>
-<p><a href="index.shtml">Back to Index</a></p>
-</div>
+        <p><a href="index.shtml">Back to Index</a>
+        </p>
+      </div>
 
-<!--#include virtual="/Footer.shtml" -->
+      <hr>
 
-      </div><!-- closes #mainContent-->
-    </div> <!-- closes #mBody-->
+      <p>This pane is more than a scratch pad to keep track of what happens when function buttons
+      are pushed. It also interacts with the JMRI throttle.</p>
+
+      <p>The <strong>Function Label</strong> Tab makes settings for the Software Throttles within
+      JMRI. Primarily the on-screen throttles, but some of the settings are mirrored on
+      smart-phones (iPhone/Android) using the WiThrottle interface.</p>
+
+      <p>When you use the roster pull-down on the JMRI throttle to select a loco from your roster,
+      the function buttons will be marked with the descriptions you have entered for those
+      functions in this pane.</p>
+
+      <p class="dp-center"><img src="images/Adv_03_FunctionLabels.png" width="636" height="598"
+      alt="function labels">
+      </p>
+
+      <p>Using the checkboxes, space holders and the radio button to the right of each function may
+      be set to:</p>
+
+      <table>
+        <tr>
+          <td><strong>lock</strong>
+          </td>
+          <td>
+            <p>Makes the function button "latching" or "non-latching". When the box is checked the
+            function is "locked" or "latched".</p>
+
+            <p><strong>Latched Function</strong> when pressed will stay on(down position) until
+            pressed again i.e. Function button labeled "Bell" would ring until pressed again.</p>
+
+            <p><strong>Unlatched Function</strong> when pressed toggles on and then off. i.e.
+            Function Button labled "short horn", when pressed provides one blast of horn.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td><strong>off</strong>
+          </td>
+          <td>Place holder for icon that is displayed on Function Button when it is in off
+          state.</td>
+        </tr>
+
+        <tr>
+          <td><strong>on</strong>
+          </td>
+          <td>Place holder for icon that is displayed on Function Button when it is in on
+          state.</td>
+        </tr>
+
+        <tr>
+          <td><strong>shunt</strong>
+          </td>
+          <td>Sets "virtual" funtion key for software throttle. The "lock" option also needs to be
+          set simultaneously with the "shunt" virtual function key activation. When this Function
+          key is pressed the throttle speed slider on the software throttle changes to "center off"
+          style for shunting, rather than the "full-range with separate direction key"</td>
+        </tr>
+      </table>
+
+      <p>You may drag and drop icons into the off or on space holder here or in the Throttle
+      Function pane properties.</p>
+
+      <p>You may also edit the function button text in the <strong><a href=
+      "Main_Throttle.shtml">JMRI Throttle</a></strong> and save those changes to the selected
+      Roster entry. To use these changed entries in the future, make sure you click on the
+      <input type="submit" name="button" id="button" value="Save to Roster"> to save these values
+      into the Roster entry that is in use.</p>
+
+      <hr>
+
+      <div class="dp-right">
+        <p><a href="Comp_LightFX.shtml"></a><a href="Adv_start.shtml">Previous |</a> <a href=
+        "Adv_RosterMedia.shtml">Next</a></p>
+
+        <p><a href="index.shtml">Back to Index</a>
+        </p>
+      </div>
+      <!--#include virtual="/Footer.shtml" -->
+    </div>
+    <!-- closes #mainContent-->
+  </div>
+  <!-- closes #mBody-->
 </body>
 </html>

@@ -10,6 +10,7 @@
 
 <body>
 <!--#include virtual="/Header.shtml" -->
+  <div id="mBody">
 
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
@@ -30,17 +31,17 @@ A <b>Roster</b> is a  database of all locomotives that your installation
 of DecoderPro&reg; has programmed. It includes the information seen in the screen
 below:
 <div align="center"><img src="images/Basic_Roster.png" width="652" height="601" alt="basic roster"></div>
-<p>Most of these fields are self-explanatory.  However, note that the first field (<strong>ID</strong>) becomes the 
+<p>Most of these fields are self-explanatory.  However, note that the first field (<strong>ID</strong>) becomes the
 file name in the Roster for the locomotive you are programming. Set up a  schema to identify your locomotive to its decoder program. i.e. Mfr, Loco Type, and  Address (Kato_SD40-2_5645). Spaces in the ID field will be  changed to underscores (_) when the file is written.  In a club environment, often the ID begins  with the owner's name, or  member number. This way the Roster (which is sorted alphabetically) will keep  all of an owner's locomotives listed together. </p>
 
-<p> The <strong>Decoder</strong> <strong>Comment</strong> field is a good place 
-  to add the date you purchased the locomotive, price, or  any other information you might 
+<p> The <strong>Decoder</strong> <strong>Comment</strong> field is a good place
+  to add the date you purchased the locomotive, price, or  any other information you might
 feel is important to record. </p>
 
-<p>The 
+<p>The
   <input type="submit" name="Save to Roster" id="Save to Roster" value="Save to Roster">
 button stores the  current decoder information to  your computer hard drive and folder where your roster file is located. The default storage is the same directory where the program is  installed. </p>
-<p>The 
+<p>The
   <input type="submit" name="button" id="button" value="Reset to Defaults">
 button can be used to return the Roster file to the condition of a new file for  the type and version of the decoder listed in the roster entry.  It does NOT change the values in the roster  file on your hard disk, unless you specifically save it after using this reset  button. It also is not written to the decoder until you specifically select a  write operation.  It was included in  DecoderPro so that if you get hopelessly confused in proceeding screen to  screen entering variables, you can return to the manufacturers baseline default  set and start again. </p>
 <p><br>
@@ -52,18 +53,18 @@ button can be used to return the Roster file to the condition of a new file for 
 
 <p><a name="ProgramModes"></a>The Programming mode can be changed by selecting mode from drop-down list<strong>
 </strong> at the bottom of the window. To the left of the
-Drop-down list 
+Drop-down list
 is the current programming mode that is selected.</p>
 
 <div align="center"><img src="images/SetProgramMode.png" alt="Set pogram mode dialog" border="5" class="BOXIT">
-  
+
 </div>
 <p>There are several <a href="Basic_Mode.shtml"><strong>programming modes</strong></a>. JMRI now selects the best mode for you.  It determines this from the command station type you are using and the decoder model you are attempting to program.  Usually this will be OK. If you find that you are having a problem with programming you may try a different mode.</p>
 
-<p>For most newer decoders, 
-stay with <strong>Paged mode</strong> or whichever Direct mode  your Command Station supports. Your 
-decoder documentation should let you know if programming  in some other mode is 
-necessary... but if you are having problems, experiment.  If a mode is not supported for the selected decoder and system, that option will be grayed out. 
+<p>For most newer decoders,
+stay with <strong>Paged mode</strong> or whichever Direct mode  your Command Station supports. Your
+decoder documentation should let you know if programming  in some other mode is
+necessary... but if you are having problems, experiment.  If a mode is not supported for the selected decoder and system, that option will be grayed out.
 <p>When you make your selection, the programming mode should now display to the left of the drop-down list.</p>
 <p>Basic Programming Roster setup for Athearn FP45 n scale with Digitrax Tsunami Diesel Genesis OEM decoder.</p>
 <p><img src="images/Basic_Roster01.png" width="636" height="556" alt="roster"></p>
