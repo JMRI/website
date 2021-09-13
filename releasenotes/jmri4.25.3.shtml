@@ -108,7 +108,9 @@ from
     <!-- in the JMRI/JMRI repository. Please edit      -->
     <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
+    <li>
+        None yet
+    </li>
 
 </ul>
 
@@ -191,13 +193,36 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.25.3+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
+    <h3>Hardware Support</h3>
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+        <h4>MQTT</h4>
+            <ul>
+                <li>Added support for Last Will and Testament (LWT)</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+        <h4>Doehler &amp; Haas</h4>
+            <ul>
+                <li>Added defs for 2nd. generation DH05C and DH10C decoders (more outputs, whereas other 2nd Gen decoders models don't have functions or CV changes)</li>
+            </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>Add a Reporter Action which can be used to copy reports to memory variables or local
+          variables.</li>
+          <li>Add a Reporter Expression which can compare reports to strings, memory variables or
+          local variables.</li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+
+	    <h4>USS CTC Logic</h4>
+            <ul>
+                <li>Improve the USS CTC documentation and the
+                <a href="http://jmri.org/jython/ctc/">jython/ctc/</a>
+                sample script example of use</li>
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
