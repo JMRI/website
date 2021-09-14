@@ -14,14 +14,14 @@ production:
    exe: "https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12+Rb6a9bb1.exe"
 test:
  versions:
+  4.25.3:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.25.3/JMRI.4.25.3+R96551bed89.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.25.3/JMRI.4.25.3+R96551bed89.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v4.25.3/JMRI.4.25.3+R96551bed89.exe"
   4.25.2:
    tgz: "https://github.com/JMRI/JMRI/releases/download/v4.25.2/JMRI.4.25.2+R07d42b8661.tgz"
    dmg: "https://github.com/JMRI/JMRI/releases/download/v4.25.2/JMRI.4.25.2+R07d42b8661.dmg"
    exe: "https://github.com/JMRI/JMRI/releases/download/v4.25.2/JMRI.4.25.2+R07d42b8661.exe"
-  4.25.1:
-   tgz: "https://github.com/JMRI/JMRI/releases/download/v4.25.1/JMRI.4.25.1+R1547b1639f.tgz"
-   dmg: "https://github.com/JMRI/JMRI/releases/download/v4.25.1/JMRI.4.25.1+R1547b1639f.dmg"
-   exe: "https://github.com/JMRI/JMRI/releases/download/v4.25.1/JMRI.4.25.1+R1547b1639f.exe"
 
 # This file contains information about the last few JMRI (https://jmri.org) releases.
 # JMRI is distributed under license. More information is at https://jmri.org/copyright.shtml
