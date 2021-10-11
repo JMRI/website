@@ -191,13 +191,133 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.25.4+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+
+        <h4>CBUS</h4>
+            <ul>
+                <li>Andrew Crosland added new code to implement a Service provider Interface for CBUS module support.<br>
+                Initial support is limited to a few modules and allows more human-friendly editing of Node variables.</li>
+            </ul>
+
+        <h4>DCC++ and DCC-EX</h4>
+            <ul>
+                <li>new sample script (SendDCCppMessages.py) to easily send DCCpp commmand list</li>
+                <li>added support for new servo and vpin turnout messages</li>
+                <li>store definitions as properties in created objects</li>
+                <li>Config Base Station now available as Startup action</li>
+                <li>Monitor, Send Command, and Config Base Station now multi-connection-aware.</li>
+            </ul>
+
+        <h4>MERG</h4>
+            <ul>
+                <li>See CBUS notes.</li>
+            </ul>
+
+        <h4>SPROG</h4>
+            <ul>
+                <li>See CBUS notes.</li>
+            </ul>
+
+
+    <h3>New / Updated decoder definitions</h3>
+        <h4>Doehler &amp; Haas</h4>
+            <ul>
+                <li>Added DH06A definition for fw 3.12.050</li>
+            </ul>
+        <h4>TAMS</h4>
+            <ul>
+                <li>Added definition for Tams FD-R Basic 3, including Railcommunity norm RCN-277 mapping for future use on other decoders</li>
+            </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>Add Dispatcher Actions and Expressions.</li>
+          <li>Add a <strong>Table</strong> tab to Local Variable and Memory Actions.
+          The table reference is used to identify the cell that has content that will be copied
+          to the selected local or memory variable.</li>
+          <li>The <strong>Highlight row in ConditionalNG Editor</strong> option in <strong>
+          Preferences &rArr; LogixNG</strong> has been added.  This can be useful for seeing which
+          row is currently selected.</li>
+        </ul>
+
+    <h3>Meters and MeterFrames</h3>
+        <a id="Meters" name="Meters"></a>
+        <ul>
+            <li></li>
+        </ul>
+
+    <h3>Operations</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+            <li>Fixed exception when using "hyphen" feature without other characters.</li>
+            <li>Fixed the truncate feature when using utility cars.</li>
+            <li>Fixed automation bug when there are manifest warnings.</li>
+            <li>Fixed AutoHPT model and road bugs.</li>
+            <li>Fixed save after delete of car. </li>
+            <li>Enhancement, show how many warnings in the build report.</li>
+            <li>Enhancement, user can optionally update route departure times when changing train departure times.</li>
+            <li>Enhancement, added medium load priority.</li>
+        </ul>
+
+   <h3>Panel Editor</h3>
+        <a id="PE" name="PE"></a>
+        <ul>
+            <li>When changing the icons used by an item,
+                the icon display window now shows the choices
+                in alphanumeric order by name.</li>
+        </ul>
+
+    <h3>Control Panel Editor</h3>
+        <a id="CPE" name="CPE"></a>
+        <h4>Palette</h4>
+            <a id="CPE-P" name="CPE-P"></a>
+            <ul>
+                <li>When changing the icons used by an item,
+                the icon display window now shows the choices
+                in alphanumeric order by name.</li>
+            </ul>
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>Light Controllers triggered by Turnout now have Turnout stored in xml by DisplayName (
+            UserName, or SystemName if no userName set ), rather than SystemName.</li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li>Swedish railway signaling system, SE-TSFS-2010,
+                2009 version of the "3H Signaling System", Module 3H</li>
+            </ul>
+
+        <h4>Signal Masts</h4>
+            <ul>
+                <li>Add an address offset option for DCC Signal Mast Decoder signal masts.</li>
+                <li>Add the ability to select the aspect id for the unlit option.</li>
+            </ul>
+
+	    <h4>USS CTC Logic</h4>
+            <ul>
+                <li>Multiple upgrades to improve the realism
+                of the
+                <a href="https://jmri.org/jython/ctc">example panel's</a>
+                operation and appearance. Much help provided by Bob Milhaupt.</li>
+            </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>The length of logging lines sent to the system console has been reduced
+                by no longer including the date.  The time is still included.
+                If you have a copy of the 'default.lcf' file in your local JMRI
+                setting directory, you won't see this change until you update it.</li>
+            <li>Access to the deprecated SecurityManager class has been removed;
+                Java access security is now enforced by default.</li>
+        </ul>
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
