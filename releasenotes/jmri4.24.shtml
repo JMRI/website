@@ -22,7 +22,7 @@
       Release Notes for JMRI 4.24 release
       </h1>
 
-    <p>Date: July 9, 2021</p>
+    <p>Date: July 9, 2021 [Update 24 Oct 2021]</p>
     <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.24 of JMRI/DecoderPro is available for download.</p>
 
@@ -76,7 +76,8 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None</li>
+    <li><strong>NOTE RE Java 8 Version 311:  DO NOT INSTALL THIS VERSION.</strong>  
+      Errors have been reported which can be fixed by reverting to version 301 or upgrading to Java 11.</li>
 </ul>
 <!--
 If any of those affect you, please either
@@ -218,9 +219,7 @@ in those is
                 <li>The dialog will open with all segments closed to reduce clutter and ease navigation.</li>
                 <li>Fixed bug in resizing the window.</li>
                 <li>Accessibility updates: the segment headers are now part of tab order and can collapse/expand on enter or space key.</li>
-            </ul>
-		</li>
-		<li>JMRI will now respond to the Global Identify Events message as the standard requires.</li>
+	            <li>JMRI will now respond to the Global Identify Events message as the standard requires.</li>
             </ul>
 
         <h4>SPROG</h4>
@@ -334,13 +333,13 @@ in those is
             <li>Labels and icons on a panel can now have an Id. This is useful if the label/icon is controlled by LogixNG.</li>
         </ul>
 
-        <h4>NX - Entry/Exit Tool</h4>
+        <h3>NX - Entry/Exit Tool</h3>
             <ul>
                 <li></li>
             </ul>
 
     <h3>LogixNG</h3>
-        <a id="LogixNG" name="LogixNG"/>
+        <a id="LogixNG" name="LogixNG"></a>
         <ul>
           <li>LogixNG (Logix Next Generation) is a new way of adding logic to the model railroad.</li>
           <li>Add Actions and Expressions for Blocks.</li>
