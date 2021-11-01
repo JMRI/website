@@ -87,17 +87,18 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None</li>
+    <li>This test release does not work with Java version 8u311 or later.
+        To use this test release, please either use an earlier version of
+        Java 8 or update your Java installation to Java 11.
+    </li>
 </ul>
-<!--
 If any of those affect you, please either
 wait for
-<a href="jmri4.25.4.shtml">JMRI 4.25.4</a>, due out shortly after this one,
+<a href="jmri4.25.5.shtml">JMRI 4.25.5</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">development build installer</a>
 from
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
- -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
@@ -105,7 +106,6 @@ from
 <ul>
 
     <li>
-        None yet
     </li>
 
 </ul>
