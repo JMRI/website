@@ -122,6 +122,21 @@ we strongly recommend you update to <a href="jmri4.20.shtml">JMRI 4.20</a>
 installing this test release.
 
 <ul>
+    <li><span class="since">Since <a href="jmri4.21.4.shtml">JMRI 4.21.4</a></span>
+        If you use a Safari browser on macOS X, the local
+        help system might not work.  There are two
+        workarounds:
+        <ol>
+        <li>If your computer is connected to the internet, use
+            the web-based help.  Go to JMRI Preferences, then
+            select Help on the left, then click "Open help pages online";
+            save and restart
+        <li>To get local access, you can select Safari's Preferences,
+            then the Advanced pane, then checkmark "Show Develop menu in menu bar"
+            </ol>
+        If you're using another browser, like Chrome or Firefox, you
+        shouldn't encounter this issue.
+    </li>
     <li><span class="since">Since <a href="jmri4.21.1.shtml">JMRI 4.21.1</a></span>
         The jmri.jmrix.SystemConnectionMemo class has become a jmri.SystemConnectionMemo
         interface and a jmri.jmrix.DefaultSystemConnectionMemo class. This may
