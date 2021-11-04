@@ -238,6 +238,9 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.25.5+i
             <li>Limited support for native running on Apple Silicon is now available.
             	Please note:
             	<ul>
+            	<li>Anya DMX support doesn't work.  We recommend
+            	    that you don't try to configure that hardware, as
+            	    crashes have been reported.
             	<li>There is no support for the JInput library, which is
             		used for JInput-specific connections.
             	<li>There is no support for the BlueCove library, which is
