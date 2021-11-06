@@ -59,7 +59,7 @@
         <li>For even older hardware, see a <a href="MacOSXRetro.shtml">separate page</a>.</li>
        </ul>
 
-        <p>The JMRI install will take up about 180&nbsp;MB of disk space, mostly for the Help pages
+        <p>The JMRI install will take up about 330&nbsp;MB of disk space, mostly for the Help pages
         and decoder definitions.</p>
        </li>
 
@@ -160,19 +160,25 @@
                 step.  If it opens a dialog box that offers
                 to install Java, or takes you to the Java
                 install web site, just follow those instructions.
-            <li>If that doesn't work, and you have a current
-                macOS version, you can get the latest Java JRE installer as a free download at:
-                <a href="http://java.com/download/" target="_blank">java.com/download</a>.<br>
-                After that download is complete, follow the included instructions to run the Java installer.<br>
-                More on <a href="https://www.java.com/en/download/help/sysreq.xml">Java versions and
-                hardware requirements</a> (prompts for Java in your browser).<br>
-                Older Java installations typically are removed by a MmcOS update. However, older Java
-                applications are known to try and reinstall old stuff that might cause conflicts while running JMRI.
-                See the <a href="#javase6">instructions</a> on how to check if this applies to your installation.
+                 <li>If that doesn't work, and you have a suitable
+                macOS version (see above), your next step is to install
+                Java 11.  To do that, click on
+                <a href="https://repos.azul.com/azure-only/zulu/packages/zulu-11/11.0.13/zulu-11-azure-jre_11.52.13-11.0.13-macosx_x64.dmg">this download link</a>.
+                A download should start shortly.
+                When it's complete, click on the file and follow instructions to
+                install Java.
+                (That link is the same as the download link near the
+                bottom of
+                <a href="#startup">this page on the Azur web site</a>.)
             <li>
-                Note: JMRI is developed with Java 1.8.  It should work fine with later versions (java 1.9, Java 10, 11, etc)
-	            but you may get a message about "WARNING: An illegal reflective access operation has occurred" and "WARNING: Please consider reporting this to the maintainers".
+                Note: JMRI is developed with Java 8, but we now recommend that you run it using Java 11.
+                It should work fine with any Java version from Java 8 to Java 14.
+	            With some versions you may get a message about
+	                "WARNING: An illegal reflective access operation has occurred"
+	                and "WARNING: Please consider reporting this to the maintainers".
 	            We know about this, and it'll get fixed in due course; you can ignore the messages.
+	            Java 15 and later will (currently) cause problems, so please use install and use
+	            Java 11.
             </ul>
       </li>
       <li>Congratulations! Installation is complete. Click on the DecoderPro icon in the
