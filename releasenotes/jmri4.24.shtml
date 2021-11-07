@@ -76,8 +76,10 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li><strong>NOTE RE Java 8 Version 311:  DO NOT INSTALL THIS VERSION.</strong>  
-      Errors have been reported which can be fixed by reverting to version 301 or upgrading to Java 11.</li>
+    <li><strong>NOTE RE Java 8 Version 311:  DO NOT INSTALL THIS VERSION.</strong>
+      Errors have been reported which can be fixed by reverting to version 301, upgrading to Java 11,
+      or installing
+      <a href="jmri4.25.5.shtml">JMRI 4.25.5</a> or any later version.</li>
 </ul>
 <!--
 If any of those affect you, please either
