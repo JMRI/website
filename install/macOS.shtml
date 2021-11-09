@@ -28,7 +28,11 @@
     Please note:
 
 	<p class="important">These directions are for installing the latest
-	4.x releases of JMRI&reg; on current macOS computers.<br>
+	4.99 and 5.0 releases of JMRI&reg; on current macOS computers.<br>
+    If you want to install a JMRI series 4 release, such as
+    <a href="../releasenotes/jmri4.24.shtml">4.24</a>,
+    please see the
+    <a href="MacOSX.shtml">MacOS X install instructions for JMRI series 4 releases</a>.
     If you have an older machine and need to install an earlier release (such as JMRI
     <a href="../releasenotes/jmri3.10.1.shtml">3.10.1</a>,
     <a href="../releasenotes/jmri2.8.shtml">2.8</a>, or
@@ -45,13 +49,15 @@
        Find the current macOS version number by choosing "About this Mac" from the Apple menu.
 
        <p>
-       JMRI 4.2 and later will work on any macOS or MacOS X version back to 10.7.3 Lion (2012).
-       Note: MacOS X Lion 10.7.1 and 10.7.2 will have to be updated to 10.7.3.
+       JMRI 4.99 and later will work on any macOS or MacOS X version back to 10.11 El Capitan (2015).
+       (The youngest Mac that can't run Mac OS X 10.11 was shipped in 2011)
 
        <p>
-       If your Mac hardware doesn't let you update MacOS X to a recent enough version,
+       If your Mac hardware doesn't let you update macOS to a recent enough version,
        you can still use older versions of JMRI:
        <ul>
+        <li>Mac OS X version 10.10 "Yosemite" through 10.7.3 "Lion" can run <a href="http://jmri.org/releasenotes/jmri4.24.shtml">JMRI 4.24</a> using Java 1.8.
+        (The youngest Mac that can't run Yosemite was shipped in 2010)</li>
         <li>Mac OS X version 10.7.2 "Lion" through 10.6 "Snow Leopard" can run <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7.
         (The youngest Mac that can't run Mountain Lion was shipped in 2009)</li>
         <li>Mac OS X version 10.5 "Leopard" through 10.4 "Tiger" can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.
@@ -59,11 +65,11 @@
         <li>For even older hardware, see a <a href="MacOSXRetro.shtml">separate page</a>.</li>
        </ul>
 
-        <p>The JMRI install will take up about 330&nbsp;MB of disk space, mostly for the Help pages
+        <p>The JMRI install will take up about 360&nbsp;MB of disk space, mostly for the Help pages
         and decoder definitions.</p>
        </li>
 
-        <li>Determine if you have the needed hardware drivers:
+        <li>Determine if you have the needed hardware:
 
         <p>No Macintosh that runs macOS has built-in Serial
         Ports, so if your layout hardware needs a serial connection,
@@ -75,38 +81,18 @@
         they're already present in macOS.  In some cases you will need to install a special driver, though,
         so check the manufacturer's web site to make sure.</p>
 
-        <p><em>Note: Mac OS X 10.11 El Capitan and later macOS versions generally require
-        signed drivers.  If you installed drivers for a previous version,
-        particularly drivers that don't say they support Mac OS X 10.10 Yosemite,
-        those older drivers may not work with 10.11 El Capitan.  Go to the
-        web site for your USB adapter, download the newest driver and
-        install it before you update to El Capitan, or right after updating before
-        trying to run JMRI.</em>
-
         <p>
         For more instructions on USB connection debugging and testing for correct
         drivers, see the
         <a href="#usb">USB section</a> further down on this page.
 
         <p>
-        We test using a Keyspan PDA Adapter; those drivers are available at
-        <a href="http://www.keyspan.com/downloads/">
-        http://www.keyspan.com/downloads/</a>. Some device drivers will list
+        Some device drivers will list
         each port under several names, e.g. starting with "/dev/tty" or
-        "/dev/cu", for example "/dev/tty.KeyUSA19181.1". In that case, you
-        must select the one that starts with "cu", e.g.
+        "/dev/cu", for example "/dev/tty.KeyUSA19181.1". In that case,
+        when configuring the connection in JMRI you should
+        select the one that starts with "cu", e.g.
         "/dev/cu.KeyUSA19181.1".</p>
-
-        <p>macOS drivers for FTDI chipsets are available at
-        <a href="http://www.ftdichip.com/Drivers/VCP.htm">http://www.ftdichip.com/Drivers/VCP.htm</a>.
-
-        <p>There's a macOS driver for USB-serial adapters
-        based on the Prolific PL2303 chipset
-        <a href="http://osx-pl2303.sourceforge.net/">available here</a>.
-        If you can't access your USB dongle and it seems to use that
-        chipset (you can check in the USB tab of System Profiler),
-        this driver will make it available as /dev/cu.PL2303-xxx.</p>
-       </li>
 
        <li>Get the JMRI software...
 
@@ -138,15 +124,17 @@
         you want it on your computer. We recommend you put it in
         Applications, which is the standard location for this.  To
         do that, just drag the JMRI folder onto the "Applications"
-        icon.</p>
+        icon. </p>
 
-        <p>If you want to keep it somewhere else, just drag the
-        folder to the desired location.</p>
-
-        <p>Note that on macOS Catalina and later, you won't be able
+        <p>
+        You won't be able
         to run JMRI from within the Downloads, Desktop or Documents
         folder, so we strongly recommend you drag the JMRI folder to
         Applications and run it from there.
+        If you want to keep it somewhere else, just drag the
+        folder to the desired location.
+        Note that if you it somewhere else, you might have to
+        adjust permissions in the "Security & Privacy" pane of the System Preferences.</p>
         </p>
       </li>
 
@@ -155,11 +143,10 @@
             <ul>
             <li>Let's try the easy way first.  Open the
                 JMRI folder you just put in Applications, and
-                double click on DecoderPro.  If this starts up
-                OK, you have Java installed.  Move to the next
-                step.  If it opens a dialog box that offers
-                to install Java, or takes you to the Java
-                install web site, just follow those instructions.
+                double click on DecoderPro.  If this starts up DecoderPro
+                OK, you have Java installed; you're installation is done!
+                Quit DecoderPro, then go to the section on
+                <a href="#startup">starting JMRI</a> for next steps.
             <li><a id="java11"></a>
                 If that doesn't work, and you have a suitable
                 macOS version (see above), your next step is to install
@@ -170,20 +157,17 @@
                 install Java.
                 (That link is the same as the download link near the
                 bottom of
-                <a href="https://www.azul.com/downloads/?version=java-11-lts&os=macos&package=jre">this page on the Azul web site</a>.)
+                 <a href="https://www.azul.com/downloads/?version=java-11-lts&os=macos&package=jre">this page on the Azul web site</a>.)
             <li>
-                Note: JMRI is developed with Java 8, but we now recommend that you run it using Java 11.
-                It should work fine with any Java version from Java 8 to Java 14.
-	            With some versions you may get a message about
-	                "WARNING: An illegal reflective access operation has occurred"
-	                and "WARNING: Please consider reporting this to the maintainers".
+                Note: JMRI 5 requires Java 11.  JMRI 4 and 5 should work fine with some later versions (java 12 through 14)
+	            but you may get a message about "WARNING: An illegal reflective access operation has occurred" and "WARNING: Please consider reporting this to the maintainers".
 	            We know about this, and it'll get fixed in due course; you can ignore the messages.
 	            Java 15 and later will (currently) cause problems, so please use install and use
 	            Java 11.
             </ul>
       </li>
-      <li>Congratulations! Installation is complete. Click on the DecoderPro icon in the
-          JMRI folder to get started.
+      <li>Congratulations! Installation is complete. Go to the section on
+                <a href="#startup">starting JMRI</a> for next steps.
       </li>
 
       </ol>
@@ -200,7 +184,8 @@
             your existing version. If asked whether you want to do that, say OK.
           </ul>
           <p>Your existing configuration information, Panel files, etc will
-          continue to be used with the new version.
+          continue to be used with the new version if you kept them in the
+          <a href="MacOSLocations.shtml">recommended places</a>.
 
           <h3>Clean Install</h3>
           <p>If for any reason you wish to start totally clean and discard all previously stored Connections, Roster
@@ -314,47 +299,6 @@ Irrespective of DCC system, there are some basic rules for troubleshooting any U
     there's no way JMRI can find your device until the driver issue is resolved.
 </ul>
 
-<a name="javase6"></a><h3>Java SE 6</h3>
-    <p>To check for Java SE 6, JMRI 4.5.2 and up include a script. Follow these steps (assuming
-      JMRI is installed in the folder <em>/Applications/JMRI</em>; if it's installed in a different location, adjust the paths as needed):</p>
-    <ol>
-      <li>Open <em>Terminal.app</em>.
-        <p><em>El Capitan and later:</em> Reboot into Recovery Mode by restarting your
-          Mac and pressing Cmd-R until the Apple logo appears. Once in Recovery Mode,
-          select Terminal from the Utilities menu.</p>
-        </li>
-      <li>Run the command
-      <div class="wide">
-          <code>
-              /Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh
-          </code>
-      </div>
-      It can take
-        up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.
-        <p><em>El Capitan and later:</em> Run the command
-          <div class="wide">
-              <code>
-                  bash /Volumes/Macintosh\ HD/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh /Volumes/Macintosh\ HD
-              </code>
-          </div>
-          It can take up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.</p>
-        </li>
-      <li><em>El Capitan and later:</em> Restart your Mac.</li>
-    </ol>
-<p>Source: <a href="../releasenotes/jmri4.5.2.shtml"> JMRI 4.5.2 Release notes</a>.</p>
-
-<h3>Vector3f issue</h3>
-<p>
-Sometimes very old Macs have an older "vecsub.jar" library installed in a place that
-will cause problems for JMRI.  It happens more often when you're compiling your
-own version, but it can also happen when just running a download. If you get messages about
-<code>
-error: cannot find symbol getX()
-</code>
-or getY() or getZ(), the solution is to copy the JMRI/lib/vecmath-1.5.2.jar file from
-within the JMRI distribution directory to the  ~/Library/Java/Extensions/ directory.
-(You might have to create that directory)
-<u>Do not do this unless you have seen that symptom</u>.
 
 <a name="notes"></a><h2>Notes</h2>
 
