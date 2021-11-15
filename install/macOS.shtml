@@ -159,10 +159,10 @@
                 bottom of
                  <a href="https://www.azul.com/downloads/?version=java-11-lts&os=macos&package=jre">this page on the Azul web site</a>.)
             <li>
-                Note: JMRI 5 requires Java 11.  JMRI 4 and 5 should work fine with some later versions (java 12 through 14)
+                Note: JMRI 5 requires Java 11.  JMRI 4 and 5 should work fine with some later versions (java 12 through 13)
 	            but you may get a message about "WARNING: An illegal reflective access operation has occurred" and "WARNING: Please consider reporting this to the maintainers".
 	            We know about this, and it'll get fixed in due course; you can ignore the messages.
-	            Java 15 and later will (currently) cause problems, so please use install and use
+	            Java 14 and later will (currently) cause problems, so please use install and use
 	            Java 11.
             </ul>
       </li>
