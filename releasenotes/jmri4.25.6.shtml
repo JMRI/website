@@ -133,6 +133,13 @@ installing this test release.
         If you're using another browser, like Chrome or Firefox, you
         shouldn't encounter this issue.
     </li>
+    <li>We will be removing a number of deprecated classes after
+        JMRI 4.26 is released in December 2021. If your scripts are
+        generating messages like:<br/>
+        <code>WARN  - SomeClassName is deprecated, please remove references to it</code><br/>
+        you should update your script to replace that class.  If you don't know how, please
+        ask on the
+        <a href="https://groups.io/g/jmriusers">JMRIusers list</a>.
     <li><span class="since">Since <a href="jmri4.21.1.shtml">JMRI 4.21.1</a></span>
         The jmri.jmrix.SystemConnectionMemo class has become a jmri.SystemConnectionMemo
         interface and a jmri.jmrix.DefaultSystemConnectionMemo class. This may
