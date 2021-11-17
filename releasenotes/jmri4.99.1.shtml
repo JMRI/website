@@ -4,10 +4,10 @@
 <head>
  <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
-    JMRI: Release Notes for 4.25.7
+    JMRI: Release Notes for 4.99.1
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.25.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 4.99.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
  <!--#include virtual="/Style.shtml" -->
 </head>
@@ -19,12 +19,12 @@
     <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.25.7 release
+      Release Notes for JMRI 4.99.1 release
       </h1>
 
-    <p>Date: MM NN, 2021</p>
+    <p>Date: MMM DD, 2021</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.25.7 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 4.99.1 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -36,8 +36,8 @@ if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the next in a series of test releases.
-We expect this series to end in the next JMRI production release at the end of 2021.
+<p>This is the first in a series of 4.99.* test releases to migrate JMRI to Java 11.
+We expect this series to end in the next JMRI production release at the end of Spring 2022.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
@@ -90,17 +90,20 @@ that can arise from skipping these versions.
 <!--
 If any of those affect you, please either
 wait for
-<a href="jmri4.25.8.shtml">JMRI 4.25.8</a>, due out shortly after this one,
+<a href="jmri4.99.2.shtml">JMRI 4.99.2</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
-<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">development build installer</a>
+<a href="https://builds.jmri.org/jenkins/job/j11development/job/packages/">JMRI on Java 11 development build installer</a>
 from
-<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
+<a href="https://builds.jmri.org/jenkins/job/j11development/job/packages/">Jenkins</a>.</p>
  -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
 
 <ul>
+
+<!-- this is displaying from the main master branch, as the J11master branch is not on the web server.
+     It'll be OK at the end. -->
 
     <!-- While this release is in development, the     -->
     <!-- list of new warnings is kept in               -->
@@ -109,6 +112,7 @@ from
     <!-- there.  Changes to this file won't be merged. -->
 
     <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
+
 
 </ul>
 
@@ -122,21 +126,6 @@ we strongly recommend you update to <a href="jmri4.20.shtml">JMRI 4.20</a>
 installing this test release.
 
 <ul>
-    <li><span class="since">Since <a href="jmri4.21.4.shtml">JMRI 4.21.4</a></span>
-        If you use a Safari browser on macOS X, the local
-        help system might not work.  There are two
-        workarounds:
-        <ol>
-        <li>If your computer is connected to the internet, use
-            the web-based help.  Go to JMRI Preferences, then
-            select Help on the left, then click "Open help pages online";
-            save and restart
-        <li>To get local access, you can select Safari's Preferences,
-            then the Advanced pane, then checkmark "Show Develop menu in menu bar"
-            </ol>
-        If you're using another browser, like Chrome or Firefox, you
-        shouldn't encounter this issue.
-    </li>
     <li><span class="since">Since <a href="jmri4.21.1.shtml">JMRI 4.21.1</a></span>
         The jmri.jmrix.SystemConnectionMemo class has become a jmri.SystemConnectionMemo
         interface and a jmri.jmrix.DefaultSystemConnectionMemo class. This may
@@ -175,36 +164,40 @@ installing this test release.
 
 <!--
 <div class="wide">
-    <ul>
-    <li>OS X / macOS: <a
-        href="https://github.com/JMRI/JMRI/releases/download/v4.23.5/JMRI.4.23.5+R0e79567f8.dmg">https://github.com/JMRI/JMRI/releases/download/v4.23.5/JMRI.4.23.5+R0e79567f8.dmg</a><br/>
-      sha256: aac695b2ce1bfd15937135b6f77f6d1e18673d6f771493bdf56011dfaf50b876 </li>
+<ul>
+<li>OS X / macOS: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.dmg</a><br/>
+  sha256: bf461db161a478cc11a6e0107bfd1139f338ebadd19c68d81946659827856474 </li>
 
-    <li>Windows: <a
-        href="https://github.com/JMRI/JMRI/releases/download/v4.23.5/JMRI.4.23.5+R0e79567f8.exe">https://github.com/JMRI/JMRI/releases/download/v4.23.5/JMRI.4.23.5+R0e79567f8.exe</a><br/>
-       sha256: c8b38c66f9bbe7d8262731e1ec40e79d99d5188f47b6469d3c5ccc2d47b29e4f</li>
+<li>Windows: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.exe">https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.exe</a><br/>
+   sha256: 03f795a562c3aee91935be9a3cfbf6c60ae2fd831a25cf87ea7c8769b4311683</li>
 
-    <li>Linux: <a
-        href="https://github.com/JMRI/JMRI/releases/download/v4.23.5/JMRI.4.23.5+R0e79567f8.tgz">https://github.com/JMRI/JMRI/releases/download/v4.23.5/JMRI.4.23.5+R0e79567f8.tgz</a><br/>
-       sha256: f48f7afb2869efd4cbc5630f4ce013ec986ba0f4c811e528b352fddeca2876d0</li>
-    </ul>
+<li>Linux: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.tgz</a><br/>
+   sha256: 7bb1fa846f8bdc115bda8d0d4ec6b67b816d4ee6cecc27cdbe89a0cc571c2e7e</li>
+</ul>
 </div>
  -->
+
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.25.7``/">CI project page</a>.
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.99.1``/">CI project page</a>.
  -->
 
 During development leading to the actual release, you can find test download files on the
-<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
+<a href="https://builds.jmri.org/jenkins/job/j11development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
 
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri4.25.6.shtml">Test Release 4.25.6</a>:</h2>
+<h2>Changes since <a href="jmri4.24.shtml">Production Release 4.24</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.25.7+is%3Amerged">list of included changes</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.99.1+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
+
+<!-- this is displaying from the main master branch, as the J11master branch is not on the web server.
+     It'll be OK at the end. -->
 
     <!-- While this release is in development, the     -->
     <!-- new release note items are kept in            -->
