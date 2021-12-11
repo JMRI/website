@@ -37,7 +37,7 @@ And please back up your JMRI files before installing this, in case you want to g
 back to an earlier version.</p>
 
 <p>This is the first in a series of 4.99.* test releases to migrate JMRI to Java 11.
-We expect this series to end in the next JMRI production release at the end of Spring 2022.
+We expect this series to end in the next JMRI 5.0 production release at the end of Spring 2022.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
@@ -108,6 +108,9 @@ from
 
 <ul>
 
+    <li>This version of JMRI, and all later ones, will require
+        at least Java 11 or later.
+    </li>
 <!-- this is displaying from the main master branch, as the J11master branch is not on the web server.
      It'll be OK at the end. -->
 
@@ -125,44 +128,14 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.20.shtml#warnings">JMRI 4.20 release note</a> for more warnings predating the 4.21 development series,
+See the <a href="jmri4.26.shtml#warnings">JMRI 4.26 release note</a> for more warnings predating the 4.99 development series,
 including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version;
 we strongly recommend you update to <a href="jmri4.20.shtml">JMRI 4.20</a>
-installing this test release.
+before installing this test release.
 
 <ul>
-    <li><span class="since">Since <a href="jmri4.21.1.shtml">JMRI 4.21.1</a></span>
-        The jmri.jmrix.SystemConnectionMemo class has become a jmri.SystemConnectionMemo
-        interface and a jmri.jmrix.DefaultSystemConnectionMemo class. This may
-        require changes to scripts.  If you have a script that references
-        jmri.jmrix.SystemConnectionMemo, please change it to either
-        jmri.SystemConnectionMemo or jmri.jmrix.DefaultSystemConnectionMemo
-        (it's easier to have you just try the two than to explain which
-        one will work in which case)
-    </li>
-
-    <li><span class="since">Since <a href="jmri4.21.1.shtml">JMRI 4.21.1</a></span>
-        The way preferences are loaded at startup has been slightly
-        modified.  There is no impact to JMRI applications, but Non-JMRI
-        applications that are not derived from apps.Apps or apps.AppsBase
-        but are using jmri.implementation.JmriConfigurationManager to load
-        preferences will no longer see preferences if an error occurs.  To
-        restore the old behavior, use apps.AppsConfigurationManager instead.
-    </li>
-
-    <li><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
-        There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
-        <ul>
-            <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
-            <li>Do not enable extra debugging through default.lcf, nor open the system console window</li>
-            <li>Do not open the SPROG console window</li>
-            <li>Disable power conversion (CV 29) in all locos</li>
-            <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
-        </ul>
-        Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
-        open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
-    </li>
+    <li>None</li>
 </ul>
 
 <a id="download" name="download"></a>
@@ -197,7 +170,7 @@ During development leading to the actual release, you can find test download fil
 These are development files, and might not be working at any particular time.</p>
 
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri4.24.shtml">Production Release 4.24</a>:</h2>
+<h2>Changes since <a href="jmri4.26.shtml">Production Release 4.26</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.99.1+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
