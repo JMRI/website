@@ -56,11 +56,22 @@ Therefore, this test release should be considered experimental.</p>
 version that's good enough to be recommended for general use, including by new users.
 We're therefore making that version, "Production Release 4.26" available for download today.</p>
 
+<a id="note" name="note"></a>
+<h3>Notes:</h3>
+
 <p><b>
 JMRI is now only available under the
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
 <a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<p><b>This is the last JMRI production or test version that will work with Java 1.8.</b><br>
+To use any future JMRI test or production releases, you'll have to
+update the Java on your computer to Java 11 (download from
+<a href="https://adoptium.net/?variant=openjdk11">here</a>
+or
+<a href="https://www.azul.com/downloads/?version=java-11-lts&package=jre">here</a>)
+This version has been tested on Java 11, so you can do the Java update now if you want to.
 
 <a id="update" name="update"></a>
 <h3>Update From Older JMRI Versions</h3>
