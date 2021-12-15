@@ -120,19 +120,20 @@
         <!-- Accordions -->
         <div class="flex-container">
             <div class="flex-item-50">
-                <h4 onclick="collapse('download1')" class="button card-1">JMRI 4.24 Production Release</h4>
+                <h4 onclick="collapse('download1')" class="button card-1">JMRI 4.26 Production Release</h4>
                 <div id="download1" class="hidden">
-                    <p><a href="/download/index.shtml#prod-rel">Download 4.24</a></p>
-                    Released on July 9, 2021.
+                    <p><a href="/download/index.shtml#prod-rel">Download 4.26</a></p>
+                    Released on December 16, 2021.
                     <p>
-                    JMRI 4.24 is recommended for new users. It is the most
+                    JMRI 4.26 is recommended for new users. It is the most
                     recent stable production release.</p>
                     <p>For more information, see the
-                    <a href="releasenotes/jmri4.24.shtml">JMRI 4.24 Release Note</a>,
+                    <a href="releasenotes/jmri4.26.shtml">JMRI 4.26 Release Note</a>,
                     which also contains the download links.</p>
                 </div>
             </div>
 
+<!--
             <div class="flex-item-50">
                 <h4 onclick="collapse('download2')" class="button card-1">JMRI 4.25.9 Test Release</h4>
                 <div id="download2" class="hidden">
@@ -147,10 +148,11 @@
                     <a href="releasenotes/jmri4.25.9.shtml">JMRI 4.25.9 Release Note</a>,
                     which also contains the download links.
                     </p>
-                    <a href="#download">Release 4.24</a> is the current "production" release, recommended
+                    <a href="#download">Release 4.26</a> is the current "production" release, recommended
                     for first-time users.
                 </div>
             </div>
+ -->
 
             <div class="flex-item-50">
                 <h4 onclick="collapse('download3')" class="button card-1">JMRI 3.10.1 Production
