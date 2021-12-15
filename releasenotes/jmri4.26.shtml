@@ -315,7 +315,7 @@ in those is
           variables.</li>
           <li>Add a Reporter Expression which can compare reports to strings, memory variables or
           local variables.</li>
-          <li>Add Dispatcher Actions and Expressions.</li>
+          <li>Add Dispatcher Action and Expression.</li>
           <li>Add a <strong>Table</strong> tab to Local Variable and Memory Actions.
           The table reference is used to identify the cell that has content that will be copied
           to the selected local or memory variable.</li>
@@ -517,7 +517,7 @@ in those is
             <li>Access to the deprecated SecurityManager class has been removed;
                 Java access security is now enforced by default.</li>
             <li>Keith Usher provided a new
-                <a href="http://jmri.org/resources/icons/mediumschematics/searchlights/">mediumschematics serachlights icon set</a>
+                <a href="http://jmri.org/resources/icons/mediumschematics/searchlights/">mediumschematics searchlights icon set</a>
                 at resources/icons/mediumschematics/searchlights/
             </li>
             <li>Fixed a problem with throttle function keys due to changes in Java 8u311</li>
@@ -556,21 +556,12 @@ in those is
             	way down.  If it's `aarch64`, JMRI is running on
             	Apple Silicon natively. `x86_64` indicates Intel-simulation
             	mode.
-            <li>Simplify JmriHelp, eliminate static stub files.</li>
             <li>Basic support for TypeScript has been added to the
                 webserver file system.</li>
             <li>Users that have HighDPI scaling set to something
                 different than 100% can now select whenether or not
-                to force Java to use 100% scaling. It's set in the
-                file <code>JMRI_InitPreferences.properties</code>
-                in the JMRI system preferences directory with the
-                setting <code>sun.java2d.uiScale</code>.
-                If this value is <code>1</code>, Java forces the
-                scaling of JMRI to 100%. If this value is
-                <code>0</code>, Java uses the same scaling as the
-                system.</li>
-            <li>The setting for HighDPI scaling can be changed in
-                <i>Edit -> Preferences -> Display</i>. The checkbox
+                to force Java to use 100% scaling. To change it, go
+                to <i>Edit -> Preferences -> Display</i>. The checkbox
                 has the text <i>Force 100% scaling when the OS uses
                 higher scaling</i>.</li>
             <li>Fix error after deleting a Memory
