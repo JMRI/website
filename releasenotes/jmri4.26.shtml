@@ -358,9 +358,6 @@ in those is
             <li>For some hardware types, sensors.requestAll() can request a status update for any Sensors known to JMRI.
                 <br>This is not possible for many hardware types, eg. Internal Connections.
                 <br>For multiple hardware connections, sensors.updateAll() will query all connections.</li>
-            <li>For some hardware types, sensors.requestAll() can request a status update for any Sensors known to JMRI.
-            <br>This is not possible for many hardware types, eg. Internal Connections.
-            <br>For multiple hardware connections, this will query all connections.</li>
 
             <li><a id="LnBushbyForwarder" name="LnBushbyForwarder">Adds</a> the
                 <code>LnBushbyForwarder.py</code> jython script, to support
@@ -415,7 +412,6 @@ in those is
     <h3>Throttle</h3>
         <a id="throttle" name="throttle"></a>
         <ul>
-            <li>Several bug fix on function panel (related to xml store/load)</li>
             <li>Several bug fix on function panel (related to xml store/load)</li>
             <li>Moved the keyboard shortcut implementation from KeyListeners to Input and Action Maps, should work better</li>
             <li>Fixed a problem with function keys due to changes in Java 8u311</li>
