@@ -107,21 +107,49 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <li>This version of JMRI, and all later ones, will require
-        at least Java 11 or later.
+    <li>
+        This test release, and all subsequent ones, require the use of
+        Java 11 or later.  Java 8 is explicitly not supported.
+        There's more information on the
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
     </li>
-<!-- this is displaying from the main master branch, as the J11master branch is not on the web server.
-     It'll be OK at the end. -->
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
-
+    <li>A number of classes and methods that have been deprecated for a long time
+        are removed in this release.  These include:
+        <ul>
+            <li>apps.JmriPlugin</li>
+            <li>apps/startup/StartupActionFactory</li>
+            <li>Routes/Turnouts/Sensors: One form of getNextAddress</li>
+            <li>Handling of preferences from before JMRI 4.0; upgrade through JMRI 4.20 instead</li>
+            <li>ShutDownTask, AbstractShutDownTask - use call & run methods now</li>
+            <li>Removed JythonAutomaton, JythonAutomatonAction, JythonSiglet, JythonSigletAction
+                unused classes.  These have been made obsolete by JMRI's native scripting,
+                and haven't been used since JMRI 1.2
+            </li>
+            <li>SSL (BlockBossLogic) - change to start/stop calls</li>
+            <li>Various TrafficManagers.instance methods - use InstanceManager</li>
+            <li>Throttle.getListeners() - use getPropertyChangeListeners</li>
+            <li>Removed obsolete RosterRecorder class;
+                function now available via scripting
+            </li>
+            <li>Removed deprecated methods from Throttle panels</li>
+            <li>This version no longer reads ZeroConf IPv4 and IPv6 preferences
+                written with JMRI 4.16 and before.  Please make sure to upgrade
+                to JMRI 4.20 (or later) and save your preferences before
+                updating to this version if you have configured the WiThrottle preference pane.</li>
+            <li>Manager.getSystemNameList - rework with getNamedBeanSet</li>
+            <li>Manager.getNamedBeanList - rework with getNamedBeanSet</li>
+            <li>Manager.setPropertyChangesMuted - use setPropertyChangesSilenced</li>
+            <li>Manager.getBeanBySystemName - use getBySystemName</li>
+            <li>Manager.getBeanByUserName - use getByUserName</li>
+            <li>FileChooserUtil</li>
+            <li>get/setFontFamily in SystemConsolePreferencesManager</li>
+            <li>throttle.FunctionPanel#changeState(..) has been replaced by #setSelected(..)</li>
+        </ul>
+    </li>
+    <li>The PowerManager now only fires events with the id "power".  Before this
+        release, it also fired events with the id "Power". Check that
+        your scripting code is looking for the right form.
 
 </ul>
 
@@ -178,13 +206,67 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.99.1+i
 <!-- this is displaying from the main master branch, as the J11master branch is not on the web server.
      It'll be OK at the end. -->
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+
+        <h4>DCC4pc</h4>
+            <ul>
+                <li>
+                    DCC4pc now has multi-system capability
+                </li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li>added new decoder definitions for Firmware v40.x</li>
+            </ul>
+
+    <h3>Logix</h3>
+        <a id="Logix" name="Logix"></a>
+        <ul>
+          <li>A single Logix can now be exported to LogixNG.
+		  Open Tools -> Tables -> Logix and select <i>Export
+		  to LogixNG</i> for the Logix you want to export.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>A single Logix can be imported to LogixNG. Se
+		  the section <i>Logix</i> for more information.</li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li>Allow user-modified signal systems to provide
+                    their own copy of an existing aspects.xml file.</li>
+            </ul>
+
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>This is the first test release that requires Java 11.
+                As part of that, there were extensive changes to
+                the underlying infrastructure. See PR
+                <a href="https://github.com/JMRI/JMRI/pull/10278">#10278</a>
+                and following PRs with the
+                <a href="https://github.com/JMRI/JMRI/issues?q=label%3A%22Java+11%22">Java 11 label</a>.
+            </li>
+            <li>Personal and development builds after this release will
+                be called 4.99.1plus instead of the prior convention of
+                calling them 4.99.2ish.  This should only affect JMRI
+                developers.
+            </li>
+        </ul>
+
+    <h3>Migration Issues</h3>
+        <a id="migration" name="migration"></a>
+        See the warnings section of the release note.
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
