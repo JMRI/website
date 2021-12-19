@@ -36,7 +36,9 @@ if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the first in a series of 4.99.* test releases to migrate JMRI to Java 11.
+<p>This is the next in a series of 4.99.* test releases to migrate JMRI to Java 11.
+It requires Java 11 to work.
+(See <a href="http://jmri.org/java">our page on downloading Java 11</a>)
 We expect this series to end in the next JMRI 5.0 production release at the end of Spring 2022.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
@@ -108,9 +110,6 @@ from
 
 <ul>
 
-    <li>This version of JMRI, and all later ones, will require
-        at least Java 11 or later.
-    </li>
 <!-- this is displaying from the main master branch, as the J11master branch is not on the web server.
      It'll be OK at the end. -->
 
@@ -135,7 +134,52 @@ we strongly recommend you update to <a href="jmri4.20.shtml">JMRI 4.20</a>
 before installing this test release.
 
 <ul>
-    <li>None</li>
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+        This test release, and all subsequent ones, require the use of
+        Java 11 or later.  Java 8 is explicitly not supported.
+        There's more information on this migration on the
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
+    </li>
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+        A number of classes and methods that have been deprecated for a long time
+        are removed in this release.  These include:
+        <ul>
+            <li>apps.JmriPlugin</li>
+            <li>apps/startup/StartupActionFactory</li>
+            <li>Routes/Turnouts/Sensors: One form of getNextAddress</li>
+            <li>Handling of preferences from before JMRI 4.0; upgrade through JMRI 4.20 instead</li>
+            <li>ShutDownTask, AbstractShutDownTask - use call & run methods now</li>
+            <li>Removed JythonAutomaton, JythonAutomatonAction, JythonSiglet, JythonSigletAction
+                unused classes.  These have been made obsolete by JMRI's native scripting,
+                and haven't been used since JMRI 1.2
+            </li>
+            <li>SSL (BlockBossLogic) - change to start/stop calls</li>
+            <li>Various TrafficManagers.instance methods - use InstanceManager</li>
+            <li>Throttle.getListeners() - use getPropertyChangeListeners</li>
+            <li>Removed obsolete RosterRecorder class;
+                function now available via scripting
+            </li>
+            <li>Removed deprecated methods from Throttle panels</li>
+            <li>Manager.getSystemNameList - rework with getNamedBeanSet</li>
+            <li>Manager.getNamedBeanList - rework with getNamedBeanSet</li>
+            <li>Manager.setPropertyChangesMuted - use setPropertyChangesSilenced</li>
+            <li>Manager.getBeanBySystemName - use getBySystemName</li>
+            <li>Manager.getBeanByUserName - use getByUserName</li>
+            <li>FileChooserUtil</li>
+            <li>get/setFontFamily in SystemConsolePreferencesManager</li>
+            <li>throttle.FunctionPanel#changeState(..) has been replaced by #setSelected(..)</li>
+        </ul>
+    </li>
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+        The PowerManager now only fires events with the id "power".  Before this
+        release, it also fired events with the id "Power". Check that
+        your scripting code is looking for the right form.
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+        This version no longer reads ZeroConf IPv4 and IPv6 preferences
+        written with JMRI 4.16 and before.  Please make sure to upgrade
+        to JMRI 4.20 (or later) and save your preferences before
+        updating to this version if you have configured the WiThrottle preference pane.</li>
 </ul>
 
 <a id="download" name="download"></a>
@@ -162,7 +206,7 @@ before installing this test release.
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.99.2``/">CI project page</a>.
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.99.2/">CI project page</a>.
  -->
 
 During development leading to the actual release, you can find test download files on the

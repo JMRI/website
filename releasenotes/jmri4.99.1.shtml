@@ -37,6 +37,8 @@ And please back up your JMRI files before installing this, in case you want to g
 back to an earlier version.</p>
 
 <p>This is the first in a series of 4.99.* test releases to migrate JMRI to Java 11.
+It requires Java 11 to work.
+(See <a href="http://jmri.org/java">our page on downloading Java 11</a>)
 We expect this series to end in the next JMRI 5.0 production release at the end of Spring 2022.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
@@ -91,12 +93,14 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None</li>
+    <li>We've had a report of trouble starting the LocoNetOverTCP server.
+        We'd appreciate hearing if that is working for you or not.</li>
 </ul>
 <!--
 If any of those affect you, please either
 wait for
-<a href="jmri4.99.2.shtml">JMRI 4.99.2</a>, due out shortly after this one,
+<a href="jmri4.99.2.shtml">JMRI 4.99.2</a>,
+due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="https://builds.jmri.org/jenkins/job/j11development/job/packages/">JMRI on Java 11 development build installer</a>
 from
@@ -110,7 +114,7 @@ from
     <li>
         This test release, and all subsequent ones, require the use of
         Java 11 or later.  Java 8 is explicitly not supported.
-        There's more information on the
+        There's more information on this migration on the
         <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
         <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
     </li>
@@ -133,10 +137,6 @@ from
                 function now available via scripting
             </li>
             <li>Removed deprecated methods from Throttle panels</li>
-            <li>This version no longer reads ZeroConf IPv4 and IPv6 preferences
-                written with JMRI 4.16 and before.  Please make sure to upgrade
-                to JMRI 4.20 (or later) and save your preferences before
-                updating to this version if you have configured the WiThrottle preference pane.</li>
             <li>Manager.getSystemNameList - rework with getNamedBeanSet</li>
             <li>Manager.getNamedBeanList - rework with getNamedBeanSet</li>
             <li>Manager.setPropertyChangesMuted - use setPropertyChangesSilenced</li>
@@ -150,6 +150,10 @@ from
     <li>The PowerManager now only fires events with the id "power".  Before this
         release, it also fired events with the id "Power". Check that
         your scripting code is looking for the right form.
+    <li>This version no longer reads ZeroConf IPv4 and IPv6 preferences
+        written with JMRI 4.16 and before.  Please make sure to upgrade
+        to JMRI 4.20 (or later) and save your preferences before
+        updating to this version if you have configured the WiThrottle preference pane.</li>
 
 </ul>
 
@@ -173,16 +177,16 @@ before installing this test release.
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.dmg</a><br/>
-  sha256: bf461db161a478cc11a6e0107bfd1139f338ebadd19c68d81946659827856474 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.99.1/JMRI.4.99.1+Rf3d7151af8.dmg">https://github.com/JMRI/JMRI/releases/download/v4.99.1/JMRI.4.99.1+Rf3d7151af8.dmg</a><br/>
+  sha256: 8b23919296ab511cca7b4220e6d578ac387936dfe93d420113b41c533920be39 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.exe">https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.exe</a><br/>
-   sha256: 03f795a562c3aee91935be9a3cfbf6c60ae2fd831a25cf87ea7c8769b4311683</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.99.1/JMRI.4.99.1+Rf3d7151af8.exe">https://github.com/JMRI/JMRI/releases/download/v4.99.1/JMRI.4.99.1+Rf3d7151af8.exe</a><br/>
+   sha256: eed2981cb418b3b6a57c84f4b1ed676fabbd3b21995043bf2c2a0c8ca38e946b</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.tgz</a><br/>
-   sha256: 7bb1fa846f8bdc115bda8d0d4ec6b67b816d4ee6cecc27cdbe89a0cc571c2e7e</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.99.1/JMRI.4.99.1+Rf3d7151af8.tgz">https://github.com/JMRI/JMRI/releases/download/v4.99.1/JMRI.4.99.1+Rf3d7151af8.tgz</a><br/>
+   sha256: 4e02ad171199e2498237d920cca90477849e1253b0775cbec930b937a6991449</li>
 </ul>
 </div>
  -->
