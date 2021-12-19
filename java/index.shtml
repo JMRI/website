@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JMRI: Getting Java</title>
+    <meta name="author" content="John Plocher">
+    <meta name="keywords" content="java model railroad JMRI download binaries binary code jar install">
+    <!--#include virtual="/Style.shtml" -->
+</head>
+
+<body>
+    <!--#include virtual="/Header.shtml" -->
+
+<div id="mBody">
+<!--#include virtual="/Sidebar.shtml" -->
+
+ <hr class="hide">
+ <div id="mainContent">
+
+<h1>Getting Java</h1>
+
+JMRI needs a "Java Runtime Environment" (JRE),
+but will work fine with the larger "Java Development Kit" (JDK).
+
+<p>
+We recommend using Java 11 with current JMRI versions.
+Here are some places you can get it.  Click on the links to
+go to the download page.
+
+
+<ol>
+    <li>
+        <a href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&field_operating_system_target_id=All&field_architecture_target_id=All&field_java_package_target_id=401">OpenLogic</a>
+         -
+        Select your OS type (Windows, macOS, Linux), then if needed the computer CPU
+        architecture (we recommend 64-bit if you have a 64-bit computer), then pick the
+        appropriate download from the page.
+    <li>
+        <a href="https://www.azul.com/downloads/?version=java-11-lts&package=jre">Azul</a>
+        - Go to the bottom of the page, past the advertising, select
+        your OS type (Windows, macOS, Linux), then if needed the computer CPU
+        architecture (we recommend 64-bit if you have a 64-bit computer), then pick the
+        appropriate download from the page.
+
+    <li>
+        <a href="https://adoptium.net/?variant=openjdk11">AdoptJDK</a>
+        - This website refers to a Java JDK as "Temurin", which is a bit confusing.
+        Make sure that "Temurin 11" is selected, then press the large "Latest Release" button.
+
+    <li>
+        <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">Oracle</a>
+        -
+        The original JDK source, but this page requires you to set up a (free) Oracle account. No JREs available.
+
+</ol>
+
+   <hr class="hide">
+   <!--#include virtual="/Footer.shtml" -->
+
+   </div> <!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+<script src="/js/main.js"></script>
+</body>
+</html>
