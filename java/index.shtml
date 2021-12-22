@@ -41,11 +41,15 @@ go to the download page.
         your OS type (Windows, macOS, Linux), then if needed the computer CPU
         architecture (we recommend 64-bit if you have a 64-bit computer), then pick the
         appropriate download from the page.
+        Windows users should probably pick the ".msi" installer, as it properly
+        sets up various registry values.
 
     <li>
         <a href="https://adoptium.net/?variant=openjdk11">Adoptium (Eclipse)</a>
         - This website refers to a Java JDK as "Temurin", which is a bit confusing.
         Make sure that "Temurin 11" is selected, then press the large "Latest Release" button.
+        <p>
+        On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.
 
     <li>
         <a href="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/">IBM</a>
