@@ -36,9 +36,9 @@
 
     <h2>Create the AnyRail design</h2>
     <p>Create the layout design using the AnyRail tools</p>
-    <p>Use the Label feature to assign names to turnouts because those labels will be used as User Names in JMRI which 
-    will be easier to understand than the automatically generated names. 
-    Also, if Blocks will be used in PanelPro, use the Label feature to assign names to sections because those labels will 
+    <p>Use the Label feature to assign names to turnouts because those labels will be used as User Names in JMRI which
+    will be easier to understand than the automatically generated names.
+    Also, if Blocks will be used in PanelPro, use the Label feature to assign names to sections because those labels will
     be used as Block User Names in JMRI.</p>
 
     <h2>Export the AnyRail design as a JMRI PanelPro file</h2>
@@ -75,7 +75,7 @@
 	loading an AnyRail export file.</li>
         <li>Select <strong>Help &rArr; System Console...</strong> from the PanelPro menu.
         This may be important for the first load of the exported PanelPro file to see any errors when loading.</li>
-        <li>Select <strong>Panels &rArr; Load Panels...</strong> from the PanelPro menu.</li>
+        <li>Select <strong>File &rArr; Load table contents and panels...</strong> from the PanelPro menu.</li>
         <li>In the <strong>Load Panel File</strong> dialog, select the exported panel
         name and click on <strong>Load</strong>.</li>
         <li>Review the system console for warnings or errors during the load step.  If errors
@@ -85,11 +85,13 @@
           <ul>
             <li>The Layout Editor panel:  It is displayed in Edit mode to facilitate
             post import modifications.  See
-            <a href="https://www.jmri.org/help/en/package/jmri/jmrit/display/LayoutEditor.shtml">
+            <a href="/help/en/package/jmri/jmrit/display/LayoutEditor.shtml">
             Layout Editor Help</a> for details on using Layout Editor.</li>
             <li>The exported jpg image file is loaded with the xml file and acts as a background
             for the track plan.</li>
-            <li>The <strong>Turnout</strong> table:  <strong>Tools &rArr; Tables &rArr; Turnouts</strong> will
+            <li>The
+            <a href="../../../help/en/package/jmri/jmrit/beantable/TurnoutTable.shtml"><strong>Turnout</strong> table</a>:
+            <strong>Tools &rArr; Tables &rArr; Turnouts</strong> will
             have the list of turnouts.  If labels had been assigned to the turnouts in AnyRail they
             will be used for the <strong>user name</strong>.  If not, a cryptic user name will be
             assigned.</li>
@@ -101,10 +103,30 @@
           </ul>
         </li>
         <li>If changes have been made to the imported file, store the changes using <strong>File &rArr;
-        Store Panels...</strong> in Layout Editor or <strong>Panels &rArr; Store Panels...</strong>
+        Store Panels...</strong> in Layout Editor or <strong>File &rArr; Store ALL table content and panels...</strong>
         using the main PanelPro menu. Whether to replace the existing file or use a new file name
         depends on personal file management philosophy.  If <strong>Overwrite</strong> is selected, the old file
         will be moved to the <strong>backupPanels</strong> directory with the date and time added to the file name.</li>
+
+        <li>Quit and restart PanelPro, load your new panel file and check.
+
+        <li>AnyRail defines Turnouts as "Internal" devices with
+        <a href="../../../help/en/html/doc/Technical/Names.shtml">system names</a>
+        like "IT1", "IT2", etc.  These will not operate the hardware on your layout.  To do that,
+        you have to switch to hardware-specific Turnout definitions for your hardware:
+        NCE, LocoNet, DCC+ or whatever you're using.  To do this:
+        <ol type="A">
+            <li>Using the Turnout table,
+                <a href="../../../help/en/package/jmri/jmrit/beantable/TurnoutAddEdit.shtml">add your hardware-specific turnouts</a>.
+                Leave the user name empty.
+            <li>Right click each internal turnout and select Move User Name.
+            <li>Select the hardware-specific turnout that will have the user name.
+            <li>Repeat steps A and B until done.
+            <li>Store the xml data file (step 7 above), quit and start PanelPro, load the xml data file.
+            <li>Test the results by operating the turnouts on the Layout Editor panel
+                and making sure each one operates the turnout on the layout.
+                You can also operate the turnouts directly from the Turnout Table.
+        </ol>
       </ol>
 
 
