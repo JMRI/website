@@ -115,17 +115,17 @@
         like "IT1", "IT2", etc.  These will not operate the hardware on your layout.  To do that,
         you have to switch to hardware-specific Turnout definitions for your hardware:
         NCE, LocoNet, DCC+ or whatever you're using.  To do this:
-        <ol type="A">
+        <ol style="list-style-type: upper-alpha">
             <li>Using the Turnout table,
                 <a href="../../../help/en/package/jmri/jmrit/beantable/TurnoutAddEdit.shtml">add your hardware-specific turnouts</a>.
-                Leave the user name empty.
-            <li>Right click each internal turnout and select Move User Name.
-            <li>Select the hardware-specific turnout that will have the user name.
-            <li>Repeat steps A and B until done.
-            <li>Store the xml data file (step 7 above), quit and start PanelPro, load the xml data file.
+                Leave the user name empty.</li>
+            <li>Right click each internal turnout and select Move User Name.</li>
+            <li>Select the hardware-specific turnout that will have the user name.</li>
+            <li>Repeat steps B and C until done.</li>
+            <li>Store the xml data file (step 7 above), quit and start PanelPro, load the xml data file.</li>
             <li>Test the results by operating the turnouts on the Layout Editor panel
                 and making sure each one operates the turnout on the layout.
-                You can also operate the turnouts directly from the Turnout Table.
+                You can also operate the turnouts directly from the Turnout Table.</li>
         </ol>
       </ol>
 
