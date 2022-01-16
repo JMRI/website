@@ -113,14 +113,10 @@ from
 <!-- this is displaying from the main master branch, as the J11master branch is not on the web server.
      It'll be OK at the end. -->
 
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
-
+    <li>
+        Example scripts related to MQTT moved from jython directory to jython\MQTT directory.  This will require
+        an update to any start-up actions that reference their location.
+    </li>
 
 </ul>
 
@@ -214,7 +210,7 @@ During development leading to the actual release, you can find test download fil
 These are development files, and might not be working at any particular time.</p>
 
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri4.26.shtml">Production Release 4.26</a>:</h2>
+<h2>Changes since <a href="jmri4.99.1.shtml">Test Release 4.99.1</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.99.2+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
@@ -222,13 +218,73 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.99.2+i
 <!-- this is displaying from the main master branch, as the J11master branch is not on the web server.
      It'll be OK at the end. -->
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
+    <h3>Hardware Support</h3>
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+        <h4>DCC++ and DCC-EX</h4>
+            <ul>
+                <li>handle new locoState reply to sync speed, dir and Fkeys</li>
+            </ul>
+
+        <h4>MQTT</h4>
+            <ul>
+                <li>Native MQTT SignalMasts are available.</li>
+                <li>Splash screen shows connection address</li>
+            </ul>
+
+        <h4>TMCC</h4>
+            <ul>
+                <li>Enabled functions 23-27 in the throttle.</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>TSU2 Genesis Diesel - add SD70ACU and Dash 9-44CW</li>
+		        <li>TSU Genesis Steam - N Challenger add CV and change some default value per user request</li>
+            </ul>
+
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The action <i>Throttle</i> has been updated.
+          It now also has the child sockets <i>Function</i>
+          and <i>FunctionOnOff</i>. These are optional.
+          If both are connected, the Throttle action sets
+          or resets this function. The child <i>Function</i>
+          tells the function number and the child
+          <i>FunctionOnOff</i> tells if the function should
+          be On (True) or Off (False).</li>
+          <li>A single Logix can be imported to LogixNG. See
+          the section <i>Logix</i> for more information.</li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li>Example scripts related to MQTT moved from jython directory to jython\MQTT directory.</li>
+            <li>Initial, very experimental,
+                <a href="https://jmri.org/help/en/html/tools/scripting/Python3.shtml">Python 3 support</a>
+                is available for macOS and Linux.
+            <li>Added simpler accessors to InstanceManager for use in Py3 scripts. See
+                jython/test/InstanceManagerTest.py</li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <h4>Signal Masts</h4>
+            <ul>
+                <li>Native MQTT masts are available</li>
+            </ul>
+
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>SpotBugs has been updated to 4.5.0</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
