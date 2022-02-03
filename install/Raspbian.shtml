@@ -50,12 +50,12 @@ JMRI installation consists of two stages: install Java and install JMRI.
 	<h4>Raspbian 4.14 Stretch</h4>
 	<p>A fresh JMRI install on a Raspberry Pi 3 Model B+ running Stretch is straightforward, as this OS includes Java 1.8 and the JMRI Linux install is ready for Arm. Follow the steps outlined below (skip steps 3 and 4).</p>
 	
-	<h4>Raspbian 4.1 Jessy</h4>
-	<p>A fresh JMRI install on a Raspberry Pi B 2 running Jessy is straightforward, as this OS includes Java 1.8 and the JMRI Linux install is ready for Arm. Follow the steps outlined below (skip steps 3 and 4).</p>
+	<h4>Raspbian 4.1 Jessie</h4>
+	<p>A fresh JMRI install on a Raspberry Pi B 2 running Jessie is straightforward, as this OS includes Java 1.8 and the JMRI Linux install is ready for Arm. Follow the steps outlined below (skip steps 3 and 4).</p>
 	
 	<h4>Raspbian 3.18 Wheezy</h4>
 	<p>Tested on: Raspberry Pi Model B with 512Mb memory and a SanDisk 8Gb SDHC card.<br>
-	Wheezy might run on a Pi A or B+, but OpenJDK is said to be a lot slower then the JDK shipping with Jessy. Check your version of Java in step 3.
+	Wheezy might run on a Pi A or B+, but OpenJDK is said to be a lot slower then the JDK shipping with Jessie. Check your version of Java in step 3.
 	</p>
 	
 	<p>To install the OS on a RasPi, follow these steps: <a href="#suzie">[1]</a>
@@ -79,7 +79,7 @@ JMRI installation consists of two stages: install Java and install JMRI.
 	Since Java is already installed, the next step is to install JMRI.</p></li>
 		
   <li>Depending on how your Pi is set up, you might need to install <strong>Java</strong>:
-	<p>For current JMRI releases (version 3.10 and up) you need "Java 8" or "Java 1.8". Raspbian Jessy already has a suitable Java Runtime (Oracle 1.8) as part of the distribution.
+	<p>For current JMRI releases (version 3.10 and up) you need "Java 8" or "Java 1.8". Raspbian Jessie already has a suitable Java Runtime (Oracle 1.8) as part of the distribution.
 	<p>To check which Java version is installed, open LXTerminal window and type 'java -version'. This will return something like:
 	<pre>Java 1.x</pre>
 	<p>If it is not at least 1.8, or if you get a "java: not found" error, you will need to install Java from the repositories or <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">java.com</a>.</p>
@@ -182,7 +182,7 @@ on the PI for this to work. See <code>raspi-config</code>
 	<dd>The PR3 is reported to work reliably (Dan M.).</dd>
 
 	<dt>LocoBuffer USB</dt>
-	<dd>For connecting to LocoNet, we recommend you use Raspbian Jessy or later with the LocoBuffer-USB.</dd>
+	<dd>For connecting to LocoNet, we recommend you use Raspbian Jessie or later with the LocoBuffer-USB.</dd>
 
 	<dt>MERG CBUS</dt>
 	<dd>The MERG CANUSB interface is detected automatically (Matt H.).</dd>
