@@ -84,7 +84,8 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None</li>
+    <li>CBUS Node Manager: Using the Speed spinners in the Node Variable Edit pane for CANSERVO modules will put the
+    code into an endless loop. The only way to recover is to shut down JMRI.</li>
 </ul>
 <!--
 If any of those affect you, please either
