@@ -111,10 +111,6 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-<!-- this is displaying from the main master branch, as the J11master branch is not on the web server.
-     It'll be OK at the end. -->
-
     <li>
         Example scripts related to MQTT moved from jython directory to jython\MQTT directory.  This will require
         an update to any start-up actions that reference their location.
