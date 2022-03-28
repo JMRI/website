@@ -172,6 +172,29 @@
 
       </ol>
 
+      <a id="arm"></a>
+      <h2>A Note on Apple Silicon Macs</h2>
+        <p>Apple Silicon macs, which use the M1 chip, can run JMRI in two ways:
+            <ol>
+            <li>In native mode:<br>
+                    You do this by downloading and using an Apple Silicon native-mode Java installation.
+                    This runs a little faster, though that doesn't matter much for JMRI.
+                    It has limitations, at least currently:
+                    <ul>
+                    <li>There's no native support for the JOAL library that's used for VSD sound.
+                        VSD sound won't be available.
+                    <li>There's no native support for the HIDinput library that's used
+                        by some user's scripts to handle mouse and keyboard input.
+                    </ul>
+                If either of those are a problem, you can use the next mode.
+            <li>In emulation mode:<br>
+                    You do this by downloading and using an Intel version of Java.
+                    (The Java download link above is to an Intel version.)
+                    This uses the Apple Rosetta system for translation and running, which
+                    is a slightly slower, but that's not likely to have much
+                    visible effect.
+            </ol>
+
       <a id="update"></a>
       <h2>Updating JMRI</h2>
           <p>If you already have JMRI installed and working, and want to update
