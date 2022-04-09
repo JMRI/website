@@ -86,7 +86,7 @@ Following this multi-step order of updating via stable major releases safeguards
 that can arise from skipping these versions.
 
 <a id="problems" name="problems"></a>
-<h3>Known problems with this release</h3>
+<h3>New problems with this release</h3>
 <ul>
     <li><strong>Logix definitions that have more than 1 conditional will invoke the conditionals in the wrong sequence</strong>.
     This can lead to unpredictable results.  The affected releases are 4.21.5 thru 4.23.2.
