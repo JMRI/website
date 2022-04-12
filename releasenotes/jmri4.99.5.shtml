@@ -95,12 +95,19 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>New problems with this release</h3>
 <ul>
-    <li>None yet</li>
+    <li>When opening a Throttle, you may get an erroneous error dialog.  You can just
+        dismiss it and continue.  If you'd like to avoid it in future (until we get it fixed),
+        once you have the throttle open click "File -> Save Current Throttle".
+        This is GitHub
+        <a href="https://github.com/JMRI/JMRI/issues/10874">Issue 10874</a> and the fix is
+        <a href="https://github.com/JMRI/JMRI/pull/10875">PR 10875</a>.
+    </li>
 </ul>
+
 <!--
-If any of those affect you, please either
+If this affects you, please either
 wait for
-<a href="jmri4.99.6.shtml">JMRI 4.99.6</a>, due out shortly after this one,
+<a href="jmri4.99.6.shtml">JMRI 4.99.6</a>,
 or (once there's a fix for the problem) pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
