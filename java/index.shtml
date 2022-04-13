@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>JMRI: Getting Java</title>
+    <title>JMRI: JMRI and Java 11</title>
     <meta name="author" content="John Plocher">
     <meta name="keywords" content="java model railroad JMRI download binaries binary code jar install">
     <!--#include virtual="/Style.shtml" -->
@@ -17,18 +17,46 @@
  <hr class="hide">
  <div id="mainContent">
 
-<h1>Getting Java</h1>
+<h1>Using Java 11 with JMRI</h1>
 
+We recommend using Java 11 with current JMRI versions.
 JMRI needs a "Java Runtime Environment" (JRE),
 but will work fine with the larger "Java Development Kit" (JDK).
 
-<p>
-We recommend using Java 11 with current JMRI versions.
-Here are some places you can get it.  Click on the links to
+<p>Before getting a new version of Java, it is useful to check what version is currently installed 
+on your computer.  On Windows, for example, open a "command" window by typing "Command prompt" into the search bar
+ next to the Windows Start icon.  Then type:</p>
+     
+     <pre>java -version</pre>
+     
+<p>IT IS RECOMMENDED THAT YOU REMOVE OLD VERSIONS OF JAVA BEFORE YOU UPGRADE. This avoids a number of reported
+problems.  On Windows, for example, you can:
+
+     <ul>
+        <li>Go to Windows <strong>Settings&rArr;Apps</strong>, find Java 8 and click on <strong>"Uninstall."</strong></li>
+        <li>Alternatively, download the <a href="https://www.java.com/en/download/uninstalltool.jsp
+        " target="_blank">Oracle Java Uninstall tool</a> and follow its instructions</li>
+     </ul>
+     
+<p>See the <a href="../help/en/html/setup/">JMRI Setup and Install pages</a> for more information.</p>     
+     
+<h1>Getting Java 11</h1>
+
+Here are some places you can get Java 11.  Click on the links to
 go to the download page.
 
 
 <ol>
+    <li>
+        <a href="https://www.azul.com/downloads/?version=java-11-lts&package=jre">Azul</a>
+        - Go to the bottom of the page, past the advertising, select
+        your OS type (Windows, macOS, Linux), then if needed the computer CPU
+        architecture (we recommend 64-bit if you have a 64-bit computer), then pick the
+        appropriate download from the page.
+        
+        <p>Windows users should pick the ".msi" installer, as it properly
+        sets up various registry values.
+
     <li>
         <a href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&field_operating_system_target_id=All&field_architecture_target_id=All&field_java_package_target_id=401">OpenLogic</a>
          -
@@ -38,15 +66,6 @@ go to the download page.
         <p>
         On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.
     <li>
-        <a href="https://www.azul.com/downloads/?version=java-11-lts&package=jre">Azul</a>
-        - Go to the bottom of the page, past the advertising, select
-        your OS type (Windows, macOS, Linux), then if needed the computer CPU
-        architecture (we recommend 64-bit if you have a 64-bit computer), then pick the
-        appropriate download from the page.
-        Windows users should probably pick the ".msi" installer, as it properly
-        sets up various registry values.
-
-    <li>
         <a href="https://adoptium.net/?variant=openjdk11">Adoptium (Eclipse)</a>
         - This website refers to a Java JDK as "Temurin", which is a bit confusing.
         Make sure that "Temurin 11" is selected, then press the large "Latest Release" button.
@@ -54,14 +73,14 @@ go to the download page.
         On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.
 
     <li>
-        <a href="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/">IBM</a>
-        - They provide JDKs under the "Semeru" name.
-
-    <li>
         <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">Oracle</a>
         -
         The original JDK source, but this page requires you to set up a (free) Oracle account. No JREs available.
-        We recommend that Windows users pick the "Windows x64 Installer", as it properly sets up various registry values.
+        <p>We recommend that Windows users pick the "Windows x64 Installer", as it properly sets up various registry values.
+
+    <li>
+        <a href="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/">IBM</a>
+        - They provide JDKs under the "Semeru" name.
 
 </ol>
 
