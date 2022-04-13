@@ -4,6 +4,12 @@
 <head>
   <title>JMRI Install Guide: Windows</title>
     <!--#include virtual="/Style.shtml" -->
+    
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+     </style>
 </head>
 
 <body>
@@ -20,10 +26,12 @@ JMRI Install Guide: Windows
 for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old Windows Install Guide</a>.</p>
 
 	<ul>
-	<li><a href="#installation">Installation procedure</a>
+	<li><a href="#sysreq">Determine sytem requirements </a></li>
+  <li><a href="#installation">Installation procedure</a>
 	  <ul>
-	  <li><a href="#offline">Offline installation</a></li>
-      </ul></li>
+	    <li><a href="#offline">Offline installation</a></li>
+    </ul>
+  </li>
 	<li><a href="#startup">Starting JMRI</a></li>
 	<li><a href="#notes">Notes</a>
 		<ul>
@@ -31,6 +39,7 @@ for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
 		<li><a href="#largewindow">Large Windows</a></li>
 		<li><a href="#themes">Windows Themes and Skins</a></li>
 		<li><a href="#revert">Reverting to an earlier version</a></li>
+    <Li><a href="#olderwindows">Installing Java 8 on older versions of Windows</a></li>
 		</ul>
 	<li><a href="#debugging">Debugging</a>
 		<ul>
@@ -47,51 +56,115 @@ for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
     </li>
 	</ul>
 
+
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
+
+<a id="sysreq"></a><h2>Determine System Requirements</h2>
+    
+	  <p>Using JMRI requires a combination of hardware (in this case running Windows), Java software and a JMRI
+    download for a specific version.  The table below shows configurations that have been reported working - 
+    there may be other combinations that are also possible, but they have not been reported by the user community.
+	  
+	  <table style="width:75%">
+    <tr>
+       <th style="width:30%">JMRI&reg; Release</th>
+       <th style="width:20%">Windows Rel.</th>
+       <th style="width:25%">Jave Rel.</th>
+    </tr>
+    <tr>
+        <td><a href="../download/index.shtml">Test release 4.x.y through 4.25.9</a></td>
+        <td>7, 8, 10, 11, Vista</td>
+        <td>Java 1.8 ("Java 8")</td>
+    </tr>
+    <tr>
+        <td><a href="../releasenotes/jmri4.26.shtml">Production rel 4.26</a></td>
+        <td>7, 8, 10, 11</td>
+        <td>Java 8 or <a href="../java/index.shtml">Java 11 (Recommended)</a></td>
+    </tr>
+    <tr>
+        <td><a href="../releasenotes/jmri4.26.shtml">Production rel 4.26</a></td>
+        <td>Vista</td>
+        <td>Java 8</td>
+    <tr>
+        <td><a href="../releasenotes/jmri4.27.1.shtml">Test rel 4.27.1</a></td>
+        <td>7, 8, 10, 11, Vista</td>
+        <td>Java 8 or <a href="../java/index.shtml">Java 11 (Recommended)</a></td>
+    </tr>
+    <tr>
+        <td><a href="../download/index.shtml">Test rel 4.99.x</a></td>
+        <td>7, 8, 10, 11</td>
+        <td><a href="../java/index.shtml">Java 11</a></td>
+    </tr>
+    <tr>
+        <td><a href="../download/index.shtml">Production rel 5.0 (expected summer 2022)</a></td>
+        <td>7, 8, 10, 11</td>
+        <td><a href="../java/index.shtml">Java 11</a></td>
+    </tr>
+    
+    </table>
+    
+    
+    <p><strong>Older releases:</strong><br>
+    <table style="width:75%">
+    <tr>
+       <th style="width:30%">JMRI&reg; Release</th>
+       <th style="width:20%">Windows Rel.</th>
+       <th style="width:25%">Jave Rel.</th>
+    </tr>
+    <tr>
+        <td><a href="../releasenotes/jmri3.10.1.shtml">Test release 3.10.1</a></td>
+        <td></td>
+        <td>Java 1.6 ("Java 6")</td>
+    </tr>
+    <tr>
+        <td><a href="../releasenotes/jmri3.10.1.shtml">Test release 3.10.1</a></td>
+        <td>Vista SP1</td>
+        <td>Java 1.7 ("Java 7")</td>
+    </tr>
+    <tr>
+        <td><a href="../releasenotes/jmri2.14.1.shtml">Test release 2.14.1</a></td>
+        <td></td>
+        <td>Java 1.5 ("Java 5") or 1.6 ("Java 6")</td>
+    </tr>
+    <tr>
+        <td><a href="../releasenotes/jmri2.14.1.shtml">Test release 2.14.1</a></td>
+        <td>Windows 2000 SP3, XP</td>
+        <td>Java 1.6 ("Java 6")</td>
+    </tr>
+    <tr>
+        <td><a href="../releasenotes/jmri2.8.shtml">Production release 2.8</a></td>
+        <td>Windows 98, ME</td>
+        <td>Java 1.6 ("Java 6")</td>
+    </tr>
+    </table>
+
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
+
 <a id="installation"></a>
 <h2>Installation Procedure</h2>
 	<ol>
-	  <li>Determine if your hardware supports Java and JMRI.
-	  <a name="sysreq"></a><h3>JMRI System Requirements</h3>
-	  <p>Using JMRI requires a combination of hardware (in this case running Windows), Java software and a JMRI download for a specific version.
-	  <p>JMRI&reg; version 4.2 and later requires Java 1.8; Java 11 is recommended for JMRI 4.20 or later.<br>
-	  Version 3.10.1 requires Java 1.6 or later.<br>
-	  Version 2.14.1 requires Java 1.5 (or 1.6 if you wish for drag &amp; drop).</p>
-
-		<p>Windows 7-10 and Vista SP2 can run the <a href="http://jmri.org/download/index.shtml">current JMRI test and production releases</a> with Java 8.
-		If your computer runs one of these Windows versions, just go to the next step.<br>
-		Computers running Vista SP1 can run <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7.<br>
-		Windows2000 SP3 and XP systems can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.<br>
-		Windows98 and ME can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.8</a>.
-                <p>Note: It is possible to install Java 1.8 onto machines running Windows XP or Vista SP1,
-                but this is <em>unsupported</em> by Oracle.
-                <ul>
-                <li>To do this for Windows XP, visit
-                    the <a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html">Java Releases Archive page</a>
-                    and choose the "Java SE Runtime Environment 8u151" installer for "Windows x86 Offline".
-                    The file name is <code>jre-8u151-windows-i586.exe</code>.
-                    This is the last installer that worked for Windows XP; if you later get prompted to do a Java
-                    Update to a newer version than 151, cancel it instead of applying it (if you do apply the update, you'll have to reinstall
-                    the 151 version of Java as described here.)
-                    The installer will complain that it is unsupported,
-                    but should allow you to continue with the installation. Assuming that this is successful, proceed with
-                    installation of <a href="http://jmri.org/download/index.shtml">current JMRI test and production releases</a>.
-                <li>To do this for Windows Vista SP1, visit
-                    the <a href="http://www.java.com/en/download/manual.jsp">Manual Java Downloads page</a> and
-                    choose the Offline Installer for Windows. The installer will complain that it is unsupported,
-                    but should allow you to continue with the installation. Assuming that this is successful, proceed with
-                    installation of <a href="http://jmri.org/download/index.shtml">current JMRI test and production releases</a>.
-                </ul>
-	  <p>
-	  It's important to have enough memory and free hard disk space.
-	  We recommend you have at least 256&nbsp;MB of memory for Windows 98, 512&nbsp;MB of memory for Windows 2000 and 2&nbsp;GB for the newer W7-W10 systems.
-	  Note that used PC hardware is available for very little money; it might be cheaper to buy a used computer than to update your existing one.</p>
-	  <p>
-	  Note: JMRI is developed with Java 1.8.  It should work fine with later versions (java 1.9, Java 10, 11, etc)
-	  but you may get a message about "WARNING: An illegal reflective access operation has occurred" and "WARNING: Please consider reporting this to the maintainers".
-	  We know about this, and it'll get fixed in due course; you can ignore the messages.
-	</li>
-
-	<li>Get JMRI
+  <li><em>Check Java release on your computer</em>
+     <p>Check to see what release of Java is currently installed on your computer.  Open a "command" window
+     by typing "Command prompt" into the search bar next to the Windows Start icon.  Then type:</p>
+     
+     <pre>java -version</pre>
+     
+     <p>Use the tables above to make sure the version of Java you are running is compatible with the version
+     of JMRI you want to install.  If you want to run a more current version of JMRI, consider installing 
+     <a href="../java/index.shtml"> Java 11 (see suggestions by clicking here)</a>.  
+     <strong>IF YOU HAVE JAVA 8 CURRENTLY INSTALLED, MAKE SURE TO UNINSTALL IT FIRST.</strong>
+     [Multiple problems have been reported if both Java 11 and Java 8 are installed at the same time.]</p>
+     
+     <ul>
+        <li>Go to Windows <strong>Settings&rArr;Apps</strong>, find Java 8 and click on <strong>"Uninstall."</strong></li>
+        <li>Alternatively, download the <a href="https://www.java.com/en/download/uninstalltool.jsp
+        " target="_blank">Oracle Java Uninstall tool</a> and follow its instructions</li>
+     </ul>
+  <p>Check "java -version" to make sure the uninstall worked.  While restarting your computer is not required, some people have found this useful.  Then install Java 11 (click <a href="../java/index.shtml">suggestions on downloading one of the versions of Java 11.</a>  Check "java -version" and restart again, and then proceed with the JMRI installation steps.</p>
+  
+  </li>
+  
+	<li><em>Get JMRI</em>
 	    <p><a href="../download/index.shtml#prod-rel">Download</a> a version of JMRI, either the latest production version, or a "test version".
 	    Since the version numbers change with every release, this link takes you to the general JMRI download page,
 	    where you can select whichever version you like.
@@ -105,7 +178,7 @@ for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
 	</li>
 
 
-  <li><a id="update"></a>Run the JMRI installer
+  <li><em><a id="update"></a>Run the JMRI installer</em>
   <p>When the JMRI download is ready, you will be asked to either save it to disk or directly run the installer.</p>
     <ol type="i">
       <li>Installer start-up
@@ -151,6 +224,8 @@ for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
   </li>
  </ol>
 
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
+
 	<a id="offline"></a>
 	<h3>Offline installation</h3>
 	<p>The Windows JMRI installer for version 2.5.2 or later supports an offline installation of Java and JMRI. Typically, this would be used when the computer on which you wish to run JMRI does not have internet access.</p>
@@ -174,7 +249,9 @@ for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
 	before
 	reinstalling a new version of JMRI.</p>
 
- <a id="startup"><h2>Starting JMRI</h2></a>
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
+
+ <a id="startup"></a><h2>Starting JMRI</h2>
  <ul>
   <li>Connect your computer to your <a
      href="../help/en/html/hardware/index.shtml">Command Station hardware</a>.
@@ -183,7 +260,7 @@ for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
     <br>(This shows the Start menu following a 'Typical' install - a 'Full' install will place additional icons in this menu)
 
   <li>Configure the program to connect to your layout. The Connections Preferences will open automatically on first run, or you can open the Preferences pane from the Edit menu. More on this on the <a href="../help/en/html/setup/index.shtml">JMRI Setup help page</a>.
-    <br>The JMRI <a href="http://jmri.org/help/en/html/hardware/index.shtml">Hardware help page</a> lists the various
+    <br>The JMRI <a href="../help/en/html/hardware/index.shtml">Hardware help page</a> lists the various
         types of layout equipment that JMRI can connect to, and gives links to instruction pages</li>
   <li>When you start DecoderPro 3.8 or later on Windows for the first time, the <strong>JMRI StartUp Wizard</strong> displays a series of screens to guide you through the setup proces:
     <ol type="i">
@@ -201,6 +278,8 @@ for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
   </li>
   </ul>
 
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
+
 <a id="notes"></a>
 <h2>Notes</h2>	<a id="serialconfig"></a>
 
@@ -210,9 +289,11 @@ for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
 	19200, 8, None, 1, Hardware.<br>
 	Click OK. Quit the application and restart JMRI. Verify your connection settings.</p>
 
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
+
 <a id="largewindow"></a>
 <h3>Large Windows</h3>
-<img src="images/TaskbarOptions.png" height="228" width="202" align="right" alt="control panel">
+<img src="images/TaskbarOptions.png" height="228" width="202" alt="control panel">
 <p>Depending on what it wants to display, JMRI can open up very large windows.  Generally, JMRI uses the size of the screen and information about fixed things like the start bar to decide the maximum size for an opening window so that e.g. the corners can't be reached to resize the window.</p>
 
 <p>Depending your Windows display operation, large JMRI windows will either resize to stay on the large part of the screen, clear of start bars and menu bars, or will be displayed at the full size of the screen, appearing under the start bar and menu bars.</p>
@@ -224,6 +305,8 @@ for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
 <a id="themes"></a>
 <h3>Windows Themes and Skins</h3>
 <p>If you're using a "skinning" utility which changes the appearance of programs running on your computer, you should tell it to ignore the "java.exe" program.  That's how JMRI and DecoderPro will appear to it, and they weren't written with such "skins" in mind.</p>
+
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
 
 <a id="revert"></a>
 <h3>Reverting to an earlier version</h3>
@@ -256,19 +339,59 @@ Within this folder, look for - and delete - the folder "JMRI", then rename
 the folder "JMRI_backup" to "JMRI".
 <p>Restart JMRI and you should be back to where you were before installing the new version.</p>
 
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
+
+    <a id="oldwindows"></a>
+    <h3>Installaing Java 8 on older Windows versions</h3>
+		<p>
+		Windows98 and ME can run <a href="../releasenotes/jmri2.14.1.shtml">JMRI 2.8</a>.
+    <p>Note: It is possible to install Java 1.8 onto machines running Windows XP or Vista SP1, but this 
+    is <em>unsupported</em> by Oracle.
+    
+    <ul>
+      <li>To do this for Windows XP, visit the <a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html">
+      Java Releases Archive page</a> and choose the "Java SE Runtime Environment 8u151" installer 
+      for "Windows x86 Offline". The file name is <code>jre-8u151-windows-i586.exe</code>. This is
+      the last installer that worked for Windows XP; if you later get prompted to do a Java Update
+      to a newer version than 151, cancel it instead of applying it (if you do apply the update, 
+      you'll have to reinstall the 151 version of Java as described here.) The installer will 
+      complain that it is unsupported,but should allow you to continue with the installation. 
+      Assuming that this is successful, proceed with installation of 
+      <a href="../download/index.shtml">current JMRI test and production releases</a>.
+      <li>To do this for Windows Vista SP1, visit the <a href="http://www.java.com/en/download/manual.jsp">
+      Manual Java Downloads page</a> and choose the Offline Installer for Windows. The installer will
+      complain that it is unsupported, but should allow you to continue with the installation. 
+      Assuming that this is successful, proceed withinstallation of 
+      <a href="../download/index.shtml">current JMRI test and production releases</a>.
+    </ul>
+      
+	  <p>
+	  It's important to have enough memory and free hard disk space.
+	  We recommend you have at least 256&nbsp;MB of memory for Windows 98, 512&nbsp;MB of memory for Windows 2000 and 2&nbsp;GB for the newer W7-W10 systems.
+	  Note that used PC hardware is available for very little money; it might be cheaper to buy a used computer than to update your existing one.</p>
+	  <p>
+	  Note: Current versions of JMRI are developed with Java 1.8 (moving to Java 11).  You may get a message
+    if you are using later versions of Java:<br>
+    "WARNING: An illegal reflective access operation has occurred"<br> 
+    or "WARNING: Please consider reporting this to the maintainers".<br>
+	  You can ignore the messages.
+  
+  
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
+
 <a id="debugging"></a>
 <h2>Debugging</h2>
 <p>Sometimes things go wrong.  The information in this section can help.</p>
 
-<a name="errors"><h3>Error messages</h3></a>
+<a id="errors"><h3>Error messages</h3></a>
 	<ul>
-	<li><a name="stoppedworking" id="stoppedworking"></a>
+	<li><a id="stoppedworking"></a>
 	<code>The JAVA SE Platform binary has stopped working</code><br>
 	There is a <a href="WindowsSeStoppedWorking.shtml">separate Help page</a>
 	for debugging the "The JAVA SE Platform binary has stopped working" error message.</li>
-	<li><a name="registry" id="registry"></a>
+	<li><a id="registry"></a>
     <div class="wide">
-	<code class=block">
+	<code class="block">
         WARN - Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5
     </code>
     </div>
@@ -278,7 +401,7 @@ the folder "JMRI_backup" to "JMRI".
 	<a href="http://www.catb.org/jargon/html/R/Real-Soon-Now.html">Real Soon Now</a>.
 	</ul>
 
-<a name="installtest"><h3>Run InstallTest</h3></a>
+<a id="installtest"></a><h3>Run InstallTest</h3>
 <p>With JMRI a utility called InstallTest.exe is installed. To execute a series of tests on your Windows JMRI installation, start InstallTest from the Start menu -&gt; Programs -&gt; JMRI -&gt; Tools and Demos -&gt; InstallTest. The following screen will open:</p>
 <img src="images/WinInstallTest.png" height="323" width="512" alt="Preferences link in JMRI > Tools and Demos start menu">
 <p>Press any key to continue (after reading the screen).</p>
