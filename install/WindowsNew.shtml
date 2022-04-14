@@ -3,8 +3,6 @@
 
 <head>
   <title>JMRI Install Guide: Windows</title>
-                                               
-                                                                                                       
     <!--#include virtual="/Style.shtml" -->
     
     <style>
@@ -16,7 +14,6 @@
 
 <body>
 <!--#include virtual="/Header.shtml" -->
-
 <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
@@ -149,7 +146,6 @@ for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
   <li><em>Check Java release on your computer</em>
      <p>Check to see what release of Java is currently installed on your computer.  Open a "command" window
      by typing "Command prompt" into the search bar next to the Windows Start icon.  Then type:</p>
-                                                
      
      <pre>java -version</pre>
      
@@ -175,29 +171,18 @@ for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
 	    Get the file labeled "Windows" with a .exe extension.</p>
 
 	    <p>JMRI also supports an offline installation - to setup,  refer to the <a href="#offline">Offline Installation</a> section below.
-                        
 
 	    <p>The JMRI project is continuously adding features, bug fixes, examples and tutorials to the release, and so
 	new "test" versions appear every couple of weeks.  You may find one of these has features that you really want.
 	These are announced in the <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io group.</p>
 	</li>
 
-    
-        
-                                                                                                                        
-                                                                    
-                                                                             
-                                                                                       
-                                           
-        
-                                                                         
-                                        
 
   <li><em><a id="update"></a>Run the JMRI installer</em>
-  <p>When the JMRI download is ready, you will be asked to either save it to disk or directly run the installer.</p>
+  <p>When the JMRI download is ready, you will be asked to either save it to disk or directly run the installer.
+  [NOTE:  illustrations below are not all from the same release, but should be similar to what you see.]</p>
     <ol type="i">
       <li>Installer start-up
-                                                                                                                                                                                                                                                              
         <p style="text-align:center;"><img src="images/Windows10-4995-Setup.jpg" alt="installer welcome page"></p></li>
       <li>Check for a previous version
         <p>It will then check to see if a previous version of JMRI exists, backup any Preference, Roster and other settings and, if necessary, uninstall the old JMRI version.
@@ -238,14 +223,12 @@ for earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
         Click Next.</p></li>
 
       <li>Installation is complete.
-	        <p style="text-align:center;"><img src="images/WinInstall10.png" height="489" width="597" alt="installer finish"></p></li>
+	        <p style="text-align:center;"><img src="images/Windows10-4995-Complete.jpg" alt="installer finish"></p></li>
     </ol>
   </li>
  </ol>
 
 <!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
-                                                                                                                            
-                                                    
 
 	<a id="offline"></a>
 	<h3>Offline installation</h3>
