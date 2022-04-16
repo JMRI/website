@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Copyright ($Author: zoo $) 2009 --><!-- $Id: Main_RosterGroup.shtml 17977 2011-07-18 17:23:46Z zoo $ -->
@@ -15,7 +15,7 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
-<!--#include virtual="Sidebar" -->
+<!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
 <a name="Top"></a>
@@ -116,6 +116,7 @@ Roster Group Table.</p>
 
 <!--#include virtual="/Footer.shtml" -->
 </div>
-</div>
+</div> <!-- closes #container, started in sidebar -->
+<script src="/js/main.js"></script>
 </body>
 </html>

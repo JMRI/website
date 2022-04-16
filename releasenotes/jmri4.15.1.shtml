@@ -1,14 +1,15 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
  JMRI: Release Notes for 4.15.1
  </title>
-    <meta content="Bob Jacobsen" name="author">
+    <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.15.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!--#include virtual="/Style.shtml" -->
+    <!--#include virtual="/Style.shtml" -->
 
 </head>
 
@@ -16,7 +17,8 @@
 
 <!--#include virtual="/Header.shtml" -->
 
-  <div class="nomenu" id="mBody">
+  <div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h1>
       Release Notes for JMRI 4.15.1 release
@@ -26,7 +28,7 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.15.1 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
@@ -49,18 +51,20 @@ Therefore, this test release should be considered experimental.</p>
 JMRI is now only available under the
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
-<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>Update From Older JMRI Versions</h3>
-<p>If you are currently using JMRI 4.9.6 or earlier, we strongly recommend that you update to 
+<p>If you are currently using JMRI 4.11.9 or earlier, we strongly recommend that you update to
         <a href="jmri4.12.shtml">JMRI 4.12</a> and make sure that's running OK before
-        updating to this test release.  There have been a number of 
-        changes in serial port support, panel file format and configuration options since those earlier releases, 
+        updating to this test release.  Once you have JMRI 4.12 running OK,
+        store your configuration and panel files and use those from then on.
+        There have been a number of
+        changes in serial port support, panel file format and configuration options since those earlier releases,
         and moving to the stable <a href="jmri4.12.shtml">JMRI 4.12</a> release
         is a good way to work through any possible problems.
         </p>
-<p>If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this), 
-    you <u>must</u> 
+<p>If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+    you <u>must</u>
     update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
     carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
     before updating to this release.
@@ -72,7 +76,7 @@ see our
     <li>None</li>
 </ul>
 <!--
-If any of those affect you, please either 
+If any of those affect you, please either
 wait for
 <a href="jmri4.11.3.shtml">JMRI 4.11.3</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
@@ -107,19 +111,19 @@ These may be relevant to you if you're updating from an earlier version.
 
 <p><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
     The system connection preferences (i.e. hardware preferences) are now
-    enforcing the <a href="jmri.org/help/en/html/doc/Technical/Names.shtml">correct form</a>
-    for system prefixes:  One upper case letter, 
+    enforcing the <a href="/help/en/html/doc/Technical/Names.shtml">correct form</a>
+    for system prefixes:  One upper case letter,
     optionally followed by a number (one or more digits, e.g. "L12").
     Existing prefixes in existing configurations are unchanged, but
-    new ones will have to have the correct form. If your layout uses 
+    new ones will have to have the correct form. If your layout uses
     a non-compliant prefix, i.e. "DX", "DCCPP", "DP", "MR", "MC", "PI", or "TM"
     please contact us for help in getting it migrated to a proper form.
     JMRI 4.16 will <u>require</u> that this have been fixed.
-          
+
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
@@ -139,20 +143,20 @@ check the files against the checksums shown below.
    sha256: b7be1ebf1579b6904a82ec099e5012802b83b751a6d7c1164cb8a1047c126350</li>
 </ul>
 
-<!-- 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.1/">CI project page</a>.
  -->
 
-<!-- 
+<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
  -->
 
 <a id="changes" name="changes"></a>
-<!-- 
+<!--
 <h2>Changes since <a href="jmri4.13.5.shtml">Test release 4.13.6</a>:</h2>
  -->
 <h2>Changes since <a href="jmri4.14.shtml">Production release 4.14</a>:</h2>
@@ -247,5 +251,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
+ <script src="/js/main.js"></script>
 </body>
 </html>

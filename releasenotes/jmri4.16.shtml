@@ -1,14 +1,14 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
  JMRI: Release Notes for 4.16
  </title>
-    <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.14 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="author" content="Bob Jacobsen">
+    <meta name="keywords" content="java model railroad JMRI 4.16 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!--#include virtual="/Style.shtml" -->
+    <!--#include virtual="/Style.shtml" -->
 
 </head>
 
@@ -16,7 +16,8 @@
 
 <!--#include virtual="/Header.shtml" -->
 
-  <div class="nomenu" id="mBody">
+  <div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h1>
       Release Notes for JMRI 4.16 release
@@ -40,12 +41,15 @@ We're therefore making that version, "Production Release 4.16" available for dow
 JMRI is now only available under the
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
-<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
+<a id="update" name="update"></a>
 <h3>Update From Older JMRI Versions</h3>
-<p>If you are currently using JMRI 4.9.6 or earlier, we strongly recommend that you update to 
+<p>If you are currently using JMRI 4.11.9 or earlier, we strongly recommend that you update to 
         <a href="jmri4.12.shtml">JMRI 4.12</a> and make sure that's running OK before
-        updating to this release release.  There have been a number of 
+        updating to this test release.  Once you have JMRI 4.12 running OK, 
+        store your configuration and panel files and use those from then on.
+        There have been a number of 
         changes in serial port support, panel file format and configuration options since those earlier releases, 
         and moving to the stable <a href="jmri4.12.shtml">JMRI 4.12</a> release
         is a good way to work through any possible problems.
@@ -60,8 +64,17 @@ see our
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>MERG CBUS - Throttle direction changes are not always sent to the Layout, resolved in 4.17.2</li>
+    <li>MERG CBUS - Throttle direction changes are not always sent to the Layout, resolved in 
+        <a href="jmri4.17.2.shtml">JMRI 4.17.2</a></li>
+    <li>LocoNet connections - New and updated LocoNet connections with this release might 
+        end up with the wrong baud rate, which will cause them to not function.  
+        This is resolved in  
+        <a href="jmri4.17.3.shtml">JMRI 4.17.3</a></li>
 </ul>
+
+These are serious enough that we recommend that users skip this release
+and go straight to <a href="jmri4.18.shtml">JMRI 4.18</a> instead.
+
 <!--
 If any of those affect you, please either 
 wait for
@@ -215,9 +228,9 @@ check the files against the checksums shown below.
 
 <p>
 This production version is made from test releases 4.15.1 through 4.15.9.  The 
-<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2018-12-14">full list of changes</a>
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2019-07-06">full list of changes</a>
 in those is 
-<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2018-12-14">available from our code repository</a>.
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A%3E%3D2019-07-06">available from our code repository</a>.
 
     <h3>Hardware Support</h3>
 
@@ -603,7 +616,7 @@ in those is
                     so that it can be displayed e.g.
                     on a panel.  For more info,
                     see the
-                    <a href="/help/en//html/tools/uss/index.shtml">help page</a></li>
+                    <a href="/help/en/html/tools/uss/index.shtml">help page</a></li>
             </ul>
 
     <h3>Timetable</h3>
@@ -722,5 +735,6 @@ in those is
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
+ <script src="/js/main.js"></script>
 </body>
 </html>

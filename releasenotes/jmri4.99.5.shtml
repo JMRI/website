@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+ <title>
+    JMRI: Release Notes for 4.99.5
+ </title>
+    <meta content="Bob Jacobsen" name="author">
+    <meta name="keywords" content="java model railroad JMRI 4.99.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+
+ <!--#include virtual="/Style.shtml" -->
+</head>
+
+<body>
+<!--#include virtual="/Header.shtml" -->
+
+<div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
+    <div id="mainContent">
+      <h1>
+      Release Notes for JMRI 4.99.5 release
+      </h1>
+
+    <p>Date: April 9, 2022</p>
+    <p>From: Bob Jacobsen</p>
+    <p>Subject: Test Release 4.99.5 of JMRI/DecoderPro is available for download.</p>
+
+<!--
+<p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
+
+<h2>Notes:</h2>
+
+<p>This is a test release.  Please
+<a href="https://groups.io/g/jmriusers">post a note</a>
+if you encounter any new or old bugs!
+And please back up your JMRI files before installing this, in case you want to go
+back to an earlier version.</p>
+
+<p>This is the next in a series of 4.99.* test releases to migrate JMRI to Java 11.
+It requires Java 11 to work.
+(See <a href="http://jmri.org/java">our page on downloading Java 11</a>)
+We expect this series to end in the next JMRI 5.0 production release at the end of Spring 2022.
+(See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
+</p>
+
+<p>Some of the changes involved are quite extensive.
+They may require a certain amount of experience before they are working well.
+Therefore, this test release should be considered experimental.</p>
+
+<p><b>
+JMRI is now only available under the
+<a href="/COPYING">GNU General Public License</a>. For more information, please
+see our
+<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<a id="update" name="update"></a>
+<h3>Update From Older JMRI Versions</h3>
+
+If you are currently using a version older than JMRI 4.24, please follow these instructions carefully:
+<ol>
+<li>Is your current version older than <a href="jmri4.12.shtml">JMRI 4.12</a>?
+    If so, then update to <a href="jmri4.12.shtml">JMRI 4.12</a> first, and ensure everything works correctly: check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Store your configuration and panel files under a new name and use those from now on.
+    Then continue with step 2.
+    <p>
+    If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+    then it's <u>very important</u>
+    that you update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
+    carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
+    before updating to any later release.
+    </li>
+
+<li>Is your current version older than <a href="jmri4.20.shtml">JMRI 4.20</a>?
+    Then update to <a href="jmri4.20.shtml">JMRI 4.20</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else
+    Save your preferences again.
+    Store your configuration and panel files under a new name, use those from now on, and go on to step 3.</li>
+
+<li>Is your current version older than <a href="jmri4.24.shtml">JMRI 4.24</a>?
+    Then update to <a href="jmri4.24.shtml">JMRI 4.24</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else
+    Save your preferences again.
+    Store your configuration and panel files under a new name and use those from now on.</li>
+
+<li>You can then install this release.
+
+</ol>
+
+Following this multi-step order of updating via stable major releases safeguards you against possible migration issues
+that can arise from skipping these versions.
+
+<a id="problems" name="problems"></a>
+<h3>New problems with this release</h3>
+<ul>
+    <li>When opening a Throttle, you may get an erroneous error dialog.  You can just
+        dismiss it and continue.  If you'd like to avoid it in future (until we get it fixed),
+        once you have the throttle open click "File -> Save Current Throttle".
+        This is GitHub
+        <a href="https://github.com/JMRI/JMRI/issues/10874">Issue 10874</a> and the fix is
+        <a href="https://github.com/JMRI/JMRI/pull/10875">PR 10875</a>.
+    </li>
+</ul>
+
+If this affects you, please either
+wait for
+<a href="jmri4.99.6.shtml">JMRI 4.99.6</a>,
+or (once there's a fix for the problem) pick up a
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
+from
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
+
+<a id="warnings" name="warnings"></a>
+<h3>New warnings for this release:</h3>
+
+<ul>
+
+<li>None yet
+
+</ul>
+
+
+<h3>Older warnings</h3>
+
+See the <a href="jmri4.26.shtml#warnings">JMRI 4.26 release note</a> for more warnings predating the 4.99 development series,
+including pointers to various migration issues.
+These may be relevant to you if you're updating from an earlier version;
+we strongly recommend you update to <a href="jmri4.20.shtml">JMRI 4.20</a>
+before installing this test release.
+
+<ul>
+    <li><span class="since">Since <a href="jmri4.99.2.shtml">JMRI 4.99.2</a></span>
+        Example scripts related to MQTT moved from jython directory to jython\MQTT directory.  This will require
+        an update to any start-up actions that reference their location.
+    </li>
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+        This test release, and all subsequent ones, require the use of
+        Java 11 or later.  Java 8 is explicitly not supported.
+        There's more information on this migration on the
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
+    </li>
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+        A number of classes and methods that have been deprecated for a long time
+        are removed in this release.  These include:
+        <ul>
+            <li>apps.JmriPlugin</li>
+            <li>apps/startup/StartupActionFactory</li>
+            <li>Routes/Turnouts/Sensors: One form of getNextAddress</li>
+            <li>Handling of preferences from before JMRI 4.0; upgrade through JMRI 4.20 instead</li>
+            <li>ShutDownTask, AbstractShutDownTask - use call & run methods now</li>
+            <li>Removed JythonAutomaton, JythonAutomatonAction, JythonSiglet, JythonSigletAction
+                unused classes.  These have been made obsolete by JMRI's native scripting,
+                and haven't been used since JMRI 1.2
+            </li>
+            <li>SSL (BlockBossLogic) - change to start/stop calls</li>
+            <li>Various TrafficManagers.instance methods - use InstanceManager</li>
+            <li>Throttle.getListeners() - use getPropertyChangeListeners</li>
+            <li>Removed obsolete RosterRecorder class;
+                function now available via scripting
+            </li>
+            <li>Removed deprecated methods from Throttle panels</li>
+            <li>Manager.getSystemNameList - rework with getNamedBeanSet</li>
+            <li>Manager.getNamedBeanList - rework with getNamedBeanSet</li>
+            <li>Manager.setPropertyChangesMuted - use setPropertyChangesSilenced</li>
+            <li>Manager.getBeanBySystemName - use getBySystemName</li>
+            <li>Manager.getBeanByUserName - use getByUserName</li>
+            <li>FileChooserUtil</li>
+            <li>get/setFontFamily in SystemConsolePreferencesManager</li>
+            <li>throttle.FunctionPanel#changeState(..) has been replaced by #setSelected(..)</li>
+        </ul>
+    </li>
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+        The PowerManager now only fires events with the id "power".  Before this
+        release, it also fired events with the id "Power". Check that
+        your scripting code is looking for the right form.
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+        This version no longer reads ZeroConf IPv4 and IPv6 preferences
+        written with JMRI 4.16 and before.  Please make sure to upgrade
+        to JMRI 4.20 (or later) and save your preferences before
+        updating to this version if you have configured the WiThrottle preference pane.</li>
+</ul>
+
+<a id="download" name="download"></a>
+<h2>Download links:</h2>
+
+<div class="wide">
+<ul>
+<li>OS X / macOS: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v4.99.5/JMRI.4.99.5+R3bcc0f1bcb.dmg">https://github.com/JMRI/JMRI/releases/download/v4.99.5/JMRI.4.99.5+R3bcc0f1bcb.dmg</a><br/>
+  sha256: a609ec9ee4b55618ee47056efc270c200f8efb649a9d5d42ca90e94907b9b21f </li>
+
+<li>Windows: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v4.99.5/JMRI.4.99.5+R3bcc0f1bcb.exe">https://github.com/JMRI/JMRI/releases/download/v4.99.5/JMRI.4.99.5+R3bcc0f1bcb.exe</a><br/>
+   sha256: 1e496a4a5e5b97d1e3468da19f78bf35ee319af764161ad6dd78291314761637</li>
+
+<li>Linux: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v4.99.5/JMRI.4.99.5+R3bcc0f1bcb.tgz">https://github.com/JMRI/JMRI/releases/download/v4.99.5/JMRI.4.99.5+R3bcc0f1bcb.tgz</a><br/>
+   sha256: f32239380c0fe499fe1d45644bf3f337b224ffbd279c8e42a211a7b51d46b294</li>
+</ul>
+</div>
+
+<!--
+Preliminary build files (not the final released files) can be found
+on the
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.99.5/">CI project page</a>.
+ -->
+
+<!--
+During development leading to the actual release, you can find test download files on the
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
+These are development files, and might not be working at any particular time.</p>
+ -->
+
+<a id="changes" name="changes"></a>
+<h2>Changes since <a href="jmri4.99.4.shtml">Test Release 4.99.4</a>:</h2>
+
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.99.5+is%3Amerged">list of included changes</a> is available from our
+<a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
+
+
+    <h3>Hardware Support</h3>
+        <h4>CBUS</h4>
+            <ul>
+                <li>The consist tool is now available for the Pi-SPROG 3v2 in command station mode, the SPROG 3 Plus and the MERG CANCMD.</li>
+            </ul>
+
+        <h4>KPF-Zeller</h4>
+            <ul>
+                <li>Improved the speed calibration</li>
+            </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>Configuration - Permit disabling of interrogate messages.</li>
+                <li>Slotmonitor - better guess the column widths</li>
+            </ul>
+
+        <h4>MERG</h4>
+            <ul>
+                <li>The consist tool is now available for CBUS.</li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li><b>Throttle support.</b> JMRI Throttles can now operate
+                OpenLCB locomotives on OpenLCB / LCC Command Stations via the
+                Traction Protocol draft.</li>
+                <li><b>Monitor Log updates.</b> Decodes and prints the Traction
+                Protocol messages in the Monitor Log window.</li>
+                <li><b>Accessibility changes.</b> The network browser / tree is
+                now navigable using keyboard shortcuts. On the Configuration
+                Editor panel the keys F6 and Shift+F6 can be used to navigate
+                between subsequent sections of the configuration and the bar of
+                buttons at the bottom.</li>
+                <li><b>Test Event button.</b> In the Configuration Editor the
+                Event panels have a new button More... which opens a
+                dropdown. In the dropdown there is a Trigger button which sends
+                the given event. This is useful for testing. In the same
+                dropdown there is a Create Sensor button which for JMRI will
+                create a single-event sensor.</li>
+                <li><b>Bug fixes.</b> Fixes memory leak when opening many
+                different nodes' Configuration Editor windows. The CAN
+                Interface engine now correctly supports sending a message to a
+                Destination Node ID for which there is no currently registered
+                Alias in the Alias Map. The outgoing message will be enqueued
+                and an alias lookup interaction is triggered.</li>
+            </ul>
+
+        <h4>SPROG</h4>
+            <ul>
+                <li>The consist tool is now available for the Pi-SPROG 3v2 in command station mode and for the SPROG 3 Plus.</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>Tam Valley Depot</h4>
+            <ul>
+                <li>QuadLN_S - added support for new firmware version 3.1 features</li>
+            </ul>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li>Fixed the coding for CV155 Half Speed Settings</li>
+            </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Fixed bouncing speed slider in manual mode.</li>
+             <li>Size AutoTrainsWindow correctly when going between auto and manual with use scroll bars off.</li>
+             <li>Enabled disaplay scale speed for running with speed profiles.</li>
+        </ul>
+
+   <h3>Internationalization</h3>
+        <a id="I18N" name="I18N"></a>
+        <ul>
+            <li>Spanish translation added to decoder and programmer panes</li>
+        </ul>
+
+    <h3>Throttle</h3>
+        <a id="throttle" name="throttle"></a>
+        <ul>
+            <li>Add capability to display/print throttle files in easy-to-read browser format (using XSL transform)</li>
+            <li>If there are at least two connections that have support for throttles, a
+            <a href="https://github.com/JMRI/JMRI/pull/10697#issuecomment-1038477488">new menu</a>
+            appears that lets you open a throttle for a particular connection.</li>
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>Added a new version of "advanced location following". This is now based
+            on a LayoutEditor panel and hence much easier to setup. See the
+            <a href="https://www.jmri.org/help/en/manual/DecoderPro/VSD_LocationsMgr.shtml#advanced_location_following">
+			documentation</a> for details.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Add a search feature to the JmriHelp local web page.</li>
+            <li>The method JUnitUtil.releaseThread(this) and JUnitUtil.releaseThread(this, delay)
+            has been removed. Use JUnitUtil.waitFor(int time) instead. Replace the call
+            JUnitUtil.releaseThread(this) with JUnitUtil.waitFor(JUnitUtil.DEFAULT_RELEASETHREAD_DELAY);</li>
+            <li>Improve Block tracking in the case of a broken train being rejoined.
+            <li>Multiple updates to the Bachrus/KPF-Zeller speedometer support:
+                <ul>
+                <li>Improved GUI
+                <li>Now handles programming on main without needing to go to service track first
+                <li>Improved speed matching algorithm
+                <li>Updated docs
+                </ul>
+        </ul>
+
+
+   <!--#include virtual="/Footer.shtml" -->
+  </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+  <script src="/js/main.js"></script>
+</body>
+</html>

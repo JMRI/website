@@ -1,10 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
  <title>
  JMRI: Release Notes for 4.9.6
  </title>
-    <meta content="Bob Jacobsen" name="author">
+    <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.9.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
@@ -20,7 +21,8 @@
 
 <!--#include virtual="/Header.shtml" -->
 
-  <div class="nomenu" id="mBody">
+  <div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h1>
       Release Notes for JMRI 4.9.6 release
@@ -51,7 +53,7 @@ Therefore, this test release should be considered experimental.</p>
 JMRI is now only available under the
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
-<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <a href="images/jmri-4.7.4-B.png"><img src="images/jmri-4.7.4-B.png" alt="after image" align="right" height="173" width="293"></a>
 <a href="images/jmri-4.7.4-A.png"><img src="images/jmri-4.7.4-A.png" alt="before image" align="right" height="173" width="295"></a>
@@ -256,7 +258,7 @@ Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 If that doesn't work for you, the files are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
-Please <a href="mailto:jmri@pacbell.net">let us know</a> of any problems.
+Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
 
 <ul>
 <li>OS X / macOS: <a
@@ -376,5 +378,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
+ <script src="/js/main.js"></script>
 </body>
 </html>

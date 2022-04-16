@@ -1,14 +1,15 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
  JMRI: Release Notes for 4.17.2
  </title>
-    <meta content="Bob Jacobsen" name="author">
+    <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.17.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!--#include virtual="/Style.shtml" -->
+    <!--#include virtual="/Style.shtml" -->
 
 </head>
 
@@ -16,17 +17,20 @@
 
 <!--#include virtual="/Header.shtml" -->
 
-  <div class="nomenu" id="mBody">
+  <div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h1>
       Release Notes for JMRI 4.17.2 release
       </h1>
 
-    <p>Date: mmm dd, 2019</p>
-    <p>From: (pumpkin)</p>
+    <p>Date: July 26, 2019</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 4.17.2 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -49,12 +53,15 @@ Therefore, this test release should be considered experimental.</p>
 JMRI is now only available under the
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
-<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
+<a id="update" name="update"></a>
 <h3>Update From Older JMRI Versions</h3>
-<p>If you are currently using JMRI 4.9.6 or earlier, we strongly recommend that you update to 
+<p>If you are currently using JMRI 4.11.9 or earlier, we strongly recommend that you update to 
         <a href="jmri4.12.shtml">JMRI 4.12</a> and make sure that's running OK before
-        updating to this test release.  There have been a number of 
+        updating to this test release.  Once you have JMRI 4.12 running OK, 
+        store your configuration and panel files and use those from then on.
+        There have been a number of 
         changes in serial port support, panel file format and configuration options since those earlier releases, 
         and moving to the stable <a href="jmri4.12.shtml">JMRI 4.12</a> release
         is a good way to work through any possible problems.
@@ -69,7 +76,10 @@ see our
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
-    <li>None</li>
+    <li>LocoNet connections - New and updated LocoNet connections with this release might 
+        end up with the wrong baud rate, which will cause them to not function.  
+        This is resolved in  
+        <a href="jmri4.17.3.shtml">JMRI 4.17.3</a></li>
 </ul>
 <!--
 If any of those affect you, please either 
@@ -86,13 +96,7 @@ from
 
 <ul>
    
-   <!-- While this release is in development, the     -->
-   <!-- list of new warnings is kept in               -->
-   <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" --> <!-- #include once this is current -->
+   <li>None<li>
 </ul>
 
 
@@ -188,7 +192,6 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 Please note that the download links in this and future JMRI releases link to 
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
@@ -197,18 +200,17 @@ check the files against the checksums shown below.
 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.2/JMRI.4.17.2+Re9dde08.dmg">https://github.com/JMRI/JMRI/releases/download/v4.17.2/JMRI.4.17.2+Re9dde08.dmg</a><br/>
+  sha256: 7b42a549476c8af8b109e568eb77eecbddc730433bfade208559d7f88271b8d2 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.2/JMRI.4.17.2+Re9dde08.exe">https://github.com/JMRI/JMRI/releases/download/v4.17.2/JMRI.4.17.2+Re9dde08.exe</a><br/>
+   sha256: d8215c1b1051c591e43306d7f250170ceb0e3e3c428677cf567c8b05a9ad30a5</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.17.2/JMRI.4.17.2+Re9dde08.tgz">https://github.com/JMRI/JMRI/releases/download/v4.17.2/JMRI.4.17.2+Re9dde08.tgz</a><br/>
+   sha256: 8248b66466b063e5b9b0e0c3e989aae57f265712554516e501f107137ec1ce9e</li>
 </ul>
- -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -216,9 +218,11 @@ on the
 <a href="http://builds.jmri.org/jenkins/job/TestReleases/job/4.15.8/">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
  
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.17.1.shtml">Test Release 4.17.1</a>:</h2>
@@ -226,16 +230,62 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.17.2+is%3Amerged">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-   <!-- While this release is in development, the     -->
-   <!-- new release note items are kept in            -->
-   <!-- help/en/releasenotes/current-draft-note.shtml -->
-   <!-- in the JMRI/JMRI repository. Please edit      -->
-   <!-- there.  Changes to this file won't be merged. -->
-   
-   <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" --> <!-- #include once this is current -->
+
+    <h3>Hardware Support</h3>
+        <h4>MERG CBUS</h4>
+            <ul>
+                <li>Fixed issue with Throttle Direction Changes ( while moving ) not being sent to Command Station</li>
+            </ul>
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>JMRI no longer modifies "system names" as provided by the user.
+                There may be cases where a script or panel file is creating an
+                object with a system name that is slightly different than a system
+                name used elsewhere, and JMRI used to change these to be the same.
+                Users may have to modify scripts and panel files to ensure system
+                names match in all places.</li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+            <li>Layout Editor combo boxes have been changed to support the migration
+                from JmriBeanComboBox to NamedBeanComboBox.  The affects the Toolbar,
+                the Edit context menu, Set Signal Heads, Set Signal Masts, and Set Sensors.
+                <ul>
+                    <li>Typing a name into the combo box field no longer works.  The
+                    items have to be selected from the combo box drop down.</li>
+                    <li>Typing a letter or two will position the selection.</li>
+                    <li>Positioning is based on both the user name and the system name.
+                    For example, typing <strong>i</strong> will select items with user names starting
+                    with the letter i/I as well as internal items using the system name which starts with i/I.</li>
+                    <li>With this release, it is not possible to create new Block entries
+                    using the Edit context item.</li>
+                    <li>If a block is selected that does not have a user name, a
+                    dialog will prompt for a user name.</li>
+                </ul>
+            </li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>We "deprecate" certain methods and members in the Java code when they're
+                no longer recommended for use.  After some time, we then remove them.
+                This version of JMRI removes all deprecated methods and members up
+                through JMRI 4.10, which was released in December 2017.
+                If you still have code or scripts that reference these, please
+                look at
+                <a href="https://github.com/JMRI/JMRI/tree/v4.16">the code in JMRI 4.16</a>
+                for suggestions on what to substitute.</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
+ <script src="/js/main.js"></script>
 </body>
 </html>

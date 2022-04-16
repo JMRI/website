@@ -1,50 +1,64 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Copyright ($Author: dat7719 $) 2009, 2010 -->
-<title>Decoder definition Submission</title>
+  <meta name="generator" content="HTML Tidy for HTML5 for Apple macOS version 5.8.0">
+  <!-- Copyright ($Author: dat7719 $) 2009, 2010 -->
 
-<!-- Style -->
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-<link rel="icon" href="/images/jmri.ico" TYPE="image/png">
-<link rel="home" title="Home" href="/">
-<!-- /Style -->
+  <title>Decoder definition Submission</title><!--#include virtual="/Style.shtml" -->
+
+  <!-- DecoderPro Styles -->
+  <style>
+    .dp-center {text-align: center;}
+    .dp-right {text-align: right;}
+  </style>
+
 </head>
-
 <body>
-<!--#include virtual="/Header.shtml" -->
+  <!--#include virtual="/Header.shtml" -->
 
-<!--#include virtual="Sidebar" -->
-<div id="mainContent">
+  <div id="mBody">
+    <!--#include virtual="Sidebar.shtml" -->
 
-<a name="Top"></a>
-<h1>Decoder Definition</h1>
-<h2>Submitting to JMRI</h2>
+    <div id="mainContent">
+      <h1 id="Top">Decoder Definition</h1>
 
-<div align=right>
-<p><a href="Dcode_Testing.shtml">Previous</a></p>
-<p><a href="index.shtml#DecoderDefinition">Back to Index</a><a href="index.shtml#Main"></a></p>
-</div>
+      <h2>Submitting to JMRI</h2>
 
-<hr>
-<h3>Submitting to GitHub</h3>
-<p><strong>How do I go about getting my Decoder Definition approved and into the next release?</strong></p>
+      <div class="dp-right">
+        <p><a href="Dcode_Testing.shtml">Previous</a>
+        </p>
 
-<p>If you're happy with them, you can contribute them to the next release for the project.</p>
-<p>To do this, follow <a href="../../help/en/html/doc/Technical/gitdeveloper.shtml">the instructions</a> (updated 2015).</p>
+        <p><a href="index.shtml#DecoderDefinition">Back to Index</a><a href="index.shtml#Main"></a>
+        </p>
+      </div>
 
-<hr>
+      <hr>
 
-<div align="right">
-<p><a href="Dcode_Testing.shtml">Previous</a></p>
-<p><a href="index.shtml#DecoderDefinition">Back to Index</a></p>
-</div>
+      <h3>Submitting to GitHub</h3>
 
-<!--#include virtual="/Footer.shtml" -->
+      <p><strong>How do I go about getting my Decoder Definition approved and into the next
+      release?</strong>
+      </p>
 
-      </div><!-- closes #mainContent-->
-    </div> <!-- closes #mBody-->
-    </body>
+      <p>If you're happy with them, you can contribute them to the next release for the
+      project.</p>
+
+      <p>To do this, follow <a href="../../help/en/html/doc/Technical/gitdeveloper.shtml">the
+      instructions</a> (updated 2015).</p>
+
+      <hr>
+
+      <div class="dp-right">
+        <p><a href="Dcode_Testing.shtml">Previous</a>
+        </p>
+
+        <p><a href="index.shtml#DecoderDefinition">Back to Index</a>
+        </p>
+      </div>
+      <!--#include virtual="/Footer.shtml" -->
+    </div>
+    <!-- closes #mainContent-->
+  </div>
+  <!-- closes #mBody-->
+</body>
 </html>

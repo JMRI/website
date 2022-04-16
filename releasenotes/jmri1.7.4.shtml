@@ -1,61 +1,28 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
  <title>
  JMRI: Release Notes for 1.7.4
  </title>
-    <meta content="Bob Jacobsen" name="Author">
+    <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 1.7.4 decoderpro panelpro locotools loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
-<div id="container">
-  <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
-<!-- Header -->
-    <div id="header">
-	<!-- Logo -->
-	<a href="/" title="Return to home page" accesskey="1">
-	    <img src="/images/logo-jmri.gif" width="160" height="135" alt="JMRI Logo"> </a>
-	<!-- /Logo -->
-	<ul id="mainNav"> <!-- Top tool bar -->
-	   <li><a href="/download/"  title="Get the latest software">Download</a></li>
-	   <li><a href="/help/en/html/apps/index.shtml"      title="Learn about JMRI applications">Applications</a></li>
-	   <li><a href="/help/en/html/hardware/index.shtml"  title="What hardware does JMRI support">Hardware</a></li>
-	   <li><a href="/help/en/manual/index.shtml"   title="Trouble-shooting, and FAQs">Manual</a></li>
-	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
-	   <li><a href="/community/" title="Who is JMRI">Acknowledgements</a></li>
-	</ul>
-
-	<div id="searchform"> <!--  Search Form -->
-	  <form id="search" method="get" action="http://www.google.com/search">
-	     <label for="q" title="Search JMRI.org">search JMRI: </label>
-	    <input type="hidden" name="sitesearch" value="jmri.org">
-	    <input type="text" id="q" name="q" accesskey="s" size="30">
-	    <input type="submit" id="submit" value="go">
-	  </form>
-       </div> <!--  End #searchform -->
-    </div> <!-- closes #header-->
-<!-- /Header -->
-
+    <!--#include virtual="/Header.shtml" -->
   <hr class="hide">
-
-  <div class="nomenu" id="mBody">
-    <div id="mainContent">
+    <div id="mBody">
+    <div id="mainContent" class="no-sidebar">
       <h2>
       Release Notes for JMRI 1.7.4 test release
       </h2>
 
 	<p>Date: July 1, 2006</p>
 	<p>From: Bob Jacobsen</p>
-	<p>Subject: Test version 1.7.4 of JMRI/DecoderPro is 
+	<p>Subject: Test version 1.7.4 of JMRI/DecoderPro is
 	available for download.
 <!-- 	<br><b>This is a draft release note only; the download links do not yet work</b> -->
 
@@ -63,11 +30,11 @@
 
 <p>This is a test release.  Please post a note if you encounter any new or old bugs!  And please back up your JMRI files before installing this, in case you want to go back to an earlier version.
 
-<p>This is the next in a series of test versions that contain long-awaited new features, particularly 
-numerous decoder updates, 
-improvements to signaling logic, 
-tools for tracking trains around a layout via block occupancy, 
-and 
+<p>This is the next in a series of test versions that contain long-awaited new features, particularly
+numerous decoder updates,
+improvements to signaling logic,
+tools for tracking trains around a layout via block occupancy,
+and
 new support for boards from Oak Tree Systems and the Digitrax PR2 programmer.
 
 <p>Some of the changes involved are quite extensive, and may require a certain amount of experience before they are working well.  Therefore, this test version should be considered experimental.
@@ -87,11 +54,11 @@ new support for boards from Oak Tree Systems and the Digitrax PR2 programmer.
 <p>We have added additional information to the roster files in this version to help properly handle short/long addressing in systems that allow low addresses (e.g. 65) to be either short or long addresses. The only current system we support that has this capability is NCE.  If you have an NCE system, and you have locomotives with addresses of 127 or less, you should open their roster entries in DecoderPro, check that the proper short or long address is selected,  and save them again.
 
 <p>Indexed CVs will not be included in any printouts for this release.
- 
+
 <p>QSI CV 56.129 Engine ID Access is not supported in this release.
-  
+
 <p>While programming QSI decoders in Ops mode, it is necessary to disable CV 62 QSI Control (Verbal Acknowledgement), otherwise the writes will fail.
- 
+
 <p>QSI CV 64 CV Numeric Verbal Readout currently does not work for indexed CVs.
 
 <h3>Download links:</h3>
@@ -149,7 +116,7 @@ new support for boards from Oak Tree Systems and the Digitrax PR2 programmer.
 
 <p>David Duchamp added more protection against data-entry errors in the Light Table.
 
-<p>Paul Bender updated XPressNet (Lenz) turnout support to fix a problem with turnout outputs staying on for too long. Also, the program now resends the turnout command if the XPressNet system returns a "not-operated" message. On feedback replies for turnouts, make sure correct address is returned when neither turnout has been operated.  
+<p>Paul Bender updated XPressNet (Lenz) turnout support to fix a problem with turnout outputs staying on for too long. Also, the program now resends the turnout command if the XPressNet system returns a "not-operated" message. On feedback replies for turnouts, make sure correct address is returned when neither turnout has been operated.
 
 <p>David Duchamp updated the C/MRI support so that it can drive turnouts through two outputs.  Some layouts have Tortoise and similar switch motors wired to two C/MRI output pins.  By alternating which pin is enabled, the turnout can be driven one way or the other.  David also added support for configuring and printing these assignments.
 
@@ -167,23 +134,25 @@ new support for boards from Oak Tree Systems and the Digitrax PR2 programmer.
 
 <p>New sample scripts:
 <ul>
-    <li>TurnoutReset.py - listen to a turnout and reset it back to "closed" every time it's "thrown".  This be useful e.g. to 
+    <li>TurnoutReset.py - listen to a turnout and reset it back to "closed" every time it's "thrown".  This be useful e.g. to
         keep a turnout in one position waiting to control a route
-    <li>TwoOutputTurnouts.py - some wiring methods use two outputs acting alternately to control a turnout.  This 
+    <li>TwoOutputTurnouts.py - some wiring methods use two outputs acting alternately to control a turnout.  This
         script slaves one output to be the opposite of another.  Note that this is no longer needed
         for C/MRI systems, due to David Duchamp's updates
     <li>NSelectorExample.py - an example of an N-way icon on a panel
     </ul>
 
-<li>Paul Bender added "factory reset" settings to a number of decoder definitions
+<p>Paul Bender added "factory reset" settings to a number of decoder definitions
 
-<li>David Duchamp added "Light" support to Digitrax connections
+<p>David Duchamp added "Light" support to Digitrax connections
 
-<li>Bob Jacobsen fixed a problem with the waitSensorInactive([]) and waitSensorActive([]) functions that had been accidentally introduced in JMRI 1.7.3.  Only the routines that took an array of Sensors were effected; waiting for a single Sensor is OK in 1.7.3 (bug 1486117)
+<p>Bob Jacobsen fixed a problem with the waitSensorInactive([]) and waitSensorActive([]) functions that had been
+    accidentally introduced in JMRI 1.7.3.  Only the routines that took an array of Sensors were effected; waiting for a single Sensor is OK in 1.7.3 (bug 1486117)
 
-<li>Bob fixed a problem with the display of the "dark" and "flashing red" aspects of a signal head on a panel (bug 1474015). Also, the rotation and sizing of the flashing aspects was improved (e.g. fixed)
+<p>Bob fixed a problem with the display of the "dark" and "flashing red" aspects of a signal head on a panel (bug
+    1474015). Also, the rotation and sizing of the flashing aspects was improved (e.g. fixed)
 
-<li>Bob added support for tracking trains as they move from block to block, including the 
+<p>Bob added support for tracking trains as they move from block to block, including the
 basic <a href="http://jmri.org/JavaDoc/doc/jmri/Block.html">Block</a> class,
 the <a href="http://jmri.org/JavaDoc/doc/jmri/Path.html">Path</a> class to represent a path into or out of a block,
 the <a href="http://jmri.org/JavaDoc/doc/jmri/jmrit/tracker/StoppingBlock.html">StoppingBlock</a> class for controlling a train,
@@ -191,25 +160,29 @@ and the <a href="http://jmri.org/JavaDoc/doc/jmri/jmrit/tracker/MemoryTracker.ht
 More on this can be seen in the "javaone/jython" example directory.
 
 
-<li>Update a number of tools so they can be easily created and configured from scripts:  Speedometer, scripting input and output windows, loading throttle definitions
+<p>Update a number of tools so they can be easily created and configured from scripts:  Speedometer, scripting input
+    and output windows, loading throttle definitions
 
-<li>The "debugging programmer" used by the LocoNet simulator mode now properly has a default mode
+<p>The "debugging programmer" used by the LocoNet simulator mode now properly has a default mode
 
-<li>Add useful toString() methods to LocoNet and debugging throttles so that the locomotive address is displayed during status display and debugging
+<p>Add useful toString() methods to LocoNet and debugging throttles so that the locomotive address is displayed
+    during status display and debugging
 
-<li>Improved error handling in the Jython scripting to remove spurious messages about "other end dead" in the output window
+<p>Improved error handling in the Jython scripting to remove spurious messages about "other end dead" in the output
+    window
 
-<li>Paul Bender extended the XPressNet programmer support to better handle communication errors and unsolicited messages/responses
+<p>Paul Bender extended the XPressNet programmer support to better handle communication errors and unsolicited
+    messages/responses
 
-<li>With help from Digitrax, Bob added support for the new Digitrax PR2 programmer. If you have one, select it in the preferences (be sure to specify the correct serial port), save and restart.  You'll then be able to use it to program CVs.  Turnouts, sensors, etc will not be available because the PR2 is a programming device, not a command station.  A simple tool for downloading sound into Digitrax SoundFX decoders is also provided, but it is not complete. We hope to soon have better sound capabilities and throttle support available. As part of this, the Digitrax CV programming low-level code has been updated. Please let us know of any new problems this may have created.
+<p>With help from Digitrax, Bob added support for the new Digitrax PR2 programmer. If you have one, select it in the
+    preferences (be sure to specify the correct serial port), save and restart.  You'll then be able to use it to program CVs.  Turnouts, sensors, etc will not be available because the PR2 is a programming device, not a command station.  A simple tool for downloading sound into Digitrax SoundFX decoders is also provided, but it is not complete. We hope to soon have better sound capabilities and throttle support available. As part of this, the Digitrax CV programming low-level code has been updated. Please let us know of any new problems this may have created.
 
-<li>The panel icons for Sensors, Turnouts, SignalHeads, Memories, and Reporters can now have their level set via a "level" attribute in panel XML files.  This allows the user to determine which icons appear in front of others.  The default values for level have not been changed.
-</ul>
+<p>The panel icons for Sensors, Turnouts, SignalHeads, Memories, and Reporters can now have their level set via a
+    "level" attribute in panel XML files.  This allows the user to determine which icons appear in front of others.  The default values for level have not been changed.
 
    <!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
-</div> <!-- closes #container -->
+ <script src="/js/main.js"></script>
 </body>
 </html>
-

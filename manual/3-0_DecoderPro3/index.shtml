@@ -1,20 +1,14 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <title>Decoder Pro Manual: Index</title>
 
-<!-- Style -->
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-<link rel="icon" href="/images/jmri.ico" TYPE="image/png">
-<link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
-<!--#include virtual="Sidebar" -->
+<!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
 <a name="Top"></a>
@@ -144,7 +138,7 @@ examples shown are with Digitrax PR3(MS100 mode) connected   to Digitrax Super C
   <li><a href="Error.shtml">Decoder Programmer Error Messages</a></li>
 </ul>
 <hr>
-<p>The <a href="http://jmri.org/Download/index.html">JMRI download page</a>
+<p>The <a href="http://jmri.org/Download/index.shtml">JMRI download page</a>
 is hosted by <a href="https://www.simplyhosting.cloud">Simply Cloud</a>.</p>
 
   <p>Thanks for reading, and Let's Run Trains!</p>
@@ -181,6 +175,7 @@ is hosted by <a href="https://www.simplyhosting.cloud">Simply Cloud</a>.</p>
 <p>Contact us via the <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io group.</p>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div> <!-- closes #container, started in sidebar -->
+<script src="/js/main.js"></script>
 </body>
 </html>

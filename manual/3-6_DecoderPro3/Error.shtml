@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Copyright ($Author: zoo $) 2009 -->
@@ -7,19 +7,13 @@
 Error Messages
 </title>
 
-<!-- Style -->
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-<link rel="icon" href="/images/jmri.ico" TYPE="image/png">
-<link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
 
-<!--#include virtual="Sidebar" -->
+<!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
 <h1>DecoderPro&reg; Error Messages</h1>
@@ -30,18 +24,18 @@ Error Messages
 </div>
 
 <hr>
-<p>Various things can go wrong when JMRI tries to work  with your DCC command station to program a DCC decoder.  
+<p>Various things can go wrong when JMRI tries to work  with your DCC command station to program a DCC decoder.
 This page lists the error message that can result, and   describes what they mean.</p>
-<h4><a href="../html/Errors.shtml">JMRI Error Codes</a></h4>
+<h4><a href="/help/en/html/apps/Errors.shtml">JMRI Error Codes</a></h4>
 
 <dl>
- 
+
   <dt><strong>301 &#8212; no locomotive detected</strong></dt>
   <dd>    The command station has reported that it doesn't see  a locomotive on the programming track.    </dd>
   <dd>
     <p> This can happen if the locomotive isn't making   good electrical contact or if there's a wiring fault in the locomotive. </p>
   </dd>
- 
+
   <dt><strong>302 &#8212; programmer busy</strong></dt>
   <dd>
     <p> The command station has reported that it's busy doing  something else, and can't do any programming right now.  This usually means that some other part of the DCC system  is doing a programming operation, e.g. a hand-held throttle.    </p>
@@ -93,14 +87,14 @@ This page lists the error message that can result, and   describes what they mea
   <dt><strong>309 &#8212; Short Circuit on Programming Track</strong></dt>
   <dd>
     <p> The command station has reported seeing a short circuit  on the programming track.  That prevents programming  operations.</p>
- 
+
     <p> Check the electrical connections to the programming track, and  also within the locomotive.</p>
   </dd>
  <dt><strong>310 &#8212; Sequence Error</strong></dt>
  <dd>
   <p> For some reason, the programming operation ended early and the command station returned to normal mode (left service mode)
         before it should have.</p>
- 
+
   <p> This is an unusual error, which might indicate that you've selected the wrong command station type in the preferences. Check that.
         If that's correct and it's still happening, ask for help on the JMRI users list.</p>
  </dd>
@@ -113,6 +107,7 @@ This page lists the error message that can result, and   describes what they mea
 
 <!--#include virtual="/Footer.shtml" -->
   ,/
-</div>
+</div> <!-- closes #container, started in sidebar -->
+<script src="/js/main.js"></script>
 </body>
 </html>

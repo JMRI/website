@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009, 2010 -->
@@ -7,19 +7,13 @@
 Using DecoderPro&reg;
 </title>
 
-<!-- Style -->
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-<link rel="icon" href="/images/jmri.ico" TYPE="image/png">
-<link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
 
-<!--#include virtual="Sidebar" -->
+<!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
 <h1>Using DecoderPro&reg;</h1>
@@ -227,6 +221,7 @@ But you  say...&quot;I want to change more than what's shown on the Basic decode
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div> <!-- closes #container, started in sidebar -->
+<script src="/js/main.js"></script>
 </body>
 </html>

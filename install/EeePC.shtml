@@ -1,25 +1,19 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Installing JMRI on Asus EeePC</title>
 	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.2  (Linux)">
 	<META NAME="CREATED" CONTENT="20070720;11550900">
 	<META NAME="CHANGEDBY" CONTENT="peter">
 	<META NAME="CHANGED" CONTENT="20070720;13070200">
-
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
-
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
-<!--#include virtual="/download/Sidebar" -->
+<div id="mBody">
+<!--#include virtual="Sidebar.shtml" -->
 
 <div id="mainContent">
 
@@ -94,22 +88,22 @@ This terminal window should remain open throughout the installation procedure.
 <p>
 To start, it is necessary to install the communications libraries by typing the following commands:
 
-<code><pre>
+<code class="block">
   cd /usr/lib/jvm/java-1.5.0-sun-1.5.0.10/jre
   tar -zxvvf /home/user/My\ Documents/rxtx.tgz
   cd lib/i386
   ln -s librxtxSerial-2.0.7pre2.so librxtxSerial.so
   ln -s librxtxParallel-2.0.7pre2.so librxtxParallel.so
-</pre></code>
+</code>
 
 Second step is to install the JMRI suite by typing the following commands:
 
-<code><pre>
+<code class="block">
   cd /usr/local
   tar -zxvvf /home/user/My\ Documents/JMRI.2.0.tgz
   chown -R root:root /usr/local/JMRI
   chmod -R 755 /usr/local/JMRI
-</pre></code>
+</code>
 
 <h4>Modify the start-up scripts</h4>
 
@@ -119,30 +113,30 @@ it is necessary to modify the start-up scripts.
 <p>
 Change directory to the install directory by typing the following command:
 
-<code><pre>
+<code class="block">
   cd JMRI
-</pre></code>
+</code>
 
 Modify start-up scripts to allow execution from the install directory using the command:
 
-<code><pre>
+<code class="block">
   nano DecoderPro
-</pre></code>
+</code>
 
 This will now start-up a text editor in the terminal window.
 
 <p>
 Using the cursor keys, find the line that reads:
 
-<code><pre>
+<code class="block">
 #   cd /usr/local/JMRI
-</pre></code>
+</code>
 
 Modify the line by removing the leading # (it should then read):
 
-<code><pre>
+<code class="block">
    cd /usr/local/JMRI
-</pre></code>
+</code>
 
 Press Ctrl+O and then Enter to write-out the file.
 Press Ctrl+X to exit
@@ -150,15 +144,15 @@ Press Ctrl+X to exit
 <p>
 Repeat this modification for:
 
-<code><pre>
+<code class="block">
   PanelPro
-</pre></code>
+</code>
 
 and optionally for:
 
-<code><pre>
+<code class="block">
   JmriDemo
-</pre></code>
+</code>
 
 This completes the necessary start-up file modifications.
 
@@ -166,18 +160,18 @@ This completes the necessary start-up file modifications.
 
 Install the icons for the AsusLauncher menu:
 
-<code><pre>
+<code class="block">
   cd /opt/xandros/share/AsusLauncher
   tar -zxvvf /home/user/My\ Documents/easymodeicons.tgz
-</pre></code>
+</code>
 
 <h4>Exit administrator shell</h4>
 
 To finalise the modifications to the AsusLauncher menu, it is necessary to leave the administrator shell by typing the following command:
 
-<code><pre>
+<code class="block">
   exit
-</pre></code>
+</code>
 
 This will result in the prompt changing to '/home/user> '.
 
@@ -188,10 +182,10 @@ Before modifying the AsusLauncher menu, it needs to be determined if a user copy
 <p>
 This verification is achieved using the following commands:
 
-<code><pre>
+<code class="block">
   cd .AsusLauncher
   ls simpleui.rc
-</pre></code>
+</code>
 
 If there is an error 'ls: simpleui.rc: No such file or directory', it is necessary to perform the following steps. Otherwise, skip the section 'Copy default AsusLauncher file'.
 
@@ -202,21 +196,21 @@ If there is no file 'simpleui.rc' in the '/home/user/.AsusLauncher' directory, i
 <p>
 This is achieved by using the following command:
 
-<code><pre>
+<code class="block">
   cp /opt/xandros/share/AsusLauncher/simpleui.rc simpleui.rc
-</pre></code>
+</code>
 
 Confirm that the file 'simpleui.rc' exists by typing:
 
-<code><pre>
+<code class="block">
   ls simpleui.rc
-</pre></code>
+</code>
 
 This should then display:
 
-<code><pre>
+<code class="block">
   simpleui.rc
-</pre></code>
+</code>
 
 <h4>Make the AsusLauncher modifications</h4>
 
@@ -226,20 +220,20 @@ it is necessary to modify this configuration.
 <p>
 This is achieved by entering the following command:
 
-<code><pre>
+<code class="block">
   nano simpleui.rc
-</pre></code>
+</code>
 
 Scroll down to the end of the file. This should be a single line showing:
 
-<code><pre>
+<code class="block">
   &lt;/simpleui&gt;
-</pre></code>
+</code>
 
 Insert the following lines before the last line (copy and paste from here, or the
 <a href="eeepc/launcheritems.txt">launcheritems.txt</a> file):
 
-<code><pre>
+<code class="block">
   &lt;parcel extraargs="/usr/bin/xterm -hold -e /usr/local/JMRI/DecoderPro"
           icon="decoderpro_norm.png"
           selected_icon="decoderpro_hi.png"
@@ -253,7 +247,7 @@ Insert the following lines before the last line (copy and paste from here, or th
           simplecat="Play"&gt;
           &lt;name lang="en"&gt;Panel Pro&lt;/name&gt;
   &lt;/parcel&gt;
-</pre></code>
+</code>
 
 Press Ctrl+O and then Enter to write-out the file.
 Press Ctrl+X to exit
@@ -266,9 +260,9 @@ Note: the new icons will not show until after the EeePC has been restarted.
 
 Close the terminal window by typing the following command:
 
-<code><pre>
+<code class="block">
   exit
-</pre></code>
+</code>
 
 Now, restart the EeePC by your preferred method.
 
@@ -286,5 +280,6 @@ Once restarted, icons for Decoder Pro and Panel Pro should exist on the Play tab
 
 	 </div> <!-- closes #mainContent-->
  </div> <!-- closes #mBody-->
+<script src="/js/main.js"></script>
 </body>
 </html>

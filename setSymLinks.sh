@@ -11,7 +11,7 @@
 #   ./setSymLinks.sh  ~me/git/JMRI ~me/git/website
 
 ln -sf $2/COPYING .
-ln -sf $2/Copyright.html .
+ln -sf $2/copyright.shtml .
 ln -sf $2/Footer .
 ln -sf $2/Footer.shtml .
 ln -sf $2/Header .

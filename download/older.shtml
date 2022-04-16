@@ -1,30 +1,28 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
- <title>JMRI: Older Downloads</title>
+    <title>JMRI: Older Releases</title>
     <meta content="John Plocher" name="Author">
     <meta name="keywords" content="java model railroad JMRI download binaries binary code jar install">
-
-<!--#include virtual="/Style.shtml" -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
-<body class="secondlevel">
-<div id="container">
+<body>
+    <!--#include virtual="/Header.shtml" -->
 
-<p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
-<!--#include virtual="/Header.shtml" -->
+    <div id="mBody">
+        <!--#include virtual="Sidebar.shtml" -->
+        <hr class="hide">
+        <div id="mainContent">
 
-<hr class="hide">
-
-<div id="mBody">
- <div id="mainContent">
-
-	<h2><a href="../releasenotes/">Older Release Notes</a></h2>
-	<li>Production Versions</li>
+        <h2><a href="../releasenotes/">Older Release Notes</a></h2>
+        <p>Production Versions</p>
 	    <ul>
-	    <li><a href="../releasenotes/jmri4.14.shtml">JMRI 4.14</a>
-	    <li><a href="../releasenotes/jmri4.12.shtml">JMRI 4.12</a>
+	        <li><a href="../releasenotes/jmri4.18.shtml">JMRI 4.18</a>
+	        <li><a href="../releasenotes/jmri4.16.shtml">JMRI 4.16</a>
+	        <li><a href="../releasenotes/jmri4.14.shtml">JMRI 4.14</a>
+	        <li><a href="../releasenotes/jmri4.12.shtml">JMRI 4.12</a>
 	        <li><a href="../releasenotes/jmri4.10.shtml">JMRI 4.10</a>
 	        <li><a href="../releasenotes/jmri4.8.shtml">JMRI 4.8</a>
 	        <li><a href="../releasenotes/jmri4.6.shtml">JMRI 4.6</a>
@@ -34,7 +32,7 @@
             <li><a href="../releasenotes/jmri4.0.1.shtml">JMRI 4.0.1</a>
             <li><a href="../releasenotes/jmri4.0.shtml">JMRI 4.0</a>
             <li><a href="../releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a>
-            <li><a href="../releasenotes/jmri3.10.shtml">JMRI 3.10</a>	    
+            <li><a href="../releasenotes/jmri3.10.shtml">JMRI 3.10</a>
             <li><a href="../releasenotes/jmri3.8.shtml">JMRI 3.8</a>
             <li><a href="../releasenotes/jmri3.6.shtml">JMRI 3.6</a>
             <li><a href="../releasenotes/jmri3.4.shtml">JMRI 3.4</a>
@@ -56,9 +54,43 @@
             <li><a href="../releasenotes/jmri1.4.shtml">JMRI 1.4</a>
             <li><a href="../releasenotes/jmri1.2.5.shtml">JMRI 1.2.5</a>
 	    </ul>
-            
-	<li>Development Versions</li>
+
+	<p>Development Versions</p>
 	    <ul>
+
+	    <li><a href="../releasenotes/jmri4.23.8.shtml">JMRI 4.23.8</a>
+	    <li><a href="../releasenotes/jmri4.23.7.shtml">JMRI 4.23.7</a>
+	    <li><a href="../releasenotes/jmri4.23.6.shtml">JMRI 4.23.6</a>
+	    <li><a href="../releasenotes/jmri4.23.5.shtml">JMRI 4.23.5</a>
+	    <li><a href="../releasenotes/jmri4.23.4.shtml">JMRI 4.23.4</a>
+	    <li><a href="../releasenotes/jmri4.23.3.shtml">JMRI 4.23.3</a>
+	    <li><a href="../releasenotes/jmri4.23.2.shtml">JMRI 4.23.2</a>
+	    <li><a href="../releasenotes/jmri4.23.1.shtml">JMRI 4.23.1</a>
+
+	    <li><a href="../releasenotes/jmri4.21.5.shtml">JMRI 4.21.5</a>
+	    <li><a href="../releasenotes/jmri4.21.4.shtml">JMRI 4.21.4</a>
+	    <li><a href="../releasenotes/jmri4.21.3.shtml">JMRI 4.21.3</a>
+	    <li><a href="../releasenotes/jmri4.21.2.shtml">JMRI 4.21.2</a>
+	    <li><a href="../releasenotes/jmri4.21.1.shtml">JMRI 4.21.1</a>
+
+	    <li><a href="../releasenotes/jmri4.19.9.shtml">JMRI 4.19.9</a>
+	    <li><a href="../releasenotes/jmri4.19.8.shtml">JMRI 4.19.8</a>
+	    <li><a href="../releasenotes/jmri4.19.7.shtml">JMRI 4.19.7</a>
+	    <li><a href="../releasenotes/jmri4.19.6.shtml">JMRI 4.19.6</a>
+	    <li><a href="../releasenotes/jmri4.19.5.shtml">JMRI 4.19.5</a>
+	    <li><a href="../releasenotes/jmri4.19.4.shtml">JMRI 4.19.4</a>
+	    <li><a href="../releasenotes/jmri4.19.3.shtml">JMRI 4.19.3</a>
+	    <li><a href="../releasenotes/jmri4.19.2.shtml">JMRI 4.19.2</a>
+	    <li><a href="../releasenotes/jmri4.19.1.shtml">JMRI 4.19.1</a>
+
+	    <li><a href="../releasenotes/jmri4.17.8.shtml">JMRI 4.17.8</a>
+	    <li><a href="../releasenotes/jmri4.17.7.shtml">JMRI 4.17.7</a>
+	    <li><a href="../releasenotes/jmri4.17.6.shtml">JMRI 4.17.6</a>
+	    <li><a href="../releasenotes/jmri4.17.5.shtml">JMRI 4.17.5</a>
+	    <li><a href="../releasenotes/jmri4.17.4.shtml">JMRI 4.17.4</a>
+	    <li><a href="../releasenotes/jmri4.17.3.shtml">JMRI 4.17.3</a>
+	    <li><a href="../releasenotes/jmri4.17.2.shtml">JMRI 4.17.2</a>
+	    <li><a href="../releasenotes/jmri4.17.1.shtml">JMRI 4.17.1</a>
 
 	    <li><a href="../releasenotes/jmri4.15.9.shtml">JMRI 4.15.9</a>
 	    <li><a href="../releasenotes/jmri4.15.8.shtml">JMRI 4.15.8</a>
@@ -77,7 +109,7 @@
 	    <li><a href="../releasenotes/jmri4.13.3.shtml">JMRI 4.13.3</a>
 	    <li><a href="../releasenotes/jmri4.13.2.shtml">JMRI 4.13.2</a>
 	    <li><a href="../releasenotes/jmri4.13.1.shtml">JMRI 4.13.1</a>
-	    
+
 	    <li><a href="../releasenotes/jmri4.11.9.shtml">JMRI 4.11.9</a>
 	    <li><a href="../releasenotes/jmri4.11.8.shtml">JMRI 4.11.8</a>
 	    <li><a href="../releasenotes/jmri4.11.7.shtml">JMRI 4.11.7</a>
@@ -142,7 +174,7 @@
 			<li><a href="../releasenotes/jmri3.11.3.shtml">JMRI 3.11.3</a>
 			<li><a href="../releasenotes/jmri3.11.2.shtml">JMRI 3.11.2</a>
 			<li><a href="../releasenotes/jmri3.11.1.shtml">JMRI 3.11.1</a>
-			
+
 			<li><a href="../releasenotes/jmri3.9.7.shtml">JMRI 3.9.7</a>
 			<li><a href="../releasenotes/jmri3.9.6.shtml">JMRI 3.9.6</a>
 			<li><a href="../releasenotes/jmri3.9.5.shtml">JMRI 3.9.5</a>
@@ -151,7 +183,7 @@
 			<li><a href="../releasenotes/jmri3.9.2.shtml">JMRI 3.9.2</a>
 			<li><a href="../releasenotes/jmri3.9.1.shtml">JMRI 3.9.1</a>
 			<li><a href="../releasenotes/jmri3.7.9.shtml">JMRI 3.7.9</a>
-			
+
             <li><a href="../releasenotes/jmri3.7.9.shtml">JMRI 3.7.9</a>
             <li><a href="../releasenotes/jmri3.7.8.shtml">JMRI 3.7.8</a>
             <li><a href="../releasenotes/jmri3.7.7.shtml">JMRI 3.7.7</a>
@@ -186,7 +218,7 @@
             <li><a href="../releasenotes/jmri3.1.3.shtml">JMRI 3.1.3</a>
             <li><a href="../releasenotes/jmri3.1.2.shtml">JMRI 3.1.2</a>
             <li><a href="../releasenotes/jmri3.1.1.shtml">JMRI 3.1.1</a>
-        
+
             <li><a href="../releasenotes/jmri2.99.8.shtml">JMRI 2.99.8</a>
             <li><a href="../releasenotes/jmri2.99.7.shtml">JMRI 2.99.7</a>
             <li><a href="../releasenotes/jmri2.99.6.shtml">JMRI 2.99.6</a>
@@ -195,7 +227,7 @@
             <li><a href="../releasenotes/jmri2.99.3.shtml">JMRI 2.99.3</a>
             <li><a href="../releasenotes/jmri2.99.2.shtml">JMRI 2.99.2</a>
             <li><a href="../releasenotes/jmri2.99.1.shtml">JMRI 2.99.1</a>
-        
+
             <li><a href="../releasenotes/jmri2.13.7.shtml">JMRI 2.13.7</a>
             <li><a href="../releasenotes/jmri2.13.6.shtml">JMRI 2.13.6</a>
             <li><a href="../releasenotes/jmri2.13.5.shtml">JMRI 2.13.5</a>
@@ -203,7 +235,7 @@
             <li><a href="../releasenotes/jmri2.13.3.shtml">JMRI 2.13.3</a>
             <li><a href="../releasenotes/jmri2.13.2.shtml">JMRI 2.13.2</a>
             <li><a href="../releasenotes/jmri2.13.1.shtml">JMRI 2.13.1</a>
-        
+
             <li><a href="../releasenotes/jmri2.11.9.shtml">JMRI 2.11.9</a>
             <li><a href="../releasenotes/jmri2.11.8.shtml">JMRI 2.11.8</a>
             <li><a href="../releasenotes/jmri2.11.7.shtml">JMRI 2.11.7</a>
@@ -213,7 +245,7 @@
             <li><a href="../releasenotes/jmri2.11.3.shtml">JMRI 2.11.3</a>
             <li><a href="../releasenotes/jmri2.11.2.shtml">JMRI 2.11.2</a>
             <li><a href="../releasenotes/jmri2.11.1.shtml">JMRI 2.11.1</a>
-        
+
             <li><a href="../releasenotes/jmri2.9.10.shtml">JMRI 2.9.10</a>
             <li><a href="../releasenotes/jmri2.9.9.shtml">JMRI 2.9.9</a>
             <li><a href="../releasenotes/jmri2.9.8.shtml">JMRI 2.9.8</a>
@@ -285,14 +317,12 @@
             <li><a href="../releasenotes/jmri1.3.8.shtml">JMRI 1.3.8</a>
             <li><a href="../releasenotes/jmri1.1.14.shtml">JMRI 1.1.14</a>
 	    </ul>
-    </ul>
 
-  <hr class="hide">
-   <!--#include virtual="/Footer.shtml" -->
+    <hr class="hide">
+    <!--#include virtual="/Footer.shtml" -->
 
- </div> <!-- closes #mainContent-->
-</div> <!-- closes #mBody--> 
-</div> <!-- closes #container --> 
+    </div> <!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+  <script src="/js/main.js"></script>
 </body>
 </html>
-

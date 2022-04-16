@@ -1,15 +1,16 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en"><head><!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Main_Throttle.shtml 18167 2011-08-13 11:22:06Z dat7719 $ -->
+<!DOCTYPE html>
+<html lang="en">
 
-<title>DecoderPro Throttle</title><!-- Style --><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-<link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/"><!-- /Style --></head>
+<head>
+    <!-- Copyright ($Author: dat7719 $) 2009 -->
+    <!-- $Id: Main_Throttle.shtml 18167 2011-08-13 11:22:06Z dat7719 $ -->
+    <title>DecoderPro Throttle</title>
+    <!--#include virtual="/Style.shtml" -->
+</head>
 <body>
 <!--#include virtual="/Header.shtml" -->
 
-<!--#include virtual="Sidebar" -->
+<!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
 <a name="Top"></a>
@@ -56,6 +57,7 @@ Help, just open a New </span><strong style="font-weight: bold;">Throttle</strong
 
 <!--#include virtual="/Footer.shtml" -->
 </div><!-- closes #mainContent-->
-</div><!-- closes #mBody, started in sidebar-->
+</div><!-- closes #mBody, started in sidebar -->
+<script src="/js/main.js"></script>
 </body>
 </html>

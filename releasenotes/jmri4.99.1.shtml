@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+ <title>
+    JMRI: Release Notes for 4.99.1
+ </title>
+    <meta content="Bob Jacobsen" name="author">
+    <meta name="keywords" content="java model railroad JMRI 4.99.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+
+ <!--#include virtual="/Style.shtml" -->
+</head>
+
+<body>
+<!--#include virtual="/Header.shtml" -->
+
+<div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
+    <div id="mainContent">
+      <h1>
+      Release Notes for JMRI 4.99.1 release
+      </h1>
+
+    <p>Date: December 19, 2021</p>
+    <p>From: Bob Jacobsen</p>
+    <p>Subject: Test Release 4.99.1 of JMRI/DecoderPro is available for download.</p>
+
+<!--
+<p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
+
+<h2>Notes:</h2>
+
+<p>This is a test release.  Please
+<a href="https://groups.io/g/jmriusers">post a note</a>
+if you encounter any new or old bugs!
+And please back up your JMRI files before installing this, in case you want to go
+back to an earlier version.</p>
+
+<p>This is the first in a series of 4.99.* test releases to migrate JMRI to Java 11.
+It requires Java 11 to work.
+(See <a href="http://jmri.org/java">our page on downloading Java 11</a>)
+We expect this series to end in the next JMRI 5.0 production release at the end of Spring 2022.
+(See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
+</p>
+
+<p>Some of the changes involved are quite extensive.
+They may require a certain amount of experience before they are working well.
+Therefore, this test release should be considered experimental.</p>
+
+<p><b>
+JMRI is now only available under the
+<a href="/COPYING">GNU General Public License</a>. For more information, please
+see our
+<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<a id="update" name="update"></a>
+<h3>Update From Older JMRI Versions</h3>
+
+If you are currently using a version older than JMRI 4.24, please follow these instructions carefully:
+<ol>
+<li>Is your current version older than <a href="jmri4.12.shtml">JMRI 4.12</a>?
+    If so, then update to <a href="jmri4.12.shtml">JMRI 4.12</a> first, and ensure everything works correctly: check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Store your configuration and panel files under a new name and use those from now on.
+    Then continue with step 2.
+    <p>
+    If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+    then it's <u>very important</u>
+    that you update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
+    carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
+    before updating to any later release.
+    </li>
+
+<li>Is your current version older than <a href="jmri4.20.shtml">JMRI 4.20</a>?
+    Then update to <a href="jmri4.20.shtml">JMRI 4.20</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else
+    Save your preferences again.
+    Store your configuration and panel files under a new name, use those from now on, and go on to step 3.</li>
+
+<li>Is your current version older than <a href="jmri4.24.shtml">JMRI 4.24</a>?
+    Then update to <a href="jmri4.24.shtml">JMRI 4.24</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else
+    Save your preferences again.
+    Store your configuration and panel files under a new name and use those from now on.</li>
+
+<li>You can then install this release.
+
+</ol>
+
+Following this multi-step order of updating via stable major releases safeguards you against possible migration issues
+that can arise from skipping these versions.
+
+<a id="problems" name="problems"></a>
+<h3>New problems with this release</h3>
+<ul>
+    <li>We've had a report of trouble starting the LocoNetOverTCP server.
+        We'd appreciate hearing if that is working for you or not.</li>
+</ul>
+<!--
+If any of those affect you, please either
+wait for
+<a href="jmri4.99.2.shtml">JMRI 4.99.2</a>,
+due out shortly after this one,
+or (once there's a fix for the problem) pick up a
+<a href="https://builds.jmri.org/jenkins/job/j11development/job/packages/">JMRI on Java 11 development build installer</a>
+from
+<a href="https://builds.jmri.org/jenkins/job/j11development/job/packages/">Jenkins</a>.</p>
+ -->
+
+<a id="warnings" name="warnings"></a>
+<h3>New warnings for this release:</h3>
+
+<ul>
+    <li>
+        This test release, and all subsequent ones, require the use of
+        Java 11 or later.  Java 8 is explicitly not supported.
+        There's more information on this migration on the
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
+    </li>
+    <li>A number of classes and methods that have been deprecated for a long time
+        are removed in this release.  These include:
+        <ul>
+            <li>apps.JmriPlugin</li>
+            <li>apps/startup/StartupActionFactory</li>
+            <li>Routes/Turnouts/Sensors: One form of getNextAddress</li>
+            <li>Handling of preferences from before JMRI 4.0; upgrade through JMRI 4.20 instead</li>
+            <li>ShutDownTask, AbstractShutDownTask - use call & run methods now</li>
+            <li>Removed JythonAutomaton, JythonAutomatonAction, JythonSiglet, JythonSigletAction
+                unused classes.  These have been made obsolete by JMRI's native scripting,
+                and haven't been used since JMRI 1.2
+            </li>
+            <li>SSL (BlockBossLogic) - change to start/stop calls</li>
+            <li>Various TrafficManagers.instance methods - use InstanceManager</li>
+            <li>Throttle.getListeners() - use getPropertyChangeListeners</li>
+            <li>Removed obsolete RosterRecorder class;
+                function now available via scripting
+            </li>
+            <li>Removed deprecated methods from Throttle panels</li>
+            <li>Manager.getSystemNameList - rework with getNamedBeanSet</li>
+            <li>Manager.getNamedBeanList - rework with getNamedBeanSet</li>
+            <li>Manager.setPropertyChangesMuted - use setPropertyChangesSilenced</li>
+            <li>Manager.getBeanBySystemName - use getBySystemName</li>
+            <li>Manager.getBeanByUserName - use getByUserName</li>
+            <li>FileChooserUtil</li>
+            <li>get/setFontFamily in SystemConsolePreferencesManager</li>
+            <li>throttle.FunctionPanel#changeState(..) has been replaced by #setSelected(..)</li>
+        </ul>
+    </li>
+    <li>The PowerManager now only fires events with the id "power".  Before this
+        release, it also fired events with the id "Power". Check that
+        your scripting code is looking for the right form.
+    <li>This version no longer reads ZeroConf IPv4 and IPv6 preferences
+        written with JMRI 4.16 and before.  Please make sure to upgrade
+        to JMRI 4.20 (or later) and save your preferences before
+        updating to this version if you have configured the WiThrottle preference pane.</li>
+
+</ul>
+
+
+<h3>Older warnings</h3>
+
+See the <a href="jmri4.26.shtml#warnings">JMRI 4.26 release note</a> for more warnings predating the 4.99 development series,
+including pointers to various migration issues.
+These may be relevant to you if you're updating from an earlier version;
+we strongly recommend you update to <a href="jmri4.20.shtml">JMRI 4.20</a>
+before installing this test release.
+
+<ul>
+    <li>None</li>
+</ul>
+
+<a id="download" name="download"></a>
+<h2>Download links:</h2>
+
+<div class="wide">
+<ul>
+<li>OS X / macOS: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v4.99.1/JMRI.4.99.1+Rf3d7151af8.dmg">https://github.com/JMRI/JMRI/releases/download/v4.99.1/JMRI.4.99.1+Rf3d7151af8.dmg</a><br/>
+  sha256: 8b23919296ab511cca7b4220e6d578ac387936dfe93d420113b41c533920be39 </li>
+
+<li>Windows: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v4.99.1/JMRI.4.99.1+Rf3d7151af8.exe">https://github.com/JMRI/JMRI/releases/download/v4.99.1/JMRI.4.99.1+Rf3d7151af8.exe</a><br/>
+   sha256: eed2981cb418b3b6a57c84f4b1ed676fabbd3b21995043bf2c2a0c8ca38e946b</li>
+
+<li>Linux: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v4.99.1/JMRI.4.99.1+Rf3d7151af8.tgz">https://github.com/JMRI/JMRI/releases/download/v4.99.1/JMRI.4.99.1+Rf3d7151af8.tgz</a><br/>
+   sha256: 4e02ad171199e2498237d920cca90477849e1253b0775cbec930b937a6991449</li>
+</ul>
+</div>
+
+<!--
+Preliminary build files (not the final released files) can be found
+on the
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.99.1/">CI project page</a>.
+ -->
+
+<!--
+During development leading to the actual release, you can find test download files on the
+<a href="https://builds.jmri.org/jenkins/job/j11development/job/packages/">continuous integration build page</a>.
+These are development files, and might not be working at any particular time.</p>
+ -->
+
+<a id="changes" name="changes"></a>
+<h2>Changes since <a href="jmri4.26.shtml">Production Release 4.26</a>:</h2>
+
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.99.1+is%3Amerged">list of included changes</a> is available from our
+<a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
+
+<!-- this is displaying from the main master branch, as the J11master branch is not on the web server.
+     It'll be OK at the end. -->
+
+
+    <h3>Hardware Support</h3>
+
+        <h4>DCC4pc</h4>
+            <ul>
+                <li>
+                    DCC4pc now has multi-system capability
+                </li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li>added new decoder definitions for Firmware v40.x</li>
+            </ul>
+
+    <h3>Logix</h3>
+        <a id="Logix" name="Logix"></a>
+        <ul>
+          <li>A single Logix can now be exported to LogixNG.
+		  Open Tools -> Tables -> Logix and select <i>Export
+		  to LogixNG</i> for the Logix you want to export.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>A single Logix can be imported to LogixNG. Se
+		  the section <i>Logix</i> for more information.</li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li>Allow user-modified signal systems to provide
+                    their own copy of an existing aspects.xml file.</li>
+            </ul>
+
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>This is the first test release that requires Java 11.
+                As part of that, there were extensive changes to
+                the underlying infrastructure. See PR
+                <a href="https://github.com/JMRI/JMRI/pull/10278">#10278</a>
+                and following PRs with the
+                <a href="https://github.com/JMRI/JMRI/issues?q=label%3A%22Java+11%22">Java 11 label</a>.
+            </li>
+            <li>Personal and development builds after this release will
+                be called 4.99.1plus instead of the prior convention of
+                calling them 4.99.2ish.  This should only affect JMRI
+                developers.
+            </li>
+        </ul>
+
+    <h3>Migration Issues</h3>
+        <a id="migration" name="migration"></a>
+        See the warnings section of the release note.
+
+   <!--#include virtual="/Footer.shtml" -->
+  </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+  <script src="/js/main.js"></script>
+</body>
+</html>

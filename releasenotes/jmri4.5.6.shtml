@@ -1,10 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
  <title>
  JMRI: Release Notes for 4.5.6
  </title>
-    <meta content="Bob Jacobsen" name="Author">
+    <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.5.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
 <!-- Style -->
@@ -20,7 +21,8 @@
 
 <!--#include virtual="/Header.shtml" -->
 
-  <div class="nomenu" id="mBody">
+  <div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h2>
       Release Notes for JMRI 4.5.6 release
@@ -52,7 +54,7 @@ Therefore, this test version should be considered experimental.</p>
 JMRI is now only available under the
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our
-<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>Known problems with this release</h3>
 
@@ -354,5 +356,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
+ <script src="/js/main.js"></script>
 </body>
 </html>

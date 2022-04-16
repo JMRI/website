@@ -1,19 +1,13 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en"><head>
 <!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Ops_AddStaging.shtml 18386 2011-09-07 08:33:40Z dat7719 $ -->
 <title>Operations-Add Staging</title>
-<!-- Style -->
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-<link rel="icon" href="/images/jmri.ico" type="image/png">
-<link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 <body>
 <!--#include virtual="/Header.shtml" -->
 
-<!--#include virtual="Sidebar" -->
+<!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
 <a name="Top"></a>
@@ -48,7 +42,7 @@ and switch lists.</p>
 <p>This opens the <strong>Add Location</strong> window with all the options enabled.</p>
 <p><img src="images/Ops_Staging02.png" height="640" width="772"></p>
 <p>You may select <strong>This location is serviced by trains traveling</strong>, select at least one or any number of the directions depending on access to your staging. We have selected
-  
+
   All directions, for this staging.</p>
 <p>You can decide which train direction the location can service. For
 example, if only south bound trains can access the location select
@@ -201,7 +195,7 @@ to return on. Physically, the tracks can be the same track.</p>
   <input name="staging" id="staging" src="images/Ops_Staging05.png" type="image">
 </p>
 <p>You may add as many tracks as required for the Staging area.</p>
-<p>If you want to change information for any track entry, press 
+<p>If you want to change information for any track entry, press
   <input name="button14" id="button14" value="Edit" type="submit">
 and the <strong>Edit Staging Track</strong> window will open.</p>
 
@@ -219,7 +213,7 @@ and the <strong>Edit Staging Track</strong> window will open.</p>
   </tr>
 </tbody></table>
 <p>
-  <t>T</t>he Locations window shows all the locations in your database.</p>
+  The Locations window shows all the locations in your database.</p>
 <p>You may Edit any one of them, which opens the<strong> Edit Location</strong> window, which is the same as the <a href="Ops_Locations.shtml"><strong>Add Location</strong></a> window except it contains the info for the location you are editing.</p>
 <p>
   <img style="width: 808px; height: 283px;" alt="locations" src="images/Ops_Location02.png"><br>
@@ -235,6 +229,7 @@ and the <strong>Edit Staging Track</strong> window will open.</p>
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div> <!-- closes #container, started in sidebar -->
+<script src="/js/main.js"></script>
 </body>
 </html>

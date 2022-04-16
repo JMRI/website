@@ -1,23 +1,17 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Copyright ($Author: dat7719 $) 2009 -->
 <!-- $Id: Main_TurnoutControl.shtml 18167 2011-08-13 11:22:06Z dat7719 $ -->
 <title>DecoderPro Turnout Control</title>
 
-<!-- Style -->
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-<link rel="icon" href="/images/jmri.ico" TYPE="image/png">
-<link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
 <!--#include virtual="/Header.shtml" -->
 
-<!--#include virtual="Sidebar" -->
+<!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
 <a name="Top"></a>
@@ -26,7 +20,7 @@
 
 <div align="right">
 <p><a href="dp3_menubar.shtml">Back</a></p>
-<p><a href="dp3_menubar.html">Back to Index</a></p>
+<p><a href="dp3_menubar.shtml">Back to Index</a></p>
 </div>
 
 <hr>
@@ -38,20 +32,20 @@
       <p><strong>Turnout</strong></p>
       <p>
         <input name="textfield2" type="text" id="textfield2" size="8">
-        Enter the accessory number or tunout system name for the accessory or turnout you wish to control. For example, entering 678 and by pressing either the 
+        Enter the accessory number or tunout system name for the accessory or turnout you wish to control. For example, entering 678 and by pressing either the
         <input type="submit" name="button" id="button" value="Thrown">
-      or 
+      or
       <input type="submit" name="button2" id="button2" value="closed">
       , you should be able to change the state of accessory number 678 on the layout.</p>
-      <p>Another example, a valid turnout system name for NCE could be NT456. Then by pressing either the  
+      <p>Another example, a valid turnout system name for NCE could be NT456. Then by pressing either the
         <input type="submit" name="button3" id="button3" value="Thrown">
 or
 <input type="submit" name="button3" id="button4" value="closed">
 , you should be able to change the state of turnout or accessory number 456 on the layout</p>
-      <p>Another example, a valid turnout name could be IT123 which is internal turnout number 123. Pressing either the  
+      <p>Another example, a valid turnout name could be IT123 which is internal turnout number 123. Pressing either the
         <input type="submit" name="button4" id="button5" value="Thrown">
 or
-<input type="submit" name="button4" id="button6" value="closed"> 
+<input type="submit" name="button4" id="button6" value="closed">
 will only change the state of the internal turnout and will not change a turnout on the layout.
       </p>
       <p><strong>current state:</strong> A turnout can have four states: &lt;unknown&gt;, &lt;inconsistent&gt;, &lt;thrown&gt; and &lt;closed&gt;</p>
@@ -70,6 +64,7 @@ will only change the state of the internal turnout and will not change a turnout
 
 <!--#include virtual="/Footer.shtml" -->
 </div>
-</div>
+</div> <!-- closes #container, started in sidebar -->
+<script src="/js/main.js"></script>
 </body>
 </html>

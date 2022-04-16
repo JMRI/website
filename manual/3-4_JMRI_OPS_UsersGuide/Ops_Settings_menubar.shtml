@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en"><head><!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Ops_Settings.shtml 18473 2011-09-14 07:01:17Z dat7719 $ -->
 
 
@@ -10,7 +10,7 @@
 <link rel="home" title="Home" href="/"><!-- /Style --></head>
 <body>
 <!--#include virtual="/Header.shtml" -->
-<!--#include virtual="Sidebar" -->
+<!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent"><a name="Top"></a>
 <h1>Using JMRI&reg; to Operate Trains</h1>
 <h1>Operations Settings Menu Bar</h1>
@@ -107,5 +107,8 @@ window.</p>
 </div>
 <p>.</p>
 </div>
-<!--#include virtual="/Footer.shtml" --></div>
-</body></html>
+<!--#include virtual="/Footer.shtml" -->
+</div> <!-- closes #container, started in sidebar -->
+<script src="/js/main.js"></script>
+</body>
+</html>

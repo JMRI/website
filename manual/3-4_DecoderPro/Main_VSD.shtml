@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head><!-- Copyright ($Author: dat7719 $) 2009 --><!-- $Id: Main_VSD.shtml 18193 2011-08-16 23:19:17Z dat7719 $ -->
 <title>DecoderPro&reg; Main Window</title>
@@ -14,7 +14,7 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 
-<!--#include virtual="Sidebar" -->
+<!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
 
 <h1>DecoderPro&reg; Debug Menu</h1>
@@ -201,6 +201,7 @@ or of the room.
 </div>
 
 <!--#include virtual="/Footer.shtml" -->
-</div>
+</div> <!-- closes #container, started in sidebar -->
+<script src="/js/main.js"></script>
 </body>
 </html>

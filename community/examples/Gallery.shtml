@@ -1,42 +1,29 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<!-- $Id: Gallery.shtml,v 1.6 2011/04/27 14:18:32 jacobsen Exp $ -->
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>
  	JMRI Gallery
     </title>
-		<meta name="author" content="Bob Jacobsen, Egbert Broerse">
-		<meta name="Date.Modified" content="20150923"/>
-        <meta name="keywords" content="JMRI PanelPro control panel DCC C/MRI signals">
-
-    <!-- The combination of "Define" and {Header,Style, Logo and Footer} comments -->
-    <!-- are an arbitrary design pattern used by the update.pl script to -->
-    <!-- easily replace the common header/footer code for all the web pages -->
-
-<!-- Style -->
-  <meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+	<meta name="author" content="Bob Jacobsen, Egbert Broerse">
+	<meta name="Date.Modified" content="20150923"/>
+    <meta name="keywords" content="JMRI PanelPro control panel DCC C/MRI signals">
+    <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
-    <p class="skipLink"><a href="#mainContent" accesskey="2">Skip to main content</a></p>
-
 <!--#include virtual="/Header.shtml" -->
     <hr class="hide">
 
-    <div class="nomenu" id="mBody">
-	<div id="mainContent">
+    <div class="no-sidebar" id="mBody">
+	<div id="mainContent" class="no-sidebar">
 
 	    <h1>JMRI Gallery</h1>
 
 <p>This page highlights some of the neat things people have done with both <a href="#panelpro">JMRI
 Panelpro</a> and <a href="#libraries">JMRI Libraries</a>.</p>
 
-<H2><a name="panelpro">PanelPro applications</a></H2>
+<H2><a id="panelpro">PanelPro applications</a></H2>
 <p>Many PanelPro users have each come up with their own PanelPro application, ranging from simple to complex: </p>
 
 <h3>Modular Signals in the UK</h3>
@@ -50,9 +37,12 @@ in the Fall 2016 issue of the
 
 <h3>OWNry</h3>
 
+<!--
 <a href="http://ownry.squarespace.com/display/ShowImage?imageUrl=/storage/blog-photos/CTC_Panel_June2006.gif?__SQUARESPACE_CACHEVERSION=1302156072951"/>
 <img src="http://ownry.squarespace.com/storage/thumbnails/5519763-11612079-thumbnail.jpg" align="right" width="200" height="135"/>
 </a>
+-->
+<a href="images/5519763-11612079-thumbnail.gif"><img src="images/5519763-11612079-thumbnail.gif" class="floatRight" width="200" height="135" alt="OWN panel" /></a>
 
 Kent Williams'
 <a href="http://ownry.squarespace.com">Oregon Washington Navigation &amp; Railway</a>
@@ -61,33 +51,32 @@ Kent Williams'
 
 <h3>Cashaway Valley Railroad</h3>
 
-Jim Thompson is using PanelPro to make a dispatcher's panel for his Cashaway Valley Railroad</a>.
+Jim Thompson is using PanelPro to make a dispatcher's panel for his Cashaway Valley Railroad.
 Watch this <a href="https://www.youtube.com/watch?v=oke5ea869FY">YouTube Video</a>.
 
 <h3>Cornwall RR</h3>
 Well over a decade ago, Nick Kulp already created a program to drive his
-<a href="Panels-Cornwall/Cornwall.html">Cornwall RR</a>
+<a href="Panels-Cornwall/Cornwall.shtml">Cornwall RR</a>
 
 <h3>Quaker Valley</h3>
-<a href="http://www.quaker-valley.com/CTC/JMRI_QV_CTC.gif"/>
-<img src="http://www.quaker-valley.com/CTC/JMRI_QV_CTC.gif" align="right" width="256" height="186"/>
+<a href="http://www.quaker-valley.com/CTC/JMRI_QV_CTC.gif">
+<img src="http://www.quaker-valley.com/CTC/JMRI_QV_CTC.gif" class="floatRight" width="256" height="186" alt="QV panel" />
 </a>
 
 Bob Bucklew built a realistic CTC panel for his
 Quaker Valley Railroad.
 He's created a very nice series of web pages on
 <a href="http://www.quaker-valley.com/CTC/QV_CTCnew.html">how it's done</a>.
-<p>
 
 <h3>Bloomfield &amp; Oakland RR</h3>
 
 Alan Huberty created a multi-screen control panel for his Bloomfield &amp; Oakland Railroad.
-<a href="images/BORRCTCPanel.gif"><img src="images/BORRCTCPanel.gif" width="512" height="192"></a>
+<a href="images/BORRCTCPanel.gif"><img src="images/BORRCTCPanel.gif" width="512" height="192" alt="CTC panel"></a>
 
 <h3>Shasta Route</h3>
 
 <a href="http://spshastaroute.org/images/22.jpg">
-<img src="http://spshastaroute.org/images/thumb_22_jpg.gif" width="200" height="150" align="right">
+<img src="http://spshastaroute.org/images/thumb_22_jpg.gif" width="200" height="150" class="floatRight" alt="Shasta Route">
 </a>
 
 <p>The goal of Otis McGee's
@@ -101,17 +90,17 @@ on his railroad (see below).
 via a large seven-node C/MRI installation.</p>
 
 <a href="http://spshastaroute.org/c/3.JPG">
-<img src="http://spshastaroute.org/c/thumb_3_JPG.gif" width="200" height="150">
+<img src="http://spshastaroute.org/c/thumb_3_JPG.gif" width="200" height="150" alt="">
 </a>
 <a href="images/ShastaCTTMachine.jpg">
 <img src="images/ShastaCTTMachine.jpg" width="200" height="150" alt="Picture of real CTC machine"/>
 </a>
 <br/>
 <a href="http://spshastaroute.org/c/14.JPG">
-<img src="http://spshastaroute.org/c/thumb_14_JPG.gif" width="200" height="150">
+<img src="http://spshastaroute.org/c/thumb_14_JPG.gif" width="200" height="150" alt="">
 </a>
 <a href="http://www.spshastaroute.org/e/4.jpg">
-<img src="http://www.spshastaroute.org/e/thumb_4_jpg.gif" width="200" height="150">
+<img src="http://www.spshastaroute.org/e/thumb_4_jpg.gif" width="200" height="150" alt="">
 </a>
 
 <h3>Durenver &amp; Silverton RR</h3>
@@ -155,12 +144,53 @@ property="cc:attributionName" rel="cc:attributionURL">EJB</a> as
 <p>JMRI provides a look of appearance produced by Elektrosignal Praga &ndash; ESP
 for Czechoslovak State Railways &ndash; &#268;SD.
 Description of deployment in PanelPro is here
-<a href="https://sites.google.com/site/sidloweb/jmri/09-panel-editor">https://sites.google.com/site/sidloweb/jmri/09-panel-editor</a>.
+<a href="https://sites.google.com/site/sidloweb/panel-editor">https://sites.google.com/site/sidloweb/panel-editor</a>.
 </p>
 
 <a href="images/CSD-ESP.png"><img src="images/CSD-ESP.png" width="400" height="244" alt="CSD ESP"></a>
 
-<h2><a name="libraries">Innovative uses of the JMRI Libraries</a></h2>
+<h3>Czechoslovak State Railways &ndash; A&#381;D-71</h3>
+
+<p>A&#381;D-71 is relay interlocking system produced by Automatizace &#382;elezni&#269;n&#237;
+    dopravy Praha &ndash; A&#381;D. It was developed in Czechoslovakia in the 1960s.
+    The A&#381;D-71 system was deployed from 1970 to 1996 as the main relay
+    interlocking system in the  network Czechoslovak State Railways &ndash; &#268;SD.
+</p>
+
+<p>JMRI provides a look of appearance A&#381;D-71 for Czechoslovak State Railways &ndash; &#268;SD.
+    Description of deployment in PanelPro is here
+    <a href="https://sites.google.com/site/sidloweb/layout-editor">https://sites.google.com/site/sidloweb/layout-editor</a>.
+</p>
+
+<a href="images/CSD-AZD-71.png"><img src="images/CSD-AZD-71.png" width="385" height="167" alt="CSD AZD-71"></a>
+
+<p>Operation of JMRI Layout Editor with relay interlocking A&#381;D-71 on modular layout
+    <a href="https://youtu.be/2yM_s5HZbE8">https://youtu.be/2yM_s5HZbE8</a>.
+</p>
+
+<h3>Czechoslovak State Railways &ndash; JOP</h3>
+
+<p>JOP &ndash; Jednotn&#233; Obslu&#158;n&#233; Pracovi&#353;t&#283; &ndash; Unified Control Place
+    &ndash; is a standardized user interface for interlocking systems used in Czechoslovakia.
+    For first time it was used in station D&#345;&#237;sy in 1991. Currently,
+    the JOP user interface is standardized and used with interlocking systems
+    from various manufacturers such as A&#381;D Praha, AK signal Brno
+    or STARMON Choce&#328;.
+</p>
+
+<p>JMRI provides a JOP style look for Czechoslovak State Railways &ndash; &#268;SD and
+   his successors. Tutorial for Control Panel Editor and Warrants with JOP is here
+   <a href="https://sites.google.com/site/sidloweb/rozkazy">https://sites.google.com/site/sidloweb/rozkazy</a>.
+</p>
+
+<a href="images/CSD-JOP.png"><img src="images/CSD-JOP.png" width="347" height="363" alt="CSD JOP"></a>
+
+<p>Operation of JMRI Warrants with Control Panel Editor with JOP style on layout
+    <a href="https://youtu.be/NM7S6jYtH_o">https://youtu.be/NM7S6jYtH_o</a>.
+</p>
+
+
+<h2><a id="libraries">Innovative uses of the JMRI Libraries</a></h2>
 
 <h3>Crandic Dispatcher</h3>
 
@@ -180,7 +210,7 @@ CATS is also used on John Parker's
 <a href="http://www.bnsfrr.net/">BNSF Fall River Division</a>
 for their
 <a href="http://www.bnsfrr.net/operations.html">dispatcher's panel</a>.
-</p>
+
 <a href="http://www.bnsfrr.net/uploads/3/2/2/4/32241659/5667722_orig.jpg"><img
         src="http://www.bnsfrr.net/uploads/3/2/2/4/32241659/5667722_orig.jpg" width="400" height="300"
         alt="BNSF Fall River panel"/></a>
@@ -197,5 +227,6 @@ programs for model railroads.  The layout-related parts are
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->
+  <script src="/js/main.js"></script>
 </body>
 </html>
