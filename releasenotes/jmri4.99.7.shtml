@@ -228,6 +228,23 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.99.7+i
 
     <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
 
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>Digitrax</h4>
+            <ul>
+              <li>Added Kato EM13 in Digitrax family: newer versions of this decoder have a Digitrax manufacturer code and a full fledged Digitrax SW.</li>
+            </ul>
+
+        <h4>Doehler & Haass</h4>
+            <ul>
+              <li>Added PD10MU: This is a specific decoder for <a href=https://www.dm-toys.de/fr/produit-detail/DH_PD10MU-4.html target=_BLANK>ModellBahn Union / DM-Toys</a>. Same SW as PD12A, but N scale form factor.</li>
+            </ul>
+
+        <h4>Zimo</h4>
+            <ul>
+              <li>Added MX605N: Zimo non-sound decoder for Kato N ICE4 - same form factor as Kato EM13. <i>Note that MX605 (already in DecoderPro) is the sound-version of MX605N</i>.</li>
+            </ul>
+
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
