@@ -20,8 +20,8 @@
 <h1>Using Java 11 with JMRI</h1>
 
 We recommend using Java 11 with current JMRI versions.
-JMRI needs a "Java Runtime Environment" (JRE),
-but will work fine with the larger "Java Development Kit" (JDK).
+<em>JMRI needs a "Java Runtime Environment" (JRE),
+but will work fine with the larger "Java Development Kit" (JDK).</em>
 
 <p>Before getting a new version of Java, it is useful to check what version is currently installed 
 on your computer.  On Windows, for example, open a "command" window by typing "Command prompt" into the search bar
@@ -29,7 +29,7 @@ on your computer.  On Windows, for example, open a "command" window by typing "C
      
      <pre>java -version</pre>
      
-<p>IT IS RECOMMENDED THAT YOU REMOVE OLD VERSIONS OF JAVA BEFORE YOU UPGRADE. This avoids a number of reported
+<p><strong>IT IS RECOMMENDED THAT YOU REMOVE OLD VERSIONS OF JAVA BEFORE YOU UPGRADE.</strong> This avoids a number of reported
 problems.  On Windows, for example, you can:
 
      <ul>
@@ -45,8 +45,8 @@ problems.  On Windows, for example, you can:
 Here are some places you can get Java 11.  Click on the links to
 go to the download page.
 
-
-<ol>
+<h3>For 32-bit or 64-bit computers:</h3>
+<ul>
     <li>
         <a href="https://www.azul.com/downloads/?version=java-11-lts&package=jre">Azul</a>
         - Go to the bottom of the page, past the advertising, select
@@ -55,19 +55,24 @@ go to the download page.
         appropriate download from the page.
         
         <p>Windows users should pick the ".msi" installer, as it properly
-        sets up various registry values.
+        sets up various registry values.</p>
+    </li>
+    <li>
+        <a href="https://adoptium.net/?variant=openjdk11">Adoptium (Eclipse)</a>
+        - This website refers to a Java JDK as "Temurin", which is a bit confusing.
+        Make sure that "Temurin 11" is selected, then press the large "Latest Release" button.
+        <p>
+        On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.</p>
+    </li>
+</ul>
 
+<h3>Additionally for 64-bit computers:</h3>
+<ul>
     <li>
         <a href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&field_operating_system_target_id=All&field_architecture_target_id=All&field_java_package_target_id=401">OpenLogic</a>
          -
         Select your OS type (Windows, macOS, Linux).  OpenLogic only has a 64-bit version so make sure
         you have a 64-bit computer.  Pick a download from the page.
-        <p>
-        On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.
-    <li>
-        <a href="https://adoptium.net/?variant=openjdk11">Adoptium (Eclipse)</a>
-        - This website refers to a Java JDK as "Temurin", which is a bit confusing.
-        Make sure that "Temurin 11" is selected, then press the large "Latest Release" button.
         <p>
         On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.
 
@@ -81,7 +86,7 @@ go to the download page.
         <a href="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/">IBM</a>
         - They provide JDKs under the "Semeru" name.
 
-</ol>
+</ul>
 
    <hr class="hide">
    <!--#include virtual="/Footer.shtml" -->
