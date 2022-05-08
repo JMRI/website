@@ -95,17 +95,20 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>New problems with this release</h3>
 <ul>
-    <li>None yet</li>
+    <li>The LogixNG action SignalHead and the LogixNG expression SignalHead fails to
+        load the name of the signal head when loading a panel stored by a previous JMRI version.
+        A panel file stored by JMRI 4.99.7 will be loaded correctly.
+    </li>
 </ul>
-<!--
-If any of those affect you, please either
+
+If that affects you, please either
 wait for
 <a href="jmri4.99.8.shtml">JMRI 4.99.8</a>, due out shortly after this one,
-or (once there's a fix for the problem) pick up a
+or pick up the fix in a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
- -->
+
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
