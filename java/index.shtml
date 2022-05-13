@@ -23,12 +23,12 @@ We recommend using Java 11 with current JMRI versions.
 <em>JMRI needs a "Java Runtime Environment" (JRE),
 but will work fine with the larger "Java Development Kit" (JDK).</em>
 
-<p>Before getting a new version of Java, it is useful to check what version is currently installed 
+<p>Before getting a new version of Java, it is useful to check what version is currently installed
 on your computer.  On Windows, for example, open a "command" window by typing "Command prompt" into the search bar
  next to the Windows Start icon.  Then type:</p>
-     
+
      <pre>java -version</pre>
-     
+
 <p><strong>IT IS RECOMMENDED THAT YOU REMOVE OLD VERSIONS OF JAVA BEFORE YOU UPGRADE.</strong> This avoids a number of reported
 problems.  On Windows, for example, you can:
 
@@ -37,9 +37,9 @@ problems.  On Windows, for example, you can:
         <li>Alternatively, download the <a href="https://www.java.com/en/download/uninstalltool.jsp
         " target="_blank">Oracle Java Uninstall tool</a> and follow its instructions</li>
      </ul>
-     
-<p>See the <a href="../help/en/html/setup/">JMRI Setup and Install pages</a> for more information.</p>     
-     
+
+<p>See the <a href="../help/en/html/setup/">JMRI Setup and Install pages</a> for more information.</p>
+
 <h1>Getting Java 11</h1>
 
 Here are some places you can get Java 11.  Click on the links to
@@ -53,9 +53,11 @@ go to the download page.
         your OS type (Windows, macOS, Linux), then if needed the computer CPU
         architecture (we recommend 64-bit if you have a 64-bit computer), then pick the
         appropriate download from the page.
-        
+
         <p>Windows users should pick the ".msi" installer, as it properly
         sets up various registry values.</p>
+        <p>macOS users might find the Adoptium installer (next item)
+        easier to use than the Azul download.</p>
     </li>
     <li>
         <a href="https://adoptium.net/?variant=openjdk11">Adoptium (Eclipse)</a>
@@ -63,6 +65,8 @@ go to the download page.
         Make sure that "Temurin 11" is selected, then press the large "Latest Release" button.
         <p>
         On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.</p>
+        <p>
+        On macOS: This will download a .pkg file.  Double-click on it to run the installer.</p>
     </li>
 </ul>
 
