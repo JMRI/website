@@ -98,6 +98,12 @@ go to the download page.
 Linux and macOS users can also install Java inside JMRI itself, instead of installing it centrally on their computer.
 This can be useful if you need different Java versions for other programs, or if for some reason
 you can't do the central Java install or removal.
+<p>
+We recommend installing Java as described on the top half of this page when possible.
+The local-install described here is only for cases when that can't be done.
+Note that you'll need to repeat this process every time you update JMRI,
+as the local Java install will be overwritten during the update process.
+
     <h3>macOS</h3>
     On macOS, the process is:
     <ul>
