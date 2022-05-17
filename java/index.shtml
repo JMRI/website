@@ -34,8 +34,7 @@ problems.  On Windows, for example, you can:
 
      <ul>
         <li>Go to Windows <strong>Settings&rArr;Apps</strong>, find Java 8 and click on <strong>"Uninstall."</strong></li>
-        <li>Alternatively, download the <a href="https://www.java.com/en/download/uninstalltool.jsp
-        " target="_blank">Oracle Java Uninstall tool</a> and follow its instructions</li>
+        <li>Alternatively, download the <a href="https://www.java.com/en/download/uninstalltool.jsp" target="_blank">Oracle Java Uninstall tool</a> and follow its instructions</li>
      </ul>
 
 <p>See the <a href="../help/en/html/setup/">JMRI Setup and Install pages</a> for more information.</p>
@@ -45,7 +44,7 @@ problems.  On Windows, for example, you can:
 Here are some places you can get Java 11.  Click on the links to
 go to the download page.
 
-<h2>For 32-bit or 64-bit computers:</h3>
+<h2>For 32-bit or 64-bit computers:</h2>
 <ul>
     <li>
         <a href="https://www.azul.com/downloads/?version=java-11-lts&package=jre">Azul</a>
@@ -78,22 +77,22 @@ go to the download page.
         Select your OS type (Windows, macOS, Linux).  OpenLogic only has a 64-bit version so make sure
         you have a 64-bit computer.  Pick a download from the page.
         <p>
-        On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.
+        On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.</li>
 
     <li>
         <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">Oracle</a>
         -
         The original JDK source, but this page requires you to set up a (free) Oracle account. No JREs available.
-        <p>We recommend that Windows users pick the "Windows x64 Installer", as it properly sets up various registry values.
+        <p>We recommend that Windows users pick the "Windows x64 Installer", as it properly sets up various registry values.</li>
 
     <li>
         <a href="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/">IBM</a>
-        - They provide JDKs under the "Semeru" name.
+        - They provide JDKs under the "Semeru" name.</li>
 
 </ul>
 
-<a id="local">
-<h2>Local install option:</h3>
+<a id="local"/>
+<h2>Local install option:</h2>
 <span class="since">Since <a href="jmri4.99.8.shtml">JMRI 4.99.8</a></span>
 Linux and macOS users can also install Java inside JMRI itself, instead of installing it centrally on their computer.
 This can be useful if you need different Java versions for other programs, or if for some reason
@@ -107,14 +106,14 @@ as the local Java install will be overwritten during the update process.
     <h3>macOS</h3>
     On macOS, the process is:
     <ul>
-        <li>Install JMRI into the Applications folder in the usual way.
-        <li>Download <a href="https://cdn.azul.com/zulu/bin/zulu11.56.19-ca-jre11.0.15-macosx_x64.zip">this Java install file</a>.
-        <li>If this created a zulu11.56.19-ca-jre11.0.15-macosx_x64 folder in your Downloads folder, proceed to the next step.
+        <li>Install JMRI into the Applications folder in the usual way.</li>
+        <li>Download <a href="https://cdn.azul.com/zulu/bin/zulu11.56.19-ca-jre11.0.15-macosx_x64.zip">this Java install file</a>.</li>
+        <li>If this created a zulu11.56.19-ca-jre11.0.15-macosx_x64 folder in your Downloads folder, proceed to the next step.</li>
             If this created a zulu11.56.19-ca-jre11.0.15-macosx_x64.zip file in your Downloads folder, double click on it to expand it to a folder.
-        <li>Rename the zulu11.56.19-ca-jre11.0.15-macosx_x64 folder to just "jre".
-        <li><a href="macOS_JRE.png"><img src="macOS_JRE.png" width="300" height="242" alt="JMRI/Applications folder class="floatRight""></a>
-            Open the JMRI folder in the Applications folder (this is where you would normally launch JMRI)
-        <li>Drag the jre folder from the Downloads folder to the JMRI folder.
+        <li>Rename the zulu11.56.19-ca-jre11.0.15-macosx_x64 folder to just "jre".</li>
+        <li><a href="macOS_JRE.png"><img src="macOS_JRE.png" width="300" height="242" alt="JMRI/Applications folder" class="floatRight"></a>
+            Open the JMRI folder in the Applications folder (this is where you would normally launch JMRI)</li>
+        <li>Drag the jre folder from the Downloads folder to the JMRI folder.</li>
     </ul>
     When you're done, the JMRI folder contents should look like the picture to the right.
     <p>
@@ -123,17 +122,17 @@ as the local Java install will be overwritten during the update process.
     <h3>Linux</h3>
     On Linux, the process is:
     <ul>
-        <li>Download and place JMRI in the usual way.
-        <li><a href="Linux_selection.png"><img src="Linux_selection.png" width="400" height="127" alt="JMRI/Applications folder class="floatRight""></a>
+        <li>Download and place JMRI in the usual way.</li>
+        <li><a href="Linux_selection.png"><img src="Linux_selection.png" width="400" height="127" alt="Linux selection page" class="floatRight"></a>
             Go to <a href="https://www.azul.com/downloads/?version=java-11-lts&package=jre">the Azul downloads page</a>
-            and scroll down to the selection box (see to the right).
-        <li>Select your Linux type (RHEL, CentOS, Ubuntu, etc) and architecture (x86-64 bit, etc). Leave Java 11 and JRE selected.
-        <li>Click on the .zip button (not any of the other ones!) to download onto your computer.
+            and scroll down to the selection box (see to the right).</li>
+        <li>Select your Linux type (RHEL, CentOS, Ubuntu, etc) and architecture (x86-64 bit, etc). Leave Java 11 and JRE selected.</li>
+        <li>Click on the .zip button (not any of the other ones!) to download onto your computer.</li>
         <li>If this created a directory, proceed to the next step. If it downloaded a .zip file,
-            expand it into a directory before proceeding to the next step.
-        <li>Rename the resulting directory to just "jre".
-        <li>Open the JMRI folder you created in the first step (this is where you would normally launch JMRI)
-        <li>Move the new jre directory into the JMRI folder.
+            expand it into a directory before proceeding to the next step.</li>
+        <li>Rename the resulting directory to just "jre".</li>
+        <li>Open the JMRI folder you created in the first step (this is where you would normally launch JMRI)</li>
+        <li>Move the new jre directory into the JMRI folder.</li>
     </ul>
     <p>
     You're all set to start JMRI using that local version of Java!
