@@ -47,7 +47,7 @@ go to the download page.
 <h2>For 32-bit or 64-bit computers:</h2>
 <ul>
     <li>
-        <a href="https://www.azul.com/downloads/?version=java-11-lts&package=jre">Azul</a>
+        <a href="https://www.azul.com/downloads/?version=java-11-lts&amp;package=jre">Azul</a>
         - Go to the bottom of the page, past the advertising, select
         your OS type (Windows, macOS, Linux), then if needed the computer CPU
         architecture (we recommend 64-bit if you have a 64-bit computer), then pick the
@@ -72,7 +72,7 @@ go to the download page.
 <h3>Additionally for 64-bit computers:</h3>
 <ul>
     <li>
-        <a href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&field_operating_system_target_id=All&field_architecture_target_id=All&field_java_package_target_id=401">OpenLogic</a>
+        <a href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&amp;field_operating_system_target_id=All&amp;field_architecture_target_id=All&amp;field_java_package_target_id=401">OpenLogic</a>
          -
         Select your OS type (Windows, macOS, Linux).  OpenLogic only has a 64-bit version so make sure
         you have a 64-bit computer.  Pick a download from the page.
@@ -124,7 +124,7 @@ as the local Java install will be overwritten during the update process.
     <ul>
         <li>Download and place JMRI in the usual way.</li>
         <li><a href="Linux_selection.png"><img src="Linux_selection.png" width="400" height="127" alt="Linux selection page" class="floatRight"></a>
-            Go to <a href="https://www.azul.com/downloads/?version=java-11-lts&package=jre">the Azul downloads page</a>
+            Go to <a href="https://www.azul.com/downloads/?version=java-11-lts&amp;package=jre">the Azul downloads page</a>
             and scroll down to the selection box (see to the right).</li>
         <li>Select your Linux type (RHEL, CentOS, Ubuntu, etc) and architecture (x86-64 bit, etc). Leave Java 11 and JRE selected.</li>
         <li>Click on the .zip button (not any of the other ones!) to download onto your computer.</li>
