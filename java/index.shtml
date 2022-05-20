@@ -23,39 +23,40 @@ We recommend using Java 11 with current JMRI versions.
 <em>JMRI needs a "Java Runtime Environment" (JRE),
 but will work fine with the larger "Java Development Kit" (JDK).</em>
 
-<p>Before getting a new version of Java, it is useful to check what version is currently installed 
+<p>Before getting a new version of Java, it is useful to check what version is currently installed
 on your computer.  On Windows, for example, open a "command" window by typing "Command prompt" into the search bar
  next to the Windows Start icon.  Then type:</p>
-     
+
      <pre>java -version</pre>
-     
+
 <p><strong>IT IS RECOMMENDED THAT YOU REMOVE OLD VERSIONS OF JAVA BEFORE YOU UPGRADE.</strong> This avoids a number of reported
 problems.  On Windows, for example, you can:
 
      <ul>
         <li>Go to Windows <strong>Settings&rArr;Apps</strong>, find Java 8 and click on <strong>"Uninstall."</strong></li>
-        <li>Alternatively, download the <a href="https://www.java.com/en/download/uninstalltool.jsp
-        " target="_blank">Oracle Java Uninstall tool</a> and follow its instructions</li>
+        <li>Alternatively, download the <a href="https://www.java.com/en/download/uninstalltool.jsp" target="_blank">Oracle Java Uninstall tool</a> and follow its instructions</li>
      </ul>
-     
-<p>See the <a href="../help/en/html/setup/">JMRI Setup and Install pages</a> for more information.</p>     
-     
+
+<p>See the <a href="../help/en/html/setup/">JMRI Setup and Install pages</a> for more information.</p>
+
 <h1>Getting Java 11</h1>
 
 Here are some places you can get Java 11.  Click on the links to
 go to the download page.
 
-<h3>For 32-bit or 64-bit computers:</h3>
+<h2>For 32-bit or 64-bit computers:</h2>
 <ul>
     <li>
-        <a href="https://www.azul.com/downloads/?version=java-11-lts&package=jre">Azul</a>
+        <a href="https://www.azul.com/downloads/?version=java-11-lts&amp;package=jre">Azul</a>
         - Go to the bottom of the page, past the advertising, select
         your OS type (Windows, macOS, Linux), then if needed the computer CPU
         architecture (we recommend 64-bit if you have a 64-bit computer), then pick the
         appropriate download from the page.
-        
+
         <p>Windows users should pick the ".msi" installer, as it properly
         sets up various registry values.</p>
+        <p>macOS users might find the Adoptium installer (next item)
+        easier to use than the Azul download.</p>
     </li>
     <li>
         <a href="https://adoptium.net/?variant=openjdk11">Adoptium (Eclipse)</a>
@@ -63,30 +64,78 @@ go to the download page.
         Make sure that "Temurin 11" is selected, then press the large "Latest Release" button.
         <p>
         On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.</p>
+        <p>
+        On macOS: This will download a .pkg file.  Double-click on it to run the installer.</p>
     </li>
 </ul>
 
 <h3>Additionally for 64-bit computers:</h3>
 <ul>
     <li>
-        <a href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&field_operating_system_target_id=All&field_architecture_target_id=All&field_java_package_target_id=401">OpenLogic</a>
+        <a href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&amp;field_operating_system_target_id=All&amp;field_architecture_target_id=All&amp;field_java_package_target_id=401">OpenLogic</a>
          -
         Select your OS type (Windows, macOS, Linux).  OpenLogic only has a 64-bit version so make sure
         you have a 64-bit computer.  Pick a download from the page.
         <p>
-        On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.
+        On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.</li>
 
     <li>
         <a href="https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html">Oracle</a>
         -
         The original JDK source, but this page requires you to set up a (free) Oracle account. No JREs available.
-        <p>We recommend that Windows users pick the "Windows x64 Installer", as it properly sets up various registry values.
+        <p>We recommend that Windows users pick the "Windows x64 Installer", as it properly sets up various registry values.</li>
 
     <li>
         <a href="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/">IBM</a>
-        - They provide JDKs under the "Semeru" name.
+        - They provide JDKs under the "Semeru" name.</li>
 
 </ul>
+
+<h2 id="local">Local install option:</h2>
+<span class="since">Since <a href="../releasenotes/jmri4.99.9.shtml">JMRI 4.99.9</a></span>
+Linux and macOS users can also install Java inside JMRI itself, instead of installing it centrally on their computer.
+This can be useful if you need different Java versions for other programs, or if for some reason
+you can't do the central Java install or removal.
+<p>
+We recommend installing Java as described on the top half of this page when possible.
+The local-install described here is only for cases when that can't be done.
+Note that you'll need to repeat this process every time you update JMRI,
+as the local Java install will be overwritten during the update process.
+
+    <h3>macOS</h3>
+    On macOS, the process is:
+    <ul>
+        <li>Install JMRI into the Applications folder in the usual way.</li>
+        <li>Download <a href="https://cdn.azul.com/zulu/bin/zulu11.56.19-ca-jre11.0.15-macosx_x64.zip">this Java install file</a>.</li>
+        <li>If this created a zulu11.56.19-ca-jre11.0.15-macosx_x64 folder in your Downloads folder, proceed to the next step.</li>
+            If this created a zulu11.56.19-ca-jre11.0.15-macosx_x64.zip file in your Downloads folder, double click on it to expand it to a folder.
+        <li>Rename the zulu11.56.19-ca-jre11.0.15-macosx_x64 folder to just "jre".</li>
+        <li><a href="macOS_JRE.png"><img src="macOS_JRE.png" width="300" height="242" alt="JMRI/Applications folder" class="floatRight"></a>
+            Open the JMRI folder in the Applications folder (this is where you would normally launch JMRI)</li>
+        <li>Drag the jre folder from the Downloads folder to the JMRI folder.</li>
+    </ul>
+    When you're done, the JMRI folder contents should look like the picture to the right.
+    <p>
+    You're all set to start JMRI using that local version of Java!
+
+    <h3>Linux</h3>
+    On Linux, the process is:
+    <ul>
+        <li>Download and place JMRI in the usual way.</li>
+        <li><a href="Linux_selection.png"><img src="Linux_selection.png" width="400" height="127" alt="Linux selection page" class="floatRight"></a>
+            Go to <a href="https://www.azul.com/downloads/?version=java-11-lts&amp;package=jre">the Azul downloads page</a>
+            and scroll down to the selection box (see to the right).</li>
+        <li>Select your Linux type (RHEL, CentOS, Ubuntu, etc) and architecture (x86-64 bit, etc). Leave Java 11 and JRE selected.</li>
+        <li>Click on the .zip button (not any of the other ones!) to download onto your computer.</li>
+        <li>If this created a directory, proceed to the next step. If it downloaded a .zip file,
+            expand it into a directory before proceeding to the next step.</li>
+        <li>Rename the resulting directory to just "jre".</li>
+        <li>Open the JMRI folder you created in the first step (this is where you would normally launch JMRI)</li>
+        <li>Move the new jre directory into the JMRI folder.</li>
+    </ul>
+    <p>
+    You're all set to start JMRI using that local version of Java!
+
 
    <hr class="hide">
    <!--#include virtual="/Footer.shtml" -->
