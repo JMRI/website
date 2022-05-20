@@ -385,121 +385,120 @@ the folder "JMRI_backup" to "JMRI".
 
 <a id="debugging"></a>
 <h2>Debugging</h2>
-<p>Sometimes things go wrong.  The information in this section can help.</p>
+<p>Sometimes things go wrong. The information in this section can help.</p>
 
-<a id="errors"><h3>Error messages</h3></a>
-	<ul>
-	<li><a id="stoppedworking"></a>
-	<code>The JAVA SE Platform binary has stopped working</code><br>
-	There is a <a href="WindowsSeStoppedWorking.shtml">separate Help page</a>
-	for debugging the "The JAVA SE Platform binary has stopped working" error message.</li>
-	<li><a id="registry"></a>
-	<code>
-        WARN - Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5
-    </code><br>
-	You can ignore this one. This is an internal warning from Java itself. Certain combinations of
-	Windows configuration and Java 8 version emit it, but it doesn't have any adverse
-	impact on JMRI or the computer.  Oracle has said they'll fix it in Java 9, i.e.
-	<a href="http://www.catb.org/jargon/html/R/Real-Soon-Now.html">Real Soon Now</a>.
-	</ul>
+    <a id="errors"><h3>Error messages</h3></a>
+        <dl>
+        <dt><a id="stoppedworking"></a>
+        The JAVA SE Platform binary has stopped working</dt>
+        <dd>There is a <a href="WindowsSeStoppedWorking.shtml">separate Help page</a>
+        for debugging the "The JAVA SE Platform binary has stopped working" error message.</dd>
+        <dt><a id="registry"></a>
+        WARN - Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows
+            RegCreateKeyEx(...) returned error code 5--></dt>
+        <dd>You can ignore this one. This is an internal warning from Java itself. Certain combinations of
+        Windows configuration and Java 8 version emit it, but it doesn't have any adverse
+        impact on JMRI or the computer.  Oracle has said they'll fix it in Java 9, i.e.
+        <a href="http://www.catb.org/jargon/html/R/Real-Soon-Now.html">Real Soon Now</a>.</dd>
+        </dl>
 
-<a id="installtest"></a><h3>Run InstallTest</h3>
-<p>With JMRI a utility called InstallTest.exe is installed. To execute a series of tests on your Windows JMRI installation, start InstallTest from the Start menu -&gt; Programs -&gt; JMRI -&gt; Tools and Demos -&gt; InstallTest. The following screen will open:</p>
-<img src="images/WinInstallTest.png" height="323" width="512" alt="Preferences link in JMRI > Tools and Demos start menu">
-<p>Press any key to continue (after reading the screen).</p>
+        <a id="installtest"></a><h3>Run InstallTest</h3>
+        <p>With JMRI a utility called InstallTest.exe is installed. To execute a series of tests on your Windows JMRI installation, start InstallTest from the Start menu -&gt; Programs -&gt; JMRI -&gt; Tools and Demos -&gt; InstallTest. The following screen will open:</p>
+        <img src="images/WinInstallTest.png" height="323" width="512" alt="Preferences link in JMRI > Tools and Demos start menu">
+        <p>Press any key to continue (after reading the screen).</p>
 
-<a id="logscreen"></a>
-<h3>The Log Screen</h3>
+        <a id="logscreen"></a>
+        <h3>The Log Screen</h3>
 
-<p>JMRI logs information about errors to a "messages.log" file in the "systemfiles" sub-directory of the JMRI preferences directory, and to a console window. This window is generally white text on a black background, and is labelled either "Java" or "DOS". If something is going wrong, look there for more information.</p>
+        <p>JMRI logs information about errors to a "messages.log" file in the "systemfiles" sub-directory of the JMRI preferences directory, and to a console window. This window is generally white text on a black background, and is labelled either "Java" or "DOS". If something is going wrong, look there for more information.</p>
 
-	<ol>
-	<li>To view the "systemfiles" sub-directory, follow the "Preferences" link in "JMRI > Tools and Demos" from the Start menu.
-	<br><img src="images/WinDebugLog-01_StartMenuPreferences.png" height="358" width="531" alt="Preferences link in JMRI > Tools and Demos start menu">
+            <ol>
+            <li>To view the "systemfiles" sub-directory, follow the "Preferences" link in "JMRI > Tools and Demos" from the Start menu.
+            <br><img src="images/WinDebugLog-01_StartMenuPreferences.png" height="358" width="531" alt="Preferences link in JMRI > Tools and Demos start menu">
 
-	<li>Once the preferences folder is opened, navigate to the "systemfiles" folder.
-	<br><img src="images/WinDebugLog-02_SystemFiles.png" height="299" width="663" alt="systemfiles folder within JMRI preferences">
+            <li>Once the preferences folder is opened, navigate to the "systemfiles" folder.
+            <br><img src="images/WinDebugLog-02_SystemFiles.png" height="299" width="663" alt="systemfiles folder within JMRI preferences">
 
-	<li>Finally, within the "systemfiles" folder, is "messages.log".
-	<br><img src="images/WinDebugLog-03_MessagesLog.png" height="299" width="663" alt="messages.log file within systemfiles folder">
-	</ol>
+            <li>Finally, within the "systemfiles" folder, is "messages.log".
+            <br><img src="images/WinDebugLog-03_MessagesLog.png" height="299" width="663" alt="messages.log file within systemfiles folder">
+            </ol>
 
-<p>If you're asked for a copy of the error messages, you can usually get them from the messages.log file.  If you can't find it there, make a copy of the log window:</p>
+        <p>If you're asked for a copy of the error messages, you can usually get them from the messages.log file.  If you can't find it there, make a copy of the log window:</p>
 
-	<ol>
-	<li>From the main JMRI window, choose "Help > System Console ...".
-	<br><img src="images/Win-JMRISystemConsole.png" height="409" width="850" alt="JMRI system console">
+            <ol>
+            <li>From the main JMRI window, choose "Help > System Console ...".
+            <br><img src="images/Win-JMRISystemConsole.png" height="409" width="850" alt="JMRI system console">
 
-	<li>Click the button "Copy to clipboard".
+            <li>Click the button "Copy to clipboard".
 
-	<li>In your e-mail client, Notepad, Wordpad,
-	favorite word processor, etc. position your cursor and left-click on Edit and
-	then Paste, or press the "Ctrl" and "V" keys.
-	</ol>
+            <li>In your e-mail client, Notepad, Wordpad,
+            favorite word processor, etc. position your cursor and left-click on Edit and
+            then Paste, or press the "Ctrl" and "V" keys.
+            </ol>
 
-<a id="startupissues"></a>
-<h3>Startup issues</h3>
-<p>To assist with resolving JMRI start-up issues, it is possible to modify the Start Menu shortcut used to launch JMRI.</p>
+        <a id="startupissues"></a>
+        <h3>Startup issues</h3>
+        <p>To assist with resolving JMRI start-up issues, it is possible to modify the Start Menu shortcut used to launch JMRI.</p>
 
-<p>Shortcuts are modified as follows:</p>
+        <p>Shortcuts are modified as follows:</p>
 
-	<ol>
-	<li>From the Start button, navigate to the JMRI menu and right-click the DecoderPro icon
-	(the PanelPro and/or SoundPro icons can be similarly modified)
-	<br><img src="images/WinDebug-01_StartMenuItemProperties.png" height="358" width="456" alt="start menu properties">
+            <ol>
+            <li>From the Start button, navigate to the JMRI menu and right-click the DecoderPro icon
+            (the PanelPro and/or SoundPro icons can be similarly modified)
+            <br><img src="images/WinDebug-01_StartMenuItemProperties.png" height="358" width="456" alt="start menu properties">
 
-	<li>Insert the '/debug' option into the shortcut 'Target'
-	<br><img src="images/WinDebug-02_ModifyShortcutTarget.png" height="509" width="367" alt="modify shortcut target">
-	<p>When launched, the following window will appear showing various useful information:
-	<br><img src="images/WinDebug-03_LauncherDebugWindow.png" height="295" width="426" alt="launcher debug window"></p>
-	<p>Copy the contents of this window by 'right-clicking' and then choosing 'Copy Details to Clipboard'
-	<li>In your e-mail client, Notepad, Wordpad,
-	favorite word processor, etc, position your cursor and left-click on Edit and
-	then Paste, or press the "Ctrl" and "V" keys.
-	</ol>
+            <li>Insert the '/debug' option into the shortcut 'Target'
+            <br><img src="images/WinDebug-02_ModifyShortcutTarget.png" height="509" width="367" alt="modify shortcut target">
+            <p>When launched, the following window will appear showing various useful information:
+            <br><img src="images/WinDebug-03_LauncherDebugWindow.png" height="295" width="426" alt="launcher debug window"></p>
+            <p>Copy the contents of this window by 'right-clicking' and then choosing 'Copy Details to Clipboard'
+            <li>In your e-mail client, Notepad, Wordpad,
+            favorite word processor, etc, position your cursor and left-click on Edit and
+            then Paste, or press the "Ctrl" and "V" keys.
+            </ol>
 
-<p>For further information on the JMRI shortcuts, see the <a href="/help/en/html/doc/Technical/StartUpScripts.shtml#windows">page outlining the start-up procedure on Windows</a>.</p>
+        <p>For further information on the JMRI shortcuts, see the <a href="/help/en/html/doc/Technical/StartUpScripts.shtml#windows">page outlining the start-up procedure on Windows</a>.</p>
 
-<a id="shutdownissues"></a>
-<h3>Shutdown issues</h3>
-<p>To assist with resolving JMRI shutdown issues, it is possible to modify the
-start menu shortcut used to launch JMRI.</p>
+        <a id="shutdownissues"></a>
+        <h3>Shutdown issues</h3>
+        <p>To assist with resolving JMRI shutdown issues, it is possible to modify the
+        start menu shortcut used to launch JMRI.</p>
 
-<p>Shortcuts are modified as follows:</p>
+        <p>Shortcuts are modified as follows:</p>
 
-	<ol>
-	<li>From the Start button, navigate to the JMRI menu and right-click the DecoderPro icon
-	(the PanelPro and/or SoundPro icons can be similarly modified)
-	<br><img src="images/WinDebug-01_StartMenuItemProperties.png" height="358" width="456" alt="start menu properties">
+            <ol>
+            <li>From the Start button, navigate to the JMRI menu and right-click the DecoderPro icon
+            (the PanelPro and/or SoundPro icons can be similarly modified)
+            <br><img src="images/WinDebug-01_StartMenuItemProperties.png" height="358" width="456" alt="start menu properties">
 
-	<li>Insert the '/noisy' option into the shortcut 'Target'
-	<br><img src="images/WinExitDebug-02_ModifyShortcutTarget.png" height="509" width="367" alt="modify shortcut target">
+            <li>Insert the '/noisy' option into the shortcut 'Target'
+            <br><img src="images/WinExitDebug-02_ModifyShortcutTarget.png" height="509" width="367" alt="modify shortcut target">
 
-	<p>When launched, the Java System Console window will appear showing various
-	messages from the JMRI program:
-	<br><img src="images/WinExitDebug-03_JavaSystemConsole.png" height="338" width="669" alt="java system console window"></p>
+            <p>When launched, the Java System Console window will appear showing various
+            messages from the JMRI program:
+            <br><img src="images/WinExitDebug-03_JavaSystemConsole.png" height="338" width="669" alt="java system console window"></p>
 
-	<li>When the shutdown of JMRI appears to hang, click in the Java System Console
-	window and then press 'Ctrl-Break' on the keyboard - this will print a Java
-	Thread Dump showing all active threads still running in JMRI:
-	<br><img src="images/WinExitDebug-04_ConsoleThreadDump.png" height="338" width="669" alt="java thread dump">
+            <li>When the shutdown of JMRI appears to hang, click in the Java System Console
+            window and then press 'Ctrl-Break' on the keyboard - this will print a Java
+            Thread Dump showing all active threads still running in JMRI:
+            <br><img src="images/WinExitDebug-04_ConsoleThreadDump.png" height="338" width="669" alt="java thread dump">
 
-	<li>Once the Java Thread Dump has been printed, select all the text in the
-	window by clicking the top-left icon and choosing 'Edit > Select all':
-	<br><img src="images/WinExitDebug-05_ConsoleSelectAll.png" height="338" width="669" alt="java thread dump">
+            <li>Once the Java Thread Dump has been printed, select all the text in the
+            window by clicking the top-left icon and choosing 'Edit > Select all':
+            <br><img src="images/WinExitDebug-05_ConsoleSelectAll.png" height="338" width="669" alt="java thread dump">
 
-	<li>Once selected, copy the text to the clipboard by clicking the top-left icon
-	and choosing 'Edit > Copy':
-	<br><img src="images/WinExitDebug-06_ConsoleCopyToClipboard.png" height="338" width="669" alt="java thread dump">
+            <li>Once selected, copy the text to the clipboard by clicking the top-left icon
+            and choosing 'Edit > Copy':
+            <br><img src="images/WinExitDebug-06_ConsoleCopyToClipboard.png" height="338" width="669" alt="java thread dump">
 
-	<li>In your e-mail client, Notepad, Wordpad,
-	favorite word processor, etc, position your cursor and left-click on Edit and
-	then Paste, or press the "Ctrl" and "V" keys.
-	</ol>
+            <li>In your e-mail client, Notepad, Wordpad,
+            favorite word processor, etc, position your cursor and left-click on Edit and
+            then Paste, or press the "Ctrl" and "V" keys.
+            </ol>
 
-<p>For further information on the JMRI shortcuts, see the <a href="/help/en/html/doc/Technical/StartUpScripts.shtml#windows">Help page outlining the start-up procedure on Windows</a>.</p>
+        <p>For further information on the JMRI shortcuts, see the <a href="/help/en/html/doc/Technical/StartUpScripts.shtml#windows">Help page outlining the start-up procedure on Windows</a>.</p>
 
-<!--#include virtual="/Footer.shtml" -->
+        <!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody, started in sidebar-->
  <script src="/js/main.js"></script>
