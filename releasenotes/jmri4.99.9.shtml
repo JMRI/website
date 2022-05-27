@@ -111,16 +111,9 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
-
-
+    <li>
+        None yet
+    </li>
 </ul>
 
 
@@ -222,13 +215,69 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.99.9+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+        <h4>DCC++ and DCC-EX</h4>
+            <ul>
+                <li>Add throttle commands and replies to simulator</li>
+            </ul>
+
+        <h4>MQTT</h4>
+            <ul>
+                <li>Handled a case in MQTT signal masts that would cause a
+                    spurious error message.</li>
+                <li>Added a script to echo SignalHeads to MQTT</li>
+            </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>Improved accessibility of some buttons.</li>
+        </ul>
+
+   <h3>Internationalization</h3>
+        <a id="I18N" name="I18N"></a>
+        <ul>
+            <li>Rodrigo Rodriguez translated much of the GUI into Spanish.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The action Script and the expression Script
+          now supports both Jython and ECMA Script (JavaScript).
+          As a result, the option <i>Jython command</i> is now
+          renamed to <i>Single line command</i>.</li>
+        </ul>
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>The process for adding multiple Lights/Sensors/Turnouts/Reporters has been
+                improved.  Existing items are no longer skipped, so you get the
+                sequential items you asked for. Some error messages have been clarified.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>The xercesImpl library was updated to 2.12.2, which may change
+                the content of some error messages.</li>
+            <li>The macOS and Linux startup scripts now will use a JVM
+                found within a "jre" directory within the JMRI program directory.
+                This lets you install a JVM (JRE or JDK) locally just for
+                JMRI's use.
+            <li>The Transit and Section classes have been refactored into an
+                interface with DefaultTransit and DefaultSection implementations
+                respectively.  Similar transforms have been done to
+                TransitManager and SectionManager. None of the production code
+                nor distributed scripts needed changes, as you still create
+                and access Transits and Sections via their managers obtained
+                from the InstanceManager. The SectionType constants in Section
+                has also been converted to an enum.
+            <li>Many logging changes to resolve Spotbug SLF4J_FORMAT_SHOULD_BE_CONST
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
