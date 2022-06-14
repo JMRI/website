@@ -99,7 +99,7 @@ from
         an update to any start-up actions that reference their location.
     </li>
     <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
-        This test release, and all subsequent ones, require the use of
+        This release, and all subsequent ones, require the use of
         Java 11 or later.  Java 8 is explicitly not supported.
         There's more information on this migration on the
         <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
@@ -830,7 +830,7 @@ in those is
     <h3>Miscellaneous</h3>
         <a id="Misc" name="Misc"></a>
         <ul>
-            <li>This is the first test release that requires Java 11.
+            <li>This is the first production release that requires Java 11.
                 As part of that, there were extensive changes to
                 the underlying infrastructure. See PR
                 <a href="https://github.com/JMRI/JMRI/pull/10278">#10278</a>
@@ -844,9 +844,6 @@ in those is
             </li>
             <li>SpotBugs has been updated to 4.5.0</li>
             <li>Improved accessibility of throttle keyboard shortcut help.</li>
-            <li>Developers: The
-                <a href="https://www.jmri.org/help/en/html/doc/Technical/Patterns.shtml#typescript">Typescript and Javascript support</a>
-                has been updated.</li>
             <li>Developers: The
                 <a href="https://www.jmri.org/help/en/html/doc/Technical/Patterns.shtml#typescript">Typescript and Javascript support</a>
                 has been updated.</li>
