@@ -22,11 +22,13 @@
       Release Notes for JMRI 5.1.1 release
       </h1>
 
-    <p>Date: MMM DD, 2022</p>
-    <p>From: (release pumpkin)</p>
+    <p>Date: June 25, 2022</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 5.1.1 of JMRI/DecoderPro is available for download.</p>
 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -141,7 +143,6 @@ before installing this test release.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!--
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
@@ -157,12 +158,13 @@ before installing this test release.
    sha256: 03802d775868f754af71b975b5657cc76354865707e50952f458e76827c65754</li>
 </ul>
 </div>
- -->
 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.1.1/">CI project page</a>.
 
+ -->
 <!--
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
