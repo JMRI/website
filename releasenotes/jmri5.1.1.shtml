@@ -222,6 +222,43 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.1.1+is
     <h3>Miscellaneous</h3>
         <a id="Misc" name="Misc"></a>
         <ul>
+            <li>
+                Several of the PanelPro tables, such as Routes and Logix, display a reminder to store changes before quitting. There are a number of issues with this approach.
+                <ul>
+                    <li>Only some of the tables have the reminder.
+                    <li>Panel changes don't have a reminder.
+                    <li>The reminder does not occur when quitting, or if it does, it is too late.
+                </ul>
+                The JMRI 5.1.1 test release has a global store reminder when running PanelPro.
+                DecoderPro is not affected. Any change that affects the stored layout data file will
+                trigger a reminder with an option to do a store before the final shutdown.
+                <p>
+                The global store reminder process is controlled by a new Shutdown option in JMRI Preferences.
+                This is located between Start Up and Display. There are a number of scenarios where the
+                global store reminder is not appropriate, such as running PanelPro using automatic start up and shutdown.
+                See Shutdown Preference for details.
+                <p>
+                What is considered a change that needs to be stored?
+                The process creates a temporary stored file and compares it to the last loaded file.
+                If they are different, a store notification will occur.
+                The comparison is a line by line compare, not a logical content comparison.
+                Listed below are some of the implications of the process.
+                <ul>
+                    <li>Running PanelPro without loading a layout data file,
+                        such as running Operations, a WiThrottle server, etc.
+                        Since there is no file to compare to, it is assumed that there might be additions that need to be stored.
+                    <li>External events that make changes.
+                        Examples are scripts that create new table entries,
+                        new hardware that can generate table entries, such as adding a DS64 on LocoNet, etc.
+                    <li>JMRI version changes. These can be significant, such as new features.
+                        Or trivial because the sequence of rows are in a different order in the layout data file.
+                        This last one affects layout data files from JMRI 4.26 that use signal heads and SSL.
+                </ul>
+                The compare process stops with the first occurrence of a potential change.
+                The details of the compared lines are listed in the JMRI system console (Help => System Console).
+
+
+
             <li>Minor changes to resolve Spotbug OS_OPEN_STREAM_EXCEPTION_PATH </li>
             <li>Minor changes to resolve Spotbug ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD </li>
         </ul>
