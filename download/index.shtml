@@ -52,33 +52,34 @@
 
 	<h1>Latest News</h1>
 	<dl>
-		<dt>Production release 4.26 available</dt>
+		<dt>Production release 5.0 available</dt>
 	    <dd>
-	    <p>On December 16, 2021 production release 4.26 was made available.</p>
+	    <p>On June 21, 2022 production release 5.0 was made available.</p>
 
 	    <p>
-	    Release 4.26 is the current "production" release, recommended
+	    Release 5.0 is the current "production" release, recommended
 	    for first-time users.
 	    Please see the
-	    <a href="../releasenotes/jmri4.26.shtml">release note</a>
+	    <a href="../releasenotes/jmri5.0.shtml">release note</a>
 	    for additional information.</p>
 
-	    <dt>Test release 4.99.8 is available</dt>
-	    <dd>
-	    <p>Test release 4.99.8 was made available on May 12, 2022.
 
-        <p>JMRI 4.99.8 is the next release of the current development series, containing the latest
+	    <dt>Test release 5.1.1 is available</dt>
+	    <dd>
+	    <p>Test release 5.1.1 was made available on June 25, 2022.
+
+        <p>JMRI 4.1.1 is the next release of the current development series, containing the latest
         and greatest JMRI updates.
 
         <p>
-        The series is working toward the JMRI 5.0 production release, probably in Summer 2022.
+        The series is working toward the JMRI 5.2 production release, probably in December 2022.
         <p>
         For more
 	    information, including the links to download a copy,
 	    please see the
-	    <a href="../releasenotes/jmri4.99.8.shtml">release note</a>.
+	    <a href="../releasenotes/jmri5.1.1.shtml">release note</a>.
 
-	    <a href="#prod-rel">Release 4.26</a> is the current "production" release, recommended
+	    <a href="#prod-rel">Release 5.0</a> is the current "production" release, recommended
 	    for first-time users.
 
 
@@ -86,28 +87,28 @@
 
   <div class="list">
     <a id="prod-rel"></a>
-    <h2>JMRI 4.26 - Production release</h2>
+    <h2>JMRI 5.0 - Production release</h2>
     <dl>
     <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
     <dd>
 	<a id="prod-download"></a><p class="dl">Download:
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.26/JMRI.4.26+R381c8dfc32.dmg">https://github.com/JMRI/JMRI/releases/download/v4.26/JMRI.4.26+R381c8dfc32.dmg</a><br/>
-  sha256: 9c98f4d8bbc682217cf764450a2893f3c08cade11fec1b166a91b939a6d50d3b </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.dmg">https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.dmg</a><br/>
+  sha256: 153d9922ac79d6d22f9c1f7bec909d2f94aaa7a7f6c1c6aa994d7f90e7b74048 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.26/JMRI.4.26+R381c8dfc32.exe">https://github.com/JMRI/JMRI/releases/download/v4.26/JMRI.4.26+R381c8dfc32.exe</a><br/>
-   sha256: 4456c8dae820b7a554fe5ba1753755d2a655af6ae93a3deab58778a32508f9ec</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.exe">https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.exe</a><br/>
+   sha256: ea510ed47d5c80be4db7e1dc97126092540d7f412f3a7f9aef9252969dc99365</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.26/JMRI.4.26+R381c8dfc32.tgz">https://github.com/JMRI/JMRI/releases/download/v4.26/JMRI.4.26+R381c8dfc32.tgz</a><br/>
-   sha256: fcb51b04e291c9ef971424ad25af73864c15dfdd5bb0ba73ad1d90c9129dd754</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.tgz">https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.tgz</a><br/>
+   sha256: 3699a0ffdadb1ef50f891c542efb7dc42759a9f3574ec5a14dae4cd65ca60911</li>
 </ul>
 
     <strong>Notes:</strong><br>
     <p>For more information on the release contents, please see the
-    <a href="../releasenotes/jmri4.26.shtml">release note</a>.
+    <a href="../releasenotes/jmri5.0.shtml">release note</a>.
     </p>
     <p>These files can be used for either a new installation or updating an existing installation.</p>
     <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
@@ -117,6 +118,22 @@
     application, see the
     <a href="http://cats4ctc.org"><!-- was http://home.comcast.net/~kb0oys/ --> CATS download page</a>.
     </p>
+
+	<div style="clear: both"></div>
+    </dd>
+    </dl>
+
+    <h2>JMRI 4.26 - Production release for Java 8</h2>
+    <dl>
+    <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
+    <dd>
+
+	    <p>
+	    Release 4.26 is recommended for JMRI users with computers that can only
+	    run Java 8. Please see the
+	    <a href="../releasenotes/jmri4.26.shtml">release note</A> for download and install
+	    information.
+	    <p>Production release 4.26 was made available on December 22, 2021.</p>
 
 	<div style="clear: both"></div>
     </dd>
@@ -163,9 +180,9 @@
 	    <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io group.</p>
 
     <p>
-        The most current test release is JMRI 4.99.8.  More information on it,
+        The most current test release is JMRI 5.1.1.  More information on it,
         including the links to download a copy, can be found in the
-        <a href="../releasenotes/jmri4.99.8.shtml">release note</a>.
+        <a href="../releasenotes/jmri5.1.1.shtml">release note</a>.
 
 	<p>
 	   For more information on the rough development schedule, please see the
@@ -176,10 +193,10 @@
 <dl>
 
 	<dt class="im">
-        <a href="http://www.java.com" target="_blank"><img src="https://download.oracle.com/technetwork/java/get-java/getjavasoftware-88x31.png" alt="Get Java Software" border="0" width="88" height="31" /></a>
-        <dt><a href="http://www.java.com">Java</a></dt>
+        <a href="https://www.jmri.org/java/index.shtml" target="_blank"><img src="https://download.oracle.com/technetwork/java/get-java/getjavasoftware-88x31.png" alt="Get Java Software" border="0" width="88" height="31" /></a>
+        <dt><a href="https://www.jmri.org/java/index.shtml">Java</a></dt>
 	<dd>
-	    <p>Oracle Java Runtime support [<a href="http://www.java.com">more</a>]</p>
+	    <p>[<a href="https://www.jmri.org/java/index.shtml">How to install Java</a>]</p>
 	</dd>
 
 	<dt class="im">
@@ -192,9 +209,6 @@
 	    controlling and operating a model railroad. There's
 	    more information on the
 	    <a href="http://cats4ctc.org"><!-- was http://home.comcast.net/~kb0oys/ --> CATS web site</a>.
-	    </p>
-	    <p>CATS 2.34 (Release2037) is compatible with JMRI 3.3.1 thru 3.8.
-	    We recommend that you use <a href="../releasenotes/jmri3.8.shtml">JMRI 3.8 with it.</a>
 	    </p>
 	</dd>
 

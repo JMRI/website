@@ -120,13 +120,47 @@
         <!-- Accordions -->
         <div class="flex-container">
             <div class="flex-item-50">
-                <h4 onclick="collapse('download1')" class="button card-1">JMRI 4.26 Production Release</h4>
+                <h4 onclick="collapse('download1')" class="button card-1">JMRI 5.0 Production Release</h4>
                 <div id="download1" class="hidden">
-                    <p><a href="/download/index.shtml#prod-rel">Download 4.26</a></p>
-                    Released on December 16, 2021.
+                    <p><a href="/download/index.shtml#prod-rel">Download 5.0</a></p>
+                    Released on June 21, 2022.
                     <p>
-                    JMRI 4.26 is recommended for new users. It is the most
+                    JMRI 5.0 is recommended for new users. It is the most
                     recent stable production release.</p>
+                    <p>For more information, see the
+                    <a href="releasenotes/jmri5.0.shtml">JMRI 5.0 Release Note</a>,
+                    which also contains the download links.</p>
+                </div>
+            </div>
+
+            <div class="flex-item-50">
+                <h4 onclick="collapse('download2')" class="button card-1">JMRI 5.1.1 Test Release</h4>
+                <div id="download2" class="hidden">
+                    <p><a href="releasenotes/jmri5.1.1.shtml"></a></p>
+                    Released on June 25, 2022.
+                    <p>
+                    This is the next in a series working toward the next JMRI production release 5.2
+                    probably in December 2022.
+
+                    <p>
+                    For more information on this test release, please read the
+                    <a href="releasenotes/jmri5.1.1.shtml">JMRI 5.1.1 Release Note</a>,
+                    which also contains the download links.
+                    </p>
+                    <a href="#download">Release 5.0</a> is the current "production" release, recommended
+                    for first-time users.
+                </div>
+            </div>
+
+            <div class="flex-item-50">
+                <h4 onclick="collapse('download3')" class="button card-1">JMRI 4.26 Production
+                    Release</h4>
+                <div id="download3" class="hidden">
+                    <p><a href="releasenotes/jmri5.0.shtml"></a></p>
+                    Released on December 22, 2021.
+                    <p>
+                    JMRI 4.26 is recommended for JMRI users with computers
+                    that can only run Java 8; later releases require Java 11.</p>
                     <p>For more information, see the
                     <a href="releasenotes/jmri4.26.shtml">JMRI 4.26 Release Note</a>,
                     which also contains the download links.</p>
@@ -134,28 +168,9 @@
             </div>
 
             <div class="flex-item-50">
-                <h4 onclick="collapse('download2')" class="button card-1">JMRI 4.99.8 Test Release</h4>
-                <div id="download2" class="hidden">
-                    <p><a href="releasenotes/jmri4.99.8.shtml"></a></p>
-                    Released on May 12, 2022.
-                    <p>
-                    This is the next in a series working toward the next JMRI production release 5.0
-                    probably in Summer 2022.
-
-                    <p>
-                    For more information on this test release, please read the
-                    <a href="releasenotes/jmri4.99.8.shtml">JMRI 4.99.8 Release Note</a>,
-                    which also contains the download links.
-                    </p>
-                    <a href="#download">Release 4.26</a> is the current "production" release, recommended
-                    for first-time users.
-                </div>
-            </div>
-
-            <div class="flex-item-50">
-                <h4 onclick="collapse('download3')" class="button card-1">JMRI 3.10.1 Production
+                <h4 onclick="collapse('download4')" class="button card-1">JMRI 3.10.1 Production
                     Release</h4>
-                <div id="download3" class="hidden">
+                <div id="download4" class="hidden">
                     <p><a href="releasenotes/jmri3.10.1.shtml"></a></p>
                     Released on January 11, 2015.
                     <p>
@@ -168,9 +183,9 @@
             </div>
 
             <div class="flex-item-50">
-                <h4 onclick="collapse('download4')" class="button card-1">JMRI 2.14.1 Production
+                <h4 onclick="collapse('download5')" class="button card-1">JMRI 2.14.1 Production
                     Release</h4>
-                <div id="download4" class="hidden">
+                <div id="download5" class="hidden">
                     <p><a href="releasenotes/jmri2.14.1.shtml"></a></p>
                     Released on July 15, 2012.
                     <p>

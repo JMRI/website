@@ -4,10 +4,10 @@
 <head>
  <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
-    JMRI: Release Notes for 4.99.9
+    JMRI: Release Notes for 5.1.1
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 4.99.9 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 5.1.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
  <!--#include virtual="/Style.shtml" -->
 </head>
@@ -19,12 +19,12 @@
     <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 4.99.9 release
+      Release Notes for JMRI 5.1.1 release
       </h1>
 
-    <p>Date: May 28, 2022</p>
+    <p>Date: June 25, 2022</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 4.99.9 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 5.1.1 of JMRI/DecoderPro is available for download.</p>
 
 <!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
@@ -38,18 +38,16 @@ if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the next in a series of 4.99.* test releases to migrate JMRI to Java 11.
+<p>This is the first in a series of 5.1.* test releases.
 It requires Java 11 to work.
 (See <a href="http://jmri.org/java">our page on downloading Java 11</a>)
-We expect this series to end in the next JMRI 5.0 production release at the end of Spring 2022.
+We expect this series to end in the next JMRI 5.2 production release in December 2022.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
-<!--
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.</p>
- -->
 
 <p><b>
 JMRI is now only available under the
@@ -121,17 +119,13 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.26.shtml#warnings">JMRI 4.26 release note</a> for more warnings predating the 4.99 development series,
+See the <a href="jmri5.0.shtml#warnings">JMRI 5.0 release note</a> for more warnings predating the 5.1 development series,
 including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version;
-we strongly recommend you update to <a href="jmri4.20.shtml">JMRI 4.20</a>
+we strongly recommend you update to at least <a href="jmri4.20.shtml">JMRI 4.20</a>
 before installing this test release.
 
 <ul>
-    <li><span class="since">Since <a href="jmri4.99.2.shtml">JMRI 4.99.2</a></span>
-        Example scripts related to MQTT moved from jython directory to jython\MQTT directory.  This will require
-        an update to any start-up actions that reference their location.
-    </li>
     <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
         This test release, and all subsequent ones, require the use of
         Java 11 or later.  Java 8 is explicitly not supported.
@@ -139,40 +133,6 @@ before installing this test release.
         <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
         <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
     </li>
-    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
-        A number of classes and methods that have been deprecated for a long time
-        are removed in this release.  These include:
-        <ul>
-            <li>apps.JmriPlugin</li>
-            <li>apps/startup/StartupActionFactory</li>
-            <li>Routes/Turnouts/Sensors: One form of getNextAddress</li>
-            <li>Handling of preferences from before JMRI 4.0; upgrade through JMRI 4.20 instead</li>
-            <li>ShutDownTask, AbstractShutDownTask - use call & run methods now</li>
-            <li>Removed JythonAutomaton, JythonAutomatonAction, JythonSiglet, JythonSigletAction
-                unused classes.  These have been made obsolete by JMRI's native scripting,
-                and haven't been used since JMRI 1.2
-            </li>
-            <li>SSL (BlockBossLogic) - change to start/stop calls</li>
-            <li>Various TrafficManagers.instance methods - use InstanceManager</li>
-            <li>Throttle.getListeners() - use getPropertyChangeListeners</li>
-            <li>Removed obsolete RosterRecorder class;
-                function now available via scripting
-            </li>
-            <li>Removed deprecated methods from Throttle panels</li>
-            <li>Manager.getSystemNameList - rework with getNamedBeanSet</li>
-            <li>Manager.getNamedBeanList - rework with getNamedBeanSet</li>
-            <li>Manager.setPropertyChangesMuted - use setPropertyChangesSilenced</li>
-            <li>Manager.getBeanBySystemName - use getBySystemName</li>
-            <li>Manager.getBeanByUserName - use getByUserName</li>
-            <li>FileChooserUtil</li>
-            <li>get/setFontFamily in SystemConsolePreferencesManager</li>
-            <li>throttle.FunctionPanel#changeState(..) has been replaced by #setSelected(..)</li>
-        </ul>
-    </li>
-    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
-        The PowerManager now only fires events with the id "power".  Before this
-        release, it also fired events with the id "Power". Check that
-        your scripting code is looking for the right form.
     <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
         This version no longer reads ZeroConf IPv4 and IPv6 preferences
         written with JMRI 4.16 and before.  Please make sure to upgrade
@@ -186,25 +146,25 @@ before installing this test release.
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.99.9/JMRI.4.99.9+R20a7adae24.dmg">https://github.com/JMRI/JMRI/releases/download/v4.99.9/JMRI.4.99.9+R20a7adae24.dmg</a><br/>
-  sha256: ab674eb5b35a0492fb2deed0a18ee36a1049a63575a922352ab20a8e431c6db4 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.1.1/JMRI.5.1.1+Redc443cff0.dmg">https://github.com/JMRI/JMRI/releases/download/v5.1.1/JMRI.5.1.1+Redc443cff0.dmg</a><br/>
+  sha256: 26fad20009292be1a1b3a875693589543257b568900c72becf2a87ea7452a4af </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.99.9/JMRI.4.99.9+R20a7adae24.exe">https://github.com/JMRI/JMRI/releases/download/v4.99.9/JMRI.4.99.9+R20a7adae24.exe</a><br/>
-   sha256: 42dc28f12e379e790e750933841e3034f14a6cf2adbbebd10a43e21e5c2cddf1</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.1.1/JMRI.5.1.1+Redc443cff0.exe">https://github.com/JMRI/JMRI/releases/download/v5.1.1/JMRI.5.1.1+Redc443cff0.exe</a><br/>
+   sha256: 820024d28f03eea95dd4fd969c51546a30118df8705dd161dd50382f4a36048c</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.99.9/JMRI.4.99.9+R20a7adae24.tgz">https://github.com/JMRI/JMRI/releases/download/v4.99.9/JMRI.4.99.9+R20a7adae24.tgz</a><br/>
-   sha256: d07c41158e92a9d6d2dc8db523b6c3e4918b92c2c852b1b8bbfc2639cf194627</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.1.1/JMRI.5.1.1+Redc443cff0.tgz">https://github.com/JMRI/JMRI/releases/download/v5.1.1/JMRI.5.1.1+Redc443cff0.tgz</a><br/>
+   sha256: 03802d775868f754af71b975b5657cc76354865707e50952f458e76827c65754</li>
 </ul>
 </div>
 
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.99.8/">CI project page</a>.
- -->
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.1.1/">CI project page</a>.
 
+ -->
 <!--
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
@@ -212,72 +172,95 @@ These are development files, and might not be working at any particular time.</p
  -->
 
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri4.99.8.shtml">Test Release 4.99.8</a>:</h2>
+<h2>Changes since <a href="jmri5.0.shtml">Production Release 5.0</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.99.9+is%3Amerged">list of included changes</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.1.1+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
 
-    <h3>Hardware Support</h3>
-        <h4>DCC++ and DCC-EX</h4>
-            <ul>
-                <li>Add throttle commands and replies to simulator</li>
-            </ul>
+    <h3>New / Updated decoder definitions</h3>
 
-        <h4>MQTT</h4>
-            <ul>
-                <li>Handled a case in MQTT signal masts that would cause a
-                    spurious error message.</li>
-                <li>Added a script to echo SignalHeads to MQTT</li>
-            </ul>
+        <h4>Massoth</h4>
+             <ul>
+                <li>New decoder definition for "Pulsed Smoker for round boilers" (product nr 8415001</li>
+             </ul>
 
     <h3>DecoderPro</h3>
         <a id="DecoderPro" name="DecoderPro"></a>
         <ul>
-            <li>Improved accessibility of some buttons.</li>
+            <li>Fixed a problem preventing import of CSV files exported from JMRI.
+            </li>
         </ul>
 
-   <h3>Internationalization</h3>
-        <a id="I18N" name="I18N"></a>
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
         <ul>
-            <li>Rodrigo Rodriguez translated much of the GUI into Spanish.</li>
+             <li>Separated reverse at end delays from reset delays</li>
+             <li>Allow a next traininfo to be run at successful termination using the same loco info</li>
         </ul>
 
     <h3>LogixNG</h3>
         <a id="LogixNG" name="LogixNG"></a>
         <ul>
-          <li>The action Script and the expression Script
-          now supports both Jython and ECMA Script (JavaScript).
-          As a result, the option <i>Jython command</i> is now
-          renamed to <i>Single line command</i>.</li>
+          <li>The MQTT action now has the option <i>Remove channel from topic</i>.</li>
+        </ul>
+
+    <h3>Preferences</h3>
+        <a id="Preferences" name="Preferences"></a>
+        <ul>
+            <li>A <strong>Shutdown</strong> preference has been created to support the
+            StoreAndCompare process that detects changes to PanelPro tables and panels.</li>
         </ul>
 
     <h3>Turnouts, Lights, Sensors and other elements</h3>
         <a id="TLae" name="TLae"></a>
         <ul>
-            <li>The process for adding multiple Lights/Sensors/Turnouts/Reporters has been
-                improved.  Existing items are no longer skipped, so you get the
-                sequential items you asked for. Some error messages have been clarified.</li>
+            <li>Fixed a spurious error message when creating some internal items.</li>
         </ul>
+
 
     <h3>Miscellaneous</h3>
         <a id="Misc" name="Misc"></a>
         <ul>
-            <li>The xercesImpl library was updated to 2.12.2, which may change
-                the content of some error messages.</li>
-            <li>The macOS and Linux startup scripts now will use a JVM
-                found within a "jre" directory within the JMRI program directory.
-                This lets you install a JVM (JRE or JDK) locally just for
-                JMRI's use.
-            <li>The Transit and Section classes have been refactored into an
-                interface with DefaultTransit and DefaultSection implementations
-                respectively.  Similar transforms have been done to
-                TransitManager and SectionManager. None of the production code
-                nor distributed scripts needed changes, as you still create
-                and access Transits and Sections via their managers obtained
-                from the InstanceManager. The SectionType constants in Section
-                has also been converted to an enum.
-            <li>Many logging changes to resolve Spotbug SLF4J_FORMAT_SHOULD_BE_CONST
+            <li>
+                Several of the PanelPro tables, such as Routes and Logix, display a reminder to store changes before quitting. There are a number of issues with this approach.
+                <ul>
+                    <li>Only some of the tables have the reminder.
+                    <li>Panel changes don't have a reminder.
+                    <li>The reminder does not occur when quitting, or if it does, it is too late.
+                </ul>
+                The JMRI 5.1.1 test release has a global store reminder when running PanelPro.
+                DecoderPro is not affected. Any change that affects the stored layout data file will
+                trigger a reminder with an option to do a store before the final shutdown.
+                <p>
+                The global store reminder process is controlled by a new Shutdown option in JMRI Preferences.
+                This is located between Start Up and Display. There are a number of scenarios where the
+                global store reminder is not appropriate, such as running PanelPro using automatic start up and shutdown.
+                See Shutdown Preference for details.
+                <p>
+                What is considered a change that needs to be stored?
+                The process creates a temporary stored file and compares it to the last loaded file.
+                If they are different, a store notification will occur.
+                The comparison is a line by line compare, not a logical content comparison.
+                Listed below are some of the implications of the process.
+                <ul>
+                    <li>Running PanelPro without loading a layout data file,
+                        such as running Operations, a WiThrottle server, etc.
+                        Since there is no file to compare to, it is assumed that there might be additions that need to be stored.
+                    <li>External events that make changes.
+                        Examples are scripts that create new table entries,
+                        new hardware that can generate table entries, such as adding a DS64 on LocoNet, etc.
+                    <li>JMRI version changes. These can be significant, such as new features.
+                        Or trivial because the sequence of rows are in a different order in the layout data file.
+                        This last one affects layout data files from JMRI 4.26 that use signal heads and SSL.
+                </ul>
+                The compare process stops with the first occurrence of a potential change.
+                The details of the compared lines are listed in the JMRI system console (Help => System Console).
+
+
+
+            <li>Minor changes to resolve Spotbug OS_OPEN_STREAM_EXCEPTION_PATH </li>
+            <li>Minor changes to resolve Spotbug ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD </li>
         </ul>
 
 
