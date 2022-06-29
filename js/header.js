@@ -61,20 +61,20 @@ var navbar = document.getElementById("mainNav");
 var sticky = navbar.offsetTop;
 // Add the "sticky" class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyFunction() {
-  if (window.pageYOffset >= sticky) {
-    mainNav.classList.add("sticky")
-  } else {
-    mainNav.classList.remove("sticky");
-  }
+    if (window.pageYOffset >= sticky) {
+        mainNav.classList.add("sticky")
+    } else {
+        mainNav.classList.remove("sticky");
+    }
 }
 
-// Hide sidebar hamburger when there is no Sidebar/sideOpen() on the page
+// Hide sidebar hamburger when there is no Sidebar/side_open() on the page
 window.addEventListener('load', verifySidebarIcon)
 
 function sidebarIconClick() {
     var sidebar = document.getElementById("side");
     if (sidebar != null) { // just to be sure
-        side_open(); // pass on to Sidebar script function
+        side_open(); // pass on to Sidebar included jscript function
     }
 }
 
