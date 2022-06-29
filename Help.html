@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- one of the few .html pages as of 2022, no include support. -->
+<!-- Migrate to .shtml? Then remove copied header and add (general) sidebar -->
 
 <head>
  <title>
@@ -9,8 +11,22 @@
     <meta name="author" content="Bruce Petrarca">
     <meta name="keywords" content="JMRI How help">
 
-<!-- Style copy from Style.shtml-->
+<!-- Style copied from Style.shtml-->
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+    <!-- in part based on https://www.w3schools.com/w3css/4/w3.css for responsive display -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- for navbar icons -->
+    <link rel="icon" href="/images/jmri.ico" type="image/png">
+    <link rel="home" title="Home" href="/">
+    <link rel="Copyright" title="Copyright" href="/copyright.shtml">
+    <link rel="Index" title="Index" href="/help/en/webindex.shtml">
+    <link rel="ToC" title="ToC" href="/help/en/webtoc.shtml">
+    <link rel="Help" title="Help" href="/help/en/index.html">
+
+
   <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
   <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,28 +39,77 @@
 <body>
 <!-- Header -->
     <div id="header">
-	<!-- Logo -->
-	<a href="/" title="Return to home page" accesskey="1">
-	    <img src="/images/logo-jmri.gif" width="160" height="135" alt="JMRI Logo"> </a>
-	<!-- /Logo -->
-	<ul id="mainNav"> <!-- Top tool bar -->
-	   <li><a href="/download/index.shtml"  title="Get the latest software">Download</a></li>
-	   <li><a href="/help/en/html/apps/index.shtml"      title="Learn about JMRI applications">Applications</a></li>
-	   <li><a href="/help/en/html/hardware/index.shtml"  title="What hardware does JMRI support">Hardware</a></li>
-	   <li><a href="/help/en/webtoc.shtml"   title="JMRI Help Screens">Help</a></li>
-	   <li><a href="/help/en/manual/index.shtml"   title="Trouble-shooting, and FAQs">Manual</a></li>
-	   <li><a href="/help/en/html/doc/Technical/index.shtml" title="Developing and extending JMRI">Developers</a></li>
-	   <li><a href="/help/en/Acknowledgements.shtml" title="Who is JMRI">Acknowledgements</a></li>
-	</ul>
+        <div id="show-side" class="button inline xlarge"
+             onclick="sidebarIconClick()"><i class="fa fa-bars"></i>
+        </div>
 
-	<div id="searchform"> <!--  Search Form -->
-	  <form id="search" method="get" action="https://www.google.com/search">
-	     <label for="q" title="Search JMRI.org">search JMRI: </label>
-	    <input type="hidden" name="sitesearch" value="jmri.org">
-	    <input type="text" id="q" name="q" accesskey="s" size="30">
-	    <input type="submit" id="submit" value="go">
-	  </form>
-       </div> <!--  End #searchform -->
+        <div class="button inline" style="padding:0;">
+            <a href="/" title="Return to JMRI.org home page" accesskey="1">
+                <img src="/images/jmri-small.svg" alt="JMRI Logo" height="45">
+            </a>
+        </div>
+
+        <div id="hor-nav" class="inline"><!-- "hor-nav" show/hide by mediaquery -->
+            <div id="nav_dl" class="button inline"><a
+                    href="/download/index.shtml"
+                    title="Get the JMRI software">Releases</a></div><!-- menu renamed from Download (action?)-->
+            <div id="nav_apps" class="button inline"><a
+                    href="/help/en/html/apps/index.shtml"
+                    title="Learn about JMRI applications">Applications</a></div>
+            <div id="nav_hw" class="button inline"><a
+                    href="/help/en/html/hardware/index.shtml"
+                    title="What hardware does JMRI support">Hardware</a></div>
+            <div id="nav_help" class="button inline"><a
+                    href="/help/en/webtoc.shtml"
+                    title="JMRI Help Screens">Help Index</a></div>
+            <div id="nav_manuals" class="button inline"><a
+                    href="/help/en/manual/index.shtml"
+                    title="JMRI Manuals">Manuals</a></div>
+            <div id="nav_dev" class="button inline"><a
+                    href="/help/en/html/doc/Technical/index.shtml"
+                    title="Developing and extending JMRI">Developers</a></div>
+            <div id="nav_ack" class="button inline"><a
+                    href="/help/en/Acknowledgements.shtml"
+                    title="Who is JMRI">Acknowledgements</a></div>
+        </div>
+
+        <div id="drop-nav" class="dropdown inline">
+            <!-- show/hide by mediaquery -->
+            <div id="navbtn-more" onclick="open_more(this)" class="button inline">Help &amp; More <i
+                    class="fa fa-caret-down"></i>
+            </div>
+            <div id="more" class="dropdown-content" style="display:none">
+                <a class="dropdown-menuitem button"
+                   href="/download/index.shtml"
+                   title="Get the JMRI software">Releases</a><!-- menu renamed from Download (action?)-->
+                <a class="dropdown-menuitem button"
+                   href="/help/en/html/apps/index.shtml"
+                   title="Learn about JMRI applications">Applications</a>
+                <a class="dropdown-menuitem button"
+                   href="/help/en/html/hardware/index.shtml"
+                   title="What hardware does JMRI support">Hardware</a>
+                <a class="dropdown-menuitem button"
+                   href="/help/en/webtoc.shtml"
+                   title="JMRI Help Screens">Help Index</a>
+                <a class="dropdown-menuitem button"
+                   href="/help/en/manual/index.shtml"
+                   title="JMRI Manuals">Manuals</a>
+                <a class="dropdown-menuitem button"
+                   href="/help/en/html/doc/Technical/index.shtml"
+                   title="Developing and extending JMRI">Developers</a>
+                <a class="dropdown-menuitem button"
+                   href="/help/en/Acknowledgements.shtml"
+                   title="Who is JMRI">Acknowledgements</a>
+            </div>
+        </div>
+
+        <div class="button inline xlarge floatRight" onclick="open_search(this)"
+             title="Search JMRI.org"><i class="fa fa-search"></i>
+        </div>
+        <!--  Search Form -->
+        <div id="searchform" class="inline" style="display:none; padding:0;">
+            <div class="gcse-search"></div>
+        </div> <!--  End #searchform -->
     </div> <!-- closes #header-->
 <!-- /Header -->
 
@@ -133,5 +198,7 @@ or see the page on
 
    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
+  <script src="/js/main.js"></script>
+  <script src="/js/header.js"></script>
 </body>
 </html>

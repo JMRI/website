@@ -67,3 +67,21 @@ function stickyFunction() {
     mainNav.classList.remove("sticky");
   }
 }
+
+// Hide sidebar hamburger when there is no Sidebar/sideOpen() on the page
+window.addEventListener('load', verifySidebarIcon)
+
+function sidebarIconClick() {
+    var sidebar = document.getElementById("side");
+    if (sidebar != null) { // just to be sure
+        side_open(); // pass on to Sidebar script function
+    }
+}
+
+function verifySidebarIcon() {
+    var sidebar = document.getElementById("side");
+    if (sidebar === null) {
+        var a = document.getElementById("show-side");
+        a.style.display = "none";
+    }
+}

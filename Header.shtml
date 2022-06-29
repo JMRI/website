@@ -6,7 +6,7 @@
       <div id="mainNav" class="bar-1">
 
           <div id="show-side" class="button inline xlarge"
-              onclick="side_open()"><i class="fa fa-bars"></i>
+              onclick="sidebarIconClick()"><i class="fa fa-bars"></i>
           </div>
 
           <div class="button inline" style="padding:0;">
@@ -74,12 +74,6 @@
           </div>
           <!--  Search Form -->
           <div id="searchform" class="inline" style="display:none; padding:0;">
-              <!-- <form method="get" action="https://www.google.com/search">
-                <label for="q" title="Search JMRI.org ">Search JMRI: </label>
-                <input type="hidden" name="sitesearch" value="jmri.org">
-                <input type="text" id="q" name="q" accesskey="s" size="30">
-                <input type="submit" id="submit" class="button" value="Find">
-              </form> -->
               <div class="gcse-search"></div>
           </div> <!--  End #searchform -->
 
