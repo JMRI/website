@@ -69,8 +69,6 @@ function stickyFunction() {
 }
 
 // Hide sidebar hamburger when there is no Sidebar/side_open() on the page
-window.addEventListener('load', verifySidebarIcon);
-
 function verifySidebarIcon() {
     var sidebar = document.getElementById("side");
     if (sidebar === null) {
@@ -78,3 +76,5 @@ function verifySidebarIcon() {
         a.style.display = "none";
     }
 }
+
+window.addEventListener('load', verifySidebarIcon)
