@@ -50,11 +50,6 @@ function open_more(elmnt) {
   }
 }
 
-// When the user scrolls the page, execute stickyFunction
-window.onscroll = function() {
-    stickyFunction()
-};
-
 // Get the navbar
 var navbar = document.getElementById("mainNav");
 // Get the offset position of the navbar
@@ -67,6 +62,11 @@ function stickyFunction() {
         mainNav.classList.remove("sticky");
     }
 }
+
+// When the user scrolls the page, execute stickyFunction
+window.onscroll = function() {
+    stickyFunction()
+};
 
 // Hide sidebar hamburger when there is no Sidebar/side_open() on the page
 function verifySidebarIcon() {
