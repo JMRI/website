@@ -840,7 +840,16 @@ hr {
 	top: 5px;
 	z-index: 4;
 }
-
+/* google search items in results */
+ .gsc-wrapper {
+    background: #F5F5DC; /* makes search result URL/title readable */
+ }
+ .gsc-thumbnail-inside { /* highlights JMRI result items */
+     background: LightSlateGray;
+ }
+ .gsc-thumbnail-inside :hover { /* highlights JMRI result items */
+     background: LightGray;
+ }
 
 #title {
 	background: #AAC;
@@ -954,7 +963,7 @@ hr {
 .list dd {
 	margin: 0 0 0 2em; /*mobile first */
 	padding: 1px 0 0.4em 0.7em;
-	border-bottom: solid 1px LightSlateGrey;
+	border-bottom: solid 1px LightSlateGray;
 }
 .list dd p, .list dd ul {
 	margin-top: 0.2em;
