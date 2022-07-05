@@ -187,31 +187,31 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
         settings and, if necessary, uninstall the old JMRI version.
         <br>You may choose to have the installer make a backup of the existing files, and provide a location on disk
         for this set.<br>
-        <img src="images/WinInstall03.png" height="489" width="597" alt="installer backup?">
+        <img src="images/WinInstall03.png" alt="installer backup?">
       </li>
       <li>
 		In some circumstances, the removal of JMRI version 2.5.1 or earlier might fail, resulting in a message
 		Uninstaller failed<br>
-		<img src="images/WinInstall-03d_UninstallOldFailed.png" height="126" width="497" alt="installer uninstall old version failed">
+		<img src="images/WinInstall-03d_UninstallOldFailed.png" alt="installer uninstall old version failed">
 		<br>In such cases, it is necessary to download and run the following file and then re-run the installer:<br>
         <a href="support/RemoveOldJMRIUninstallEntry.exe">RemoveOldJMRIUninstallEntry.exe</a></li>
       <li>Choose Users
         If supported by your Windows version and depending on the permissions of your user, the installer may ask
         you to choose to install JMRI just for yourself or for all users of the computer.<br>
-        <img src="images/WinInstall04.png" height="489" width="597" alt="installer user choice"></li>
+        <img src="images/WinInstall04.png" alt="installer user choice"></li>
       <li>Choose Components
         The installer will now present a list of the components to be installed.<br>
-        <img src="images/WinInstall05.png" height="489" width="597" alt="installer component choice"><br>
+        <img src="images/WinInstall05.png" alt="installer component choice"><br>
         This will install JMRI to the default location, place shortcuts for DecoderPro and PanelPro on the desktop
         and create a JMRI Start Menu folder containing shortcuts for typically used JMRI programs.
         If you wish to change where JMRI is installed, change the install type from 'Typical' to 'Custom (select to
         choose program folder)' using the drop-down menu.</li>
        <li>Choose Install Location<br>
          The next screen suggests a place for the install.<br>
-         <img src="images/WinInstall06.png" height="489" width="597" alt="installer files install location"></li>
+         <img src="images/WinInstall06.png" alt="installer files install location"></li>
        <li>Choose Start Menu Folder<br>
          The following screens lets you choose a place for JMRI in your Start menu.<br>
-         <img src="images/WinInstall07.png" height="489" width="597" alt="installer files install start"></li>
+         <img src="images/WinInstall07.png" alt="installer files install start"></li>
       <li>Check for Java<br>
         The installer will check for a suitable version of Java on your computer and, if required, will
         alert you to which version of Java should be installed.  For example, although these messages may 
@@ -225,8 +225,8 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
         Once existence of a suitable Java Runtime Environment has been confirmed, it will then install the needed
         libraries, plus add a "JMRI" program group to your Start menu and put shortcuts to the DecoderPro and
         PanelPro programs on your desktop.<br>
-        <img src="images/WinInstall08.png" height="489" width="597" alt="installer files install"><br>
-        <img src="images/WinInstall09.png" height="489" width="597" alt="installer completed"><br>
+        <img src="images/WinInstall08.png" alt="installer files install"><br>
+        <img src="images/WinInstall09.png" alt="installer completed"><br>
         Click Next.</li>
 
       <li>Installation is complete<br>
@@ -250,7 +250,7 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
         of the flash drive.</li>
 		<li>Create a directory in the root of the flash drive and name it "JRE".<br>
         The following screen shot shows the resulting structure:<br>
-        <img src="images/WinOfflineInstall-Folders.png" height="119" width="230" alt="Offline installer folder structure">
+        <img src="images/WinOfflineInstall-Folders.png" alt="Offline installer folder structure">
         </li>
 		<li>In the JRE directory, place a copy of the Java offline installer for Windows 2000 or later. A typical
         name for this file is <code>jre-8u66-windows-i586.exe</code>.</li>
@@ -270,7 +270,7 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
   <li>Connect your computer to your <a
      href="../help/en/html/hardware/index.shtml">Command Station hardware</a>.</li>
   <li>Start one of the applications from the JMRI group under Programs in your Start menu.
-    <p><img src="images/WinStartMenu.png" height="97" width="477" alt="JMRI Start menu">
+    <p><img src="images/WinStartMenu.png" alt="JMRI Start menu">
     <br>(This shows the Start menu following a 'Typical' install - a 'Full' install will place additional icons in this menu)</li>
 
   <li>Configure the program to connect to your layout. The Connections Preferences will open automatically on first run, or you can open the Preferences pane from the Edit menu. More on this on the <a href="../help/en/html/setup/index.shtml">JMRI Setup help page</a>.
@@ -279,15 +279,15 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
   <li>When you start DecoderPro 3.8 or later on Windows for the first time, the <strong>JMRI StartUp Wizard</strong> displays a series of screens to guide you through the setup proces:
     <ol type="i">
         <li>Welcome Screen:<br>
-        <img src="images/InstallWin1.png" height="271" width="469" alt="JMRI Start Wizard"></li>
+        <img src="images/InstallWin1.png" alt="JMRI Start Wizard"></li>
         <li>Set your Language:<br>
-        <img src="images/InstallWin2Language.png" height="271" width="469" alt="JMRI Start Wizard Set Language"></li>
+        <img src="images/InstallWin2Language.png" alt="JMRI Start Wizard Set Language"></li>
         <li>Choose your DCC System's Manufacturer (protocol):<br>
-        <img src="images/InstallWin3Connection.png" height="271" width="469" alt="JMRI Start Wizard  Choose Manufacturer"></li>
+        <img src="images/InstallWin3Connection.png" alt="JMRI Start Wizard  Choose Manufacturer"></li>
         <li>Choose your hardware Connection Type:<br>
-        <img src="images/InstallWin4Connection.png" height="271" width="469" alt="JMRI Start Wizard Choose Interface"></li>
+        <img src="images/InstallWin4Connection.png" alt="JMRI Start Wizard Choose Interface"></li>
         <li>That's all!<br>
-        <img src="images/InstallWin5Finished.png" height="271" width="469" alt="JMRI Start Wizard Finished"></li>
+        <img src="images/InstallWin5Finished.png" alt="JMRI Start Wizard Finished"></li>
     </ol>
   </li>
   </ul>
@@ -309,7 +309,7 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
 
 <a id="largewindow"></a>
 <h3>Large Windows</h3>
-<img src="images/TaskbarOptions.png" height="228" width="202" alt="control panel">
+<img src="images/TaskbarOptions.png" alt="control panel">
 <p>Depending on what it wants to display, JMRI can open up very large windows.  Generally, JMRI uses the size of the screen and information about fixed things like the start bar to decide the maximum size for an opening window so that e.g. the corners can't be reached to resize the window.</p>
 
 <p>Depending your Windows display operation, large JMRI windows will either resize to stay on the large part of the screen, clear of start bars and menu bars, or will be displayed at the full size of the screen, appearing under the start bar and menu bars.</p>
@@ -342,7 +342,7 @@ last version in use, you should install the older version right over the version
 currently installed. Then find the folder that holds the folder named "JMRI_backup".
 This will normally be located in your user-profile folder - a quick way to
 find this is to follow the "Preferences" link in "JMRI > Tools and Demos" from the Start menu.
-<br><img src="images/WinDebugLog-01_StartMenuPreferences.png" height="358" width="531"
+<br><img src="images/WinDebugLog-01_StartMenuPreferences.png"
 alt="Preferences link in JMRI > Tools and Demos start menu">
 <br>Once opened, navigate up one level to your user-profile folder.
 <p>Depending on the version of Windows, this will typically be one of:</p>
@@ -421,7 +421,7 @@ the folder "JMRI_backup" to "JMRI".
         <p>With JMRI a Windows utility called <code>InstallTest.exe</code> is installed. To execute a series of tests on
         your Windows JMRI installation, start InstallTest from the Start menu -&gt; Programs -&gt; JMRI -&gt; Tools and Demos
         -&gt; InstallTest. The following screen will open:</p>
-        <img src="images/WinInstallTest.png" height="323" width="512" alt="Preferences link in JMRI > Tools and Demos
+        <img src="images/WinInstallTest.png" alt="Preferences link in JMRI > Tools and Demos
         start menu">
         <p>Press any key to continue (after reading the screen).</p>
 
@@ -434,15 +434,15 @@ the folder "JMRI_backup" to "JMRI".
         <ol>
             <li>To view the "systemfiles" sub-directory, follow the "Preferences" link in "JMRI > Tools and Demos" from
             the Start menu.
-            <br><img src="images/WinDebugLog-01_StartMenuPreferences.png" height="358" width="531" alt="Preferences
+            <br><img src="images/WinDebugLog-01_StartMenuPreferences.png" alt="Preferences
             link in JMRI > Tools and Demos start menu">
 
             <li>Once the preferences folder is opened, navigate to the "systemfiles" folder.
-            <br><img src="images/WinDebugLog-02_SystemFiles.png" height="299" width="663" alt="systemfiles folder
+            <br><img src="images/WinDebugLog-02_SystemFiles.png" alt="systemfiles folder
             within JMRI preferences">
 
             <li>Finally, within the "systemfiles" folder, is "messages.log".
-            <br><img src="images/WinDebugLog-03_MessagesLog.png" height="299" width="663" alt="messages.log file
+            <br><img src="images/WinDebugLog-03_MessagesLog.png" alt="messages.log file
             within systemfiles folder">
         </ol>
 
@@ -451,7 +451,7 @@ the folder "JMRI_backup" to "JMRI".
 
         <ol>
             <li>From the main JMRI window, choose "Help > System Console ...".
-            <br><img src="images/Win-JMRISystemConsole.png" height="409" width="850" alt="JMRI system console">
+            <br><img src="images/Win-JMRISystemConsole.png" alt="JMRI system console">
 
             <li>Click the button "Copy to clipboard".
 
@@ -469,13 +469,13 @@ the folder "JMRI_backup" to "JMRI".
         <ol>
             <li>From the Start button, navigate to the JMRI menu and right-click the DecoderPro icon
             (the PanelPro and/or SoundPro icons can be similarly modified)
-            <br><img src="images/WinDebug-01_StartMenuItemProperties.png" height="358" width="456"
+            <br><img src="images/WinDebug-01_StartMenuItemProperties.png"
                      alt="start menu properties"></li>
 
             <li>Insert the '/debug' option into the shortcut 'Target'
-            <br><img src="images/WinDebug-02_ModifyShortcutTarget.png" height="509" width="367" alt="modify shortcut target">
+            <br><img src="images/WinDebug-02_ModifyShortcutTarget.png" alt="modify shortcut target">
             <br>When launched, the following window will appear showing various useful information:
-            <br><img src="images/WinDebug-03_LauncherDebugWindow.png" height="295" width="426" alt="launcher debug window">
+            <br><img src="images/WinDebug-03_LauncherDebugWindow.png" alt="launcher debug window">
             <br>Copy the contents of this window by 'right-clicking' and then choosing 'Copy Details to Clipboard'.</li>
             <li>In your e-mail client, Notepad, Wordpad, favorite word processor, etc, position your cursor and
             left-click on Edit and then Paste, or press the "Ctrl" and "V" keys.</li>
@@ -495,32 +495,32 @@ the folder "JMRI_backup" to "JMRI".
         <ol>
             <li>From the Start button, navigate to the JMRI menu and right-click the DecoderPro icon
             (the PanelPro and/or SoundPro icons can be similarly modified)
-            <br><img src="images/WinDebug-01_StartMenuItemProperties.png" height="358" width="456"
+            <br><img src="images/WinDebug-01_StartMenuItemProperties.png"
             alt="start menu properties"></li>
 
             <li>Insert the '/noisy' option into the shortcut 'Target':
-            <br><img src="images/WinExitDebug-02_ModifyShortcutTarget.png" height="509" width="367"
+            <br><img src="images/WinExitDebug-02_ModifyShortcutTarget.png"
             alt="modify shortcut target"></li>
 
             <li>When launched, the Java System Console window will appear showing various messages from the JMRI
             program:
-            <br><img src="images/WinExitDebug-03_JavaSystemConsole.png" height="338" width="669" alt="java system
+            <br><img src="images/WinExitDebug-03_JavaSystemConsole.png"alt="java system
             console window"></li>
 
             <li>When the shutdown of JMRI appears to hang, click in the Java System Console
             window and then press 'Ctrl-Break' on the keyboard - this will print a Java
             Thread Dump showing all active threads still running in JMRI:
-            <br><img src="images/WinExitDebug-04_ConsoleThreadDump.png" height="338" width="669" alt="java thread dump">
+            <br><img src="images/WinExitDebug-04_ConsoleThreadDump.png" alt="java thread dump">
             </li>
 
             <li>Once the Java Thread Dump has been printed, select all the text in the
             window by clicking the top-left icon and choosing 'Edit > Select all':
-            <br><img src="images/WinExitDebug-05_ConsoleSelectAll.png" height="338" width="669" alt="java thread dump">
+            <br><img src="images/WinExitDebug-05_ConsoleSelectAll.png" alt="java thread dump">
             </li>
 
             <li>Once selected, copy the text to the clipboard by clicking the top-left icon
             and choosing 'Edit > Copy':
-            <br><img src="images/WinExitDebug-06_ConsoleCopyToClipboard.png" height="338" width="669"
+            <br><img src="images/WinExitDebug-06_ConsoleCopyToClipboard.png"
             alt="java thread dump"></li>
 
             <li>In your e-mail client, Notepad, Wordpad,
