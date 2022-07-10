@@ -109,16 +109,9 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
-
-
+    <li>
+        None yet
+    </li>
 </ul>
 
 
@@ -182,13 +175,51 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.1.2+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+
+        <h4>MQTT</h4>
+            <ul>
+                <li>Rewrite and expansion of documentation.</li>
+                <li>The default value of the channel is now "", the null string.
+                    The channel name is prefixed to all of JMRI's publish and subscribe
+                    operations.  The previous default was "/trains/"
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>Fix a problem with the OpenLCB hub at high data rates. Overlapping
+                    messages and replies would be echoed out incorrectly.
+                </li>
+            </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The action <i>Listen On Beans</i> now sorts the named beans when selecting a bean to listen on.</li>
+        </ul>
+
+    <h3>Operations</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+  <li>Enhanced passenger blocking. Negative blocking numbers place passenger cars in front of
+    freight cars.</li>
+  <li>Added hazardous classification to car loads. Now a car can be classified as hazardous
+    depending on the car's load.</li>
+  <li>Improved car blocking when car is hazardous. The program will attempt to place
+    non-hazardous cars in front of hazardous cars.</li>
+  <li>New automation feature. Users can now select an automation to run at startup. See under
+    Tools in the operations Automations window.</li>
+  <li>Improved Manifest and switch list formating when using tabular and load set out and pick
+    up messages.</li>
+</ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Reduce the verbosity of MDNS logging.</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
