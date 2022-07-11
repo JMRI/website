@@ -95,7 +95,11 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>New problems with this release</h3>
 <ul>
-    <li>None yet</li>
+    <li><span class="since">Since <a href="jmri4.99.9.shtml">JMRI 4.99.9</a></span>
+        There's a problem adding NCE AIU sensors using the NS50:1 format.
+        As a workaround, you can add them with the full numeric address:  NS123.
+        The fix will be available in JMRI 5.1.3
+        </li>
 </ul>
 <!--
 If any of those affect you, please either
