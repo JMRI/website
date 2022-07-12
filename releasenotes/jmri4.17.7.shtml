@@ -80,8 +80,7 @@ see our
         last file name used.  You'll have to manually enter it each time.</li>
 </ul>
 
-If any of those affect you, please either 
-wait for
+<p>If any of those affect you, please either wait for
 <a href="jmri4.17.8.shtml">JMRI 4.17.8</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
@@ -95,11 +94,10 @@ from
     <li>None yet</li>
 </ul>
 
-
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.16.shtml#warnings">JMRI 4.16 release note</a> for more warnings predating the 4.17 development series.
-These may be relevant to you if you're updating from an earlier version.
+<p>See the <a href="jmri4.16.shtml#warnings">JMRI 4.16 release note</a> for more warnings predating the 4.17
+development series. These may be relevant to you if you're updating from an earlier version.</p>
 
 <ul>
 <li><span class="since">Since <a href="jmri4.17.5.shtml">JMRI 4.17.5</a></span>
@@ -215,12 +213,12 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
-check the files against the checksums shown below.
-
+check the files against the checksums shown below.</p>
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R5bc91de.dmg">https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R5bc91de.dmg</a><br/>
@@ -234,7 +232,7 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R5bc91de.tgz">https://github.com/JMRI/JMRI/releases/download/v4.17.7/JMRI.4.17.7+R5bc91de.tgz</a><br/>
    sha256: 1f4d07293f4fbef222e56b1e7ebdaf46ad1afc4803a0c80e46a1893158f555be</li>
 </ul>
-
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the

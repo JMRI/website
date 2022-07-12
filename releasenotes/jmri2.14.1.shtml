@@ -30,8 +30,8 @@
 
 <h3>Notes:</h3>
 
-This is an update of JMRI production release 2.14 to include additional
-features, see below.
+<p>This is an update of JMRI production release 2.14 to include additional
+features, see below.</p>
 
 <p><b>
 JMRI is now only available under the 
@@ -42,32 +42,34 @@ see our
 
 <h3>Warnings</h3>
 
-JMRI 2.12 was the last release which is completely supported by Java 1.5.
+<p>JMRI 2.12 was the last release which is completely supported by Java 1.5.
 In this release, there are minor interface features, such as 
 drag-and-drop of some items, that require your computer to have Java 1.6 installed.
 Computers with only Java 1.5 will still be able to use JMRI, including PanelPro and DecoderPro,
 in this release except for those features.
 Releases in the next cycle (2.99.* and 3.*)
-will require Java 1.6.
+will require Java 1.6.</p>
 
 
 <h3>Known problems with this release</h3>
-There are currently some connectivity issues for Users running Windows v7 64-bit and a Digitrax PR3 interface.
-If you are experiencing issues, then please raise a question on the JMRI Users group for assistance.
+<p>There are currently some connectivity issues for Users running Windows v7 64-bit and a Digitrax PR3 interface.
+If you are experiencing issues, then please raise a question on the JMRI Users group for assistance.</p>
 
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.dmg/download</a></li>
 
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.dmg/download</a></p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.exe/download</a></li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.exe/download</a></p>
-
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.tgz/download</a></p>
-
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.14.1-r20797.tgz/download</a></li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the

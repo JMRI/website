@@ -94,20 +94,21 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
-These may be relevant to you if you're updating from an earlier version.
+<p>See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15
+development series. These may be relevant to you if you're updating from an earlier version.</p>
 
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
     <ul>
-        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
-        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
-        <li>Do not open the SPROG console window</li><br>
-        <li>Disable power conversion (CV 29) in all locos</li><br>
-        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
+        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li>
+        <li>Do not open the SPROG console window</li>
+        <li>Disable power conversion (CV 29) in all locos</li>
+        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
     </ul>
-    Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
-    open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
+    <p>Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box
+    will open to inform the user of this. The track power will be turned off and must be turned on again using the power
+    control.</p>
 
 <p><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
     The system connection preferences (i.e. hardware preferences) are now
@@ -123,12 +124,12 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
-check the files against the checksums shown below.
-
+check the files against the checksums shown below.</p>
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.15.1/JMRI.4.15.1+R4a42841.dmg">https://github.com/JMRI/JMRI/releases/download/v4.15.1/JMRI.4.15.1+R4a42841.dmg</a><br/>
@@ -142,7 +143,7 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.15.1/JMRI.4.15.1+R4a42841.tgz">https://github.com/JMRI/JMRI/releases/download/v4.15.1/JMRI.4.15.1+R4a42841.tgz</a><br/>
    sha256: b7be1ebf1579b6904a82ec099e5012802b83b751a6d7c1164cb8a1047c126350</li>
 </ul>
-
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -197,53 +198,53 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
     <h3>DecoderPro</h3>
-        <a id="DecoderPro" name="DecoderPro"/>
+        <a id="DecoderPro" name="DecoderPro"></a>
         <ul>
           <li>Added "Accept All" button to roster import</li>
           <li>Dave Heap improved how the decoder identification process handles optional CVs</li>
         </ul>
 
     <h3>Layout Editor</h3>
-        <a id="LE" name="LE"/>
+        <a id="LE" name="LE"></a>
         <ul>
 	        <li>Dave Sand improved tooltip handling</li>
         </ul>
 
     <h3>Roster</h3>
-        <a id="Roster" name="Roster"/>
+        <a id="Roster" name="Roster"></a>
         <ul>
             <li>Added "Accept All" button to roster import operation</li>
             <li>Improved handling of timestamps for the last run and running duration features</li>
         </ul>
 
     <h3>Signals</h3>
-        <a id="Signals" name="Signals"/>
+        <a id="Signals" name="Signals"></a>
         <h4>Signal Systems</h4>
             <ul>
                 <li>Petr Šídlo updated the Czechoslovak state railway Elektrosignal Praga (CSD ESP) definition</li>
             </ul>
 
     <h3>Timetable</h3>
-        <a id="Timetable" name="Timetable"/>
+        <a id="Timetable" name="Timetable"></a>
         <span class="since">since 4.13.4</span>
         <ul>
             <li>Dave Sand made multiple updates to the Timetable support</li>
         </ul>
 
    <h3>Warrants</h3>
-        <a id="Wt" name="Wt"/>
+        <a id="Wt" name="Wt"></a>
         <ul>
             <li>Pete Cressman updated how Warrants interact</li>
         </ul>
 
    <h3>Web Access</h3>
-        <a id="WA" name="WA"/>
+        <a id="WA" name="WA"></a>
         <ul>
             <li>Multiple updates to the JSON service</li>
         </ul>
 
     <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"/>
+        <a id="Misc" name="Misc"></a>
         <ul>
             <li>Fixed a compatibility problem when reading files containing timebase information</li>
         </ul>

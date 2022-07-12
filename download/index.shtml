@@ -16,7 +16,7 @@
 
  <hr class="hide">
  <div id="mainContent">
-
+    <h1>JMRI: Releases</h1>
     <p>This page describes JMRI releases.  Briefly, we have three kinds:</p>
     <ul>
     <li>"<a href="#prod-rel">Production releases</a>" about twice a year.  These are the ones we recommend to general users.
@@ -29,10 +29,10 @@
         not fully tested. Test releases get more testing as part of the release process.
     </ul>
 
-    For more information on the (intended) release schedule, see the
+    <p>For more information on the (intended) release schedule, see the
     <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open">current list of milestones</a>
     and the
-    <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">development roadmap</a>.
+    <a href="../help/en/html/doc/Technical/TechRoadMap.shtml">development roadmap</a>.</p>
 
     <p>If you've never installed a version of this program before,
     please read the installation guide (on the left) for your computer type and layout hardware.
@@ -89,9 +89,10 @@
     <a id="prod-rel"></a>
     <h2>JMRI 5.0 - Production release</h2>
     <dl>
-    <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
+    <dt class="im"><img src="../images/ico-jmri.gif" alt="JMRI logo"></dt>
     <dd>
-	<a id="prod-download"></a><p class="dl">Download:
+        <a id="prod-download"></a><p class="dl">Download:</p>
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.dmg">https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.dmg</a><br/>
@@ -105,6 +106,7 @@
 	href="https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.tgz">https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.tgz</a><br/>
    sha256: 3699a0ffdadb1ef50f891c542efb7dc42759a9f3574ec5a14dae4cd65ca60911</li>
 </ul>
+</div>
 
     <strong>Notes:</strong><br>
     <p>For more information on the release contents, please see the
@@ -125,7 +127,7 @@
 
     <h2>JMRI 4.26 - Production release for Java 8</h2>
     <dl>
-    <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
+    <dt class="im"><img src="../images/ico-jmri.gif" alt="JMRI logo"></dt>
     <dd>
 
 	    <p>
@@ -141,7 +143,7 @@
 
     <h2>JMRI 3.10.1 - Production release for Java 1.6</h2>
     <dl>
-    <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
+    <dt class="im"><img src="../images/ico-jmri.gif" alt="JMRI logo"></dt>
     <dd>
 
 	    <p>
@@ -157,7 +159,7 @@
 
     <h2>JMRI 2.14.1 - Production release for Java 1.5</h2>
     <dl>
-    <dt class="im"><img src="../images/ico-jmri.gif" width="34" height="34" alt="JMRI logo"></dt>
+    <dt class="im"><img src="../images/ico-jmri.gif" alt="JMRI logo"></dt>
     <dd>
 
 	    <p>
@@ -193,7 +195,7 @@
 <dl>
 
 	<dt class="im">
-        <a href="https://www.jmri.org/java/index.shtml" target="_blank"><img src="https://download.oracle.com/technetwork/java/get-java/getjavasoftware-88x31.png" alt="Get Java Software" border="0" width="88" height="31" /></a>
+        <a href="https://www.jmri.org/java/index.shtml" target="_blank"><img src="https://download.oracle.com/technetwork/java/get-java/getjavasoftware-88x31.png" alt="Get Java Software"/></a>
         <dt><a href="https://www.jmri.org/java/index.shtml">Java</a></dt>
 	<dd>
 	    <p>[<a href="https://www.jmri.org/java/index.shtml">How to install Java</a>]</p>
@@ -201,7 +203,7 @@
 
 	<dt class="im">
 	<a href="http://cats4ctc.org">
-	<img src="../images/CATS.png" width="64" height="64" alt="CATS"></a></dt>
+	<img src="../images/CATS.png" alt="CATS"></a></dt>
 	<dt><a href="http://cats4ctc.org">CATS</a></dt>
 	<dd>
 	    <p>The Crandic Automated Traffic System (CATS)

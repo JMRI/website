@@ -65,7 +65,7 @@ see our
     you <u>must</u>
     update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
     carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
-    before updating to this release.
+    before updating to this release.</p>
 
 
 <a id="problems" name="problems"></a>
@@ -105,7 +105,7 @@ These may be relevant to you if you're updating from an earlier version.
     There's a
     <a href="../community/LayoutEditorTrackChanges.pdf">PDF document</a>
     with more details.
-    We apologize for the inconvenience.
+    We apologize for the inconvenience.</p>
 
 <p><span class="since">Since <a href="jmri4.11.8.shtml">JMRI 4.11.8</a></span>
     Because of changes to the "node identification" algorithm used to tell
@@ -114,7 +114,7 @@ These may be relevant to you if you're updating from an earlier version.
     have more than one profile, this can happen with each).  There's no permanent
     problem here, but you might have to reset your window preferences (i.e. position
     and size, column layout, etc) in this case.
-    We apologize for the inconvenience.
+    We apologize for the inconvenience.</p>
 
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     If you are running a local web site with a copy of the JMRI content, as
@@ -123,10 +123,10 @@ These may be relevant to you if you're updating from an earlier version.
     <a href="http://jmri.org/help/en/html/doc/Technical/WebSite.shtml#locallink">the "setSymLinks.sh" step</a>
     near the bottom of those instructions
     after installing JMRI 4.11.4 (or later).  This will make some new formatting available
-    on your local site.
+    on your local site.</p>
 
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
-    There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
+There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:</p>
     <ul>
         <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
         <li>Do not enable extra debugging through default.lcf, nor open the system console window</li>
@@ -134,8 +134,9 @@ These may be relevant to you if you're updating from an earlier version.
         <li>Disable power conversion (CV 29) in all locos</li>
         <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
     </ul>
-    Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
-    open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
+    <p>Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box
+    will open to inform the user of this. The track power will be turned off and must be turned on again using the power
+    control.</p>
 
 <p><span class="since">Since <a href="jmri4.11.2.shtml">JMRI 4.11.2</a></span>
     The system connection preferences (i.e. hardware preferences) are now
@@ -143,7 +144,7 @@ These may be relevant to you if you're updating from an earlier version.
     for system prefixes:  One upper case letter,
     optionally followed by a number (one or more digits, e.g. "L12").
     Existing prefixes in existing configurations are unchanged, but
-    new ones will have to have the correct form.
+    new ones will have to have the correct form.</p>
 
 <p><span class="since">Since <a href="jmri4.7.6.shtml">JMRI 4.7.6</a></span>
     If you're having trouble getting your DCC programmer to work, try
@@ -154,17 +155,17 @@ These may be relevant to you if you're updating from an earlier version.
     The default is then used for throttles, for programming, etc.  JMRI tries to
     guess the right settings for these when you upgrade to this version, but
     apparently it sometimes gets that wrong (we haven't been able to track
-    that down yet). Setting them manually fixes any wrong guesses.
+    that down yet). Setting them manually fixes any wrong guesses.</p>
 
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
-check the files against the checksums shown below.
-
+check the files against the checksums shown below.</p>
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.13.4/JMRI.4.13.4+R49e7a86.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.4/JMRI.4.13.4+R49e7a86.dmg</a><br/>
@@ -178,7 +179,7 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.13.4/JMRI.4.13.4+R49e7a86.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.4/JMRI.4.13.4+R49e7a86.tgz</a><br/>
    sha256: 9d577470a8f32e7f8ee365a959f1d910dce06fb4ee9914a9a27f1b1389f87abe</li>
 </ul>
-
+</div>
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -244,7 +245,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
 
    <h3>Switchboard Editor</h3>
-        <a id="SW" name="SW"/>
+        <a id="SW" name="SW"></a>
         <ul>
             <li>A new "Auto Range" option allows you to release the fixed range of items and fill in any start and end
             address between 1 and 10,000. When a range over 250 is entered, a confirmation dialog pops up.<br>
@@ -253,7 +254,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Scripting</h3>
-        <a id="Scripting" name="Scripting"/>
+        <a id="Scripting" name="Scripting"></a>
         <ul>
             <li>When running JMRI using Java 9 or Java 10,
                 the script import statements need to be fully-qualified:
@@ -265,7 +266,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Timetable</h3>
-        <a id="Timetable" name="Timetable"/>
+        <a id="Timetable" name="Timetable"></a>
         <span class="since">since 4.13.4</span>
         <ul>
             <li>The Timetable tool uses layout and train information to create train graphs.
@@ -273,7 +274,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
    <h3>Warrants</h3>
-        <a id="Wt" name="Wt"/>
+        <a id="Wt" name="Wt"></a>
         <ul>
             <li>Karl Johan Lisby updated SCWarrants
                 so they don't automatically turn off functions at end of run.
@@ -282,7 +283,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"/>
+        <a id="Misc" name="Misc"></a>
         <ul>
             <li>Starting with this release, JMRI will create new profile directories with the
                 suffix ".jmri".  This allows them to be more properly accessed in macOS/iOS

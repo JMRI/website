@@ -204,12 +204,12 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
-check the files against the checksums shown below.
- 
+check the files against the checksums shown below.</p>
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.dmg">https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.dmg</a><br/>
@@ -223,6 +223,7 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.tgz">https://github.com/JMRI/JMRI/releases/download/v4.16/JMRI.4.16+R6f9aced.tgz</a><br/>
    sha256: 9e9123ffca62f488b7bf7ce16143eaf00565eba8017b85afde914d8e382183cb</li>
 </ul>
+</div>
 
 <h2>Changes since <a href="jmri4.14.shtml">production release 4.14</a>:</h2>
 
@@ -347,8 +348,6 @@ in those is
                     This indicates a global emergency stop (track power on, all locomotives stopped)</li>
             </ul>
 
-
-
     <h3>New / Updated decoder definitions</h3>
       <ul>
         <li>Dave Heap improved how the decoder identification process handles optional CVs</li>
@@ -434,7 +433,7 @@ in those is
 
 
     <h3>DecoderPro</h3>
-        <a id="DecoderPro" name="DecoderPro"/>
+        <a id="DecoderPro" name="DecoderPro"></a>
         <ul>
             <li>Added "Accept All" button to roster import</li>
             <li>Dave Heap improved how the decoder identification process handles optional CVs</li>
@@ -488,7 +487,7 @@ in those is
         </ul>
 
     <h3>Layout Editor</h3>
-        <a id="LE" name="LE"/>
+        <a id="LE" name="LE"></a>
         <ul>
 	   <li>Dave Sand improved tooltip handling</li>
            <li>The <strong>Save Location and Size</strong> Options menu item is
@@ -522,14 +521,14 @@ in those is
         </ul>
 
     <h3>Roster</h3>
-        <a id="Roster" name="Roster"/>
+        <a id="Roster" name="Roster"></a>
         <ul>
             <li>Added "Accept All" button to roster import operation</li>
             <li>Improved handling of timestamps for the last run and running duration features</li>
         </ul>
 
     <h3>Turnouts, Lights, Sensors and other elements</h3>
-        <a id="TLae" name="TLae"/>
+        <a id="TLae" name="TLae"></a>
         <ul>
             <li>Fixed an issue where Reporters with a system letter of M
                 were erroneously tagged as 
@@ -555,10 +554,9 @@ in those is
                 element in the delete confirmation dialog. The count of items using the element shown in the delete confirmation
                 dialog now match the number of items shown to be using the element.</li>
         </ul>
-	</ul>
 
     <h3>Scripting</h3>
-        <a id="Scripting" name="Scripting"/>
+        <a id="Scripting" name="Scripting"></a>
         <ul>
             <li>Geoff Bunza provided sample scripts supporting bulk 
             <a href="http://jmri.org/jython/serialinput/Sensor_Channel_To_JMRI/Sensor_Channels_Readme.md">sensor channels</a>
@@ -589,7 +587,7 @@ in those is
         </ul>
 
     <h3>Signals</h3>
-        <a id="Signals" name="Signals"/>
+        <a id="Signals" name="Signals"></a>
         <h4>Signal Systems</h4>
             <ul>
                 <li>Petr Šídlo updated the Czechoslovak state railway Elektrosignal Praga (CSD ESP) definition</li>
@@ -620,7 +618,7 @@ in those is
             </ul>
 
     <h3>Timetable</h3>
-        <a id="Timetable" name="Timetable"/>
+        <a id="Timetable" name="Timetable"></a>
         <ul>
             <li>Dave Sand made multiple updates to the Timetable support</li>
 	    <li>Added the ability to print a train graph.  An item has been
@@ -634,7 +632,7 @@ in those is
         </ul>
 
    <h3>Virtual Sound Decoder</h3>
-        <a id="VSD" name="VSD"/>
+        <a id="VSD" name="VSD"></a>
         <ul>
             <li>Klaus Killinger added "headless" mode, i.e. running VSD without a graphical user interface.
 	            See the <a href="http://jmri.org/help/en/manual/DecoderPro/VSD_Headless.shtml">documentation</a> for details.</li>
@@ -644,7 +642,7 @@ in those is
         </ul>
 
    <h3>Warrants</h3>
-        <a id="Wt" name="Wt"/>
+        <a id="Wt" name="Wt"></a>
         <ul>
             <li>Pete Cressman updated how Warrants interact</li>
             <li>Down ramps used by NXWarrants and are also used when speed changes required by signals, occupancy 
@@ -681,7 +679,7 @@ in those is
         </ul>
 
    <h3>Web Access</h3>
-        <a id="WA" name="WA"/>
+        <a id="WA" name="WA"></a>
         <ul>
             <li>Multiple updates to the JSON service:
                 <ul>
@@ -701,7 +699,7 @@ in those is
         </ul>
 
     <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"/>
+        <a id="Misc" name="Misc"></a>
         <ul>
             <li>Fixed a compatibility problem when reading files containing timebase information</li>
             <li>We're building the release note a

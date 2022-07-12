@@ -26,17 +26,19 @@
 	<p>From: Bob Jacobsen</p>
 	<p>Subject: JMRI/DecoderPro test version 1.1.14 is now available</p>
 
-        <h3>Notes:</h3>
-	<ul>
+    <h3>Notes:</h3>
+    <div class="wide">
+        <ul>
 	    <li>I strongly recommend that you save copies of your decoder
 	    CV values before experimenting with that last item. You should
-	    also read the following writeups:
+	    also read the following writeup:
 	    <ul>
-			<li><a href="http://www.digitrax.com/tsd/KB519/decoder-lock-cv15-cv16/">
-			http://www.digitrax.com/tsd/KB519/decoder-lock-cv15-cv16/</a></li>
+			<li><a href="https://www.digitrax.com/tsd/KB519/decoder-lock-cv15-cv16/">
+			https://www.digitrax.com/tsd/KB519/decoder-lock-cv15-cv16/</a></li>
 
-			<li><a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/topics/2219">
-			https://groups.yahoo.com/neo/groups/jmriusers/conversations/topics/2219</a></li>
+<!--		link invalid as of 2022	<li><a href="https://groups.yahoo
+.com/neo/groups/jmriusers/conversations/topics/2219">-->
+<!--			https://groups.yahoo.com/neo/groups/jmriusers/conversations/topics/2219</a></li>-->
 	    </ul>
         </li>
 
@@ -47,7 +49,7 @@
 	    <li>I'd also like to know whether the printing works on Linux
 	    machines. Could somebody try it and let me know? Thanks.</li>
 	</ul>
-
+    </div>
 
 	<h3>Changes since 1.1.13:</h3>
 	<ul>
@@ -80,30 +82,32 @@
 	"?download" at the end. That adds to SourceForge's advertising
 	statistics, which makes them happy to host our stuff.</p>
 
+<div class="wide">
 	<ul>
 	<li> Mac OS X:
       <a
       href="http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.hqx?download">
-      http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.hqx?download</a>
+          http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.hqx?download</a></li>
 
 	<li> MacOS 8/9 "Classic":
       <a
       href="http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.Classic.hqx?download">
-      http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.Classic.hqx?download</a>
+          http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.Classic.hqx?download</a></li>
 
 	<li> Windows:
       <a
       href="http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.exe?download">
-      http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.exe?download</a>
+          http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.exe?download</a></li>
 
 	<li> Linux:
       <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.tgz?download">
-      http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.tgz?download</a>
+          http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.tgz?download</a></li>
 
 	<li> OS/2:
       <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.zip?download">
-      http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.zip?download</a>
+          http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.zip?download</a></li>
       </ul>
+</div>
 
    <!--#include virtual="/Footer.shtml" -->
 

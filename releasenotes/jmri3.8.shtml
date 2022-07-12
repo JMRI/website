@@ -83,21 +83,22 @@ you will need to upgrade both the client(s) and the server to the same JMRI vers
 
 <h3>Download links:</h3>
 
-This release is being developed via a series of test releases that contain multiple 
-changes.  See those
-<a href="http://jmri.org/download/older.shtml">release notes</a> 
-for more information.
+<p>This release is being developed via a series of test releases that contain multiple changes.
+See those <a href="http://jmri.org/download/older.shtml">release notes</a> for more information.</p>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.dmg/download</a></p>
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.dmg/download</a></li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.exe/download</a></p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.exe/download</a></li>
 
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.tgz/download</a></p>
- 
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.8-r26527.tgz/download</a></li>
+    </ul>
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
@@ -360,8 +361,8 @@ to not display properly.</p>
 	<li>Created: 73100, 73110, 73140, 75330, 76150, 76200, 76320, 76425, 76560</li>
 	<li>Reformatted (and completed): 76400, 76420</li>
 	<li>Changed family name (for consistency) for: 73400, 73410, 73500, 73510, 77500</li>
-<p></p>
-	<li>For new or reformatted files:</li>
+
+	<li>For new or reformatted files:
 	<ul>        
 		<li>Heavy refactoring with fragment files (in new directory \decoders\uhlenbrock)</li>
 		<li>Used the generic function map pane</li>
@@ -369,6 +370,7 @@ to not display properly.</p>
 		<li>New ad-hoc Uhlenbrock pane, only for other parameters than listed above</li>
 		<li>Support of English and German versions, with terms as defined in official Uhlenbrock documentation, where possible</li>
 	</ul>
+    </li>
 </ul>
   
 <h5>Zimo</h5>
@@ -483,28 +485,27 @@ to improve reliability of sensor readout.
      compatibility is limited to releases 3.4 and 3.6. In any case, you can always upgrade to a
      newer release of operations, it is only the ability to go back to an older version of the
      program using the latest data files that has changed.</li>
-    <li>The lists that operations provides for scripts has changed significantly. Instead of
+     <li>The lists that operations provides for scripts has changed significantly. Instead of
      lists containing ids of the objects, the actual object is now passed in the list. For example a list
      of cars in operations was a list of car ids, and not the cars themselves. If you use
-     scripts you will need to edit your scripts. Here's the changes you need to do for cars:
-     <p>In each of your script files, search for "carId". You should find something like this:
-     <code><p>for carId in carList: 
-     <br>car = cm.getById(carId)</p></code>
-     <p>Change the first line to:
-     <code><p>for car in carList:</p></code>
-     <p>And delete the line that has "car = cm.getById(carId)".
-     <p>For scripts that deal with trains, search for "trainId". You should find something like this:
-     <code><p>for trainId in tList:
-     <br>train = self.tm.getTrainById(trainId)</p></code>
-     <p>Change the first line to:
-     <code><p>for train in tList:</p></code>
-     <p>And delete the line that has "train = self.tm.getTrainById(trainId)".
-     <p>
-    <li>New feature, you can now let the program create your locomotive consists for you. See <a
+     scripts you will need to edit your scripts. Here's the changes you need to do for cars:<br>
+     In each of your script files, search for "carId". You should find something like this:<br>
+     <code>for carId in carList:<br>
+     car = cm.getById(carId)</code><br>
+     Change the first line to:<br>
+     <code>for car in carList:</code><br>
+     and delete the line that has <code>car = cm.getById(carId)</code>.<br>
+     For scripts that deal with trains, search for "trainId". You should find something like this:<br>
+     <code>for trainId in tList:<br>
+     train = self.tm.getTrainById(trainId)</code><br>
+     Change the first line to:<br>
+     <code>for train in tList:</code><br>
+     and delete the line that has <code>train = self.tm.getTrainById(trainId)</code>.</li>
+     <li>New feature, you can now let the program create your locomotive consists for you. See <a
      href="http://jmri.org/help/en/package/jmri/jmrit/operations/Operations.shtml#TrainBuildOptions">Train
       Build Options</a> "Build loco consist from single locos if needed" for more details. The program
      when building the consist can adjust the number of locos based on Horsepower per Ton (HPT) and
-     the route's grades.
+     the route's grades.</li>
     <li>New feature, you can now adjust all of your train departure times by a selected number
      of hours. See under "Tools" in the "Trains" window "Change Train Departure Times".</li>
     <li>New feature, you can now edit or view two locations at the same time.</li>
@@ -513,8 +514,8 @@ to improve reliability of sensor readout.
     <li>Fixed a bug in train copy where the train build options weren't copied to the new
      train.</li>
     <li>Fixed a bug in the router when the option to return a car to staging is enabled, and
-     the car get's a custom load from staging.</li>
-    <p>   
+     the car gets a custom load from staging.</li>
+
 	<!-- from 3.7.2 note -->   
     <li>Made some improvements to car routing and build report messages.</li>
     <li>You can now configure the build report to always preview, saves paper! See Build Report
@@ -523,9 +524,9 @@ to improve reliability of sensor readout.
      by the order that you add cars to the kernel.</li>
     <li>New checkbox option for the Cars window. Under Tools in the Cars window are two new
      options, one shows the checkboxes, and the other resets the ones showing in the window. Useful
-     if your doing an audit of your cars using a PC or portable device. Great for those that don't
+     if you're doing an audit of your cars using a PC or portable device. Great for those that don't
      like to waste paper!</li>
-	 <p>  
+
 	<!-- from 3.7.4 note -->
     <li>Better routing out of staging for cars with custom loads or final destinations. The
      latest changes should reduce the chances of a build failure for cars in staging that used the
@@ -540,7 +541,7 @@ to improve reliability of sensor readout.
     <li>Improved the tabular format with regards to rolling stock locations and track names.</li>
     <li>Fixed a problem where non lead cars in a kernel didn't have the correct final
      destination shown in the Cars window.</li>
-	 <p>  	 
+
 	<!-- from 3.7.7 note -->
     <li>New manifest and switch list format. Two columns, one for pulls and one for spots, with
      track names centered in each column.</li>
@@ -691,11 +692,13 @@ This is in addition to the existing "Open Power Controller" option.
 
 <!-- from 3.7.1 note -->
 
-<p>Nigel Cliffe and Dave Heap fixed problems with international characters in four Python scripts:
-AAR105.py<br>
-RailDriver.py<br>
-RocoCrane46902.py<br>
-Zimo_pseudo_programmer.py
+<p>Nigel Cliffe and Dave Heap fixed problems with international characters in four Python scripts:</p>
+<ul>
+    <li>AAR105.py</li>
+    <li>RailDriver.py</li>
+    <li>RocoCrane46902.py</li>
+    <li>Zimo_pseudo_programmer.py</li>
+</ul>
 
 <p>Added sample scripts:
 <ul>
@@ -762,7 +765,7 @@ problems involving CV reading, writing, storage or anything else, please let us 
     <li>Can now add "functionlabels" and "soundlabels" to individual models in the decoder definition files. These override corresponding labels at the family level.</li>
     <li>Added a "soundlabel" element to the pane programmer, allowing sound labels to be displayed on panes.</li>
     <li><i>(A "functionlabel" pane element and user-editable sound labels are planned for the next release.)</i></li>
-	<p></p>	
+
 	<!-- from 3.7.5 note -->
 	<li>Added a new
       <a href="/help/en/html/apps/DecoderPro/Programmer.shtml#grid" target="_blank">Grid Layout</a>
@@ -774,7 +777,7 @@ problems involving CV reading, writing, storage or anything else, please let us 
     <li>Pane elements "label", "soundlabel", "row", "column", "grid" and "griditem" now support qualifiers.</li>
     <li>Added a "group" pane element that can be used to apply the same qualifier to multiple pane elements.</li>
     <li>The "pane" and "group" elements now support "include" and "exclude" attributes for decoder/family-specific configuration.</li>
-	<p></p>
+
 	<!-- from 3.7.7 note -->
     <li>Fixed an issue that caused a hang when reading all sheets of an ESU decoder with some systems.</li>
     <li>Fixed an issue with inherited attributes in
@@ -809,16 +812,16 @@ this, see the
 
 <p>Fix problem with local move of utility car. (r26308)
 
-<p>User request to only show trains that can service a location (r26309)
+<p>User request to only show trains that can service a location. (r26309)
 
-<p>Fix car type string length calculation (r26329)
+<p>Fix car type string length calculation. (r26329)
 
 <p>Put the creation of each block xml element into a try/catch.  
 There is an issue where the block data isn't being saved but at this stage I have no idea what the trigger is and have had no log files from a user to help narrow it down or replicate it.  
 Doing this will at least prevent all block data from being lost during a save. (r26333)
 
 <p>Ensure that the file paths are correctly loaded from the configuration file, and that the user files (preferences:) path is loaded before other paths.
-Ensure that the scripts path ends with a file separator character.(r26344)
+Ensure that the scripts path ends with a file separator character. (r26344)
 
 <p>Minor improvement in how the program determines maximum location and track names for manifests and switch lists. (r26347)
 

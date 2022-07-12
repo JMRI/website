@@ -31,20 +31,19 @@
 <br><b>This is a draft release note only; the download links do not yet work</b>
  -->
 
-JMRI 3.10.1 includes a bug fix for JMRI Production Release 3.10.
+<p>JMRI 3.10.1 includes a bug fix for JMRI Production Release 3.10.</p>
 
 <h3>Notes:</h3>
 
-<p><b>
+<p><strong>
 JMRI is now only available under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
-see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
+see our <a href="/copyright.shtml">copyright and licensing page</a>.</strong></p>
 
 <p><strong>This is the last JMRI production or test version that will work with Java 1.6.</strong><br>  
 To use any later JMRI test or production releases, you'll have to 
 <a href="https://java.com/en/download/">update the Java on your computer</a> to Java 1.8 or later.
-This version has been tested on Java 1.8, so you can do the Java update now if you want to.
+This version has been tested on Java 1.8, so you can do the Java update now if you want to.</p>
 
 <a id="warnings" name="warnings"></a>
 <h3>Warnings:</h3>
@@ -62,7 +61,7 @@ webThrottle, <a href="http://www.withrottle.com">WiThrottle</a> for iOS, or
 after JMRI 3.12 (July 2015). This doesn't affect JMRI users, but if you have your own 
 code that uses JMRI, please 
 <a href="http://sourceforge.net/p/jmri/code/HEAD/tree/trunk/jmri/java/src/jmri/InstanceManager.java">take a look at the code</a>
-and make any necessary changes.
+and make any necessary changes.</p>
 
 
    <h3>Known problems with this release</h3>
@@ -75,21 +74,25 @@ and make any necessary changes.
    <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.dmg/download</a></p>
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.dmg/download</a></li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.exe/download</a></p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.exe/download</a></li>
 
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.tgz/download</a></p>
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.10.1-r28327.tgz/download</a></li>
+    </ul>
+</div>
 
 <h3>Changes since production release 3.10</h3>
 
 <h4>Hardware / Systems</h4>
 
-JMRI 3.10 had a problem programming CVs greater than 127 using the MRC command stations.
-That problem is fixed in this version. (SVN revision r28276)
+<p>JMRI 3.10 had a problem programming CVs greater than 127 using the MRC command stations.
+That problem is fixed in this version. (SVN revision r28276)</p>
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->

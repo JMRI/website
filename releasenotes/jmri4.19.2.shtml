@@ -125,15 +125,13 @@ from
     them.  Hint:  Use the Logix table Select >> Browse feature to get the current contents
     before deleting them.
     </li>
-
 </ul>
-
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.18.shtml#warnings">JMRI 4.18 release note</a> for more warnings predating the 4.19 development series,
-including pointers to various migration issues.
-These may be relevant to you if you're updating from an earlier version.
+<p>See the <a href="jmri4.18.shtml#warnings">JMRI 4.18 release note</a> for more warnings predating the 4.19
+development series, including pointers to various migration issues.
+These may be relevant to you if you're updating from an earlier version.</p>
 
 <ul>
 <li><span class="since">Since <a href="jmri4.19.1.shtml">JMRI 4.19.1</a></span>
@@ -168,7 +166,6 @@ These may be relevant to you if you're updating from an earlier version.
         in script or Java code you've written, please
         switch to the new names.
     </li>
-
 
 <li><span class="since">Since <a href="jmri4.17.5.shtml">JMRI 4.17.5</a></span>
         JMRI's scripting support now defaults to the UTF-8 character encoding for all
@@ -214,13 +211,13 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
-check the files against the checksums shown below.
-
- <ul>
+check the files against the checksums shown below.</p>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.19.2/JMRI.4.19.2+R846b684.dmg">https://github.com/JMRI/JMRI/releases/download/v4.19.2/JMRI.4.19.2+R846b684.dmg</a><br/>
   sha256: 3595d0d0f454a7dddc773cbad5467566e0b7efdd92653c651f8a469849dd6f16 </li>
@@ -233,7 +230,7 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.19.2/JMRI.4.19.2+R846b684.tgz">https://github.com/JMRI/JMRI/releases/download/v4.19.2/JMRI.4.19.2+R846b684.tgz</a><br/>
    sha256: c442ab5cb146d8acdcf35dcbe0df0ae93b3e25160c26cc0c0580fa23d3f3556c</li>
 </ul>
-
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
