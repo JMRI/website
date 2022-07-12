@@ -22,61 +22,63 @@
       </h2>
 
 
-With the <a href="jmri2.7.5.shtml">2.7.5 release of JMRI/DecoderPro</a>, 
+<p>With the <a href="jmri2.7.5.shtml">2.7.5 release of JMRI/DecoderPro</a>,
 we are introducing the new Tsunami consolidated steam definition file.  
 This new file combines all the different "retail" Tsunami steam models 
 into one file (see note below).  
 In addition, the models are now broken down into the TSU-750 series 
 and TSU-1000 series so that the definitions presented in DecoderPro 
-more closely match the exact decoder you're using.
+more closely match the exact decoder you're using.</p>
 
 <p>
 The existing DecoderPro decoder model names simply don't take into 
 account these different series of decoders, so in order to do this, 
 it was necessary to create new (and additional) names for the decoder models.  
-The new descriptive names should aid in selecting the proper decoder.
+The new descriptive names should aid in selecting the proper decoder.</p>
 
 <p>
 Because of this, it will be necessary to update your 
 existing Tsunami steam roster files to the new naming convention.  
 This tool has been created to aid that task.  
 Note that this is a one-time task; any future roster entries made 
-will be using the new names from now on.
+will be using the new names from now on.</p>
 
 
 <h2>Procedure</h2>
 
 <ul>
 <li>
-Select "Panels" from the menu bar, then "Run Script..."
+Select "Panels" from the menu bar, then "Run Script..."</li>
 
 <li>
 You'll be presented with a list of script files.  
-Choose "RosterMigrate.py" and click "Open".
+Choose "RosterMigrate.py" and click "Open".</li>
 
 <li>
 The small box that pops up will allow you to cycle through your
 existing Tsunami steam roster entries one at a time.  
 Each roster entry will display the current decoder model name it 
-is associated with.  
+is associated with.<br>
 From the drop-down list, 
 select the new model name that corresponds to the decoder actually
 installed in your locomotive, then click "OK".
 (Tip: if your decoder has two lighting outputs, it is a TSU-750, 
-if it has four lighting outputs, it is a TSU-1000)
+if it has four lighting outputs, it is a TSU-1000)</li>
 
 <li>
 The tool will update the roster file and update the roster index with 
-the new information.
+the new information.</li>
 
 <li>
 Simply go through each roster entry in turn, 
 making your selection and clicking through.  
-Even a large roster shouldn't take more than a few minutes to convert.
+Even a large roster shouldn't take more than a few minutes to convert.</li>
+
 <li>
 Note: If you aren't sure about the proper model name for a particular decoder, just click "Cancel".  You can check on it, then run the script later to update that roster file.
 </ul>
-That's it.  The next time you select your locomotive, it will display with the updated naming.
+
+<p>That's it.  The next time you select your locomotive, it will display with the updated naming.</p>
 
 <p>
 Note about retail Tsunamis: 
@@ -87,7 +89,7 @@ However, since Athearn does not have a separate DecoderPro definition
 handle any Athearn Tsunami steam decoder reasonably well as long as 
 the user understands that some features may not apply, and others 
 (such as the whistle lists) will not reflect what is in his model.
-Bachmann OEM decoders have their own definition file in DecoderPro.
+Bachmann OEM decoders have their own definition file in DecoderPro.</p>
 
 <!--#include virtual="/Footer.shtml" -->
 

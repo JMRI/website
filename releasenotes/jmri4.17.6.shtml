@@ -217,12 +217,12 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
-check the files against the checksums shown below.
-
+check the files against the checksums shown below.</p>
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.17.6/JMRI.4.17.6+Rc861f38.dmg">https://github.com/JMRI/JMRI/releases/download/v4.17.6/JMRI.4.17.6+Rc861f38.dmg</a><br/>
@@ -236,7 +236,7 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.17.6/JMRI.4.17.6+Rc861f38.tgz">https://github.com/JMRI/JMRI/releases/download/v4.17.6/JMRI.4.17.6+Rc861f38.tgz</a><br/>
    sha256: e293859e9b3096cb70265e75940f9e581c08a6120805b69f404dcfa4018ef508</li>
 </ul>
-
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
@@ -252,8 +252,8 @@ These are development files, and might not be working at any particular time.</p
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.17.5.shtml">Test Release 4.17.5</a>:</h2>
  
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.17.6+is%3Amerged">list of included commits</a> is available from our
-<a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
+<p>The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.17.6+is%3Amerged">list of included
+commits</a> is available from our <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.</p>
 
 
     <h3>Hardware Support</h3>
@@ -289,7 +289,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.17.6+i
         </ul>
 
     <h3>Web Access</h3>
-        <a id="WA" name="WA"/>
+        <a id="WA" name="WA">
         <ul>
             <li>Certain Tables menu items now support changing state by clicking on state in list</li>
         </ul>

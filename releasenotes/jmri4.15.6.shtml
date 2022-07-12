@@ -115,7 +115,7 @@ from
             <li>If you have that name in a panel file, an error will be 
                 logged and the panel file won't load. You'll have to 
                 remove it from he file or rename it in the file
-                before loading it.
+                before loading it.</li>
         </ul>
         JMRI needs to start enforcing this in preparation for some
         future code that will appear later this year.
@@ -124,8 +124,8 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
-These may be relevant to you if you're updating from an earlier version.
+<p>See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15
+development series. These may be relevant to you if you're updating from an earlier version.</p>
 
 <ul>
 <li><span class="since">Since <a href="jmri4.15.5.shtml">JMRI 4.15.5</a></span>
@@ -155,7 +155,7 @@ These may be relevant to you if you're updating from an earlier version.
         changes will need to be made to either the actual decoder address or the panel.
         If help is required, ask on the
         <a href="https://groups.io/g/jmriusers/" target="_blank">
-        jmriusers</a> group.
+        jmriusers</a> group.</li>
 
 <li><span class="since">Since <a href="jmri4.15.3.shtml">JMRI 4.15.3</a></span>
         The prefix that identifies a layout connection should be a single letter, like "N" or "L",
@@ -182,18 +182,18 @@ These may be relevant to you if you're updating from an earlier version.
     </ul>
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
-  
+</li>
 </ul>
     
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
-check the files against the checksums shown below.
-
+check the files against the checksums shown below.</p>
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.dmg">https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.dmg</a><br/>
@@ -207,7 +207,7 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.tgz">https://github.com/JMRI/JMRI/releases/download/v4.15.6/JMRI.4.15.6+Red1ceb2.tgz</a><br/>
    sha256: b2e8c106f0945de6f912234c0fb16e17834ad50f69f1484d06063bed0a86ea67</li>
 </ul>
-
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the

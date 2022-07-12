@@ -45,32 +45,31 @@
 
 <p>The method for configuring the C/MRI protocol has changed since version 1.4.  If you use the C/MRI protocol, you will have to reconfigure your preferences the first time you run this version.
 
-
 <h3>Download links:</h3>
-
-
 <p>Please use these links for downloading, including the "?download" at the end. That adds to SourceForge's advertising statistics, which makes them happy to host our stuff.
-
-<p>Mac OS X:
-     <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.hqx?download">http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.hqx?download</a>
-
-<p>Windows:
-     <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.exe?download">http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.exe?download</a>
-
-<p>Linux:
-     <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.tgz?download">http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.tgz?download</a>
-
-<p>MacOS 8/9 "Classic":
-     <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.Classic.hqx?download">http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.Classic.hqx?download</a>
-
-<p>OS/2:
-     <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.zip?download">http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.zip?download</a>
-
+<div class="wide">
+    <ul>
+        <li>Mac OS X:
+             <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.hqx?download">http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.hqx?download</a>
+        </li>
+        <li>Windows:
+             <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.exe?download">http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.exe?download</a>
+        </li>
+        <li>Linux:
+             <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.tgz?download">http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.tgz?download</a>
+        </li>
+        <li>MacOS 8/9 "Classic":
+             <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.Classic.hqx?download">http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.Classic.hqx?download</a>
+        </li>
+        <li>OS/2:
+             <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.zip?download">http://prdownloads.sourceforge.net/jmri/JMRI.1.6.1.zip?download</a>
+        </li>
+    </ul>
+</div>
 
 <h3><a id="updates"></a>Changes since test version 1.6:</h3>
 
-
-<p>Fixed problem where the program wouldn't start up if there was no configuration file, or would start up in an inconsistent state if the configured port could not be found (Dave Duchamp, Bob Jacobsen)
+        <p>Fixed problem where the program wouldn't start up if there was no configuration file, or would start up in an inconsistent state if the configured port could not be found (Dave Duchamp, Bob Jacobsen)
 
 <p>Allow XML files to be read even if they don't validate against the enclosed (shipped with the code) version of the DTDs.  This allows more robust forward-compatibility.  Also, update to 1.7.2 DTDs to help with this.
 

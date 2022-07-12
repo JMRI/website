@@ -162,7 +162,7 @@ These may be relevant to you if you're updating from an earlier version.
     and added to jmri.conf using the
     <em><a href="https://www.jmri.org/help/en/html/doc/Technical/StartUpScripts.shtml">--cp:a=path/to/javacsv.jar</a></em>
     parameter.</li>
-</li>
+
 <li><span class="since">Since <a href="jmri4.19.1.shtml">JMRI 4.19.1</a></span>
         JMRI now enforces the standard form of system names,
         where the system is denoted by a single letter or a letter plus digits.
@@ -240,16 +240,16 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
-check the files against the checksums shown below.
-
+check the files against the checksums shown below.</p>
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.19.7/JMRI.4.19.7+R94cd902a6.dmg">https://github.com/JMRI/JMRI/releases/download/v4.19.7/JMRI.4.19.7+R94cd902a6.dmg</a><br/>
-  sha256: 972db5ead23b4d885513f7fa637ecbda5ebe2fc91c802013f4f71eb6be3162f6 </li>
+  sha256: 972db5ead23b4d885513f7fa637ecbda5ebe2fc91c802013f4f71eb6be3162f6</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.19.7/JMRI.4.19.7+R94cd902a6.exe">https://github.com/JMRI/JMRI/releases/download/v4.19.7/JMRI.4.19.7+R94cd902a6.exe</a><br/>
@@ -259,7 +259,7 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.19.7/JMRI.4.19.7+R94cd902a6.tgz">https://github.com/JMRI/JMRI/releases/download/v4.19.7/JMRI.4.19.7+R94cd902a6.tgz</a><br/>
    sha256: f05a855e40a36cb982211aee442c97df371f3d6cfa2f4c55c535bef71eda5a33</li>
 </ul>
-
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the

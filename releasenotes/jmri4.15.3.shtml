@@ -68,7 +68,6 @@ see our
     carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
     before updating to this release.
 
-
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
@@ -110,30 +109,31 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
-These may be relevant to you if you're updating from an earlier version.
+<p>See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15
+development series. These may be relevant to you if you're updating from an earlier version.</p>
 
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
-    There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
+There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:</p>
     <ul>
-        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
-        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
-        <li>Do not open the SPROG console window</li><br>
-        <li>Disable power conversion (CV 29) in all locos</li><br>
-        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
+        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li>
+        <li>Do not open the SPROG console window</li>
+        <li>Disable power conversion (CV 29) in all locos</li>
+        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
     </ul>
-    Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
-    open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
+    <p>Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box
+    will open to inform the user of this. The track power will be turned off and must be turned on again
+    using the power control.</p>
       
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
-check the files against the checksums shown below.
-
+check the files against the checksums shown below.</p>
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R7949343.dmg">https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R7949343.dmg</a><br/>
@@ -147,7 +147,7 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R7949343.tgz">https://github.com/JMRI/JMRI/releases/download/v4.15.3/JMRI.4.15.3+R7949343.tgz</a><br/>
    sha256: 2bee2360617c48d80187ed53bdf3fb45bb7fd7f265efa1d142f5fecb71fb629b</li>
 </ul>
-
+</div>
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -179,7 +179,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
 
     <h3>Turnouts, Lights, Sensors and other elements</h3>
-        <a id="TLae" name="TLae"/>
+        <a id="TLae" name="TLae"></a>
         <ul>
             <li>Fixed an issue where Reporters with a system letter of M
                 were erroneously tagged as 
@@ -190,7 +190,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 	</ul>
 
     <h3>Scripting</h3>
-        <a id="Scripting" name="Scripting"/>
+        <a id="Scripting" name="Scripting"></a>
         <ul>
             <li>Geoff Bunza provided sample scripts supporting bulk 
             <a href="http://jmri.org/jython/serialinput/Sensor_Channel_To_JMRI/Sensor_Channels_Readme.md">sensor channels</a>
@@ -201,7 +201,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Signals</h3>
-        <a id="Signals" name="Signals"/>
+        <a id="Signals" name="Signals"></a>
         <ul>
             <li></li>
         </ul>
@@ -216,7 +216,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
     <h3>Timetable</h3>
-        <a id="Timetable" name="Timetable"/>
+        <a id="Timetable" name="Timetable"></a>
         <ul>
             <li>New menu item: <strong>Export CSV File</strong> &mdash; Create a
             CSV file that can be imported into a spreadsheet program.  This can
@@ -227,7 +227,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
    <h3>Virtual Sound Decoder</h3>
-        <a id="VSD" name="VSD"/>
+        <a id="VSD" name="VSD"></a>
         <ul>
             <li>Klaus Killinger added functionality to handle a throttle direction change at speed &gt; 0:
                 slow down to 0, change the direction, ramp-up to the old speed.</li>
@@ -235,7 +235,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"/>
+        <a id="Misc" name="Misc"></a>
         <ul>
             <li>We're building the release note a
                 <a href="/help/en/html/doc/Technical/gitdeveloper.shtml">different way</a>

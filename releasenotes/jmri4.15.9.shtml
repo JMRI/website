@@ -92,17 +92,15 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-<li>None</li>
+    <li>None</li>
 </ul>
-
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15 development series.
-These may be relevant to you if you're updating from an earlier version.
+<p>See the <a href="jmri4.14.shtml#warnings">JMRI 4.14 release note</a> for more warnings predating the 4.15
+development series. These may be relevant to you if you're updating from an earlier version.</p>
 
 <ul>
-
 <li><span class="since">Since <a href="jmri4.15.7.shtml">JMRI 4.15.7</a></span>
     The version of the JSON protocol used for JMRI web access has been bumped to version 5.0 due to backwards incompatible
     changes to make different JSON objects more internally consistent and to accomodate the ability to remove some
@@ -193,17 +191,17 @@ These may be relevant to you if you're updating from an earlier version.
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
 
-</ul>   
+</ul>
 
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
-check the files against the checksums shown below.
-
+check the files against the checksums shown below.</p>
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.15.9/JMRI.4.15.9+Re0a9348.dmg">https://github.com/JMRI/JMRI/releases/download/v4.15.9/JMRI.4.15.9+Re0a9348.dmg</a><br/>
@@ -217,7 +215,7 @@ check the files against the checksums shown below.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.15.9/JMRI.4.15.9+Re0a9348.tgz">https://github.com/JMRI/JMRI/releases/download/v4.15.9/JMRI.4.15.9+Re0a9348.tgz</a><br/>
    sha256: e2ccf6ed60c4605f7c167d4ff9ff46505c448074ede25f1169b6d16113631a8f</li>
 </ul>
- 
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
@@ -233,8 +231,9 @@ These are development files, and might not be working at any particular time.</p
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri4.15.8.shtml">Test release 4.15.8</a>:</h2>
  
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.15.9+is%3Amerged">list of included commits</a> is available from our
-<a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
+<p>The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A4.15.9+is%3Amerged">list of included
+        commits</a> is available from our
+<a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.</p>
 
     <h3>Hardware Support</h3>
         <h4>C/MRI</h4>
