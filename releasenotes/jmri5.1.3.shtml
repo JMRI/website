@@ -4,10 +4,10 @@
 <head>
  <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
-    JMRI: Release Notes for 5.1.2
+    JMRI: Release Notes for 5.1.3
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 5.1.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 5.1.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
  <!--#include virtual="/Style.shtml" -->
 </head>
@@ -19,16 +19,14 @@
     <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 5.1.2 release
+      Release Notes for JMRI 5.1.3 release
       </h1>
 
-    <p>Date: July 10, 2022</p>
-    <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 5.1.2 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: MMM DD, 2022</p>
+    <p>From: (release pumpkin)</p>
+    <p>Subject: Test Release 5.1.3 of JMRI/DecoderPro is available for download.</p>
 
-<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h2>Notes:</h2>
 
@@ -95,16 +93,12 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>New problems with this release</h3>
 <ul>
-    <li><span class="since">Since <a href="jmri4.99.9.shtml">JMRI 4.99.9</a></span>
-        There's a problem adding NCE AIU sensors using the NS50:1 format.
-        As a workaround, you can add them with the full numeric address:  NS123.
-        The fix will be available in JMRI 5.1.3
-        </li>
+    <li>None yet</li>
 </ul>
 <!--
 If any of those affect you, please either
 wait for
-<a href="jmri5.1.3.shtml">JMRI 5.1.3</a>, due out shortly after this one,
+<a href="jmri5.1.4.shtml">JMRI 5.1.4</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
@@ -115,9 +109,16 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>
-        None yet
-    </li>
+
+    <!-- While this release is in development, the     -->
+    <!-- list of new warnings is kept in               -->
+    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
+    <!-- in the JMRI/JMRI repository. Please edit      -->
+    <!-- there.  Changes to this file won't be merged. -->
+
+    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
+
+
 </ul>
 
 
@@ -147,85 +148,47 @@ before installing this test release.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!--
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.1.2/JMRI.5.1.2+Ra3b171c8ba.dmg">https://github.com/JMRI/JMRI/releases/download/v5.1.2/JMRI.5.1.2+Ra3b171c8ba.dmg</a><br/>
-  sha256: 7f0bd10626eee2a98c605e7db6b1a8fab88039dbc47abd85fc1d2571420714b0 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.dmg</a><br/>
+  sha256: bf461db161a478cc11a6e0107bfd1139f338ebadd19c68d81946659827856474 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.1.2/JMRI.5.1.2+Ra3b171c8ba.exe">https://github.com/JMRI/JMRI/releases/download/v5.1.2/JMRI.5.1.2+Ra3b171c8ba.exe</a><br/>
-   sha256: 6aa5b39c01dfcba9db9f6796478f1d36c2a272a426820071f11a18a64810f045</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.exe">https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.exe</a><br/>
+   sha256: 03f795a562c3aee91935be9a3cfbf6c60ae2fd831a25cf87ea7c8769b4311683</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.1.2/JMRI.5.1.2+Ra3b171c8ba.tgz">https://github.com/JMRI/JMRI/releases/download/v5.1.2/JMRI.5.1.2+Ra3b171c8ba.tgz</a><br/>
-   sha256: b9926ff5727f6225eb90f6e54d098e53c20be822f7c4671c3a82a779586e78f8</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.tgz</a><br/>
+   sha256: 7bb1fa846f8bdc115bda8d0d4ec6b67b816d4ee6cecc27cdbe89a0cc571c2e7e</li>
 </ul>
 </div>
+ -->
 
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.1.1/">CI project page</a>.
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.1.2/">CI project page</a>.
  -->
 
-<!--
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
 
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri5.1.1.shtml">Test Release 5.1.1</a>:</h2>
+<h2>Changes since <a href="jmri5.1.2.shtml">Test Release 5.1.2</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.1.2+is%3Amerged">list of included changes</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.1.3+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
+    <!-- While this release is in development, the     -->
+    <!-- new release note items are kept in            -->
+    <!-- help/en/releasenotes/current-draft-note.shtml -->
+    <!-- in the JMRI/JMRI repository. Please edit      -->
+    <!-- there.  Changes to this file won't be merged. -->
 
-    <h3>Hardware Support</h3>
-
-        <h4>MQTT</h4>
-            <ul>
-                <li>Rewrite and expansion of documentation.</li>
-                <li>The default value of the channel is now "", the null string.
-                    The channel name is prefixed to all of JMRI's publish and subscribe
-                    operations.  The previous default was "/trains/"
-            </ul>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
-            <ul>
-                <li>Fix a problem with the OpenLCB hub at high data rates. Overlapping
-                    messages and replies would be echoed out incorrectly.
-                </li>
-            </ul>
-
-    <h3>LogixNG</h3>
-        <a id="LogixNG" name="LogixNG"></a>
-        <ul>
-          <li>The action <i>Listen On Beans</i> now sorts the named beans when selecting a bean to listen on.</li>
-        </ul>
-
-    <h3>Operations</h3>
-        <a id="Operations" name="Operations"></a>
-        <ul>
-  <li>Enhanced passenger blocking. Negative blocking numbers place passenger cars in front of
-    freight cars.</li>
-  <li>Added hazardous classification to car loads. Now a car can be classified as hazardous
-    depending on the car's load.</li>
-  <li>Improved car blocking when car is hazardous. The program will attempt to place
-    non-hazardous cars in front of hazardous cars.</li>
-  <li>New automation feature. Users can now select an automation to run at startup. See under
-    Tools in the operations Automations window.</li>
-  <li>Improved Manifest and switch list formating when using tabular and load set out and pick
-    up messages.</li>
-</ul>
-
-    <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"></a>
-        <ul>
-            <li>Reduce the verbosity of MDNS logging.</li>
-        </ul>
-
+    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
