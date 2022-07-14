@@ -12,7 +12,7 @@
     <!--#include virtual="/Header.shtml" -->
 
 <div id="mBody">
-<!--#include virtual="/Sidebar.shtml" -->
+<!--#include virtual="Sidebar.shtml" -->
 
  <hr class="hide">
  <div id="mainContent">
@@ -135,7 +135,6 @@ as the local Java install will be overwritten during the update process.</p>
     </ul>
     <p>
     You're all set to start JMRI using that local version of Java!</p>
-
 
    <hr class="hide">
    <!--#include virtual="/Footer.shtml" -->

@@ -1,0 +1,28 @@
+<!-- Sidebar2021.shtml -->
+<!-- This is the 'responsive' common sidebar definition for main (root) pages, copy from /Sidebar to fix js path -->
+
+	  <hr class="hide">
+	  <div class="card-1" id="side" >
+      <!-- Block of text on left side of page -->
+      <div id="close-side" class="floatRight button fa fa-close" style="display:none;" onclick="side_close()"></div>
+	  <div style="text-align: center;">JMRI&reg; is...</div>
+
+	  <dl>
+        <!--#include virtual="./SidebarApps.shtml" -->
+
+	    <!--#include virtual="./help/en/parts/SidebarToolsNew.shtml" -->
+
+        <!--#include virtual="./help/en/parts/SidebarLayoutAutomationNew.shtml" -->
+
+	    <!--#include virtual="./help/en/parts/SidebarSupportedHardwareNew.shtml" -->
+
+	    <!--#include virtual="./help/en/parts/SidebarInstallNew.shtml" -->
+
+	  </dl>
+
+      <!--#include virtual="./help/en/parts/SidebarTail.shtml" -->
+      </div> <!-- closes #side -->
+
+    <!-- button is in /Header -->
+    <script src="/js/side.js"></script>
+	<!-- /Sidebar2021.shtml -->
