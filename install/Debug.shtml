@@ -29,11 +29,11 @@ JMRI: Debugging Your Installation
 
 	<p> Start by making sure you have an appropriate version of Java on
 	your system by typing</p>
-
 	<p class=example> java -version </p>
+	<p>at a command prompt and looking the message that produces.</p>
 
-	at a command prompt and looking the message that produces.</p>
-	<p>JMRI&reg; version 4.2 requires Java 1.8.<br>
+	<p>JMRI&reg; version 5.x requires Java 11.<br>
+    Version 4.2 requires Java 1.8.<br>
 	Version 3.10.1 requires Java 1.6 or later.<br>
 	Version 2.14.1 requires Java 1.5 (or 1.6 if you wish for drag &amp; drop).<br>
 	Version 2.12 requires Java 1.5 or later.
@@ -45,19 +45,19 @@ JMRI: Debugging Your Installation
     <a href="Linux.html">Linux</a>,
     <a href="WindowsNew.shtml">Windows</a> computer for advice on how to fix this.
 	
-    <h2>Step 2: Does the program start? </h2>
+    <h2>Step 2: Does the program start?</h2>
 
     Try to start DecoderPro.  (The method to do this
     depends on whether you are using a
     <a href="MacOSX.html">Mac OS X</a>,
     <a href="Linux.html">Linux</a>,
     <a href="WindowsNew.shtml">Windows</a> computer; see the relevant page)
+
     <p>
-    
     This tests whether the basic installations of Java and JMRI are
     OK.  If the program doesn't start up and run at least as far 
-    as producing it's title screen and menus, there's something
-    wrong with either the JMRI installion, or perhaps with the Java
+    as producing its title screen and menus, there's something
+    wrong with either the JMRI installation, or perhaps with the Java
     installation.
     <p>
     In that case, look for console messages that might describe what went
@@ -74,7 +74,7 @@ JMRI: Debugging Your Installation
     somebody will help you figure out what went wrong.
     
     <h2>Step 3: Are the Java communications libraries present?</h2>
-    
+    <p>
     Once the program is running, pull down the 'Edit' menu and select the
     'Preferences ...' item.  This opens the preferences panel.  
     Select the proper protocol for your layout.
@@ -98,49 +98,49 @@ JMRI: Debugging Your Installation
     <a href="MacOSX.html">Mac OS X</a>,
     <a href="Linux.html">Linux</a>,
     <a href="WindowsNew.shtml">Windows</a> computer.
-    
-    
+
     <h2>Step 4: Is the communications port configured right?</h2>
-    
+    <p>
     For most protocols, you have to configure the baud rate, and perhaps
     other options.  These have to be set consistently with the layout
-    hardware for communications to be possible.
+    hardware for communications to be possible.</p>
     
     <h2>Step 5: Can the program talk to the layout?</h2>
-    
+    <p>
     The method to check whether the program can talk to the
     hardware of your layout depends a little bit on what you 
     have installed.  Basically, you want to command the system
     to do something that you can see.  See if each of the 
-    following works:
+    following works:</p>
     
 	    <ul>
 	    <li>With most DCC systems, you can use the "Power Control"
 	    in the "Tools" menu to turn layout power on and off.  
 	    By doing that and seeing if the layout actually does as
 	    commanded (e.g. locomotive lights go on and off), you
-	    can check that the communication is working.  
-	    <p>If this tool
+	    can check that the communication is working.<br>
+	    If this tool
 	    is unavailable (e.g. grayed-out in the menu), your 
 	    DCC system doesn't have this option, and you should try something
-	    else.
+        else.</li>
 	    <li>If you have turnouts connected to accessory decoders, 
 	    you can command them to flip via the "Turnout Control"
-	    in the "Tools Menu".
+        in the "Tools Menu".</li>
 	    <li>If you're using a C/MRI system, all of the LEDs on the 
 	    controller cards (SMINI, etc) should be flashing rapidly once
 	    the program has started polling, which happens
 	    when you 
 	    <a href="../help/en/package/jmri/jmrit/beantable/SensorAddEdit.shtml">add a Sensor</a>
 	    via the <a href="../help/en/package/jmri/jmrit/beantable/SensorTable.shtml">Sensors Table</a>.
-		  </ul>
+        </li>
+		</ul>
 
     <h2>Step 6: Can decoders be programmed?</h2>
-
+    <p>
 	Typically, this is what people want to do first.  But
 	by going through the prior steps, we know that communications
 	between  the program and the layout are fine, and we're
-	just working through the last details now.
+	just working through the last details now.</p>
 	
 	<p>
 	To check this:
