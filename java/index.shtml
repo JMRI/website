@@ -12,16 +12,16 @@
     <!--#include virtual="/Header.shtml" -->
 
 <div id="mBody">
-<!--#include virtual="/Sidebar.shtml" -->
+<!--#include virtual="Sidebar.shtml" -->
 
  <hr class="hide">
  <div id="mainContent">
 
 <h1>Using Java 11 with JMRI</h1>
 
-We recommend using Java 11 with current JMRI versions.
+<p>We recommend using Java 11 with current JMRI versions.
 <em>JMRI needs a "Java Runtime Environment" (JRE),
-but will work fine with the larger "Java Development Kit" (JDK).</em>
+but will work fine with the larger "Java Development Kit" (JDK).</em></p>
 
 <p>Before getting a new version of Java, it is useful to check what version is currently installed
 on your computer.  On Windows, for example, open a "command" window by typing "Command prompt" into the search bar
@@ -41,8 +41,8 @@ problems.  On Windows, for example, you can:
 
 <h1>Getting Java 11</h1>
 
-Here are some places you can get Java 11.  Click on the links to
-go to the download page.
+<p>Here are some places you can get Java 11.  Click on the links to
+go to the download page.</p>
 
 <h2>For 32-bit or 64-bit computers:</h2>
 <ul>
@@ -93,17 +93,17 @@ go to the download page.
 
 <h2 id="local">Local install option:</h2>
 <span class="since">Since <a href="../releasenotes/jmri4.99.9.shtml">JMRI 4.99.9</a></span>
-Linux and macOS users can also install Java inside JMRI itself, instead of installing it centrally on their computer.
+<p>Linux and macOS users can also install Java inside JMRI itself, instead of installing it centrally on their computer.
 This can be useful if you need different Java versions for other programs, or if for some reason
-you can't do the central Java install or removal.
+you can't do the central Java install or removal.</p>
 <p>
 We recommend installing Java as described on the top half of this page when possible.
 The local-install described here is only for cases when that can't be done.
 Note that you'll need to repeat this process every time you update JMRI,
-as the local Java install will be overwritten during the update process.
+as the local Java install will be overwritten during the update process.</p>
 
     <h3>macOS</h3>
-    On macOS, the process is:
+    <p>On macOS, the process is:</p>
     <ul>
         <li>Install JMRI into the Applications folder in the usual way.</li>
         <li>Download <a href="https://cdn.azul.com/zulu/bin/zulu11.56.19-ca-jre11.0.15-macosx_x64.zip">this Java install file</a>.</li>
@@ -114,12 +114,12 @@ as the local Java install will be overwritten during the update process.
             Open the JMRI folder in the Applications folder (this is where you would normally launch JMRI)</li>
         <li>Drag the jre folder from the Downloads folder to the JMRI folder.</li>
     </ul>
-    When you're done, the JMRI folder contents should look like the picture to the right.
+    <p>When you're done, the JMRI folder contents should look like the picture to the right.</p>
     <p>
-    You're all set to start JMRI using that local version of Java!
+    You're all set to start JMRI using that local version of Java!</p>
 
     <h3>Linux</h3>
-    On Linux, the process is:
+    <p>On Linux, the process is:</p>
     <ul>
         <li>Download and place JMRI in the usual way.</li>
         <li><a href="Linux_selection.png"><img src="Linux_selection.png" width="400" height="127" alt="Linux selection page" class="floatRight"></a>
@@ -134,8 +134,7 @@ as the local Java install will be overwritten during the update process.
         <li>Move the new jre directory into the JMRI folder.</li>
     </ul>
     <p>
-    You're all set to start JMRI using that local version of Java!
-
+    You're all set to start JMRI using that local version of Java!</p>
 
    <hr class="hide">
    <!--#include virtual="/Footer.shtml" -->

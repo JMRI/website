@@ -97,8 +97,8 @@
         must select the one that starts with "cu", e.g.
         "/dev/cu.KeyUSA19181.1".</p>
 
-        <p>macOS drivers for FTDI chipsets are available at
-        <a href="http://www.ftdichip.com/Drivers/VCP.htm">http://www.ftdichip.com/Drivers/VCP.htm</a>.
+        <p>macOS drivers for FTDI chipsets are available from
+        <a href="http://www.ftdichip.com/Drivers/VCP.htm">FTDI</a>.
 
         <p>There's a macOS driver for USB-serial adapters
         based on the Prolific PL2303 chipset
@@ -245,12 +245,12 @@
        More on this on the <a href="../help/en/html/setup/index.shtml">JMRI Setup help page</a>.
        Go there next to complete your setup.</p>
 
-       <p> Mac OS uses names like "<tt>cu.SomeName</tt>" and
-       "<tt>tty.SomeName</tt>" for devices, including
+       <p> Mac OS uses names like "<code>cu.SomeName</code>" and
+       "<code>tty.SomeName</code>" for devices, including
        USB-attached devices like USB-serial converters,
        LocoBuffer-USBs and similar.  Generally, you'll want to use the
-       one that starts with "<tt>cu.</tt>" if both
-       <tt>cu.</tt> and <tt>tty.</tt> are present, but
+       one that starts with "<code>cu.</code>" if both
+       <code>cu.</code> and <code>tty.</code> are present, but
        see the specific installation page for your particular type of
        device.  Sometimes you can recognize your interface from the
        right-hand part of the name.  If not, the easiest way to find
@@ -337,7 +337,7 @@ Irrespective of DCC system, there are some basic rules for troubleshooting any U
                   bash /Volumes/Macintosh\ HD/Applications/JMRI/PanelPro.app/Contents/Resources/uninstall-java6.sh /Volumes/Macintosh\ HD
               </code>
           </div>
-          It can take up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.</p>
+          It can take up to a half hour to complete. Wait for the message <em>Removed Apple Java SE6</em>.
         </li>
       <li><em>El Capitan and later:</em> Restart your Mac.</li>
     </ol>

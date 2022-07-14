@@ -137,16 +137,16 @@ to the C/MRI system, and the final panel with the
 	first few indicators lit.</p>
 
 <a href="https://web.archive.org/web/20160422043535if_/http://spshastaroute.org/c/3.JPG">
-<img src="https://web.archive.org/web/20160422043535if_/http://spshastaroute.org/c/3.JPG" WIDTH="200" HEIGHT="150" alt="machine">
+<img src="https://web.archive.org/web/20160422043535if_/http://spshastaroute.org/c/3.JPG" alt="machine">
 </a>
 <a href="https://web.archive.org/web/20160422043931if_/http://spshastaroute.org/c/8.JPG">
-<img src="https://web.archive.org/web/20160422043931if_/http://spshastaroute.org/c/8.JPG" WIDTH="200" HEIGHT="150" alt="relays">
+<img src="https://web.archive.org/web/20160422043931if_/http://spshastaroute.org/c/8.JPG" alt="relays">
 </a>
 <a href="https://web.archive.org/web/20160422043902if_/http://spshastaroute.org/c/14.JPG">
-<img src="https://web.archive.org/web/20160422043902if_/http://spshastaroute.org/c/14.JPG" WIDTH="200" HEIGHT="150" alt="wiring">
+<img src="https://web.archive.org/web/20160422043902if_/http://spshastaroute.org/c/14.JPG" alt="wiring">
 </a>
 <a href="images/ShastaCTTMachine.jpg">
-<img src="images/ShastaCTTMachine.jpg" width="200" height="150" alt="Picture of real CTC machine"/></a>
+<img src="images/ShastaCTTMachine.jpg" alt="Picture of real CTC machine"/></a>
 
 <p>
 PanelPro is providing USS signal logic to drive the panel, and this
@@ -157,7 +157,7 @@ CTC panel is providing an excellent test-bed for that logic.  They're
 <a href="https://web.archive.org/web/20160421163757if_/http://spshastaroute.org/e/15.jpg">
 <img src="https://web.archive.org/web/20160421163757if_/http://spshastaroute.org/e/15.jpg" WIDTH="200" HEIGHT="150" class="floatRight" alt="staging"></a>
 
-Although we've not started on this yet,
+<p>Although we've not started on this yet,
 in the long run we'd like to have PanelPro
 provide assistance for the staging operations.
 The railroad has two loop staging yards,
@@ -170,7 +170,7 @@ throat turnouts and orients the power for entrance or exit in the loops.
 It also reads the track occupancy status and lights indicators on
 the panels to show which tracks are occupied.  All of this is
 done with a total of about 48 JMRI
-<a href="/help/en/html/tools/Routes.shtml">Routes</a>.
+<a href="/help/en/html/tools/Routes.shtml">Routes</a>.</p>
 
 <p>
 The next step, which we probably won't work on until
@@ -188,5 +188,6 @@ unprototypical workload to the operator.</p>
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->
+<script src="/js/main.js"></script>
 </body>
 </html>
