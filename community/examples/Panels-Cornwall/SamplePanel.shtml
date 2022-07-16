@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-   <meta name="Author" content="Bob Jacobsen">
-   <meta name="GENERATOR" content="Mozilla/4.75C-CCK-MCD {C-UDP; EBM-APPLE} (Macintosh; U; PPC) [Netscape]">
-   <meta name="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="author" content="Bob Jacobsen">
    <title>Creating a Sample Panel</title>
+    <meta name="keywords" content="JMRI PanelPro CMRI DCC Cornwall">
     <!--#include virtual="/Style.shtml" -->
 </head>
 
@@ -14,8 +12,9 @@
 <!--#include virtual="/Header.shtml" -->
 <div id="mBody">
     <div id="mainContent" class="no-sidebar">
+        <h1>JMRI: Creating the Cornwall Panel</h1>
 
-This page walks you through creating a simple control
+<p>This page walks you through creating a simple control
 panel for your own layout.  This example is based on the
 Lickdale panel for Nick Kulp's Cornwall Railroad,
 but you should be able to create a panel for your own layout
@@ -25,7 +24,7 @@ on how to you can
 to see what it's like, and on
 <a href="Cornwall.shtml">how his program was written</a>.
 
-<a id="background"><h2>Step 1: Create the background image</h2></a>
+<a id="background"></a><h2>Step 1: Create the background image</h2>
 
 The first step is to draw the background of the panel as a GIF file.
 Use your favorite
@@ -143,14 +142,14 @@ your layout.
 (You might need to make the window larger; you can also change the
 width of the columns by dragging at the top)
 <br>
-<a href="sampleimages/SensorTable.gif"><img src="sampleimages/SensorTable.gif"
+<a href="images/SensorTable.gif"><img src="images/SensorTable.gif"
 alt="Screen shot of sensor table" width="233" height="209"></a>
 <li>If you have a Digitrax or C/MRI system connected, your occupancy sensors will have
 already made entries the table for each sensor.  They'll appear
 in the "System Name" table with names like CS21 (Input 21 on the C/MRI system)
 or LS34 (Loconet Sensor 34).  You can fill in the "User Name" column with
 anything you want to display about this sensor later.  For example, the
-Cornwall Railroad gives geographic names to it's blocks, and includes them here.
+Cornwall Railroad gives geographic names to its blocks, and includes them here.
 <li>If you're not connected to a layout, or have other hardware,
 you'll have to manually define your sensors. Click "Add..." at the bottom
 of the Sensor Table window, which will pop a dialog box.  Enter a
@@ -186,9 +185,9 @@ if a block appears at both the right and left edges of the panel.
 If you don't like the default icons, you can change them.
 <ol>
 <li>Click "Edit icons..." next to "Add Sensor:".
-<li>An icon editor window will open. (See right)
-<a href="sampleimages/EditSensorIcon.gif"><img src="sampleimages/EditSensorIcon.gif"
-alt="Screen shot of sensor icon edit" width="198" height="366" class="floatRight"></a>
+<li>An icon editor window will open.<br>
+<a href="images/EditSensorIcon.gif"><img src="images/EditSensorIcon.gif"
+alt="Screen shot of sensor icon edit"></a>
 <li>There are four icons at the top which you can change, plus a window
 containing a tree of available icons.  (You can also add your own, see below)
 <li>To find the nice LED icons, click "resources", then "icons", then
@@ -319,9 +318,9 @@ There are "left" and "right" sets for the two basic types
 of turnouts used; they can be rotated via the popup menu to work with the various
 turnout orientations on the schematic.
 
-<hr>
+<p class="important">
 Below here is not revised yet!
-<hr>
+<p>
 
 <h2>Signaling</h2>
 Signaling is a vital part of the Cornwall Railroad's operations.  If JMRI
@@ -331,10 +330,10 @@ driving signals, and a new program for the dispatcher panel).
 
 <a id="definesignals"><h2>Step 7: Defining signals to the program</h2></a>
 
-<a href="sampleimages/SigTable.gif">
-<img src="sampleimages/SigTable.gif" class="floatRight" WIDTH="170" HEIGHT="314" ALT="Signal Table Figure"></a>
+<a href="images/SigTable.gif">
+<img src="images/SigTable.gif" alt="Signal Table Figure"></a>
 
-To define the signals to the program, you use the "Signal Table" from the tools
+To define the signals to the program, you use the "Signal Table" from the Tools
 menu.
 The program can't detect what signals you have installed on your layout,
 so you have to define them individually. To do this, start by opening the
@@ -347,11 +346,11 @@ type of signal you have, and then provide additional information:
       <dt>Triple Turnout
       <dd>This a signal head with red/yellow/green lights that
       are driven by DCC turnout outputs.  To configure one of these,
-      enter it's name (typically something like IH2, etc), and
+      enter its name (typically something like IH2, etc), and
       the names of the three turnouts that drive the lamps.
       <dt>SE8c 4 aspect
       <dd>This is one signal head driven by a Digitrax SE8c.  Enter
-      the the lower of the two "turnout address" that this head
+      the lower of the two "turnout address" that this head
       responds to.  For example, if it's the first head on the first
       card, you can control it by setting turnout 257 and 258 with
       your throttle.  Enter LT257 in the turnout control box.
@@ -425,8 +424,8 @@ new window that looks like this:
 <p>
 To define what you want done, you just enter values on this form.
 <ul>
-<li>In the top box, enter the name of the signal you want to control.
-This should be the same as the name in the signal table.
+    <li>In the top box, enter the name of the signal you want to control.
+    This should be the same as the name in the signal table.
 	<li>The radio buttons below that select one of four possible uses
 	for this signal:
 		<ul>
@@ -447,6 +446,7 @@ This should be the same as the name in the signal table.
 		thrown or closed, the train will take two different routes, and the
 		signal will protect different next blocks.
 		</ul>
+    </li>
 	<li>If you want the signal to go red when a block detector shows
 	occupied (sensor active), enter the sensor name in the next box.
 	<li>If this signal is protecting travel through a turnout, enter the
@@ -463,12 +463,11 @@ This should be the same as the name in the signal table.
 	flashing yellow, and the signal before that flashing yellow will
 	show a steady yellow.
     <li>Once you've set the options, click "OK".
-    <li>You can
-      use this form repeatedly to enter logic for as many
-      signals as you'd like.  Just enter the values, not forgetting
-      to change the signal name in the first box, and click OK
-      for each signal.
-	</ul>
+    <li>You can use this form repeatedly to enter logic for as many
+    signals as you'd like.  Just enter the values, not forgetting
+    to change the signal name in the first box, and click OK
+    for each signal.
+</ul>
 <p>
 Don't forget to save your work!
 <p>
@@ -514,31 +513,31 @@ have that working code when figuring out what the new logic should do.
 Next, we'll walk through creating a script to implement this logic.
 You'll do this once for each separate signal; don't try to combine
 
-<hr>
+<p class="important">
 Below here is not revised yet!
-<hr>
+<p>
 
-To actually drive the signal aspects from the turnout and occupancy status,
-Java code was written based on JMRI's
-automation classes.
+<p>To actually drive the signal aspects from the turnout and occupancy status,
+Java code was written based on JMRI's automation classes.
 Each of the 45 signals is driven by its own code snippet.
 Since Nick already had a QBASIC program to use as an example,
 the CrrSection class was created that would let the Java signal logic
 code look very similar.  For example, this is the logic for
 signal 13B:
 <code class="block">
-        int value = GREEN;
-        if ( !tu7 || bo15 || tu8 )
-            value = RED;
-        else if (!tu9 && bo22)
-            value = RED;
-        else if (tu9 && bo23)
-            value = RED;
+    int value = GREEN;
+    if ( !tu7 || bo15 || tu8 )
+        value = RED;
+    else if (!tu9 && bo22)
+        value = RED;
+    else if (tu9 && bo23)
+        value = RED;
 
-        if (value == GREEN && !tu9 && si87)
-            value = YELLOW;
-        else if (value == GREEN && tu9 && si90)
-            value = YELLOW;
+    if (value == GREEN && !tu9 && si87)
+        value = YELLOW;
+    else if (value == GREEN && tu9 && si90)
+        value = YELLOW;
+
 </code>
 <p>
 Note that although prototype signals use logic that "starts with red, and see
@@ -555,7 +554,7 @@ respond appropriately.  Even complicated interlocking logic can be
 checked out quickly using this.
 
 <h2>Summary</h2>
-The process to create the Cornwall signaling and dispatcher panel was
+<p>The process to create the Cornwall signaling and dispatcher panel was
 straightforward, if a little long.
 
 <p>Back to <a href="Cornwall.shtml">CornwallRR home</a></p>
