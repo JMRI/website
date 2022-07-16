@@ -17,7 +17,7 @@
 JMRI: Debugging Your Installation
 </h1>
 
-	This page presents an orderly method for debugging
+	<p>This page presents an orderly method for debugging
 	problems that first appear when JMRI/DecoderPro is installed.
 	<p>
 	Even if you're an experienced debugger, we suggest you work
@@ -30,7 +30,7 @@ JMRI: Debugging Your Installation
 	<p> Start by making sure you have an appropriate version of Java on
 	your system by typing</p>
 	<p class=example> java -version </p>
-	<p>at a command prompt and looking the message that produces.</p>
+	<p>at a command prompt and looking the message it produces.</p>
 
 	<p>JMRI&reg; version 5.x requires Java 11.<br>
     Version 4.2 requires Java 1.8.<br>
@@ -128,8 +128,7 @@ JMRI: Debugging Your Installation
         in the "Tools Menu".</li>
 	    <li>If you're using a C/MRI system, all of the LEDs on the 
 	    controller cards (SMINI, etc) should be flashing rapidly once
-	    the program has started polling, which happens
-	    when you 
+	    the program has started polling, which happens when you
 	    <a href="../help/en/package/jmri/jmrit/beantable/SensorAddEdit.shtml">add a Sensor</a>
 	    via the <a href="../help/en/package/jmri/jmrit/beantable/SensorTable.shtml">Sensors Table</a>.
         </li>
@@ -151,28 +150,28 @@ JMRI: Debugging Your Installation
 		are OK.
 		<li>On a running and configured version of DecoderPro, 
 		select the "Single CV programmer" from the "Tools" menu.
-		<li>Enter "1" in the CV number, and click "Read"
+		<li>Enter "1" in the CV number, and click "Read".
 		</ul>
 	<p>
-	If all goes well, you'll get a succesful read of the same address
-	you saw previously.
-	<p>
+	If all goes well, you'll get a successful read of the same address
+	you saw previously.<br>
 	If not, check for a message. Among the possibilities are:
 	<dl>
-	<dt>No Locomotive Detected
-	<dt>No Acknowledge from Locomotive
+    <dt>No Locomotive Detected</dt>
+    <dt>No Acknowledge from Locomotive</dt>
 	<dd>These comes from the command
 	station.  It means that the program was able to talk with the 
 	command station OK, but the command station could not talk to the 
 	locomotive.  Go back to reading with the throttle and make sure
 	what works.  If it does, try selected different programming modes
-	(e.g. paged, direct, etc) in DecoderPro and retrying the read.
-	<dt>Timeout talking to command station<dd>This means that
+    (e.g. paged, direct, etc) in DecoderPro and retrying the read.</dd>
+    <dt>Timeout talking to command station</dt>
+    <dd>This means that
 	the program didn't hear any response from the command station when it
 	requested the CV to be read. This is unexpected, because we found
 	that communications to and from the command station were OK in step 5.
 	Check that step again.  And look for error messages that might provide
-	a clue (see step 3 for info on how to do that)
+    a clue (see step 3 for info on how to do that)</dd>
 	</dl>
 	
 <!--#include virtual="/Footer.shtml" -->

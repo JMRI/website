@@ -22,7 +22,8 @@
 </ul>
 
 <p class="important">These instructions describe the installation of JMRI
-on a Raspberry Pi system running the Raspbian OS. There's also a Install help page for <a href="Linux.shtml">other flavors of Linux</a>.</p>
+on a Raspberry Pi system running the Raspbian OS. There's also an Install help page for <a href="Linux.shtml">other
+flavors of Linux</a>.</p>
 <p>The Raspberry Pi is becoming increasingly popular as a small and cheap computer.
 Raspbian is based on Debian and is recognized as being a very user friendly distribution.<br>
 JMRI installation consists of two stages: install Java and install JMRI.
@@ -55,7 +56,7 @@ JMRI installation consists of two stages: install Java and install JMRI.
 	
 	<h4>Raspbian 3.18 Wheezy</h4>
 	<p>Tested on: Raspberry Pi Model B with 512Mb memory and a SanDisk 8Gb SDHC card.<br>
-	Wheezy might run on a Pi A or B+, but OpenJDK is said to be a lot slower then the JDK shipping with Jessie. Check your version of Java in step 3.
+	Wheezy might run on a Pi A or B+, but OpenJDK is said to be a lot slower than the JDK shipping with Jessie. Check your version of Java in step 3.
 	</p>
 	
 	<p>To install the OS on a RasPi, follow these steps: <a href="#suzie">[1]</a>
@@ -63,9 +64,9 @@ JMRI installation consists of two stages: install Java and install JMRI.
 	<li>Format an SD card in FAT32 using the utility from <a href="https://www.sdcard.org/downloads/formatter_4/">SD Card foundation</a>. 
 	<li>Unzip NOOBS image to the SD card (using another computer) and insert the SD card in the Pi's SD slot. 
 	<li>Boot Pi 2 on the SD card and install Raspbian OS (the first option in the list). 
-	<li>Enable SSH in the raspi-config. 
+	<li>Enable SSH in the <code>raspi-config</code>.
 	<li>Change host name in the raspi-config. 
-	<li>Enable booting in to GUI as user Pi 
+	<li>Enable booting in to GUI as user "Pi".
 	</ol>
 	
 	<p>More details on installing Raspbian can be found at the 
