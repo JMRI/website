@@ -6,7 +6,6 @@
  	JMRI Gallery
     </title>
 	<meta name="author" content="Bob Jacobsen, Egbert Broerse">
-	<meta name="Date.Modified" content="20150923"/>
     <meta name="keywords" content="JMRI PanelPro control panel DCC C/MRI signals">
     <!--#include virtual="/Style.shtml" -->
 </head>
@@ -15,15 +14,19 @@
 <!--#include virtual="/Header.shtml" -->
     <hr class="hide">
 
-    <div class="no-sidebar" id="mBody">
-	<div id="mainContent" class="no-sidebar">
+    <div id="mBody">
+    <!--#include virtual="Sidebar.shtml" -->
+	<div id="mainContent">
 
 	    <h1>JMRI Gallery</h1>
 
-<p>This page highlights some of the neat things people have done with both <a href="#panelpro">JMRI
-Panelpro</a> and <a href="#libraries">JMRI Libraries</a>.</p>
+        <p>This page highlights some of the neat things people have done with</p>
+        <ul class="snav">
+            <li><a href="#panelpro">JMRI PanelPro</a></li>
+            <li><a href="#libraries">JMRI Libraries</a></li>
+        </ul>
 
-<H2><a id="panelpro">PanelPro applications</a></H2>
+<h2><a id="panelpro">PanelPro applications</a></h2>
 <p>Many PanelPro users have each come up with their own PanelPro application, ranging from simple to complex: </p>
 
 <h3>Modular Signals in the UK</h3>

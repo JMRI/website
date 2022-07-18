@@ -11,7 +11,8 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
 <div id="mBody">
-    <div id="mainContent" class="no-sidebar">
+    <!--#include virtual="../Sidebar.shtml" -->
+    <div id="mainContent">
         <h1>JMRI: Creating the Cornwall Panel</h1>
 
 <p>This page walks you through creating a simple control
@@ -559,7 +560,7 @@ straightforward, if a little long.
 
 <p>Back to <a href="Cornwall.shtml">CornwallRR home</a></p>
 
-        <!--#include virtual="../../Footer.shtml" -->
+        <!--#include virtual="/Footer.shtml" -->
 	</div>
 </div>
 <script src="/js/main.js"></script>

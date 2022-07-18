@@ -14,7 +14,8 @@
 <hr class="hide">
 
 <div id="mBody">
-    <div id="mainContent" class="no-sidebar">
+    <!--#include virtual="../Sidebar.shtml" -->
+    <div id="mainContent">
 <h1>Signal Mast Logic - Introduction</h1>
 
 <p><i>At the Lancashire and Yorkshire DCC exhibition in October 2011, Nigel Cliffe and
@@ -36,7 +37,7 @@
   not have a Digitrax/LocoNet system, then we recommend you set your JMRI preferences
   to &quot;Digitrax - LocoNet Simulation&quot; which will allow the files to work
   correctly without connection to external layout hardware. </p>
-<p>The tutorial is broken into a number of pages. </p>
+<p>The remainder of this tutorial is broken into a number of pages. </p>
 <ol>
   <li><a href="layout.shtml">The layout</a>; explaining the track formation</li>
   <li><a href="Hardware.shtml">Hardware</a>; the types of hardware detectors and

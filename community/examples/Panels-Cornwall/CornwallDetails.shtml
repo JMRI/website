@@ -12,7 +12,8 @@
 <!--#include virtual="/Header.shtml" -->
 
 <div id="mBody">
-    <div id="mainContent" class="no-sidebar">
+    <!--#include virtual="../Sidebar.shtml" -->
+    <div id="mainContent">
         <h1>JMRI: The Cornwall RR Panel</h1>
 
         <p>JMRI was used to create the <a href="SamplePanel.shtml">dispatcher control panel</a> for Nick Kulp's
@@ -30,7 +31,7 @@
 
         <p>Back to <a href="Cornwall.shtml">CornwallRR home</a></p>
 
-        <!--#include virtual="../../Footer.shtml" -->
+        <!--#include virtual="/Footer.shtml" -->
     </div>
 </div>
 <script src="/js/main.js"></script>

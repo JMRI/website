@@ -15,7 +15,8 @@
     <hr class="hide">
 
 	<div id="mBody">
-	<div id="mainContent" class="no-sidebar">
+    <!--#include virtual="../Sidebar.shtml" -->
+	<div id="mainContent">
 
 	<h1>JMRI: Creating the Cornwall Panel</h1>
 
@@ -220,7 +221,7 @@ checked out quickly using this.
 The process to create the Cornwall <a href="SamplePanel.shtml">signaling
 and dispatcher panel</a> was straightforward, if a little long.
 
-        <!--#include virtual="../../Footer.shtml" -->
+        <!--#include virtual="/Footer.shtml" -->
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->

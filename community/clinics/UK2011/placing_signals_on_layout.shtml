@@ -14,7 +14,9 @@
 <hr class="hide">
 
 <div id="mBody">
-    <div id="mainContent" class="no-sidebar">
+    <!--#include virtual="../Sidebar.shtml" -->
+    <div id="mainContent">
+
 <h2>Adding Signal Masts to the Layout, and creating Signal Mast Rules</h2>
 <p>Signal Mast Rules work from signal to signal. If we consider our layout, and
   the down line, there is a signal controlling access to platform 2 or into the
@@ -44,7 +46,7 @@
 <p>[ <a href="jmri_files/Demo%20Signal%205.xml">Link to Panel file 5</a> (masts
   rules added)]</p>
 
-<p><a href="permissive_working.shtml">Move on to Part 8</a> </p>
+<p><a href="permissive_working.shtml">Move on to Part 7</a> </p>
 <p><a href="index.shtml">Back to Introduction</a></p>
 
 <!--#include virtual="/Footer.shtml" -->

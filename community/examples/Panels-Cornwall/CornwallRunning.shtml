@@ -13,9 +13,9 @@
 <body>
 <!--#include virtual="/Header.shtml" -->
     <hr class="hide">
-
+    <!--#include virtual="../Sidebar.shtml" -->
 	<div id="mBody">
-		<div id="mainContent" class="no-sidebar">
+		<div id="mainContent">
 
 	    <h1>JMRI: Running Nick Kulp's CornwallRR Program</h1>
 		<p class="subtitle">
@@ -24,7 +24,7 @@ Cornwall RR.
 This page briefly describes how to run that so you can take a look
 at that.
 Links to other pages with more detail are included, but many of those pages
-do not exist yet or are still under contruction.
+do not exist yet or are still under construction.</p>
 
 <p>
 <a href="./images/CornwallPanelLit.gif"><img src="./images/SmallCornwallPanel.gif" WIDTH="502" HEIGHT="302" alt="panel"></a>
@@ -144,7 +144,7 @@ hardware) is preferred.</p>
 
 <p>Back to <a href="Cornwall.shtml">CornwallRR home</a></p>
 
-            <!--#include virtual="../../Footer.shtml" -->
+            <!--#include virtual="/Footer.shtml" -->
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->
     <script src="/js/main.js"></script>
