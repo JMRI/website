@@ -1,28 +1,20 @@
-<!-- Sidebar2021.shtml -->
-<!-- This is the 'responsive' common sidebar definition for main (root) pages, copy from /Sidebar to fix js path -->
+<!-- This is the 'responsive' common sidebar definition for /java pages, copied from /Sidebar to fix js path -->
 
-	  <hr class="hide">
-	  <div class="card-1" id="side" >
+<hr class="hide">
+<div class="card-1" id="side" >
       <!-- Block of text on left side of page -->
-      <div id="close-side" class="floatRight button fa fa-close" style="display:none;" onclick="side_close()"></div>
-	  <div style="text-align: center;">JMRI&reg; is...</div>
+      <div id="close-side" class="w3-right w3-button w3-hide-large fa fa-close" style="display:none;" onclick="side_close()"></div>
+	  <div style="text-align: center;">Install JMRI&reg;</div>
 
 	  <dl>
-        <!--#include virtual="./SidebarApps.shtml" -->
-
-	    <!--#include virtual="./help/en/parts/SidebarToolsNew.shtml" -->
-
-        <!--#include virtual="./help/en/parts/SidebarLayoutAutomationNew.shtml" -->
-
-	    <!--#include virtual="./help/en/parts/SidebarSupportedHardwareNew.shtml" -->
-
-	    <!--#include virtual="./help/en/parts/SidebarInstallNew.shtml" -->
-
+        <!--#include virtual="/SidebarApps.shtml" -->
+	    <!--#include virtual="/help/en/parts/SidebarSupportedHardwareNew.shtml" -->
+	    <!--#include virtual="/help/en/parts/SidebarInstallNew.shtml" -->
 	  </dl>
 
-      <!--#include virtual="./help/en/parts/SidebarTail.shtml" -->
-      </div> <!-- closes #side -->
+      <!--#include virtual="/help/en/parts/SidebarTail.shtml" -->
+</div> <!-- closes #side -->
 
-    <!-- button is in /Header -->
-    <script src="/js/side.js"></script>
-	<!-- /Sidebar2021.shtml -->
+<!-- button is in /Header -->
+<script src="/js/side.js"></script>
+<!-- /Sidebar2021.shtml -->

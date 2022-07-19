@@ -15,18 +15,19 @@
     <hr class="hide">
 
 	<div id="mBody">
-	<div id="mainContent" class="no-sidebar">
+    <!--#include virtual="../Sidebar.shtml" -->
+	<div id="mainContent">
 
 	<h1>JMRI: Creating the Cornwall Panel</h1>
 
-JMRI was used to create the dispatcher control panel for Nick Kulp's
+<p>JMRI was used to create the dispatcher control panel for Nick Kulp's
 Cornwall RR. This page briefly describes how it was done.
 
-<p class="important">Note this was all done from 2004 staring with JMRI version 1.1.13.<br>
-But the approach still works with recent versions.</p>
+<p class="important">Note this was all done from 2004 starting with JMRI version 1.1.13.<br>
+However the approach still works with recent JMRI versions.</p>
 
 <p>
-<a href="./images/CornwallPanelLit.gif"><img src="./images/SmallCornwallPanel.gif" WIDTH="502" HEIGHT="302" alt="panel"></a>
+<a href="./images/CornwallPanelLit.gif"><img src="./images/SmallCornwallPanel.gif" alt="Cornwall panel"></a>
 
 <h2>The layout</h2>
 Nick's layout uses a mixture of
@@ -147,10 +148,10 @@ Finally, the turnout number over the switch plate was added as part of the backg
 and the control panel was ready to go.
 
 <h2>The CornwallRR custom program</h2>
-All of the above can be done using just the JmriDemo program that's
+<p>All of the above can be done using just the JmriDemo program that's
 part of the normal distribution. Nick wanted a couple more
-things, though:
-<img src="./images/cornwall_logo.gif" class="floatRight" WIDTH="210" HEIGHT="44" alt="logo">
+things, though:</p>
+<img src="./images/cornwall_logo.gif" alt="Cornwall logo">
 
 <ul>
 	<li>Automatically open the panel when the program starts
@@ -188,18 +189,19 @@ the CrrSection class was created that would let the Java signal logic
 code look very similar.  For example, this is the logic for
 signal 13B:
 <code class="block">
-        int value = GREEN;
-        if ( !tu7 || bo15 || tu8 )
-            value = RED;
-        else if (!tu9 && bo22)
-            value = RED;
-        else if (tu9 && bo23)
-            value = RED;
+    int value = GREEN;
+    if ( !tu7 || bo15 || tu8 )
+        value = RED;
+    else if (!tu9 && bo22)
+        value = RED;
+    else if (tu9 && bo23)
+        value = RED;
 
-        if (value == GREEN && !tu9 && si87)
-            value = YELLOW;
-        else if (value == GREEN && tu9 && si90)
-            value = YELLOW;
+    if (value == GREEN && !tu9 && si87)
+        value = YELLOW;
+    else if (value == GREEN && tu9 && si90)
+        value = YELLOW;
+
 </code>
 <p>
 Note that although prototype signals use logic that "starts with red, and see
@@ -219,7 +221,7 @@ checked out quickly using this.
 The process to create the Cornwall <a href="SamplePanel.shtml">signaling
 and dispatcher panel</a> was straightforward, if a little long.
 
-        <!--#include virtual="../../Footer.shtml" -->
+        <!--#include virtual="/Footer.shtml" -->
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->

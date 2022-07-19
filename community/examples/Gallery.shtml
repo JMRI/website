@@ -6,7 +6,6 @@
  	JMRI Gallery
     </title>
 	<meta name="author" content="Bob Jacobsen, Egbert Broerse">
-	<meta name="Date.Modified" content="20150923"/>
     <meta name="keywords" content="JMRI PanelPro control panel DCC C/MRI signals">
     <!--#include virtual="/Style.shtml" -->
 </head>
@@ -15,15 +14,19 @@
 <!--#include virtual="/Header.shtml" -->
     <hr class="hide">
 
-    <div class="no-sidebar" id="mBody">
-	<div id="mainContent" class="no-sidebar">
+    <div id="mBody">
+    <!--#include virtual="Sidebar.shtml" -->
+	<div id="mainContent">
 
 	    <h1>JMRI Gallery</h1>
 
-<p>This page highlights some of the neat things people have done with both <a href="#panelpro">JMRI
-Panelpro</a> and <a href="#libraries">JMRI Libraries</a>.</p>
+        <p>This page highlights some of the neat things people have done with</p>
+        <ul class="snav">
+            <li><a href="#panelpro">JMRI PanelPro</a></li>
+            <li><a href="#libraries">JMRI Libraries</a></li>
+        </ul>
 
-<H2><a id="panelpro">PanelPro applications</a></H2>
+<h2><a id="panelpro">PanelPro applications</a></h2>
 <p>Many PanelPro users have each come up with their own PanelPro application, ranging from simple to complex: </p>
 
 <h3>Modular Signals in the UK</h3>
@@ -36,18 +39,15 @@ in the Fall 2016 issue of the
 <a href="http://thamesidersmrg.org.uk/ho-scale-modules-essex-belt-lines/signalling-essex-belt-lines/">OPSIG BR eNews</a>.
 
 <h3>OWNry</h3>
-
-<!--
-<a href="http://ownry.squarespace.com/display/ShowImage?imageUrl=/storage/blog-photos/CTC_Panel_June2006.gif?__SQUARESPACE_CACHEVERSION=1302156072951"/>
-<img src="http://ownry.squarespace.com/storage/thumbnails/5519763-11612079-thumbnail.jpg" align="right" width="200" height="135"/>
-</a>
--->
-<a href="images/5519763-11612079-thumbnail.gif"><img src="images/5519763-11612079-thumbnail.gif" class="floatRight" width="200" height="135" alt="OWN panel" /></a>
-
+<p>
 Kent Williams'
-<a href="http://ownry.squarespace.com">Oregon Washington Navigation &amp; Railway</a>
-(now dismantled) used PanelPro for it's signal controls and
-<a href="http://ownry.squarespace.com/blog/2011/4/7/ctc-dispatcher-panel-on-the-ownry.html?SSScrollPosition=0">dispatcher panel</a>.
+<a href="https://web.archive.org/web/20160818193334/http://ownry.squarespace.com/">Oregon Washington Navigation &amp; Railway</a>
+(now dismantled) used PanelPro for its signal controls and
+<a
+href="https://web.archive.org/web/20160818193334/http://ownry.squarespace.com/blog/2011/4/7/ctc-dispatcher-panel-on-the-ownry.html">CTC
+    dispatcher panel</a>.<br>
+    <a href="images/5519763-11612079-thumbnail.gif"><img src="images/5519763-11612079-thumbnail.gif" alt="OWN panel" /></a>
+</p>
 
 <h3>Cashaway Valley Railroad</h3>
 
@@ -59,19 +59,18 @@ Well over a decade ago, Nick Kulp already created a program to drive his
 <a href="Panels-Cornwall/Cornwall.shtml">Cornwall RR</a>
 
 <h3>Quaker Valley</h3>
-<a href="http://www.quaker-valley.com/CTC/JMRI_QV_CTC.gif">
-<img src="http://www.quaker-valley.com/CTC/JMRI_QV_CTC.gif" class="floatRight" width="256" height="186" alt="QV panel" />
-</a>
-
-Bob Bucklew built a realistic CTC panel for his
-Quaker Valley Railroad.
+<p>
+Bob Bucklew built a realistic CTC panel for his Quaker Valley Railroad.
 He's created a very nice series of web pages on
-<a href="http://www.quaker-valley.com/CTC/QV_CTCnew.html">how it's done</a>.
+<a href="http://www.quaker-valley.com/CTC/QV_CTCnew.html">how it was done</a>.<br>
+<a href="http://www.quaker-valley.com/CTC/JMRI_QV_CTC.gif">
+    <img src="http://www.quaker-valley.com/CTC/JMRI_QV_CTC.gif" width="256" height="186" alt="QV panel" />
+</a></p>
 
 <h3>Bloomfield &amp; Oakland RR</h3>
-
-Alan Huberty created a multi-screen control panel for his Bloomfield &amp; Oakland Railroad.
-<a href="images/BORRCTCPanel.gif"><img src="images/BORRCTCPanel.gif" width="512" height="192" alt="CTC panel"></a>
+<p>
+Alan Huberty created a multi-screen control panel for his Bloomfield &amp; Oakland Railroad.<br>
+<a href="images/BORRCTCPanel.gif"><img src="images/BORRCTCPanel.gif" width="512" height="192" alt="CTC panel"></a></p>
 
 <h3>Shasta Route</h3>
 
@@ -88,19 +87,31 @@ To recreate that, Otis has installed a rebuilt United Switch and Signal CTC mach
 on his railroad (see below).
 <a href="SPShasta.shtml">PanelPro controls the machine and provides CTC control</a> for the layout
 via a large seven-node C/MRI installation.</p>
+<div class="flex-container">
+    <div class="flex-item-50">
+    <a href="https://web.archive.org/web/20160422043535if_/http://spshastaroute.org/c/3.JPG">
+    <img src="https://web.archive.org/web/20160422043535if_/http://spshastaroute.org/c/3.JPG" alt="machine">
+    </a>
+    </div>
+    <div class="flex-item-50">
+    <a href="images/ShastaCTTMachine.jpg">
+    <img src="images/ShastaCTTMachine.jpg" alt="Picture of real CTC machine"/>
+    </a>
+    </div>
+</div>
 
-<a href="https://web.archive.org/web/20160422043535if_/http://spshastaroute.org/c/3.JPG">
-<img src="https://web.archive.org/web/20160422043535if_/http://spshastaroute.org/c/3.JPG" alt="machine">
-</a>
-<a href="images/ShastaCTTMachine.jpg">
-<img src="images/ShastaCTTMachine.jpg" alt="Picture of real CTC machine"/>
-</a>
-<a href="https://web.archive.org/web/20160422043902if_/http://spshastaroute.org/c/14.JPG">
-<img src="https://web.archive.org/web/20160422043902if_/http://spshastaroute.org/c/14.JPG" width="200" height="150" alt="wiring">
-</a>
-<a href="https://web.archive.org/web/20160422043902if_/http://spshastaroute.org/c/14.JPG">
-<img src="https://web.archive.org/web/20160422043902if_/http://spshastaroute.org/c/14.JPG" alt="">
-</a>
+<div class="flex-container">
+    <div class="flex-item-50">
+    <a href="https://web.archive.org/web/20160422043902if_/http://spshastaroute.org/c/14.JPG">
+    <img src="https://web.archive.org/web/20160422043902if_/http://spshastaroute.org/c/14.JPG" alt="wiring">
+    </a>
+    </div>
+    <div class="flex-item-50">
+    <a href="https://web.archive.org/web/20160422043902if_/http://spshastaroute.org/c/4.JPG">
+    <img src="https://web.archive.org/web/20160422043902if_/http://spshastaroute.org/c/4.JPG" alt="">
+    </a>
+    </div>
+</div>
 
 <h3>Durenver &amp; Silverton RR</h3>
 	<p>Egbert Broerse's <a href="http://www.ebroerse.nl/railroading.html#dcc">Durenver &amp; Silverton Railroad</a>
@@ -126,9 +137,17 @@ Physical control panels on the layout fascia sport the same graphic style, be it
 property="cc:attributionName" rel="cc:attributionURL">EJB</a> as
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA</a>)).</p>
 
-<img src="images/DSRR_Panel_Background.png" alt="DSRR background">&nbsp;
-<img src="images/DSRR_Panel_Screen.png" alt="DSRR screenshot w/icons">&nbsp;
-<img src="images/IMG_3536_D_SNGRR_panel.jpg" alt="DSRR physical panel">
+<div class="flex-container">
+    <div class="flex-item-30">
+    <img src="images/DSRR_Panel_Background.png" alt="DSRR background">&nbsp;
+    </div>
+    <div class="flex-item-30">
+    <img src="images/DSRR_Panel_Screen.png" alt="DSRR screenshot w/icons">&nbsp;
+    </div>
+    <div class="flex-item-30">
+    <img src="images/IMG_3536_D_SNGRR_panel.jpg" alt="DSRR physical panel">
+    </div>
+</div>
 
 <h3>Czechoslovak State Railways &ndash; Elektrosignal Praga</h3>
 

@@ -14,7 +14,9 @@
 <hr class="hide">
 
 <div id="mBody">
-    <div id="mainContent" class="no-sidebar">
+    <!--#include virtual="../Sidebar.shtml" -->
+    <div id="mainContent">
+
 <h1>Signal Mast Logic - The Layout</h1>
 <p>The track arrangement chosen for the tutorial is shown in the illustration
   below. Being a UK prototype, trains run on the left hand line of a double track.
@@ -36,8 +38,9 @@
 <p>There could be other signalling on this track plan, for example, shunt (ground)
   signals to control the cross-over for traffic moving between the Up and Down
   lines, but we felt that the arrangement in the diagram has sufficient features
-  for the tutorial. </p>
-<p><a href="Hardware.shtml">Move on to Part 3</a> </p>
+  for the tutorial.</p>
+
+<p><a href="Hardware.shtml">Move on to Part 2</a> </p>
 <p><a href="index.shtml">Back to Introduction</a></p>
 
 <!--#include virtual="/Footer.shtml" -->

@@ -16,8 +16,9 @@
 
 <hr class="hide">
 
-<div class="no-sidebar" id="mBody">
-	<div id="mainContent">
+<div id="mBody">
+    <!--#include virtual="../Sidebar.shtml" -->
+    <div id="mainContent">
     <h1>JMRI NMRA 2008 Clinics</h1>
 
     This page contains links to clinics that were presented at the NMRA 2008 convention in Anaheim.

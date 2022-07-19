@@ -14,7 +14,8 @@
 <hr class="hide">
 
 <div id="mBody">
-    <div id="mainContent" class="no-sidebar">
+    <!--#include virtual="../Sidebar.shtml" -->
+    <div id="mainContent">
 <h1>Permissive Block Working</h1>
 
 <p>In the previous section of the tutorial, we placed the signal masts on the
@@ -35,7 +36,7 @@
   below</p>
 <p>[ <a href="jmri_files/Demo%20Signal%206.xml">Link to Panel File 6</a> ] </p>
 
-<p><a href="logix_and_feathers.shtml">Move on to Part 9</a> </p>
+<p><a href="logix_and_feathers.shtml">Move on to Part 8</a> </p>
 <p><a href="index.shtml">Back to Introduction</a></p>
 
 <!--#include virtual="/Footer.shtml" -->

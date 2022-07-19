@@ -1,0 +1,27 @@
+<!-- Sidebar.shtml -->
+<!-- This is the 'responsive' common sidebar definition for community/examples/Panels-Cornwall -->
+
+	  <hr class="hide">
+	  <div class="card-1" id="side" >
+      <!-- Block of text on left side of page -->
+      <div id="close-side" class="floatRight button fa fa-close" style="display:none;" onclick="side_close()"></div>
+	  <div style="text-align: center;">JMRI Clinics</div>
+
+          <dl><!-- detailed index of this section -->
+              <!--#include virtual="SidebarClinics.shtml" -->
+          </dl>
+
+          <dl><!-- collapsed summary of community sections -->
+              <!--#include virtual="../SidebarCommunity.shtml" -->
+          </dl>
+
+          <dl>
+              <!--#include virtual="/help/en/parts/SidebarApplications.shtml" -->
+          </dl>
+
+      <!--#include virtual="/help/en/parts/SidebarTail.shtml" -->
+      </div> <!-- closes #side -->
+
+    <!-- button is in /Header -->
+    <script src="/js/side.js"></script>
+	<!-- /Sidebar.shtml -->

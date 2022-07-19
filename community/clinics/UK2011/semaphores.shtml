@@ -14,7 +14,9 @@
 <hr class="hide">
 
 <div id="mBody">
-    <div id="mainContent" class="no-sidebar">
+    <!--#include virtual="../Sidebar.shtml" -->
+    <div id="mainContent">
+
 <h1>Using Semaphore Signals rather than Colour Lights</h1>
 
 <p>So far, this tutorial has used colour light signals. However, semaphore signals
@@ -39,11 +41,11 @@
   created in the same manner as before. </p>
 <p><i>The Video covering this part of the tutorial is in preparation. </i></p>
 <p>The download of the panel file with the bay signal replaced with a semaphore
-  can be downloaded below:</p>
-<p>[ <a href="jmri_files/Demo%20Signal%208.xml">Link to download panel file</a>
+  can be downloaded below:<br>
+[ <a href="jmri_files/Demo%20Signal%208.xml">Link to download panel file</a>
   ]</p>
 
-<p><a href="index.shtml">Back to Introduction</a></p>
+<p>That's it! <a href="index.shtml">Back to Introduction</a></p>
 
 <!--#include virtual="/Footer.shtml" -->
    </div><!-- closes #mainContent-->

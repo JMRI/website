@@ -14,7 +14,9 @@
 <hr class="hide">
 
 <div id="mBody">
-  <div id="mainContent" class="no-sidebar">
+    <!--#include virtual="../Sidebar.shtml" -->
+    <div id="mainContent">
+
 <h2>Describe the Layout with the Layout Editor</h2>
 <p>Within JMRI there are a number of editors which can produce graphical representations
   for controlling a layout. In this tutorial, we are using the Layout Editor.
@@ -78,7 +80,7 @@
   menu of JMRI. </p>
 <p>[<a href="jmri_files/Demo%20Signal%202.xml"> Link to download file</a> ] </p>
 
-<p><a href="signalheads_and_masts.shtml">Move on to Part 6</a> </p>
+<p><a href="signalheads_and_masts.shtml">Move on to Part 5</a> </p>
 <p><a href="index.shtml">Back to Introduction</a></p>
 
 <!--#include virtual="/Footer.shtml" -->
