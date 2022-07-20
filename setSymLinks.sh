@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# Script to create symbolic links for JMRI web site
+# Script to create symbolic links for JMRI website
 #
 # See http://jmri.org/help/en/html/doc/Technical/WebSite.shtml#link
 # 

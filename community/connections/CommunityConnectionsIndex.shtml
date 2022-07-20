@@ -4,7 +4,7 @@
 <head>
   <meta name="author" content="jerryg2003">
   <title>JMRI: Applications That Connect with JMRI</title>
-<!--#include virtual="/Style.shtml" -->
+  <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
@@ -18,13 +18,12 @@
 
     <p>
        Hobbyists have created applications that work with JMRI to provide extra capabilities.
-       Many of them are listed here with links to their external web sites and further information on how to use them with JMRI.
+       Many of them are listed here with links to their external websites and further information on how to use them with JMRI.
        [Information is believed to be correct as of time of last update.  Please report any changes or additions so JMRI community members
        may make updates.]
     </p>
 
     <dl>
-
     <!-- GENERAL FORMAT for each entry  [please put in alphabetical order]:
 
       dt with href to external site, if any, and indication if free, open source, or commercial software
@@ -32,23 +31,24 @@
       Can link to commmunity/connections/[named directory]/index.shtml if any.
       -->
 
-    <dt><h2><a href="http://www.anyrail.com" target="_blank">AnyRail export to JMRI Layout Editor</a> [License fee]</h2></dt>
+    <dt><h2>AnyRail export to JMRI Layout Editor [License fee]</h2></dt>
         <dd class="im">
-            <a href="http://www.anyrail.com" target="_blank"><img src="https://www.anyrail.com/img/AR6Logo.svg" alt="AnyRail logo" height="33" width="120"></a>
-        AnyRail can now export your layout design to JMRI!
+            <a href="http://www.anyrail.com" target="_blank"><img src="https://www.anyrail.com/img/AR6Logo.svg"
+            alt="AnyRail logo" height="33" width="120"></a>
+        AnyRail can now export your layout design to JMRI.
         The <a href="http://www.anyrail.com" target="_blank">AnyRail layout planning software</a>
         can now export a layout design as a JMRI panel file that can be loaded by PanelPro.  The file contains a Layout Editor panel
         and related tables.
         See the <a href="https://www.anyrail.com/help_en/index.html" target="_blank">AnyRail documentation</a>.
-        There's more information on use with JMRI
-        <a href="AnyRail/index.shtml">here</a>.
+        There's more information on using AnyRail with JMRI <a href="AnyRail/index.shtml">here</a>.
         </dd>
 
-    <dt><h2><a href="http://cats4ctc.org" target="_blank">Crandic Automated Traffic System (CATS)</a> [Open Source]</h2></dt>
+    <dt><h2>Crandic Automated Traffic System (CATS) [Open Source]</h2></dt>
         <dd class="im">
-        <a href="http://cats4ctc.org"><img src="https://cats4ctc.wdfiles.com/local--files/home:home/armstrong.jpg" width="60" height="40" alt="CATS"></a>
+        <a href="http://cats4ctc.org"><img src="https://cats4ctc.wdfiles.com/local--files/home:home/armstrong.jpg"
+        width="60" height="40" alt="CATS"></a>
         The Crandic Automated Traffic System (CATS) is a JMRI-based application by Rodney Black for
-        controlling and operating a model railroad. There's more information on use with JMRI
+        controlling and operating a model railroad. There's more information on using CATS with JMRI
         <a href="CATS/index.shtml">here</a>.
        </dd>
 
@@ -116,7 +116,7 @@
        realism to their operations. "TrainCrew allows you to simulate the tasks performed
        by a train crew while performing their duties but haven't traditionally been modeled
        by model railroaders, or able to be represented while operating model train layouts."
-       See <a href="TrainCrew/index.shtml"> for information on use with JMRI</a>
+       See <a href="TrainCrew/index.shtml"> for information on use with JMRI</a>.
        </dd>
 
 

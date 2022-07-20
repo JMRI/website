@@ -7186,7 +7186,7 @@ sub set_constants {                          # {{{1
     'visual basic dos'             =>   2.00,
     'visual c++'                   =>   2.35,
     'visual cobol'                 =>   4.00,
-    'Visual Fox Pro'               =>   4.00, # Visual Fox Pro is not available in the language gearing ratios listed at Mayes Consulting web site
+    'Visual Fox Pro'               =>   4.00, # Visual Fox Pro is not available in the language gearing ratios listed at Mayes Consulting website
     'visual objects'               =>   5.00,
     'visualage'                    =>   3.81,
     'Visualforce Component'        =>   1.9 ,
