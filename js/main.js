@@ -15,7 +15,8 @@ window.addEventListener('click', ({target}) => {
     const hit = target.closest('#mainContent');
     if (hit != null) {
         const sidebar = document.getElementById("side");
-        if (sidebar != null && sidebar.style.display == "block") {
+        const sideburger = document.getElementById("show-side");
+        if (sidebar != null && sidebar.style.display == "block" && sideburger.style.display == "") {
             side_close();
         }
         const search = document.getElementById("searchform");
