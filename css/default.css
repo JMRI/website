@@ -5,7 +5,7 @@
 /* Updated for responsiveness/accessibility and colors JMRI 2020 Egbert Broerse */
 
 
-/* JMRI web site Base Styles
+/* JMRI website Base Styles
  * maintained by John Plocher and Egbert Broerse 2021
  * (Original Mozilla classes are defined in the Markup Guide
  *   http://fantasai.inkedblade.net/mozilla/web/guide/markup)
@@ -136,6 +136,21 @@
 		content: "\2015";
 	}
 
+    .video-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    }
+    .responsive-iframe {
+        position: absolute; /* to fit in video-container div */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
 /* flex: blocks that try to fit on a row, or wrap. Collapse to full width on smaller screens */
     .flex-container {
       display: flex;

@@ -79,7 +79,7 @@
         USB connection, you will need macOS drivers (system software) for the hardware you're using.
         Most hardware won't need a separate driver;
         they're already present in macOS.  In some cases you will need to install a special driver, though,
-        so check the manufacturer's web site to make sure.</p>
+        so check the manufacturer's website to make sure.</p>
 
         <p>
         For more instructions on USB connection debugging and testing for correct
@@ -157,7 +157,7 @@
                 install Java.
                 (That link is the same as the download link near the
                 bottom of
-                 <a href="https://www.azul.com/downloads/?version=java-11-lts&os=macos&package=jre">this page on the Azul web site</a>.)
+                 <a href="https://www.azul.com/downloads/?version=java-11-lts&os=macos&package=jre">this page on the Azul website</a>.)
             <li>
                 Note: JMRI 5 requires Java 11.  JMRI 4 and 5 should work fine with some later versions (java 12 through 13)
 	            but you may get a message about "WARNING: An illegal reflective access operation has occurred" and "WARNING: Please consider reporting this to the maintainers".
@@ -338,7 +338,7 @@ Some issues:
     <li>If you installed Oracle's Java 8 before upgrading to Catalina, it'll still work.
         If you want to install Java 8 from Oracle onto a Catalina system,
         there are some
-        <a href="https://www.oracle.com/technetwork/java/javase/using-jdk-jre-macos-catalina-5781620.html">instructions on the Oracle web site</a>.
+        <a href="https://www.oracle.com/technetwork/java/javase/using-jdk-jre-macos-catalina-5781620.html">instructions on the Oracle website</a>.
         The Oracle Java 11 installer is an easier installation, and works fine with
         JMRI, so we recommend you do that instead.
     <li>JMRI versions before 4.17.5 are very hard to properly install on Catalina, and

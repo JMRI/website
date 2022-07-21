@@ -4,7 +4,7 @@
 <head>
   <meta name="author" content="jerryg2003">
   <title>JMRI: Applications That Connect with JMRI</title>
-<!--#include virtual="/Style.shtml" -->
+  <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
@@ -18,70 +18,68 @@
 
     <p>
        Hobbyists have created applications that work with JMRI to provide extra capabilities.
-       Many of them are listed here with links to their external web sites and further information on how to use them with JMRI.
+       Many of them are listed here with links to their external websites and further information on how to use them with JMRI.
        [Information is believed to be correct as of time of last update.  Please report any changes or additions so JMRI community members
        may make updates.]
     </p>
 
     <dl>
-
     <!-- GENERAL FORMAT for each entry  [please put in alphabetical order]:
 
       dt with href to external site, if any, and indication if free, open source, or commercial software
       dd class="im" with link to external site, if any, and image, followed by a couple of sentences.
       Can link to commmunity/connections/[named directory]/index.shtml if any.
-
       -->
 
-        <dt><h2><a href="http://www.anyrail.com" target="_blank">AnyRail export to JMRI Layout Editor</a> [License fee]</h2></dt>
-            <dd class="im">
-                <a href="http://www.anyrail.com" target="_blank"><img src="https://www.anyrail.com/img/AR6Logo.svg" alt="AnyRail logo" height="33" width="120"></a>
-            AnyRail can now export your layout design to JMRI!
-            The <a href="http://www.anyrail.com" target="_blank">AnyRail layout planning software</a>
-            can now export a layout design as a JMRI panel file that can be loaded by PanelPro.  The file contains a Layout Editor panel
-            and related tables.
-            See the <a href="https://www.anyrail.com/help_en/index.html" target="_blank">AnyRail documentation</a>.
-            There's more information on use with JMRI
-            <a href="AnyRail/index.shtml">here</a>.
-            </dd>
+    <dt><h2>AnyRail export to JMRI Layout Editor [License fee]</h2></dt>
+        <dd class="im">
+            <a href="http://www.anyrail.com" target="_blank"><img src="https://www.anyrail.com/img/AR6Logo.svg"
+            alt="AnyRail logo" height="33" width="120"></a>
+        AnyRail can now export your layout design to JMRI.
+        The <a href="http://www.anyrail.com" target="_blank">AnyRail layout planning software</a>
+        can now export a layout design as a JMRI panel file that can be loaded by PanelPro.  The file contains a Layout Editor panel
+        and related tables.
+        See the <a href="https://www.anyrail.com/help_en/index.html" target="_blank">AnyRail documentation</a>.
+        There's more information on using AnyRail with JMRI <a href="AnyRail/index.shtml">here</a>.
+        </dd>
 
-        <dt><h2><a href="http://cats4ctc.org" target="_blank">Crandic Automated Traffic System (CATS)</a> [Open Source]</h2></dt>
-            <dd class="im">
-            <a href="http://cats4ctc.org"><img src="https://cats4ctc.wdfiles.com/local--files/home:home/armstrong.jpg" width="60" height="40" alt="CATS"></a>
-            The Crandic Automated Traffic System (CATS) is a JMRI-based application by Rodney Black for
-            controlling and operating a model railroad. There's more information on use with JMRI
-            <a href="CATS/index.shtml">here</a>.
-           </dd>
+    <dt><h2>Crandic Automated Traffic System (CATS) [Open Source]</h2></dt>
+        <dd class="im">
+        <a href="http://cats4ctc.org"><img src="https://cats4ctc.wdfiles.com/local--files/home:home/armstrong.jpg"
+        width="60" height="40" alt="CATS"></a>
+        The Crandic Automated Traffic System (CATS) is a JMRI-based application by Rodney Black for
+        controlling and operating a model railroad. There's more information on using CATS with JMRI
+        <a href="CATS/index.shtml">here</a>.
+       </dd>
 
 
-        <dt><h2><a href="https://play.google.com/store/apps/details?id=digitrainspro.digitrainspro.hu&hl=en_US" target="_blank">
-            DigiTrainsPro (Throttle) Android App</a> [No charge] </h2></dt>
-            <dd class="im">
-            <a href="https://play.google.com/store/apps/details?id=digitrainspro.digitrainspro.hu&hl=en_US" target="_blank"><img src="https://lh3.googleusercontent.com/GImAaAj7eFkLrMk2e8obXFW465F-C07FNlwXmzvP6HOQkPQ2rCg0d2BnTFy34Y-HYQ=s180" width="60" height="60"  alt="DigitrainsPro on Android Phone"></a>
-            The
-            <a href="https://play.google.com/store/apps/details?id=digitrainspro.digitrainspro.hu&hl=en_US" target="_blank">DigiTrainsPro Android app</a> now works with JMRI
-            to provide user-friendly locomotive, accessory and route control from Android phones and tablets.
-            You can download it from
-            <a href="https://play.google.com/store/apps/details?id=digitrainspro.digitrainspro.hu&hl=en_US" target="_blank">Google play</a>
-            or get more information from
-            the <a href="../../help/en/package/jmri/jmrit/withrottle/UserInterface.shtml" target="_blank">JMRI help</a>.
-            </dd>
+    <dt><h2><a href="https://play.google.com/store/apps/details?id=digitrainspro.digitrainspro.hu&hl=en_US" target="_blank">
+        DigiTrainsPro (Throttle) Android App</a> [No charge] </h2></dt>
+        <dd class="im">
+        <a href="https://play.google.com/store/apps/details?id=digitrainspro.digitrainspro.hu&hl=en_US" target="_blank"><img src="https://lh3.googleusercontent.com/GImAaAj7eFkLrMk2e8obXFW465F-C07FNlwXmzvP6HOQkPQ2rCg0d2BnTFy34Y-HYQ=s180" width="60" height="60"  alt="DigitrainsPro on Android Phone"></a>
+        The
+        <a href="https://play.google.com/store/apps/details?id=digitrainspro.digitrainspro.hu&hl=en_US" target="_blank">DigiTrainsPro Android app</a> now works with JMRI
+        to provide user-friendly locomotive, accessory and route control from Android phones and tablets.
+        You can download it from
+        <a href="https://play.google.com/store/apps/details?id=digitrainspro.digitrainspro.hu&hl=en_US" target="_blank">Google play</a>
+        or get more information from
+        the <a href="../../help/en/package/jmri/jmrit/withrottle/UserInterface.shtml" target="_blank">JMRI help</a>.
+        </dd>
 
-          <dt><h2><a href="https://play.google.com/store/apps/details?id=jmri.enginedriver&hl=en_US" target="_blank">
-            EngineDriver (Throttle) Android App</a> [No charge] </h2></dt>
-            <dd class="im">
-            <a href="https://play.google.com/store/apps/details?id=jmri.enginedriver&hl=en_US" target="_blank">
-            <img src="https://lh3.googleusercontent.com/tnHQoGheqnxuTQup0a3FEjZRVUh_P0pvFNNH3lR0Rzbapq-27ln0WDOHE721wuC4HCQ=s360" width="60" height="60"  alt="Engine Driver on Android Phone"></a>
-            The
-            <a href="https://play.google.com/store/apps/details?id=jmri.enginedriver&hl=en_US" target="_blank">Engine Driver Android app</a>
-            allows you to control your locomotives and your entire model railroad. Speed, direction, and up to 29 DCC
-            functions are supported for one to six locomotives or consists. You can also control layout power, turnouts, routes,
-            and access JMRI web panels and windows.from Android phones and tablets. You can download it from
-            <a href="https://play.google.com/store/apps/details?id=jmri.enginedriver&hl=en_US" target="_blank">Google play</a>
-            or get more information from
-            the <a href="../../help/en/package/jmri/jmrit/withrottle/UserInterface.shtml" target="_blank">JMRI help</a>.
-            </dd>
-
+      <dt><h2><a href="https://play.google.com/store/apps/details?id=jmri.enginedriver&hl=en_US" target="_blank">
+        EngineDriver (Throttle) Android App</a> [No charge] </h2></dt>
+        <dd class="im">
+        <a href="https://play.google.com/store/apps/details?id=jmri.enginedriver&hl=en_US" target="_blank">
+        <img src="https://lh3.googleusercontent.com/tnHQoGheqnxuTQup0a3FEjZRVUh_P0pvFNNH3lR0Rzbapq-27ln0WDOHE721wuC4HCQ=s360" width="60" height="60"  alt="Engine Driver on Android Phone"></a>
+        The
+        <a href="https://play.google.com/store/apps/details?id=jmri.enginedriver&hl=en_US" target="_blank">Engine Driver Android app</a>
+        allows you to control your locomotives and your entire model railroad. Speed, direction, and up to 29 DCC
+        functions are supported for one to six locomotives or consists. You can also control layout power, turnouts, routes,
+        and access JMRI web panels and windows.from Android phones and tablets. You can download it from
+        <a href="https://play.google.com/store/apps/details?id=jmri.enginedriver&hl=en_US" target="_blank">Google play</a>
+        or get more information from
+        the <a href="../../help/en/package/jmri/jmrit/withrottle/UserInterface.shtml" target="_blank">JMRI help</a>.
+        </dd>
 
     <dt><h2><a href="https://manifestcreator.weebly.com/" target="_blank">Manifest Creator</a> [No charge]</h2></dt>
        <dd>Manifest Creator is an Excel-based add-on to JMRI that can provide
@@ -89,9 +87,8 @@
        for more information on use with JMRI.</a>
        </dd>
 
-
-     <dt><h2><a href="http://www.modelrailroadmanager.com" target="_blank">Model Railroad Manager</a> [...]</h2></dt>
-       <dd>Written by Tom Stack, Model Railroad Manager is an integrated system for model
+     <dt><h2><a href="https://www.modelrailroadmanager.com" target="_blank">Model Railroad Manager</a> [...]</h2></dt>
+       <dd>Written by Tom Stack, Model Railroad Manager (MRM in short) is an integrated system for model
        railroad inventory, operations, control, dispatching and
        automation. It can access local or remote JMRI-connected layouts.
        [This software is no longer for sale but the author will discuss features and techniques
@@ -119,7 +116,7 @@
        realism to their operations. "TrainCrew allows you to simulate the tasks performed
        by a train crew while performing their duties but haven't traditionally been modeled
        by model railroaders, or able to be represented while operating model train layouts."
-       See <a href="TrainCrew/index.shtml"> for information on use with JMRI</a>
+       See <a href="TrainCrew/index.shtml"> for information on use with JMRI</a>.
        </dd>
 
 

@@ -59,9 +59,11 @@
 
 <p>The video (hosted on YouTube) gives an overview of the layout and its hardware. 
 </p>
-<iframe width="640" height="480" src="http://www.youtube.com/embed/Ia6Jq6BQ8gE" frameborder="0" allowfullscreen></iframe> 
-
-<p><a href="turnout_table.shtml">Move on to Part 3</a> </p>
+<div class="video-container">
+    <iframe class="responsive-iframe" src="http://www.youtube.com/embed/Ia6Jq6BQ8gE"
+            allowfullscreen></iframe>
+</div>
+<p><a href="turnout_table.shtml">Move on to Part 3</a></p>
 <p><a href="index.shtml">Back to Introduction</a></p>
 
 <!--#include virtual="/Footer.shtml" -->
