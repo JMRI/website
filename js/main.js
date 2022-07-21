@@ -9,3 +9,19 @@ function collapse(id) {
     x.className = x.className.replace(" block-show", "");
   }
 }
+
+// Hide sidebar and search pane when user clicks outside either
+window.addEventListener('click', ({target}) => {
+    const hit = target.closest('#mainContent');
+    if (hit != null) {
+        const sidebar = document.getElementById("side");
+        if (sidebar != null && sidebar.style.display == "block") {
+            side_close();
+        }
+        const search = document.getElementById("searchform");
+        if (search != null && search.style.display == "") {
+          const magni = document.getElementById("magnify");
+            open_search(magni); // will close search
+        }
+    }
+});
