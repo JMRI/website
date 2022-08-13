@@ -3,7 +3,7 @@
 
 <head>
  <title>
- JMRI: New Comm Library for Mac OS X 
+ JMRI: New Comm Library for Mac OS X
  </title>
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI install MacOSX">
@@ -17,7 +17,7 @@
     <div id="mainContent">
 
    <h1>JMRI Install Guide: Mac OS X</h1>
- 
+
       <h2>New Comm Library for Mac OS X</h2>
 
 <p>This page describes how to install a new version of the Java
@@ -39,7 +39,7 @@ that does all of this automagically.</p>
     install these libraries; they should have no other effect on
     your system.
     <br>
-    To do this, open the Terminal application (from 
+    To do this, open the Terminal application (from
     the Utilities folder in the Applications folder)
     and in the resulting window type the lines (you will probably
     be prompted for an administrator password):<br>
@@ -57,7 +57,7 @@ that does all of this automagically.</p>
 	 <a
 	 href="http://prdownloads.sourceforge.net/jmri/comm.jar?download">
 	 http://prdownloads.sourceforge.net/jmri/comm.jar?download</a>.<br>
-	
+
 	You now have to copy it from the directory to which it was
 	downloaded to it's correct location. To do this:
 	<ol>
@@ -69,16 +69,16 @@ that does all of this automagically.</p>
 		</li>
     </ol>
 	</li>
-    
+
     <li>Install the new RXTX libraries.<br>
      Download the new library archive from
 	 <a
 	 href="http://prdownloads.sourceforge.net/jmri/RXTX_Jag_4.pkg.sit.hqx?download">
 	 http://prdownloads.sourceforge.net/jmri/RXTX_Jag_4.pkg.sit.hqx?download</a>.
 	 <br>
-	 Unpack and run that installer.  It might mention 
+	 Unpack and run that installer.  It might mention
 	 various things that you have to check about the "uucp group" and
-	 similar.  You can just ignore those, as they're being handled 
+	 similar.  You can just ignore those, as they're being handled
 	 by the installer and the previous steps.
 	 <br>
 	 When the installer is complete, restart your computer.
@@ -87,9 +87,7 @@ that does all of this automagically.</p>
 	 <p>
 	 At this point, you should be able to start any of the JMRI
 	 applications (or other Java programs) and communicate
-	 via serial ports.  Please 
-	 <a href="mailto:jmri.@jmri.net">send feedback</a> 
-	 to let us know whether it worked or not!</p>
+	 via serial ports.  </p>
 
         <!--#include virtual="/Footer.shtml" -->
 
