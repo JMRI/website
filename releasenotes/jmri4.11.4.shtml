@@ -129,11 +129,11 @@ from
     <li><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
     <ul>
-        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
-        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
-        <li>Do not open the SPROG console window</li><br>
-        <li>Disable power conversion (CV 29) in all locos</li><br>
-        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
+        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li>
+        <li>Do not open the SPROG console window</li>
+        <li>Disable power conversion (CV 29) in all locos</li>
+        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
     </ul>
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
@@ -261,26 +261,26 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 If that doesn't work for you, the files up to 4.11.x are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>.
-Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
-
-<ul>
+Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.</p>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.4/JMRI.4.11.4.R4534304.dmg">https://github.com/JMRI/JMRI/releases/download/v4.11.4/JMRI.4.11.4.R4534304.dmg</a><br/>
-  sha256: 8f7ec596dc0d3b78155e1224dc00da3186f352aeec4904c473c69aa9936e981f </li>
+    sha256: 8f7ec596dc0d3b78155e1224dc00da3186f352aeec4904c473c69aa9936e981f </li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.4/JMRI.4.11.4.R4534304.exe">https://github.com/JMRI/JMRI/releases/download/v4.11.4/JMRI.4.11.4.R4534304.exe</a><br/>
-   sha256: 25c7c0ff2cb7861a695c74d985270c1bf4a6b15766fcaf1e11544028c366eed1</li>
+    sha256: 25c7c0ff2cb7861a695c74d985270c1bf4a6b15766fcaf1e11544028c366eed1</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.4/JMRI.4.11.4.R4534304.tgz">https://github.com/JMRI/JMRI/releases/download/v4.11.4/JMRI.4.11.4.R4534304.tgz</a><br/>
-   sha256: e483295a4636b70c95052bffe4f38b35cdc9960a778df35f774b473fff66e61f</li>
-</ul>
-
+    sha256: e483295a4636b70c95052bffe4f38b35cdc9960a778df35f774b473fff66e61f</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -303,7 +303,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h4>ESU</h4>
             <ul>
                 <li>Direction changes when running at speed no longer set speed to zero. For further information see:
-                    <a href="https://github.com/JMRI/JMRI/pull/4945">PR-4945,
+                    <a href="https://github.com/JMRI/JMRI/pull/4945">PR-4945</a>,
                     <a href="https://github.com/JMRI/JMRI/pull/4964">PR-4964</a>, and
                     <a href="https://github.com/JMRI/JMRI/pull/4965">PR-4965</a>.
                 </li>
@@ -319,11 +319,11 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h4>SPROG</h4>
             There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
             <ul>
-                <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
-                <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
-                <li>Do not open the SPROG console window</li><br>
-                <li>Disable power conversion (CV 29) in all locos</li><br>
-                <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+                <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
+                <li>Do not enable extra debugging through default.lcf, nor open the system console window</li>
+                <li>Do not open the SPROG console window</li>
+                <li>Disable power conversion (CV 29) in all locos</li>
+                <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
             </ul>
             Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
             open to inform the user of this. The track power will be turned off and must be turned on again using the power control.<br>
@@ -333,12 +333,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>Wouter from Thurgau, Schweiz added Dutch translations to the NMRA CV tabs</li>
         </ul>
 
-        <h4><a href-"http://www.ldhtrenes.com.ar">LDH</a></h4>
+        <h4>LDH</h4>
             <ul>
                 <li>Osvaldo Hojvat provided definitions for several
-                    <a href-"http://www.ldhtrenes.com.ar">LDH</a>
+                    <a href="http://www.ldhtrenes.com.ar">LDH</a>
                     decoders: models 4F1.5 v27, 2F-7F v26, 4F1.5 v55
-                    and LDH 4F1.5 v55 Motor y Sonido </li>
+                    and LDH 4F1.5 v55 Motor y Sonido</li>
             </ul>
 
         <h4>QSI</h4>

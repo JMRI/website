@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title>
- JMRI: Release Notes for 4.9.5
- </title>
+    <title>
+        JMRI: Release Notes for 4.9.5
+    </title>
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.9.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
-
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
 <body>
-
 <!--#include virtual="/Header.shtml" -->
 
   <div id="mBody">
     <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
+
       <h1>
       Release Notes for JMRI 4.9.5 release
       </h1>
@@ -93,7 +87,6 @@ their library references:
     </ul>
 </ul>
 
-
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
@@ -124,7 +117,7 @@ These may be relevant to you if you're updating from an earlier version.
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     Due to changes in the capitalization of some method and property names, some scripts may fail until
     adjusted to use the new capitalization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
-    JMRI class will list the correct capitalization.</li>
+    JMRI class will list the correct capitalization.</p>
 
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     For Windows users only: <a href="jmri4.9.3.shtml">JMRI 4.9.3</a> (and all later) has a new 
@@ -262,20 +255,21 @@ If that doesn't work for you, the files up to 4.11.x are also still available fr
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
 
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.dmg</a><br/>
-  sha256: 9e7e4fcd9cfe6a5cadf50c2b1bdf6f1e838d524ff4ce5fd90191e254fd584525 </p>
+  sha256: 9e7e4fcd9cfe6a5cadf50c2b1bdf6f1e838d524ff4ce5fd90191e254fd584525</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.exe">https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.exe</a><br/>
-   sha256: fd7a4b12d119761e44d2441e2a715ddbd9b6cf857d0418d5470303bd9aefd2e6</p>
+   sha256: fd7a4b12d119761e44d2441e2a715ddbd9b6cf857d0418d5470303bd9aefd2e6</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.5/JMRI.4.9.5.Re5a0179.tgz</a><br/>
-   sha256: 9e22b0dd001c8c541ad6899058d3e25140ddd3dac229098eece1899ff064dbfc</p>
+   sha256: 9e22b0dd001c8c541ad6899058d3e25140ddd3dac229098eece1899ff064dbfc</li>
 </ul>
-
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -298,7 +292,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <h4>C/MRI</h4>
             <ul>
                 <li>Chuck Catania updated the C/MRI menu and improved the C/MRI serial monitor.</li>        
-                </ul>    
             </ul>
 
         <h4>DCC++</h4>
@@ -464,6 +457,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
- <script src="/js/main.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>

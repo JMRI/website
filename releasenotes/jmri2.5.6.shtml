@@ -40,8 +40,7 @@ back to an earlier version.
 <p>This is the sixth, and hopefully last, in a new series of test versions. We expect this series
 to end in a production release in late June 2009.
 
-It contains 
-many new features, including:
+It contains many new features, including:
 
 <ul>
 <li>There's now a 
@@ -55,7 +54,6 @@ with ones that are missing data.
 </ul>
 along with lots of other changes.  See the complete list below.
 
-
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.  
 Therefore, this test version should be considered experimental.
@@ -64,11 +62,11 @@ Therefore, this test version should be considered experimental.
 <!-- version that's good enough to be recommended for general use, including by new users.  -->
 <!-- We're therefore making that version, "Production version 2.6" available for download today. -->
 
-<b><p>
+<p><b>
 JMRI is now only available under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</p></b>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>New warnings for this version:</h3>
 
@@ -134,12 +132,11 @@ To see JMRI's future plans for this and other compatibility issues, please see t
 <p>
 Starting in JMRI 2.5.1,
 the way you drag things in the Layout Editor has changed if you
-are using a Linux computer. 
-
+are using a Linux computer.
 
 <h3>Download links:</h3>
 
-<br><b>JMRI 2.5.6 has been superseded by 
+<b>JMRI 2.5.6 has been superseded by
 <a href="jmri2.5.7.shtml">JMRI 2.5.7</a> due to a bug found just after release.
 You should install 
 <a href="jmri2.5.7.shtml">JMRI 2.5.7</a> instead of JMRI 2.5.6</b>
@@ -162,7 +159,7 @@ Dan Boudreau updated the operations tools to remove any train icon(s) from the p
 <p>
 Fix an off-by-one error when doing manual reads and writes with the DecoderPro indexed-CV pane.
 
-<p><a id="pe">
+<p><a id="pe"></a>
 Pete Cressman made some significant improvements to the 
 <a href="http://jmri.org/help/en/package/jmri/jmrit/display/PanelEditor.shtml">Panel Editor</a>.
 The textfields that required users to type in the system name of a JMRI entity, e.g. a turnout, sensor, etc, and then press an

@@ -65,13 +65,15 @@ and try <a href="jmri2.99.2.shtml">JMRI v2.99.2</a>.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
+<div class="wide">
+    <ul>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.exe/download</a></li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.exe/download</a></p>
-
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.tgz/download</a></p>
-
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.99.1-r19585.tgz/download</a></li>
+    </ul>
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
@@ -115,7 +117,6 @@ location's name and route comment is printed.</li>
 <li>Fixed a problem when changing a car's road name or road number, sometimes the program would report that the
 car would not fit on the car's current track.</li>
 <li>Fixed a problem when using the conductor window and canceling a local move.</li>
-<li>
 </ul>
 
 <p>Paul Bender added a new Generic Consist Manager which will be installed on systems such as the SPROG that implement a command station interface (the ability to send an arbitrary NMRA DCC packet).  This version of the Consist Manager uses an NMRA Consist Control packet to create the consist instead of the Operations Mode Programming request used in the previous Generic Consist Manager.  This will allow writing the consist address on decoders that support Operations Mode Programming, but do not allow operations mode programming of CV19 (Certain Lenz decoders fall into this category).
@@ -126,12 +127,11 @@ car would not fit on the car's current track.</li>
 <li>Update the EasyDCC interface so that it would be picked up correctly on the DP3 status screen</li>
 <li>Updated the Layout Block Routing Protocol, so that when block traffic flow is updated, this is reflected in the routing table</li>
 <li>Added the ability to delete Signal Mast logic from the Signaling Pairs window</li>
+</ul>
 
 <p>Georgio Terdida fixed a bug that may occur when loading an XnTcp adapter.</p>
 
 <p>Paul Bender fixed the port number display for network connection configurations.</p>
-
-</ul>
 
 <p>Help pages with external links (e.g. full "http:" links) and of types that the JavaHelp browser
 can't display are now sent to the user's default web browser for display.

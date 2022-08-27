@@ -6,23 +6,17 @@
  </title>
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
-
-<!-- Style -->
+    <!--#include virtual="/Style.shtml" -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
 </head>
 
 <body>
 
 <!--#include virtual="/Header.shtml" -->
-
   <div id="mBody">
     <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
+
       <h1>
       Release Notes for JMRI 4.8 release
       </h1>
@@ -248,8 +242,8 @@ These may be relevant to you if you're updating from an earlier version.</p>
 If that doesn't work for you, the files up to 4.11.x are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/production%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.</p>
-
-<ul>
+<div class="wide">
+    <ul>
 <li>macOS / OS X: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.dmg">https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.dmg</a><br/>
   sha256: 0cc00f0a676e659bedd871c1a2dd4517de22a159bb3a47cb2815aa0d3ff17d31</li>
@@ -262,7 +256,7 @@ Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.</p>
 	href="https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.tgz">https://github.com/JMRI/JMRI/releases/download/v4.8/JMRI.4.8.Rbe0ff15.tgz</a><br/>
    sha256: 4492e3466d35c2c4685e9173a252b8d0f09cb5e871d9fa0af50780ef47786756</li>
 </ul>
-
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
@@ -278,14 +272,14 @@ These are development files, and might not be working at any particular time.</p
 <h2>Changes since <a href="jmri4.6.shtml">production release 4.6</a>:</h2>
 
 <p>The full lists of changes in each of the preceding test releases 
-(<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.1+">4.7.1<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.2+">4.7.2<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.3+">4.7.3<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.4+">4.7.4<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.5+">4.7.5<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">4.7.6<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.7+">4.7.7<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.8+">4.7.8<a>)
+(<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.1+">4.7.1</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.2+">4.7.2</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.3+">4.7.3</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.4+">4.7.4</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.5+">4.7.5</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.6+">4.7.6</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.7+">4.7.7</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.8+">4.7.8</a>)
 are available in our 
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.</p>
 
@@ -371,7 +365,7 @@ are available in our
                 like indexed CVs, special ways to write upper-address CVs not supported by a command station, etc.
                 Previously, these would have trouble recovering when they encountered multiple errors.
                 (This came up in the context of the time that the DCS240 command station takes to do writes, 
-                which JMRI thought was an error) This has now been greatly improved.</p>
+                which JMRI thought was an error) This has now been greatly improved.</li>
             <li>Turnouts now have a DELAYED feedback mode. In this mode, when you
                 command a turnout to move, it first goes to INCONSISTENT state for 
                 a few seconds (to give the points time to move), before finishing up
@@ -576,14 +570,14 @@ are available in our
 
         <h4>ESU</h4>
             <ul>
-                <li>Dave Heap made the following changes:</li>
+                <li>Dave Heap made the following changes:
                 <ul>
                     <li>Added the ESU SwitchPilot series.</li>
                     <li>Added new Product IDs.</li>
                     <li>Added Heavy Load and Coast Mode logical functions as per latest firmware for the soon-to-be-released Full Throttle steam projects.</li>
                     <li>Added Drive Hold (Logical Function) for LokPilot. (Dave Heap)</li>
                     <li>Added/updated some models and Product IDs. (Dave Heap)</li>
-                </ul>
+                </ul></li>
             </ul>
 
         <h4>Hornby</h4>
@@ -631,7 +625,6 @@ are available in our
                 <li>Ronald Kuhn added the MX681 and MX685 decoders (<a href="https://github.com/JMRI/JMRI/pull/2736">#2736</a>)</li>
                 <li>Ronald Kuhn updated German translations for several Zimo decoders (<a href="https://github.com/JMRI/JMRI/pull/2736">#2736</a>)</li>
             </ul>
-
 
    <h3>Dispatcher</h3>
         <ul>

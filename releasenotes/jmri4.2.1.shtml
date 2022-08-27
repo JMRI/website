@@ -31,7 +31,6 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production version 4.2.1 of JMRI/DecoderPro is available for download.</p>
 
-
 <!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
@@ -70,8 +69,6 @@ and the Actions menu in DecoderPro.
 
 See the <a href="jmri4.0.1.shtml#warnings">JMRI 4.0.1 release note</a>
 for older warnings that may be relevant to you if you're updating from an earlier version.
-
-too.
 
 <p>We are now building releases, including this one, from our
     <a href="https://github.com/JMRI">GitHub repository</a>.
@@ -158,21 +155,22 @@ too.
 
 <h3>Download links:</h3>
 
-
 <p>Please use these links for downloading:</p>
-
-<p>Mac OS X: <a
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download</a><br/>
-    sha256: 56eb8403292237b5f5f63fb6fa4f0462d253fea0a752c12c68072418f8f96a8b</p>
+    sha256: 56eb8403292237b5f5f63fb6fa4f0462d253fea0a752c12c68072418f8f96a8b</li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.exe/download</a><br/>
-    sha256: 73ffe6af404463d4d10122fff5ccb719db6daf336331b23e6ad55a890267b49a</p>
+    sha256: 73ffe6af404463d4d10122fff5ccb719db6daf336331b23e6ad55a890267b49a</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.tgz/download</a><br/>
-    sha256: 5b4c7024c3767ac1e5bc659b14d9e415fc13a1937703d861757a2a3ed055547d</p>
-
+    sha256: 5b4c7024c3767ac1e5bc659b14d9e415fc13a1937703d861757a2a3ed055547d</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -333,12 +331,10 @@ properly.  This has been fixed.  This is the only change in this release since J
 
     <h4>New / Updated decoder definitions</h4>
 
-        <p>The 
-            <a href="http://jmri.org/xml/schema/decoder.xsd">XML schema</a>
-            for decoder files has been made more precise.
-           See the 
-           <a href="#decoderSchema">warning above</a>
-           for more on the implications of this.
+        <p>The <a href="http://jmri.org/xml/schema/decoder.xsd">XML schema</a>
+        for decoder files has been made more precise. See the
+        <a href="#decoderSchema">warning above</a>
+        for more on the implications of this.</p>
         <ul>
             <li>Dave Heap made the following changes to Factory Resets:<br>
                 <ul>
@@ -352,7 +348,6 @@ properly.  This has been fixed.  This is the only change in this release since J
                 </ul>
             </li>
         </ul>
-    </p>
 
         <h5>BLI</h5>
             <ul>

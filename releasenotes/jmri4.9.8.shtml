@@ -124,7 +124,7 @@ These may be relevant to you if you're updating from an earlier version.
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     Due to changes in the capitalization of some method and property names, some scripts may fail until
     adjusted to use the new capitalization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
-    JMRI class will list the correct capitalization.</li>
+    JMRI class will list the correct capitalization.</p>
 
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     For Windows users only: <a href="jmri4.9.3.shtml">JMRI 4.9.3</a> (and all later) has a new 
@@ -262,21 +262,21 @@ Please note that the download links in this and future JMRI releases link to
 If that doesn't work for you, the files up to 4.11.x are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
-
-<ul>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.dmg</a><br/>
-  sha256: 22b110d09d49b6ce62570b98a757315cf70ad4dd9cdf333456925dfe666f087a </p>
+    sha256: 22b110d09d49b6ce62570b98a757315cf70ad4dd9cdf333456925dfe666f087a</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.exe">https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.exe</a><br/>
-   sha256: fff8695cac8172c49d798eb72e2eb35fdcf2bb5c6a239d1f95b29a2d5b8716ae</p>
+    sha256: fff8695cac8172c49d798eb72e2eb35fdcf2bb5c6a239d1f95b29a2d5b8716ae</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.8/JMRI.4.9.8.R732d507.tgz</a><br/>
-   sha256: 00c155b21b026afc4563c922388f354469554022be5b041cb35d693f02ca4426</p>
-</ul>
-
+    sha256: 00c155b21b026afc4563c922388f354469554022be5b041cb35d693f02ca4426</li>
+    </ul>
+</div>
 
 <!-- 
 Preliminary build files (not the final released files) can be found

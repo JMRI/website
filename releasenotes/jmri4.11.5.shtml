@@ -145,11 +145,11 @@ These may be relevant to you if you're updating from an earlier version.
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
     <ul>
-        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
-        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
-        <li>Do not open the SPROG console window</li><br>
-        <li>Disable power conversion (CV 29) in all locos</li><br>
-        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
+        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><
+        <li>Do not open the SPROG console window</li>
+        <li>Disable power conversion (CV 29) in all locos</li>
+        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
     </ul>
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
@@ -215,7 +215,7 @@ These may be relevant to you if you're updating from an earlier version.
     cannot be automatically flagged because JMRI allows file: URLs; these will have to
     be changed manually.
 
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span><a id="validate" name="validate"/>
+    <a id="validate" name="validate"></a><p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
     When loading a panel file, JMRI applications now check the file's syntax and contents.
     This process is called "XML validation"
     If validation fails, an error message is shown
@@ -270,26 +270,26 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 If that doesn't work for you, the files up to 4.11.x are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>.
-Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
-
-<ul>
+Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.</p>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.5/JMRI.4.11.5.Rcf304cb.dmg">https://github.com/JMRI/JMRI/releases/download/v4.11.5/JMRI.4.11.5.Rcf304cb.dmg</a><br/>
-  sha256: 7248863496b0b31e97cbbba2e4bf38f94e332a45f2a4c11ef3df9b719d12cbc3 </li>
+    sha256: 7248863496b0b31e97cbbba2e4bf38f94e332a45f2a4c11ef3df9b719d12cbc3</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.5/JMRI.4.11.5.Rcf304cb.exe">https://github.com/JMRI/JMRI/releases/download/v4.11.5/JMRI.4.11.5.Rcf304cb.exe</a><br/>
-   sha256: 5ca05f0a4877512609662d67186e30c24d0808357b03af603d35b3015f7a5bf6</li>
+    sha256: 5ca05f0a4877512609662d67186e30c24d0808357b03af603d35b3015f7a5bf6</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.5/JMRI.4.11.5.Rcf304cb.tgz">https://github.com/JMRI/JMRI/releases/download/v4.11.5/JMRI.4.11.5.Rcf304cb.tgz</a><br/>
-   sha256: 59bac04bf5eb15d0a812644acf9913917c5935f6885748994427becd0a2b6ea5</li>
-</ul>
-
+    sha256: 59bac04bf5eb15d0a812644acf9913917c5935f6885748994427becd0a2b6ea5</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -365,7 +365,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             Also contains update of the Märklin mLD and mSD decoders.
 
     <h3>Layout Editor</h3>
-        <a id="LE" name="LE"/>
+        <a id="LE" name="LE"></a>
         <ul>
             <li>Text labels with alternate font assignments retain their formatting. (Dave Sand)</li>
             <li>The column widths for the Valid Paths section of the routing table adapt to the content. (Dave Sand)</li>
@@ -375,7 +375,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         <ul>
             <li>Fix for nested antecedent Conditionals that would break when edited in 4.11.4. (Dave Sand)</li>
             <li>Antecedents are localized for display and editing but stored in English.
-                This faciliates portability between languages. (Dave Sand)</li>
+                This facilitates portability between languages. (Dave Sand)</li>
         </ul>
 
    <h3>Panel Editors</h3>

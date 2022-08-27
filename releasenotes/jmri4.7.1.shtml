@@ -59,7 +59,8 @@ see our
 <h3>Known problems with this release</h3>
 
 <ul>
-    <li>There's a <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI preferences<a/>. 
+    <li>There's a <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI
+        preferences</a>.
         If you've already configured your C/MRI connection before installing this
         version, it should continue to work, but you probably won't be able to add, remove
         or modify the C/MRI node configuration.  This should be fixed in JMRI 4.7.2.
@@ -171,7 +172,6 @@ These may be relevant to you if you're updating from an earlier version.
     Please ask on the JMRI Users group
     for help converting them, or just drop them and use the current definitions.</p>
 
-
 <h3>Download links:</h3>
 
 Please note that the download links in this and future JMRI releases link to 
@@ -180,7 +180,8 @@ If that doesn't work for you, the files up to 4.11.x are also still available fr
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
 
-<ul>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.dmg</a><br/>
   sha256: fed355112237a22b366e7b961ef56215db30e85e76324ef1ca412a1c0b5240d6</li>
@@ -193,6 +194,7 @@ Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.1/JMRI.4.7.1-R1b7dd65.tgz</a><br/>
    sha256: 345fad551a453962514f3c2d2709471b6339e36505e90c3b8d389c2ec875b78a</li>
 </ul>
+</div>
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -217,11 +219,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>C/MRI</h5>
             <ul>
-            <li>There's a <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI preferences<a/>. 
-                If you've already configured your C/MRI connection before installing this
-                version, it should continue to work, but you probably won't be able to add, remove
-                or modify the C/MRI node configuration.  This should be fixed in JMRI 4.7.2.
-            </li>
+                <li>There's a <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI
+                    preferences</a>.
+                    If you've already configured your C/MRI connection before installing this
+                    version, it should continue to work, but you probably won't be able to add, remove
+                    or modify the C/MRI node configuration.  This should be fixed in JMRI 4.7.2.
+                </li>
             </ul>
 
         <h5>DCC++</h5>
@@ -291,12 +294,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
         <h5>ESU</h5>
             <ul>
-                <li>Dave Heap made the following changes:</li>
+                <li>Dave Heap made the following changes:
                 <ul>
                     <li>Added the ESU SwitchPilot series.</li>
                     <li>Added new Product IDs.</li>
                     <li>Added Heavy Load and Coast Mode logical functions as per latest firmware for the soon-to-be-released Full Throttle steam projects.</li>
-                </ul>
+                </ul></li>
             </ul>
 
         <h5>Kuehn</h5>

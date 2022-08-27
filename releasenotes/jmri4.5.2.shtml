@@ -107,7 +107,8 @@ from
 See the <a href="jmri4.4.shtml#warnings">JMRI 4.4 release note</a> for warnings predating the 4.4 development series.
 These may be relevant to you if you're updating from an earlier version.
 
-<p><em>(Since JMRI 4.5.1)</em>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
+<p><em>(Since JMRI 4.5.1)</em>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS
+X distributions.</p>
 
 <p><em>(Since JMRI 4.5.1)</em>Internal turnouts and sensors need to have complete, individual system names.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
@@ -139,22 +140,24 @@ These may be relevant to you if you're updating from an earlier version.
     Please ask on the JMRI Users group
     for help converting them, or just drop them and use the current definitions.</p>
 
-
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.dmg/download</a><br/>
-    sha256: 300058970f474bf77279dc0cffc11dfce83f60a48f8fd4bec033f8ac154f182c</p>
+    sha256: 300058970f474bf77279dc0cffc11dfce83f60a48f8fd4bec033f8ac154f182c</li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.exe/download</a><br/>
-    sha256: 03f9c20d74cba3d7f8c880444cd5c5521efabd1cdb7297a980edc953aa12c2e2</p>
+    sha256: 03f9c20d74cba3d7f8c880444cd5c5521efabd1cdb7297a980edc953aa12c2e2</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.2-R288026f.tgz/download</a><br/>
-    sha256: c9f03aa4228be166d8678b767b0ffd8d4efbce9934b54589f9b39b49712468bd</p>
-
+    sha256: c9f03aa4228be166d8678b767b0ffd8d4efbce9934b54589f9b39b49712468bd</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the

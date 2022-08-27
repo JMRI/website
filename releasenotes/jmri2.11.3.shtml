@@ -53,11 +53,11 @@ along with other changes.  See the complete list below.
 They may require a certain amount of experience before they are working well.  
 Therefore, this test version should be considered experimental.
 
-<b><p>
+<p><b>
 JMRI is now only available under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</p></b>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>New warnings for this version:</h3>
 
@@ -94,15 +94,18 @@ click the button to continue.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:
+<div class="wide">
+    <ul>
+<li>Mac OS X:
+<a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.dmg/download</a></li>
 
-<p>Mac OS X:
-     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.dmg/download</a>
+<li>Windows:
+<a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.exe/download</a></li>
 
-<p>Windows:
-     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.exe/download</a>
-
-<p>Linux:
-     <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.tgz/download</a>
+<li>Linux:
+<a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.3.tgz/download</a></li>
+    </ul>
+</div>
 
 <h3>Changes since production version 2.11.2</h3>
 
@@ -358,7 +361,7 @@ Leo Bicknell improved the LocoNet monitor:
 <li>Improved decode of switch status broadcast, even though I've never seen anything send one.
 <li>Changed OPC_PANEL_RESPONSE to indicate if it was duplex capable, if we're interpreting that bit correctly.
 <li>Included a long form decode of Command Station OpSw responses.
-</ol>
+</ul>
 
 <p>
 Leo Bicknell fixed a presentation problem in the LocoNet ID tool

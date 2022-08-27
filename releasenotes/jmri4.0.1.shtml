@@ -104,16 +104,16 @@ To use this or any later JMRI test or production releases, you'll have to
     prompts to restart JMRI when it should not.</p>
 
     <p>Because of internal code changes, this version of JMRI may not be compatible with
-    <a href="http://home.comcast.net/~kb0oys/"><a href="http://cats4ctc.org"><!-- was http://home.comcast.net/~kb0oys/ -->  2.34</a> or earlier.  Keep using
-    <a href="jmri3.10.shtml">JMRI 3.10</a> with <a href="http://cats4ctc.org"><!-- was http://home.comcast.net/~kb0oys/ -->  until there's a <a href="http://cats4ctc.org"><!-- was http://home.comcast.net/~kb0oys/ -->  update that
-    says it will work with JMRI 3.11.</p>
+    <a href="http://cats4ctc.org">CATS 2.34</a> or earlier. Keep using
+    <a href="jmri3.10.shtml">JMRI 3.10</a> with <a href="http://cats4ctc.org">CATS</a>  until there's a <a
+    href="http://cats4ctc.org"><!-- was http://home.comcast.net/~kb0oys/ -->
+    update</a> that says it will work with JMRI 3.11.</p>
 
     <p>The XmlIO web service has been removed. All users who were relying on the
     XmlIO API are recommended to begin using the JSON API. inControl web throttle
     users are recommended to begin using webThrottle instead, or invest in devices
     that can support webThrottle, the iOS WiThrottle, or the Android Engine
     Driver.</p>
-
 
 <h3>Known problems with this release</h3>
 
@@ -123,24 +123,29 @@ To use this or any later JMRI test or production releases, you'll have to
         In the meantime, the workaround is to restart JMRI and/or the node
         and try again; that might allocate different alias values.
 
-
 <h3>Download links:</h3>
 
     <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
 
-   <p>Please use these links for downloading:</p>
-   <p>Mac OS X: <a
-        HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.dmg/download</a></p>
-    <p>sha256: c4b1c9015789226192c40953a6f61cdce51919b54e2c099aeb14277aec01fd6c</p>
+    <p>Please use these links for downloading:</p>
+    <div class="wide">
+        <ul>
+   <li>Mac OS X: <a
+        HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.dmg/download">https
+       ://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.dmg/download</a><br>
+    sha256: c4b1c9015789226192c40953a6f61cdce51919b54e2c099aeb14277aec01fd6c</li>
 
-    <p>Windows: <a
-        HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.exe/download</a></p>
-    <p>sha256: ae902fa8acee29141440fcd09cd08ff627c6f3a77ac1b1f7bea7b876fc2ddb5c</p>
+    <li>Windows: <a
+        HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.exe/download">https
+        ://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.exe/download</a><br>
+    sha256: ae902fa8acee29141440fcd09cd08ff627c6f3a77ac1b1f7bea7b876fc2ddb5c</li>
 
-    <p>Linux: <a
-        HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.tgz/download</a></p>
-    <p>sha256: bffbe93d6feb0873642fd4ca49a12ab513674610ecc842f9f5d17b7a0d6a975f</p>
-
+    <li>Linux: <a
+        HREF="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.tgz/download">https
+        ://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.0.1-r29956.tgz/download</a><br>
+    sha256: bffbe93d6feb0873642fd4ca49a12ab513674610ecc842f9f5d17b7a0d6a975f</li>
+        </ul>
+    </div>
 
 <h3>Changes since production release 3.10.1</h3>
 

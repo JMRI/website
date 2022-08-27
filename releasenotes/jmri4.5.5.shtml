@@ -72,7 +72,7 @@ see our
 		Setting signals via Logix or Panels is not affected.</li>
 </ul>
 
-If any of those effect you, please either wait for
+<p>If any of those effect you, please either wait for
 <a href="jmri4.5.6.shtml">JMRI 4.5.6</a>, due out shortly after this one,
 or stay with your current release.
 as we work toward JRMI 4.5.6, there might also be fixes available in
@@ -126,7 +126,8 @@ These may be relevant to you if you're updating from an earlier version.
       AppleScript Support</a>, but please be aware that this may not work
     on upcoming releases of macOS or Java.
 
-<p><em>(Since JMRI 4.5.1)</em> LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
+<p><em>(Since JMRI 4.5.1)</em> LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS
+    X distributions.</p>
 
 <p><em>(Since JMRI 4.5.1)</em> Internal turnouts and sensors need to have complete, individual system names.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
@@ -162,23 +163,25 @@ These may be relevant to you if you're updating from an earlier version.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>macOS (Sierra) and OS X: <a
+<div class="wide">
+    <ul>
+<li>macOS (Sierra) and OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd-signed.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd-signed.dmg/download</a><br/>
-    sha256: a9b17a2ebfb3cbb902dab0b09b98621be56e18c88ae1a9536ab544c9c46382ae (This is the new "signed" form)</p>
+    sha256: a9b17a2ebfb3cbb902dab0b09b98621be56e18c88ae1a9536ab544c9c46382ae (This is the new "signed" form)</li>
 
-<p>Older OS X: <a
+<li>Older OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.dmg/download</a><br/>
-    sha256: b2e41f9de2c4b34cecd283d5e84dfcb2e11286094f8120bea230cf6666ec4dab (This is an older form, use it if the signed image above doesn't work and then please let us know)</p>
+    sha256: b2e41f9de2c4b34cecd283d5e84dfcb2e11286094f8120bea230cf6666ec4dab (This is an older form, use it if the signed image above doesn't work and then please let us know)</li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.exe/download</a><br/>
-    sha256: cc02c4b9bf781579151a4d7217075471222aeedaf2a0cc81fac7867d37ce5f59</p>
+    sha256: cc02c4b9bf781579151a4d7217075471222aeedaf2a0cc81fac7867d37ce5f59</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.5-R5a99fdd.tgz/download</a><br/>
-    sha256: 580a97fdf1e2b2e0c2e2c5f3315dbf25fabf54163940f7397b478d1937dac089</p>
-
-
+    sha256: 580a97fdf1e2b2e0c2e2c5f3315dbf25fabf54163940f7397b478d1937dac089</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the

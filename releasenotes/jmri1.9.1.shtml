@@ -45,28 +45,28 @@ along with lots of other changes.  See the complete list below.
 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.  
-Therefore, this test version should be considered experimental.
+Therefore, this test version should be considered experimental.</p>
 
 <!-- <p>We are very pleased to announce that the 1.7 series of JMRI test releases has resulted in a  -->
 <!-- version that's good enough to be recommended for general use, including by new users.  -->
 <!-- We're therefore making that version, "Production version 1.8" available for download today. -->
 
-<b><p>
+<p><b>
 Note that starting with this release, JMRI is only available 
 under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</p></b>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>New warnings for this version:</h3>
 
 <p>The way that panels are opened, closed and accessed has changed:
-<OL>
+<ol>
 <li>A panel is not deleted when its panel window is closed.
 <li>To delete a panel, select "Delete this panel..." in the panel's File menu.  A validation message is displayed before the panel is actually deleted. This action deletes the panel from the program.  To permanently delete the panel from files, panels must be saved to disk after deleting the panel.
 <li>A new entry "Show Panel" has been added to the Panels menu.  All panels currently present in the program are listed in the submenu of Show Panel, independent of whether the panel window is closed (checked in the submenu), frontmost, or minimized. Selecting a particular panel makes it visible and frontmost.
 <li>When "New panel..." is selected, a small window is displayed allowing the user to select a "Panel Editor" panel or a "Layout Editor" panel.  The default choice is "Panel Editor".
-</OL>
+</ol>
 
 
 <p>This version of JMRI no longer supports NCE AIU broadcasts.  This change was needed so that JMRI could reliably read certain CV values. We recommend that if you use NCE AIUs, that you upgrade the command station EPROM to version 2007 or newer and turn off AIU broadcasts.  Code has been added to detect if AIU broadcasts are enabled, and a warning message will appear at startup requesting that AIU broadcasts be turned off for proper operation of the JMRI programs.

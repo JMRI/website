@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
  JMRI: Release Notes for 4.13.3
  </title>
@@ -10,7 +9,7 @@
     <meta name="keywords" content="java model railroad JMRI 4.13.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
     <!--#include virtual="/Style.shtml" -->
-
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -55,18 +54,17 @@ see our
 
 <h3>Update From Older JMRI Versions</h3>
 <p>If you are currently using JMRI 4.9.6 or earlier, we strongly recommend that you update to
-        <a href="jmri4.12.shtml">JMRI 4.12</a> and make sure that's running OK before
-        updating to this test release.  There have been a number of
-        changes in serial port support, panel file format and configuration options since those earlier releases,
-        and moving to the stable <a href="jmri4.12.shtml">JMRI 4.12</a> release
-        is a good way to work through any possible problems.
-        </p>
+    <a href="jmri4.12.shtml">JMRI 4.12</a> and make sure that's running OK before
+    updating to this test release.  There have been a number of
+    changes in serial port support, panel file format and configuration options since those earlier releases,
+    and moving to the stable <a href="jmri4.12.shtml">JMRI 4.12</a> release
+    is a good way to work through any possible problems.
+    </p>
 <p>If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
     you <u>must</u>
     update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
     carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
     before updating to this release.</p>
-
 
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
@@ -169,15 +167,15 @@ check the files against the checksums shown below.</p>
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.dmg</a><br/>
-  sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7 </li>
+    sha256: 577b4df863b0b5e8f3ba6a0478b74292fec958baa71a9baa3fab8130422732c7</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.exe</a><br/>
-   sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
+    sha256: eea78f773154ebd318b336bfccddbd9b3803b126621c039ba2fed002d752361b</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.13.3/JMRI.4.13.3+R9e5390b.tgz</a><br/>
-   sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
+    sha256: af3d2cba9938feb311dbbe69c3cf6990501360643331f66ba037df30c632cb23</li>
 </ul>
 </div>
 

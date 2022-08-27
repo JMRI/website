@@ -77,7 +77,7 @@ see our
     </li>
 </ul>
 
-If any of those effect you, please either wait for
+<p>If any of those effect you, please either wait for
 <a href="jmri4.7.5.shtml">JMRI 4.7.5</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
@@ -118,7 +118,7 @@ their library references:
         <code>gnu.io.SerialPort</code>, statements will have to be replaced by 
         a reference to the corresponding 
         <code>purejavacomm</code> class.
-    </ul>
+    </ul></li>
 </ul>
 
 <a id="warnings" name="warnings"></a>
@@ -134,6 +134,7 @@ their library references:
                 might have to manually remove a lib\jna-4.2.2.jar 
                 file if it's present. If the program starts OK for you, don't 
                 worry about this.</li>
+            </ul>
     <li>This version of JMRI (and all later) writes a slightly streamlined
         version of panel file contents.  
         Older files should still be readable by this version of JMRI, 
@@ -150,7 +151,7 @@ their library references:
             the class jmri.jmrix.loconet.loconetovertcp.Server need to 
             be changed to refer instead to
             jmri.jmrix.loconet.loconetovertcp.LnTcpServer.</li>
-        </ul>
+        </ul></li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -248,14 +249,14 @@ These may be relevant to you if you're updating from an earlier version.
 
 <h2>Download links:</h2>
 
-
-Please note that the download links in this and future JMRI releases link to 
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.4">Github servers</a>.
 If that doesn't work for you, the files up to 4.11.x are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
-Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
+Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.</p>
 
-<ul>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.dmg</a><br/>
   sha256: fb25c02f9445a8861289b98ac69de7f8180c90c1c26b2f8d8ce78747d848a0f8</li>
@@ -267,9 +268,8 @@ Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.4/JMRI.4.7.4.Re0b7c98.tgz</a><br/>
    sha256: 929dd018afa4734d64504e7e3c896969a1bc89e85c159d5110a1e1579b54da66</li>
-</ul>
-
-
+    </ul>
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
@@ -289,7 +289,6 @@ These are development files, and might not be working at any particular time.</p
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.7.4+">list of included commits</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
-
     <h4>Hardware Support</h4>
 
         <h5>C/MRI</h5>
@@ -433,7 +432,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 USB serial ports.  This is a major migration for JMRI, so 
                 please let us know if you encounter any problems connecting to 
                 your layout. See above for some steps you will have to take to 
-                update settings in the preferences.
+                update settings in the preferences.</li>
         </ul>
 
    <!--#include virtual="/Footer.shtml" -->

@@ -246,9 +246,9 @@ These may be relevant to you if you're updating from an earlier version.
     port, it may be necessary to edit the connection's preferences, select the 
     appropriate "baud" rate, save the connection.  This updates the configuration profile 
     .XML file to use one of the "baud" rate strings expected by the Uhlenbrock-specific 
-    code in JMRI.  It is necessary to re-start JMRI for this change to take effect.
+    code in JMRI.  It is necessary to re-start JMRI for this change to take effect.</p>
 
-a id="download" name="download"></a>
+<a id="download" name="download"></a>
 <h2>Download links:</h2>
 
 Please note that the download links in this and future JMRI releases link to 
@@ -256,21 +256,21 @@ Please note that the download links in this and future JMRI releases link to
 If that doesn't work for you, the files up to 4.11.x are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
-
-<ul>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.3/JMRI.4.9.3.Rcadf9de.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.3/JMRI.4.9.3.Rcadf9de.dmg</a><br/>
-  sha256: 16e3c4451c47eada60f22948210e68f3df84cb6d014ca02fc948788b88b421bc </p>
+    sha256: 16e3c4451c47eada60f22948210e68f3df84cb6d014ca02fc948788b88b421bc</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.3/JMRI.4.9.3.Rcadf9de.exe">https://github.com/JMRI/JMRI/releases/download/v4.9.3/JMRI.4.9.3.Rcadf9de.exe</a><br/>
-   sha256: 538b1ecbb81101e51976cb8f0bac723c5f76805ef928f9e4c5c9ad8d1cc62b4c</p>
+    sha256: 538b1ecbb81101e51976cb8f0bac723c5f76805ef928f9e4c5c9ad8d1cc62b4c</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.3/JMRI.4.9.3.Rcadf9de.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.3/JMRI.4.9.3.Rcadf9de.tgz</a><br/>
-   sha256: 931ff88e5b0d251dd4ebaf690fec8a9e013806411dc87017cc6621e813fa9562</p>
-</ul>
-
+    sha256: 931ff88e5b0d251dd4ebaf690fec8a9e013806411dc87017cc6621e813fa9562</li>
+    </ul>
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the

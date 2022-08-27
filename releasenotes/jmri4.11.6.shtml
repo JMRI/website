@@ -10,7 +10,6 @@
     <meta name="keywords" content="java model railroad JMRI 4.11.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
     <!--#include virtual="/Style.shtml" -->
-
 </head>
 
 <body>
@@ -207,7 +206,7 @@ These may be relevant to you if you're updating from an earlier version.
     cannot be automatically flagged because JMRI allows file: URLs; these will have to
     be changed manually.
 
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span><a id="validate" name="validate"/>
+    <a id="validate" name="validate"></a><p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
     When loading a panel file, JMRI applications now check the file's syntax and contents.
     This process is called "XML validation"
     If validation fails, an error message is shown
@@ -261,21 +260,21 @@ These may be relevant to you if you're updating from an earlier version.
 
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
-
-<ul>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.6/JMRI.4.11.6.Rd636117.dmg">https://github.com/JMRI/JMRI/releases/download/v4.11.6/JMRI.4.11.6.Rd636117.dmg</a><br/>
-  sha256: cc7bdba603c0ba5cae58b8f148673fb27a1073e2ea2916f78afe65d07d787857 </li>
+    sha256: cc7bdba603c0ba5cae58b8f148673fb27a1073e2ea2916f78afe65d07d787857</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.6/JMRI.4.11.6.Rd636117.exe">https://github.com/JMRI/JMRI/releases/download/v4.11.6/JMRI.4.11.6.Rd636117.exe</a><br/>
-   sha256: 4fc07a2fc7b7bb1f0c9d91c7f0624cfe4dafe8f01f96e44e16efa252d214b98c</li>
+    sha256: 4fc07a2fc7b7bb1f0c9d91c7f0624cfe4dafe8f01f96e44e16efa252d214b98c</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.6/JMRI.4.11.6.Rd636117.tgz">https://github.com/JMRI/JMRI/releases/download/v4.11.6/JMRI.4.11.6.Rd636117.tgz</a><br/>
-   sha256: b8c787b0eef309c449f1b597f3964daf6d616f0dc64417612d06f9842321356d</li>
-</ul>
-
+    sha256: b8c787b0eef309c449f1b597f3964daf6d616f0dc64417612d06f9842321356d</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -316,7 +315,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Layout Editor</h3>
-        <a id="LE" name="LE"/>
+        <a id="LE" name="LE"></a>
         <ul>
             <li>Now displays hidden mainline track sections while in edit mode.</li>
             <li>Fixed the View Block Routing selection list for cross-overs to use the actual block name

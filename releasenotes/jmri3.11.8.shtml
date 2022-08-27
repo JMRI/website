@@ -129,20 +129,21 @@ users are recommended to begin using webThrottle instead, or invest in devices
 that can support webThrottle, the iOS WiThrottle, or the Android Engine
 Driver.</p>
 
-
-
 <h3>Download links:</h3>
 
-
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.8-r29491.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.8-r29491.dmg/download</a></p>
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.8-r29491.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.8-r29491.dmg/download</a></li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.8-r29491.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.8-r29491.exe/download</a></p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.8-r29491.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.8-r29491.exe/download</a></li>
 
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.8-r29491.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.8-r29491.tgz/download</a></p>
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.8-r29491.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.8-r29491.tgz/download</a></li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -246,7 +247,6 @@ These are development files, and might not be working at any particular time.</p
         </ul>
 -->
     <h4>Miscellaneous</h4>
-        <p></p>
         <ul>
             <li>Improved WebSockets performance, especially with large layouts or complex
                panels. (Randall Wood)</li>
@@ -254,8 +254,8 @@ These are development files, and might not be working at any particular time.</p
                of as "DecoderPro3". (Randall Wood)</li>
             <li>Added the native OpenAL and JOAL libraries for ARM Linux platforms. (Matthew Harris)</li>
             <li>Howard Watkins, Matt Harris and Randall Wood wrote the
-                <a href="http://jmri.org/jython/DisableLayoutEditorSensorIcon.py"> sample script code to
-                enable/disable Sensor icons on a Layout Editor panel.
+            <a href="http://jmri.org/jython/DisableLayoutEditorSensorIcon.py">sample script code</a> to
+            enable/disable Sensor icons on a Layout Editor panel.</li>
         </ul>
 
    <!--#include virtual="/Footer.shtml" -->

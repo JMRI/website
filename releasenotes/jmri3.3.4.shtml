@@ -70,15 +70,18 @@ In operations, using the new destination feature can sometimes cause the program
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.4-r23220.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.4-r23220.dmg/download</a></p>
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.4-r23220.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.4-r23220.dmg/download</a></li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.4-r23220.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.4-r23220.exe/download</a></p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.4-r23220.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.4-r23220.exe/download</a></li>
 
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.4-r23220.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.4-r23220.tgz/download</a></p>
-
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.4-r23220.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.4-r23220.tgz/download</a></li>
+    </ul>
+</div>
 <!--  
 Preliminary build files (not the final released files) can be found
 on the
@@ -109,8 +112,8 @@ These are development files, and might not be working at any particular time.
   <li>Provided a new method to edit turnout and sensor details. -- Kevin Dickerson</li>
   
   <li>Fixed a problem with help links that reported a 404 error through the default browser. -- Dan Boudreau</li>
-
-    <p>Dan Boudreau made the following changes to operations:
+  <li>
+    Dan Boudreau made the following changes to operations:
     
     <ul>
      <li>The Locations window now shows the track types for each location.</li>
@@ -130,11 +133,11 @@ These are development files, and might not be working at any particular time.
      <li>Fixed a problem where a switcher would ignore a car's wait count. Thanks to Joe
       Mattick for finding and reporting this issue.</li>
     </ul>
+    </li>
 
-    </p>
    <li>On LocoNet systems with transponding, fix a spurious power-off when doing ops-mode decoder reads.</li>
 
-	<p>Ken Cameron made the following changes to NCE systems:<br>
+	<li>Ken Cameron made the following changes to NCE systems:
 		<ul>
 		<li>Added preliminary support for the SB5 and Twin systems.</li>
 		<li>Expanded support for the updated PowerCab (1.65) and the updated USB (7.*)</li>
@@ -143,7 +146,7 @@ These are development files, and might not be working at any particular time.
 		<li>Cab Monitor now displays AIU inputs bits as functions on the cab.</li>
 		<li>Added USB Interface support to allow changing the USB cab number</li>
 		</ul>
-	</p>
+	</li>
 	
 	<li>You can now use the "Start Up" pane in preferences to have any of the six
 	    Operations windows open when the program starts.  You can also use that to 
@@ -157,7 +160,6 @@ These are development files, and might not be working at any particular time.
 	    the code, so please let us know if something has gone awry.  About 1/3 of the 
 	    system-specific items have been removed so far, with the migration intended to 
 	    be complete by the time JMRI 3.4 is released this coming summer.
-	    
 
     <li>Added the possibility to copy a selection from the System Console to the clipboard -- Matthew Harris</li>
     

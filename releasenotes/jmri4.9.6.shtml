@@ -122,7 +122,7 @@ These may be relevant to you if you're updating from an earlier version.
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     Due to changes in the capitalization of some method and property names, some scripts may fail until
     adjusted to use the new capitalization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
-    JMRI class will list the correct capitalization.</li>
+    JMRI class will list the correct capitalization.</p>
 
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     For Windows users only: <a href="jmri4.9.3.shtml">JMRI 4.9.3</a> (and all later) has a new 
@@ -254,26 +254,26 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 If that doesn't work for you, the files up to 4.11.x are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
-Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
-
-<ul>
+Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.</p>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.dmg">https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.dmg</a><br/>
-  sha256: 23210ec68cc5dbbc85b015dc642fc61c7b6f5206a72af6bfeadfda026c30be90 </p>
+    sha256: 23210ec68cc5dbbc85b015dc642fc61c7b6f5206a72af6bfeadfda026c30be90</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.exe">https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.exe</a><br/>
-   sha256: f16e77aa35e1f00818838803c834bc6c88043467af57d7e057344774666639d2</p>
+    sha256: f16e77aa35e1f00818838803c834bc6c88043467af57d7e057344774666639d2</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.tgz">https://github.com/JMRI/JMRI/releases/download/v4.9.6/JMRI.4.9.6.R23c3893.tgz</a><br/>
-   sha256: 1aa2a2e78f53976e9793b25a7cfbca350dd92ee7e7edb513ca74f9926388ab9c</p>
-</ul>
-
+    sha256: 1aa2a2e78f53976e9793b25a7cfbca350dd92ee7e7edb513ca74f9926388ab9c</li>
+    </ul>
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the

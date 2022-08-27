@@ -50,7 +50,8 @@ see our
 
 <ul>
     <li><a href="https://github.com/JMRI/JMRI/issues/2754">TMCC Throttle support is broken</a>.</li>
-    <li>There's a <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI preferences<a/>. 
+    <li>There's a <a href="https://github.com/JMRI/JMRI/issues/2953">problem creating or changing C/MRI
+        preferences</a>.
         If you've already configured your C/MRI connection before installing this
         version, it should continue to work, but you probably won't be able to add, remove
         or modify the C/MRI node configuration.  This should be fixed in JMRI 4.7.2.
@@ -58,7 +59,7 @@ see our
     <li>There are <a href="https://github.com/JMRI/JMRI/issues/2753">problems with the Operations help pages</a>.
 </ul>
 
-If any of those effect you, please either wait for
+<p>If any of those effect you, please either wait for
 <a href="jmri4.7.2.shtml">JMRI 4.7.2</a>, due out shortly,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
@@ -70,7 +71,7 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>None at release time</a>
+    <li>None at release time</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -129,7 +130,7 @@ These may be relevant to you if you're updating from an earlier version.
     on upcoming releases of macOS or Java.
 
 <p><em>(Since JMRI 4.5.1)</em>
-    LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
+    LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</p>
 
 <p><em>(Since JMRI 4.5.1)</em>
     Internal turnouts and sensors need to have complete, individual system names.
@@ -170,17 +171,21 @@ These may be relevant to you if you're updating from an earlier version.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>OS X: <a
+<div class="wide">
+    <ul>
+<li>OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.dmg/download</a><br/>
-    sha256: 778086e641ef8d9c85d5f57f68fcccd60d721520dc3fc6eb54ed197f48f4b016 </p>
+    sha256: 778086e641ef8d9c85d5f57f68fcccd60d721520dc3fc6eb54ed197f48f4b016 </li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.exe/download</a><br/>
-    sha256: af9847a7dc9e62ec44a70fbae1cdea2c291ad8e31422c8f3c648186862c54442</p>
+    sha256: af9847a7dc9e62ec44a70fbae1cdea2c291ad8e31422c8f3c648186862c54442</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.6-R81496dc.tgz/download</a><br/>
-    sha256: 81c642347dc1bf8c4abf93c19385845e637ce801be68ab6aaf1d5fd9a5eded37</p>
+    sha256: 81c642347dc1bf8c4abf93c19385845e637ce801be68ab6aaf1d5fd9a5eded37</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -196,14 +201,14 @@ These are development files, and might not be working at any particular time.</p
 <h3>Changes since <a href="jmri4.4.shtml">production release 4.4</a>:</h3>
 
 Links to the full list of changes from JMRI test release 
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.1+">4.5.1<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.2+">4.5.2<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.3+">4.5.3<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.4+">4.5.4<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.5+">4.5.5<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.6+">4.5.6<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.7+">4.5.7<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.8+">4.5.8<a>
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.1+">4.5.1</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.2+">4.5.2</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.3+">4.5.3</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.4+">4.5.4</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.5+">4.5.5</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.6+">4.5.6</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.7+">4.5.7</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.5.8+">4.5.8</a>
 in our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
@@ -496,7 +501,6 @@ in our
             <li>The train description will no longer write across the top of a Manifest header.</li>
             <!-- 4.5.8 -->
             <li>Fixed a bug where a car's load would change when waited at interchange or yard</li>
-
         </ul>
 
    <h4>Panel Editors</h4>
@@ -630,7 +634,7 @@ in our
             <li>The POSIX (Mac and Linux) launcher script has
                 <a href="https://github.com/JMRI/JMRI/pull/1548">been improved</a>.
                 It provides much more flexibility for adding extra .jar files and setting options.
-                The algorithm for how much memory the program uses has also been improved.</a>
+                The algorithm for how much memory the program uses has also been improved.</li>
             <li>Egbert Broerse updated the French translation.</li>
             <li>Added startup action to allow a pause for up to five minutes in processing startup items.
                 (<a href="https://github.com/JMRI/JMRI/pull/1499">#1499</a>)</li>

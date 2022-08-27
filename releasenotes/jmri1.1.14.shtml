@@ -8,16 +8,15 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords"
     	  content="java model railroad JMRI 1.1.14 CMRI decoderpro panelpro locotools loconet lenz nce easydcc dcc nmra">
-
     <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
     <!--#include virtual="/Header.shtml" -->
-
   <div id="mBody">
     <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
+
       <h2>
       Release Notes for JMRI 1.1.14 test release
       </h2>
@@ -33,8 +32,7 @@
 	    CV values before experimenting with that last item. You should
 	    also read this <a
         href="https://www.digitrax.com/tsd/KB519/decoder-lock-cv15-cv16/">
-            decoder lock cv15/cv16 writeup</a> from Digitrax.
-        </li>
+        decoder lock cv15/cv16 writeup</a> from Digitrax.</li>
 
 	    <li>I'd like to get a discussion going on how we can include
 	    this feature in the normal operation of DecoderPro itself. The
@@ -78,29 +76,29 @@
 
 <div class="wide">
 	<ul>
-	<li> Mac OS X:
+	<li>Mac OS X:
       <a
       href="http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.hqx?download">
           http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.hqx?download</a></li>
 
-	<li> MacOS 8/9 "Classic":
+	<li>MacOS 8/9 "Classic":
       <a
       href="http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.Classic.hqx?download">
           http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.Classic.hqx?download</a></li>
 
-	<li> Windows:
+	<li>Windows:
       <a
       href="http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.exe?download">
           http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.exe?download</a></li>
 
-	<li> Linux:
+	<li>Linux:
       <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.tgz?download">
           http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.tgz?download</a></li>
 
-	<li> OS/2:
+	<li>OS/2:
       <a href="http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.zip?download">
           http://prdownloads.sourceforge.net/jmri/JMRI.1.1.14.zip?download</a></li>
-      </ul>
+    </ul>
 </div>
 
    <!--#include virtual="/Footer.shtml" -->

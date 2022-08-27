@@ -72,7 +72,7 @@ from
 <h3>New warnings for this version:</h3>
 
 <ul>
-    <li>None yet</a>
+    <li>None yet</li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -138,7 +138,7 @@ These may be relevant to you if you're updating from an earlier version.
     on upcoming releases of macOS or Java.
 
 <p><em>(Since JMRI 4.5.1)</em>
-    LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
+    LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</p>
 
 <p><em>(Since JMRI 4.5.1)</em>
     Internal turnouts and sensors need to have complete, individual system names.
@@ -175,22 +175,24 @@ These may be relevant to you if you're updating from an earlier version.
     Please ask on the JMRI Users group
     for help converting them, or just drop them and use the current definitions.</p>
 
-
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>OS X / macOS: <a
+<div class="wide">
+    <ul>
+<li>OS X / macOS: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.dmg/download</a><br/>
-    sha256: e4c8968ecc04a456b66438c0257055a69252feeb5051af8d3abde8dd127a6088 </p>
+    sha256: e4c8968ecc04a456b66438c0257055a69252feeb5051af8d3abde8dd127a6088 </li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.exe/download</a><br/>
-    sha256: b78061d2d98820d4e448c669dcf6f9e299bb82fd71d782f6a94e9f0ff8331e49</p>
+    sha256: b78061d2d98820d4e448c669dcf6f9e299bb82fd71d782f6a94e9f0ff8331e49</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.8-R7bf0cb7.tgz/download</a><br/>
-    sha256: 48c21a895344bf5e0a7f736ab69294fb3f0b00db7fa1e393e2365eda104d0c98</p>
-
+    sha256: 48c21a895344bf5e0a7f736ab69294fb3f0b00db7fa1e393e2365eda104d0c98</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the

@@ -56,11 +56,11 @@ Therefore, this test version should be considered experimental.
 <!-- version that's good enough to be recommended for general use, including by new users.  -->
 <!-- We're therefore making that version, "Production version 2.6" available for download today. -->
 
-<b><p>
+<p><b>
 JMRI is now only available under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</p></b>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>New warnings for this version:</h3>
 
@@ -105,15 +105,19 @@ as the program will update them to the new format upon storing them.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:
-
-<p>Mac OS X:
+<div class="wide">
+    <ul>
+<li>Mac OS X:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.6.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.6.dmg/download</a>
-
-<p>Windows:
+</li>
+<li>Windows:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.6.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.6.exe/download</a>
-
-<p>Linux:
+</li>
+<li>Linux:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.6.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.6.tgz/download</a>
+    </li>
+    </ul>
+</div>
 
 <h3>Changes since test version 2.7.5</h3>
 
