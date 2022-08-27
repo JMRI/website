@@ -224,7 +224,7 @@ These may be relevant to you if you're updating from an earlier version.
     cannot be automatically flagged because JMRI allows file: URLs; these will have to
     be changed manually.
 
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span><a id="validate" name="validate"/>
+    <a id="validate" name="validate"></a><p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
     When loading a panel file, JMRI applications now check the file's syntax and contents.
     This process is called "XML validation"
     If validation fails, an error message is shown
@@ -279,28 +279,26 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-
-Please note that the download links in this and future JMRI releases link to
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 People are welcome to distribute the download files further via other websites, etc.
 If you want to check that you've received original, unmodified versions, please
-check the files against the checksums shown below.
-
-<ul>
+check the files against the checksums shown below.</p>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.8/JMRI.4.11.8.R0997631.dmg">https://github.com/JMRI/JMRI/releases/download/v4.11.8/JMRI.4.11.8.R0997631.dmg</a><br/>
-  sha256: 4dc2a0b228f1f07cc172e578ad45a1103374d8b951f5230c5769f227bcbd5ef2 </li>
+    sha256: 4dc2a0b228f1f07cc172e578ad45a1103374d8b951f5230c5769f227bcbd5ef2</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.8/JMRI.4.11.8.R0997631.exe">https://github.com/JMRI/JMRI/releases/download/v4.11.8/JMRI.4.11.8.R0997631.exe</a><br/>
-   sha256: 9b3931e1161d5ff97ff84865f8e481393102985c8b7af47ad5813735d082cd6d</li>
+    sha256: 9b3931e1161d5ff97ff84865f8e481393102985c8b7af47ad5813735d082cd6d</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.8/JMRI.4.11.8.R0997631.tgz">https://github.com/JMRI/JMRI/releases/download/v4.11.8/JMRI.4.11.8.R0997631.tgz</a><br/>
-   sha256: f51b7445039d9dce4a9a6634df6863430bf8da339c9f684689dc25c2220098f7</li>
+    sha256: f51b7445039d9dce4a9a6634df6863430bf8da339c9f684689dc25c2220098f7</li>
 </ul>
-
-
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -331,7 +329,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
 
     <h3>Layout Editor</h3>
-        <a id="LE" name="LE"/>
+        <a id="LE" name="LE"></a>
         <ul>
 	        <li>Changed some of the Layout Editor appearance defaults, which might
                 change the appearance of some track segments on your panels if they're

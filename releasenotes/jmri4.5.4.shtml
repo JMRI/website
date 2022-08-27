@@ -7,13 +7,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.5.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -106,7 +101,8 @@ These may be relevant to you if you're updating from an earlier version.
       AppleScript Support</a>, but please be aware that this may not work
     on upcoming releases of macOS or Java.
 
-<p><em>(Since JMRI 4.5.1)</em>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
+<p><em>(Since JMRI 4.5.1)</em>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS
+    X distributions.</p>
 
 <p><em>(Since JMRI 4.5.1)</em>Internal turnouts and sensors need to have complete, individual system names.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
@@ -138,23 +134,24 @@ These may be relevant to you if you're updating from an earlier version.
     Please ask on the JMRI Users group
     for help converting them, or just drop them and use the current definitions.</p>
 
-
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.4-Rb93cb4f.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.4-Rb93cb4f.dmg/download</a><br/>
-    sha256: f613c24cef0ba3e2aaa51575ba6566ef20ca57cb3f909ca4e3d8151f6f92693a</p>
+    sha256: f613c24cef0ba3e2aaa51575ba6566ef20ca57cb3f909ca4e3d8151f6f92693a</li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.4-Rb93cb4f.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.4-Rb93cb4f.exe/download</a><br/>
-    sha256: 228b44a8bd3036f47be97492dcf51e37c64673bf322e417eefd849ab505ca5a6</p>
+    sha256: 228b44a8bd3036f47be97492dcf51e37c64673bf322e417eefd849ab505ca5a6</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.4-Rb93cb4f.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.4-Rb93cb4f.tgz/download</a><br/>
-    sha256: afe3d48bb6dc93f678dda3e6ce714c8683d225e80b7e884fe6c01e7aff038ba5</p>
-
-
+    sha256: afe3d48bb6dc93f678dda3e6ce714c8683d225e80b7e884fe6c01e7aff038ba5</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the

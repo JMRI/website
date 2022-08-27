@@ -8,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.5.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -135,22 +130,24 @@ These may be relevant to you if you're updating from an earlier version.
     Please ask on the JMRI Users group
     for help converting them, or just drop them and use the current definitions.</p>
 
-
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.3-R7b2f835.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.3-R7b2f835.dmg/download</a><br/>
-    sha256: c109f62c43f3d3713fe944dcb52633df3eade14ae70d08d406fb3c73a7d26f19</p>
+    sha256: c109f62c43f3d3713fe944dcb52633df3eade14ae70d08d406fb3c73a7d26f19</li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.3-R7b2f835.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.3-R7b2f835.exe/download</a><br/>
-    sha256: ab251ae31fa3bbf6623cd9d8b51b51a84363471ee0ab7917bcf06181e08b5a9a</p>
+    sha256: ab251ae31fa3bbf6623cd9d8b51b51a84363471ee0ab7917bcf06181e08b5a9a</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.3-R7b2f835.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.3-R7b2f835.tgz/download</a><br/>
-    sha256: c7771a9eb94f4044dc2bcf6f3fcc22878491afae45a9ee6a5e07be862a412cb9</p>
-
+    sha256: c7771a9eb94f4044dc2bcf6f3fcc22878491afae45a9ee6a5e07be862a412cb9</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the

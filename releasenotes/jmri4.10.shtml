@@ -109,7 +109,7 @@ These may be relevant to you if you're updating from a version earlier than JMRI
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     Due to changes in the capitalization of some method and property names, some scripts may fail until
     adjusted to use the new capitalization. The <a href="http://jmri.org/JavaDoc/doc">Javadocs</a> for any
-    JMRI class will list the correct capitalization.</li>
+    JMRI class will list the correct capitalization.</p>
 
 <p><span class="since">Since <a href="jmri4.9.4.shtml">JMRI 4.9.4</a></span>
     For Windows users only: <a href="jmri4.9.3.shtml">JMRI 4.9.3</a> (and all later) has a new 
@@ -228,10 +228,11 @@ If that doesn't work for you, the files up to 4.11.x are also still available fr
 <a href="https://sourceforge.net/projects/jmri/files/production%20files">SourceForge.net servers</a>. 
 Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.</p>
 
+<div class="wide">
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.dmg">https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.dmg</a><br/>
-  sha256: c78aca9f75cc94a9db285ecbb075702c015aed59cbc7403549a51380e445a91c </li>
+  sha256: c78aca9f75cc94a9db285ecbb075702c015aed59cbc7403549a51380e445a91c</li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.exe">https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.exe</a><br/>
@@ -241,7 +242,7 @@ Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.</p>
 	href="https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.tgz">https://github.com/JMRI/JMRI/releases/download/v4.10/JMRI.4.10.R419243e.tgz</a><br/>
    sha256: 7da8d6f95acfb95be1a6c6a6f1bc0220a532596eb95363adc4d0c26910a1f91a</li>
 </ul>
-
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
@@ -257,13 +258,13 @@ These are development files, and might not be working at any particular time.</p
 <h2>Changes since <a href="jmri4.8.shtml">production release 4.8</a>:</h2>
 
 <p>The full lists of changes in each of the preceding test releases 
-(<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.1+">4.9.1<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.2+">4.9.2<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.3+">4.9.3<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.4+">4.9.4<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.5+">4.9.5<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.6+">4.9.6<a>,
-<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.7+">4.9.7<a>)
+(<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.1+">4.9.1</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.2+">4.9.2</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.3+">4.9.3</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.4+">4.9.4</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.5+">4.9.5</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.6+">4.9.6</a>,
+<a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milestone%3A4.9.7+">4.9.7</a>)
 are available in our 
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.</p>
 
@@ -816,9 +817,8 @@ are available in our
             <li>Daniel Bergqvist updated the shutdown processing to allow it to terminate partway through.</li>
         </ul>
 
-
-   <!--#include virtual="/Footer.shtml" -->
-  </div><!-- closes #mainContent-->
+    <!--#include virtual="/Footer.shtml" -->
+    </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody-->
  <script src="/js/main.js"></script>
 </body>

@@ -8,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.7.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -63,7 +58,7 @@ see our
     sending an unending stream of Turnout messages.
     This most commonly hit LocoNet systems, but as SE8c boards
     can be used with any DCC system, it's a general problem.
-    This is fixed in <a href="jmri4.7.4.shtml">JMRI 4.7.4<a/></li>
+    This is fixed in <a href="jmri4.7.4.shtml">JMRI 4.7.4</a></li>
 </ul>
 
 <!--
@@ -169,16 +164,16 @@ These may be relevant to you if you're updating from an earlier version.
     Please ask on the JMRI Users group
     for help converting them, or just drop them and use the current definitions.</p>
 
-
 <h3>Download links:</h3>
 
-Please note that the download links in this and future JMRI releases link to 
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.3">Github servers</a>.
 If that doesn't work for you, the files up to 4.11.x are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
-Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
+Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.</p>
 
-<ul>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.dmg</a><br/>
   sha256: c4ca7d32789de60a1764cc0c50cf2b73e2357ecd8e407a79b2c229193487858f</li>
@@ -190,8 +185,8 @@ Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.3/JMRI.4.7.3.R202c9ee.tgz</a><br/>
    sha256: 87a1cf58c3c39a47cdc22a29ce24469051ee4ae559b804df66dbbe274e520e47</li>
-</ul>
-
+    </ul>
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the

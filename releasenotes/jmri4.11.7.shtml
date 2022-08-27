@@ -90,7 +90,6 @@ circumstances, you may need to do some migrations:
             </ul>
 </ul>
 
-
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
@@ -137,11 +136,11 @@ These may be relevant to you if you're updating from an earlier version.
 <p><span class="since">Since <a href="jmri4.11.4.shtml">JMRI 4.11.4</a></span>
     There are issues with the Pi-SPROG One command station operation. A number of workarounds should be applied:
     <ul>
-        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li><br>
-        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li><br>
-        <li>Do not open the SPROG console window</li><br>
-        <li>Disable power conversion (CV 29) in all locos</li><br>
-        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li><br>
+        <li>Do not turn on the track power until the power supply to the Pi-SPROG ONE is turned on</li>
+        <li>Do not enable extra debugging through default.lcf, nor open the system console window</li>
+        <li>Do not open the SPROG console window</li>
+        <li>Disable power conversion (CV 29) in all locos</li>
+        <li>If connecting via VNC (or similar), setup the screen layout before turning on the track power</li>
     </ul>
     Pi-SPROG One with version 2.4 or earlier firmware will cause a timeout after a track short circuit. A dialog box will
     open to inform the user of this. The track power will be turned off and must be turned on again using the power control.
@@ -207,7 +206,7 @@ These may be relevant to you if you're updating from an earlier version.
     cannot be automatically flagged because JMRI allows file: URLs; these will have to
     be changed manually.
 
-<p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span><a id="validate" name="validate"/>
+    <a id="validate" name="validate"></a><p><span class="since">Since <a href="jmri4.7.1.shtml">JMRI 4.7.1</a></span>
     When loading a panel file, JMRI applications now check the file's syntax and contents.
     This process is called "XML validation"
     If validation fails, an error message is shown
@@ -262,13 +261,13 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 If that doesn't work for you, the files up to 4.11.x are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>.
-Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
-
-<ul>
+Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.</p>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.7/JMRI.4.11.7.R18be81d.dmg">https://github.com/JMRI/JMRI/releases/download/v4.11.7/JMRI.4.11.7.R18be81d.dmg</a><br/>
   sha256: b02c4488f2e37d12ac828993f5030313a68c4aa7bf85b7daa27e5fa63e368f91 </li>
@@ -281,12 +280,11 @@ Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.7/JMRI.4.11.7.R18be81d.tgz">https://github.com/JMRI/JMRI/releases/download/v4.11.7/JMRI.4.11.7.R18be81d.tgz</a><br/>
    sha256: 1b32600efb7a22660aca79e9c9788dc0a6a1db8a17cc9f93e4bf8b5c25dba570</li>
 </ul>
-
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.11.6/">CI project page</a>.
-
 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
@@ -352,7 +350,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
         </ul>
 
     <h3>Layout Editor</h3>
-        <a id="LE" name="LE"/>
+        <a id="LE" name="LE"></a>
         <ul>
 	        <li>Dave Sand fixed a problem where the wrong default value was assigned to an unoccupied block</li>
         </ul>

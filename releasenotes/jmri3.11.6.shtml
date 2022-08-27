@@ -6,14 +6,8 @@
  </title>
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 3.11.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
-
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -152,8 +146,6 @@ Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/3.11.6/ws/jmri/dist/release/">CI project page</a>.
 
-
-
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
@@ -195,7 +187,7 @@ These are development files, and might not be working at any particular time.</p
 		<li>Dispatched all CVs previously displayed on "MRC" pane to the relevant standard panes.</li>
         <li>Fixed several definitions and aligned to the documentation available on MRC website.</li>
         <li>Added new definitions for: 1660 (N Life-Like C-Liner), 1817 and 1818 (G Diesels), 1822 (S Diesel), 1828 (N Atlas SD50/60), 1907 (HO Atlas S2/S4), 1911 (HO Steam), 1913 (HO Diesel), 1956 (N Steam), 1958 (N Kato PA1), 1959 (N Diesel), 1960 (N Kato SD45/SD70MAC/AC4400)</li>
-	</ul></p>
+	</ul>
 
     <h5>Miscellaneous</h5>
 

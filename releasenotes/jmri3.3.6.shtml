@@ -79,15 +79,18 @@ None at the time of this release.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.dmg/download</a></p>
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.dmg/download</a></li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.exe/download</a></p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.exe/download</a></li>
 
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.tgz/download</a></p>
-
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.3.6-r23600.tgz/download</a></li>
+    </ul>
+</div>
 
 <!-- 
 Preliminary build files (not the final released files) can be found
@@ -105,9 +108,7 @@ These are development files, and might not be working at any particular time.
   <ul>
 
   <li>Decoder definition for the MPM RRR cars and advanced light functions decoder from Wekomm - Alain Carasso</li>
-  <p>
   <li>Improved internationalization for the About dialog - Jens E Christensen</li>
-    <p>
   <li>Improvements to JSON server and protocols:
     <ul>
       <li>JSON clients can now add, edit, and delete consists. - Randall Wood</li>
@@ -118,10 +119,8 @@ These are development files, and might not be working at any particular time.
       <li>Add a JSON method to enumerate all advertised ZeroConf services; this is intended to allow a client outside the ZeroConf boundary with only knowledge of the Web service to request a JSON-formatted list of all network services (WiThrottle, SRCP, LocoRMI, etc...) with ports and connection information. - Randall Wood</li>
     </ul>
   </li>
-    <p>
     <li>Improved web server performance with a large number of clients or large number of
-     requests per client. - Steve Todd</li>
-    <p>
+    requests per client. - Steve Todd</li>
     <li>Dan Boudreau made the following changes to operations:
      <ul>
       <li>Added the ability to print out a car's final destination and return when empty to the
@@ -137,9 +136,8 @@ These are development files, and might not be working at any particular time.
       <li>Fixed a bug in the cvs files when user had commas in their comments.</li>
       <li>Fixed a bug where a train wouldn't terminate if the first location in a route was deleted in a built train.</li>
      </ul>
-    <p>
+    </li>
     <li>Request administrator rights when installing - fix for bug highlighted by Suzie Tall</li>
-    <p>
     <li>Updated the routes window to allow it to contain scroll bars if the window is too small for the information contained - Kevin Dickerson</li>
     <li>ESU ECOS - Fixed an issue with the way that the throttle speed changes are handled - Kevin Dickerson</li>
     <li>Blocks/LayoutBlocks - When the layoutblock useExtraColor is changed, propagate this down to the "block" so that it can fire off a propertychange event of "allocated" to all its listeners.  The "block" itself does not keep track or store the allocated setting.  This saves any objects having to listener to both the block and layoutblock states. - Kevin Dickerson</li>
@@ -154,20 +152,21 @@ These are development files, and might not be working at any particular time.
     <li>Entry/Exit - Add the option to set an alternative colour for the layout blocks while the Entry/Exit route is being set up. Colour is defined in the Entry/Exit Options</li>
     <li>Entry/Exit - Allow extended NX routes to be set eg A-D, rather than A-B, B-C, C-D</li>
     <li>Entry/Exit - Can now extend the transit of an Active Train in the dispatcher</li>
-    <li>Dispatcher/AutoDispatcher changes
-    <ul><li>Fix an issue where turnouts are not correctly being set in the last section, (when continuous running isn't selected) or the previous block is not picked up if the active train is starting in the transit and is not in the first block of that section.</li>
-    <li>Add the ability to delay the start of a train based upon a sensor going active.</li>
-    <li>Add to the memory icon, the ability to reset an Automatic Active Train once it has completed.</li>
-    <li>Add a text label with the actual speed(percentage)/direction as seen by the associated throttle to an auto active train.</li>
-    <li>When using SignalMasts and Auto Allocate, the mast at the end of the last allocated section is set held, so that the approaching automatic auto train does not simply read what the logic has calculated.  When allocating the next section, set the mast at the end of that to held and then release the previous one.</li>
-    <li>Update the auto active train terminate option, so that it waits until the loco has stopped before finally disposing of it.</li>
-    <li>If allocating a section that this flagged as intermediate test all subsequent sections that are also flagged as intermediate to make sure that we do not end up with trains meeting face-to-face.</li>
-    <li>When a section that is waiting to be allocated goes from an occupied to an un-occupied state force the dispatcher to do a rescan of sections waiting to be allocated.</li>
-    <li>Extend the Entry/Exit interlocking so that it can extend the transit of an active train.</li>
-    <li>Add the option to allow the dispatcher window to be opened when the panel file is loaded.</li>
-    <li>New Train Window - The starting block combo box will automatically select the first occupied block in the list</li>
-    <li>New Train Window - When called from the panel with a known Roster Entry and block, the transit combo is populated with transits that either contain the block past or have it as an entry point.</li>
-    </ul>
+    <li>Dispatcher/AutoDispatcher changes:
+        <ul><li>Fix an issue where turnouts are not correctly being set in the last section, (when continuous running isn't selected) or the previous block is not picked up if the active train is starting in the transit and is not in the first block of that section.</li>
+        <li>Add the ability to delay the start of a train based upon a sensor going active.</li>
+        <li>Add to the memory icon, the ability to reset an Automatic Active Train once it has completed.</li>
+        <li>Add a text label with the actual speed(percentage)/direction as seen by the associated throttle to an auto active train.</li>
+        <li>When using SignalMasts and Auto Allocate, the mast at the end of the last allocated section is set held, so that the approaching automatic auto train does not simply read what the logic has calculated.  When allocating the next section, set the mast at the end of that to held and then release the previous one.</li>
+        <li>Update the auto active train terminate option, so that it waits until the loco has stopped before finally disposing of it.</li>
+        <li>If allocating a section that this flagged as intermediate test all subsequent sections that are also flagged as intermediate to make sure that we do not end up with trains meeting face-to-face.</li>
+        <li>When a section that is waiting to be allocated goes from an occupied to an un-occupied state force the dispatcher to do a rescan of sections waiting to be allocated.</li>
+        <li>Extend the Entry/Exit interlocking so that it can extend the transit of an active train.</li>
+        <li>Add the option to allow the dispatcher window to be opened when the panel file is loaded.</li>
+        <li>New Train Window - The starting block combo box will automatically select the first occupied block in the list</li>
+        <li>New Train Window - When called from the panel with a known Roster Entry and block, the transit combo is populated with transits that either contain the block past or have it as an entry point.</li>
+        </ul>
+    </li>
     
 <li>The TCS decoder definition files have been realigned with great help from TCS. 
     All old definitions are still there, but three new families have been created from which 

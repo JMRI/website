@@ -8,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.5.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -67,18 +62,15 @@ see our
 <li>DCC++ connections on Linux may not work.</li>
 </ul>
 
-
-If any of those effect you, please either wait for
+<p>If any of those effect you, please either wait for
 <a href="jmri4.5.8.shtml">JMRI 4.5.8</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
 
-
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this version:</h3>
-
 
 <h3>Older warnings</h3>
 
@@ -163,25 +155,26 @@ These may be relevant to you if you're updating from an earlier version.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>OS X: <a
+<div class="wide">
+    <ul>
+<li>OS X: <a
     href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.dmg/download</a><br/>
-    sha256: 68f9d4c8854f648a4eaeabc69d191db5a9b42171b569c6103b24a78adaef4c63</p>
+    sha256: 68f9d4c8854f648a4eaeabc69d191db5a9b42171b569c6103b24a78adaef4c63</li>
 
-<p>Windows: <a
+<li>Windows: <a
     href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.exe/download</a><br/>
-    sha256: 57b8787927dd117b8fbb86391b9eb6d689fa00847730c13d7acae7ea8f53de12</p>
+    sha256: 57b8787927dd117b8fbb86391b9eb6d689fa00847730c13d7acae7ea8f53de12</li>
 
-<p>Linux: <a
+<li>Linux: <a
     href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.7-R3265cd6.tgz/download</a><br/>
-    sha256: 4d5aed5be82000b77742e0a101a5016c0cf9362b62957d119b68c98396aef95d</p>
-
+    sha256: 4d5aed5be82000b77742e0a101a5016c0cf9362b62957d119b68c98396aef95d</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.5.7/">CI project page</a>.
 
-
-<!--
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>

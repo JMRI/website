@@ -8,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.3.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -152,29 +147,28 @@ These may be relevant to you if you're updating from an earlier version.
     In the meantime, the workaround is to restart JMRI and/or the hardware node(s)
     and try again; that might allocate different alias values.</p>
 
-
 <h3>Download links:</h3>
 
-
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.4-Reb510be.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.4-Reb510be.dmg/download</a><br/>
-    sha256: d1fce0c9e48859145fad6be27104512ca7af74839164168b5bada1feef68b94c</p>
+    sha256: d1fce0c9e48859145fad6be27104512ca7af74839164168b5bada1feef68b94c</li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.4-Reb510be.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.4-Reb510be.exe/download</a><br/>
-    sha256: 915b2539198fa9e5d69fa41f9c0eb92666ab7ef50a7a2807784283cf2b511b4e</p>
+    sha256: 915b2539198fa9e5d69fa41f9c0eb92666ab7ef50a7a2807784283cf2b511b4e</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.4-Reb510be.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.4-Reb510be.tgz/download</a><br/>
-    sha256: 9415e7e49272b900ebe2771e27002c6649bedb342c0bb3a95c918aaa3c6874fd</p>
-
+    sha256: 9415e7e49272b900ebe2771e27002c6649bedb342c0bb3a95c918aaa3c6874fd</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.3.4/ws/dist/release/">CI project page</a>.
-
-
 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.

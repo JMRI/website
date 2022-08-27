@@ -76,15 +76,18 @@ Instead, please use <a href="jmri3.7.7.shtml">test release 3.7.7</a> or later.</
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.dmg/download</a></p>
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.dmg/download</a></li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.exe/download</a></p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.exe/download</a></li>
 
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.tgz/download</a></p>
-
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.7.1-r24832.tgz/download</a></li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -115,8 +118,10 @@ RailDriver.py<br>
 RocoCrane46902.py<br>
 Zimo_pseudo_programmer.py
 
-<p>Added sample scripts:<ul>
-<li<a href="http://jmri.org/jython/SensorToTurnout.py">jython/SensorToTurnout.py</a>: takes Sensor inputs from an external system and maps them to Internal turnouts</li>
+<p>Added sample scripts:
+<ul>
+<li><a href="http://jmri.org/jython/SensorToTurnout.py">jython/SensorToTurnout.py</a>: takes Sensor inputs from an
+external system and maps them to Internal turnouts</li>
 <li><a href="http://jmri.org/jython/SignalHeadFromSensors.py ">jython/SignalHeadFromSensors.py</a>: takes Sensor inputs from e.g. an external signal system and drives SignalHead objects</li>
 </ul>
 

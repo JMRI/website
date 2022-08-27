@@ -92,17 +92,21 @@ be fixed in <a href="jmri2.11.7.shtml">2.11.7</a>.
 
 <h3>Download links:</h3>
 
-<p>Please use these links for downloading:
-</p>
-<p>Mac OS X:
+<p>Please use these links for downloading:</p>
+<div class="wide">
+    <ul>
+<li>Mac OS X:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.6.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.6.dmg/download</a>
-</p>
-<p>Windows:
+</li>
+<li>Windows:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.6.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.6.exe/download</a>
-</p>
-<p>Linux:
+</li>
+<li>Linux:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.6.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.6.tgz/download</a>
-</p>
+    </li>
+    </ul>
+</div>
+
 <h3>Changes since test release version 2.11.5</h3>
 
 <p>Walt Thompson contributed an improved SE8cSignalExample XML file</p>
@@ -153,7 +157,7 @@ during the car import.</li>
 <p>Stephen Lowens updated the Digitrax SFX definition.</p>
 
 <p>Bob Jacobsen:</p>
-<li>
+<ul>
 <li>Updated the OpenLCB support
 <li>Fixed problems with alternate CV selection
 <li>Updated a number of help files to make them consistent

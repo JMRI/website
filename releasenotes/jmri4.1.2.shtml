@@ -8,13 +8,8 @@
     <meta content="Matthew Harris" name="Author">
     <meta name="keywords" content="java model railroad JMRI 4.1.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -82,7 +77,8 @@ download, and install, then retry JMRI again.
   <li>jmri_defaults.py included in the JMRI distribution is no longer executed by default, but will be executed before any other Jython scipts if included in your User Files location.</li>
   <li>The default behavior of python.cachedir.skip is now true. If using a custom python.properties file, include "python.cachedir.skip=false" in that file.</li>
   <li>As supplied, the 'MakeOriginalDecoderPro.py' script no longer functions as a result of this change. This is fixed in <a href="jmri4.1.3.shtml">JMRI 4.1.3</a>.</li>
-  <li>Scripts larger than 100,000 characters cannot be run. This is fixed in JMRI 4.1.3</a>.</li>
+  <li>Scripts larger than 100,000 characters cannot be run. This is fixed in <a href="jmri4.1.3.shtml">JMRI 4.1.3</a>.
+  </li>
 </ul>
 
 <h3>Older warnings</h3>
@@ -105,20 +101,22 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
 
 <h3>Download links:</h3>
 
-
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.dmg/download</a><br/>
-    sha256: ddba756abe430f0202baccc4536fb73533d87a9cd231ec1685ae95cd13b45a6a</p>
+    sha256: ddba756abe430f0202baccc4536fb73533d87a9cd231ec1685ae95cd13b45a6a</li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.exe/download</a><br/>
-    sha256: 7b46c10e78bb0f7173fcf1253aa21ec10ce0dc07db95ce14ce7762040c2e7ce2</p>
+    sha256: 7b46c10e78bb0f7173fcf1253aa21ec10ce0dc07db95ce14ce7762040c2e7ce2</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.2-r29999.tgz/download</a><br/>
-    sha256: 88a40e0d2dd9d17aa4b83f84a8f33f20b868b6190dbcdc782a7b4cede2c187c5</p>
-
+    sha256: 88a40e0d2dd9d17aa4b83f84a8f33f20b868b6190dbcdc782a7b4cede2c187c5</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the

@@ -57,11 +57,11 @@ files before installing it.
 <!-- version that's good enough to be recommended for general use, including by new users.  -->
 <!-- We're therefore making that version, "Production version 2.6" available for download today. -->
 
-<b><p>
+<p><b>
 JMRI is now only available under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</p></b>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>New warnings for this version:</h3>
 
@@ -130,21 +130,24 @@ To see JMRI's future plans for this and other compatibility issues, please see t
 <p>
 Starting in JMRI 2.5.1,
 the way you drag things in the Layout Editor has changed if you
-are using a Linux computer. 
-
+are using a Linux computer.
 
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:
-
-<p>Mac OS X:
+<div class="wide">
+    <ul>
+<li>Mac OS X:
      <a href="http://downloads.sourceforge.net/jmri/JMRI.2.5.7.dmg">http://downloads.sourceforge.net/jmri/JMRI.2.5.7.dmg</a>
-
-<p>Windows:
+</li>
+<li>Windows:
      <a href="http://downloads.sourceforge.net/jmri/JMRI.2.5.7.exe">http://downloads.sourceforge.net/jmri/JMRI.2.5.7.exe</a>
-
-<p>Linux:
+</li>
+<li>Linux:
      <a href="http://downloads.sourceforge.net/jmri/JMRI.2.5.7.tgz">http://downloads.sourceforge.net/jmri/JMRI.2.5.7.tgz</a>
+    </li>
+    </ul>
+</div>
 
 <h3>Changes since test version 2.5.6</h3>
 

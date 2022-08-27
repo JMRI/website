@@ -8,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 3.11.9 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -134,17 +129,24 @@ Driver.</p>
 <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.9-r29555.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.9-r29555.dmg/download</a></p>
-<p>sha256: 5d8c16089ad94e683cbc08d91ffea803763b563b184974028a19d0d8d68f81f5</p>
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.9-r29555.dmg/download">https
+    ://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.9-r29555.dmg/download</a><br>
+sha256: 5d8c16089ad94e683cbc08d91ffea803763b563b184974028a19d0d8d68f81f5</li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.9-r29555.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.9-r29555.exe/download</a></p>
-<p>sha256: bd9f0fbed8a7742afa63ad6b3939dff993df4c601b7af9282080e280117c6603</p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.9-r29555.exe/download">https
+    ://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.9-r29555.exe/download</a><br>
+sha256: bd9f0fbed8a7742afa63ad6b3939dff993df4c601b7af9282080e280117c6603</li>
 
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.9-r29555.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.9-r29555.tgz/download</a></p>
-<p>sha256: 38de28a18290383cab98821b8fa1ddcb5abf0c1e9e78c96d81a9f4c036acec1f</p>
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.9-r29555.tgz/download">https
+    ://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.11.9-r29555.tgz/download</a><br>
+sha256: 38de28a18290383cab98821b8fa1ddcb5abf0c1e9e78c96d81a9f4c036acec1f</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the

@@ -8,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -160,21 +155,24 @@ for older warnings that may be relevant to you if you're updating from an earlie
 
 <h3>Download links:</h3>
 
-
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: This file has superseded by <a href="jmri4.2.1.shtml">JMRI 4.2.1</a>, which fixes an important MacOS X-specific bug.  
-    For details see the <a href="jmri4.2.1.shtml">4.2.1release note</a>. That download is at:<br/><a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download</a><br/>
-    sha256: 56eb8403292237b5f5f63fb6fa4f0462d253fea0a752c12c68072418f8f96a8b</p>
+<div class="wide">
+    <ul>
+<li>Mac OS X: This file has superseded by <a href="jmri4.2.1.shtml">JMRI 4.2.1</a>, which fixes an important MacOS
+    X-specific bug.
+    For details see the <a href="jmri4.2.1.shtml">4.2.1release note</a>. That download is at:<br><a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2.1-R6b484b4.dmg/download</a><br>
+    sha256: 56eb8403292237b5f5f63fb6fa4f0462d253fea0a752c12c68072418f8f96a8b</li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.exe/download</a><br/>
-    sha256: 43baa7f2dea96924595882f778034f6ef86c99f74a16a766fe271d2295b6a316</p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.exe/download</a><br>
+    sha256: 43baa7f2dea96924595882f778034f6ef86c99f74a16a766fe271d2295b6a316</li>
 
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.tgz/download</a><br/>
-    sha256: 76cb4293ab9016f037ddfb67e04918af41eae3e967b6a22b8921d42add21aac8</p>
-
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.2-R6f3c1be.tgz/download</a><br>
+    sha256: 76cb4293ab9016f037ddfb67e04918af41eae3e967b6a22b8921d42add21aac8</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -330,12 +328,10 @@ These are development files, and might not be working at any particular time.</p
 
     <h4>New / Updated decoder definitions</h4>
 
-        <p>The
-            <a href="http://jmri.org/xml/schema/decoder.xsd">XML schema</a>
-            for decoder files has been made more precise.
-           See the
-           <a href="#decoderSchema">warning above</a>
-           for more on the implications of this.
+        <p>The <a href="http://jmri.org/xml/schema/decoder.xsd">XML schema</a>
+        for decoder files has been made more precise. See the
+        <a href="#decoderSchema">warning above</a>
+        for more on the implications of this.
         <ul>
             <li>Dave Heap made the following changes to Factory Resets:<br>
                 <ul>
@@ -349,7 +345,6 @@ These are development files, and might not be working at any particular time.</p
                 </ul>
             </li>
         </ul>
-    </p>
 
         <h5>BLI</h5>
             <ul>

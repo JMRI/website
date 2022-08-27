@@ -54,11 +54,11 @@ along with lots of other changes.  See the complete list below.
 They may require a certain amount of experience before they are working well.  
 Therefore, this test version should be considered experimental.
 
-<b><p>
+<p><b>
 JMRI is now only available under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</p></b>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>New warnings for this version:</h3>
 
@@ -89,15 +89,15 @@ you should probably wait for the next release.
 
 <p>
 You may get some messages like:
-<code><pre>
+<pre>
 WARNING:  RXTX Version mismatch
         Jar version = RXTX-2.2pre1
         native lib Version = RXTX-2.2pre2
-</pre></code>
+</pre>
 and
-<code><pre>
+<pre>
 (some stuff)   INFO  - failed to set serial framing: gnu.io.UnsupportedCommOperationException: Not supported
-</pre></code>
+</pre>
 For now, these should be considered normal.  We'll try to get them
 removed before the next release.
 
@@ -121,15 +121,19 @@ To make these stop, just store the file again so that it's rewritten in the most
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:
-
-<p>Mac OS X:
+<div class="wide">
+    <ul>
+<li>Mac OS X:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.3.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.3.dmg/download</a>
-
-<p>Windows:
+</li>
+<li>Windows:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.3.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.3.exe/download</a>
-
-<p>Linux:
+</li>
+<li>Linux:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.3.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.3.tgz/download</a>
+</li>
+    </ul>
+</div>
 
 <h3>Changes since test version 2.9.1</h3>
 (JMRI 2.9.2 was never released, so this section includes changes since JMRI 2.9.1)
@@ -160,7 +164,7 @@ we put the feature in now to start accumulating the history in the file.
 Dan Boudreau added two new build options for trains: by owner, and by built date.
 
 <p>
-Joan Carranc� added a set of 
+Joan Carranc&agrave; added a set of
 <a href="http://jmri.org/xml/signals/DB-HV-1969/index.shtml">signal definitions for the DB 1969 system </a>.
 
 <p>

@@ -8,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.7.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -240,13 +235,14 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to 
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/tag/v4.7.4">Github servers</a>.
 If that doesn't work for you, the files up to 4.11.x are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>. 
-Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
+Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.</p>
 
-<ul>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.dmg">https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.dmg</a><br/>
   sha256: 688b6da8a2e66ad77ef6499d34381e82eb4eba88ad37477de6b24a11906cdf21</li>
@@ -258,8 +254,8 @@ Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.tgz">https://github.com/JMRI/JMRI/releases/download/v4.7.8/JMRI.4.7.8.R583bddd.tgz</a><br/>
    sha256: 804a8b715cb11983cad287fb58356644f36482ec2f02563f83ecbaff63f3f07e</li>
-</ul>
-
+    </ul>
+</div>
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the

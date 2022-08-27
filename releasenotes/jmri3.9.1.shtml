@@ -7,13 +7,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 3.9.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -75,8 +70,7 @@ visibly impacted by this change. See <a
 href="http://jmri.org/help/en/html/profiles.shtml">http://jmri.org/help/en/html/profiles.shtml</a>
 for more information.</p>
 
-<P>This release, and all other releases in this cycle, require Java 1.6 or newer.</p>
-
+<p>This release, and all other releases in this cycle, require Java 1.6 or newer.</p>
 
 <h3>Known problems with this release</h3>
 
@@ -85,15 +79,18 @@ for more information.</p>
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.dmg/download</a></p>
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.dmg/download</a></li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.exe/download</a></p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.exe/download</a></li>
 
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.tgz/download</a></p>
- 
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.3.9.1-r26563.tgz/download</a></li>
+    </ul>
+</div>
  <!--
 Preliminary build files (not the final released files) can be found
 on the

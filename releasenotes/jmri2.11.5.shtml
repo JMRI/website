@@ -50,11 +50,11 @@ along with other changes.  See the complete list below. -->
 They may require a certain amount of experience before they are working well.  
 Therefore, this test version should be considered experimental.
 
-<b><p>
+<p><b>
 JMRI is now only available under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</p></b>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>New warnings for this version:</h3>
 
@@ -96,16 +96,20 @@ None at the time of this release.
 
 <h3>Download links:</h3>
 
-<p>Please use these links for downloading:
-
-<p>Mac OS X:
+<p>Please use these links for downloading:</p>
+<div class="wide">
+    <ul>
+<li>Mac OS X:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.dmg/download</a>
-
-<p>Windows:
+</li>
+<li>Windows:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.exe/download</a>
-
-<p>Linux:
+</li>
+<li>Linux:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.11.5.tgz/download</a>
+    </li>
+    </ul>
+</div>
 
 <h3>Changes since test release version  2.11.4</h3>
 
@@ -163,7 +167,6 @@ None at the time of this release.
 	<li>New feature, you can now enter a cost value for your cars and locos.  Nothing to do with
 	operations, but nice to have.</li>
 	<li>You can now delete a schedule directly from the schedules window.</li>
-
 </ul>
 
 <p>Pete Cressman</p>
@@ -173,7 +176,7 @@ None at the time of this release.
  Portals and OPaths through a "point and click" GUI. (features still in progress)</li>
 <li>Fix route finder and warrant recording bug introduced in ver 2.11.4</li>
 <li>Fix loco icon following warrant playback through all track circuits.</li>
-<li>Fix bug that did not load ver 2.4 signalHead icons.</lii>
+<li>Fix bug that did not load ver 2.4 signalHead icons.</li>
 <li>Fix bug that did not load rotated or scaled Signal Mast icons.</li>
 <li>Fix bug loading panel after Occupancy Block Table is open.</li>
 <li>Inserting or deleting rows of a Throttle Command warrant script now

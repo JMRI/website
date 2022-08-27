@@ -52,11 +52,11 @@ Among the enhancements since the last production release, JMRI 2.4, are:
     <a href="http://jmri.org/help/en/package/jmri/jmrit/dispatcher/Dispatcher.shtml">Dispatcher support</a>.
 </ul>
 
-<b><p>
+<p><b>
 JMRI is now only available under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</p></b>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>Warnings for this version:</h3>
 
@@ -121,8 +121,7 @@ To see JMRI's future plans for this and other compatibility issues, please see t
 <p>
 Starting in JMRI 2.5.1,
 the way you drag things in the Layout Editor has changed if you
-are using a Linux computer. 
-
+are using a Linux computer.
 
 <!-- 
 <h3>Download links:</h3>
@@ -778,7 +777,7 @@ Dan Boudreau updated the operations tools to remove any train icon(s) from the p
 <p>
 Fix an off-by-one error when doing manual reads and writes with the DecoderPro indexed-CV pane.
 
-<p><a id="pe">
+<p><a id="pe"></a>
 Pete Cressman made some significant improvements to the 
 <a href="http://jmri.org/help/en/package/jmri/jmrit/display/PanelEditor.shtml">Panel Editor</a>.
 The textfields that required users to type in the system name of a JMRI entity, e.g. a turnout, sensor, etc, and then press an
@@ -787,7 +786,7 @@ Selecting an item from this comboBox opens a window similar to the previous vers
 These new versions of the Add.. window have several 
 <a href="http://jmri.org/help/en/package/jmri/jmrit/display/IconAdder.shtml">new features</a>:
 <ol>
-<LI>A picklist table is displayed for the JMRI entities that have creation tools.  
+<li>A picklist table is displayed for the JMRI entities that have creation tools.
 Selecting a row from the table activates an 'Add' button that adds icons for the seletion to the Panel.
 <li>There is a similar panel containing trees for changing icons.  
 The new version displays all the icons contained in a node of the tree and icons are changed by dragging the image 
@@ -835,7 +834,6 @@ Added "lights" alias for scripting
 
 <p>
 Improvements to the Hornby DCC support.
-
 
 <!--#include virtual="/Footer.shtml" -->
 

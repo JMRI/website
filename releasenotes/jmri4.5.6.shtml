@@ -8,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.5.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -72,7 +67,7 @@ see our
 	is thought to be present in all previous versions of JMRI.</li>
 </ul>
 
-If any of those effect you, please either wait for
+<p>If any of those effect you, please either wait for
 <a href="jmri4.5.7.shtml">JMRI 4.5.7</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="http://jmri.tagadab.com/jenkins/job/Development/job/Packages/">development build installer</a>
@@ -133,7 +128,8 @@ These may be relevant to you if you're updating from an earlier version.
       AppleScript Support</a>, but please be aware that this may not work
     on upcoming releases of macOS or Java.
 
-<p><em>(Since JMRI 4.5.1)</em>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS X distributions.</li>
+<p><em>(Since JMRI 4.5.1)</em>LocoTools, no longer supported since JMRI 2.10, has been removed from the Linux and OS
+    X distributions.</p>
 
 <p><em>(Since JMRI 4.5.1)</em>Internal turnouts and sensors need to have complete, individual system names.
     The names "IT" and "IS" (without any suffix) are no longer permitted:
@@ -165,22 +161,24 @@ These may be relevant to you if you're updating from an earlier version.
     Please ask on the JMRI Users group
     for help converting them, or just drop them and use the current definitions.</p>
 
-
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>OS X and macOS: <a
+<div class="wide">
+    <ul>
+<li>OS X and macOS: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.6-R9bfae82.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.6-R9bfae82.dmg/download</a><br/>
-    sha256: e7223f2ba8163f4b607f1d77d8817eeaff6227b0345d16a92c8cba961f837809 </p>
+    sha256: e7223f2ba8163f4b607f1d77d8817eeaff6227b0345d16a92c8cba961f837809 </li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.6-R9bfae82.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.6-R9bfae82.exe/download</a><br/>
-    sha256: 27c8542568624dec65943b7787e80235f3cad73f7e598ea1c883573cf7837263</p>
+    sha256: 27c8542568624dec65943b7787e80235f3cad73f7e598ea1c883573cf7837263</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.6-R9bfae82.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.6-R9bfae82.tgz/download</a><br/>
-    sha256: 84cb9ad5411eda97802a86ecaca53e718ec23353b8a57767fa287359bd5d4057</p>
-
+    sha256: 84cb9ad5411eda97802a86ecaca53e718ec23353b8a57767fa287359bd5d4057</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the

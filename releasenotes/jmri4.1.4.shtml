@@ -8,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.1.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -92,19 +87,17 @@ or wait for <a href="jmri4.3.1.shtml">JMRI 4.3.1</a> which should appear in Dece
     This shouldn't effect people who just use the JMRI decoder definitions as distributed,
     because they all work with this more precise version.  But if you have decoder
     definitions of your own, you may have to update them.
-    Specifically, the decoder file verification will now reject a few things that it didn't catch before, even though they didn't really work:
+    Specifically, the decoder file verification will now reject a few things that it didn't catch before, even though
+    they didn't really work:</p>
     <ul>
-    <li>There can be only one label element for a given language on a given variable.
-    <li>A variable element has to contain just one type element such as decVal, enumVal, etc.
+        <li>There can be only one label element for a given language on a given variable.
+        <li>A variable element has to contain just one type element such as decVal, enumVal, etc.
     </ul>
-    As a side effect of checking this, the qualifier elements inside a variable now have to
+    <p>As a side effect of checking this, the qualifier elements inside a variable now have to
     be at the front of the contents, and the label, comment and tooltip elements have to be 
     at the back. You can't just sprinkle them around and hope the code finds them
     (because sometimes in the past the program would miss one; now we require an order we're
-    sure the code will understand).
-
-</p>
-
+    sure the code will understand).</p>
 
 <h3>Older warnings</h3>
 
@@ -151,22 +144,24 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
     In the meantime, the workaround is to restart JMRI and/or the node
     and try again; that might allocate different alias values.</p>
 
-
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.4-R50de131.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.4-R50de131.dmg/download</a><br/>
-    sha256: f45b6bd61f0a215007d0ada31a122e78c3a12928a27c0497855bdd775d9cd63e</p>
+    sha256: f45b6bd61f0a215007d0ada31a122e78c3a12928a27c0497855bdd775d9cd63e</li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.4-R50de131.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.4-R50de131.exe/download</a><br/>
-    sha256: 817fcad8258e198d79995cf43814cde9e801d67f6fbe38d76b4a43af8e229b63</p>
+    sha256: 817fcad8258e198d79995cf43814cde9e801d67f6fbe38d76b4a43af8e229b63</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.4-R50de131.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.4-R50de131.tgz/download</a><br/>
-    sha256: 4c01e876cf81ebcb7e5bcaf2598dad40f312cee8e8e05c9cf09d0b0a3a46ef90</p>
-
+    sha256: 4c01e876cf81ebcb7e5bcaf2598dad40f312cee8e8e05c9cf09d0b0a3a46ef90</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -199,22 +194,23 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             </ul>
         <h5>DCC++</h5>
         <ul>
-            <li>Mark Underwood added support for the open-source Arduino-based DCC++ Base Station</li>
+            <li>Mark Underwood added support for the open-source Arduino-based DCC++ Base Station
             <ul>
                 <li>Basic support for Base Station firmware versions 1.0 and 1.1</li>
                 <li>Supports Serial/USB interface</li>
-		<li>Supports Network connection to Base Station</li>
+		        <li>Supports Network connection to Base Station</li>
                 <li>Simulator for off-line operation of JMRI</li>
                 <li>Basic support for "DCC++ over TCP" - connect from
-            a remote JMRI instance to a local JMRI instance
-                    hosting a DCC++ base station</li>
+                a remote JMRI instance to a local JMRI instance
+                hosting a DCC++ base station</li>
                 <li>Throttle and Programmer support</li>
                 <li>Basic support for Sensors, Accessory decoders and
-            Turnouts</li>
-	        <li>Packet Generator and Port Monitor</li>
-		<li>Configurator tool for Base Station defined Sensors
-            and Turnouts</li>
+                Turnouts</li>
+	            <li>Packet Generator and Port Monitor</li>
+		        <li>Configurator tool for Base Station defined Sensors
+                and Turnouts</li>
             </ul>
+            </li>
         </ul>
 
     <h4>Signals</h4>
@@ -225,12 +221,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
 
     <h4>New / Updated decoder definitions</h4>
 
-        <p>The 
-            <a href="http://jmri.org/xml/schema/decoder.xsd">XML schema</a>
-            for decoder files has been made more precise.
-           See the 
-           <a href="#decoderSchema">warning above</a>
-           for more on the implications of this.
+        <p>The <a href="http://jmri.org/xml/schema/decoder.xsd">XML schema</a>
+        for decoder files has been made more precise. See the
+        <a href="#decoderSchema">warning above</a>
+        for more on the implications of this.</p>
         <ul>
             <li>Dave Heap made the following changes to Factory Resets:<br>
                 <ul>
@@ -242,7 +236,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
                 </ul>
             </li>
         </ul>
-    </p>
 
         <h5>BLI</h5>
             <ul>

@@ -58,11 +58,11 @@ Therefore, this test version should be considered experimental.
 <!-- version that's good enough to be recommended for general use, including by new users.  -->
 <!-- We're therefore making that version, "Production version 2.6" available for download today. -->
 
-<b><p>
+<p><b>
 JMRI is now only available under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</p></b>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>New warnings for this version:</h3>
 
@@ -79,8 +79,6 @@ We've created a tool to make that easier.
 For information on how to use that tool, please see the 
 <a href="decoder2.7.5.shtml">separate note</a>.
 
-
-
 <h3>Warnings from older versions:</h3>
 
 JMRI 2.7.4 changes the way filenames for icons, etc, are stored in XML files by JMRI.
@@ -96,15 +94,19 @@ as the program will update them to the new format upon storing them.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:
-
-<p>Mac OS X:
+<div class="wide">
+    <ul>
+<li>Mac OS X:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.dmg/download</a>
-
-<p>Windows:
+</li>
+<li>Windows:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.exe/download</a>
-
-<p>Linux:
+</li>
+<li>Linux:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.7.5.tgz/download</a>
+    </li>
+    </ul>
+</div>
 
 <h3>Changes since test version 2.7.4</h3>
 

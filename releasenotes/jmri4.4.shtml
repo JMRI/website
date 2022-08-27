@@ -8,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.4 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -62,6 +57,8 @@ from
  -->
 
 <a id="warnings" name="warnings"></a>
+<h3>Warnings:</h3>
+
 <h3>New warnings for this version:</h3>
 
 <ul>
@@ -69,9 +66,6 @@ from
 </ul>
 
 <h3>Older warnings</h3>
-
-<a id="warnings" name="warnings"></a>
-<h3>Warnings:</h3>
 
 See the <a href="jmri4.2.1.shtml#warnings">JMRI 4.2.1 release note</a>
 for older warnings that may be relevant to you if you're updating from an earlier version.
@@ -98,23 +92,24 @@ for older warnings that may be relevant to you if you're updating from an earlie
 <p>The internals of the Layout Editor have been reworked a bit.  Please keep an
     eye out for any changed behaviors.</p>
 
-
 <h3>Download links:</h3>
 
-
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
     href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.4-R1ccf76b.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.4-R1ccf76b.dmg/download</a><br/>
-    sha256: 95a40bfbeae405432ac4953407c59005cbb0c9d6b665f95d08a6bda74e7a1ad8</p>
+    sha256: 95a40bfbeae405432ac4953407c59005cbb0c9d6b665f95d08a6bda74e7a1ad8</li>
 
-<p>Windows: <a
+<li>Windows: <a
     href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.4-R1ccf76b.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.4-R1ccf76b.exe/download</a><br/>
-    sha256: 8447bdb26bdb6be4240201f8a097dbc472cb18cd9d0600fbb2a01fe10eed5aa1</p>
+    sha256: 8447bdb26bdb6be4240201f8a097dbc472cb18cd9d0600fbb2a01fe10eed5aa1</li>
 
-<p>Linux: <a
+<li>Linux: <a
     href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.4-R1ccf76b.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.4.4-R1ccf76b.tgz/download</a><br/>
-    sha256: cab13ee35918cd64b482b13509cac7b33f4092e8bb6437970ec1383fbdd2ea82</p>
-
+    sha256: cab13ee35918cd64b482b13509cac7b33f4092e8bb6437970ec1383fbdd2ea82</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -579,17 +574,20 @@ These are development files, and might not be working at any particular time.</p
         </ul>
 
     <h4>Dispatcher</h4>
-        <p>Steve Todd enhanced Dispatcher's AutoActiveTrain feature with the following changes <a href="https://github.com/JMRI/JMRI/pull/1364">(PR #1364)</a></li>:
         <ul>
-            <li>for target speed, use minimum of block speed and signal speed - for signalmasts</li>
-            <li>added user options to specify ramping interval and duration</li>
-            <li>manual slider sets speed directly, bypassing ramping</li>
-            <li>turned off AlwaysSet Turnouts, added "Trust Known State" option</li>
-            <li>added a fixed delay between turnout commands</li>
-            <li>prevent runaway by halting if train has no occupied sections - partial - only works with another moving train</li>
-            <li>enhanced debugging and squashed a few bugs</li>
+            <li>Steve Todd enhanced Dispatcher's AutoActiveTrain feature with the following changes <a
+            href="https://github.com/JMRI/JMRI/pull/1364">(PR #1364)</a>:
+            <ul>
+                <li>for target speed, use minimum of block speed and signal speed - for signalmasts</li>
+                <li>added user options to specify ramping interval and duration</li>
+                <li>manual slider sets speed directly, bypassing ramping</li>
+                <li>turned off AlwaysSet Turnouts, added "Trust Known State" option</li>
+                <li>added a fixed delay between turnout commands</li>
+                <li>prevent runaway by halting if train has no occupied sections - partial - only works with another moving train</li>
+                <li>enhanced debugging and squashed a few bugs</li>
+            </ul>
+            </li>
         </ul>
-        </p>
 
     <h4>Layout Editor</h4>
         <ul>
@@ -614,7 +612,6 @@ These are development files, and might not be working at any particular time.</p
                 You can still select the locomotive manually, e.g. for local editing of the information or for 
                 ops mode (on main) programming.</li>
         </ul>
-
 
     <h4>Routes</h4>
         <ul>
@@ -703,7 +700,6 @@ These are development files, and might not be working at any particular time.</p
             <li>Randall Wood cleaned up some excessive console logging during startup (<a href="https://github.com/JMRI/JMRI/pull/1508">#1508</a>)</li>
             <li>LocoTools has been removed from Linux and OS X distributions of JMRI (<a href="https://github.com/JMRI/JMRI/pull/1546">#1546</a>)</li>
         </ul>
-
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->

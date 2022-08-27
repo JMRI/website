@@ -58,16 +58,18 @@ None at the time of this release.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.dmg/download</a></li>
 
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.dmg/download</a></p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.exe/download</a></li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.exe/download</a></p>
-
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.tgz/download</a></p>
-
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.3.0-r20870.tgz/download</a></li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -372,7 +374,7 @@ Steve Lowens added the Con-cor Zephyr (HO &amp; N) definitions to the Digitrax s
 <ul>
 <li> Internal changes to the consist manager to allow on demand updating of consist lists from the command station.</li>
 <li> Implemented consist reading for LocoNet systems.</li>
-<li> Changed Lenz and CVP EasyDCC consist managers so they update the consist list when the consist tool starts, not when the program does.</li>
+<li> Changed Lenz and CVP EasyDCC consist managers, so they update the consist list when the consist tool starts, not when the program does.</li>
 <li> Fixed several bugs in the LocoNet Consist manager.</li>
 </ul>
 
@@ -394,44 +396,44 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
 
 <b>Signalling</b>
     <ul>
-        <li>New Features</li><ul>
+        <li>New Features<ul>
             <li>Added an Experimental DCC accessory controlled SignalMast for the RR-Cirkits LNCP module.</li>
             <li>SignalMasts  Automatically create a resources/signals directory for user created custom signalmast definitions.</li>
             <li>Added a delay option into the SignalMast code to allow the simulation of manually operated signals ie Semaphore Signals<li>
-        </ul>
-        <li>Updates</li><ul>
+        </ul></li>
+        <li>Updates<ul>
             <li>Updated the logic behind the SignalMastLogic in determining routes on the layout editor involving a Double Crossing</li>
             <li>Add a warning message when a logic is created/edited, that if the source or destination mast is used as part of the criteria with the logic, it may result in unexpected behavior.</li>
             <li>Added the ability to delete Signal Mast logic from the Signaling Pairs window</li>
-        </ul>
-        <li>Bug Fixes</li><ul>
+        </ul></li>
+        <li>Bug Fixes<ul>
             <li>SignalHeads - Fix bug 3535156.</li>
             <li>SignalMast Logic - Fix an issue in the logic where disabled aspects were still being considered as potential valid aspects.</li>
             <li>Fix an issue when an NullPointerException could occur when changing between signal mast driver types when the signaling system name does not match the directory that the signal mast are held in</li>
-        </ul>
+        </ul></li>
     </ul>
 
 <b>Hardware Connection</b>
     <ul>
-        <li>New Features</li><ul>
+        <li>New Features<ul>
             <li>ESU ECOS - Added RailCom decoder reporter support.</li>
             <li>ESU ECOS - Added an automatic connection recovery.</li>
             <li>Added in initial support for the TAMs System with help from Jan Boen - please note that this is still in development.</li>
             <li>Added initial support for DCC4PC RailCom interface boards.  The interface is currently <b>not supported in Windows</b></li>
             <li>(Windows Only) In the preferences when you select a new connection, they system will try and match the correct comm port against the selected system</li>
             <li>Updated the CAN BUS code so that it can handle multiple connections and be configured with other systems at the same time.</li>
-        </ul>
-        <li>Bug Fixes</li><ul>
+        </ul></li>
+        <li>Bug Fixes<ul>
             <li>ESU ECOS - Fix an issue in the loco monitor where the initial states of locos was not reported.</li>
-            <li>ESU ECOS - Improved he handling of adding locos to the roster from Ecos database.</li>
+            <li>ESU ECOS - Improved the handling of adding locos to the roster from Ecos database.</li>
             <li>Direct Driver Serial - Prevent this from being selected in the preferences for certain OS that are not supported.</li>
             <li>Suppressed the "Serial Port" selection box from the preferences of the CAN and SMRI Simulator</li>
             <li>Fix potential NPE that would stop the Sprog command station from working if a null packet was queued.</li>
-        </ul>
+        </ul></li>
     </ul>
 <b>DP3</b>
     <ul>
-        <li>New Features</li><ul>
+        <li>New Features<ul>
             <li>Allow the following fields to be directly edited in the DP3 roster table, when the entry is not already opened
             <ul><li>ID Col</li>
                 <li>Road Name</li>
@@ -440,8 +442,8 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
                 <li>Model</li>
                 <li>Owner</li></ul>
             <li>Added the ability to hide columns in the Roster Entry Table</li>
-        </ul>
-        <li>Updates</li><ul>
+        </ul></li>
+        <li>Updates<ul>
             <li>Altered the mouse action in the roster table, so that a double click on a non-selected item will open it for Editing, 
               while a single click on an already selected item will allow editing of that field</li>
             <li>Increased the number items used to identify a roster entry in DP3 to include Decoder manufacture, version and address type used.</li>
@@ -450,28 +452,28 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
             <li>Update the EasyDCC interface so that it would be picked up correctly on the DP3 status screen</li>
             <li>Set the "Programming Type" states are remembered between sessions</li>
             <li>Updated the status bar font size in DP3 to hopefully make it clearer for some users.</li>
-        </ul>
-        <li>Bug Fixes</li><ul>
+        </ul></li>
+        <li>Bug Fixes<ul>
             <li>Fixed a bug where the PR3 could not operate a throttle in Programming Mode</li>
             <li>Fixed an issue with the Start-Up Wizard that could cause the system to hang when doing the final connect</li>
             <li>Fixed an inconsistency issue relating to the saving of preferences in DP3 depending upon the method that it was closed</li>
-        </ul>
+        </ul></li>
     </ul>
 
 <b>Editors</b><ul>
-<li>New Features</li><ul>
+<li>New Features<ul>
     <li>Updated the memory icon in the panels so that if a roster entry is allocated against it, 
         the roster media icon is displayed (if available) or the roster title. If an icon and throttle is available the icon will flip to match the direction</li>
     <li>Editors - Add the ability to set the orientation of a label to be vertical up or vertical down. For icons in memory labels, this will also rotate the assigned icon to match</li>
-</ul>
+</ul></li>
 </ul>
     
 <b>Layout Editor</b><ul>
-<li>New Features</li><ul>
+<li>New Features<ul>
 <li>Add a Single/Double Slip to the layout editor, along with the associated signal logic.</li>
 <li>Added in a full Entry/Exit interlocking system for use with the layout editor.</li>
-</ul>
-<li>Updates</li><ul>
+</ul></li>
+<li>Updates<ul>
     <li>Added a script ("AllocateRosterEntryToBlock.py) that allows you to allocate a roster entry to a block</li>
     <li>Added in the ability to allow an Entry Exit become a variable condition to a Logix.</li>
     <li>Updated the block routing details so that it is initialized after all the layout blocks have been initialized.</li>
@@ -487,31 +489,31 @@ Mike Mosher updated the QSI Version 8 decoder definitions.
     <li>Add the ability in the Layout Editor to control a second turnout from another one on the layout panel.  This is ideal for situations where the user has two physical turnouts operating from one DCC Address and has to put onto the panel an Internal turnout to represent the second turnout.  Changes made to either turnout are reflected on the other.</li>
     <li>Added the ability to delete multiple selected items using either a popup menu or via the keyboard</li>
     <li>Updated the "New Title" option to become an "Edit Title"</li>
-</ul>
-<li>Bug fixes</li><ul>
+</ul></li>
+<li>Bug fixes<ul>
     <li>fix bug (3175940) with scroll bars in the layout editor.  If the panel is loaded in edit mode the saved setting of the scrollbar is overwritten when you go into view mode.</li>
     <li>Fixed a fault in the layout editor, that could allow for the same object to be selected twice, resulting in that item being moved double the distance</li>
     <li>Fixed a bug in the layout editor that results in the loading of a memory icon, getting placed twice on the panel.</li>
-</ul>
+</ul></li>
 </ul>
 <b>Misc</b><ul>
-<li>New Features</li><ul>
+<li>New Features<ul>
     <li>Add the ability for the command monitor, jython input and output windows to be displayed on top of any other window.</li>
     <li>Added the ability to clear the jython output window via a button</li>
-</ul>
-<li>Updates</li><ul>
+</ul></li>
+<li>Updates<ul>
     <li>Add a notification if an error occurred during a panel store, rather than it previously failing silently.</li>
     <li>Updated the throttle window, so that when it is closed, any active throttles, no longer set the loco speed to 0 or turns off all the functions</li>
     <li>Updated the turnout table so that column widths retain their size when extra columns are shown or hidden.</li>
    <li>Jython is now initialized in the background rather than when required to improve user performance.</li>
+</ul></li>
 
-</ul>
-<li>Bug fixes</li><ul>
+<li>Bug fixes<ul>
     <li>Fixed the Copy and Delete Roster items in the classic JMRI interface</li>
     <li>(Bug Id 3105034) Fixed an issue with the function labels that would result in default label values that were once removed re-appearing.</li>
     <li>Fixed an issue in the "Add/Edit Routes" window that could cause panel files to load slowly.</li>
     <li>Fix a number of XML validation errors.</li>
-</ul>
+</ul></li>
 </ul>
 
 <!--#include virtual="/Footer.shtml" -->

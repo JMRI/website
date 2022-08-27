@@ -54,11 +54,11 @@ along with lots of other changes.  See the complete list below.
 They may require a certain amount of experience before they are working well.  
 Therefore, this test version should be considered experimental.
 
-<b><p>
+<p><b>
 JMRI is now only available under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</p></b>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>New warnings for this version:</h3>
 
@@ -119,11 +119,11 @@ may have to remove a communications library, see the
 
 <p>
 You may get some messages like:
-<code><pre>
+<pre>
 WARNING:  RXTX Version mismatch
         Jar version = RXTX-2.2pre1
         native lib Version = RXTX-2.2pre2
-</pre></code>
+</pre>
 For now, this should be considered normal.  We'll try to get it
 removed before the next production release. 
 
@@ -146,16 +146,20 @@ None at the time of this release.
 
 <h3>Download links:</h3>
 
-<p>Please use these links for downloading:
-
-<p>Mac OS X:
+<p>Please use these links for downloading:</p>
+<div class="wide">
+    <ul>
+<li>Mac OS X:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.9.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.9.dmg/download</a>
-
-<p>Windows:
+</li>
+<li>Windows:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.9.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.9.exe/download</a>
-
-<p>Linux:
+</li>
+<li>Linux:
      <a href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.9.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.9.9.tgz/download</a>
+</li>
+    </ul>
+</div>
 
 <h3>Changes since test version 2.9.8</h3>
 
@@ -255,7 +259,7 @@ Only car types that are serviced by the location's tracks will be selected.
 Brett Hoffman fixed a timing issue with WiThrottle and consists.
 
 <p>
-Dan Boudreau added a new operations car edit attribute tool feature:
+Dan Boudreau added a new Operations car edit attribute tool feature:
 The "Delete Unused Attributes" will prompt the user to delete an attribute that hasn't been assigned to a car.
 
 <p>

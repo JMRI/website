@@ -97,16 +97,19 @@ This will be fixed in the next test release.
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.dmg/download</a></li>
 
-<p>Mac OS X: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.dmg/download</a></p>
+<li>Windows: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.exe/download</a></li>
 
-<p>Windows: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.exe/download</a></p>
+<li>Linux: <a
+	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.tgz/download</a></li>
+    </ul>
+</div>
 
-<p>Linux: <a
-	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.2.13.1-r18570.tgz/download</a></p>
-    
 <h3>Changes since production release 2.12</h3>
 
 <p>Dan Boudreau made the following enhancements to operations.</p>
@@ -219,8 +222,8 @@ throttles connected by radio).
 <p>Additional speeds were added to the MERG CBUS CAN-RS support.  You may
 have to modify your CAN-RS to use these, consult their Yahoo email group for details.
 
-<!--#include virtual="/Footer.shtml" -->
-</div><!-- closes #mainContent-->
-</div> <!-- closes #mBody-->
+    <!--#include virtual="/Footer.shtml" -->
+    </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
 </body>
 </html>

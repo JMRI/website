@@ -8,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.5.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -148,22 +143,24 @@ These may be relevant to you if you're updating from an earlier version.
     In the meantime, the workaround is to restart JMRI and/or the hardware node(s)
     and try again; that might allocate different alias values. </p>
 
-
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.1-R44ce773.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.1-R44ce773.dmg/download</a><br/>
-    sha256: 3d4375a8ac8a146e5b218d5d54fe4ab7dcd6a613c60cf3ceded9003b028f095f</p>
+    sha256: 3d4375a8ac8a146e5b218d5d54fe4ab7dcd6a613c60cf3ceded9003b028f095f</li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.1-R44ce773.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.1-R44ce773.exe/download</a><br/>
-    sha256: e80ecbeef9533e26260ae88934d187beb8cd43bb6c6c43c8cf2f18ad2a79e27a</p>
+    sha256: e80ecbeef9533e26260ae88934d187beb8cd43bb6c6c43c8cf2f18ad2a79e27a</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.1-R44ce773.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.5.1-R44ce773.tgz/download</a><br/>
-    sha256: 0aa4207d77054ba50dbf3be3c2f9b26392bdeafb045df1e715105f00766c3d4e</p>
-
+    sha256: 0aa4207d77054ba50dbf3be3c2f9b26392bdeafb045df1e715105f00766c3d4e</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
@@ -282,7 +279,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <li>The POSIX (Mac and Linux) launcher script has
                 <a href="https://github.com/JMRI/JMRI/pull/1548">been improved</a>.
                 It provides much more flexibility for adding extra .jar files and setting options.
-                The algorithm for how much memory the program uses has also been improved.</a>
+                The algorithm for how much memory the program uses has also been improved.</li>
             <li>Egbert Broerse updated the French translation.</li>
             <li>Added startup action to allow a pause for up to five minutes in processing startup items.
             (<a href="https://github.com/JMRI/JMRI/pull/1499">#1499</a>)</li>

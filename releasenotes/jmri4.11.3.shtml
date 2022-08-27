@@ -88,7 +88,6 @@ circumstances, you may need to do some migrations:
             </ul>
 </ul>
 
-
 <a id="problems" name="problems"></a>
 <h3>Known problems with this release</h3>
 <ul>
@@ -229,31 +228,30 @@ These may be relevant to you if you're updating from an earlier version.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-Please note that the download links in this and future JMRI releases link to
+<p>Please note that the download links in this and future JMRI releases link to
 <a href="https://github.com/JMRI/JMRI/releases/">Github servers</a>.
 If that doesn't work for you, the files up to 4.11.x are also still available from the
 <a href="https://sourceforge.net/projects/jmri/files/test%20files">SourceForge.net servers</a>.
-Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.
-
-<ul>
+Please <a href="mailto:jmri.@jmri.net">let us know</a> of any problems.</p>
+<div class="wide">
+    <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.3/JMRI.4.11.3.R80b3ab3.dmg">https://github.com/JMRI/JMRI/releases/download/v4.11.3/JMRI.4.11.3.R80b3ab3.dmg</a><br/>
-  sha256: 908de121aa641e2860cf18177319934023a5e48ffe48bd0294c4624a43b7d4d8 </li>
+    sha256: 908de121aa641e2860cf18177319934023a5e48ffe48bd0294c4624a43b7d4d8 </li>
 
 <li>Windows: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.3/JMRI.4.11.3.R80b3ab3.exe">https://github.com/JMRI/JMRI/releases/download/v4.11.3/JMRI.4.11.3.R80b3ab3.exe</a><br/>
-   sha256: 290fe3a42e44f8145d3fb77cc8255f8469c1916ee30a1a4076c8a2e870971a76</li>
+    sha256: 290fe3a42e44f8145d3fb77cc8255f8469c1916ee30a1a4076c8a2e870971a76</li>
 
 <li>Linux: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v4.11.3/JMRI.4.11.3.R80b3ab3.tgz">https://github.com/JMRI/JMRI/releases/download/v4.11.3/JMRI.4.11.3.R80b3ab3.tgz</a><br/>
-   sha256: ca22b950dd49e9867b0c3d148c8944aea51111620d4585176c8c956c1b481a43</li>
-</ul>
-
+    sha256: ca22b950dd49e9867b0c3d148c8944aea51111620d4585176c8c956c1b481a43</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://jmri.tagadab.com/jenkins/job/TestReleases/job/4.11.1/">CI project page</a>.
-
 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
@@ -305,7 +303,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=is%3Aclosed&q=milest
             <ul>
                 <li>Michael Mosher updated the TCS WOW diesel definitions</li>
             </ul>
-
 
    <h3>Panel Editors</h3>
         <ul>

@@ -56,11 +56,11 @@ Therefore, this test version should be considered experimental.
 <!-- version that's good enough to be recommended for general use, including by new users.  -->
 <!-- We're therefore making that version, "Production version 2.2" available for download today. -->
 
-<b><p>
+<p><b>
 JMRI is now only available under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</p></b>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>New warnings for this version:</h3>
 
@@ -103,15 +103,19 @@ version of Java.  To see JMRI's future plans for this and other compatibility is
 <h3>Download links:</h3>
 
 <p>Please use these links for downloading, including the "?download" at the end. That adds to SourceForge's advertising statistics, which makes them happy to host our stuff.
-
-<p>Mac OS X:
+<div class="wide">
+    <ul>
+<li>Mac OS X:
      <a href="http://downloads.sourceforge.net/jmri/JMRI.2.1.4.dmg?download">http://downloads.sourceforge.net/jmri/JMRI.2.1.4.dmg?download</a>
-
-<p>Windows:
+</li>
+<li>Windows:
      <a href="http://downloads.sourceforge.net/jmri/JMRI.2.1.4.exe?download">http://downloads.sourceforge.net/jmri/JMRI.2.1.4.exe?download</a>
-
-<p>Linux:
+</li>
+<li>Linux:
      <a href="http://downloads.sourceforge.net/jmri/JMRI.2.1.4.tgz?download">http://downloads.sourceforge.net/jmri/JMRI.2.1.4.tgz?download</a>
+        </li>
+    </ul>
+</div>
 
 <h3>Changes since test version 2.1.3:</h3>
 

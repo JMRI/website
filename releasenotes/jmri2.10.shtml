@@ -39,11 +39,11 @@ Among the enhancements since the last production release, JMRI 2.10, are:
 <li>Improvements to layout and panel editor
 </ul>
 
-<b><p>
+<p><b>
 JMRI is now only available under the 
 <a href="/COPYING">GNU General Public License</a>. For more information, please
 see our 
-<a href="/copyright.shtml">copyright and licensing page</a>.</p></b>
+<a href="/copyright.shtml">copyright and licensing page</a>.</b></p>
 
 <h3>Warnings for this version:</h3>
 
@@ -59,8 +59,8 @@ being working on, and we have to remove it.  This version of
 JMRI requires that you enter consistent system names, including using the right case.
 If you use system names, and haven't been using consistent names, you'll
 probably have to practice a little to get in the habit. If you have any problems
-reading old files, etc, please post a note on the JMRI users group</li>
-and somebody will help you.
+reading old files, etc, please post a note on the JMRI users group
+and somebody will help you.</p>
 
 <p>
 The LocoTools application is no longer supported, and is being removed.
@@ -90,21 +90,21 @@ may have to remove a communications library, see the
 The communications libraries for Mac OS X have been updated.  
 We've tested these extensively, but there may be combinations of 
 hardware and software versions that still aren't right.  If the program
-can't see your layout connection, please post to the JMRI Users group</li>
+can't see your layout connection, please post to the JMRI Users group
 with what type of Mac you're using (PowerBook, PowerMac, MacBook, etc), 
 processor type (PPC G3, G4, G5 or Intel) and Mac OS X version (10.4, 10.5, 
 etc; names like Leopard are OK) too.  We've got several library versions 
 and most likely have one that will work, we just have to figure out which.
 Finally, if you have scripts that directly access the serial or parallel
-port, you'll have to change references to "javax.comm" to "gnu.io".
+port, you'll have to change references to "javax.comm" to "gnu.io".</p>
 
 <p>
 You may get some messages like:
-<code><pre>
+<pre>
 WARNING:  RXTX Version mismatch
         Jar version = RXTX-2.2pre1
         native lib Version = RXTX-2.2pre2
-</pre></code>
+</pre>
 For now, this should be considered normal.  We'll try to get it
 removed before the next production release. 
 
@@ -123,16 +123,20 @@ To make these stop, just store the file again so that it's rewritten in the most
 
 <h3>Download links:</h3>
 
-<p>Please use these links for downloading:
-
-<p>Mac OS X:
+<p>Please use these links for downloading:</p>
+<div class="wide">
+    <ul>
+<li>Mac OS X:
      <a href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.10.dmg/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.10.dmg/download</a>
-
-<p>Windows:
+</li>
+<li>Windows:
      <a href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.10.exe/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.10.exe/download</a>
-
-<p>Linux:
+</li>
+<li>Linux:
      <a href="https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.10.tgz/download">https://sourceforge.net/projects/jmri/files/production%20files/JMRI.2.10.tgz/download</a>
+    </li>
+    </ul>
+</div>
 
 <h3>Changes since production version 2.8</h3>
 
@@ -461,7 +465,8 @@ Updated the XNetListenerExample.py sample script to include the notifyTimeout me
 David Duchamp added colors to the Layout Editor track.
 
 <p>
-David Duchamp added <a href="http://jmri.org/help/en/package/jmri/jmrit/dispatcher/Dispatcher.shtml">Dispatcher<a> options.
+David Duchamp added <a href="http://jmri.org/help/en/package/jmri/jmrit/dispatcher/Dispatcher.shtml">Dispatcher</a>
+options.
 
 <p>
 Pete Cressman added Learn-Mode recording from read throttles to the Warrant auto-run system.

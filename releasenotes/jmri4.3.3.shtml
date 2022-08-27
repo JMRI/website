@@ -8,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.3.3 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -70,9 +65,8 @@ see our
 	The fix for this is available via <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>, 
 	and will be in <a href="jmri4.3.4.shtml">JMRI 4.3.4</a>.</li>
 </ul>
-If any of those effect you, please either wait for
-<a href="jmri4.3.4.shtml">JMRI 4.3.4</a>, due out in the first half of March,
-or pick up a
+<p>If any of those effect you, please either wait for
+<a href="jmri4.3.4.shtml">JMRI 4.3.4</a>, due out in the first half of March, or pick up a
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">development build installer</a>
 from
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">Jenkins</a>.</p>
@@ -157,23 +151,24 @@ These may be relevant to you if you're updating from an earlier version.
     In the meantime, the workaround is to restart JMRI and/or the hardware node(s)
     and try again; that might allocate different alias values.</p>
 
-
 <h3>Download links:</h3>
 
-
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.dmg/download</a><br/>
-    sha256: 8d63a2beafb2db5a6a18d298d258aa2b06212566c2f368c61d2fc7d4acaab0d5</p>
+    sha256: 8d63a2beafb2db5a6a18d298d258aa2b06212566c2f368c61d2fc7d4acaab0d5</li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.exe/download</a><br/>
-    sha256: 3247ea32ed03521da86b0c04e03ed6e9a68cee3e8de61c452c1a179f96543168</p>
+    sha256: 3247ea32ed03521da86b0c04e03ed6e9a68cee3e8de61c452c1a179f96543168</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.3.3-R965a469.tgz/download</a><br/>
-    sha256: 59cb0f69f1eff78798c4949af3d11a7b8e4a12731b61663812e30d831477becf</p>
-
+    sha256: 59cb0f69f1eff78798c4949af3d11a7b8e4a12731b61663812e30d831477becf</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the

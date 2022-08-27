@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- $Id$ -->
 <html lang="en">
 
 <head>
@@ -9,13 +8,8 @@
     <meta name="author" content="Bob Jacobsen">
     <meta name="keywords" content="java model railroad JMRI 4.1.5 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
-<!-- Style -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link rel="stylesheet" type="text/css" href="/css/default.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
-  <link rel="icon" href="/images/jmri.ico" type="image/png">
-  <link rel="home" title="Home" href="/">
-<!-- /Style -->
+    <!--#include virtual="/Style.shtml" -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -149,29 +143,28 @@ See the <a href="jmri4.0.shtml">JMRI 4.0 release note</a> for warnings predating
     In the meantime, the workaround is to restart JMRI and/or the node
     and try again; that might allocate different alias values.</p>
 
-
 <h3>Download links:</h3>
 
-
 <p>Please use these links for downloading:</p>
-<p>Mac OS X: <a
+<div class="wide">
+    <ul>
+<li>Mac OS X: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.5-R25e54ec.dmg/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.5-R25e54ec.dmg/download</a><br/>
-    sha256: cce9703e45a654bc7712e42f77a01a9dfa96b1fd896929b7337b01c94f3e127c</p>
+    sha256: cce9703e45a654bc7712e42f77a01a9dfa96b1fd896929b7337b01c94f3e127c</li>
 
-<p>Windows: <a
+<li>Windows: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.5-R25e54ec.exe/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.5-R25e54ec.exe/download</a><br/>
-    sha256: 1ff145ae626138dfb7797d4ce37d28261e9e681f030aa3570e61f99a610b54d1</p>
+    sha256: 1ff145ae626138dfb7797d4ce37d28261e9e681f030aa3570e61f99a610b54d1</li>
 
-<p>Linux: <a
+<li>Linux: <a
 	href="https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.5-R25e54ec.tgz/download">https://sourceforge.net/projects/jmri/files/test%20files/JMRI.4.1.5-R25e54ec.tgz/download</a><br/>
-    sha256: ef00de21d7e59e6102e0a60e0629e3445a736c62506fb48ddc10d4b0a80eaec8</p>
-
+    sha256: ef00de21d7e59e6102e0a60e0629e3445a736c62506fb48ddc10d4b0a80eaec8</li>
+    </ul>
+</div>
 <!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="http://builds.jmri.org/jenkins/job/Test%20Releases/job/4.1.5/ws/jmri/dist/release/">CI project page</a>.
-
-
 
 <p>During development leading to the actual release, you can find test download files on the
 <a href="http://builds.jmri.org/jenkins/job/Development/job/Packages/">continuous integration build page</a>.
