@@ -29,13 +29,13 @@ function open_search(elmnt) {
   }
 }
 
-function open_more(elmnt) {
+function open_more(elmnt, label) {
   var a = document.getElementById("more");
   var navbar = document.getElementById("mainNav");
   if (a.style.display == "") {
     document.getElementById("hor-nav").style.visibility = "visible";
     a.style.display = "none";
-    elmnt.innerHTML = "Help &amp; More <i class='fa fa-caret-down'></i>";
+    elmnt.innerHTML = label + "<i class='fa fa-caret-down'></i>";
   } else {
       document.getElementById("hor-nav").style.visibility = "hidden";
     a.style.display = "";
@@ -46,7 +46,7 @@ function open_more(elmnt) {
     } else {
       a.style.width = "100%";
     }
-    elmnt.innerHTML = "Help &amp; More <i class='fa fa-caret-up'></i>";
+    elmnt.innerHTML = label + "<i class='fa fa-caret-up'></i>";
   }
 }
 
