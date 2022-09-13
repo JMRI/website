@@ -109,16 +109,9 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
-
-
+    <li>
+        None yet
+    </li>
 </ul>
 
 
@@ -182,13 +175,93 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.1.4+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>The DCS240+ doesn't accept service-mode read
+                    requests for about 350-400msec after the completion of the prior one.
+                    A short delay has been added to handle this.</li>
+            </ul>
+
+        <h4>NCE</h4>
+            <ul>
+                <li>Internationalization of the NCE tools was completed. New items are available for
+                  translation.</li>
+            </ul>
+
+        <h4>OpenLCB / LCC</h4>
+            <ul>
+                <li>Updated openlcb.jar to pick up "send AMD in response to AME" fix.</li>
+            </ul>
+
+        <h4>SPROG</h4>
+            <ul>
+                <li>Added option for offset between CBUS events and DCC accessory addresses for [Pi-]SPROG 3 Plus firmware 3.e Beta 2.</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>Updates to ECO & TSU2, add Genesis Caboose</li>
+            </ul>
+
+        <h4>Uhlenbrock</h4>
+            <ul>
+                <li>Added a new definition for Lissy Receiver #68600, 68610 and #68620. Use LNCV programming.</li>
+                <li>Added definitions for the UB 73310 and UB 73416 decoders.</li>
+            </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>Menu items were harmonized with the button alternatives.</li>
+        </ul>
+
+   <h3>Internationalization</h3>
+        <a id="I18N" name="I18N"></a>
+        <ul>
+            <li>See NCE tools above.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The popup menu in the ConditionalNG editor is changed.
+          All the categories are sub menus to the <i>Add</i> menu item.
+          When a new action or expression is to be created, it is
+          selected directly in the popup menu.</li>
+          <li>The expression <i>Local variable as analog value</i>
+          has been added.</li>
+          <li>LogixNG now prints <i>(Listen)</i> or <i>(No Listen)</i> when
+          memories are used as addressing. It also prints <i>::: No Listen</i>
+          for expressions where the option <i>Listen</i> is unchecked.
+          </li>
+        </ul>
+
+   <h3>Web Server</h3>
+        <a id="server" name="server"></a>
+        <ul>
+            <li>Added Camera webThrottle to Web Server.<br>
+                Camera webThrottle provides integrated support for controlling trains with integrated POV or overhead IP based cameras.<br>
+                Throttle Learn More page has been added for the camera throttle that covers setup and connecting the cameras to the engine throttle.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>The French JMRI Help pages were updated for responsive display.<br>
+              They will appear when using the French locale, or from their own
+              <a href="https://www.jmri.org/index_fr.shtml">starting page</a>.</li>
+            <li>SpotBugs has been updated to 4.7.2</li>
+
+            <li>The local help stub file has been moved from the settings location to the home
+            location.  This fixes a problem introduced by recent versions of Ubuntu and its
+            derivatives.</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
