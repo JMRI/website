@@ -22,11 +22,13 @@
       Release Notes for JMRI 5.1.4 release
       </h1>
 
-    <p>Date: MMM DD, 2022</p>
-    <p>From: (release pumpkin)</p>
+    <p>Date: September 14, 2022</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 5.1.4 of JMRI/DecoderPro is available for download.</p>
 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -141,27 +143,27 @@ before installing this test release.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!--
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.dmg">https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.dmg</a><br/>
-  sha256: bf461db161a478cc11a6e0107bfd1139f338ebadd19c68d81946659827856474 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.1.4/JMRI.5.1.4+R101f36af1e.dmg">https://github.com/JMRI/JMRI/releases/download/v5.1.4/JMRI.5.1.4+R101f36af1e.dmg</a><br/>
+  sha256: e1947337a988ab66c3af83ec9f23879e780fb5f8314bcbcbafa6876d27ed6980 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.exe">https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.exe</a><br/>
-   sha256: 03f795a562c3aee91935be9a3cfbf6c60ae2fd831a25cf87ea7c8769b4311683</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.1.4/JMRI.5.1.4+R101f36af1e.exe">https://github.com/JMRI/JMRI/releases/download/v5.1.4/JMRI.5.1.4+R101f36af1e.exe</a><br/>
+   sha256: e21d3c67df6f9eb5ca30b6890bf172b23389cd3264e9c3fc2868a50b56087f6c</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.tgz">https://github.com/JMRI/JMRI/releases/download/v4.25.5/JMRI.4.25.5+R8682bb138b.tgz</a><br/>
-   sha256: 7bb1fa846f8bdc115bda8d0d4ec6b67b816d4ee6cecc27cdbe89a0cc571c2e7e</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.1.4/JMRI.5.1.4+R101f36af1e.tgz">https://github.com/JMRI/JMRI/releases/download/v5.1.4/JMRI.5.1.4+R101f36af1e.tgz</a><br/>
+   sha256: d20b12f4a7004133125febfb45e7757d89455e89bdf211e8f8eaec3064d9c1b2</li>
 </ul>
 </div>
- -->
 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.1.4/">CI project page</a>.
+ -->
 
 <!--
 During development leading to the actual release, you can find test download files on the
