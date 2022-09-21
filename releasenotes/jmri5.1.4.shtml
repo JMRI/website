@@ -112,7 +112,10 @@ from
 
 <ul>
     <li>
-        None yet
+        There's a problem with the generation of OpenLCB/LCC AMD
+        frames in this version that can result in the bus locking up.
+        This problem is not present in 5.1.3 or earlier, and will be
+        fixed in JMRI 5.1.5.
     </li>
 </ul>
 
