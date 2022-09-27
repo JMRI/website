@@ -95,10 +95,12 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>New problems with this release</h3>
       <ul>
-        <li>OperationsPro, there's a problem with car's custom loads when upgrading to this
-          release. Before upgrading, please terminate or reset all trains if you're using custom
-          loads and schedules. Also all car wait counts need to be reduced to zero by building and
-          reseting trains. If you're not using custom loads, you can ignore this issue.</li>
+        <li>OperationsPro, there's a problem with car's custom load when upgrading to this
+          release. Cars that were "scheduled" to get a custom load when terminated could instead get
+          the default "E" or "L" loads. Before upgrading, please terminate or reset all trains if
+          you're using custom loads and schedules. Also all car wait counts need to be reduced to
+          zero by building and resetting trains. If you're not using custom loads, you can ignore
+          this issue.</li>
       </ul>
       <!--
 If any of those affect you, please either
