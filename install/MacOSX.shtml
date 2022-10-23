@@ -195,6 +195,16 @@
                     visible effect.
             </ol>
 
+      <a id="lockdown"></a>
+      <h2>A Note on macOS Lockdown Mode</h2>
+        <p>Recent versions of macOS have a "lockdown mode" which greatly increases security.
+        Unfortunately, JMRI requires access to resources that are not available to programs when
+        using lockdown mode such as USB hardware access, network access, etc.  This means
+        that JMRI won't properly start and run if your Mac has been set to lockdown mode.
+        There's nothing we can do about this incompatibility: You can't both enable lockdown mode
+        and run JMRI on the same machine.
+
+
       <a id="update"></a>
       <h2>Updating JMRI</h2>
           <p>If you already have JMRI installed and working, and want to update
