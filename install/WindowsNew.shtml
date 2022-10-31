@@ -146,10 +146,14 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
       Continuing permits you to resolve this issue later by either installing a valid version or linking JMRI
       to an absolute version as described in <a href="#specificjavaversion">Using a specific java version</a> section below.</p>
 
-      When running JMRI the search order for java (specifically bin/javaw.exe) is 1 - the jre directory, 2 - the default java
-      and 3 - the first valid version 11 or higher found in the registry keys.
+      When running JMRI the search order for java (specifically bin/javaw.exe) is:
+      <ol>
+      <li>the jre directory within the JMRI install directory,</li>
+      <li>the default java,</li>
+      <li>first valid version 11 or higher found in the registry keys.</li>
+      </ol>
 
-      It is recommended that you use java 11, and if you have no applications requiring Java 1.8 then remove it.</p>
+      <p>It is recommended that you use java 11, and if you have no applications requiring Java 1.8 then remove it.</p>
 
       </li>
 
