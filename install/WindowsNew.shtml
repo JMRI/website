@@ -140,6 +140,23 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
 <a id="installation"></a>
 <h2>Installation Procedure</h2>
 <ol>
+  <li><p>Since JMRI 5.1.6. During the installation your machine will be checked for java 11 or greater.
+      First it will check the default version, then if that fails search the registry entries (javasoft keys).</p>
+      <p>If java 11 or greater is not found it will ask you whether you wish to continue the installation.
+      Continuing permits you to resolve this issue later by either installing a valid version or linking JMRI
+      to an absolute version as described in <a href="#specificjavaversion">Using a specific java version</a> section below.</p>
+
+      When running JMRI the search order for java (specifically bin/javaw.exe) is:
+      <ol>
+      <li>the jre directory within the JMRI install directory,</li>
+      <li>the default java,</li>
+      <li>first valid version 11 or higher found in the registry keys.</li>
+      </ol>
+
+      <p>It is recommended that you use java 11, and if you have no applications requiring Java 1.8 then remove it.</p>
+
+      </li>
+
   <li><em>Check Java release on your computer</em>
      <p>Check to see what release of Java is currently installed on your computer. Open a "command" window
      by typing "Command prompt" into the search bar next to the Windows Start icon. Then type:</p>
@@ -234,6 +251,24 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
     </ol>
   </li>
  </ol>
+
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
+
+  <a id="specificjavaversion"></a>
+  <h3>Using a specific java version</h3>
+  <p>To use a specific java installation either install that version to the JMRI install directory \jre
+  or link the specific java version to the JMRI install directory \jre</p>
+
+  <p>To install it to <JMRI Install Directory>/jre during the install simply tell it to install it there.</p>
+
+  <p>To link the java installation directory to <JMRI Install Directory>\jre do the following:</p>
+  <p>Make a note of the directory where the version of java you wish to use is installed and where JMRI was installed.<br>
+	As an example the java I wish to use is in "C:\Program Files\Microsoft\jdk-11.0.16.101-hostspot"<br>
+	JMRI was installed in the default location "C:\Program Files (x86)\JMRI"<br>
+	To create the link open a Command Prompt in administrator mode (elevated permissions) and enter the command:<br>
+
+	<code>mklink "C:\Program Files (x86)\JMRI\jre" "C:\Program Files\Microsoft\jdk-11.0.16.101-hostspot"</code>
+	</p>
 
 <!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
 
