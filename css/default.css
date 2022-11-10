@@ -68,6 +68,15 @@
 		text-align: center;
 		white-space: nowrap
 	}
+	strong.button { /*in line "button" used in NetBeans an LocoIO help pages*/
+    	color: Black;
+		background-color: White;
+        border: Black;
+        overflow: hidden;
+        padding: 2px;
+        vertical-align: middle;
+        text-align: center;
+    }
 	.button:hover {
       background-color: #C0C0C0; /*var(--hover-color);*/
       color: #778899; /*var(--primary-color3); LightSlateGray */
