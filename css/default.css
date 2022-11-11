@@ -13,18 +13,18 @@
  */
 
 /* TOC:
-   Random HTML Styles
-   General Structure
-   Navigation
-   Comments and Other Asides
-   Emphasis
-   Computers - General
-   Code
-   Examples and Figures
-   Q and A (FAQ)
-   Tables
-   Meta
-   Animation via css
+    Random HTML Styles
+    General Structure
+    Navigation
+    Comments and Other Asides
+    Emphasis
+    Computers - General
+    Code
+    Examples and Figures
+    Q and A (FAQ)
+    Tables
+    Meta
+    Animation via css
 */
 
 /* Style Colors css vars */
@@ -78,11 +78,11 @@
         text-align: center;
     }
 	.button:hover {
-      background-color: #C0C0C0; /*var(--hover-color);*/
-      color: #778899; /*var(--primary-color3); LightSlateGray */
-      position: relative;
-      display: inline-block;
-      cursor: pointer
+        background-color: #C0C0C0; /*var(--hover-color);*/
+        color: #778899; /*var(--primary-color3); LightSlateGray */
+        position: relative;
+        display: inline-block;
+        cursor: pointer
     }
 	.block-show { /* unhide objects */
 	    display: block!important;
@@ -162,26 +162,26 @@
     }
 /* flex: blocks that try to fit on a row, or wrap. Collapse to full width on smaller screens */
     .flex-container {
-      display: flex;
-      flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
     }
     .flex-item-30 {
-      padding: 1px;
-      flex: 30%;
+        padding: 1px;
+        flex: 30%;
     }
     .flex-item-50 {
-      padding: 1px;
-      flex: 50%;
+        padding: 1px;
+        flex: 50%;
     }
     .flex-item-70 {
-      padding: 1px;
-      flex: 70%;
+        padding: 1px;
+        flex: 70%;
     }
     /* Responsive layout - makes a one column-layout instead of a two-column layout */
     @media (max-width: 800px) {
-      .flex-item-30, .flex-item-50, .flex-item-70 {
-        flex: 100%;
-      }
+        .flex-item-30, .flex-item-50, .flex-item-70 {
+            flex: 100%;
+        }
     }
 
 /* group several items in a div, responsive, replaces table */
@@ -331,16 +331,16 @@
 	    padding: .2em .3em;
 	}
 	.since a:link {
-			color: Black;
-			font-weight: normal;
+        color: Black;
+        font-weight: normal;
 	}
 	.since a:visited {
-			color: Black;
-			font-weight: normal;
+        color: Black;
+        font-weight: normal;
 	}
 	.since a:link:hover, :visited:hover {
-			color: White;
-			font-weight: normal;
+        color: White;
+        font-weight: normal;
 	}
 
 	span.donate {
@@ -516,11 +516,11 @@
     }
 
     th {
-      padding-top: 1px;
-      padding-bottom: 1px;
-      text-align: left;
-      background-color: #FFD700; /* --primary-color2 - Orange */
-      color: white;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        text-align: left;
+        background-color: #FFD700; /* --primary-color2 - Orange */
+        color: white;
     }
 
 	tr {
@@ -563,8 +563,8 @@
 
 /*html elements*/
 html {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -637,15 +637,15 @@ hr {
 /* page structure*/
 /* Use a media query to add a breakpoint at 1024px, same point as top menus collapse into a dropdown (see /Header) */
 @media only screen and (max-width: 1024px) {
-  #hor-nav {
-    display: none;
-  }
-  #side {
-    display: none;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    padding: 0.3em;
-  }
+    #hor-nav {
+        display: none;
+    }
+    #side {
+        display: none;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        padding: 0.3em;
+    }
 }
 
 /*2 Column Layout on bigger screens */
@@ -710,7 +710,7 @@ hr {
 .nomenu #side,
 .no-sidebar #side {
 	display: none;
-	}
+}
 
 #side h2 {
 	margin-top: 0.5em;
@@ -824,27 +824,27 @@ hr {
   overflow: hidden;
 }
 .dropdown-content {
-  position: absolute;
-  top: 100%;
-  opacity: 0;
-  background-color: #778899; /*var(--primary-color3); LightSlateGray */
-  color: #000;
-  transition: box-shadow 125ms 0ms, transform 125ms 0ms, opacity 125ms 0ms, visibility 0ms .25s;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-  z-index: 5;
-  cursor: auto;
-  min-width: 160px;
-  margin: 0;
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    background-color: #778899; /*var(--primary-color3); LightSlateGray */
+    color: #000;
+    transition: box-shadow 125ms 0ms, transform 125ms 0ms, opacity 125ms 0ms, visibility 0ms .25s;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    z-index: 5;
+    cursor: auto;
+    min-width: 160px;
+    margin: 0;
 }
 .dropdown-content a {
-  color: Black;
-  text-decoration: none;
-  text-align: left;
+    color: Black;
+    text-decoration: none;
+    text-align: left;
 }
 .dropdown:hover > .dropdown-content {
-  visibility: visible;
-  transition: visibility 0ms 0ms, opacity 83.33333333ms 0ms, transform .25s 0ms, box-shadow 83.33333333ms 62.5ms;
-  opacity: 1;
+    visibility: visible;
+    transition: visibility 0ms 0ms, opacity 83.33333333ms 0ms, transform .25s 0ms, box-shadow 83.33333333ms 62.5ms;
+    opacity: 1;
 }
 .dropdown-menuitem {
     display: block;
@@ -865,15 +865,15 @@ hr {
 	z-index: 4;
 }
 /* google search items in results */
- .gsc-wrapper {
+.gsc-wrapper {
     background: #F5F5DC; /* makes search result URL/title readable */
- }
- .gsc-thumbnail-inside { /* highlights JMRI result items */
-     background: LightSlateGray;
- }
- .gsc-thumbnail-inside :hover { /* highlights JMRI result items */
-     background: LightGray;
- }
+}
+.gsc-thumbnail-inside { /* highlights JMRI result items */
+    background: LightSlateGray;
+}
+.gsc-thumbnail-inside :hover { /* highlights JMRI result items */
+    background: LightGray;
+}
 
 #title {
 	background: #AAC;
@@ -1062,7 +1062,6 @@ hr {
 	padding-left: 35px;
 	margin-bottom: -20px;
 }
-
 
 /*footer*/
 #bn {
