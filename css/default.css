@@ -427,6 +427,12 @@
 	:link img, :visited img {
 		border: 0;
 	}
+
+	/* add a border when an image has a white background on a white page */
+	.image-border {
+		border: solid thin black !important;
+	}
+
 	.deepLevel #mainContent :link img, .deepLevel #mainContent :visited img {
 		border: medium solid;
 	}
