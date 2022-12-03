@@ -109,16 +109,13 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
-
-
+    <li>
+        The way defaults for some LocoNet connections are handled has changed.
+        Existing LocoNet connections might give a "The Defaults preferences are invalid"
+        warning when saving preferences.  In that case, click "yes" and then go set
+        all the default radio buttons on the "Defaults" pane to the LocoNet connection.  (You can also
+        click "no", but you'll get the message next time you store too)
+    </li>
 </ul>
 
 
@@ -182,13 +179,90 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.1.7+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+
+        <h4>EasyDCC</h4>
+            <ul>
+                <li>Now allows adding multiple new turnouts at the same time.</li>
+            </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>You can now select separate defaults (in the Preferences -> Defaults pane)
+                for additional types of LocoNet connections.
+                <p>
+                Note: Existing LocoNet connections might give a "The Defaults preferences are invalid"
+                warning when saving preferences.  In that case, click "yes" and then go set
+                all the default radio buttons on the "Defaults" pane to the LocoNet connection.  (You can also
+                click "no", but you'll get the message next time you store too)</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>Viessmann</h4>
+            <ul>
+                <li>New decoder definition for Viessmann 4567 TT Motorized point machine</li>
+		        <li>New decoder definition for Tillig 08335 TT Motor-driven double crossing point</li>
+            </ul>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li>New decoder definitions for Firmware 40.18</li>
+                <li>Nigel Cliffe did a
+                <a href="https://github.com/JMRI/JMRI/issues/11608">large update to the Zimo definitions</a></li>
+            </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Add ability to add PreStart delay and actions.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The Throttle action supports multiple throttle connections.</li>
+          <li>The expression <i>Sensor Edge</i> has been added. It returns True when
+          the sensor goes from one predefined state to another predefined state.</li>
+          <li>The LogixNG table now have the option <i>Execute</i> that lets you to
+          execute a single LogixNG.</li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li>Updated ControlPanel.py sample script to show the panel windows
+            instead of the panel editor windows.</li>
+        </ul>
+
+        <h4>Signal Heads</h4>
+            <ul>
+                <li>"Single Output" signal heads had their Thrown and Reversed
+                positions
+                <a href="https://groups.io/g/jmriusers/message/210041">reversed in the "Add..." dialog</a>.
+                This is now corrected.
+                </li>
+            </ul>
+
+   <h3>Warrants</h3>
+        <a id="Wt" name="Wt"></a>
+        <ul>
+            <li>Fix bug making NXWarrants over very short blocks.</li>
+            <li>New concatenation option (Warrant Table menu Warrants->Concatenate Warrants).
+               Concatenated warrant may either stop or continue at speed through the connecting
+               block. It is no longer required to match paths at the connecting block.
+               Concatenation will find the connecting path if it exists.
+               This method is preferred rather than linking warrants of the same DCC address.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>SpotBugs has been updated to 4.7.3</li>
+            <li>Remove the i18n-consistency-check ant target (and related jar) as ineffective</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
