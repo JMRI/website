@@ -18,6 +18,10 @@ production:
    exe: "https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12+Rb6a9bb1.exe"
 test:
  versions:
+  5.1.7:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v5.1.7/JMRI.5.1.7+Rd06615728f.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v5.1.7/JMRI.5.1.7+Rd06615728f.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v5.1.7/JMRI.5.1.7+Rd06615728f.exe"
   5.1.6:
    tgz: "https://github.com/JMRI/JMRI/releases/download/v5.1.6/JMRI.5.1.6+R4c05a03807.tgz"
    dmg: "https://github.com/JMRI/JMRI/releases/download/v5.1.6/JMRI.5.1.6+R4c05a03807.dmg"
