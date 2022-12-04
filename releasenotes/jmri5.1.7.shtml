@@ -200,6 +200,30 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.1.7+is
                 click "no", but you'll get the message next time you store too)</li>
             </ul>
 
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>Added new service scripts in the scripts/LCC directory:
+                <ul>
+                    <li>DisplayTrackCircuit.py - This script manages a set of sensors to follow a
+                        RR-CirKits track circuit. It uses 8 sensors in a state machine to update a
+                        memory for text display of the track circuit state.
+
+                    <li>SetSignalNodeDefaults.py - This script will populate the sensor and turnout
+                        tables with many default entries for a Signal LCC node.
+
+                    <li>SetTowerNodeDefaults.py - This script will populate the sensor and turnout
+                        tables with many default entries for a Tower LCC node.
+                </ul>
+                See comments within the scripts for more info.
+                <p>
+                Note: The Set*Defaults scripts create a large number of sensors and turnout
+                entries. This makes the connection monitor easier to read as you get names for
+                everything instead of just numbers. But it also slows down the startup as those
+                items get loaded during startup and synced to the nodes.
+                </li>
+            </ul>
+
+
     <h3>New / Updated decoder definitions</h3>
 
         <h4>Viessmann</h4>
