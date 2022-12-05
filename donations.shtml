@@ -17,7 +17,7 @@
     <div id="mainContent">
 
     <h1>Donating to JMRI</h1>
- 
+
     JMRI runs entirely on volunteer labor. We have an
     impressive list of
     <a href="/help/en/Acknowledgements.shtml">people who have worked on JMRI</a>.
@@ -25,12 +25,18 @@
     However, JMRI also needs contributions of money.
     We generally use open source and collaborative (i.e. no-cost-to-us) tools and infrastructure,
     but there are a
-    few expenses related to JMRI software development that have to be paid for,
-    including, but not limited to:
+    few expenses related to JMRI software development that have to be paid for.
+    These include, but not limited to:
     <ul>
         <li>Domain name registration fees,
-        <li>copyright and trademark registration fees,
+        <li>SSL certificates and DNS costs,
+        <li><a href="https://www.jmri.org/copyright.shtml">copyright and trademark</a> registration fees,
         <li>costs for signing certificates and other development items,
+        <li>backup costs,
+        <li>server and bandwidth fees for the
+            <a href="https://www.jmri.org/help/en/html/doc/Technical/ContinuousIntegration.shtml#jenkins">Jenkins</a>
+            and web site services,
+
     </ul>
     and other costs associated with keeping the JMRI code freely available and
     the developer and users communities connected.
@@ -82,8 +88,8 @@
 
     <p>
     If you don't want to use PayPal, please
-    <a href="mailto:jmri@jmri.org">contact us directly via email</a>
-    and we can make other arrangements.</p>
+    <a href="mailto:jmri@jmri.org">contact us directly via email</a>.
+    We can sometimes make other arrangements.</p>
 
         <!--#include virtual="/Footer.shtml" -->
     </div> <!-- closes #mainContent-->
