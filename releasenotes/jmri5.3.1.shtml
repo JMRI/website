@@ -136,6 +136,7 @@ including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version;
 we strongly recommend you update to at least <a href="jmri5.0.shtml">JMRI 5.0</a>
 before installing this test release.
+See <a href="#update">instructions above</a>.
 
 <ul>
     <li><span class="since">Since <a href="jmri5.1.17.shtml">JMRI 5.1.17</a></span>
@@ -152,11 +153,6 @@ before installing this test release.
         <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
         <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
     </li>
-    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
-        This version no longer reads ZeroConf IPv4 and IPv6 preferences
-        written with JMRI 4.16 and before.  Please make sure to upgrade
-        to JMRI 4.20 (or later) and save your preferences before
-        updating to this version if you have configured the WiThrottle preference pane.</li>
 </ul>
 
 <a id="download" name="download"></a>
