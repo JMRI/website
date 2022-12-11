@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+ <title>
+    JMRI: Release Notes for 5.2
+ </title>
+    <meta content="Bob Jacobsen" name="author">
+    <meta name="keywords" content="java model railroad JMRI 5.2 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+
+ <!--#include virtual="/Style.shtml" -->
+</head>
+
+<body>
+<!--#include virtual="/Header.shtml" -->
+
+<div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
+    <div id="mainContent">
+      <h1>
+      Release Notes for JMRI 5.2 release
+      </h1>
+
+    <p>Date: MMM DD, 2022</p>
+    <p>From: Bob Jacobsen</p>
+    <p>Subject: Production Release 5.0 of JMRI/DecoderPro is available for download.</p>
+
+<p><b>This is a draft release note only; the download links do not yet work</b></p>
+
+<p>We are very pleased to announce that the 5.1 series of JMRI test releases has resulted in a
+version that's good enough to be recommended for general use, including by new users.
+We're therefore making that version, "Production Release 5.2" available for download today.</p>
+
+<a id="note" name="note"></a>
+<h2>Notes:</h2>
+
+<p><b>
+JMRI is now only available under the
+<a href="/COPYING">GNU General Public License</a>. For more information, please
+see our
+<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<br>
+<p class="noted" align=center><b>This release requires Java 11 to work.</b><br/>
+(See <a href="http://jmri.org/java">our page on downloading and installing Java 11</a>)<br></p><br>
+
+<a id="update" name="update"></a>
+<h3>Update From Older JMRI Versions</h3>
+
+If you are currently using a version older than JMRI 4.20, please follow these instructions carefully:
+<!-- Note:  At this point, we're not requiring an update to 4.22; change if needed-->
+<ol>
+<li>Is your current version older than <a href="jmri4.12.shtml">JMRI 4.12</a>?
+    If so, then update to <a href="jmri4.12.shtml">JMRI 4.12</a> first, and ensure everything works correctly: check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Store your configuration and panel files under a new name and use those from now on.
+    Then continue with step 2.
+    <p>
+    If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+    then it's <u>very important</u>
+    that you update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
+    carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
+    before updating to any later relese.
+    </li>
+
+<li>Is your current version older than <a href="jmri4.20.shtml">JMRI 4.20</a>?
+    Then update to <a href="jmri4.20.shtml">JMRI 4.20</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Save your preferences again.
+    Store your configuration and panel files under a new name and use those from now on.</li>
+
+<li>Is your current version older than <a href="jmri5.0.shtml">JMRI 5.0</a>?
+    Then update to <a href="jmri5.0.shtml">JMRI 5.0</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Save your preferences again.
+    Store your configuration and panel files under a new name and use those from now on.</li>
+
+<li>You can then install this release.
+
+</ol>
+
+Following this multi-step order of updating via stable major releases safeguards you against possible migration issues
+that can arise from skipping these versions.
+
+<a id="problems" name="problems"></a>
+<h3>New problems with this release</h3>
+<ul>
+    <li><span class="since">Since <a href="jmri4.99.9.shtml">JMRI 4.99.9</a></span>
+        There's a problem adding NCE AIU sensors using the NS50:1 format.
+        As a workaround, you can add them with the full numeric address:  NS123.
+        The fix will be available in JMRI 5.1.3
+        </li>
+</ul>
+<!--
+If any of those affect you, please either
+wait for
+<a href="jmri4.26.1.shtml">JMRI 4.26.1</a>, due out shortly,
+or (once there's a fix for the problem) pick up a
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">development build installer</a>
+from
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
+ -->
+
+<a id="warnings" name="warnings"></a>
+<h3>New warnings for this production release:</h3>
+
+See the <a href="jmri5.0.shtml#warnings">JMRI 5.0 release note</a> for more warnings predating the 5.1 development series,
+including pointers to various migration issues.
+These may be relevant to you if you're updating from an earlier version;
+we strongly recommend you update to <a href="jmri5.0.shtml">JMRI 5.0</a>
+before installing this release.
+
+<ul>
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+        This release, and all subsequent ones, require the use of
+        Java 11 or later.  Java 8 is explicitly not supported.
+        There's more information on this migration on the
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
+    </li>
+    <li><span class="since">Since <a href="jmri5.1.17.shtml">JMRI 5.1.17</a></span>
+        The way defaults for some LocoNet connections are handled has changed.
+        Existing LocoNet connections might give a "The Defaults preferences are invalid"
+        warning when saving preferences.  In that case, click "yes" and then go set
+        all the default radio buttons on the "Defaults" pane to the LocoNet connection.  (You can also
+        click "no", but you'll get the message next time you store too)
+    </li>
+</ul>
+
+<a id="download" name="download"></a>
+<h2>Download links:</h2>
+
+<!--
+<div class="wide">
+<ul>
+<li>OS X / macOS: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.dmg">https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.dmg</a><br/>
+  sha256: 153d9922ac79d6d22f9c1f7bec909d2f94aaa7a7f6c1c6aa994d7f90e7b74048 </li>
+
+<li>Windows: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.exe">https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.exe</a><br/>
+   sha256: ea510ed47d5c80be4db7e1dc97126092540d7f412f3a7f9aef9252969dc99365</li>
+
+<li>Linux: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.tgz">https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.tgz</a><br/>
+   sha256: 3699a0ffdadb1ef50f891c542efb7dc42759a9f3574ec5a14dae4cd65ca60911</li>
+</ul>
+</div>
+ -->
+
+<!--
+Preliminary build files (not the final released files) can be found
+on the
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/4.26">CI project page</a>.
+ -->
+
+During development leading to the actual release, you can find test download files on the
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
+These are development files, and might not be working at any particular time.</p>
+
+<a id="changes" name="changes"></a>
+<h2>Changes since <a href="jmri5.0.shtml">production release 5.0</a>:</h2>
+
+<p>
+This production version is made from test releases 5.1.1 through 5.1.8  The
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2022-05-29..2022-12-06">list of changes</a>
+in those is
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2022-05-29..2022-12-06">available from our code repository</a>.
+
+
+<!-- ======== 5.1.1 ================================================== -->
+
+
+    <h3>Hardware Support</h3>
+
+        <h4>CBUS</h4>
+            <ul>
+                <li>Updated [Pi-]SPROG (3v2|Plus) NV edit GUI</li>
+                <li>Added Pi-SPROG 3 (not v2) NV edit GUI</li>
+                <li>Improved Node Manager and Event Table support for multiple CBUS Connections.</li>
+            </ul>
+
+        <h4>EasyDCC</h4>
+            <ul>
+                <li>Now able to use turnout numbers up to and including 2044.</li>
+                <li>Now allows adding multiple new turnouts at the same time.</li>
+            </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>The DCS240+ doesn't accept service-mode read
+                    requests for about 350-400msec after the completion of the prior one.
+                    A short delay has been added to handle this.</li>
+                <li>Slot Monitor Table can be saved to CSV File via new File Menu.</li>
+                <li>You can now select separate defaults (in the Preferences -> Defaults pane)
+                for additional types of LocoNet connections.
+                <p>
+                Note: Existing LocoNet connections might give a "The Defaults preferences are invalid"
+                warning when saving preferences.  In that case, click "yes" and then go set
+                all the default radio buttons on the "Defaults" pane to the LocoNet connection.  (You can also
+                click "no", but you'll get the message next time you store too)</li>
+            </ul>
+
+        <h4>MQTT</h4>
+            <ul>
+                <li>Rewrite and expansion of documentation.</li>
+                <li>The default value of the channel is now "", the null string.
+                    The channel name is prefixed to all of JMRI's publish and subscribe
+                    operations.  The previous default was "/trains/"
+            </ul>
+
+        <h4>NCE</h4>
+            <ul>
+                <li>Fixed a problem adding sensors with names like NS50:1
+                </li>
+                <li>Internationalization of the NCE tools was completed. New items are available for
+                  translation.</li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>Fix a problem with the OpenLCB hub at high data rates. Overlapping
+                    messages and replies would be echoed out incorrectly.
+                </li>
+                <li>Several fixes to JMRI's OpenLCB hub to reduce chance of duplicated traffic.</li>
+                <li>Added ConsumerID, ProducerID buttons to OpenLCB console</li>
+                <li>Updated openlcb.jar to pick up "send AMD in response to AME" fix.</li>
+                <li>Updated OpenLCB library to include PR #205. Now properly
+                    sends AMD in response to relevant AME.</li>
+                <li>Added connection-specific titles to the menu apps. </li>
+                <li>Added new service scripts in the scripts/LCC directory:
+                <ul>
+                    <li>DisplayTrackCircuit.py - This script manages a set of sensors to follow a
+                        RR-CirKits track circuit. It uses 8 sensors in a state machine to update a
+                        memory for text display of the track circuit state.
+
+                    <li>SetSignalNodeDefaults.py - This script will populate the sensor and turnout
+                        tables with many default entries for a Signal LCC node.
+
+                    <li>SetTowerNodeDefaults.py - This script will populate the sensor and turnout
+                        tables with many default entries for a Tower LCC node.
+                </ul>
+                See comments within the scripts for more info.
+                <p>
+                Note: The Set*Defaults scripts create a large number of sensors and turnout
+                entries. This makes the connection monitor easier to read as you get names for
+                everything instead of just numbers. But it also slows down the startup as those
+                items get loaded during startup and synced to the nodes.
+                </li>
+            </ul>
+
+        <h4>Piko</h4>
+        <ul>
+          <li>A new definition file was added for the Uhlenbrock LocoNet IR Receiver #63830, that can
+            connect the Piko Digi-fern Remote Control to LocoNet.</li>
+        </ul>
+
+        <h4>Raspberry Pi</h4>
+            <ul>
+                <li>A simulator is now added that simulates a Raspberry Pi.
+                The simulator is very simple and is mostly intended to be
+                able to load panels for a Raspberry Pi on a non Pi computer
+                like Windows.</li>
+            </ul>
+
+        <h4>SPROG</h4>
+            <ul>
+                <li>Updated [Pi-]SPROG (3v2|Plus) NV edit GUI</li>
+                <li>Added Pi-SPROG 3 (not v2) NV edit GUI</li>
+                <li>Added F29+ support to SPROG Command Station mode.</li>
+                <li>Added option for offset between CBUS events and DCC accessory addresses
+                    for [Pi-]SPROG 3 Plus firmware 3.e Beta 2.</li>
+                <li>Improved display of programmer availability in PanelPro Tools menu.</li>
+                <li>Fixed timeout warnings during programming.</li>
+            </ul>
+
+        <h4>Uhlenbrock Intellibox</h4>
+            <ul>
+              <li>Fixed bugs in Daisy II (model 65200) definition</li>
+              <li>New definition for Daisy II model 65210. Uses LNCV programming just as 65200</li>
+              <li>Daisy II family renamed to "Command Station" (was "Handheld Throttle")</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+        <ul>
+          <li>An include file enum-WeekdaysSun.xml that can be used to create a drop down of Weekdays was added to
+            xml/decoders/parts/</li>
+        </ul>
+
+        <h4>Dapol</h4>
+            <ul>
+                <li>Two Dapol Imperium DCC Decoders have been added.<br>
+                860015: Next 18 6 Function decoders (NEM 662).<br>
+                860019: 21 PIN 6 Function decoders (21MTC/NEM 660/MTX interface Standard).</li>
+            </ul>
+
+        <h4>Digikeijs (Digirails)</h4>
+            <ul>
+                <li>New decoder definition for DR5088RC with LNCV programming capabilities.<br>
+                  Thanks to Dennis Cherry for testing on actual hardware.<br>
+                Awaiting response from Digikeijs to complete the settings stored in LNCV4.</li>
+              <li>The Stationary family of decoders was renamed to Feedback (Inputs).</li>
+            </ul>
+
+        <h4>Digitrax</h4>
+            <ul>
+                <li>Add support for DCS240+</li>
+            </ul>
+
+        <h4>Massoth</h4>
+             <ul>
+                <li>New decoder definition for "Pulsed Smoker for round boilers" (product nr 8415001</li>
+             </ul>
+
+        <h4>Piko</h4>
+            <ul>
+                <li>Fixed Piko_SmartDecoder_4.1_Sound decoder definition</li>
+            </ul>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>Updates to ECO & TSU2, add Genesis Caboose</li>
+            </ul>
+
+        <h4>Technologistic (train-O-matic)</h4>
+            <ul>
+                <li>Added support for Lokommander II decoders. Including automatic identification of the right decoder type based on productID.</li>
+            </ul>
+
+        <h4>Viessmann</h4>
+            <ul>
+                <li>New decoder definition for Viessmann 4567 TT Motorized point machine</li>
+		        <li>New decoder definition for Tillig 08335 TT Motor-driven double crossing point</li>
+            </ul>
+
+        <h4>Uhlenbrock</h4>
+            <ul>
+                <li>Updated the Lissy Reporter support, including
+                improved display of the messages. Note that this
+                has changed the format of the reports, so users
+                who have written scripts to use this might need to
+                check and update them.</li>
+                <li>Added a decoder definition to configure the 63810 Mobile Station Adapter.<br>
+                Use the LNCV tool to program.</li>
+                <li>Added decoder definitions for Occupancy Feedback modules #63320/40 (2-rail) and #63330/50
+                (3-rail).<br>
+                Use the LNCV Tool for programming.</li>
+                <li>Added Funk-Master LN+DCC 66410 definition. Renamed  model 66400 FunkMaster to Funk-Master LN.</li>
+                <li>Added a decoder definition to configure the 63450 LocoNet Display module, also with LNCV</li>
+                <li>New definition to program the IRIS LocoNet IR-Receiver #63830.</li>
+                <li>Fixed a bug in the Switch Module #63410 definition that could mix up combined CV values of type
+                XXXXC.</li>
+                <li>Added setting Route 1 in the Track Control Signal indicator #69230</li>
+                <li>Added a decoder definition to configure the 63400 LocoNet Switch Control module</li>
+                <li>Added a new definition for Lissy Receiver #68600, 68610 and #68620. Use LNCV programming.</li>
+                <li>Added definitions for the UB 73310 and UB 73416 decoders.</li>
+            </ul>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li>New decoder definitions for Firmware 40.18</li>
+                <li>Nigel Cliffe did a
+                <a href="https://github.com/JMRI/JMRI/issues/11608">large update to the Zimo definitions</a></li>
+            </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>Fixed a problem preventing import of CSV files exported from JMRI.
+            </li>
+            <li>To simplify writing a decoder definition, variable declarations for decimal and hex values without a
+              "mask" with max &gt; 255  now will get an appropriately sized mask assigned so that they store any
+              valid entry.<br>
+              Variables with a max &lt;= 255 or with an explicit mask are not affected.
+            </li>
+          <li>In decoder definitions, enumVal variables can now use a so-called "radix" mask to map values on specific
+            digits in the CV value. Requires decoder-4-15-2.xsd schema in the xml declaration.</li>
+            <li>Values of type DecVar can now be presented using an offset and factor to reflect their application. For
+              example if address 1 had to be entered as 0 (and 2 as 1) an offset of +1 would fix this for the user.
+              Likewise, a factor of 50 would present a setting "in steps of 50 milliseconds" in ms units while saving
+              it in the CV just like it used to.<br>
+              Requires schema decoder-4-15-2.xsd. When a min or max is applied, the author should update that for the
+              numbers as entered. Entries smaller than the offset are replaced by 0.
+            </li>
+            <li>Menu items were harmonized with the button alternatives.</li>
+            <li>Single CV programmer now checks for availability of global programmer.</li>
+        </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Separated reverse at end delays from reset delays</li>
+             <li>Allow a next traininfo to be run at successful termination using the same loco info</li>
+             <li>Support transits and sections that use multiple panels connected by edge
+             connectors.</li>
+             <li>The "Use connectivity from Layout Editor panels" option in Dispatcher Options
+             no longer uses a specified panel.  All Layout Editor panels are used for layout
+             connectivity.</li>
+             <li>Always on top option for AutoTrainsFrame</li>
+             <li>Cancel timers on stop immediate</li>
+             <li>Add EStop to Transit Action</li>
+             <li>correct stop resume in ready state</li>
+             <li>On Restart, reset current block and section</li>
+             <li>Add ability to add PreStart delay and actions.</li>
+        </ul>
+
+   <h3>Internationalization</h3>
+        <a id="I18N" name="I18N"></a>
+        <ul>
+            <li>See NCE tools above.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The MQTT action now has the option <i>Remove channel from topic</i>.</li>
+          <li>The action <i>Listen On Beans</i> now sorts the named beans when selecting a bean to listen on.</li>
+          <li>The action <i>Simulate turnout feedback</i> has been added.
+          It's useful to simulate feedback based turnout actions when a
+          simulator connection is used, for example the <i>LocoNet simulator</i>.</li>
+          <li>The expression <i>Connection name</i> has been added.
+          It's useful together with <i>Simulate turnout feedback</i> so
+          that simulation only happens for simulated connections.</li>
+          <li>The action <i>For each</i> has been added. It's useful when
+          you want to loop thru all items in a list, for example all the
+          sensors in the sensor manager.</li>
+          <li>The formula function <i>new</i> has been added. It allows
+          you to create a new instance of a class.</li>
+          <li>Several formula constants have been added. See the modules
+          <i>Java</i> and <i>Layout</i>. Examples are constants like
+          <i>sensors</i> and <i>turnouts</i> that gives you direct access
+          to the managers. And <i>InstanceManager</i> that gives you direct
+          access to the instance manager. The constants <i>null</i> and
+          <i>None</i> has the null value in Java, the None value in Jython.</li>
+          <li>The action <i>Listen On Beans - Table</i> is improved.</li>
+          <li>The action <i>Listen On Beans - Local variable</i> has been
+          added. It can be used together with the <i>For each</i> action
+          to listen to all beans of a manager.</li>
+          <li>The expressions <i>Local Variable</i> and <i>Memory</i> now
+          have the choice "Type" which allows you to select whenether the
+          data should be treated as a number or a string. If "Number" is
+          choosen, it's required that both operands are numbers. Otherwise
+          an exception will occur.</li>
+          <li>The action <i>Local Variable</i> can now copy the value of a
+          reference.</li>
+          <li>The action <i>If Then Else</i> now supports <i>Else_If</i>
+          statements.</li>
+          <li>The new category <i>Flow Control</i> is added. The actions
+          <i>Call Module</i>, <i>For</i>, <i>For Each</i>, <i>Table: For
+          Each</i> and <i>Sequence</i> are moved to this category, as well
+          as the expression <i>Call Module</i>.</li>
+          <li>The actions <i>Break</i>, <i>Continue</i>, <i>Error</i>,
+          <i>Exit</i> and <i>Return</i> have been added to the <i>Flow
+          Control</i> category.</li>
+          <li>The expressions <i>And</i> and <i>Or</i> now have the option
+          to only evaluate the sockets that are needed for the result.</li>
+          <li>The popup menu in the ConditionalNG editor is changed.
+          All the categories are sub menus to the <i>Add</i> menu item.
+          When a new action or expression is to be created, it is
+          selected directly in the popup menu.</li>
+          <li>The expression <i>Local variable as analog value</i>
+          has been added.</li>
+          <li>LogixNG now prints <i>(Listen)</i> or <i>(No Listen)</i> when
+          memories are used as addressing. It also prints <i>::: No Listen</i>
+          for expressions where the option <i>Listen</i> is unchecked.
+          </li>
+          <li>Keyboard support has been added to the ConditionalNG editor.
+            <ul>
+              <li>
+                When <i>Preferences -> LogixNG</i> option <i>Highlight row in
+                ConditionalNG editor</i> is enabled, use the arrow keys to move to the
+                desired row and then use one of the shortcut keys.
+              </li>
+              <li>
+                Except for the N shortcut key, the other shortcut keys are available in
+                the right click popup menu.
+              </li>
+              <li>Shortcut keys:
+                <ul>
+                  <li>Ctrl + N: Create new</li>
+                  <li>Ctrl + E: Edit</li>
+                  <li>Ctrl + R: Remove</li>
+                  <li>Ctrl + X: Cut</li>
+                  <li>Ctrl + C: Copy</li>
+                  <li>Ctrl + V: Paste</li>
+                </ul>
+              </li>
+              <li>
+                For macOS, use Cmd instead of Ctrl.
+              </li>
+            </ul>
+          </li>
+          <li>
+            LogixNG has now two new options that work together:
+            <ul>
+              <li><i>Preferences -> LogixNG</i> has the option
+              <i>Show system name in exceptions</i>. If it's checked, the system name
+              of an action/expression will be shown in the error message in the log if
+              an error occurs and <i>Abort</i> is selected in the error dialog.</li>
+              <li><i>LogixNG Browse</i> has the option <i>Print system names</i>. If
+              this option is checked, the system names of actions and expressions is
+              shown in the Browse window.</li>
+            </ul>
+            These two options together makes it easier to find in which action or
+            expression the error occurs.</li>
+            <li>The <i>If Then Else</i> action has two new options that's relevant when
+            there's more that one <i>If</i> socket.
+            <ul>
+              <li><i>Evaluate all expressions</i> - evaluates all the <i>If</i> sockets before executing any action.</i>
+              <li><i>Evaluate needed expressions</i> - evaluates the <i>If</i> sockets until one expression returns True.</i>
+            </ul>
+            Note that when <i>If Then Else</i> got support for <i>Else_If</i> statements in JMRI 5.1.3, it worked as
+            <i>Evaluate needed expressions</i> it has now changed to <i>Evaluate all expressions</i>, unless the user changes
+            it. For most cases, this will be just fine, but there might be rare cases where this matters.
+          </li>
+          <li>The new action <i>Shut down task</i> executes an action when JMRI shuts down.</li>
+          <li>The new LocoNet action <i>Set speed zero</i> sets the speed to zero for all the
+          LocoNet slots.</li>
+          <li>LogixNGs can now be inline in panels. Right-click on a icon on a panel and
+          select <i>LogixNG -> Inline</i> to add a LogixNG to a icon on a panel. Inline
+          LogixNGs can be viewed by menu item <i>Tools -> LogixNG -> Inline LogixNGs</i>.
+          When a ConditionalNG is executed that's inline, two special local variables will
+          be defined:
+            <ul>
+              <li>__InlineLogixNG__ : The name of the icon</li>
+              <li>__Editor__ : The name of the editor of the icon</li>
+              <li>Note that these two has two underlines at the beginning and end of the name.</li>
+            </ul>
+          </li>
+          <li>Fixes a serious bug when deleting a LogixNG. Not all ConditionalNGs of
+          that LogixNG was deleted but that's fixed now.</li>
+          <li>Update the Global Variable table browser to provide detail information.</li>
+          <li>LogixNG Formula now supports the boolean XOR operator <i>^^</i>.</li>
+          <li>The ConditionalNG editor and the Module editor now have the option
+          <i>Paste copy</i>. With it, you can paste from the clipboard as many times
+          as needed.</li>
+          <li>The action <i>Request update of all sensors</i> has been added. It requests
+          that all sensors gets updated from the layout.</li>
+          <li>The action <i>Create beans from table</i> has been added.</li>
+          <li>The action <i>Find table row or column</i> has been added.</li>
+          <li>Adds support of multiple types of CSV files to LogixNG Tables.
+          Tab separated files are the default, but you may choose Comma
+          as the separator. This allows you load CSV files created by
+          spreadsheet programs.</li>
+          <li>The expression <i>Power</i> now supports the <i>Idle</i> and <i>Unknown</i>
+          states. Therefore the option <i>Other</i> has been renamed to <i>On or Off</i>.
+          A Power expression that had the state <i>Other</i> now has the state <i>On or Off</i>,
+          with <i>Is/IsNot</i> inverted.</li>
+          <li>The expression <i>Power</i> can now ignore the <i>Unknown</i> state. Most
+          power managers in JMRI sets the state to Unknown before changing the state. This might
+          cause problems when using the expression Power with IfThenElse with ExecuteOnChange.</li>
+          <li>Additional shortcut keys have been added to the ConditionalNG editor.
+            <ul>
+              <li>Ctrl + Shift + R: Remove socket</li>
+              <li>Ctrl + Shift + D: Enable</li>
+              <li>Ctrl + D: Disable</li>
+              <li>For macOS, use Cmd instead of Ctrl.</li>
+            </ul>
+          </li>
+          <li>The Formula function <i>writeMemory</i> is added. It's in the <i>NamedBean</i> category.</li>
+          <li>Fixes a bug that crashed the LogixNG debugger when debugging a ConditionalNG
+          that calls LogixNG Modules.</li>
+          <li>The Throttle action supports multiple throttle connections.</li>
+          <li>The expression <i>Sensor Edge</i> has been added. It returns True when
+          the sensor goes from one predefined state to another predefined state.</li>
+          <li>The LogixNG table now have the option <i>Execute</i> that lets you to
+          execute a single LogixNG.</li>
+        </ul>
+
+
+    <h3>Operations</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+            <li>Enhanced passenger blocking. Negative blocking numbers place passenger cars in front of
+                freight cars.</li>
+            <li>Added hazardous classification to car loads. Now a car can be classified as hazardous
+                depending on the car's load.</li>
+            <li>Improved car blocking when car is hazardous. The program will attempt to place
+                non-hazardous cars in front of hazardous cars.</li>
+            <li>New automation feature. Users can now select an automation to run at startup. See under
+                Tools in the operations Automations window.</li>
+            <li>Improved Manifest and switch list formating when using tabular and load set out and pick
+                up messages.</li>
+        </ul>
+
+    <h3>Preferences</h3>
+        <a id="Preferences" name="Preferences"></a>
+        <ul>
+            <li>A <strong>Shutdown</strong> preference has been created to support the
+            StoreAndCompare process that detects changes to PanelPro tables and panels.</li>
+        </ul>
+
+    <h3>Resources</h3>
+        <a id="Resources" name="Resources"></a>
+        <ul>
+            <li>Purple on, off icons added to USS sensor directory.</li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li>A new script GrandReset.py</a> has been added. The
+            script deletes all Transits, Sections and SignalMastLogics.</li>
+            <li>Updated ControlPanel.py sample script to show the panel windows
+            instead of the panel editor windows.</li>
+        </ul>
+
+    <h3>Signaling</h3>
+        <h4>Signal Heads</h4>
+            <ul>
+                <li>"Single Output" signal heads had their Thrown and Reversed
+                positions
+                <a href="https://groups.io/g/jmriusers/message/210041">reversed in the "Add..." dialog</a>.
+                This is now corrected.
+                </li>
+            </ul>
+
+   <h3>Speedometer</h3>
+        <a id="Speedometer" name="Speedometer"></a>
+        <ul>
+            <li>Expanded user documentation</li>
+        </ul>
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>Fixed a spurious error message when creating some internal items.</li>
+        </ul>
+
+   <h3>Warrants</h3>
+        <a id="Wt" name="Wt"></a>
+        <ul>
+            <li>Fix bug making NXWarrants over very short blocks.</li>
+            <li>New concatenation option (Warrant Table menu Warrants->Concatenate Warrants).
+               Concatenated warrant may either stop or continue at speed through the connecting
+               block. It is no longer required to match paths at the connecting block.
+               Concatenation will find the connecting path if it exists.
+               This method is preferred rather than linking warrants of the same DCC address.</li>
+        </ul>
+
+   <h3>Web Server</h3>
+        <a id="server" name="server"></a>
+        <ul>
+            <li>Added Camera webThrottle to Web Server.<br>
+                Camera webThrottle provides integrated support for controlling trains with integrated POV or overhead IP based cameras.<br>
+                Throttle Learn More page has been added for the camera throttle that covers setup and connecting the cameras to the engine throttle.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>
+                Several of the PanelPro tables, such as Routes and Logix, display a reminder to store changes before quitting. There are a number of issues with this approach.
+                <ul>
+                    <li>Only some of the tables have the reminder.
+                    <li>Panel changes don't have a reminder.
+                    <li>The reminder does not occur when quitting, or if it does, it is too late.
+                </ul>
+                The JMRI 5.1.1 test release has a global store reminder when running PanelPro.
+                DecoderPro is not affected. Any change that affects the stored layout data file will
+                trigger a reminder with an option to do a store before the final shutdown.
+                <p>
+                The global store reminder process is controlled by a new Shutdown option in JMRI Preferences.
+                This is located between Start Up and Display. There are a number of scenarios where the
+                global store reminder is not appropriate, such as running PanelPro using automatic start up and shutdown.
+                See Shutdown Preference for details.
+                <p>
+                What is considered a change that needs to be stored?
+                The process creates a temporary stored file and compares it to the last loaded file.
+                If they are different, a store notification will occur.
+                The comparison is a line by line compare, not a logical content comparison.
+                Listed below are some of the implications of the process.
+                <ul>
+                    <li>Running PanelPro without loading a layout data file,
+                        such as running Operations, a WiThrottle server, etc.
+                        Since there is no file to compare to, it is assumed that there might be additions that need to be stored.
+                    <li>External events that make changes.
+                        Examples are scripts that create new table entries,
+                        new hardware that can generate table entries, such as adding a DS64 on LocoNet, etc.
+                    <li>JMRI version changes. These can be significant, such as new features.
+                        Or trivial because the sequence of rows are in a different order in the layout data file.
+                        This last one affects layout data files from JMRI 4.26 that use signal heads and SSL.
+                </ul>
+                The compare process stops with the first occurrence of a potential change.
+                The details of the compared lines are listed in the JMRI system console (Help => System Console).
+
+            <li>Minor changes to resolve Spotbug OS_OPEN_STREAM_EXCEPTION_PATH </li>
+            <li>Minor changes to resolve Spotbug ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD </li>
+            <li>Reduce the verbosity of MDNS logging.</li>
+            <li><i>jmri.jmrix.SystemConnectionMemoManager</i> has new utility methods to find a connection by its connection name.<br>
+            <code>LocoNetSystemConnectionMemo memo = SystemConnectionMemoManager.getConnection("L2", LocoNetSystemConnectionMemo.class);</code><br>
+            <code>LocoNetSystemConnectionMemo memo = SystemConnectionMemoManager.getConnectionByUserName("LocoNet", LocoNetSystemConnectionMemo.class);</code><br>
+            <code>MqttSystemConnectionMemo memo = SystemConnectionMemoManager.getConnection("M", MqttSystemConnectionMemo.class);</code>
+            <code>MqttSystemConnectionMemo memo = SystemConnectionMemoManager.getConnectionByUserName("MQTT", MqttSystemConnectionMemo.class);</code>
+            </li>
+            <li>The PlantUML library has been updated to the current version.  This is used for
+                developer documentation.
+            </li>
+            <li>The French JMRI Help pages were updated for responsive display.<br>
+              They will appear when using the French locale, or from their own
+              <a href="https://www.jmri.org/index_fr.shtml">starting page</a>.</li>
+            <li>SpotBugs has been updated to 4.7.2</li>
+
+            <li>The local help stub file has been moved from the settings location to the home
+            location.  This fixes a problem introduced by recent versions of Ubuntu and its
+            derivatives.</li>
+            <li>Updated File Chooser to enable directories to be selectable.</li>
+           <li>SpotBugs has been updated to 4.7.3</li>
+            <li>Remove the i18n-consistency-check ant target (and related jar) as ineffective</li>
+        </ul>
+
+
+<!-- ======== 5.1.8 ================================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!--#include virtual="/Footer.shtml" -->
+  </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+  <script src="/js/main.js"></script>
+</body>
+</html>
