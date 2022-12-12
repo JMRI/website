@@ -22,11 +22,13 @@
       Release Notes for JMRI 5.1.8 release
       </h1>
 
-    <p>Date: MMM DD, 2022</p>
-    <p>From: (release pumpkin)</p>
+    <p>Date: Dec 12, 2022</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 5.1.8 of JMRI/DecoderPro is available for download.</p>
 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -43,9 +45,11 @@ We expect this series to end in the next JMRI 5.2 production release in December
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
+<!--
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.</p>
+ -->
 
 <p><b>
 JMRI is now only available under the
@@ -155,7 +159,6 @@ before installing this test release.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!--
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
@@ -171,11 +174,12 @@ before installing this test release.
    sha256: f5b3c52ff3bd2381a023c61a8a1f862007d7ecc8b283c9466924ea0402881bfc</li>
 </ul>
 </div>
- -->
 
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.1.8/">CI project page</a>.
+ -->
 
 <!--
 During development leading to the actual release, you can find test download files on the

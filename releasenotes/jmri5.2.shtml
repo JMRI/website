@@ -160,9 +160,9 @@ These are development files, and might not be working at any particular time.</p
 
 <p>
 This production version is made from test releases 5.1.1 through 5.1.8  The
-<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2022-05-29..2022-12-06">list of changes</a>
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2022-05-31..2022-12-06">list of changes</a>
 in those is
-<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2022-05-29..2022-12-06">available from our code repository</a>.
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2022-05-31..2022-12-06">available from our code repository</a>.
 
 
 <!-- ======== 5.1.1 ================================================== -->
@@ -319,6 +319,11 @@ in those is
                 <li>Updates to ECO & TSU2, add Genesis Caboose</li>
             </ul>
 
+        <h4>Tam Valley Depot</h4>
+            <ul>
+                <li>QuadLN_S - support for new Semaphore Aspect and Servo Refresh in version 3.2 firmware</li>
+            </ul>
+
         <h4>Technologistic (train-O-matic)</h4>
             <ul>
                 <li>Added support for Lokommander II decoders. Including automatic identification of the right decoder type based on productID.</li>
@@ -381,6 +386,7 @@ in those is
             </li>
             <li>Menu items were harmonized with the button alternatives.</li>
             <li>Single CV programmer now checks for availability of global programmer.</li>
+            <li>Updated decoder ID algorithm for the Soundtraxx Blunami</li>
         </ul>
 
    <h3>Dispatcher</h3>
@@ -696,8 +702,6 @@ in those is
             <li>The French JMRI Help pages were updated for responsive display.<br>
               They will appear when using the French locale, or from their own
               <a href="https://www.jmri.org/index_fr.shtml">starting page</a>.</li>
-            <li>SpotBugs has been updated to 4.7.2</li>
-
             <li>The local help stub file has been moved from the settings location to the home
             location.  This fixes a problem introduced by recent versions of Ubuntu and its
             derivatives.</li>
