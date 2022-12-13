@@ -112,6 +112,10 @@ before installing this release.
         Example scripts related to MQTT moved from jython directory to jython\MQTT directory.  This will require
         an update to any start-up actions that reference their location.
     </li>
+    <li><span class="since">Since <a href="jmri4.26.1.shtml">JMRI 4.26.1</a></span>
+        Windows 7 users (and only Windows 7 users, not users of later versions)
+        must install JMRI from an admin account.
+    </li>
     <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
         This release, and all subsequent ones, require the use of
         Java 11 or later.  Java 8 is explicitly not supported.
