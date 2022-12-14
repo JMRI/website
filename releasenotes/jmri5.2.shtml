@@ -416,82 +416,162 @@ in those is
     <h3>LogixNG</h3>
         <a id="LogixNG" name="LogixNG"></a>
         <ul>
-          <li>The MQTT action now has the option <i>Remove channel from topic</i>.</li>
-          <li>The action <i>Listen On Beans</i> now sorts the named beans when selecting a bean to listen on.</li>
-          <li>The action <i>Simulate turnout feedback</i> has been added.
-          It's useful to simulate feedback based turnout actions when a
-          simulator connection is used, for example the <i>LocoNet simulator</i>.</li>
-          <li>The expression <i>Connection name</i> has been added.
-          It's useful together with <i>Simulate turnout feedback</i> so
-          that simulation only happens for simulated connections.</li>
-          <li>The action <i>For each</i> has been added. It's useful when
-          you want to loop thru all items in a list, for example all the
-          sensors in the sensor manager.</li>
-          <li>The formula function <i>new</i> has been added. It allows
-          you to create a new instance of a class.</li>
-          <li>Several formula constants have been added. See the modules
-          <i>Java</i> and <i>Layout</i>. Examples are constants like
-          <i>sensors</i> and <i>turnouts</i> that gives you direct access
-          to the managers. And <i>InstanceManager</i> that gives you direct
-          access to the instance manager. The constants <i>null</i> and
-          <i>None</i> has the null value in Java, the None value in Jython.</li>
-          <li>The action <i>Listen On Beans - Table</i> is improved.</li>
-          <li>The action <i>Listen On Beans - Local variable</i> has been
-          added. It can be used together with the <i>For each</i> action
-          to listen to all beans of a manager.</li>
-          <li>The expressions <i>Local Variable</i> and <i>Memory</i> now
-          have the choice "Type" which allows you to select whenether the
-          data should be treated as a number or a string. If "Number" is
-          choosen, it's required that both operands are numbers. Otherwise
-          an exception will occur.</li>
-          <li>The action <i>Local Variable</i> can now copy the value of a
-          reference.</li>
-          <li>The action <i>If Then Else</i> now supports <i>Else_If</i>
-          statements.</li>
-          <li>The new category <i>Flow Control</i> is added. The actions
-          <i>Call Module</i>, <i>For</i>, <i>For Each</i>, <i>Table: For
-          Each</i> and <i>Sequence</i> are moved to this category, as well
-          as the expression <i>Call Module</i>.</li>
-          <li>The actions <i>Break</i>, <i>Continue</i>, <i>Error</i>,
-          <i>Exit</i> and <i>Return</i> have been added to the <i>Flow
-          Control</i> category.</li>
-          <li>The expressions <i>And</i> and <i>Or</i> now have the option
-          to only evaluate the sockets that are needed for the result.</li>
-          <li>The popup menu in the ConditionalNG editor is changed.
-          All the categories are sub menus to the <i>Add</i> menu item.
-          When a new action or expression is to be created, it is
-          selected directly in the popup menu.</li>
-          <li>The expression <i>Local variable as analog value</i>
-          has been added.</li>
+          <li>New actions
+            <ul>
+              <li><i>Simulate turnout feedback</i>.
+              It's useful to simulate feedback based turnout actions when a
+              simulator connection is used, for example the <i>LocoNet simulator</i>.</li>
+              <li><i>For each</i>. It's useful when
+              you want to loop thru all items in a list, for example all the
+              sensors in the sensor manager.</li>
+              <li><i>Listen On Beans - Local variable</i>. It can be used together with
+              the <i>For each</i> action to listen to all beans of a manager.</li>
+              <li><i>Break</i>, <i>Continue</i>, <i>Error</i>,
+              <i>Exit</i> and <i>Return</i> have been added to the new <i>Flow
+              Control</i> category.</li>
+              <li><i>Shut down task</i>. It executes an action when JMRI shuts down.</li>
+              <li><i>Request update of all sensors</i>. It requests
+              that all sensors gets updated from the layout.</li>
+              <li><i>Create beans from table</i>.</li>
+              <li><i>Find table row or column</i>.</li>
+              <li><i>Set speed zero</i>. This LocoNet action sets the speed to zero for
+              all the LocoNet slots.</li>
+            </ul>
+          </li>
+          <br>
+          <li>Improved actions
+            <ul>
+              <li>The action <i>Listen On Beans</i> now sorts the named beans when selecting a bean to listen on.</li>
+              <li><i>Listen On Beans - Table</i>.</li>
+              <li><i>Local Variable</i> can now copy the value of a reference.</li>
+              <li><i>If Then Else</i> now supports <i>Else_If</i> statements.</li>
+              <li><i>Throttle</i> supports multiple throttle connections.</li>
+              <li>The <i>If Then Else</i> action has two new options that's relevant when
+              there's more that one <i>If</i> socket.
+                <ul>
+                  <li><i>Evaluate all expressions</i> - evaluates all the <i>If</i> sockets before executing any action.</i>
+                  <li><i>Evaluate needed expressions</i> - evaluates the <i>If</i> sockets until one expression returns True.</i>
+                </ul>
+              </li>
+              <li>The MQTT action <i>Subscribe</i> now has the option <i>Remove channel from topic</i>.</li>
+            </ul>
+          </li>
+          <br>
+          <li>New expressions
+            <ul>
+              <li><i>Connection name</i>.
+              It's useful together with <i>Simulate turnout feedback</i> so
+              that simulation only happens for simulated connections.</li>
+              <li><i>Local variable as analog value</i>.</li>
+              <li><i>Sensor Edge</i>. It returns True when the sensor goes from
+              one predefined state to another predefined state.</li>
+            </ul>
+          </li>
+          <br>
+          <li>Improved expressions
+            <ul>
+              <li><i>Local Variable</i> and <i>Memory</i> now
+              have the choice <i>Type</i> which allows you to select whenether the
+              data should be treated as a number or a string. If <i>Number</i> is
+              choosen, it's required that both operands are numbers. Otherwise
+              an exception will occur.</li>
+              <li><i>And</i> and <i>Or</i> now have the option
+              to only evaluate the sockets that are needed for the result.</li>
+              <li><i>Power</i> now supports the <i>Idle</i> and <i>Unknown</i>
+              states. Therefore the option <i>Other</i> has been renamed to <i>On or Off</i>.
+              A Power expression that had the state <i>Other</i> now has the state <i>On or Off</i>,
+              with <i>Is/IsNot</i> inverted.</li>
+              <li><i>Power</i> can now ignore the <i>Unknown</i> state. Most
+              power managers in JMRI sets the state to Unknown before changing the state. This might
+              cause problems when using the expression Power with IfThenElse with ExecuteOnChange.</li>
+            </ul>
+          </li>
+          <br>
+          <li>Formula
+            <ul>
+              <li>The formula function <i>writeMemory</i> is added. It's in the <i>NamedBean</i> category.</li>
+              <li>The formula function <i>new</i> has been added. It allows
+              you to create a new instance of a class.</li>
+              <li>Several formula constants have been added. See the modules
+              <i>Java</i> and <i>Layout</i>. Examples are constants like
+              <i>sensors</i> and <i>turnouts</i> that gives you direct access
+              to the managers. And <i>InstanceManager</i> that gives you direct
+              access to the instance manager. The constants <i>null</i> and
+              <i>None</i> has the null value in Java, the None value in Jython.</li>
+              <li>LogixNG Formula now supports the boolean XOR operator <i>^^</i>.</li>
+            </ul>
+          </li>
+          <br>
+          <li>Updates to the LogixNG editor
+            <ul>
+              <li>The new category <i>Flow Control</i> is added. The actions
+              <i>Call Module</i>, <i>For</i>, <i>For Each</i>, <i>Table: For
+              Each</i> and <i>Sequence</i> are moved to this category, as well
+              as the expression <i>Call Module</i>.</li>
+              <li>The popup menu in the ConditionalNG editor is changed.
+              All the categories are sub menus to the <i>Add</i> menu item.
+              When a new action or expression is to be created, it is
+              selected directly in the popup menu.</li>
+              <li>The ConditionalNG editor and the Module editor now have the option
+              <i>Paste copy</i>. With it, you can paste from the clipboard as many times
+              as needed.</li>
+              <li>Keyboard support has been added to the ConditionalNG editor.
+                <ul>
+                  <li>
+                    When <i>Preferences -> LogixNG</i> option <i>Highlight row in
+                    ConditionalNG editor</i> is enabled, use the arrow keys to move to the
+                    desired row and then use one of the shortcut keys.
+                  </li>
+                  <li>
+                    Except for the N shortcut key, the other shortcut keys are available in
+                    the right click popup menu.
+                  </li>
+                  <li>Shortcut keys:
+                    <ul>
+                      <li>Ctrl + N: Create new</li>
+                      <li>Ctrl + E: Edit</li>
+                      <li>Ctrl + R: Remove</li>
+                      <li>Ctrl + Shift + R: Remove socket</li>
+                      <li>Ctrl + X: Cut</li>
+                      <li>Ctrl + C: Copy</li>
+                      <li>Ctrl + V: Paste</li>
+                      <li>Ctrl + Shift + V: Paste copy</li>
+                      <li>Ctrl + D: Disable</li>
+                      <li>Ctrl + Shift + D: Enable</li>
+                    </ul>
+                  </li>
+                  <li>
+                    For macOS, use Cmd instead of Ctrl.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <br>
+          <li>Bug fixes
+            <ul>
+              <li>Fixes a serious bug when deleting a LogixNG. Not all ConditionalNGs of
+              that LogixNG was deleted but that's fixed now.</li>
+              <li>A bug that crashed the LogixNG debugger when debugging a ConditionalNG
+              that calls LogixNG Modules has been fixed.</li>
+            </ul>
+          </li>
+          <br>
+          <li>LogixNGs can now be inline in panels. Right-click on a icon on a panel and
+          select <i>LogixNG -> Inline</i> to add a LogixNG to a icon on a panel. Inline
+          LogixNGs can be viewed by menu item <i>Tools -> LogixNG -> Inline LogixNGs</i>.
+          When a ConditionalNG is executed that's inline, two special local variables will
+          be defined:
+            <ul>
+              <li>__InlineLogixNG__ : The name of the icon</li>
+              <li>__Editor__ : The name of the editor of the icon</li>
+              <li>Note that these two has two underlines at the beginning and end of the name.</li>
+            </ul>
+          </li>
+          <br>
           <li>LogixNG now prints <i>(Listen)</i> or <i>(No Listen)</i> when
           memories are used as addressing. It also prints <i>::: No Listen</i>
           for expressions where the option <i>Listen</i> is unchecked.
-          </li>
-          <li>Keyboard support has been added to the ConditionalNG editor.
-            <ul>
-              <li>
-                When <i>Preferences -> LogixNG</i> option <i>Highlight row in
-                ConditionalNG editor</i> is enabled, use the arrow keys to move to the
-                desired row and then use one of the shortcut keys.
-              </li>
-              <li>
-                Except for the N shortcut key, the other shortcut keys are available in
-                the right click popup menu.
-              </li>
-              <li>Shortcut keys:
-                <ul>
-                  <li>Ctrl + N: Create new</li>
-                  <li>Ctrl + E: Edit</li>
-                  <li>Ctrl + R: Remove</li>
-                  <li>Ctrl + X: Cut</li>
-                  <li>Ctrl + C: Copy</li>
-                  <li>Ctrl + V: Paste</li>
-                </ul>
-              </li>
-              <li>
-                For macOS, use Cmd instead of Ctrl.
-              </li>
-            </ul>
           </li>
           <li>
             LogixNG has now two new options that work together:
@@ -505,67 +585,13 @@ in those is
               shown in the Browse window.</li>
             </ul>
             These two options together makes it easier to find in which action or
-            expression the error occurs.</li>
-            <li>The <i>If Then Else</i> action has two new options that's relevant when
-            there's more that one <i>If</i> socket.
-            <ul>
-              <li><i>Evaluate all expressions</i> - evaluates all the <i>If</i> sockets before executing any action.</i>
-              <li><i>Evaluate needed expressions</i> - evaluates the <i>If</i> sockets until one expression returns True.</i>
-            </ul>
-            Note that when <i>If Then Else</i> got support for <i>Else_If</i> statements in JMRI 5.1.3, it worked as
-            <i>Evaluate needed expressions</i> it has now changed to <i>Evaluate all expressions</i>, unless the user changes
-            it. For most cases, this will be just fine, but there might be rare cases where this matters.
+            expression the error occurs.
           </li>
-          <li>The new action <i>Shut down task</i> executes an action when JMRI shuts down.</li>
-          <li>The new LocoNet action <i>Set speed zero</i> sets the speed to zero for all the
-          LocoNet slots.</li>
-          <li>LogixNGs can now be inline in panels. Right-click on a icon on a panel and
-          select <i>LogixNG -> Inline</i> to add a LogixNG to a icon on a panel. Inline
-          LogixNGs can be viewed by menu item <i>Tools -> LogixNG -> Inline LogixNGs</i>.
-          When a ConditionalNG is executed that's inline, two special local variables will
-          be defined:
-            <ul>
-              <li>__InlineLogixNG__ : The name of the icon</li>
-              <li>__Editor__ : The name of the editor of the icon</li>
-              <li>Note that these two has two underlines at the beginning and end of the name.</li>
-            </ul>
-          </li>
-          <li>Fixes a serious bug when deleting a LogixNG. Not all ConditionalNGs of
-          that LogixNG was deleted but that's fixed now.</li>
           <li>Update the Global Variable table browser to provide detail information.</li>
-          <li>LogixNG Formula now supports the boolean XOR operator <i>^^</i>.</li>
-          <li>The ConditionalNG editor and the Module editor now have the option
-          <i>Paste copy</i>. With it, you can paste from the clipboard as many times
-          as needed.</li>
-          <li>The action <i>Request update of all sensors</i> has been added. It requests
-          that all sensors gets updated from the layout.</li>
-          <li>The action <i>Create beans from table</i> has been added.</li>
-          <li>The action <i>Find table row or column</i> has been added.</li>
-          <li>Adds support of multiple types of CSV files to LogixNG Tables.
+          <li>LogixNG Tables now supports two different types of CSV files.
           Tab separated files are the default, but you may choose Comma
           as the separator. This allows you load CSV files created by
           spreadsheet programs.</li>
-          <li>The expression <i>Power</i> now supports the <i>Idle</i> and <i>Unknown</i>
-          states. Therefore the option <i>Other</i> has been renamed to <i>On or Off</i>.
-          A Power expression that had the state <i>Other</i> now has the state <i>On or Off</i>,
-          with <i>Is/IsNot</i> inverted.</li>
-          <li>The expression <i>Power</i> can now ignore the <i>Unknown</i> state. Most
-          power managers in JMRI sets the state to Unknown before changing the state. This might
-          cause problems when using the expression Power with IfThenElse with ExecuteOnChange.</li>
-          <li>Additional shortcut keys have been added to the ConditionalNG editor.
-            <ul>
-              <li>Ctrl + Shift + R: Remove socket</li>
-              <li>Ctrl + Shift + D: Enable</li>
-              <li>Ctrl + D: Disable</li>
-              <li>For macOS, use Cmd instead of Ctrl.</li>
-            </ul>
-          </li>
-          <li>The Formula function <i>writeMemory</i> is added. It's in the <i>NamedBean</i> category.</li>
-          <li>Fixes a bug that crashed the LogixNG debugger when debugging a ConditionalNG
-          that calls LogixNG Modules.</li>
-          <li>The Throttle action supports multiple throttle connections.</li>
-          <li>The expression <i>Sensor Edge</i> has been added. It returns True when
-          the sensor goes from one predefined state to another predefined state.</li>
           <li>The LogixNG table now have the option <i>Execute</i> that lets you to
           execute a single LogixNG.</li>
         </ul>
