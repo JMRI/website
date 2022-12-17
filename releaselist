@@ -1,5 +1,9 @@
 production:
  versions:
+  5.2:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v5.2/JMRI.5.2+R760b98537f.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v5.2/JMRI.5.2+R760b98537f.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v5.2/JMRI.5.2+R760b98537f.exe"
   5.0:
    tgz: "https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.tgz"
    dmg: "https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.dmg"

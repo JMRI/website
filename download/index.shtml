@@ -52,18 +52,19 @@
 
 	<h1>Latest News</h1>
 	<dl>
-		<dt>Production release 5.0 available</dt>
+		<dt>Production release 5.2 available</dt>
 	    <dd>
-	    <p>On June 21, 2022 production release 5.0 was made available.</p>
+	    <p>On December 17, 2022 production release 5.2 was made available.</p>
 
 	    <p>
-	    Release 5.0 is the current "production" release, recommended
+	    Release 5.2 is the current "production" release, recommended
 	    for first-time users.
 	    Please see the
-	    <a href="../releasenotes/jmri5.0.shtml">release note</a>
+	    <a href="../releasenotes/jmri5.2.shtml">release note</a>
 	    for additional information.</p>
 
 
+<!--
 	    <dt>Test release 5.1.8 is available</dt>
 	    <dd>
 	    <p>Test release 5.1.8 was made available on December 12, 2022.
@@ -79,15 +80,16 @@
 	    please see the
 	    <a href="../releasenotes/jmri5.1.8.shtml">release note</a>.
 
-	    <a href="#prod-rel">Release 5.0</a> is the current "production" release, recommended
+	    <a href="#prod-rel">Release 5.2</a> is the current "production" release, recommended
 	    for first-time users.
+ -->
 
 
 	</dl>
 
   <div class="list">
     <a id="prod-rel"></a>
-    <h2>JMRI 5.0 - Production release</h2>
+    <h2>JMRI 5.2 - Production release</h2>
     <dl>
     <dt class="im"><img src="../images/ico-jmri.gif" alt="JMRI logo"></dt>
     <dd>
@@ -95,22 +97,22 @@
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.dmg">https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.dmg</a><br/>
-  sha256: 153d9922ac79d6d22f9c1f7bec909d2f94aaa7a7f6c1c6aa994d7f90e7b74048 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.2/JMRI.5.2+R760b98537f.dmg">https://github.com/JMRI/JMRI/releases/download/v5.2/JMRI.5.2+R760b98537f.dmg</a><br/>
+  sha256: 2ce0bc110413cd643e72dbd9956eb901c721f2117b52549c4adfc3f8df36e3d4 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.exe">https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.exe</a><br/>
-   sha256: ea510ed47d5c80be4db7e1dc97126092540d7f412f3a7f9aef9252969dc99365</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.2/JMRI.5.2+R760b98537f.exe">https://github.com/JMRI/JMRI/releases/download/v5.2/JMRI.5.2+R760b98537f.exe</a><br/>
+   sha256: a764b90c0a01216e571de3855969be2b1fda51db3db083b504a672069a499617</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.tgz">https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.tgz</a><br/>
-   sha256: 3699a0ffdadb1ef50f891c542efb7dc42759a9f3574ec5a14dae4cd65ca60911</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.2/JMRI.5.2+R760b98537f.tgz">https://github.com/JMRI/JMRI/releases/download/v5.2/JMRI.5.2+R760b98537f.tgz</a><br/>
+   sha256: 301636d2b180556a81ec380f1108f8e076ab2695ca6ee42991b701b01db9d245</li>
 </ul>
 </div>
 
     <strong>Notes:</strong><br>
     <p>For more information on the release contents, please see the
-    <a href="../releasenotes/jmri5.0.shtml">release note</a>.
+    <a href="../releasenotes/jmri5.2.shtml">release note</a>.
     </p>
     <p>These files can be used for either a new installation or updating an existing installation.</p>
     <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
