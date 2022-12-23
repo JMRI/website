@@ -117,15 +117,9 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
-
+    <li>
+        None yet
+    </li>
 </ul>
 
 
@@ -192,11 +186,85 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.3.1+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
+
+    <h3>Hardware Support</h3>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>New LocoNetSlotsReadCSV.py script which scans all LocoNet slots and
+                    creates report about slot status and slots used for the consists
+                    including the details of the consist. It also flags all non-zero slots. </li>
+                <li>Add Consist number column.</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>Tam Valley Depot</h4>
+            <ul>
+                <li>QuadLN_S - support for new Semaphore Aspect and Servo Refresh in version 3.2 firmware</li>
+            </ul>
+
+        <h4>Uhlenbrock</h4>
+            <ul>
+                <li>Bug fixes and extension of extended function mapping of the IntelliDrive 2 decoder</li>
+            </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+	        <li>Fixes a bug in the actions <i>Icon/Label on panel</i> and
+	        <i>Turnout on LayoutPanel</i> which caused that the actions
+	        wasn't loaded correctly.</li>
+	        <li>Add support for LogixNG Global Variable icons.  These work like memory icons.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The action <i>Turnout on LayoutPanel</i> has been added.
+          It lets LogixNG enable/disable a turnout on a layout panel.</li>
+          <li>The action <i>RunOnce</i> has been added. It runs an action
+          only one time. It's useful when something needs to be initialized
+          once.</li>
+          <li>Fixes a bug when importing a Logix with <i>Copy memory</i> to
+          LogixNG. The source memory and the destination memory was reversed.</li>
+        </ul>
+
+   <h3>Panel Editor</h3>
+        <a id="PE" name="PE"></a>
+        <ul>
+            <li>Add support for LogixNG Global Variable icons.  These work like memory icons.</li>
+        </ul>
+
+    <h3>Control Panel Editor</h3>
+        <a id="CPE" name="CPE"></a>
+        <ul>
+            <li>Add support for LogixNG Global Variable icons.  These work like memory icons.</li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li>The BNSF-1996 and CCOR-1967 signal systems have had some corrections
+                    made to their speed settings to make them more consistent with
+                    the underlying indications.</li>
+                <li>The XML Schema for signal systems has been updated to require
+                    there be one and only one speed and speed2 setting.</li>
+            </ul>
+
+   <h3>Web Server</h3>
+        <a id="server" name="server"></a>
+        <ul>
+            <li>Update minimatch.js library from 3.0..4 to 3.0.8</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Update commons-net library from 3.6 to 3.9.0</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
