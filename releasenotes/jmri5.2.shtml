@@ -187,6 +187,7 @@ in those is
 
         <h4>LocoNet</h4>
             <ul>
+                <li>Add support for DCS240+</li>
                 <li>The DCS240+ doesn't accept service-mode read
                     requests for about 350-400msec after the completion of the prior one.
                     A short delay has been added to handle this.</li>
@@ -198,7 +199,7 @@ in those is
                 warning when saving preferences.  In that case, click "yes" and then go set
                 all the default radio buttons on the "Defaults" pane to the LocoNet connection.  (You can also
                 click "no", but you'll get the message next time you store too)</li>
-            </ul>
+           </ul>
 
         <h4>MQTT</h4>
             <ul>
@@ -299,11 +300,6 @@ in those is
                   Thanks to Dennis Cherry for testing on actual hardware.<br>
                 Awaiting response from Digikeijs to complete the settings stored in LNCV4.</li>
               <li>The Stationary family of decoders was renamed to Feedback (Inputs).</li>
-            </ul>
-
-        <h4>Digitrax</h4>
-            <ul>
-                <li>Add support for DCS240+</li>
             </ul>
 
         <h4>Massoth</h4>
