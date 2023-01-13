@@ -208,7 +208,12 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.3.1+is
 
         <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
             <ul>
-                <li>Programmer support added</li>
+                <li>Programmer support added. Enables using DecoderPro on the
+                TCS CS-105 and LT-50 command stations. Service Mode
+                (Programming Track, with Direct Mode) and Ops Mode (Programming
+                on Main) are both supported. RailCom-aware decoders can read
+                CVs on the main (in Ops Mode), which is a lot faster than
+                reading on the Programming Track.</li>
             </ul>
 
     <h3>New / Updated decoder definitions</h3>
