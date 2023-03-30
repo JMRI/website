@@ -19,15 +19,17 @@
 
 <h1>Using Java 11 with JMRI</h1>
 
-<p>We recommend using Java 11 with current JMRI versions.
-<em>JMRI needs a "Java Runtime Environment" (JRE),
+<p>We recommend using Java 11 with current JMRI versions.  Starting with JMRI 5.0, the minimum Java
+version is 11.</p>
+
+<p><em>JMRI needs a "Java Runtime Environment" (JRE),
 but will work fine with the larger "Java Development Kit" (JDK).</em></p>
 
 <p>Before getting a new version of Java, it is useful to check what version is currently installed
 on your computer.  On Windows, for example, open a "command" window by typing "Command prompt" into the search bar
  next to the Windows Start icon.  Then type:</p>
 
-     <pre>java -version</pre>
+     <code>java -version</code>
 
 <p><strong>IT IS RECOMMENDED THAT YOU REMOVE OLD VERSIONS OF JAVA BEFORE YOU UPGRADE.</strong> This avoids a number of reported
 problems.  On Windows, for example, you can:
@@ -42,10 +44,60 @@ problems.  On Windows, for example, you can:
 
 <h1>Getting Java 11</h1>
 
-<p>Here are some places you can get Java 11.  Click on the links to
-go to the download page.</p>
+<h2 id="linux_java">For Linux distributions</h2>
 
-<h2>For 32-bit or 64-bit computers:</h2>
+<p>Linux distributions should use the standard package manager.  For Debian based distributions such
+as Ubuntu, Mint, and Raspberry PI OS, the package manager is <strong><em>apt</em></strong>.  For Red
+Hat based distributions such as Fedora and CentOS, the package manager is <strong><em>dnf</em></strong>.</p>
+
+<p>The following steps use the terminal command line.  The <strong><em>apt</em></strong> and
+<strong><em>dnf</em></strong> commands require root authority via sudo.</p>
+
+  <h3>Check for current Java installs.</h3>
+  <code>java -version</code>
+
+  <h4>Java was previously installed</h4>
+
+  <div class="noted">
+    <pre>
+openjdk version "1.8.0_362"
+OpenJDK Runtime Environment (build 1.8.0_362-8u362-ga-0ubuntu1~22.04-b09)
+OpenJDK 64-Bit Server VM (build 25.362-b09, mixed mode)
+    </pre>
+  </div>
+
+  <p>The Java 1.8 version needs to be removed.  That process is outside the scope of this document.
+  Search for <strong><em>linux remove java</em></strong>.  The steps involved depend on the
+  distribution, the source and the Java version. An alternative is to use the local Java within
+  JMRI approach.  See <a href="#local">Local Java</a></p>
+
+  <h4>Java has not been installed</h4>
+
+  <div class="noted">Debian based:
+    <pre>
+Command 'java' not found, but can be installed with:
+sudo apt install default-jre              # version 2:1.11-72build2, or
+sudo apt install openjdk-11-jre-headless  # version 11.0.18+10-0ubuntu1~22.04
+sudo apt install openjdk-17-jre-headless  # version 17.0.6+10-0ubuntu1~22.04
+sudo apt install openjdk-18-jre-headless  # version 18.0.2+9-2~22.04
+sudo apt install openjdk-19-jre-headless  # version 19.0.2+7-0ubuntu3~22.04
+sudo apt install openjdk-8-jre-headless   # version 8u362-ga-0ubuntu1~22.04
+    </pre>
+  </div>
+
+  <div class="noted">Red Hat based:
+    <pre>
+bash: java: command not found...
+Install package 'java-11-openjdk-headless' to provide command 'java'? [N/y]
+    </pre>
+    Reply N, JMRI needs the full Java version.
+  </div>
+
+  <h3>Install Java 11</h3>
+  <p><code>sudo apt install openjdk-11-jre</code>  Debian based</p>
+  <p><code>sudo dnf install java-11-openjdk</code>  Red Hat based</p>
+
+<h2>For 32-bit or 64-bit computers</h2>
 <ul>
     <li>
         <a href="https://www.azul.com/downloads/?version=java-11-lts&amp;package=jre">Azul</a>
@@ -71,7 +123,7 @@ go to the download page.</p>
     </li>
 </ul>
 
-<h3>Additionally for 64-bit computers:</h3>
+<h2>Additionally for 64-bit computers</h2>
 <ul>
     <li>
         <a href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&amp;field_operating_system_target_id=All&amp;field_architecture_target_id=All&amp;field_java_package_target_id=401">OpenLogic</a>
@@ -94,7 +146,7 @@ go to the download page.</p>
 
 </ul>
 
-<h2 id="local">Local install option:</h2>
+<h2 id="local">Local install option</h2>
 <span class="since">Since <a href="../releasenotes/jmri4.99.9.shtml">JMRI 4.99.9</a></span>
 <p>Linux and macOS users can also install Java inside JMRI itself, instead of installing it centrally on their computer.
 This can be useful if you need different Java versions for other programs, or if for some reason
