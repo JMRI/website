@@ -101,17 +101,19 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>New problems with this release</h3>
 <ul>
-    <li>None yet</li>
+    <li>Programming certain Loconet-attached boards may not work
+        with the DCS100 command station.
+    </li>
 </ul>
-<!--
-If any of those affect you, please either
-wait for
-<a href="jmri5.3.6.shtml">JMRI 5.3.6</a>, due out shortly after this one,
-or (once there's a fix for the problem) pick up a
+
+If that affects you, please either wait for
+<a href="jmri5.3.6.shtml">JMRI 5.3.6</a>,
+or (once there's a fix for the problem listed in the <a href="jmri5.3.6.shtml">draft JMRI 5.3.6 release note</a>)
+pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
- -->
+
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
