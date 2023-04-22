@@ -131,8 +131,19 @@
       </ol>
 
 
-
     <h2>Additional notes for using AnyRail's export files</h2>
+
+      <h3>Migration script</h3>
+      The
+      <a href="https://jmri.org/jython/anyrail/AnyRailBuildBlockSensorList.py">AnyRailBuildBlockSensorList.py</a>
+      script may be useful when doing large migrations with block sensors.
+      See the associated
+      <a href="./AnyRailBuildBlockSensorList.pdf">PDF instructions</a>
+      (Original ODT file
+      <a href="/AnyRailBuildBlockSensorList.odt">.odt file</a>)
+      and
+      <a href="https://jmri.org/jython/anyrail/README.md">README.md</a>
+      files for more information.
 
       <h3>Missing jpg image file</h3>
         <p>If the exported PanelPro file and its related jpg file are manually moved to a different
@@ -149,6 +160,7 @@
       <h3>Other errors or unexpected results</h3>
         <p>Use the system console, <strong>Help &rArr; System Console...</strong>, to open a window
         that has details on JMRI and can contain warnings and errors.
+
 
     <!--#include virtual="/Footer.shtml" -->
 
