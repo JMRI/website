@@ -16,32 +16,31 @@
 <!--#include virtual="Sidebar.shtml" -->
   <div id="mainContent">
 
-    <p class="noted">This page has been updated for JMRI 5 and Java 11.  For the original
+  <div class="noted">
+    <p>This page has been updated for JMRI 5 and Java 11.  For the original
     version that includes information back to JMRI 2, see the <a href="LinuxOld.shtml">original page</a>.
-    Be aware that much of the information is obsolete.</p>
+    The original page also includes links to a number of special install instructions.  Be aware
+    that much of the information on these other pages is obsolete.</p>
+
+    <p>There are separate instructions for two custom Raspberry Pi images.</p>
+    <ul>
+      <li>A free Raspberry Pi image, completely configured with JMRI, auto-identify logic for many
+      popular DCC systems and its own wifi access point, is available for download
+      <a href="https://mstevetodd.com/rpi" target=_new>[here]</a>.</li>
+      <li><strong>Pi-SPROG</strong> &mdash; See the <a href="https://www.sprog-dcc.co.uk/download-page">
+      SPROG DCC Ltd download page</a> for up-to-date documentation.</li>
+    </ul>
+  </div>
 
   <h1>JMRI Install Guide: Linux</h1>
-
-    <p>There are multiple versions of Linux, all slightly different and requiring installation
-    instructions that differ in detail.  There are specific pages describing details of installation
-    for the following distributions.</p>
-
-    <ul>
-      <li><a href="Mint20.shtml">Mint 20</a> (no command line use)</li>
-    </ul>
-
-    <p>Some Linux distributions have associated repositories that make it easier to install software.</p>
-    <ul>
-      <li><a href="https://slackbuilds.org/apps/jmri/">Slackware</a></li>
-    </ul>
 
     <h2>General JMRI Linux Install Procedure</h2>
 
     <p>The following steps provide general instructions for installing JMRI on Linux using the
     terminal command line along with brief GUI descriptions for some activities. It should work for
-    most Debian and Red Hat based distributions.It has been tested on Mint 20.3, Ubuntu 22.04,
-    Raspberry Pi OS and CentOS 9.  The serial connectons have been tested using the RR-CirKits
-    <em>LCC Buffer-USB</em>.</p>
+    most Debian and Red Hat based distributions.  It has been tested on Mint 20.3, Ubuntu 22.04,
+    Debian 11, Raspberry Pi OS, CentOS 9, and Fedora 38.  The serial connectons have been tested
+    using the RR-CirKits <em>LCC Buffer-USB</em>.</p>
 
     <p>Note: The instructions use the standard tilde (~) shortcut to represent the users's home
     directory at <strong><em>/home/&lt;username&gt;</em></strong>.
@@ -106,7 +105,8 @@
           <strong>Home</strong>.  Then click on <strong>Extract</strong>.</p>
 
           <p><strong>Extract Here</strong> &mdash; Extracts JMRI to the current location. Move the
-          extracted JMRI directory to the desired location or move the downloaded file first.</p>
+          extracted JMRI directory to the desired location.  An alternate method is to move the
+          downloaded file first and then do the <strong>Extract Here</strong>.</p>
         </dd>
 
         <dt>Ubuntu</dt>
@@ -145,14 +145,32 @@
 
     </div>
 
-    <h4>Desktop Icons</h4>
-      <p>Desktop icons are not required.  PanelPro and DecoderPro can be started by clicking on the
-      scripts within the JMRI install in the file manager or from the command line.  For example:
+    <h4>Application Icons</h4>
+      <p>Application icons are not required.  PanelPro and DecoderPro can be started by clicking on
+      the scripts within the JMRI install in the file manager or from the command line.  For example:
       <code>~/JMRI/PanelPro</code></p>
+
+      <p>As of the <strong><em>JMRI 5.3.6</em></strong> test release, the <strong>CreateJmriApps.sh
+      </strong> shell script is included in Linux JMRI install.  The script creates Linux application
+      definitions for DecoderPro and PanelPro.  These are used by Linux application launchers such
+      as the LM popup in Mint, the Raspberry popup in Raspberry Pi OS, the application grids, etc.
+      These are stored in <strong>~/.local/share/applications</strong>.  The script will also create
+      desktop icons if the <strong>--desktop</strong> or the <strong>-d</strong> option is included
+      when running the script using the terminal command line, e.g.
+      <code>~/JMRI/CreateJmriApps.sh --desktop</code>.</p>
+
+      <p>For earlier versions of JMRI, the script can be downloaded from the JMRI Users Group at
+      <a href="https://groups.io/g/jmriusers/files/Script%20examples/CreateJmriApps.sh">
+      CreateJmriApps.sh</a>.
+      After downloading the script, move it to JMRI program directory and change the permissions
+      to make it executable.</p>
+
+      <p>Use the following instructions if the script is not available, not suitable or a personal
+      preference.</p>
 
       <h5>Mint</h5>
 
-      <p>Use the create launcher desktop action.</p>
+      <p>Use the <strong>Create a new launcher here...</strong> desktop action.</p>
       <ol>
         <li>Right click on the desktop and select <strong>Create a new launcher here...</strong>.</li>
         <li>Enter the icon name.</li>
@@ -170,11 +188,33 @@
 
       <h5>Others</h5>
 
-      <p>The other distributions require a <strong>desktop</strong> file which defines the
-      application. Use a text editor to create the DecoderPro and PanelPro files.  For Debian based
-      distributions, the files are stored at <strong><em>~/Desktop</em></strong>. For Red Hat
-      distributions, they are stored at <strong><em>~/.local/shared/applications</em></strong>.</p>
+        <h6>Define Applications</h6>
 
+        <p>Custom Linux applications,such as DecoderPro and PanelPro, are defined by a <strong>
+        <em>&lt;name&gt;.desktop</em></strong> file in <strong>~/.local/share/applications</strong>.
+        The files are used by the standard application launchers.  These are normally a popup menu
+        accessed by an icon such as the Mint LM or an application grid based launcher.</p>
+
+        <p>The definitions are data for the application launcher system so they do not need to be
+        executable.  Since they are in a hidden directory, enable the <strong><em>Show Hidden Files
+        </em></strong> file manager preference.</p>
+
+        <h6>Desktop Icons</h6>
+
+        <p>Desktop icons are defined by the same <strong><em>&lt;name&gt;.desktop</em></strong> file,
+        but are located in <strong>~/Desktop</strong>.  These files need to be executable.</p>
+
+        <ol>
+          <li>Right click on the icon and select <strong>Properties</strong>.</li>
+          <li>Select the <strong>Permissions</strong> tab.</li>
+          <li>Enable <strong>Allow executing file as program</strong></li>
+          <li>Click on <strong>Close</strong></li>
+        </ol>
+
+        <p>Some distributions will also need <strong>Allow Launching</strong> enabled in the right click menu.</p>
+
+
+      <h5>File Content</h5>
       <dl>
         <dt>DecoderPro.desktop</dt>
         <dd><pre>
@@ -203,15 +243,17 @@ Terminal=false;
 
       <p>Change <strong>&lt;username&gt;</strong> to the actual user name.</p>
 
-      <p>After the icons have been created they need to be made executable.  Note:  The desktop files
-      on Raspberry Pi OS and CentOS do not need to be executable.</p>
+      <h5>Application Options</h5>
 
-      <ol>
-        <li>Right click on the icon and select <strong>Properties</strong>.</li>
-        <li>Select the <strong>Permissions</strong> tab.</li>
-        <li>Enable <strong>Allow executing file as program</strong></li>
-        <li>Click on <strong>Close</strong></li>
-      </ol>
+      <p>For distributions that use a "start menu" style popup menu, the JMRI applications will be
+      in the <strong>Other</strong> group.  The right click menu may have options.  For example,
+      Mint has an option to place the icon on the task bar panel.</p>
+
+      <p>For distributions that use an application grid, the application grid is displayed by clicking on the
+      3x3 application grid icon.  The JMRI icon will show in the dock while the application is
+      running and then go away when JMRI is stopped.  The JMRI application icon can be added to the
+      dock as a favorite by doing a right click on the JMRI icon in the application grid and
+      selecting <strong>Add to Favorites</strong>.</p>
 
       <p class="noted">The icon setup only needs to be done on the first install.  The icons will
       continue to work when the JMRI install directory is replaced by a new download and extract.</p>
