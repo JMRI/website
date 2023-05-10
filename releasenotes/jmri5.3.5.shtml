@@ -104,6 +104,10 @@ that can arise from skipping these versions.
     <li>Programming certain Loconet-attached boards may not work
         with the DCS100 command station.
     </li>
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+    There's a problem locating and operating ECoS sensors. The fix will
+    be available in JMRI 5.3.7</li>
+
 </ul>
 
 If that affects you, please either wait for
