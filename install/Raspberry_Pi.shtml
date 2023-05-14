@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Installing JMRI on Raspberry Pi OS</title>
+  <!--#include virtual="/Style.shtml" -->
+</head>
+
+<body>
+  <!--#include virtual="/Header.shtml" -->
+  <div id="mBody">
+  <!--#include virtual="Sidebar.shtml" -->
+  <div id="mainContent">
+
+  <h1>Installing JMRI on Raspberry Pi OS</h1>
+
+    <div class="noted">
+        <p>These instructions describe the installation of Java 11 and JMRI 5+ on a Raspberry Pi
+        computer running <strong>Raspberry Pi OS</strong>. The install process uses the general
+        Linux instructions at <a href="Linux.shtml">Linux Install</a>.  Raspberry Pi specific
+        activities are on this page.</p>
+
+        <p>The orignal version of this page is at <a href="Raspbian.shtml">JMRI on Raspbian</a>.
+        Be aware that much of the information on the old page is obsolete.</p>
+    </div>
+
+    <p>The Raspberry Pi is becoming increasingly popular as a small and cheap computer.  Raspberry Pi
+    OS is based on Debian and is recognized as being a very user friendly distribution.</p>
+
+    <h2 id="prebuilt_image">Pre-Built Image Available</h2>
+
+    <ul>
+      <li>A free RaspberryPi image, completely configured with JMRI, auto-identify logic for many
+      popular DCC systems and its own wifi access point, is available for download
+      <a href="https://mstevetodd.com/rpi">[here]</a>.</li>
+    </ul>
+
+    <h2 id="installation">Installation Steps</h2>
+
+    <p>Follow the steps at <a href="Linux.shtml">Linux Install</a> to install Java and JMRI
+    on a Raspberry Pi running either <strong>Raspberry Pi OS</strong> or Raspbian.</p>
+
+    <p>Note: The information for installing <strong>Raspberry Pi OS</strong> on a Raspberry Pi
+    computer is available at <a href="https://www.raspberrypi.com/documentation/">Raspberry Pi
+    Documentation</a>.</p>
+
+    <h2>Post Install Activities</h2>
+
+      <h3>Raspberry Pi Configuration</h3>
+
+      <p>If the Raspberry Pi will not have a display, keyboard and mouse, it can use a virtual VNC
+      (Virtual Network Computing) interface.  The RealVNC server is included in Raspberry Pi OS.</p>
+
+      <p>This is enabled by selecting <strong>Preferences &rArr; Raspberry Pi Configuration</strong>
+      from the Raspberry start menu.  In the <strong>Interface</strong> tab select <strong>VNC
+      </strong>.  For remote terminal access using <strong>ssh</strong> also enable <strong>SSH
+      </strong>.</p>
+
+      <h3>Autostart</h3>
+
+      <p>To automatically start the GUI version of PanelPro or DecoderPro during startup, add a
+      symbolic link to the desktop icon.</p>
+
+      <code class="block">
+cd ~/.config
+mkdir autostart (might not exist)
+cd autostart
+ln -s ~/Desktop/PanelPro.desktop PanelPro.desktop
+      </code>
+
+      <h3>Faceless</h3>
+
+      <p>The Linux install of JMRI includes a <strong>JmriFaceless</strong> application.  This is a
+      minimal JMRI application with no GUI windows.  Since there are no JMRI windows, everything
+      must be configured using DecoderPro or PanelPro.</p>
+
+      <h4>Faceless setup using PanelPro</h4>
+
+      <ol>
+        <li>Create a Faceless profile using <strong>Edit &rArr; Preferences &rArr; Config Profiles
+        </strong> from  the main PanelPro menu.  Save and restart with new profile.</li>
+        <li>Configure the Connection and Start Up preferences.  A common start up action is
+        <strong>Start WiThrottle Server</strong>.  Save and quit PanelPro.</li>
+        <li>Copy <strong>PanelProConfig2.properties</strong> to <strong>JmriFacelessConfig3.properties
+        </strong>.</li>
+        <li>Check JmriFacelessConfig3.properties. The <strong>autoStart</strong> key must be true:
+        <code>&lt;entry key="autoStart"&gt;true&lt;/entry&gt;</code></li>
+        <li>Three alternatives for starting JmriFaceless:
+          <ul>
+            <li>Connect using ssh and enter <code>~/JMRI/JmriFaceless</code> at the command line.</li>
+            <li>Start using a ssh remote command: <code>ssh &lt;user&gt;@&lt;ip address&gt;
+            /home/&lt;user&gt;/JMRI/JmriFaceless &</code></li>
+            <li>Add a line to the <strong>/etc/rc.local</strong> file before the <strong>exit 0
+            </strong> line:  <code>sudo -u &lt;user&gt; /home/&lt;user&gt;/JMRI/JmriFaceless &</code>.
+            The rc.local script runs as root so the <strong><em>sudo</em></strong> command is used
+            to start JmriFaceless as the user.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3>Shutdown</h3>
+
+      <p>Normally, the Raspberry Pi is shut down using the desktop start menu, either with a
+      monitor, mouse and keyboard or via VNC.  It can also be shut down by logging in with ssh and
+      doing a terminal command, <code>sudo shutdown -h now</code>, or doing a ssh remote command.</p>
+
+      <p>In JMRI, a Logix/LogixNG can be used to invoke the <strong>ShutdownOS.py</strong> Jython
+      script.</p>
+
+      <p>LogixNG has a <strong>Shutdown</strong> action.  This example uses a sensor that can be set
+      from a browser connected to the JMRI Web Server.</p>
+
+      <code class="block">
+LogixNG: Shutdown
+  ConditionalNG: Shutdown
+    ! A
+      If Then Else. Execute on change
+        ? If
+          Sensor Shutdown is Active
+        ! Then
+          Shutdown JMRI/computer: Shut down the computer
+        ! Else
+      </code>
+
+    <!--#include virtual="/Footer.shtml" -->
+    </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody, started in sidebar -->
+  <script src="/js/main.js"></script>
+</body>
+</html>
