@@ -104,16 +104,18 @@ that can arise from skipping these versions.
     <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
         There's a problem locating and operating ECoS sensors. The fix will
         be available in JMRI 5.3.7</li>
+    <li><span class="since">Since <a href="jmri5.3.4.shtml">JMRI 5.3.4</a></span>
+        DecoderPro improperly displays function names in the Function Map
+        pane for certain ESU decoders. The fix will be available in JMRI 5.3.7.</li>
+
 </ul>
-<!--
 If any of those affect you, please either
 wait for
-<a href="jmri5.3.6.shtml">JMRI 5.3.6</a>, due out shortly after this one,
+<a href="jmri5.3.7.shtml">JMRI 5.3.7</a>,
 or (once there's a fix for the problem) pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
- -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>

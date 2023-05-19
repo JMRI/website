@@ -104,15 +104,18 @@ that can arise from skipping these versions.
     <li>Programming certain Loconet-attached boards may not work
         with the DCS100 command station.
     </li>
+    <li>DecoderPro improperly displays function names in the Function Map
+        pane for certain ESU decoders.</li>
 </ul>
 
-If that affects you, please either wait for
+If the LocoNet problem affects you, please either wait for
 <a href="jmri5.3.6.shtml">JMRI 5.3.6</a>,
 or
 pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
-<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.
+The ESU problem will be fixed in JMRI 5.3.7.</p>
 
 
 <a id="warnings" name="warnings"></a>
