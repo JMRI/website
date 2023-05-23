@@ -181,12 +181,13 @@
                     This runs a little faster, though that doesn't matter much for JMRI.
                     It has limitations, at least currently:
                     <ul>
-                    <li>There's no native support for the JOAL library that's used for VSD sound.
-                        VSD sound won't be available.
                     <li>There's no native support for the HIDinput library that's used
                         by some user's scripts to handle mouse and keyboard input.
+                    <li>Before JMRI 5.3.7, there was no native support for
+                        the libraries needed for advanced sound features.
+                        This is fixed in JMRI 5.3.7 and later.
                     </ul>
-                If either of those are a problem, you can use the next mode.
+                If you encounter a problem in native mode, you can use the next mode.
             <li>In emulation mode:<br>
                     You do this by downloading and using an Intel version of Java.
                     (The Java download link above is to an Intel version.)
