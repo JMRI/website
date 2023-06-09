@@ -173,6 +173,20 @@ See <a href="#update">instructions above</a>.
         If you encounter any (new) troubles programming via Loconet, please get in touch on the
         <a href="https://groups.io/g/jmriusers">JMRIusers list</a>.
     </li>
+    <li><span class="since">Since <a href="jmri5.3.7.shtml">JMRI 5.3.7</a></span>
+        The definition of "Last Seen" for Id Tags has been
+        clarified to mean "Location where the tag was last seen to be <u>present</u>".
+        Previously, a report that a tag was <u>absent</u> could be remembered as the
+        last seen report.  The relevant code changes are specific to LocoNet
+        Reporters. This might affect your scripts and LogixNG if you were assuming
+        the prior behavior.
+        </li>
+    <li><span class="since">Since <a href="jmri5.3.7.shtml">JMRI 5.3.7</a></span>
+        Some Reporters, particularly LocoNet, would improperly clear an "enter" report
+        when an "exits" report for the same tag was seen elsewhere.  This was an
+        error that has been fixed, but if you have scripts or LogixNG that depend on
+        this behavior you might have to update them.
+
 </ul>
 
 <a id="download" name="download"></a>
