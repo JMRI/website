@@ -114,6 +114,17 @@ before installing this release.
         <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
         <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
     </li>
+    <li><span class="since">Since <a href="jmri5.3.2.shtml">JMRI 5.3.2</a></span>
+        Some images in the <i>resources/icons</i> folder have been renamed.
+        Spaces have been changed to underscore. It's images in the
+        <i>resources/icons/ItalianSignals/ACEI</i>,
+        <i>resources\icons\ItalianSignals\Prototypical</i>,
+        <i>resources/icons/smallschematics/aspects/NW-1981</i>,
+        <i>resources/icons/smallschematics/aspects/NYC-1956</i>,
+        <i>xml/signals/FS-1987</i>, <i>xml/signals/NW-1981</i>,
+        <i>xml/signals/NYC-1956</i> and <i>resources/icons/SNCF/Small</i>
+        folders that have been renamed. If you are using these images directly, you will need to update the reference.
+    </li>
     <li><span class="since">Since <a href="jmri5.1.7.shtml">JMRI 5.1.7</a></span>
         The way defaults for some LocoNet connections are handled has changed.
         Existing LocoNet connections might give a "The Defaults preferences are invalid"
@@ -121,6 +132,24 @@ before installing this release.
         all the default radio buttons on the "Defaults" pane to the LocoNet connection.  (You can also
         click "no", but you'll get the message next time you store too)
     </li>
+    <li><span class="since">Since <a href="jmri5.3.3.shtml">JMRI 5.3.3</a></span>
+        The code for Loconet programming operations was significantly changed.
+        If you encounter any (new) troubles programming via Loconet, please get in touch on the
+        <a href="https://groups.io/g/jmriusers">JMRIusers list</a>.
+    </li>
+    <li><span class="since">Since <a href="jmri5.3.7.shtml">JMRI 5.3.7</a></span>
+        The definition of "Last Seen" for Id Tags has been
+        clarified to mean "Location where the tag was last seen to be <u>present</u>".
+        Previously, a report that a tag was <u>absent</u> could be remembered as the
+        last seen report.  The relevant code changes are specific to LocoNet
+        Reporters. This might affect your scripts and LogixNG if you were assuming
+        the prior behavior.
+        </li>
+    <li><span class="since">Since <a href="jmri5.3.7.shtml">JMRI 5.3.7</a></span>
+        Some Reporters, particularly LocoNet, would improperly clear an "enter" report
+        when an "exits" report for the same tag was seen elsewhere.  This was an
+        error that has been fixed, but if you have scripts or LogixNG that depend on
+        this behavior you might have to update them.
 </ul>
 
 <a id="download" name="download"></a>
@@ -220,12 +249,11 @@ in those is
                     To enable this the advanced LocoNet preferences must be set XPSlots Auto Detect.
                     If using DCS240(+) limited to less than 120 slots use DCS210 or DCS210+ to avoid needless reading of slots.
                     When using a DCS240(+) be aware that when first opening a Slot Monitor window 430 odd slots are read, so avoid doing it during layout start.
-                    If using throttles that cannot access XP Slots along side those that can you may see the same loco number twice in the slotmon, which slot actually has control may vary.
-                </li>
+                    If using throttles that cannot access XP Slots along side those that can you may see the same loco number twice in the slotmon, which slot actually has control may vary.</li>
                 <li>Changed handling of LACK messages during programming to
                     avoid a recently-uncovered conflict with attached DT602D
                     throttles.</li>
-                <li>Added a new jython/loconet directory to contain new LocoNet-specific scripts.<li>
+                <li>Added a new jython/loconet directory to contain new LocoNet-specific scripts.</li>
                 <li>Added a jython/loconet/LoconetOpsModeSim.py that works with LocoNet simulator
                     to simulate ops-mode writes and reads.</li>
                 <li>Added support for the programming protocol used by
@@ -517,10 +545,6 @@ in those is
     <h3>Operations</h3>
          <a id="Operations" name="Operations"></a>
          <ul>
-             <li>Fixed a problem when a location has multiple spurs and the spur's schedule
-             forwards the car to another spur
-             at the same location with a schedule.
-             The car's load can incorrectly change to the default "E" or "L" load.</li>
             <li>Fixed a problem when a location has multiple spurs and the spur's schedule forwards the car to another spur
             at the same location with a schedule.  The car's load can incorrectly change to the default "E" or "L" load.</li>
             <li>Improved passenger car blocking when using kernels, caboose, or car with FRED</li>
@@ -575,7 +599,7 @@ in those is
             <li>Added a new <a href="https://jmri.org/jython/SetAllTurnoutsThrown.py">SetAllTurnoutsThrown.py</a> script and tests</li>
             <li>Added a new <a href="https://jmri.org/jython/Shutdown.py">Shutdown.py</a> script to shut down JMRI.</li>
             <li>Added a new <a href="https://jmri.org/jython/Restart.py">Restart.py</a> script to restart JMRI.</li>
-            <li>Added a new jython/loconet directory to contain new LocoNet-specific scripts.<li>
+            <li>Added a new jython/loconet directory to contain new LocoNet-specific scripts.</li>
             <li>Added a jython/loconet/LoconetOpsModeSim.py that works with LocoNet simulator
                 to simulate ops-mode writes and reads.</li>
             <li>Add a PanelControlsContents.py script which lets you
@@ -643,12 +667,6 @@ in those is
                 For most decoders, this will be 28,
                 but there are a few definitions that are larger or smaller.</li>
             <li>Some minor internal cleanup.</li>
-            <li>If you select a roster entry, the throttle displays functions up to the
-                least of the number of functions available
-                from the layout connection, or the maximum function in the decoder
-                definition.
-                For most decoders, this will be 28,
-                but there are a few definitions that are larger or smaller.</li>
             <li>Added a consist selector in the address panel</li>
             <li>Added a "Consist Tool" button in the address panel</li>
             <li>Behavior with consists enhanced</li>

@@ -135,7 +135,7 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri5.2.shtml#warnings">JMRI 5.2 release note</a> for more warnings predating the 5.3 development series,
+See the <a href="jmri5.4.shtml#warnings">JMRI 5.4 release note</a> for more warnings predating the 5.5 development series,
 including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version;
 we strongly recommend you update to at least <a href="jmri5.0.shtml">JMRI 5.0</a>
@@ -143,6 +143,13 @@ before installing this test release.
 See <a href="#update">instructions above</a>.
 
 <ul>
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+        This test release, and all subsequent ones, require the use of
+        Java 11 or later.  Java 8 is explicitly not supported.
+        There's more information on this migration on the
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
+    </li>
     <li><span class="since">Since <a href="jmri5.3.2.shtml">JMRI 5.3.2</a></span>
         Some images in the <i>resources/icons</i> folder have been renamed.
         Spaces have been changed to underscore. It's images in the
@@ -153,20 +160,6 @@ See <a href="#update">instructions above</a>.
         <i>xml/signals/FS-1987</i>, <i>xml/signals/NW-1981</i>,
         <i>xml/signals/NYC-1956</i> and <i>resources/icons/SNCF/Small</i>
         folders that have been renamed. If you are using these images directly, you will need to update the reference.
-    </li>
-     <li><span class="since">Since <a href="jmri5.1.7.shtml">JMRI 5.1.7</a></span>
-        The way defaults for some LocoNet connections are handled has changed.
-        Existing LocoNet connections might give a "The Defaults preferences are invalid"
-        warning when saving preferences.  In that case, click "yes" and then go set
-        all the default radio buttons on the "Defaults" pane to the LocoNet connection.  (You can also
-        click "no", but you'll get the message next time you store too)
-    </li>
-    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
-        This test release, and all subsequent ones, require the use of
-        Java 11 or later.  Java 8 is explicitly not supported.
-        There's more information on this migration on the
-        <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
-        <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
     </li>
     <li><span class="since">Since <a href="jmri5.3.7.shtml">JMRI 5.3.7</a></span>
         The definition of "Last Seen" for Id Tags has been
