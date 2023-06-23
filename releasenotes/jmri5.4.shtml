@@ -175,6 +175,13 @@ in those is
                 <li>Changed SPROG DCC module IDs to match similar MERG modules,
                 to work around an issue with the FCU tool.</li>
                 <li>Improved Node Manager configuratiuon of MERG CANSERVO8C / CANMIO-SVO / CANACC4</li>
+                <li>The default behavior for CBus Reporters has been changed to
+                    <u>not</u> clear the report after a timeout. A new
+                    CbusReporterTimeoutControl.py script is provided to
+                    restore the previous behavior:  After a timeout, the
+                    report is cleared.  The script also demonstrates how to
+                    get a more granular control over this behavior.</li>
+                <li>Improved Throttle support for 14 and 28 Speed Steps.</li>
             </ul>
 
         <h4>C/MRI</h4>
@@ -187,6 +194,14 @@ in those is
             <ul>
                 <li>New script in DCC-EX folder, RosterExportToDCC-EX.py, which outputs all JMRI roster entries in
                 format suitable for copying into myAutomation.h.</li>
+                <li>Set Turnout userName from Description when defined in myAutomation.h</li>
+                <li>Support fastclock synchronization to DCC-EX</li>
+                 </ul>
+
+        <h4>ESU</h4>
+            <ul>
+                <li>Updated how initialization is done to fix a problem where Sensors
+                    where not being properly located and operated.</li>
             </ul>
 
         <h4>Lenz XPressNet</h4>
@@ -220,6 +235,12 @@ in those is
                     certain ops-mode programming operations to fail.</li>
                 <li>LocoNet connections now support decoder functions up to F68</li>
                 <li>Improved handling of BXP88 messages</li>
+                <li>The handling for LocoNet Reporters (i.e. transponding)
+                    has changed.  See the description
+                    <a href="#TLae">below</a>.</li>
+                <li>Improved the timeout handling in the Strict packetizer.</li>
+                <li>Fixed a problem where sometimes buttons in the Slot Monitor
+                    would disappear.</li>
             </ul>
 
         <h4>Marklin CS2</h4>
@@ -283,6 +304,17 @@ in those is
                 <li>Allow an alternate user name format for accessing DCC turnouts connected
                     through a bridge:  MTT123 (note 2nd T) will generate the appropriate
                     events to throw and close DCC turnout 123.
+                <li>Fix some minor bugs in DecoderPro's exporting of roster entries
+                    to the CS-105 command station and to backup files.</li>
+                <li>Improved instructions for DecoderPro's import from and
+                    export to TCS CS-105 command stations.</li>
+                <li>Fix a problem that could cause an upload via the Memory Tool to fail.</li>
+            </ul>
+
+        <h4>Roco z21/Z21</h4>
+            <ul>
+                <li>Add a delay to read/write programming operations on the main.
+                    This is intended to help when doing reads of indexed CVs.</li>
             </ul>
 
         <h4>TCS</h4>
@@ -290,6 +322,13 @@ in those is
                 <li>Fixed problems in the sound CV definitions for
                     Bachmann FT, Bachmann GP35, Bachmann RS3 and
                     WOW Diesel V5-121 decoders.</li>
+            </ul>
+
+        <h4>TMCC</h4>
+            <ul>
+                <li>Initial support for TMCC 2 "Legacy" functions. The first
+                    uses are to assign F28 through F31 to
+                    <a href="https://www.jmri.org/help/en/html/hardware/tmcc/index.shtml">loco startup and shutdown sounds</a>.</li>
             </ul>
 
     <h3>New / Updated decoder definitions</h3>
@@ -316,7 +355,9 @@ in those is
             <ul>
                 <li>Piko Smart Decoder 4.1 and XP5.1</li>
 		        <li>Add CVs 100, 101 for Function Mapping Shift on Piko Smart Decoder 4.1</li>
-               <li>Add Decoder file for Piko SUSI Decoder (Light decoder)</li>
+                <li>Add Decoder file for Piko SUSI Decoder (Light decoder)</li>
+                <li>SmartDecoder XP5.1 - updated lowVersionID, changed CV7-8 to use include file</li>
+                <li>Added Decoder Reset and CV for Decoder Test for Piko SUSI Decoder (Light decoder)</li>
              </ul>
 
         <h4>Soundtraxx</h4>
@@ -333,6 +374,7 @@ in those is
             <ul>
                 <li>Bug fixes and extension of extended function mapping of the IntelliDrive 2 decoder</li>
                 <li>Added Tillig BR 89 steam loco on several panes</li>
+                <li> Extension with additional CVs for the Extended Function Mapping</li>
             </ul>
 
         <h4>Viessmann</h4>
@@ -345,6 +387,11 @@ in those is
                 <li>Include CV's 190-191 for Decoder FW V.37+</li>
                 <li>Added MS950 and MS990 model info</li>
                 <li>Updated CV64 in MS models to have a maximum of 15, was 9</li>
+                <li>Small correction to the files for FW v39 and v40</li>
+                <li>Added MN Non-Sound Decoders</li>
+                <li>Added new CV's for MS- and MN-Decoders</li>
+                <li>Added some more german translation for MX-, MS- and MN-Decoders</li>
+                <li>Some small corrections</li>
             </ul>
 
     <h3>DecoderPro</h3>
@@ -385,6 +432,10 @@ in those is
             <li>Significant roster table UI speed improvements.</li>
             <li>Added progress dialog for roster index recreation.</li>
             <li>Added progress dialog for decoder index recreation.</li>
+            <li>Add an "Export Variables to CSV" menu item in the
+                File menu on individual roster entries.</li>
+            <li>Now shows a progress bar while exporting all roster entries,
+                so that you don't try to use the resulting file too soon.</li>
         </ul>
 
     <h3>Dispatcher</h3>
@@ -400,13 +451,15 @@ in those is
 	        <i>Turnout on LayoutPanel</i> which caused that the actions
 	        wasn't loaded correctly.</li>
 	        <li>Add support for LogixNG Global Variable icons.  These work like memory icons.</li>
-          <li>Tooltips have been enabled for turnouts and slips on Layout Editor panels. The tooltip
-          displays the name of the assigned turnout. The format is <strong>system</strong> or
-          <strong>user (system)</strong>. For slips, both turnout names are displayed.  If a turnout
-          has not been assigned to a turnout or slip, the internal TOnn or SLnn id will be displayed.
-          The tooltips are shown based on the <strong>Options &rArr; Show Icon tooltips </strong>
-          settings used by the regular icon tooltips.  Custom tooltips are not available.</li>
-	      <li>Add a scale item to popup menu.</li>
+            <li>Tooltips have been enabled for turnouts and slips on Layout Editor panels. The tooltip
+            displays the name of the assigned turnout. The format is <strong>system</strong> or
+            <strong>user (system)</strong>. For slips, both turnout names are displayed.  If a turnout
+            has not been assigned to a turnout or slip, the internal TOnn or SLnn id will be displayed.
+            The tooltips are shown based on the <strong>Options &rArr; Show Icon tooltips </strong>
+            settings used by the regular icon tooltips.  Custom tooltips are not available.</li>
+	        <li>Add a scale item to popup menu.</li>
+	        <li>Fix the <strong>Tools &rArr; Check</strong> bezier options.  Remove a bogus error message.</li>
+	        <li>Fixed a problem that was causing Memory and Block contents to be slow to update.</li>
         </ul>
 
     <h3>Logix</h3>
@@ -453,6 +506,10 @@ in those is
           <li>Enable the <strong>Light Action</strong> data input fields when <strong>Set Intensity
           </strong> or <strong>Set Transition Time</strong> is selected.</li>
           <li>Add the <strong>Web request</strong> action that sends a HTTP or HTTPS request to a web server.</li>
+          <li>Add "Entry/Exit" to the "For each" action bean list.</li>
+          <li>For the action <i>For each</i>, <i>Variable</i> is renamed to
+              <i>Local variable</i> to make it consistent with the naming of
+              the rest of LogixNG.</li>
         </ul>
 
     <h3>Operations</h3>
@@ -466,6 +523,12 @@ in those is
             at the same location with a schedule.  The car's load can incorrectly change to the default "E" or "L" load.</li>
             <li>Improved passenger car blocking when using kernels, caboose, or car with FRED</li>
             <li>Fix Java exception when using the Set Car window and a final destination.</li>
+            <li>New staging feature, the ability to have multiple trains on one physical staging track.</li>
+            <li>Improved OperationsPro help, paper size, additional links from TOC</li>
+            <li>Many improvements to the train build report, car divisions, spurs and schedules, track type, etc.</li>
+            <li>A car's wait count is now set to zero if the car's load name is changed</li>
+            <li>Track tools now function as soon as track is added</li>
+            <li>Made "ignore all" the default setting for the car set window</li>
          </ul>
 
     <h3>PanelPro</h3>
@@ -488,6 +551,8 @@ in those is
             <li>Add support for LogixNG Global Variable icons.  These work like memory icons.</li>
             <li>The show hidden items selection was not being stored properly.  The fix may cause
             unexpected changes the first time a CPE panel is loaded.</li>
+            <li>Restored the linking input field when adding labels.  This had been
+                inadvertently removed some time in the past.</li>
         </ul>
 
     <h3>Preferences</h3>
@@ -513,6 +578,15 @@ in those is
                 to simulate ops-mode writes and reads.</li>
             <li>Add a PanelControlsContents.py script which lets you
                 set a panel to controlling the layout or not.</li>
+            <li>New AnyRail/AnyRailExportAdditions.py. For use with AnyRail export. Creates hardware occupancy Sensors and Turnouts,
+                  cleans up the generated Blocks, and does some visual tweaks of the panel.</li>
+            <li>New CreateSectionsFromBlocks.py. For each defined occupancy block, attempts to create a one-block Section</li>
+            <li>New AddOccupancyIconsToPanel.py. Create and place SensorIcons and BlockContents for each occupancy Block on a panel</li>
+            <li>Add binding "beans" for NamedBeanHandleManager</li>
+            <li>Add a <strong>Set turntable position</strong> statement to YAAT.</li>
+            <li>New InitAllTurnoutsSensors.py. Sets all physical turnouts to the CLOSED state and all known physical sensors to the INACTIVE state.</li>
+            <li>Implement YAAT 3.  The updated help page at
+            <a href="https://www.jmri.org/help/en/html/scripthelp/yaat/YAAT.shtml">YAAT Help</a> has the details of the changes.</li>
         </ul>
 
     <h3>Signals</h3>
@@ -538,6 +612,12 @@ in those is
                 <li>Updated the <i>xml/schema/aspecttable.xsd</i> schema to ensure that
                     only valid <i>speed</i> and <i>speed2</i> values will occur in
                     signal system definitions.</li>
+                <li>The BR-2003 system now has medium-size semaphore icons.</li>
+            </ul>
+
+        <h4>Signal Masts</h4>
+            <ul>
+                <li>CheckForNull annotation added to the getAspect method.</li>
             </ul>
 
    <h3>Switchboard Editor</h3>
@@ -560,6 +640,24 @@ in those is
                 definition.
                 For most decoders, this will be 28,
                 but there are a few definitions that are larger or smaller.</li>
+            <li>Some minor internal cleanup.</li>
+            <li>If you select a roster entry, the throttle displays functions up to the
+                least of the number of functions available
+                from the layout connection, or the maximum function in the decoder
+                definition.
+                For most decoders, this will be 28,
+                but there are a few definitions that are larger or smaller.</li>
+            <li>Added a consist selector in the address panel</li>
+            <li>Added a "Consist Tool" button in the address panel</li>
+            <li>Behavior with consists enhanced</li>
+        </ul>
+
+    <h3>Consist Tool</h3>
+        <a id="consist" name="consist"></a>
+        <ul>
+            <li>The "Consist Control" entry in the "Tools" menu was renamed "Consist Tool"</li>
+            <li>Consist tool now leverages locomotives icons when available</li>
+            <li>A consist selection combo box was introduced</li>
         </ul>
 
     <h3>Timetable</h3>
@@ -575,6 +673,28 @@ in those is
             <li>Preferred format for IdTag xml whenLastSeen field updated to ISO 8601.</li>
             <li>Memory Variable Table - If a Memory Variable value is not empty, the Java Class of the value is displayed as a tooltip.</li>
             <li>ID Tag Tables - Speed improvements when working with large numbers of Tags.</li>
+            <li>Fixed a bug in the Reporter Table that was causing the
+                Last Report column to actually display the Current Report.
+                Note that this is just a display bug; the underlying value and
+                property change notifications are correct, so this change won't
+                affect scripts, LogixNG, etc.</li>
+            <li>The definition of "Last Seen" for Id Tags has been
+                clarified to mean "Location where the tag was last seen to be <u>present</u>".
+                Previously, a report that a tag was <u>absent</u> could be marked as the
+                last seen report.  Not all hardware Reporters provide entry/exit reports, as
+                some just indicate that something has been observed in place; their "Last Seen" behavior
+                has not changed.
+                </li>
+            <li>Some Reporters, particularly LocoNet, would improperly clear an "enter" report
+                when an "exits" report for the same tag was seen elsewhere.  This was an
+                error that has been fixed, but if you have scripts or LogixNG that depend on
+                this behavior you might have to update them.
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>The VSD windows now remember their size and position from one run to another.</li>
         </ul>
 
    <h3>Web Server</h3>
@@ -623,12 +743,19 @@ in those is
             <li>Add the <strong>CreateJmriApps.sh</strong> script to the Linux install.  The script
                 creates the JMRI application definitions used by the Linux application launchers.
                 It also has an option (--desktop or -d) to create desktop icons.</li>
+            <li>Improved how window preferences are stored to reduce error messages
+                when JMRI is under high load.</li>
+            <li>Update the JMRI install process for Raspberry Pi computers running the Raspberry Pi OS.</li>
+            <li>Updated the roster and locomotive schema and the locomotive DTD to accept current contents.
+                JMRI has been writing extra content in its roster, and the schema and DTD files had not
+                kept up.  This resolves that.
+            <li>The JOAL library has been updated to run natively on Apple Silicon machines.
+            <li>The JInput library has been updated to run natively on Apple Silicon machines.
+            <li>Added a new jmri.util.swing.CountingBusyDialog utility class.
+            <li>Fixed the XML Schema for IdTags
         </ul>
 
 
-
-
-<!-- ======== 5.3.7 ================================================== -->
 
 <!-- ======== 5.3.8 ================================================== -->
 

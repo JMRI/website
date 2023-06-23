@@ -4,10 +4,10 @@
 <head>
  <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
-    JMRI: Release Notes for 5.3.8
+    JMRI: Release Notes for 5.5.1
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 5.3.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 5.5.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
  <!--#include virtual="/Style.shtml" -->
 </head>
@@ -19,12 +19,12 @@
     <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 5.3.8 release
+      Release Notes for JMRI 5.5.1 release
       </h1>
 
     <p>Date: MM DDD, 2023</p>
     <p>From: release pumpkin</p>
-    <p>Subject: Test Release 5.3.8 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 5.5.1 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -36,22 +36,22 @@ if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the next in a series of 5.3.* test releases.
+<p>This is the next in a series of 5.5.* test releases.
 It requires Java 11 to work.
 (See <a href="http://jmri.org/java">our page on downloading Java 11</a>)
-We expect this series to end in the next JMRI 5.4 production release in June 2023.
+We expect this series to end in the next JMRI 5.6 production release in December 2023.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
+<!--
 <P>We are getting close to the next production release, so we would particularly
 appreciate your testing of this release to make sure it works for you. That way,
 if you find new problems, we can try to fix them before the production release.</P>
+ -->
 
-<!--
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.</p>
- -->
 
 <p><b>
 JMRI is now only available under the
@@ -110,7 +110,7 @@ that can arise from skipping these versions.
 <!--
 If any of those affect you, please either
 wait for
-<a href="jmri5.3.8.shtml">JMRI 5.3.8</a>, due out shortly after this one,
+<a href="jmri5.5.2.shtml">JMRI 5.5.2/a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
@@ -121,9 +121,15 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>
-        None yet
-    </li>
+
+    <!-- While this release is in development, the     -->
+    <!-- list of new warnings is kept in               -->
+    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
+    <!-- in the JMRI/JMRI repository. Please edit      -->
+    <!-- there.  Changes to this file won't be merged. -->
+
+    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
+
 </ul>
 
 
@@ -161,11 +167,6 @@ See <a href="#update">instructions above</a>.
         There's more information on this migration on the
         <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
         <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
-    </li>
-    <li><span class="since">Since <a href="jmri5.3.3.shtml">JMRI 5.3.3</a></span>
-        The code for Loconet programming operations was significantly changed.
-        If you encounter any (new) troubles programming via Loconet, please get in touch on the
-        <a href="https://groups.io/g/jmriusers">JMRIusers list</a>.
     </li>
     <li><span class="since">Since <a href="jmri5.3.7.shtml">JMRI 5.3.7</a></span>
         The definition of "Last Seen" for Id Tags has been
@@ -215,44 +216,18 @@ During development leading to the actual release, you can find test download fil
 These are development files, and might not be working at any particular time.</p>
 
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri5.3.7.shtml">Test Release 5.3.7</a>:</h2>
+<h2>Changes since <a href="jmri5.3.8.shtml">Test Release 5.3.8</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.3.8+is%3Amerged">list of included changes</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.5.1+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
+    <!-- While this release is in development, the     -->
+    <!-- new release note items are kept in            -->
+    <!-- help/en/releasenotes/current-draft-note.shtml -->
+    <!-- in the JMRI/JMRI repository. Please edit      -->
+    <!-- there.  Changes to this file won't be merged. -->
 
-    <h3>Hardware Support</h3>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
-            <ul>
-                <li>Fix some minor bugs in DecoderPro's exporting of roster entries
-                    to the CS-105 command station and to backup files.</li>
-                <li>Improved instructions for DecoderPro's import from and
-                    export to TCS CS-105 command stations.</li>
-                <li>Fix a problem that could cause an upload via the Memory Tool to fail.</li>
-            </ul>
-
-    <h3>New / Updated decoder definitions</h3>
-
-        <h4>ZIMO</h4>
-            <ul>
-                <li>Added some more german translation for MX-, MS- and MN-Decoders</li>
-                <li>Some small corrections</li>
-            </ul>
-
-    <h3>Layout Editor</h3>
-        <a id="LE" name="LE"></a>
-        <ul>
-	        <li>Fixed a problem that was causing Memory and Block contents to be slow to update.</li>
-        </ul>
-
-    <h3>LogixNG</h3>
-        <a id="LogixNG" name="LogixNG"></a>
-        <ul>
-          <li>For the action <i>For each</i>, <i>Variable</i> is renamed to
-              <i>Local variable</i> to make it consistent with the naming of
-              the rest of LogixNG.</li>
-        </ul>
+    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
