@@ -85,12 +85,12 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>New problems with this release</h3>
 <ul>
-    <li>(Enter these)
+    <li>None as yet
 </ul>
 <!--
 If any of those affect you, please either
 wait for
-<a href="jmri5.3.1.shtml">JMRI 5.3.1</a>, due out shortly,
+<a href="jmri5.3.1.shtml">JMRI 5.5.1</a>, due out shortly,
 or (once there's a fix for the problem) pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">development build installer</a>
 from
@@ -192,17 +192,14 @@ This production version is made from test releases 5.3.1 through 5.3.8  The
 in those is
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2022-12-06..2023-06-20">available from our code repository</a>.
 
-
-<!-- ======== Merged Changes  ================================================== -->
-
     <h3>Hardware Support</h3>
 
         <h4>CBUS</h4>
             <ul>
-                <li>The <a href="https://www.jmri.org/help/en/package/jmri/jmrix/can/cbus/swing/hubpane/CbusHubPane.shtml"
-                >CBUS Hub Control</a> can be used to share the CBUS connection locally and onto a LAN.</li>
+                <li>The <a href="https://www.jmri.org/help/en/package/jmri/jmrix/can/cbus/swing/hubpane/CbusHubPane.shtml">
+                    CBUS Hub Control</a> can be used to share the CBUS connection locally and onto a LAN.</li>
                 <li>Changed SPROG DCC module IDs to match similar MERG modules,
-                to work around an issue with the FCU tool.</li>
+                    to work around an issue with the FCU tool.</li>
                 <li>Improved Node Manager configuratiuon of MERG CANSERVO8C / CANMIO-SVO / CANACC4</li>
                 <li>The default behavior for CBus Reporters has been changed to
                     <u>not</u> clear the report after a timeout. A new
@@ -320,8 +317,6 @@ in those is
                 <li>Fix an error preventing multiple configuration windows from working properly</li>
                 <li>Fix a timeout error in the hub when running on Windows</li>
                 <li>Improved help pages for several tools</li>
-                <li>Updated OpenLCB library (openlcb.jar) through its
-                    <a href="https://github.com/openlcb/OpenLCB_Java/pull/224">PR 224</a>.
                 <li>Update <a href="https://github.com/openlcb/OpenLCB_Java">OpenLCB_Java library</a> through
                     <a href="https://github.com/openlcb/OpenLCB_Java/pulls?q=is%3Apr">PR #228</a> which includes
                     <ul>
