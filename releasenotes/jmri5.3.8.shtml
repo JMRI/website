@@ -204,15 +204,15 @@ See <a href="#update">instructions above</a>.
 </div>
  -->
 
-<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.3.8/">CI project page</a>.
- -->
 
+<!--
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
 
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri5.3.7.shtml">Test Release 5.3.7</a>:</h2>
@@ -225,6 +225,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.3.8+is
 
         <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
             <ul>
+                <li>Fixed a bug that was sometimes preventing the consumer node name info
+                    from displaying in the Event Table. </li>
                 <li>Fix some minor bugs in DecoderPro's exporting of roster entries
                     to the CS-105 command station and to backup files.</li>
                 <li>Improved instructions for DecoderPro's import from and
