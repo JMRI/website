@@ -97,7 +97,9 @@ Install package 'java-11-openjdk-headless' to provide command 'java'? [N/y]
   <p><code>sudo apt install openjdk-11-jre</code>  Debian based</p>
   <p><code>sudo dnf install java-11-openjdk</code>  Red Hat based</p>
 
-<h2>For 32-bit or 64-bit computers</h2>
+<h2>Java Installers for Windows, macOS or Linux 32-bit or 64-bit computers</h2>
+This section describes to sources of Java 11 installers for 32-bit or 64-bit
+Windows, macOS and Linux machines.  These are our recommended solutions.
 <ul>
     <li>
         <a href="https://www.azul.com/downloads/?version=java-11-lts&amp;package=jre">Azul</a>
@@ -123,7 +125,10 @@ Install package 'java-11-openjdk-headless' to provide command 'java'? [N/y]
     </li>
 </ul>
 
-<h2>Additionally for 64-bit computers</h2>
+<h2>Additional Source of Installers for 64-bit computers</h2>
+If for some reason, the installers in the previous section are not
+suitable, there are several other sources for Java installers for 64-bit
+Windows, macOS and Linux computers:
 <ul>
     <li>
         <a href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&amp;field_operating_system_target_id=All&amp;field_architecture_target_id=All&amp;field_java_package_target_id=401">OpenLogic</a>
@@ -142,13 +147,15 @@ Install package 'java-11-openjdk-headless' to provide command 'java'? [N/y]
 
     <li>
         <a href="https://developer.ibm.com/languages/java/semeru-runtimes/downloads/">IBM</a>
-        - They provide JDKs under the "Semeru" name.</li>
+        - They provide JDKs under the "Semeru" name. Follow the installation instructions
+        <em>exactly</em>.</li>
 
 </ul>
 
 <h2 id="local">Local install option</h2>
 <span class="since">Since <a href="../releasenotes/jmri4.99.9.shtml">JMRI 4.99.9</a></span>
-<p>Linux and macOS users can also install Java inside JMRI itself, instead of installing it centrally on their computer.
+<p>Linux and macOS users can also install Java inside JMRI itself,
+instead of installing it centrally on their computer.
 This can be useful if you need different Java versions for other programs, or if for some reason
 you can't do the central Java install or removal.</p>
 <p>
