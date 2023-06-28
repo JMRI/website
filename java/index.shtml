@@ -98,8 +98,11 @@ Install package 'java-11-openjdk-headless' to provide command 'java'? [N/y]
   <p><code>sudo dnf install java-11-openjdk</code>  Red Hat based</p>
 
 <h2>Java Installers for Windows, macOS or Linux 32-bit or 64-bit computers</h2>
-This section describes to sources of Java 11 installers for 32-bit or 64-bit
-Windows, macOS and Linux machines.  These are our recommended solutions.
+This section describes two sources of Java 11 installers for 32-bit or 64-bit
+Windows and macOS machines.
+These are our recommended solutions.
+These can also be used for Linux if the above package-manager based solutions are not
+available for some reason.
 <ul>
     <li>
         <a href="https://www.azul.com/downloads/?version=java-11-lts&amp;package=jre">Azul</a>
