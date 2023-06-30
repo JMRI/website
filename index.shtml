@@ -122,19 +122,20 @@
         <!-- Accordions -->
         <div class="flex-container">
             <div class="flex-item-50">
-                <h4 onclick="collapse('download1')" class="button card-1">JMRI 5.2 Production Release</h4>
+                <h4 onclick="collapse('download1')" class="button card-1">JMRI 5.4 Production Release</h4>
                 <div id="download1" class="hidden">
-                    <p><a href="/download/index.shtml#prod-rel">Download 5.2</a></p>
-                    Released on December 17, 2022.
+                    <p><a href="/download/index.shtml#prod-rel">Download 5.4</a></p>
+                    Released on June 30, 2023.
                     <p>
-                    JMRI 5.2 is recommended for new users. It is the most
+                    JMRI 5.4 is recommended for new users. It is the most
                     recent stable production release.</p>
                     <p>For more information, see the
-                    <a href="releasenotes/jmri5.2.shtml">JMRI 5.2 Release Note</a>,
+                    <a href="releasenotes/jmri5.4.shtml">JMRI 5.4 Release Note</a>,
                     which also contains the download links.</p>
                 </div>
             </div>
 
+<!-- 
            <div class="flex-item-50">
                 <h4 onclick="collapse('download2')" class="button card-1">JMRI 5.3.8 Test Release</h4>
                 <div id="download2" class="hidden">
@@ -149,10 +150,11 @@
                     <a href="releasenotes/jmri5.3.8.shtml">JMRI 5.3.8 Release Note</a>,
                     which also contains the download links.
                     </p>
-                    <a href="#download">Release 5.2</a> is the current "production" release, recommended
+                    <a href="#download">Release 5.4</a> is the current "production" release, recommended
                     for first-time users.
                 </div>
             </div>
+ -->
 
             <div class="flex-item-50">
                 <h4 onclick="collapse('download3')" class="button card-1">JMRI 4.26 Production
