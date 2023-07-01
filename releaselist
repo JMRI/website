@@ -26,14 +26,14 @@ production:
    exe: "https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12+Rb6a9bb1.exe"
 test:
  versions:
+  5.5.1:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v5.5.1/JMRI.5.5.1+R196d5a62b6.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v5.5.1/JMRI.5.5.1+R196d5a62b6.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v5.5.1/JMRI.5.5.1+R196d5a62b6.exe"
   5.3.8:
    tgz: "https://github.com/JMRI/JMRI/releases/download/v5.3.8/JMRI.5.3.8+R3118d386b3.tgz"
    dmg: "https://github.com/JMRI/JMRI/releases/download/v5.3.8/JMRI.5.3.8+R3118d386b3.dmg"
    exe: "https://github.com/JMRI/JMRI/releases/download/v5.3.8/JMRI.5.3.8+R3118d386b3.exe"
-  5.3.7:
-   tgz: "https://github.com/JMRI/JMRI/releases/download/v5.3.7/JMRI.5.3.7+Rdeb1a36dce.tgz"
-   dmg: "https://github.com/JMRI/JMRI/releases/download/v5.3.7/JMRI.5.3.7+Rdeb1a36dce.dmg"
-   exe: "https://github.com/JMRI/JMRI/releases/download/v5.3.7/JMRI.5.3.7+Rdeb1a36dce.exe"
   4.27.1:
    tgz: "https://github.com/JMRI/JMRI/releases/download/v4.27.1/JMRI.4.27.1+Rb05d2d2208.tgz"
    dmg: "https://github.com/JMRI/JMRI/releases/download/v4.27.1/JMRI.4.27.1+Rb05d2d2208.dmg"
