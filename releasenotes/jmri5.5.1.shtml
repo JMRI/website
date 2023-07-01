@@ -121,15 +121,9 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
-
+    <li>
+        None yet
+    </li>
 </ul>
 
 
@@ -214,13 +208,44 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.5.1+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+        <h4>MQTT</h4>
+            <ul>
+                <li>Improve threading on MQTT Reporters to reduce latency.</li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>Add upload and download of the CS-105 consisting information
+                    to and from the DecoderPro roster entry's consisting bits.</li>
+                <li></li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>TCS</h4>
+            <ul>
+                <li>FW89 add V2 add highVersionID</li>
+            </ul>
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>UI improvements to the Turnout Table.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>IdTags now request the main IdTagManager instead of requesting a 
+                ProxyIdManager to get better initialization.</li>
+            <li>Added JMRI version number to the bottom of generated Javadoc.</li>
+            <li>Updated the Java Native Access (JNA) library to version 5.13.0.
+                Updated the Pure Java Comm library to a custom version that should
+                work better on Apple Silicon (M1, M2) Macs.<li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
