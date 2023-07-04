@@ -127,7 +127,7 @@ LogixNG: Shutdown
     several alternatives:
     <ol>
     <li>Use a physical keyboard and screen or VNC to click the JMRI "Quit" button in the usual way.
-    <li><span class="since">Since <a href="jmri5.5.1.shtml">JMRI 5.5.1</a></span>
+    <li><span class="since">Since <a href="jmri5.5.2.shtml">JMRI 5.5.2</a></span>
     Use the "kill &lt;pid&gt;" command with the proper process ID number.
     You can also use "kill -HUP &lt;pid&gt;" to cause JMRI to quit and restart.
     <li>Configure an input sensor to trigger running the "jython/Shutdown.py" script.
