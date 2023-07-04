@@ -123,6 +123,17 @@ LogixNG: Shutdown
         ! Else
       </code>
 
+    <p>If you just want to shutdown JMRI, without shutting down the Pi, there are
+    several alternatives:
+    <ol>
+    <li>Use a physical keyboard and screen or VNC to click the JMRI "Quit" button in the usual way.
+    <li><span class="since">Since <a href="jmri5.5.2.shtml">JMRI 5.5.2</a></span>
+    Use the "kill &lt;pid&gt;" command with the proper process ID number.
+    You can also use "kill -HUP &lt;pid&gt;" to cause JMRI to quit and restart.
+    <li>Configure an input sensor to trigger running the "jython/Shutdown.py" script.
+        You can also use the "jython/Restart.py" script to cause JMRI to quit and restart.
+    </ol>
+    
     <!--#include virtual="/Footer.shtml" -->
     </div><!-- closes #mainContent-->
   </div> <!-- closes #mBody, started in sidebar -->
