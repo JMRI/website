@@ -3,7 +3,7 @@
 # Script to create symbolic links for JMRI website
 #
 # See http://jmri.org/help/en/html/doc/Technical/WebSite.shtml#link
-# 
+#
 # First argument is path to a JMRI/JMRI repository to be used.
 # Second argument is path to a JMRI/website repository to be used
 #
@@ -20,6 +20,7 @@ ln -sf $2/Help.html .
 ln -sf $2/SiteCredit.shtml .
 ln -sf $2/Sidebar .
 ln -sf $2/Sidebar.shtml .
+ln -sf $2/SidebarApps.shtml .
 ln -sf $2/Style .
 ln -sf $2/Style.shtml .
 ln -sf $2/community .
@@ -35,6 +36,8 @@ ln -sf $2/include-list .
 ln -sf $2/index.shtml .
 ln -sf $2/info.txt .
 ln -sf $2/install .
+ln -sf $2/java .
+ln -sf $2/js .
 ln -sf $2/manual .
 ln -sf $2/nbproject .
 ln -sf $2/pdf .
