@@ -175,6 +175,12 @@ See <a href="#update">instructions above</a>.
         when an "exits" report for the same tag was seen elsewhere.  This was an
         error that has been fixed, but if you have scripts or LogixNG that depend on
         this behavior you might have to update them.
+    <li><span class="since">Since <a href="jmri5.5.3.shtml">JMRI 5.5.3</a></span>
+        <strong>LocoNet Server</strong> and <strong>LocoNet Client</strong> have been removed.
+        If you are using these, you need to change the connection to
+        <a href="https://www.jmri.org/help/en/html/hardware/loconet/LbServer.shtml">LocoNet over TCP</a> instead.
+    </li>
+
 
 </ul>
 
