@@ -178,10 +178,10 @@ See <a href="#update">instructions above</a>.
     <li><span class="since">Since <a href="jmri5.5.3.shtml">JMRI 5.5.3</a></span>
         <strong>LocoNet Server</strong> and <strong>LocoNet Client</strong> have been removed.
         If you are using these, you need to change the connection to
-        <a href="https://www.jmri.org/help/en/html/hardware/loconet/LbServer.shtml">LocoNet over TCP</a> instead.
-    </li>
-
-
+        <a href="https://www.jmri.org/help/en/html/hardware/loconet/LbServer.shtml">LocoNet over TCP</a> instead.</li>
+    <li><span class="since">Since <a href="jmri5.5.3.shtml">JMRI 5.5.3</a></span>
+        Scripts that output Logging statements with log4j should be updated to import sl4fj logging.
+        <br><a href="https://github.com/JMRI/JMRI/pull/12237/files">See here for some examples</a> on how to do this.</li>
 </ul>
 
 <a id="download" name="download"></a>
