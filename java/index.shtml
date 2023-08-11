@@ -22,8 +22,9 @@
 <p>We recommend using Java 11 with current JMRI versions.  Starting with JMRI 5.0, the minimum Java
 version is 11.</p>
 
-<p><em>JMRI needs a "Java Runtime Environment" (JRE),
-but will work fine with the larger "Java Development Kit" (JDK).</em></p>
+<p><em>JMRI needs a "Java Runtime Environment" (JRE) to run
+but will work fine with the larger "Java Development Kit" (JDK).</em>
+A JDK is only needed if you want to work on JMRI development, i.e. make changes and compile them.</p>
 
 <p>Before getting a new version of Java, it is useful to check what version is currently installed
 on your computer.  On Windows, for example, open a "command" window by typing "Command prompt" into the search bar
