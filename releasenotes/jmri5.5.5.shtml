@@ -180,8 +180,14 @@ See <a href="#update">instructions above</a>.
         If you are using these, you need to change the connection to
         <a href="https://www.jmri.org/help/en/html/hardware/loconet/LbServer.shtml">LocoNet over TCP</a> instead.</li>
     <li><span class="since">Since <a href="jmri5.5.3.shtml">JMRI 5.5.3</a></span>
-        Scripts that output Logging statements with log4j should be updated to import sl4fj logging.
-        <br><a href="https://github.com/JMRI/JMRI/pull/12237/files">See here for some examples</a> on how to do this.</li>
+        Scripts that output Logging statements with log4jv1.x ( org.apache.log4j ) imports will stop working 
+        from JMRI 5.5.4 and should be updated to use SLF4J logging.
+        <br>See <a href="https://github.com/JMRI/JMRI/pull/12237/files">here</a> for some examples on how to do this.</li>
+    <li><span class="since">Since <a href="jmri5.5.4.shtml">JMRI 5.5.4</a></span>
+        Custom default.lcf Logging Control Files will cease to take effect from JMRI 5.5.4
+        <br>To create a custom default_lcf.xml in the new Logging Configuration format, see 
+        <a href="https://www.jmri.org/help/en/html/apps/Debug.shtml">JMRI Debugging and Logging</a>
+    </li>
 </ul>
 
 <a id="download" name="download"></a>
