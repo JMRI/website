@@ -108,17 +108,20 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>New problems with this release</h3>
 <ul>
-    <li>None yet</li>
+    <li>MQTT Connection - Version 5.5.5 used the incorrect default MQTT topics for Throttle Direction and Function.
+    They had the same topic instead of individual ones.  
+    The documentation was correct but the code wasn't.</li>
 </ul>
-<!--
+
 If any of those affect you, please either
 wait for
-<a href="jmri5.5.6.shtml">JMRI 5.5.6/a>, due out shortly after this one,
-or (once there's a fix for the problem) pick up a
+<a href="jmri5.5.6.shtml">JMRI 5.5.6/a>, due out early in November 2023.
+We're also working on an intermediate fix, and a link to that will be 
+provided once it's available.
+<!-- or pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
-<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
- -->
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p> -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
