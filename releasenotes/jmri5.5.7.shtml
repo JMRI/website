@@ -4,10 +4,10 @@
 <head>
  <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
-    JMRI: Release Notes for 5.5.6
+    JMRI: Release Notes for 5.5.7
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 5.5.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 5.5.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
  <!--#include virtual="/Style.shtml" -->
 </head>
@@ -19,12 +19,12 @@
     <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 5.5.6 release
+      Release Notes for JMRI 5.5.7 release
       </h1>
 
     <p>Date: MM DDD, 2023</p>
     <p>From: release pumpkin</p>
-    <p>Subject: Test Release 5.5.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 5.5.7 of JMRI/DecoderPro is available for download.</p>
 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
 
@@ -111,7 +111,7 @@ that can arise from skipping these versions.
 <!--
 If any of those affect you, please either
 wait for
-<a href="jmri5.5.7.shtml">JMRI 5.5.7/a>, due out shortly after this one,
+<a href="jmri5.5.8.shtml">JMRI 5.5.8/a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
@@ -219,13 +219,13 @@ See <a href="#update">instructions above</a>.
 </ul>
 </div>
 These files are located in the 
-<a href="https://github.com/JMRI/JMRI/releases/tag/v5.5.5">JMRI 5.5.5  GitHub release</a>.
+<a href="https://github.com/JMRI/JMRI/releases/tag/v5.5.7">JMRI 5.5.7  GitHub release</a>.
  -->
 
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.5.6/">CI project page</a>.
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.5.7/">CI project page</a>.
  -->
 
 During development leading to the actual release, you can find test download files on the
@@ -233,9 +233,9 @@ During development leading to the actual release, you can find test download fil
 These are development files, and might not be working at any particular time.</p>
 
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri5.5.5.shtml">Test Release 5.5.5</a>:</h2>
+<h2>Changes since <a href="jmri5.5.6.shtml">Test Release 5.5.6</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.5.6+is%3Amerged">list of included changes</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.5.7+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <!-- While this release is in development, the     -->
