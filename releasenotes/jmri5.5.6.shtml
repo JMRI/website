@@ -22,11 +22,13 @@
       Release Notes for JMRI 5.5.6 release
       </h1>
 
-    <p>Date: MM DDD, 2023</p>
-    <p>From: release pumpkin</p>
+    <p>Date: November 10, 2023</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 5.5.6 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -43,16 +45,16 @@ We expect this series to end in the next JMRI 5.6 production release in December
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
-<!--
 <P>We are getting close to the next production release, so we would particularly
 appreciate your testing of this release to make sure it works for you. That way,
 if you find new problems, we can try to fix them before the production release.</P>
- -->
 
+<!-- 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.
 We would appreciate your feedback on it.</p>
+ -->
 
 <p><b>
 JMRI is now only available under the
@@ -196,25 +198,23 @@ See <a href="#update">instructions above</a>.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!--
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.dmg">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.dmg</a><br/>
-  sha256: 284c20cbd50b40317a558129cca9ac893fe1938ceae8b2de67790fc0ddcf27f5 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.5.6/JMRI.5.5.6+Re5414c68ff.dmg">https://github.com/JMRI/JMRI/releases/download/v5.5.6/JMRI.5.5.6+Re5414c68ff.dmg</a><br/>
+  sha256: fbfbab9a3685971a3b576c3051af0ce1e34ab4fdd034974acebd8a406f90dac2 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.exe">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.exe</a><br/>
-   sha256: 4111f6822df4a3b99f916fcb9b688c66a1c121fe011e4ab7c041e6b1359ca7c1</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.5.6/JMRI.5.5.6+Re5414c68ff.exe">https://github.com/JMRI/JMRI/releases/download/v5.5.6/JMRI.5.5.6+Re5414c68ff.exe</a><br/>
+   sha256: 7768b1e0a4eab6aab42195bae9e1e3afa70b45dd47f4fb41b948614a4574c81e</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.tgz">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.tgz</a><br/>
-   sha256: 3ea4efa27a5ef984737c4e77288de2bf63e0d45cee588150227b9059db56766f</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.5.6/JMRI.5.5.6+Re5414c68ff.tgz">https://github.com/JMRI/JMRI/releases/download/v5.5.6/JMRI.5.5.6+Re5414c68ff.tgz</a><br/>
+   sha256: e1d59e34a7feaae0da09aef838422cd067c085eea673905a38078adb09cf3db6</li>
 </ul>
 </div>
 These files are located in the 
-<a href="https://github.com/JMRI/JMRI/releases/tag/v5.5.5">JMRI 5.5.5  GitHub release</a>.
- -->
+<a href="https://github.com/JMRI/JMRI/releases/tag/v5.5.5">JMRI 5.5.6  GitHub release</a>.
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -222,16 +222,17 @@ on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.5.6/">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
 
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri5.5.5.shtml">Test Release 5.5.5</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.5.6+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
-
 
     <h3>Hardware Support</h3>
 	    <h4><a href="http://bidib.org/index_e.html">BiDiB</a></h4>
