@@ -27,4 +27,4 @@ window.addEventListener('click', ({target}) => {
             open_search(magni); // will close search
         }
     }
-});
+}); 
