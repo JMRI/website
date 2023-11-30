@@ -122,6 +122,15 @@ before installing this release.
         <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
         <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
     </li>
+    <li>This release, and all previous ones, have an incompatibility between
+        MacOS 13.6 or later and the SPROG support.  The fix for this will be
+        in 
+        <a href="jmri5.7.1.shtml">JMRI 5.7.1</a>. 
+        when it's available.
+        Note that this issue only impacts the 
+        combination of SPROG and certain MacOS versions.  If you're not using a Mac or 
+        not using an SPROG, this will not effect you.
+    </li>
     <li><span class="since">Since <a href="jmri5.3.2.shtml">JMRI 5.3.2</a></span>
         Some images in the <i>resources/icons</i> folder have been renamed.
         Spaces have been changed to underscore. It's images in the
