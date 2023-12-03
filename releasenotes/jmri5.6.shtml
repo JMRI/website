@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+ <title>
+    JMRI: Release Notes for 5.6
+ </title>
+    <meta content="Bob Jacobsen" name="author">
+    <meta name="keywords" content="java model railroad JMRI 5.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+
+ <!--#include virtual="/Style.shtml" -->
+</head>
+
+<body>
+<!--#include virtual="/Header.shtml" -->
+
+<div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
+    <div id="mainContent">
+      <h1>
+      Release Notes for JMRI 5.6 release
+      </h1>
+
+    <p>Date: MMM DD, YYYY</p>
+    <p>From: release pumpkin</p>
+    <p>Subject: Production Release 5.4 of JMRI/DecoderPro is available for download.</p>
+
+<p><b>This is a draft release note only; the download links do not yet work</b></p>
+
+<p>We are very pleased to announce that the 5.5 series of JMRI test releases has resulted in a
+version that's good enough to be recommended for general use, including by new users.
+We're therefore making that version, "Production Release 5.6" available for download today.</p>
+
+<a id="note" name="note"></a>
+<h2>Notes:</h2>
+
+<p><b>
+JMRI is now only available under the
+<a href="/COPYING">GNU General Public License</a>. For more information, please
+see our
+<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<br>
+<p class="noted" align=center><b>This release requires Java 11 to work.</b><br/>
+(See <a href="http://jmri.org/java">our page on downloading and installing Java 11</a>)<br></p><br>
+
+<a id="update" name="update"></a>
+<h3>Update From Older JMRI Versions</h3>
+
+If you are currently using a version older than JMRI 5.0, please follow these instructions carefully:
+<ol>
+<li>Is your current version older than <a href="jmri4.12.shtml">JMRI 4.12</a>?
+    If so, then update to <a href="jmri4.12.shtml">JMRI 4.12</a> first, and ensure everything works correctly: check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Store your configuration and panel files under a new name and use those from now on.
+    Then continue with step 2.
+    <p>
+    If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+    then it's <u>very important</u>
+    that you update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
+    carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
+    before updating to any later release.
+    </li>
+
+<li>Is your current version older than <a href="jmri4.20.shtml">JMRI 4.20</a>?
+    Then update to <a href="jmri4.20.shtml">JMRI 4.20</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Save your preferences again.
+    Store your configuration and panel files under a new name, use those from now on, and go on to step 3.</li>
+
+<li>Is your current version older than <a href="jmri4.24.shtml">JMRI 4.24</a>?
+    Then update to <a href="jmri4.24.shtml">JMRI 4.24</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Save your preferences again.
+    Store your configuration and panel files under a new name and use those from now on.</li>
+
+<li>Is your current version older than <a href="jmri5.0.shtml">JMRI 5.0</a>?
+    Then update to <a href="jmri5.0.shtml">JMRI 5.0</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Save your preferences again.
+    Store your configuration and panel files under a new name and use those from now on.</li>
+
+<li>You can then install this release.
+
+</ol>
+
+Following this multi-step order of updating via stable major releases safeguards you against possible migration issues
+that can arise from skipping these versions.
+
+<a id="problems" name="problems"></a>
+<h3>New problems with this release</h3>
+<ul>
+    <li>None as yet
+</ul>
+<!--
+If any of those affect you, please either
+wait for
+<a href="jmri5.7.1.shtml">JMRI 5.7.1</a>, due out shortly,
+or (once there's a fix for the problem) pick up a
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">development build installer</a>
+from
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
+ -->
+
+<a id="warnings" name="warnings"></a>
+<h3>New warnings for this production release:</h3>
+
+See the <a href="jmri5.2.shtml#warnings">JMRI 5.2 release note</a> for more warnings predating the 5.3 development series,
+including pointers to various migration issues.
+These may be relevant to you if you're updating from an earlier version;
+we strongly recommend you update to <a href="jmri5.0.shtml">JMRI 5.0</a>
+before installing this release.
+
+<ul>
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+        This release, and all subsequent ones, require the use of
+        Java 11 or later.  Java 8 is explicitly not supported.
+        There's more information on this migration on the
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
+        <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
+    </li>
+    <li>This release, and all previous ones, have an incompatibility between
+        MacOS 13.6 or later and the SPROG support.  The fix for this will be
+        in 
+        <a href="jmri5.7.1.shtml">JMRI 5.7.1</a>. 
+        when it's available.
+        Note that this issue only impacts the 
+        combination of SPROG and certain MacOS versions.  If you're not using a Mac or 
+        not using an SPROG, this will not effect you.
+    </li>
+    <li><span class="since">Since <a href="jmri5.3.2.shtml">JMRI 5.3.2</a></span>
+        Some images in the <i>resources/icons</i> folder have been renamed.
+        Spaces have been changed to underscore. It's images in the
+        <i>resources/icons/ItalianSignals/ACEI</i>,
+        <i>resources/icons/ItalianSignals/Prototypical</i>,
+        <i>resources/icons/smallschematics/aspects/NW-1981</i>,
+        <i>resources/icons/smallschematics/aspects/NYC-1956</i>,
+        <i>xml/signals/FS-1987</i>, <i>xml/signals/NW-1981</i>,
+        <i>xml/signals/NYC-1956</i> and <i>resources/icons/SNCF/Small</i>
+        folders that have been renamed. If you are using these images directly, you will need to update the reference.
+    </li>
+    <li><span class="since">Since <a href="jmri5.1.7.shtml">JMRI 5.1.7</a></span>
+        The way defaults for some LocoNet connections are handled has changed.
+        Existing LocoNet connections might give a "The Defaults preferences are invalid"
+        warning when saving preferences.  In that case, click "yes" and then go set
+        all the default radio buttons on the "Defaults" pane to the LocoNet connection.  (You can also
+        click "no", but you'll get the message next time you store too)
+    </li>
+    <li><span class="since">Since <a href="jmri5.3.3.shtml">JMRI 5.3.3</a></span>
+        The code for Loconet programming operations was significantly changed.
+        If you encounter any (new) troubles programming via Loconet, please get in touch on the
+        <a href="https://groups.io/g/jmriusers">JMRIusers list</a>.
+    </li>
+    <li><span class="since">Since <a href="jmri5.3.7.shtml">JMRI 5.3.7</a></span>
+        The definition of "Last Seen" for Id Tags has been
+        clarified to mean "Location where the tag was last seen to be <u>present</u>".
+        Previously, a report that a tag was <u>absent</u> could be remembered as the
+        last seen report.  The relevant code changes are specific to LocoNet
+        Reporters. This might affect your scripts and LogixNG if you were assuming
+        the prior behavior.
+        </li>
+    <li><span class="since">Since <a href="jmri5.3.7.shtml">JMRI 5.3.7</a></span>
+        Some Reporters, particularly LocoNet, would improperly clear an "enter" report
+        when an "exits" report for the same tag was seen elsewhere.  This was an
+        error that has been fixed, but if you have scripts or LogixNG that depend on
+        this behavior you might have to update them.
+</ul>
+
+<a id="download" name="download"></a>
+<h2>Download links:</h2>
+
+<div class="wide">
+<!-- 
+<ul>
+<li>OS X / macOS: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v5.4/JMRI.5.4+R9005ecb4ac.dmg">https://github.com/JMRI/JMRI/releases/download/v5.4/JMRI.5.4+R9005ecb4ac.dmg</a><br/>
+  sha256: 571569347db08e7476c21c09273b678143278f2fb44bb83a862ad41225ae0375 </li>
+
+<li>Windows: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v5.4/JMRI.5.4+R9005ecb4ac.exe">https://github.com/JMRI/JMRI/releases/download/v5.4/JMRI.5.4+R9005ecb4ac.exe</a><br/>
+   sha256: b615b09cd73d160a3de5ff48c500e77d6ae281b49c9d9739a860e7509516adea</li>
+
+<li>Linux: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v5.4/JMRI.5.4+R9005ecb4ac.tgz">https://github.com/JMRI/JMRI/releases/download/v5.4/JMRI.5.4+R9005ecb4ac.tgz</a><br/>
+   sha256: a2f45380f8abce10a74bec194c936c9cb3a00b4221d5c9c98f065c95c06df49d</li>
+</ul>
+</div>
+These files are located in the 
+<a href="https://github.com/JMRI/JMRI/releases/tag/v5.6">JMRI 5.6  GitHub release</a>.
+ -->
+
+<!--
+Preliminary build files (not the final released files) can be found
+on the
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.4">CI project page</a>.
+ -->
+
+During development leading to the actual release, you can find test download files on the
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
+These are development files, and might not be working at any particular time.</p>
+
+<a id="changes" name="changes"></a>
+<h2>Changes since <a href="jmri5.4.shtml">production release 5.4</a>:</h2>
+
+<p>
+This production version is made from test releases 5.5.1 through 5.5.8  The
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-06-25..2023-12-08">full list of changes</a>
+in those is
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-06-25..2023-12-08">available from our code repository</a>.
+
+
+<!-- From 5.5.1 -->
+
+<!-- From 5.5.2 -->
+
+<!-- From 5.5.3 -->
+
+<!-- From 5.5.4 -->
+
+<!-- From 5.5.5 -->
+
+<!-- From 5.5.6 -->
+
+<!-- From 5.5.7 -->
+
+<!-- From 5.5.8 -->
+
+
+
+   <!--#include virtual="/Footer.shtml" -->
+  </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+  <script src="/js/main.js"></script>
+</body>
+</html>
