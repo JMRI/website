@@ -106,20 +106,13 @@ from
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this production release:</h3>
 
-See the <a href="jmri5.2.shtml#warnings">JMRI 5.2 release note</a> for more warnings predating the 5.3 development series,
+See the <a href="jmri5.4.shtml#warnings">JMRI 5.4 release note</a> for more warnings predating the 5.5 development series,
 including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version;
 we strongly recommend you update to <a href="jmri5.0.shtml">JMRI 5.0</a>
-before installing this release.
+before installing this release, see above.
 
 <ul>
-    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
-        This release, and all subsequent ones, require the use of
-        Java 11 or later.  Java 8 is explicitly not supported.
-        There's more information on this migration on the
-        <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
-        <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
-    </li>
     <li>This release, and all previous ones, have an incompatibility between
         MacOS 13.6 or later and the SPROG support.  The fix for this will be
         in 
@@ -128,29 +121,6 @@ before installing this release.
         Note that this issue only impacts the 
         combination of SPROG and certain MacOS versions.  If you're not using a Mac or 
         not using an SPROG, this will not effect you.
-    </li>
-    <li><span class="since">Since <a href="jmri5.3.2.shtml">JMRI 5.3.2</a></span>
-        Some images in the <i>resources/icons</i> folder have been renamed.
-        Spaces have been changed to underscore. It's images in the
-        <i>resources/icons/ItalianSignals/ACEI</i>,
-        <i>resources/icons/ItalianSignals/Prototypical</i>,
-        <i>resources/icons/smallschematics/aspects/NW-1981</i>,
-        <i>resources/icons/smallschematics/aspects/NYC-1956</i>,
-        <i>xml/signals/FS-1987</i>, <i>xml/signals/NW-1981</i>,
-        <i>xml/signals/NYC-1956</i> and <i>resources/icons/SNCF/Small</i>
-        folders that have been renamed. If you are using these images directly, you will need to update the reference.
-    </li>
-    <li><span class="since">Since <a href="jmri5.1.7.shtml">JMRI 5.1.7</a></span>
-        The way defaults for some LocoNet connections are handled has changed.
-        Existing LocoNet connections might give a "The Defaults preferences are invalid"
-        warning when saving preferences.  In that case, click "yes" and then go set
-        all the default radio buttons on the "Defaults" pane to the LocoNet connection.  (You can also
-        click "no", but you'll get the message next time you store too)
-    </li>
-    <li><span class="since">Since <a href="jmri5.3.3.shtml">JMRI 5.3.3</a></span>
-        The code for Loconet programming operations was significantly changed.
-        If you encounter any (new) troubles programming via Loconet, please get in touch on the
-        <a href="https://groups.io/g/jmriusers">JMRIusers list</a>.
     </li>
     <li><span class="since">Since <a href="jmri5.3.7.shtml">JMRI 5.3.7</a></span>
         The definition of "Last Seen" for Id Tags has been
@@ -165,6 +135,27 @@ before installing this release.
         when an "exits" report for the same tag was seen elsewhere.  This was an
         error that has been fixed, but if you have scripts or LogixNG that depend on
         this behavior you might have to update them.
+    <li><span class="since">Since <a href="jmri5.5.3.shtml">JMRI 5.5.3</a></span>
+        <strong>LocoNet Server</strong> and <strong>LocoNet Client</strong> have been removed.
+        If you are using these, you need to change the connection to
+        <a href="https://www.jmri.org/help/en/html/hardware/loconet/LbServer.shtml">LocoNet over TCP</a> instead.</li>
+    <li><span class="since">Since <a href="jmri5.5.3.shtml">JMRI 5.5.3</a></span>
+        Scripts that output Logging statements with log4jv1.x ( org.apache.log4j ) imports need to be updated to use SLF4J logging.
+        <br>See <a href="https://github.com/JMRI/JMRI/pull/12237/files">here</a> for some examples on how to do this.</li>
+    <li><span class="since">Since <a href="jmri5.5.4.shtml">JMRI 5.5.4</a></span>
+        Custom default.lcf Logging Control Files no longer work with this version.
+        <br>To create a custom default_lcf.xml in the new Logging Configuration format, see 
+        <a href="https://www.jmri.org/help/en/html/apps/Debug.shtml">JMRI Debugging and Logging</a>
+    </li>
+    <li><span class="since">Since <a href="jmri5.5.5.shtml">JMRI 5.5.5</a></span>
+        The format of XML files with table contents and panels have been changed. It's therefore not
+        possible to load an xml file with tables and panels that has been created with JMRI 5.5.5 or
+        later into a JMRI version before JMRI 5.5.5.
+    </li>
+    <li><span class="since">Since <a href="jmri5.5.5.shtml">JMRI 5.5.5</a></span>
+        MQTT Connection - Throttle loco address and function placeholders in MQTT topics have changed from
+        $address and $function to {0} and {1} for consistency with other objects.
+    </li>
 </ul>
 
 <a id="download" name="download"></a>
