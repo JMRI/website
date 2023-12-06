@@ -210,20 +210,616 @@ in those is
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-06-25..2023-12-08">available from our code repository</a>.
 
 
-<!-- From 5.5.1 -->
+<!-- From 5.5.1 ===================================================================================== -->
 
-<!-- From 5.5.2 -->
+    <h3>Hardware Support</h3>
+	    <h4><a href="http://bidib.org/index_e.html">BiDiB</a></h4>
+            <ul>
+                <li>Eckart Meyer has provided a first implementation
+                    for the
+                    <a href="http://bidib.org/index_e.html">BiDiB</a>
+                    system connection.
+                    </li>
+            </ul>
 
-<!-- From 5.5.3 -->
+        <h4>C/MRI</h4>
+            <ul>
+                <li>Provided an extra copy of the output data when preparing
+                    C/MRI output data for a "T" ("Transmit") message type.  This
+                    prevents a "data buffer overrun" in a pre-configured buffer
+                    when the output data changes when the process assemble the data.
+                    (The previous implementation could run out of available bytes
+                    in the buffer, and the data would not be sent.)</li>
+                <li>Fix the Update button on the sensor table 
+                    for C/MRI sensors.</li>
+            </ul>
 
-<!-- From 5.5.4 -->
 
-<!-- From 5.5.5 -->
+        <h4>DCC++ and DCC-EX</h4>
+            <ul>
+                <li>Call "Roster Export to DCC-EX" from DCC++ menu</li>
+                <li>Traffic Monitor - Added option to suppress the parsed text</li>
+                <li>New Virtual LCD window</li>
+            </ul>
 
-<!-- From 5.5.6 -->
+        <h4>LocoNet</h4>
+            <ul>
+                <li>Shutdown LocoNetOverTcp connection cleanly when program ends</li>
+                <li><strong>LocoNet Server</strong> and <strong>LocoNet Client</strong> have been removed.
+                    If you are using these, you need to change the connection to
+                    <a href="https://www.jmri.org/help/en/html/hardware/loconet/LbServer.shtml">LocoNet over TCP</a> instead.
+                <li>Added a DecoderPro definition for the DS78V. This required
+                    code changes, so this definition will not work with earlier
+                    versions of JMRI.</li>
+                <li>The jython/loconet/LnEditEvolutionRoutesAndOpSw.py script has been updated
+                    to version 2.0.
+                    This script allows you to configure the OpSw and routes in the new Digitrax
+                    Series 7 boards.
+                </li>
+                <li>The jython/loconet/PGM_DS74_GEN.py can be used to program DS74 boards
+                    from a configuration held in a text file.</li>
+                <li>Fix NPE, and decode Extended Accessory Signal Aspect IMM commands</li>
+                <li>Fix LnSendTool.py to correctly send signal aspects up to 255 NMRA 2.4.3</li>
+                <li>Added LocoNet Monitor support for PM74.</li>
+                <li>Improved the internal queuing mechanism for transmitted messages.
+                    This will prevent messages being delayed occasionally.
+                </li>
+            </ul>
 
-<!-- From 5.5.7 -->
+        <h4>MQTT</h4>
+            <ul>
+                <li>Improve threading on MQTT Reporters to reduce latency.</li>
+                <li>Added support for Track Power control</li>
+                <li>Added support for throttle control  - speed, direction, and functions</li>
+                <li>Added support for Command Station consists</li>
+                <li>Fixed bug that stopped retained MQTT messages from being received on start up.</li>
+                <li>Clear Last Will and Testament on startup</li>
+                <li>Fixed issue with invalid throttle speed message causing MQTT to disconnect</li>
+                <li>Improved robustness of MQTT Event Listener exception handling</li>
+                <li>Fixed issue with MQTT LWT messages</li>
+                <li>Changed throttle loco address placeholder in MQTT topics to {0} for consistency with other objects</li>
+                <li>Changed throttle function placeholder in MQTT topics to {1} for consistency with other objects</li>
+                <li>Fixed an issue in introduced in 5.5.5 where the incorrect default topics were used for Direction and Function.  The documenation was correct but the code wasn't.</li>
+                <li>JMRI will now use the railroad name from the preferences
+                    when creating the client ID.  This will make it easier to
+                    identify the JMRI connection in the MQTT broker logs.</li>
+            </ul>
 
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>Add upload and download of the CS-105 consisting information
+                    to and from the DecoderPro roster entry's consisting bits.</li>
+                <li>Added two new jython/LCC/CSVToNodeBackup.py and 
+                    jython/LCC/NodeBackupToCSV.py scripts for converting
+                    node backup files back and forth to CSV files.</li>
+                <li>OpenLCB library updated through
+                    <a href="https://github.com/openlcb/OpenLCB_Java/pulls">PR 231</a>.
+                    </li>
+                <li>Added a contextual menu (right click, ctrl click) to tabs in the CDI display that
+                    contains "Copy" and "Paste" options.
+                    Copy and paste works both within one window and across windows.
+                    You can only paste into a tab of the same type from which you copied.
+                    The data stored in the clipboard is in the format of the usual backup files.
+                    </li>
+                <li>Added a Send PIP Inquiry button to the Send tool</li>
+                <li>The presentation of the "Send Frame" tool was improved.</li>
+                <li>Fixed some subtle bugs when pasting CDI panes.</li>
+                <li>Improved how 
+                    <a href="https://nbviewer.org/github/openlcb/documents/blob/master/drafts/ConfigurationDescriptionInformationTN.pdf">tab numbering is done</a>
+                    when creating a CDI display.</li>
+                <li>Added the invert option to OpenLCB/LCC Turnouts.</li>
+                <li>Added the ability to send Identified message as Valid/Invalid/Unknown
+                    to the Send Message tool. </li>
+                <li>Fixed a bug that could cause an exception when closing a configuration window.</li>
+                <li>Better aligned the Event IDs displayed in the monitor window.</li>
+                <li>Updates to most recent OpenLCB Java library, which includes
+                    <ul>
+                        <li>Better status logging of save and restore operations
+                        <li>Allows user to change the default backup filename using
+                            a script like
+                            <a href="https://jmri.org/jython/LCC/ChangeDefaultBackupFileName.py">jython/LCC/ChangeDefaultBackupFileName.py</a>
+                        <li>Fixes a problem that could cause the configuration dialog
+                            to not open for certain nodes, including the DCC-LCC Gateway.
+                        <li>Fixes the display of the "Simple Protocol" availability bit
+                    </ul>
+                </li>
+                <li>Added Window and Help menus to the Configure Node window.
+                <li>The Configure Nodes window will now remember your selected sort order
+                    from one run to the next. </li>
+                <li>Added Window and Help menus to the Configure Node window.</li>
+                <li>Added support for multiple OpenLCB connections in Signal Masts add/edit dialog.</li>
+                <li>Added GUI Icons for OpenLCB signal masts in the add/edit dialog.</li>
+                <li>Fixed a bug where doing Quit while a CDI window is open with changes
+                    didn't properly handle user response to the Cancel/Quit dialog box.</li>
+                <li>Update openlcb.jar to Maven Central version 0.7.33</li>
+                <li>Improve the layout of the firmware download page.</li>
+                <li>
+                    Added SPROG DCC Ltd PI-LCC Raspberry Pi CAN adapter
+                </li>
+                <li>
+                    Added SPROG DCC Ltd USB-LCC CAN adapter
+                </li>
+                <li>Fix a problem that would sometimes leave the node list improperly sorted</li>
+                <li>Reduced the start up delay when opening the OpenLCB hub.</li>
+                <li>Changed the formatting of the CSV file written by the Event Table so that
+                    multiple paths are broken out into multiple columns</li>
+            </ul>
+
+        <h4>Raspberry Pi GPIO pins</h4>
+            <ul>
+                <li>Added support for Turnouts in the RPi simulator.</li>
+            </ul>
+
+        <h4>Roco z21/Z21</h4>
+            <ul>
+                <li>JMRI will now leave the layout power unchanged when it terminates.
+                    Previously, it would turn the power on if it was off.</li>
+                <li>Removed a spurious error message from the Z21 Simulator connection.</li>
+            </ul>
+
+        <h4>RFID</h4>
+            <ul>
+                <li>New Getting Started document</li>
+                <li>Script to update Car/Locomotive Tables when new/changed RFID tag seen</li>
+            </ul>
+
+        <h4>SPROG</h4>
+            <ul>
+                <li>
+                    Track power ON at startup option would turn on track power but not send packets, 
+                    requiring track power to be cycled. Fixed.
+                </li>
+                <li>
+                    Added PI-LCC Raspberry Pi CAN adapter for OpenLCB
+                </li>
+                <li>
+                    Added USB-LCC CAN adapter for OpenLCB
+                </li>
+            </ul>
+
+        <h4>TAMS</h4>
+            <ul>
+                <li>New decoder definition for the LD-G-9 decoder.</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>Digitrax</h4>
+            <ul>
+                <li>Updated the Series 7 SFX decoder definition.</li>
+            </ul>
+
+        <h4>Doehler &amp; Haas</h4>
+            <ul>
+                <li>added PD06A, PD18A, PD18MU and PD21A and 2nd generation-decoder of DH-series</li>
+                <li>disable unimplemented CV by PD-series</li>
+                <li>new definition-files for FW 1.13 for SD*-, FW 1.15 for SH*-, FW 3.13 for DH*-decoder</li>
+            </ul>
+
+        <h4>ESU</h4>
+            <ul>
+                <li>The LokPilot Basic 1.0 decoder definition is now product-ID specific.</li>
+                <li>Added "LokSound 5 micro DCC Direct Atlas Legacy".</li>
+                <li>Added support for "Tone Control" for LokSound 5 (requires firmware 5.9.159 or higher).</li>
+            </ul>
+
+        <h4>LEB</h4>
+            <ul>
+                <li>Added the
+                    <a href="http://lebmodelisme.com">LEB signal decoders</a></li>
+            </ul>
+
+        <h4>Piko</h4>
+            <ul>
+                <li>Add CVs for Extended Function Mapping Shift Bank 1 & 2</li>
+                <li>Add Decoders for Piko BR 93 TT XP 5.1 Sound, Piko BR 55 TT XP 5.1 Sound, Piko Smart Decoder XP 5.1 Sound Blank 
+                <li>Support of Decoder XP5.1 FW 1.1 to FW 1.9 and Update Decoder Definitions, Changing pane layout</li>
+            </ul>
+
+        <h4>Public Domain and DIY decoders</h4>
+            <ul>
+                <li>Updated to support FREDi v2.2</li>
+                <li>FREDi - Cleanup; Removed obsolete (leftover) settings from one of the sub-files</li>
+            </ul>
+
+        <h4>QSI</h4>
+            <ul>
+                <li>Added function labels for Ver 6 Steam and Diesel definitions</li>
+            </ul>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>TSU2/BLU/ECO ID update with some model additions</li>
+                <li>Added a definition for the Blunami PNP8.</li>
+            </ul>
+
+        <h4>TCS</h4>
+            <ul>
+                <li>FW89 add V2 add highVersionID</li>
+            </ul>
+
+        <h4>Technologistic (train-O-matic)</h4>
+            <ul>
+                <li>Support for the latest v6 firmware version of the Lokommander II decoders.</li>
+                <li>productID support for all train-O-matic decoders, allows for automatic decoder detection.</li>
+                <li>Support for the FD Micro function decoder family.</li>
+            </ul>
+
+        <h4>Uhlenbrock</h4>
+            <ul>
+                <li>Some translations to German and pane design changes</li>
+            </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>Added ability to identify Dietz decoder models with CV128</li>
+            <li>Moved an excessive warning message to being a debug message</li>
+            <li>Now looks for .txt extension on files being
+                imported from the LokProgrammer.</li>
+            <li>DecoderPro can now identify products in the HN7000 decoder family.</li>
+            <li>Fixed a bug that prevented output labels from
+                properly showing up in some decoder definitions.</li>
+        </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>In auto trains, after stopping, or going to manual, resume correctly even if in a section with no signal.</li>
+             <li>Check each section against reserved sections for conflicting blocks.</li>
+             <li>Do not turn off block alternate colour when it has already be reallocated.</li>
+             <li>Add TransitAction TERMINATE</li>
+             <li>Add TransitAction LOADTRAININFO</li>
+             <li>Process Delays for Active/InActive sensor actions</li>
+             <li>Process delays for OnTrainStop</li>
+             <li>Remove delays for Exit Section as they cannot be processed</li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+            <li>A number of issues with the Shape tool have been resolved including Java
+                exceptions and the possibility of truncated shape lines.</li>
+            <li>The Layout Editor help page has been updated with details for using Shapes.</li>
+            <li>Previously, Reporter icons would display
+                "&lt;no report&gt;" when the report information was null, i.e. there was no 
+                information available from the Reporter.  This has been changed
+                to a hyphen ("-") when there's no information available to reduce screen
+                clutter on complex panels.
+	        <li>Labels and icons on a panel can now have one or more classes. This is useful if the label/icon is controlled by LogixNG.</li>
+	        <li>add option(s) for restoring block values, issue #12459</li>
+	        <li>The LogixNG Icon has been added to the toolbars.  The LogixNG Icon can run inline
+	            LogixNGs by clicking on the icon or text label when converted to text.</li>
+	        <li>The Audio Icon has been added to the toolbars.  The Audio Icon can play a sound
+                on a web panel, for example a Tablet.</li>
+        </ul>
+        <h4>NX - Entry/Exit Tool</h4>
+            <ul>
+                <li>Fix Both Way route selection.</li>
+                <li>Validate the sensor selections for the <strong>Add Pair</strong> action.</li>
+                <li>Check for LogixNG references before deleting an Entry/Exit pair.</li>
+            </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The expression <strong>File as flag</strong> has been added. It returns true if
+              a particular file exists.</li>
+          <li>The <strong>Icon/Label by class on panel</strong> action is added.
+              It allows LogixNG to control all icons/labels of a class.</li>
+          <li>The <strong>Audio</strong> expression has been added. It lets
+              LogixNG listen on an Audio and take appropriate action.</li>
+          <li>A new <strong>LogixNG</strong> icon has been added to Panel Editor.
+          When the icon is clicked, it will execute the inline LogixNG of that icon.
+          If the inline LogixNG has several ConditionalNGs, the ConditionalNGs will
+          be executed in the order they got created.</li>
+          <li>A new option is added to the <strong>ConditionalNG</strong> table when
+          editing a LogixNG. By default, all the ConditionalNGs are executed when the
+          panel is loaded if the LogixNG is enabled. But if the <strong>Startup</strong>
+          checkbox is unchecked, the ConditionalNG will not be executed when the panel
+          is loaded. This is in particular useful for the <strong>LogixNG</strong> icon
+          that's added in this JMRI version.</li>
+          <li>A new tool <strong>Where Used</strong> has been added to LogixNG.
+          It shows where in the LogixNG tree an item is used. The tool is found
+          on menu item <strong>Tools &rArr; LogixNG &rArr; Where Used</strong>.</li>
+          <li>A bug in the LogixNG action <strong>Logix</strong> has been fixed. The Logix
+          feature <strong>When triggered</strong> didn't work with the LogixNG action
+          <strong>Logix</strong> but has now been resolved.</li>
+          <li>The action <strong>On Change</strong> has been renamed to <strong>Logix Action</strong>.
+          <li>The action <strong>Audio</strong> and the expression <strong>Audio</strong>
+          no longer let the user select an Audio buffer when edition the action/expression.
+          LogixNG can only act on or listen to Audio sources and the Audio listener so there
+          is no point in selecting an audio buffer for LogixNG.</li>
+          <li><strong>Note:</strong> If tables and panels are stored with this JMRI version, the file
+          might not load in a previous version of JMRI if it includes LogixNG. This is because JMRI
+          now stores some LogixNG data in a different way than before.</li>
+
+          <li>The expression <strong>Timer</strong> has been added. It returns <strong>False</strong>
+          until some time has passed. It then returns <strong>True</strong> once and the timer starts
+          again. This expression is intended to be used together with the action <strong>Sequence</strong>.</li>
+
+          <li>The action <strong>Throttle function</strong> has been added. It's similar to the action
+          <strong>Throttle</strong>, except that it only sets a function, not speed or direction, and
+          that it doesn't have any child actions.</li>
+
+          <li>The action <strong>Sequence</strong> is now safe to use in LogixNG modules. The action
+          had a bug which made it sometimes fail if it was used in a module and that module was called
+          from several ConditionalNGs at once.</li>
+
+          <li>When a LogixNG was created and ConditionalNGs
+          was created for that LogixNG, the ConditionalNGs
+          wasn't executing until restart of JMRI if the
+          ConditionalNGs had the <strong>Startup</strong>
+          flag unchecked. That's fixed now.</li>
+
+          <li>Warrant expression was not listening for warrant events.  Fixed along with the long
+          description.</li>
+
+          <li>Add the <strong>GET_BLOCK_WARRANT</strong> and <strong>GET_BLOCK_TRAIN_NAME</strong>
+          OBlock actions to the OBlock Logix import.</li>
+
+          <li>The action <strong>Timer</strong> has been improved. It can now be used within a
+          LogixNG module. It also supports local variables to tell the different delays for the
+          timers in the Timer action.<br>
+          To use the Timer action in a LogixNG module, have an <strong>Always true</strong>
+          expression as <strong>Start</strong> expression for the Timer action, together with the
+          option <strong>Start/Stop by Start expression</strong> selected.</strong></li>
+
+          <li>The action <strong>Audio icon on web panel</strong> is added to the category
+          <strong>Display</strong>. This action can tell an <strong>Audio</strong> icon on
+          a Panel editor to play the sound when the panel is shown in a web browser, for
+          example on a tablet or mobile phone.</li>
+
+          <li>The action <strong>Block</strong> and the expressions <strong>Block</strong>,
+          <strong>Dispatcher</strong> and <strong>Sensor</strong> has been refactored.</li>
+
+          <li>The expression <strong>Entry/exit</strong> can now check if a
+          entry/exit is reversed or bidirectional.</li>
+          <li>The <strong>Entry/Exit</strong> action can activate and deactivate Entry/Exit routes,
+          including activating a reversed route if the Entry/Exit pair has the <strong>Both Way</strong>
+          option enabled.</li>
+        </ul>
+
+    <h3>Operations</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+          <li>Improvements to the routing code. Program will not use an interchange track if the same
+            train can drop and pull a car.</li>
+          <li>Fixed a bug with export routes.</li>
+          <li>Fixed close on Save for several windows.</li>
+          <li>New tools "Preview and Print Car routing report" in the "Set Car" window that provides
+            the train routing for a car that has a final destination.</li>
+          <li>New tool "Show Staging and Schedules by Car Type and Load" in the "Schedules" window that
+            shows which car types and loads are shipped from staging.</li>
+          <li>New feature for spurs, the ability to prevent a car's load change. Useful when the
+            spur/schedule is used for a RIP track.</li>
+          <li>New feature for staging, planned pickups.</li>
+            <li>Improvements to the car, locomotive, and train preview and print tools.</li>
+            <li>Minor improvement to the train build report when routing.</li>
+            <li>Improvements to the router when determining a valid route where multiple trains are using the same route.</li>
+            <li>Updates to the OperationsPro help.</li>
+            <li>To see all changes to OperationsPro, use the link below</li>
+            <li><a href="https://github.com/pulls?q=is%3Apr+author%3ADanielBoudreau+archived%3Afalse+is%3Amerged">OperationsPro Changes</a></li>
+            <li>Script to update Car/Locomotive Tables on update to Id Tag Table User Name</li>
+        </ul>
+
+   <h3>Panel Editor</h3>
+        <a id="PE" name="PE"></a>
+        <ul>
+            <li>Labels and icons on a panel can now have one or more classes. This is useful if the label/icon is controlled by LogixNG.</li>
+            <li>A new <strong>LogixNG</strong> icon has been added to Panel Editor. When the icon is
+            clicked, it will execute the inline LogixNG of that icon. If the inline LogixNG has several
+            ConditionalNGs, the ConditionalNGs will be executed in the order they got created.</li>
+            <li>It's now possible to select an icon below another icon. Right-click on
+            the icon to open the popup menu of the icon. If there are any icons at the
+            mouse position below this icon, the sub menu <strong>Icons below</strong>
+            will appear at the end of the popup menu. The sub menu will contain all
+            the icons below this icon. These menu items will open the popup menu for
+            for its icon.</li>
+            <li>A new <strong>Audio</strong> icon has been added to Panel Editor.
+            It can be used to play audio on a web panel, or let the user start
+            playing sound in JMRI by clicking on the Audio icon. When editing the
+            panel, the popup menu for the icon has a new sub menu <strong>Web
+            panels</strong> that sets the options for how the icon should act on
+            a web panel.<br>
+            If the icon is used to play sound on a web panel, the option
+            <strong>Hide when not editing</strong> might be useful if the user
+            shouldn't see the icon. The icon plays the sound even if it's not
+            visible.<br>
+            The LogixNG action <strong>Audio icon on web panel</strong> can be
+            used to tell the <strong>Audio</strong> icon to play the sound when
+            it is displayed on a web browser, for example on a tablet or mobile
+            phone.</li>
+        </ul>
+
+
+    <h3>Control Panel Editor</h3>
+        <a id="CPE" name="CPE"></a>
+        <ul>
+            <li>Labels and icons on a panel can now have one or more classes. This is useful if the label/icon is controlled by LogixNG.</li>
+        </ul>
+
+    <h3>Preferences</h3>
+        <a id="Preferences" name="Preferences"></a>
+        <ul>
+            <li>Custom default.lcf Logging Control Files will cease to take effect.
+            <br>To create a custom default_lcf.xml in the new Logging Configuration format, see 
+            <a href="https://www.jmri.org/help/en/html/apps/Debug.shtml">JMRI Debugging and Logging</a>
+            </li>
+            <li>The <strong>Shutdown</strong> preference has two options for ignoring special kinds
+            of changes.  The first is to ignore fast clock changes, the second ignores the text and
+            background color changes for sensors that have been changed to panel labels.</li>
+            <li>The startup action <strong>Open file</strong> has been renamed to
+            <strong>Load table content and panels</strong>.</li>
+            <li>Each startup action now has an <strong>Enabled</strong> checkbox
+            so that each startup action can be enabled/disabled.</li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li>Add "idtags" as a script shortcut to the manager like "turnouts" and "sensors"</li>
+            <li>Add a "jython/RunSystemCommandExample.py" sample for
+                how to run a system command from a JMRI script.</li>
+            <li>Scripts that output Logging statements with log4j should be updated to import sl4fj logging.
+            <br><a href="https://github.com/JMRI/JMRI/pull/12237/files">See here for some examples</a> on how to do this.</li>
+            <li>Scripts that output Logging statements with log4jv1.x ( org.apache.log4j ) imports will stop working 
+            and should be updated to use SLF4J logging.
+            <br>See <a href="https://github.com/JMRI/JMRI/pull/12237/files">here</a> for some examples on how to do this.</li>
+            <li>TurnoutStatePersistence.py was not correctly updated to use SLF4J in 5.5.3, fixed in 5.5.4</li>
+            <li>YAAT: Change function number limit from 28 to 68.</li>
+            <li>YAAT: Add a random delay time: <strong>Wait for &lt;n&gt; [to &lt;n&gt;] seconds</strong></li>
+        </ul>
+
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li>Pino Di Biasi provided a
+                    Swiss Railways (SBB in German, CFF in French and FFS in Italian)
+                    signal system definition.</li>
+                <li>The aspects in the FS-1987 signal system were updated.</li>
+                <li>The Italian FS-1987 signal system was updated for better operation.</li>
+            </ul>
+
+
+   <h3>Switchboard Editor</h3>
+        <a id="SW" name="SW"></a>
+        <ul>
+            <li>Some improvements to how text is sized that will make 
+                the display occupy space a little better.</li>
+        </ul>
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>UI improvements to the Turnout Table.</li>
+            <li>Memory Usernames for IMCURRENTTIME and IMRATEFACTOR can now be loaded from xml file.</li>
+            <li>Fixed a bug that would cause problems when DELAYED feedback was selected.</li>
+        </ul>
+
+
+    <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>Added LayoutEditor turntable support for VSD navigation through a panel.</li>
+            <li>Fixed a bug with wrong direction in an oval layout.</li>
+            <li>Minor change on the Manager window GUI. The windows for adding
+            a VSDecoder and to handle the option now are centered to the manager
+            window. This is not a functional change.</li>
+            <li>Removed unimplemented methods for "AudioMode" and "DefaultVSDFileName".</li>
+            <li>Removed deprecated method isPlaying - use Audio.STATE_PLAYING.</li>
+            <li>Added optional portable file access in VSD. To be used in Roster Media (VSDecoder_Path)
+                and VSD Preferences (Default VSD File Path). For Portable File Access see
+                <a href="https://www.jmri.org/help/en/html/doc/Technical/FileNames.shtml">here</a>.</li>
+            <li>Take actual speed instead of nominal speed for the distance calculation
+                (impact for steam1).</li>
+            <li>New option "chuff-fade-out" for steam1, see the
+                <a href="https://www.jmri.org/help/en/html/tools/vsd/VSDFileAndConfig.shtml#chuff-fade-out">documentation</a>.
+            </li>
+        </ul>
+
+   <h3>Warrants</h3>
+        <a id="Wt" name="Wt"></a>
+        <ul>
+            <li>Fixed problems that were causing Learn Warrant to fail</li>
+        </ul>
+
+    <h3>Web Server</h3>
+        <a id="server" name="server"></a>
+        <ul>
+            <li>json car, engine: remove location, set unknown flag, remove from train</li>
+        </ul>
+
+   <h3>Web Access</h3>
+        <a id="WA" name="WA"></a>
+        <ul>
+            <li>panel.js - add data-panel-name attribute to support panel-specific css</li>
+           <li>Web tables: add click toggle for several additional columns</li>
+            <li>JSON Server: support for updating SignalHead and SignalMast Lit and Held</li>
+            <li>JMRI Web Frame Server can now access many of the Dialog popup boxes.</li>
+        </ul>
+
+   <h3>Other Tools</h3>
+        <a id="Tools" name="Tools"></a>
+        <ul>
+            <li>The Power Control now defaults to display all connections.</li>
+            <li>Handle ServerSideIncludes for /help folder #12638, makes Help from the local web server match the online version</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>IdTags now request the main IdTagManager instead of requesting a 
+                ProxyIdManager to get better initialization.</li>
+            <li>Added JMRI version number to the bottom of generated Javadoc.</li>
+            <li>Updated the Java Native Access (JNA) library to version 5.13.0.
+                Updated the Pure Java Comm library to a custom version that should
+                work better on Apple Silicon (M1, M2) Macs.</li>
+            <li>A signal handler has been added to the Shutdown manager such that a 
+                "kill &lt;pid&gt;" command on Mac or Linux will do a normal shutdown.
+                This is particularly useful for e.g. running headless on an RPi.
+                "kill -HUP &lt;pid&gt;" will cause JMRI to quit and restart.
+                In addition, the Mac and Linux startup scripts were updated to 
+                pass these signals on to the running process.  Together, this
+                will allow you to run JMRI as a service on Mac and Linux, including the RPi.
+          <li>The external libraries used for Logging have been updated.</li>
+          <li>The <strong>Hide when empty and not editing</strong> menu item has been added to
+                the right click pop-up menus for block content labels, memory labels and LogixNG global
+                variable labels.  This applies to Panel Editor, Control Panel Editor and Layout Editor
+                panels.</li>
+          <li>Added a jython/test/loconet directory for LocoNet-specific scripting tests,
+              along with an initial test.</li>
+            <li>Logging Configuration Files have moved to the xml format, eg.
+            <a href="https://github.com/JMRI/JMRI/blob/master/default_lcf.xml">default_lcf.xml</a>
+            <br><strong>Custom default.lcf Logging Control Files will cease to take effect.</strong>
+            <br>To create a custom default_lcf.xml in the new format, see 
+            <a href="https://www.jmri.org/help/en/html/apps/Debug.shtml">JMRI Debugging and Logging</a>
+            </li>
+            <li>Logging levels ( eg. INFO, DEBUG ) can be changed for the current session in
+            <a href="https://www.jmri.org/help/en/package/apps/jmrit/log/Log4JTreePane.shtml">Display / Edit Log Categories</a></li>
+            <li>Logging Libraries have been fully updated to Log4J 2.20</li>
+            <li>The Rolling Log files have been renamd from messages.log.1 and messages.log.2 to messages.1.log and messages.2.log</li>
+            <li>The way data is entered in memory icons, block icons
+                and global variable icons have been improved.</li>
+            <li>You can now set the preferences to open the RailCom table at startup.</li>
+            <li>The analog fast clock now shows when the fast clock has been stopped.</li>
+            <li>Updated batik-transcoder 1.14 to 1.17, resolving a security issue</li>
+            <li>Improvements to Dialog boxes when displayed with &quot;Always On Top&quot; window frames present.</li>
+            <li>Improved Unrecoverable Error Dialog.</li>
+            <li>JMRI now has a "Software Bill of Materials" (SBOM) distributed with it.
+                Although this won't matter to most users, it allows people to determine
+                via the standardized SPDX mechanism the libraries that JMRI contains and
+                the versions being used. Providing this is a small step toward more automated
+                distribution.</li>
+            <li>UI improvements for the
+                <a href="https://www.jmri.org/help/en/package/apps/jmrit/log/Log4JTreePane.shtml">
+                Display / Edit Log Categories</a> dialog.</li>
+            <li>(For developers) Our CI process has been updated to require the
+                @Override annotation on overriding methods and removal of unused import statements.</li>
+            <li>Fixed a validation errors in the xml/schema/auxiliary-configuration.xsd  file.</li>
+            <li>Fixed a problem where the run/pause button would not properly show when the
+                Nixie, LCD or Pragotron clocks were resized.</li>
+            <li>Fixed a problem that prevented JMRI from launching on macOS if Java 21 was in use.
+                (Java 11 is still the recommended one)
+            <li>Improved the
+                "<a href="http://jmri.org/help/en/html/apps/DecoderPro/FileUpdate.shtml">Updating Decoder Definitions</a>"
+                page.</li>
+        </ul>
+
+<!-- From 5.5.2  ===================================================================================== -->
+<!-- done -->
+<!-- From 5.5.3 ===================================================================================== -->
+<!-- done -->
+<!-- From 5.5.4 ===================================================================================== -->
+<!-- done -->
+<!-- From 5.5.5 ===================================================================================== -->
+<!-- done -->
+<!-- From 5.5.6 ===================================================================================== -->
+<!-- done -->
+<!-- From 5.5.7 ===================================================================================== -->
+<!-- done -->
 <!-- From 5.5.8 -->
 
 
