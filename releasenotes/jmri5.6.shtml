@@ -22,11 +22,13 @@
       Release Notes for JMRI 5.6 release
       </h1>
 
-    <p>Date: MMM DD, YYYY</p>
-    <p>From: release pumpkin</p>
-    <p>Subject: Production Release 5.4 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: December 14, 2023</p>
+    <p>From: Bob Jacobsen</p>
+    <p>Subject: Production Release 5.6 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <p>We are very pleased to announce that the 5.5 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
@@ -162,24 +164,22 @@ before installing this release, see above.
 <h2>Download links:</h2>
 
 <div class="wide">
-<!-- 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.4/JMRI.5.4+R9005ecb4ac.dmg">https://github.com/JMRI/JMRI/releases/download/v5.4/JMRI.5.4+R9005ecb4ac.dmg</a><br/>
-  sha256: 571569347db08e7476c21c09273b678143278f2fb44bb83a862ad41225ae0375 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.6/JMRI.5.6+R89a87446cb.dmg">https://github.com/JMRI/JMRI/releases/download/v5.6/JMRI.5.6+R89a87446cb.dmg</a><br/>
+  sha256: fdba696bedcb1993b5cd7800c3132c799253bfb54f1b490a73c70eba0351e6ae </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.4/JMRI.5.4+R9005ecb4ac.exe">https://github.com/JMRI/JMRI/releases/download/v5.4/JMRI.5.4+R9005ecb4ac.exe</a><br/>
-   sha256: b615b09cd73d160a3de5ff48c500e77d6ae281b49c9d9739a860e7509516adea</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.6/JMRI.5.6+R89a87446cb.exe">https://github.com/JMRI/JMRI/releases/download/v5.6/JMRI.5.6+R89a87446cb.exe</a><br/>
+   sha256: 4fabe4779e5a15e373e869075ff4cf22519a541b0e2c757ec4c99d1574f39fc0</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.4/JMRI.5.4+R9005ecb4ac.tgz">https://github.com/JMRI/JMRI/releases/download/v5.4/JMRI.5.4+R9005ecb4ac.tgz</a><br/>
-   sha256: a2f45380f8abce10a74bec194c936c9cb3a00b4221d5c9c98f065c95c06df49d</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.6/JMRI.5.6+R89a87446cb.tgz">https://github.com/JMRI/JMRI/releases/download/v5.6/JMRI.5.6+R89a87446cb.tgz</a><br/>
+   sha256: 72c43d0b0e59f3421b3fa256711eb354edeeb1c53a47ac7ad87cdb02a64cf0f6</li>
 </ul>
 </div>
 These files are located in the 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v5.6">JMRI 5.6  GitHub release</a>.
- -->
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -187,9 +187,11 @@ on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.4">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
 
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri5.4.shtml">production release 5.4</a>:</h2>
@@ -199,9 +201,6 @@ This production version is made from test releases 5.5.1 through 5.5.8  The
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-06-25..2023-12-08">full list of changes</a>
 in those is
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-06-25..2023-12-08">available from our code repository</a>.
-
-
-<!-- From 5.5.1 ===================================================================================== -->
 
     <h3>Hardware Support</h3>
 	    <h4><a href="http://bidib.org/index_e.html">BiDiB</a></h4>
@@ -813,21 +812,6 @@ in those is
                 "<a href="http://jmri.org/help/en/html/apps/DecoderPro/FileUpdate.shtml">Updating Decoder Definitions</a>"
                 page.</li>
         </ul>
-
-<!-- From 5.5.2  ===================================================================================== -->
-<!-- done -->
-<!-- From 5.5.3 ===================================================================================== -->
-<!-- done -->
-<!-- From 5.5.4 ===================================================================================== -->
-<!-- done -->
-<!-- From 5.5.5 ===================================================================================== -->
-<!-- done -->
-<!-- From 5.5.6 ===================================================================================== -->
-<!-- done -->
-<!-- From 5.5.7 ===================================================================================== -->
-<!-- done -->
-<!-- From 5.5.8 -->
-
 
 
    <!--#include virtual="/Footer.shtml" -->
