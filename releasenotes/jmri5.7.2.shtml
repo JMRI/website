@@ -169,6 +169,14 @@ See <a href="#update">instructions above</a>.
         MQTT Connection - Throttle loco address and function placeholders in MQTT topics have changed from
         $address and $function to {0} and {1} for consistency with other objects.
     </li>
+    <li><span class="since">Since <a href="jmri5.7.1.shtml">JMRI 5.7.1</a></span>
+        Several systems have had extensive updates to their serial
+        support.  If you have trouble connecting to your layout hardware
+        after installing this version, please contact us
+        <a href="https://groups.io/g/jmriusers">on the JMRIusers list</a>
+        for assistance.
+    </li>
+
 </ul>
 
 <a id="download" name="download"></a>
