@@ -151,36 +151,6 @@ See <a href="#update">instructions above</a>.
         <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
         <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
     </li>
-    <li><span class="since">Since <a href="jmri5.3.2.shtml">JMRI 5.5.5</a></span>
-        MQTT Connection - Version 5.5.5 used the incorrect default MQTT topics for 
-        Throttle Direction and Function - they had the same topic instead of individual ones.
-        The documentation was correct but the code wasn't. This was fixed in JMRI 5.5.7.
-    </li>
-
-    <li><span class="since">Since <a href="jmri5.3.2.shtml">JMRI 5.3.2</a></span>
-        Some images in the <i>resources/icons</i> folder have been renamed.
-        Spaces have been changed to underscore. It's images in the
-        <i>resources/icons/ItalianSignals/ACEI</i>,
-        <i>resources/icons/ItalianSignals/Prototypical</i>,
-        <i>resources/icons/smallschematics/aspects/NW-1981</i>,
-        <i>resources/icons/smallschematics/aspects/NYC-1956</i>,
-        <i>xml/signals/FS-1987</i>, <i>xml/signals/NW-1981</i>,
-        <i>xml/signals/NYC-1956</i> and <i>resources/icons/SNCF/Small</i>
-        folders that have been renamed. If you are using these images directly, you will need to update the reference.
-    </li>
-    <li><span class="since">Since <a href="jmri5.3.7.shtml">JMRI 5.3.7</a></span>
-        The definition of "Last Seen" for Id Tags has been
-        clarified to mean "Location where the tag was last seen to be <u>present</u>".
-        Previously, a report that a tag was <u>absent</u> could be remembered as the
-        last seen report.  The relevant code changes are specific to LocoNet
-        Reporters. This might affect your scripts and LogixNG if you were assuming
-        the prior behavior.
-        </li>
-    <li><span class="since">Since <a href="jmri5.3.7.shtml">JMRI 5.3.7</a></span>
-        Some Reporters, particularly LocoNet, would improperly clear an "enter" report
-        when an "exits" report for the same tag was seen elsewhere.  This was an
-        error that has been fixed, but if you have scripts or LogixNG that depend on
-        this behavior you might have to update them.
     <li><span class="since">Since <a href="jmri5.5.3.shtml">JMRI 5.5.3</a></span>
         <strong>LocoNet Server</strong> and <strong>LocoNet Client</strong> have been removed.
         If you are using these, you need to change the connection to
