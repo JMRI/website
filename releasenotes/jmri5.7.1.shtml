@@ -32,6 +32,12 @@
 
 <h2>Notes:</h2>
 
+<b>This release has significant problems with Lenz and DCC++
+communications.  If you use one or the other of those systems, please
+don't update to this release.
+Stay with 
+<a href="jmri5.6.shtml">Production Release 5.6</a>.</B>
+
 <p>This is a test release.  Please
 <a href="https://groups.io/g/jmriusers">post a note</a>
 if you encounter any new or old bugs!
@@ -109,6 +115,7 @@ that can arise from skipping these versions.
 <h3>New problems with this release</h3>
 <ul>
     <li>DCC++ serial connections don't work in this test release.</li>
+    <li>Lenz serial connections don't work in this test release.</li>
 </ul>
 
 If this effects you, please
