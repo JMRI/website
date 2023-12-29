@@ -32,7 +32,7 @@
 
 <h2>Notes:</h2>
 
-<b>This release has significant problems with Lenz and DCC++
+<b>This release has significant problems with C/MRI, Lenz and DCC++
 communications.  If you use one or the other of those systems, please
 don't update to this release.
 Stay with 
@@ -116,6 +116,7 @@ that can arise from skipping these versions.
 <ul>
     <li>DCC++ serial connections don't work in this test release.</li>
     <li>Lenz serial connections don't work in this test release.</li>
+    <li>Some C/MRI modules don't work with this test release.</li>
 </ul>
 
 If this effects you, please
