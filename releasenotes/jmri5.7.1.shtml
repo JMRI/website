@@ -35,8 +35,10 @@
 <b>This release has significant problems with C/MRI, Lenz and DCC++
 communications.  If you use one or the other of those systems, please
 don't update to this release.
-Stay with 
-<a href="jmri5.6.shtml">Production Release 5.6</a>.</B>
+Please use
+<a href="jmri5.6.shtml">Production Release 5.6</a>,
+<a href="jmri5.7.2.shtml">Test Release 5.7.2
+or later</a>.</B>
 
 <p>This is a test release.  Please
 <a href="https://groups.io/g/jmriusers">post a note</a>
@@ -119,13 +121,14 @@ that can arise from skipping these versions.
     <li>Some C/MRI modules don't work with this test release.</li>
 </ul>
 
-If this effects you, please
-wait for
-<a href="jmri5.7.2.shtml">JMRI 5.7.2</a>, due out shortly after this one.
+If this effects you, please update to 
+<a href="jmri5.7.2.shtml">JMRI 5.7.2</a>.
+<!-- 
 Before that, you could pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
+ -->
 
 
 <a id="warnings" name="warnings"></a>
