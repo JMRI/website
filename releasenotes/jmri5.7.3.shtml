@@ -122,14 +122,6 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
     <li>None Yet</li>
 </ul>
 
@@ -218,13 +210,88 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.7.3+is%3Amerged">list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+    
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>Monitor now decodes clock messages</li>
+                <li>Switch String input fields to mono-spaced font, and 
+                    limit their content length to the length of the underlying
+                    configuration field.</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>MD Electronics</h4>
+             <ul>
+                <li>New decoder definitions DRIVE-S, DRIVE-XS</li>
+             </ul>
+
+        <h4>Trix Modelleisenbahn</h4>
+            <ul>
+                <li>The Trix/Marklin mLD/3 and mSD/3 decoder definitions now have 31 functions</li>
+            </ul>
+
+        <h4>Uhlenbrock</h4>
+            <ul>
+                <li>Small corrections and improvements to the IntelliDrive2 decoder definitions.
+                    New decoder definition Tillig 66036 Decoder</li>
+            </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>The CV table columns now expand to fill their complete pane.
+                This is to make the table more readable when it contains long
+                value or CV name strings.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+            <li>The LogixNG table now shows whenether the ConditionalNGs
+                of a LogixNG has <strong>Startup</strong> enabled or not.
+                The <strong>Startup</strong> checkbox in the LogixNG
+                table can have three states: Checked, unchecked and
+                partially checked. If the user checks/unchecks the
+                checkbox, all the ConditionalNGs will have the
+                <strong>Startup</strong> enabled/disabled.
+                <br>
+                The column <strong>Startup</strong> is at the far right
+                in the LogixNG table. You might need to resize the table
+                to see the new column.</li>
+                to see the new column.
+                <br>
+                Note: Due to a bug, this feature didn't work as it
+                should in JMRI 5.7.2 but it's now fixed.</li>
+            <li>A couple of bugs in the LogixNG formula parser have
+                been fixed.</li>
+            <li>The action <strong>Program On Main</strong> has been
+                added. It lets you program CVs on the main.</li>
+        </ul>
+
+    <h3>OperationsPro</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+            <li>Fixed a routing bug that was introduced in JMRI 5.6</li>
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>Use block values (restored from blockvalues.xml) to get
+            a feasible start block for automatic start.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>The JInput library used to access certain non-serial USB devices has been
+                updated to version 2.0.9.  This adds support for Apple Silicon and
+                fixes some buffer overflows on Windows.</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
