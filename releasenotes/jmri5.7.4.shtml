@@ -283,6 +283,10 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.7.4+is
     <h3>LogixNG</h3>
         <a id="LogixNG" name="LogixNG"></a>
         <ul>
+          <li><strong>Warning</strong><br>
+              The type <strong>Boolean</strong> has been added to 5.7.4
+              for global and local variables. But due to a bug, this
+              doesn't work. It will be fixed in 5.7.5.</li>
           <li>The action <strong>Table: For each</strong> can now loop
               thru the headers too. If indirect addressing is used for
               the row or column name, use the empty string to get the
