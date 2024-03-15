@@ -133,9 +133,23 @@
 
     <h2>Additional notes for using AnyRail's export files</h2>
 
-      <h3>Migration script</h3>
-      The
-      <a href="https://jmri.org/jython/anyrail/AnyRailBuildBlockSensorList.py">AnyRailBuildBlockSensorList.py</a>
+			<h3>Helpful Scripts</h3>
+			<p>
+				The <a href="https://jmri.org/jython/anyrail/AnyRailExportAdditions.py">AnyRailExportAdditions.py</a>
+				script enhances the generated Block and Turnout
+				definitions, creates Sensors and assigns them to the corresponding
+				Blocks. Both Sensors and Turnouts are created to match your default
+				hardware Connection. <br /> 
+				Note: this automatically performs the "moves" described above.<br />
+				See <a	href="https://mstevetodd.com/anyrail-export-jmri">[this page]</a>
+				for usage information and additional suggestions.
+			</p>
+			<p>
+				The <a href="https://jmri.org/jython/AddOccupancyIconsToPanel.py">AddOccupancyIconsToPanel.py</a>
+				script will create and place SensorIcons and BlockContentIcons for
+				each occupancy Block on a panel. (Not AnyRail-specific)
+			</p>
+			<p>The <a href="https://jmri.org/jython/anyrail/AnyRailBuildBlockSensorList.py">AnyRailBuildBlockSensorList.py</a>
       script may be useful when doing large migrations with block sensors.
       See the associated
       <a href="./AnyRailBuildBlockSensorList.pdf">PDF instructions</a>
@@ -143,7 +157,7 @@
       <a href="/AnyRailBuildBlockSensorList.odt">.odt file</a>)
       and
       <a href="https://jmri.org/jython/anyrail/README.md">README.md</a>
-      files for more information.
+      files for more information.</p>
 
       <h3>Missing jpg image file</h3>
         <p>If the exported PanelPro file and its related jpg file are manually moved to a different
@@ -159,10 +173,16 @@
 
       <h3>Other errors or unexpected results</h3>
         <p>Use the system console, <strong>Help &rArr; System Console...</strong>, to open a window
-        that has details on JMRI and can contain warnings and errors.
+        that has details on JMRI and can contain warnings and errors.</p>
 
+			<h3>Additional Resources</h3>
+			<p>
+				Steve Todd has some additional tips and best practices for making
+				the most of the AnyRail Export here:<br />
+				<a href="https://mstevetodd.com/anyrail-export-jmri">[AnyRail Export to JMRI]</a>
+			</p>
 
-    <!--#include virtual="/Footer.shtml" -->
+			<!--#include virtual="/Footer.shtml" -->
 
 	  </div><!-- closes #mainContent-->
 	</div> <!-- closes #mBody-->
