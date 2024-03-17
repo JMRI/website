@@ -183,7 +183,11 @@
                     <ul>
                     <li>There's no native support for the HIDinput library that's used
                         by some user's scripts to handle mouse and keyboard input.
-                    <li>Before JMRI 5.3.7, there was no native support for
+                    <li>There's no native support for the BlueCove library that's used
+                        to make direct LocoNet connections via the BlueCove 
+                        BlueTooth adapter.
+                    <li>
+                        Before JMRI 5.3.7, there was no native support for
                         the libraries needed for advanced sound features.
                         This is fixed in JMRI 5.3.7 and later.
                     </ul>
