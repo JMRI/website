@@ -19,8 +19,14 @@
 
 <h1>Using Java 11 with JMRI</h1>
 
-<p>We recommend using Java 11 with current JMRI versions.  Starting with JMRI 5.0, the minimum Java
-version is 11.</p>
+<p><b>We recommend using Java 11 with current JMRI versions.</b>
+
+<p>Starting with JMRI 5.0, the recommended Java
+version is 11.
+JMRI 5 will not work with Java versions below Java 11, 
+and there are a small number of
+<a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml#jdk17">known issues</a> with later versions.
+</p>
 
 <p><em>JMRI needs a "Java Runtime Environment" (JRE) to run
 but will work fine with the larger "Java Development Kit" (JDK).</em>
