@@ -124,14 +124,6 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
     <li>None Yet</li>
 </ul>
 
@@ -220,13 +212,113 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.7.7+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+        <ul>
+          <li>Fixed a freeze that could happen when changing the connection preferences.</li>
+        </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>DCS240+ has transponding built it, so that option is treated as selected.</li>
+                <li>Improved how LACK responses are handled in ops mode programming; sped up ops mode programming</li>
+                <li>Improved how threads are shutdown when changing connections
+                    in the settings.</li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>Fixed the filtering in the Monitor window.</li>
+                <li>If you enter an value that's outside the acceptable range
+                    in the configuration tool, the background will now turn
+                    blue to indicate that to you.</li>
+                <li>Improved how the buttons are laid out at the bottom of the CDI window</li>
+                <li>Improved handling and display of messages that flag Simple protocol</li>
+                <li>Improve AME handling to make throttle connections more reliable in the 
+                    face of command station resets.</li>
+
+            </ul>
+
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>Digitrax</h4>
+            <ul>
+                <li>SFX Series 7 support updated for XF controls.</li>
+            </ul>
+
+        <h4>Mistral Train Models</h4>
+             <ul>
+                <li>Updated Lokommander II definitions. Implement CV114, 115 and 116 according to the firmware version. Firmware V3 : treat as binary and only support up to F8 Firmware V6 : treat as decimal and support up to F28
+                </li>
+             </ul>
+
+        <h4>Tam Valley Depot</h4>
+            <ul>
+                <li>Updated the QuadLN_S decoder definition to support new features in version 3.3 firmware.</li>
+            </ul>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li>new MS and MN decoders added</li>
+                <li>minor optical corrections</li>
+            </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Update controlling Signal on screen in a timely fashion.</li>
+             <li>Stop train with profile in remaining blocks of a multi block section.</li>
+             <li>Stop autotrains on program exit.</li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+            <li>Fixed the ability to connect turnouts by dragging and dropping. When end points
+            overlap, a track segment is automatically created. This works very nicely for creating
+            yard ladders.  The problem affected panels on Linux and Windows.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The functions <strong>round()</strong>, <strong>ceil()</strong>
+              and <strong>floor()</strong> has been added to the Math module.
+              All three rounds a floating point value. ceil() rounds up and
+              floor() rounds down.</li>
+          <li>The constant <strong>oblocks</strong> has been added to
+              the Layout module.</li>
+          <li>Fixes a bug in LogixNG formula when calling a Java method that
+              takes a boolean as parameter, like <strong>setVisible()</strong>.</li>
+          <li>Two new preferences have been added. <strong>Log all before</strong>
+              and <strong>Log all after</strong>. If these are selected,
+              LogixNG will log every action that's executed and every
+              expression that's evaluated. For this to work, the LogixNG
+              debugger must be installed (which it is by default).</li>
+          <li></li>
+        </ul>
+
+    <h3>Meters and MeterFrames</h3>
+        <a id="Meters" name="Meters"></a>
+        <ul>
+            <li>Added a start-up action that will open the meters.</li>
+            <li>Add a MeterToMemory.py sample script that copies Meter
+                values to Memory variables</li>
+        </ul>
+
+    <h3>Control Panel Editor</h3>
+        <a id="CPE" name="CPE"></a>
+        <ul>
+            <li>Fixed the popup context menu on Linux.</li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li>New ThrottleBridgeF0F8.py for bridging a throttle between Lenz and Digitrax systems
+                including the F0 through F8 functions.</li>
+        </ul>
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
