@@ -136,7 +136,7 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri5.8.shtml#warnings">JMRI 5.6 release note</a> for more warnings predating the 5.9 development series,
+See the <a href="jmri5.8.shtml#warnings">JMRI 5.8 release note</a> for more warnings predating the 5.9 development series,
 including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version;
 we strongly recommend you update to at least <a href="jmri5.0.shtml">JMRI 5.0</a>
@@ -150,24 +150,6 @@ See <a href="#update">instructions above</a>.
         There's more information on this migration on the
         <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
         <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
-    </li>
-    <li><span class="since">Since <a href="jmri5.5.3.shtml">JMRI 5.5.3</a></span>
-        Scripts that output Logging statements with log4jv1.x ( org.apache.log4j ) imports will stop working 
-        from JMRI 5.5.4 and should be updated to use SLF4J logging.
-        <br>See <a href="https://github.com/JMRI/JMRI/pull/12237/files">here</a> for some examples on how to do this.</li>
-    <li><span class="since">Since <a href="jmri5.5.4.shtml">JMRI 5.5.4</a></span>
-        Custom default.lcf Logging Control Files will cease to take effect from JMRI 5.5.4
-        <br>To create a custom default_lcf.xml in the new Logging Configuration format, see 
-        <a href="https://www.jmri.org/help/en/html/apps/Debug.shtml">JMRI Debugging and Logging</a>
-    </li>
-    <li><span class="since">Since <a href="jmri5.5.5.shtml">JMRI 5.5.5</a></span>
-        XML files with table contents and panels have been changed in JMRI 5.5.5. It's therefore not
-        possible to load an xml file with tables and panels that has been created with JMRI 5.5.5 or
-        later with a JMRI version pre 5.5.5.
-    </li>
-    <li><span class="since">Since <a href="jmri5.5.5.shtml">JMRI 5.5.5</a></span>
-        MQTT Connection - Throttle loco address and function placeholders in MQTT topics have changed from
-        $address and $function to {0} and {1} for consistency with other objects.
     </li>
     <li><span class="since">Since <a href="jmri5.7.1.shtml">JMRI 5.7.1</a></span>
         Several systems have had extensive updates to their serial
@@ -213,9 +195,9 @@ During development leading to the actual release, you can find test download fil
 These are development files, and might not be working at any particular time.</p>
 
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri5.7.9.shtml">Test Release 5.7.9</a>:</h2>
+<h2>Changes since <a href="jmri5.8.shtml">Production Release 5.8</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.7.8+is%3Amerged">full list of included changes</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.9.1+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <!-- While this release is in development, the     -->
