@@ -229,6 +229,8 @@ in those is
                 <li>LocoNet serial connections have been updated to use a new serial library.</li>  
                 <li>Several tools have improved layout when the
                     screen size is reduced.</li>
+                <li>Updated LocoNet Monitor to display PM74 and SE74 device
+		            types for certain LocoNet messages.</li>
                 <li>LocoNet Monitor has improved reporting of "Query Mode" 
                     messages.</li>
                 <li>DCS240+ has transponding built it, so that option is treated as selected.</li>
@@ -297,7 +299,7 @@ in those is
                 <li>OpenLCB/LCC serial connections have been updated to use a new serial library.</li>  
                 <li>Fixed an index exception while the Event Table is writing a CSV file.</li>
                 <li>Monitor now decodes clock messages</li>
-                <li>Switch String input fields to mono-spaced font, and 
+                <li>Switched CD/CDI String input fields to mono-spaced font, and 
                     limit their content length to the length of the underlying
                     configuration field.</li>
                 <li>Updated script DisplayTrackCircuit.py to support the Tower +Que node
@@ -326,12 +328,16 @@ in those is
                     </ul>
                 </li>
                 <li>Additions for better conformance with OpenLCB standards</li>
-                <li>Add the <strong>STL Editor</strong> tool to the OpenLCB/LCC menu.  The
-                tool is used to generate the STL logic for the RR-CirKits Tower LCC+Q.  The
-                Tower LCC+Q uses a subset of the Siemens Structured List PLC language.</li>
+                <li>Add the 
+                    <strong>
+                        <A href="https://www.jmri.org/help/en/package/jmri/jmrix/openlcb/swing/stleditor/StlEditorPane.shtml">STL Editor</a>
+                    </strong>
+                    tool to the OpenLCB/LCC menu.  The
+                    tool is used to generate the STL logic for the RR-CirKits Tower LCC+Q.  The
+                    Tower LCC+Q uses a subset of the Siemens Structured List PLC language.</li>
                 <li>Improved new Turnout address validation.</li>
                 <li>Updated the openlcb.jar file with 
-                    <a href="https://github.com/openlcb/OpenLCB_Java/pulls?q=is%3Apr+is%3Aclosed">PRs through 258</a>.
+                    <a href="https://github.com/openlcb/OpenLCB_Java/pulls?q=is%3Apr+is%3Aclosed">PRs through 265</a>.
                 <li>Protected against an error that could occur on startup
                     if JMRI has trouble reaching the network interface on Windows.</li>
                 <li>CDI configuration window now displays min and max values in the 
@@ -393,8 +399,6 @@ in those is
 
         <h4>Digitrax</h4>
             <ul>
-                <li>Updated LocoNet Monitor to display PM74 and SE74 device
-		            types for certain LocoNet messages.</li>
                 <li>Added DN163K5B decoder</li>
                 <li>SFX Series 7 support updated for XF controls.</li>
             </ul>
@@ -514,8 +518,7 @@ in those is
 
             <li>The <strong>File &rArr; Show file history</strong> content has been enhanced.  The
             <strong>app</strong> entries show the JMRI version.  The <strong>Store</strong> entries
-            show the name of the file that was created.
-            <li>
+            show the name of the file that was created.</li>
         </ul>
         
     <h3>OperationsPro</h3>
