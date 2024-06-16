@@ -165,10 +165,10 @@ These are development files, and might not be working at any particular time.</p
 <h2>Changes since <a href="jmri5.6.shtml">production release 5.6</a>:</h2>
 
 <p>
-This production version is made from test releases 5.7.1 through 5.7.8  The
-<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-12-01..2024-06-14">full list of changes</a>
+This production version is made from test releases 5.7.1 through 5.7.9  The
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-12-01..2024-06-17">full list of changes</a>
 in those is
-<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-12-01..2024-06-14">available from our code repository</a>.
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-12-01..2024-06-17">available from our code repository</a>.
 
 
 
@@ -417,6 +417,7 @@ in those is
         <h4>Lenz</h4>
             <ul>
                 <li>Update the Lenz Plus 2010 definition to include recent versions.</li>
+                <li>Added MP15DC</li>
             </ul>
 
         <h4>Logic Rail Technology</h4>
@@ -998,6 +999,8 @@ LogixNG: IQ:AUTO:0001
                 across shutdown and startup.</li>
             <li>Improved the Italian translation around file locations and turnout states.</li>
             <li>Improvements to File Selection Dialog boxes when displayed with &quot;Always On Top&quot; window frames present.</li>
+            <li>Fixed a logging configuration issue which caused some 
+                users to see a message about a `${jmri.log.path}messages.1.log`</li>
         </ul>
 
 

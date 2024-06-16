@@ -211,7 +211,20 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.7.9+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- This is the optional last test releass, so changes are maintained here -->
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>Lenz</h4>
+            <ul>
+                <li>Added MP15DC</li>
+            </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Fixed a logging configuration issue which caused some 
+                users to see a message about a `${jmri.log.path}messages.1.log`</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
