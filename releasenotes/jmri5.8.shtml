@@ -531,6 +531,16 @@ in those is
     <h3>OperationsPro</h3>
         <a id="Operations" name="Operations"></a>
         <ul>
+            <li>New feature allows users to quickly create a custom load for all car types.</li>
+            <li>Simplified the creation and update of switch lists when using MR SLAM</li>
+            <li>Improvements to destination checking button for C/I tracks</li>
+            <li>Added warning messages if operation files have been corrupted</li>
+            <li>Files are now saved to the millisecond, fixes fast Automation actions and loops</li>
+            <li>Improvements to export Trains</li>
+            <li>Significant improvements to Car importing</li>
+            <li>Conductor improvements when sorting by track name</li>
+            <li>Web Manifest and Conductor improvements, Manifest now supports utility cars. Comment colors now supported</li>
+            <li>Switch lists can now display train's departure time</li>
             <li>Fixed a routing bug that was introduced in JMRI 5.6</li>
         </ul>
 
@@ -815,22 +825,7 @@ LogixNG: IQ:AUTO:0001
               and expressions which are disabled.</li>
    </ul>
 
-    <h3>Operations</h3>
-        <a id="Operations" name="Operations"></a>
-        <ul>
-            <li>New feature allows users to quickly create a custom load for all car types.</li>
-            <li>Simplified the creation and update of switch lists when using MR SLAM</li>
-            <li>Improvements to destination checking button for C/I tracks</li>
-            <li>Added warning messages if operation files have been corrupted</li>
-            <li>Files are now saved to the millisecond, fixes fast Automation actions and loops</li>
-            <li>Improvements to export Trains</li>
-            <li>Significant improvements to Car importing</li>
-            <li>Conductor improvements when sorting by track name</li>
-            <li>Web Manifest and Conductor improvements, Manifest now supports utility cars. Comment colors now supported</li>
-            <li>Switch lists can now display train's departure time</li>
-        </ul>
-
-    <h3>Meters and MeterFrames</h3>
+   <h3>Meters and MeterFrames</h3>
         <a id="Meters" name="Meters"></a>
         <ul>
             <li>Added a start-up action that will open the meters.</li>
