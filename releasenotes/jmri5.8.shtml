@@ -22,11 +22,13 @@
       Release Notes for JMRI 5.8 release
       </h1>
 
-    <p>Date: MMM DD, YYY</p>
+    <p>Date: June 24, 2024</p>
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 5.8 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <p>We are very pleased to announce that the 5.7 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
@@ -136,25 +138,23 @@ before installing this release, see above.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.6/JMRI.5.6+R89a87446cb.dmg">https://github.com/JMRI/JMRI/releases/download/v5.6/JMRI.5.6+R89a87446cb.dmg</a><br/>
-  sha256: fdba696bedcb1993b5cd7800c3132c799253bfb54f1b490a73c70eba0351e6ae </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.8/JMRI.5.8+Rbc21ce2ce7.dmg">https://github.com/JMRI/JMRI/releases/download/v5.8/JMRI.5.8+Rbc21ce2ce7.dmg</a><br/>
+  sha256: ad3f4d37120a85d17c5f462a59b6105559385538acca7ba91005e4c234c7bb91 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.6/JMRI.5.6+R89a87446cb.exe">https://github.com/JMRI/JMRI/releases/download/v5.6/JMRI.5.6+R89a87446cb.exe</a><br/>
-   sha256: 4fabe4779e5a15e373e869075ff4cf22519a541b0e2c757ec4c99d1574f39fc0</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.8/JMRI.5.8+Rbc21ce2ce7.exe">https://github.com/JMRI/JMRI/releases/download/v5.8/JMRI.5.8+Rbc21ce2ce7.exe</a><br/>
+   sha256: 7fa82736a7ea0e407d1d611caa2e16bb1635a6a0e725ce1b850a745633ad6bea</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.6/JMRI.5.6+R89a87446cb.tgz">https://github.com/JMRI/JMRI/releases/download/v5.6/JMRI.5.6+R89a87446cb.tgz</a><br/>
-   sha256: 72c43d0b0e59f3421b3fa256711eb354edeeb1c53a47ac7ad87cdb02a64cf0f6</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.8/JMRI.5.8+Rbc21ce2ce7.tgz">https://github.com/JMRI/JMRI/releases/download/v5.8/JMRI.5.8+Rbc21ce2ce7.tgz</a><br/>
+   sha256: c804eeb5eeaece4f3157ca3456605174e5506a570df7affa1c66f34b56911e9a</li>
 </ul>
 </div>
 These files are located in the 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v5.6">JMRI 5.6  GitHub release</a>.
- -->
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -162,9 +162,11 @@ on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.4">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
 
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri5.6.shtml">production release 5.6</a>:</h2>
@@ -542,6 +544,16 @@ in those is
             <li>Web Manifest and Conductor improvements, Manifest now supports utility cars. Comment colors now supported</li>
             <li>Switch lists can now display train's departure time</li>
             <li>Fixed a routing bug that was introduced in JMRI 5.6</li>
+            <li>New feature allows users to quickly create a custom load for all car types.</li>
+            <li>Simplified the creation and update of switch lists when using MR SLAM</li>
+            <li>Improvements to destination checking button for C/I tracks</li>
+            <li>Added warning messages if operation files have been corrupted</li>
+            <li>Files are now saved to the millisecond, fixes fast Automation actions and loops</li>
+            <li>Improvements to export Trains</li>
+            <li>Significant improvements to Car importing</li>
+            <li>Conductor improvements when sorting by track name</li>
+            <li>Web Manifest and Conductor improvements, Manifest now supports utility cars. Comment colors now supported</li>
+            <li>Switch lists can now display train's departure time</li>
         </ul>
 
    <h3>Dispatcher</h3>
@@ -823,7 +835,7 @@ LogixNG: IQ:AUTO:0001
           <li>The option <strong>Print disabled</strong> has been added to the LogixNG
               Browse window. It adds "Disabled" to the LogixNGs, ConditionalNGs, actions
               and expressions which are disabled.</li>
-    </ul>
+   </ul>
 
     <h3>Meters and MeterFrames</h3>
         <a id="Meters" name="Meters"></a>
