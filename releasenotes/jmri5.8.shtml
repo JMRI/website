@@ -623,9 +623,9 @@ in those is
                     <li>The action <strong>Decode JSON</strong> is added. It decodes
                         a JSON string in a local variable to a JsonNode tree and
                         puts it in another local variable.</li>
-                    <li>The LogixNG action <strong>Enable/Disable LogixNG</strong>
+                    <li>The action <strong>Enable/Disable LogixNG</strong>
                         has been added.</li>
-                    <li>The LogixNG action <strong>Set reporter</strong> has been
+                    <li>The action <strong>Set reporter</strong> has been
                         added.</li>
                     <li>The action <strong>Execute action</strong> has been added. It executes
                         another action somewhere else in the ConditionalNG tree. This can be
@@ -653,7 +653,7 @@ in those is
                         the name of the class will be shown after the value. This
                         is useful for debugging, when you want to know the type of
                         the value.</li>
-                    <li>The LogixNG action <strong>For each</strong> now supports
+                    <li>The action <strong>For each</strong> now supports
                         Java arrays as well, for example the result of the expression
                         <strong>a_b.split("\_")</strong>.</li>
                     <li>The actions <strong>Listen on Beans ...</strong> have been
