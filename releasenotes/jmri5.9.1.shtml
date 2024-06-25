@@ -37,8 +37,9 @@ And please back up your JMRI files before installing this, in case you want to g
 back to an earlier version.</p>
 
 <p>This is the first in a series of 5.9.* test releases.
-It requires Java 11 to work.
-(See <a href="http://jmri.org/java">our page on downloading Java 11</a>)
+It requires at least Java 11 to work.
+We recommend that you use Java 17.
+(See <a href="http://jmri.org/java">our page on downloading Java</a>)
 We expect this series to end in the next JMRI  production release in December 2024.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
@@ -146,7 +147,9 @@ See <a href="#update">instructions above</a>.
 <ul>
     <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
         This test release, and all subsequent ones, require the use of
-        Java 11 or later.  Java 8 is explicitly not supported.
+        Java 11 or later.  
+        We recommend that you use Java 17.
+        Java 8 is explicitly not supported.
         There's more information on this migration on the
         <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
         <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
