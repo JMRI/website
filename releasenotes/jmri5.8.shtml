@@ -596,147 +596,218 @@ in those is
     <h3>LogixNG</h3>
         <a id="LogixNG" name="LogixNG"></a>
         <ul>
-            <li><strong>Note:</strong> If tables and panels are stored
-                with this JMRI version, the file might not load in a
-                previous version of JMRI if it includes LogixNG. This is
-                because JMRI now stores some LogixNG data in a different
-                way than before.</li>
-            <li>Add Audio support to Where Used.</li>
-            <li>The action <strong>Local Variable</strong> can now set
-                a constant of different types: <strong>String</strong>,
-                <strong>Integer</strong>, <strong>Floating number</strong>,
-                <strong>Boolean</strong>.</li>
-            <li>The LogixNG table now shows whenether the ConditionalNGs
-                of a LogixNG has <strong>Startup</strong> enabled or not.
-                The <strong>Startup</strong> checkbox in the LogixNG
-                table can have three states: Checked, unchecked and
-                partially checked. If the user checks/unchecks the
-                checkbox, all the ConditionalNGs will have the
-                <strong>Startup</strong> enabled/disabled.
-                <br>
-                The column <strong>Startup</strong> is at the far right
-                in the LogixNG table. You might need to resize the table
-                to see the new column.
-                <br>
-                Note: Due to a bug, <strong>Startup</strong> might not
-                be shown as checkboxes but of text labels that cannot be
-                changed. To change <strong>Startup</strong> in this case,
-                edit the LogixNG and change <strong>Startup</strong> for
-                each ConditionalNG.</li>
-            <li>The LogixNG table now shows whenether the ConditionalNGs
-                of a LogixNG has <strong>Startup</strong> enabled or not.
-                The <strong>Startup</strong> checkbox in the LogixNG
-                table can have three states: Checked, unchecked and
-                partially checked. If the user checks/unchecks the
-                checkbox, all the ConditionalNGs will have the
-                <strong>Startup</strong> enabled/disabled.
-                <br>
-                The column <strong>Startup</strong> is at the far right
-                in the LogixNG table. You might need to resize the table
-                to see the new column.</li>
-                to see the new column.
-                <br>
-                Note: Due to a bug, this feature didn't work as it
-                should in JMRI 5.7.2 but it's now fixed.</li>
-            <li>A couple of bugs in the LogixNG formula parser have
-                been fixed.</li>
-            <li>The action <strong>Program On Main</strong> has been
-                added. It lets you program CVs on the main.</li>
-          <li>The action <strong>Table: For each</strong> can now loop
-              thru the headers too. If indirect addressing is used for
-              the row or column name, use the empty string to get the
-              headers.</li>
-          <li>The action <strong>Table</strong> is added. It  lets the
-              user set the value of a cell in a LogixNG table.</li>
-          <li>The action <strong>Request update of sensor</strong> is
-              added. It requests that the state of a sensor is updated
-              from the layout, if possible. Not all connections supports
-              this, for example LocoNet.</li>
-          <li>LogixNG has two new preferences which are disabled by default:
-              <ul>
-                  <li><strong>Use strict typing of global variables</strong></li>
-                  <li><strong>Use strict typing of local variables</strong></li>
-              </ul>
-              If strict typing is enabled, local and global variables
-              that are initialized to a string, integer or floating number
-              cannot be set to a value of another type. LogixNG will try
-              to convert the new value to the desired type, for example
-              a local variable of type floating number will be assigned
-              the value 12.0 if it's assigned 12 and it will be assigned
-              the value 32. if it's assigned the string "32.5".
-              <br>
-              Local and global variables that are initialized to another
-              type, for example array, map or LogixNG table can't be
-              assigned a new value.
-              <br>
-              If you want to use strict typing but still want to override
-              this setting for a particular local or global variable, then
-              initialize this variable to <strict>None</strict>. Variables
-              that are initialized to <strict>None</strict> will not have
-              strict typing,
-          </li>
-          <li>A new preference is added that selects if the
-              <strong>If Then Else</strong> action should have
-              <strong>Execute on change</strong> or
-              <strong>Always execute</strong> as the default.
-          </li>
-          <li>The expression <strong>Sensor Edge</strong> no longer
-              supports indirect addressing of the sensor. It has never
-              really worked since Sensor Edge needs to listen on the
-              sensor and it cannot listen on a sensor if indirect
-              addressing is used.<br>
-              If a panel is loaded and a Sensor Edge expression uses
-              indirect addressing, an error message is added to the
-              log:<br>
-              <strong>Error during loading Sensor Edge expression
-              IQDE:AUTO:0003 due to: Addressing must be Direct</strong><br>
-              where IQDE:AUTO:0003 is the system name of the expression.</li>
-          <li>The action <strong>Window to front</strong> as been added.
-              It brings a window to the front and can be used if you for
-              example want to have an icon on a panel that moves focus to
-              another window.</li>
-          <li>The action <strong>Decode JSON</strong> is added. It decodes
-              a JSON string in a local variable to a JsonNode tree and
-              puts it in another local variable.</li>
-          <li>LogixNG formula now supports JSON as well. It's in particular
-              useful together with the action <strong>Decode JSON</strong>.
-              A JSON dataset can be indexed as a map or as an array, for
-              example by <strong>MyJson{"decoder}{"model"}[4]</strong>.
-              The result is a Json text node, so use the <strong>str()</strong>
-              function to convert the value to a string afterwards.</li>
-               <li>Conversion to boolean has changed. Before JMRI 5.7.5,
-              conversion from a string to boolean returned
-              <strong>True</strong> if the string was not empty, and
-              <strong>False</strong> if the string was empty. With JMRI 5.7.5,
-              this has changed so that a string that's <strong>true</strong>
-              (case insensitive) returns a boolean <strong>True</strong>
-              and a string that's <strong>false</strong> (case insensitive)
-              returns a boolean <strong>False</strong>. All other string
-              values throw an exception. The earlier behaviour was not
-              documented so it's unlikely that this affects users.<br>
-              The old behaviour was based on how Jython converts a string
-              to boolean. If you want the old behaviour, you can use the
-              LogixNG formula function <strong>boolJython()</strong>.</li>
-          <li>Local variables and Global variables can now be initialized
-              to boolean values as well. True or false. Case insensitive.</li>
-          <li>The action <strong>Log local variables</strong> now has the
-              option <strong>Show class name</strong>.If it is selected,
-              the name of the class will be shown after the value. This
-              is useful for debugging, when you want to know the type of
-              the value.</li>
-          <li>The LogixNG function <strong>int()</strong> previously returned a Java
-              <strong>Integer</strong> instead of a Java <strong>Long</strong>.
-              This bug is now corrected. It shouldn't affect any existing
-              LogixNGs. The difference between <strong>Integer</strong> and
-              <strong>Long</strong> is that <strong>Long</strong> can handle
-              much bigger integer values than <strong>Integer</strong>.</li>
-          <li>The LogixNG action <strong>Enable/Disable LogixNG</strong>
-              has been added.</li>
-          <li>LogixNG formulas now supports Java arrays as well, for example
-              if you use the Java method <strong>split()</strong> to split
-              a string. Example:
-              <br>
-              <pre>
+            <li>Warnings
+                <ul>
+                    <li><strong>Note:</strong> If tables and panels are stored
+                        with this JMRI version, the file might not load in a
+                        previous version of JMRI if it includes LogixNG. This is
+                        because JMRI now stores some LogixNG data in a different
+                        way than before.</li>
+                </ul>
+            </li>
+            <br>
+            <li>New actions
+                <ul>
+                    <li>The action <strong>Program On Main</strong> has been
+                        added. It lets you program CVs on the main.</li>
+                    <li>The action <strong>Table</strong> is added. It  lets the
+                        user set the value of a cell in a LogixNG table.</li>
+                    <li>The action <strong>Request update of sensor</strong> is
+                        added. It requests that the state of a sensor is updated
+                        from the layout, if possible. Not all connections supports
+                        this, for example LocoNet.</li>
+                    <li>The action <strong>Window to front</strong> as been added.
+                        It brings a window to the front and can be used if you for
+                        example want to have an icon on a panel that moves focus to
+                        another window.</li>
+                    <li>The action <strong>Decode JSON</strong> is added. It decodes
+                        a JSON string in a local variable to a JsonNode tree and
+                        puts it in another local variable.</li>
+                    <li>The action <strong>Enable/Disable LogixNG</strong>
+                        has been added.</li>
+                    <li>The action <strong>Set reporter</strong> has been
+                        added.</li>
+                    <li>The action <strong>Execute action</strong> has been added. It executes
+                        another action somewhere else in the ConditionalNG tree. This can be
+                        useful if you need to execute a part of the ConditionalNG at several
+                        different places, for example if you have several
+                        <strong>Listen On Beans - Local variable</strong> in the same
+                        ConditionalNG.<br/>
+                        Note that the action you want to execute must have
+                        a user name. Otherwise the action can't be selected.</li>
+                </ul>
+            </li>
+            <br>
+            <li>Improved actions
+                <ul>
+                    <li>The action <strong>Local Variable</strong> can now set
+                        a constant of different types: <strong>String</strong>,
+                        <strong>Integer</strong>, <strong>Floating number</strong>,
+                        <strong>Boolean</strong>.</li>
+                    <li>The action <strong>Table: For each</strong> can now loop
+                        thru the headers too. If indirect addressing is used for
+                        the row or column name, use the empty string to get the
+                        headers.</li>
+                    <li>The action <strong>Log local variables</strong> now has the
+                        option <strong>Show class name</strong>.If it is selected,
+                        the name of the class will be shown after the value. This
+                        is useful for debugging, when you want to know the type of
+                        the value.</li>
+                    <li>The action <strong>For each</strong> now supports
+                        Java arrays as well, for example the result of the expression
+                        <strong>a_b.split("\_")</strong>.</li>
+                    <li>The actions <strong>Listen on Beans ...</strong> have been
+                        updated to fix a problem when several beans changes
+                        state at the same time.</li>
+                    <li>The action <strong>Window to front</strong> has been improved and renamed to
+                        <strong>Window management</strong>. It can now show/hide a window,
+                        maximize/normalize/minimize a window and move the window to front or back.</li>
+                </ul>
+            </li>
+            <br>
+            <li>New expressions
+                <ul>
+                    <li></li>
+                </ul>
+            </li>
+            <br>
+            <li>Improved expressions
+                <ul>
+                <li>The expression <strong>Sensor Edge</strong> no longer
+                    supports indirect addressing of the sensor. It has never
+                    really worked since Sensor Edge needs to listen on the
+                    sensor and it cannot listen on a sensor if indirect
+                    addressing is used.<br>
+                    If a panel is loaded and a Sensor Edge expression uses
+                    indirect addressing, an error message is added to the
+                    log:<br>
+                    <strong>Error during loading Sensor Edge expression
+                    IQDE:AUTO:0003 due to: Addressing must be Direct</strong><br>
+                    where IQDE:AUTO:0003 is the system name of the expression.</li>
+                </ul>
+            </li>
+            <br>
+            <li>Bug fixes
+                <ul>
+                    <li>A couple of bugs in the LogixNG formula parser have
+                        been fixed.</li>
+                    <li>Conversion to boolean has changed. Before JMRI 5.7.5,
+                        conversion from a string to boolean returned
+                        <strong>True</strong> if the string was not empty, and
+                        <strong>False</strong> if the string was empty. With JMRI 5.7.5,
+                        this has changed so that a string that's <strong>true</strong>
+                        (case insensitive) returns a boolean <strong>True</strong>
+                        and a string that's <strong>false</strong> (case insensitive)
+                        returns a boolean <strong>False</strong>. All other string
+                        values throw an exception. The earlier behaviour was not
+                        documented so it's unlikely that this affects users.<br>
+                        The old behaviour was based on how Jython converts a string
+                        to boolean. If you want the old behaviour, you can use the
+                        LogixNG formula function <strong>boolJython()</strong>.</li>
+                    <li>The LogixNG function <strong>int()</strong> previously returned a Java
+                        <strong>Integer</strong> instead of a Java <strong>Long</strong>.
+                        This bug is now corrected. It shouldn't affect any existing
+                        LogixNGs. The difference between <strong>Integer</strong> and
+                        <strong>Long</strong> is that <strong>Long</strong> can handle
+                        much bigger integer values than <strong>Integer</strong>.</li>
+                    <li>Fixes a bug so that the methods <strong>toString()</strong>,
+                        <strong>getKey()</strong> and <strong>getValue()</strong>
+                        can be used for an item when using the action <strong>For each</strong>
+                        on a Map.</li>
+                    <li>Bug fix: The LogixNG function <strong>boolJython()</strong>
+                        now return false if the value is an empty array. It returns
+                        true if the value is a non empty array.</li>
+                    <li>Bug fix: The LogixNG function <strong>evaluateMemory()</strong>
+                        didn't behaved as documented. It's now fixed.</li>
+                    <li>A bug has been fixed in LogixNG when using LogixNG tables:<br>
+                        If an action or expression, for example the action <strong>Set turnout</strong>,
+                        reads data from a LogixNG table, for example the name of the turnout, and a
+                        memory is used for addressing the row or column in the table, the name of the
+                        memory was stored in the wrong place in the file. JMRI deals with this when
+                        the file is loaded so no user should be affected.<br>
+                        But if an existing file is loaded and then stored, the file will not work
+                        with JMRI versions pre 5.7.6.</li>
+                    <li>Fixes a bug in LogixNG formula when calling a Java method that
+                        takes a boolean as parameter, like <strong>setVisible()</strong>.</li>
+                </ul>
+            </li>
+            <br>
+            <li>Other improvements
+                <ul>
+                    <li>Add Audio support to Where Used.</li>
+                    <li>The LogixNG table now shows whenether the ConditionalNGs
+                        of a LogixNG has <strong>Startup</strong> enabled or not.
+                        The <strong>Startup</strong> checkbox in the LogixNG
+                        table can have three states: Checked, unchecked and
+                        partially checked. If the user checks/unchecks the
+                        checkbox, all the ConditionalNGs will have the
+                        <strong>Startup</strong> enabled/disabled.
+                        <br>
+                        The column <strong>Startup</strong> is at the far right
+                        in the LogixNG table. You might need to resize the table
+                        to see the new column.
+                        <br>
+                        Note: Due to a bug, <strong>Startup</strong> might not
+                        be shown as checkboxes but of text labels that cannot be
+                        changed. To change <strong>Startup</strong> in this case,
+                        edit the LogixNG and change <strong>Startup</strong> for
+                        each ConditionalNG.</li>
+                    <li>The LogixNG table now shows whenether the ConditionalNGs
+                        of a LogixNG has <strong>Startup</strong> enabled or not.
+                        The <strong>Startup</strong> checkbox in the LogixNG
+                        table can have three states: Checked, unchecked and
+                        partially checked. If the user checks/unchecks the
+                        checkbox, all the ConditionalNGs will have the
+                        <strong>Startup</strong> enabled/disabled.
+                        <br>
+                        The column <strong>Startup</strong> is at the far right
+                        in the LogixNG table. You might need to resize the table
+                        to see the new column.</li>
+                        to see the new column.
+                        <br>
+                        Note: Due to a bug, this feature didn't work as it
+                        should in JMRI 5.7.2 but it's now fixed.</li>
+                    <li>LogixNG has two new preferences which are disabled by default:
+                        <ul>
+                            <li><strong>Use strict typing of global variables</strong></li>
+                            <li><strong>Use strict typing of local variables</strong></li>
+                        </ul>
+                        If strict typing is enabled, local and global variables
+                        that are initialized to a string, integer or floating number
+                        cannot be set to a value of another type. LogixNG will try
+                        to convert the new value to the desired type, for example
+                        a local variable of type floating number will be assigned
+                        the value 12.0 if it's assigned 12 and it will be assigned
+                        the value 32. if it's assigned the string "32.5".
+                        <br>
+                        Local and global variables that are initialized to another
+                        type, for example array, map or LogixNG table can't be
+                        assigned a new value.
+                        <br>
+                        If you want to use strict typing but still want to override
+                        this setting for a particular local or global variable, then
+                        initialize this variable to <strict>None</strict>. Variables
+                        that are initialized to <strict>None</strict> will not have
+                        strict typing,
+                    </li>
+                    <li>A new preference is added that selects if the
+                        <strong>If Then Else</strong> action should have
+                        <strong>Execute on change</strong> or
+                        <strong>Always execute</strong> as the default.
+                    </li>
+                    <li>LogixNG formula now supports JSON as well. It's in particular
+                        useful together with the action <strong>Decode JSON</strong>.
+                        A JSON dataset can be indexed as a map or as an array, for
+                        example by <strong>MyJson{"decoder}{"model"}[4]</strong>.
+                        The result is a Json text node, so use the <strong>str()</strong>
+                        function to convert the value to a string afterwards.</li>
+                    <li>Local variables and Global variables can now be initialized
+                        to boolean values as well. True or false. Case insensitive.</li>
+                    <li>LogixNG formulas now supports Java arrays as well, for example
+                        if you use the Java method <strong>split()</strong> to split
+                        a string. Example:
+                        <br>
+                        <pre>
 LogixNG: IQ:AUTO:0001
     ConditionalNG: IQC:AUTO:0001
         ! A
@@ -753,89 +824,49 @@ LogixNG: IQ:AUTO:0001
                     Digital Formula: b = a_b_array[1]
                 ! A4
                     Log local variables
-              </pre>
-              </li>
-          <li>The LogixNG action <strong>For each</strong> now supports
-              Java arrays as well, for example the result of the expression
-              <strong>a_b.split("\_")</strong>.</li>
-          <li>The LogixNG action <strong>Set reporter</strong> has been
-              added.</li>
-          <li>The actions <strong>Listen on Beans ...</strong> have been
-              updated to fix a problem when several beans changes
-              state at the same time.</li>
-          <li>Fixes a bug so that the methods <strong>toString()</strong>,
-              <strong>getKey()</strong> and <strong>getValue()</strong>
-              can be used for an item when using the action <strong>For each</strong>
-              on a Map.</li>
-          <li>Adds the LogixNG functions <strong>strlen()</strong> in module
-              <strong>String</strong> and <strong>length()</strong> in module
-              <strong>Common</strong>.</li>
-          <li>Bug fix: The LogixNG function <strong>boolJython()</strong>
-              now return false if the value is an empty array. It returns
-              true if the value is a non empty array.</li>
-          <li>Bug fix: The LogixNG function <strong>evaluateMemory()</strong>
-              didn't behaved as documented. It's now fixed.</li>
-          <li>The LogixNG functions <strong>cos()</strong>, <strong>tan()</strong>,
-              <strong>atan()</strong>, <strong>sqr()</strong> and
-              <strong>sqrt()</strong> has been added to the <strong>Math</strong>
-              module.</li>
-          <li>A bug has been fixed in LogixNG when using LogixNG tables:<br>
-              If an action or expression, for example the action <strong>Set turnout</strong>,
-              reads data from a LogixNG table, for example the name of the turnout, and a
-              memory is used for addressing the row or column in the table, the name of the
-              memory was stored in the wrong place in the file. JMRI deals with this when
-              the file is loaded so no user should be affected.<br>
-              But if an existing file is loaded and then stored, the file will not work
-              with JMRI versions pre 5.7.6.</li>
-          <li>ConditionalNGs can now be enabled/disabled by editing a LogixNG.</li>
-          <li>Scripts invoked by a ConditionalNG or Module can access <strong>current</strong> local
-              variables.  This makes it possible to use local variables as parameters for Jython scripts.
-              See <a href="https://www.jmri.org/help/en/html/tools/logixng/reference/chapter13.shtml">
-              LogixNG Reference Chapter 13</a> for details.</li>
-          <li>The action <strong>Window to front</strong> has been improved and renamed to
-              <strong>Window management</strong>. It can now show/hide a window,
-              maximize/normalize/minimize a window and move the window to front or back.</li>
-          <li>The class <strong>jmri.jmrit.logixng.actions.NamedBeanType</strong> has been moved to
-              <strong>jmri.jmrit.logixng.NamedBeanType</strong>. It should only affect JMRI developers.</li>
-          <li>The functions <strong>round()</strong>, <strong>ceil()</strong>
-              and <strong>floor()</strong> has been added to the Math module.
-              All three rounds a floating point value. ceil() rounds up and
-              floor() rounds down.</li>
-          <li>The constant <strong>oblocks</strong> has been added to
-              the Layout module.</li>
-          <li>Fixes a bug in LogixNG formula when calling a Java method that
-              takes a boolean as parameter, like <strong>setVisible()</strong>.</li>
-          <li>Two new preferences have been added. <strong>Log all before</strong>
-              and <strong>Log all after</strong>. If these are selected,
-              LogixNG will log every action that's executed and every
-              expression that's evaluated. For this to work, the LogixNG
-              debugger must be installed (which it is by default).</li>
-          <li>In panel file print routine (XSLT), separate out "inline" LogixNGs from table-based.</li>
-          <li>Add an <strong>Examples</strong> section to the LogixNG Reference.</li>
-          <li>Add the <strong>Set a yard ladder</strong> example to the Examples section.</li>
-          <li>The action <strong>Program On Main</strong> is improved.
-              It's now possible to select long or short address. It's
-              also possible to select not to wait until programming is
-              completed.</li>
-          <li>For most actions and expressions, when selecting indirect addressing
-              of an enum, the button <strong>Show valid names</strong> are added.
-              Pressing this button opens a dialog that shows a list of valid values
-              and their descriptions.</li>
-          <li>The action <strong>Execute action</strong> has been added. It executes
-              another action somewhere else in the ConditionalNG tree. This can be
-              useful if you need to execute a part of the ConditionalNG at several
-              different places, for example if you have several
-              <strong>Listen On Beans - Local variable</strong> in the same
-              ConditionalNG.<br/>
-              Note that the action you want to execute must have
-              a user name. Otherwise the action can't be selected.</li>
-          <li>The LogixNG tools menu now has the option to browse All LogixNGs.
-              Open <strong>Tools &rArr; LogixNG &rArr; Browse All LogixNGs</strong>.
-              It lists all the LogixNGs, Modules, Tables and Global variables.</li>
-          <li>The option <strong>Print disabled</strong> has been added to the LogixNG
-              Browse window. It adds "Disabled" to the LogixNGs, ConditionalNGs, actions
-              and expressions which are disabled.</li>
-   </ul>
+                        </pre>
+                    </li>
+                    <li>Adds the LogixNG functions <strong>strlen()</strong> in module
+                        <strong>String</strong> and <strong>length()</strong> in module
+                        <strong>Common</strong>.</li>
+                    <li>The LogixNG functions <strong>cos()</strong>, <strong>tan()</strong>,
+                        <strong>atan()</strong>, <strong>sqr()</strong> and
+                        <strong>sqrt()</strong> has been added to the <strong>Math</strong>
+                        module.</li>
+                    <li>ConditionalNGs can now be enabled/disabled by editing a LogixNG.</li>
+                    <li>Scripts invoked by a ConditionalNG or Module can access <strong>current</strong> local
+                        variables.  This makes it possible to use local variables as parameters for Jython scripts.
+                        See <a href="https://www.jmri.org/help/en/html/tools/logixng/reference/chapter13.shtml">
+                        LogixNG Reference Chapter 13</a> for details.</li>
+                    <li>The class <strong>jmri.jmrit.logixng.actions.NamedBeanType</strong> has been moved to
+                        <strong>jmri.jmrit.logixng.NamedBeanType</strong>. It should only affect JMRI developers.</li>
+                    <li>The functions <strong>round()</strong>, <strong>ceil()</strong>
+                        and <strong>floor()</strong> has been added to the Math module.
+                        All three rounds a floating point value. ceil() rounds up and
+                        floor() rounds down.</li>
+                    <li>The constant <strong>oblocks</strong> has been added to
+                        the Layout module.</li>
+                    <li>Two new preferences have been added. <strong>Log all before</strong>
+                        and <strong>Log all after</strong>. If these are selected,
+                        LogixNG will log every action that's executed and every
+                        expression that's evaluated. For this to work, the LogixNG
+                        debugger must be installed (which it is by default).</li>
+                    <li>In panel file print routine (XSLT), separate out "inline" LogixNGs from table-based.</li>
+                    <li>Add an <strong>Examples</strong> section to the LogixNG Reference.</li>
+                    <li>Add the <strong>Set a yard ladder</strong> example to the Examples section.</li>
+                    <li>For most actions and expressions, when selecting indirect addressing
+                        of an enum, the button <strong>Show valid names</strong> are added.
+                        Pressing this button opens a dialog that shows a list of valid values
+                        and their descriptions.</li>
+                    <li>The LogixNG tools menu now has the option to browse All LogixNGs.
+                        Open <strong>Tools &rArr; LogixNG &rArr; Browse All LogixNGs</strong>.
+                        It lists all the LogixNGs, Modules, Tables and Global variables.</li>
+                    <li>The option <strong>Print disabled</strong> has been added to the LogixNG
+                        Browse window. It adds "Disabled" to the LogixNGs, ConditionalNGs, actions
+                        and expressions which are disabled.</li>
+                </ul>
+            </li>
+        </ul>
 
     <h3>Meters and MeterFrames</h3>
         <a id="Meters" name="Meters"></a>
