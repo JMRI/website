@@ -53,89 +53,97 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
 <!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
 
 <a id="sysreq"></a><h2>Determine System Requirements</h2>
-    
-	  <p>Using JMRI requires a combination of hardware (in this case running Windows), Java software and a JMRI
-    download for a specific version.  The table below shows configurations that have been reported working - 
-    there may be other combinations that are also possible, but they have not been reported by the user community.
-	  
-	  <table style="width:75%">
-    <tr>
-       <th style="width:30%">JMRI&reg; Release</th>
-       <th style="width:20%">Windows Rel.</th>
-       <th style="width:25%">Java Rel.</th>
-    </tr>
-    <tr>
-        <td><a href="../download/index.shtml">Test release 4.x.y through 4.25.9</a></td>
-        <td>7, 8, 10, 11, Vista</td>
-        <td>Java 1.8 ("Java 8")</td>
-    </tr>
-    <tr>
-        <td><a href="../releasenotes/jmri4.26.shtml">Production rel 4.26</a></td>
-        <td>7, 8, 10, 11</td>
-        <td>Java 8 or <a href="../java/index.shtml">Java 11 (Recommended)</a></td>
-    </tr>
-    <tr>
-        <td><a href="../releasenotes/jmri4.26.shtml">Production rel 4.26</a></td>
-        <td>Vista</td>
-        <td>Java 8</td>
-    <tr>
-        <td><a href="../releasenotes/jmri4.27.1.shtml">Test rel 4.27.1</a></td>
-        <td>7, 8, 10, 11, Vista</td>
-        <td>Java 8 or <a href="../java/index.shtml">Java 11 (Recommended)</a></td>
-    </tr>
-    <tr>
-        <td><a href="../download/index.shtml">Test rel 4.99.x</a></td>
-        <td>8.1, 10, 11</td>
-        <td><a href="../java/index.shtml">Java 11</a></td>
-    </tr>
-    <tr>
-        <td><a href="../download/index.shtml">Production rel 5.0</a></td>
-        <td>8.1, 10, 11</td>
-        <td><a href="../java/index.shtml">Java 11</a></td>
-    </tr>
-    <tr>
-        <td><a href="../download/index.shtml">Test rel 5.x</a></td>
-        <td>8.1, 10, 11</td>
-        <td><a href="../java/index.shtml">Java 11</a></td>
-    </tr>
-    </table>
-    
-    
-    <p><strong>Older releases:</strong><br>
-    <table style="width:75%">
-    <tr>
-       <th style="width:30%">JMRI&reg; Release</th>
-       <th style="width:20%">Windows Rel.</th>
-       <th style="width:25%">Java Rel.</th>
-    </tr>
-    <tr>
-        <td><a href="../releasenotes/jmri3.10.1.shtml">Test release 3.10.1</a></td>
-        <td></td>
-        <td>Java 1.6</td>
-    </tr>
-    <tr>
-        <td><a href="../releasenotes/jmri3.10.1.shtml">Test release 3.10.1</a></td>
-        <td>Vista SP1</td>
-        <td>Java 1.7</td>
-    </tr>
-    <tr>
-        <td><a href="../releasenotes/jmri2.14.1.shtml">Test release 2.14.1</a></td>
-        <td></td>
-        <td>Java 1.5 or 1.6</td>
-    </tr>
-    <tr>
-        <td><a href="../releasenotes/jmri2.14.1.shtml">Test release 2.14.1</a></td>
-        <td>Windows 2000 SP3, XP</td>
-        <td>Java 1.6</td>
-    </tr>
-    <tr>
-        <td><a href="../releasenotes/jmri2.8.shtml">Production release 2.8</a></td>
-        <td>Windows 98, ME</td>
-        <td>Java 1.6</td>
-    </tr>
-    </table>
 
-<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
+      <p>Using JMRI requires a combination of hardware (in this case running Windows), Java
+        software and a JMRI download for a specific version. The table below shows configurations
+        that have been reported working - there may be other combinations that are also possible,
+        but they have not been reported by the user community.
+      
+      <table style="width: 75%">
+        <tr>
+          <th style="width: 30%">JMRI&reg; Release</th>
+          <th style="width: 20%">Windows Rel.</th>
+          <th style="width: 25%">Java Rel.</th>
+        </tr>
+        <tr>
+          <td><a href="../download/index.shtml">Test rel 5.9.x and newer</a></td>
+          <td>8.1, 10, 11</td>
+          <td><a href="../java/index.shtml">Java 11 or Java 17 (Recommended)</a></td>
+        </tr>
+        <tr>
+          <td><a href="../download/index.shtml">Production rel 5.0 through 5.8</a></td>
+          <td>8.1, 10, 11</td>
+          <td><a href="../java/index.shtml">Java 11</a></td>
+        </tr>
+      </table>
+
+      <p>
+        <strong>Older releases:</strong><br>
+      
+      <table style="width: 75%">
+        <tr>
+          <th style="width: 30%">JMRI&reg; Release</th>
+          <th style="width: 20%">Windows Rel.</th>
+          <th style="width: 25%">Java Rel.</th>
+        </tr>
+        <tr>
+          <td><a href="../download/index.shtml">Test rel 5.x</a></td>
+          <td>8.1, 10, 11</td>
+          <td><a href="../java/index.shtml">Java 11</a></td>
+        </tr>
+        <tr>
+          <td><a href="../download/index.shtml">Test rel 4.99.x</a></td>
+          <td>8.1, 10, 11</td>
+          <td><a href="../java/index.shtml">Java 11</a></td>
+        </tr>
+        <tr>
+          <td><a href="../releasenotes/jmri4.27.1.shtml">Test rel 4.27.1</a></td>
+          <td>7, 8, 10, 11, Vista</td>
+          <td>Java 8 or <a href="../java/index.shtml">Java 11 (Recommended)</a></td>
+        </tr>
+        <tr>
+          <td><a href="../releasenotes/jmri4.26.shtml">Production rel 4.26</a></td>
+          <td>Vista</td>
+          <td>Java 8</td>
+        </tr>
+        <tr>
+          <td><a href="../releasenotes/jmri4.26.shtml">Production rel 4.26</a></td>
+          <td>7, 8, 10, 11</td>
+          <td>Java 8 or <a href="../java/index.shtml">Java 11 (Recommended)</a></td>
+        </tr>
+        <tr>
+          <td><a href="../download/index.shtml">Test release 4.x.y through 4.25.9</a></td>
+          <td>7, 8, 10, 11, Vista</td>
+          <td>Java 1.8 ("Java 8")</td>
+        </tr>
+        <tr>
+          <td><a href="../releasenotes/jmri3.10.1.shtml">Test release 3.10.1</a></td>
+          <td></td>
+          <td>Java 1.6</td>
+        </tr>
+        <tr>
+          <td><a href="../releasenotes/jmri3.10.1.shtml">Test release 3.10.1</a></td>
+          <td>Vista SP1</td>
+          <td>Java 1.7</td>
+        </tr>
+        <tr>
+          <td><a href="../releasenotes/jmri2.14.1.shtml">Test release 2.14.1</a></td>
+          <td></td>
+          <td>Java 1.5 or 1.6</td>
+        </tr>
+        <tr>
+          <td><a href="../releasenotes/jmri2.14.1.shtml">Test release 2.14.1</a></td>
+          <td>Windows 2000 SP3, XP</td>
+          <td>Java 1.6</td>
+        </tr>
+        <tr>
+          <td><a href="../releasenotes/jmri2.8.shtml">Production release 2.8</a></td>
+          <td>Windows 98, ME</td>
+          <td>Java 1.6</td>
+        </tr>
+      </table>
+
+      <!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
 
 <a id="installation"></a>
 <h2>Installation Procedure</h2>
