@@ -32,6 +32,13 @@ function showSubdirs() {
         echo "</pre>\n";
     }
     
+    // show README.md if present
+    if (file_exists("README.md")) {
+        echo "<pre>\n";
+        echo file_get_contents( "README.md" );
+        echo "</pre>\n";
+    }
+    
     // show subdirectories
     $list = array();
     
