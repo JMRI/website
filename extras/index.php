@@ -10,9 +10,9 @@
 <?php
 // find showIcons directory
 $name = getcwd();
-$n = strrpos($name, "/resources");
+$n = strrpos($name, "/extras");
 
-require(substr($name,0,$n+strlen("/resources"))."/showIcons.php");
+require(substr($name,0,$n+strlen("/extras"))."/showIcons.php");
 
 showSubdirs();
 showFiles();
