@@ -93,7 +93,9 @@ listed in the Preferences?</dt>
 <dd>
 <p>There are several options for solving this problem depending on your JMRI version:</p>
 <ol>
-    <li><p><i>For JMRI 4.7.4 and newer:</i> You can identify your desired device's name in the
+    <li><p><i>For JMRI 5.7.1 and newer:</i> We have not found a way to add custom serial port names or 
+            symlinks to the <code>jSerialComm</code> port enumeration system.</p></li>
+    <li><p><i>For JMRI 4.7.4 through JMRI 5.6 only:</i> You can identify your desired device's name in the
             <code>purejavacomm.portnamepattern</code> system property as a
             parameter to a JMRI launcher script:</p>
 <pre>
