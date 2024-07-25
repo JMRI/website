@@ -109,6 +109,11 @@ from
 <h3>New warnings for this production release:</h3>
 
 <ul>
+    <li><span class="since">Since <a href="jmri4.7.7.shtml">JMRI 4.7.7</a></span>
+        If you are using a RR-CirKits LocoNet to LCC gateway
+        with this release, please upgrade its firmware
+        to version B8g or later.  B8f or earlier will 
+        have trouble updating the gateway's configuration.</li>
     <li><span class="since">Since <a href="jmri5.7.1.shtml">JMRI 5.7.1</a></span>
         Several systems have had extensive updates to their serial
         support.  If you have trouble connecting to your layout hardware

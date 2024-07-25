@@ -138,6 +138,11 @@ before installing this test release.
 See <a href="#update">instructions above</a>.
 
 <ul>
+    <li><span class="since">Since <a href="jmri4.7.7.shtml">JMRI 4.7.7</a></span>
+        If you are using a RR-CirKits LocoNet to LCC gateway
+        with this release, please upgrade its firmware
+        to version B8g or later.  B8f or earlier will 
+        have trouble updating the gateway's configuration.</li>
     <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
         This test release, and all subsequent ones, require the use of
         Java 11 or later.  Java 8 is explicitly not supported.
