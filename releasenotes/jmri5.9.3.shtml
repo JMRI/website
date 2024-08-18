@@ -123,14 +123,6 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
     <li>None Yet</li>
 </ul>
 
@@ -172,25 +164,23 @@ See <a href="#update">instructions above</a>.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!--
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.dmg">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.dmg</a><br/>
-  sha256: 284c20cbd50b40317a558129cca9ac893fe1938ceae8b2de67790fc0ddcf27f5 </li>
+	href="https://builds.jmri.org/jenkins/job/TestReleases/job/5.9.3/lastSuccessfulBuild/artifact/dist/release/JMRI.5.9.3+Rac2dc0606b.dmg">https://builds.jmri.org/jenkins/job/TestReleases/job/5.9.3/lastSuccessfulBuild/artifact/dist/release/JMRI.5.9.3+Rac2dc0606b.dmg</a><br/>
+  sha256: c2481d2428b791c47e75968e87f7011ebbd11ee3c6a0c4135d52f1f3a39c0f3c </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.exe">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.exe</a><br/>
-   sha256: 4111f6822df4a3b99f916fcb9b688c66a1c121fe011e4ab7c041e6b1359ca7c1</li>
+	href="https://builds.jmri.org/jenkins/job/TestReleases/job/5.9.3/lastSuccessfulBuild/artifact/dist/release/JMRI.5.9.3+Rac2dc0606b.exe">https://builds.jmri.org/jenkins/job/TestReleases/job/5.9.3/lastSuccessfulBuild/artifact/dist/release/JMRI.5.9.3+Rac2dc0606b.exe</a><br/>
+   sha256: f89a5fb8fd516fcf081242d7e98da506aecf2b716749fe89d654d569c38b9559</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.tgz">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.tgz</a><br/>
-   sha256: 3ea4efa27a5ef984737c4e77288de2bf63e0d45cee588150227b9059db56766f</li>
+	href="https://builds.jmri.org/jenkins/job/TestReleases/job/5.9.3/lastSuccessfulBuild/artifact/dist/release/JMRI.5.9.3+Rac2dc0606b.tgz">https://builds.jmri.org/jenkins/job/TestReleases/job/5.9.3/lastSuccessfulBuild/artifact/dist/release/JMRI.5.9.3+Rac2dc0606b.tgz</a><br/>
+   sha256: d71a2181abbaba057fae331f54c81d4fd70682226ace1df0836f542a11c78138</li>
 </ul>
 </div>
 These files are located in the 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v5.7.7">JMRI 5.7.7  GitHub release</a>.
- -->
 
 <!--
 Preliminary build files (not the final released files) can be found
