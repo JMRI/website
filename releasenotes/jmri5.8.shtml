@@ -93,7 +93,8 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>New problems with this release</h3>
 <ul>
-    <li>None as yet
+    <li>LogixNG Timers configured to fire when JMRI starts do not work properly in this release. 
+        It will be fixed in 5.9.5 and 5.10.</li>
 </ul>
 <!--
 If any of those affect you, please either
