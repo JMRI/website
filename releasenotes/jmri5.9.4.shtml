@@ -111,6 +111,8 @@ that can arise from skipping these versions.
 <ul>
     <li>LogixNG Timers configured to fire when JMRI starts do not work properly in this release. 
         It will be fixed in 5.9.5 and 5.10.</li>
+    <li>WiThrottle Server does not work properly in this release. (crashes when sending Turnouts or Routes),
+        It will be fixed in 5.9.5 and 5.10.</li>
 </ul>
 <!--
 If any of those affect you, please either
