@@ -4,12 +4,7 @@
 <head>
   <title>JMRI Install Guide: Windows</title>
     <!--#include virtual="/Style.shtml" -->
-    
-    <style>
-      table, th, td {
-        border: 1px solid black;
-      }
-     </style>
+
 </head>
 
 <body>
@@ -38,6 +33,7 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
             <li><a href="#themes">Windows Themes and Skins</a></li>
             <li><a href="#revert">Reverting to an earlier version</a></li>
             <li><a href="#olderwindows">Installing Java 8 on older versions of Windows</a></li>
+            <li><a href="#untrusted">Handle Untrusted Download Warnings</a></li>
         </ul>
     </li>
 	<li><a href="#debugging">Debugging</a>
@@ -58,7 +54,7 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
         software and a JMRI download for a specific version. The table below shows configurations
         that have been reported working - there may be other combinations that are also possible,
         but they have not been reported by the user community.
-      
+
       <table style="width: 75%">
         <tr>
           <th style="width: 30%">JMRI&reg; Release</th>
@@ -79,7 +75,7 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
 
       <p>
         <strong>Older releases:</strong><br>
-      
+
       <table style="width: 75%">
         <tr>
           <th style="width: 30%">JMRI&reg; Release</th>
@@ -168,19 +164,19 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
   <li><em>Check Java release on your computer</em>
      <p>Check to see what release of Java is currently installed on your computer. Open a "command" window
      by typing "Command prompt" into the search bar next to the Windows Start icon. Then type:</p>
-     
+
      <code>java -version</code>
-     
+
      <p>Use the tables above to make sure the version of Java you are running is compatible with the version
      of JMRI you want to install. If you want to run a more current version of JMRI, consider installing
-     <a href="../java/index.shtml"> Java 11 (see suggestions by clicking here)</a>.  
+     <a href="../java/index.shtml"> Java 11 (see suggestions by clicking here)</a>.
      <strong>IF YOU HAVE JAVA 8 CURRENTLY INSTALLED, MAKE SURE TO UNINSTALL IT FIRST.</strong>
      [Multiple problems have been reported if both Java 11 and Java 8 are installed at the same time.]</p>
-     
+
      <ul>
         <li>Go to Windows <strong>Settings&rArr;Apps</strong>, find Java 8 and click on <strong>"Uninstall."</strong></li>
-        <li>Alternatively, download the <a href="https://www.java.com/en/download/uninstalltool.jsp
-        " target="_blank">Oracle Java Uninstall tool</a> and follow its instructions.</li>
+        <li>Alternatively, download the <a href="https://www.java.com/en/download/uninstalltool.jsp" target="_blank">
+        Oracle Java Uninstall tool</a> and follow its instructions.</li>
      </ul>
     Check by typing "java -version" in the "command" window to make sure the uninstall worked.
     While restarting your computer is not required, some people have found this useful t this point.<br>
@@ -239,7 +235,7 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
          <img src="images/WinInstall07.png" alt="installer files install start"></li>
       <li>Check for Java<br>
         The installer will check for a suitable version of Java on your computer and, if required, will
-        alert you to which version of Java should be installed.  For example, although these messages may 
+        alert you to which version of Java should be installed.  For example, although these messages may
         change based on the version of JMRI you are attempting to install.<br>
         <img src="images/426-NoJavaFound.jpg" alt="No Java found - suggest Java 8"><br>
         <img src="images/4995-NoJavaFound.jpg" alt="No Java found - suggest Java 11"><br>
@@ -264,12 +260,12 @@ For earlier versions (2012 and before), <a href="Windows.shtml">refer to the old
 
   <a id="specificjavaversion"></a>
   <h3>Using a specific java version</h3>
-  <p>To use a specific java installation either install that version to the JMRI install directory \jre
-  or link the specific java version to the JMRI install directory \jre</p>
+  <p>To use a specific java installation either install that version in the <strong>&lt;JMRI install directory&gt;\jre</strong>
+  directory or link the specific java version to the <strong>&lt;JMRI install directory&gt;\jre</strong> directory.</p>
 
-  <p>To install it to <JMRI Install Directory>/jre during the install simply tell it to install it there.</p>
+  <p>To install it to &lt;JMRI Install Directory&gt;\jre during the install simply tell it to install it there.</p>
 
-  <p>To link the java installation directory to <JMRI Install Directory>\jre do the following:</p>
+  <p>To link the java installation directory to &lt;JMRI Install Directory>&gt;jre do the following:</p>
   <p>Make a note of the directory where the version of java you wish to use is installed and where JMRI was installed.<br>
 	As an example the java I wish to use is in "C:\Program Files\Microsoft\jdk-11.0.16.101-hostspot"<br>
 	JMRI was installed in the default location "C:\Program Files (x86)\JMRI"<br>
@@ -404,26 +400,26 @@ the folder "JMRI_backup" to "JMRI".
     <h3>Installing Java 8 on older Windows versions</h3>
 	<p>
 	Windows98 and ME can run <a href="../releasenotes/jmri2.14.1.shtml">JMRI 2.8</a>.
-    <p>Note: It is possible to install Java 1.8 onto machines running Windows XP or Vista SP1, but this 
+    <p>Note: It is possible to install Java 1.8 onto machines running Windows XP or Vista SP1, but this
     is <em>unsupported</em> by Oracle.</p>
-    
+
     <ul>
       <li>To do this for Windows XP, visit the <a href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html">
-      Java Releases Archive page</a> and choose the "Java SE Runtime Environment 8u151" installer 
+      Java Releases Archive page</a> and choose the "Java SE Runtime Environment 8u151" installer
       for "Windows x86 Offline". The file name is <code>jre-8u151-windows-i586.exe</code>. This is
       the last installer that worked for Windows XP; if you later get prompted to do a Java Update
-      to a newer version than 151, cancel it instead of applying it (if you do apply the update, 
-      you'll have to reinstall the 151 version of Java as described here.) The installer will 
-      complain that it is unsupported,but should allow you to continue with the installation. 
-      Assuming that this is successful, proceed with installation of 
+      to a newer version than 151, cancel it instead of applying it (if you do apply the update,
+      you'll have to reinstall the 151 version of Java as described here.) The installer will
+      complain that it is unsupported,but should allow you to continue with the installation.
+      Assuming that this is successful, proceed with installation of
       <a href="../download/index.shtml">current JMRI test and production releases</a>.</li>
       <li>To do this for Windows Vista SP1, visit the <a href="http://www.java.com/en/download/manual.jsp">
       Manual Java Downloads page</a> and choose the Offline Installer for Windows. The installer will
-      complain that it is unsupported, but should allow you to continue with the installation. 
-      Assuming that this is successful, proceed withinstallation of 
+      complain that it is unsupported, but should allow you to continue with the installation.
+      Assuming that this is successful, proceed withinstallation of
       <a href="../download/index.shtml">current JMRI test and production releases</a>.</li>
     </ul>
-      
+
     <p>
     It's important to have enough memory and free hard disk space.
     We recommend you have at least 256&nbsp;MB of memory for Windows 98, 512&nbsp;MB of memory for Windows 2000 and
@@ -433,12 +429,85 @@ the folder "JMRI_backup" to "JMRI".
     <p>
     Note: Current versions of JMRI are developed with Java 1.8 (moving to Java 11).  You may get a message
     if you are using later versions of Java:<br>
-    "WARNING: An illegal reflective access operation has occurred"<br> 
+    "WARNING: An illegal reflective access operation has occurred"<br>
     or "WARNING: Please consider reporting this to the maintainers".<br>
 	You can ignore the messages.
     </p>
-  
-  
+
+<!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
+
+    <a id="untrusted"></a>
+    <h3>Handle Untrusted Download Warnings</h3>
+
+    <p>After downloading a JMRI installer program, a <strong>trust</strong> message might be
+    displayed due to the low volume of downloads. The following details are based on Microsoft
+    Defender.  Other 3rd party anti-virus packages have similar procedures for handling the warnings.</p>
+
+    <h4>Download</h4>
+
+      <p>If a JMRI download does not meet the <strong>trust</strong> requirements the
+      <strong>untrusted</strong> message is displayed instead of the normal download completion
+      message.</p>
+
+      <div style="margin-left: 2em">
+        <a href="images/win-trust-1.png"><img class="image-border" src=
+        "images/win-trust-1.png" alt="Windows download trust 1"></a>
+      </div>
+
+      <p>Moving the mouse over the message will display an option to delete the download or click
+      on the 3 dots to see more options.</p>
+
+      <div style="margin-left: 2em">
+        <a href="images/win-trust-2.png"><img class="image-border"  src=
+        "images/win-trust-2.png" alt="Windows download trust 2"></a>
+      </div>
+
+      <p>Select <strong>Keep</strong> from the list of options.</p>
+
+      <div style="margin-left: 2em">
+        <a href="images/win-trust-3.png"><img class="image-border"  src=
+        "images/win-trust-3.png" alt="Windows download trust 3"></a>
+      </div>
+
+      <p>Another dialog is displayed with additional information.  Click on <strong>Show more</strong>.</p>
+
+      <div style="margin-left: 2em">
+        <a href="images/win-trust-4.png"><img class="image-border"  src=
+        "images/win-trust-4.png" alt="Windows download trust 4"></a>
+      </div>
+
+      <p>Select <strong>Keep anyway</strong>.</p>
+
+      <div style="margin-left: 2em">
+        <a href="images/win-trust-5.png"><img class="image-border"  src=
+        "images/win-trust-5.png" alt="Windows download trust 5"></a>
+      </div>
+
+      <p>The JMRI installer is finally moved to the Downloads folder.  Click on <strong>Open file</strong>
+      to run the installer immediately or run it later from Downloads.</p>
+
+      <div style="margin-left: 2em">
+        <a href="images/win-trust-6.png"><img class="image-border"  src=
+        "images/win-trust-6.png" alt="Windows download trust 6"></a>
+      </div>
+
+    <h4>Install</h4>
+
+      <p>When the JMRI installer is run the first time, the execute <strong>trust</strong> checking
+      occurs.  Click on <strong>More info</strong>.</p>
+
+      <div style="margin-left: 2em">
+        <a href="images/win-trust-7.png"><img src=
+        "images/win-trust-7.png" alt="Windows install trust 7"></a>
+      </div>
+
+      <p>If it is ok to run the JMRI installer, click on the <strong>Run anyway</strong> button.</p>
+
+      <div style="margin-left: 2em">
+        <a href="images/win-trust-8.png"><img src=
+        "images/win-trust-8.png" alt="Windows install trust 8"></a>
+      </div>
+
 <!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- -->
 
 <a id="debugging"></a>
