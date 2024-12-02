@@ -123,14 +123,6 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
     <li>None Yet</li>
 </ul>
 
@@ -208,11 +200,108 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.9.7+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
+
+    <h3>Hardware Support</h3>
+
+        <h4>CBUS</h4>
+            <ul>
+                <li>Command Station Monitor :
+                <br>Button added to release JMRI-managed loco sessions,
+                <br>this can be handy when developing Jython scripts that fail to release the Throttle.
+                <br>Button added to launch a new JMRI Throttle for a loco session.</li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>STL Editor: Add store mode selections to the View menu, update help page.</li>
+                <li>Add a Send SNIP Request button to the Send tool.</li>
+                <li>Implement recent changes to the CDI spec underlying the node configuration display.
+                    This will allow node implementors to make simpler configuration dialogs.</li>
+                <li>Fixed a bug where the node configuration display would sometimes
+                    be drawn with overlapping characters or extra white space.</li>
+            </ul>
+
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>Technologistic (train-O-matic)</h4>
+            <ul>
+                <li>Added support for the FD II (version 2) function decoder family.</li>
+            </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Speed Setting NoSignals.</li>
+             <li>  After setting speed by Sections ahead. Check Block speeds.</li>
+             <li>  If next block slower than current block set speed down before entering next block.</li>
+             <li>  Do not increase speed beyond the minimum speed of any occupied block.</li>
+             <li>When going from automatic to manual bypass auto-engineer limts.</li>
+             <li>Optionally use Connections Turnout Delay.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>A bug is fixed in the LogixNG action <strong>Signal Mast</strong>.
+              The options <strong>Permissive Sml Disabled</strong>
+              and <strong>Permissive Sml Not Disabled</strong> caused
+              an error when storing and loading the tables and panels
+              file.</li>
+          <li></li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li>Added "SensorFromBxpa1ShortCircuit.py" and
+                "SensorFromBxp88ShortCircuit.py" scripts, which can create
+                JMRI "Internal" sensors that "follow" the LocoNet message
+                information that is created when the BXPA1 and BXP88
+                (respectively) send "Short Circuit" event LocoNet messages.</li>
+
+            <li>Updated the "SensorFromBxpa1AutoRev.py" script to do a better
+                job of watching for BXPA1 "Autoreverse" event LocoNet messages.</li>
+            <li><strong>WiThrottleList.py</strong> is a sample script that shows how to access the
+            WiThrottle session list.</li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li>There's a new
+                    <a href="https://www.jmri.org/xml/signals/basic-enhanced/">basic-enhanced signal system</a>.</li>
+                <li>The
+                    <a href="https://www.jmri.org/xml/signals/FS-1987/">FS-1987 signal system</a> was improved.</li>
+            </ul>
+
+    <h3>Throttle</h3>
+        <a id="throttle" name="throttle"></a>
+        <ul>
+            <li>Added a startup action to trigger the show JMRI throttle list window action.</li>
+        </ul>
+
+   <h3>WiThrottle Server</h3>
+        <a id="WS" name="WS"></a>
+        <ul>
+            <li>The <strong>getThrottleList()</strong> public method has been added to
+            jmri.jmrit.withrottle.UserInterface for Jython access.</li>
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>The limit for VSDecoders is now 8 instead of 4.</li>
+            <li>The sound buttons sorting in the VSD Manager window is now as in config.xml.</li>
+            <li>If the sound buttons exeed 8, a second row is displayed.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Add Close button to menubar Window menu.</li>
+        </ul>
 
     <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
 
