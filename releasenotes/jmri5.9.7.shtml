@@ -22,11 +22,13 @@
       Release Notes for JMRI 5.9.7 release
       </h1>
 
-    <p>Date: MM DDD, 2024</p>
-    <p>From: release pumpkin</p>
+    <p>Date: December 2, 2024</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 5.9.7 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -44,16 +46,16 @@ We expect this series to end in the next JMRI  production release in December 20
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
-<!--
 <P>We are getting close to the next production release, so we would particularly
 appreciate your testing of this release to make sure it works for you. That way,
 if you find new problems, we can try to fix them before the production release.</P>
- -->
 
+<!-- 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.
 We would appreciate your feedback on it.</p>
+ -->
 
 <p><b>
 JMRI is now only available under the
@@ -112,7 +114,7 @@ that can arise from skipping these versions.
 <!--
 If any of those affect you, please either
 wait for
-<a href="jmri5.9.8.shtml">JMRI 5.9.8</a>, due out shortly after this one,
+<a href="jmri5.9.9.shtml">JMRI 5.9.9</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
@@ -164,25 +166,23 @@ See <a href="#update">instructions above</a>.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!--
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.dmg">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.dmg</a><br/>
-  sha256: 284c20cbd50b40317a558129cca9ac893fe1938ceae8b2de67790fc0ddcf27f5 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.9.7/JMRI.5.9.7+R846fde11b1.dmg">https://github.com/JMRI/JMRI/releases/download/v5.9.7/JMRI.5.9.7+R846fde11b1.dmg</a><br/>
+  sha256: 4172544f85f3da6b5d257f2fc2bef7dd1e9671c771984bc80633fbbcdb387b3d </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.exe">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.exe</a><br/>
-   sha256: 4111f6822df4a3b99f916fcb9b688c66a1c121fe011e4ab7c041e6b1359ca7c1</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.9.7/JMRI.5.9.7+R846fde11b1.exe">https://github.com/JMRI/JMRI/releases/download/v5.9.7/JMRI.5.9.7+R846fde11b1.exe</a><br/>
+   sha256: 7950a2a5a185f398036fa6c6f48e972d7c95ef47b614276c424ddb25d03233de</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.tgz">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.tgz</a><br/>
-   sha256: 3ea4efa27a5ef984737c4e77288de2bf63e0d45cee588150227b9059db56766f</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.9.7/JMRI.5.9.7+R846fde11b1.tgz">https://github.com/JMRI/JMRI/releases/download/v5.9.7/JMRI.5.9.7+R846fde11b1.tgz</a><br/>
+   sha256: c63aa4bb8d5b4a420e770e78de3ccfcdafd3905d431971597d64f652a342f314</li>
 </ul>
 </div>
 These files are located in the 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v5.9.7">JMRI 5.9.7  GitHub release</a>.
- -->
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -190,9 +190,11 @@ on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.9.7/">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
 
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri5.9.6.shtml">Test Release 5.9.6</a>:</h2>
