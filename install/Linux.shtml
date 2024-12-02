@@ -45,10 +45,11 @@
     <p>Note: The instructions use the standard tilde (~) shortcut to represent the users's home
     directory at <strong><em>/home/&lt;username&gt;</em></strong>.
 
-    <h3>Install Java 11</h3>
+    <h3>Install Java</h3>
 
-    <p>Starting with JMRI 5.0, Java 11 is required.  See <a href="../java/index.shtml#linux_java">
-    Install Java 11</a>.</p>
+    <p>Starting with JMRI 5.0, the minimum required Java version was Java 11. JMRI 5 will not work
+    with Java versions below Java 11. Starting with JMRI 5.9.1, Java 17 is the recommended version.
+    See <a href="../java/index.shtml#linux_java">Using Java with JMRI</a> for installing Java.</p>
 
     <h3>Serial Port Access</h3>
 
@@ -60,7 +61,8 @@
 
     <code>sudo usermod -a -G dialout ${USER}</code>
 
-    <p>Do not change ${USER}.  That is a variable that contains the current user name.</p>
+    <p>Do not change ${USER}.  That is a variable that contains the current user name.  Note: You 
+    will need to logout and log back in after running the usermod command for it to take affect.</p>
 
     <h3>Download JMRI</h3>
 
