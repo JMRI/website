@@ -137,6 +137,7 @@ before installing this release, see above.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!-- 
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
@@ -153,28 +154,28 @@ before installing this release, see above.
 </ul>
 </div>
 These files are located in the 
-<a href="https://github.com/JMRI/JMRI/releases/tag/v5.6">JMRI 5.6  GitHub release</a>.
-
+<a href="https://github.com/JMRI/JMRI/releases/tag/v5.10">JMRI 5.10 GitHub release</a>.
+ -->
+ 
 <!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.10">CI project page</a>.
  -->
 
-<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
+
 
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri5.8.shtml">production release 5.8</a>:</h2>
 
 <p>
 This production version is made from test releases 5.9.1 through 5.9.7  The
-<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-06-17..2024-12-05">full list of changes</a>
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-06-17..2024-12-06">full list of changes</a>
 in those is
-<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-06-17..2024-12-05">available from our code repository</a>.
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-06-17..2024-12-06">available from our code repository</a>.
 
     <h3>Hardware Support</h3>
 
@@ -509,8 +510,9 @@ in those is
                 loading should be done <em>before</em> "Opening" <u>any</u>
                 "Table".</li>
             <li>Do not create blank profiles.
-            When deleting blank profiles do not remove directory.
-            Explicitly warn that a directory and its contents will be deleted when deleting a profile.</li>
+                When deleting blank profiles do not remove directory.
+                Explicitly warn that a directory and its contents will be deleted when deleting a profile.</li>
+            <li>Update <strong>Messages</strong> details. Describe the option to hide tabs without active messages.</li>
         </ul>
 
     <h3>Resources</h3>
