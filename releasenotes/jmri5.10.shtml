@@ -22,11 +22,13 @@
       Release Notes for JMRI 5.10 release
       </h1>
 
-    <p>Date: MMM DD, YYYY</p>
+    <p>Date: December 15, 2024</p>
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 5.10 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <p>We are very pleased to announce that the 5.9 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
@@ -137,25 +139,23 @@ before installing this release, see above.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.8/JMRI.5.8+Rbc21ce2ce7.dmg">https://github.com/JMRI/JMRI/releases/download/v5.8/JMRI.5.8+Rbc21ce2ce7.dmg</a><br/>
-  sha256: ad3f4d37120a85d17c5f462a59b6105559385538acca7ba91005e4c234c7bb91 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.dmg">https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.dmg</a><br/>
+  sha256: 97e8d9d07c0e8e088a293349136102e337429a3f9542f794bbdc7b078658901d </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.8/JMRI.5.8+Rbc21ce2ce7.exe">https://github.com/JMRI/JMRI/releases/download/v5.8/JMRI.5.8+Rbc21ce2ce7.exe</a><br/>
-   sha256: 7fa82736a7ea0e407d1d611caa2e16bb1635a6a0e725ce1b850a745633ad6bea</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.exe">https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.exe</a><br/>
+   sha256: e43afc7282dd17f428a89f38986b13086254af37d6bbf8859f50cb53ffe78a7e</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.8/JMRI.5.8+Rbc21ce2ce7.tgz">https://github.com/JMRI/JMRI/releases/download/v5.8/JMRI.5.8+Rbc21ce2ce7.tgz</a><br/>
-   sha256: c804eeb5eeaece4f3157ca3456605174e5506a570df7affa1c66f34b56911e9a</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.tgz">https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.tgz</a><br/>
+   sha256: 886f4f7033da5339ac9778fc366c99e29af1ac9446bc3527b257aa8e1b69f179</li>
 </ul>
 </div>
 These files are located in the 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v5.10">JMRI 5.10 GitHub release</a>.
- -->
  
 <!--
 Preliminary build files (not the final released files) can be found
@@ -163,16 +163,18 @@ on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.10">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
 
 
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri5.8.shtml">production release 5.8</a>:</h2>
 
 <p>
-This production version is made from test releases 5.9.1 through 5.9.7  The
+This production version is made from test releases 5.9.1 through 5.9.8  The
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-06-17..2024-12-06">full list of changes</a>
 in those is
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2023-06-17..2024-12-06">available from our code repository</a>.
@@ -560,7 +562,6 @@ in those is
                 JMRI "Internal" sensors that "follow" the LocoNet message
                 information that is created when the BXPA1 and BXP88
                 (respectively) send "Short Circuit" event LocoNet messages.</li>
-
             <li>Updated the "SensorFromBxpa1AutoRev.py" script to do a better
                 job of watching for BXPA1 "Autoreverse" event LocoNet messages.</li>
             <li><strong>WiThrottleList.py</strong> is a sample script that shows how to access the
