@@ -22,11 +22,13 @@
       Release Notes for JMRI 5.11.1 release
       </h1>
 
-    <p>Date: MM DDD, 2024</p>
-    <p>From: release pumpkin</p>
+    <p>Date: December 16, 2024</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 5.11.1 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -50,12 +52,10 @@ appreciate your testing of this release to make sure it works for you. That way,
 if you find new problems, we can try to fix them before the production release.</P>
  -->
 
-<!-- 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.
 We would appreciate your feedback on it.</p>
- -->
 
 <p><b>
 JMRI is now only available under the
@@ -161,25 +161,23 @@ See <a href="#update">instructions above</a>.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!--
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.dmg">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.dmg</a><br/>
-  sha256: 284c20cbd50b40317a558129cca9ac893fe1938ceae8b2de67790fc0ddcf27f5 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.11.1/JMRI.5.11.1+R3295d40b64.dmg">https://github.com/JMRI/JMRI/releases/download/v5.11.1/JMRI.5.11.1+R3295d40b64.dmg</a><br/>
+  sha256: 646e3c770d9461199adc6dfa1c70bc0e0625a7669f556c20140b05ba3c3c86ca </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.exe">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.exe</a><br/>
-   sha256: 4111f6822df4a3b99f916fcb9b688c66a1c121fe011e4ab7c041e6b1359ca7c1</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.11.1/JMRI.5.11.1+R3295d40b64.exe">https://github.com/JMRI/JMRI/releases/download/v5.11.1/JMRI.5.11.1+R3295d40b64.exe</a><br/>
+   sha256: c00ddc2e199718fc32e672c92cade55361c89ee05f688c54c54dba8cdce3dc54</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.tgz">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.tgz</a><br/>
-   sha256: 3ea4efa27a5ef984737c4e77288de2bf63e0d45cee588150227b9059db56766f</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.11.1/JMRI.5.11.1+R3295d40b64.tgz">https://github.com/JMRI/JMRI/releases/download/v5.11.1/JMRI.5.11.1+R3295d40b64.tgz</a><br/>
+   sha256: 4f0ae4bcfce3fac8e6254c3928efb434efb0765c9d1b7626285a219ddf08a995</li>
 </ul>
 </div>
 These files are located in the 
-<a href="https://github.com/JMRI/JMRI/releases/tag/v5.9.7">JMRI 5.9.7  GitHub release</a>.
- -->
+<a href="https://github.com/JMRI/JMRI/releases/tag/v5.11.1">JMRI 5.11.1  GitHub release</a>.
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -187,9 +185,11 @@ on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.11.1/">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
 
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri5.10.shtml">Production Release 5.10</a>:</h2>
@@ -197,13 +197,127 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.11.1+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+
+        <h4>Marklin CS2</h4>
+            <ul>
+                <li>Added simulated CS2 Connection</li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>There's a new LccPro JMRI application that's 
+                    targeted at making it easier to understand and 
+                    configure an LCC network.  See the
+                    <a href="http://jmri.org/help/en/package/apps/gui3/lccpro/LccPro.shtml">help page</a>
+                    for more information.</li>
+                <li>The 
+                    <a href="http://jmri.org/help/en/package/jmri/jmrix/openlcb/swing/eventtable/EventTablePane.shtml">Event Table</a> 
+                    has been improved:<ul>
+                    <li>It now shows event ranges.
+                    <li>It now automatically shows the names of event IDs that are
+                        defined in the LCC Standards if you haven't given them another name.
+                    <li>There's now a "Find Name" that searches for any cell in the name columns 
+                        containing a particular string.
+                    <li>The Find Event and Find Name search boxes update the search
+                        as you type.
+                    <li>The 
+                        <a href="http://jmri.org/help/en/package/jmri/jmrix/openlcb/swing/eventtable/EventTablePane.shtml#menu">File menu</a> 
+                        now contains a "Read from CSV..." item that lets you load event names
+                        from a comma-separated (CSV) file.
+                </ul></li>
+                <li>A graphics issue on Linux in the configuration screens was fixed.
+                <li>Improved the Traffic Monitor display:  <ul>
+                    <li>Now shows addressed message destinations; 
+                    <li>Better alignment of messages on the screen;
+                    <li>Improved how event ID names and uses are displayed on event messages.
+                    <li>Improved 
+                        <a href="http://jmri.org/help/en/package/jmri/jmrix/openlcb/swing/monitor/MonitorPane.shtml">help page</a>.
+                    </ul></li>
+                <li>Sensors connected via a bridge can now be accessed via a "Snnn" 
+                    hardware address, similar to the "Tnnn" address used for Turnouts.
+                <li>You can now enter event IDs by name, in addition to by number:
+                    <ul>
+                    <li>When adding Turnouts/Sensors/Lights and setting aspect events
+                        for OpenLCB Signal Masts
+                    <li>When configuring a node using its CDI
+                    </ul>
+                    When a name has been entered, a tooltip will show the underlying
+                    numeric events.
+                <li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>Fixed some sound options in the
+                    SoundTraxx Tsu2 Diesel OEM Genesis decoder definition.</li>
+            </ul>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li>New Zimo MX820 definition.</li>
+            </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>You can now choose how to sort the 
+                Roster Group Table.</li>
+        </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Provide more information when selecting traininfo file.</li>
+        </ul>
+
+    <h3>LccPro</h3>
+        <a id="LccPro" name="LccPro"></a>
+        <ul>
+          <li>There's a new LccPro JMRI application that's 
+            targeted at making it easier to understand and 
+            configure an LCC network.  See the
+            <a href="http://jmri.org/help/en/package/apps/gui3/lccpro/LccPro.shtml">help page</a>
+            for more information.</li>
+        </ul>
+        
+    <h3>OperationsPro</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+            <li>Added text coloring to conductor rolling stock movement.</li>
+            <li>Added text coloring to Web Manifest and conductor rolling stock movement.</li>
+            <li>Made a change to always allow a caboose to be set out at terminal if there are moves available.</li>
+            <li>Fixed location table track direction GUI to report single track direction when appropriate.</li>
+            <li>When printing switch list details use track blocking order rather than alphabetically by track name.</li>
+            <li>Fixed bug in Show Staging and Schedules by Car Type and Load</li>
+            <li>Made route path the same for all cars in a kernel</li>
+            <li>Added car's "Route Path" to car export</li>
+        </ul>
+
+    <h3>Preferences</h3>
+        <a id="Preferences" name="Preferences"></a>
+        <ul>
+            <li>Update <strong>Messages</strong> details. Describe the option to hide 
+                tabs without active messages.</li>
+        </ul>
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>You can now export the contents of a table
+                to a CSV file from the File menu.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>You can now export the contents of a table
+                to a CSV file from the File menu.</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
