@@ -106,13 +106,21 @@
 </ul>
 </div>
 
-    <strong>Notes:</strong><br>
-    <p>For more information on the release contents, please see the
-    <a href="../releasenotes/jmri5.10.shtml">release note</a>.
-    </p>
-    <p>These files can be used for either a new installation or updating an existing installation.</p>
-    <p>We recommend that you verify the downloaded files using the provided sha256 key.</p>
-    <p>
+    <strong>Notes:</strong>
+    <ul>
+        <li>For more information on the release contents, please see the
+            <a href="../releasenotes/jmri5.10.shtml">release note</a>.</p>
+        <li>For instructions on using these files, please see the 
+            <a href="../help/en/html/setup/index.shtml">setup and installation pages linked from the upper left of this page</a>.
+        <li>These files can be used for either a new installation or updating an existing installation.
+            For updating instructions, please see the 
+            <a href="../releasenotes/jmri5.10.shtml#update">release note</a>.</p>
+        <li>This release requires at least Java 11 to work.
+            Java 17 is recommended.
+            (See <a href="http://jmri.org/java">our page on downloading and installing Java</a>)</p>
+        <li>We recommend that you verify the downloaded files using the provided sha256 key.</p>
+    </ul>
+    <p><br>
     If you're looking to download Rodney Black's
     <a href="http://cats4ctc.org"><!-- was http://home.comcast.net/~kb0oys/ --> CATS</a>
     application, see the
