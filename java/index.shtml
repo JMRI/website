@@ -22,11 +22,13 @@
 <p><b>We recommend using Java 17 with current JMRI versions starting with JMRI 5.9.1.
 Although Java 11 will work, we recommend that you install Java 17 as it's more up to date.</b>
 
-<p>Starting with JMRI 5.0 through JMRI 5.8, the recommended Java
+<p>Starting with JMRI 5.0 through JMRI 5.8, the required Java
 version was Java 11.
-JMRI 5 will not work with Java versions below Java 11, 
-and there are a small number of
-<a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml#jdk17">known issues</a> with later versions.
+JMRI 5 will not work with Java versions below Java 11.
+Originally, there were a small number of
+<a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml#jdk17">known issues</a>
+with later Java versions from JMRI 5.0 to JMRI 5.8. 
+These were resolved in JMRI 5.9.1, at which point we started recommending Java 17.
 </p>
 
 <p><em>JMRI needs a "Java Runtime Environment" (JRE) to run
