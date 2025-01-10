@@ -125,14 +125,6 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
     <li>None Yet</li>
 </ul>
 
@@ -197,13 +189,97 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.11.2+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+
+        <h4><a href="http://bidib.org/index_e.html">BiDiB</a></h4>
+            <ul>
+                <li>Added netBiDiB as another BiDiB connection type.</li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>Fixed a bug in the LccPro search function on large LCC networks.</li>
+                <li>Added "Node Groups" to LccPro and the Event Table.</li>
+                <li>You can now create an LCC/OpenLCB
+                    <a href="help/en/html/hardware/openlcb/index.shtml#stringios">StringIO</li>
+                    that's shared across multiple JMRI instances on the same LCC/OpenLCB network.
+                    If you change the StringIO value in one JMRI instance, it will be propagated to the 
+                    other ones over the network. You can then use LogixNG or scripts to 
+                    use that information to communicate between JMRI instances.
+            </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>Hornby TXS Sound Decoders use CVs 200 and 201 to identify the specific Sound Profiles Uploaded to the Chip. 
+                Previously the product-id verification process used CV47, 48 and 49 for these decoders. 
+                Those CVs contain firmware update information which is not useful when creating conditional decoder definitions for TXS chips. 
+                The product-id verification process has been modified to interrogate CVs 201 and 200 for Hornby TXS decoders.
+                (This should have no effect on identification for Hornby TTS decoders.)
+             </li>
+        </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Add the ability to use an AdHoc transit, which is created dynamically between 2 blocks
+             Dynamic Transits are always run "No Signals". Dynamic Transits are  removed at train termination. If
+             they are not removed for any reason they will not be saved. Currently the route must be clear from end to end
+             and any flaws in the routing table will cause grief. Avoid having the train stop in them.</li>
+             <li>Add Ghost type block. It must have a "not real" sensor, internal is best.
+             The sensor should not be manipulated by logix or logixNG or scripts. Auto trains will
+             set and clear these sensors automatically, manual run trains simply ignore them.
+             They are useful for adding blocks between 2 turnouts where you would normally add a tiny block with the same block
+             as one of the turnouts which causes errors in the routing tables. With care they can be used for placing turnouts
+             in their own block.</li>
+             <li>Fix errors in loading maxlength and Maxspeed</li>
+             <li>Clean up AdHoc Transits after use.</li>
+             <li>Fix minor bugs in min speed settings.</li>
+        </ul>
+
+    <h3>LccPro</h3>
+        <a id="LccPro" name="LccPro"></a>
+        <ul>
+            <li>Fixed a bug in the LccPro search function on large LCC networks.</li>
+            <li>Added "Node Groups" to LccPro and the Event Table.  
+            <li>Fixed a bug in Event Table display if using large fonts.<li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The expression <strong>StringIO as string value</strong>
+              has been added.</li>
+          <li></li>
+        </ul>
+
+    <h3>OperationsPro</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+            <li>Added train departure times to Yardmaster and Conductor.</li>
+            <li>Fixed internationalization for Web Manifest, UK and other languages.</li>
+            <li>Added the option of building train when selecting Conductor and train not built.</li>
+            <li>New print option, Manifests and switch lists can now be printed double sided.</li>
+            <li>Export Schedules now includes spur name and mode</li>
+        </ul>
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>
+                <a href="https://www.jmri.org/help/en/html/tools/StringIO.shtml">StringIOs</li>
+                are a new type of object within JMRI.  They're a way to exchange informational strings
+                with the layout hardware.  Over time, we'll build-out more system connections for these.
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Fixed a bug in the XSLT transforms used to make 
+                panel files human-readable: "if" was used when "when" was required.</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
