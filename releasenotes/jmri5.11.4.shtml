@@ -161,6 +161,15 @@ See <a href="#update">instructions above</a>.
         can sometimes cause it to enter a loop.  There's a 
         workaround in
         <a href="https://groups.io/g/jmriusers/message/239205">this JMRIusers post</a>.
+    <li><span class="since">Since <a href="jmri5.11.3.shtml">JMRI 5.11.3</a></span>
+        There's been a change to how OpenLCB turnouts are
+        addressed when using the MTT addressing short cut.
+        Turnouts 253,254,255, 510, 511, 512, 765, 766 and 767
+        will be addressed differently.  If you're using any of these
+        via e.g. MTT253, you will need to change the address.  If you've
+        been having trouble getting those addresses to work, this change should
+        fix that.
+        </li>
 </ul>
 
 <a id="download" name="download"></a>
