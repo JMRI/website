@@ -106,6 +106,14 @@ from
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
  -->
 
+<ul>
+    <li>NCE Consist Backup/Restore can corrupt memory. It allows memory outside
+    of the consist tables to be written to the file and the restore does not
+    check that the address being restored is within the tables.</li>
+</ul>
+If this effects you, please update to
+<a href="jmri5.11.4.shtml">JMRI 5.11.4</a> or newer releases.
+
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this production release:</h3>
 
