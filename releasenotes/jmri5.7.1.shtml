@@ -123,6 +123,15 @@ that can arise from skipping these versions.
 
 If this effects you, please update to 
 <a href="jmri5.7.2.shtml">JMRI 5.7.2</a>.
+
+<ul>
+    <li>NCE Consist Backup/Restore can corrupt memory. It allows memory outside
+    of the consist tables to be written to the file and the restore does not
+    check that the address being restored is within the tables.</li>
+</ul>
+If this effects you, please update to
+<a href="jmri5.11.4.shtml">JMRI 5.11.4</a> or newer releases.
+
 <!-- 
 Before that, you could pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
