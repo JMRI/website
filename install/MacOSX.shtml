@@ -27,24 +27,29 @@
     <p>
     Please note:
 
-	<p class="important">These directions are for installing the latest
-	4.99 and 5.0 releases of JMRI&reg; on current macOS computers.<br>
-    If you want to install a JMRI series 4 release, such as
+	<p class="important">These directions are for installing current
+	5.x releases of JMRI&reg; on current macOS computers.<br>
+    If you want to install a JMRI 4.x release, such as
     <a href="../releasenotes/jmri4.24.shtml">4.24</a>,
     please see the
-    <a href="MacOSX-4.shtml">MacOS X install instructions for JMRI series 4 releases</a>.
-    If you have an older machine and need to install an earlier release (such as JMRI
-    <a href="../releasenotes/jmri3.10.1.shtml">3.10.1</a>,
-    <a href="../releasenotes/jmri2.8.shtml">2.8</a>, or
-    even earlier), please see these
-    <a href="MacOSXRetro.shtml">MacOS X install instructions for older JMRI releases</a>.</p>
+    <a href="MacOSX-4.shtml">macOS install instructions for JMRI 3-4 releases</a>.
+    If you have an older machine and need to install an earlier release, please see our
+    <a href="MacOSXRetro.shtml">Early MacOS X install instructions</a>.</p>
+  <!--
+   file name          JMRI releases    Mac OS versions     CPU architecture  Java version
+   MacOSClassic.shtml JMRI 1.4-1.6,    OS8/OS9,            PowerPC,          MRJ
+   MacOSXRetro.shtml  JMRI 2.4-2.14,   OS X 10.3-10.5,     PowerPC/Intel,    Java 1.5
+   MacOSX-4.shtml     JMRI 3.0-3.10.1, OS X 10.6-10.7.2,   Intel,            Java 1.7 - no page of its own
+   MacOSX-4.shtml     JMRI 4.0-4.27,   OS X 10.7.3-10.11,  Intel/Arm,        Java 1.8/OpenJDK 8
+   MacOSX.shtml       JMRI 4.99-5.x,   macOS 10.12-latest, Intel/Arm,        Java/OpenJDK 11-17   ---- this page
+  -->
 
   <p>Now, on to the show:</p>
 
       <a id="installation"></a><h2>Installing JMRI on your macOS computer</h2>
 
       <ol>
-       <li><a name="sysreq"></a>
+       <li><a id="sysreq"></a>
        Determine if your system software is compatible with the current releases of JMRI:
        Find the current macOS version number by choosing "About this Mac" from the Apple menu.
 
@@ -124,7 +129,7 @@
         you want it on your computer. We recommend you put it in
         Applications, which is the standard location for this.  To
         do that, just drag the JMRI folder onto the "Applications"
-        icon. </p>
+        icon.</p>
 
         <p>
         You won't be able
@@ -135,7 +140,7 @@
         folder to the desired location.
         Note that if you it somewhere else, you might have to
         adjust permissions in the "Security & Privacy" pane of the System Preferences.</p>
-        </p>
+
       </li>
 
       <li>Depending on how your Mac is set up, you might need to
@@ -253,13 +258,16 @@
 
     <div class="flex-container">
         <div class="flex-item-30">
-            <img src="images/MacOsXWarn.tiff" width="305" height="143">
+            <img src="images/MacOsXWarn.png"
+                 alt="macOS warn dialog for unidentified developer">
         </div>
         <div class="flex-item-30">
-            <img src="images/MacOsXselect.jpg" width="166" height="200">
+            <img src="images/MacOsXselect.jpg"
+                 alt="macOS Finder right-click Open on program icon">
         </div>
         <div class="flex-item-30">
-            <img src="images/MacOsXOpen.tiff" width="305" height="143">
+            <img src="images/MacOsXOpen.png"
+                 alt="macOS dialog to confirm opening JMRI">
         </div>
     </div>
 
@@ -268,30 +276,30 @@
        More on this on the <a href="../help/en/html/setup/index.shtml">JMRI Setup help page</a>.
        Go there next to complete your setup.</p>
 
-       <p> Mac OS uses names like "<tt>cu.SomeName</tt>" and
-       "<tt>tty.SomeName</tt>" for devices, including
+       <p> Mac OS uses names like "<code>cu.SomeName</code>" and
+       "<code>tty.SomeName</code>" for devices, including
        USB-attached devices like USB-serial converters,
        LocoBuffer-USBs and similar.  Generally, you'll want to use the
-       one that starts with "<tt>cu.</tt>" if both
-       <tt>cu.</tt> and <tt>tty.</tt> are present, but
+       one that starts with "<code>cu.</code>" if both
+       <code>cu.</code> and <code>tty.</code> are present, but
        see the specific installation page for your particular type of
        device.  Sometimes you can recognize your interface from the
        right-hand part of the name.  If not, the easiest way to find
        the name for your interface is to disconnect it, start JMRI,
        write down the list of available devices, close JMRI, reconnect
-       the interface, start JMRI again, and look to see which extra
-       name has appeared.  That's the name one you want.</p>
+       the interface, restart JMRI and look which extra
+       name has appeared. That's the name one you want.</p>
 
 <a id="debug"></a><h2>Debugging</h2>
 
-JMRI supports many different Mac computers,
+<p>JMRI supports many different Mac computers,
 with several different kinds of processors,
 multiple macOS versions,
 and various layout hardware.
 Some combinations can cause trouble.
-This section gives some debugging hints.
+This section gives some debugging hints.</p>
 
-<a name="usb"></a><h3>USB Serial Issues</h3>
+<a id="usb"></a><h3>USB Serial Issues</h3>
 
 Irrespective of DCC system, there are some basic rules for troubleshooting any USB-attached device to a Mac.
 <ul>
@@ -338,9 +346,9 @@ Irrespective of DCC system, there are some basic rules for troubleshooting any U
 </ul>
 
 
-<a name="notes"></a><h2>Notes</h2>
+<a id="notes"></a><h2>Notes</h2>
 
-<a name="catalina"></a><h3>macOS 10.15 Catalina</h3>
+<a id="catalina"></a><h3>macOS 10.15 Catalina</h3>
 
 Starting in early Fall 2019, macOS 10.15 Catalina greatly increased the security checks
 that macOS applications must pass before running.
@@ -385,7 +393,7 @@ Let's say you want one called "CoolNewOne".
 	or select the icon and choose duplicate from the File menu in Finder).
 	<li>Change the duplicate's name.
 	(It's probably better to use a simple one-word name like "CoolNewOne")
-	<li>Double click your new icon, and off you go.
+	<li>Double-click your new icon, and off you go.
 	</ul>
 
 <p>

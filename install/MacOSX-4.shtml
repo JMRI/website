@@ -3,10 +3,10 @@
 
 <head>
  <title>
- JMRI: macOS Install Guide
+ JMRI: Mac OS X Install Guide
  </title>
 	<meta name="author" content="Bob Jacobsen, Egbert Broerse">
-	<meta name="keywords" content="java model railroad JMRI install MacOSX macOS">
+	<meta name="keywords" content="java model railroad JMRI4 install MacOSX">
     <!--#include virtual="/Style.shtml" -->
 </head>
 
@@ -15,7 +15,7 @@
 <div id="mBody">
 <!--#include virtual="Sidebar.shtml" -->
 <div id="mainContent">
-  <h1>JMRI Install Guide: macOS</h1>
+  <h1>JMRI 3-4 Install Guide: Mac OS X</h1>
 
 		<ul class="snav"><!-- TOC -->
 		<li><a href="#installation">Installation</a>
@@ -24,48 +24,53 @@
 		<li><a href="#notes">Notes</a>
 		</ul>
 
-    <p>
-    Please note:
-
-	<p class="important">These directions are for installing the
-	4.x releases of JMRI&reg; on current macOS computers.<br>
-    If you have an older machine and need to install an earlier release (such as JMRI
-    <a href="../releasenotes/jmri3.10.1.shtml">3.10.1</a>,
-    <a href="../releasenotes/jmri2.8.shtml">2.8</a>, or
-    even earlier), please see these
-    <a href="MacOSXRetro.shtml">MacOS X install instructions for older JMRI releases</a>.</p>
-
+	<p class="important">These directions focus on installing the 3.x and
+	4.x releases of JMRI&reg; on OS X computers. Instructions to install current JMRI releases on current Macs can be
+found <a href="MacOSX.shtml">here</a><br>
+    If you have an older Mac and need to install an earlier release (such as JMRI
+    <a href="../releasenotes/jmri3.10.1.shtml">3.10.1</a> or earlier), please see these
+    <a href="MacOSXRetro.shtml">Early Mac OS X install instructions</a>.</p>
+  <!--
+   file name          JMRI releases    Mac OS versions     CPU architecture  Java version
+   MacOSClassic.shtml JMRI 1.4-1.6,    OS8/OS9,            PowerPC,          MRJ
+   MacOSXRetro.shtml  JMRI 2.4-2.14,   OS X 10.3-10.5,     PowerPC/Intel,    Java 1.5
+   MacOSX-4.shtml     JMRI 3.0-3.10.1, OS X 10.6-10.7.2,   Intel,            Java 1.7 - no page of its own
+   MacOSX-4.shtml     JMRI 4.0-4.27,   OS X 10.7.3-10.11,  Intel/Arm,        Java 1.8/OpenJDK 8  ---- this page
+   MacOSX.shtml       JMRI 4.99-5.x,   macOS 10.12-latest, Intel/Arm,        Java/OpenJDK 11-17
+  -->
   <p>Now, on to the show:</p>
 
-      <a id="installation"></a><h2>Installing JMRI on your macOS computer</h2>
+      <a id="installation"></a><h2>Installing JMRI 3 or 4 on an OS X computer</h2>
 
       <ol>
-       <li><a name="sysreq"></a>
-       Determine if your system software is compatible with the current releases of JMRI:
-       Find the current macOS version number by choosing "About this Mac" from the Apple menu.
+       <li><a id="sysreq"></a>
+       Determine if your system software is compatible with the 4.x releases of JMRI:
+       Find the current OS X version number by choosing "About this Mac" from the Apple menu.
 
        <p>
-       JMRI 4.2 and later will work on any macOS or MacOS X version back to 10.7.3 Lion (2012).
-       Note: MacOS X Lion 10.7.1 and 10.7.2 will have to be updated to 10.7.3.
+       JMRI 4.2 and later will work on any macOS or OS X version back to 10.7.3 Lion (2012).<br>
+       Note: OS X Lion 10.7.1 and 10.7.2 will have to be updated to 10.7.3 to install JMRI 4.2.
 
        <p>
-       If your Mac hardware doesn't let you update MacOS X to a recent enough version,
-       you can still use older versions of JMRI:
+       If your Mac hardware doesn't let you update OS X to a recent enough version to run Java 1.8,
+       you can still downlaod and install older versions of JMRI:
        <ul>
-        <li>Mac OS X version 10.7.2 "Lion" through 10.6 "Snow Leopard" can run <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7.
+        <li>OS X version 10.7.2 "Lion" through 10.6 "Snow Leopard" can run
+        <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7.
         (The youngest Mac that can't run Mountain Lion was shipped in 2009)</li>
-        <li>Mac OS X version 10.5 "Leopard" through 10.4 "Tiger" can run <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.
+        <li>OS X version 10.5 "Leopard" through 10.4 "Tiger" can run
+        <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.
         (The youngest Mac that can't run Tiger was shipped in 2003)</li>
         <li>For even older hardware, see a <a href="MacOSXRetro.shtml">separate page</a>.</li>
        </ul>
 
-        <p>The JMRI install will take up about 330&nbsp;MB of disk space, mostly for the Help pages
+        <p>These JMRI installs will take up about 330&nbsp;MB of disk space, mostly for the Help pages
         and decoder definitions.</p>
        </li>
 
         <li>Determine if you have the needed hardware drivers:
 
-        <p>No Macintosh that runs macOS has built-in Serial
+        <p>No Macintosh running macOS has built-in Serial
         Ports, so if your layout hardware needs a serial connection,
         you'll have to use a <a href="../help/en/html/hardware/USBtoSerial.shtml">USB-to-Serial adapter</a>.</p>
 
@@ -75,9 +80,9 @@
         they're already present in macOS.  In some cases you will need to install a special driver, though,
         so check the manufacturer's website to make sure.</p>
 
-        <p><em>Note: Mac OS X 10.11 El Capitan and later macOS versions generally require
+        <p><em>Note: OS X 10.11 El Capitan and later macOS versions generally require
         signed drivers.  If you installed drivers for a previous version,
-        particularly drivers that don't say they support Mac OS X 10.10 Yosemite,
+        particularly drivers that don't say they support OS X 10.10 Yosemite,
         those older drivers may not work with 10.11 El Capitan.  Go to the
         website for your USB adapter, download the newest driver and
         install it before you update to El Capitan, or right after updating before
@@ -97,13 +102,13 @@
         must select the one that starts with "cu", e.g.
         "/dev/cu.KeyUSA19181.1".</p>
 
-        <p>macOS drivers for FTDI chipsets are available from
+        <p>OS X drivers for FTDI chipsets are available from
         <a href="http://www.ftdichip.com/Drivers/VCP.htm">FTDI</a>.
 
         <p>There's a macOS driver for USB-serial adapters
         based on the Prolific PL2303 chipset
         <a href="http://osx-pl2303.sourceforge.net/">available here</a>.
-        If you can't access your USB dongle and it seems to use that
+        If you can't access your USB dongle, and it seems to use that
         chipset (you can check in the USB tab of System Profiler),
         this driver will make it available as /dev/cu.PL2303-xxx.</p>
        </li>
@@ -119,8 +124,8 @@
 
         <p>The JMRI project is continuously adding features, bug
         fixes, examples and tutorials to the release, and so a new
-        "test" version appears every month or so.  You may find one of
-        these has features that you really want.  These are announced
+        "test" version appears every month or so. You may find one of
+        these has features that you really want. These are announced
         in the JMRI users Groups.io group at <a
          href="https://groups.io/g/jmriusers">https://groups.io/g/jmriusers</a>.
         </p>
@@ -155,7 +160,7 @@
             <ul>
             <li>Let's try the easy way first.  Open the
                 JMRI folder you just put in Applications, and
-                double click on DecoderPro.  If this starts up
+                double-click on DecoderPro.  If this starts up
                 OK, you have Java installed.  Move to the next
                 step.  If it opens a dialog box that offers
                 to install Java, or takes you to the Java
@@ -199,7 +204,7 @@
           <li>Drag the new JMRI folder to the Applications icon to replace
             your existing version. If asked whether you want to do that, say OK.
           </ul>
-          <p>Your existing configuration information, Panel files, etc will
+          <p>Your existing configuration information, Panel files, etc. will
           continue to be used with the new version.
 
           <h3>Clean Install</h3>
@@ -220,7 +225,7 @@
         JMRI folder.
       <p>
         Depending on your security settings, when you
-        first try to run a new JMRI version (usually by double clicking
+        first try to run a new JMRI version (usually by double-clicking
         on the icon for DecoderPro or PanelPro), you may get a warning dialog
         that it "can't be opened because it's from an unidentified developer".
         In that case, dismiss the dialog, then hold the Control key
@@ -230,13 +235,16 @@
 
     <div class="flex-container">
         <div class="flex-item-30">
-            <img src="images/MacOsXWarn.tiff" width="305" height="143">
+            <img src="images/MacOsXWarn.png"
+                 alt="macOS warn dialog for unidentified developer">
         </div>
         <div class="flex-item-30">
-            <img src="images/MacOsXselect.jpg" width="166" height="200">
+            <img src="images/MacOsXselect.jpg"
+                 alt="macOS Finder right-click Open on program icon">
         </div>
         <div class="flex-item-30">
-            <img src="images/MacOsXOpen.tiff" width="305" height="143">
+            <img src="images/MacOsXOpen.png"
+                 alt="macOS dialog to confirm opening JMRI">
         </div>
     </div>
 
@@ -268,7 +276,7 @@ and various layout hardware.
 Some combinations can cause trouble.
 This section gives some debugging hints.
 
-<a name="usb"></a><h3>USB Serial Issues</h3>
+<a id="usb"></a><h3>USB Serial Issues</h3>
 
 Irrespective of DCC system, there are some basic rules for troubleshooting any USB-attached device to a Mac.
 <ul>
@@ -286,7 +294,7 @@ Irrespective of DCC system, there are some basic rules for troubleshooting any U
     there is no point going any further until your Mac can see the physical device.
 
 <li>Once you have seen the device in System Information, (it should report the Manufacturer
-     name so you know where to go to get drivers) you will quite likely have to install
+     name, so you know where to go to get drivers) you will quite likely have to install
      Mac drivers for it (although some do not need extra drivers, see your documentation).
      If unsure, try the next step anyway.
 
@@ -294,7 +302,7 @@ Irrespective of DCC system, there are some basic rules for troubleshooting any U
     allow the kernel extensions (drivers) you installed to be loaded, or they will not be used.
 
 <li>Unplug your device. Open a window of the  Terminal utility (from /Applications/Utilities),
-    copy and paste the following command in EXACTLY (including spaces and punctuation) then press Enter.
+    copy and paste the following command in EXACTLY (including spaces and punctuation) and then press Enter.
     <div class="wide">
         <code>
             while : ;do clear;ls -lt /dev|head;i=$((i+1));echo $i;sleep 1;done
@@ -304,17 +312,17 @@ Irrespective of DCC system, there are some basic rules for troubleshooting any U
 
 <li>Plug your device back in and wait a few seconds. Two new items with names like  cu.xxx and tty.xxx should appear in the list.
     They should disappear if you unplug your device. If this does not happen,
-    you do not have the correct drivers installed for your device and you will
+    you do not have the correct drivers installed for your device, and you will
     need to solve that before proceeding further. Once you have found your device, write down the name you see.
-    You want the cu.xxx version not the tty.xxx version.
+You want the cu.xxx version not the <code>tty.xxx</code> version.
 
-<li>If you have got this far you know your device is be being seen by the Mac,
-    that it has a matching driver installed and the name of the connection port "cu.xxx" you need
+<li>If you have got this far you know your device is being seen by your Mac,
+that it has a matching driver installed and the name of the connection port <code>cu.xxx</code> you need
     to select in JMRI. If you cannot get this far,
     there's no way JMRI can find your device until the driver issue is resolved.
 </ul>
 
-<a name="javase6"></a><h3>Java SE 6</h3>
+<a id="javase6"></a><h3>Java SE 6</h3>
     <p>To check for Java SE 6, JMRI 4.5.2 and up include a script. Follow these steps (assuming
       JMRI is installed in the folder <em>/Applications/JMRI</em>; if it's installed in a different location, adjust the paths as needed):</p>
     <ol>
@@ -351,14 +359,14 @@ own version, but it can also happen when just running a download. If you get mes
 <code>
 error: cannot find symbol getX()
 </code>
-or getY() or getZ(), the solution is to copy the JMRI/lib/vecmath-1.5.2.jar file from
-within the JMRI distribution directory to the  ~/Library/Java/Extensions/ directory.
-(You might have to create that directory)
+or getY() or getZ(), the solution is to copy the <code>JMRI/lib/vecmath-1.5.2.jar</code> file from
+within the JMRI distribution directory to the  <code>~/Library/Java/Extensions/</code> directory.
+(You might have to create that directory).
 <u>Do not do this unless you have seen that symptom</u>.
 
-<a name="notes"></a><h2>Notes</h2>
+<a id="notes"></a><h2>Notes</h2>
 
-<a name="catalina"></a><h3>macOS 10.15 Catalina</h3>
+<a id="catalina"></a><h3>macOS 10.15 Catalina</h3>
 
 Starting in early Fall 2019, macOS 10.15 Catalina greatly increased the security checks
 that macOS applications must pass before running.
@@ -387,7 +395,7 @@ Some issues:
 You might want to have more than one Configuration for DecoderPro
 or PanelPro preset.  For example, you might to sometimes connect
 PanelPro to the Command Station on your layout, or other times
-have a configuration that doesn't use a layout connection so you can
+have a configuration that doesn't use a layout connection, so you can
 work with the program on a laptop away from the layout.
 
 <p>
@@ -403,7 +411,7 @@ Let's say you want one called "CoolNewOne".
 	or select the icon and choose duplicate from the File menu in Finder).
 	<li>Change the duplicate's name.
 	(It's probably better to use a simple one-word name like "CoolNewOne")
-	<li>Double click your new icon, and off you go.
+	<li>Double-click your new icon, and off you go.
 	</ul>
 
 <p>
