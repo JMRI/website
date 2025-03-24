@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>JMRI: Mac OS X Install Guide</title>
-    <!--#include virtual="/Style.shtml" -->
+  <title>JMRI: Mac OS X Install Guide</title>
+  <meta name="author" content="Bob Jacobsen">
+  <meta name="keywords" content="java model railroad JMRI install Mac OSX">
+  <!--#include virtual="/Style.shtml" -->
 </head>
 
 <body>
@@ -13,26 +15,33 @@
 
     <div id="mainContent">
       <h1> 
-      JMRI Install Guide: Mac OS X  (<b>for releases of JMRI up to 2.8</b>)
+      JMRI Install Guide: Early Mac OS X  (<b>for releases of JMRI up to 2.8</b>)
       </h1>
 
-<p class="important">These directions are for installing older releases of
-JMRI on OS X.<br>
-If you're trying to install JMRI 2.10 or later on OS X, please see
-the <a href="MacOSX.shtml">current OS X Install instructions</a>.<br>
-If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic.shtml">the Mac Classic Install Guide</a>.</p>
-
+      <p class="important">These directions are for installing a JMRI release from 2.4 up to 2.8 on early versions of Mac OS
+      X up to OS X 10.4 Tiger.<br>
+      If you're trying to install JMRI release 2.10 or later on OS X, please see
+      the <a href="MacOSX-4.shtml">OS X Install instructions</a>.<br>
+      If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic.shtml">the Mac Classic Install Guide</a>.</p>
+      <!--
+       file name          JMRI releases    Mac OS versions     CPU architecture  Java version
+       MacOSClassic.shtml JMRI 1.4-1.6,    OS8/OS9,            PowerPC,          MRJ
+       MacOSXRetro.shtml  JMRI 2.4-2.14,   OS X 10.3-10.5,     PowerPC/Intel,    Java 1.5             ---- this page
+       MacOSX-4.shtml     JMRI 3.0-3.10.1, OS X 10.6-10.7.2,   Intel,            Java 1.7 - no page of its own
+       MacOSX-4.shtml     JMRI 4.0-4.27,   OS X 10.7.3-10.11,  Intel/Arm,        Java 1.8/OpenJDK 8
+       MacOSX.shtml       JMRI 4.99-5.x,   macOS 10.12-latest, Intel/Arm,        Java/OpenJDK 11-17
+      -->
       <p>If you're really sure you want to install an old JMRI release (I'm
       sure you have a really good reason), on to the show:</p>
 
       <h2>Installing JMRI release 2.8 and below on a Mac OS X computer</h2>
 
       <ol>
-			<li>Determine if your system software is up to date.
-			Find the current Mac OS X version number by choosing "About this Mac" from the Apple menu.</li>
+			<li>Determine if your system software is up-to-date.
+			Find the Mac OS X version number by choosing "About this Mac" from the Apple menu.</li>
 			
-			 <a name="sysreq"></a><h3>JMRI System Requirements</h3>
-			 <p>Using JMRI requires a combination of hardware (in this case a Mac), Java software and a JMRI download for a specific version.
+			<h3><a id="sysreq">JMRI System Requirements</a></h3>
+			<p>Using JMRI requires a combination of hardware (in this case a Mac), Java software and a JMRI download for a specific version.
 
 	    <p>Mac OS X version 10.4 "Tiger" or later is required for
 	    JMRI version 2.4 to 2.8 because those JMRI versions
@@ -52,13 +61,13 @@ If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic
         
 		<li>Determine if you have the needed hardware.
 		
-	    <P>No Macintosh that runs Mac OS X has built-in serial ports,
+	    <p>No Macintosh that runs Mac OS X has built-in serial ports,
 	    so if your hardware needs a serial connection, 
 	    you'll have to use a <a href="../help/en/html/hardware/USBtoSerial.shtml">USB-to-Serial adapter</a>.
 
 	    <p>You will need Mac OS X drivers for the serial hardware you're using.
 	    If you're using Mac OS X 10.4 or later, most hardware won't need a separate driver;
-	    they're already present in Mac OS X.  In some cases you will need a driver, though, 
+	    they're already present in Mac OS X. In some cases you will need a driver, though,
 	    so check the manufacturer's website to make sure.
 	  
 	    <p>
@@ -73,16 +82,16 @@ If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic
 	    <p>There's a Mac OS X driver for USB-to-Serial adapters
 	    based on the Prolific PL2303 chipset 
 	    <a href="http://osx-pl2303.sourceforge.net/">available here</a>.
-	    If you can't access your USB dongle and it seems to use that
+	    If you can't access your USB dongle, and it seems to use that
 	    chipset (you can check in the USB tab of System Profiler), 
-	    this driver will make it available as /dev/cu.PL2303-xxx.
+      this driver will make it available as <code>/dev/cu.PL2303-xxx</code>.
 	     
-	    <P>Note that because of baud rate limitations in Mac OS X itself,
+	    <p>Note that because of baud rate limitations in Mac OS X itself,
 	    it's not possible to use a Digitrax MS100.
 	    Use a 
 	    <a href="http://rrcirkits.com/">RR-CirKits LocoBuffer-USB</a> or 
 	    <a href="http://www.digitrax.com/prd_compint_pr3.php">Digitrax PR3</a> instead.
-	    <P>
+	    <p>
 	    See our page on 
 	    <a href="/help/en/html/hardware/USBtoSerial.shtml">USB adapters</a>
 	    for more information
@@ -90,7 +99,7 @@ If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic
 	<li>Install the Serial Communications libraries</li>
 
 	<p>Versions of JMRI before 2.9.2 required that you install
-        communications libraries on your computer.</p>
+   some communications libraries on your computer.</p>
    
 	<p>Although Mac OS X comes with an up-to-date Java, it doesn't
 	 include the Java communications libraries.  These are needed
@@ -109,10 +118,10 @@ If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic
 	  href="http://downloads.sourceforge.net/jmri/RXTX-Leopard.pkg.zip">http://downloads.sourceforge.net/jmri/RXTX-Leopard.pkg.zip</a>
 	 (This installer also works for Intel-based Macintoshes
 	 running Mac OS X 10.6, even though it's labelled for
-	 Leopard). The file name will be <tt>RXTX-Leopard.pkg</tt>,
+	 Leopard). The file name will be <code>RXTX-Leopard.pkg</code>,
 	 but the splash screen will say "Tiger" and "10.4" due to an
 	 oversight; just ignore that) If the installer doesn't start
-	 automatically, double click on the downloaded and expanded
+	 automatically, double-click on the downloaded and expanded
 	 file to install it.  You will need the Mac OS X administrator
 	 password to run the installer.</p>
 
@@ -121,9 +130,9 @@ If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic
 			 href="http://downloads.sourceforge.net/jmri/RXTX-Leopard.pkg.zip">http://downloads.sourceforge.net/jmri/RXTX-Leopard.pkg.zip</a>
 	 (This installer works for both PowerPC and Intel-based
 	 Macintoshes running Mac OS X 10.5. The file name will be
-	 <tt>RXTX-Leopard.pkg</tt>, but the splash screen will say
+	 <code>RXTX-Leopard.pkg</code>, but the splash screen will say
 	 "Tiger" and "10.4" due to an oversight; just ignore that) If
-	 the installer doesn't start automatically, double click on
+	 the installer doesn't start automatically, double-click on
 	 the downloaded and expanded file to install it.  You will
 	 need the Mac OS X administrator password to run the
 	 installer.</p>
@@ -132,7 +141,7 @@ If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic
 	 installer for the default communications library from <a
 			 href="http://downloads.sourceforge.net/jmri/RXTX-for-Intel-Mac.pkg.zip">http://downloads.sourceforge.net/jmri/RXTX-for-Intel-Mac.pkg.zip</a>
 	 (This installer works for both PowerPC and Intel-based
-	 Macintoshes) Double click on the downloaded and expanded file
+	 Macintoshes) Double-click on the downloaded and expanded file
 	 to install it.  You will need the Mac OS X administrator
 	 password to run the installer.</p>
 
@@ -140,7 +149,7 @@ If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic
 	 with a much older version of JMRI, download the necessary
 	 installer for the default communications library from <a
 			href="http://downloads.sourceforge.net/jmri/JavaCommInstaller2.hqx">http://downloads.sourceforge.net/jmri/JavaCommInstaller2.hqx</a>
-	 If the installer doesn't start automatically, double click on
+	 If the installer doesn't start automatically, double-click on
 	 the downloaded and expanded file to install it.  You will
 	 need the Mac OS X administrator password to run the
 	 installer.</p>
@@ -151,7 +160,7 @@ If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic
 
 	<li>Get JMRI</li>
 
-	<p>Download a version of JMRI.  If you're on this install page,
+	<p>Download a version of JMRI. If you're on this install page,
 	then that version should be
 	<a href="http://jmri.org/releasenotes/jmri2.8.shtml">JMRI release 2.8</a> or earlier.
 	As the version numbers change with every release, 
@@ -177,7 +186,6 @@ If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic
 	double-clicking on the "DecoderPro" or "PanelPro" or
 	application icons in the JMRI folder.
 
-
 	<h2>Configuring your JMRI setup</h2>
 
 	<li>Connect your computer system to your <a
@@ -198,22 +206,22 @@ If you have a Macintosh running Classic MacOS9.1, refer to <a href="MacOSClassic
 	start JMRI again, and look to see which extra name has appeared.
 	That's the name one you want.</p>
 
-      </ol>
+  </ol>
 
-    <h3>Communications and Mac OS X 10.4</h3>
+  <h3>Communications and Mac OS X 10.4</h3>
 
-    Mac OS X 10.4 was a transitional version, with lots of 
-    different structures in it depending on the specific sub-version (10.4.1 vs 10.4.2 vs 10.4.3).
-    Certain combinations of sub-version and processor cause aren't properly 
-    handled by the standard libraries distributed with JMRI.
-    <p>
-    We handle this by making available some alternative libraries, at least
-    one of which is going to make JMRI work.
-    <p>
-    If you've got Mac OS X 10.4 and are having a problem either getting JMRI
-    to start, or to see the attached layout hardware from within the program, 
-    please see this 
-    <a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/messages/61242">description of how to debug this</a>.
+  Mac OS X 10.4 was a transitional version, with lots of
+  different structures in it depending on the specific sub-version (10.4.1 vs 10.4.2 vs 10.4.3).
+  Certain combinations of sub-version and processor cause aren't properly
+  handled by the standard libraries distributed with JMRI.
+  <p>
+  We handle this by making available some alternative libraries, at least
+  one of which is going to make JMRI work.
+  <p>
+  If you run Mac OS X 10.4 and are having a problem either getting JMRI
+  to start, or to see the attached layout hardware from within the program,
+  please see this
+  <a href="https://groups.yahoo.com/neo/groups/jmriusers/conversations/messages/61242">description of how to debug this</a>.
 
 <h2>Customizing your JMRI Installation</h2>
 
@@ -224,7 +232,7 @@ have a configuration that doesn't use a layout connection so you can
 work with the program on a laptop away from the layout.
 
 <p>
-With Mac OS X, JMRI makes this easy to do.  PanelPro and DecoderPro save
+With Mac OS X, JMRI makes this easy to do. PanelPro and DecoderPro save
 their preferences separately, so they can be configured independently.
 
 <p>
@@ -232,11 +240,11 @@ On a Mac, the different preferences files take their name from the name of the a
 This lets you create multiple copies of e.g. DecoderPro that each use their own, separate preferences files.
 Let's say you want one called "CoolNewOne".  
 <ul>
-<li>Duplicate the DecoderPro application icon (ctrl-click to get a popup menu and say duplicate, 
-or select the icon and choose duplicate from the File menu in Finder).
-<li>Change the duplicate's name.
-(It's probably better to use a simple one-word name like "CoolNewOne")
-<li>Double click your new icon, and off you go.  
+  <li>Duplicate the DecoderPro application icon (ctrl-click to get a popup menu and say duplicate,
+  or select the icon and choose duplicate from the File menu in Finder).
+  <li>Change the duplicate's name.
+  (It's probably better to use a simple one-word name like "CoolNewOne")
+  <li>Double-click your new icon, and off you go.
 </ul>
 
 It won't work to drag one of the JMRI application icons out of the 
@@ -244,9 +252,9 @@ JMRI folder, since they need the other files that can be found there.
 If you want an icon in some other place, like on your desktop:
 
 <ul>
-<li>Go to the JMRI folder and select the application icon.
-<li>From the file menu, select "Make Alias"
-<li>Drag that new alias icon to it's new location, and optionally rename it.
+  <li>Go to the JMRI folder and select the application icon.
+  <li>From the file menu, select "Make Alias"
+  <li>Drag that new alias icon to its new location, and optionally rename it.
 </ul>
 
 Note that renaming the alias alone does not cause the application icon to be renamed, so the alias will be using the
@@ -260,4 +268,3 @@ same preferences as the original.
 <script src="/js/main.js"></script>
 </body>
 </html>
-
