@@ -24,18 +24,18 @@
 		<li><a href="#notes">Notes</a>
 		</ul>
 
-	<p class="important">These directions focus on installing the 3.x and
-	4.x releases of JMRI&reg; on OS X computers. Instructions to install current JMRI releases on current Macs can be
-found <a href="MacOSX.shtml">here</a><br>
-    If you have an older Mac and need to install an earlier release (such as JMRI
-    <a href="../releasenotes/jmri3.10.1.shtml">3.10.1</a> or earlier), please see these
+    <p class="important">These directions focus on installing the 3.x and
+    4.x releases of JMRI&reg; on OS X computers.<br>
+    Instructions to install current JMRI releases on current Macs can be
+    found <a href="MacOSX.shtml">here</a><br>
+    If you have an even older Mac and need to install an earlier release, please see these
     <a href="MacOSXRetro.shtml">Early Mac OS X install instructions</a>.</p>
   <!--
    file name          JMRI releases    Mac OS versions     CPU architecture  Java version
    MacOSClassic.shtml JMRI 1.4-1.6,    OS8/OS9,            PowerPC,          MRJ
    MacOSXRetro.shtml  JMRI 2.4-2.14,   OS X 10.3-10.5,     PowerPC/Intel,    Java 1.5
    MacOSX-4.shtml     JMRI 3.0-3.10.1, OS X 10.6-10.7.2,   Intel,            Java 1.7 - no page of its own
-   MacOSX-4.shtml     JMRI 4.0-4.27,   OS X 10.7.3-10.11,  Intel/Arm,        Java 1.8/OpenJDK 8  ---- this page
+   MacOSX-4.shtml     JMRI 4.0-4.27,   OS X 10.7.3-10.11,  Intel/Arm,        Java 1.8/OpenJDK 8/11  ---- this page
    MacOSX.shtml       JMRI 4.99-5.x,   macOS 10.12-latest, Intel/Arm,        Java/OpenJDK 11-17
   -->
   <p>Now, on to the show:</p>
@@ -47,25 +47,23 @@ found <a href="MacOSX.shtml">here</a><br>
        Determine if your system software is compatible with the 4.x releases of JMRI:
        Find the current OS X version number by choosing "About this Mac" from the Apple menu.
 
-       <p>
-       JMRI 4.2 and later will work on any macOS or OS X version back to 10.7.3 Lion (2012).<br>
-       Note: OS X Lion 10.7.1 and 10.7.2 will have to be updated to 10.7.3 to install JMRI 4.2.
-
-       <p>
-       If your Mac hardware doesn't let you update OS X to a recent enough version to run Java 1.8,
-       you can still downlaod and install older versions of JMRI:
        <ul>
-        <li>OS X version 10.7.2 "Lion" through 10.6 "Snow Leopard" can run
-        <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7.
-        (The youngest Mac that can't run Mountain Lion was shipped in 2009)</li>
-        <li>OS X version 10.5 "Leopard" through 10.4 "Tiger" can run
-        <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.
-        (The youngest Mac that can't run Tiger was shipped in 2003)</li>
-        <li>For even older hardware, see a <a href="MacOSXRetro.shtml">separate page</a>.</li>
+       <li>
+       JMRI 4.x and later will work on any macOS or OS X version back to 10.7.3 Lion (2012).<br>
+       Note that OS X Lion 10.7.1 and 10.7.2 will have to be updated to 10.7.3 to install JMRI 4.2.</li>
+
+       <li>
+       If your Mac hardware doesn't let you update OS X to a recent enough version to run Java 1.8,
+       you can try to install a 3.x version of JMRI.<br>
+       OS X version 10.7.2 "Lion" through 10.6 "Snow Leopard" can run
+       <a href="http://jmri.org/releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a> using Java 1.7.
+       (The youngest Mac that can't run Mountain Lion was shipped in 2009)</li>
+
+       <li>For even older hardware, see a <a href="MacOSXRetro.shtml">Early Mac OS X page</a>.</li>
        </ul>
 
-        <p>These JMRI installs will take up about 330&nbsp;MB of disk space, mostly for the Help pages
-        and decoder definitions.</p>
+       <p>JMRI 3.x - 4.x installs will take up about 330&nbsp;MB of disk space, mostly for the Help pages
+       and decoder definitions.</p>
        </li>
 
         <li>Determine if you have the needed hardware drivers:
@@ -81,7 +79,7 @@ found <a href="MacOSX.shtml">here</a><br>
         so check the manufacturer's website to make sure.</p>
 
         <p><em>Note: OS X 10.11 El Capitan and later macOS versions generally require
-        signed drivers.  If you installed drivers for a previous version,
+        signed drivers. If you installed drivers for a previous version,
         particularly drivers that don't say they support OS X 10.10 Yosemite,
         those older drivers may not work with 10.11 El Capitan.  Go to the
         website for your USB adapter, download the newest driver and
@@ -115,11 +113,10 @@ found <a href="MacOSX.shtml">here</a><br>
 
        <li>Get the JMRI software...
 
-        <p><a href="../download/index.shtml#prod-rel">Download</a> a
-        version of JMRI, either the latest production version, or a
-        "test version".  Since the version numbers change with every
-        release, <a href="../download/index.shtml">this link</a> takes
-        you to the general JMRI download page, where you can select
+        <p>Download <a href="../releasenotes/jmri4.26.shtml">JMRI 4.26</a>
+        - or <a href="../releasenotes/jmri3.10.1.shtml">JMRI 3.10.1</a>. Since the version
+        numbers change with every release, <a href="../download/index.shtml">this
+        link</a> takes you to the general JMRI download page, where you can select
         whichever version you like.</p>
 
         <p>The JMRI project is continuously adding features, bug
@@ -165,26 +162,32 @@ found <a href="MacOSX.shtml">here</a><br>
                 step.  If it opens a dialog box that offers
                 to install Java, or takes you to the Java
                 install website, just follow those instructions.
+            </li>
             <li><a id="java11"></a>
                 If that doesn't work, and you have a suitable
-                macOS version (see above), your next step is to install
+                macOS version to run JMRI 4.x (see above), your next step is to install
                 Java 11.  To do that, click on
-                <a href="https://repos.azul.com/azure-only/zulu/packages/zulu-11/11.0.13/zulu-11-azure-jre_11.52.13-11.0.13-macosx_x64.dmg">this download link</a>.
-                A download should start shortly.
+                <a href="https://repos.azul.com/azure-only/zulu/packages/zulu-11/11.0.13/zulu-11-azure-jre_11.52.13-11.0.13-macosx_x64.dmg">this
+                download link</a>. A download should start shortly.
                 When it's complete, click on the file and follow instructions to
                 install Java.
-                (That link is the same as the download link near the
-                bottom of
+                (That link is the same as the download link near the bottom of
                 <a href="https://www.azul.com/downloads/?version=java-11-lts&os=macos&package=jre">this page on the Azul website</a>.)
-            <li>
-                Note: JMRI is developed with Java 8, but we now recommend that you run it using Java 11.
+                <br>
+                JMRI 4 was developed with Java 8, but we now recommend that you run it using Java 11.
                 It should work fine with any Java version from Java 8 to Java 14.
 	            With some versions you may get a message about
 	                "WARNING: An illegal reflective access operation has occurred"
 	                and "WARNING: Please consider reporting this to the maintainers".
 	            We know about this, and it'll get fixed in due course; you can ignore the messages.
-	            Java 15 and later will (currently) cause problems, so please use install and use
-	            Java 11.
+	            Java 15 and later caused some problems, so please install and use
+	            Java 11 with JMRI releases 4.
+            </li>
+            <li>
+            If your hardware macOS version is limited to JMRI 3.x, your next step is to <a
+                    href="https://www.java.com/en/download/manual.jsp">install
+              Java JRE 1.8</a> (under Mac OS).
+            </li>
             </ul>
       </li>
       <li>Congratulations! Installation is complete. Click on the DecoderPro icon in the
@@ -269,16 +272,16 @@ found <a href="MacOSX.shtml">here</a><br>
 
 <a id="debug"></a><h2>Debugging</h2>
 
-JMRI supports many different Mac computers,
-with several different kinds of processors,
-multiple macOS versions,
-and various layout hardware.
-Some combinations can cause trouble.
-This section gives some debugging hints.
+  <p>JMRI supports many different Mac computers,
+  with several different kinds of processors,
+  multiple macOS versions,
+  and various layout hardware.
+  Some combinations can cause trouble.
+  This section gives some debugging hints.</p>
 
 <a id="usb"></a><h3>USB Serial Issues</h3>
 
-Irrespective of DCC system, there are some basic rules for troubleshooting any USB-attached device to a Mac.
+  <p>Irrespective of DCC system, there are some basic rules for troubleshooting any USB-attached device to a Mac.</p>
 <ul>
 <li>Plug your device into your Mac.
 
@@ -322,7 +325,9 @@ that it has a matching driver installed and the name of the connection port <cod
     there's no way JMRI can find your device until the driver issue is resolved.
 </ul>
 
-<a id="javase6"></a><h3>Java SE 6</h3>
+  <a id="notes"></a><h2>Notes</h2>
+
+<a id="javase6"></a><h3>Remove Java SE 6</h3>
     <p>To check for Java SE 6, JMRI 4.5.2 and up include a script. Follow these steps (assuming
       JMRI is installed in the folder <em>/Applications/JMRI</em>; if it's installed in a different location, adjust the paths as needed):</p>
     <ol>
@@ -363,8 +368,6 @@ or getY() or getZ(), the solution is to copy the <code>JMRI/lib/vecmath-1.5.2.ja
 within the JMRI distribution directory to the  <code>~/Library/Java/Extensions/</code> directory.
 (You might have to create that directory).
 <u>Do not do this unless you have seen that symptom</u>.
-
-<a id="notes"></a><h2>Notes</h2>
 
 <a id="catalina"></a><h3>macOS 10.15 Catalina</h3>
 

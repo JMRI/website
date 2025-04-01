@@ -26,9 +26,9 @@
       <!--
        file name          JMRI releases    Mac OS versions     CPU architecture  Java version
        MacOSClassic.shtml JMRI 1.4-1.6,    OS8/OS9,            PowerPC,          MRJ
-       MacOSXRetro.shtml  JMRI 2.4-2.14,   OS X 10.3-10.5,     PowerPC/Intel,    Java 1.5             ---- this page
+       MacOSXRetro.shtml  JMRI 2.4-2.14,   OS X 10.3-10.5,     PowerPC/Intel,    Java 1.5 (1.6 for 2.14) ---- this page
        MacOSX-4.shtml     JMRI 3.0-3.10.1, OS X 10.6-10.7.2,   Intel,            Java 1.7 - no page of its own
-       MacOSX-4.shtml     JMRI 4.0-4.27,   OS X 10.7.3-10.11,  Intel/Arm,        Java 1.8/OpenJDK 8
+       MacOSX-4.shtml     JMRI 4.0-4.27,   OS X 10.7.3-10.11,  Intel/Arm,        Java 1.8/OpenJDK 8/11
        MacOSX.shtml       JMRI 4.99-5.x,   macOS 10.12-latest, Intel/Arm,        Java/OpenJDK 11-17
       -->
       <p>If you're really sure you want to install an old JMRI release (I'm
@@ -41,7 +41,13 @@
 			Find the Mac OS X version number by choosing "About this Mac" from the Apple menu.</li>
 			
 			<h3><a id="sysreq">JMRI System Requirements</a></h3>
-			<p>Using JMRI requires a combination of hardware (in this case a Mac), Java software and a JMRI download for a specific version.
+
+			<p>Using JMRI requires a combination of hardware (in this case a Mac), Java software
+      and a JMRI download for a specific version.</p>
+
+      <p>OS X version 10.5 "Leopard" through 10.4 "Tiger" can run
+      <a href="http://jmri.org/releasenotes/jmri2.14.1.shtml">JMRI 2.14.1</a> using Java 1.6.
+      (The youngest Mac that can't run Tiger was shipped in 2003)</p>
 
 	    <p>Mac OS X version 10.4 "Tiger" or later is required for
 	    JMRI version 2.4 to 2.8 because those JMRI versions
@@ -53,11 +59,11 @@
 	     href="http://jmri.org/releasenotes/jmri2.2.shtml">JMRI
 	    version 2.2</a>.</p>
 
-	    <p>You should have enough memory for your computer to run
+	    <p>You should have enough memory installed in your computer to run
 	    well, but you don't need any more than that. Starting JMRI with Java may take some time,
 	    but once it's running speed is no problem.</p>
 
-	    <p>The install will take up about 100MB of disk space, mostly for the help pages.
+      <p>The install will take up about 100MB of disk space, mostly for the help pages.</p>
         
 		<li>Determine if you have the needed hardware.
 		
@@ -98,10 +104,9 @@
       
 	<li>Install the Serial Communications libraries</li>
 
-	<p>Versions of JMRI before 2.9.2 required that you install
-   some communications libraries on your computer.</p>
-   
-	<p>Although Mac OS X comes with an up-to-date Java, it doesn't
+   <p>Versions of <strong>JMRI before 2.9.2</strong> require that you install
+   some communications libraries on your computer.<br>
+   Although Mac OS X came with Java, it didn't
 	 include the Java communications libraries.  These are needed
 	 to talk to a DCC Command Station, so we provide an installer.</p>
 	 
@@ -127,7 +132,7 @@
 
 	 <p> If you're using Mac OS X 10.5 (Leopard), download the
 	 installer for the default communications library from <a
-			 href="http://downloads.sourceforge.net/jmri/RXTX-Leopard.pkg.zip">http://downloads.sourceforge.net/jmri/RXTX-Leopard.pkg.zip</a>
+			 href="http://downloads.sourceforge.net/jmri/RXTX-Leopard.pkg.zip">sourceforge.net</a>
 	 (This installer works for both PowerPC and Intel-based
 	 Macintoshes running Mac OS X 10.5. The file name will be
 	 <code>RXTX-Leopard.pkg</code>, but the splash screen will say
@@ -139,7 +144,7 @@
 
 	 <p>f you're using Mac OS X 10.4 (Tiger), download the
 	 installer for the default communications library from <a
-			 href="http://downloads.sourceforge.net/jmri/RXTX-for-Intel-Mac.pkg.zip">http://downloads.sourceforge.net/jmri/RXTX-for-Intel-Mac.pkg.zip</a>
+			 href="http://downloads.sourceforge.net/jmri/RXTX-for-Intel-Mac.pkg.zip">sourceforge.net</a>
 	 (This installer works for both PowerPC and Intel-based
 	 Macintoshes) Double-click on the downloaded and expanded file
 	 to install it.  You will need the Mac OS X administrator
@@ -148,7 +153,7 @@
 	<p>If you want to use Mac OS X 10.2 (Jaguar) or 10.3 (Panther)
 	 with a much older version of JMRI, download the necessary
 	 installer for the default communications library from <a
-			href="http://downloads.sourceforge.net/jmri/JavaCommInstaller2.hqx">http://downloads.sourceforge.net/jmri/JavaCommInstaller2.hqx</a>
+			href="http://downloads.sourceforge.net/jmri/JavaCommInstaller2.hqx">sourceforge.net</a>
 	 If the installer doesn't start automatically, double-click on
 	 the downloaded and expanded file to install it.  You will
 	 need the Mac OS X administrator password to run the
@@ -184,7 +189,7 @@
 	<p>
 	You can run the program by
 	double-clicking on the "DecoderPro" or "PanelPro" or
-	application icons in the JMRI folder.
+  application icons in the JMRI folder.</p>
 
 	<h2>Configuring your JMRI setup</h2>
 
@@ -193,7 +198,7 @@
 	hardware</a>.</li>
 
 	<p> Your next step will be to set the Preferences for your
-        particular layout connection.
+  particular layout connection.</p>
     
 	<p>
 	Mac OS X uses names like "/dev/cu.SomeName" and "/dev/tty.SomeName" for 

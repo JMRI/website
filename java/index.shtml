@@ -41,12 +41,14 @@ on your computer.  On Windows, for example, open a "command" window by typing "C
 
      <code>java -version</code>
 
-<p><strong>IT IS RECOMMENDED THAT YOU REMOVE OLD VERSIONS OF JAVA BEFORE YOU UPGRADE.</strong> This avoids a number of reported
-problems.  On Windows, for example, you can:
+<p><strong>IT IS RECOMMENDED THAT YOU REMOVE OLD VERSIONS OF JAVA BEFORE YOU UPGRADE.</strong> This avoids
+a number of reported problems. On Windows, for example, you can:
 
      <ul>
         <li>Go to Windows <strong>Settings&rArr;Apps</strong>, find Java 8 and click on <strong>"Uninstall."</strong></li>
-        <li>Alternatively, download the <a href="https://www.java.com/en/download/uninstalltool.jsp" target="_blank">Oracle Java Uninstall tool</a> and follow its instructions</li>
+        <li>Alternatively, download the
+        <a href="https://www.java.com/en/download/uninstalltool.jsp" target="_blank">Oracle Java Uninstall tool</a>
+        and follow its instructions</li>
         <li>It's recommended that you reboot after uninstalling before you install a new version of Java.</li>
      </ul>
 
@@ -178,7 +180,7 @@ as the local Java install will be overwritten during the update process.</p>
         <li>Install JMRI into the Applications folder in the usual way.</li>
         <li>Download <a href="https://cdn.azul.com/zulu/bin/zulu17.50.19-ca-jre17.0.11-macosx_x64.zip">this Java install file</a>.</li>
         <li>If this created a zulu17.50.19-ca-jre17.0.11-macosx_x64 folder in your Downloads folder, proceed to the next step.</li>
-            If this created a zulu17.50.19-ca-jre17.0.11-macosx_x64.zip file in your Downloads folder, double click on it to expand it to a folder.
+            If this created a zulu17.50.19-ca-jre17.0.11-macosx_x64.zip file in your Downloads folder, double-click on it to expand it to a folder.
         <li>Rename that folder to just "jre".</li>
         <li><a href="macOS_JRE.png"><img src="macOS_JRE.png" width="300" height="242" alt="JMRI/Applications folder" class="floatRight"></a>
             Open the JMRI folder in the Applications folder (this is where you would normally launch JMRI)</li>
