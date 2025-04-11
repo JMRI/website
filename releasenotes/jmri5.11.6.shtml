@@ -170,6 +170,11 @@ See <a href="#update">instructions above</a>.
         been having trouble getting those addresses to work, this change should
         fix that.
         </li>
+    <li><span class="since">Since <a href="jmri5.11.5.shtml">JMRI 5.11.5</a></span>
+        OperationsPro program file locations were changed in 
+        <a href="jmri5.11.5.shtml">JMRI 5.11.5</a>. Start up actions
+        involving operations windows from previous releases no longer work. You'll need to remove them and
+        add them back if needed.</li>
 </ul>
 
 <a id="download" name="download"></a>
