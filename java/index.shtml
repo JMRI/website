@@ -27,7 +27,7 @@ version was Java 11.
 JMRI 5 will not work with Java versions below Java 11.
 Originally, there were a small number of
 <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml#jdk17">known issues</a>
-with later Java versions from JMRI 5.0 to JMRI 5.8. 
+with later Java versions from JMRI 5.0 to JMRI 5.8.
 These were resolved in JMRI 5.9.1, at which point we started recommending Java 17.
 </p>
 
@@ -90,6 +90,7 @@ OpenJDK 64-Bit Server VM (build 25.362-b09, mixed mode)
 Command 'java' not found, but can be installed with:
 sudo apt install openjdk-17-jre-headless  # version 17.0.6+10-0ubuntu1~22.04
     </pre>
+    <em>Ignore the recommended command. JMRI needs the full Java version.</em>
   </div>
 
   <div class="noted">Red Hat based:
@@ -97,7 +98,7 @@ sudo apt install openjdk-17-jre-headless  # version 17.0.6+10-0ubuntu1~22.04
 bash: java: command not found...
 Install package 'java-17-openjdk-headless' to provide command 'java'? [N/y]
     </pre>
-    Reply N, JMRI needs the full Java version.
+    <em>Reply N, JMRI needs the full Java version.</em>
   </div>
 
   <h3>Install Java 17</h3>
@@ -179,8 +180,8 @@ as the local Java install will be overwritten during the update process.</p>
     <ul>
         <li>Install JMRI into the Applications folder in the usual way.</li>
         <li>Download <a href="https://cdn.azul.com/zulu/bin/zulu17.50.19-ca-jre17.0.11-macosx_x64.zip">this Java install file</a>.</li>
-        <li>If this created a zulu17.50.19-ca-jre17.0.11-macosx_x64 folder in your Downloads folder, proceed to the next step.</li>
-            If this created a zulu17.50.19-ca-jre17.0.11-macosx_x64.zip file in your Downloads folder, double-click on it to expand it to a folder.
+        <li>If this created a zulu17.50.19-ca-jre17.0.11-macosx_x64 folder in your Downloads folder, proceed to the next step.<br>
+            If this created a zulu17.50.19-ca-jre17.0.11-macosx_x64.zip file in your Downloads folder, double-click on it to expand it to a folder.</li>
         <li>Rename that folder to just "jre".</li>
         <li><a href="macOS_JRE.png"><img src="macOS_JRE.png" width="300" height="242" alt="JMRI/Applications folder" class="floatRight"></a>
             Open the JMRI folder in the Applications folder (this is where you would normally launch JMRI)</li>
