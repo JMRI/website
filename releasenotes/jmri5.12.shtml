@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+ <title>
+    JMRI: Release Notes for Production Release 5.12
+ </title>
+    <meta content="Bob Jacobsen" name="author">
+    <meta name="keywords" content="java model railroad JMRI 5.12 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+
+ <!--#include virtual="/Style.shtml" -->
+</head>
+
+<body>
+<!--#include virtual="/Header.shtml" -->
+
+<div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
+    <div id="mainContent">
+      <h1>
+      Release Notes for JMRI 5.12 release
+      </h1>
+
+    <p>Date: MMM DD, 2025</p>
+    <p>From: release pumpkin</p>
+    <p>Subject: Production Release 5.12 of JMRI/DecoderPro is available for download.</p>
+
+<p><b>This is a draft release note only; the download links do not yet work</b></p>
+
+<p>We are very pleased to announce that the 5.11 series of JMRI test releases has resulted in a
+version that's good enough to be recommended for general use, including by new users.
+We're therefore making that version, "Production Release 5.10" available for download today.</p>
+
+<a id="note" name="note"></a>
+<h2>Notes:</h2>
+
+<p><b>
+JMRI is now only available under the
+<a href="/COPYING">GNU General Public License</a>. For more information, please
+see our
+<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<br>
+<p class="noted" align=center><b>This release requires Java 11 to work.
+    Java 17 is recommended.</b><br/>
+(See <a href="http://jmri.org/java">our page on downloading and installing Java</a>)<br></p><br>
+
+<a id="update" name="update"></a>
+<h3>Update From Older JMRI Versions</h3>
+
+If you are currently using a version older than JMRI 5.0, please follow these instructions carefully:
+<ol>
+<li>Is your current version older than <a href="jmri4.12.shtml">JMRI 4.12</a>?
+    If so, then update to <a href="jmri4.12.shtml">JMRI 4.12</a> first, and ensure everything works correctly: check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Store your configuration and panel files under a new name and use those from now on.
+    Then continue with step 2.
+    <p>
+    If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+    then it's <u>very important</u>
+    that you update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
+    carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
+    before updating to any later release.
+    </li>
+
+<li>Is your current version older than <a href="jmri4.20.shtml">JMRI 4.20</a>?
+    Then update to <a href="jmri4.20.shtml">JMRI 4.20</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Save your preferences again.
+    Store your configuration and panel files under a new name, use those from now on, and go on to step 3.</li>
+
+<li>Is your current version older than <a href="jmri4.24.shtml">JMRI 4.24</a>?
+    Then update to <a href="jmri4.24.shtml">JMRI 4.24</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Save your preferences again.
+    Store your configuration and panel files under a new name and use those from now on.</li>
+
+<li>Is your current version older than <a href="jmri5.0.shtml">JMRI 5.0</a>?
+    Then update to <a href="jmri5.0.shtml">JMRI 5.0</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Save your preferences again.
+    Store your configuration and panel files under a new name and use those from now on.</li>
+
+<li>You can then install this release.
+
+</ol>
+
+Following this multi-step order of updating via stable major releases safeguards you against possible migration issues
+that can arise from skipping these versions.
+
+<a id="problems" name="problems"></a>
+<h3>New problems with this release</h3>
+
+<ul>
+    <li>None yet.</li>
+</ul>
+<!-- 
+If this effects you, please update to
+<a href="jmri5.11.4.shtml">JMRI 5.11.4</a> or newer releases.
+ -->
+
+<!--
+If any of those affect you, please either
+wait for
+<a href="jmri5.11.1.shtml">JMRI 5.11.1</a>, due out shortly,
+or (once there's a fix for the problem) pick up a
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">development build installer</a>
+from
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
+ -->
+
+<a id="warnings" name="warnings"></a>
+<h3>New warnings for this production release:</h3>
+
+<ul>
+    <p>None Yet
+</ul>
+
+<h3>Older warnings</h3>
+
+See the <a href="jmri5.8.shtml#warnings">JMRI 5.8 release note</a> for more warnings predating the 5.8 development series,
+including pointers to various migration issues.
+These may be relevant to you if you're updating from an earlier version;
+we strongly recommend you update to <a href="jmri5.0.shtml">JMRI 5.0</a>
+before installing this release, see above.
+
+<ul>
+    <li><span class="since">Since <a href="jmri5.7.1.shtml">JMRI 5.7.1</a></span>
+        Several systems have had extensive updates to their serial
+        support.  If you have trouble connecting to your layout hardware
+        after installing this version, please contact us
+        <a href="https://groups.io/g/jmriusers">on the JMRIusers list</a>
+        for assistance.
+    </li>
+    <li><span class="since">Since <a href="jmri5.7.7.shtml">JMRI 5.7.7</a></span>
+        If you are using a RR-CirKits LocoNet to LCC gateway
+        with this release, please upgrade its firmware
+        to version B8g or later.  B8f or earlier will 
+        have trouble updating the gateway's configuration.</li>
+    <li>If you're using a Firefox web browser and opening JMRI 
+        help files locally (not over the web), a Firefox bug
+        can sometimes cause it to enter a loop.  There's a 
+        workaround in
+        <a href="https://groups.io/g/jmriusers/message/239205">this JMRIusers post</a>.
+    <li><span class="since">Since <a href="jmri5.11.3.shtml">JMRI 5.11.3</a></span>
+        There's been a change to how OpenLCB turnouts are
+        addressed when using the MTT addressing short cut.
+        Turnouts 253,254,255, 510, 511, 512, 765, 766 and 767
+        will be addressed differently.  If you're using any of these
+        via e.g. MTT253, you will need to change the address.  If you've
+        been having trouble getting those addresses to work, this change should
+        fix that.
+        </li>
+    <li><span class="since">Since <a href="jmri5.11.5.shtml">JMRI 5.11.5</a></span>
+        OperationsPro program file locations were changed in 
+        <a href="jmri5.11.5.shtml">JMRI 5.11.5</a>. Start up actions
+        involving operations windows from previous releases no longer work. 
+        You'll need to remove them and
+        add them back if needed.</li>
+</ul>
+
+<a id="download" name="download"></a>
+<h2>Download links:</h2>
+
+<!-- 
+<div class="wide">
+<ul>
+<li>OS X / macOS: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.dmg">https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.dmg</a><br/>
+  sha256: 97e8d9d07c0e8e088a293349136102e337429a3f9542f794bbdc7b078658901d </li>
+
+<li>Windows: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.exe">https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.exe</a><br/>
+   sha256: e43afc7282dd17f428a89f38986b13086254af37d6bbf8859f50cb53ffe78a7e</li>
+
+<li>Linux: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.tgz">https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.tgz</a><br/>
+   sha256: 886f4f7033da5339ac9778fc366c99e29af1ac9446bc3527b257aa8e1b69f179</li>
+</ul>
+</div>
+These files are located in the 
+<a href="https://github.com/JMRI/JMRI/releases/tag/v5.10">JMRI 5.10 GitHub release</a>.
+A Docker container can also be obtained from
+<a href="https://hub.docker.com/r/jsa1987/jmri-docker">https://hub.docker.com/r/jsa1987/jmri-docker</a>.
+ 
+ -->
+<!--
+Preliminary build files (not the final released files) can be found
+on the
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.10">CI project page</a>.
+ -->
+
+During development leading to the actual release, you can find test download files on the
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
+These are development files, and might not be working at any particular time.</p>
+
+
+<a id="changes" name="changes"></a>
+<h2>Changes since <a href="jmri5.10.shtml">production release 5.10</a>:</h2>
+
+<p>
+This production version is made from test releases 5.11.1 through 5.11.8  The
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2024-12-06..2024-12-06">full list of changes</a>
+in those is
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2024-12-06..2024-12-06">available from our code repository</a>.
+
+=== 5.11.1 === ===========================================================================
+
+
+    <h3>Hardware Support</h3>
+
+        <h4><a href="http://bidib.org/index_e.html">BiDiB</a></h4>
+            <ul>
+                <li>Added netBiDiB as another BiDiB connection type.</li>
+            </ul>
+
+        <h4>CBUS</h4>
+            <ul>
+                <li>The default CAN ID for new connections is restored to 126</li>
+                <li>Node Manager highlights duplicate CAN IDs.</li>
+            </ul>
+
+        <h4>DCC++ and DCC-EX</h4>
+            <ul>
+                <li>Create and update Meters for newer Current messages <JI>, <JG>, etc.</li>
+                <li>Add parsing for JR, jR, JA and jA messages, handle negative current</li>
+            </ul>
+
+        <h4>drM</h4>
+            <ul>
+                <li>Added initial support for the SPC200R Speedo meter. Speed will correctly show. Further support pending.</li>
+            </ul>
+
+        <h4>Lenz XPressNet</h4>
+            <ul>
+                <li>Correct behavior of the ONESENSOR and TWOSENSOR turnout feedback mode. 
+                    The turnout's KnownState is set after turnout feedback is received. 
+                    In Layout Editor - Entry Exit - Full Interlocking - Signal mast sets the aspect Clear 
+                    only after all turnouts are correctly positioned.</li>
+                <li></li>
+            </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>LocoNet Monitor and Reporters now parse LISSY RFID-7 messages as sent by the Arduino-based GCA51
+                  LocoIO 2xRFID board.</li>
+                <li>Updated "LocoNet Monitor" to give some detail when the command
+                    station reports that a throttle's attempt to control a train's
+                    speed/direction or functions was ignored by the command station because
+                    the LocoNet "Expanded Slot" is "In-Use" by a different throttle
+                    than the one which attempted to control the slot.  Other
+                    operations can also cause this message when the requesting throttle
+                    is not the throttle which "owns" the slot.  This message
+                    (an "<OPC_LONG_ACK>" message) is only sent by
+                    command stations that support "Expanded Slot" messaging, and
+                    is not used by older Digitrax command stations which do not
+                    support "Expanded Slots".</li>
+                <li>Updated LocoNet Monitor to show certain current-generation
+                    Digitrax command stations as "sourcing" certain LocoNet
+                    messages.</li>
+                <li>Updated LocoNet Monitor to better decode certain messages.</li>
+                <li>Added a Configure LocoIO Modules tool, accessible from the LocoNet menu, that lists all
+                  connected LocoIO (LNSV1) boards and allows opening a matching programmer, akin to the LNCV pane.</li>
+                <li>DecoderPro OpsMode LNSV1 programming has been refactored to use the new Lnsv1MessageContents class
+                  instead of locoio.sendRead/.sendWrite it was still using.</li>
+                <li>The LocoIO pane that was deprecated since 4.12 has been removed. The LocoIO configuration
+                  documentation is retained under html LocoNet help.</li>
+                <li>Added the Digitrax UR90X to the LocoNet Monitor tool and
+                    JMRI's Help.</li>
+                <li>Added the BDL716 as a "decoder" in the JMRI Roster.  Added 
+                    LocoNet Monitor support of some BDL716-related messages.</li>
+                <li>Improved the CV configuration mechanism for Digitrax 
+                    7th-generation Accessory devices.</li>
+                <li>Updated several Digitrax help pages to include
+                recently introduced products, fix typos.</li>
+                <li>The FollowSE*c.py script was broken at some unknown point in the past.
+                    The script is updated in this release to fix that.</li>
+            </ul>
+
+        <h4>Marklin CS2</h4>
+            <ul>
+                <li>Added simulated CS2 Connection</li>
+                <li>Added support for TCP (in addition to UDP) connections to the CS2.</li>
+            </ul>
+
+        <h4>NCE</h4>
+            <ul>
+                <li>Fix to the Consist Backup/Restore program. All versions from 5.7.1 to5.11.3
+                create a backup file including command station memory space beyond the consist tables.
+                The bigger issue is that the restore does not check that the addresses in the backup file
+                are within the consist tables. Restoring one of those backup files could corrupt the
+                memory used for AIU status and RS-232 buffers. This fixes both of those and makes sure the
+                restore will only restore within the consist tables.</li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>There's a new LccPro JMRI application that's 
+                    targeted at making it easier to understand and 
+                    configure an LCC network.  See the
+                    <a href="http://jmri.org/help/en/package/apps/gui3/lccpro/LccPro.shtml">help page</a>
+                    for more information.</li>
+                <li>The 
+                    <a href="http://jmri.org/help/en/package/jmri/jmrix/openlcb/swing/eventtable/EventTablePane.shtml">Event Table</a> 
+                    has been improved:<ul>
+                    <li>It now shows event ranges.
+                    <li>It now automatically shows the names of event IDs that are
+                        defined in the LCC Standards if you haven't given them another name.
+                    <li>There's now a "Find Name" that searches for any cell in the name columns 
+                        containing a particular string.
+                    <li>The Find Event and Find Name search boxes update the search
+                        as you type.
+                    <li>The 
+                        <a href="http://jmri.org/help/en/package/jmri/jmrix/openlcb/swing/eventtable/EventTablePane.shtml#menu">File menu</a> 
+                        now contains a "Read from CSV..." item that lets you load event names
+                        from a comma-separated (CSV) file.
+                </ul></li>
+                <li>A graphics issue on Linux in the configuration screens was fixed.
+                <li>Improved the Traffic Monitor display:  <ul>
+                    <li>Now shows addressed message destinations; 
+                    <li>Better alignment of messages on the screen;
+                    <li>Improved how event ID names and uses are displayed on event messages.
+                    <li>Improved 
+                        <a href="http://jmri.org/help/en/package/jmri/jmrix/openlcb/swing/monitor/MonitorPane.shtml">help page</a>.
+                    </ul></li>
+                <li>Sensors connected via a bridge can now be accessed via a "Snnn" 
+                    hardware address, similar to the "Tnnn" address used for Turnouts.
+                <li>You can now enter event IDs by name, in addition to by number:
+                    <ul>
+                    <li>When adding Turnouts/Sensors/Lights and setting aspect events
+                        for OpenLCB Signal Masts
+                    <li>When configuring a node using its CDI
+                    </ul>
+                    When a name has been entered, a tooltip will show the underlying
+                    numeric events.
+                <li>
+                <li>Fixed a bug in the LccPro search function on large LCC networks.</li>
+                <li>Added "Node Groups" to LccPro and the Event Table.</li>
+                <li>You can now create an LCC/OpenLCB
+                    <a href="help/en/html/hardware/openlcb/index.shtml#stringios">StringIO</li>
+                    that's shared across multiple JMRI instances on the same LCC/OpenLCB network.
+                    If you change the StringIO value in one JMRI instance, it will be propagated to the 
+                    other ones over the network. You can then use LogixNG or scripts to 
+                    use that information to communicate between JMRI instances.
+                <li>Added "Restart" and "Clear CDI cache" to the Send Frame developer screen</li>
+                <li>Added "Restart" and "Clear CDI cache" to the contextual (popup) menu in LccPro</li>
+                <li>Converted on "Restart" terminology; references to "Reboot" have been changed</li>
+                <li>Added overwrite mode to EventID-entry fields. This accessed by using the "insert" key, which 
+                    changes the cursor to an underline so you know you're in the mode.  Mac keyboards do not
+                    support an insert key, so this feature is not available on the Mac.</li>
+                <li>Updated the OpenLCB library being used to version 0.8.5</li>
+                <li>Improved handling of memory service timeouts, including
+                    variable timeout lengths defined by the datagram responses.
+                <li> Made sure that MTT style turnout addressing used the 
+                    standard-compliant "linear" form.
+                <li>Improved how Event with Payload messages are displayed in the monitor.</li>
+                <li>Enabled the Abort button in the Update Firmware window.</li>
+                <li>Backup files are now written with dotted-hex event ID values,
+                    whether or not an event name is available.  This makes them more reliable
+                    and more portable.</li>
+                <li>Update the STL Editor to support "event names".
+                    <ul>
+                      <li>When available, event names will be displayed in the IQYZ tables.</li>
+                      <li>The load from backup process will handle event names in older CDI backups.
+                      If the event name is no longer in the name store, a temporary event id will
+                      be created.</li>
+                      <li>Existing event names can be entered in the event columns of the IQYZ tables.
+                      Creating new event names is NOT supported.</li>
+                    </ul>
+                </li>
+                <li>Correctly decode events-with-payload</li>
+                <li>Improved how Event with Payload messages are displayed in the monitor.</li>
+                <li>Enabled the Abort button in the Update Firmware window.</li>
+                <li>Backup files are now written with dotted-hex event ID values,
+                    whether or not an event name is available.  This makes them more reliable
+                    and more portable.</li>
+                <li>Update the STL Editor to support "event names".
+                    <ul>
+                      <li>When available, event names will be displayed in the IQYZ tables.</li>
+                      <li>The load from backup process will handle event names in older CDI backups.
+                      If the event name is no longer in the name store, a temporary event id will
+                      be created.</li>
+                      <li>Existing event names can be entered in the event columns of the IQYZ tables.
+                      Creating new event names is NOT supported.</li>
+                    </ul>
+                </li>
+                <li>Correctly decode events-with-payload</li>
+                <li>First implementation of LCC Location Services which will decode analog-carrying
+                    location services reports to drive volt and amp meters.</li>
+                <li>Update the STL Editor to support importing a <em>group_logic.csv</em> file
+                    that has been modified by a spreadsheet program.</li>
+                <li>Improve how datagram data is represented in the Monitor</li>
+                <li>Add sensor events to the event-entry field popup menu</li>
+                <li>There's a new storage method for event names.
+                    Previously, these were stored in the IdTag table, which might
+                    be confusing.
+                    Starting with this release, they're separately stored
+                    in an eventnames/eventNames.xml file within the user files
+                    location.
+                    Names that were previously stored in the IdTag table
+                    will be automatically migrated to this new method.</li>
+                <li>Added a power manager (which activates e.g. the power control)
+                    for use with LCC command stations<>/li>
+            </ul>
+
+        <h4>RFID</h4>
+            <ul>
+                <li>A new method was added to receive RFID messages as IdTags over LocoNet, for example using the
+                  Arduino-based GCA51 LocoIO 2xRFID board.</li>
+            </ul>
+
+        <h4>SRCP</h4>
+            <ul>
+                <li>Fast-clock TIME commands now use the 00-23 format for
+                    the hour value and do not repeat 01-12 in the afternoon.</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>AE Model</h4>
+            <ul>
+                <li>Added AEModels.xml to add support for AE Model decoders</li>
+            </ul>
+
+        <h4>DCC Concepts</h4>
+            <ul>
+                <li>DCC_Concepts_Zen_ABC.xml to add definitions for DCC Concepts Zen Blue/Black V12 </li>
+            </ul>
+
+        <h4>Decoderwerk</h4>
+            <ul>
+                <li>New decoder definition for the Decoderwerk LokCommander 7090x
+            </ul>
+            
+        <h4>Digitrax</h4>
+            <ul>
+                <li>Updated the Digitrax BDL716's "Roster Entry" with better 
+                    information on its "Notes" page.</li>
+            </ul>
+
+        <h4>ESU</h4>
+            <ul>
+                <li>SwitchPilot Servo V3.0</li>
+            </ul>
+
+        <h4>GCA</h4>
+            <ul>
+                <li>
+                   Added GCA50 (Arduino Nano based LocoIO) and
+                   GCA51 (2x RFID reader + 8 port LocoIO) models
+                   to the DIY HDL_LocoIO decoder definition.
+                </li>
+            </ul>
+
+        <h4>Hattoms</h4>
+            <ul>
+                <li>Added Hattons-Neo.xml to add Hattons Neo decoders</li>
+            </ul>
+
+        <h4>Hornby</h4>
+            <ul>
+                <li>Added HornbyTXS.xml to add Hornby HM7000 sound decoder definitions
+                    and updated HornbyTTS.xml to address error for
+                    Hall Class Sound definition</li>
+            </ul>
+
+        <h4>MD Electronics</h4>
+             <ul>
+                <li>Corrections to the translation into German</li>
+             </ul>
+
+        <h4>Piko decoders</h4>
+            <ul>
+                <li>Support for XP5.1 decoders up to FW 1.16.0 </li>
+                <li>Add Decoder and Project CVs</li>
+            </ul>
+
+        <h4>Public Domain and DIY decoders</h4>
+            <ul>
+                <li>Added GCA50 and GCA51 models to the HDL_LocoIO
+                decoder file, showing only valid modes.</li>
+            </ul>
+
+        <h4>Rampino Elektronic</h4>
+            <ul>
+                <li>Added support for the Loco-1 and Loco-2 decoders.</li>
+            </ul>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>Fixed some sound options in the
+                    SoundTraxx Tsu2 Diesel OEM Genesis decoder definition.</li>
+            </ul>
+
+        <h4>Technologistic (train-O-matic)</h4>
+            <ul>
+                <li>Fix for resetting Train-O-Matic decoders</li>
+            </ul>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li>New Zimo MX820 definition.</li>
+                <li>Updated Zimo_MS_small_v4.xml and Zimo_MN_small_v4.xml </li>
+                <li>Added pane and CVs for "Zimo Scripting".</li>
+                <li>Added decoder types MS591N18 and MS540E24</li>
+            </ul>
+
+    <h3>Control Panel Editor</h3>
+        <a id="CPE" name="CPE"></a>
+        <ul>
+            <li>The ability to set signal mast aspects in <em>view</em> mode is controlled by
+            the <strong>Disabled</strong> setting for the signal mast icon.  When enabled, changing
+            the aspect by clicking or selecting from the aspect list is blocked.</li>
+        </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>You can now choose how to sort the 
+                Roster Group Table.</li>
+            <li>Hornby TXS Sound Decoders use CVs 200 and 201 to identify the specific Sound Profiles Uploaded to the Chip. 
+                Previously the product-id verification process used CV47, 48 and 49 for these decoders. 
+                Those CVs contain firmware update information which is not useful when creating conditional decoder definitions for TXS chips. 
+                The product-id verification process has been modified to interrogate CVs 201 and 200 for Hornby TXS decoders.
+                (This should have no effect on identification for Hornby TTS decoders.)
+             </li>
+          <li>Added DecoderIndexFile access to a decoder definition's
+            &lt;programming&gt;&lt;mode&gt;, allowing a check of supported modes from a DecoderFile using
+            <code>getProgrammingModes()</code></li>
+          <li>DecoderPro OpsMode LNSV1 programming has been refactored to use the new Lnsv1MessageContents class
+            instead of locoio.sendRead/.sendWrite it was still using.</li>
+        </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Provide more information when selecting traininfo file.</li>
+             <li>Add the ability to use an AdHoc transit, which is created dynamically between 2 blocks
+             Dynamic Transits are always run "No Signals". Dynamic Transits are  removed at train termination. If
+             they are not removed for any reason they will not be saved. Currently the route must be clear from end to end
+             and any flaws in the routing table will cause grief. Avoid having the train stop in them.</li>
+             <li>Add Ghost type block. It must have a "not real" sensor, internal is best.
+             The sensor should not be manipulated by logix or logixNG or scripts. Auto trains will
+             set and clear these sensors automatically, manual run trains simply ignore them.
+             They are useful for adding blocks between 2 turnouts where you would normally add a tiny block with the same block
+             as one of the turnouts which causes errors in the routing tables. With care they can be used for placing turnouts
+             in their own block.</li>
+             <li>Fix errors in loading maxlength and Maxspeed</li>
+             <li>Clean up AdHoc Transits after use.</li>
+             <li>Fix minor bugs in min speed settings.</li>
+             <li>When setting up a new train use detection Entire Train, unless overridden by custom defaults.</li>
+             <li>Always check allocation and switch settings before any signaling system.</li>
+             <li>Correctly identify and handle changing position of DoubleXOver switch to prevent switch
+                 changing under a train.</li>
+             <li>Identify conflicting routes when checking allocations thru DoubleXOvers with four blocks.
+                 DoubleXOvers with less than four blocks require no additional checks.</li>
+             <li>When stopping on previous block going unoccupied and speed profile ramping and minimum speed,
+                 use a 75% stopping length factor for the ramp.</li>
+             <li>When a train has been stopped with a missing signal mast attempt to restart use BlockAllocation.</li>
+             <li>When a missing signal mast has been found use BlockAllocation method to stop if next block not allocated.</li>
+             <li>Restore TSA data to the correct place.</li>
+             <li>When checking for a hold mast do not assume the section join is at the end of a section.</li>
+             <li>For AdHoc trains check to see if a transit can be used.</li>
+             <li>Fix TSA edit bugs, when over riding from roster update internal dcc address.</li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+            <li>Added "Highlight cursor position" option to enable drawing of a 
+                square around finger/mouse press/drag area. Useful for touchscreens.
+            <li>Added a TurnoutCircleTransparency.py script to change the
+                color and transparency of Layout Editor turnout circles</li>
+            <li>The ability to set signal mast aspects in <em>view</em> mode is controlled by
+            the <strong>Disabled</strong> setting for the signal mast icon.  When enabled, changing
+            the aspect by clicking or selecting from the aspect list is blocked.</li>
+            <li>The right click menu for <strong>Markers</strong> when using Linux has been fixed.</li>
+            <li>Fixed editing and rendering issues with Block Contents Icons.  
+                No longer need to have a value in the block to edit the Icon.  
+                Rotated blocks render correctly.  
+                Empty Hidden now works on initial load and after editing the panel</li>
+            <li>Fixed deleting of Inline LogixNG's when Layout Panels are deleted</li>
+        </ul>
+        <h4>NX - Entry/Exit Tool</h4>
+            <ul>
+                <li>Enable panel updates while the NX route is being created.</li>
+                <li>Display a warning dialog when creating a multipoint route fails.</li>
+            </ul>
+
+    <h3>LccPro</h3>
+        <a id="LccPro" name="LccPro"></a>
+        <ul>
+          <li>There's a new LccPro JMRI application that's 
+            targeted at making it easier to understand and 
+            configure an LCC network.  See the
+            <a href="http://jmri.org/help/en/package/apps/gui3/lccpro/LccPro.shtml">help page</a>
+            for more information.</li>
+            <li>Fixed a bug in the LccPro search function on large LCC networks.</li>
+            <li>Added "Node Groups" to LccPro and the Event Table.  
+            <li>Fixed a bug in Event Table display if using large fonts.<li>
+        </ul>
+        
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The expression <strong>StringIO as string value</strong>
+              has been added.</li>
+          <li>The formula function <strong>currentTimeMillis()</strong>
+              has been added to the <strong>Clock</strong> module. It
+              returns the current system time in milliseconds and is
+              useful if you want to measure how long time it takes for
+              JMRI to do a task.</li>
+          <li>The <strong>Listen On Beans</strong>,
+              <strong>Listen On Beans - Local variable</strong> and
+              <strong>Listen On Beans - Table</strong> actions
+              can now listen on Audio beans.</li>
+          <li><strong>Occupancy Blocks</strong> can now be used in
+              the <strong>For each</strong> action.</li>
+          <li>Improved some GUI layouts by adding scroll bars</li>
+          <li>The LogixNG action <strong>Send MERG CBUS event</strong> has
+              been added. It's available in the category <strong>Merg Cbus</strong>
+              if there is a Merg Cbus connection.</li>
+          <li>The semicolon has been added as field delimiter for CSV files used to create
+          LogixNG Tables.</li>
+          <li>Where Used support has been added to the Formula actions and expressions.  This
+          is a text based search using the item's system and user names.  False positive matches are
+          possible.</li>
+          <li>The formula function <strong>evaluateReference()</strong> has been added
+              to the <strong>NamedBean</strong> module.</li>
+        </ul>
+
+    <h3>Meters and MeterFrames</h3>
+        <a id="Meters" name="Meters"></a>
+        <ul>
+            <li>Add name of meter to display area, helps when stacking multiple windows.</li>
+        </ul>
+
+    <h3>OperationsPro</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+            <li>Added text coloring to conductor rolling stock movement.</li>
+            <li>Added text coloring to Web Manifest and conductor rolling stock movement.</li>
+            <li>Made a change to always allow a caboose to be set out at terminal if there are moves available.</li>
+            <li>Fixed location table track direction GUI to report single track direction when appropriate.</li>
+            <li>When printing switch list details use track blocking order rather than alphabetically by track name.</li>
+            <li>Fixed bug in Show Staging and Schedules by Car Type and Load</li>
+            <li>Made route path the same for all cars in a kernel</li>
+            <li>Added car's "Route Path" to car export</li>
+            <li>Added train departure times to Yardmaster and Conductor.</li>
+            <li>Fixed internationalization for Web Manifest, UK and other languages.</li>
+            <li>Added the option of building train when selecting Conductor and train not built.</li>
+            <li>New print option, Manifests and switch lists can now be printed double sided.</li>
+            <li>Export Schedules now includes spur name and mode</li>
+            <li>New feature, you can now select locomotive pick up and set out text colors.</li>
+            <li>Added track move count to "Export Locations".</li>
+            <li>Improved "Train logger" to include the number of cars in train, 
+                the number of pick ups and set outs, train length and weight.</li>
+            <li>New feature, import routes.</li>
+            <li>New feature, print "Cars In Train" AKA train blocking order</li>
+            <li>New print option, show locomotive set outs at end of Manifest or switch list.</li>
+            <li>New route feature. Now able to control local car moves for each location in a route. 
+            See https://www.jmri.org/help/en/package/jmri/jmrit/operations/Operations.shtml#EditRoute</li>
+          <li>New feature, when building a train, the program now warns for set out and pick up
+            conflicts between trains when using aggressive mode.</li>
+          <li>Program file locations were changed in this release. Start up actions involving
+            operations windows from previous releases no longer work. You'll need to remove them and add
+            them back if needed.</li>
+            <li>New feature, passenger car blocking order for Manifests and switch lists</li>
+            <li>Added car's division name to CSV Manifests and switch lists</li>
+            <li>Fixed a bug when routing through staging and no last hop C/I track was available</li>
+            <li>Improved the route edit window by always showing both departure time and travel time</li>
+            <li>Fixed exception error when replacing a car's load using the "All" cars feature</li>
+            <li>New feature, ability to show the last train that transported a car</li>
+            <li>Improvements to car export, added the car's route path, previous location, track, and train</li>
+            <li>The train icon now shows the number of local moves in the train's route.</li>
+            <li>New feature, a turn can now drop and pull the same car on a turn.  See Quick Load Service under spurs, load options.</li>
+            <li>Added local moves enabled to route export and printing.</li>
+            <li>Header lines are now optional for Manifests and switch lists.  See Edit Manifest Header Text.</li>
+            <li>Added track used, number cars and locos to location export</li>
+        </ul>
+
+    <h3>Panel Editor</h3>
+        <a id="PE" name="PE"></a>
+        <ul>
+            <li>The ability to set signal mast aspects in <em>view</em> mode is controlled by
+            the <strong>Disabled</strong> setting for the signal mast icon.  When enabled, changing
+            the aspect by clicking or selecting from the aspect list is blocked.</li>
+            <li>Fixed deleting of Inline LogixNG's when Panels are deleted</li>
+        </ul>
+
+    <h3>Preferences</h3>
+        <a id="Preferences" name="Preferences"></a>
+        <ul>
+            <li>Update <strong>Messages</strong> details. Describe the option to hide 
+                tabs without active messages.</li>
+        </ul>
+
+    <h3>Roster</h3>
+        <a id="Roster" name="Roster"></a>
+        <ul>
+            <li>Roster Table - Fixes initial editing of Last Operated date / time values 
+                using 1-12hr values instead of 0-23.</li>
+            <li>New Roster Entries hold the decoder's programming mode, if defined, 
+              to use as a filter similar to
+              e.g. ProductID.
+            </li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li>Added a TurnoutCircleTransparency.py script to change the
+                color and transparency of Layout Editor turnout circles</li>
+            <li>The script <strong>InitUnknownTurnoutsSensorsExceptInternal.py</strong>
+                has been added.<br />
+                <strong>InitUnknownTurnoutsSensorsExceptInternal.py</strong>
+                sets "Unknown" hardware states to default values for sensors
+                (Inactive) and turnouts (Closed). This prevents overriding
+                known states.<br />
+                The existing script <strong>InitAllTurnoutsSensors.py</strong>
+                would override sensor Active and turnout Thrown states.</li>
+            <li>Upgrade YetAnotherAutoTrain.py (YAAT) to version 3.3.  There are two new statements.
+                <ul>
+                    <li>Wait for memory &lt;memory name&gt; value to change</li>
+                    <li>If value for memory &lt;memory name&gt; is &lt;eq | ne | lt | gt | le | ge&gt; &lt;value&gt;</li>
+                </ul>
+            </li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li>The aspect mapping in the Italian FS-1987
+                    signal system has been updated.</li>
+            </ul>
+
+    <h3>Throttle</h3>
+        <a id="throttle" name="throttle"></a>
+        <ul>
+            <li>Lionel Jeanson added a driver for 
+                the <a href="https://www.zuiki.co.jp/product_info/denshadegomascon_black/"> Densha de GO controler</a> 
+                USB controller for the USBThrottle Jynstrument</li>
+        </ul>
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>You can now export the contents of a table
+                to a CSV file from the File menu.</li>
+            <li>
+                <a href="https://www.jmri.org/help/en/html/tools/StringIO.shtml">StringIOs</li>
+                are a new type of object within JMRI.  They're a way to exchange informational strings
+                with the layout hardware.  Over time, we'll build-out more system connections for these.
+            <li>Fixed a bug that was putting the wrong information in
+                a Turnout's comment when a SignalHead was created using that Turnout.</li>
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>Added checks to prevent errors due to not enough AudioBuffers.</li>
+            <li>Added the OpenAL EFX reverb effect to tunnel tracks.
+                Can be activated using "Advanced Location Following"
+                and a LayoutEditor panel with a TrackSegment decorated as Tunnel.</li>
+        </ul>
+
+   <h3>Warrants</h3>
+        <a id="Wt" name="Wt"></a>
+        <ul>
+            <li>SCWarrants brought back to life with a few fixes:  
+	        <ul>
+                <li>It is once again possible to create SCWarrants.</li>
+		        <li>Train tracking is now working.</li>
+		        <li>Opening the edit dialog for an SCWarrant now shows the correct warrant type.</li>
+				<li>Starting an SCWarrants with an un-occupied starting block once agin works as it should, i.e. it is delyed until the starting block become occupied.</li>
+		    </ul>
+        </ul>
+
+   <h3>Web Server</h3>
+        <a id="server" name="server"></a>
+        <ul>
+            <li>Added a new "web/idtags_examples" directory with an example
+                of icons which move to different places on the webpage depending on their most recent report. 
+                The example shows cars being switched in a simple yard. 
+                The principles shown could be used to show locomotives or train movements.
+                See the included PDF file for more information.</li>
+        </ul>
+
+   <h3>Z21 Server</h3>
+        <a id="Z21" name="Z21"></a>
+        <ul>
+            <li>Add support for Roco WlanMaus</li>
+            <li>Improve UI to show connected clients</li>
+            <li>Add UI for mapping of Z21 turnout numbers to JMRI turnouts, routes etc.</li>
+            <li>Add help page</li>
+        </ul>
+
+    <h3>Test Infrastructure</h3>
+        <a id="Test" name="Testing"></a>
+        <ul>
+            <li>JUnitAppender - <code>assertNoErrorMessage</code> and <code>assertMessage(String msg)</code>
+                functionality updated to match JavaDoc.</li>
+            <li>JUnitAppender - Updated JavaDoc.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>You can now export the contents of a table
+                to a CSV file from the File menu.</li>
+            <li>Fixed a bug in the XSLT transforms used to make 
+                panel files human-readable: "if" was used when "when" was required.</li>
+            <li>Added a <code>jmri.util.swing.OvertypeTextArea</code> class
+                for data entry with overwrite mode, controlled by the insert key.
+                (Mac keyboards don't support an insert key, so this is not available on them.)</li>
+            <li>The pop-up menu in the various Tables now has an entry
+                for "Copy System Name".</li>
+            <li>Bug fix: Add new editor panel to the Editor Manager when doing a CPE/PE switch.</li>
+            <li>There's a new "DarkLAF HC" dark-mode setting for the display.
+                To use it, select Settings then Display, then click the
+                button for "DarkLAF HC". Save preferences and restart.  Note that this
+                puts a dark background with light text on all JMRI windows.
+                You may have to rework your panels for them to look good
+                in this mode. Some parts of the interface may be hard to read.</li>
+            <li>The PlantUML library we use for various documentation images
+                has been updated to the current 1.2025.2 version.</li>
+            <li>There is a new <strong>Load and store</strong> pane in Preferences,
+                that has options to exclude dynamic content in the tables and
+                panels file. Without those dynamic contents, it will be much
+                easier to keep JMRI's XML files in a version control system
+                (e.g. GitHub) without having un-necessary merge conflicts.</li>
+        </ul>
+
+
+   <!--#include virtual="/Footer.shtml" -->
+  </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+  <script src="/js/main.js"></script>
+</body>
+</html>
