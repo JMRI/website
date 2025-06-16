@@ -205,9 +205,6 @@ This production version is made from test releases 5.11.1 through 5.11.8  The
 in those is
 <a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2024-12-06..2024-12-06">available from our code repository</a>.
 
-=== 5.11.1 === ===========================================================================
-
-
     <h3>Hardware Support</h3>
 
         <h4><a href="http://bidib.org/index_e.html">BiDiB</a></h4>
@@ -338,7 +335,7 @@ in those is
                 <li>Fixed a bug in the LccPro search function on large LCC networks.</li>
                 <li>Added "Node Groups" to LccPro and the Event Table.</li>
                 <li>You can now create an LCC/OpenLCB
-                    <a href="help/en/html/hardware/openlcb/index.shtml#stringios">StringIO</li>
+                    <a href="help/en/html/hardware/openlcb/index.shtml#stringios">StringIO</a>
                     that's shared across multiple JMRI instances on the same LCC/OpenLCB network.
                     If you change the StringIO value in one JMRI instance, it will be propagated to the 
                     other ones over the network. You can then use LogixNG or scripts to 
@@ -750,7 +747,7 @@ in those is
             <li>You can now export the contents of a table
                 to a CSV file from the File menu.</li>
             <li>
-                <a href="https://www.jmri.org/help/en/html/tools/StringIO.shtml">StringIOs</li>
+                <a href="https://www.jmri.org/help/en/html/tools/StringIO.shtml">StringIOs</a>
                 are a new type of object within JMRI.  They're a way to exchange informational strings
                 with the layout hardware.  Over time, we'll build-out more system connections for these.
             <li>Fixed a bug that was putting the wrong information in
