@@ -95,13 +95,7 @@ that can arise from skipping these versions.
 <h3>New problems with this release</h3>
 
 <ul>
-<<<<<<< HEAD
-    <li>If you update from 5.10 to 5.12 with with built trains in Operations, building new
-        trains will hang up. A workaround is to reset or terminate all trains before 
-        building new ones using 5.12. This will be fixed in JMRI <a href="jmri5.13.1.shtml">JMRI 5.13.1</a>.</li>
-=======
     <li>OperationsPro. After upgrading, you must reset or terminate all trains before building new ones with this release. Fixed in 5.13.1.</li>
->>>>>>> 45bc5653ed8f1cb5a00974d04eff00bf9718f0e6
 </ul>
 
 
