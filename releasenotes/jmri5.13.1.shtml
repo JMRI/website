@@ -36,7 +36,7 @@ if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the next in a series of 5.11.* test releases.
+<p>This is the next in a series of 5.13.* test releases.
 It requires at least Java 11 to work.
 We recommend that you use Java 17.
 (See <a href="http://jmri.org/java">our page on downloading Java</a>)
@@ -44,16 +44,16 @@ We expect this series to end in the next JMRI  production release in June 2025.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
+<!-- 
 <P>We are getting close to the next production release, so we would particularly
 appreciate your testing of this release to make sure it works for you. That way,
 if you find new problems, we can try to fix them before the production release.</P>
+ -->
 
-<!-- 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.
 We would appreciate your feedback on it.</p>
- -->
 
 <p><b>
 JMRI is now only available under the
@@ -123,14 +123,7 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
+    <li>None yet.</li>
 </ul>
 
 
@@ -213,13 +206,62 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.13.1+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+        <h4>CBUS</h4>
+            <ul>
+                <li>When WiThrottle is asked Share / Steal / Cancel? or Share / Cancel ? , the main
+                    JMRI Throttle silent Steal / silent Share options are checked for preferred behaviour.</li>
+                 <li>The Console Filter is now displayed as a check-box tree.</li>
+            </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>Resolved a Console log 'Error' message that could be seen when
+                    using the Slot Monitor's "Clear All Non-InUse Slots" button.</li>
+            </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <h4>NX - Entry/Exit Tool</h4>
+            <ul>
+                <li>Fixed a bug which could sometimes cause extraneous messages
+                about failure to create a multipoint route even though one was available.</li>
+            </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The class <strong>jmri.jmrit.logixng.Category</strong> has been split into
+              <strong>jmri.Category</strong> and <strong>jmri.jmrit.logixng.LogixNG_Category</strong>.</li>
+          <li></li>
+        </ul>
+
+    <h3>Meters and MeterFrames</h3>
+        <a id="Meters" name="Meters"></a>
+        <ul>
+            <li>The shutdown process has been modified to detect changes to the meter settings.</li>
+        </ul>
+
+    <h3>OperationsPro</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+            <li>Fixed a bug where a train build would hang after the upgrade to 5.12 and there were also built trains created with an older version of JMRI.</li>
+            <li>Added quick service for classification/interchange tracks. This is an experimental addition, looking for testing and feedback.
+        </ul>
+
+    <h3>Preferences</h3>
+        <a id="Preferences" name="Preferences"></a>
+        <ul>
+            <li>The Shutdown preference help has been updated. The store request now includes
+            a <strong>Cancel</strong> option which cancels the shutdown process.</li>
+        </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li>Upgrade YAAT to 3.4.  The @include statement has been added.</li>
+        </ul>
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
