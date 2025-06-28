@@ -95,18 +95,19 @@ that can arise from skipping these versions.
 <h3>New problems with this release</h3>
 
 <ul>
-    <li>None yet.</li>
+    <li>If you update from 5.10 to 5.12 with with built trains in Operations, building new
+        trains will hang up. A workaround is to reset or terminate all trains before 
+        building new ones using 5.12. This will be fixed in JMRI <a href="jmri5.13.1.shtml">JMRI 5.13.1</a>.</li>
 </ul>
 
-<!--
-If any of those affect you, please either
+
+If this affects you, please either
 wait for
 <a href="jmri5.13.1.shtml">JMRI 5.13.1</a>, due out shortly,
-or (once there's a fix for the problem) pick up a
+or pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">development build installer</a>
 from
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
- -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this production release:</h3>
