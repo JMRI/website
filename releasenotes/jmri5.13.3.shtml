@@ -109,19 +109,19 @@ Following this multi-step order of updating via stable major releases safeguards
 that can arise from skipping these versions.
 
 <a id="problems" name="problems"></a>
-<h3>New problems with this release</h3>
+<h3>Problems with this release</h3>
 <ul>
-    <li>None yet</li>
+    <li><span class="since">Since <a href="jmri5.11.6.shtml">JMRI 5.11.6</a></span>
+        Layout Editor may display images in front of the drawn tracks, 
+        obscuring them, instead of drawing the images behind the tracks.</li>
 </ul>
-<!--
-If any of those affect you, please either
+If that affects you, please either
 wait for
-<a href="jmri5.13.3.shtml">JMRI 5.13.3</a>, due out shortly after this one,
-or (once there's a fix for the problem) pick up a
+<a href="jmri5.13.4.shtml">JMRI 5.13.4</a>, due out early in September, 
+or pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
- -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
