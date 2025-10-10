@@ -125,16 +125,8 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
+<li>None yet
 </ul>
-
 
 <h3>Older warnings</h3>
 
@@ -215,13 +207,80 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.13.5+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+        <h4><a href="http://bidib.org/index_e.html">BiDiB</a></h4>
+            <ul>
+                <li>Developer: BiDiBReporter now inherits from CollectingReporter like LnReporter does, so getCollection() is available.</li>
+            </ul>
+
+        <h4>TMCC</h4>
+            <ul>
+                <li>Added programming support for the locomotive address and mode</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+ 
+         <h4>Digitrax</h4>
+            <ul>
+                <li>Updated Series 7 mobile (locomotive) decoder definitions.</li>
+                <li>Added Series 8 mobile (locomotive) decoder definitions.</li>
+            </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>DecoderPro now shows a "No Group" choice in the Roster Groups selector.
+                This contains all those roster entries that have not been 
+                assigned to a specific group.  You can delete roster entries
+                from the roster when displaying the "No Group" by selecting
+                the roster entry, then ctrl-clicking / right-clicking on it
+                and selecting "Delete from Roster".</li>
+        </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Fix Create New Transit caused by bad initialization of stopping distance arrays. Fix crash when transit has no sections.</li>
+			 <li>Fix TransitAction SetMaxSpeed</li>
+             <li>Add RosterGroup selection combo to Activate New Train. Remembers selection across sessions.</li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+            <li>Normally, Layout Editor turnouts in UNKNOWN state are indicated
+                by drawing both legs of the turnout, instead of showing just one
+                as for CLOSED and THROWN.  There's a new option 'Show ? When Unknown'
+                in the turnout's contextual menu that will make the UNKNOWN state
+                more visible.</li>
+        </ul>
+
+    <h3>OperationsPro</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+          <li>Added car blocking to CSV Manifest and switch list files.</li>
+          <li>Minor improvement to the "Show Schedules by Car Type and Load" tool.</li>
+          <li>Improvements to the Cars print and preview, added car's "Last Location", "Last Train", and "Set out" time.</li>
+          <li>Fixed a bug regarding the printing of the last line of a Manifest or switch list.</li>
+          <li>Improvements to help.</li>
+          <li>Improved passenger car blocking when using custom train blocking.</li>
+        </ul>
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>Audio Tables, Add Buffer button - Fixed a bug preventing the 
+                Add Buffer window displaying.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Updated the JDOM2 library from 2.0.6 to 2.0.6.1 to 
+                resolve a security issue.</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
