@@ -125,14 +125,7 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
+    <li>None yet</li>
 </ul>
 
 
@@ -215,13 +208,78 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.13.6+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+        <h4>MERG</h4>
+            <ul>
+                <li>If you have multiple CAN-based connections defined
+                    (MERG, LCC, OpenLCB),
+                    you can now specify which one for a start-up action to use.</li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>If you have multiple CAN-based connections defined
+                    (LCC, OpenLCB, MERG),
+                    you can now specify which one for a start-up action to use.</li>
+            </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>Update the roster XML Schema to fix a bug preventing
+                validation of the roster.xml file in some circumstances.</li>
+            <li>There is now a way to define indexed CVs in a decoder definition so
+                that the PI and SI values will be written to new values afterward, 
+                e.g. 11.12.123;0.1
+        </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Fix bug ActivateTrain SaveDIalog</li>
+			 <li>Correct calculating remaining length of blocks in a section.</li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+            <li>Fix a problem with selecting "Show ? When Unknown"
+                checkbox in turnout pop-up menu.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>The new action <strong>ExecuteProgram</strong> has been
+              added. It lets you launch a program from JMRI.</li>
+          <li>The new action <strong>Request update of turnout</strong>
+              has been added. It's used when you want JMRI to request
+              the state of a turnout from the layout. Note that not all
+              systems support this.</li>
+          <li>The new action <strong>For each with delay</strong> has
+              been added. It's similar to <strong>For each</strong> but
+              has a delay between each item. It's useful when you need
+              to do something for example for every turnout, but where
+              you need to wait some time between each action.</li>
+          <li></li>
+        </ul>
+
+    <h3>OperationsPro</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+            <li>New feature, auto select car types for a train based on the locations serviced by train's route.</li>
+            <li>Major improvement to "Test Destinations" for classification / interchange and staging tracks.</li>
+            <li>Improved train routing when there's multiple locations that can pull a car.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Fixed a bug that prevented restarting AbstractAutomaton-subclass 
+                objects in scripts.</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
