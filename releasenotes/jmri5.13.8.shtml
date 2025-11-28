@@ -4,10 +4,10 @@
 <head>
  <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
-    JMRI: Release Notes for 5.13.6
+    JMRI: Release Notes for 5.13.8
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 5.13.6 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 5.13.8 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
  <!--#include virtual="/Style.shtml" -->
 </head>
@@ -19,16 +19,14 @@
     <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 5.13.6 release
+      Release Notes for JMRI 5.13.8 release
       </h1>
 
-    <p>Date: November 7, 2025</p>
-    <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 5.13.6 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: MM DDD, 2025</p>
+    <p>From: release pumpkin</p>
+    <p>Subject: Test Release 5.13.8 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h2>Notes:</h2>
 
@@ -114,7 +112,7 @@ that can arise from skipping these versions.
 <!--
 If any of those affect you, please either
 wait for
-<a href="jmri5.13.3.shtml">JMRI 5.13.6</a>, due out shortly after this one,
+<a href="jmri5.13.9.shtml">JMRI 5.13.9</a>, due out shortly after this one,
 or (once there's a fix for the problem) pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
@@ -125,7 +123,14 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>None yet</li>
+
+    <!-- While this release is in development, the     -->
+    <!-- list of new warnings is kept in               -->
+    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
+    <!-- in the JMRI/JMRI repository. Please edit      -->
+    <!-- there.  Changes to this file won't be merged. -->
+
+    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
 </ul>
 
 
@@ -172,114 +177,49 @@ See <a href="#update">instructions above</a>.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!--
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.13.6/JMRI.5.13.6+R339808d486.dmg">https://github.com/JMRI/JMRI/releases/download/v5.13.6/JMRI.5.13.6+R339808d486.dmg</a><br/>
-  sha256: 50f186b57798f0df555bf6eb1fba04c3a6923b64ba3c900929478a28150d4709 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.dmg">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.dmg</a><br/>
+  sha256: 284c20cbd50b40317a558129cca9ac893fe1938ceae8b2de67790fc0ddcf27f5 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.13.6/JMRI.5.13.6+R339808d486.exe">https://github.com/JMRI/JMRI/releases/download/v5.13.6/JMRI.5.13.6+R339808d486.exe</a><br/>
-   sha256: b7ab24f01d06ade4e4dcf32dde3b209f33b0bf080b0bbe08e616cd4c1d2cf561</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.exe">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.exe</a><br/>
+   sha256: 4111f6822df4a3b99f916fcb9b688c66a1c121fe011e4ab7c041e6b1359ca7c1</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.13.6/JMRI.5.13.6+R339808d486.tgz">https://github.com/JMRI/JMRI/releases/download/v5.13.6/JMRI.5.13.6+R339808d486.tgz</a><br/>
-   sha256: 1883c3dd797c5ebdd58b80a18c2a6afae34693e1a8a20e3d46099be1d5a13ad3</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.tgz">https://github.com/JMRI/JMRI/releases/download/v5.3.4/JMRI.5.3.4+Rd7c66df2d0.tgz</a><br/>
+   sha256: 3ea4efa27a5ef984737c4e77288de2bf63e0d45cee588150227b9059db56766f</li>
 </ul>
 </div>
 These files are located in the 
-<a href="https://github.com/JMRI/JMRI/releases/tag/v5.13.6">JMRI 5.13.6 GitHub release</a>.
+<a href="https://github.com/JMRI/JMRI/releases/tag/v5.13.7">JMRI 5.13.7 GitHub release</a>.
+ -->
 
 <!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.13.5/">CI project page</a>.
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.13.8/">CI project page</a>.
  -->
 
-<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
 
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri5.13.5.shtml">Test Release 5.13.5</a>:</h2>
+<h2>Changes since <a href="jmri5.13.7.shtml">Test Release 5.13.7</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.13.6+is%3Amerged">full list of included changes</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.13.8+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
+    <!-- While this release is in development, the     -->
+    <!-- new release note items are kept in            -->
+    <!-- help/en/releasenotes/current-draft-note.shtml -->
+    <!-- in the JMRI/JMRI repository. Please edit      -->
+    <!-- there.  Changes to this file won't be merged. -->
 
-    <h3>Hardware Support</h3>
-        <h4>MERG</h4>
-            <ul>
-                <li>If you have multiple CAN-based connections defined
-                    (MERG, LCC, OpenLCB),
-                    you can now specify which one for a start-up action to use.</li>
-            </ul>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
-            <ul>
-                <li>If you have multiple CAN-based connections defined
-                    (LCC, OpenLCB, MERG),
-                    you can now specify which one for a start-up action to use.</li>
-            </ul>
-
-    <h3>DecoderPro</h3>
-        <a id="DecoderPro" name="DecoderPro"></a>
-        <ul>
-            <li>Update the roster XML Schema to fix a bug preventing
-                validation of the roster.xml file in some circumstances.</li>
-            <li>There is now a way to define indexed CVs in a decoder definition so
-                that the PI and SI values will be written to new values afterward, 
-                e.g. 11.12.123;0.1
-        </ul>
-
-   <h3>Dispatcher</h3>
-        <a id="Dispatcher" name="Dispatcher"></a>
-        <ul>
-             <li>Fix bug ActivateTrain SaveDIalog</li>
-			 <li>Correct calculating remaining length of blocks in a section.</li>
-        </ul>
-
-    <h3>Layout Editor</h3>
-        <a id="LE" name="LE"></a>
-        <ul>
-            <li>Fix a problem with selecting "Show ? When Unknown"
-                checkbox in turnout pop-up menu.</li>
-        </ul>
-
-    <h3>LogixNG</h3>
-        <a id="LogixNG" name="LogixNG"></a>
-        <ul>
-          <li>The new action <strong>ExecuteProgram</strong> has been
-              added. It lets you launch a program from JMRI.</li>
-          <li>The new action <strong>Request update of turnout</strong>
-              has been added. It's used when you want JMRI to request
-              the state of a turnout from the layout. Note that not all
-              systems support this.</li>
-          <li>The new action <strong>For each with delay</strong> has
-              been added. It's similar to <strong>For each</strong> but
-              has a delay between each item. It's useful when you need
-              to do something for example for every turnout, but where
-              you need to wait some time between each action.</li>
-          <li></li>
-        </ul>
-
-    <h3>OperationsPro</h3>
-        <a id="Operations" name="Operations"></a>
-        <ul>
-            <li>New feature, auto select car types for a train based on the locations serviced by train's route.</li>
-            <li>Major improvement to "Test Destinations" for classification / interchange and staging tracks.</li>
-            <li>Improved train routing when there's multiple locations that can pull a car.</li>
-        </ul>
-
-    <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"></a>
-        <ul>
-            <li>Fixed a bug that prevented restarting AbstractAutomaton-subclass 
-                objects in scripts.</li>
-        </ul>
-
+    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
