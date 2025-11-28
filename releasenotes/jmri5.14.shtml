@@ -26,9 +26,7 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 5.14 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <p>We are very pleased to announce that the 5.13 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
@@ -152,6 +150,7 @@ before installing this release, see above.
 <h2>Download links:</h2>
 
 <div class="wide">
+<!-- 
 <ul>
 <li>OS X / macOS: <a
 	href="https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.dmg">https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.dmg</a><br/>
@@ -170,18 +169,17 @@ These files are located in the
 <a href="https://github.com/JMRI/JMRI/releases/tag/v5.14">JMRI 5.14 GitHub release</a>.
 A Docker container can also be obtained from
 <a href="https://hub.docker.com/r/jsa1987/jmri-docker">https://hub.docker.com/r/jsa1987/jmri-docker</a>.
+ -->
  
 <!-->
 Preliminary build files (not the final released files) can be found
 on the
-<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.10">CI project page</a>.
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.14">CI project page</a>.
  -->
 
-<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
 
 
 <a id="changes" name="changes"></a>
@@ -384,7 +382,11 @@ in those is
     <h3>Layout Editor</h3>
         <a id="LE" name="LE"></a>
         <ul>
-            <li>Improved how the "?" is drawn for UNKNOWN turnouts (when that option is selected)</li>
+            <li>Normally, Layout Editor turnouts in UNKNOWN state are indicated
+                by drawing both legs of the turnout, instead of showing just one
+                as for CLOSED and THROWN.  There's a new option 'Show ? When Unknown'
+                in the turnout's contextual menu that will make the UNKNOWN state
+                more visible.</li>
         </ul>
         <h4>NX - Entry/Exit Tool</h4>
             <ul>
@@ -394,17 +396,12 @@ in those is
             <li>A problem with LE track drawing and background images from 5.11.6 thru 5.13.3 including 5.12 has been fixed.
                 The problem appears if you have a background image in the Layout Editor. If so, the track disappears behind
                 the background image.</li>
-            <li>Normally, Layout Editor turnouts in UNKNOWN state are indicated
-                by drawing both legs of the turnout, instead of showing just one
-                as for CLOSED and THROWN.  There's a new option 'Show ? When Unknown'
-                in the turnout's contextual menu that will make the UNKNOWN state
-                more visible.</li>
-                <li>Add two options to override the changes made in PR #13857 - Entry/Exit Enhancements
-                  <ul>
-                    <li>Suppress the multi-point failed dialog</li>
-                    <li>Revert to the old GUI behavior</li>
-                  </ul>
-                </li>
+            <li>Add two options to override the changes made in PR #13857 - Entry/Exit Enhancements
+              <ul>
+                <li>Suppress the multi-point failed dialog</li>
+                <li>Revert to the old GUI behavior</li>
+              </ul>
+            </li>
             </ul>
 
     <h3>LogixNG</h3>
