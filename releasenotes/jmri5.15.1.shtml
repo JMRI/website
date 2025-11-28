@@ -4,10 +4,10 @@
 <head>
  <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
-    JMRI: Release Notes for 5.13.7
+    JMRI: Release Notes for 5.15.1
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 5.13.7 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 5.15.1 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
  <!--#include virtual="/Style.shtml" -->
 </head>
@@ -19,16 +19,14 @@
     <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 5.13.7 release
+      Release Notes for JMRI 5.15.1 release
       </h1>
 
-    <p>Date: November 28, 2025</p>
+    <p>Date: MM DD, 2025</p>
     <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 5.13.7 of JMRI/DecoderPro is available for download.</p>
+    <p>Subject: Test Release 5.15.1 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h2>Notes:</h2>
 
@@ -38,24 +36,24 @@ if you encounter any new or old bugs!
 And please back up your JMRI files before installing this, in case you want to go
 back to an earlier version.</p>
 
-<p>This is the next in a series of 5.13.* test releases.
+<p>This is the next in a series of 5.15.* test releases.
 It requires at least Java 11 to work.
 We recommend that you use Java 17.
 (See <a href="http://jmri.org/java">our page on downloading Java</a>)
-We expect this series to end in the next JMRI  production release in December 2025.
+We expect this series to end in the next JMRI  production release in July 2026.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
+<!-- 
 <P>We are getting close to the next production release, so we would particularly
 appreciate your testing of this release to make sure it works for you. That way,
 if you find new problems, we can try to fix them before the production release.</P>
+ -->
 
-<!-- 
 <p>Some of the changes involved are quite extensive.
 They may require a certain amount of experience before they are working well.
 Therefore, this test release should be considered experimental.
 We would appreciate your feedback on it.</p>
- -->
 
 <p><b>
 JMRI is now only available under the
@@ -125,7 +123,13 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>None yet</li>
+    <!-- While this release is in development, the     -->
+    <!-- list of new warnings is kept in               -->
+    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
+    <!-- in the JMRI/JMRI repository. Please edit      -->
+    <!-- there.  Changes to this file won't be merged. -->
+
+    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
 </ul>
 
 
@@ -153,15 +157,6 @@ See <a href="#update">instructions above</a>.
         can sometimes cause it to enter a loop.  There's a 
         workaround in
         <a href="https://groups.io/g/jmriusers/message/239205">this JMRIusers post</a>.
-    <li><span class="since">Since <a href="jmri5.11.3.shtml">JMRI 5.11.3</a></span>
-        There's been a change to how OpenLCB turnouts are
-        addressed when using the MTT addressing short cut.
-        Turnouts 253,254,255, 510, 511, 512, 765, 766 and 767
-        will be addressed differently.  If you're using any of these
-        via e.g. MTT253, you will need to change the address.  If you've
-        been having trouble getting those addresses to work, this change should
-        fix that.
-        </li>
     <li><span class="since">Since <a href="jmri5.11.5.shtml">JMRI 5.11.5</a></span>
         OperationsPro program file locations were changed in 
         <a href="jmri5.11.5.shtml">JMRI 5.11.5</a>. Start up actions
@@ -172,6 +167,7 @@ See <a href="#update">instructions above</a>.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!-- 
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
@@ -188,130 +184,32 @@ See <a href="#update">instructions above</a>.
 </ul>
 </div>
 These files are located in the 
-<a href="https://github.com/JMRI/JMRI/releases/tag/v5.13.7">JMRI 5.13.7  GitHub release</a>.
+<a href="https://github.com/JMRI/JMRI/releases/tag/v5.15.1>JMRI 5.15.1 GitHub release</a>.
+ -->
 
 <!-- 
 Preliminary build files (not the final released files) can be found
 on the
-<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.13.7/">CI project page</a>.
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.15.1/">CI project page</a>.
  -->
 
-<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
 
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri5.13.6.shtml">Test Release 5.13.6</a>:</h2>
+<h2>Changes since <a href="jmri5.14.shtml">Production Release 5.14</a>:</h2>
 
-The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.13.7+is%3Amerged">full list of included changes</a> is available from our
+The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.15.1+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
+    <!-- While this release is in development, the     -->
+    <!-- new release note items are kept in            -->
+    <!-- help/en/releasenotes/current-draft-note.shtml -->
+    <!-- in the JMRI/JMRI repository. Please edit      -->
+    <!-- there.  Changes to this file won't be merged. -->
 
-    <h3>Hardware Support</h3>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
-            <ul>
-                <li>The Send Frame tool has
-                    <ul>
-                        <li>some button labels updated,</li>
-                        <li>a new Send Global Identify Events button,</li>
-                        <li>more reliable control of the Open CDI Editor button state and</li>
-                        <li>some clean-up of the window layout.
-                    </ul>
-                </li>
-                <li><strong>STL Editor</strong>: CDI parsing error handling has been improved.
-                Debug output has been enhanced and explained in the STL Editor help page.</li>
-            </ul>
-
-    <h3>New / Updated decoder definitions</h3>
-        <ul>
-          <li>A <strong>No Decoder decoder with extended addressing</strong>
-              decoder has been added. This "no decoder" definition allows
-              a roster entry to be created that does not have a physical
-              decoder of its own.
-              <br>
-              It was created to suport the Zimo MX series of funcion-only
-              decoders that allow TWO addresses to be defined for a single
-              decoder - the primary address and a secondary address.
-              Function operations will result from commands sent to EITHER
-              decoder address.
-              <br>
-              The initial "No Decoder" definition is limited to a primary
-              address of 1-127, this extended version allows the full
-              range of extended addresses to be used</li>
-          <li>"DCCWorld.com" has been added as a manufacturer ID that DecoderPro
-              recognizes.</li>
-        </ul>
-
-    <h3>DecoderPro</h3>
-        <a id="DecoderPro" name="DecoderPro"></a>
-        <ul>
-            <li>Fixed a problem causing the starting value when doing
-                CV reads to erroneously be zero.</li>
-        </ul>
-
-   <h3>Dispatcher</h3>
-        <a id="Dispatcher" name="Dispatcher"></a>
-        <ul>
-            <li>Display minimum scale speed  when activating train.</li>
-            <li>Add basic column sorting on the traininfo selection screen, and correct missplaced columns.</li>
-            <li>Tidy up debug/trace in RosterSpeedProfile.</li>
-            <li>Make info message in allocated section to debug.</li>
-            <li>Fix Exception when starting trains under inauspicious circumstances.</li>
-            <li>Change the default location for the <em>dispatcheroptions.xml</em> file to the
-            <strong>dispatcher</strong> directory.</li>
-			<li>Optionally, limit Maximum Speed to any Block occupied by the train.</li>
-			<li>Add scroll bars to the Dispatcher Options for the smaller screens</li>
-        </ul>
-
-    <h3>Layout Editor</h3>
-        <a id="LE" name="LE"></a>
-        <ul>
-            <li>Improved how the "?" is drawn for UNKNOWN turnouts (when that option is selected)</li>
-        </ul>
-
-        <h4>NX - Entry/Exit Tool</h4>
-            <ul>
-                <li>Add two options to override the changes made in PR #13857 - Entry/Exit Enhancements
-                  <ul>
-                    <li>Suppress the multi-point failed dialog</li>
-                    <li>Revert to the old GUI behavior</li>
-                  </ul>
-                </li>
-            </ul>
-
-    <h3>OperationsPro</h3>
-        <a id="Operations" name="Operations"></a>
-        <ul>
-            <li>When a car arrives at a spur with a schedule, the car's final destination now changes when the car's load status changes.</li>
-        </ul>
-
-    <h3>Scripting</h3>
-        <a id="Scripting" name="Scripting"></a>
-        <ul>
-            <li>Add <strong>MemoryValuesPersistence.py</strong>. The script will write the values
-            for selected memory variables at shutdown and load them after starting PanelPro and
-            loading the layout data xml file.</li>
-        </ul>
-
-    <h3>Turnouts, Lights, Sensors and other elements</h3>
-        <a id="TLae" name="TLae"></a>
-        <ul>
-            <li>There's a new "Property Add/Edit" in the item popup menu
-                in the various tables.  This lets you add or edit
-                property values associated with a particular item.</li>
-        </ul>
-
-    <h3>Miscellaneous</h3>
-        <a id="Misc" name="Misc"></a>
-        <ul>
-            <li>Testing - JUnitUtil - waitFor condition failure text can be formed from a String Supplier, e.g. a lambda expression.
-            The expression is only evaluated ( lazily ) when the assertion fails.
-            </li>
-        </ul>
-
+    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
