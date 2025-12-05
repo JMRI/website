@@ -387,21 +387,21 @@ in those is
                 as for CLOSED and THROWN.  There's a new option 'Show ? When Unknown'
                 in the turnout's contextual menu that will make the UNKNOWN state
                 more visible.</li>
+            <li>Fixed a bug that would cause Markers to be created in random locations.</li>
+            <li>A problem with LE track drawing and background images from 5.11.6 thru 5.13.3 including 5.12 has been fixed.
+                The problem appears if you have a background image in the Layout Editor. If so, the track disappears behind
+                the background image.</li>
         </ul>
         <h4>NX - Entry/Exit Tool</h4>
             <ul>
                 <li>Fixed a bug which could sometimes cause extraneous messages
-                about failure to create a multipoint route even though one was available.</li>
-                <li>Fixed a bug that would cause Markers to be created in random locations.</li>
-            <li>A problem with LE track drawing and background images from 5.11.6 thru 5.13.3 including 5.12 has been fixed.
-                The problem appears if you have a background image in the Layout Editor. If so, the track disappears behind
-                the background image.</li>
-            <li>Add two options to override the changes made in PR #13857 - Entry/Exit Enhancements
-              <ul>
-                <li>Suppress the multi-point failed dialog</li>
-                <li>Revert to the old GUI behavior</li>
-              </ul>
-            </li>
+                    about failure to create a multipoint route even though one was available.</li>
+                <li>Add two options to override the changes made in PR #13857 - Entry/Exit Enhancements
+                    <ul>
+                        <li>Suppress the multi-point failed dialog</li>
+                        <li>Revert to the old GUI behavior</li>
+                    </ul>
+                </li>
             </ul>
 
     <h3>LogixNG</h3>
