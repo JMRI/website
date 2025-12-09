@@ -38,7 +38,7 @@ back to an earlier version.</p>
 
 <p>This is the next in a series of 5.15.* test releases.
 It requires at least Java 11 to work.
-We recommend that you use Java 17.
+We recommend that you use Java 21 if possible.
 (See <a href="http://jmri.org/java">our page on downloading Java</a>)
 We expect this series to end in the next JMRI  production release in July 2026.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
@@ -146,7 +146,7 @@ See <a href="#update">instructions above</a>.
     <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
         This test release, and all subsequent ones, require the use of
         Java 11 or later.  
-        We recommend that you use Java 17.
+        We recommend that you use Java 21.
         Java 8 is explicitly not supported.
         There's more information on this migration on the
         <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
