@@ -19,16 +19,13 @@
 
 <h1>Using Java with JMRI</h1>
 
-<p><b>We recommend using Java 17 with current JMRI versions starting with JMRI 5.9.1.
-Although Java 11 will work, we recommend that you install Java 17 as it's more up to date.</b>
+<p><b>We recommend using Java 21 with current JMRI versions starting with JMRI 5.15.1.
+Although Java 11 or 17 will work, we recommend that you install Java 21 as it's more up to date.</b>
 
 <p>Starting with JMRI 5.0 through JMRI 5.8, the required Java
 version was Java 11.
 JMRI 5 will not work with Java versions below Java 11.
-Originally, there were a small number of
-<a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml#jdk17">known issues</a>
-with later Java versions from JMRI 5.0 to JMRI 5.8.
-These were resolved in JMRI 5.9.1, at which point we started recommending Java 17.
+For JMRI 5.9.1 through 5.14, we recommended Java 17.
 </p>
 
 <p><em>JMRI needs a "Java Runtime Environment" (JRE) to run
@@ -55,6 +52,9 @@ a number of reported problems. On Windows, for example, you can:
 <p>See the <a href="../help/en/html/setup/">JMRI Setup and Install pages</a> for more information.</p>
 
 <h1>Getting Java</h1>
+
+Note:  Java 21 is not generally available for 32-bit computers. If you have a 32-bit computer
+and the following methods don't provide a compatible Java 21 installation, please try again for Java 17.
 
 <h2 id="linux_java">For Linux distributions</h2>
 
@@ -90,7 +90,7 @@ OpenJDK 64-Bit Server VM (build 25.362-b09, mixed mode)
 Command 'java' not found, but can be installed with:
 sudo apt install openjdk-17-jre-headless  # version 17.0.6+10-0ubuntu1~22.04
     </pre>
-    <em>Ignore the recommended command. JMRI needs the full Java version.</em>
+    <em>Ignore the recommended command. JMRI needs the full Java version, not the "headless" one.</em>
   </div>
 
   <div class="noted">Red Hat based:
@@ -98,12 +98,12 @@ sudo apt install openjdk-17-jre-headless  # version 17.0.6+10-0ubuntu1~22.04
 bash: java: command not found...
 Install package 'java-17-openjdk-headless' to provide command 'java'? [N/y]
     </pre>
-    <em>Reply N, JMRI needs the full Java version.</em>
+    <em>Reply N, JMRI needs the full Java version, not the "headless" one.</em>
   </div>
 
-  <h3>Install Java 17</h3>
-  <p><code>sudo apt install openjdk-17-jre</code>  Debian based</p>
-  <p><code>sudo dnf install java-17-openjdk</code>  Red Hat based</p>
+  <h3>Install Java 21</h3>
+  <p><code>sudo apt install openjdk-21-jre</code>  Debian based</p>
+  <p><code>sudo dnf install java-21-openjdk</code>  Red Hat based</p>
 
 <h2>Java Installers for Windows, macOS or Linux 32-bit or 64-bit computers</h2>
 This section describes two sources of Java installers for 32-bit or 64-bit
@@ -113,7 +113,7 @@ These can also be used for Linux if the above package-manager based solutions ar
 available for some reason.
 <ul>
     <li>
-        <a href="https://www.azul.com/downloads/?version=java-17-lts&amp;package=jre">Azul</a>
+        <a href="https://www.azul.com/downloads/?version=java-21-lts&amp;package=jre">Azul</a>
         - Go to the bottom of the page, past the advertising, select
         your OS type (Windows, macOS, Linux), then if needed the computer CPU
         architecture (we recommend 64-bit if you have a 64-bit computer), then pick the
@@ -125,9 +125,9 @@ available for some reason.
         easier to use than the Azul download.</p>
     </li>
     <li>
-        <a href="https://adoptium.net/?variant=openjdk17">Adoptium (Eclipse)</a>
+        <a href="https://adoptium.net/temurin/releases?version=21&os=any&arch=any">Adoptium (Eclipse)</a>
         - This website refers to a Java JDK as "Temurin", which is a bit confusing.
-        Make sure that "Temurin 17" is selected, then press the large "Latest Release" button.
+        Make sure that "Temurin 21" is selected, then press the large "Latest Release" button.
         <p>
         On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.
         Rebooting after installing is recommended.</p>
@@ -142,16 +142,16 @@ suitable, there are several other sources for Java installers for 64-bit
 Windows, macOS and Linux computers:
 <ul>
     <li>
-        <a href="https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=406&amp;field_operating_system_target_id=All&amp;field_architecture_target_id=All&amp;field_java_package_target_id=401">OpenLogic</a>
+        <a href="https://www.openlogic.com/openjdk-downloads">OpenLogic</a>
          -
-        Select your OS type (Windows, macOS, Linux).  OpenLogic only has a 64-bit version so make sure
+        Select Java 21 and your OS type (Windows, macOS, Linux).  OpenLogic only has a 64-bit version so make sure
         you have a 64-bit computer.  Pick a download from the page.
         <p>
         On Windows: when you run the Java installer, be sure to select the "JavaSoft (Oracle) registry keys" option.
         Rebooting after installing is recommended.</li>
 
     <li>
-        <a href="https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html">Oracle</a>
+        <a href="https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html">Oracle</a>
         -
         The original JDK source, but this page requires you to set up a (free) Oracle account. No JREs available.
         <p>We recommend that Windows users pick the "Windows x64 Installer", as it properly sets up various registry values.</li>
