@@ -22,11 +22,13 @@
       Release Notes for JMRI 5.14 release
       </h1>
 
-    <p>Date: MM DD, 2025</p>
+    <p>Date: December 14, 2025</p>
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 5.14 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <p>We are very pleased to announce that the 5.13 series of JMRI test releases has resulted in a
 version that's good enough to be recommended for general use, including by new users.
@@ -150,52 +152,45 @@ before installing this release, see above.
 <h2>Download links:</h2>
 
 <div class="wide">
-<!-- 
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.dmg">https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.dmg</a><br/>
-  sha256: d21c0a5c7c108faddb3b1c1c98c2a6e2174dcfb5f72cb00ccd19ed8d20b84c51 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.dmg">https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.dmg</a><br/>
+  sha256: ca715ab67968e97bfe2d2f04809f9980ab19b56523c9d9b09ca2727d6b0a9dcf </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.exe">https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.exe</a><br/>
-   sha256: 8f6cac65e629bb96233b14f14119642fef7c683612b8f940e0dba20dd0a65612</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.exe">https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.exe</a><br/>
+   sha256: cff758d57c0ae21350275e21173cb9abb278b5c8ff5cf5b90e2ed7816e475136</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.tgz">https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.tgz</a><br/>
-   sha256: 8a121b7a8ad310c3967947dc29a6185510af1643740fd49d98fe18c742b19e2f</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.tgz">https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.tgz</a><br/>
+   sha256: 757ae54505f8896a91167bd1ca3b8ad7470b1f635526ef07497d72bf9370ba0e</li>
 </ul>
 </div>
 These files are located in the 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v5.14">JMRI 5.14 GitHub release</a>.
 A Docker container can also be obtained from
 <a href="https://hub.docker.com/r/jsa1987/jmri-docker">https://hub.docker.com/r/jsa1987/jmri-docker</a>.
- -->
  
-<!-->
+<!-- 
 Preliminary build files (not the final released files) can be found
 on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.14">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
-
+ -->
 
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri5.12.shtml">production release 5.12</a>:</h2>
 
 <p>
 This production version is made from test releases 5.13.1 through 5.13.8  The
-<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2025-06-19..2025-12-19">full list of changes</a>
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2025-06-19..2025-12-09">full list of changes</a>
 in those is
-<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2025-06-19..2025-12-19">available from our code repository</a>.
-
-
-<!-- 5.13.7 -->
-
-
-<!-- 5.14 -->
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2025-06-19..2025-12-09">available from our code repository</a>.
 
     <h3>Hardware Support</h3>
         <ul>
@@ -584,8 +579,6 @@ in those is
             <li>Testing - JUnitUtil - waitFor condition failure text can be formed from a String Supplier, e.g. a lambda expression.
             The expression is only evaluated ( lazily ) when the assertion fails.
         </ul>
-
-
 
 <!-- final -->
    <!--#include virtual="/Footer.shtml" -->

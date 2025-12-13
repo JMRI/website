@@ -52,17 +52,18 @@
 
 	<h1>Latest News</h1>
 	<dl>
-		<dt>Production release 5.12 available</dt>
+		<dt>Production release 5.14 available</dt>
 	    <dd>
-	    <p>On June 20, 2025 production release 5.12 was made available.</p>
+	    <p>On December 13, 2025 production release 5.14 was made available.</p>
 
 	    <p>
-	    Release 5.12 is the current "production" release, recommended
+	    Release 5.14 is the current "production" release, recommended
 	    for first-time users.
 	    Please see the
-	    <a href="../releasenotes/jmri5.12.shtml">release note</a>
+	    <a href="../releasenotes/jmri5.14.shtml">release note</a>
 	    for additional information.</p>
 
+<!-- 
 	    <dt>Test release 5.13.7 is available</dt>
 	    <dd>
 	    <p>Test release 5.13.7 was made available on November 28, 2025.
@@ -78,14 +79,15 @@
 	    please see the
 	    <a href="../releasenotes/jmri5.13.7.shtml">release note</a>.
 
-	    <a href="#prod-rel">Release 5.12</a> is the current "production" release, recommended
+	    <a href="#prod-rel">Release 5.14</a> is the current "production" release, recommended
 	    for first-time users.
+ -->
 
 	</dl>
 
   <div class="list">
     <a id="prod-rel"></a>
-    <h2>JMRI 5.12 - Production release</h2>
+    <h2>JMRI 5.14 - Production release</h2>
     <dl>
     <dt class="im"><img src="../images/ico-jmri.gif" alt="JMRI logo"></dt>
     <dd>
@@ -93,30 +95,30 @@
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.dmg">https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.dmg</a><br/>
-  sha256: d21c0a5c7c108faddb3b1c1c98c2a6e2174dcfb5f72cb00ccd19ed8d20b84c51 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.dmg">https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.dmg</a><br/>
+  sha256: ca715ab67968e97bfe2d2f04809f9980ab19b56523c9d9b09ca2727d6b0a9dcf </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.exe">https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.exe</a><br/>
-   sha256: 8f6cac65e629bb96233b14f14119642fef7c683612b8f940e0dba20dd0a65612</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.exe">https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.exe</a><br/>
+   sha256: cff758d57c0ae21350275e21173cb9abb278b5c8ff5cf5b90e2ed7816e475136</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.tgz">https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.tgz</a><br/>
-   sha256: 8a121b7a8ad310c3967947dc29a6185510af1643740fd49d98fe18c742b19e2f</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.tgz">https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.tgz</a><br/>
+   sha256: 757ae54505f8896a91167bd1ca3b8ad7470b1f635526ef07497d72bf9370ba0e</li>
 </ul>
 </div>
 
     <strong>Notes:</strong>
     <ul>
         <li>For more information on the release contents, please see the
-            <a href="../releasenotes/jmri5.12.shtml">release note</a>.</li>
+            <a href="../releasenotes/jmri5.14.shtml">release note</a>.</li>
         <li>For instructions on using these files, please see the 
             <a href="../help/en/html/setup/index.shtml">setup and installation pages linked from the upper left of this page</a>.
         <li>These files can be used for either a new installation or updating an existing installation.
             For updating instructions, please see the 
-            <a href="../releasenotes/jmri5.12.shtml#update">release note</a>.</li>
+            <a href="../releasenotes/jmri5.14.shtml#update">release note</a>.</li>
         <li>This release requires at least Java 11 to work.
-            Java 17 is recommended.
+            Java 21 is recommended.
             (See <a href="http://jmri.org/java">our page on downloading and installing Java</a>)</li>
         <li>We recommend that you verify the downloaded files using the provided sha256 key.</li>
     </ul>

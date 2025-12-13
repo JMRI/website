@@ -1,13 +1,13 @@
 production:
  versions:
+  5.14:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.exe"
   5.12:
    tgz: "https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.tgz"
    dmg: "https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.dmg"
    exe: "https://github.com/JMRI/JMRI/releases/download/v5.12/JMRI.5.12+Rc5bd588235.exe"
-  5.10:
-   tgz: "https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.tgz"
-   dmg: "https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.dmg"
-   exe: "https://github.com/JMRI/JMRI/releases/download/v5.10/JMRI.5.10+Rca461bd266.exe"
   5.0:
    tgz: "https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.tgz"
    dmg: "https://github.com/JMRI/JMRI/releases/download/v5.0/JMRI.5.0+Rc441642522.dmg"
