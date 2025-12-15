@@ -26,7 +26,7 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Production Release 5.14 of JMRI/DecoderPro is available for download.</p>
 
-<!-- 
+<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
  -->
 
@@ -95,12 +95,12 @@ that can arise from skipping these versions.
 <h3>New problems with this release</h3>
 
 <ul>
-    <li>The LCC STL Editor does not work.  Use the 5.12 version.
+    <li>The LCC STL Editor does not work.  Use the 5.12 version.  The fix will be in 5.15.1.
     </li>
 </ul>
 
 
-<!-- 
+<!--
 If this affects you, please either
 wait for
 <a href="jmri5.15.1.shtml">JMRI 5.15.1</a>, due out shortly,
@@ -126,9 +126,9 @@ we strongly recommend you update to <a href="jmri5.0.shtml">JMRI 5.0</a>
 before installing this release, see above.
 
 <ul>
-    <li>If you're using a Firefox web browser and opening JMRI 
+    <li>If you're using a Firefox web browser and opening JMRI
         help files locally (not over the web), a Firefox bug
-        can sometimes cause it to enter a loop.  There's a 
+        can sometimes cause it to enter a loop.  There's a
         workaround in
         <a href="https://groups.io/g/jmriusers/message/239205">this JMRIusers post</a>.
     <li><span class="since">Since <a href="jmri5.11.3.shtml">JMRI 5.11.3</a></span>
@@ -141,9 +141,9 @@ before installing this release, see above.
         fix that.
         </li>
     <li><span class="since">Since <a href="jmri5.11.5.shtml">JMRI 5.11.5</a></span>
-        OperationsPro program file locations were changed in 
+        OperationsPro program file locations were changed in
         <a href="jmri5.11.5.shtml">JMRI 5.11.5</a>. Start up actions
-        involving operations windows from previous releases no longer work. 
+        involving operations windows from previous releases no longer work.
         You'll need to remove them and
         add them back if needed.</li>
 </ul>
@@ -166,18 +166,18 @@ before installing this release, see above.
    sha256: 757ae54505f8896a91167bd1ca3b8ad7470b1f635526ef07497d72bf9370ba0e</li>
 </ul>
 </div>
-These files are located in the 
+These files are located in the
 <a href="https://github.com/JMRI/JMRI/releases/tag/v5.14">JMRI 5.14 GitHub release</a>.
 A Docker container can also be obtained from
 <a href="https://hub.docker.com/r/jsa1987/jmri-docker">https://hub.docker.com/r/jsa1987/jmri-docker</a>.
- 
-<!-- 
+
+<!--
 Preliminary build files (not the final released files) can be found
 on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.14">CI project page</a>.
  -->
 
-<!-- 
+<!--
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
@@ -316,9 +316,9 @@ in those is
             <li>Fixed a bug where changes to the speed table sliders
                 would not remind you if they had not been saved to the
                 roster file.</li>
-            <li>When working with a single roster entry, there's a 
-                new "Comments" page. You can pop that off (using the 
-                page icon in the tab) and enter your comments there 
+            <li>When working with a single roster entry, there's a
+                new "Comments" page. You can pop that off (using the
+                page icon in the tab) and enter your comments there
                 as you configure the values in the other panes.
                 What you type there will appear in the comment field
                 on the Roster Entry pane and vice versa.</li>
@@ -329,7 +329,7 @@ in those is
                 Programming On Main. See Preferences -> Roster ->
                 Programmer.</li>
             <li>DecoderPro now shows a "No Group" choice in the Roster Groups selector.
-                This contains all those roster entries that have not been 
+                This contains all those roster entries that have not been
                 assigned to a specific group.  You can delete roster entries
                 from the roster when displaying the "No Group" by selecting
                 the roster entry, then ctrl-clicking / right-clicking on it
@@ -337,7 +337,7 @@ in those is
             <li>Update the roster XML Schema to fix a bug preventing
                 validation of the roster.xml file in some circumstances.</li>
             <li>There is now a way to define indexed CVs in a decoder definition so
-                that the PI and SI values will be written to new values afterward, 
+                that the PI and SI values will be written to new values afterward,
                 e.g. 11.12.123;0.1
             <li>Fixed a problem causing the starting value when doing
                 CV reads to erroneously be zero.</li>
@@ -346,7 +346,7 @@ in those is
    <h3>Dispatcher</h3>
         <a id="Dispatcher" name="Dispatcher"></a>
         <ul>
-             <li>At the end of a PAUSE transit action, set speedby signal, 
+             <li>At the end of a PAUSE transit action, set speedby signal,
                 do not blindly restore pre-pause value.</li>
              <li>The RosterSpeedProfile has been corrected to improve calculations for stopping.
                  If you have manually compensated for those errors you may want to re-evaluate
@@ -484,7 +484,7 @@ in those is
                 permissions are enabled, these needs to be enabled
                 for the user to program decoders.</li>
         </ul>
-        
+
     <h3>Preferences</h3>
         <a id="Preferences" name="Preferences"></a>
         <ul>
@@ -508,7 +508,7 @@ in those is
         <a id="Scripting" name="Scripting"></a>
         <ul>
             <li>Upgrade YAAT to 3.4.  The @include statement has been added.</li>
-            <li>Fixed a bug that prevented restarting AbstractAutomaton-subclass 
+            <li>Fixed a bug that prevented restarting AbstractAutomaton-subclass
                 objects in scripts.</li>
             <li>Add <strong>MemoryValuesPersistence.py</strong>. The script will write the values
             for selected memory variables at shutdown and load them after starting PanelPro and
@@ -537,20 +537,20 @@ in those is
         <ul>
             <li>Uses correct connection for non-default Throttle release / dispatch requests.</li>
             <li>If the selected locomotive has more than 33 functions defined,
-                the Function Panel will switch to a tabbed layout to make 
+                the Function Panel will switch to a tabbed layout to make
                 the functions easier to locate.</li>
         </ul>
 
     <h3>Turnouts, Lights, Sensors and other elements</h3>
         <a id="TLae" name="TLae"></a>
         <ul>
-            <li>Audio Tables, Add Buffer button - Fixed a bug preventing the 
+            <li>Audio Tables, Add Buffer button - Fixed a bug preventing the
                 Add Buffer window displaying.</li>
             <li>There's a new "Property Add/Edit" in the item popup menu
                 in the various tables.  This lets you add or edit
                 property values associated with a particular item.</li>
         </ul>
-        
+
    <h3>Warrants</h3>
         <a id="Wt" name="Wt"></a>
         <ul>
@@ -572,9 +572,9 @@ in those is
         <ul>
             <li>Fixed a formating problem in "Report Issue" tool</li>
             <li>Added a link to the JMRI users group in the Help menu</li>
-            <li>Updated OpenLCB_Java library to version 0.8.6, which is 
+            <li>Updated OpenLCB_Java library to version 0.8.6, which is
                 just a bookkeeping update without functional changes.</li>
-            <li>Updated the JDOM2 library from 2.0.6 to 2.0.6.1 to 
+            <li>Updated the JDOM2 library from 2.0.6 to 2.0.6.1 to
                 resolve a security issue.</li>
             <li>Testing - JUnitUtil - waitFor condition failure text can be formed from a String Supplier, e.g. a lambda expression.
             The expression is only evaluated ( lazily ) when the assertion fails.
