@@ -110,9 +110,11 @@ that can arise from skipping these versions.
 <h3>New problems with this release</h3>
 <ul>
     <li>OperationsPro will crash when opening the Trains window if there are departure times in any of the train's routes.</li>
+    <li>The "All Locos" roster group is not showing in the WiThrottle Server, hence 
+        not showing on the WiThrottle and Engine Driver apps.</li>
 </ul>
 
-If this effects you, please either
+If any of these effect you, please either
 wait for
 <a href="jmri5.15.3.shtml">JMRI 5.15.3</a>, due out in early February,
 rollback to <a href="jmri5.15.1.shtml">JMRI 5.15.1</a> release which doesn't have the problem,
