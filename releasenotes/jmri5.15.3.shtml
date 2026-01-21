@@ -125,13 +125,7 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
+    <li>None yet</li>
 </ul>
 
 
@@ -205,13 +199,45 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.15.3+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>Fixed a problem adding signal masts when the
+                    OpenLCB or LCC system letter is not "M".</li>
+                <li>Improved display of stream data frames in the Monitor.</li>
+                <li>Improved how traffic from an internal hub is 
+                    displayed in the Monitor.</li>
+                <li>Updated the OpenLCB library to properly display
+                    Stream-related messages.</li>
+                <li>The JmriFaceless application can now open an OpenLCB/LCC Hub</li>
+            </ul>
+
+    <h3>OperationsPro</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+            <li>Added new dialog message to the Trains window confirming termination of built trains.</li>
+            <li>Fix a bug that would crash the Train and Route windows if there were departure times in the train's route.</li>
+            <li>Improvements to staging tracks when using the new on time mode.</li>
+            <li>Added a "Reset All Trains" button to the Trains window.</li>
+        </ul>
+
+   <h3>WiThrottle Server</h3>
+        <a id="WS" name="WS"></a>
+        <ul>
+            <li>Fixed a problem introduced in JMRI 5.15.2  where the 
+                "All Entries" roster group would not appear in WiThrotte 
+                and Engine Driver.</li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>Testing - The JUnit4 RetryRule class has been removed as implementing 
+                tests have been updated to JUnit5</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
