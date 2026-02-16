@@ -123,7 +123,10 @@ winget install Microsoft.OpenJDK.21
 <h2 id="macOS_java">For macOS users</h2>
 
     <p>To install Java on a macOS Mac computer, you should download one of the 
-    installers from the next section, then use that to install Java.
+    installers from the next section, then use that to install Java. If you have
+    an Apple Silicon Mac, we recommend you install the Apple Silicon or ARM64 
+    version to make it easier to eventually update to macOS 27, as that will
+    not support Intel-architecture programs via Rosetta 2.
 
 <hr>
 
