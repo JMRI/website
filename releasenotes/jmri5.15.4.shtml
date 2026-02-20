@@ -361,7 +361,7 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.15.4+i
         <a id="Misc" name="Misc"></a>
         <ul>
             <li>Some constants in the
-                <a href="https://www.jmri.org/JavaDoc/doc/jmri/RailCom.html">RailCom class</li>
+                <a href="https://www.jmri.org/JavaDoc/doc/jmri/RailCom.html">RailCom class</a>
                 have been converted to Enum values.
                 This primarily affects developers and people who've written scripts for
                 processing RailCom information directly.
@@ -372,9 +372,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.15.4+i
             <li>The macOS launchers have been updated to allow more Java versions and to 
                 have more useful error messages.
         </ul>
-
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
