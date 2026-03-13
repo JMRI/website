@@ -171,13 +171,19 @@ See <a href="#update">instructions above</a>.
         e.g. touch panels.  If you do encounter new problems with clicking
         on panels, please contact us on the 
         <a href="https://groups.io/g/jmriusers">JMRI users list</a>.
-    </li><span class="since">Since <a href="jmri5.15.4.shtml">JMRI 5.15.4</a></span>
-    <li>The RailCom handling has been updated to current standards.  In particular, the enum
+    </li>
+    <li>span class="since">Since <a href="jmri5.15.4.shtml">JMRI 5.15.4</a></span>
+        The RailCom handling has been updated to current standards.  In particular, the enum
         representing the orientation has been changed from ORIENTA and ORIENTB to 
         EAST and WEST respectively and some of the text strings have changed.
         These may affect any scripts you have that reference
         the direction of a RailCom report (tag) or parse the status messages. 
     </li>
+    <li>span class="since">Since <a href="jmri5.15.5.shtml">JMRI 5.15.5</a></span>
+        The web server folder <strong>app</strong> has been removed. It
+        might cause third party applications to fail. If this happens to
+        you, please contact us on 
+        <a href="https://groups.io/g/jmriusers">the JMRI users group</a>.</li>
 
 
 </ul>
