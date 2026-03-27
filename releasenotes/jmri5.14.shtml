@@ -46,6 +46,7 @@ see our
 <br>
 <p class="noted" align=center><b>This release requires Java 11 to work.
     Java 17 is recommended.</b><br/>
+Java 25 will <b>not</b> work with this release, "can not create vitual machine" error.<br/>
 (See <a href="http://jmri.org/java">our page on downloading and installing Java</a>)<br></p><br>
 
 <a id="update" name="update"></a>
@@ -98,6 +99,9 @@ that can arise from skipping these versions.
     <li>The JMRI 5.14 LCC STL Editor does not work.  This problem has been fixed in the 
     <a href="jmri5.15.1.shtml">JMRI 5.15.1 test release</a>.
     </li>
+    <li>Java 25 does not work with this release, "can not create vitual machine" error.  Please revert to Java 17 or 21 
+    This problem has been fixed in the 
+    <a href="jmri5.15.1.shtml">JMRI 5.15.1 test release</a>.
 </ul>
 
 
