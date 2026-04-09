@@ -125,13 +125,7 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
+    <li>None yet.
 </ul>
 
 
@@ -227,13 +221,111 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.15.6+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+        <h4>MERG</h4>
+            <ul>
+                <li>Fixed a problem introduced in 5.15.4 where some RFID messages
+                    would be improperly decoded as RailCom reports.</li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>Improved how special characters in filenames are
+                    handled by the ChangeDefaultBackupFileName.py script</li>
+                <li>Updated the OpenLCB_Java library to include an 
+                    improvement in how unknown-MTI messages are displayed.</li>
+                <li>The event-entry field on the Send Frame panel will now 
+                    allow entry of event names.</li>
+                <li>The popup menu on event entry fields now lets you copy
+                    the numerical event ID even if a event name has been entered.</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+        <h4>Piko decoders</h4>
+            <ul>
+                <li>New: Piko Decoder Scale G support, more LC controller types definition<br>
+                    Changes: product-ID identification, new decoder firmware version, new CVs<br>
+                    Bug fixes and various improvements<br>
+                    Update Decoder Definitions is highly recommended</li>
+            </ul>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>New file TSU2 OEM Athearn N</li>
+            </ul>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li>Improved how some recent Zimo decoder types are detected.</li>
+            </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>Added an option in the settings Roster pane, Programmer tab,
+                to drop detachable tabs for the programming panes.
+                </li>
+            <li>When you have a roster entry open for editing,
+                there are new entries in the File menu Import 
+                and Export submenus to export
+                "All Function Labels to CSV file..."
+                and import a
+                "CSV file of Function Labels...".
+                They do what you'd expect.</li>
+            <li>New permissions selection to allow/disallow adding/editing/removing
+                columns from the roster</li>
+        </ul>
+
+   <h3>Internationalization</h3>
+        <a id="I18N" name="I18N"></a>
+        <ul>
+            <li>Various work in several languages</li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+            <li>You can now add an "Output Indicator" to a 
+                Layout Editor panel.  This shows the status of a JMRI Turnout object.
+                Note that this is <em>not</em> a layout turnout; you can't
+                connect track to it or use it for signaling.
+                Rather, it's a way to represent a power switch, accessory
+                or other non-track thing that's driven by a JMRI output using
+                a Turnout object.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>Add <strong>Section</strong> and <strong>Transit</strong> to the bean listeners.</li>
+        </ul>
+
+    <h3>OperationsPro</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+            <li>The Yardmaster's window now allows you to add cars to the train at the yardmaster's location.</li>
+            <li>Fixed the departure time from a route location in the CSV Manifest file.</li>
+        </ul>
+
+    <h3>PanelPro</h3>
+        <a id="PanelPro" name="PanelPro"></a>
+        <ul>
+        <li>Added a "Tables Settings" item to the Tables menu to allow the adding of the Tables menu to the Main Menu.</li>
+        </ul>
+
+    <h3>Roster</h3>
+        <a id="Roster" name="Roster"></a>
+        <ul>
+            <li>Fixed a problem preventing the JMRI permissions from
+                properly controlling access to added columns.</li>
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>Added LayoutEditor Traverser support for VSD navigation through a panel.</li>
+        </ul>
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
