@@ -122,11 +122,11 @@ winget install Microsoft.OpenJDK.21
 
 <h2 id="macOS_java">For macOS users</h2>
 
-    <p>To install Java on a macOS Mac computer, you should download one of the 
-    installers from the next section, then use that to install Java. 
+    <p>To install Java on a macOS Mac computer, you should download one of the
+    installers from the next section, then use that to install Java.
     <p><img src="MacIntelWarning.png" align="right" height="70" width="241">
     If you have
-    an Apple Silicon Mac, we recommend you install the Apple Silicon or ARM64 
+    an Apple Silicon Mac, we recommend you install the Apple Silicon or ARM64
     version to make it easier to eventually update to macOS 27, as that will
     not support Intel-architecture programs via Rosetta 2. macOS 26 may
     remind you of that need to upgrade with the warning shown to the right.
@@ -139,7 +139,7 @@ Windows and macOS machines.
 These are our recommended solutions.
 These can also be used for Linux if the above package-manager based solutions are not
 available for some reason.<br>
-If you are offered downloads for both x64 and Arm64, <b>choose x64</b> unless you are 
+If you are offered downloads for both x64 and Arm64, <b>choose x64</b> unless you are
 positive you have ARM architecture. AMD is x64 architecture and is not the same as ARM architecture.
 <ul>
     <li>
@@ -153,21 +153,21 @@ positive you have ARM architecture. AMD is x64 architecture and is not the same 
         sets up various registry values. Rebooting after installing is recommended.</p>
         <p>macOS users might find the Microsoft installer (next item)
         easier to use than the Azul download.</p>
-        
-        <p>macOS users should pick the ".dmg" installer, as it will use the 
+
+        <p>macOS users should pick the ".dmg" installer, as it will use the
         usual macOS install process to put all the pieces where they belong.
-        
+
     </li>
     <li>
         The <a href="https://learn.microsoft.com/en-us/java/openjdk/download">Microsoft Java Download Page</a>
         offers a selection of Java installer for Windows, macOS and Linux.  Scroll down to the
-        OpenJDK21 section, then select the download link that corresponds to your computer's 
+        OpenJDK21 section, then select the download link that corresponds to your computer's
         architecture (hardware type) and operating system.
 
         <p>Windows users should pick the ".msi" installer, as it properly
         sets up various registry values. Rebooting after installing is recommended.</p>
-        
-        <p>macOS users should pick the ".pkg" installer, as it will use the 
+
+        <p>macOS users should pick the ".pkg" installer, as it will use the
         usual macOS install process to put all the pieces where they belong.
     </li>
     <li>
@@ -224,20 +224,29 @@ Note that you'll need to repeat this process every time you update JMRI,
 as the local Java install will be overwritten during the update process.</p>
 
     <h3>macOS</h3>
+
     <p>On macOS, the process is:</p>
-    <ul>
+
+    <a href="macOS_JRE.png"><img src="macOS_JRE.png" alt="JMRI/Applications folder" class="floatRight"></a>
+    <ol>
         <li>Install JMRI into the Applications folder in the usual way.</li>
-        <li>Download <a href="https://www.azul.com/core-post-download/?endpoint=zulu&uuid=2338b3d6-7398-4be0-820e-0808ffd2aa67">this Java install file</a>.</li>
-        <li>If this created a zulu21.46.19-ca-jre21.0.9-macosx_x64 folder in your Downloads folder, proceed to the next step.<br>
-            If this created a zulu21.46.19-ca-jre21.0.9-macosx_x64.zip file in your Downloads folder, double-click on it to expand it to a folder.</li>
-        <li>Rename that folder to just "jre".</li>
-        <li><a href="macOS_JRE.png"><img src="macOS_JRE.png" width="300" height="242" alt="JMRI/Applications folder" class="floatRight"></a>
-            Open the JMRI folder in the Applications folder (this is where you would normally launch JMRI)</li>
-        <li>Drag the jre folder from the Downloads folder to the JMRI folder.</li>
-    </ul>
+        <li>Download the <strong>.zip</strong> file based on the Mac processor type:
+          <ul>
+            <li><a href="https://www.azul.com/downloads/?version=java-21-lts&os=macos&architecture=x86-64-bit&package=jre#zulu">Intel</a></li>
+            <li><a href="https://www.azul.com/downloads/?version=java-21-lts&os=macos&architecture=arm-64-bit&package=jre#zulu">Apple Silicon (Mx)</a></li>
+          </ul>
+        </li>
+        <li>Double click the downloaded zip file to expand it.</li>
+        <li>Use the <em>Finder</em> to open the expanded directory and drill down to the
+        <strong>Home</strong> directory.</li>
+        <li>Copy the <strong>Home</strong> directory to the JMRI install location which is
+        normally <strong>/Applications/JMRI</strong>.</li>
+        <li>Rename <strong>Home</strong> to <strong>jre</strong>.</li>
+    </ol>
+
     <p>When you're done, the JMRI folder contents should look like the picture to the right.</p>
-    <p>
-    You're all set to start JMRI using that local version of Java!</p>
+
+    <p>You're all set to start JMRI using that local version of Java!</p>
 
     <h3>Linux</h3>
     <p>On Linux, the process is:</p>
