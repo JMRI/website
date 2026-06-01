@@ -41,7 +41,7 @@
    MacOSXRetro.shtml  JMRI 2.4-2.14,   OS X 10.3-10.5,     PowerPC/Intel,    Java 1.5
    MacOSX-4.shtml     JMRI 3.0-3.10.1, OS X 10.6-10.7.2,   Intel,            Java 1.7 - no page of its own
    MacOSX-4.shtml     JMRI 4.0-4.27,   OS X 10.7.3-10.11,  Intel/Arm,        Java 1.8/OpenJDK 8
-   MacOSX.shtml       JMRI 4.99-5.x,   macOS 10.12-latest, Intel/Arm,        Java/OpenJDK 11-17   ---- this page
+   MacOSX.shtml       JMRI 4.99-5.x,   macOS 10.12-latest, Intel/Arm,        Java/OpenJDK 11-17   - this page
   -->
 
   <p>Now, on to the show:</p>
@@ -139,36 +139,51 @@
         If you want to keep it somewhere else, just drag the
         folder to the desired location.
         Note that if you it somewhere else, you might have to
-        adjust permissions in the "Security & Privacy" pane of the System Preferences.</p>
+        adjust permissions in the "Security &amp; Privacy" pane of the System Preferences.</p>
 
       </li>
 
       <li>Depending on how your Mac is set up, you might need to
-        install <strong>Java 11</strong>:
+        install <strong>Java 11 or later</strong>:
             <ul>
             <li>Let's try the easy way first.  Open the
                 JMRI folder you just put in Applications, and
                 double-click on DecoderPro.  If this starts up DecoderPro
                 OK, you have Java installed; you're installation is done!
                 Quit DecoderPro, then go to the section on
-                <a href="#startup">starting JMRI</a> for next steps.
+                <a href="#startup">starting JMRI</a> for next steps.</li>
             <li><a id="java11"></a>
                 If that doesn't work, and you have a suitable
                 macOS version (see above), your next step is to install
-                Java 11.  To do that, click on
-                <a href="https://repos.azul.com/azure-only/zulu/packages/zulu-11/11.0.13/zulu-11-azure-jre_11.52.13-11.0.13-macosx_x64.dmg">this download link</a>.
-                A download should start shortly.
-                When it's complete, click on the file and follow instructions to
-                install Java.
-                (That link is the same as the download link near the
-                bottom of
-                 <a href="https://www.azul.com/downloads/?version=java-11-lts&os=macos&package=jre">this page on the Azul website</a>.)
-            <li>
-                Note: JMRI 5 requires Java 11.  JMRI 4 and 5 should work fine with some later versions (java 12 through 13)
-	            but you may get a message about "WARNING: An illegal reflective access operation has occurred" and "WARNING: Please consider reporting this to the maintainers".
-	            We know about this, and it'll get fixed in due course; you can ignore the messages.
-	            Java 14 and later will (currently) cause problems, so please use install and use
-	            Java 11.
+                Java 11 or later.  The recommended version for JMRI 5.10 and later is Java 17.
+
+              <p>If you are not a JMRI developer, the <strong>JRE</strong> install is recommended.  The
+              following link goes to the Azul download site with <em><u>Java 17 JRE on macOS</u></em>
+              preselected:
+              <a href="https://www.azul.com/downloads/?version=java-17-lts&amp;os=macos&amp;package=jre#zulu">Azul Java Installs</a></p>
+
+              <dl>
+                <dt>Intel Macs</dt>
+                <dd>
+                  <ol>
+                    <li>Use the <strong>x86 64-bit</strong> download.</li>
+                    <li>Select the <strong>.dmg</strong> option.</li>
+                    <li>Double click the downloaded <strong>dmg</strong> file to open it.</li>
+                    <li>Follow the instructions to run the Java installer. You will need to authenticate.</li>
+                  </ol>
+                </dd>
+
+                <dt>Apple Silicon (Mx) Macs</dt>
+                <dd>
+                  <ol>
+                    <li>Use the <strong>ARM 64-bit</strong> download.</li>
+                    <li>Select the <strong>.dmg</strong> option.</li>
+                    <li>Double click the downloaded <strong>dmg</strong> file to open it.</li>
+                    <li>Follow the instructions to run the Java installer. You will need to authenticate.</li>
+                  </ol>
+                </dd>
+              </dl>
+            </li>
             </ul>
       </li>
       <li>Congratulations! Installation is complete. Go to the section on
@@ -189,7 +204,7 @@
                     <li>There's no native support for the HIDinput library that's used
                         by some user's scripts to handle mouse and keyboard input.
                     <li>There's no native support for the BlueCove library that's used
-                        to make direct LocoNet connections via the BlueCove 
+                        to make direct LocoNet connections via the BlueCove
                         BlueTooth adapter.
                     <li>
                         Before JMRI 5.3.7, there was no native support for

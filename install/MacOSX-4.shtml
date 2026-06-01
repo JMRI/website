@@ -35,7 +35,7 @@
    MacOSClassic.shtml JMRI 1.4-1.6,    OS8/OS9,            PowerPC,          MRJ
    MacOSXRetro.shtml  JMRI 2.4-2.14,   OS X 10.3-10.5,     PowerPC/Intel,    Java 1.5
    MacOSX-4.shtml     JMRI 3.0-3.10.1, OS X 10.6-10.7.2,   Intel,            Java 1.7 - no page of its own
-   MacOSX-4.shtml     JMRI 4.0-4.27,   OS X 10.7.3-10.11,  Intel/Arm,        Java 1.8/OpenJDK 8/11  ---- this page
+   MacOSX-4.shtml     JMRI 4.0-4.27,   OS X 10.7.3-10.11,  Intel/Arm,        Java 1.8/OpenJDK 8/11  - this page
    MacOSX.shtml       JMRI 4.99-5.x,   macOS 10.12-latest, Intel/Arm,        Java/OpenJDK 11-17
   -->
   <p>Now, on to the show:</p>
@@ -163,25 +163,50 @@
                 to install Java, or takes you to the Java
                 install website, just follow those instructions.
             </li>
+
             <li><a id="java11"></a>
                 If that doesn't work, and you have a suitable
                 macOS version to run JMRI 4.x (see above), your next step is to install
-                Java 11.  To do that, click on
-                <a href="https://repos.azul.com/azure-only/zulu/packages/zulu-11/11.0.13/zulu-11-azure-jre_11.52.13-11.0.13-macosx_x64.dmg">this
-                download link</a>. A download should start shortly.
-                When it's complete, click on the file and follow instructions to
-                install Java.
-                (That link is the same as the download link near the bottom of
-                <a href="https://www.azul.com/downloads/?version=java-11-lts&os=macos&package=jre">this page on the Azul website</a>.)
-                <br>
-                JMRI 4 was developed with Java 8, but we now recommend that you run it using Java 11.
+                Java 11.
+
+              <p>If you are not a JMRI developer, the <strong>JRE</strong> install is recommended.  The
+              following link goes to the Azul download site with <em><u>Java 11 JRE on macOS</u></em>
+              preselected:
+              <a href="https://www.azul.com/downloads/?version=java-11-lts&amp;os=macos&amp;package=jre#zulu">Azul Java Installs</a>
+              </p>
+
+              <dl>
+                <dt>Intel Macs</dt>
+                <dd>
+                  <ol>
+                    <li>Use the <strong>x86 64-bit</strong> download.</li>
+                    <li>Select the <strong>.zip</strong> option.</li>
+                    <li>Double click the downloaded file to expand it.</li>
+                    <li>Copy the <strong>zulu11...x64</strong> directory to
+                      <strong>/Library/Java/JavaVirtualMachines</strong>.  You will need to
+                      authenticate.</li>
+                  </ol>
+                </dd>
+
+                <dt>Apple Silicon (Mx) Macs</dt>
+                <dd>
+                  <ol>
+                    <li>Use the <strong>ARM 64-bit</strong> download.</li>
+                    <li>Select the <strong>.dmg</strong> option.</li>
+                    <li>Double click the downloaded <strong>dmg</strong> file to open it.</li>
+                    <li>Follow the instructions to run the Java installer. You will need to authenticate.</li>
+                  </ol>
+                </dd>
+              </dl>
+
+              <p>JMRI 4 was developed with Java 8, but we now recommend that you run it using Java 11.
                 It should work fine with any Java version from Java 8 to Java 14.
 	            With some versions you may get a message about
 	                "WARNING: An illegal reflective access operation has occurred"
 	                and "WARNING: Please consider reporting this to the maintainers".
 	            We know about this, and it'll get fixed in due course; you can ignore the messages.
 	            Java 15 and later caused some problems, so please install and use
-	            Java 11 with JMRI releases 4.
+	            Java 11 with JMRI releases 4.</p>
             </li>
             <li>
             If your hardware macOS version is limited to JMRI 3.x, your next step is to <a
