@@ -201,6 +201,17 @@
         </div>
 
         <div class="list">
+        <h2>Python client for the JMRI Webserver</h2>
+            <dl>
+		    <dt class="im">
+			<a href="https://github.com/mdean77a/JMRI/blob/master/python_code/README.md"><img src="./images/ico-jmri.gif" width="44" height="44" alt="GitHub link for project"></a>
+		    </dt>
+            <dd>
+            <a href="https://github.com/mdean77a/JMRI/blob/master/python_code/README.md">pyjmri</a> is an async Python client for the JMRI web server. 
+            It lets you drive a JMRI-controlled model railroad — turnouts, sensors, lights, throttles — from Python scripts using async/await.
+            This is useful if you want to write external Python scripts that work with JMRI to control your model railroad.
+            </dd>
+            </dl>
        	<h2>JMRI at NMRA 2026 Convention</h2>
 		    <dl>
 		    <dt class="im">
