@@ -4,10 +4,10 @@
 <head>
  <meta http-equiv="content-type" content="text/html; charset=utf-8">
  <title>
-    JMRI: Release Notes for 5.15.9
+    JMRI: Release Notes for 5.15.10
  </title>
     <meta content="Bob Jacobsen" name="author">
-    <meta name="keywords" content="java model railroad JMRI 5.15.9 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+    <meta name="keywords" content="java model railroad JMRI 5.15.10 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
 
  <!--#include virtual="/Style.shtml" -->
 </head>
@@ -19,16 +19,14 @@
     <!--#include virtual="../download/Sidebar.shtml" -->
     <div id="mainContent">
       <h1>
-      Release Notes for JMRI 5.15.9 release
+      Release Notes for JMRI 5.15.10 release
       </h1>
 
-    <p>Date: June 26, 2026</p>
-    <p>From: Bob Jacobsen</p>
-    <p>Subject: Test Release 5.15.9 of JMRI/DecoderPro is available for download.</p>
+    <p>Date: MM DD, 2026</p>
+    <p>From: Release Pumpkin</p>
+    <p>Subject: Test Release 5.15.10 of JMRI/DecoderPro is available for download.</p>
 
-<!--
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
- -->
 
 <h2>Notes:</h2>
 
@@ -109,31 +107,23 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>New problems with this release</h3>
 <ul>
-    <li>the "Previous running throttle" in a throttle window toolbar doesn't do anything.</li>
+    <li>None yet</li>
 </ul>
-If that affects you, please either
+<!--
+If any of those affect you, please either
 wait for
-<a href="jmri5.15.10.shtml">JMRI 5.15.10</a>, due out shortly after this one,
-or pick up a
+<a href="jmri5.17.1.shtml">JMRI 5.17,1</a>, due out shortly after this one,
+or (once there's a fix for the problem) pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
+ -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <li>
-      <p>A bug in Entry/Exit route selection has been fixed.  Depending on how Entry/Exit was
-      implemented, the change may affect route selection.</p>
-
-      <p>Layouts that have signal masts <strong>and</strong> NX sensors attached to the same block
-      boundaries are <strong>not</strong> affected.</p>
-
-      <p>Layouts that do not use signal masts, such as using EntryExit only for setting turnouts,
-      or have signals attached to different locations, the route selection <strong>might</strong>
-      change. A review of route selection is recommended.</p>
-    </li>
+    <li>None yet</li>
 </ul>
 
 
@@ -213,13 +203,24 @@ See <a href="#update">instructions above</a>.
         <li>if you need a small throttle, see ThrottleFrameManager.createSimpleThrottleFrame(RosterEntry) or ThrottleFrameManager.createSimpleThrottleFrame(DccLocoAddress)</li>
         </ul></li>
     </li>
+    <li><span class="since">Since <a href="jmri5.15.9.shtml">JMRI 5.15.9</a></span>
+      <p>A bug in Entry/Exit route selection has been fixed.  Depending on how Entry/Exit was
+      implemented, the change may affect route selection.</p>
 
+      <p>Layouts that have signal masts <strong>and</strong> NX sensors attached to the same block
+      boundaries are <strong>not</strong> affected.</p>
+
+      <p>Layouts that do not use signal masts, such as using EntryExit only for setting turnouts,
+      or have signals attached to different locations, the route selection <strong>might</strong>
+      change. A review of route selection is recommended.</p>
+    </li>
 
 </ul>
 
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
+<!-- 
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
@@ -236,7 +237,8 @@ See <a href="#update">instructions above</a>.
 </ul>
 </div>
 These files are located in the
-<a href="https://github.com/JMRI/JMRI/releases/tag/v5.15.9">JMRI 5.15.9 GitHub release</a>.
+<a href="https://github.com/JMRI/JMRI/releases/tag/v5.15.10">JMRI 5.15.10 GitHub release</a>.
+ -->
 
 <!--
 Preliminary build files (not the final released files) can be found
@@ -244,73 +246,25 @@ on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.15.9/">CI project page</a>.
  -->
 
-<!--
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
- -->
 
 <a id="changes" name="changes"></a>
-<h2>Changes since <a href="jmri5.15.8.shtml">Test Release 5.15.8</a>:</h2>
+<h2>Changes since <a href="jmri5.15.9.shtml">Test Release 5.15.9</a>:</h2>
 
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.15.9+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <h3>Hardware Support</h3>
-
-        <h4>NCE</h4>
-            <ul>
-                <li>Added a sample script showing how to send and receive NCE messages.</li>
-            </ul>
-
-        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
-            <ul>
-                <li>Suppress the 'Make Turnouts' and 'Make Sensors' buttons in the configuration
-                    window when they aren't going to do any adds.</li>
-                <li>Add option to the popup menu in eventID-entry fields that lets you
-                    name the event ID right there.</li>
-            </ul>
-
-    <h3>Layout Editor</h3>
-        <a id="LE" name="LE"></a>
-        <h4>NX - Entry/Exit Tool</h4>
-            <ul>
-                <li>Fix route selection when the layout does not have signal masts paired with NX sensors.</li>
-            </ul>
-
-    <h3>LccPro</h3>
-        <a id="LccPro" name="LccPro"></a>
-        <ul>
-          <li>If you have reordered the columns in the main LccPro window and
-              you export to a CSV file, the columns will now be in that order
-              and properly labeled in the file.</li>
-        </ul>
-
     <h3>OperationsPro</h3>
-        <a id="Operations" name="Operations"></a>
         <ul>
-            <li>Users can now modify the missing car message format.</li>
+            <li>Fixed some minor printing issues.
         </ul>
 
-    <h3>Roster</h3>
-        <a id="Roster" name="Roster"></a>
+    <h3>Throttles</h3>
+        <a id="Throttles" name="Throttles"></a>
         <ul>
-            <li>Roster file saves are now atomic: the roster index is written to a temporary file and then moved into place, so an interrupted or failed write can no longer truncate or corrupt <code>roster.xml</code>. (PR #15228)</li>
-        </ul>
-
-    <h3>Scripting</h3>
-        <a id="Scripting" name="Scripting"></a>
-        <ul>
-            <li>Added a sample script showing how to send and receive NCE messages.</li>
-        </ul>
-
-   <h3>Web Server</h3>
-        <a id="server" name="server"></a>
-        <ul>
-            <li>The web Control Panel now draws shapes and other positionables in
-                their display "level" (z-order), matching the desktop Control
-                Panel Editor. Previously elements were sent in list order, so
-                overlapping items could be stacked incorrectly in the browser.</li>
+            <li>The "Previous running throttle" in a throttle window toolbar wasn't doing anything, fixed</li>
         </ul>
 
    <!--#include virtual="/Footer.shtml" -->

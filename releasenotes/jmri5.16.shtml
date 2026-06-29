@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+ <title>
+    JMRI: Release Notes for Production Release 5.16
+ </title>
+    <meta content="Bob Jacobsen" name="author">
+    <meta name="keywords" content="java model railroad JMRI 5.16 decoderpro panelpro loconet lenz nce easydcc dcc nmra">
+
+ <!--#include virtual="/Style.shtml" -->
+</head>
+
+<body>
+<!--#include virtual="/Header.shtml" -->
+
+<div id="mBody">
+    <!--#include virtual="../download/Sidebar.shtml" -->
+    <div id="mainContent">
+      <h1>
+      Release Notes for JMRI 5.16 release
+      </h1>
+
+    <p>Date: MM DD, 2026</p>
+    <p>From: Release Pumpkin</p>
+    <p>Subject: Production Release 5.16 of JMRI/DecoderPro is available for download.</p>
+
+<p><b>This is a draft release note only; the download links do not yet work</b></p>
+
+<p>We are very pleased to announce that the 5.15 series of JMRI test releases has resulted in a
+version that's good enough to be recommended for general use, including by new users.
+We're therefore making that version, "Production Release 5.16" available for download today.</p>
+
+<a id="note" name="note"></a>
+<h2>Notes:</h2>
+
+<p><b>
+JMRI is now only available under the
+<a href="/COPYING">GNU General Public License</a>. For more information, please
+see our
+<a href="/Copyright.html">copyright and licensing page</a>.</b></p>
+
+<br>
+<p class="noted" align=center><b>This release requires Java 11 to work.
+    Java 21 is recommended.</b><br/>
+(See <a href="http://jmri.org/java">our page on downloading and installing Java</a>)<br></p><br>
+
+<a id="update" name="update"></a>
+<h3>Update From Older JMRI Versions</h3>
+
+If you are currently using a version older than JMRI 5.0, please follow these instructions carefully:
+<ol>
+<li>Is your current version older than <a href="jmri4.12.shtml">JMRI 4.12</a>?
+    If so, then update to <a href="jmri4.12.shtml">JMRI 4.12</a> first, and ensure everything works correctly: check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Store your configuration and panel files under a new name and use those from now on.
+    Then continue with step 2.
+    <p>
+    If you are currently using JMRI 4.7.3 or earlier on Linux or macOS (Windows doesn't need this),
+    then it's <u>very important</u>
+    that you update to <a href="jmri4.12.shtml">JMRI 4.12</a> and
+    carrying out the <a href="jmri4.12.shtml#migration">migration process described in the JMRI 4.12 release note</a>
+    before updating to any later release.
+    </li>
+
+<li>Is your current version older than <a href="jmri4.20.shtml">JMRI 4.20</a>?
+    Then update to <a href="jmri4.20.shtml">JMRI 4.20</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Save your preferences again.
+    Store your configuration and panel files under a new name, use those from now on, and go on to step 3.</li>
+
+<li>Is your current version older than <a href="jmri4.24.shtml">JMRI 4.24</a>?
+    Then update to <a href="jmri4.24.shtml">JMRI 4.24</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Save your preferences again.
+    Store your configuration and panel files under a new name and use those from now on.</li>
+
+<li>Is your current version older than <a href="jmri5.0.shtml">JMRI 5.0</a>?
+    Then update to <a href="jmri5.0.shtml">JMRI 5.0</a> first, and ensure that works correctly (check
+    start-up, check things you need to be working, and check the JMRI log as well) before doing anything else.
+    Save your preferences again.
+    Store your configuration and panel files under a new name and use those from now on.</li>
+
+<li>You can then install this release.
+
+</ol>
+
+Following this multi-step order of updating via stable major releases safeguards you against possible migration issues
+that can arise from skipping these versions.
+
+<a id="problems" name="problems"></a>
+<h3>New problems with this release</h3>
+
+<ul>
+    <li>None yet</li>
+</ul>
+
+
+<!--
+If this affects you, please either
+wait for
+<a href="jmri5.17.1.shtml">JMRI 5.17.1</a>, due out shortly,
+or pick up a
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">development build installer</a>
+from
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
+ -->
+
+<a id="warnings" name="warnings"></a>
+<h3>New warnings for this production release:</h3>
+
+<ul>
+    <p>None Yet
+</ul>
+
+<h3>Older warnings</h3>
+
+See the <a href="jmri5.12.shtml#warnings">JMRI 5.12 release note</a> for more warnings predating the 5.13 development series,
+including pointers to various migration issues.
+These may be relevant to you if you're updating from an earlier version;
+we strongly recommend you update to <a href="jmri5.0.shtml">JMRI 5.0</a>
+before installing this release, see above.
+
+<ul>
+    <li>If you're using a Firefox web browser and opening JMRI
+        help files locally (not over the web), a Firefox bug
+        can sometimes cause it to enter a loop.  There's a
+        workaround in
+        <a href="https://groups.io/g/jmriusers/message/239205">this JMRIusers post</a>.
+</ul>
+
+<a id="download" name="download"></a>
+<h2>Download links:</h2>
+
+<!-- 
+<div class="wide">
+<ul>
+<li>OS X / macOS: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.dmg">https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.dmg</a><br/>
+  sha256: ca715ab67968e97bfe2d2f04809f9980ab19b56523c9d9b09ca2727d6b0a9dcf </li>
+
+<li>Windows: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.exe">https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.exe</a><br/>
+   sha256: cff758d57c0ae21350275e21173cb9abb278b5c8ff5cf5b90e2ed7816e475136</li>
+
+<li>Linux: <a
+	href="https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.tgz">https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.tgz</a><br/>
+   sha256: 757ae54505f8896a91167bd1ca3b8ad7470b1f635526ef07497d72bf9370ba0e</li>
+</ul>
+</div>
+These files are located in the
+<a href="https://github.com/JMRI/JMRI/releases/tag/v5.14">JMRI 5.14 GitHub release</a>.
+A Docker container can also be obtained from
+<a href="https://hub.docker.com/r/jsa1987/jmri-docker">https://hub.docker.com/r/jsa1987/jmri-docker</a>.
+ -->
+
+<!--
+Preliminary build files (not the final released files) can be found
+on the
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.14">CI project page</a>.
+ -->
+
+<!--
+During development leading to the actual release, you can find test download files on the
+<a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
+These are development files, and might not be working at any particular time.</p>
+ -->
+
+<a id="changes" name="changes"></a>
+<h2>Changes since <a href="jmri5.14.shtml">production release 5.14</a>:</h2>
+
+<p>
+This production version is made from test releases 5.15.1 through 5.15.10  The
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2025-12-09..2026-07-05">full list of changes</a>
+in those is
+<a href="https://github.com/JMRI/JMRI/pulls?utf8=✓&q=is%3Apr+merged%3A2025-12-09..2026-07-05">available from our code repository</a>.
+
+    <h3>Hardware Support</h3>
+        <ul>
+            <li>Network connections now take their host name/address and port number
+                from the per-node individual configuration, if available,
+                and from the shared configurations if not.  This will allow
+                you to have different host name/address for different
+                computers sharing the same JMRI profile.</li>
+          <li>The list of ports on a connection configuration page is now updated
+            event time to click on it to open it.  This lets you e.g. pull out your
+            command station port, note the list of remaining ones, then reconnect
+            your command station and select the new port that just appeared.</li>
+        </ul>
+
+        <h4>CBUS</h4>
+            <ul>
+                <li>The RailCom support has been updated:
+                    <ul>
+                        <li>DDES messages are now being decoded into 
+                            RailCom tags, including the orientation, direction and
+                            motion values.
+                        <li>Receipt of a RailCom-format DDES message will now
+                            automatically create a reporter for the received device
+                            number if it doesn't already exist.
+                        <li>Related changes to the RailCom tag table have been made,
+                            see the Miscellaneous category below.
+                    </ul>
+                </li>
+            </ul>
+
+        <h4>C/MRI</h4>
+            <ul>
+                <li>The node configuration is now preserved if the
+                    connection type is changed. For example, if you
+                    change the connection from serial to simulator,
+                    the node configuration is kept.</li>
+            </ul>
+
+        <h4>DCC++ and DCC-EX</h4>
+            <ul>
+                <li>DCC++ Ethernet connections now automatically attempt to reconnect when
+                    the connection is lost, retrying indefinitely until the command station comes
+                    back online. This behavior can be disabled by unchecking
+                    "Reconnect automatically if connection is lost" in Additional Connection
+                    Settings.</li>
+                <li>DCC-EX Traffic Monitor: controls now wrap onto additional rows when the
+                window is narrowed and the controls area grows upward to keep everything visible,
+                rather than clipping checkboxes off the bottom
+                (<a href="https://github.com/JMRI/JMRI/issues/15134">#15134</a>).
+                The window title and menu action label also now read &quot;DCC-EX&quot; rather
+                than &quot;DCC++&quot;.</li>
+                <li>DCC-EX Traffic Monitor: traffic lines now show an explicit &quot;TX:&quot; or
+                &quot;RX:&quot; direction marker regardless of whether the translated text or raw
+                form is displayed, and the raw form is wrapped in &lt;&hellip;&gt; rather than
+                [&hellip;] to match DCC-EX's native command syntax.</li>
+                <li>A new <strong>EXRAIL Automations</strong> window (under the DCC-EX menu)
+                lists your CommandStation's Routes and Automations and lets you trigger them.
+                Entry details are fetched sequentially for reliability on hardware with small
+                WiFi buffers (Mega+WiFi)
+                (<a href="https://github.com/JMRI/JMRI/pull/15160">PR #15160</a>).</li>
+                <li>The <strong>EXRAIL Automations</strong> window now remembers the last loco
+                address you entered during the session - the prompt pre-fills it the next time
+                you trigger an automation. The dialog also validates the address (1-10293)
+                and re-prompts if the input is out of range or not a number.</li>
+                <li>The <strong>Virtual LCD</strong> window now supports
+                    more than one display. Each display is shown in a single
+                    row in the <strong>Virtual LCD</strong> window, with
+                    the first display at the left.</li>
+                <li><strong>Virtual LCD</strong> can now be added to Panel Editor and Layout Editor.</li>
+                <li>Change default DCCppOverTCP port from 1235 to 2560 to match DCC-EX default.</li>
+                <li>DCC-EX: turnout details are now fetched one at a time after startup rather than
+                all at once, preventing the command station's WiFi buffer from being overwhelmed
+                on layouts with many turnouts.</li>
+                <li>DCC-EX: out-of-range turnout IDs in the &lt;jT&gt; response (caused by WiFi
+                buffer overflow on Mega+WiFi) are now ignored with a warning rather than being
+                registered as bogus turnouts.</li>
+                <li>DCC-EX Traffic Monitor: the display limit has been raised from 500 to 2000
+                lines, sufficient for large layouts that enumerate many turnouts on startup.</li>
+                <li>DCC-EX: broadcast messages (&lt;* ... *&gt;) containing angle brackets
+                in the body are now parsed correctly. Previously the first &gt; inside the
+                body terminated the frame early, which could leave the programmer stuck
+                waiting for a reply that never arrived.</li>
+            </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>Added LNRP3 to some LocoNet Monitor message types.</li>
+                <li>Updated the LocoBuffer-USB and LocoBuffer-NG help.</li>
+                <li>Fix bug, PR4 Stand-alone Loconet</li>
+                <li>LocoNet-over-TCP connections now automatically reconnect if the server
+                    goes away and comes back. Detection relies on a clean TCP close
+                    from the server; hard disconnects (network drop with no TCP FIN)
+                    are only detected when JMRI next tries to send a message.</li>
+            </ul>
+
+        <h4>MERG</h4>
+            <ul>
+                <li>Fixed a problem introduced in 5.15.4 where some RFID messages
+                    would be improperly decoded as RailCom reports.</li>
+            </ul>
+
+        <h4>MQTT</h4>
+            <ul>
+                <li>Updated the Signal Mast support 
+                    so that a mast can be updated by an
+                    MQTT message from the layout.</li>
+            </ul>
+
+        <h4>NCE</h4>
+            <ul>
+                <li>Added a sample script showing how to send and receive NCE messages.</li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>Fix STL Editor bug introduced in PR 14625.</li>
+                <li>Fixed a problem adding signal masts when the
+                    OpenLCB or LCC system letter is not "M".</li>
+                 <li>Improved display of stream data frames in the Monitor.</li>
+                <li>Improved how traffic from an internal hub is 
+                    displayed in the Monitor.</li>
+                <li>Updated the OpenLCB library to properly display
+                    Stream-related messages.</li>
+                <li>The JmriFaceless application can now open an OpenLCB/LCC Hub</li>
+                <li>The Reporters have been updated to properly parse
+                    the format in the current version of the 
+                    LCC DCC Detector Working Note.
+                </li>
+                <li>A bug that would cause LCC Reporters to improperly be created as 
+                Internal Reporters has been fixed.  If you have Internal Reporters that
+                have been created in the past by this bug, 
+                    <ol>
+                        <li>Start this version of JMRI or later
+                        <li>Delete all the IdTags and, if relevant, RailCom tags that reference the internal Reporters
+                        <li>Delete the internal Reporters
+                        <li>Save your panels and table to your usual file
+                        <li>Quit and restart JMRI.
+                    </ol>
+                </li>
+                <li>The OpenLCB_Java library has been updated, which brings
+                    <ol>
+                        <li>Improvements to how streams are handled, which will make
+                            firmware updates to certain node types more reliable.
+                        <li>When opening a configuration ("CDI") window, the 
+                            window will stay minimized while both the display information (the CDI contents)
+                            and the configuration data contents are read.  Although this takes
+                            longer, it prevents you from accessing data variables that 
+                            have not yet been loaded.  Previously that early access
+                            has led to various problems with inconsistent data.
+                        <li>Blank lines are now accepted as comments in node backup files
+                    </ol>
+                </li>
+                <li>The LCC/ChangeDefaultBackupFileName.py script has been updated to 
+                    include the node's event ID if no node name is available.  This
+                    will e.g. reduce confusion when backing up brand-new nodes.
+                </li>
+                <li>Improved how special characters in filenames are
+                    handled by the ChangeDefaultBackupFileName.py script</li>
+                <li>Updated the OpenLCB_Java library to include an 
+                    improvement in how unknown-MTI messages are displayed.</li>
+                <li>The event-entry field on the Send Frame panel will now 
+                    allow entry of event names.</li>
+                <li>The popup menu on event entry fields now lets you copy
+                    the numerical event ID even if a event name has been entered.</li>
+                <li>(Internal) The load and store process for the Event Table
+                    now permits multiple "names" elements. This makes it easier
+                    to merge Event Table information from several profiles.</li>
+                <li>Improved how mouse clicks are handled with showing/hiding 
+                    sections of the configuration screens.</li>
+                <li>Resolved an issue where reading a memory space from a CS-105
+                    would timeout and fail.</li>
+                <li>Fixed a bug which could cause the Event Table to
+                    refresh too often, which annoyingly caused it to
+                    lose your current selected row.</li>
+                <li>Suppress the 'Make Turnouts' and 'Make Sensors' buttons in the configuration
+                    window when they aren't going to do any adds.</li>
+                <li>Add option to the popup menu in eventID-entry fields that lets you
+                    name the event ID right there.</li>
+            </ul>
+
+        <h4>Raspberry Pi</h4>
+            <ul>
+                <li>The Pi4J library used for Raspberry Pi GPIO support has been updated
+                    from version 1.2 to version 2.8.0 (the current 2.x release).
+                    Pi4J 2.x uses a new API and a plugin-based architecture replacing
+                    the older <code>GpioFactory</code> / <code>GpioController</code> model.
+                </li>
+                <li><strong>Pin numbering has changed.</strong>
+                    Pi4J 1.x addressed GPIO pins using WiringPi numbers.
+                    Pi4J 2.x uses BCM (Broadcom) numbers directly.
+                    Existing panel files and scripts that reference Raspberry Pi sensors
+                    or turnouts will need their GPIO address numbers updated to use
+                    the corresponding BCM pin numbers.
+                    For example, WiringPi GPIO 0 (BCM 17) becomes address 17 in the
+                    new numbering scheme.
+                </li>
+                <li>Support has been added for the Pi4J GpioD plugin
+                    (<code>pi4j-plugin-gpiod</code>), which uses the modern Linux GPIO
+                    character-device interface (<code>/dev/gpiochip*</code>) introduced
+                    in kernel 5.10.
+                    This is the preferred GPIO interface on Raspberry Pi OS with kernel
+                    5.10 or later (including the 6.x kernels shipped with current
+                    Raspberry Pi OS releases).
+                    It requires the <code>libgpiod2</code> package:
+                    <code>sudo apt install libgpiod2</code>
+                    The plugin is discovered and activated automatically alongside the
+                    existing LinuxFS and PiGpio plugins via Java ServiceLoader; no
+                    configuration change is required.
+                </li>
+                <li>Hardware GPIO plugins (<code>pi4j-plugin-raspberrypi</code>,
+                    <code>pi4j-plugin-linuxfs</code>, <code>pi4j-plugin-gpiod</code>)
+                    are now loaded at runtime via Java ServiceLoader on Raspberry Pi
+                    hardware and are no longer bundled as compile-time dependencies.
+                </li>
+            </ul>
+
+        <h4>SPROG</h4>
+            <ul>
+                <li>Fixed spurious command station slot thread timeouts that could
+                    shut down track power when the GUI was busy. Reply notifications
+                    from the traffic controller to the command station are now
+                    delivered synchronously instead of being queued on the Swing EDT,
+                    so the slot thread is woken immediately when the hardware replies.</li>
+                <li>Added a consecutive-timeout retry counter to the command station
+                    slot thread. A single missed reply now triggers a retry with an
+                    idle packet instead of immediately removing track power.
+                    Track power is only removed after three consecutive timeouts.</li>
+            </ul>
+
+        <h4>Zimo MXULF</h4>
+            <ul>
+                <li>New/updated support for the Zimo KLUG</li>
+                <li>Added additional,  faster speeds to the KLUG connection.</li>
+            </ul>
+
+
+    <h3>New / Updated decoder definitions</h3>
+    
+        <h4>MD Electronics</h4>
+             <ul>
+                <li>The <strong>80101 Turnout Drive</strong> decoder is
+                    added. Support for accessory OPS mode programming is
+                    currently missing but service mode programming &amp;
+                    <strong>Reset all</strong> is included.</li>
+             </ul>
+
+        <h4>MTB Model</h4>
+             <ul>
+                <li>Added series MND25 Locomotive decoders</li>
+             </ul>
+    
+        <h4>Piko decoders</h4>
+            <ul>
+                <li>Add scale G decoders, support new firmware versions</li>
+                <li>New: Piko Decoder Scale G support, more LC controller types definition<br>
+                    Changes: product-ID identification, new decoder firmware version, new CVs<br>
+                    Bug fixes and various improvements<br>
+                    Update Decoder Definitions is highly recommended</li>
+            </ul>
+
+        <h4>TAMS</h4>
+            <ul>
+                <li>The <strong>LD-W-32.2</strong> decoder has been added.</li>
+            </ul>
+
+        <h4>SoundTraxx</h4>
+            <ul>
+                <li>New file TSU2 OEM Athearn N</li>
+            </ul>
+
+        <h4>ZIMO</h4>
+            <ul>
+                <li>Improved how some recent Zimo decoder types are detected.</li>
+            </ul>
+
+
+    <h3>Control Panel Editor</h3>
+        <a id="CPE" name="CPE"></a>
+        <ul>
+            <li>Improved how clicks are handled so they'll
+                be less finicky.</li>
+            <li>Change the scaling menu item from "multiply current scaling"
+                to "set new scaling percentage" form.</li>
+            <li>The option <strong>Disable loco marker popup menus</strong> has been added
+                to the <strong>Marker</strong> menu. If it's selected, it's possible to
+                move around loco markers but it's not possible to open the popup menu for
+                loco markers. This is useful for dispatcher that wants to move
+                the loco markers but doesn't want to edit the loco markers.</li>
+        </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>Fixed a problem causing the starting value when doing
+                CV reads to erroneously be zero.</li>
+            <li>When opening a roster entry with a large decoder definition,
+                DecoderPro now defers some of the processing until later while
+                opening the tabbed programming panes sooner.  You may see a
+                pane with "Wait for pane contents to be loaded".  The contents
+                should appear within a few seconds.</li>
+            <li>Some of the buttons have been relabelled for clarity
+                <ul>
+                    <li> New Loco &rarr; New Entry
+                    <li> Identify &rarr; Find in Roster
+                </ul>
+                Along with machine translations for other languages.
+            </li>
+            <li>The window you use to assign roster entries to groups
+                has been improved:
+                <ul>
+                    <li>A "Create Group" button has been added
+                        to make that more convenient.</li>
+                    <li>An edge-case where you could
+                        accidentally make a copy of the "All Entries" group has
+                        been removed. </li>
+                    <li>A blank group name will no longer
+                        appear in the selection box.</li>
+                </ul></li>
+            <li>Added new button and File-menu item to
+                print the roster table as it's currently displayed,
+                with the user's selected roster group, column setup and
+                sort order.</li>
+            <li>The roster entry's comment field is now available
+                as a column in the main DecoderPro display.  Multi-line
+                comments will be displayed as multiple lines in a row
+                with extended height.  Type ctrl-return or 
+                alt-return to put a newline in the field.
+                <p>If you don't want to see this
+                column, right-click/ctrl-click in the column heading
+                and deselect it.</li>
+            <li>If you have added additional columns to the Roster Table,
+                these can now have multi-line comments.
+            <li>To make adding locomotives to roster groups more convenient,
+                there are several new ways to do it:
+                <ul>
+                    <li>There's a new item in the main Settings menu
+                    <li>Once you have selected a row in the roster table,
+                        right-push or ctrl-push to get a popup menu 
+                        which contains a new "Add to Group..." item.
+                </ul>
+            <li>Decoder product ID determination has been added
+                for PIKO decoders.</li>
+            <li>The sort order on the Roster ID column of the Roster Table
+                has been improved so that e.g. "MILW 103B"  will be sorted
+                in a rational order.
+                For example, "ATSF 54" comes before "ATSF 456" since 54 is less than 456.
+            <li>Added an option in the settings Roster pane, Programmer tab,
+                to drop detachable tabs for the programming panes.
+                </li>
+            <li>When you have a roster entry open for editing,
+                there are new entries in the File menu Import 
+                and Export submenus to export
+                "All Function Labels to CSV file..."
+                and import a
+                "CSV file of Function Labels...".
+                They do what you'd expect.</li>
+            <li>New permissions selection to allow/disallow adding/editing/removing
+                columns from the roster</li>
+            <li>Fixed a bug were DecoderPro would include the height of
+                non-visible columns in the row height calculation.</li>
+        </ul>
+
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Defer calling "loadAtStartup" until the layout data file loading is done and
+             layout block paths have been initialized.</li>
+			 <li>Create, terminate, open throttle, extend, terminate from LEPanel.</li>
+             <li>Added: physics-based acceleration</li>
+			 <li>Added: Distance based stopping (including overriding stop sensors and slowing to minimum speed within the set distance and stopping by stop sensor)</li>
+            <li>If multiple roster entries are selected, contextual menu allows opening a throttle window with a controler for each selected roster entries.</li>
+            <li>Drag'n drop of roster entries to the throttle list window is now allowed and will create new throttle control in the targetted window.</li>
+            <li>Added a new (optional) 
+                <a href="https://www.jmri.org/help/en/package/jmri/jmrit/permission/PermissionManager.shtml">Permission</a>
+                to control whether the user can
+                edit columns that have been added to the Roster Table.
+                This can be used to e.g. only allow certain people at a club
+                to mark a locomotive entry as having been inspected.</li>
+            <li>Added a copy/cut/paste pop-up menu to text fields that 
+                didn't previously have a pop-up menu.
+            <li>Fixed a bug where certain roster entry contents would cause 
+                a crash.
+             <li>Stop train immediately if it has no occupied section, or
+                 blocks go active in the wrong order. This behaviour can be turned off
+                 in dispatcher options.</li>
+             <li>Add the current, next block and train held status to the dispatcher screen.</li>
+             <li>When resuming from a failure, inform user where the head of train needs to be
+                 or which block needs to be cleared. If they have being using Manual
+                 present them with choice about the direction.</li>
+             <li>Fix NPE error on dispatcher train restart.</li>
+             <li>Fix up to and fro restart at far end</li>
+             <li>Save dispatcher usestrict option correctly.</li>
+			 <li>Continue tracking blocks thru stopping at end.</li>
+        </ul>
+
+   <h3>Internationalization</h3>
+        <a id="I18N" name="I18N"></a>
+        <ul>
+            <li>Various work in several languages</li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+            <li>Provide an option to add a memory variable or a block contents field as an input text
+            field instead of as a label.  This makes it possible to change memory or block values
+            when using the JMRI web server.  Limitations:
+              <ul>
+                <li>If the value is not a text string, such as a roster entry, changing the displayed
+                text will replace the item with the new text.</li>
+                <li>The panel zoom level must be at 1 to edit the text content.</li>
+              </ul>
+            </li>
+            <li>Improved how clicks are handled so they'll
+                be less finicky.</li>
+            <li>Change the scaling menu item from "multiply current scaling"
+                to "set new scaling percentage" form.</li>
+            <li>Fixed a problem that could cause bold-text labels to have 
+                their contents truncated. e.g. "West" would be 
+                shown as "Wes...". This was mostly a problem on 
+                Windows, but could have affected any system type.</li>
+            <li>You can now add an "Output Indicator" to a 
+                Layout Editor panel.  This shows the status of a JMRI Turnout object.
+                Note that this is <em>not</em> a layout turnout; you can't
+                connect track to it or use it for signaling.
+                Rather, it's a way to represent a power switch, accessory
+                or other non-track thing that's driven by a JMRI output using
+                a Turnout object.</li>
+            <li>Added a new "Make Layout Editor XML output more reproducible" option
+                to the Load and Store preference pane.  The default is off.  When
+                on, this option will result in positions of Layout Editor objects
+                being stored in a form that's more reproducible.  This will result
+                in fewer spurious changes if you're e.g. storing panel files in a
+                tracking system like Git.</li>
+            <li>Fixed a problem when storing and loading the new Output Indicator icons</li>
+            <li>When changing icon images for turnouts, sensors and signal heads, the
+                resource files are now listed in alpha order by name.</li>
+            <li>The LayoutTurnout and LayoutTraverser require manual changes when the
+                <strong>Use Dispatcher with Signal Masts</strong> feature is enabled.  To
+                prevent JMRI errors and Java exceptions, these changes have to be removed
+                before deletion or some modifications.  When needed, a dialog is displayed
+                with a list of the items to be removed.</li>
+            <li>Improved the layout of the edit tools to reduce the need for
+                vertical scrolling when they're at the top or bottom of the window.</li>
+            <li>Fixed a bug where the panel bounds wasn't updated when
+                an icon was moved using the popup menu item
+                <strong>Set Location</strong>.</li>
+            <li>Handle mouse down events, drag and popup menus, on shapes before background objects
+            (level 0 and level 1).</li>
+            <li>The option <strong>Disable loco marker popup menus</strong> has been added
+                to the <strong>Marker</strong> menu. If it's selected, it's possible to
+                move around loco markers but it's not possible to open the popup menu for
+                loco markers. This is useful for dispatcher that wants to move
+                the loco markers but doesn't want to edit the loco markers.</li>
+            <li>Prevent a possible <strong>ClassCastException</strong> introduced by PR #14492
+            and PR #14928 to support signals on turntables and traversers. The exception occurs when
+            Entry/Exit is used and a panel has a turntable and/or a traverser. The added logic
+            did not consider that the <strong>bean</strong> might be an Entry/Exit sensor.</li>
+        </ul>
+
+        <h4>NX - Entry/Exit Tool</h4>
+            <ul>
+                <li>Fix an incomplete route cancel cleanup which leaves the protected block allocated.</li>
+                <li>Fix route selection when the layout does not have signal masts paired with NX sensors.</li>
+            </ul>
+
+
+    <h3>LccPro</h3>
+        <a id="LccPro" name="LccPro"></a>
+        <ul>
+            <li>Added a copy/cut/paste pop-up menu to text fields that 
+                didn't previously have a pop-up menu.
+            <li>Added "Print Table" and "Export CSV" global buttons that
+                do pretty much what they say.
+            <li>Added a "Backup" button to each row that will directly
+                back up the selected node to a file.  The directory
+                where that file will be placed can be set with the
+                "Set Backup Directory" action in the Settings menu.
+            <li>Improved performance of Active display in lower right
+                on high-bandwidth links.</li>
+          <li>If you have reordered the columns in the main LccPro window and
+              you export to a CSV file, the columns will now be in that order
+              and properly labeled in the file.</li>
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li><strong>Warning</strong><br/>
+              Tables and panels files created with this version or later
+              and that's using the LogixNG action <strong>Error</strong>
+              cannot be opened in earlier JMRI versions.</li>
+          <li>The LogixNG action <strong>Error</strong> has an improved
+              error message which allows using a local variable or a
+              formula for the error message.</li>
+          <li>LogixNG Tables can now be placed on Panel Editor panels.
+              The table can be read-only, editable or that only some
+              columns are editable. It's also possible to have buttons
+              and comboboxes in the table on the panel.</li>
+           <li>Fixes a bug where local variables might have the wrong values
+              when using the action <strong>Execute delayed</strong>.</li>
+          <li></li>
+          <li>The action <strong>Throttle</strong> has been improved. It
+              has the option to wait for a throttle to be aquired and
+              then release it immediately after doing its action. This
+              is useful if you want to dispatch the throttle.</li>
+          <li>Add <strong>Section</strong> and <strong>Transit</strong> to the bean listeners.</li>
+          <li>Fix the Dispatcher Expression.  Active train status changes were being missed.</li>
+          <li>The LogixNG function <strong>regex()</strong> has been
+              added. It lets you use a regular expression to extract
+              information from a string.<br/>
+              For more information about regular expressions, see the
+              Java class
+              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html"></a>Pattern</li>.
+          <li>Update the Turnout Lock action description.</li>
+        </ul>
+
+
+    <h3>OperationsPro</h3>
+        <a id="Operations" name="Operations"></a>
+        <ul>
+            <li>New feature, you can now build your train using "On Time" mode. Requires using real or fast clock to schedule for your trains.</li>
+            <li>Locomotives can now use the quick service tracks feature.</li>
+            <li>New tool to quickly enable tracks for quick service.</li>
+            <li>Added pick up and set out times for locomotives.</li>
+            <li>Trains now have a departure day.</li>
+            <li>New automation acton item: Wait for automation to complete.</li>
+            <li>New automation acton item: Down Counter.</li>
+            <li>Added new dialog message to the Trains window confirming termination of built trains.</li>
+            <li>Fix a bug that would crash the Train and Route windows if there were departure times in the train's route.</li>
+            <li>Improvements to staging tracks when using the new on time mode.</li>
+            <li>Added a "Reset All Trains" button to the Trains window.</li>
+            <li>New tool that allows day to name mapping. Now your Manifest or switch list can show which day or date the train departs or arrives at a location.</li>
+            <li>New feature, the "Add Locomotives" in the "Train Build Options" allows you to select where the locomotives will terminate.</li>
+            <li>Helper improvement, you can now specify how many helper locomotives to assign to a train.  Works like the "Add locomotives" feature, except HPT is disabled.</li>
+            <li>Improvements to the print Manifest and no page breaks option.</li>
+            <li>New larger preview windows when printing.</li>
+            <li>The Yardmaster's window now allows you to add cars to the train at the yardmaster's location.</li>
+            <li>Fixed the departure time from a route location in the CSV Manifest file.</li>
+            <li>Fixed a bug where the RWL or RWE ship address wasn't used when spotted at a spur with a schedule that didn't have a ship address.</li>
+            <li>Added the "Random" column to the tool "Show Schedules by Car Type and Load".</li>
+            <li>Fixed a bug with the "Edit Car Loads" from the "Show Schedules by Car Type and Load" tools menu.</li>
+            <li>Added 2.25" by 11" paper size.</li>
+            <li>Made some improvements with line wrapping when printing Manifests and switch lists.</li>
+          <li>Added the ability to set the additional line tab size for Manifest and Switch Lists. Useful when using the smaller page widths. See "More Print Options" in the help.</li>
+          <li>New feature, manual build for a train. See the OperationsPro help for more information.</li>
+          <li>Operations tests now use an isolated <code>NullProfile</code> per test via <code>@TempDir</code>,
+              preventing intermittent <code>RosterConfigManager</code> failures on machines with real JMRI profile data.</li>
+          <li>New feature, Manifest and switch lists can now display rolling stock last moved date & time.</li>
+          <li>Changed switch lists to now list trains arrivals by time, including turns. Previously a turns work was listed consecutively.</li>
+          <li>You can now bold a Manifest or switch list word or line. At the start of the text add &lt;b&gt; and &lt;/b&gt; at the end of the text.</li>
+          <li>Manifest and switch list can now show the rolling stocks last location.</li>
+            <li>Users can now modify the missing car message format.</li>
+            <li>Fixed some minor printing issues.
+        </ul>
+
+
+   <h3>Panel Editor</h3>
+        <a id="PE" name="PE"></a>
+        <ul>
+            <li><strong>LogixNG Table</strong>s can now be added to a
+                Panel Editor. The table can be edited and that's is useful
+                if the user needs to change values in a table.<br/>
+                It's recommended to use <strong>Fixed size</strong> for
+                the LogixNG Table on the panel. To move the table, use
+                <strong>Set Location</strong> since it's not currently
+                possible to move the table on the panel using the mouse.<br/>
+                The width of the columns can be changed by dragging the
+                divider of the column headers. The new width will be
+                stored when the tables and panels file is stored.<br/>
+                The table is <u>not</u> stored when the tables and
+                panels file is stored.<br/>
+                It's optional to use a LogixNG Module to validate input
+                from the user. If a LogixNG Module is selected, it will
+                be called after the user has edited a cell, before the
+                new data is written to the cell. If the data is invalid,
+                the Module can abort the editing by calling the new
+                LogixNG action <strong>Validation Error</strong> in the
+                category <strong>Flow Control</strong>. It's possible
+                to add an error message to the <strong>Validation Error</strong>
+                to be shown to the user.<br/>
+                A <strong>LogixNG Table</strong> on a Panel Editor panel
+                can also have buttons and comboboxes. If the user clicks
+                on a button, the validation module can then do something.
+                And a combobox allows the user to select an item from a
+                list instead of typing it.</li>
+            <li>Improved how clicks are handled so they'll
+                be less finicky.</li>
+           <li>Change the scaling menu item from "multiply current scaling"
+                to "set new scaling percentage" form.</li>
+            <li>The option <strong>Disable loco marker popup menus</strong> has been added
+                to the <strong>Marker</strong> menu. If it's selected, it's possible to
+                move around loco markers but it's not possible to open the popup menu for
+                loco markers. This is useful for dispatcher that wants to move
+                the loco markers but doesn't want to edit the loco markers.</li>
+        </ul>
+
+    <h3>PanelPro</h3>
+        <a id="PanelPro" name="PanelPro"></a>
+        <ul>
+        <li>Added a "Tables Settings" item to the Tables menu to allow the adding of the Tables menu to the Main Menu.</li>
+        </ul>
+
+    <h3>Roster</h3>
+        <a id="Roster" name="Roster"></a>
+        <ul>
+            <li>Added: physics parameters for physics based acceleration.</li>
+            <li>Improved the locomotive image resolution in printed rosters.</li>
+            <li>Increased the size of the roster preview so that it matches the paper size and improved text legibility.</li>
+            <li>Update "Export Complete Roster" process so that
+                upon "Import Complete Roster" the images will
+                properly display without the need to rebuild the roster.</li>
+            <li>The Import Complete Roster action now shows a progress bar.</li>
+            <li>Fixed a problem preventing the JMRI permissions from
+                properly controlling access to added columns.</li>
+            <li>If the configured roster location is on a network share or removable
+                device that is not available when JMRI starts, a dialog now gives you
+                the choice to <strong>Continue</strong> (start with an empty roster)
+                or <strong>Quit JMRI</strong> to reconnect the device before
+                restarting. Previously JMRI would silently start with an empty roster,
+                risking the real roster being overwritten on shutdown.</li>
+            <li>The Continue/Quit dialog shown at startup when the configured roster
+            location is unavailable now treats dismissing the dialog (the close button)
+            as Quit, matching the behavior of the profile chooser. Previously the close
+            button fell through to Continue (<a href="https://github.com/JMRI/JMRI/issues/15148">issue #15148</a>).</li>
+            <li>Roster Speed Profiling has been updated to allow profiling from either
+            High to Low or Low to High and should now work for both NMRA and non NMRA speed steps.</li>
+           <li>Roster file saves are now atomic: the roster index is written to a temporary file and then moved into place, so an interrupted or failed write can no longer truncate or corrupt <code>roster.xml</code>. (PR #15228)</li>
+         </ul>
+
+    <h3>Scripting</h3>
+        <a id="Scripting" name="Scripting"></a>
+        <ul>
+            <li>The <strong>TransitActionsReport.py</strong> has been added. It is used to display
+            the transit section actions.  When the script is run, a dialog displays the list of
+            transits.  If none are selected, a complete report is created.</li>
+            <li>Improve TransitActionsReport.py.
+              <ul>
+                <li>Sort the transit selection list by display names.</li>
+                <li>For sensors and signals in actions, use the display name instead of the system name.</li>
+              </ul>
+            </li>
+            <li>There's a new "WiThrottleMonitorTableSpeedRed.py" script that opens a window displaying
+                connected WiThrottle devices and locomotives (address, speed)
+                </li>
+            <li>Due to the refactoring the JMRI Swing Throttle code, some scripts may be broken, particularly : <ul>
+                <li>ThrottleFrame was moved to package jmri.jmrit.throttle.implementation (was jmri.jmrit.throttle previously)</li>
+                <li>jmri.jmrit.throttle.ThrottleFrameManager.createThrottleFrame() now returns a jmri.jmrit.throttle.interfaces.ThrottleControllerUI 
+                    which is an interface implemented by (among other) jmri.jmrit.throttle.implementation.ThrottleFrame (same class name as previously but moved to a new package) </li>
+                <li>if you need a small throttle, see ThrottleFrameManager.createSimpleThrottleFrame(RosterEntry) or ThrottleFrameManager.createSimpleThrottleFrame(DccLocoAddress)</li>
+                </ul></li>
+            <li>Update the debugging section of Getting Started with Scripting to include the
+            process to get the script line number from the Java exception report.</li>
+            <li>Added a sample script showing how to send and receive NCE messages.</li>
+        </ul>
+
+    <h3>Signals</h3>
+        <a id="Signals" name="Signals"></a>
+        <h4>Signal Systems</h4>
+            <ul>
+                <li>Added a color-discriminated alternate icon set to the basic-enhanced definition</li>
+            </ul>
+
+    <h3>Throttle</h3>
+        <a id="throttle" name="throttle"></a>
+        <ul>
+            <li>Fixed a problem causing the Function Panel's buttons
+                to be improperly laid out.</li>
+            <li>Throttle code was refactored in order to have a clean seperation between JInternalFrame implementation of JMRI throttles and inner JPanel, some interfaces were introduced, inner classes moved to subpackages</li>
+            <li>Jython code was updated accordingly</li>
+            <li>A new SimpleThrottleWindow was introduced, it's leveraging the existing throttle panels in order to diplay a much simpler window, it's accessible through the contextual menu of a selected roster entry (It may be relevant to use in other JMRI screens where a simple throttle GUI is required)</li>
+            <li>The throttle list window allows drag'n drop from one kind of throttle window to another (hence moving from simple GUI to more complex one)</li>
+            <li>UI acquired throttles are actually released on throttle last window close <a href="https://github.com/JMRI/JMRI/issues/15067">(bug fix)</a> </li>
+            <li>New throttle inner components are introduced, particularly a consist function panel allowing to independantly control functions of each locomotive in a consist</li>
+            <li>The "Previous running throttle" in a throttle window toolbar wasn't doing anything, fixed</li>
+        </ul>
+
+   <h3>Virtual Sound Decoder</h3>
+        <a id="VSD" name="VSD"></a>
+        <ul>
+            <li>Added LayoutEditor Traverser support for VSD navigation through a panel.</li>
+            <li>The restriction on Turntable using only an even number of rays has been lifted.</li>
+        </ul>
+
+   <h3>Warrants</h3>
+        <a id="Wt" name="Wt"></a>
+        <ul>
+            <li>Fixed intermittent CI failures in linked/looped warrant tests caused by race conditions and test isolation issues:
+                <ul>
+                    <li><code>stopWarrant()</code> now captures <code>_idxCurrentOrder</code> before
+                        dispatching <code>deAllocate</code> asynchronously, so looped warrants correctly
+                        report <code>warrantComplete</code> rather than <code>warrantEnd</code>.</li>
+                    <li>Fixed a missed-wakeup race in the Engineer block-sync wait: the block entry
+                        check is now re-evaluated inside the <code>synchronized</code> block, so a sensor
+                        that fires between the outer check and <code>wait()</code> can no longer leave the
+                        engineer stuck indefinitely.</li>
+                    <li>Warrant tests now wait for <code>PROPERTY_WARRANT_START</code> before firing
+                        block sensors for the next leg, ensuring sensors are not delivered before the
+                        new leg's engineer has started.</li>
+                    <li><code>IndicatorTrackPaths</code> now skips paint callbacks on disposed editor panels.</li>
+                    <li>Six logix test classes now use an isolated <code>NullProfile</code> per test
+                        rather than the shared <code>./temp/</code> directory, preventing
+                        <code>RosterConfigManager</code> failures on developer machines with real profile data.</li>
+                    <li>The changes above are done in <a href="https://github.com/JMRI/JMRI/pull/15151">PR #15151</a></li>
+                </ul>
+            </li>
+        </ul>
+
+   <h3>Web Access</h3>
+        <a id="WA" name="WA"></a>
+        <ul>
+            <li>panel.js: handle BlockContentsInputIcon</li>
+        </ul>
+
+   <h3>Web Server</h3>
+        <a id="server" name="server"></a>
+        <ul>
+            <li>JSON Schema support has been upgraded from draft-04 to draft-2020-12,
+                providing improved validation capabilities and modern schema features
+                for JSON API responses. This includes updates to 95 JSON schema files
+                and the underlying NetworkNT JSON Schema Validator library (from 1.0.28 to 1.3.3).</li>
+            <li>The web server folder <strong>app</strong> has been
+                removed. It might cause third party applications to
+                fail. If this happens to you, please contact us on 
+                <a href="https://groups.io/g/jmriusers">the JMRI users group</a>.</li>
+            <li>The JSON WebSocket power and throttle endpoints now support an optional
+                <code>prefix</code> field, allowing clients to specify which connection
+                the command should be sent to. WebSocket clients now also receive
+                state-change notifications only for the connection they subscribed to,
+                rather than all configured connections.</li>
+            <li>The web Control Panel now draws shapes and other positionables in
+                their display "level" (z-order), matching the desktop Control
+                Panel Editor. Previously elements were sent in list order, so
+                overlapping items could be stacked incorrectly in the browser.</li>
+        </ul>
+
+    <h3>Where Used</h3>
+        <a id="WhereUsed" name="WhereUsed"></a>
+        <ul>
+            <li>Improve how window is sized so you don't have to manually resize it so often.</li>
+        </ul>
+
+
+   <h3>WiThrottle Server</h3>
+        <a id="WS" name="WS"></a>
+        <ul>
+            <li>Fixed a problem introduced in JMRI 5.15.2  where the 
+                "All Entries" roster group would not appear in WiThrotte 
+                and Engine Driver.</li>
+            <li>Throttle list window is now displaying one column for each throttle window, each column showing the throttles for that window</li>
+            <li>Throttle list window allows drag'n drop from one window to another</li>
+            <li>A throttle preference allows to enable the "ALL" roster group in the roster group seletor of the address panel</li>
+            <li>Some interfaces introduced between sing implementation anf throttle controlers</li>            
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>(Developer) Updated build.xml so Ant builds work with Java 25</li>
+            <li>(Developer) Updated SpotBugs checker to version 4.9.8.  If you use Ant
+                to do SpotBugs checks locally, i.e. by running "ant spotbugs-check",
+                you will need to update your local version to 4.9.8.  See our
+                <a href="https://www.jmri.org/help/en/html/doc/Technical/SpotBugs.shtml">SpotBugs page</a>.
+            <li>(Developer) JMRI distributions, starting with this one, will now
+                be built with the Java 11.0.29 JDK.</li>
+            <li>The jSerialComm library that JMRI uses has been updated from version
+                2.10.4 to version 2.11.4.
+            <li>Added a 'JmriFaceless.command' to the macOS distribution that
+                lets you run a faceless (no GUI) version of JMRI.</li>
+            <li>Removed some code that was used for migration to JMRI 4.20
+                from earlier. If you're updating from before JMRI 4.20,
+                please go through JMRI 4.20 as described in the migration
+                instructions above.</li>
+            <li>Testing - The JUnit4 RetryRule class has been removed as implementing 
+                tests have been updated to JUnit5</li>
+            <li>Some constants in the
+                <a href="https://www.jmri.org/JavaDoc/doc/jmri/RailCom.html">RailCom class</a>
+                have been converted to Enum values.
+                This primarily affects developers and people who've written scripts for
+                processing RailCom information directly.
+                In particular, the orientation values ORIENTA and ORIENTB have
+                been changed to enum values EAST and WEST respectively.
+            <li>Additional columns have been added to the RailCom table to 
+                better show all the information that's gathered from some RailCom reports.
+            <li>The macOS launchers have been updated to allow more Java versions and to 
+                have more useful error messages.
+            <li>When printing on MacOS, selecting a specific page range to print does not work 
+            correctly. This is a known Java issue. The workaround is to print the entire 
+            document to PDF, and then use a PDF reader to select the pages to print.</li>
+            <li>There's a new option in the Load and Store tab of the Preferences
+            that allows you to exclude storing the contents of memories.  Not the configuration
+            of the memories, just their contents. This might be useful if e.g.
+            you're storing your panel&amp;configuration files in a storage system like
+            git that keeps track of changes, and you don't need to track changes in the
+            (transient) memory contents.
+            <li>Added new button icons at <a href="https://jmri.org/resources/icons/buttons">resources/icons/buttons</a>.</li>
+            <li>The class <a href="https://www.jmri.org/JavaDoc/doc/jmri/jmrix/ConnectionStatus.html">jmri.jmrix.ConnectionStatus</a>
+                has been refactorized to use <a href="https://www.jmri.org/JavaDoc/doc/jmri/SystemConnectionMemo.html">SystemConnectionMemo</a>
+                instead of <strong>systemName</strong> and <strong>portName</strong>.</li>
+            <li>Reading and writing of the user-interface.xml preferences file has been made more efficient.  This shouldn't have
+                any effect on users.</li>
+            <li>Fixed the bug causing the <strong>"Premature end of file" in user-interface.xml</strong>.</li>
+        </ul>
+        
+
+<!-- final -->
+   <!--#include virtual="/Footer.shtml" -->
+  </div><!-- closes #mainContent-->
+  </div> <!-- closes #mBody-->
+  <script src="/js/main.js"></script>
+</body>
+</html>
