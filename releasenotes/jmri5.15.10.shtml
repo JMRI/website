@@ -257,12 +257,29 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.15.9+i
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
     <h3>OperationsPro</h3>
+        <a id="Operations" name="Operations"></a>
         <ul>
             <li>Fixed some minor printing issues.
         </ul>
 
-    <h3>Throttles</h3>
-        <a id="Throttles" name="Throttles"></a>
+   <h3>Panel Editor</h3>
+        <a id="PE" name="PE"></a>
+        <ul>
+            <li>Fixed a bug that caused copy-paste not work in Panel
+                Editor on Windows.</li>
+        </ul>
+
+    <h3>Roster</h3>
+        <a id="Roster" name="Roster"></a>
+        <ul>
+            <li>Fixed a crash that would occur if you imported an entire-roster backup
+                while the web server was active. Note that you should restart the 
+                program after importing the entire-roster backup to make sure
+                all parts of the program are aware of the new entries.</li>
+        </ul>
+
+    <h3>Throttle</h3>
+        <a id="throttle" name="throttle"></a>
         <ul>
             <li>The "Previous running throttle" in a throttle window toolbar wasn't doing anything, fixed</li>
         </ul>
