@@ -135,7 +135,8 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri5.16.shtml#warnings">JMRI 5.16 release note</a> for more warnings predating the 5.17 development series,
+See the <a href="jmri5.16.shtml#warnings">JMRI 5.16 release note</a> 
+for more warnings predating the 5.17 development series,
 including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version;
 we strongly recommend you update to at least <a href="jmri5.0.shtml">JMRI 5.0</a>
@@ -144,22 +145,12 @@ See <a href="#update">instructions above</a>.
 
 <ul>
     <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
-        This test release, and all subsequent ones, require the use of
-        Java 11 or later.  
-        We recommend that you use Java 21.
-        Java 8 is explicitly not supported.
-        There's more information on this migration on the
-        <a href="https://www.jmri.org/help/en/html/doc/Technical/TechRoadMap.shtml">JMRI Tech Road Map</a> and
-        <a href="https://www.jmri.org/help/en/html/doc/Technical/JVMCapabilities.shtml">JVM Capabilities</a> pages.
-    </li>
-    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
         If you're using a Firefox web browser and opening JMRI 
         help files locally (not over the web), a Firefox bug
         can sometimes cause it to enter a loop.  There's a 
         workaround in
         <a href="https://groups.io/g/jmriusers/message/239205">this JMRIusers post</a>.
     </li>
-
 </ul>
 
 <a id="download" name="download"></a>

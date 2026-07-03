@@ -116,7 +116,7 @@ from
 
 <h3>Older warnings</h3>
 
-See the <a href="jmri5.12.shtml#warnings">JMRI 5.12 release note</a> for more warnings predating the 5.13 development series,
+See the <a href="jmri5.14.shtml#warnings">JMRI 5.14 release note</a> for more warnings predating the 5.15 development series,
 including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version;
 we strongly recommend you update to <a href="jmri5.0.shtml">JMRI 5.0</a>
@@ -128,6 +128,58 @@ before installing this release, see above.
         can sometimes cause it to enter a loop.  There's a
         workaround in
         <a href="https://groups.io/g/jmriusers/message/239205">this JMRIusers post</a>.
+    <li><span class="since">Since <a href="jmri5.15.1.shtml">JMRI 5.15.1</a></span>
+        The serial communications library that JMRI uses has been updated.
+        If your JMRI installation is having trouble communicating with your
+        model railroad hardware, please contact us on
+        <a href="https://groups.io/g/jmriusers">the JMRI users group</a>.</li>
+    <li><span class="since">Since <a href="jmri5.15.4.shtml">JMRI 5.15.4</a></span>
+        The way mouse clicks are handled has been updated.
+        Although this has been tested with mice and trackpads,
+        it's possible that this will cause problems with other hardware,
+        e.g. touch panels.  If you do encounter new problems with clicking
+        on panels, please contact us on the
+        <a href="https://groups.io/g/jmriusers">JMRI users list</a>.
+    </li>
+    <li><span class="since">Since <a href="jmri5.15.4.shtml">JMRI 5.15.4</a></span>
+        The RailCom handling has been updated to current standards.  In particular, the enum
+        representing the orientation has been changed from ORIENTA and ORIENTB to
+        EAST and WEST respectively and some of the text strings have changed.
+        These may affect any scripts you have that reference
+        the direction of a RailCom report (tag) or parse the status messages.
+    </li>
+    <li><span class="since">Since <a href="jmri5.15.5.shtml">JMRI 5.15.5</a></span>
+        The web server folder <strong>app</strong> has been removed. It
+        might cause third party applications to fail. If this happens to
+        you, please contact us on
+        <a href="https://groups.io/g/jmriusers">the JMRI users group</a>.</li>
+    <li><span class="since">Since <a href="jmri5.15.7.shtml">JMRI 5.15.7</a></span>
+        <strong>Raspberry Pi GPIO pin numbering has changed.</strong>
+        The Pi4J library has been updated from version 1.2 to 2.8.0.
+        Pi4J 2.x uses BCM (Broadcom) GPIO numbers instead of the WiringPi numbers
+        used by Pi4J 1.x.
+        Any panel files or scripts that define Raspberry Pi sensors or turnouts
+        must have their GPIO address numbers updated to the equivalent BCM pin
+        numbers before they will work correctly with this release.
+    </li>
+    <li><span class="since">Since <a href="jmri5.15.7.shtml">JMRI 5.15.7</a></span>
+        <strong>Raspberry Pi: the libgpiod2 library is required for GpioD GPIO support.</strong>
+        This release adds support for the Pi4J GpioD plugin, which uses the modern Linux
+        GPIO character-device interface preferred on kernel 5.10 and later.
+        To enable it, install the native library before starting JMRI:
+        <code>sudo apt install libgpiod2</code>
+        (Raspberry Pi OS / Raspbian) or the equivalent for your distribution.
+        If libgpiod2 is absent, Pi4J will fall back to the LinuxFS provider
+        for digital I/O; all sensors and turnouts will still function.
+    </li>
+    <li><span class="since">Since <a href="jmri5.15.7.shtml">JMRI 5.15.7</a></span>
+        Due to the refactoring the JMRI Swing Throttle code, some scripts may be broken, particularly : <ul>
+        <li>ThrottleFrame was moved to package jmri.jmrit.throttle.implementation (was jmri.jmrit.throttle previously)</li>
+        <li>jmri.jmrit.throttle.ThrottleFrameManager.createThrottleFrame() now returns a jmri.jmrit.throttle.interfaces.ThrottleControllerUI
+            which is an interface implemented by (among other) jmri.jmrit.throttle.implementation.ThrottleFrame (same class name as previously but moved to a new package) </li>
+        <li>if you need a small throttle, see ThrottleFrameManager.createSimpleThrottleFrame(RosterEntry) or ThrottleFrameManager.createSimpleThrottleFrame(DccLocoAddress)</li>
+        </ul></li>
+    </li>
 </ul>
 
 <a id="download" name="download"></a>
@@ -535,6 +587,20 @@ in those is
                 columns from the roster</li>
             <li>Fixed a bug were DecoderPro would include the height of
                 non-visible columns in the row height calculation.</li>
+            <li>If multiple roster entries are selected, contextual menu allows opening a throttle window 
+                with a controller for each selected roster entries.</li>
+            <li>Drag'n drop of roster entries to the throttle list window is now allowed and 
+                will create new throttle control in the targetted window.</li>
+            <li>Added a new (optional) 
+                <a href="https://www.jmri.org/help/en/package/jmri/jmrit/permission/PermissionManager.shtml">Permission</a>
+                to control whether the user can
+                edit columns that have been added to the Roster Table.
+                This can be used to e.g. only allow certain people at a club
+                to mark a locomotive entry as having been inspected.</li>
+            <li>Added a copy/cut/paste pop-up menu to text fields that 
+                didn't previously have a pop-up menu.
+            <li>Fixed a bug where certain roster entry contents would cause 
+                a crash.
         </ul>
 
 
@@ -546,18 +612,6 @@ in those is
 			 <li>Create, terminate, open throttle, extend, terminate from LEPanel.</li>
              <li>Added: physics-based acceleration</li>
 			 <li>Added: Distance based stopping (including overriding stop sensors and slowing to minimum speed within the set distance and stopping by stop sensor)</li>
-            <li>If multiple roster entries are selected, contextual menu allows opening a throttle window with a controler for each selected roster entries.</li>
-            <li>Drag'n drop of roster entries to the throttle list window is now allowed and will create new throttle control in the targetted window.</li>
-            <li>Added a new (optional) 
-                <a href="https://www.jmri.org/help/en/package/jmri/jmrit/permission/PermissionManager.shtml">Permission</a>
-                to control whether the user can
-                edit columns that have been added to the Roster Table.
-                This can be used to e.g. only allow certain people at a club
-                to mark a locomotive entry as having been inspected.</li>
-            <li>Added a copy/cut/paste pop-up menu to text fields that 
-                didn't previously have a pop-up menu.
-            <li>Fixed a bug where certain roster entry contents would cause 
-                a crash.
              <li>Stop train immediately if it has no occupied section, or
                  blocks go active in the wrong order. This behaviour can be turned off
                  in dispatcher options.</li>
@@ -677,7 +731,6 @@ in those is
               and comboboxes in the table on the panel.</li>
            <li>Fixes a bug where local variables might have the wrong values
               when using the action <strong>Execute delayed</strong>.</li>
-          <li></li>
           <li>The action <strong>Throttle</strong> has been improved. It
               has the option to wait for a throttle to be aquired and
               then release it immediately after doing its action. This
@@ -689,7 +742,7 @@ in those is
               information from a string.<br/>
               For more information about regular expressions, see the
               Java class
-              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html"></a>Pattern</li>.
+              <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/regex/Pattern.html">Pattern</a>.</li>
           <li>Update the Turnout Lock action description.</li>
         </ul>
 
