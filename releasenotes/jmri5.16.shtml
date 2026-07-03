@@ -771,6 +771,8 @@ in those is
                 move around loco markers but it's not possible to open the popup menu for
                 loco markers. This is useful for dispatcher that wants to move
                 the loco markers but doesn't want to edit the loco markers.</li>
+            <li>Fixed a bug that caused copy-paste not work in Panel
+                Editor on Windows.</li>
         </ul>
 
     <h3>PanelPro</h3>
@@ -803,7 +805,12 @@ in those is
             button fell through to Continue (<a href="https://github.com/JMRI/JMRI/issues/15148">issue #15148</a>).</li>
             <li>Roster Speed Profiling has been updated to allow profiling from either
             High to Low or Low to High and should now work for both NMRA and non NMRA speed steps.</li>
-           <li>Roster file saves are now atomic: the roster index is written to a temporary file and then moved into place, so an interrupted or failed write can no longer truncate or corrupt <code>roster.xml</code>. (PR #15228)</li>
+            <li>Roster file saves are now atomic: the roster index is written to a temporary file and then moved into place, 
+            so an interrupted or failed write can no longer truncate or corrupt <code>roster.xml</code>. (PR #15228)</li>
+            <li>Fixed a crash that would occur if you imported an entire-roster backup
+                while the web server was active. Note that you should restart the 
+                program after importing the entire-roster backup to make sure
+                all parts of the program are aware of the new entries.</li>
          </ul>
 
     <h3>Scripting</h3>
