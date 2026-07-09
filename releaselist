@@ -26,14 +26,14 @@ production:
    exe: "https://github.com/JMRI/JMRI/releases/download/v4.12/JMRI.4.12+Rb6a9bb1.exe"
 test:
  versions:
+  5.15.11:
+   tgz: "https://github.com/JMRI/JMRI/releases/download/v5.15.11/JMRI.5.15.11+Re6f137d282.tgz"
+   dmg: "https://github.com/JMRI/JMRI/releases/download/v5.15.11/JMRI.5.15.11+Re6f137d282.dmg"
+   exe: "https://github.com/JMRI/JMRI/releases/download/v5.15.11/JMRI.5.15.11+Re6f137d282.exe"
   5.15.10:
    tgz: "https://github.com/JMRI/JMRI/releases/download/v5.15.10/JMRI.5.15.10+Re5fcc00c8a.tgz"
    dmg: "https://github.com/JMRI/JMRI/releases/download/v5.15.10/JMRI.5.15.10+Re5fcc00c8a.dmg"
    exe: "https://github.com/JMRI/JMRI/releases/download/v5.15.10/JMRI.5.15.10+Re5fcc00c8a.exe"
-  5.15.9:
-   tgz: "https://github.com/JMRI/JMRI/releases/download/v5.15.9/JMRI.5.15.9+R1cad2d78d8.tgz"
-   dmg: "https://github.com/JMRI/JMRI/releases/download/v5.15.9/JMRI.5.15.9+R1cad2d78d8.dmg"
-   exe: "https://github.com/JMRI/JMRI/releases/download/v5.15.9/JMRI.5.15.9+R1cad2d78d8.exe"
 
 # This file contains information about the last few JMRI (https://jmri.org) releases.
 # JMRI is distributed under license. More information is at https://jmri.org/copyright.shtml

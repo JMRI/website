@@ -26,7 +26,9 @@
     <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 5.15.11 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -220,25 +222,23 @@ See <a href="#update">instructions above</a>.
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
 
-<!-- 
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.15.10/JMRI.5.15.10+Re5fcc00c8a.dmg">https://github.com/JMRI/JMRI/releases/download/v5.15.10/JMRI.5.15.10+Re5fcc00c8a.dmg</a><br/>
-  sha256: 34cf69171548c39a1aa384d8c55832bdbbb84711b30ea9b427bcb0832833fada </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.15.11/JMRI.5.15.11+Re6f137d282.dmg">https://github.com/JMRI/JMRI/releases/download/v5.15.11/JMRI.5.15.11+Re6f137d282.dmg</a><br/>
+  sha256: 86fcbc3397f4277979c1ed7936091599114bfa6001e6aba21262317137eb4289 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.15.10/JMRI.5.15.10+Re5fcc00c8a.exe">https://github.com/JMRI/JMRI/releases/download/v5.15.10/JMRI.5.15.10+Re5fcc00c8a.exe</a><br/>
-   sha256: 84f40affcd428decb4482a6d138fbcb887656a9c7a9db381c6fd3fbf01d6b873</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.15.11/JMRI.5.15.11+Re6f137d282.exe">https://github.com/JMRI/JMRI/releases/download/v5.15.11/JMRI.5.15.11+Re6f137d282.exe</a><br/>
+   sha256: fe7774678f3a83605bedb4017c21e264e2c4c173c7e673caf6f2a2e480d12a24</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.15.10/JMRI.5.15.10+Re5fcc00c8a.tgz">https://github.com/JMRI/JMRI/releases/download/v5.15.10/JMRI.5.15.10+Re5fcc00c8a.tgz</a><br/>
-   sha256: 8456572b8782ef0c95ee439f1c0da38a894b05bc1e43d20842d745e43354ad28</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.15.11/JMRI.5.15.11+Re6f137d282.tgz">https://github.com/JMRI/JMRI/releases/download/v5.15.11/JMRI.5.15.11+Re6f137d282.tgz</a><br/>
+   sha256: 187f768acecef72ad337f2f71e432dd0e0521f80a68bb3cbac76fea275d45f71</li>
 </ul>
 </div>
 These files are located in the
-<a href="https://github.com/JMRI/JMRI/releases/tag/v5.15.10">JMRI 5.15.10 GitHub release</a>.
- -->
+<a href="https://github.com/JMRI/JMRI/releases/tag/v5.15.11">JMRI 5.15.11 GitHub release</a>.
 
 <!-- 
 <p>A Docker container can be obtained from
@@ -251,9 +251,11 @@ on the
 <a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.15.9/">CI project page</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
 
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri5.15.10.shtml">Test Release 5.15.10</a>:</h2>
