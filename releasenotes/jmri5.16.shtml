@@ -110,12 +110,6 @@ from
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this production release:</h3>
 
-<ul>
-    <p>None Yet
-</ul>
-
-<h3>Older warnings</h3>
-
 See the <a href="jmri5.14.shtml#warnings">JMRI 5.14 release note</a> for more warnings predating the 5.15 development series,
 including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version;
@@ -202,9 +196,7 @@ before installing this release, see above.
 </ul>
 </div>
 These files are located in the
-<a href="https://github.com/JMRI/JMRI/releases/tag/v5.14">JMRI 5.14 GitHub release</a>.
-A Docker container can also be obtained from
-<a href="https://hub.docker.com/r/jsa1987/jmri-docker">https://hub.docker.com/r/jsa1987/jmri-docker</a>.
+<a href="https://github.com/JMRI/JMRI/releases/tag/v5.16">JMRI 5.16 GitHub release</a>.
  -->
 
 <!-- 
@@ -212,11 +204,9 @@ A Docker container can also be obtained from
    <a href="https://hub.docker.com/r/jsa1987/jmri-docker">https://hub.docker.com/r/jsa1987/jmri-docker</a>.
  -->
 
-<!--
 Preliminary build files (not the final released files) can be found
 on the
-<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.14">CI project page</a>.
- -->
+<a href="https://builds.jmri.org/jenkins/job/testreleases/job/5.16">CI project page</a>.
 
 <!--
 During development leading to the actual release, you can find test download files on the
