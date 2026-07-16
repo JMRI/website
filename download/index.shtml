@@ -52,17 +52,18 @@
 
 	<h1>Latest News</h1>
 	<dl>
-		<dt>Production release 5.14 available</dt>
+		<dt>Production release 5.16 available</dt>
 	    <dd>
-	    <p>On December 13, 2025 production release 5.14 was made available.</p>
+	    <p>On July 16, 2026 production release 5.16 was made available.</p>
 
 	    <p>
-	    Release 5.14 is the current "production" release, recommended
+	    Release 5.16 is the current "production" release, recommended
 	    for first-time users.
 	    Please see the
-	    <a href="../releasenotes/jmri5.14.shtml">release note</a>
+	    <a href="../releasenotes/jmri5.16.shtml">release note</a>
 	    for additional information.</p>
 
+<!-- 
 	    <dt>Test release 5.15.11 is available</dt>
 	    <dd>
 	    <p>Test release 5.15.11 was made available on July 9, 2026.
@@ -78,14 +79,15 @@
 	    please see the
 	    <a href="../releasenotes/jmri5.15.11.shtml">release note</a>.
 
-	    <a href="#prod-rel">Release 5.14</a> is the current "production" release, recommended
+	    <a href="#prod-rel">Release 5.16</a> is the current "production" release, recommended
 	    for first-time users.
+ -->
 
 	</dl>
 
   <div class="list">
     <a id="prod-rel"></a>
-    <h2>JMRI 5.14 - Production release</h2>
+    <h2>JMRI 5.16 - Production release</h2>
     <dl>
     <dt class="im"><img src="../images/ico-jmri.gif" alt="JMRI logo"></dt>
     <dd>
@@ -93,28 +95,28 @@
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.dmg">https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.dmg</a><br/>
-  sha256: ca715ab67968e97bfe2d2f04809f9980ab19b56523c9d9b09ca2727d6b0a9dcf </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.16/JMRI.5.16+R909e15189e.dmg">https://github.com/JMRI/JMRI/releases/download/v5.16/JMRI.5.16+R909e15189e.dmg</a><br/>
+  sha256: ca227f21aa7a8fc3460513b6aff8692055448c836af053b72642b5a2ff414078 </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.exe">https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.exe</a><br/>
-   sha256: cff758d57c0ae21350275e21173cb9abb278b5c8ff5cf5b90e2ed7816e475136</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.16/JMRI.5.16+R909e15189e.exe">https://github.com/JMRI/JMRI/releases/download/v5.16/JMRI.5.16+R909e15189e.exe</a><br/>
+   sha256: 6274d4b2bd0a5c3714fd54b9f1146fa957a9d126dacecff63547410a39076a4b</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.tgz">https://github.com/JMRI/JMRI/releases/download/v5.14/JMRI.5.14+Rdea51dcccf.tgz</a><br/>
-   sha256: 757ae54505f8896a91167bd1ca3b8ad7470b1f635526ef07497d72bf9370ba0e</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.16/JMRI.5.16+R909e15189e.tgz">https://github.com/JMRI/JMRI/releases/download/v5.16/JMRI.5.16+R909e15189e.tgz</a><br/>
+   sha256: 934389791e36eb8c5fb1f3c0925b500c7f3ed9716ba1051154be1f38ef2da104</li>
 </ul>
 </div>
 
     <strong>Notes:</strong>
     <ul>
         <li>For more information on the release contents, please see the
-            <a href="../releasenotes/jmri5.14.shtml">release note</a>.</li>
+            <a href="../releasenotes/jmri5.16.shtml">release note</a>.</li>
         <li>For instructions on using these files, please see the 
             <a href="../help/en/html/setup/index.shtml">setup and installation pages linked from the upper left of this page</a>.
         <li>These files can be used for either a new installation or updating an existing installation.
             For updating instructions, please see the 
-            <a href="../releasenotes/jmri5.14.shtml#update">release note</a>.</li>
+            <a href="../releasenotes/jmri5.16.shtml#update">release note</a>.</li>
         <li>This release requires at least Java 11 to work.
             Java 21 is recommended.
             (See <a href="http://jmri.org/java">our page on downloading and installing Java</a>)</li>
@@ -187,10 +189,12 @@
 	    are announced in the
 	    <a href="https://groups.io/g/jmriusers">JMRI users</a> Groups.io group.</p>
 
+<!-- 
     <p>
         The most current test release is JMRI 5.15.11.  More information on it,
         including the links to download a copy, can be found in the
         <a href="../releasenotes/jmri5.15.11.shtml">release note</a>.
+ -->
 
 	<p>
 	   For more information on the rough development schedule, please see the
