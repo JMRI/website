@@ -109,17 +109,16 @@ that can arise from skipping these versions.
 <a id="problems" name="problems"></a>
 <h3>New problems with this release</h3>
 <ul>
-    <li>None yet</li>
+    <li>Using the new DS64 support in DecoderPro can
+        sometimes write the wrong output addresses to the DS64.</li>
 </ul>
-<!--
-If any of those affect you, please either
+If this affects you, please either
 wait for
-<a href="jmri5.17.3.shtml">JMRI 5.17.3/a>, due out shortly after this one,
-or (once there's a fix for the problem) pick up a
+<a href="jmri5.17.3.shtml">JMRI 5.17.3</a>, due out the 2nd Saturday in October
+or pick up a
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">JMRI development build installer</a>
 from
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">Jenkins</a>.</p>
- -->
 
 <a id="warnings" name="warnings"></a>
 <h3>New warnings for this release:</h3>
