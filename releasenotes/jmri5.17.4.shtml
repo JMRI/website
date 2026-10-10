@@ -123,13 +123,20 @@ from
 <h3>New warnings for this release:</h3>
 
 <ul>
-    <!-- While this release is in development, the     -->
-    <!-- list of new warnings is kept in               -->
-    <!-- help/en/releasenotes/current-draft-warnings.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
-
-    <!--#include virtual="/help/en/releasenotes/current-draft-warnings.shtml" -->
+    <li>This version has an updated Windows launcher, which might 
+        cause Windows to emit some security warnings until it's 
+        been used enough times that Windows calms down.
+    </li>
+    <li>Memory Input Icons, Global Variable Input Icons and 
+        Block Contents Input Icons in Layout Editor, Panel Editor
+        and Control Panel Editor have for a long time 
+        shown a shadow border by default instead of no border 
+        by default.  This made it impossible to display them
+        without a border, unlike other editor icons.
+        This has been fixed.  If you want a border on one of these icons
+        and no longer see one, use the contextual menu on the
+        icon to set the border width to a non-zero value.
+    </li>
 </ul>
 
 
@@ -191,13 +198,206 @@ These are development files, and might not be working at any particular time.</p
 The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.17.4+is%3Amerged">full list of included changes</a> is available from our
 <a href="https://github.com/JMRI/JMRI">GitHub code repository</a>.
 
-    <!-- While this release is in development, the     -->
-    <!-- new release note items are kept in            -->
-    <!-- help/en/releasenotes/current-draft-note.shtml -->
-    <!-- in the JMRI/JMRI repository. Please edit      -->
-    <!-- there.  Changes to this file won't be merged. -->
 
-    <!--#include virtual="/help/en/releasenotes/current-draft-note.shtml" -->
+    <h3>Hardware Support</h3>
+
+        <h4>DCC++ and DCC-EX</h4>
+            <ul>
+                <li>Correct E-Stop command sent when throttle is in reverse.</li>
+            </ul>
+
+        <h4>Lenz XPressNet</h4>
+            <ul>
+                <li>A throttle waiting for a reply which never arrives now gives up
+                    and resumes sending: after 5 seconds once the connection has
+                    nothing left in hand, 15 seconds otherwise. On a serial XpressNet
+                    connection a broadcast message arriving while a command is in
+                    flight could be taken for that command's reply, leaving the
+                    throttle waiting forever and silently holding back every
+                    command queued afterwards for the rest of the session.</li>
+                <li>Roco and Z21 throttles now stop their timers when they are
+                    disposed of, instead of leaving them running for the rest of
+                    the session.</li>
+            </ul>
+
+        <h4>LocoNet</h4>
+            <ul>
+                <li>Fixed a problem where an Intellibox-II would
+                    have power on/off problems after CV programming.</li>
+                <li>A LocoNet connection now reconnects if the connection goes down and then comes up again.</li>
+                <li>Add summary panel to SlotMon, and fix up the Layout Reset and Show Idle.</li>
+            </ul>
+
+        <h4><a href="http://openlcb.org">OpenLCB</a> / LCC</h4>
+            <ul>
+                <li>The "Make Sensor" and "Make Turnout" buttons in the configuration
+                    panel used to require a non-empty description field to put a
+                    user name on the Sensor/Turnout they'd create. Absent that, they
+                    wouldn't appear. A description is no longer required; if one
+                    is not present, the Sensor or Turnout will be created without
+                    a user name.</li>
+                <li>Updated OpenLCB / LCC Reporters to set the RailCom orientation instead
+                    of direction (WEST/EAST if the appropriate bit is set in
+                    the report).</li>
+                <li>Updated OpenLCB / LCC Reporters to query current occupancy and present
+                    locomotives from layout hardware upon creation and startup, correctly
+                    populating the initial report and collection.</li>
+                <li>Updated the OpenLCB jar library to pick up a fix to the
+                    read/write timeout value calculation.</li>
+            </ul>
+
+    <h3>New / Updated decoder definitions</h3>
+
+        <h4>Public Domain and DIY decoders</h4>
+            <ul>
+                <li>Added EL-HO decoder for cars Ryb&aacute;k</li>
+            </ul>
+
+    <h3>Control Panel Editor</h3>
+        <a id="CPE" name="CPE"></a>
+        <ul>
+            <li>Memory Input Icons, Global Variable Input Icons and
+                Block Contents Input Icons have for a long time
+                shown a shadow border by default instead of no border
+                by default.  This made it impossible to display them
+                without a border, unlike other editor icons.
+                This has been fixed.  If you want a border on one of these icons
+                and no longer see one, use the contextual menu on the
+                icon to set the border width to a non-zero value.
+            <li>Memory Input Icons, Global Variable Input Icons and
+                Block Contents Input Icons now work properly when the
+                panel has been zoomed larger or smaller.
+        </ul>
+
+    <h3>CTC Tool</h3>
+        <a id="PE-CTC" name="PE-CTC"></a>
+        <ul>
+            <li>Updated the "newer" CTC Tool's web page to show that the "CTCParts"
+                web site is functioning.</li>
+        </ul>
+
+    <h3>DecoderPro</h3>
+        <a id="DecoderPro" name="DecoderPro"></a>
+        <ul>
+            <li>DecoderPro's locomotive files now track the
+                last-seen state of variable values.  This has
+                no effect right now, but may be useful information
+                in the future.</li>
+            <li>The way that DecoderPro tracks the state of 
+                CVs and variables has been updated to be more
+                comprehensive.  This should have no 
+                impact on users now,  but allows us to store
+                a more accurate state (see item above).</li>
+            <li>Fixed an exception when you closed the Labels&amp;Media pane
+                without saving first.</li>
+        </ul>
+
+   <h3>Dispatcher</h3>
+        <a id="Dispatcher" name="Dispatcher"></a>
+        <ul>
+             <li>Fixed a bug where auto trains could not be run after the
+                 Dispatcher window had been closed and reopened in the
+                 same JMRI session.</li>
+        </ul>
+
+    <h3>Dispatcher System</h3>
+        <a id="Dispatcher_System" name="Dispatcher_System"></a>
+        <ul>
+             <li></li>
+        </ul>
+
+   <h3>Internationalization</h3>
+        <a id="I18N" name="I18N"></a>
+        <ul>
+            <li>Czech language improvements.</li>
+        </ul>
+
+    <h3>Layout Editor</h3>
+        <a id="LE" name="LE"></a>
+        <ul>
+            <li>Memory Input Icons, Global Variable Input Icons and
+                Block Contents Input Icons have for a long time
+                shown a shadow border by default instead of no border
+                by default.  This made it impossible to display them
+                without a border, unlike other editor icons.
+                This has been fixed.  If you want a border on one of these icons
+                and no longer see one, use the contextual menu on the
+                icon to set the border width to a non-zero value.</li>
+            <li>The popup menu for Memory Input Icons now lets you set the number of
+                columns that the GUI will display. Note that the fixed width
+                interacts with selection:  If you select a wider fixed width,
+                blank areas will display on either side.</li>
+            <li>A bug introduced in JMRI 5.17.3 would cause display problems with
+                layout editor windows that had been zoomed. This has been fixed.</li>
+            <li>Memory Input Icons, Global Variable Input Icons and
+                Block Contents Input Icons now work properly when the
+                panel has been zoomed larger or smaller.</li>
+            <li>Add the input option for LogixNG global variables.</li>
+            <li>Improve the selection process for choosing label icons or input icons
+                for memory variables, block contents and LogixNG global variables.</li>
+            <li>The background colors on LE panels and their web versions did not always
+                match.  For example, a "light gray" background was substantially lighter
+                on the web.  This is now fixed for background and track-drawing colors.
+                Some icon backgrounds and borders can still have mismatches.
+        </ul>
+
+    <h3>LogixNG</h3>
+        <a id="LogixNG" name="LogixNG"></a>
+        <ul>
+          <li>Fix issues relating to the ActionPositionable and ActionPositionableByClass actions.</li>
+        </ul>
+
+   <h3>Panel Editor</h3>
+        <a id="PE" name="PE"></a>
+        <ul>
+            <li>Memory Input Icons, Global Variable Input Icons and
+                Block Contents Input Icons have for a long time
+                shown a shadow border by default instead of no border
+                by default.  This made it impossible to display them
+                without a border, unlike other editor icons.
+                This has been fixed.  If you want a border on one of these icons
+                and no longer see one, use the contextual menu on the
+                icon to set the border width to a non-zero value.</li>
+                <li>Add the input icon option for the blocks</li>
+        </ul>
+
+    <h3>Turnouts, Lights, Sensors and other elements</h3>
+        <a id="TLae" name="TLae"></a>
+        <ul>
+            <li>In the Reporters table, the Report column now displays all reported objects
+                concatenated with " + " when the reporter is a <code>CollectingReporter</code>.</li>
+        </ul>
+
+   <h3>Web Server</h3>
+        <a id="server" name="server"></a>
+        <ul>
+            <li>Some improvements to how the various input icons are handled on panels:
+                <ul>
+                    <li>The padding on the end of the icon now agrees with what's
+                        on the parent JMRI panel.
+                    <li>The default drop shadow on the web has been dropped to
+                        make the appearance agree with the parent JMRI panel.
+                    <li>The default border now agrees with the border on the
+                        parent JMRI panel.
+                </ul>
+            </li>
+            <li>If an icon is defined in JMRI as having no background,
+                it's shown as transparent on the JMRI screen.  Previously,
+                this was shown as a white background on the web browser screen.
+                This has been corrected so that it now shows on the web browser
+                screen as transparent, giving the same appearance as on
+                the JMRI screen.
+            </li>
+        </ul>
+
+    <h3>Miscellaneous</h3>
+        <a id="Misc" name="Misc"></a>
+        <ul>
+            <li>The "noverify" option has been removed from the JMRI program
+                launchers so that JMRI can use Java 27 and later.</li>
+            <li>For JMRI developers: CI tests now fails on WARN logging messages.</li>
+        </ul>
+
 
    <!--#include virtual="/Footer.shtml" -->
   </div><!-- closes #mainContent-->
