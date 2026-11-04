@@ -143,22 +143,6 @@ If you are offered downloads for both x64 and Arm64, <b>choose x64</b> unless yo
 positive you have ARM architecture. AMD is x64 architecture and is not the same as ARM architecture.
 <ul>
     <li>
-        <a href="https://www.azul.com/downloads/?version=java-21-lts&package=jre#zulu">Azul</a>
-        - Go to the bottom of the page, past the advertising, select
-        your OS type (Windows, macOS, Linux), then if needed the computer CPU
-        architecture (we recommend 64-bit if you have a 64-bit computer), then pick the
-        appropriate download from the page.
-
-        <p>Windows users should pick the ".msi" installer, as it properly
-        sets up various registry values. Rebooting after installing is recommended.</p>
-        <p>macOS users might find the Microsoft installer (next item)
-        easier to use than the Azul download.</p>
-
-        <p>macOS users should pick the ".dmg" installer, as it will use the
-        usual macOS install process to put all the pieces where they belong.
-
-    </li>
-    <li>
         The <a href="https://learn.microsoft.com/en-us/java/openjdk/download">Microsoft Java Download Page</a>
         offers a selection of Java installer for Windows, macOS and Linux.  Scroll down to the
         OpenJDK21 section, then select the download link that corresponds to your computer's
@@ -169,6 +153,22 @@ positive you have ARM architecture. AMD is x64 architecture and is not the same 
 
         <p>macOS users should pick the ".pkg" installer, as it will use the
         usual macOS install process to put all the pieces where they belong.
+    </li>
+    <li>
+        <a href="https://www.azul.com/downloads/?version=java-21-lts&package=jre#zulu">Azul</a>
+        - Go to the bottom of the page, past the advertising, select
+        your OS type (Windows, macOS, Linux), then if needed the computer CPU
+        architecture (we recommend 64-bit if you have a 64-bit computer), then pick the
+        appropriate download from the page.
+
+        <p>Windows users should pick the ".msi" installer, as it properly
+        sets up various registry values. Rebooting after installing is recommended.</p>
+
+        <p>macOS users should pick the ".dmg" installer, as it will use the
+        usual macOS install process to put all the pieces where they belong.
+        If a .dmg download is not offered, use an installer from the 
+        Microsoft Java Download Page discussed above.
+
     </li>
     <li>
         <a href="https://adoptium.net/temurin/releases?version=21&os=any&arch=any">Adoptium (Eclipse)</a>
