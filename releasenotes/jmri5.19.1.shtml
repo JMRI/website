@@ -22,11 +22,13 @@
       Release Notes for JMRI 5.19.1 release
       </h1>
 
-    <p>Date: MM DD, 2026</p>
-    <p>From: Release Pumpkin</p>
+    <p>Date: November 15, 2026</p>
+    <p>From: Bob Jacobsen</p>
     <p>Subject: Test Release 5.19.1 of JMRI/DecoderPro is available for download.</p>
 
+<!-- 
 <p><b>This is a draft release note only; the download links do not yet work</b></p>
+ -->
 
 <h2>Notes:</h2>
 
@@ -40,7 +42,7 @@ back to an earlier version.</p>
 It requires at least Java 11 to work.
 We recommend that you use Java 21 if possible.
 (See <a href="http://jmri.org/java">our page on downloading Java</a>)
-We expect this series to result in the next JMRI  production release in December 2026.
+We expect this series to result in the next JMRI  production release in July 2027.
 (See the <a href="https://github.com/JMRI/JMRI/milestones?direction=asc&sort=due_date&state=open"><em>tentative</em> release schedule</a>)
 </p>
 
@@ -142,7 +144,7 @@ from
 <h3>Older warnings</h3>
 
 See the <a href="jmri5.18.shtml#warnings">JMRI 5.18 release note</a> 
-for more warnings predating the 5.18 development series,
+for more warnings predating this 5.20 development series,
 including pointers to various migration issues.
 These may be relevant to you if you're updating from an earlier version;
 we strongly recommend you update to at least <a href="jmri5.0.shtml">JMRI 5.0</a>
@@ -161,35 +163,35 @@ See <a href="#update">instructions above</a>.
 
 <a id="download" name="download"></a>
 <h2>Download links:</h2>
-
-<!-- 
+ 
 <div class="wide">
 <ul>
 <li>OS X / macOS: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.15.2/JMRI.5.15.2+Rfe7ff30e7d.dmg">https://github.com/JMRI/JMRI/releases/download/v5.15.2/JMRI.5.15.2+Rfe7ff30e7d.dmg</a><br/>
-  sha256: edc3d8c0cd4b408a3401b650be264c59224846df2b3dc197d184452f3ece8ca6 </li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.19.1/JMRI.5.19.1+R873303dbb6.dmg">https://github.com/JMRI/JMRI/releases/download/v5.19.1/JMRI.5.19.1+R873303dbb6.dmg</a><br/>
+  sha256: 4decb3122488310af90d908fec44492b88777d7c8acfa8460b729fd847781d7a </li>
 
 <li>Windows: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.15.2/JMRI.5.15.2+Rfe7ff30e7d.exe">https://github.com/JMRI/JMRI/releases/download/v5.15.2/JMRI.5.15.2+Rfe7ff30e7d.exe</a><br/>
-   sha256: c813c2688e5a0d23c26675c97ece6c6cf24018e6e0e5bc05b76b0f87fb364dbf</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.19.1/JMRI.5.19.1+R873303dbb6.exe">https://github.com/JMRI/JMRI/releases/download/v5.19.1/JMRI.5.19.1+R873303dbb6.exe</a><br/>
+   sha256: 6aa47b0cc527597728bb67946a312b11f78f55ccaec087c93b10b87e0440cf7b</li>
 
 <li>Linux: <a
-	href="https://github.com/JMRI/JMRI/releases/download/v5.15.2/JMRI.5.15.2+Rfe7ff30e7d.tgz">https://github.com/JMRI/JMRI/releases/download/v5.15.2/JMRI.5.15.2+Rfe7ff30e7d.tgz</a><br/>
-   sha256: d895c57d8d48f25d79c138ba502f8c96e65e9d3d7796d0d83cc77328c30da56b</li>
+	href="https://github.com/JMRI/JMRI/releases/download/v5.19.1/JMRI.5.19.1+R873303dbb6.tgz">https://github.com/JMRI/JMRI/releases/download/v5.19.1/JMRI.5.19.1+R873303dbb6.tgz</a><br/>
+   sha256: ca888b16e4b6cfccc2c1a0a898611f83a38da8e9a2cbabce1224e69b89634af6</li>
 </ul>
 </div>
 These files are located in the 
 <a href="https://github.com/JMRI/JMRI/releases/tag/v5.19.1">JMRI 5.19.1 GitHub release</a>.
- -->
 
 <!-- 
 <p>A Docker container can be obtained from
    <a href="https://hub.docker.com/r/jsa1987/jmri-docker">https://hub.docker.com/r/jsa1987/jmri-docker</a>.
  -->
 
+<!-- 
 During development leading to the actual release, you can find test download files on the
 <a href="https://builds.jmri.org/jenkins/job/development/job/packages/">continuous integration build page</a>.
 These are development files, and might not be working at any particular time.</p>
+ -->
 
 <a id="changes" name="changes"></a>
 <h2>Changes since <a href="jmri5.18.shtml">Production Release 5.18</a>:</h2>
