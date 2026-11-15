@@ -144,6 +144,19 @@ before installing this test release.
 See <a href="#update">instructions above</a>.
 
 <ul>
+    <li><span class="since">Since <a href="jmri5.19.1.shtml">JMRI 5.19.1</a></span>
+        <strong>Dispatcher: with "Place train name in allocated Blocks" on,
+        the value of an allocated Block no longer holds the train it is
+        allocated to.</strong>
+        A Logix, LogixNG or script that reads the value of an allocated Block
+        now gets only the train Block tracking has placed there: nothing
+        where the Block is empty, or where Block tracking could not tell
+        which train entered. To get what the value gave before, use
+        <code>getDisplayValue()</code>; for only the train the Block is
+        allocated to, <code>getAllocatedValue()</code>. Dispatcher logs a
+        note the first time this applies in a session. With the option off,
+        nothing changes. See the Dispatcher section of the release notes.
+    </li>
     <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
         If you're using a Firefox web browser and opening JMRI 
         help files locally (not over the web), a Firefox bug
