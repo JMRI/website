@@ -355,7 +355,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.19.1+i
                  free as far as one the train can stop in, and then gives it
                  all of them together; until then the train waits in the
                  Section before, if that is one it can stop in.</li>
-             <li></li>
              <li>A Section can have a stop point for each direction, set in
                  the Section's Add/Edit window in mm or in inches (to the
                  nearest 1/32): where the front of a train
@@ -420,7 +419,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.19.1+i
     <h3>Layout Editor</h3>
         <a id="LE" name="LE"></a>
         <ul>
-            <li></li>
             <li>Layout Editor panels now repaint only the track of a Block
                 whose occupancy or other state changed, rather than the whole
                 panel.</li>
@@ -500,7 +498,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.19.1+i
                 which made JMRI stutter. The window's place and size are
                 saved when it starts moving, once it stops, and when it
                 closes.</li>
-            <li></li>
         </ul>
 
     <h3>Roster</h3>
@@ -521,8 +518,8 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.19.1+i
                 itself among the masts that must show danger, so the mast
                 put itself back to danger each time it cleared (seen since
                 5.17.5, with the turnouts set for that route).</li>
-            <li></li>
         </ul>
+        
         <h4>Signal Systems</h4>
             <ul>
                 <li>BR-2003 now defines the junction indicator (feather)
@@ -530,7 +527,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.19.1+i
                     use. A feather mast's aspect now has a speed (Normal)
                     and a description, where before the signal system
                     didn't know it.</li>
-                <li></li>
             </ul>
 
         <h4>Signal Heads</h4>
@@ -548,7 +544,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.19.1+i
                     Comments JMRI wrote on its output Turnouts. Editing an Output
                     Matrix Mast clears them from outputs it no longer uses. The
                     Turnouts stay; Comments entered by the user are left alone.</li>
-                <li></li>
             </ul>
 
     <h3>Throttle</h3>
@@ -627,7 +622,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.19.1+i
                 such as 1:22.5, is kept and shown as Custom. L (1:38),
                 which Warrants offered, is added to JMRI's list, so
                 Dispatcher's Options and the Timetable offer it too.</li>
-            <li></li>
         </ul>
 
    <h3>Web Server</h3>
@@ -677,7 +671,6 @@ The <a href="https://github.com/JMRI/JMRI/issues?utf8=✓&q=milestone%3A5.19.1+i
             <li>A fault in one of JMRI's timed tasks no longer stops every
                 later delayed action until JMRI is restarted: JMRI now starts
                 its common timer again, and logs an error saying so.</li>
-            <li></li>
             <li>Monitors and the system console: a full window no longer
                 slows down as each line is added; it now keeps up to a
                 tenth more lines than its maximum.</li>
