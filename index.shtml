@@ -136,6 +136,25 @@
             </div>
 
            <div class="flex-item-50">
+                <h4 onclick="collapse('download2')" class="button card-1">JMRI 5.17.5 Test Release</h4>
+                <div id="download2" class="hidden">
+                    <p><a href="releasenotes/jmri5.19.1.shtml"></a></p>
+                    Released on  November 3, 2026.
+                    <p>
+                    This is the next in a series of test releases working toward
+                    a 5.18 production release probably in December 2026.
+
+                    <p>
+                    For more information on this test release, please read the
+                    <a href="releasenotes/jmri5.17.5.shtml">JMRI 5.17.5 Release Note</a>,
+                    which also contains the download links.
+                    </p>
+                    <a href="#download">Release 5.16</a> is the current "production" release, recommended
+                    for first-time users.
+                </div>
+            </div>
+
+           <div class="flex-item-50">
                 <h4 onclick="collapse('download2')" class="button card-1">JMRI 5.19.1 Test Release</h4>
                 <div id="download2" class="hidden">
                     <p><a href="releasenotes/jmri5.19.1.shtml"></a></p>
