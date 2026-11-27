@@ -117,11 +117,48 @@ we strongly recommend you update to <a href="jmri5.0.shtml">JMRI 5.0</a>
 before installing this release, see above.
 
 <ul>
-    <li>If you're using a Firefox web browser and opening JMRI
+    <li><span class="since">Since <a href="jmri5.17.5.shtml">JMRI 5.17.5</a></span>
+        <strong>LogixNG formulas: &amp;&amp; and || no longer always
+        evaluate both sides.</strong>
+        The right-hand side is now skipped when the left-hand side already
+        decides the result. A formula that relies on both sides running, for
+        example to call methods for their side effects, may now behave
+        differently. See the LogixNG section of the release notes for an
+        example and how to change it.
+    </li>
+    <li><span class="since">Since <a href="jmri5.17.5.shtml">JMRI 5.17.5</a></span>
+        If you use OpenLCB/LCC native signal masts:  These can no longer 
+        be defined to use the event ID's that start with 00.  
+        The value 00.00.00.00.00.00.00.00 was previously the default 
+        for "this event ID hasn't been configured".
+        The default is now a blank entry field that doesn't
+        produce or consume an event.  If you have 
+        defined any of the signal mast entries to start with 00,
+        they will be migrated to be empty fields that no longer 
+        produce or consume an event.
+    </li>
+    <li><span class="since">Since <a href="jmri5.17.5.shtml">JMRI 5.17.5</a></span>
+        <strong>Layout Editor: an allocated block no longer automatically
+        loses its extra color when it becomes occupied.</strong>
+        In a Layout Block, "allocated" means the block is set to use its
+        extra color, for example by the LogixNG Block action "Alternate Color
+        On" or by a script, and it is what the LogixNG Block expression
+        "Is Allocated" tests. Before, with advanced block routing on, a block
+        set this way was switched back to its normal color without notice as
+        soon as it became occupied. It now keeps its extra color until it is
+        turned off, for example by the LogixNG Block action "Alternate Color
+        Off". LogixNG and scripts that set it must now also clear it, for
+        example when the train has left. Dispatcher and Entry/Exit are not
+        affected: they clear their own blocks. See the Layout Editor section
+        of the release notes.
+    </li>
+    <li><span class="since">Since <a href="jmri4.99.1.shtml">JMRI 4.99.1</a></span>
+        If you're using a Firefox web browser and opening JMRI 
         help files locally (not over the web), a Firefox bug
-        can sometimes cause it to enter a loop.  There's a
+        can sometimes cause it to enter a loop.  There's a 
         workaround in
         <a href="https://groups.io/g/jmriusers/message/239205">this JMRIusers post</a>.
+    </li>
 </ul>
 
 <a id="download" name="download"></a>
@@ -283,6 +320,13 @@ in those is
                     request that has just arrived from opening the node number
                     dialogue. The "no confirmation from node" warning no longer
                     holds up other timed tasks in JMRI while it is open.</li>
+                <li>CBUS network connections have a new setting in Additional
+                    Connection Settings, Send frames. Some CANPi software holds back a
+                    frame that arrives while it is still handling the one before, until
+                    the next frame arrives, so events sent from JMRI are acted on late,
+                    one or more clicks behind. If that happens with a gateway that worked
+                    with JMRI 5.17.4, set Send frames to Grouped (as JMRI 5.17.4), which
+                    sends frames as 5.17.4 did.</li>
             </ul>
 
         <h4>C/MRI</h4>
@@ -615,6 +659,10 @@ in those is
                 without saving first.</li>
             <li>Fixed an intermittent exception that occurred when
                 detaching one of the programming panes.</li>
+            <li>Fixed some problems with selecting entries
+                when adding an entry to a roster group.</li>
+            <li>Improved the button language when adding
+                an entry to a roster group.</li>
         </ul>
 
    <h3>Dispatcher</h3>
@@ -741,6 +789,42 @@ in those is
                  train could be stopped with "No next Block". Every change is
                  now acted on, including a detector that bounces, so use the
                  sensor debounce settings for such detectors.</li>
+             <li>The Auto Allocator no longer stops allocating for a moment,
+                 with an IndexOutOfBoundsException in the log, when an
+                 allocation request is added or removed while it is
+                 looking at the list of requests.</li>
+             <li>Terminating an automatic train no longer freezes JMRI.
+                 Terminating waited until the train's speed read zero, and
+                 if Dispatcher gave the train another Section at that moment
+                 the train set its speed again, so the wait never ended. The
+                 same could leave that Section allocated to a train that no
+                 longer existed, so no other train could have it. A train is
+                 now stopped at once when it is terminated, and is given
+                 nothing more.</li>
+             <li>A Block change that an automatic train handles just after
+                 one of its Sections is released, or as the train is
+                 terminated, no longer gives warnings such as "No next Block"
+                 or that the train has disappeared. The train now uses the
+                 direction the Section was allocated in, and ignores Block
+                 changes once it is being terminated.</li>
+             <li>With automatic allocation, an automatic train is no longer
+                 held for good in a passing loop or before one, waiting for
+                 another train that cannot pass or meet it there. Dispatcher
+                 now plans a meet only when the other train has a free track
+                 to take, and drops the plan when the train it waits for can
+                 no longer get there: the other track is occupied or held by
+                 another train, a train has taken the other's track, or a
+                 train is already past the meeting place. Allocating by hand
+                 was needed to free the train.</li>
+             <li>Allocate Extra and the script call extendActiveTrainsPath now
+                 give a Section beyond the end of a train's Transit in the
+                 direction the train enters it. A train running its Transit's
+                 Sections in their reverse direction was given an extra Section
+                 forward, and extendActiveTrainsPath refused to extend its path at
+                 all. With automatic allocation on, the extra Section is now
+                 allocated by the Auto Allocator, so it no longer logs errors
+                 about the request with signal masts, or fails part way when the
+                 request is allocated while it is looking at it (JMRI/JMRI#15894).</li>
         </ul>
 
    <h3>Internationalization</h3>
@@ -834,6 +918,14 @@ in those is
                 occupied. LogixNG and scripts that set it must now also clear
                 it, for example when the train has left. Dispatcher and
                 Entry/Exit are not affected: they clear their own blocks.</li>
+            <li>A large panel using Layout Block routing no longer stops with
+                a StackOverflowError while the routing tables are built.
+                </li>
+            <li>Layout Block routing tables are now complete and correct on
+                large panels with loops, and after a connection is taken
+                away: routes that were missed are learnt, and routes that no
+                longer lead anywhere are withdrawn.</li>
+
         <h4>NX - Entry/Exit Tool</h4>
             <ul>
                 <li>NX with signal masts: if a train enters the start block
@@ -1058,6 +1150,10 @@ in those is
                 its repeats, their spread and the change from the first run.</li>
             <li>Protect against an error that can occur while loading
                 the roster if an entry has an unexpectedly missing sound label.</li>
+            <li>Fixed some problems with selecting entries
+                when adding an entry to a roster group.</li>
+            <li>Improved the button language when adding
+                an entry to a roster group.</li>
         </ul>
 
     <h3>Routes</h3>
@@ -1128,6 +1224,11 @@ in those is
                 <li>Turning off "Use Layout Editor Paths" for one destination of
                     a source mast no longer stops Signal Mast Logic Sections
                     being generated for that mast's other destinations.</li>
+                <li>A Signal Mast no longer keeps changing between clear and
+                    danger when automatic signal mast generation is allowed for
+                    one of its Signal Mast Logic pairs. The pair listed the mast
+                    itself among the masts that must show danger, so the mast
+                    put itself back to danger each time it cleared.</li>
             </ul>
 
         <h4>Cab Signals</h4>
@@ -1158,6 +1259,10 @@ in those is
             <li>Throttles Preferences pane allows to define the default throttle layout for new throttles (NMRA of NEM, see bellow), or custom. NMRA selected as a default. (see <a href="https://github.com/JMRI/JMRI/issues/15523"> #15523 </a>)</li>
             <li>Throttle address selector now shows the all roster group by default (see <a href="https://github.com/JMRI/JMRI/issues/15730"> #15730 </a>)</li>
             <li>Throttle list window now unminimizes a throttle window when it is selected if it was minimized (see <a href="https://github.com/JMRI/JMRI/issues/15734"> #15734 </a>)</li>
+            <li>Throttle function button visibility implementation less confusing, documentation and code updated</li>
+            <li>Due to a Java throttle code refactoring, in Jynstruments, for ThrottleFrame jynstruments, the expected 
+                context class is now jmri.jmrit.throttle.implementation.ThrottleFrame instead of jmri.jmrit.throttle.ThrottleFrame,
+                you can check released code in jython/Jynstruments/ThrottleFrame/Bell.jyn for instance.</li>
         </ul>
 
    <h3>Tracker</h3>
